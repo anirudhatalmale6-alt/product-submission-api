@@ -1,0 +1,137 @@
+{
+  "info": {
+    "name": "Product Submission API",
+    "description": "REST API for submitting product data with JWT authentication",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000"
+    },
+    {
+      "key": "token",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "url": "{{base_url}}/",
+        "description": "Verify the API is running"
+      }
+    },
+    {
+      "name": "Register User",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "var jsonData = pm.response.json();",
+              "pm.collectionVariables.set('token', jsonData.access_token);"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "url": "{{base_url}}/auth/register",
+        "header": [
+          {"key": "Content-Type", "value": "application/json"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"apiuser\",\n  \"password\": \"securepass123\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Login",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "var jsonData = pm.response.json();",
+              "pm.collectionVariables.set('token', jsonData.access_token);"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "POST",
+        "url": "{{base_url}}/auth/login",
+        "header": [
+          {"key": "Content-Type", "value": "application/json"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"apiuser\",\n  \"password\": \"securepass123\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Create Product",
+      "request": {
+        "method": "POST",
+        "url": "{{base_url}}/products",
+        "header": [
+          {"key": "Content-Type", "value": "application/json"},
+          {"key": "Authorization", "value": "Bearer {{token}}"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"sku\": \"EBAY-12345\",\n  \"title\": \"Vintage Leather Jacket - Men's Large\",\n  \"description\": \"<p>Premium vintage leather jacket in excellent condition.</p>\",\n  \"price\": 149.99,\n  \"currency\": \"GBP\",\n  \"quantity\": 5,\n  \"images\": [\n    \"https://example.com/jacket-front.jpg\",\n    \"https://example.com/jacket-back.jpg\"\n  ],\n  \"category\": \"Clothing > Men's > Jackets\",\n  \"item_specifics\": {\n    \"Brand\": \"Levi's\",\n    \"Size\": \"Large\",\n    \"Color\": \"Brown\",\n    \"Material\": \"Genuine Leather\",\n    \"Style\": \"Biker\",\n    \"Era\": \"1990s\"\n  },\n  \"condition\": \"Used - Excellent\",\n  \"brand\": \"Levi's\",\n  \"ean\": \"5012345678901\",\n  \"weight\": 1.2\n}"
+        }
+      }
+    },
+    {
+      "name": "Bulk Create Products",
+      "request": {
+        "method": "POST",
+        "url": "{{base_url}}/products/bulk",
+        "header": [
+          {"key": "Content-Type", "value": "application/json"},
+          {"key": "Authorization", "value": "Bearer {{token}}"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"products\": [\n    {\n      \"sku\": \"EBAY-20001\",\n      \"title\": \"Nike Air Max 90 - Size 10\",\n      \"price\": 89.99,\n      \"quantity\": 3,\n      \"images\": [\"https://example.com/nike1.jpg\"],\n      \"item_specifics\": {\"Brand\": \"Nike\", \"Size\": \"10\", \"Color\": \"White\"}\n    },\n    {\n      \"sku\": \"EBAY-20002\",\n      \"title\": \"Samsung Galaxy S24 Case - Clear\",\n      \"price\": 12.99,\n      \"quantity\": 50,\n      \"images\": [\"https://example.com/case1.jpg\"],\n      \"item_specifics\": {\"Brand\": \"Samsung\", \"Compatible Model\": \"Galaxy S24\"}\n    },\n    {\n      \"sku\": \"EBAY-20003\",\n      \"title\": \"Vintage Vinyl Record - The Beatles Abbey Road\",\n      \"price\": 45.00,\n      \"quantity\": 1,\n      \"condition\": \"Used - Good\",\n      \"item_specifics\": {\"Artist\": \"The Beatles\", \"Format\": \"LP\", \"Genre\": \"Rock\"}\n    }\n  ]\n}"
+        }
+      }
+    },
+    {
+      "name": "Update Product by ID",
+      "request": {
+        "method": "PUT",
+        "url": "{{base_url}}/products/1",
+        "header": [
+          {"key": "Content-Type", "value": "application/json"},
+          {"key": "Authorization", "value": "Bearer {{token}}"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"price\": 129.99,\n  \"quantity\": 3,\n  \"item_specifics\": {\n    \"Brand\": \"Levi's\",\n    \"Size\": \"Large\",\n    \"Color\": \"Brown\",\n    \"Material\": \"Genuine Leather\",\n    \"Style\": \"Biker\",\n    \"Era\": \"1990s\",\n    \"Condition Notes\": \"Minor wear on cuffs\"\n  }\n}"
+        }
+      }
+    },
+    {
+      "name": "Update Product by SKU",
+      "request": {
+        "method": "PUT",
+        "url": "{{base_url}}/products/sku/EBAY-12345",
+        "header": [
+          {"key": "Content-Type", "value": "application/json"},
+          {"key": "Authorization", "value": "Bearer {{token}}"}
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"price\": 139.99,\n  \"quantity\": 2\n}"
+        }
+      }
+    }
+  ]
+}
