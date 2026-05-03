@@ -10,6 +10,10 @@ class Settings(BaseSettings):
     rate_limit: str = "100/minute"
     cors_origins: List[str] = ["http://localhost:3000", "http://localhost:8080"]
     cj_api_key: str = ""
+    ebay_app_id: str = ""
+    ebay_cert_id: str = ""
+    ebay_dev_id: str = ""
+    ebay_user_token: str = ""
 
     class Config:
         env_file = ".env"

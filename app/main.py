@@ -9,7 +9,7 @@ from slowapi.errors import RateLimitExceeded
 
 from app.config import settings
 from app.database import init_db
-from app.routes import auth, products, cj
+from app.routes import auth, products, cj, ebay
 
 limiter = Limiter(key_func=get_remote_address, default_limits=[settings.rate_limit])
 
@@ -43,6 +43,7 @@ app.add_middleware(
 app.include_router(auth.router)
 app.include_router(products.router)
 app.include_router(cj.router)
+app.include_router(ebay.router)
 
 
 @app.get("/", tags=["Health"])
