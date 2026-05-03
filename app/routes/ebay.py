@@ -23,6 +23,7 @@ class EbayListingConfig(BaseModel):
     return_policy_id: Optional[str] = Field(None, description="Return policy ID")
     listing_format: str = Field("FIXED_PRICE", description="FIXED_PRICE or AUCTION")
     condition: str = Field("NEW", description="Item condition (NEW, USED_EXCELLENT, etc.)")
+    merchant_location_key: str = Field("uk-warehouse", description="Merchant location key for ship-from location")
 
 
 class BulkListConfig(BaseModel):
@@ -34,6 +35,7 @@ class BulkListConfig(BaseModel):
     payment_policy_id: Optional[str] = None
     return_policy_id: Optional[str] = None
     condition: str = Field("NEW")
+    merchant_location_key: str = Field("uk-warehouse")
 
 
 @router.get("/category-suggestions")
@@ -113,6 +115,7 @@ async def list_product_on_ebay(
         "marketplaceId": config.marketplace_id,
         "format": config.listing_format,
         "categoryId": config.category_id,
+        "merchantLocationKey": config.merchant_location_key,
         "listingPolicies": {},
         "pricingSummary": {
             "price": {
@@ -208,6 +211,7 @@ async def bulk_list_on_ebay(
                 "marketplaceId": config.marketplace_id,
                 "format": "FIXED_PRICE",
                 "categoryId": config.category_id,
+                "merchantLocationKey": config.merchant_location_key,
                 "listingPolicies": {},
                 "pricingSummary": {
                     "price": {"value": str(product.price), "currency": config.currency}
