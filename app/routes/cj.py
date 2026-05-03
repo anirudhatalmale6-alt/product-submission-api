@@ -94,10 +94,14 @@ async def import_cj_product(
 
     cj_price = float(cj_product.get("sellPrice", 0))
     images = []
-    if cj_product.get("productImage"):
+    image_set = cj_product.get("productImageSet", [])
+    if isinstance(image_set, list):
+        for img in image_set:
+            if isinstance(img, str) and img.startswith("http"):
+                images.append(img)
+    if not images and cj_product.get("productImage"):
         images.append(cj_product["productImage"])
-    if cj_product.get("productImageSet"):
-        images.extend(cj_product["productImageSet"][:23])
+    images = images[:24]
 
     variants = cj_product.get("variants", [])
     item_specifics = {}
