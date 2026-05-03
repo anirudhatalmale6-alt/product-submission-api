@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = 60
     rate_limit: str = "100/minute"
     cors_origins: List[str] = ["http://localhost:3000", "http://localhost:8080"]
+    cj_api_key: str = ""
 
     class Config:
         env_file = ".env"
