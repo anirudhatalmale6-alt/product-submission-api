@@ -341,6 +341,40 @@ function normalizeBacklog(data) {
   return [];
 }
 
+/* ── Field normalization (module uses mission_id/mission_name) */
+function normMission(m) {
+  if (!m) return m;
+  m.id = m.mission_id || m.id;
+  m.name = m.mission_name || m.name;
+  m.data_source = m.data_source_label || m.data_source;
+  m.learnings = m.learning_notes || m.learnings || [];
+  m.progress = m.progress_pct || m.progress || 0;
+  m.confidence = m.confidence_pct || m.confidence || 0;
+  return m;
+}
+function normBriefing(b) {
+  if (!b) return b;
+  if (!b.headline && b.text) {
+    b.headline = b.text.split('\n')[0] || 'Strategic Mission Control Active';
+    b.summary = b.text;
+  }
+  if (!b.headline) b.headline = 'Strategic Mission Control Active';
+  if (b.stats) {
+    b.active_missions_count = b.stats.active_missions;
+    b.completed_actions_count = b.stats.backlog_completed;
+    b.overall_progress_pct = b.stats.avg_progress_pct;
+  }
+  return b;
+}
+function enrichBacklog(items, missions) {
+  var mmap = {};
+  missions.forEach(function(m) { mmap[m.mission_id || m.id] = m.mission_name || m.name; });
+  return items.map(function(i) {
+    if (!i.mission_name && i.mission_id) i.mission_name = mmap[i.mission_id] || i.mission_id;
+    return i;
+  });
+}
+
 /* ── Scan & Load ────────────────────────────────────────── */
 async function runScan() {
   var btn = $('btnScan');
@@ -360,10 +394,10 @@ async function loadAll() {
     api('api/mission-control/missions'),
     api('api/mission-control/backlog')
   ]);
-  STATE.briefing = results[0] || {};
+  STATE.briefing = normBriefing(results[0] || {});
   STATE.dashboard = results[1] || {};
-  STATE.missions = normalizeMissions(results[2]);
-  STATE.backlog = normalizeBacklog(results[3]);
+  STATE.missions = normalizeMissions(results[2]).map(normMission);
+  STATE.backlog = enrichBacklog(normalizeBacklog(results[3]), STATE.missions);
   render();
 }
 

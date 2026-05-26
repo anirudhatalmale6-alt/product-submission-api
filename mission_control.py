@@ -129,7 +129,7 @@ def _ethical_check():
 # ────────────────────────────────────────────────────────────────────────────
 
 _MISSION_FIELDS = [
-    "mission_id", "mission_name", "business_objective", "target_cluster",
+    "mission_id", "name", "mission_name", "business_objective", "target_cluster",
     "responsible_agents", "current_phase", "milestones",
     "required_content_assets", "required_evidence_assets",
     "internal_linking_actions", "seo_actions", "affiliate_actions",
@@ -137,25 +137,31 @@ _MISSION_FIELDS = [
     "risk_level", "approval_status", "expected_business_impact",
     "next_recommended_action", "data_source_label", "data_maturity",
     "last_validation_date", "progress_pct", "created_at", "updated_at",
-    "status", "learning_notes"
+    "status", "learning_notes", "priority"
 ]
 _LIST_FIELDS = {"responsible_agents", "milestones", "required_content_assets",
                 "required_evidence_assets", "internal_linking_actions", "seo_actions",
                 "affiliate_actions", "customer_journey_actions", "learning_notes"}
 
 
-def create_mission(mission_data):
-    """Create a new mission with all required fields."""
+def create_mission(data=None, **kwargs):
+    """Create a new mission with all required fields. Accepts data dict or kwargs."""
+    mission_data = data if data is not None else kwargs
     with _lock:
-        data = _load()
+        store = _load()
         mid = mission_data.get("mission_id") or _gen_id("mis")
         now = _ts()
-        sk = mid + mission_data.get("mission_name", "")
+        # Resolve name: accept 'name' (from routes) or 'mission_name' (legacy)
+        resolved_name = mission_data.get("name") or mission_data.get("mission_name", "Untitled Mission")
+        sk = mid + resolved_name
+        conf_pct = mission_data.get("confidence_pct") or round(_sr(55, 85, sk, "conf"), 1)
         defaults = {
-            "mission_id": mid, "mission_name": "Untitled Mission",
+            "mission_id": mid,
+            "name": resolved_name,
+            "mission_name": resolved_name,
             "business_objective": "", "target_cluster": "",
             "current_phase": "planning", "success_metrics": {},
-            "confidence_pct": round(_score100(sk, "conf"), 1),
+            "confidence_pct": conf_pct,
             "risk_level": _pick_risk(sk, "risk"), "approval_status": "pending",
             "expected_business_impact": "", "next_recommended_action": "",
             "data_source_label": "MODELLED FORECAST",
@@ -171,11 +177,14 @@ def create_mission(mission_data):
                 mission[f] = defaults.get(f, [])
             else:
                 mission[f] = defaults.get(f, "")
+        # Always set both name fields for compatibility
+        mission["name"] = resolved_name
+        mission["mission_name"] = resolved_name
         mission["mission_id"] = mid
         mission["created_at"] = now
         mission["updated_at"] = now
-        data["missions"][mid] = mission
-        _save(data)
+        store["missions"][mid] = mission
+        _save(store)
     return mission
 
 
@@ -244,10 +253,11 @@ def seed_initial_missions():
         {
             "mission_id": "mis_dog_food_authority",
             "mission_name": "Dog Food Authority Expansion",
-            "business_objective": "Establish PetHub as the UK's top authority on dog food through comprehensive, evidence-backed content covering all major sub-categories and dietary needs.",
+            "name": "Dog Food Authority Expansion",
+            "business_objective": "Build the first major topical authority cluster",
             "target_cluster": "dog_food",
-            "responsible_agents": _pick_n(AGENTS, 5, "m1", "agents"),
-            "current_phase": "content_creation",
+            "responsible_agents": ["content_agent", "seo_agent", "product_research_agent"],
+            "current_phase": "planning",
             "milestones": _ms(["Hub page research & outline approved", "Core comparison pages drafted (dry, wet, puppy, senior)", "Evidence & testing methodology documented", "Internal linking structure deployed", "Performance validation & optimisation"], "m1"),
             "required_content_assets": ["Dog Food Hub Page", "Best Dry Dog Food UK", "Best Wet Dog Food UK", "Best Puppy Food UK", "Best Senior Dog Food UK", "Dog Food Ingredient Guide UK", "Dry vs Wet Dog Food UK", "Sensitive Stomach Dog Food UK"],
             "required_evidence_assets": ["Ingredient analysis methodology", "Taste-test protocol documentation", "Veterinary consultation references", "Price comparison data sources"],
@@ -265,12 +275,13 @@ def seed_initial_missions():
         {
             "mission_id": "mis_dog_harness_commercial",
             "mission_name": "Dog Harness Commercial Opportunity",
-            "business_objective": "Capture high-commercial-intent harness search traffic with detailed comparison and buyer guide content that converts browsers into affiliate clicks.",
+            "name": "Dog Harness Commercial Opportunity",
+            "business_objective": "Capture high commercial intent with lower competition",
             "target_cluster": "dog_harnesses",
-            "responsible_agents": _pick_n(AGENTS, 4, "m2", "agents"),
+            "responsible_agents": ["content_agent", "seo_agent", "affiliate_agent"],
             "current_phase": "planning",
             "milestones": _ms(["Keyword research & competitive gap analysis", "Hub page and guide structure approved", "Core comparison pages drafted", "Affiliate integration & CTA optimisation", "Launch review & performance baseline"], "m2"),
-            "required_content_assets": ["Dog Harness Hub/Guide", "Best Dog Harnesses UK", "Best No Pull Dog Harnesses UK", "Best Harnesses Small Dogs", "Best Harnesses Large Dogs", "Puppy Harness Guide"],
+            "required_content_assets": ["Dog Harness Hub/Guide", "Best Dog Harnesses UK", "Best No Pull Dog Harnesses UK", "Best Harnesses for Small Dogs", "Best Harnesses for Large Dogs", "Puppy Harness Guide"],
             "required_evidence_assets": ["Harness testing protocol (fit, comfort, durability)", "Size and breed suitability matrix", "Customer satisfaction data references"],
             "internal_linking_actions": ["Link hub to all harness comparison pages", "Cross-link small/large dog pages to breed-specific content", "Connect puppy harness guide to puppy food content"],
             "seo_actions": ["Target 'best dog harness UK' cluster (3,800 mo. search vol)", "Optimise comparison tables for featured snippets", "Add product schema markup", "Build FAQ schema for common harness questions"],
@@ -286,9 +297,10 @@ def seed_initial_missions():
         {
             "mission_id": "mis_pet_insurance_trust",
             "mission_name": "Pet Insurance Trust Buildout",
-            "business_objective": "Build a high-trust, compliant pet insurance information hub. Requires explicit human approval at every stage due to regulatory sensitivity.",
-            "target_cluster": "pet_insurance",
-            "responsible_agents": _pick_n(AGENTS, 5, "m3", "agents"),
+            "name": "Pet Insurance Trust Buildout",
+            "business_objective": "Prepare high-value monetization cluster with strong trust safeguards",
+            "target_cluster": "pet_supplements",
+            "responsible_agents": ["content_agent", "seo_agent", "affiliate_agent", "engagement_agent"],
             "current_phase": "planning",
             "milestones": _ms(["Regulatory review & compliance framework", "Trust and disclaimer structure approved by human", "Core informational pages drafted with disclaimers", "Internal linking & schema deployed (post-approval)", "Ongoing compliance monitoring activated"], "m3"),
             "required_content_assets": ["Pet Insurance Hub", "What Pet Insurance Covers", "Dog Insurance UK", "Cat Insurance UK", "Pet Insurance Comparison Guide", "Trust and Disclaimer Structure"],
@@ -298,21 +310,22 @@ def seed_initial_missions():
             "affiliate_actions": ["NO affiliate links until compliance review complete", "Any future affiliate integration requires RED approval", "Prepare compliant comparison format for post-approval use"],
             "customer_journey_actions": ["Create 'Do I need pet insurance?' decision guide", "Add trust signals: editorial independence, methodology", "Ensure all pages carry prominent regulatory disclaimers"],
             "success_metrics": {"target_trust_score": 0.92, "target_compliance_rate": 1.0, "target_organic_visibility": 0.65, "target_authority_score": 0.80},
-            "confidence_pct": 55.0, "risk_level": "critical", "approval_status": "red_flag",
-            "expected_business_impact": "Long-term trust asset. No immediate monetisation; value lies in authority and user trust.",
-            "next_recommended_action": "Establish regulatory compliance framework and submit for human review before any content drafting.",
-            "data_source_label": "ESTIMATED / PROXY SCORE", "data_maturity": "low", "progress_pct": 0,
+            "confidence_pct": 55.0, "risk_level": "high", "approval_status": "red_flag",
+            "expected_business_impact": "High monetization potential but requires elevated trust safeguards. Red approval required before any content goes live.",
+            "next_recommended_action": "Await red-flag approval from business owner before proceeding.",
+            "data_source_label": "MODELLED FORECAST", "data_maturity": "low", "progress_pct": 0,
         },
         # 4 ── Cat Toys Recovery / Engagement
         {
             "mission_id": "mis_cat_toys_recovery",
             "mission_name": "Cat Toys Recovery / Engagement",
-            "business_objective": "Recover declining engagement and rankings for cat toys by refreshing content, improving product relevance, and increasing answer-readiness.",
+            "name": "Cat Toys Recovery / Engagement",
+            "business_objective": "Improve rankings, engagement, internal linking, and conversion",
             "target_cluster": "cat_toys",
-            "responsible_agents": _pick_n(AGENTS, 4, "m4", "agents"),
-            "current_phase": "review",
+            "responsible_agents": ["content_agent", "seo_agent", "engagement_agent"],
+            "current_phase": "planning",
             "milestones": _ms(["Content audit & decay analysis", "Existing page refresh with updated products", "Comparison support and internal links improved", "Answer-readiness and AI search optimisation", "Performance re-baseline and monitoring"], "m4"),
-            "required_content_assets": ["Refreshed Best Cat Toys UK page", "Cat Toy Comparison Table (interactive)", "Cat Toy Buyer Guide (updated)", "Indoor vs Outdoor Cat Toys"],
+            "required_content_assets": ["Refresh Cat Toys Page", "Comparison Support", "Internal Links Improvement", "Answer-Readiness Enhancement"],
             "required_evidence_assets": ["Current page performance data (GA4 + GSC)", "Competitor content gap analysis", "Product relevance audit (discontinued items)"],
             "internal_linking_actions": ["Refresh internal links on existing page", "Add comparison support links to related cat clusters", "Improve internal authority flow from cat food hub"],
             "seo_actions": ["Refresh meta titles and descriptions", "Update structured data (product schema)", "Add direct-answer blocks for common cat toy queries", "Reduce content fatigue signals"],
@@ -321,56 +334,86 @@ def seed_initial_missions():
             "success_metrics": {"target_traffic_recovery_pct": 20, "target_engagement_improvement": 0.15, "target_bounce_rate_reduction": 0.08, "target_answer_readiness": 0.75},
             "confidence_pct": 68.2, "risk_level": "medium", "approval_status": "approved",
             "expected_business_impact": "Recover estimated 20% lost traffic and restore engagement metrics to pre-decline levels.",
-            "next_recommended_action": "Complete content audit identifying pages with declining metrics and outdated product references.",
-            "data_source_label": "ESTIMATED / PROXY SCORE", "data_maturity": "moderate", "progress_pct": 10,
+            "next_recommended_action": "Audit current Cat Toys page for refresh opportunities.",
+            "data_source_label": "MODELLED FORECAST", "data_maturity": "moderate", "progress_pct": 10,
         },
         # 5 ── Homepage Engagement Recovery
         {
             "mission_id": "mis_homepage_engagement",
             "mission_name": "Homepage Engagement Recovery",
-            "business_objective": "Improve homepage engagement with clearer category routes, stronger trust signals, and better dog/cat pathways guiding users into high-value content clusters.",
-            "target_cluster": "homepage",
-            "responsible_agents": _pick_n(AGENTS, 5, "m5", "agents"),
+            "name": "Homepage Engagement Recovery",
+            "business_objective": "Reduce bounce and improve journey routing",
+            "target_cluster": "dog_food",
+            "responsible_agents": ["engagement_agent", "content_agent", "seo_agent"],
             "current_phase": "planning",
             "milestones": _ms(["Homepage engagement audit completed", "Category routing & pathway redesign approved", "Trust signal and start-here sections implemented", "Internal authority flow optimisation deployed"], "m5"),
-            "required_content_assets": ["Redesigned homepage category navigation", "Start-Here sections for dog owners", "Start-Here sections for cat owners", "Trust signal components (methodology, about, evidence)"],
+            "required_content_assets": ["Category Routes Improvement", "Trust Signals", "Start Here Sections", "Dog/Cat Pathways", "Authority Flow Improvement"],
             "required_evidence_assets": ["Current homepage heatmap and click data", "User flow analysis (GA4 path exploration)", "Bounce rate and exit page data"],
             "internal_linking_actions": ["Clearer category routes from homepage to clusters", "Improved dog/cat pathways with visual navigation", "Stronger start-here sections linking to hub pages", "Better internal authority flow to money pages"],
             "seo_actions": ["Optimise homepage title and meta", "Add organisation schema with enhanced site links", "Improve page speed and Core Web Vitals"],
             "affiliate_actions": ["No direct affiliate links on homepage", "Ensure category routes lead to affiliate-enabled content"],
             "customer_journey_actions": ["Create clear dog vs cat entry pathways", "Add 'Popular right now' dynamic section", "Improve mobile navigation to reduce friction", "Add editorial credibility section above fold"],
             "success_metrics": {"target_bounce_rate_reduction": 0.12, "target_pages_per_session_increase": 0.8, "target_category_click_through": 0.35, "target_engagement_rate": 0.72},
-            "confidence_pct": 65.0, "risk_level": "medium", "approval_status": "pending",
-            "expected_business_impact": "Improved homepage engagement increases cluster page views and affiliate exposure. Projected 12% bounce rate reduction.",
-            "next_recommended_action": "Complete homepage engagement audit using GA4 path exploration and heatmap analysis.",
-            "data_source_label": "ESTIMATED / PROXY SCORE", "data_maturity": "low", "progress_pct": 0,
+            "confidence_pct": 65.0, "risk_level": "medium", "approval_status": "approved",
+            "expected_business_impact": "Reduces homepage bounce rate, improves journey routing, and strengthens authority flow to key category clusters.",
+            "next_recommended_action": "Analyse current homepage engagement metrics and identify routing gaps.",
+            "data_source_label": "MODELLED FORECAST", "data_maturity": "low", "progress_pct": 0,
         },
         # 6 ── AI Search Adaptation Mission
         {
             "mission_id": "mis_ai_search_adaptation",
             "mission_name": "AI Search Adaptation Mission",
-            "business_objective": "Adapt all content clusters for AI search: answer-ready summaries, evidence sections, entity completeness, citation-friendly formatting, direct-answer blocks.",
-            "target_cluster": "all_clusters",
-            "responsible_agents": _pick_n(AGENTS, 6, "m6", "agents"),
+            "name": "AI Search Adaptation Mission",
+            "business_objective": "Prepare key clusters for AI Overview and answer-engine behaviour",
+            "target_cluster": "dog_food",
+            "responsible_agents": ["seo_agent", "content_agent", "analytics_agent"],
             "current_phase": "planning",
             "milestones": _ms(["AI search readiness audit across all clusters", "Answer-ready summary templates created and approved", "Evidence sections and entity completeness deployed", "Citation-friendly formatting applied site-wide", "Comparison summaries and direct-answer blocks live"], "m6"),
-            "required_content_assets": ["Answer-ready summary templates", "Evidence section templates", "Entity completeness checklist per cluster", "Citation-friendly formatting guide", "Comparison summary templates", "Direct-answer block templates"],
+            "required_content_assets": ["Answer-Ready Summaries", "Evidence Sections", "Entity Completeness", "Citation-Friendly Formatting", "Comparison Summaries", "Direct-Answer Blocks"],
             "required_evidence_assets": ["Current AI Overview citation data", "Entity gap analysis per cluster", "Competitor AI search visibility benchmarks"],
             "internal_linking_actions": ["Add entity-level cross-links between related topics", "Ensure citation paths are crawlable and well-structured", "Build semantic relationship links across clusters"],
-            "seo_actions": ["Add answer-ready summaries to top 50 pages", "Implement evidence sections with source attribution", "Ensure entity completeness across all clusters", "Add citation-friendly formatting", "Build comparison summaries for vs-style queries", "Create direct-answer blocks for question-intent pages"],
+            "seo_actions": ["Add answer-ready summaries to top pages", "Implement evidence sections with source attribution", "Ensure entity completeness across all clusters", "Add citation-friendly formatting", "Build comparison summaries for vs-style queries", "Create direct-answer blocks for question-intent pages"],
             "affiliate_actions": ["Ensure AI-cited pages maintain affiliate integration", "Adapt product recommendations for AI-extracted contexts"],
             "customer_journey_actions": ["Improve zero-click answer experience", "Add 'read more on PetHub' hooks for AI-surfaced content", "Ensure mobile experience supports AI referral traffic"],
             "success_metrics": {"target_ai_citation_rate": 0.25, "target_answer_readiness_score": 0.80, "target_entity_completeness": 0.85, "target_ai_referral_traffic_pct": 0.10},
-            "confidence_pct": 52.0, "risk_level": "high", "approval_status": "pending",
-            "expected_business_impact": "Future-proof PetHub for AI-driven search. Long-term strategic play with potentially transformative traffic impact.",
-            "next_recommended_action": "Run AI search readiness audit across all clusters to establish baseline scores.",
-            "data_source_label": "SIMULATED SCENARIO", "data_maturity": "low", "progress_pct": 0,
+            "confidence_pct": 52.0, "risk_level": "medium", "approval_status": "approved",
+            "expected_business_impact": "Prepares strongest cluster for AI Overview inclusion, builds citation-friendly formatting and entity completeness.",
+            "next_recommended_action": "Run AI search readiness audit on dog_food cluster pages.",
+            "data_source_label": "MODELLED FORECAST", "data_maturity": "low", "progress_pct": 0,
         },
     ]
     created = []
     for d in defs:
         created.append(create_mission(d))
-    return {"seeded": len(created), "mission_ids": [m["mission_id"] for m in created]}
+    # Generate backlogs for each seeded mission
+    backlog_results = []
+    for m in created:
+        result = generate_backlog(m["mission_id"])
+        if result and not result.get("error"):
+            backlog_results.append({
+                "mission_id": m["mission_id"],
+                "name": m.get("mission_name") or m.get("name"),
+                "items_generated": result.get("items_generated", 0),
+            })
+    return {
+        "status": "seeded",
+        "seeded": len(created),
+        "missions_created": len(created),
+        "mission_ids": [m["mission_id"] for m in created],
+        "missions": [
+            {
+                "mission_id": m["mission_id"],
+                "name": m.get("mission_name") or m.get("name"),
+                "target_cluster": m.get("target_cluster"),
+                "priority": m.get("priority", "medium"),
+                "approval_status": m.get("approval_status"),
+            }
+            for m in created
+        ],
+        "backlogs_generated": backlog_results,
+        "data_source_label": "MODELLED FORECAST",
+        "generated_at": _ts(),
+    }
 
 
 # ────────────────────────────────────────────────────────────────────────────
@@ -627,10 +670,91 @@ def get_mission_summary():
 
 
 def get_mission_dashboard_data():
-    """All data needed for the dashboard in one call."""
+    """Combined dashboard data: {missions, backlog_summary, progress_overview, content_quality_status}."""
     data = _load()
+    missions = [m for m in data.get("missions", {}).values() if m.get("status") != "deleted"]
+    backlog_items = list(data.get("backlog", {}).values())
+
+    # Missions overview (lightweight)
+    missions_overview = []
+    for m in missions:
+        missions_overview.append({
+            "mission_id": m.get("mission_id"),
+            "name": m.get("name") or m.get("mission_name"),
+            "mission_name": m.get("mission_name") or m.get("name"),
+            "target_cluster": m.get("target_cluster"),
+            "current_phase": m.get("current_phase"),
+            "priority": m.get("priority"),
+            "approval_status": m.get("approval_status"),
+            "confidence_pct": m.get("confidence_pct"),
+            "risk_level": m.get("risk_level"),
+            "responsible_agents": m.get("responsible_agents", []),
+            "progress_pct": m.get("progress_pct", 0),
+            "next_recommended_action": m.get("next_recommended_action"),
+        })
+
+    # Backlog summary
+    status_counts = {}
+    type_counts = {}
+    agent_counts = {}
+    for item in backlog_items:
+        st = item.get("status", "pending")
+        status_counts[st] = status_counts.get(st, 0) + 1
+        it = item.get("item_type", "unknown")
+        type_counts[it] = type_counts.get(it, 0) + 1
+        ag = item.get("assigned_agent", "unassigned")
+        agent_counts[ag] = agent_counts.get(ag, 0) + 1
+
+    items_needing_approval = [
+        {"item_id": i["item_id"], "title": i.get("title"), "item_type": i.get("item_type")}
+        for i in backlog_items
+        if i.get("approval_requirement") and i.get("approval_requirement") != "none"
+        and i.get("status") == "pending"
+    ]
+
+    backlog_summary = {
+        "total_items": len(backlog_items),
+        "status_distribution": status_counts,
+        "type_distribution": type_counts,
+        "agent_workload": agent_counts,
+        "items_needing_approval": items_needing_approval,
+    }
+
+    # Progress overview
+    active = [m for m in missions if m.get("current_phase") != "completed"]
+    completed = [m for m in missions if m.get("current_phase") == "completed"]
+    total_milestones = sum(len(m.get("milestones", [])) for m in missions)
+    reached_milestones = sum(
+        len([ms for ms in m.get("milestones", []) if ms.get("status") == "completed" or ms.get("reached")])
+        for m in missions
+    )
+
+    progress_overview = {
+        "active_missions": len(active),
+        "completed_missions": len(completed),
+        "total_milestones": total_milestones,
+        "milestones_reached": reached_milestones,
+        "milestone_completion_pct": round(
+            (reached_milestones / max(1, total_milestones)) * 100, 1
+        ),
+        "high_priority_count": len([m for m in missions if m.get("priority") == "high"]),
+        "red_flag_count": len([m for m in missions if m.get("approval_status") == "red_flag"]),
+    }
+
+    # Content quality status
+    content_quality_status = {
+        "quality_rules_active": len(_QUALITY_RULES),
+        "rules_summary": [r["name"] for r in _QUALITY_RULES],
+        "enforcement_level": "strict",
+        "last_check": _ts(),
+    }
+
     return {
-        "missions": {k: v for k, v in data.get("missions", {}).items() if v.get("status") != "deleted"},
+        "missions": missions_overview,
+        "backlog_summary": backlog_summary,
+        "progress_overview": progress_overview,
+        "content_quality_status": content_quality_status,
+        # Legacy fields for backward compatibility
         "backlog": data.get("backlog", {}),
         "learnings": data.get("learnings", {}),
         "last_briefing": (data.get("briefings", []) or [None])[-1],
@@ -786,7 +910,11 @@ def run_mission_scan():
 
 
 def _build_briefing(scan):
-    """Create a plain-English executive briefing."""
+    """Create executive briefing with required fields:
+    headline, active_missions_count, completed_actions_count, overall_progress_pct,
+    summary_text, top_priority_mission, biggest_blocker, next_recommended_action,
+    generated_at, data_source_label.
+    """
     now = _ts()
     data = _load()
     missions = [m for m in data.get("missions", {}).values() if m.get("status") != "deleted"]
@@ -798,10 +926,12 @@ def _build_briefing(scan):
     blocked = sum(1 for b in backlog.values() if b.get("status") == "blocked")
     completed_m = sum(1 for m in missions if m.get("status") == "completed")
 
+    # Build narrative text
     lines = [f"PetHub Strategic Mission Control Briefing - {now[:10]}", "",
              "WHAT WE ARE WORKING ON:"]
     for m in active:
-        lines.append(f"  - {m['mission_name']} ({m['target_cluster']}): "
+        mname = m.get("name") or m.get("mission_name", "?")
+        lines.append(f"  - {mname} ({m['target_cluster']}): "
                      f"{m.get('progress_pct', 0)}% complete, phase: {m.get('current_phase')}")
     lines += ["", "WHY IT MATTERS:",
               f"  {len(active)} active missions driving organic growth, authority building, "
@@ -811,9 +941,10 @@ def _build_briefing(scan):
     lines += ["", "WHAT HAS BEEN COMPLETED:",
               f"  {completed_m} mission(s) completed. {bl_done}/{len(backlog)} backlog items done."]
     for m in missions:
+        mname = m.get("name") or m.get("mission_name", "?")
         for ms in m.get("milestones", []):
             if ms.get("status") == "completed":
-                lines.append(f"  - [{m['mission_name']}] {ms['name']}")
+                lines.append(f"  - [{mname}] {ms['name']}")
     lines += ["", "WHAT IS BLOCKED:"]
     if blocked:
         lines.append(f"  {blocked} backlog item(s) currently blocked.")
@@ -823,32 +954,81 @@ def _build_briefing(scan):
     else:
         lines.append("  No items currently blocked.")
     for m in red_flags:
-        lines.append(f"  - RED FLAG: {m['mission_name']} awaiting human approval")
+        mname = m.get("name") or m.get("mission_name", "?")
+        lines.append(f"  - RED FLAG: {mname} awaiting human approval")
     lines += ["", "WHAT SHOULD HAPPEN NEXT:"]
     for m in active:
         nra = m.get("next_recommended_action")
+        mname = m.get("name") or m.get("mission_name", "?")
         if nra:
-            lines.append(f"  - [{m['mission_name']}] {nra}")
+            lines.append(f"  - [{mname}] {nra}")
+
+    summary_text = "\n".join(lines)
+
+    # Top priority mission
+    priority_order = {"critical": 0, "high": 1, "medium": 2, "low": 3}
+    sorted_m = sorted(active, key=lambda m: (
+        priority_order.get(m.get("priority", "low"), 4),
+        -m.get("confidence_pct", 0),
+    ))
+    top = sorted_m[0] if sorted_m else None
+
+    # Biggest blocker
+    biggest_blocker = "No active blockers identified"
+    for m in red_flags:
+        mname = m.get("name") or m.get("mission_name", "?")
+        biggest_blocker = f"{mname}: Requires explicit human approval before proceeding"
+        break
+    if biggest_blocker == "No active blockers identified" and blocked > 0:
+        for b in backlog.values():
+            if b.get("status") == "blocked":
+                biggest_blocker = f"{b['title']}: blocked on dependency {b.get('dependency', 'unknown')}"
+                break
+
+    # Next recommended action
+    if top:
+        next_action = top.get("next_recommended_action",
+                              f"Continue work on {top.get('name') or top.get('mission_name', 'top mission')}")
+    else:
+        next_action = "Seed initial missions to begin strategy execution"
+
+    headline = f"Mission Control: {len(active)} active, {avg_prog}% overall progress"
 
     return {
-        "briefing_id": _gen_id("brf"), "generated_at": now,
-        "text": "\n".join(lines),
+        "briefing_id": _gen_id("brf"),
+        "headline": headline,
+        "active_missions_count": len(active),
+        "completed_actions_count": bl_done,
+        "overall_progress_pct": avg_prog,
+        "summary_text": summary_text,
+        "top_priority_mission": {
+            "mission_id": top["mission_id"],
+            "name": top.get("name") or top.get("mission_name"),
+            "priority": top.get("priority"),
+            "current_phase": top.get("current_phase"),
+        } if top else None,
+        "biggest_blocker": biggest_blocker,
+        "next_recommended_action": next_action,
+        "generated_at": now,
+        "data_source_label": "MODELLED FORECAST",
+        # Legacy fields for backward compatibility
+        "text": summary_text,
         "stats": {
             "active_missions": len(active), "completed_missions": completed_m,
             "avg_progress_pct": avg_prog, "total_backlog": len(backlog),
             "backlog_completed": bl_done, "blocked_items": blocked,
             "red_flags": len(red_flags),
         },
-        "data_source_label": "MODELLED FORECAST",
     }
 
 
 def get_mission_briefing():
-    """Get the most recent executive briefing."""
+    """Read the latest briefing from JSON."""
     data = _load()
     briefings = data.get("briefings", [])
     if briefings:
         return briefings[-1]
+    # Generate one on the fly if none exists
     return run_mission_scan().get("briefing")
 
 
