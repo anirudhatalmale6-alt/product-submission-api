@@ -1,0 +1,337 @@
+{
+  "report_title": "PetHub Co-Pilot Owner-Review Command Evidence Pack",
+  "test_date": "2026-05-26",
+  "endpoint": "http://localhost:8100/api/copilot/ask",
+  "method": "POST",
+  "field": "question",
+  "total_commands_tested": 10,
+  "all_passed": true,
+  "verification_summary": {
+    "has_readiness_status": "10/10",
+    "has_blockers": "8/10",
+    "has_risk_level": "5/10",
+    "has_next_action": "8/10",
+    "has_confidence_percent": "10/10"
+  },
+  "available_commands_from_api": [
+    "show Dog Food review status",
+    "which Dog Food page should I review first?",
+    "what blocks the hub from publishing?",
+    "what blocks Best Dry Dog Food UK?",
+    "summarize hub page for owner review",
+    "list all evidence gaps",
+    "show schema status",
+    "show metadata proposal",
+    "compare puppy food page to publish requirements",
+    "is Best Puppy Food UK safe to publish?"
+  ],
+  "command_results": [
+    {
+      "command_number": 1,
+      "command": "show Dog Food review status",
+      "status": "SUCCESS",
+      "command_matched": "review_status",
+      "confidence": "95%",
+      "response_length": 1271,
+      "verification": {
+        "has_readiness_status": true,
+        "has_blockers": true,
+        "has_risk_level": true,
+        "has_next_action": false,
+        "has_confidence_percent": true
+      },
+      "full_response": {
+        "answer": "Dog Food Review Status - All 4 Drafts:\n\n  [NEEDS EDITS] Best Dog Food UK (2026) \u2013 Complete Guide & Honest Reviews (ID 3836)\n    Words: 3982 | Risk: MEDIUM | Content Score: 9/10 | Confidence: 90%\n    Publishing gates: 3 passed, 3 failed, 5 pending (of 11)\n    Blockers: 1\n      - All linked products are blocked_pending_evidence\n\n  [NEEDS EDITS] Best Dry Dog Food UK (2026) \u2013 Evidence-Based Guide (ID 3837)\n    Words: 1809 | Risk: HIGH | Content Score: 9/10 | Confidence: 90%\n    Publishing gates: 1 passed, 5 failed, 5 pending (of 11)\n    Blockers: 2\n      - Safety check failures: no_invented_prices\n      - All linked products are blocked_pending_evidence\n\n  [NEEDS EDITS] Dry vs Wet Dog Food UK \u2013 An Honest Comparison (ID 3838)\n    Words: 1549 | Risk: HIGH | Content Score: 9/10 | Confidence: 90%\n    Publishing gates: 1 passed, 5 failed, 5 pending (of 11)\n    Blockers: 2\n      - Safety check failures: no_invented_prices\n      - All linked products are blocked_pending_evidence\n\n  [NEEDS EDITS] Best Puppy Food UK (2026) \u2013 Growth-Stage Nutrition Guide (ID 3839)\n    Words: 1821 | Risk: MEDIUM | Content Score: 9/10 | Confidence: 90%\n    Publishing gates: 3 passed, 3 failed, 5 pending (of 11)\n    Blockers: 1\n      - All linked products are blocked_pending_evidence\n",
+        "data": {
+          "pages": [
+            "3836",
+            "3837",
+            "3838",
+            "3839"
+          ]
+        },
+        "command_matched": "review_status",
+        "confidence": 0.95
+      }
+    },
+    {
+      "command_number": 2,
+      "command": "which Dog Food page should I review first?",
+      "status": "SUCCESS",
+      "command_matched": "review_first",
+      "confidence": "92%",
+      "response_length": 846,
+      "verification": {
+        "has_readiness_status": true,
+        "has_blockers": true,
+        "has_risk_level": true,
+        "has_next_action": true,
+        "has_confidence_percent": true
+      },
+      "full_response": {
+        "answer": "Recommended Review Order:\n\n  1. Best Dog Food UK (2026) \u2013 Complete Guide & Honest Reviews (ID 3836)\n     Risk: MEDIUM | Content Score: 9/10 | Gates Passed: 3/11 | Blockers: 1\n     >> RECOMMENDED: Start here - strongest content with fewest issues.\n\n  2. Best Puppy Food UK (2026) \u2013 Growth-Stage Nutrition Guide (ID 3839)\n     Risk: MEDIUM | Content Score: 9/10 | Gates Passed: 3/11 | Blockers: 1\n\n  3. Best Dry Dog Food UK (2026) \u2013 Evidence-Based Guide (ID 3837)\n     Risk: HIGH | Content Score: 9/10 | Gates Passed: 1/11 | Blockers: 2\n\n  4. Dry vs Wet Dog Food UK \u2013 An Honest Comparison (ID 3838)\n     Risk: HIGH | Content Score: 9/10 | Gates Passed: 1/11 | Blockers: 2\n\nSummary: Review 'Best Dog Food UK (2026) \u2013 Complete Guide & Honest Reviews' first - it has the strongest content quality (9/10), medium risk level, and 3 gates already passed.",
+        "data": {
+          "ranking": [
+            {
+              "page_id": "3836",
+              "title": "Best Dog Food UK (2026) \u2013 Complete Guide & Honest Reviews",
+              "score": 109
+            },
+            {
+              "page_id": "3839",
+              "title": "Best Puppy Food UK (2026) \u2013 Growth-Stage Nutrition Guide",
+              "score": 99
+            },
+            {
+              "page_id": "3837",
+              "title": "Best Dry Dog Food UK (2026) \u2013 Evidence-Based Guide",
+              "score": 63
+            },
+            {
+              "page_id": "3838",
+              "title": "Dry vs Wet Dog Food UK \u2013 An Honest Comparison",
+              "score": 63
+            }
+          ]
+        },
+        "command_matched": "review_first",
+        "confidence": 0.92
+      }
+    },
+    {
+      "command_number": 3,
+      "command": "what blocks the hub from publishing?",
+      "status": "SUCCESS",
+      "command_matched": "page_blockers",
+      "confidence": "90%",
+      "response_length": 776,
+      "verification": {
+        "has_readiness_status": true,
+        "has_blockers": true,
+        "has_risk_level": false,
+        "has_next_action": true,
+        "has_confidence_percent": true
+      },
+      "full_response": {
+        "answer": "Publishing Blockers for 'Best Dog Food UK (2026) \u2013 Complete Guide & Honest Reviews' (ID 3836):\n\nBlockers:\n  1. All linked products are blocked_pending_evidence\n\nFailed Publishing Gates:\n  - Evidence Restrictions Confirmed: fail\n  - Publisher Approval: not_granted\n  - Rollback Snapshot: not_taken\n\nAreas Requiring Review:\n  - Review all product mentions to confirm no specific prices, ratings, or review counts are stated\n  - All linked products have blocked_pending_evidence status -- verify product claims before publishing\n  - Confirm affiliate disclosure is visible and properly worded\n  - Check that all health/nutrition claims are attributed to FEDIAF or manufacturer sources\n\nNext Action: Owner reviews content, then product evidence must be verified before publishing.",
+        "data": {
+          "page_id": "3836",
+          "title": "Best Dog Food UK (2026) \u2013 Complete Guide & Honest Reviews",
+          "blockers": [
+            "All linked products are blocked_pending_evidence"
+          ],
+          "failed_gates": [
+            "evidence_restrictions_confirmed",
+            "publisher_approval",
+            "rollback_snapshot"
+          ]
+        },
+        "command_matched": "page_blockers",
+        "confidence": 0.9
+      }
+    },
+    {
+      "command_number": 4,
+      "command": "what blocks Best Dry Dog Food UK?",
+      "status": "SUCCESS",
+      "command_matched": "page_blockers",
+      "confidence": "90%",
+      "response_length": 860,
+      "verification": {
+        "has_readiness_status": true,
+        "has_blockers": true,
+        "has_risk_level": false,
+        "has_next_action": true,
+        "has_confidence_percent": true
+      },
+      "full_response": {
+        "answer": "Publishing Blockers for 'Best Dry Dog Food UK (2026) \u2013 Evidence-Based Guide' (ID 3837):\n\nBlockers:\n  1. Safety check failures: no_invented_prices\n  2. All linked products are blocked_pending_evidence\n\nFailed Publishing Gates:\n  - Qa Check: fail\n  - Evidence Restrictions Confirmed: fail\n  - No Fake Claims: fail\n  - Publisher Approval: not_granted\n  - Rollback Snapshot: not_taken\n\nAreas Requiring Review:\n  - Review all product mentions to confirm no specific prices, ratings, or review counts are stated\n  - All linked products have blocked_pending_evidence status -- verify product claims before publishing\n  - Confirm affiliate disclosure is visible and properly worded\n  - Check that all health/nutrition claims are attributed to FEDIAF or manufacturer sources\n\nNext Action: Owner reviews content, then product evidence must be verified before publishing.",
+        "data": {
+          "page_id": "3837",
+          "title": "Best Dry Dog Food UK (2026) \u2013 Evidence-Based Guide",
+          "blockers": [
+            "Safety check failures: no_invented_prices",
+            "All linked products are blocked_pending_evidence"
+          ],
+          "failed_gates": [
+            "qa_check",
+            "evidence_restrictions_confirmed",
+            "no_fake_claims",
+            "publisher_approval",
+            "rollback_snapshot"
+          ]
+        },
+        "command_matched": "page_blockers",
+        "confidence": 0.9
+      }
+    },
+    {
+      "command_number": 5,
+      "command": "summarize hub page for owner review",
+      "status": "SUCCESS",
+      "command_matched": "page_summary",
+      "confidence": "92%",
+      "response_length": 1518,
+      "verification": {
+        "has_readiness_status": true,
+        "has_blockers": true,
+        "has_risk_level": true,
+        "has_next_action": true,
+        "has_confidence_percent": true
+      },
+      "full_response": {
+        "answer": "Owner Review Summary: Best Dog Food UK (2026) \u2013 Complete Guide & Honest Reviews (ID 3836)\nSlug: best-dog-food-uk\n\nStatus: Needs Edits | Risk: MEDIUM | Confidence: 90%\nWords: 3982 | Content Score: 9/10\nPublishing Gates: 3 passed, 3 failed, 5 pending\n\nSummary:\n  Comprehensive hub page covering the best dog food options in the UK for 2026 across dry, wet, raw, and fresh categories.\n\nStrengths:\n  + High educational content depth with strong use of headings and structure\n  + Good UK-specific relevance with references to FEDIAF, UK brands, and GBP\n  + Focus keyword is well-integrated into headings\n  + Includes 4 comparison table(s) for quick reference\n  + All trust and safety checks pass -- no fake claims detected\n\nAreas for Review:\n  ! Review all product mentions to confirm no specific prices, ratings, or review counts are stated\n  ! All linked products have blocked_pending_evidence status -- verify product claims before publishing\n  ! Confirm affiliate disclosure is visible and properly worded\n  ! Check that all health/nutrition claims are attributed to FEDIAF or manufacturer sources\n\nRecommendation:\n  Content quality is solid but product evidence is pending. The post is suitable for owner review. Before publishing: (1) verify all product evidence, (2) confirm no specific prices/ratings are claimed, (3) ensure affiliate disclosure is present, (4) approve SEO metadata.\n\nApproval Needed:\n  Owner review: pending\n  Schema approved: pending\n  Metadata approved: pending\n  Publisher approval: not_granted",
+        "data": {
+          "page_id": "3836",
+          "title": "Best Dog Food UK (2026) \u2013 Complete Guide & Honest Reviews"
+        },
+        "command_matched": "page_summary",
+        "confidence": 0.92
+      }
+    },
+    {
+      "command_number": 6,
+      "command": "list all evidence gaps",
+      "status": "SUCCESS",
+      "command_matched": "evidence_gaps",
+      "confidence": "93%",
+      "response_length": 4802,
+      "verification": {
+        "has_readiness_status": true,
+        "has_blockers": true,
+        "has_risk_level": true,
+        "has_next_action": true,
+        "has_confidence_percent": true
+      },
+      "full_response": {
+        "answer": "Product Evidence Gaps:\nTotal products: 10 | Blocked: 10 | Total unverified claims: 62\n\n  PE-001: Royal Canin Medium Adult\n    Evidence: partial | Approval: blocked_pending_evidence\n    Price: not_verified | Rating: not_verified | Stock: not_verified\n    Unverified claims: 6\n    Risk flags:\n      ! No firsthand testing conducted\n      ! Price may be outdated if published without live check\n      ! Affiliate link not yet generated or verified\n    Pages: Best Dog Food UK Hub - ID 3836 (post), Best Dry Dog Food UK - ID 3837 (post)\n\n  PE-002: James Wellbeloved Adult Dog Lamb & Rice\n    Evidence: partial | Approval: blocked_pending_evidence\n    Price: not_verified | Rating: not_verified | Stock: not_verified\n    Unverified claims: 6\n    Risk flags:\n      ! Health/hypoallergenic claims require careful attribution to avoid misleading readers\n      ! No firsthand testing conducted\n      ! Affiliate link not yet generated or verified\n    Pages: Best Dog Food UK Hub - ID 3836 (post), Best Dry Dog Food UK - ID 3837 (post)\n\n  PE-003: Lily's Kitchen Adult Chicken & Duck Dry Food\n    Evidence: partial | Approval: blocked_pending_evidence\n    Price: not_verified | Rating: not_verified | Stock: not_verified\n    Unverified claims: 6\n    Risk flags:\n      ! Premium pricing may fluctuate - do not publish price without live verification\n      ! Natural/organic claims need manufacturer attribution\n      ! No firsthand testing conducted\n    Pages: Best Dog Food UK Hub - ID 3836 (post), Best Dry Dog Food UK - ID 3837 (post)\n\n  PE-004: Forthglade Complete Meal Adult Chicken\n    Evidence: partial | Approval: blocked_pending_evidence\n    Price: not_verified | Rating: not_verified | Stock: not_verified\n    Unverified claims: 6\n    Risk flags:\n      ! Wet food formulations may change - verify against current packaging\n      ! No firsthand testing conducted\n      ! Affiliate link not yet generated or verified\n    Pages: Best Dog Food UK Hub - ID 3836 (post), Dry vs Wet Dog Food UK - ID 3838 (post)\n\n  PE-005: Butcher's Nourishing Food for Dogs\n    Evidence: partial | Approval: blocked_pending_evidence\n    Price: not_verified | Rating: not_verified | Stock: not_verified\n    Unverified claims: 6\n    Risk flags:\n      ! Budget positioning claims need actual price comparison data\n      ! No firsthand testing conducted\n      ! Product range is large - must specify exact variant\n    Pages: Dry vs Wet Dog Food UK - ID 3838 (post)\n\n  PE-006: Royal Canin Puppy Medium\n    Evidence: partial | Approval: blocked_pending_evidence\n    Price: not_verified | Rating: not_verified | Stock: not_verified\n    Unverified claims: 6\n    Risk flags:\n      ! Puppy food claims are sensitive - incorrect nutritional guidance could harm growing dogs\n      ! Vet recommendation claims must be verified or attributed\n      ! No firsthand testing conducted\n    Pages: Best Puppy Food UK - ID 3839 (post)\n\n  PE-007: Burns Puppy Original Chicken & Rice\n    Evidence: partial | Approval: blocked_pending_evidence\n    Price: not_verified | Rating: not_verified | Stock: not_verified\n    Unverified claims: 6\n    Risk flags:\n      ! Puppy food - heightened responsibility for accuracy\n      ! Health claims need manufacturer attribution\n      ! No firsthand testing conducted\n    Pages: Best Puppy Food UK - ID 3839 (post)\n\n  PE-008: Orijen Puppy\n    Evidence: pending_review | Approval: blocked_pending_evidence\n    Price: not_verified | Rating: not_verified | Stock: not_verified\n    Unverified claims: 7\n    Risk flags:\n      ! Premium pricing - price sensitivity for UK consumers\n      ! High-protein formulation controversy - some vets caution against very high protein for certain breeds\n      ! Biologically appropriate is a marketing term, not a regulated standard\n    Pages: Best Puppy Food UK - ID 3839 (post)\n\n  PE-009: Harringtons Complete Dry Dog Food Chicken & Rice\n    Evidence: partial | Approval: blocked_pending_evidence\n    Price: not_verified | Rating: not_verified | Stock: not_verified\n    Unverified claims: 6\n    Risk flags:\n      ! Budget claims need actual comparative price data\n      ! Complete and balanced claims should be verified against current UK pet food regulations\n      ! No firsthand testing conducted\n    Pages: Best Dog Food UK Hub - ID 3836 (post), Best Dry Dog Food UK - ID 3837 (post), Dry vs Wet Dog Food UK - ID 3838 (post)\n\n  PE-010: Lily's Kitchen Puppy Recipe Chicken & Salmon\n    Evidence: pending_review | Approval: blocked_pending_evidence\n    Price: not_verified | Rating: not_verified | Stock: not_verified\n    Unverified claims: 7\n    Risk flags:\n      ! Puppy food - heightened responsibility for accuracy\n      ! Premium pricing may fluctuate significantly\n      ! Natural/organic claims need manufacturer attribution\n    Pages: Best Puppy Food UK - ID 3839 (post)\n",
+        "data": {
+          "total_products": 10,
+          "blocked_count": 10,
+          "total_unverified_claims": 62
+        },
+        "command_matched": "evidence_gaps",
+        "confidence": 0.93
+      }
+    },
+    {
+      "command_number": 7,
+      "command": "show schema status",
+      "status": "SUCCESS",
+      "command_matched": "schema_status",
+      "confidence": "93%",
+      "response_length": 1188,
+      "verification": {
+        "has_readiness_status": true,
+        "has_blockers": false,
+        "has_risk_level": false,
+        "has_next_action": false,
+        "has_confidence_percent": true
+      },
+      "full_response": {
+        "answer": "Schema Proposal Status - All Dog Food Pages:\n\n  Best Dog Food UK (2026) \u2013 Complete Guide & Honest Reviews (ID 3836)\n    Status: PROPOSAL ONLY\n    Proposed types: Article, BreadcrumbList\n    Excluded types: Product, AggregateRating, Review, Offer\n    FAQ items in schema: 0\n    Gate status: pending\n    Owner approval needed: Yes\n\n  Best Dry Dog Food UK (2026) \u2013 Evidence-Based Guide (ID 3837)\n    Status: PROPOSAL ONLY\n    Proposed types: Article, BreadcrumbList, FAQPage\n    Excluded types: Product, AggregateRating, Review, Offer\n    FAQ items in schema: 5\n    Gate status: pending\n    Owner approval needed: Yes\n\n  Dry vs Wet Dog Food UK \u2013 An Honest Comparison (ID 3838)\n    Status: PROPOSAL ONLY\n    Proposed types: Article, BreadcrumbList, FAQPage\n    Excluded types: Product, AggregateRating, Review, Offer\n    FAQ items in schema: 5\n    Gate status: pending\n    Owner approval needed: Yes\n\n  Best Puppy Food UK (2026) \u2013 Growth-Stage Nutrition Guide (ID 3839)\n    Status: PROPOSAL ONLY\n    Proposed types: Article, BreadcrumbList, FAQPage\n    Excluded types: Product, AggregateRating, Review, Offer\n    FAQ items in schema: 6\n    Gate status: pending\n    Owner approval needed: Yes\n",
+        "data": {},
+        "command_matched": "schema_status",
+        "confidence": 0.93
+      }
+    },
+    {
+      "command_number": 8,
+      "command": "show metadata proposal",
+      "status": "SUCCESS",
+      "command_matched": "metadata_proposal",
+      "confidence": "93%",
+      "response_length": 3154,
+      "verification": {
+        "has_readiness_status": true,
+        "has_blockers": false,
+        "has_risk_level": false,
+        "has_next_action": true,
+        "has_confidence_percent": true
+      },
+      "full_response": {
+        "answer": "Metadata Proposals - All Dog Food Pages:\n\n  Best Dog Food UK (2026) \u2013 Complete Guide & Honest Reviews (ID 3836)\n    SEO Title: Best Dog Food UK (2026) | Honest Reviews & Buying Guide (55 chars)\n    Meta Description: Best dog food UK picks for 2026. Evidence-based reviews covering dry, wet, raw and fresh options with honest ingredient analysis, feeding charts and pricing. (157 chars)\n    Focus Keyword: best dog food uk\n    KW in title: True | KW starts desc: True\n    KW density: 1.0% (10 occurrences)\n    OG Title: Best Dog Food UK (2026) | Honest Reviews & Buying Guide\n    OG Description: Best dog food UK picks for 2026. Evidence-based reviews covering dry, wet, raw and fresh options with honest ingredient analysis, feeding charts and pricing.\n    Gate status: pending\n    Approved: No - owner approval needed\n\n  Best Dry Dog Food UK (2026) \u2013 Evidence-Based Guide (ID 3837)\n    SEO Title: Best Dry Dog Food UK (2026) | Kibble Guide & Comparison (55 chars)\n    Meta Description: Best dry dog food UK brands for 2026. Compare kibble types, FEDIAF standards, feeding amounts, storage tips and quality indicators in this evidence-based guide. (160 chars)\n    Focus Keyword: best dry dog food uk\n    KW in title: True | KW starts desc: True\n    KW density: 1.66% (6 occurrences)\n    OG Title: Best Dry Dog Food UK (2026) | Kibble Guide & Comparison\n    OG Description: Best dry dog food UK brands for 2026. Compare kibble types, FEDIAF standards, feeding amounts, storage tips and quality indicators in this evidence-based guide.\n    Gate status: pending\n    Approved: No - owner approval needed\n\n  Dry vs Wet Dog Food UK \u2013 An Honest Comparison (ID 3838)\n    SEO Title: Dry vs Wet Dog Food UK (2026): Side-by-Side Comparison (54 chars)\n    Meta Description: Dry vs wet dog food compared for UK dogs. Nutritional analysis, cost breakdown, mixed feeding ratios and situation-based recommendations in this honest guide. (158 chars)\n    Focus Keyword: dry vs wet dog food\n    KW in title: True | KW starts desc: True\n    KW density: 1.94% (6 occurrences)\n    OG Title: Dry vs Wet Dog Food UK (2026): Side-by-Side Comparison\n    OG Description: Dry vs wet dog food compared for UK dogs. Nutritional analysis, cost breakdown, mixed feeding ratios and situation-based recommendations in this honest guide.\n    Gate status: pending\n    Approved: No - owner approval needed\n\n  Best Puppy Food UK (2026) \u2013 Growth-Stage Nutrition Guide (ID 3839)\n    SEO Title: Best Puppy Food UK (2026) | Feeding & Nutrition Guide (53 chars)\n    Meta Description: Best puppy food UK guide for 2026. Age-based feeding schedules, FEDIAF nutrient requirements, portion charts, transition timelines and large breed considerations. (162 chars)\n    Focus Keyword: best puppy food uk\n    KW in title: True | KW starts desc: True\n    KW density: 1.32% (6 occurrences)\n    OG Title: Best Puppy Food UK (2026) | Feeding & Nutrition Guide\n    OG Description: Best puppy food UK guide for 2026. Age-based feeding schedules, FEDIAF nutrient requirements, portion charts, transition timelines and large breed considerations.\n    Gate status: pending\n    Approved: No - owner approval needed\n",
+        "data": {},
+        "command_matched": "metadata_proposal",
+        "confidence": 0.93
+      }
+    },
+    {
+      "command_number": 9,
+      "command": "compare puppy food page to publish requirements",
+      "status": "SUCCESS",
+      "command_matched": "compare_requirements",
+      "confidence": "92%",
+      "response_length": 879,
+      "verification": {
+        "has_readiness_status": true,
+        "has_blockers": true,
+        "has_risk_level": false,
+        "has_next_action": true,
+        "has_confidence_percent": true
+      },
+      "full_response": {
+        "answer": "Publish Requirements Checklist: Best Puppy Food UK (2026) \u2013 Growth-Stage Nutrition Guide (ID 3839)\n\n  [PENDING] Owner Review: pending\n  [PASS] Qa Check: pass\n  [PENDING] Metadata Approved: pending\n  [PENDING] Schema Approved: pending\n  [PASS] Internal Linking: pass\n  [FAIL] Evidence Restrictions Confirmed: fail\n  [PENDING] Affiliate Disclosure Confirmed: pending\n  [PASS] No Fake Claims: pass\n  [FAIL] Publisher Approval: not_granted\n  [FAIL] Rollback Snapshot: not_taken\n  [PENDING] Final Preview Check: pending\n\nResults: 3 passed, 5 pending, 3 failed\nPublish ready: NO\n\nMust resolve before publishing:\n  - Owner Review: pending\n  - Metadata Approved: pending\n  - Schema Approved: pending\n  - Evidence Restrictions Confirmed: fail\n  - Affiliate Disclosure Confirmed: pending\n  - Publisher Approval: not_granted\n  - Rollback Snapshot: not_taken\n  - Final Preview Check: pending",
+        "data": {
+          "page_id": "3839",
+          "title": "Best Puppy Food UK (2026) \u2013 Growth-Stage Nutrition Guide",
+          "passed": 3,
+          "pending": 5,
+          "failed": 3,
+          "publish_ready": false,
+          "gate_status": {
+            "owner_review": "pending",
+            "qa_check": "pass",
+            "metadata_approved": "pending",
+            "schema_approved": "pending",
+            "internal_linking": "pass",
+            "evidence_restrictions_confirmed": "fail",
+            "affiliate_disclosure_confirmed": "pending",
+            "no_fake_claims": "pass",
+            "publisher_approval": "not_granted",
+            "rollback_snapshot": "not_taken",
+            "final_preview_check": "pending"
+          }
+        },
+        "command_matched": "compare_requirements",
+        "confidence": 0.92
+      }
+    },
+    {
+      "command_number": 10,
+      "command": "is Best Puppy Food UK safe to publish?",
+      "status": "SUCCESS",
+      "command_matched": "safe_to_publish",
+      "confidence": "94%",
+      "response_length": 812,
+      "verification": {
+        "has_readiness_status": true,
+        "has_blockers": true,
+        "has_risk_level": true,
+        "has_next_action": true,
+        "has_confidence_percent": true
+      },
+      "full_response": {
+        "answer": "Safety Check: Best Puppy Food UK (2026) \u2013 Growth-Stage Nutrition Guide (ID 3839)\n\n  Verdict: NOT SAFE - CRITICAL GATES FAILED\n  Risk Level: MEDIUM\n  Confidence: 90%\n  Blockers: 1\n\n  Cannot publish. 3 critical gate(s) not passed: Evidence Restrictions Confirmed, Owner Review, Publisher Approval.\n\n  Critical issues requiring resolution:\n    - Evidence Restrictions Confirmed: fail\n    - Owner Review: pending\n    - Publisher Approval: not_granted\n\n  Current blockers:\n    - All linked products are blocked_pending_evidence\n\n  Recommendation: Content quality is solid but product evidence is pending. The post is suitable for owner review. Before publishing: (1) verify all product evidence, (2) confirm no specific prices/ratings are claimed, (3) ensure affiliate disclosure is present, (4) approve SEO metadata.",
+        "data": {
+          "page_id": "3839",
+          "title": "Best Puppy Food UK (2026) \u2013 Growth-Stage Nutrition Guide",
+          "safe_to_publish": false,
+          "safety_verdict": "NOT SAFE - CRITICAL GATES FAILED",
+          "risk_level": "medium",
+          "confidence_pct": 90,
+          "critical_failures": [
+            "evidence_restrictions_confirmed",
+            "owner_review",
+            "publisher_approval"
+          ],
+          "blockers": [
+            "All linked products are blocked_pending_evidence"
+          ]
+        },
+        "command_matched": "safe_to_publish",
+        "confidence": 0.94
+      }
+    }
+  ]
+}

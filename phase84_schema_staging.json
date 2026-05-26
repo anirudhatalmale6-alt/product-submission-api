@@ -1,0 +1,100 @@
+{
+  "deployment_status": "PROPOSAL ONLY - NOT DEPLOYED TO ANY PAGE",
+  "schemas": {
+    "3836": {
+      "page": "Best Dog Food UK Hub",
+      "proposed_types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "faq_count": 0,
+      "excluded_types": [
+        "Product",
+        "AggregateRating",
+        "Review",
+        "Offer"
+      ],
+      "validation_status": "Valid JSON-LD structure",
+      "matches_visible_content": true,
+      "notes": "Hub page - Article + BreadcrumbList only. No FAQPage as FAQ section is minimal.",
+      "warnings": [],
+      "errors": []
+    },
+    "3837": {
+      "page": "Best Dry Dog Food UK",
+      "proposed_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "faq_count": 5,
+      "excluded_types": [
+        "Product",
+        "AggregateRating",
+        "Review",
+        "Offer"
+      ],
+      "validation_status": "Valid JSON-LD structure",
+      "matches_visible_content": true,
+      "notes": "FAQPage only if FAQ section has visible Q&A pairs on page. Verified present.",
+      "warnings": [
+        "Ensure FAQ schema items match exactly the visible FAQ content"
+      ],
+      "errors": []
+    },
+    "3838": {
+      "page": "Dry vs Wet Dog Food UK",
+      "proposed_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "faq_count": 5,
+      "excluded_types": [
+        "Product",
+        "AggregateRating",
+        "Review",
+        "Offer"
+      ],
+      "validation_status": "Valid JSON-LD structure",
+      "matches_visible_content": true,
+      "notes": "Educational comparison page - safest for FAQPage schema. No product claims in FAQs.",
+      "warnings": [],
+      "errors": []
+    },
+    "3839": {
+      "page": "Best Puppy Food UK",
+      "proposed_types": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "faq_count": 6,
+      "excluded_types": [
+        "Product",
+        "AggregateRating",
+        "Review",
+        "Offer"
+      ],
+      "validation_status": "Valid JSON-LD structure",
+      "matches_visible_content": true,
+      "notes": "Puppy feeding FAQs are educational. No health treatment claims in FAQ schema.",
+      "warnings": [
+        "Ensure no health claims in FAQ answers that could be misinterpreted"
+      ],
+      "errors": []
+    }
+  },
+  "global_rules": {
+    "no_product_schema": true,
+    "no_review_schema": true,
+    "no_aggregate_rating": true,
+    "no_offer_schema": true,
+    "no_price_in_schema": true,
+    "no_stock_in_schema": true,
+    "no_availability_in_schema": true,
+    "no_unverified_product_claims": true,
+    "schema_matches_visible_content": true,
+    "proposal_only_until_approved": true
+  }
+}

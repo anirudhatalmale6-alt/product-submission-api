@@ -1,0 +1,2336 @@
+{
+  "report_title": "PetHub Online - Full Affiliate Compliance Scan",
+  "scan_date": "2026-05-26T22:31:54+00:00",
+  "site": "pethubonline.com",
+  "scanner_endpoint": "http://localhost:8107/api/affiliate/scan-compliance",
+  "summary": {
+    "total_pages_scanned": 29,
+    "published_posts_scanned": 2,
+    "published_pages_scanned": 23,
+    "draft_dog_food_posts_scanned": 4,
+    "pages_with_affiliate_links": 15,
+    "pages_without_affiliate_links": 14,
+    "pages_with_disclosure": 25,
+    "pages_missing_disclosure_that_have_affiliates": 0,
+    "total_affiliate_links_found": 142,
+    "compliant_affiliate_links": 1,
+    "non_compliant_affiliate_links": 141,
+    "links_with_sponsored_in_rel": 142,
+    "links_missing_sponsored_in_rel": 0,
+    "links_missing_nofollow_in_rel": 141,
+    "overall_compliant_pages": 15,
+    "non_compliant_pages": 14,
+    "compliance_rate_percent": 51.7
+  },
+  "key_finding": {
+    "description": "ALL affiliate links have rel='noopener noreferrer sponsored' - the sponsored attribute IS correctly present everywhere. The only compliance gap is the missing 'nofollow' attribute. 14 of 15 pages with affiliate links are affected (141 of 142 total affiliate links).",
+    "affected_pages": 14,
+    "affected_links": 141,
+    "current_rel_pattern": "noopener noreferrer sponsored",
+    "required_rel_pattern": "nofollow noopener noreferrer sponsored",
+    "missing_attribute": "nofollow",
+    "sponsored_compliance": "100% - every affiliate link has sponsored in rel"
+  },
+  "disclosure_status": {
+    "description": "All 15 pages containing affiliate links have proper disclosure divs present and correctly placed. Zero pages with affiliate content are missing disclosures.",
+    "pages_with_affiliates_and_disclosure": 15,
+    "pages_with_affiliates_missing_disclosure": 0,
+    "disclosure_placement_correct": true
+  },
+  "draft_dog_food_posts_status": {
+    "description": "All 4 draft Dog Food posts (3836-3839) are fully compliant. They have disclosure divs pre-installed and currently contain no affiliate links (links will be added before publishing).",
+    "posts": [
+      {
+        "post_id": 3836,
+        "title": "Best Dog Food UK (2026) &#8211; Complete Guide &#038; Honest Reviews",
+        "url": "https://pethubonline.com/?p=3836",
+        "content_type": "post",
+        "has_affiliate_links": false,
+        "total_affiliate_links": 0,
+        "compliant_links": 0,
+        "non_compliant_links": 0,
+        "disclosure_present": true,
+        "disclosure_div_found": true,
+        "disclosure_properly_placed": true,
+        "overall_compliant": true,
+        "non_compliant_details": null
+      },
+      {
+        "post_id": 3837,
+        "title": "Best Dry Dog Food UK (2026) &#8211; Evidence-Based Guide",
+        "url": "https://pethubonline.com/?p=3837",
+        "content_type": "post",
+        "has_affiliate_links": false,
+        "total_affiliate_links": 0,
+        "compliant_links": 0,
+        "non_compliant_links": 0,
+        "disclosure_present": true,
+        "disclosure_div_found": true,
+        "disclosure_properly_placed": true,
+        "overall_compliant": true,
+        "non_compliant_details": null
+      },
+      {
+        "post_id": 3838,
+        "title": "Dry vs Wet Dog Food UK &#8211; An Honest Comparison",
+        "url": "https://pethubonline.com/?p=3838",
+        "content_type": "post",
+        "has_affiliate_links": false,
+        "total_affiliate_links": 0,
+        "compliant_links": 0,
+        "non_compliant_links": 0,
+        "disclosure_present": true,
+        "disclosure_div_found": true,
+        "disclosure_properly_placed": true,
+        "overall_compliant": true,
+        "non_compliant_details": null
+      },
+      {
+        "post_id": 3839,
+        "title": "Best Puppy Food UK (2026) &#8211; Growth-Stage Nutrition Guide",
+        "url": "https://pethubonline.com/?p=3839",
+        "content_type": "post",
+        "has_affiliate_links": false,
+        "total_affiliate_links": 0,
+        "compliant_links": 0,
+        "non_compliant_links": 0,
+        "disclosure_present": true,
+        "disclosure_div_found": true,
+        "disclosure_properly_placed": true,
+        "overall_compliant": true,
+        "non_compliant_details": null
+      }
+    ]
+  },
+  "sample_compliant_page": {
+    "post_id": 696,
+    "title": "Essential Cat Supplies for Cat Owners &#8211; Number 1 Must-Haves",
+    "url": "https://pethubonline.com/2026/04/27/essential-cat-supplies-for-cat-owners/",
+    "compliant_links": 1,
+    "total_affiliate_links": 1,
+    "disclosure_present": true,
+    "note": "Only published page with affiliate links that passes all compliance checks. Its single affiliate link has the full required rel attribute set including nofollow."
+  },
+  "non_compliant_pages_detail": [
+    {
+      "post_id": 3115,
+      "title": "Cat Litter Trays",
+      "url": "https://pethubonline.com/cat-litter-trays/",
+      "affiliate_links": 6,
+      "non_compliant_links": 6,
+      "missing_attribute": "nofollow",
+      "has_sponsored": true,
+      "disclosure_present": true
+    },
+    {
+      "post_id": 3113,
+      "title": "Cat Scratching Posts",
+      "url": "https://pethubonline.com/cat-scratching-posts/",
+      "affiliate_links": 6,
+      "non_compliant_links": 6,
+      "missing_attribute": "nofollow",
+      "has_sponsored": true,
+      "disclosure_present": true
+    },
+    {
+      "post_id": 3111,
+      "title": "Cat Collars",
+      "url": "https://pethubonline.com/cat-collars/",
+      "affiliate_links": 8,
+      "non_compliant_links": 8,
+      "missing_attribute": "nofollow",
+      "has_sponsored": true,
+      "disclosure_present": true
+    },
+    {
+      "post_id": 3109,
+      "title": "Cat Grooming",
+      "url": "https://pethubonline.com/cat-grooming/",
+      "affiliate_links": 8,
+      "non_compliant_links": 8,
+      "missing_attribute": "nofollow",
+      "has_sponsored": true,
+      "disclosure_present": true
+    },
+    {
+      "post_id": 3107,
+      "title": "Cat Beds",
+      "url": "https://pethubonline.com/cat-beds/",
+      "affiliate_links": 18,
+      "non_compliant_links": 18,
+      "missing_attribute": "nofollow",
+      "has_sponsored": true,
+      "disclosure_present": true
+    },
+    {
+      "post_id": 1960,
+      "title": "Dog Health &#038; Care",
+      "url": "https://pethubonline.com/dog-health-care/",
+      "affiliate_links": 5,
+      "non_compliant_links": 5,
+      "missing_attribute": "nofollow",
+      "has_sponsored": true,
+      "disclosure_present": true
+    },
+    {
+      "post_id": 1956,
+      "title": "Dog Training &#038; Behaviour",
+      "url": "https://pethubonline.com/dog-training-behaviour/",
+      "affiliate_links": 5,
+      "non_compliant_links": 5,
+      "missing_attribute": "nofollow",
+      "has_sponsored": true,
+      "disclosure_present": true
+    },
+    {
+      "post_id": 1951,
+      "title": "Dog Bowls &#038; Feeding",
+      "url": "https://pethubonline.com/dog-bowls-feeding/",
+      "affiliate_links": 16,
+      "non_compliant_links": 16,
+      "missing_attribute": "nofollow",
+      "has_sponsored": true,
+      "disclosure_present": true
+    },
+    {
+      "post_id": 1149,
+      "title": "Cat Toys",
+      "url": "https://pethubonline.com/cat-toys/",
+      "affiliate_links": 5,
+      "non_compliant_links": 5,
+      "missing_attribute": "nofollow",
+      "has_sponsored": true,
+      "disclosure_present": true
+    },
+    {
+      "post_id": 1146,
+      "title": "Dog Collars &amp; Leashes",
+      "url": "https://pethubonline.com/dog-collars-leashes/",
+      "affiliate_links": 18,
+      "non_compliant_links": 18,
+      "missing_attribute": "nofollow",
+      "has_sponsored": true,
+      "disclosure_present": true
+    },
+    {
+      "post_id": 1144,
+      "title": "Dog Grooming",
+      "url": "https://pethubonline.com/dog-grooming/",
+      "affiliate_links": 6,
+      "non_compliant_links": 6,
+      "missing_attribute": "nofollow",
+      "has_sponsored": true,
+      "disclosure_present": true
+    },
+    {
+      "post_id": 1141,
+      "title": "Dog Beds",
+      "url": "https://pethubonline.com/dog-beds/",
+      "affiliate_links": 18,
+      "non_compliant_links": 18,
+      "missing_attribute": "nofollow",
+      "has_sponsored": true,
+      "disclosure_present": true
+    },
+    {
+      "post_id": 1041,
+      "title": "Dog Toys",
+      "url": "https://pethubonline.com/dog-toys/",
+      "affiliate_links": 18,
+      "non_compliant_links": 18,
+      "missing_attribute": "nofollow",
+      "has_sponsored": true,
+      "disclosure_present": true
+    },
+    {
+      "post_id": 4,
+      "title": "Pet Hub Online \u2013 Pet Supplies Online",
+      "url": "https://pethubonline.com/",
+      "affiliate_links": 4,
+      "non_compliant_links": 4,
+      "missing_attribute": "nofollow",
+      "has_sponsored": true,
+      "disclosure_present": true
+    }
+  ],
+  "remaining_failures": {
+    "count": 14,
+    "issue": "nofollow attribute missing from affiliate link rel attributes",
+    "fix_required": "Add 'nofollow' to the rel attribute on all Amazon affiliate links. Change rel='noopener noreferrer sponsored' to rel='nofollow noopener noreferrer sponsored'",
+    "total_links_to_fix": 141,
+    "pages_needing_fix": [
+      {
+        "post_id": 3115,
+        "title": "Cat Litter Trays",
+        "links_to_fix": 6
+      },
+      {
+        "post_id": 3113,
+        "title": "Cat Scratching Posts",
+        "links_to_fix": 6
+      },
+      {
+        "post_id": 3111,
+        "title": "Cat Collars",
+        "links_to_fix": 8
+      },
+      {
+        "post_id": 3109,
+        "title": "Cat Grooming",
+        "links_to_fix": 8
+      },
+      {
+        "post_id": 3107,
+        "title": "Cat Beds",
+        "links_to_fix": 18
+      },
+      {
+        "post_id": 1960,
+        "title": "Dog Health &#038; Care",
+        "links_to_fix": 5
+      },
+      {
+        "post_id": 1956,
+        "title": "Dog Training &#038; Behaviour",
+        "links_to_fix": 5
+      },
+      {
+        "post_id": 1951,
+        "title": "Dog Bowls &#038; Feeding",
+        "links_to_fix": 16
+      },
+      {
+        "post_id": 1149,
+        "title": "Cat Toys",
+        "links_to_fix": 5
+      },
+      {
+        "post_id": 1146,
+        "title": "Dog Collars &amp; Leashes",
+        "links_to_fix": 18
+      },
+      {
+        "post_id": 1144,
+        "title": "Dog Grooming",
+        "links_to_fix": 6
+      },
+      {
+        "post_id": 1141,
+        "title": "Dog Beds",
+        "links_to_fix": 18
+      },
+      {
+        "post_id": 1041,
+        "title": "Dog Toys",
+        "links_to_fix": 18
+      },
+      {
+        "post_id": 4,
+        "title": "Pet Hub Online \u2013 Pet Supplies Online",
+        "links_to_fix": 4
+      }
+    ]
+  },
+  "full_page_results": [
+    {
+      "post_id": 696,
+      "title": "Essential Cat Supplies for Cat Owners &#8211; Number 1 Must-Haves",
+      "url": "https://pethubonline.com/2026/04/27/essential-cat-supplies-for-cat-owners/",
+      "content_type": "post",
+      "has_affiliate_links": true,
+      "total_affiliate_links": 1,
+      "compliant_links": 1,
+      "non_compliant_links": 0,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": true,
+      "non_compliant_details": null
+    },
+    {
+      "post_id": 3,
+      "title": "Top Dog Toys Every Pet Owner Needs in 2026",
+      "url": "https://pethubonline.com/2026/04/23/top-dog-toys-every-pet-owner-needs-in-2026/",
+      "content_type": "post",
+      "has_affiliate_links": false,
+      "total_affiliate_links": 0,
+      "compliant_links": 0,
+      "non_compliant_links": 0,
+      "disclosure_present": false,
+      "disclosure_div_found": false,
+      "disclosure_properly_placed": false,
+      "overall_compliant": true,
+      "non_compliant_details": null
+    },
+    {
+      "post_id": 3115,
+      "title": "Cat Litter Trays",
+      "url": "https://pethubonline.com/cat-litter-trays/",
+      "content_type": "page",
+      "has_affiliate_links": true,
+      "total_affiliate_links": 6,
+      "compliant_links": 0,
+      "non_compliant_links": 6,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": false,
+      "non_compliant_details": [
+        {
+          "href": "https://www.amazon.co.uk/s?k=hooded+cat+litter+tray&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=self+cleaning+cat+litter+box&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=large+cat+litter+tray+high+sides&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=corner+cat+litter+tray&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=sifting+cat+litter+tray&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=cat+litter+tray&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        }
+      ]
+    },
+    {
+      "post_id": 3113,
+      "title": "Cat Scratching Posts",
+      "url": "https://pethubonline.com/cat-scratching-posts/",
+      "content_type": "page",
+      "has_affiliate_links": true,
+      "total_affiliate_links": 6,
+      "compliant_links": 0,
+      "non_compliant_links": 6,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": false,
+      "non_compliant_details": [
+        {
+          "href": "https://www.amazon.co.uk/s?k=tall+sisal+cat+scratching+post&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=cat+tree+scratching+post&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=wall+mounted+cat+scratcher&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=cardboard+cat+scratcher+lounge&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=corner+cat+scratching+post&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=cat+scratching+post&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        }
+      ]
+    },
+    {
+      "post_id": 3111,
+      "title": "Cat Collars",
+      "url": "https://pethubonline.com/cat-collars/",
+      "content_type": "page",
+      "has_affiliate_links": true,
+      "total_affiliate_links": 8,
+      "compliant_links": 0,
+      "non_compliant_links": 8,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": false,
+      "non_compliant_details": [
+        {
+          "href": "https://www.amazon.co.uk/s?k=breakaway+safety+cat+collar&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=personalised+cat+collar+id+tag&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=reflective+cat+collar&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=cat+harness+lead+set&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=gps+cat+collar+tracker&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=cat+collars+with+bell&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=cat+collars&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=cat+harness+lead+set&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        }
+      ]
+    },
+    {
+      "post_id": 3109,
+      "title": "Cat Grooming",
+      "url": "https://pethubonline.com/cat-grooming/",
+      "content_type": "page",
+      "has_affiliate_links": true,
+      "total_affiliate_links": 8,
+      "compliant_links": 0,
+      "non_compliant_links": 8,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": false,
+      "non_compliant_details": [
+        {
+          "href": "https://www.amazon.co.uk/s?k=self+cleaning+slicker+brush+cat&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=cat+nail+clippers+professional&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=cat+grooming+glove&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=natural+cat+shampoo+gentle&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=cat+dematting+comb&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=cat+deshedding+brush&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=cat+grooming+brush&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=cat+grooming&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        }
+      ]
+    },
+    {
+      "post_id": 3107,
+      "title": "Cat Beds",
+      "url": "https://pethubonline.com/cat-beds/",
+      "content_type": "page",
+      "has_affiliate_links": true,
+      "total_affiliate_links": 18,
+      "compliant_links": 0,
+      "non_compliant_links": 18,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": false,
+      "non_compliant_details": [
+        {
+          "href": "https://www.amazon.co.uk/s?k=calming+donut+cat+bed&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=cat+cave+bed+hooded&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=cat+window+perch+bed&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=orthopaedic+memory+foam+cat+bed&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=self+warming+cat+bed&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4f3CVd6",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4f3CVd6",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4tU4lpA",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4tU4lpA",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/49jASOl",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/49jASOl",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4a2l7LO",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4a2l7LO",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4nGYUZn",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4nGYUZn",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/43tHQN6",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/43tHQN6",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=cat+beds&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        }
+      ]
+    },
+    {
+      "post_id": 2561,
+      "title": "Cookie Policy",
+      "url": "https://pethubonline.com/cookie-policy/",
+      "content_type": "page",
+      "has_affiliate_links": false,
+      "total_affiliate_links": 0,
+      "compliant_links": 0,
+      "non_compliant_links": 0,
+      "disclosure_present": false,
+      "disclosure_div_found": false,
+      "disclosure_properly_placed": false,
+      "overall_compliant": true,
+      "non_compliant_details": null
+    },
+    {
+      "post_id": 1960,
+      "title": "Dog Health &#038; Care",
+      "url": "https://pethubonline.com/dog-health-care/",
+      "content_type": "page",
+      "has_affiliate_links": true,
+      "total_affiliate_links": 5,
+      "compliant_links": 0,
+      "non_compliant_links": 5,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": false,
+      "non_compliant_details": [
+        {
+          "href": "https://www.amazon.co.uk/s?k=dog+first+aid+kit&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=dog+dental+care+kit+toothbrush+toothpaste&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=dog+joint+supplement+glucosamine+chondroitin&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=dog+calming+aid+anxiety+relief&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=dog+flea+tick+treatment+spot+on&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        }
+      ]
+    },
+    {
+      "post_id": 1956,
+      "title": "Dog Training &#038; Behaviour",
+      "url": "https://pethubonline.com/dog-training-behaviour/",
+      "content_type": "page",
+      "has_affiliate_links": true,
+      "total_affiliate_links": 5,
+      "compliant_links": 0,
+      "non_compliant_links": 5,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": false,
+      "non_compliant_details": [
+        {
+          "href": "https://www.amazon.co.uk/s?k=dog+training+clicker+wrist+strap&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=adjustable+dog+training+lead+2m&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=dog+treat+training+pouch&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=interactive+dog+puzzle+toy+mental+stimulation&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=dog+training+whistle+adjustable+frequency&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        }
+      ]
+    },
+    {
+      "post_id": 1951,
+      "title": "Dog Bowls &#038; Feeding",
+      "url": "https://pethubonline.com/dog-bowls-feeding/",
+      "content_type": "page",
+      "has_affiliate_links": true,
+      "total_affiliate_links": 16,
+      "compliant_links": 0,
+      "non_compliant_links": 16,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": false,
+      "non_compliant_details": [
+        {
+          "href": "https://amzn.to/4unKP5i",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4unKP5i",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/49t6zEJ",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/49t6zEJ",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4cRCrVX",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4cRCrVX",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4dngQ7L",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4dngQ7L",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4cZnmAo",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4cZnmAo",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4dtB4gg",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4tXyBRh",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4cRwlVu",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4uwYC9G",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/48NeufY",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=dog+bowls&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        }
+      ]
+    },
+    {
+      "post_id": 1176,
+      "title": "Cat Supplies",
+      "url": "https://pethubonline.com/cat-supplies/",
+      "content_type": "page",
+      "has_affiliate_links": false,
+      "total_affiliate_links": 0,
+      "compliant_links": 0,
+      "non_compliant_links": 0,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": true,
+      "non_compliant_details": null
+    },
+    {
+      "post_id": 1149,
+      "title": "Cat Toys",
+      "url": "https://pethubonline.com/cat-toys/",
+      "content_type": "page",
+      "has_affiliate_links": true,
+      "total_affiliate_links": 5,
+      "compliant_links": 0,
+      "non_compliant_links": 5,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": false,
+      "non_compliant_details": [
+        {
+          "href": "https://www.amazon.co.uk/dp/B0B8X1ZKCF?tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/dp/B0BW8SMLDM?tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/dp/B083HGYH66?tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/dp/B07VGN7SJL?tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/dp/B08PBMP162?tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        }
+      ]
+    },
+    {
+      "post_id": 1146,
+      "title": "Dog Collars &amp; Leashes",
+      "url": "https://pethubonline.com/dog-collars-leashes/",
+      "content_type": "page",
+      "has_affiliate_links": true,
+      "total_affiliate_links": 18,
+      "compliant_links": 0,
+      "non_compliant_links": 18,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": false,
+      "non_compliant_details": [
+        {
+          "href": "https://amzn.to/4urbD4I",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4ullLf9",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/3OXCLJy",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4999pyC",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/48F44Pz",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/42LliHq",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/42LliHq",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4uwhXYR",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4uwhXYR",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4w9qAdj",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4w9qAdj",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4epSVpw",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4epSVpw",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4taMWbu",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4taMWbu",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/48A9viD",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/48A9viD",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=dog+collars&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        }
+      ]
+    },
+    {
+      "post_id": 1144,
+      "title": "Dog Grooming",
+      "url": "https://pethubonline.com/dog-grooming/",
+      "content_type": "page",
+      "has_affiliate_links": true,
+      "total_affiliate_links": 6,
+      "compliant_links": 0,
+      "non_compliant_links": 6,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": false,
+      "non_compliant_details": [
+        {
+          "href": "https://amzn.to/4erU5kd",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4tp0Uab",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4wgbseg",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4toBnxE",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/48MxDid",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=dog+grooming&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        }
+      ]
+    },
+    {
+      "post_id": 1141,
+      "title": "Dog Beds",
+      "url": "https://pethubonline.com/dog-beds/",
+      "content_type": "page",
+      "has_affiliate_links": true,
+      "total_affiliate_links": 18,
+      "compliant_links": 0,
+      "non_compliant_links": 18,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": false,
+      "non_compliant_details": [
+        {
+          "href": "https://amzn.to/4dn889y",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4dqevbl",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4tUQsIy",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4w8D5WB",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/49qoo7n",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/42IyVqL",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/42IyVqL",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4unsNjs",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4unsNjs",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4cNsQ2f",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4cNsQ2f",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4tmCVII",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4tmCVII",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4uonu3p",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4uonu3p",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4tVHD1a",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4tVHD1a",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=dog+beds&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        }
+      ]
+    },
+    {
+      "post_id": 1041,
+      "title": "Dog Toys",
+      "url": "https://pethubonline.com/dog-toys/",
+      "content_type": "page",
+      "has_affiliate_links": true,
+      "total_affiliate_links": 18,
+      "compliant_links": 0,
+      "non_compliant_links": 18,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": false,
+      "non_compliant_details": [
+        {
+          "href": "https://amzn.to/48A5zyn",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/3QDEoN4",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/42g1goj",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4uvjnmq",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4tVbqHg",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/3P2TQBR",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/3P2TQBR",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4w4jHtK",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4w4jHtK",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4n7Jtt6",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4n7Jtt6",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4d7lq8Z",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4d7lq8Z",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/42IALrJ",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/42IALrJ",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/428i6FF",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/428i6FF",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://www.amazon.co.uk/s?k=dog+toys&amp;tag=pethubonline-21",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        }
+      ]
+    },
+    {
+      "post_id": 300,
+      "title": "Affiliate Disclosure",
+      "url": "https://pethubonline.com/affiliate-disclosure/",
+      "content_type": "page",
+      "has_affiliate_links": false,
+      "total_affiliate_links": 0,
+      "compliant_links": 0,
+      "non_compliant_links": 0,
+      "disclosure_present": true,
+      "disclosure_div_found": false,
+      "disclosure_properly_placed": true,
+      "overall_compliant": true,
+      "non_compliant_details": null
+    },
+    {
+      "post_id": 297,
+      "title": "Terms and Conditions",
+      "url": "https://pethubonline.com/terms-and-conditions/",
+      "content_type": "page",
+      "has_affiliate_links": false,
+      "total_affiliate_links": 0,
+      "compliant_links": 0,
+      "non_compliant_links": 0,
+      "disclosure_present": true,
+      "disclosure_div_found": false,
+      "disclosure_properly_placed": true,
+      "overall_compliant": true,
+      "non_compliant_details": null
+    },
+    {
+      "post_id": 293,
+      "title": "Privacy Policy",
+      "url": "https://pethubonline.com/privacy-policy/",
+      "content_type": "page",
+      "has_affiliate_links": false,
+      "total_affiliate_links": 0,
+      "compliant_links": 0,
+      "non_compliant_links": 0,
+      "disclosure_present": false,
+      "disclosure_div_found": false,
+      "disclosure_properly_placed": false,
+      "overall_compliant": true,
+      "non_compliant_details": null
+    },
+    {
+      "post_id": 63,
+      "title": "Dog Supplies",
+      "url": "https://pethubonline.com/dog-supplies/",
+      "content_type": "page",
+      "has_affiliate_links": false,
+      "total_affiliate_links": 0,
+      "compliant_links": 0,
+      "non_compliant_links": 0,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": true,
+      "non_compliant_details": null
+    },
+    {
+      "post_id": 39,
+      "title": "About Us",
+      "url": "https://pethubonline.com/about-us/",
+      "content_type": "page",
+      "has_affiliate_links": false,
+      "total_affiliate_links": 0,
+      "compliant_links": 0,
+      "non_compliant_links": 0,
+      "disclosure_present": true,
+      "disclosure_div_found": false,
+      "disclosure_properly_placed": true,
+      "overall_compliant": true,
+      "non_compliant_details": null
+    },
+    {
+      "post_id": 38,
+      "title": "Blog",
+      "url": "https://pethubonline.com/blog/",
+      "content_type": "page",
+      "has_affiliate_links": false,
+      "total_affiliate_links": 0,
+      "compliant_links": 0,
+      "non_compliant_links": 0,
+      "disclosure_present": false,
+      "disclosure_div_found": false,
+      "disclosure_properly_placed": false,
+      "overall_compliant": true,
+      "non_compliant_details": null
+    },
+    {
+      "post_id": 37,
+      "title": "Contact Pet Hub Online",
+      "url": "https://pethubonline.com/contact-pet-hub-online/",
+      "content_type": "page",
+      "has_affiliate_links": false,
+      "total_affiliate_links": 0,
+      "compliant_links": 0,
+      "non_compliant_links": 0,
+      "disclosure_present": true,
+      "disclosure_div_found": false,
+      "disclosure_properly_placed": true,
+      "overall_compliant": true,
+      "non_compliant_details": null
+    },
+    {
+      "post_id": 4,
+      "title": "Pet Hub Online \u2013 Pet Supplies Online",
+      "url": "https://pethubonline.com/",
+      "content_type": "page",
+      "has_affiliate_links": true,
+      "total_affiliate_links": 4,
+      "compliant_links": 0,
+      "non_compliant_links": 4,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": false,
+      "non_compliant_details": [
+        {
+          "href": "https://amzn.to/4f39B6x",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4fx85JU",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4wEKsp1",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        },
+        {
+          "href": "https://amzn.to/4dSsdoC",
+          "rel_values": [
+            "noopener",
+            "noreferrer",
+            "sponsored"
+          ],
+          "missing_rel_values": [
+            "nofollow"
+          ]
+        }
+      ]
+    },
+    {
+      "post_id": 3836,
+      "title": "Best Dog Food UK (2026) &#8211; Complete Guide &#038; Honest Reviews",
+      "url": "https://pethubonline.com/?p=3836",
+      "content_type": "post",
+      "has_affiliate_links": false,
+      "total_affiliate_links": 0,
+      "compliant_links": 0,
+      "non_compliant_links": 0,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": true,
+      "non_compliant_details": null
+    },
+    {
+      "post_id": 3837,
+      "title": "Best Dry Dog Food UK (2026) &#8211; Evidence-Based Guide",
+      "url": "https://pethubonline.com/?p=3837",
+      "content_type": "post",
+      "has_affiliate_links": false,
+      "total_affiliate_links": 0,
+      "compliant_links": 0,
+      "non_compliant_links": 0,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": true,
+      "non_compliant_details": null
+    },
+    {
+      "post_id": 3838,
+      "title": "Dry vs Wet Dog Food UK &#8211; An Honest Comparison",
+      "url": "https://pethubonline.com/?p=3838",
+      "content_type": "post",
+      "has_affiliate_links": false,
+      "total_affiliate_links": 0,
+      "compliant_links": 0,
+      "non_compliant_links": 0,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": true,
+      "non_compliant_details": null
+    },
+    {
+      "post_id": 3839,
+      "title": "Best Puppy Food UK (2026) &#8211; Growth-Stage Nutrition Guide",
+      "url": "https://pethubonline.com/?p=3839",
+      "content_type": "post",
+      "has_affiliate_links": false,
+      "total_affiliate_links": 0,
+      "compliant_links": 0,
+      "non_compliant_links": 0,
+      "disclosure_present": true,
+      "disclosure_div_found": true,
+      "disclosure_properly_placed": true,
+      "overall_compliant": true,
+      "non_compliant_details": null
+    }
+  ]
+}

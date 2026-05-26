@@ -1,0 +1,202 @@
+{
+  "script": "phase84_remediation.py",
+  "executed": "2026-05-26T22:34:42.035264Z",
+  "posts_processed": [
+    3836,
+    3837,
+    3838,
+    3839
+  ],
+  "changes_by_post": {
+    "3836": [
+      {
+        "task": "Task 3: H1 Removal",
+        "original_text": "<h1>Best Dog Food UK (2026) - Complete Guide &amp; Honest Reviews</h1>",
+        "replacement_text": "(removed - Astra generates H1 from post title)",
+        "context": "H1 text: Best Dog Food UK (2026) - Complete Guide &amp; Honest Reviews",
+        "position": "position 570",
+        "timestamp": "2026-05-26T22:34:34.535459Z"
+      },
+      {
+        "task": "Task 3: H1/Astra Audit Summary",
+        "original_text": "H1: 1 (removed: 1), H2: 14, H3: 23",
+        "replacement_text": "Audit complete",
+        "context": "",
+        "position": "",
+        "timestamp": "2026-05-26T22:34:34.535689Z"
+      },
+      {
+        "task": "Task 5: Affiliate Disclosure Update",
+        "original_text": "Some links on this page are affiliate links. If you click an affiliate link and make a purchase, we may earn a small commission at no extra cost to yo",
+        "replacement_text": "We may earn a commission if you buy through some links on this page. This does not affect our editorial approach. We aim to explain how we compare pro",
+        "context": "Updated affiliate disclosure to client preferred wording",
+        "position": "position 0",
+        "timestamp": "2026-05-26T22:34:34.535844Z"
+      }
+    ],
+    "3837": [
+      {
+        "task": "Task 1: Price Disclaimer",
+        "original_text": "<p style=\"font-size:0.88em;color:#666;margin-top:4px;\"><em>Prices are approximate market ranges as of 2026 and may vary by retailer and region.</em></p>",
+        "replacement_text": "<p style=\"font-size:0.88em;color:#666;font-style:italic;margin-top:6px;margin-bottom:16px;\">These are broad estimated UK market ranges for general guidance only. They are not live product prices and m",
+        "context": "Replaced old price disclaimer after table with £ signs",
+        "position": "position 11655",
+        "timestamp": "2026-05-26T22:34:36.848370Z"
+      },
+      {
+        "task": "Task 3: H1 Removal",
+        "original_text": "<h1>Best Dry Dog Food UK (2026) - Evidence-Based Guide</h1>",
+        "replacement_text": "(removed - Astra generates H1 from post title)",
+        "context": "H1 text: Best Dry Dog Food UK (2026) - Evidence-Based Guide",
+        "position": "position 1005",
+        "timestamp": "2026-05-26T22:34:36.866588Z"
+      },
+      {
+        "task": "Task 3: H1/Astra Audit Summary",
+        "original_text": "H1: 1 (removed: 1), H2: 9, H3: 16",
+        "replacement_text": "Audit complete",
+        "context": "",
+        "position": "",
+        "timestamp": "2026-05-26T22:34:36.866922Z"
+      },
+      {
+        "task": "Task 4: Added Section",
+        "original_text": "(missing)",
+        "replacement_text": "How We Research Dry Dog Food Information",
+        "context": "New H2 section about research methodology",
+        "position": "before position 19049",
+        "timestamp": "2026-05-26T22:34:36.867043Z"
+      },
+      {
+        "task": "Task 4: Added Section",
+        "original_text": "(missing)",
+        "replacement_text": "What to Check on a UK Dog Food Label",
+        "context": "New H2 section about label reading guidance",
+        "position": "",
+        "timestamp": "2026-05-26T22:34:36.867107Z"
+      },
+      {
+        "task": "Task 4: Added Section",
+        "original_text": "(missing)",
+        "replacement_text": "When Dry Food May Not Be the Right Choice",
+        "context": "New H2 section about alternatives to dry food",
+        "position": "",
+        "timestamp": "2026-05-26T22:34:36.867185Z"
+      },
+      {
+        "task": "Task 4: Added Section",
+        "original_text": "(missing)",
+        "replacement_text": "Evidence Status of Product Recommendations",
+        "context": "New H2 section about evidence status",
+        "position": "",
+        "timestamp": "2026-05-26T22:34:36.867281Z"
+      },
+      {
+        "task": "Task 5: Affiliate Disclosure Update",
+        "original_text": "Some links on this page are affiliate links. If you click an affiliate link and make a purchase, we may earn a small commission at no extra cost to yo",
+        "replacement_text": "We may earn a commission if you buy through some links on this page. This does not affect our editorial approach. We aim to explain how we compare pro",
+        "context": "Updated affiliate disclosure to client preferred wording",
+        "position": "position 0",
+        "timestamp": "2026-05-26T22:34:36.867377Z"
+      }
+    ],
+    "3838": [
+      {
+        "task": "Task 1: Price Disclaimer",
+        "original_text": "<p style=\"font-size:0.88em;color:#666;margin-top:4px;\"><em>Prices are approximate market ranges as of 2026 and may vary by retailer and region.</em></p>",
+        "replacement_text": "<p style=\"font-size:0.88em;color:#666;font-style:italic;margin-top:6px;margin-bottom:16px;\">These are broad estimated UK market ranges for general guidance only. They are not live product prices and m",
+        "context": "Replaced old price disclaimer after table with £ signs",
+        "position": "position 8094",
+        "timestamp": "2026-05-26T22:34:39.385039Z"
+      },
+      {
+        "task": "Task 3: H1 Removal",
+        "original_text": "<h1>Dry vs Wet Dog Food UK - An Honest Comparison</h1>",
+        "replacement_text": "(removed - Astra generates H1 from post title)",
+        "context": "H1 text: Dry vs Wet Dog Food UK - An Honest Comparison",
+        "position": "position 946",
+        "timestamp": "2026-05-26T22:34:39.403402Z"
+      },
+      {
+        "task": "Task 3: H1/Astra Audit Summary",
+        "original_text": "H1: 1 (removed: 1), H2: 10, H3: 15",
+        "replacement_text": "Audit complete",
+        "context": "",
+        "position": "",
+        "timestamp": "2026-05-26T22:34:39.403599Z"
+      },
+      {
+        "task": "Task 5: Affiliate Disclosure Update",
+        "original_text": "Some links on this page are affiliate links. If you click an affiliate link and make a purchase, we may earn a small commission at no extra cost to yo",
+        "replacement_text": "We may earn a commission if you buy through some links on this page. This does not affect our editorial approach. We aim to explain how we compare pro",
+        "context": "Updated affiliate disclosure to client preferred wording",
+        "position": "position 0",
+        "timestamp": "2026-05-26T22:34:39.403667Z"
+      }
+    ],
+    "3839": [
+      {
+        "task": "Task 3: H1 Removal",
+        "original_text": "<h1>Best Puppy Food UK (2026) - Growth-Stage Nutrition Guide</h1>",
+        "replacement_text": "(removed - Astra generates H1 from post title)",
+        "context": "H1 text: Best Puppy Food UK (2026) - Growth-Stage Nutrition Guide",
+        "position": "position 1006",
+        "timestamp": "2026-05-26T22:34:41.182508Z"
+      },
+      {
+        "task": "Task 3: H1/Astra Audit Summary",
+        "original_text": "H1: 1 (removed: 1), H2: 10, H3: 18",
+        "replacement_text": "Audit complete",
+        "context": "",
+        "position": "",
+        "timestamp": "2026-05-26T22:34:41.182711Z"
+      },
+      {
+        "task": "Task 4: Health Disclaimer Added",
+        "original_text": "(missing)",
+        "replacement_text": "<div style=\"background:#fff8e1;border-left:4px solid #ff9800;padding:12px 16px;margin:20px 0;font-size:0.92em;color:#7b5800;line-height:1.5;\"><strong>",
+        "context": "Added health disclaimer about vet consultation",
+        "position": "before position 21859",
+        "timestamp": "2026-05-26T22:34:41.184415Z"
+      },
+      {
+        "task": "Task 5: Affiliate Disclosure Update",
+        "original_text": "Some links on this page are affiliate links. If you click an affiliate link and make a purchase, we may earn a small commission at no extra cost to yo",
+        "replacement_text": "We may earn a commission if you buy through some links on this page. This does not affect our editorial approach. We aim to explain how we compare pro",
+        "context": "Updated affiliate disclosure to client preferred wording",
+        "position": "position 0",
+        "timestamp": "2026-05-26T22:34:41.184457Z"
+      }
+    ]
+  },
+  "summary": {
+    "3836": {
+      "status": "UPDATED",
+      "final_status": "draft",
+      "original_length": 39617,
+      "new_length": 39543,
+      "changes": 3
+    },
+    "3837": {
+      "status": "UPDATED",
+      "final_status": "draft",
+      "original_length": 19384,
+      "new_length": 25583,
+      "changes": 8
+    },
+    "3838": {
+      "status": "UPDATED",
+      "final_status": "draft",
+      "original_length": 19100,
+      "new_length": 19286,
+      "changes": 4
+    },
+    "3839": {
+      "status": "UPDATED",
+      "final_status": "draft",
+      "original_length": 22418,
+      "new_length": 22758,
+      "changes": 4
+    }
+  }
+}

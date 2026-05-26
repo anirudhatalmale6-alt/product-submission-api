@@ -1,0 +1,105 @@
+{
+  "phase": "8.4",
+  "title": "Dog Food Owner Review Remediation + Publishing Readiness Preparation",
+  "status": "OWNER REVIEW READY - NOT PUBLISH APPROVED",
+  "generated": "2026-05-26",
+  "pages": [
+    {
+      "page": "Best Dog Food UK Hub",
+      "post_id": 3836,
+      "slug": "best-dog-food-uk",
+      "ready_for_owner_review": "Yes",
+      "publishing_readiness": "BLOCKED - owner review + evidence required",
+      "blockers": [
+        "Owner review not complete",
+        "Product evidence blocked_pending_evidence (5 products)",
+        "Schema not deployed (proposal-only)",
+        "Publisher approval not granted"
+      ],
+      "recommended_owner_action": "Review educational content quality, confirm hub navigation, verify no product claims. Product recommendation sections are blocked until evidence exists.",
+      "metadata_status": "Deployed to draft - Title 55ch, Desc 157ch, no unsupported claims",
+      "schema_status": "PROPOSAL ONLY - Article + BreadcrumbList",
+      "product_evidence_status": "5 products blocked_pending_evidence",
+      "internal_link_status": "PASS - links to 6 supporting pages, no issues",
+      "risk_level": "MEDIUM",
+      "next_step": "Owner reviews content, provides editorial feedback"
+    },
+    {
+      "page": "Best Dry Dog Food UK",
+      "post_id": 3837,
+      "slug": "best-dry-dog-food-uk",
+      "ready_for_owner_review": "Yes",
+      "publishing_readiness": "BLOCKED - owner review + evidence required",
+      "blockers": [
+        "Owner review not complete",
+        "Product evidence blocked_pending_evidence (4 products)",
+        "Price tier table flagged (disclaimer added)",
+        "Schema not deployed (proposal-only)",
+        "Publisher approval not granted"
+      ],
+      "recommended_owner_action": "Review new sections (How We Research, UK Label Guide, When Dry May Not Suit, Evidence Status). Verify price tier disclaimer is sufficient. Check educational content depth.",
+      "metadata_status": "Deployed to draft - Title 55ch, Desc 158ch, no unsupported claims",
+      "schema_status": "PROPOSAL ONLY - Article + BreadcrumbList + FAQPage (5 FAQs)",
+      "product_evidence_status": "4 products blocked_pending_evidence",
+      "internal_link_status": "PASS - links to hub + 2 supporting pages, no issues",
+      "risk_level": "MEDIUM (was HIGH, now reduced after disclaimer + new sections)",
+      "next_step": "Owner reviews content including new educational sections"
+    },
+    {
+      "page": "Dry vs Wet Dog Food UK",
+      "post_id": 3838,
+      "slug": "dry-vs-wet-dog-food-uk",
+      "ready_for_owner_review": "Yes",
+      "publishing_readiness": "CLOSEST TO PUBLISH-READY (educational comparison, minimal product claims)",
+      "blockers": [
+        "Owner review not complete",
+        "Product evidence blocked_pending_evidence (3 products)",
+        "Price comparison table flagged (disclaimer added)",
+        "Schema not deployed (proposal-only)",
+        "Publisher approval not granted"
+      ],
+      "recommended_owner_action": "Review balanced dry vs wet comparison. This is the most educational page with least product dependency. Consider if educational sections could publish independently of product recommendations.",
+      "metadata_status": "Deployed to draft - Title 54ch, Desc 155ch, no unsupported claims",
+      "schema_status": "PROPOSAL ONLY - Article + BreadcrumbList + FAQPage (5 FAQs)",
+      "product_evidence_status": "3 products blocked_pending_evidence",
+      "internal_link_status": "PASS - links to hub + 2 supporting pages, no issues",
+      "risk_level": "LOW (educational comparison, minimal product claims)",
+      "next_step": "Owner reviews content, potentially first candidate for publish consideration"
+    },
+    {
+      "page": "Best Puppy Food UK",
+      "post_id": 3839,
+      "slug": "best-puppy-food-uk",
+      "ready_for_owner_review": "Yes",
+      "publishing_readiness": "BLOCKED - owner review + evidence + health sensitivity",
+      "blockers": [
+        "Owner review not complete",
+        "Product evidence blocked_pending_evidence (4 products)",
+        "Higher trust sensitivity (puppy health topic)",
+        "Schema not deployed (proposal-only)",
+        "Publisher approval not granted"
+      ],
+      "recommended_owner_action": "Review carefully for health wording sensitivity. Puppy nutrition is more sensitive. Health disclaimer added. Verify no absolute health claims. Check FEDIAF references are clear but not overstated.",
+      "metadata_status": "Deployed to draft - Title 53ch, Desc 156ch, no unsupported claims",
+      "schema_status": "PROPOSAL ONLY - Article + BreadcrumbList + FAQPage (6 FAQs)",
+      "product_evidence_status": "4 products blocked_pending_evidence",
+      "internal_link_status": "PASS - links to hub + 2 supporting pages, no issues",
+      "risk_level": "MEDIUM-HIGH (puppy health sensitivity)",
+      "next_step": "Owner reviews with extra attention to health/safety wording"
+    }
+  ],
+  "global_status": {
+    "all_drafts": true,
+    "all_noindex": true,
+    "schema_deployed": false,
+    "affiliate_links_deployed": false,
+    "product_evidence_verified": false,
+    "banned_phrases_found": 0,
+    "manual_h1_tags": 0,
+    "double_slash_urls": 0,
+    "trashed_page_links": 0,
+    "insurance_links": 0,
+    "overall_ready_for_review": true,
+    "overall_ready_to_publish": false
+  }
+}

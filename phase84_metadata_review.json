@@ -1,0 +1,82 @@
+{
+  "3836": {
+    "page": "Best Dog Food UK Hub",
+    "post_id": 3836,
+    "slug": "best-dog-food-uk",
+    "seo_title": "Best Dog Food UK (2026) | Honest Reviews & Buying Guide",
+    "title_chars": 55,
+    "meta_description": "Best dog food UK picks for 2026 compared honestly. Dry, wet, raw and fresh options with feeding charts, ingredient analysis and pricing for every life stage.",
+    "desc_chars": 157,
+    "primary_keyword": "best dog food uk",
+    "secondary_keywords": [
+      "dog food uk",
+      "uk dog food guide",
+      "dog food comparison uk"
+    ],
+    "search_intent": "Informational + navigational hub",
+    "page_type": "Hub/pillar page",
+    "uniqueness_check": "PASS - unique title and description across all 4 posts",
+    "unsupported_claims_check": "PASS - no product rankings, prices, ratings, or testing claims in metadata",
+    "notes": "Title uses 'Honest Reviews' which is safe as editorial framing, not product ranking"
+  },
+  "3837": {
+    "page": "Best Dry Dog Food UK",
+    "post_id": 3837,
+    "slug": "best-dry-dog-food-uk",
+    "seo_title": "Best Dry Dog Food UK (2026) | Kibble Guide & Comparison",
+    "title_chars": 55,
+    "meta_description": "Best dry dog food UK brands for 2026 reviewed. Compare kibble types, FEDIAF standards, daily feeding amounts, cost per day and quality indicators for UK dogs.",
+    "desc_chars": 158,
+    "primary_keyword": "best dry dog food uk",
+    "secondary_keywords": [
+      "dry dog food uk",
+      "kibble guide uk",
+      "best kibble uk"
+    ],
+    "search_intent": "Informational + comparison",
+    "page_type": "Supporting/comparison page",
+    "uniqueness_check": "PASS - distinct from hub and other supporting pages",
+    "unsupported_claims_check": "PASS - description mentions comparison and standards, not product rankings",
+    "notes": "Safe - focuses on education and comparison, not product recommendations"
+  },
+  "3838": {
+    "page": "Dry vs Wet Dog Food UK",
+    "post_id": 3838,
+    "slug": "dry-vs-wet-dog-food-uk",
+    "seo_title": "Dry vs Wet Dog Food UK (2026): Side-by-Side Comparison",
+    "title_chars": 54,
+    "meta_description": "Dry vs wet dog food compared for UK dogs in 2026. Nutrition on a dry matter basis, daily cost breakdown, mixed feeding ratios and best choice for your dog.",
+    "desc_chars": 155,
+    "primary_keyword": "dry vs wet dog food",
+    "secondary_keywords": [
+      "dry vs wet dog food uk",
+      "kibble vs wet food",
+      "mixed feeding dog"
+    ],
+    "search_intent": "Informational + comparison",
+    "page_type": "Comparison/educational page",
+    "uniqueness_check": "PASS - unique comparison angle",
+    "unsupported_claims_check": "PASS - focuses on nutritional comparison, not product claims",
+    "notes": "Closest to publish-ready per client - educational comparison with no product claims needed"
+  },
+  "3839": {
+    "page": "Best Puppy Food UK",
+    "post_id": 3839,
+    "slug": "best-puppy-food-uk",
+    "seo_title": "Best Puppy Food UK (2026) | Feeding & Nutrition Guide",
+    "title_chars": 53,
+    "meta_description": "Best puppy food UK guide for 2026. Age-based feeding schedules, FEDIAF nutrient requirements, portion charts by breed size and when to switch to adult food.",
+    "desc_chars": 156,
+    "primary_keyword": "best puppy food uk",
+    "secondary_keywords": [
+      "puppy food uk",
+      "puppy feeding guide",
+      "when to switch puppy food"
+    ],
+    "search_intent": "Informational + guide",
+    "page_type": "Supporting/guide page",
+    "uniqueness_check": "PASS - distinct puppy focus",
+    "unsupported_claims_check": "PASS - focuses on feeding schedules and standards, not product claims. Higher trust sensitivity due to puppy health topic.",
+    "notes": "Higher sensitivity - puppy nutrition is health-adjacent. No medical claims in metadata."
+  }
+}
