@@ -1,0 +1,410 @@
+{
+  "export_timestamp": "2026-05-26T20:21:57Z",
+  "register_metadata": {
+    "version": "1.0.0",
+    "created_at": "2026-05-26T00:00:00Z",
+    "updated_at": "2026-05-26T20:30:00Z",
+    "mission_id": "mis_dog_food_authority",
+    "description": "Product Evidence Register for the Dog Food Authority Expansion mission. Tracks evidence status for every product referenced or recommended on pethubonline.com dog food pages.",
+    "integrity_rules": {
+      "no_fake_testing_claims": true,
+      "no_fake_vet_endorsements": true,
+      "no_fake_customer_feedback": true,
+      "no_invented_prices_or_ratings": true,
+      "unverified_claims_must_be_marked": true,
+      "products_without_price_check_must_say_not_verified": true
+    },
+    "draft_page_mapping": {
+      "3836": "Best Dog Food UK Hub Page (post)",
+      "3837": "Best Dry Dog Food UK (post)",
+      "3838": "Dry vs Wet Dog Food UK Comparison (post)",
+      "3839": "Best Puppy Food UK (post)"
+    },
+    "note": "Pages converted to Posts on 2026-05-26. Old page IDs 3715/3717/3719/3720 are trashed."
+  },
+  "entries": [
+    {
+      "entry_id": "PE-001",
+      "product_name": "Royal Canin Medium Adult",
+      "brand": "Royal Canin",
+      "category": "dry_dog_food",
+      "asin_or_url": "pending_verification",
+      "linked_pages": [
+        "Best Dog Food UK Hub - ID 3836 (post)",
+        "Best Dry Dog Food UK - ID 3837 (post)"
+      ],
+      "evidence_status": "partial",
+      "verified_claims": [
+        "Product exists on Amazon UK marketplace",
+        "Royal Canin is a legitimate, established pet food brand operating in the UK",
+        "Product is widely available in UK pet retail (Pets at Home, independent retailers)",
+        "Brand is owned by Mars Petcare (publicly verifiable corporate ownership)"
+      ],
+      "unverified_claims": [
+        "Specific nutritional analysis not independently verified by PetHub",
+        "Customer satisfaction data not collected firsthand",
+        "Current Amazon UK price not live-checked",
+        "Star rating and review count not verified against live Amazon listing",
+        "No independent palatability testing conducted by PetHub",
+        "Ingredient sourcing claims not independently verified"
+      ],
+      "image_source": "not_sourced",
+      "price_verification": "not_verified",
+      "rating_verification": "not_verified",
+      "stock_verification": "not_verified",
+      "last_checked": "2026-05-26",
+      "approval_status": "blocked_pending_evidence",
+      "notes": "Royal Canin is a well-known brand, but PetHub has not independently verified any specific product claims. Before recommending: (1) Verify current Amazon UK listing and price, (2) Confirm ASIN, (3) Cross-check nutritional info against manufacturer's published data, (4) Verify availability status. Do NOT publish any specific price, rating, or review count until live-checked.",
+      "risk_flags": [
+        "No firsthand testing conducted",
+        "Price may be outdated if published without live check",
+        "Affiliate link not yet generated or verified"
+      ]
+    },
+    {
+      "entry_id": "PE-002",
+      "product_name": "James Wellbeloved Adult Dog Lamb & Rice",
+      "brand": "James Wellbeloved",
+      "category": "dry_dog_food",
+      "asin_or_url": "pending_verification",
+      "linked_pages": [
+        "Best Dog Food UK Hub - ID 3836 (post)",
+        "Best Dry Dog Food UK - ID 3837 (post)"
+      ],
+      "evidence_status": "partial",
+      "verified_claims": [
+        "Product exists on Amazon UK marketplace",
+        "James Wellbeloved is a legitimate UK pet food brand",
+        "Brand markets itself as hypoallergenic (this is the brand's own claim, not independently verified by PetHub)",
+        "Available in major UK pet retailers"
+      ],
+      "unverified_claims": [
+        "Hypoallergenic claims not independently tested or verified by PetHub",
+        "Specific nutritional breakdown not cross-checked against independent lab analysis",
+        "Customer satisfaction data not collected firsthand",
+        "Current Amazon UK price not live-checked",
+        "Star rating and review count not verified against live listing",
+        "Suitability for specific breeds or conditions not veterinarily confirmed by PetHub"
+      ],
+      "image_source": "not_sourced",
+      "price_verification": "not_verified",
+      "rating_verification": "not_verified",
+      "stock_verification": "not_verified",
+      "last_checked": "2026-05-26",
+      "approval_status": "blocked_pending_evidence",
+      "notes": "James Wellbeloved is well-regarded in the UK market, but PetHub has not independently tested or verified their hypoallergenic claims. Any mention of hypoallergenic properties must be attributed to the manufacturer's own marketing. Before recommending: verify ASIN, live price, current availability, and ensure any health claims are properly attributed.",
+      "risk_flags": [
+        "Health/hypoallergenic claims require careful attribution to avoid misleading readers",
+        "No firsthand testing conducted",
+        "Affiliate link not yet generated or verified"
+      ]
+    },
+    {
+      "entry_id": "PE-003",
+      "product_name": "Lily's Kitchen Adult Chicken & Duck Dry Food",
+      "brand": "Lily's Kitchen",
+      "category": "dry_dog_food",
+      "asin_or_url": "pending_verification",
+      "linked_pages": [
+        "Best Dog Food UK Hub - ID 3836 (post)",
+        "Best Dry Dog Food UK - ID 3837 (post)"
+      ],
+      "evidence_status": "partial",
+      "verified_claims": [
+        "Product exists on Amazon UK marketplace",
+        "Lily's Kitchen is a legitimate UK-founded pet food brand",
+        "Brand is now owned by Nestle Purina (publicly verifiable)",
+        "Available in major UK supermarkets and pet retailers"
+      ],
+      "unverified_claims": [
+        "Specific nutritional analysis not independently verified by PetHub",
+        "Natural/organic ingredient claims not independently verified (manufacturer's own claim)",
+        "Customer satisfaction data not collected firsthand",
+        "Current Amazon UK price not live-checked",
+        "Star rating and review count not verified against live listing",
+        "Grain-free formulation claims not independently tested"
+      ],
+      "image_source": "not_sourced",
+      "price_verification": "not_verified",
+      "rating_verification": "not_verified",
+      "stock_verification": "not_verified",
+      "last_checked": "2026-05-26",
+      "approval_status": "blocked_pending_evidence",
+      "notes": "Lily's Kitchen is a popular premium UK brand. However, PetHub has not independently verified any specific product claims. Natural/organic claims must be attributed to the manufacturer. Before recommending: verify ASIN, live price, check that the specific variant (Chicken & Duck) is still available, and confirm nutritional info matches current packaging.",
+      "risk_flags": [
+        "Premium pricing may fluctuate - do not publish price without live verification",
+        "Natural/organic claims need manufacturer attribution",
+        "No firsthand testing conducted"
+      ]
+    },
+    {
+      "entry_id": "PE-004",
+      "product_name": "Forthglade Complete Meal Adult Chicken",
+      "brand": "Forthglade",
+      "category": "wet_dog_food",
+      "asin_or_url": "pending_verification",
+      "linked_pages": [
+        "Best Dog Food UK Hub - ID 3836 (post)",
+        "Dry vs Wet Dog Food UK - ID 3838 (post)"
+      ],
+      "evidence_status": "partial",
+      "verified_claims": [
+        "Product exists on Amazon UK marketplace",
+        "Forthglade is a legitimate UK pet food brand based in Devon",
+        "Brand is known for wet/tray format dog food (publicly verifiable)",
+        "Available in UK supermarkets and pet retailers"
+      ],
+      "unverified_claims": [
+        "Specific nutritional analysis not independently verified by PetHub",
+        "Customer satisfaction data not collected firsthand",
+        "Current Amazon UK price not live-checked",
+        "Star rating and review count not verified against live listing",
+        "Natural ingredient claims not independently verified",
+        "Grain-free status not independently confirmed against current recipe"
+      ],
+      "image_source": "not_sourced",
+      "price_verification": "not_verified",
+      "rating_verification": "not_verified",
+      "stock_verification": "not_verified",
+      "last_checked": "2026-05-26",
+      "approval_status": "blocked_pending_evidence",
+      "notes": "Forthglade is a well-known UK wet food brand. Suitable for the Dry vs Wet comparison page as a wet food representative. Before recommending: verify ASIN, live price, confirm specific variant availability, and ensure nutritional data matches current formulation. Recipes can change without notice.",
+      "risk_flags": [
+        "Wet food formulations may change - verify against current packaging",
+        "No firsthand testing conducted",
+        "Affiliate link not yet generated or verified"
+      ]
+    },
+    {
+      "entry_id": "PE-005",
+      "product_name": "Butcher's Nourishing Food for Dogs",
+      "brand": "Butcher's",
+      "category": "wet_dog_food",
+      "asin_or_url": "pending_verification",
+      "linked_pages": [
+        "Dry vs Wet Dog Food UK - ID 3838 (post)"
+      ],
+      "evidence_status": "partial",
+      "verified_claims": [
+        "Product exists on Amazon UK marketplace",
+        "Butcher's is a legitimate UK pet food brand",
+        "Brand is widely available in UK supermarkets (Tesco, Asda, Sainsbury's)",
+        "Positioned as a budget-friendly wet dog food option in the UK market"
+      ],
+      "unverified_claims": [
+        "Specific nutritional analysis not independently verified by PetHub",
+        "Customer satisfaction data not collected firsthand",
+        "Current Amazon UK price not live-checked",
+        "Star rating and review count not verified against live listing",
+        "Value-for-money claims not substantiated with comparative price data",
+        "Ingredient quality claims not independently verified"
+      ],
+      "image_source": "not_sourced",
+      "price_verification": "not_verified",
+      "rating_verification": "not_verified",
+      "stock_verification": "not_verified",
+      "last_checked": "2026-05-26",
+      "approval_status": "blocked_pending_evidence",
+      "notes": "Butcher's is a widely recognised budget wet food brand in the UK. Useful for the Dry vs Wet comparison as an accessible wet food option. Before recommending: verify ASIN, live price, confirm exact product variant, and do not claim 'best value' without actual comparative price data.",
+      "risk_flags": [
+        "Budget positioning claims need actual price comparison data",
+        "No firsthand testing conducted",
+        "Product range is large - must specify exact variant"
+      ]
+    },
+    {
+      "entry_id": "PE-006",
+      "product_name": "Royal Canin Puppy Medium",
+      "brand": "Royal Canin",
+      "category": "puppy_food",
+      "asin_or_url": "pending_verification",
+      "linked_pages": [
+        "Best Puppy Food UK - ID 3839 (post)"
+      ],
+      "evidence_status": "partial",
+      "verified_claims": [
+        "Product exists on Amazon UK marketplace",
+        "Royal Canin is a legitimate, established pet food brand operating in the UK",
+        "Brand offers size-specific puppy formulations (publicly verifiable on their website)",
+        "Available in UK vet practices and pet retailers"
+      ],
+      "unverified_claims": [
+        "Specific nutritional analysis for puppy growth stages not independently verified by PetHub",
+        "Customer satisfaction data not collected firsthand",
+        "Current Amazon UK price not live-checked",
+        "Star rating and review count not verified against live listing",
+        "Growth support claims not independently tested",
+        "Veterinary recommendation claims not confirmed with independent UK vets"
+      ],
+      "image_source": "not_sourced",
+      "price_verification": "not_verified",
+      "rating_verification": "not_verified",
+      "stock_verification": "not_verified",
+      "last_checked": "2026-05-26",
+      "approval_status": "blocked_pending_evidence",
+      "notes": "Royal Canin Puppy is a commonly recommended puppy food. However, any claims about veterinary recommendation must be verified - the fact that it is sold in vet practices does not constitute an independent endorsement. Before recommending: verify ASIN, live price, confirm puppy-specific nutritional adequacy claims against FEDIAF standards, and ensure growth claims are properly attributed.",
+      "risk_flags": [
+        "Puppy food claims are sensitive - incorrect nutritional guidance could harm growing dogs",
+        "Vet recommendation claims must be verified or attributed",
+        "No firsthand testing conducted"
+      ]
+    },
+    {
+      "entry_id": "PE-007",
+      "product_name": "Burns Puppy Original Chicken & Rice",
+      "brand": "Burns Pet Nutrition",
+      "category": "puppy_food",
+      "asin_or_url": "pending_verification",
+      "linked_pages": [
+        "Best Puppy Food UK - ID 3839 (post)"
+      ],
+      "evidence_status": "partial",
+      "verified_claims": [
+        "Product exists on Amazon UK marketplace",
+        "Burns Pet Nutrition is a legitimate UK pet food brand (Welsh-founded)",
+        "Brand has been operating in the UK pet food market for over 30 years (publicly verifiable)"
+      ],
+      "unverified_claims": [
+        "Specific nutritional analysis for puppy formulation not independently verified by PetHub",
+        "Customer satisfaction data not collected firsthand",
+        "Current Amazon UK price not live-checked",
+        "Star rating and review count not verified against live listing",
+        "Hypoallergenic/sensitive digestion claims not independently verified",
+        "Suitability for specific puppy breeds or sizes not confirmed"
+      ],
+      "image_source": "not_sourced",
+      "price_verification": "not_verified",
+      "rating_verification": "not_verified",
+      "stock_verification": "not_verified",
+      "last_checked": "2026-05-26",
+      "approval_status": "blocked_pending_evidence",
+      "notes": "Burns is a well-established Welsh brand with a loyal following. However, PetHub has not independently tested this product. Sensitive stomach/hypoallergenic claims must be attributed to the manufacturer. Before recommending: verify ASIN, live price, confirm current recipe hasn't changed, and attribute all health claims properly.",
+      "risk_flags": [
+        "Puppy food - heightened responsibility for accuracy",
+        "Health claims need manufacturer attribution",
+        "No firsthand testing conducted"
+      ]
+    },
+    {
+      "entry_id": "PE-008",
+      "product_name": "Orijen Puppy",
+      "brand": "Orijen",
+      "category": "puppy_food",
+      "asin_or_url": "pending_verification",
+      "linked_pages": [
+        "Best Puppy Food UK - ID 3839 (post)"
+      ],
+      "evidence_status": "pending_review",
+      "verified_claims": [
+        "Product exists on Amazon UK marketplace",
+        "Orijen is manufactured by Champion Petfoods (Canadian company, publicly verifiable)",
+        "Brand positions itself as a premium, high-protein pet food (manufacturer's own positioning)"
+      ],
+      "unverified_claims": [
+        "Specific nutritional analysis not independently verified by PetHub",
+        "Biologically appropriate claims not independently tested or verified",
+        "Customer satisfaction data not collected firsthand",
+        "Current Amazon UK price not live-checked",
+        "Star rating and review count not verified against live listing",
+        "Fresh/raw ingredient percentage claims not independently verified",
+        "Suitability for all puppy sizes not confirmed (high protein may not suit all breeds)"
+      ],
+      "image_source": "not_sourced",
+      "price_verification": "not_verified",
+      "rating_verification": "not_verified",
+      "stock_verification": "not_verified",
+      "last_checked": "2026-05-26",
+      "approval_status": "blocked_pending_evidence",
+      "notes": "Orijen is a premium brand with a high price point. Biologically appropriate marketing claims must be attributed to the manufacturer and not presented as independent findings. High-protein formulations may not be suitable for all breeds - this must be noted. Before recommending: verify ASIN, live UK price, confirm UK availability (import product), and add appropriate disclaimers about breed suitability.",
+      "risk_flags": [
+        "Premium pricing - price sensitivity for UK consumers",
+        "High-protein formulation controversy - some vets caution against very high protein for certain breeds",
+        "Biologically appropriate is a marketing term, not a regulated standard",
+        "No firsthand testing conducted"
+      ]
+    },
+    {
+      "entry_id": "PE-009",
+      "product_name": "Harringtons Complete Dry Dog Food Chicken & Rice",
+      "brand": "Harringtons",
+      "category": "dry_dog_food",
+      "asin_or_url": "pending_verification",
+      "linked_pages": [
+        "Best Dog Food UK Hub - ID 3836 (post)",
+        "Best Dry Dog Food UK - ID 3837 (post)",
+        "Dry vs Wet Dog Food UK - ID 3838 (post)"
+      ],
+      "evidence_status": "partial",
+      "verified_claims": [
+        "Product exists on Amazon UK marketplace",
+        "Harringtons is a legitimate UK pet food brand",
+        "Brand is widely available in UK supermarkets at budget price points (publicly verifiable)",
+        "Positioned as an affordable complete dog food in the UK market"
+      ],
+      "unverified_claims": [
+        "Specific nutritional analysis not independently verified by PetHub",
+        "Customer satisfaction data not collected firsthand",
+        "Current Amazon UK price not live-checked",
+        "Star rating and review count not verified against live listing",
+        "Value-for-money positioning not substantiated with comparative data",
+        "Complete and balanced claims not independently verified against FEDIAF standards"
+      ],
+      "image_source": "not_sourced",
+      "price_verification": "not_verified",
+      "rating_verification": "not_verified",
+      "stock_verification": "not_verified",
+      "last_checked": "2026-05-26",
+      "approval_status": "blocked_pending_evidence",
+      "notes": "Harringtons is one of the UK's most popular budget dog food brands. Useful for both the dry food page and the dry vs wet comparison as an affordable dry option. Before recommending: verify ASIN, live price, confirm nutritional adequacy claims, and do not claim 'best budget' without actual comparative price analysis.",
+      "risk_flags": [
+        "Budget claims need actual comparative price data",
+        "Complete and balanced claims should be verified against current UK pet food regulations",
+        "No firsthand testing conducted"
+      ]
+    },
+    {
+      "entry_id": "PE-010",
+      "product_name": "Lily's Kitchen Puppy Recipe Chicken & Salmon",
+      "brand": "Lily's Kitchen",
+      "category": "puppy_food",
+      "asin_or_url": "pending_verification",
+      "linked_pages": [
+        "Best Puppy Food UK - ID 3839 (post)"
+      ],
+      "evidence_status": "pending_review",
+      "verified_claims": [
+        "Product exists on Amazon UK marketplace",
+        "Lily's Kitchen is a legitimate UK-founded pet food brand",
+        "Brand offers puppy-specific formulations (publicly verifiable on their website)"
+      ],
+      "unverified_claims": [
+        "Specific puppy nutritional analysis not independently verified by PetHub",
+        "Natural/organic ingredient claims not independently verified (manufacturer's own claim)",
+        "Customer satisfaction data not collected firsthand",
+        "Current Amazon UK price not live-checked",
+        "Star rating and review count not verified against live listing",
+        "Growth stage suitability claims not independently confirmed",
+        "DHA/omega content for brain development not independently measured"
+      ],
+      "image_source": "not_sourced",
+      "price_verification": "not_verified",
+      "rating_verification": "not_verified",
+      "stock_verification": "not_verified",
+      "last_checked": "2026-05-26",
+      "approval_status": "blocked_pending_evidence",
+      "notes": "Lily's Kitchen Puppy is a premium puppy food option. Natural/organic claims must be attributed to manufacturer. Before recommending: verify ASIN, live price, confirm current recipe matches published nutritional data, and ensure puppy growth claims are properly attributed and accurate.",
+      "risk_flags": [
+        "Puppy food - heightened responsibility for accuracy",
+        "Premium pricing may fluctuate significantly",
+        "Natural/organic claims need manufacturer attribution",
+        "No firsthand testing conducted"
+      ]
+    }
+  ],
+  "summary": {
+    "total_entries": 10,
+    "all_blocked_pending_evidence": true,
+    "no_fake_claims": true,
+    "no_invented_data": true
+  }
+}

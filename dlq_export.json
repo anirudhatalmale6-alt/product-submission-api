@@ -1,0 +1,73 @@
+{
+  "export_timestamp": "2026-05-26T20:21:57Z",
+  "stats": {
+    "total_added": 4,
+    "total_retried": 2,
+    "total_escalated": 2,
+    "total_dismissed": 2
+  },
+  "total_entries": 4,
+  "entries": {
+    "dlq_7e91ddbf2a78": {
+      "entry_id": "dlq_7e91ddbf2a78",
+      "task_id": "test_001",
+      "agent_name": "seo_agent",
+      "error_message": "Connection timeout to GSC API",
+      "original_payload": {
+        "url": "https://hubxonline.com"
+      },
+      "retry_count": 1,
+      "status": "escalated",
+      "created_at": "2026-05-26T15:25:43.538998+00:00",
+      "updated_at": "2026-05-26T15:25:53.933089+00:00",
+      "escalation_ticket_id": "ESC-FA840A7B",
+      "dismiss_reason": null
+    },
+    "dlq_b4127e55abd8": {
+      "entry_id": "dlq_b4127e55abd8",
+      "task_id": "test_002",
+      "agent_name": "content_agent",
+      "error_message": "Rate limit exceeded",
+      "original_payload": {
+        "page": "dog-food-hub"
+      },
+      "retry_count": 0,
+      "status": "dismissed",
+      "created_at": "2026-05-26T15:26:09.321942+00:00",
+      "updated_at": "2026-05-26T15:26:13.809644+00:00",
+      "escalation_ticket_id": null,
+      "dismiss_reason": "False alarm, API recovered"
+    },
+    "dlq_13e9a8379b68": {
+      "entry_id": "dlq_13e9a8379b68",
+      "task_id": "test_task_001",
+      "agent_name": "social_agent",
+      "error_message": "Facebook token expired: Session has expired on Friday, 22-May-26",
+      "original_payload": {
+        "action": "post_to_facebook",
+        "content_id": "cat_supplies_post"
+      },
+      "retry_count": 3,
+      "status": "pending",
+      "created_at": "2026-05-26T15:26:17.856302+00:00",
+      "updated_at": "2026-05-26T15:26:17.856302+00:00",
+      "escalation_ticket_id": null,
+      "dismiss_reason": null
+    },
+    "dlq_a49c3d71818c": {
+      "entry_id": "dlq_a49c3d71818c",
+      "task_id": "test_integration_check",
+      "agent_name": "manager_agent",
+      "error_message": "Integration test entry - safe to dismiss",
+      "original_payload": {
+        "test": true
+      },
+      "retry_count": 1,
+      "status": "dismissed",
+      "created_at": "2026-05-26T16:02:19.661795+00:00",
+      "updated_at": "2026-05-26T16:02:38.851870+00:00",
+      "escalation_ticket_id": "ESC-B35B459A",
+      "dismiss_reason": "Integration test complete"
+    }
+  }
+}

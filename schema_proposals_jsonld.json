@@ -1,0 +1,259 @@
+{
+  "export_timestamp": "2026-05-26T20:21:57Z",
+  "deployment_status": "PROPOSAL ONLY - NOT APPLIED TO ANY LIVE PAGE",
+  "safety_note": "No Product, AggregateRating, Review, Offer, price, or stock schema included",
+  "schemas": {
+    "3836": {
+      "post_id": 3836,
+      "post_title": "Best Dog Food UK (2026) - Complete Guide & Honest Reviews",
+      "slug": "best-dog-food-uk",
+      "status": "PROPOSAL ONLY - NOT DEPLOYED TO LIVE",
+      "schema_types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "excluded_types": [
+        "Product",
+        "AggregateRating",
+        "Review",
+        "Offer"
+      ],
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Best Dog Food UK (2026) - Complete Guide & Honest Reviews",
+          "url": "https://pethubonline.com/best-dog-food-uk/",
+          "author": {
+            "@type": "Organization",
+            "name": "PetHub Online",
+            "url": "https://pethubonline.com"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "PetHub Online",
+            "url": "https://pethubonline.com"
+          },
+          "datePublished": "2026-05-26",
+          "dateModified": "2026-05-26",
+          "description": "Evidence-based guide to best dog food uk (2026) - complete guide & honest reviews - educational draft content.",
+          "inLanguage": "en-GB"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://pethubonline.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Dog Food",
+              "item": "https://pethubonline.com/best-dog-food-uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Best Dog Food UK (2026) - Complete Guide & Honest ",
+              "item": "https://pethubonline.com/best-dog-food-uk/"
+            }
+          ]
+        }
+      ],
+      "faq_count": 0
+    },
+    "3837": {
+      "post_id": 3837,
+      "post_title": "Best Dry Dog Food UK (2026) - Evidence-Based Guide",
+      "slug": "best-dry-dog-food-uk",
+      "status": "PROPOSAL ONLY - NOT DEPLOYED TO LIVE",
+      "schema_types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "excluded_types": [
+        "Product",
+        "AggregateRating",
+        "Review",
+        "Offer"
+      ],
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Best Dry Dog Food UK (2026) - Evidence-Based Guide",
+          "url": "https://pethubonline.com/best-dry-dog-food-uk/",
+          "author": {
+            "@type": "Organization",
+            "name": "PetHub Online",
+            "url": "https://pethubonline.com"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "PetHub Online",
+            "url": "https://pethubonline.com"
+          },
+          "datePublished": "2026-05-26",
+          "dateModified": "2026-05-26",
+          "description": "Evidence-based guide to best dry dog food uk (2026) - evidence-based guide - educational draft content.",
+          "inLanguage": "en-GB"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://pethubonline.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Dog Food",
+              "item": "https://pethubonline.com/best-dog-food-uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Best Dry Dog Food UK (2026) - Evidence-Based Guide",
+              "item": "https://pethubonline.com/best-dry-dog-food-uk/"
+            }
+          ]
+        }
+      ],
+      "faq_count": 0
+    },
+    "3838": {
+      "post_id": 3838,
+      "post_title": "Dry vs Wet Dog Food UK - An Honest Comparison",
+      "slug": "dry-vs-wet-dog-food-uk",
+      "status": "PROPOSAL ONLY - NOT DEPLOYED TO LIVE",
+      "schema_types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "excluded_types": [
+        "Product",
+        "AggregateRating",
+        "Review",
+        "Offer"
+      ],
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Dry vs Wet Dog Food UK - An Honest Comparison",
+          "url": "https://pethubonline.com/dry-vs-wet-dog-food-uk/",
+          "author": {
+            "@type": "Organization",
+            "name": "PetHub Online",
+            "url": "https://pethubonline.com"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "PetHub Online",
+            "url": "https://pethubonline.com"
+          },
+          "datePublished": "2026-05-26",
+          "dateModified": "2026-05-26",
+          "description": "Evidence-based guide to dry vs wet dog food uk - an honest comparison - educational draft content.",
+          "inLanguage": "en-GB"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://pethubonline.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Dog Food",
+              "item": "https://pethubonline.com/best-dog-food-uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Dry vs Wet Dog Food UK - An Honest Comparison",
+              "item": "https://pethubonline.com/dry-vs-wet-dog-food-uk/"
+            }
+          ]
+        }
+      ],
+      "faq_count": 0
+    },
+    "3839": {
+      "post_id": 3839,
+      "post_title": "Best Puppy Food UK (2026) - Growth-Stage Nutrition Guide",
+      "slug": "best-puppy-food-uk",
+      "status": "PROPOSAL ONLY - NOT DEPLOYED TO LIVE",
+      "schema_types": [
+        "Article",
+        "BreadcrumbList"
+      ],
+      "excluded_types": [
+        "Product",
+        "AggregateRating",
+        "Review",
+        "Offer"
+      ],
+      "json_ld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Best Puppy Food UK (2026) - Growth-Stage Nutrition Guide",
+          "url": "https://pethubonline.com/best-puppy-food-uk/",
+          "author": {
+            "@type": "Organization",
+            "name": "PetHub Online",
+            "url": "https://pethubonline.com"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "PetHub Online",
+            "url": "https://pethubonline.com"
+          },
+          "datePublished": "2026-05-26",
+          "dateModified": "2026-05-26",
+          "description": "Evidence-based guide to best puppy food uk (2026) - growth-stage nutrition guide - educational draft content.",
+          "inLanguage": "en-GB"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://pethubonline.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Dog Food",
+              "item": "https://pethubonline.com/best-dog-food-uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Best Puppy Food UK (2026) - Growth-Stage Nutrition",
+              "item": "https://pethubonline.com/best-puppy-food-uk/"
+            }
+          ]
+        }
+      ],
+      "faq_count": 0
+    }
+  }
+}

@@ -1,0 +1,590 @@
+{
+  "export_timestamp": "2026-05-26T20:21:57Z",
+  "export_type": "Phase 8.2 Final Missions Export",
+  "missions": {
+    "mis_dog_food_authority": {
+      "mission_id": "mis_dog_food_authority",
+      "name": "Dog Food Authority Expansion",
+      "mission_name": "Dog Food Authority Expansion",
+      "business_objective": "Build the first major topical authority cluster",
+      "target_cluster": "dog_food",
+      "responsible_agents": [
+        "content_agent",
+        "seo_agent",
+        "product_research_agent"
+      ],
+      "current_phase": "drafting",
+      "milestones": [
+        {
+          "name": "Hub page research & outline approved",
+          "status": "pending",
+          "completed_at": null
+        },
+        {
+          "name": "Core comparison pages drafted (dry, wet, puppy, senior)",
+          "status": "pending",
+          "completed_at": null
+        },
+        {
+          "name": "Evidence & testing methodology documented",
+          "status": "pending",
+          "completed_at": null
+        },
+        {
+          "name": "Internal linking structure deployed",
+          "status": "pending",
+          "completed_at": null
+        },
+        {
+          "name": "Performance validation & optimisation",
+          "status": "pending",
+          "completed_at": null
+        }
+      ],
+      "required_content_assets": [
+        "Dog Food Hub Page",
+        "Best Dry Dog Food UK",
+        "Best Wet Dog Food UK",
+        "Best Puppy Food UK",
+        "Best Senior Dog Food UK",
+        "Dog Food Ingredient Guide UK",
+        "Dry vs Wet Dog Food UK",
+        "Sensitive Stomach Dog Food UK"
+      ],
+      "required_evidence_assets": [
+        "Ingredient analysis methodology",
+        "Taste-test protocol documentation",
+        "Veterinary consultation references",
+        "Price comparison data sources"
+      ],
+      "internal_linking_actions": [
+        "Link hub to all sub-category pages",
+        "Cross-link wet vs dry comparison to both individual pages",
+        "Add contextual links from ingredient guide to product pages",
+        "Build breadcrumb trail: Home > Dog > Dog Food > [Sub-category]"
+      ],
+      "seo_actions": [
+        "Target 'best dog food UK' cluster (5,400 mo. search vol)",
+        "Optimise featured snippet for 'best dry dog food' queries",
+        "Add FAQ schema to all sub-category pages",
+        "Build topical map covering ingredient and dietary intent"
+      ],
+      "affiliate_actions": [
+        "Map affiliate links to top 5 products per sub-category",
+        "Ensure price data freshness (weekly update cycle)",
+        "Add comparison tables with affiliate CTAs"
+      ],
+      "customer_journey_actions": [
+        "Create 'Find the right food' interactive quiz funnel",
+        "Add 'Why trust our picks' evidence section to each page",
+        "Ensure mobile-first layout with sticky comparison bar"
+      ],
+      "success_metrics": {
+        "target_organic_traffic_uplift_pct": 35,
+        "target_keyword_rankings_top10": 12,
+        "target_engagement_rate": 0.68,
+        "target_affiliate_ctr": 0.045,
+        "target_authority_score": 0.88
+      },
+      "confidence_pct": 78.5,
+      "risk_level": "medium",
+      "approval_status": "approved",
+      "expected_business_impact": "Projected 35% organic traffic increase to dog food cluster within 6 months, establishing dominant topical authority and driving consistent affiliate revenue.",
+      "next_recommended_action": "Finalise hub page outline and begin drafting Best Dry Dog Food UK page with full evidence methodology.",
+      "data_source_label": "MODELLED FORECAST",
+      "data_maturity": "moderate",
+      "last_validation_date": "2026-05-26T14:54:59.486191Z",
+      "progress_pct": 18.0,
+      "created_at": "2026-05-26T14:54:59.486191Z",
+      "updated_at": "2026-05-26T20:30:00Z",
+      "status": "active",
+      "learning_notes": [
+        "Hub page draft complete (3936 words, QA 10/10)",
+        "Supporting pages framework-only (300-340 words each, need expansion)",
+        "10 product evidence entries created, all blocked_pending_evidence",
+        "Schema proposals ready for review"
+      ],
+      "priority": "high",
+      "progress": 35,
+      "phase": "8.2_draft_quality_expansion_complete",
+      "notes": "Phase 8.2 complete: 4 dog food drafts expanded, visuals added, pages converted to posts, QA passed. Evidence pending. Schema proposal-only. Not publish-ready."
+    },
+    "mis_dog_harness_commercial": {
+      "mission_id": "mis_dog_harness_commercial",
+      "name": "Dog Harness Commercial Opportunity",
+      "mission_name": "Dog Harness Commercial Opportunity",
+      "business_objective": "Capture high commercial intent with lower competition",
+      "target_cluster": "dog_harnesses",
+      "responsible_agents": [
+        "content_agent",
+        "seo_agent",
+        "affiliate_agent"
+      ],
+      "current_phase": "planning",
+      "milestones": [
+        {
+          "name": "Keyword research & competitive gap analysis",
+          "status": "pending",
+          "completed_at": null
+        },
+        {
+          "name": "Hub page and guide structure approved",
+          "status": "in_progress",
+          "completed_at": null
+        },
+        {
+          "name": "Core comparison pages drafted",
+          "status": "in_progress",
+          "completed_at": null
+        },
+        {
+          "name": "Affiliate integration & CTA optimisation",
+          "status": "pending",
+          "completed_at": null
+        },
+        {
+          "name": "Launch review & performance baseline",
+          "status": "in_progress",
+          "completed_at": null
+        }
+      ],
+      "required_content_assets": [
+        "Dog Harness Hub/Guide",
+        "Best Dog Harnesses UK",
+        "Best No Pull Dog Harnesses UK",
+        "Best Harnesses for Small Dogs",
+        "Best Harnesses for Large Dogs",
+        "Puppy Harness Guide"
+      ],
+      "required_evidence_assets": [
+        "Harness testing protocol (fit, comfort, durability)",
+        "Size and breed suitability matrix",
+        "Customer satisfaction data references"
+      ],
+      "internal_linking_actions": [
+        "Link hub to all harness comparison pages",
+        "Cross-link small/large dog pages to breed-specific content",
+        "Connect puppy harness guide to puppy food content"
+      ],
+      "seo_actions": [
+        "Target 'best dog harness UK' cluster (3,800 mo. search vol)",
+        "Optimise comparison tables for featured snippets",
+        "Add product schema markup",
+        "Build FAQ schema for common harness questions"
+      ],
+      "affiliate_actions": [
+        "Map affiliate links to top 3 products per category",
+        "Add 'best for' badges with affiliate CTAs",
+        "Ensure price tracking for top recommended harnesses"
+      ],
+      "customer_journey_actions": [
+        "Create breed-size recommendation widget",
+        "Add 'How we test' methodology section"
+      ],
+      "success_metrics": {
+        "target_organic_traffic_uplift_pct": 25,
+        "target_keyword_rankings_top10": 8,
+        "target_affiliate_ctr": 0.055,
+        "target_authority_score": 0.84
+      },
+      "confidence_pct": 72.3,
+      "risk_level": "low",
+      "approval_status": "approved",
+      "expected_business_impact": "Projected 25% traffic increase and strong affiliate conversion from commercial-intent harness queries.",
+      "next_recommended_action": "Complete keyword gap analysis and draft hub page structure.",
+      "data_source_label": "MODELLED FORECAST",
+      "data_maturity": "moderate",
+      "last_validation_date": "2026-05-26T14:54:59.487226Z",
+      "progress_pct": 12.0,
+      "created_at": "2026-05-26T14:54:59.487226Z",
+      "updated_at": "2026-05-26T15:07:02.086067Z",
+      "status": "active",
+      "learning_notes": [],
+      "priority": "high"
+    },
+    "mis_pet_insurance_trust": {
+      "mission_id": "mis_pet_insurance_trust",
+      "name": "Pet Insurance Trust Buildout",
+      "mission_name": "Pet Insurance Trust Buildout",
+      "business_objective": "Prepare high-value monetization cluster with strong trust safeguards",
+      "target_cluster": "pet_insurance",
+      "responsible_agents": [
+        "content_agent",
+        "seo_agent",
+        "affiliate_agent",
+        "engagement_agent"
+      ],
+      "current_phase": "compliance_review",
+      "milestones": [
+        {
+          "name": "Regulatory review & compliance framework",
+          "status": "pending",
+          "completed_at": null
+        },
+        {
+          "name": "Trust and disclaimer structure approved by human",
+          "status": "pending",
+          "completed_at": null
+        },
+        {
+          "name": "Core informational pages drafted with disclaimers",
+          "status": "completed",
+          "completed_at": "2026-05-26T14:54:59.485852Z"
+        },
+        {
+          "name": "Internal linking & schema deployed (post-approval)",
+          "status": "in_progress",
+          "completed_at": null
+        },
+        {
+          "name": "Ongoing compliance monitoring activated",
+          "status": "pending",
+          "completed_at": null
+        }
+      ],
+      "required_content_assets": [
+        "Pet Insurance Hub",
+        "What Pet Insurance Covers",
+        "Dog Insurance UK",
+        "Cat Insurance UK",
+        "Pet Insurance Comparison Guide",
+        "Trust and Disclaimer Structure"
+      ],
+      "required_evidence_assets": [
+        "FCA compliance checklist",
+        "Disclaimer templates (reviewed by compliance)",
+        "Source attribution for all insurance claims",
+        "Comparison methodology documentation"
+      ],
+      "internal_linking_actions": [
+        "Link hub to all insurance sub-pages",
+        "Add prominent disclaimer links on every page",
+        "Cross-link dog/cat insurance to respective pet clusters"
+      ],
+      "seo_actions": [
+        "Target informational intent only (avoid regulated commercial terms)",
+        "Add FAQ schema with compliance-reviewed answers",
+        "Ensure E-E-A-T signals: author credentials, sources, disclaimers"
+      ],
+      "affiliate_actions": [
+        "NO affiliate links until compliance review complete",
+        "Any future affiliate integration requires RED approval",
+        "Prepare compliant comparison format for post-approval use"
+      ],
+      "customer_journey_actions": [
+        "Create 'Do I need pet insurance?' decision guide",
+        "Add trust signals: editorial independence, methodology",
+        "Ensure all pages carry prominent regulatory disclaimers"
+      ],
+      "success_metrics": {
+        "target_trust_score": 0.92,
+        "target_compliance_rate": 1.0,
+        "target_organic_visibility": 0.65,
+        "target_authority_score": 0.8
+      },
+      "confidence_pct": 55.0,
+      "risk_level": "high",
+      "approval_status": "red_flag",
+      "expected_business_impact": "High monetization potential but requires elevated trust safeguards. Red approval required before any content goes live.",
+      "next_recommended_action": "Await red-flag approval from business owner before proceeding.",
+      "data_source_label": "MODELLED FORECAST",
+      "data_maturity": "low",
+      "last_validation_date": "2026-05-26T14:54:59.488440Z",
+      "progress_pct": 15.0,
+      "created_at": "2026-05-26T14:54:59.488440Z",
+      "updated_at": "2026-05-26T19:16:48.824569+00:00",
+      "status": "active",
+      "learning_notes": [
+        "Methodology/trust framework draft complete (page 3722, 415 words)",
+        "All RED gate checks passing (9/9)",
+        "No insurance affiliate links",
+        "No monetized comparison content",
+        "Full disclaimer structure in place",
+        "Awaiting explicit business owner approval"
+      ],
+      "priority": "high"
+    },
+    "mis_cat_toys_recovery": {
+      "mission_id": "mis_cat_toys_recovery",
+      "name": "Cat Toys Recovery / Engagement",
+      "mission_name": "Cat Toys Recovery / Engagement",
+      "business_objective": "Improve rankings, engagement, internal linking, and conversion",
+      "target_cluster": "cat_toys",
+      "responsible_agents": [
+        "content_agent",
+        "seo_agent",
+        "engagement_agent"
+      ],
+      "current_phase": "planning",
+      "milestones": [
+        {
+          "name": "Content audit & decay analysis",
+          "status": "completed",
+          "completed_at": "2026-05-26T14:54:59.485892Z"
+        },
+        {
+          "name": "Existing page refresh with updated products",
+          "status": "pending",
+          "completed_at": null
+        },
+        {
+          "name": "Comparison support and internal links improved",
+          "status": "pending",
+          "completed_at": null
+        },
+        {
+          "name": "Answer-readiness and AI search optimisation",
+          "status": "completed",
+          "completed_at": "2026-05-26T14:54:59.485908Z"
+        },
+        {
+          "name": "Performance re-baseline and monitoring",
+          "status": "pending",
+          "completed_at": null
+        }
+      ],
+      "required_content_assets": [
+        "Refresh Cat Toys Page",
+        "Comparison Support",
+        "Internal Links Improvement",
+        "Answer-Readiness Enhancement"
+      ],
+      "required_evidence_assets": [
+        "Current page performance data (GA4 + GSC)",
+        "Competitor content gap analysis",
+        "Product relevance audit (discontinued items)"
+      ],
+      "internal_linking_actions": [
+        "Refresh internal links on existing page",
+        "Add comparison support links to related cat clusters",
+        "Improve internal authority flow from cat food hub"
+      ],
+      "seo_actions": [
+        "Refresh meta titles and descriptions",
+        "Update structured data (product schema)",
+        "Add direct-answer blocks for common cat toy queries",
+        "Reduce content fatigue signals"
+      ],
+      "affiliate_actions": [
+        "Replace discontinued product affiliate links",
+        "Improve product relevance scoring",
+        "Add updated comparison tables with current pricing"
+      ],
+      "customer_journey_actions": [
+        "Improve category navigation from cat hub",
+        "Add age/activity-based toy recommendations",
+        "Reduce bounce rate with better above-fold content"
+      ],
+      "success_metrics": {
+        "target_traffic_recovery_pct": 20,
+        "target_engagement_improvement": 0.15,
+        "target_bounce_rate_reduction": 0.08,
+        "target_answer_readiness": 0.75
+      },
+      "confidence_pct": 68.2,
+      "risk_level": "medium",
+      "approval_status": "approved",
+      "expected_business_impact": "Recover estimated 20% lost traffic and restore engagement metrics to pre-decline levels.",
+      "next_recommended_action": "Audit current Cat Toys page for refresh opportunities.",
+      "data_source_label": "MODELLED FORECAST",
+      "data_maturity": "moderate",
+      "last_validation_date": "2026-05-26T14:54:59.489640Z",
+      "progress_pct": 16.0,
+      "created_at": "2026-05-26T14:54:59.489640Z",
+      "updated_at": "2026-05-26T15:07:02.093824Z",
+      "status": "active",
+      "learning_notes": [],
+      "priority": "medium"
+    },
+    "mis_homepage_engagement": {
+      "mission_id": "mis_homepage_engagement",
+      "name": "Homepage Engagement Recovery",
+      "mission_name": "Homepage Engagement Recovery",
+      "business_objective": "Reduce bounce and improve journey routing",
+      "target_cluster": "dog_food",
+      "responsible_agents": [
+        "engagement_agent",
+        "content_agent",
+        "seo_agent"
+      ],
+      "current_phase": "planning",
+      "milestones": [
+        {
+          "name": "Homepage engagement audit completed",
+          "status": "completed",
+          "completed_at": "2026-05-26T14:54:59.485928Z"
+        },
+        {
+          "name": "Category routing & pathway redesign approved",
+          "status": "pending",
+          "completed_at": null
+        },
+        {
+          "name": "Trust signal and start-here sections implemented",
+          "status": "in_progress",
+          "completed_at": null
+        },
+        {
+          "name": "Internal authority flow optimisation deployed",
+          "status": "pending",
+          "completed_at": null
+        }
+      ],
+      "required_content_assets": [
+        "Category Routes Improvement",
+        "Trust Signals",
+        "Start Here Sections",
+        "Dog/Cat Pathways",
+        "Authority Flow Improvement"
+      ],
+      "required_evidence_assets": [
+        "Current homepage heatmap and click data",
+        "User flow analysis (GA4 path exploration)",
+        "Bounce rate and exit page data"
+      ],
+      "internal_linking_actions": [
+        "Clearer category routes from homepage to clusters",
+        "Improved dog/cat pathways with visual navigation",
+        "Stronger start-here sections linking to hub pages",
+        "Better internal authority flow to money pages"
+      ],
+      "seo_actions": [
+        "Optimise homepage title and meta",
+        "Add organisation schema with enhanced site links",
+        "Improve page speed and Core Web Vitals"
+      ],
+      "affiliate_actions": [
+        "No direct affiliate links on homepage",
+        "Ensure category routes lead to affiliate-enabled content"
+      ],
+      "customer_journey_actions": [
+        "Create clear dog vs cat entry pathways",
+        "Add 'Popular right now' dynamic section",
+        "Improve mobile navigation to reduce friction",
+        "Add editorial credibility section above fold"
+      ],
+      "success_metrics": {
+        "target_bounce_rate_reduction": 0.12,
+        "target_pages_per_session_increase": 0.8,
+        "target_category_click_through": 0.35,
+        "target_engagement_rate": 0.72
+      },
+      "confidence_pct": 65.0,
+      "risk_level": "medium",
+      "approval_status": "approved",
+      "expected_business_impact": "Reduces homepage bounce rate, improves journey routing, and strengthens authority flow to key category clusters.",
+      "next_recommended_action": "Analyse current homepage engagement metrics and identify routing gaps.",
+      "data_source_label": "MODELLED FORECAST",
+      "data_maturity": "low",
+      "last_validation_date": "2026-05-26T14:54:59.491199Z",
+      "progress_pct": 15.0,
+      "created_at": "2026-05-26T14:54:59.491199Z",
+      "updated_at": "2026-05-26T15:07:02.097687Z",
+      "status": "active",
+      "learning_notes": [],
+      "priority": "medium"
+    },
+    "mis_ai_search_adaptation": {
+      "mission_id": "mis_ai_search_adaptation",
+      "name": "AI Search Adaptation Mission",
+      "mission_name": "AI Search Adaptation Mission",
+      "business_objective": "Prepare key clusters for AI Overview and answer-engine behaviour",
+      "target_cluster": "dog_food",
+      "responsible_agents": [
+        "seo_agent",
+        "content_agent",
+        "analytics_agent"
+      ],
+      "current_phase": "planning",
+      "milestones": [
+        {
+          "name": "AI search readiness audit across all clusters",
+          "status": "pending",
+          "completed_at": null
+        },
+        {
+          "name": "Answer-ready summary templates created and approved",
+          "status": "in_progress",
+          "completed_at": null
+        },
+        {
+          "name": "Evidence sections and entity completeness deployed",
+          "status": "completed",
+          "completed_at": "2026-05-26T14:54:59.485967Z"
+        },
+        {
+          "name": "Citation-friendly formatting applied site-wide",
+          "status": "pending",
+          "completed_at": null
+        },
+        {
+          "name": "Comparison summaries and direct-answer blocks live",
+          "status": "in_progress",
+          "completed_at": null
+        }
+      ],
+      "required_content_assets": [
+        "Answer-Ready Summaries",
+        "Evidence Sections",
+        "Entity Completeness",
+        "Citation-Friendly Formatting",
+        "Comparison Summaries",
+        "Direct-Answer Blocks"
+      ],
+      "required_evidence_assets": [
+        "Current AI Overview citation data",
+        "Entity gap analysis per cluster",
+        "Competitor AI search visibility benchmarks"
+      ],
+      "internal_linking_actions": [
+        "Add entity-level cross-links between related topics",
+        "Ensure citation paths are crawlable and well-structured",
+        "Build semantic relationship links across clusters"
+      ],
+      "seo_actions": [
+        "Add answer-ready summaries to top pages",
+        "Implement evidence sections with source attribution",
+        "Ensure entity completeness across all clusters",
+        "Add citation-friendly formatting",
+        "Build comparison summaries for vs-style queries",
+        "Create direct-answer blocks for question-intent pages"
+      ],
+      "affiliate_actions": [
+        "Ensure AI-cited pages maintain affiliate integration",
+        "Adapt product recommendations for AI-extracted contexts"
+      ],
+      "customer_journey_actions": [
+        "Improve zero-click answer experience",
+        "Add 'read more on PetHub' hooks for AI-surfaced content",
+        "Ensure mobile experience supports AI referral traffic"
+      ],
+      "success_metrics": {
+        "target_ai_citation_rate": 0.25,
+        "target_answer_readiness_score": 0.8,
+        "target_entity_completeness": 0.85,
+        "target_ai_referral_traffic_pct": 0.1
+      },
+      "confidence_pct": 52.0,
+      "risk_level": "medium",
+      "approval_status": "approved",
+      "expected_business_impact": "Prepares strongest cluster for AI Overview inclusion, builds citation-friendly formatting and entity completeness.",
+      "next_recommended_action": "Run AI search readiness audit on dog_food cluster pages.",
+      "data_source_label": "MODELLED FORECAST",
+      "data_maturity": "low",
+      "last_validation_date": "2026-05-26T14:54:59.493166Z",
+      "progress_pct": 16.0,
+      "created_at": "2026-05-26T14:54:59.493166Z",
+      "updated_at": "2026-05-26T15:07:02.101795Z",
+      "status": "active",
+      "learning_notes": [],
+      "priority": "high"
+    }
+  },
+  "summary": {
+    "total_missions": 6,
+    "dog_food_progress": 35,
+    "pet_insurance_status": "RED - requires explicit human approval",
+    "social_status": "degraded - RED/AMBER per channel",
+    "gsc_ga4_status": "NOT CONNECTED"
+  }
+}
