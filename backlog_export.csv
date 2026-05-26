@@ -1,66 +1,66 @@
-ID,Title,Target Cluster,Status,Priority,WordPress ID,Content Type,Slug,Preview URL,Phase 8.2 Status
-blg_0,Content Brief: Dog Food Hub Page,,draft_expanded,high,3836,post,best-dog-food-uk,pethubonline.com/?p=3836,"QA complete, evidence pending, schema pending"
-blg_1,Content Brief: Best Dry Dog Food UK,,draft_expanded,low,3837,post,best-dry-dog-food-uk,pethubonline.com/?p=3837,"QA complete, evidence pending, schema pending"
-blg_2,Content Brief: Best Wet Dog Food UK,,pending,medium,,,,,
-blg_3,Content Brief: Best Puppy Food UK,,draft_expanded,high,3839,post,best-puppy-food-uk,pethubonline.com/?p=3839,"QA complete, evidence pending, schema pending"
-blg_4,Content Brief: Best Senior Dog Food UK,,pending,high,,,,,
-blg_5,Content Brief: Dog Food Ingredient Guide UK,,pending,medium,,,,,
-blg_6,Content Brief: Dry vs Wet Dog Food UK,,draft_expanded,medium,3838,post,dry-vs-wet-dog-food-uk,pethubonline.com/?p=3838,"QA complete, evidence pending, schema pending"
-blg_7,Content Brief: Sensitive Stomach Dog Food UK,,pending,high,,,,,
-blg_8,Dog Food Cluster Internal Linking Map,,pending,medium,,,,,
-blg_9,Dog Food Metadata Optimisation Pack,,pending,medium,,,,,
-blg_10,Dog Food Schema Markup Package,,pending,low,,,,,
-blg_11,Dog Food Testing Methodology Documentation,,pending,low,,,,,
-blg_12,Ingredient Analysis Source References,,pending,medium,,,,,
-blg_13,Dog Food Affiliate Integration Review,,pending,low,,,,,
-blg_14,Dog Food Product Freshness Audit,,pending,critical,,,,,
-blg_15,Dog Harness Hub/Guide,,pending,low,,,,,
-blg_16,Best Dog Harnesses UK,,pending,high,,,,,
-blg_17,Best No Pull Dog Harnesses UK,,pending,low,,,,,
-blg_18,Best Harnesses for Small Dogs,,pending,high,,,,,
-blg_19,Best Harnesses for Large Dogs,,pending,medium,,,,,
-blg_20,Puppy Harness Guide,,pending,low,,,,,
-blg_21,Harness Testing Protocol Documentation,,pending,high,,,,,
-blg_22,Harness Cluster Internal Link Map,,pending,high,,,,,
-blg_23,Harness Pages Metadata Pack,,pending,critical,,,,,
-blg_24,Harness Product Schema,,pending,critical,,,,,
-blg_25,Harness Affiliate Integration Plan,,pending,medium,,,,,
-blg_26,Harness Product Availability Check,,pending,critical,,,,,
-blg_27,Pet Insurance Hub Page Brief,,pending,critical,,,,,
-blg_28,What Pet Insurance Covers Guide Brief,,pending,critical,,,,,
-blg_29,Dog Insurance UK Brief,,pending,critical,,,,,
-blg_30,Cat Insurance UK Brief,,pending,critical,,,,,
-blg_31,Pet Insurance Comparison Guide Brief,,pending,critical,,,,,
-blg_32,Trust and Disclaimer Framework,,in_progress,critical,,,,https://pethubonline.com/?page_id=3722,
-blg_33,Insurance Pages Metadata Pack,,pending,critical,,,,,
-blg_34,Insurance FAQ Schema,,pending,critical,,,,,
-blg_35,FCA Compliance Documentation,,pending,critical,,,,,
-blg_36,Source Attribution Registry,,pending,critical,,,,,
-blg_37,Insurance Cluster Linking Plan,,pending,critical,,,,,
-blg_38,Insurance Decision Guide UX,,pending,critical,,,,,
-blg_39,Refresh Cat Toys Page,,pending,high,,,,,
-blg_40,Comparison Support,,pending,medium,,,,,
-blg_41,Internal Links Improvement,,pending,medium,,,,,
-blg_42,Answer-Readiness Enhancement,,pending,low,,,,,
-blg_43,Cat Toys Metadata Refresh,,pending,medium,,,,,
-blg_44,Cat Toys Product Relevance Audit,,pending,high,,,,,
-blg_45,Cat Toys Above-Fold Optimisation,,pending,low,,,,,
-blg_46,Cat Toys Age-Based Recommendations,,pending,medium,,,,,
-blg_47,Cat Toys Affiliate Link Audit,,pending,high,,,,,
-blg_48,Category Routes Improvement,,pending,critical,,,,,
-blg_49,Trust Signals,,pending,medium,,,,,
-blg_50,Start Here Sections,,pending,low,,,,,
-blg_51,Dog/Cat Pathways,,pending,low,,,,,
-blg_52,Authority Flow Improvement,,pending,high,,,,,
-blg_53,Homepage Meta & Schema Update,,pending,high,,,,,
-blg_54,Mobile Navigation Friction Reduction,,pending,high,,,,,
-blg_55,Homepage Dynamic Popular Section,,pending,critical,,,,,
-blg_56,Answer-Ready Summaries,,pending,medium,,,,,
-blg_57,Evidence Sections,,pending,medium,,,,,
-blg_58,Entity Completeness,,pending,high,,,,,
-blg_59,Citation-Friendly Formatting,,pending,medium,,,,,
-blg_60,Comparison Summaries,,pending,high,,,,,
-blg_61,Direct-Answer Blocks,,pending,medium,,,,,
-blg_62,AI Search Readiness Baseline Audit,,pending,low,,,,,
-blg_63,Entity Cross-Link Map,,pending,medium,,,,,
-blg_64,Competitor AI Visibility Benchmark,,pending,medium,,,,,
+item_id,mission_id,title,item_type,priority,status,assigned_agent,created_at
+blg_78aa41f6ffa1,mis_dog_food_authority,Content Brief: Dog Food Hub Page,content_brief,high,draft_expanded,content_agent,2026-05-26T14:54:59.495719Z
+blg_bf1e0f5ecdc8,mis_dog_food_authority,Content Brief: Best Dry Dog Food UK,content_brief,low,draft_expanded,content_agent,2026-05-26T14:54:59.495828Z
+blg_e631bc3f7810,mis_dog_food_authority,Content Brief: Best Wet Dog Food UK,content_brief,medium,pending,content_agent,2026-05-26T14:54:59.495983Z
+blg_a4fe9da8e884,mis_dog_food_authority,Content Brief: Best Puppy Food UK,content_brief,high,draft_expanded,content_agent,2026-05-26T14:54:59.496075Z
+blg_c27af0338340,mis_dog_food_authority,Content Brief: Best Senior Dog Food UK,content_brief,high,pending,content_agent,2026-05-26T14:54:59.496162Z
+blg_ddf54f52db95,mis_dog_food_authority,Content Brief: Dog Food Ingredient Guide UK,content_brief,medium,pending,content_agent,2026-05-26T14:54:59.496243Z
+blg_c4e5b554f68d,mis_dog_food_authority,Content Brief: Dry vs Wet Dog Food UK,content_brief,medium,draft_expanded,content_agent,2026-05-26T14:54:59.496329Z
+blg_05a1cbf7ca37,mis_dog_food_authority,Content Brief: Sensitive Stomach Dog Food UK,content_brief,high,pending,content_agent,2026-05-26T14:54:59.496415Z
+blg_0a596b56a41a,mis_dog_food_authority,Dog Food Cluster Internal Linking Map,internal_linking_proposal,medium,pending,seo_agent,2026-05-26T14:54:59.496498Z
+blg_0468a8d49ca2,mis_dog_food_authority,Dog Food Metadata Optimisation Pack,metadata_proposal,medium,pending,seo_agent,2026-05-26T14:54:59.496585Z
+blg_939ea789a77b,mis_dog_food_authority,Dog Food Schema Markup Package,schema_proposal,low,pending,seo_agent,2026-05-26T14:54:59.496665Z
+blg_ae5c2143c23e,mis_dog_food_authority,Dog Food Testing Methodology Documentation,evidence_requirement,low,pending,product_research_agent,2026-05-26T14:54:59.496751Z
+blg_defa1358fe01,mis_dog_food_authority,Ingredient Analysis Source References,evidence_requirement,medium,pending,content_agent,2026-05-26T14:54:59.496865Z
+blg_74a8a0ffa56e,mis_dog_food_authority,Dog Food Affiliate Integration Review,affiliate_placement_review,low,pending,affiliate_agent,2026-05-26T14:54:59.496953Z
+blg_223abfe444e6,mis_dog_food_authority,Dog Food Product Freshness Audit,product_research_task,critical,pending,product_research_agent,2026-05-26T14:54:59.497039Z
+blg_56bc36c4def4,mis_dog_harness_commercial,Dog Harness Hub/Guide,content_brief,low,pending,content_agent,2026-05-26T14:54:59.500032Z
+blg_65200c6c451d,mis_dog_harness_commercial,Best Dog Harnesses UK,content_brief,high,pending,content_agent,2026-05-26T14:54:59.500142Z
+blg_d322c5cec2f0,mis_dog_harness_commercial,Best No Pull Dog Harnesses UK,content_brief,low,pending,content_agent,2026-05-26T14:54:59.500233Z
+blg_fdab1f44e452,mis_dog_harness_commercial,Best Harnesses for Small Dogs,content_brief,high,pending,content_agent,2026-05-26T14:54:59.500320Z
+blg_94a7947ef356,mis_dog_harness_commercial,Best Harnesses for Large Dogs,content_brief,medium,pending,content_agent,2026-05-26T14:54:59.500402Z
+blg_ec4a6472d7de,mis_dog_harness_commercial,Puppy Harness Guide,content_brief,low,pending,content_agent,2026-05-26T14:54:59.500494Z
+blg_174fbe232023,mis_dog_harness_commercial,Harness Testing Protocol Documentation,evidence_requirement,high,pending,product_research_agent,2026-05-26T14:54:59.500584Z
+blg_b1e61f285564,mis_dog_harness_commercial,Harness Cluster Internal Link Map,internal_linking_proposal,high,pending,seo_agent,2026-05-26T14:54:59.500671Z
+blg_c605d9d660be,mis_dog_harness_commercial,Harness Pages Metadata Pack,metadata_proposal,critical,pending,seo_agent,2026-05-26T14:54:59.500748Z
+blg_5b16cfa317b4,mis_dog_harness_commercial,Harness Product Schema,schema_proposal,critical,pending,seo_agent,2026-05-26T14:54:59.500874Z
+blg_b0be8f99b8b6,mis_dog_harness_commercial,Harness Affiliate Integration Plan,affiliate_placement_review,medium,pending,affiliate_agent,2026-05-26T14:54:59.500968Z
+blg_cdb51ce7be77,mis_dog_harness_commercial,Harness Product Availability Check,product_research_task,critical,pending,product_research_agent,2026-05-26T14:54:59.501056Z
+blg_dde1154f92bc,mis_pet_insurance_trust,Pet Insurance Hub Page Brief,content_brief,critical,pending,content_agent,2026-05-26T14:54:59.504353Z
+blg_a5ec551d0902,mis_pet_insurance_trust,What Pet Insurance Covers Guide Brief,content_brief,critical,pending,content_agent,2026-05-26T14:54:59.504460Z
+blg_446832476171,mis_pet_insurance_trust,Dog Insurance UK Brief,content_brief,critical,pending,content_agent,2026-05-26T14:54:59.504543Z
+blg_17fd8850b51f,mis_pet_insurance_trust,Cat Insurance UK Brief,content_brief,critical,pending,content_agent,2026-05-26T14:54:59.504623Z
+blg_31f379558c4a,mis_pet_insurance_trust,Pet Insurance Comparison Guide Brief,content_brief,critical,pending,content_agent,2026-05-26T14:54:59.504671Z
+blg_eca48d0232fd,mis_pet_insurance_trust,Trust and Disclaimer Framework,trust_signal_improvement,critical,in_progress,content_agent,2026-05-26T14:54:59.504718Z
+blg_860988760a63,mis_pet_insurance_trust,Insurance Pages Metadata Pack,metadata_proposal,critical,pending,seo_agent,2026-05-26T14:54:59.504774Z
+blg_b206049cf9cc,mis_pet_insurance_trust,Insurance FAQ Schema,schema_proposal,critical,pending,seo_agent,2026-05-26T14:54:59.504876Z
+blg_ac38df669278,mis_pet_insurance_trust,FCA Compliance Documentation,evidence_requirement,critical,pending,content_agent,2026-05-26T14:54:59.504956Z
+blg_e11a2b716357,mis_pet_insurance_trust,Source Attribution Registry,evidence_requirement,critical,pending,content_agent,2026-05-26T14:54:59.505034Z
+blg_39714086bab1,mis_pet_insurance_trust,Insurance Cluster Linking Plan,internal_linking_proposal,critical,pending,seo_agent,2026-05-26T14:54:59.505081Z
+blg_96bc1abb744d,mis_pet_insurance_trust,Insurance Decision Guide UX,customer_journey_improvement,critical,pending,engagement_agent,2026-05-26T14:54:59.505127Z
+blg_f44a804c2a2d,mis_cat_toys_recovery,Refresh Cat Toys Page,refresh_recommendation,high,pending,content_agent,2026-05-26T14:54:59.509361Z
+blg_2d1b4cc3c2a3,mis_cat_toys_recovery,Comparison Support,content_brief,medium,pending,content_agent,2026-05-26T14:54:59.509512Z
+blg_db3e8413b4fc,mis_cat_toys_recovery,Internal Links Improvement,internal_linking_proposal,medium,pending,seo_agent,2026-05-26T14:54:59.509604Z
+blg_3d4c2a9cdd7f,mis_cat_toys_recovery,Answer-Readiness Enhancement,schema_proposal,low,pending,seo_agent,2026-05-26T14:54:59.509708Z
+blg_8013e1d76741,mis_cat_toys_recovery,Cat Toys Metadata Refresh,metadata_proposal,medium,pending,seo_agent,2026-05-26T14:54:59.509811Z
+blg_84f1fad956da,mis_cat_toys_recovery,Cat Toys Product Relevance Audit,evidence_requirement,high,pending,product_research_agent,2026-05-26T14:54:59.509926Z
+blg_6e25d6b5ad81,mis_cat_toys_recovery,Cat Toys Above-Fold Optimisation,cro_recommendation,low,pending,engagement_agent,2026-05-26T14:54:59.510011Z
+blg_257b2e5bfba2,mis_cat_toys_recovery,Cat Toys Age-Based Recommendations,customer_journey_improvement,medium,pending,engagement_agent,2026-05-26T14:54:59.510112Z
+blg_1d5f32c3ddd6,mis_cat_toys_recovery,Cat Toys Affiliate Link Audit,affiliate_placement_review,high,pending,affiliate_agent,2026-05-26T14:54:59.510197Z
+blg_1602d68595cf,mis_homepage_engagement,Category Routes Improvement,customer_journey_improvement,critical,pending,engagement_agent,2026-05-26T14:54:59.514380Z
+blg_28de0ca3b62c,mis_homepage_engagement,Trust Signals,trust_signal_improvement,medium,pending,content_agent,2026-05-26T14:54:59.514486Z
+blg_09190d928825,mis_homepage_engagement,Start Here Sections,content_brief,low,pending,content_agent,2026-05-26T14:54:59.514572Z
+blg_16b6c47b521c,mis_homepage_engagement,Dog/Cat Pathways,customer_journey_improvement,low,pending,engagement_agent,2026-05-26T14:54:59.514660Z
+blg_47176f45f0a2,mis_homepage_engagement,Authority Flow Improvement,internal_linking_proposal,high,pending,seo_agent,2026-05-26T14:54:59.514752Z
+blg_2f7431c378ef,mis_homepage_engagement,Homepage Meta & Schema Update,metadata_proposal,high,pending,seo_agent,2026-05-26T14:54:59.514851Z
+blg_04779380f634,mis_homepage_engagement,Mobile Navigation Friction Reduction,customer_journey_improvement,high,pending,engagement_agent,2026-05-26T14:54:59.514903Z
+blg_74a9ab8d0605,mis_homepage_engagement,Homepage Dynamic Popular Section,cro_recommendation,critical,pending,engagement_agent,2026-05-26T14:54:59.514985Z
+blg_27ac0abc91e7,mis_ai_search_adaptation,Answer-Ready Summaries,content_brief,medium,pending,content_agent,2026-05-26T14:54:59.519506Z
+blg_7985cffc78fc,mis_ai_search_adaptation,Evidence Sections,evidence_requirement,medium,pending,content_agent,2026-05-26T14:54:59.519618Z
+blg_f9199e902465,mis_ai_search_adaptation,Entity Completeness,schema_proposal,high,pending,seo_agent,2026-05-26T14:54:59.519706Z
+blg_c5696d081ba5,mis_ai_search_adaptation,Citation-Friendly Formatting,metadata_proposal,medium,pending,seo_agent,2026-05-26T14:54:59.519795Z
+blg_2c9037e96151,mis_ai_search_adaptation,Comparison Summaries,content_brief,high,pending,content_agent,2026-05-26T14:54:59.519954Z
+blg_12e6778adcbe,mis_ai_search_adaptation,Direct-Answer Blocks,content_brief,medium,pending,content_agent,2026-05-26T14:54:59.520041Z
+blg_77761502b56f,mis_ai_search_adaptation,AI Search Readiness Baseline Audit,evidence_requirement,low,pending,content_agent,2026-05-26T14:54:59.520121Z
+blg_9f460a4f71a3,mis_ai_search_adaptation,Entity Cross-Link Map,internal_linking_proposal,medium,pending,seo_agent,2026-05-26T14:54:59.520202Z
+blg_8f99fbcef54c,mis_ai_search_adaptation,Competitor AI Visibility Benchmark,product_research_task,medium,pending,product_research_agent,2026-05-26T14:54:59.520308Z

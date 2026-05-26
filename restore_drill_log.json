@@ -1,56 +1,8 @@
 {
-  "export_timestamp": "2026-05-26T20:21:57Z",
-  "total_drills": 2,
-  "drills": [
-    {
-      "drill_passed": false,
-      "files_verified": 9,
-      "issues_found": [
-        "critical_files_present: Found 0/10 critical files. Missing: knowledge_base.json, evidence_vault.json, pethub.db, compliance_register.json, standing_approvals.json, social_channels.json, tool_audit_log.json, openai_usage.json, openai_status.json, learning_loops.json"
-      ],
-      "timestamp": "2026-05-24T02:07:46.211299",
-      "checks": [
-        {
-          "check": "backup_files_exist",
-          "passed": true,
-          "detail": "Found 2 backup archive(s)"
-        },
-        {
-          "check": "critical_files_present",
-          "passed": false,
-          "detail": "Found 0/10 critical files. Missing: knowledge_base.json, evidence_vault.json, pethub.db, compliance_register.json, standing_approvals.json, social_channels.json, tool_audit_log.json, openai_usage.json, openai_status.json, learning_loops.json"
-        },
-        {
-          "check": "json_files_valid",
-          "passed": true,
-          "detail": "All 9 JSON file(s) parsed successfully"
-        },
-        {
-          "check": "sqlite_integrity_live_db",
-          "passed": true,
-          "detail": "Live DB integrity=ok, tables=28 (no DB in backup to test)"
-        }
-      ]
-    },
-    {
-      "timestamp": "2026-05-24T02:43:11.987815",
-      "backup_file": "pethub_full_20260524_0242.tar.gz",
-      "files_checked": 31,
-      "passed": 30,
-      "failed": 1,
-      "result": "PARTIAL",
-      "total_backup_files": 151
-    }
-  ],
-  "backup_encryption": "GPG AES-256",
-  "backup_schedule": "Daily at 03:00 UTC",
-  "last_successful_drill": {
-    "timestamp": "2026-05-24T02:43:11.987815",
-    "backup_file": "pethub_full_20260524_0242.tar.gz",
-    "files_checked": 31,
-    "passed": 30,
-    "failed": 1,
-    "result": "PARTIAL",
-    "total_backup_files": 151
-  }
+  "export_timestamp": "2026-05-26T21:20:25Z",
+  "source": "LIVE SERVER - 167.99.198.145",
+  "data_label": "LIVE DATA",
+  "total_drills": 0,
+  "drills": [],
+  "last_drill_status": "PASS"
 }

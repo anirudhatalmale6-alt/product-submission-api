@@ -1,9 +1,10 @@
 {
-  "export_timestamp": "2026-05-26T20:21:57Z",
-  "export_type": "Phase 8.2 Final Backlog Export",
+  "export_timestamp": "2026-05-26T21:20:25Z",
+  "source": "LIVE SERVER - 167.99.198.145",
+  "data_label": "LIVE DATA",
   "total_items": 65,
-  "backlog": {
-    "blg_0": {
+  "items": [
+    {
       "item_id": "blg_78aa41f6ffa1",
       "mission_id": "mis_dog_food_authority",
       "item_type": "content_brief",
@@ -33,7 +34,7 @@
       "slug": "best-dog-food-uk",
       "phase_82_status": "QA complete, evidence pending, schema pending"
     },
-    "blg_1": {
+    {
       "item_id": "blg_bf1e0f5ecdc8",
       "mission_id": "mis_dog_food_authority",
       "item_type": "content_brief",
@@ -63,7 +64,7 @@
       "slug": "best-dry-dog-food-uk",
       "phase_82_status": "QA complete, evidence pending, schema pending"
     },
-    "blg_2": {
+    {
       "item_id": "blg_e631bc3f7810",
       "mission_id": "mis_dog_food_authority",
       "item_type": "content_brief",
@@ -81,7 +82,7 @@
       "created_at": "2026-05-26T14:54:59.495983Z",
       "updated_at": "2026-05-26T14:54:59.495988Z"
     },
-    "blg_3": {
+    {
       "item_id": "blg_a4fe9da8e884",
       "mission_id": "mis_dog_food_authority",
       "item_type": "content_brief",
@@ -111,7 +112,7 @@
       "slug": "best-puppy-food-uk",
       "phase_82_status": "QA complete, evidence pending, schema pending"
     },
-    "blg_4": {
+    {
       "item_id": "blg_c27af0338340",
       "mission_id": "mis_dog_food_authority",
       "item_type": "content_brief",
@@ -129,7 +130,7 @@
       "created_at": "2026-05-26T14:54:59.496162Z",
       "updated_at": "2026-05-26T14:54:59.496166Z"
     },
-    "blg_5": {
+    {
       "item_id": "blg_ddf54f52db95",
       "mission_id": "mis_dog_food_authority",
       "item_type": "content_brief",
@@ -147,7 +148,7 @@
       "created_at": "2026-05-26T14:54:59.496243Z",
       "updated_at": "2026-05-26T14:54:59.496247Z"
     },
-    "blg_6": {
+    {
       "item_id": "blg_c4e5b554f68d",
       "mission_id": "mis_dog_food_authority",
       "item_type": "content_brief",
@@ -177,7 +178,7 @@
       "slug": "dry-vs-wet-dog-food-uk",
       "phase_82_status": "QA complete, evidence pending, schema pending"
     },
-    "blg_7": {
+    {
       "item_id": "blg_05a1cbf7ca37",
       "mission_id": "mis_dog_food_authority",
       "item_type": "content_brief",
@@ -195,7 +196,7 @@
       "created_at": "2026-05-26T14:54:59.496415Z",
       "updated_at": "2026-05-26T14:54:59.496420Z"
     },
-    "blg_8": {
+    {
       "item_id": "blg_0a596b56a41a",
       "mission_id": "mis_dog_food_authority",
       "item_type": "internal_linking_proposal",
@@ -213,7 +214,7 @@
       "created_at": "2026-05-26T14:54:59.496498Z",
       "updated_at": "2026-05-26T14:54:59.496502Z"
     },
-    "blg_9": {
+    {
       "item_id": "blg_0468a8d49ca2",
       "mission_id": "mis_dog_food_authority",
       "item_type": "metadata_proposal",
@@ -231,7 +232,7 @@
       "created_at": "2026-05-26T14:54:59.496585Z",
       "updated_at": "2026-05-26T14:54:59.496589Z"
     },
-    "blg_10": {
+    {
       "item_id": "blg_939ea789a77b",
       "mission_id": "mis_dog_food_authority",
       "item_type": "schema_proposal",
@@ -249,7 +250,7 @@
       "created_at": "2026-05-26T14:54:59.496665Z",
       "updated_at": "2026-05-26T14:54:59.496670Z"
     },
-    "blg_11": {
+    {
       "item_id": "blg_ae5c2143c23e",
       "mission_id": "mis_dog_food_authority",
       "item_type": "evidence_requirement",
@@ -267,7 +268,7 @@
       "created_at": "2026-05-26T14:54:59.496751Z",
       "updated_at": "2026-05-26T14:54:59.496756Z"
     },
-    "blg_12": {
+    {
       "item_id": "blg_defa1358fe01",
       "mission_id": "mis_dog_food_authority",
       "item_type": "evidence_requirement",
@@ -285,7 +286,7 @@
       "created_at": "2026-05-26T14:54:59.496865Z",
       "updated_at": "2026-05-26T14:54:59.496870Z"
     },
-    "blg_13": {
+    {
       "item_id": "blg_74a8a0ffa56e",
       "mission_id": "mis_dog_food_authority",
       "item_type": "affiliate_placement_review",
@@ -303,7 +304,7 @@
       "created_at": "2026-05-26T14:54:59.496953Z",
       "updated_at": "2026-05-26T14:54:59.496957Z"
     },
-    "blg_14": {
+    {
       "item_id": "blg_223abfe444e6",
       "mission_id": "mis_dog_food_authority",
       "item_type": "product_research_task",
@@ -321,7 +322,7 @@
       "created_at": "2026-05-26T14:54:59.497039Z",
       "updated_at": "2026-05-26T14:54:59.497043Z"
     },
-    "blg_15": {
+    {
       "item_id": "blg_56bc36c4def4",
       "mission_id": "mis_dog_harness_commercial",
       "item_type": "content_brief",
@@ -339,7 +340,7 @@
       "created_at": "2026-05-26T14:54:59.500032Z",
       "updated_at": "2026-05-26T14:54:59.500044Z"
     },
-    "blg_16": {
+    {
       "item_id": "blg_65200c6c451d",
       "mission_id": "mis_dog_harness_commercial",
       "item_type": "content_brief",
@@ -357,7 +358,7 @@
       "created_at": "2026-05-26T14:54:59.500142Z",
       "updated_at": "2026-05-26T14:54:59.500146Z"
     },
-    "blg_17": {
+    {
       "item_id": "blg_d322c5cec2f0",
       "mission_id": "mis_dog_harness_commercial",
       "item_type": "content_brief",
@@ -375,7 +376,7 @@
       "created_at": "2026-05-26T14:54:59.500233Z",
       "updated_at": "2026-05-26T14:54:59.500237Z"
     },
-    "blg_18": {
+    {
       "item_id": "blg_fdab1f44e452",
       "mission_id": "mis_dog_harness_commercial",
       "item_type": "content_brief",
@@ -393,7 +394,7 @@
       "created_at": "2026-05-26T14:54:59.500320Z",
       "updated_at": "2026-05-26T14:54:59.500324Z"
     },
-    "blg_19": {
+    {
       "item_id": "blg_94a7947ef356",
       "mission_id": "mis_dog_harness_commercial",
       "item_type": "content_brief",
@@ -411,7 +412,7 @@
       "created_at": "2026-05-26T14:54:59.500402Z",
       "updated_at": "2026-05-26T14:54:59.500407Z"
     },
-    "blg_20": {
+    {
       "item_id": "blg_ec4a6472d7de",
       "mission_id": "mis_dog_harness_commercial",
       "item_type": "content_brief",
@@ -429,7 +430,7 @@
       "created_at": "2026-05-26T14:54:59.500494Z",
       "updated_at": "2026-05-26T14:54:59.500498Z"
     },
-    "blg_21": {
+    {
       "item_id": "blg_174fbe232023",
       "mission_id": "mis_dog_harness_commercial",
       "item_type": "evidence_requirement",
@@ -447,7 +448,7 @@
       "created_at": "2026-05-26T14:54:59.500584Z",
       "updated_at": "2026-05-26T14:54:59.500589Z"
     },
-    "blg_22": {
+    {
       "item_id": "blg_b1e61f285564",
       "mission_id": "mis_dog_harness_commercial",
       "item_type": "internal_linking_proposal",
@@ -465,7 +466,7 @@
       "created_at": "2026-05-26T14:54:59.500671Z",
       "updated_at": "2026-05-26T14:54:59.500675Z"
     },
-    "blg_23": {
+    {
       "item_id": "blg_c605d9d660be",
       "mission_id": "mis_dog_harness_commercial",
       "item_type": "metadata_proposal",
@@ -483,7 +484,7 @@
       "created_at": "2026-05-26T14:54:59.500748Z",
       "updated_at": "2026-05-26T14:54:59.500753Z"
     },
-    "blg_24": {
+    {
       "item_id": "blg_5b16cfa317b4",
       "mission_id": "mis_dog_harness_commercial",
       "item_type": "schema_proposal",
@@ -501,7 +502,7 @@
       "created_at": "2026-05-26T14:54:59.500874Z",
       "updated_at": "2026-05-26T14:54:59.500879Z"
     },
-    "blg_25": {
+    {
       "item_id": "blg_b0be8f99b8b6",
       "mission_id": "mis_dog_harness_commercial",
       "item_type": "affiliate_placement_review",
@@ -519,7 +520,7 @@
       "created_at": "2026-05-26T14:54:59.500968Z",
       "updated_at": "2026-05-26T14:54:59.500972Z"
     },
-    "blg_26": {
+    {
       "item_id": "blg_cdb51ce7be77",
       "mission_id": "mis_dog_harness_commercial",
       "item_type": "product_research_task",
@@ -537,7 +538,7 @@
       "created_at": "2026-05-26T14:54:59.501056Z",
       "updated_at": "2026-05-26T14:54:59.501060Z"
     },
-    "blg_27": {
+    {
       "item_id": "blg_dde1154f92bc",
       "mission_id": "mis_pet_insurance_trust",
       "item_type": "content_brief",
@@ -555,7 +556,7 @@
       "created_at": "2026-05-26T14:54:59.504353Z",
       "updated_at": "2026-05-26T14:54:59.504365Z"
     },
-    "blg_28": {
+    {
       "item_id": "blg_a5ec551d0902",
       "mission_id": "mis_pet_insurance_trust",
       "item_type": "content_brief",
@@ -573,7 +574,7 @@
       "created_at": "2026-05-26T14:54:59.504460Z",
       "updated_at": "2026-05-26T14:54:59.504465Z"
     },
-    "blg_29": {
+    {
       "item_id": "blg_446832476171",
       "mission_id": "mis_pet_insurance_trust",
       "item_type": "content_brief",
@@ -591,7 +592,7 @@
       "created_at": "2026-05-26T14:54:59.504543Z",
       "updated_at": "2026-05-26T14:54:59.504547Z"
     },
-    "blg_30": {
+    {
       "item_id": "blg_17fd8850b51f",
       "mission_id": "mis_pet_insurance_trust",
       "item_type": "content_brief",
@@ -609,7 +610,7 @@
       "created_at": "2026-05-26T14:54:59.504623Z",
       "updated_at": "2026-05-26T14:54:59.504626Z"
     },
-    "blg_31": {
+    {
       "item_id": "blg_31f379558c4a",
       "mission_id": "mis_pet_insurance_trust",
       "item_type": "content_brief",
@@ -627,7 +628,7 @@
       "created_at": "2026-05-26T14:54:59.504671Z",
       "updated_at": "2026-05-26T14:54:59.504673Z"
     },
-    "blg_32": {
+    {
       "item_id": "blg_eca48d0232fd",
       "mission_id": "mis_pet_insurance_trust",
       "item_type": "trust_signal_improvement",
@@ -653,7 +654,7 @@
       "last_updated": "2026-05-26T19:16:48.824569+00:00",
       "next_action": "Await business owner RED approval before any further action"
     },
-    "blg_33": {
+    {
       "item_id": "blg_860988760a63",
       "mission_id": "mis_pet_insurance_trust",
       "item_type": "metadata_proposal",
@@ -671,7 +672,7 @@
       "created_at": "2026-05-26T14:54:59.504774Z",
       "updated_at": "2026-05-26T14:54:59.504777Z"
     },
-    "blg_34": {
+    {
       "item_id": "blg_b206049cf9cc",
       "mission_id": "mis_pet_insurance_trust",
       "item_type": "schema_proposal",
@@ -689,7 +690,7 @@
       "created_at": "2026-05-26T14:54:59.504876Z",
       "updated_at": "2026-05-26T14:54:59.504881Z"
     },
-    "blg_35": {
+    {
       "item_id": "blg_ac38df669278",
       "mission_id": "mis_pet_insurance_trust",
       "item_type": "evidence_requirement",
@@ -707,7 +708,7 @@
       "created_at": "2026-05-26T14:54:59.504956Z",
       "updated_at": "2026-05-26T14:54:59.504960Z"
     },
-    "blg_36": {
+    {
       "item_id": "blg_e11a2b716357",
       "mission_id": "mis_pet_insurance_trust",
       "item_type": "evidence_requirement",
@@ -725,7 +726,7 @@
       "created_at": "2026-05-26T14:54:59.505034Z",
       "updated_at": "2026-05-26T14:54:59.505036Z"
     },
-    "blg_37": {
+    {
       "item_id": "blg_39714086bab1",
       "mission_id": "mis_pet_insurance_trust",
       "item_type": "internal_linking_proposal",
@@ -743,7 +744,7 @@
       "created_at": "2026-05-26T14:54:59.505081Z",
       "updated_at": "2026-05-26T14:54:59.505084Z"
     },
-    "blg_38": {
+    {
       "item_id": "blg_96bc1abb744d",
       "mission_id": "mis_pet_insurance_trust",
       "item_type": "customer_journey_improvement",
@@ -761,7 +762,7 @@
       "created_at": "2026-05-26T14:54:59.505127Z",
       "updated_at": "2026-05-26T14:54:59.505129Z"
     },
-    "blg_39": {
+    {
       "item_id": "blg_f44a804c2a2d",
       "mission_id": "mis_cat_toys_recovery",
       "item_type": "refresh_recommendation",
@@ -779,7 +780,7 @@
       "created_at": "2026-05-26T14:54:59.509361Z",
       "updated_at": "2026-05-26T14:54:59.509376Z"
     },
-    "blg_40": {
+    {
       "item_id": "blg_2d1b4cc3c2a3",
       "mission_id": "mis_cat_toys_recovery",
       "item_type": "content_brief",
@@ -797,7 +798,7 @@
       "created_at": "2026-05-26T14:54:59.509512Z",
       "updated_at": "2026-05-26T14:54:59.509516Z"
     },
-    "blg_41": {
+    {
       "item_id": "blg_db3e8413b4fc",
       "mission_id": "mis_cat_toys_recovery",
       "item_type": "internal_linking_proposal",
@@ -815,7 +816,7 @@
       "created_at": "2026-05-26T14:54:59.509604Z",
       "updated_at": "2026-05-26T14:54:59.509608Z"
     },
-    "blg_42": {
+    {
       "item_id": "blg_3d4c2a9cdd7f",
       "mission_id": "mis_cat_toys_recovery",
       "item_type": "schema_proposal",
@@ -833,7 +834,7 @@
       "created_at": "2026-05-26T14:54:59.509708Z",
       "updated_at": "2026-05-26T14:54:59.509713Z"
     },
-    "blg_43": {
+    {
       "item_id": "blg_8013e1d76741",
       "mission_id": "mis_cat_toys_recovery",
       "item_type": "metadata_proposal",
@@ -851,7 +852,7 @@
       "created_at": "2026-05-26T14:54:59.509811Z",
       "updated_at": "2026-05-26T14:54:59.509840Z"
     },
-    "blg_44": {
+    {
       "item_id": "blg_84f1fad956da",
       "mission_id": "mis_cat_toys_recovery",
       "item_type": "evidence_requirement",
@@ -869,7 +870,7 @@
       "created_at": "2026-05-26T14:54:59.509926Z",
       "updated_at": "2026-05-26T14:54:59.509930Z"
     },
-    "blg_45": {
+    {
       "item_id": "blg_6e25d6b5ad81",
       "mission_id": "mis_cat_toys_recovery",
       "item_type": "cro_recommendation",
@@ -887,7 +888,7 @@
       "created_at": "2026-05-26T14:54:59.510011Z",
       "updated_at": "2026-05-26T14:54:59.510015Z"
     },
-    "blg_46": {
+    {
       "item_id": "blg_257b2e5bfba2",
       "mission_id": "mis_cat_toys_recovery",
       "item_type": "customer_journey_improvement",
@@ -905,7 +906,7 @@
       "created_at": "2026-05-26T14:54:59.510112Z",
       "updated_at": "2026-05-26T14:54:59.510117Z"
     },
-    "blg_47": {
+    {
       "item_id": "blg_1d5f32c3ddd6",
       "mission_id": "mis_cat_toys_recovery",
       "item_type": "affiliate_placement_review",
@@ -923,7 +924,7 @@
       "created_at": "2026-05-26T14:54:59.510197Z",
       "updated_at": "2026-05-26T14:54:59.510200Z"
     },
-    "blg_48": {
+    {
       "item_id": "blg_1602d68595cf",
       "mission_id": "mis_homepage_engagement",
       "item_type": "customer_journey_improvement",
@@ -941,7 +942,7 @@
       "created_at": "2026-05-26T14:54:59.514380Z",
       "updated_at": "2026-05-26T14:54:59.514394Z"
     },
-    "blg_49": {
+    {
       "item_id": "blg_28de0ca3b62c",
       "mission_id": "mis_homepage_engagement",
       "item_type": "trust_signal_improvement",
@@ -959,7 +960,7 @@
       "created_at": "2026-05-26T14:54:59.514486Z",
       "updated_at": "2026-05-26T14:54:59.514490Z"
     },
-    "blg_50": {
+    {
       "item_id": "blg_09190d928825",
       "mission_id": "mis_homepage_engagement",
       "item_type": "content_brief",
@@ -977,7 +978,7 @@
       "created_at": "2026-05-26T14:54:59.514572Z",
       "updated_at": "2026-05-26T14:54:59.514576Z"
     },
-    "blg_51": {
+    {
       "item_id": "blg_16b6c47b521c",
       "mission_id": "mis_homepage_engagement",
       "item_type": "customer_journey_improvement",
@@ -995,7 +996,7 @@
       "created_at": "2026-05-26T14:54:59.514660Z",
       "updated_at": "2026-05-26T14:54:59.514664Z"
     },
-    "blg_52": {
+    {
       "item_id": "blg_47176f45f0a2",
       "mission_id": "mis_homepage_engagement",
       "item_type": "internal_linking_proposal",
@@ -1013,7 +1014,7 @@
       "created_at": "2026-05-26T14:54:59.514752Z",
       "updated_at": "2026-05-26T14:54:59.514756Z"
     },
-    "blg_53": {
+    {
       "item_id": "blg_2f7431c378ef",
       "mission_id": "mis_homepage_engagement",
       "item_type": "metadata_proposal",
@@ -1031,7 +1032,7 @@
       "created_at": "2026-05-26T14:54:59.514851Z",
       "updated_at": "2026-05-26T14:54:59.514854Z"
     },
-    "blg_54": {
+    {
       "item_id": "blg_04779380f634",
       "mission_id": "mis_homepage_engagement",
       "item_type": "customer_journey_improvement",
@@ -1049,7 +1050,7 @@
       "created_at": "2026-05-26T14:54:59.514903Z",
       "updated_at": "2026-05-26T14:54:59.514906Z"
     },
-    "blg_55": {
+    {
       "item_id": "blg_74a9ab8d0605",
       "mission_id": "mis_homepage_engagement",
       "item_type": "cro_recommendation",
@@ -1067,7 +1068,7 @@
       "created_at": "2026-05-26T14:54:59.514985Z",
       "updated_at": "2026-05-26T14:54:59.514989Z"
     },
-    "blg_56": {
+    {
       "item_id": "blg_27ac0abc91e7",
       "mission_id": "mis_ai_search_adaptation",
       "item_type": "content_brief",
@@ -1085,7 +1086,7 @@
       "created_at": "2026-05-26T14:54:59.519506Z",
       "updated_at": "2026-05-26T14:54:59.519520Z"
     },
-    "blg_57": {
+    {
       "item_id": "blg_7985cffc78fc",
       "mission_id": "mis_ai_search_adaptation",
       "item_type": "evidence_requirement",
@@ -1103,7 +1104,7 @@
       "created_at": "2026-05-26T14:54:59.519618Z",
       "updated_at": "2026-05-26T14:54:59.519623Z"
     },
-    "blg_58": {
+    {
       "item_id": "blg_f9199e902465",
       "mission_id": "mis_ai_search_adaptation",
       "item_type": "schema_proposal",
@@ -1121,7 +1122,7 @@
       "created_at": "2026-05-26T14:54:59.519706Z",
       "updated_at": "2026-05-26T14:54:59.519711Z"
     },
-    "blg_59": {
+    {
       "item_id": "blg_c5696d081ba5",
       "mission_id": "mis_ai_search_adaptation",
       "item_type": "metadata_proposal",
@@ -1139,7 +1140,7 @@
       "created_at": "2026-05-26T14:54:59.519795Z",
       "updated_at": "2026-05-26T14:54:59.519800Z"
     },
-    "blg_60": {
+    {
       "item_id": "blg_2c9037e96151",
       "mission_id": "mis_ai_search_adaptation",
       "item_type": "content_brief",
@@ -1157,7 +1158,7 @@
       "created_at": "2026-05-26T14:54:59.519954Z",
       "updated_at": "2026-05-26T14:54:59.519959Z"
     },
-    "blg_61": {
+    {
       "item_id": "blg_12e6778adcbe",
       "mission_id": "mis_ai_search_adaptation",
       "item_type": "content_brief",
@@ -1175,7 +1176,7 @@
       "created_at": "2026-05-26T14:54:59.520041Z",
       "updated_at": "2026-05-26T14:54:59.520045Z"
     },
-    "blg_62": {
+    {
       "item_id": "blg_77761502b56f",
       "mission_id": "mis_ai_search_adaptation",
       "item_type": "evidence_requirement",
@@ -1193,7 +1194,7 @@
       "created_at": "2026-05-26T14:54:59.520121Z",
       "updated_at": "2026-05-26T14:54:59.520126Z"
     },
-    "blg_63": {
+    {
       "item_id": "blg_9f460a4f71a3",
       "mission_id": "mis_ai_search_adaptation",
       "item_type": "internal_linking_proposal",
@@ -1211,7 +1212,7 @@
       "created_at": "2026-05-26T14:54:59.520202Z",
       "updated_at": "2026-05-26T14:54:59.520206Z"
     },
-    "blg_64": {
+    {
       "item_id": "blg_8f99fbcef54c",
       "mission_id": "mis_ai_search_adaptation",
       "item_type": "product_research_task",
@@ -1229,11 +1230,5 @@
       "created_at": "2026-05-26T14:54:59.520308Z",
       "updated_at": "2026-05-26T14:54:59.520313Z"
     }
-  },
-  "dog_food_post_mapping": {
-    "3836": "Best Dog Food UK Hub (was page 3715)",
-    "3837": "Best Dry Dog Food UK (was page 3717)",
-    "3838": "Dry vs Wet Dog Food UK (was page 3719)",
-    "3839": "Best Puppy Food UK (was page 3720)"
-  }
+  ]
 }

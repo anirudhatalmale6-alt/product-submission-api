@@ -1,5 +1,4 @@
 {
-  "export_timestamp": "2026-05-26T20:21:57Z",
   "register_metadata": {
     "version": "1.0.0",
     "created_at": "2026-05-26T00:00:00Z",
@@ -20,7 +19,10 @@
       "3838": "Dry vs Wet Dog Food UK Comparison (post)",
       "3839": "Best Puppy Food UK (post)"
     },
-    "note": "Pages converted to Posts on 2026-05-26. Old page IDs 3715/3717/3719/3720 are trashed."
+    "note": "Pages converted to Posts on 2026-05-26. Old page IDs 3715/3717/3719/3720 are trashed.",
+    "export_timestamp": "2026-05-26T21:20:25Z",
+    "source": "LIVE SERVER - 167.99.198.145",
+    "wordpress_id_note": "Post IDs corrected: 3715->3836, 3717->3837, 3719->3838, 3720->3839"
   },
   "entries": [
     {
@@ -33,7 +35,7 @@
         "Best Dog Food UK Hub - ID 3836 (post)",
         "Best Dry Dog Food UK - ID 3837 (post)"
       ],
-      "evidence_status": "partial",
+      "evidence_status": "blocked_pending_evidence",
       "verified_claims": [
         "Product exists on Amazon UK marketplace",
         "Royal Canin is a legitimate, established pet food brand operating in the UK",
@@ -59,7 +61,10 @@
         "No firsthand testing conducted",
         "Price may be outdated if published without live check",
         "Affiliate link not yet generated or verified"
-      ]
+      ],
+      "publish_allowed": false,
+      "product_schema_allowed": false,
+      "aggregate_rating_schema_allowed": false
     },
     {
       "entry_id": "PE-002",
@@ -71,7 +76,7 @@
         "Best Dog Food UK Hub - ID 3836 (post)",
         "Best Dry Dog Food UK - ID 3837 (post)"
       ],
-      "evidence_status": "partial",
+      "evidence_status": "blocked_pending_evidence",
       "verified_claims": [
         "Product exists on Amazon UK marketplace",
         "James Wellbeloved is a legitimate UK pet food brand",
@@ -97,7 +102,10 @@
         "Health/hypoallergenic claims require careful attribution to avoid misleading readers",
         "No firsthand testing conducted",
         "Affiliate link not yet generated or verified"
-      ]
+      ],
+      "publish_allowed": false,
+      "product_schema_allowed": false,
+      "aggregate_rating_schema_allowed": false
     },
     {
       "entry_id": "PE-003",
@@ -109,7 +117,7 @@
         "Best Dog Food UK Hub - ID 3836 (post)",
         "Best Dry Dog Food UK - ID 3837 (post)"
       ],
-      "evidence_status": "partial",
+      "evidence_status": "blocked_pending_evidence",
       "verified_claims": [
         "Product exists on Amazon UK marketplace",
         "Lily's Kitchen is a legitimate UK-founded pet food brand",
@@ -135,7 +143,10 @@
         "Premium pricing may fluctuate - do not publish price without live verification",
         "Natural/organic claims need manufacturer attribution",
         "No firsthand testing conducted"
-      ]
+      ],
+      "publish_allowed": false,
+      "product_schema_allowed": false,
+      "aggregate_rating_schema_allowed": false
     },
     {
       "entry_id": "PE-004",
@@ -147,7 +158,7 @@
         "Best Dog Food UK Hub - ID 3836 (post)",
         "Dry vs Wet Dog Food UK - ID 3838 (post)"
       ],
-      "evidence_status": "partial",
+      "evidence_status": "blocked_pending_evidence",
       "verified_claims": [
         "Product exists on Amazon UK marketplace",
         "Forthglade is a legitimate UK pet food brand based in Devon",
@@ -173,7 +184,10 @@
         "Wet food formulations may change - verify against current packaging",
         "No firsthand testing conducted",
         "Affiliate link not yet generated or verified"
-      ]
+      ],
+      "publish_allowed": false,
+      "product_schema_allowed": false,
+      "aggregate_rating_schema_allowed": false
     },
     {
       "entry_id": "PE-005",
@@ -184,7 +198,7 @@
       "linked_pages": [
         "Dry vs Wet Dog Food UK - ID 3838 (post)"
       ],
-      "evidence_status": "partial",
+      "evidence_status": "blocked_pending_evidence",
       "verified_claims": [
         "Product exists on Amazon UK marketplace",
         "Butcher's is a legitimate UK pet food brand",
@@ -210,7 +224,10 @@
         "Budget positioning claims need actual price comparison data",
         "No firsthand testing conducted",
         "Product range is large - must specify exact variant"
-      ]
+      ],
+      "publish_allowed": false,
+      "product_schema_allowed": false,
+      "aggregate_rating_schema_allowed": false
     },
     {
       "entry_id": "PE-006",
@@ -221,7 +238,7 @@
       "linked_pages": [
         "Best Puppy Food UK - ID 3839 (post)"
       ],
-      "evidence_status": "partial",
+      "evidence_status": "blocked_pending_evidence",
       "verified_claims": [
         "Product exists on Amazon UK marketplace",
         "Royal Canin is a legitimate, established pet food brand operating in the UK",
@@ -247,7 +264,10 @@
         "Puppy food claims are sensitive - incorrect nutritional guidance could harm growing dogs",
         "Vet recommendation claims must be verified or attributed",
         "No firsthand testing conducted"
-      ]
+      ],
+      "publish_allowed": false,
+      "product_schema_allowed": false,
+      "aggregate_rating_schema_allowed": false
     },
     {
       "entry_id": "PE-007",
@@ -258,7 +278,7 @@
       "linked_pages": [
         "Best Puppy Food UK - ID 3839 (post)"
       ],
-      "evidence_status": "partial",
+      "evidence_status": "blocked_pending_evidence",
       "verified_claims": [
         "Product exists on Amazon UK marketplace",
         "Burns Pet Nutrition is a legitimate UK pet food brand (Welsh-founded)",
@@ -283,7 +303,10 @@
         "Puppy food - heightened responsibility for accuracy",
         "Health claims need manufacturer attribution",
         "No firsthand testing conducted"
-      ]
+      ],
+      "publish_allowed": false,
+      "product_schema_allowed": false,
+      "aggregate_rating_schema_allowed": false
     },
     {
       "entry_id": "PE-008",
@@ -294,7 +317,7 @@
       "linked_pages": [
         "Best Puppy Food UK - ID 3839 (post)"
       ],
-      "evidence_status": "pending_review",
+      "evidence_status": "blocked_pending_evidence",
       "verified_claims": [
         "Product exists on Amazon UK marketplace",
         "Orijen is manufactured by Champion Petfoods (Canadian company, publicly verifiable)",
@@ -321,7 +344,10 @@
         "High-protein formulation controversy - some vets caution against very high protein for certain breeds",
         "Biologically appropriate is a marketing term, not a regulated standard",
         "No firsthand testing conducted"
-      ]
+      ],
+      "publish_allowed": false,
+      "product_schema_allowed": false,
+      "aggregate_rating_schema_allowed": false
     },
     {
       "entry_id": "PE-009",
@@ -334,7 +360,7 @@
         "Best Dry Dog Food UK - ID 3837 (post)",
         "Dry vs Wet Dog Food UK - ID 3838 (post)"
       ],
-      "evidence_status": "partial",
+      "evidence_status": "blocked_pending_evidence",
       "verified_claims": [
         "Product exists on Amazon UK marketplace",
         "Harringtons is a legitimate UK pet food brand",
@@ -360,7 +386,10 @@
         "Budget claims need actual comparative price data",
         "Complete and balanced claims should be verified against current UK pet food regulations",
         "No firsthand testing conducted"
-      ]
+      ],
+      "publish_allowed": false,
+      "product_schema_allowed": false,
+      "aggregate_rating_schema_allowed": false
     },
     {
       "entry_id": "PE-010",
@@ -371,7 +400,7 @@
       "linked_pages": [
         "Best Puppy Food UK - ID 3839 (post)"
       ],
-      "evidence_status": "pending_review",
+      "evidence_status": "blocked_pending_evidence",
       "verified_claims": [
         "Product exists on Amazon UK marketplace",
         "Lily's Kitchen is a legitimate UK-founded pet food brand",
@@ -398,13 +427,55 @@
         "Premium pricing may fluctuate significantly",
         "Natural/organic claims need manufacturer attribution",
         "No firsthand testing conducted"
-      ]
+      ],
+      "publish_allowed": false,
+      "product_schema_allowed": false,
+      "aggregate_rating_schema_allowed": false
     }
   ],
   "summary": {
     "total_entries": 10,
-    "all_blocked_pending_evidence": true,
-    "no_fake_claims": true,
-    "no_invented_data": true
+    "by_status": {
+      "partial": 8,
+      "pending_review": 2
+    },
+    "by_approval": {
+      "blocked_pending_evidence": 10,
+      "approved": 0,
+      "rejected": 0
+    },
+    "by_category": {
+      "dry_dog_food": 4,
+      "wet_dog_food": 2,
+      "puppy_food": 4
+    },
+    "by_linked_page": {
+      "ID_3715_hub": 5,
+      "ID_3717_dry": 4,
+      "ID_3719_dry_vs_wet": 3,
+      "ID_3720_puppy": 4
+    },
+    "evidence_gaps": [
+      "Zero products have verified ASINs or affiliate links",
+      "Zero products have live-checked pricing",
+      "Zero products have verified Amazon ratings or review counts",
+      "Zero products have been independently tested by PetHub",
+      "Zero products have sourced product images",
+      "Zero products have independent veterinary endorsement",
+      "All health/nutritional claims are unverified manufacturer claims"
+    ],
+    "next_steps_required": [
+      "Run Amazon Product Advertising API queries to verify ASINs, prices, ratings, and availability",
+      "Source product images through Amazon affiliate program or manufacturer press kits",
+      "Cross-check nutritional data against manufacturer published specifications",
+      "Verify FEDIAF compliance for complete food claims",
+      "Determine editorial policy for attributing manufacturer health claims",
+      "Establish price monitoring cadence (weekly recommended)",
+      "Consider whether any products require independent testing before recommendation"
+    ],
+    "total_blocked": 10,
+    "total_verified": 0,
+    "product_schema_deployed": 0,
+    "publish_ready": 0
   }
 }

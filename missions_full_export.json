@@ -1,6 +1,8 @@
 {
-  "export_timestamp": "2026-05-26T20:21:57Z",
-  "export_type": "Phase 8.2 Final Missions Export",
+  "export_timestamp": "2026-05-26T21:20:25Z",
+  "source": "LIVE SERVER - 167.99.198.145",
+  "data_label": "LIVE DATA",
+  "total_missions": 6,
   "missions": {
     "mis_dog_food_authority": {
       "mission_id": "mis_dog_food_authority",
@@ -94,20 +96,68 @@
       "data_source_label": "MODELLED FORECAST",
       "data_maturity": "moderate",
       "last_validation_date": "2026-05-26T14:54:59.486191Z",
-      "progress_pct": 18.0,
+      "progress_pct": 35,
       "created_at": "2026-05-26T14:54:59.486191Z",
       "updated_at": "2026-05-26T20:30:00Z",
       "status": "active",
-      "learning_notes": [
-        "Hub page draft complete (3936 words, QA 10/10)",
-        "Supporting pages framework-only (300-340 words each, need expansion)",
-        "10 product evidence entries created, all blocked_pending_evidence",
-        "Schema proposals ready for review"
-      ],
       "priority": "high",
       "progress": 35,
       "phase": "8.2_draft_quality_expansion_complete",
-      "notes": "Phase 8.2 complete: 4 dog food drafts expanded, visuals added, pages converted to posts, QA passed. Evidence pending. Schema proposal-only. Not publish-ready."
+      "notes": "Phase 8.2 complete: 4 dog food drafts expanded, visuals added, pages converted to posts, QA passed. Evidence pending. Schema proposal-only. Not publish-ready.",
+      "wordpress_posts": {
+        "hub": {
+          "post_id": 3836,
+          "slug": "best-dog-food-uk",
+          "status": "draft",
+          "type": "post"
+        },
+        "dry_dog_food": {
+          "post_id": 3837,
+          "slug": "best-dry-dog-food-uk",
+          "status": "draft",
+          "type": "post"
+        },
+        "dry_vs_wet": {
+          "post_id": 3838,
+          "slug": "dry-vs-wet-dog-food-uk",
+          "status": "draft",
+          "type": "post"
+        },
+        "puppy_food": {
+          "post_id": 3839,
+          "slug": "best-puppy-food-uk",
+          "status": "draft",
+          "type": "post"
+        }
+      },
+      "old_pages_trashed": {
+        "3715": {
+          "slug": "best-dog-food-uk__trashed",
+          "status": "trash",
+          "indexable": false
+        },
+        "3717": {
+          "slug": "best-dry-dog-food-uk__trashed",
+          "status": "trash",
+          "indexable": false
+        },
+        "3719": {
+          "slug": "dry-vs-wet-dog-food-uk__trashed",
+          "status": "trash",
+          "indexable": false
+        },
+        "3720": {
+          "slug": "best-puppy-food-uk__trashed",
+          "status": "trash",
+          "indexable": false
+        }
+      },
+      "supporting_pages_status": "content_complete_draft",
+      "content_status": "owner_review_pending",
+      "schema_status": "proposal_only",
+      "metadata_status": "seo_metadata_deployed_to_drafts",
+      "publish_status": "not_published",
+      "product_evidence_status": "blocked_pending_evidence"
     },
     "mis_dog_harness_commercial": {
       "mission_id": "mis_dog_harness_commercial",
@@ -302,7 +352,9 @@
         "Full disclaimer structure in place",
         "Awaiting explicit business owner approval"
       ],
-      "priority": "high"
+      "priority": "high",
+      "publish_blocked": true,
+      "requires_human_approval": true
     },
     "mis_cat_toys_recovery": {
       "mission_id": "mis_cat_toys_recovery",
@@ -580,11 +632,27 @@
       "priority": "high"
     }
   },
-  "summary": {
-    "total_missions": 6,
-    "dog_food_progress": 35,
-    "pet_insurance_status": "RED - requires explicit human approval",
-    "social_status": "degraded - RED/AMBER per channel",
-    "gsc_ga4_status": "NOT CONNECTED"
+  "gsc_status": "NOT CONNECTED",
+  "ga4_status": "NOT CONNECTED",
+  "social_status": {
+    "instagram": "RED - API degraded",
+    "facebook": "AMBER - pending validation",
+    "tiktok": "AMBER - pending setup"
+  },
+  "wordpress_id_mapping": {
+    "canonical_posts": {
+      "3836": "Best Dog Food UK Hub",
+      "3837": "Best Dry Dog Food UK",
+      "3838": "Dry vs Wet Dog Food UK",
+      "3839": "Best Puppy Food UK"
+    },
+    "trashed_old_pages": {
+      "3715": "trashed, __trashed slug, not indexable",
+      "3717": "trashed, __trashed slug, not indexable",
+      "3719": "trashed, __trashed slug, not indexable",
+      "3720": "trashed, __trashed slug, not indexable"
+    },
+    "duplicate_content_risk": "NONE - old pages trashed with __trashed suffix, new posts hold clean slugs",
+    "hub_slug": "best-dog-food-uk"
   }
 }
