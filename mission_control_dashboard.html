@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280, initial-scale=1">
+<title>PetHub Strategic Mission Control</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#080a0f;--card:#111621;--card2:#0d1119;--border:#1a2236;
+  --text:#e2e8f0;--dim:#7a8ba8;--muted:#4a5568;
+  --accent:#10b981;--accent-dim:#059669;--accent-glow:rgba(16,185,129,0.15);
+  --green:#10b981;--red:#ef4444;--amber:#f59e0b;--blue:#3b82f6;--cyan:#06b6d4;--violet:#8b5cf6;
+  --card-hover:#151d2e;--radius:12px;
+}
+html{font-size:14px;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;line-height:1.5;min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(16,185,129,0.04),transparent 70%),radial-gradient(ellipse 50% 40% at 80% 100%,rgba(5,150,105,0.03),transparent);pointer-events:none;z-index:0}
+.shell{position:relative;z-index:1;max-width:1440px;margin:0 auto;padding:20px 24px 60px}
+
+/* HEADER */
+.hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.hdr-left{display:flex;align-items:center;gap:14px}
+.hdr-icon{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#34d399);display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 0 20px rgba(16,185,129,0.3)}
+.hdr h1{font-size:1.35rem;font-weight:700;letter-spacing:-0.02em}
+.hdr h1 span{color:var(--accent);font-weight:800}
+.hdr-right{display:flex;align-items:center;gap:12px}
+.scan-time{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--dim)}
+.btn{font-family:'Outfit',sans-serif;font-size:.8rem;font-weight:600;border:none;border-radius:7px;padding:8px 16px;cursor:pointer;transition:all .2s}
+.btn-accent{background:var(--accent);color:#fff}
+.btn-accent:hover{background:var(--accent-dim);box-shadow:0 0 16px rgba(16,185,129,0.4)}
+.btn-accent.busy{opacity:.5;pointer-events:none}
+.btn-seed{background:linear-gradient(135deg,var(--accent),#34d399);color:#fff;font-size:.9rem;padding:12px 28px;border-radius:10px}
+.btn-seed:hover{box-shadow:0 0 24px rgba(16,185,129,0.5)}
+.loading-pulse{animation:pulse 1.5s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+@keyframes pulseBorder{0%,100%{box-shadow:0 0 8px rgba(239,68,68,0.4)}50%{box-shadow:0 0 20px rgba(239,68,68,0.8)}}
+
+/* SECTIONS */
+.sec{margin-bottom:32px}
+.sec-title{display:flex;align-items:center;gap:10px;margin-bottom:16px;font-size:1.05rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text);padding-left:12px;border-left:3px solid var(--accent)}
+.sec-num{font-family:'JetBrains Mono',monospace;font-size:.7rem;background:var(--accent);color:#fff;padding:2px 8px;border-radius:4px;font-weight:600}
+
+/* CARDS */
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;transition:border-color .25s,box-shadow .25s}
+.card:hover{border-color:rgba(16,185,129,0.3);box-shadow:0 0 20px var(--accent-glow)}
+.card-title{font-size:.85rem;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.card-dim{color:var(--dim);font-size:.78rem}
+
+/* GRIDS */
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.grid-auto{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+
+/* BADGES */
+.badge{display:inline-flex;align-items:center;gap:4px;font-size:.68rem;font-weight:600;padding:3px 10px;border-radius:20px;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.badge-green{background:rgba(16,185,129,0.15);color:var(--green)}
+.badge-red{background:rgba(239,68,68,0.15);color:var(--red)}
+.badge-amber{background:rgba(245,158,11,0.15);color:var(--amber)}
+.badge-blue{background:rgba(59,130,246,0.15);color:var(--blue)}
+.badge-gray{background:rgba(122,139,168,0.15);color:var(--dim)}
+.badge-violet{background:rgba(139,92,246,0.15);color:var(--violet)}
+.badge-cyan{background:rgba(6,182,212,0.15);color:var(--cyan)}
+.badge-accent{background:rgba(16,185,129,0.2);color:#34d399;border:1px solid rgba(16,185,129,0.3)}
+.badge-critical{background:rgba(239,68,68,0.2);color:var(--red);animation:pulseBorder 2s ease-in-out infinite}
+.badge-data{background:rgba(139,92,246,0.12);color:#a78bfa;border:1px solid rgba(139,92,246,0.2);font-size:.62rem;letter-spacing:.05em}
+
+/* BARS */
+.bar-track{height:6px;border-radius:3px;background:var(--border);overflow:hidden;margin:4px 0}
+.bar-fill{height:100%;border-radius:3px;transition:width .6s ease}
+.bar-h-wrap{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.bar-h-label{font-size:.78rem;min-width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bar-h-track{flex:1;height:8px;border-radius:4px;background:var(--border);overflow:hidden}
+.bar-h-fill{height:100%;border-radius:4px;transition:width .6s ease}
+.bar-h-val{font-family:'JetBrains Mono',monospace;font-size:.75rem;min-width:40px;text-align:right}
+.mono{font-family:'JetBrains Mono',monospace}
+
+/* HERO */
+.hero-card{background:linear-gradient(135deg,var(--card) 0%,rgba(16,185,129,0.05) 50%,var(--card) 100%);border:1px solid rgba(16,185,129,0.2);border-radius:14px;padding:28px;position:relative;overflow:hidden}
+.hero-card::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(16,185,129,0.06),transparent 70%);pointer-events:none}
+.hero-headline{font-size:1.4rem;font-weight:700;margin-bottom:16px;line-height:1.3}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px}
+.hero-stat{text-align:center;padding:14px;border-radius:10px;background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.12)}
+.hero-stat-val{font-family:'JetBrains Mono',monospace;font-size:2rem;font-weight:800;color:var(--accent)}
+.hero-stat-label{font-size:.75rem;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
+.hero-summary{color:var(--dim);font-size:.9rem;line-height:1.7}
+.hero-summary strong{color:var(--text);font-weight:600}
+.seed-empty{text-align:center;padding:40px 20px}
+.seed-empty p{color:var(--dim);margin-bottom:16px;font-size:1rem}
+
+/* MISSION CARD */
+.missions-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.mission-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:22px;transition:border-color .25s,box-shadow .25s}
+.mission-card:hover{border-color:rgba(16,185,129,0.3);box-shadow:0 0 24px var(--accent-glow)}
+.mission-card.red-flag{border-color:rgba(239,68,68,0.4);box-shadow:0 0 12px rgba(239,68,68,0.15)}
+.mission-header{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+.mission-name{font-size:1.1rem;font-weight:700}
+.mission-badges{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+.mission-objective{color:var(--dim);font-size:.85rem;margin-bottom:14px;line-height:1.6}
+.mission-metrics{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:14px}
+.mission-metric{text-align:center;padding:10px;background:var(--card2);border-radius:8px;border:1px solid var(--border)}
+.mission-metric-val{font-family:'JetBrains Mono',monospace;font-size:1.2rem;font-weight:700}
+.mission-metric-label{font-size:.7rem;color:var(--dim);text-transform:uppercase;letter-spacing:.04em}
+.milestone-list{list-style:none;padding:0;margin:8px 0}
+.milestone-item{display:flex;align-items:center;gap:8px;padding:4px 0;font-size:.82rem;color:var(--dim)}
+.milestone-item .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.milestone-item .dot.completed{background:var(--green)}
+.milestone-item .dot.in_progress{background:var(--amber)}
+.milestone-item .dot.pending{background:var(--muted)}
+.agent-pills{display:flex;gap:4px;flex-wrap:wrap;margin-top:8px}
+.agent-pill{font-size:.68rem;padding:3px 10px;border-radius:12px;background:rgba(16,185,129,0.1);color:#34d399;border:1px solid rgba(16,185,129,0.2)}
+.next-action{margin-top:12px;padding:10px 14px;background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.15);border-radius:8px;font-size:.82rem}
+.next-action strong{color:var(--accent);font-weight:600}
+.impact-text{font-size:.8rem;color:var(--dim);margin-top:8px;font-style:italic}
+
+/* BACKLOG */
+.filter-bar{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.filter-btn{font-family:'Outfit',sans-serif;font-size:.76rem;font-weight:600;background:var(--card);color:var(--dim);border:1px solid var(--border);border-radius:20px;padding:6px 14px;cursor:pointer;transition:all .2s}
+.filter-btn:hover,.filter-btn.active{color:var(--accent);border-color:var(--accent);background:rgba(16,185,129,0.08)}
+.filter-selects{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
+.filter-selects select{font-family:'Outfit',sans-serif;font-size:.8rem;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:7px;padding:6px 12px;cursor:pointer}
+.filter-selects select:focus{outline:none;border-color:var(--accent)}
+.backlog-table{width:100%;border-collapse:separate;border-spacing:0}
+.backlog-table th{font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--dim);text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--card)}
+.backlog-table td{font-size:.82rem;padding:10px;border-bottom:1px solid rgba(26,34,54,0.5);vertical-align:middle}
+.backlog-table tr:hover td{background:rgba(16,185,129,0.03)}
+.backlog-table tr.needs-approval{border-left:3px solid var(--red)}
+.backlog-table tr.needs-approval td:first-child{border-left:3px solid var(--red)}
+.backlog-wrap{max-height:500px;overflow-y:auto;border-radius:var(--radius);border:1px solid var(--border)}
+
+/* PROGRESS SECTION */
+.progress-grid{display:grid;grid-template-columns:2fr 1fr;gap:16px}
+.progress-bars-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:22px}
+.summary-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat-box{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;text-align:center}
+.stat-box-val{font-family:'JetBrains Mono',monospace;font-size:1.6rem;font-weight:800}
+.stat-box-label{font-size:.72rem;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;margin-top:4px}
+.milestones-timeline{margin-top:14px;padding:14px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius)}
+.timeline-title{font-size:.82rem;font-weight:700;margin-bottom:10px;color:var(--accent)}
+.timeline-item{display:flex;align-items:center;gap:10px;padding:6px 0;font-size:.8rem;border-bottom:1px solid rgba(26,34,54,0.4)}
+.timeline-item:last-child{border:none}
+.timeline-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;border:2px solid var(--border)}
+.timeline-dot.done{background:var(--green);border-color:var(--green)}
+.timeline-dot.active{background:var(--amber);border-color:var(--amber)}
+.timeline-dot.upcoming{background:transparent;border-color:var(--muted)}
+
+/* LEARNING */
+.learning-grid{display:grid;grid-template-columns:1fr;gap:14px}
+.learning-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px}
+.learning-card h4{font-size:.85rem;font-weight:600;margin-bottom:10px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.learning-table{width:100%;border-collapse:collapse;margin-bottom:8px}
+.learning-table th{font-size:.68rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--dim);text-align:left;padding:6px 8px;border-bottom:1px solid var(--border)}
+.learning-table td{font-size:.78rem;padding:6px 8px;border-bottom:1px solid rgba(26,34,54,0.3)}
+.learning-note{font-size:.78rem;color:var(--dim);padding:5px 0;border-bottom:1px solid rgba(26,34,54,0.4)}
+.learning-note:last-child{border:none}
+.calibration-note{font-size:.8rem;color:var(--dim);padding:12px;background:rgba(16,185,129,0.04);border:1px solid rgba(16,185,129,0.1);border-radius:8px;margin-top:10px;line-height:1.6}
+
+/* QUALITY */
+.quality-rules{display:flex;flex-wrap:wrap;gap:6px}
+.quality-rule{font-size:.72rem;padding:4px 12px;border-radius:20px;background:rgba(16,185,129,0.08);color:var(--green);border:1px solid rgba(16,185,129,0.15);display:inline-flex;align-items:center;gap:4px}
+.quality-violation{background:rgba(239,68,68,0.1);color:var(--red);border-color:rgba(239,68,68,0.2)}
+
+/* EMPTY / SCROLL */
+.empty{text-align:center;padding:30px;color:var(--dim);font-size:.9rem}
+.scroll-wrap{overflow-x:auto}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .missions-grid{grid-template-columns:1fr}
+  .hero-stats{grid-template-columns:1fr}
+  .progress-grid{grid-template-columns:1fr}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .summary-stats{grid-template-columns:1fr 1fr}
+  .mission-metrics{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="shell">
+
+<!-- HEADER -->
+<div class="hdr">
+  <div class="hdr-left">
+    <div class="hdr-icon">&#x1F3AF;</div>
+    <h1><span>Mission</span> Control</h1>
+  </div>
+  <div class="hdr-right">
+    <span class="scan-time" id="scanTime">Last Scan: --</span>
+    <button class="btn btn-accent" id="btnScan" onclick="runScan()">Run Scan</button>
+  </div>
+</div>
+
+<!-- 1. EXECUTIVE BRIEFING -->
+<div class="sec" id="secBriefing">
+  <div class="sec-title"><span class="sec-num">01</span> Executive Mission Briefing</div>
+  <div id="briefingContent" class="loading-pulse">
+    <div class="hero-card"><div class="empty">Loading mission briefing...</div></div>
+  </div>
+</div>
+
+<!-- 2. ACTIVE MISSIONS -->
+<div class="sec">
+  <div class="sec-title"><span class="sec-num">02</span> Active Missions</div>
+  <div id="missionsContent" class="loading-pulse">
+    <div class="empty">Loading missions...</div>
+  </div>
+</div>
+
+<!-- 3. EXECUTION BACKLOG -->
+<div class="sec">
+  <div class="sec-title"><span class="sec-num">03</span> Execution Backlog</div>
+  <div id="backlogFilters">
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all" onclick="setTypeFilter('all',this)">All</button>
+      <button class="filter-btn" data-filter="content_brief" onclick="setTypeFilter('content_brief',this)">Content Briefs</button>
+      <button class="filter-btn" data-filter="wordpress_draft" onclick="setTypeFilter('wordpress_draft',this)">WordPress Drafts</button>
+      <button class="filter-btn" data-filter="seo_action" onclick="setTypeFilter('seo_action',this)">SEO Actions</button>
+      <button class="filter-btn" data-filter="affiliate_review" onclick="setTypeFilter('affiliate_review',this)">Affiliate Reviews</button>
+    </div>
+    <div class="filter-selects">
+      <select id="filterMission" onchange="renderBacklog()"><option value="">All Missions</option></select>
+      <select id="filterStatus" onchange="renderBacklog()"><option value="">All Statuses</option></select>
+    </div>
+  </div>
+  <div class="scroll-wrap">
+    <div id="backlogContent" class="loading-pulse"><div class="empty">Loading backlog...</div></div>
+  </div>
+</div>
+
+<!-- 4. PROGRESS OVERVIEW -->
+<div class="sec">
+  <div class="sec-title"><span class="sec-num">04</span> Progress Overview</div>
+  <div id="progressContent" class="loading-pulse"><div class="empty">Loading...</div></div>
+</div>
+
+<!-- 5. LEARNING & CALIBRATION -->
+<div class="sec">
+  <div class="sec-title"><span class="sec-num">05</span> Learning &amp; Calibration</div>
+  <div id="learningContent" class="loading-pulse"><div class="empty">Loading...</div></div>
+</div>
+
+<!-- 6. CONTENT QUALITY -->
+<div class="sec">
+  <div class="sec-title"><span class="sec-num">06</span> Content Quality Enforcement</div>
+  <div id="qualityContent"><div class="empty">Loading...</div></div>
+</div>
+
+</div><!-- .shell -->
+
+<script>
+/* ── Helpers ────────────────────────────────────────────── */
+function api(path, opts) {
+  return fetch(path, opts).then(r => r.ok ? r.json() : null).catch(() => null);
+}
+function $(id) { return document.getElementById(id); }
+function fmtName(s) { return s ? String(s).replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) : '--'; }
+function pct(v) {
+  if (v == null) return 0;
+  var n = Number(v);
+  if (isNaN(n)) return 0;
+  return Math.max(0, Math.min(100, Math.round(n > 1 && n <= 100 ? n : n * 100)));
+}
+function scoreColor(v) { return v >= 70 ? 'var(--green)' : v >= 50 ? 'var(--amber)' : 'var(--red)'; }
+function fmtDate(d) {
+  if (!d) return '--';
+  try { var dt = new Date(d); return dt.toLocaleDateString('en-GB', {day:'numeric',month:'short',year:'numeric'}); }
+  catch(e) { return String(d); }
+}
+
+var PHASE_COLORS = {
+  planning:'badge-blue', content_creation:'badge-green', review:'badge-amber',
+  optimization:'badge-violet', monitoring:'badge-cyan', completed:'badge-green',
+  execution:'badge-accent', research:'badge-blue', analysis:'badge-cyan'
+};
+
+function phaseBadge(phase) {
+  if (!phase) return '';
+  return '<span class="badge '+(PHASE_COLORS[phase]||'badge-gray')+'">'+fmtName(phase)+'</span>';
+}
+function riskBadge(r) {
+  var m = {low:'badge-green',medium:'badge-amber',high:'badge-red',critical:'badge-critical'};
+  return '<span class="badge '+(m[r]||'badge-gray')+'">'+fmtName(r||'unknown')+' Risk</span>';
+}
+function approvalBadge(s) {
+  if (s === 'approved') return '<span class="badge badge-green">&#10003; Approved</span>';
+  if (s === 'pending') return '<span class="badge badge-gray">Pending Approval</span>';
+  if (s === 'red_flag') return '<span class="badge badge-red">&#9888; Red Flag</span>';
+  if (s === 'rejected') return '<span class="badge badge-critical">Rejected</span>';
+  return '';
+}
+function statusBadge(s) {
+  var m = {completed:'badge-green',in_progress:'badge-blue',pending:'badge-gray',blocked:'badge-red',cancelled:'badge-gray'};
+  return '<span class="badge '+(m[s]||'badge-gray')+'">'+fmtName(s)+'</span>';
+}
+function priorityBadge(p) {
+  var m = {critical:'badge-red',high:'badge-amber',medium:'badge-blue',low:'badge-gray'};
+  return '<span class="badge '+(m[p]||'badge-gray')+'">'+fmtName(p)+'</span>';
+}
+function dataBadge(maturity) {
+  if (!maturity) return '';
+  var l = String(maturity).toLowerCase();
+  if (l.includes('high')) return '<span class="badge badge-green">High Data</span>';
+  if (l.includes('moderate') || l.includes('medium')) return '<span class="badge badge-amber">Moderate Data</span>';
+  return '<span class="badge badge-gray">Low Data</span>';
+}
+function barHTML(val, color) {
+  var p = pct(val);
+  return '<div class="bar-track"><div class="bar-fill" style="width:'+p+'%;background:'+(color||'var(--accent)')+'"></div></div>';
+}
+
+/* ── State ──────────────────────────────────────────────── */
+var STATE = { briefing:null, dashboard:null, missions:[], backlog:[] };
+var activeTypeFilter = 'all';
+var refreshTimer = null;
+
+/* ── Normalize missions (handle dict or array) ──────────── */
+function normalizeMissions(data) {
+  if (!data) return [];
+  if (Array.isArray(data)) return data;
+  if (data.missions && Array.isArray(data.missions)) return data.missions;
+  if (typeof data === 'object') {
+    var arr = [];
+    Object.keys(data).forEach(function(k) {
+      if (typeof data[k] === 'object' && data[k] !== null) {
+        data[k].id = data[k].id || k;
+        arr.push(data[k]);
+      }
+    });
+    if (arr.length) return arr;
+  }
+  return [];
+}
+
+function normalizeBacklog(data) {
+  if (!data) return [];
+  if (Array.isArray(data)) return data;
+  if (data.items && Array.isArray(data.items)) return data.items;
+  if (data.backlog && Array.isArray(data.backlog)) return data.backlog;
+  return [];
+}
+
+/* ── Scan & Load ────────────────────────────────────────── */
+async function runScan() {
+  var btn = $('btnScan');
+  btn.classList.add('busy');
+  btn.textContent = 'Scanning...';
+  await api('api/mission-control/scan', {method:'POST'});
+  $('scanTime').textContent = 'Last Scan: ' + new Date().toLocaleTimeString();
+  btn.classList.remove('busy');
+  btn.textContent = 'Run Scan';
+  await loadAll();
+}
+
+async function loadAll() {
+  var results = await Promise.all([
+    api('api/mission-control/briefing'),
+    api('api/mission-control/dashboard'),
+    api('api/mission-control/missions'),
+    api('api/mission-control/backlog')
+  ]);
+  STATE.briefing = results[0] || {};
+  STATE.dashboard = results[1] || {};
+  STATE.missions = normalizeMissions(results[2]);
+  STATE.backlog = normalizeBacklog(results[3]);
+  render();
+}
+
+/* ── Seed ───────────────────────────────────────────────── */
+async function seedMissions() {
+  var btn = document.querySelector('.btn-seed');
+  if (btn) { btn.classList.add('busy'); btn.textContent = 'Seeding Missions...'; }
+  await api('api/mission-control/seed-missions', {method:'POST'});
+  await runScan();
+}
+
+/* ── Render All ─────────────────────────────────────────── */
+function render() {
+  renderBriefing();
+  renderMissions();
+  populateFilters();
+  renderBacklog();
+  renderProgress();
+  renderLearning();
+  renderQuality();
+  document.querySelectorAll('.loading-pulse').forEach(function(el) { el.classList.remove('loading-pulse'); });
+}
+
+/* ── 1. Executive Briefing ──────────────────────────────── */
+function renderBriefing() {
+  var b = STATE.briefing;
+  var ms = STATE.missions;
+  if (!ms.length && (!b || !b.headline)) {
+    $('briefingContent').innerHTML =
+      '<div class="hero-card seed-empty">' +
+        '<p style="font-size:1.1rem;margin-bottom:6px;color:var(--text)">No missions found</p>' +
+        '<p>Seed the initial 6 strategic missions to activate Mission Control.</p>' +
+        '<button class="btn btn-seed" onclick="seedMissions()">Seed Initial Missions</button>' +
+      '</div>';
+    return;
+  }
+  var activeMissions = ms.filter(function(m) { return m.status !== 'completed' && m.status !== 'cancelled'; }).length;
+  var completedActions = STATE.backlog.filter(function(i) { return i.status === 'completed'; }).length;
+  var avgProgress = ms.length ? Math.round(ms.reduce(function(s, m) { return s + pct(m.progress || m.progress_pct || 0); }, 0) / ms.length) : 0;
+  var headline = b.headline || 'Strategic Mission Control Active';
+  var summary = b.summary || b.plain_english_summary || '';
+  var workingOn = b.working_on || '';
+  var mattersmost = b.matters_most || b.what_matters_most || '';
+  var doNext = b.do_next || b.what_to_do_next || '';
+  var summaryHTML = '';
+  if (workingOn || mattersmost || doNext) {
+    summaryHTML += '<div style="display:grid;gap:10px;margin-top:16px">';
+    if (workingOn) summaryHTML += '<div class="hero-summary"><strong>What we\'re working on:</strong> ' + workingOn + '</div>';
+    if (mattersmost) summaryHTML += '<div class="hero-summary"><strong>What matters most:</strong> ' + mattersmost + '</div>';
+    if (doNext) summaryHTML += '<div class="hero-summary"><strong>What to do next:</strong> ' + doNext + '</div>';
+    summaryHTML += '</div>';
+  } else if (summary) {
+    summaryHTML = '<div class="hero-summary" style="margin-top:16px">' + summary + '</div>';
+  }
+  $('briefingContent').innerHTML =
+    '<div class="hero-card">' +
+      '<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:16px">' +
+        '<div class="hero-headline" style="margin:0">' + headline + '</div>' +
+        '<span class="badge badge-data">MODELLED FORECAST</span>' +
+      '</div>' +
+      '<div class="hero-stats">' +
+        '<div class="hero-stat"><div class="hero-stat-val">' + activeMissions + '</div><div class="hero-stat-label">Active Missions</div></div>' +
+        '<div class="hero-stat"><div class="hero-stat-val">' + completedActions + '</div><div class="hero-stat-label">Completed Actions</div></div>' +
+        '<div class="hero-stat"><div class="hero-stat-val">' + avgProgress + '%</div><div class="hero-stat-label">Overall Progress</div></div>' +
+      '</div>' +
+      summaryHTML +
+    '</div>';
+}
+
+/* ── 2. Active Missions ─────────────────────────────────── */
+function renderMissions() {
+  var ms = STATE.missions.slice().sort(function(a, b) {
+    var rk = {critical:0, high:1, medium:2, low:3};
+    return (rk[a.risk_level] !== undefined ? rk[a.risk_level] : 2) - (rk[b.risk_level] !== undefined ? rk[b.risk_level] : 2);
+  });
+  if (!ms.length) { $('missionsContent').innerHTML = '<div class="empty">No active missions yet.</div>'; return; }
+  $('missionsContent').innerHTML = '<div class="missions-grid">' + ms.map(function(m) {
+    var prog = pct(m.progress || m.progress_pct || 0);
+    var conf = pct(m.confidence || m.confidence_pct || 0);
+    var milestones = Array.isArray(m.milestones) ? m.milestones : [];
+    var agents = Array.isArray(m.responsible_agents) ? m.responsible_agents : [];
+    var backlogForM = STATE.backlog.filter(function(i) { return i.mission_id === m.id || i.mission_name === m.name; });
+    var doneCount = backlogForM.filter(function(i) { return i.status === 'completed'; }).length;
+    var isRedFlag = m.approval_status === 'red_flag';
+    return '<div class="mission-card' + (isRedFlag ? ' red-flag' : '') + '">' +
+      '<div class="mission-header">' +
+        '<div class="mission-name">' + fmtName(m.name) + '</div>' +
+        '<div class="mission-badges">' +
+          (m.target_cluster ? '<span class="badge badge-accent">' + fmtName(m.target_cluster) + '</span>' : '') +
+          phaseBadge(m.current_phase) +
+          riskBadge(m.risk_level || 'medium') +
+          approvalBadge(m.approval_status) +
+        '</div>' +
+      '</div>' +
+      (m.business_objective ? '<div class="mission-objective">' + m.business_objective + '</div>' : '') +
+      '<div class="mission-metrics">' +
+        '<div class="mission-metric">' +
+          '<div class="mission-metric-val" style="color:' + scoreColor(prog) + '">' + prog + '%</div>' +
+          '<div class="mission-metric-label">Progress</div>' +
+          barHTML(prog / 100, scoreColor(prog)) +
+        '</div>' +
+        '<div class="mission-metric">' +
+          '<div class="mission-metric-val" style="color:' + scoreColor(conf) + '">' + conf + '%</div>' +
+          '<div class="mission-metric-label">Confidence</div>' +
+        '</div>' +
+        '<div class="mission-metric">' +
+          '<div class="mission-metric-val">' + doneCount + '/' + backlogForM.length + '</div>' +
+          '<div class="mission-metric-label">Actions Done</div>' +
+        '</div>' +
+      '</div>' +
+      (agents.length ? '<div class="agent-pills">' + agents.map(function(a) { return '<span class="agent-pill">' + fmtName(a) + '</span>'; }).join('') + '</div>' : '') +
+      (m.next_recommended_action ? '<div class="next-action"><strong>Next:</strong> ' + m.next_recommended_action + '</div>' : '') +
+      (m.expected_business_impact ? '<div class="impact-text">' + m.expected_business_impact + '</div>' : '') +
+      (m.data_source ? '<div style="margin-top:8px"><span class="badge badge-data">' + m.data_source.toUpperCase() + '</span></div>' : '') +
+    '</div>';
+  }).join('') + '</div>';
+}
+
+/* ── 3. Backlog ─────────────────────────────────────────── */
+function setTypeFilter(type, btn) {
+  activeTypeFilter = type;
+  document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+  if (btn) btn.classList.add('active');
+  renderBacklog();
+}
+
+function populateFilters() {
+  var ms = new Set(), ss = new Set();
+  STATE.backlog.forEach(function(i) {
+    if (i.mission_name) ms.add(i.mission_name);
+    if (i.status) ss.add(i.status);
+  });
+  fillSelect('filterMission', ms, 'All Missions');
+  fillSelect('filterStatus', ss, 'All Statuses');
+}
+
+function fillSelect(id, values, allLabel) {
+  var el = $(id);
+  var cur = el.value;
+  el.innerHTML = '<option value="">' + allLabel + '</option>' + Array.from(values).map(function(v) {
+    return '<option value="' + v + '">' + fmtName(v) + '</option>';
+  }).join('');
+  el.value = cur;
+}
+
+function renderBacklog() {
+  var fm = $('filterMission').value;
+  var fs = $('filterStatus').value;
+  var ft = activeTypeFilter;
+  var priorityOrder = {critical:0, high:1, medium:2, low:3};
+  var items = STATE.backlog.filter(function(i) {
+    if (fm && i.mission_name !== fm && i.mission_id !== fm) return false;
+    if (fs && i.status !== fs) return false;
+    if (ft !== 'all') {
+      var itemType = (i.type || i.item_type || '').toLowerCase();
+      if (!itemType.includes(ft.replace(/_/g,' ')) && itemType !== ft) return false;
+    }
+    return true;
+  }).sort(function(a, b) {
+    var pa = priorityOrder[a.priority] !== undefined ? priorityOrder[a.priority] : 2;
+    var pb = priorityOrder[b.priority] !== undefined ? priorityOrder[b.priority] : 2;
+    return pa - pb;
+  });
+  if (!items.length) {
+    $('backlogContent').innerHTML = '<div class="card"><div class="empty">No backlog items match current filters.</div></div>';
+    return;
+  }
+  $('backlogContent').innerHTML =
+    '<div class="backlog-wrap"><table class="backlog-table">' +
+    '<thead><tr>' +
+      '<th>Title</th><th>Mission</th><th>Type</th><th>Agent</th><th>Priority</th><th>Status</th><th>Impact</th><th>Conf.</th><th>Approval</th>' +
+    '</tr></thead>' +
+    '<tbody>' + items.map(function(i) {
+      var needsApproval = i.approval_requirement === 'red' || i.requires_approval;
+      var apprHTML = '';
+      if (i.approval_requirement === 'red' || i.requires_approval) apprHTML = '<span class="badge badge-red">Required</span>';
+      else if (i.approval_requirement === 'yellow') apprHTML = '<span class="badge badge-amber">Review</span>';
+      else apprHTML = '<span class="badge badge-gray">Auto</span>';
+      return '<tr class="' + (needsApproval ? 'needs-approval' : '') + '">' +
+        '<td style="font-weight:600;max-width:220px">' + (i.title || i.name || '--') + '</td>' +
+        '<td><span class="badge badge-accent">' + fmtName(i.mission_name || '--') + '</span></td>' +
+        '<td><span class="badge badge-blue">' + fmtName(i.type || i.item_type || '--') + '</span></td>' +
+        '<td>' + (i.assigned_agent ? '<span class="agent-pill">' + fmtName(i.assigned_agent) + '</span>' : '--') + '</td>' +
+        '<td>' + priorityBadge(i.priority || 'medium') + '</td>' +
+        '<td>' + statusBadge(i.status || 'pending') + '</td>' +
+        '<td class="card-dim" style="max-width:160px">' + (i.estimated_impact || i.estimated_business_impact || '--') + '</td>' +
+        '<td class="mono" style="color:' + scoreColor(pct(i.confidence || i.confidence_pct || 0)) + '">' + pct(i.confidence || i.confidence_pct || 0) + '%</td>' +
+        '<td>' + apprHTML + '</td>' +
+      '</tr>';
+    }).join('') + '</tbody></table></div>';
+}
+
+/* ── 4. Progress Overview ───────────────────────────────── */
+function renderProgress() {
+  var ms = STATE.missions;
+  if (!ms.length) { $('progressContent').innerHTML = '<div class="empty">No missions to show progress for.</div>'; return; }
+  var totalItems = STATE.backlog.length;
+  var completedItems = STATE.backlog.filter(function(i) { return i.status === 'completed'; }).length;
+  var inProgressItems = STATE.backlog.filter(function(i) { return i.status === 'in_progress'; }).length;
+  var blockedItems = STATE.backlog.filter(function(i) { return i.status === 'blocked'; }).length;
+  // Horizontal bar chart
+  var barsHTML = ms.map(function(m) {
+    var prog = pct(m.progress || m.progress_pct || 0);
+    var color = scoreColor(prog);
+    return '<div class="bar-h-wrap">' +
+      '<div class="bar-h-label">' + fmtName(m.name) + '</div>' +
+      '<div class="bar-h-track"><div class="bar-h-fill" style="width:' + prog + '%;background:' + color + '"></div></div>' +
+      '<div class="bar-h-val" style="color:' + color + '">' + prog + '%</div>' +
+    '</div>';
+  }).join('');
+  // Find top-priority mission for milestones
+  var topMission = ms.reduce(function(top, m) {
+    var rk = {critical:0,high:1,medium:2,low:3};
+    var tr = rk[top.risk_level] !== undefined ? rk[top.risk_level] : 2;
+    var mr = rk[m.risk_level] !== undefined ? rk[m.risk_level] : 2;
+    return mr < tr ? m : top;
+  }, ms[0]);
+  var milestones = Array.isArray(topMission.milestones) ? topMission.milestones : [];
+  var milestonesHTML = '';
+  if (milestones.length) {
+    milestonesHTML = '<div class="milestones-timeline">' +
+      '<div class="timeline-title">Milestones: ' + fmtName(topMission.name) + '</div>' +
+      milestones.map(function(ml) {
+        var st = ml.status || 'pending';
+        var dotClass = st === 'completed' ? 'done' : st === 'in_progress' ? 'active' : 'upcoming';
+        return '<div class="timeline-item">' +
+          '<div class="timeline-dot ' + dotClass + '"></div>' +
+          '<span style="color:' + (st === 'completed' ? 'var(--green)' : st === 'in_progress' ? 'var(--amber)' : 'var(--dim)') + '">' +
+            fmtName(ml.name || ml.title || ml) +
+          '</span>' +
+        '</div>';
+      }).join('') +
+    '</div>';
+  }
+  $('progressContent').innerHTML =
+    '<div class="progress-grid">' +
+      '<div>' +
+        '<div class="progress-bars-card">' +
+          '<div style="font-size:.82rem;font-weight:700;margin-bottom:14px;color:var(--text)">Mission Progress</div>' +
+          barsHTML +
+        '</div>' +
+        milestonesHTML +
+      '</div>' +
+      '<div>' +
+        '<div class="summary-stats">' +
+          '<div class="stat-box"><div class="stat-box-val" style="color:var(--text)">' + totalItems + '</div><div class="stat-box-label">Total Items</div></div>' +
+          '<div class="stat-box"><div class="stat-box-val" style="color:var(--green)">' + completedItems + '</div><div class="stat-box-label">Completed</div></div>' +
+          '<div class="stat-box"><div class="stat-box-val" style="color:var(--blue)">' + inProgressItems + '</div><div class="stat-box-label">In Progress</div></div>' +
+          '<div class="stat-box"><div class="stat-box-val" style="color:var(--red)">' + blockedItems + '</div><div class="stat-box-label">Blocked</div></div>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+}
+
+/* ── 5. Learning & Calibration ──────────────────────────── */
+function renderLearning() {
+  var ms = STATE.missions;
+  if (!ms.length) { $('learningContent').innerHTML = '<div class="empty">No learning data yet.</div>'; return; }
+  var hasAnyLearning = false;
+  var cardsHTML = ms.map(function(m) {
+    var learnings = Array.isArray(m.learnings) ? m.learnings : [];
+    var maturity = m.data_maturity || 'low';
+    var lastValidation = m.last_validation_date || m.last_validated || null;
+    var hasForecast = m.forecasted_traffic != null || m.forecasted_value != null;
+    var hasActual = m.actual_traffic != null || m.actual_value != null;
+    if (learnings.length || hasForecast) hasAnyLearning = true;
+    // Build a mini learning table if there are metric rows
+    var tableHTML = '';
+    if (hasForecast || hasActual) {
+      var forecast = m.forecasted_traffic || m.forecasted_value || '--';
+      var actual = m.actual_traffic || m.actual_value || 'Pending';
+      var accuracy = (typeof forecast === 'number' && typeof actual === 'number' && forecast > 0)
+        ? Math.round((1 - Math.abs(forecast - actual) / forecast) * 100) + '%' : '--';
+      tableHTML = '<table class="learning-table"><thead><tr><th>Metric</th><th>Forecast</th><th>Actual</th><th>Accuracy</th></tr></thead><tbody>' +
+        '<tr><td>Traffic/Value</td><td class="mono" style="color:var(--cyan)">' + forecast + '</td>' +
+        '<td class="mono" style="color:' + (actual !== 'Pending' ? 'var(--green)' : 'var(--dim)') + '">' + actual + '</td>' +
+        '<td class="mono" style="color:' + (accuracy !== '--' ? scoreColor(parseInt(accuracy)) : 'var(--dim)') + '">' + accuracy + '</td></tr>' +
+        '</tbody></table>';
+    }
+    return '<div class="learning-card">' +
+      '<h4>' + fmtName(m.name) + ' ' + dataBadge(maturity) +
+        (lastValidation ? ' <span style="font-size:.68rem;color:var(--dim);font-weight:400">Validated: ' + fmtDate(lastValidation) + '</span>' : '') +
+      '</h4>' +
+      tableHTML +
+      (learnings.length ? learnings.map(function(l) {
+        return '<div class="learning-note">' + (typeof l === 'string' ? l : (l.note || l.text || JSON.stringify(l))) + '</div>';
+      }).join('') : '<div class="learning-note">No learning notes yet. Data accumulates as missions execute.</div>') +
+    '</div>';
+  }).join('');
+  var calibrationNote = '<div class="calibration-note">' +
+    '<strong>Confidence Calibration:</strong> All forecasts are modelled projections based on current data maturity. ' +
+    'Accuracy improves as missions execute and real performance data is collected. ' +
+    'Missions with "Low Data" maturity have wider confidence intervals and should be treated as directional estimates.' +
+  '</div>';
+  $('learningContent').innerHTML =
+    '<div class="learning-grid">' + cardsHTML + '</div>' + calibrationNote;
+}
+
+/* ── 6. Content Quality ─────────────────────────────────── */
+function renderQuality() {
+  var rules = [
+    'No fake testing claims', 'No fake expert claims', 'No fake customer feedback',
+    'No invented prices', 'No invented ratings', 'No invented review counts',
+    'No filler/padding', 'No generic AI content', 'No unsupported health claims',
+    'No manipulative affiliate wording', 'No thin commercial pages', 'No duplicated templates',
+    'No over-optimized AI-search formatting'
+  ];
+  var violations = (STATE.dashboard && STATE.dashboard.quality_violations) ? STATE.dashboard.quality_violations : [];
+  var hasViolations = violations.length > 0;
+  $('qualityContent').innerHTML =
+    '<div class="card">' +
+      '<div class="card-title" style="margin-bottom:14px">' +
+        (hasViolations
+          ? '<span class="badge badge-red" style="font-size:.76rem">&#9888; ' + violations.length + ' Violation(s) Found</span>'
+          : '<span class="badge badge-green" style="font-size:.76rem">&#10003; All Content Quality Rules Enforced</span>') +
+      '</div>' +
+      '<div class="quality-rules">' +
+        rules.map(function(r) {
+          var violated = violations.some(function(v) {
+            return (v.rule || String(v)).toLowerCase().includes(r.toLowerCase().slice(3));
+          });
+          return '<span class="quality-rule' + (violated ? ' quality-violation' : '') + '">' +
+            (violated ? '&#9888; ' : '&#10003; ') + r + '</span>';
+        }).join('') +
+      '</div>' +
+      (hasViolations ? '<div style="margin-top:14px;padding:12px;background:rgba(239,68,68,0.06);border:1px solid rgba(239,68,68,0.15);border-radius:8px">' +
+        violations.map(function(v) {
+          return '<div style="font-size:.8rem;color:var(--red);padding:4px 0;display:flex;align-items:flex-start;gap:6px">' +
+            '<span>&#9888;</span><span>' + (typeof v === 'string' ? v : (v.description || v.rule || JSON.stringify(v))) + '</span></div>';
+        }).join('') + '</div>' : '') +
+    '</div>';
+}
+
+/* ── Init ───────────────────────────────────────────────── */
+(async function init() {
+  await api('api/mission-control/scan', {method:'POST'});
+  $('scanTime').textContent = 'Last Scan: ' + new Date().toLocaleTimeString();
+  await loadAll();
+  refreshTimer = setInterval(async function() {
+    await api('api/mission-control/scan', {method:'POST'});
+    $('scanTime').textContent = 'Last Scan: ' + new Date().toLocaleTimeString();
+    await loadAll();
+  }, 90000);
+})();
+</script>
+</body>
+</html>
