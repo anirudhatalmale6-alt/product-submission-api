@@ -1,0 +1,171 @@
+{
+  "scan_date": "2026-05-26",
+  "source": "WordPress REST API (direct HTML source)",
+  "total_scanned": 25,
+  "pages_with_affiliates": 15,
+  "pages_with_disclosure": 15,
+  "pages_missing_disclosure": 0,
+  "total_affiliate_links": 142,
+  "links_with_sponsored": 142,
+  "links_missing_sponsored": 0,
+  "non_affiliate_pages": 10,
+  "page_details": [
+    {
+      "id": 696,
+      "title": "Essential Cat Supplies for Cat Owners &#8211; Number 1 Must-Haves",
+      "type": "post",
+      "affiliate_links": 1,
+      "links_with_sponsored": 1,
+      "links_missing_sponsored": 0,
+      "has_disclosure_text": true,
+      "has_disclosure_div": true
+    },
+    {
+      "id": 3115,
+      "title": "Cat Litter Trays",
+      "type": "page",
+      "affiliate_links": 6,
+      "links_with_sponsored": 6,
+      "links_missing_sponsored": 0,
+      "has_disclosure_text": true,
+      "has_disclosure_div": true
+    },
+    {
+      "id": 3113,
+      "title": "Cat Scratching Posts",
+      "type": "page",
+      "affiliate_links": 6,
+      "links_with_sponsored": 6,
+      "links_missing_sponsored": 0,
+      "has_disclosure_text": true,
+      "has_disclosure_div": true
+    },
+    {
+      "id": 3111,
+      "title": "Cat Collars",
+      "type": "page",
+      "affiliate_links": 8,
+      "links_with_sponsored": 8,
+      "links_missing_sponsored": 0,
+      "has_disclosure_text": true,
+      "has_disclosure_div": true
+    },
+    {
+      "id": 3109,
+      "title": "Cat Grooming",
+      "type": "page",
+      "affiliate_links": 8,
+      "links_with_sponsored": 8,
+      "links_missing_sponsored": 0,
+      "has_disclosure_text": true,
+      "has_disclosure_div": true
+    },
+    {
+      "id": 3107,
+      "title": "Cat Beds",
+      "type": "page",
+      "affiliate_links": 18,
+      "links_with_sponsored": 18,
+      "links_missing_sponsored": 0,
+      "has_disclosure_text": true,
+      "has_disclosure_div": true
+    },
+    {
+      "id": 1960,
+      "title": "Dog Health &#038; Care",
+      "type": "page",
+      "affiliate_links": 5,
+      "links_with_sponsored": 5,
+      "links_missing_sponsored": 0,
+      "has_disclosure_text": true,
+      "has_disclosure_div": true
+    },
+    {
+      "id": 1956,
+      "title": "Dog Training &#038; Behaviour",
+      "type": "page",
+      "affiliate_links": 5,
+      "links_with_sponsored": 5,
+      "links_missing_sponsored": 0,
+      "has_disclosure_text": true,
+      "has_disclosure_div": true
+    },
+    {
+      "id": 1951,
+      "title": "Dog Bowls &#038; Feeding",
+      "type": "page",
+      "affiliate_links": 16,
+      "links_with_sponsored": 16,
+      "links_missing_sponsored": 0,
+      "has_disclosure_text": true,
+      "has_disclosure_div": true
+    },
+    {
+      "id": 1149,
+      "title": "Cat Toys",
+      "type": "page",
+      "affiliate_links": 5,
+      "links_with_sponsored": 5,
+      "links_missing_sponsored": 0,
+      "has_disclosure_text": true,
+      "has_disclosure_div": true
+    },
+    {
+      "id": 1146,
+      "title": "Dog Collars &amp; Leashes",
+      "type": "page",
+      "affiliate_links": 18,
+      "links_with_sponsored": 18,
+      "links_missing_sponsored": 0,
+      "has_disclosure_text": true,
+      "has_disclosure_div": true
+    },
+    {
+      "id": 1144,
+      "title": "Dog Grooming",
+      "type": "page",
+      "affiliate_links": 6,
+      "links_with_sponsored": 6,
+      "links_missing_sponsored": 0,
+      "has_disclosure_text": true,
+      "has_disclosure_div": true
+    },
+    {
+      "id": 1141,
+      "title": "Dog Beds",
+      "type": "page",
+      "affiliate_links": 18,
+      "links_with_sponsored": 18,
+      "links_missing_sponsored": 0,
+      "has_disclosure_text": true,
+      "has_disclosure_div": true
+    },
+    {
+      "id": 1041,
+      "title": "Dog Toys",
+      "type": "page",
+      "affiliate_links": 18,
+      "links_with_sponsored": 18,
+      "links_missing_sponsored": 0,
+      "has_disclosure_text": true,
+      "has_disclosure_div": true
+    },
+    {
+      "id": 4,
+      "title": "Pet Hub Online \u2013 Pet Supplies Online",
+      "type": "page",
+      "affiliate_links": 4,
+      "links_with_sponsored": 4,
+      "links_missing_sponsored": 0,
+      "has_disclosure_text": true,
+      "has_disclosure_div": true
+    }
+  ],
+  "agent_vs_source_discrepancy": {
+    "agent_reports_disclosure": 5,
+    "source_shows_disclosure": 15,
+    "agent_reports_missing_sponsored": 142,
+    "source_shows_missing_sponsored": 0,
+    "root_cause": "Agent HTML parser does not detect disclosure divs or rel=sponsored attributes correctly. WP REST API returns rendered HTML which differs from how the agent's BeautifulSoup parser processes it."
+  }
+}
