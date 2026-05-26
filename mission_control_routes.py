@@ -99,7 +99,7 @@ def create_mission(body: MissionCreate):
 
 @router.put("/missions/{mission_id}")
 def update_mission(mission_id: str, body: MissionUpdate):
-    result = mc.update_mission(mission_id=mission_id, updates=body.dict(exclude_none=True))
+    result = mc.update_mission(mission_id=mission_id, data=body.dict(exclude_none=True))
     if not result:
         raise HTTPException(status_code=404, detail="Mission not found")
     return result
@@ -139,7 +139,7 @@ def get_learnings(mission_id: str):
 
 @router.post("/missions/{mission_id}/learnings")
 def record_learning(mission_id: str, body: LearningRecord):
-    result = mc.record_learning(mission_id=mission_id, learning_data=body.dict())
+    result = mc.record_learning(mission_id=mission_id, data=body.dict())
     if not result:
         raise HTTPException(status_code=400, detail="Learning record failed")
     return result
@@ -165,7 +165,7 @@ def get_backlog_item(item_id: str):
 
 @router.put("/backlog/{item_id}")
 def update_backlog_item(item_id: str, body: BacklogUpdate):
-    result = mc.update_backlog_item(item_id=item_id, updates=body.dict(exclude_none=True))
+    result = mc.update_backlog_item(item_id=item_id, data=body.dict(exclude_none=True))
     if not result:
         raise HTTPException(status_code=404, detail="Backlog item not found")
     return result
@@ -174,7 +174,7 @@ def update_backlog_item(item_id: str, body: BacklogUpdate):
 # ── content validation ───────────────────────────────────────────
 @router.post("/validate-content")
 def validate_content(body: ContentValidation):
-    result = mc.validate_content_quality(content_data=body.dict())
+    result = mc.validate_content_quality(data=body.dict())
     if not result:
         raise HTTPException(status_code=400, detail="Content validation failed")
     return result

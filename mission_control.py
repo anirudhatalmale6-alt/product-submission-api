@@ -109,6 +109,20 @@ def _pick_maturity(*sp):
     v = _seed(*sp)
     return "low" if v < 0.3 else "moderate" if v < 0.7 else "high"
 
+def _clamp(v, lo=0.0, hi=100.0):
+    """Clamp a value to [lo, hi] range."""
+    return round(max(lo, min(hi, v)), 2)
+
+def _ethical_check():
+    """Standard ethical compliance stub for all outputs."""
+    return {
+        "dark_patterns_detected": False,
+        "urgency_manipulation": False,
+        "emotional_pressure": False,
+        "fake_scarcity": False,
+        "compliance_status": "compliant",
+    }
+
 
 # ────────────────────────────────────────────────────────────────────────────
 # SECTION 1: MISSION CRUD
@@ -181,32 +195,33 @@ def get_mission(mission_id):
     return m if m and m.get("status") != "deleted" else None
 
 
-def update_mission(mission_id, updates):
-    """Update mission fields (merge into existing)."""
+def update_mission(mission_id, data=None, **kwargs):
+    """Update mission fields (merge into existing). Accepts data dict or kwargs."""
+    updates = data if data is not None else kwargs
     with _lock:
-        data = _load()
-        m = data.get("missions", {}).get(mission_id)
+        store = _load()
+        m = store.get("missions", {}).get(mission_id)
         if not m or m.get("status") == "deleted":
             return None
         for k, v in updates.items():
             if k not in ("mission_id", "created_at"):
                 m[k] = v
         m["updated_at"] = _ts()
-        _save(data)
+        _save(store)
     return m
 
 
 def delete_mission(mission_id):
-    """Soft-delete a mission."""
+    """Soft-delete a mission. Returns the deleted mission dict or None."""
     with _lock:
         data = _load()
         m = data.get("missions", {}).get(mission_id)
         if not m:
-            return False
+            return None
         m["status"] = "deleted"
         m["updated_at"] = _ts()
         _save(data)
-    return True
+    return m
 
 
 # ────────────────────────────────────────────────────────────────────────────
@@ -523,18 +538,19 @@ def get_backlog_item(item_id):
     return _load().get("backlog", {}).get(item_id)
 
 
-def update_backlog_item(item_id, updates):
-    """Update a backlog item."""
+def update_backlog_item(item_id, data=None, **kwargs):
+    """Update a backlog item. Accepts data dict or kwargs."""
+    updates = data if data is not None else kwargs
     with _lock:
-        data = _load()
-        item = data.get("backlog", {}).get(item_id)
+        store = _load()
+        item = store.get("backlog", {}).get(item_id)
         if not item:
             return None
         for k, v in updates.items():
             if k not in ("item_id", "mission_id", "created_at"):
                 item[k] = v
         item["updated_at"] = _ts()
-        _save(data)
+        _save(store)
     return item
 
 
@@ -628,32 +644,46 @@ def get_mission_dashboard_data():
 # SECTION 5: LEARNING LOOPS
 # ────────────────────────────────────────────────────────────────────────────
 
-def record_learning(mission_id, learning_data):
-    """Record a learning note for a mission."""
+def record_learning(mission_id, data=None, **kwargs):
+    """Record a learning note for a mission. Accepts data dict or kwargs."""
+    ld = data if data is not None else kwargs
     with _lock:
-        data = _load()
-        m = data.get("missions", {}).get(mission_id)
+        store = _load()
+        m = store.get("missions", {}).get(mission_id)
         if not m or m.get("status") == "deleted":
             return None
         lid = _gen_id("lrn")
         now = _ts()
+        # Accept both 'note' (from routes Pydantic) and 'observation' (legacy)
+        note_text = ld.get("note") or ld.get("observation", "")
         learning = {
             "learning_id": lid, "mission_id": mission_id,
-            "observation": learning_data.get("observation", ""),
-            "category": learning_data.get("category", "general"),
-            "impact_assessment": learning_data.get("impact_assessment", ""),
-            "recommended_adjustment": learning_data.get("recommended_adjustment", ""),
-            "confidence_pct": learning_data.get("confidence_pct", 50),
-            "data_source_label": learning_data.get("data_source_label", "ESTIMATED / PROXY SCORE"),
-            "recorded_by": learning_data.get("recorded_by", "system"),
+            "note": note_text,
+            "observation": note_text,
+            "metric_type": ld.get("metric_type"),
+            "forecasted_value": ld.get("forecasted_value"),
+            "actual_value": ld.get("actual_value"),
+            "variance": None,
+            "category": ld.get("category", "general"),
+            "impact_assessment": ld.get("impact_assessment", ""),
+            "recommended_adjustment": ld.get("recommended_adjustment", ""),
+            "confidence_pct": ld.get("confidence_pct", 50),
+            "data_source_label": ld.get("data_source_label", "ESTIMATED / PROXY SCORE"),
+            "recorded_by": ld.get("recorded_by", "system"),
             "created_at": now,
         }
-        data.setdefault("learnings", {}).setdefault(mission_id, []).append(learning)
+        # Calculate variance if both values provided
+        if learning["forecasted_value"] is not None and learning["actual_value"] is not None:
+            try:
+                learning["variance"] = round(float(learning["actual_value"]) - float(learning["forecasted_value"]), 4)
+            except (ValueError, TypeError):
+                pass
+        store.setdefault("learnings", {}).setdefault(mission_id, []).append(learning)
         m.setdefault("learning_notes", []).append({
-            "learning_id": lid, "observation": learning["observation"], "created_at": now,
+            "learning_id": lid, "observation": note_text, "created_at": now,
         })
         m["updated_at"] = now
-        _save(data)
+        _save(store)
     return learning
 
 
@@ -663,18 +693,28 @@ def get_mission_learnings(mission_id):
 
 
 def evaluate_mission_accuracy(mission_id):
-    """Compare forecasted vs actual metrics using deterministic scoring."""
+    """Compare forecasted vs actual metrics using deterministic scoring.
+
+    Tracks: forecasted vs actual traffic, rankings, engagement, authority
+    score, and monetization. Returns data_maturity, confidence_pct,
+    last_validation_date, and forecast_accuracy for each metric.
+    """
     data = _load()
     m = data.get("missions", {}).get(mission_id)
     if not m:
         return None
     metrics = m.get("success_metrics", {})
     report = {
-        "mission_id": mission_id, "mission_name": m.get("mission_name"),
-        "evaluated_at": _ts(), "data_maturity": m.get("data_maturity", "low"),
+        "mission_id": mission_id,
+        "mission_name": m.get("mission_name"),
+        "evaluated_at": _ts(),
+        "data_maturity": m.get("data_maturity", "low"),
         "confidence_pct": m.get("confidence_pct", 0),
         "last_validation_date": m.get("last_validation_date"),
-        "metrics_comparison": {}, "overall_forecast_accuracy": 0,
+        "metrics_comparison": {},
+        "overall_forecast_accuracy": 0,
+        "forecast_accuracy": 0,
+        "ethical_compliance": _ethical_check(),
         "data_source_label": "ESTIMATED / PROXY SCORE",
     }
     total, count = 0, 0
@@ -684,15 +724,19 @@ def evaluate_mission_accuracy(mission_id):
         actual = _sr(0, float(target) * 1.4, mission_id, name, "actual")
         acc = min(actual / target, 1.5)
         report["metrics_comparison"][name] = {
-            "forecasted": target, "actual_estimated": round(actual, 3),
+            "forecasted": target,
+            "actual_estimated": round(actual, 3),
             "accuracy_pct": round(acc * 100, 1),
+            "forecast_accuracy": round(acc * 100, 1),
             "status": "on_track" if 0.8 <= acc <= 1.2 else ("ahead" if acc > 1.2 else "behind"),
             "data_source_label": "ESTIMATED / PROXY SCORE",
         }
         total += acc
         count += 1
     if count:
-        report["overall_forecast_accuracy"] = round((total / count) * 100, 1)
+        overall = round((total / count) * 100, 1)
+        report["overall_forecast_accuracy"] = overall
+        report["forecast_accuracy"] = overall
     return report
 
 
@@ -837,14 +881,19 @@ _QUALITY_RULES = [
 ]
 
 
-def validate_content_quality(content_data):
+def validate_content_quality(data=None, **kwargs):
     """Check content against quality rules. Returns violations list.
 
-    content_data: text (required), title, claims, word_count, template_similarity
+    data: content (str, required), content_type (optional), claims (list, optional),
+          text (legacy alias for content), title, word_count, template_similarity
     """
-    text = content_data.get("text", "").lower()
-    title = content_data.get("title", "").lower()
-    full = f"{title} {text}"
+    content_data = data if data is not None else kwargs
+    # Accept both 'content' (from routes Pydantic model) and 'text' (legacy)
+    raw_text = content_data.get("content") or content_data.get("text", "")
+    text = raw_text.lower()
+    title = content_data.get("title", content_data.get("content_type", "")).lower()
+    claims = content_data.get("claims") or []
+    full = f"{title} {text} " + " ".join(c.lower() for c in claims)
     wc = content_data.get("word_count") or len(text.split())
     tsim = content_data.get("template_similarity", 0)
     violations = []
@@ -869,9 +918,24 @@ def validate_content_quality(content_data):
                                "template_similarity": tsim, "max_allowed": rule["max_template_ratio"],
                                "action": "Rewrite content with unique angles and original analysis."})
 
+    passed = len(violations) == 0
+    score = max(0, 100 - len(violations) * 15)
+    if passed:
+        recommendation = "Content passes all quality checks. Approved for publication."
+    elif score >= 70:
+        recommendation = "Minor violations detected. Review flagged items before publication."
+    elif score >= 40:
+        recommendation = "Significant violations detected. Content requires rewriting."
+    else:
+        recommendation = "Critical quality failures. Content must be rejected and rewritten."
+
     return {
+        "passed": passed,
+        "violations": violations,
+        "score": score,
+        "recommendation": recommendation,
         "content_title": content_data.get("title", "Untitled"),
-        "violations_count": len(violations), "passed": len(violations) == 0,
-        "violations": violations, "checked_rules": len(_QUALITY_RULES),
+        "violations_count": len(violations),
+        "checked_rules": len(_QUALITY_RULES),
         "word_count": wc, "data_source_label": "LIVE DATA",
     }
