@@ -1,0 +1,1268 @@
+{
+  "metadata": {
+    "generated_at": "2026-05-26T22:02:18.247232+00:00",
+    "generator": "generate_owner_review_summaries.py",
+    "site": "pethubonline.com",
+    "posts_processed": 4,
+    "posts_failed": 0,
+    "errors": [],
+    "purpose": "Owner review summaries for 4 draft Dog Food posts. NOT for publishing -- for internal review only."
+  },
+  "summaries": {
+    "3836": {
+      "basic_info": {
+        "post_id": 3836,
+        "title": "Best Dog Food UK (2026) – Complete Guide & Honest Reviews",
+        "slug": "best-dog-food-uk",
+        "preview_url": "https://pethubonline.com/?p=3836",
+        "word_count": 3982,
+        "status": "draft"
+      },
+      "content_quality": {
+        "usefulness_score": 9,
+        "usefulness_max": 10,
+        "usefulness_breakdown": {
+          "substantive_paragraphs": 54,
+          "tables": 4,
+          "lists": 34,
+          "h2_count": 14,
+          "word_count": 3982,
+          "faq_items": 1
+        },
+        "search_intent_match": "strong",
+        "search_intent_detail": {
+          "kw_in_h1": true,
+          "kw_in_any_h2": true,
+          "kw_words_in_headings": 4
+        },
+        "uk_relevance": "strong",
+        "uk_marker_hits": 4,
+        "readability": {
+          "avg_paragraph_length_words": 18.6,
+          "heading_frequency_words_per_heading": 108
+        },
+        "heading_quality": {
+          "h2_count": 14,
+          "h3_count": 23,
+          "descriptive_h2_count": 14,
+          "all_h2_descriptive": true
+        },
+        "faq_quality": {
+          "faq_item_count": 1,
+          "has_question_mark_headings": true
+        },
+        "internal_linking": {
+          "count": 7,
+          "targets": [
+            "/best-dry-dog-food-uk/",
+            "/best-grain-free-dog-food-uk/",
+            "/best-puppy-food-uk/",
+            "/best-raw-dog-food-uk/",
+            "/best-senior-dog-food-uk/",
+            "/best-wet-dog-food-uk/",
+            "https://pethubonline.com/affiliate-disclosure/"
+          ]
+        }
+      },
+      "trust_and_safety": {
+        "no_fake_testing_claims": {
+          "status": "pass",
+          "description": "Claims of firsthand product testing by PetHub",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_fake_vet_claims": {
+          "status": "pass",
+          "description": "Claims of veterinary endorsement by PetHub",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_fake_customer_feedback": {
+          "status": "pass",
+          "description": "Claims of customer/reader feedback without evidence",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_invented_prices": {
+          "status": "pass",
+          "description": "Specific GBP price claims",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_invented_ratings": {
+          "status": "pass",
+          "description": "Star ratings or numerical scores",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_invented_review_counts": {
+          "status": "pass",
+          "description": "Review count claims",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_unsupported_health_claims": {
+          "status": "pass",
+          "description": "Unsupported medical/health claims",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_manipulative_affiliate": {
+          "status": "pass",
+          "description": "Manipulative urgency/scarcity affiliate language",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_filler_padding": {
+          "status": "pass",
+          "description": "Content depth justifies word count",
+          "word_count": 3982,
+          "substantive_paragraphs": 54,
+          "total_paragraphs": 112,
+          "substantive_ratio": 0.48,
+          "heading_density_per_300w": 2.79,
+          "tables": 4,
+          "lists": 34
+        }
+      },
+      "structure": {
+        "h1_count": 1,
+        "h2_list": [
+          "Best Dog Food UK — Quick Answer",
+          "What This Dog Food Guide Covers",
+          "Best For: Our Category Picks",
+          "UK Dog Food Types Explained",
+          "How to Choose the Best Dog Food UK",
+          "Best Dog Food UK by Life Stage",
+          "Best Dog Food UK by Breed Size",
+          "Dog Food Safety in the UK",
+          "Ingredients: What to Look For and What to Avoid",
+          "Frequently Asked Questions",
+          "Dry vs Wet vs Raw: Quick Comparison",
+          "Best Dog Food UK Brands by Price Tier",
+          "How We Research and Recommend",
+          "Explore Our Best Dog Food UK Guides"
+        ],
+        "h3_list": [
+          "Dry Food (Kibble)",
+          "Wet Food (Tins, Trays, Pouches)",
+          "Raw Food (BARF / Prey Model)",
+          "Fresh/Cooked Food (Subscription Services)",
+          "Grain-Free Food",
+          "Reading UK Dog Food Labels",
+          "Budget vs Premium: Is Expensive Dog Food Actually Better?",
+          "How to Switch Dog Food Safely",
+          "How Much to Feed Your Dog",
+          "Puppy Food (0-12 months, up to 24 months for large breeds)",
+          "Adult Dog Food (1-7 years, varies by size)",
+          "Senior Dog Food (7+ years, 5+ for giant breeds)",
+          "Small Breeds (Under 10kg)",
+          "Medium Breeds (10-25kg)",
+          "Large Breeds (25-45kg)",
+          "Giant Breeds (45kg+)",
+          "Current UK Recalls",
+          "Foods Dangerous to Dogs",
+          "How UK Dog Food is Regulated",
+          "Good Indicators",
+          "Watch For",
+          "Avoid",
+          "Common Misconceptions"
+        ],
+        "table_count": 4,
+        "image_count": 6,
+        "hr_separator_count": 24,
+        "affiliate_disclosure_present": true,
+        "content_status_notice_present": false,
+        "div_balance": {
+          "open": 1,
+          "close": 1,
+          "balanced": true
+        }
+      },
+      "seo": {
+        "seo_title": "Best Dog Food UK (2026) | Honest Reviews & Buying Guide",
+        "seo_title_length": 55,
+        "seo_description": "Best dog food UK picks for 2026. Evidence-based reviews covering dry, wet, raw and fresh options with honest ingredient analysis, feeding charts and pricing.",
+        "seo_description_length": 157,
+        "focus_keyword": "best dog food uk",
+        "kw_in_title": true,
+        "kw_starts_desc": true,
+        "kw_density_pct": 1.0,
+        "kw_occurrences": 10,
+        "og_title": "Best Dog Food UK (2026) | Honest Reviews & Buying Guide",
+        "og_desc": "Best dog food UK picks for 2026. Evidence-based reviews covering dry, wet, raw and fresh options with honest ingredient analysis, feeding charts and pricing.",
+        "tw_title": "Best Dog Food UK (2026) | Honest Reviews & Buying Guide",
+        "tw_desc": "Best dog food UK picks for 2026. Evidence-based reviews covering dry, wet, raw and fresh options with honest ingredient analysis, feeding charts and pricing."
+      },
+      "schema": {
+        "schema_status": "PROPOSAL ONLY",
+        "schema_types_proposed": [
+          "Article",
+          "BreadcrumbList"
+        ],
+        "excluded_types": [
+          "Product",
+          "AggregateRating",
+          "Review",
+          "Offer"
+        ],
+        "faq_count_in_schema": 0
+      },
+      "product_evidence": {
+        "linked_products": [
+          {
+            "entry_id": "PE-001",
+            "product_name": "Royal Canin Medium Adult",
+            "brand": "Royal Canin",
+            "evidence_status": "blocked_pending_evidence",
+            "approval_status": "blocked_pending_evidence",
+            "publish_allowed": false,
+            "verified_claims_count": 4,
+            "unverified_claims_count": 6,
+            "risk_flags": [
+              "No firsthand testing conducted",
+              "Price may be outdated if published without live check",
+              "Affiliate link not yet generated or verified"
+            ]
+          },
+          {
+            "entry_id": "PE-002",
+            "product_name": "James Wellbeloved Adult Dog Lamb & Rice",
+            "brand": "James Wellbeloved",
+            "evidence_status": "blocked_pending_evidence",
+            "approval_status": "blocked_pending_evidence",
+            "publish_allowed": false,
+            "verified_claims_count": 4,
+            "unverified_claims_count": 6,
+            "risk_flags": [
+              "Health/hypoallergenic claims require careful attribution to avoid misleading readers",
+              "No firsthand testing conducted",
+              "Affiliate link not yet generated or verified"
+            ]
+          },
+          {
+            "entry_id": "PE-003",
+            "product_name": "Lily's Kitchen Adult Chicken & Duck Dry Food",
+            "brand": "Lily's Kitchen",
+            "evidence_status": "blocked_pending_evidence",
+            "approval_status": "blocked_pending_evidence",
+            "publish_allowed": false,
+            "verified_claims_count": 4,
+            "unverified_claims_count": 6,
+            "risk_flags": [
+              "Premium pricing may fluctuate - do not publish price without live verification",
+              "Natural/organic claims need manufacturer attribution",
+              "No firsthand testing conducted"
+            ]
+          },
+          {
+            "entry_id": "PE-004",
+            "product_name": "Forthglade Complete Meal Adult Chicken",
+            "brand": "Forthglade",
+            "evidence_status": "blocked_pending_evidence",
+            "approval_status": "blocked_pending_evidence",
+            "publish_allowed": false,
+            "verified_claims_count": 4,
+            "unverified_claims_count": 6,
+            "risk_flags": [
+              "Wet food formulations may change - verify against current packaging",
+              "No firsthand testing conducted",
+              "Affiliate link not yet generated or verified"
+            ]
+          },
+          {
+            "entry_id": "PE-009",
+            "product_name": "Harringtons Complete Dry Dog Food Chicken & Rice",
+            "brand": "Harringtons",
+            "evidence_status": "blocked_pending_evidence",
+            "approval_status": "blocked_pending_evidence",
+            "publish_allowed": false,
+            "verified_claims_count": 4,
+            "unverified_claims_count": 6,
+            "risk_flags": [
+              "Budget claims need actual comparative price data",
+              "Complete and balanced claims should be verified against current UK pet food regulations",
+              "No firsthand testing conducted"
+            ]
+          }
+        ],
+        "linked_product_count": 5,
+        "any_unverified_claims": true
+      },
+      "publishing_readiness": {
+        "overall_status": "needs_edits",
+        "checklist": {
+          "owner_review": "pending",
+          "qa_check": "pass",
+          "metadata_approved": "pending",
+          "schema_approved": "pending",
+          "internal_linking": "pass",
+          "evidence_restrictions_confirmed": "fail",
+          "affiliate_disclosure_confirmed": "pending",
+          "no_fake_claims": "pass",
+          "publisher_approval": "not_granted",
+          "rollback_snapshot": "not_taken",
+          "final_preview_check": "pending"
+        },
+        "blockers": [
+          "All linked products are blocked_pending_evidence"
+        ],
+        "next_action": "Owner reviews content, then product evidence must be verified before publishing."
+      },
+      "review_guidance": {
+        "one_line_summary": "Comprehensive hub page covering the best dog food options in the UK for 2026 across dry, wet, raw, and fresh categories.",
+        "strengths": [
+          "High educational content depth with strong use of headings and structure",
+          "Good UK-specific relevance with references to FEDIAF, UK brands, and GBP",
+          "Focus keyword is well-integrated into headings",
+          "Includes 4 comparison table(s) for quick reference",
+          "All trust and safety checks pass -- no fake claims detected"
+        ],
+        "areas_for_review": [
+          "Review all product mentions to confirm no specific prices, ratings, or review counts are stated",
+          "All linked products have blocked_pending_evidence status -- verify product claims before publishing",
+          "Confirm affiliate disclosure is visible and properly worded",
+          "Check that all health/nutrition claims are attributed to FEDIAF or manufacturer sources"
+        ],
+        "risk_level": "medium",
+        "recommendation": "Content quality is solid but product evidence is pending. The post is suitable for owner review. Before publishing: (1) verify all product evidence, (2) confirm no specific prices/ratings are claimed, (3) ensure affiliate disclosure is present, (4) approve SEO metadata."
+      }
+    },
+    "3837": {
+      "basic_info": {
+        "post_id": 3837,
+        "title": "Best Dry Dog Food UK (2026) – Evidence-Based Guide",
+        "slug": "best-dry-dog-food-uk",
+        "preview_url": "https://pethubonline.com/?p=3837",
+        "word_count": 1809,
+        "status": "draft"
+      },
+      "content_quality": {
+        "usefulness_score": 9,
+        "usefulness_max": 10,
+        "usefulness_breakdown": {
+          "substantive_paragraphs": 32,
+          "tables": 3,
+          "lists": 3,
+          "h2_count": 9,
+          "word_count": 1809,
+          "faq_items": 6
+        },
+        "search_intent_match": "strong",
+        "search_intent_detail": {
+          "kw_in_h1": true,
+          "kw_in_any_h2": true,
+          "kw_words_in_headings": 5
+        },
+        "uk_relevance": "moderate",
+        "uk_marker_hits": 3,
+        "readability": {
+          "avg_paragraph_length_words": 32.4,
+          "heading_frequency_words_per_heading": 72
+        },
+        "heading_quality": {
+          "h2_count": 9,
+          "h3_count": 16,
+          "descriptive_h2_count": 8,
+          "all_h2_descriptive": false
+        },
+        "faq_quality": {
+          "faq_item_count": 6,
+          "has_question_mark_headings": true
+        },
+        "internal_linking": {
+          "count": 4,
+          "targets": [
+            "https://pethubonline.com/affiliate-disclosure/",
+            "https://pethubonline.com/best-dog-food-uk/",
+            "https://pethubonline.com/best-puppy-food-uk/",
+            "https://pethubonline.com/dry-vs-wet-dog-food-uk/"
+          ]
+        }
+      },
+      "trust_and_safety": {
+        "no_fake_testing_claims": {
+          "status": "pass",
+          "description": "Claims of firsthand product testing by PetHub",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_fake_vet_claims": {
+          "status": "pass",
+          "description": "Claims of veterinary endorsement by PetHub",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_fake_customer_feedback": {
+          "status": "pass",
+          "description": "Claims of customer/reader feedback without evidence",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_invented_prices": {
+          "status": "FAIL",
+          "description": "Specific GBP price claims",
+          "match_count": 8,
+          "evidence": [
+            {
+              "matched_pattern": "\\xa3\\d+\\.\\d{2}",
+              "context": "...rands (Evidence Pending)       Budget   £1.00 – £2.00   Nutritionally complete, often..."
+            },
+            {
+              "matched_pattern": "\\xa3\\d+\\.\\d{2}",
+              "context": "...vidence Pending)       Budget   £1.00 – £2.00   Nutritionally complete, often uses ce..."
+            },
+            {
+              "matched_pattern": "\\xa3\\d+\\.\\d{2}",
+              "context": "...Pending verification       Mid-Range   £2.00 – £3.50   Named meat as first ingredien..."
+            },
+            {
+              "matched_pattern": "\\xa3\\d+\\.\\d{2}",
+              "context": "...verification       Mid-Range   £2.00 – £3.50   Named meat as first ingredient, good..."
+            },
+            {
+              "matched_pattern": "\\xa3\\d+\\.\\d{2}",
+              "context": "...Pending verification       Premium   £3.50 – £5.50   High named-meat content (50%+..."
+            },
+            {
+              "matched_pattern": "\\xa3\\d+\\.\\d{2}",
+              "context": "...ng verification       Premium   £3.50 – £5.50   High named-meat content (50%+), limit..."
+            },
+            {
+              "matched_pattern": "\\xa3\\d+\\.\\d{2}",
+              "context": "...ding verification       Super-Premium   £5.50 – £8.00+   Very high meat content (60-8..."
+            },
+            {
+              "matched_pattern": "\\xa3\\d+\\.\\d{2}",
+              "context": "...ification       Super-Premium   £5.50 – £8.00+   Very high meat content (60-85%), hum..."
+            }
+          ]
+        },
+        "no_invented_ratings": {
+          "status": "pass",
+          "description": "Star ratings or numerical scores",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_invented_review_counts": {
+          "status": "pass",
+          "description": "Review count claims",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_unsupported_health_claims": {
+          "status": "pass",
+          "description": "Unsupported medical/health claims",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_manipulative_affiliate": {
+          "status": "pass",
+          "description": "Manipulative urgency/scarcity affiliate language",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_filler_padding": {
+          "status": "pass",
+          "description": "Content depth justifies word count",
+          "word_count": 1809,
+          "substantive_paragraphs": 32,
+          "total_paragraphs": 39,
+          "substantive_ratio": 0.82,
+          "heading_density_per_300w": 4.15,
+          "tables": 3,
+          "lists": 3
+        }
+      },
+      "structure": {
+        "h1_count": 1,
+        "h2_list": [
+          "What Makes the Best Dry Dog Food UK?",
+          "How We Evaluate Dry Dog Food in the UK",
+          "Understanding Dry Dog Food Labels in the UK",
+          "Best Dry Dog Food UK — Price Guide",
+          "Dry Dog Food Dietary Approaches",
+          "Dry Dog Food Feeding Guidelines",
+          "Dry Dog Food Storage and Shelf Life",
+          "Frequently Asked Questions",
+          "Related Guides"
+        ],
+        "h3_list": [
+          "Protein Source and Quality",
+          "Ingredient Transparency",
+          "FEDIAF Compliance",
+          "Additives and Preservatives",
+          "Guaranteed Analysis: What the Numbers Mean",
+          "The “As-Fed” vs “Dry Matter” Calculation",
+          "Grain-Free Dry Dog Food",
+          "Cold-Pressed Dog Food",
+          "Single-Protein (Limited Ingredient) Diets",
+          "How Much to Feed",
+          "Transitioning Between Foods",
+          "Is dry dog food enough on its own?",
+          "Should I soak dry dog food?",
+          "How do I know if my dog’s food is good quality?",
+          "Is expensive dog food always better?",
+          "Can I feed my dog the same food forever?"
+        ],
+        "table_count": 3,
+        "image_count": 6,
+        "hr_separator_count": 9,
+        "affiliate_disclosure_present": true,
+        "content_status_notice_present": true,
+        "div_balance": {
+          "open": 2,
+          "close": 2,
+          "balanced": true
+        }
+      },
+      "seo": {
+        "seo_title": "Best Dry Dog Food UK (2026) | Kibble Guide & Comparison",
+        "seo_title_length": 55,
+        "seo_description": "Best dry dog food UK brands for 2026. Compare kibble types, FEDIAF standards, feeding amounts, storage tips and quality indicators in this evidence-based guide.",
+        "seo_description_length": 160,
+        "focus_keyword": "best dry dog food uk",
+        "kw_in_title": true,
+        "kw_starts_desc": true,
+        "kw_density_pct": 1.66,
+        "kw_occurrences": 6,
+        "og_title": "Best Dry Dog Food UK (2026) | Kibble Guide & Comparison",
+        "og_desc": "Best dry dog food UK brands for 2026. Compare kibble types, FEDIAF standards, feeding amounts, storage tips and quality indicators in this evidence-based guide.",
+        "tw_title": "Best Dry Dog Food UK (2026) | Kibble Guide & Comparison",
+        "tw_desc": "Best dry dog food UK brands for 2026. Compare kibble types, FEDIAF standards, feeding amounts, storage tips and quality indicators in this evidence-based guide."
+      },
+      "schema": {
+        "schema_status": "PROPOSAL ONLY",
+        "schema_types_proposed": [
+          "Article",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "excluded_types": [
+          "Product",
+          "AggregateRating",
+          "Review",
+          "Offer"
+        ],
+        "faq_count_in_schema": 5
+      },
+      "product_evidence": {
+        "linked_products": [
+          {
+            "entry_id": "PE-001",
+            "product_name": "Royal Canin Medium Adult",
+            "brand": "Royal Canin",
+            "evidence_status": "blocked_pending_evidence",
+            "approval_status": "blocked_pending_evidence",
+            "publish_allowed": false,
+            "verified_claims_count": 4,
+            "unverified_claims_count": 6,
+            "risk_flags": [
+              "No firsthand testing conducted",
+              "Price may be outdated if published without live check",
+              "Affiliate link not yet generated or verified"
+            ]
+          },
+          {
+            "entry_id": "PE-002",
+            "product_name": "James Wellbeloved Adult Dog Lamb & Rice",
+            "brand": "James Wellbeloved",
+            "evidence_status": "blocked_pending_evidence",
+            "approval_status": "blocked_pending_evidence",
+            "publish_allowed": false,
+            "verified_claims_count": 4,
+            "unverified_claims_count": 6,
+            "risk_flags": [
+              "Health/hypoallergenic claims require careful attribution to avoid misleading readers",
+              "No firsthand testing conducted",
+              "Affiliate link not yet generated or verified"
+            ]
+          },
+          {
+            "entry_id": "PE-003",
+            "product_name": "Lily's Kitchen Adult Chicken & Duck Dry Food",
+            "brand": "Lily's Kitchen",
+            "evidence_status": "blocked_pending_evidence",
+            "approval_status": "blocked_pending_evidence",
+            "publish_allowed": false,
+            "verified_claims_count": 4,
+            "unverified_claims_count": 6,
+            "risk_flags": [
+              "Premium pricing may fluctuate - do not publish price without live verification",
+              "Natural/organic claims need manufacturer attribution",
+              "No firsthand testing conducted"
+            ]
+          },
+          {
+            "entry_id": "PE-009",
+            "product_name": "Harringtons Complete Dry Dog Food Chicken & Rice",
+            "brand": "Harringtons",
+            "evidence_status": "blocked_pending_evidence",
+            "approval_status": "blocked_pending_evidence",
+            "publish_allowed": false,
+            "verified_claims_count": 4,
+            "unverified_claims_count": 6,
+            "risk_flags": [
+              "Budget claims need actual comparative price data",
+              "Complete and balanced claims should be verified against current UK pet food regulations",
+              "No firsthand testing conducted"
+            ]
+          }
+        ],
+        "linked_product_count": 4,
+        "any_unverified_claims": true
+      },
+      "publishing_readiness": {
+        "overall_status": "needs_edits",
+        "checklist": {
+          "owner_review": "pending",
+          "qa_check": "fail",
+          "metadata_approved": "pending",
+          "schema_approved": "pending",
+          "internal_linking": "pass",
+          "evidence_restrictions_confirmed": "fail",
+          "affiliate_disclosure_confirmed": "pending",
+          "no_fake_claims": "fail",
+          "publisher_approval": "not_granted",
+          "rollback_snapshot": "not_taken",
+          "final_preview_check": "pending"
+        },
+        "blockers": [
+          "Safety check failures: no_invented_prices",
+          "All linked products are blocked_pending_evidence"
+        ],
+        "next_action": "Owner reviews content, then product evidence must be verified before publishing."
+      },
+      "review_guidance": {
+        "one_line_summary": "In-depth guide to the best dry dog food (kibble) brands in the UK with ingredient analysis and FEDIAF compliance information.",
+        "strengths": [
+          "High educational content depth with strong use of headings and structure",
+          "Good UK-specific relevance with references to FEDIAF, UK brands, and GBP",
+          "Focus keyword is well-integrated into headings",
+          "Includes 3 comparison table(s) for quick reference",
+          "FAQ section with 6 questions addresses common queries"
+        ],
+        "areas_for_review": [
+          "Review all product mentions to confirm no specific prices, ratings, or review counts are stated",
+          "All linked products have blocked_pending_evidence status -- verify product claims before publishing",
+          "Confirm affiliate disclosure is visible and properly worded",
+          "Check that all health/nutrition claims are attributed to FEDIAF or manufacturer sources"
+        ],
+        "risk_level": "high",
+        "recommendation": "DO NOT PUBLISH until safety check failures are resolved: no_invented_prices. Review flagged content sections and remove or rewrite any claims that cannot be substantiated."
+      }
+    },
+    "3838": {
+      "basic_info": {
+        "post_id": 3838,
+        "title": "Dry vs Wet Dog Food UK – An Honest Comparison",
+        "slug": "dry-vs-wet-dog-food-uk",
+        "preview_url": "https://pethubonline.com/?p=3838",
+        "word_count": 1549,
+        "status": "draft"
+      },
+      "content_quality": {
+        "usefulness_score": 9,
+        "usefulness_max": 10,
+        "usefulness_breakdown": {
+          "substantive_paragraphs": 25,
+          "tables": 3,
+          "lists": 5,
+          "h2_count": 10,
+          "word_count": 1549,
+          "faq_items": 7
+        },
+        "search_intent_match": "strong",
+        "search_intent_detail": {
+          "kw_in_h1": true,
+          "kw_in_any_h2": true,
+          "kw_words_in_headings": 5
+        },
+        "uk_relevance": "moderate",
+        "uk_marker_hits": 2,
+        "readability": {
+          "avg_paragraph_length_words": 30.1,
+          "heading_frequency_words_per_heading": 62
+        },
+        "heading_quality": {
+          "h2_count": 10,
+          "h3_count": 15,
+          "descriptive_h2_count": 9,
+          "all_h2_descriptive": false
+        },
+        "faq_quality": {
+          "faq_item_count": 7,
+          "has_question_mark_headings": true
+        },
+        "internal_linking": {
+          "count": 4,
+          "targets": [
+            "https://pethubonline.com//best-dog-food-uk/",
+            "https://pethubonline.com//best-dry-dog-food-uk/",
+            "https://pethubonline.com//best-puppy-food-uk/",
+            "https://pethubonline.com/affiliate-disclosure/"
+          ]
+        }
+      },
+      "trust_and_safety": {
+        "no_fake_testing_claims": {
+          "status": "pass",
+          "description": "Claims of firsthand product testing by PetHub",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_fake_vet_claims": {
+          "status": "pass",
+          "description": "Claims of veterinary endorsement by PetHub",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_fake_customer_feedback": {
+          "status": "pass",
+          "description": "Claims of customer/reader feedback without evidence",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_invented_prices": {
+          "status": "FAIL",
+          "description": "Specific GBP price claims",
+          "match_count": 18,
+          "evidence": [
+            {
+              "matched_pattern": "\\xa3\\d+\\.\\d{2}",
+              "context": "...r day)   Saving with Dry       Budget   £1.00 – £2.00   £2.00 – £3.50   ~£1.00 – £1.5..."
+            },
+            {
+              "matched_pattern": "\\xa3\\d+\\.\\d{2}",
+              "context": "...Saving with Dry       Budget   £1.00 – £2.00   £2.00 – £3.50   ~£1.00 – £1.50/day..."
+            },
+            {
+              "matched_pattern": "\\xa3\\d+\\.\\d{2}",
+              "context": "...with Dry       Budget   £1.00 – £2.00   £2.00 – £3.50   ~£1.00 – £1.50/day       Mid-..."
+            },
+            {
+              "matched_pattern": "\\xa3\\d+\\.\\d{2}",
+              "context": "...Budget   £1.00 – £2.00   £2.00 – £3.50   ~£1.00 – £1.50/day       Mid-Range..."
+            },
+            {
+              "matched_pattern": "\\xa3\\d+\\.\\d{2}",
+              "context": "...dget   £1.00 – £2.00   £2.00 – £3.50   ~£1.00 – £1.50/day       Mid-Range   £2.00 – £..."
+            },
+            {
+              "matched_pattern": "\\xa3\\d+\\.\\d{2}",
+              "context": "...1.00 – £2.00   £2.00 – £3.50   ~£1.00 – £1.50/day       Mid-Range   £2.00 – £3.50   £..."
+            },
+            {
+              "matched_pattern": "\\xa3\\d+\\.\\d{2}",
+              "context": "...~£1.00 – £1.50/day       Mid-Range   £2.00 – £3.50   £3.50 – £5.50   ~£1.50 – £2.0..."
+            },
+            {
+              "matched_pattern": "\\xa3\\d+\\.\\d{2}",
+              "context": "...0 – £1.50/day       Mid-Range   £2.00 – £3.50   £3.50 – £5.50   ~£1.50 – £2.00/day..."
+            },
+            {
+              "matched_pattern": "\\xa3\\d+\\.\\d{2}",
+              "context": "...0/day       Mid-Range   £2.00 – £3.50   £3.50 – £5.50   ~£1.50 – £2.00/day       Prem..."
+            },
+            {
+              "matched_pattern": "\\xa3\\d+\\.\\d{2}",
+              "context": "...Mid-Range   £2.00 – £3.50   £3.50 – £5.50   ~£1.50 – £2.00/day       Premium   £3..."
+            }
+          ]
+        },
+        "no_invented_ratings": {
+          "status": "pass",
+          "description": "Star ratings or numerical scores",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_invented_review_counts": {
+          "status": "pass",
+          "description": "Review count claims",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_unsupported_health_claims": {
+          "status": "pass",
+          "description": "Unsupported medical/health claims",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_manipulative_affiliate": {
+          "status": "pass",
+          "description": "Manipulative urgency/scarcity affiliate language",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_filler_padding": {
+          "status": "pass",
+          "description": "Content depth justifies word count",
+          "word_count": 1549,
+          "substantive_paragraphs": 25,
+          "total_paragraphs": 30,
+          "substantive_ratio": 0.83,
+          "heading_density_per_300w": 4.84,
+          "tables": 3,
+          "lists": 5
+        }
+      },
+      "structure": {
+        "h1_count": 1,
+        "h2_list": [
+          "Dry vs Wet Dog Food — The Short Answer",
+          "Nutritional Comparison: Dry vs Wet Dog Food",
+          "Advantages of Dry Dog Food",
+          "Advantages of Wet Dog Food",
+          "Dry vs Wet Dog Food — Mixed Feeding Approach",
+          "Special Circumstances: Which Format Is Better?",
+          "What About Raw and Fresh Food?",
+          "Dry vs Wet Dog Food Labels: What to Check",
+          "Frequently Asked Questions",
+          "Related Guides"
+        ],
+        "h3_list": [
+          "How to Convert As-Fed to Dry Matter",
+          "Cost-Effectiveness",
+          "Convenience and Storage",
+          "Dental Health",
+          "Portion Control",
+          "Hydration",
+          "Palatability",
+          "Lower Carbohydrate Content",
+          "Easier to Eat",
+          "How to Mix Feed",
+          "Can I switch between dry and wet food?",
+          "Is dry food bad for dogs with kidney problems?",
+          "My dog only wants wet food. Is that OK?",
+          "Does dry food really clean teeth?",
+          "How much does it cost to feed a dog in the UK?"
+        ],
+        "table_count": 3,
+        "image_count": 6,
+        "hr_separator_count": 10,
+        "affiliate_disclosure_present": true,
+        "content_status_notice_present": true,
+        "div_balance": {
+          "open": 2,
+          "close": 2,
+          "balanced": true
+        }
+      },
+      "seo": {
+        "seo_title": "Dry vs Wet Dog Food UK (2026): Side-by-Side Comparison",
+        "seo_title_length": 54,
+        "seo_description": "Dry vs wet dog food compared for UK dogs. Nutritional analysis, cost breakdown, mixed feeding ratios and situation-based recommendations in this honest guide.",
+        "seo_description_length": 158,
+        "focus_keyword": "dry vs wet dog food",
+        "kw_in_title": true,
+        "kw_starts_desc": true,
+        "kw_density_pct": 1.94,
+        "kw_occurrences": 6,
+        "og_title": "Dry vs Wet Dog Food UK (2026): Side-by-Side Comparison",
+        "og_desc": "Dry vs wet dog food compared for UK dogs. Nutritional analysis, cost breakdown, mixed feeding ratios and situation-based recommendations in this honest guide.",
+        "tw_title": "Dry vs Wet Dog Food UK (2026): Side-by-Side Comparison",
+        "tw_desc": "Dry vs wet dog food compared for UK dogs. Nutritional analysis, cost breakdown, mixed feeding ratios and situation-based recommendations in this honest guide."
+      },
+      "schema": {
+        "schema_status": "PROPOSAL ONLY",
+        "schema_types_proposed": [
+          "Article",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "excluded_types": [
+          "Product",
+          "AggregateRating",
+          "Review",
+          "Offer"
+        ],
+        "faq_count_in_schema": 5
+      },
+      "product_evidence": {
+        "linked_products": [
+          {
+            "entry_id": "PE-004",
+            "product_name": "Forthglade Complete Meal Adult Chicken",
+            "brand": "Forthglade",
+            "evidence_status": "blocked_pending_evidence",
+            "approval_status": "blocked_pending_evidence",
+            "publish_allowed": false,
+            "verified_claims_count": 4,
+            "unverified_claims_count": 6,
+            "risk_flags": [
+              "Wet food formulations may change - verify against current packaging",
+              "No firsthand testing conducted",
+              "Affiliate link not yet generated or verified"
+            ]
+          },
+          {
+            "entry_id": "PE-005",
+            "product_name": "Butcher's Nourishing Food for Dogs",
+            "brand": "Butcher's",
+            "evidence_status": "blocked_pending_evidence",
+            "approval_status": "blocked_pending_evidence",
+            "publish_allowed": false,
+            "verified_claims_count": 4,
+            "unverified_claims_count": 6,
+            "risk_flags": [
+              "Budget positioning claims need actual price comparison data",
+              "No firsthand testing conducted",
+              "Product range is large - must specify exact variant"
+            ]
+          },
+          {
+            "entry_id": "PE-009",
+            "product_name": "Harringtons Complete Dry Dog Food Chicken & Rice",
+            "brand": "Harringtons",
+            "evidence_status": "blocked_pending_evidence",
+            "approval_status": "blocked_pending_evidence",
+            "publish_allowed": false,
+            "verified_claims_count": 4,
+            "unverified_claims_count": 6,
+            "risk_flags": [
+              "Budget claims need actual comparative price data",
+              "Complete and balanced claims should be verified against current UK pet food regulations",
+              "No firsthand testing conducted"
+            ]
+          }
+        ],
+        "linked_product_count": 3,
+        "any_unverified_claims": true
+      },
+      "publishing_readiness": {
+        "overall_status": "needs_edits",
+        "checklist": {
+          "owner_review": "pending",
+          "qa_check": "fail",
+          "metadata_approved": "pending",
+          "schema_approved": "pending",
+          "internal_linking": "pass",
+          "evidence_restrictions_confirmed": "fail",
+          "affiliate_disclosure_confirmed": "pending",
+          "no_fake_claims": "fail",
+          "publisher_approval": "not_granted",
+          "rollback_snapshot": "not_taken",
+          "final_preview_check": "pending"
+        },
+        "blockers": [
+          "Safety check failures: no_invented_prices",
+          "All linked products are blocked_pending_evidence"
+        ],
+        "next_action": "Owner reviews content, then product evidence must be verified before publishing."
+      },
+      "review_guidance": {
+        "one_line_summary": "Side-by-side comparison of dry vs wet dog food for UK dogs, covering nutrition, cost, convenience, and mixed feeding strategies.",
+        "strengths": [
+          "High educational content depth with strong use of headings and structure",
+          "Good UK-specific relevance with references to FEDIAF, UK brands, and GBP",
+          "Focus keyword is well-integrated into headings",
+          "Includes 3 comparison table(s) for quick reference",
+          "FAQ section with 7 questions addresses common queries"
+        ],
+        "areas_for_review": [
+          "Review all product mentions to confirm no specific prices, ratings, or review counts are stated",
+          "All linked products have blocked_pending_evidence status -- verify product claims before publishing",
+          "Confirm affiliate disclosure is visible and properly worded",
+          "Check that all health/nutrition claims are attributed to FEDIAF or manufacturer sources"
+        ],
+        "risk_level": "high",
+        "recommendation": "DO NOT PUBLISH until safety check failures are resolved: no_invented_prices. Review flagged content sections and remove or rewrite any claims that cannot be substantiated."
+      }
+    },
+    "3839": {
+      "basic_info": {
+        "post_id": 3839,
+        "title": "Best Puppy Food UK (2026) – Growth-Stage Nutrition Guide",
+        "slug": "best-puppy-food-uk",
+        "preview_url": "https://pethubonline.com/?p=3839",
+        "word_count": 1821,
+        "status": "draft"
+      },
+      "content_quality": {
+        "usefulness_score": 9,
+        "usefulness_max": 10,
+        "usefulness_breakdown": {
+          "substantive_paragraphs": 31,
+          "tables": 4,
+          "lists": 8,
+          "h2_count": 10,
+          "word_count": 1821,
+          "faq_items": 7
+        },
+        "search_intent_match": "strong",
+        "search_intent_detail": {
+          "kw_in_h1": true,
+          "kw_in_any_h2": true,
+          "kw_words_in_headings": 4
+        },
+        "uk_relevance": "moderate",
+        "uk_marker_hits": 2,
+        "readability": {
+          "avg_paragraph_length_words": 28.8,
+          "heading_frequency_words_per_heading": 65
+        },
+        "heading_quality": {
+          "h2_count": 10,
+          "h3_count": 18,
+          "descriptive_h2_count": 9,
+          "all_h2_descriptive": false
+        },
+        "faq_quality": {
+          "faq_item_count": 7,
+          "has_question_mark_headings": true
+        },
+        "internal_linking": {
+          "count": 4,
+          "targets": [
+            "https://pethubonline.com/affiliate-disclosure/",
+            "https://pethubonline.com/best-dog-food-uk/",
+            "https://pethubonline.com/best-dry-dog-food-uk/",
+            "https://pethubonline.com/dry-vs-wet-dog-food-uk/"
+          ]
+        }
+      },
+      "trust_and_safety": {
+        "no_fake_testing_claims": {
+          "status": "pass",
+          "description": "Claims of firsthand product testing by PetHub",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_fake_vet_claims": {
+          "status": "pass",
+          "description": "Claims of veterinary endorsement by PetHub",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_fake_customer_feedback": {
+          "status": "pass",
+          "description": "Claims of customer/reader feedback without evidence",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_invented_prices": {
+          "status": "pass",
+          "description": "Specific GBP price claims",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_invented_ratings": {
+          "status": "pass",
+          "description": "Star ratings or numerical scores",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_invented_review_counts": {
+          "status": "pass",
+          "description": "Review count claims",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_unsupported_health_claims": {
+          "status": "pass",
+          "description": "Unsupported medical/health claims",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_manipulative_affiliate": {
+          "status": "pass",
+          "description": "Manipulative urgency/scarcity affiliate language",
+          "match_count": 0,
+          "evidence": []
+        },
+        "no_filler_padding": {
+          "status": "pass",
+          "description": "Content depth justifies word count",
+          "word_count": 1821,
+          "substantive_paragraphs": 31,
+          "total_paragraphs": 35,
+          "substantive_ratio": 0.89,
+          "heading_density_per_300w": 4.61,
+          "tables": 4,
+          "lists": 8
+        }
+      },
+      "structure": {
+        "h1_count": 1,
+        "h2_list": [
+          "Why the Best Puppy Food UK Matters",
+          "Puppy Food UK — Key Nutritional Requirements",
+          "Best Puppy Food by Life Stage",
+          "When to Switch from Puppy Food to Adult Food",
+          "Best Puppy Food UK for Large and Giant Breeds",
+          "Common Puppy Food UK Feeding Mistakes",
+          "Best Puppy Food UK: Dry, Wet, or Raw?",
+          "How Much Puppy Food to Feed by Weight",
+          "Frequently Asked Questions",
+          "Related Guides"
+        ],
+        "h3_list": [
+          "The Calcium Question: Why It Matters So Much",
+          "Weaning (3-8 Weeks)",
+          "Young Puppy (2-6 Months)",
+          "Adolescent Puppy (6-12 Months)",
+          "Late Growth (12-24 Months)",
+          "Key Differences from Standard Puppy Food",
+          "Growth Rate Matters",
+          "1. Feeding Adult Food",
+          "2. Supplementing with Calcium",
+          "3. Free-Feeding (Leaving Food Out All Day)",
+          "4. Too Many Treats",
+          "5. Switching Foods Too Quickly",
+          "Can I feed my puppy adult dog food?",
+          "How often should I feed my puppy?",
+          "My puppy is a fussy eater. What should I do?",
+          "Should I give my puppy supplements?",
+          "Is grain-free food safe for puppies?",
+          "What about bones and chews for puppies?"
+        ],
+        "table_count": 4,
+        "image_count": 6,
+        "hr_separator_count": 10,
+        "affiliate_disclosure_present": true,
+        "content_status_notice_present": true,
+        "div_balance": {
+          "open": 2,
+          "close": 2,
+          "balanced": true
+        }
+      },
+      "seo": {
+        "seo_title": "Best Puppy Food UK (2026) | Feeding & Nutrition Guide",
+        "seo_title_length": 53,
+        "seo_description": "Best puppy food UK guide for 2026. Age-based feeding schedules, FEDIAF nutrient requirements, portion charts, transition timelines and large breed considerations.",
+        "seo_description_length": 162,
+        "focus_keyword": "best puppy food uk",
+        "kw_in_title": true,
+        "kw_starts_desc": true,
+        "kw_density_pct": 1.32,
+        "kw_occurrences": 6,
+        "og_title": "Best Puppy Food UK (2026) | Feeding & Nutrition Guide",
+        "og_desc": "Best puppy food UK guide for 2026. Age-based feeding schedules, FEDIAF nutrient requirements, portion charts, transition timelines and large breed considerations.",
+        "tw_title": "Best Puppy Food UK (2026) | Feeding & Nutrition Guide",
+        "tw_desc": "Best puppy food UK guide for 2026. Age-based feeding schedules, FEDIAF nutrient requirements, portion charts, transition timelines and large breed considerations."
+      },
+      "schema": {
+        "schema_status": "PROPOSAL ONLY",
+        "schema_types_proposed": [
+          "Article",
+          "BreadcrumbList",
+          "FAQPage"
+        ],
+        "excluded_types": [
+          "Product",
+          "AggregateRating",
+          "Review",
+          "Offer"
+        ],
+        "faq_count_in_schema": 6
+      },
+      "product_evidence": {
+        "linked_products": [
+          {
+            "entry_id": "PE-006",
+            "product_name": "Royal Canin Puppy Medium",
+            "brand": "Royal Canin",
+            "evidence_status": "blocked_pending_evidence",
+            "approval_status": "blocked_pending_evidence",
+            "publish_allowed": false,
+            "verified_claims_count": 4,
+            "unverified_claims_count": 6,
+            "risk_flags": [
+              "Puppy food claims are sensitive - incorrect nutritional guidance could harm growing dogs",
+              "Vet recommendation claims must be verified or attributed",
+              "No firsthand testing conducted"
+            ]
+          },
+          {
+            "entry_id": "PE-007",
+            "product_name": "Burns Puppy Original Chicken & Rice",
+            "brand": "Burns Pet Nutrition",
+            "evidence_status": "blocked_pending_evidence",
+            "approval_status": "blocked_pending_evidence",
+            "publish_allowed": false,
+            "verified_claims_count": 3,
+            "unverified_claims_count": 6,
+            "risk_flags": [
+              "Puppy food - heightened responsibility for accuracy",
+              "Health claims need manufacturer attribution",
+              "No firsthand testing conducted"
+            ]
+          },
+          {
+            "entry_id": "PE-008",
+            "product_name": "Orijen Puppy",
+            "brand": "Orijen",
+            "evidence_status": "blocked_pending_evidence",
+            "approval_status": "blocked_pending_evidence",
+            "publish_allowed": false,
+            "verified_claims_count": 3,
+            "unverified_claims_count": 7,
+            "risk_flags": [
+              "Premium pricing - price sensitivity for UK consumers",
+              "High-protein formulation controversy - some vets caution against very high protein for certain breeds",
+              "Biologically appropriate is a marketing term, not a regulated standard",
+              "No firsthand testing conducted"
+            ]
+          },
+          {
+            "entry_id": "PE-010",
+            "product_name": "Lily's Kitchen Puppy Recipe Chicken & Salmon",
+            "brand": "Lily's Kitchen",
+            "evidence_status": "blocked_pending_evidence",
+            "approval_status": "blocked_pending_evidence",
+            "publish_allowed": false,
+            "verified_claims_count": 3,
+            "unverified_claims_count": 7,
+            "risk_flags": [
+              "Puppy food - heightened responsibility for accuracy",
+              "Premium pricing may fluctuate significantly",
+              "Natural/organic claims need manufacturer attribution",
+              "No firsthand testing conducted"
+            ]
+          }
+        ],
+        "linked_product_count": 4,
+        "any_unverified_claims": true
+      },
+      "publishing_readiness": {
+        "overall_status": "needs_edits",
+        "checklist": {
+          "owner_review": "pending",
+          "qa_check": "pass",
+          "metadata_approved": "pending",
+          "schema_approved": "pending",
+          "internal_linking": "pass",
+          "evidence_restrictions_confirmed": "fail",
+          "affiliate_disclosure_confirmed": "pending",
+          "no_fake_claims": "pass",
+          "publisher_approval": "not_granted",
+          "rollback_snapshot": "not_taken",
+          "final_preview_check": "pending"
+        },
+        "blockers": [
+          "All linked products are blocked_pending_evidence"
+        ],
+        "next_action": "Owner reviews content, then product evidence must be verified before publishing."
+      },
+      "review_guidance": {
+        "one_line_summary": "Complete puppy feeding guide for UK owners covering age-based schedules, large breed considerations, and FEDIAF nutrient requirements.",
+        "strengths": [
+          "High educational content depth with strong use of headings and structure",
+          "Good UK-specific relevance with references to FEDIAF, UK brands, and GBP",
+          "Focus keyword is well-integrated into headings",
+          "Includes 4 comparison table(s) for quick reference",
+          "FAQ section with 7 questions addresses common queries"
+        ],
+        "areas_for_review": [
+          "Review all product mentions to confirm no specific prices, ratings, or review counts are stated",
+          "All linked products have blocked_pending_evidence status -- verify product claims before publishing",
+          "Confirm affiliate disclosure is visible and properly worded",
+          "Check that all health/nutrition claims are attributed to FEDIAF or manufacturer sources"
+        ],
+        "risk_level": "medium",
+        "recommendation": "Content quality is solid but product evidence is pending. The post is suitable for owner review. Before publishing: (1) verify all product evidence, (2) confirm no specific prices/ratings are claimed, (3) ensure affiliate disclosure is present, (4) approve SEO metadata."
+      }
+    }
+  }
+}
