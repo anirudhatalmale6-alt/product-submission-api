@@ -73,7 +73,8 @@
       "status": "PROPOSAL ONLY - NOT DEPLOYED TO LIVE",
       "schema_types": [
         "Article",
-        "BreadcrumbList"
+        "BreadcrumbList",
+        "FAQPage"
       ],
       "excluded_types": [
         "Product",
@@ -125,9 +126,55 @@
               "item": "https://pethubonline.com/best-dry-dog-food-uk/"
             }
           ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Is dry dog food enough on its own?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, if the food is labelled \u201ccomplete.\u201d FEDIAF-compliant complete dry food contains all the nutrients a healthy adult dog needs. Many owners choose to mix with wet food for variety, but it is not nutritionally necessary."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Should I soak dry dog food?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Soaking is helpful for puppies transitioning from weaning, dogs with dental problems, and elderly dogs who struggle with hard kibble. For healthy adults, soaking is a preference rather than a necessity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my dog\u2019s food is good quality?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Look for: named meat as the first ingredient, protein above 25% (dry matter), no artificial colours, a clear ingredient list with percentages, and \u201ccomplete\u201d labelling. A glossy coat, firm stools, healthy weight, and good energy levels are practical indicators that a food suits your dog."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is expensive dog food always better?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not necessarily. Price reflects manufacturing costs, ingredient sourcing, marketing spend, and brand positioning. Some mid-range foods offer excellent nutritional profiles. Judge by the ingredient list and guaranteed analysis, not the price tag."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I feed my dog the same food forever?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "There is no nutritional requirement to rotate foods if your dog is thriving on a complete diet. However, some nutritionists suggest occasional variety can broaden nutrient intake and reduce the risk of developing sensitivities to a single protein source."
+              }
+            }
+          ]
         }
       ],
-      "faq_count": 0
+      "faq_count": 5
     },
     "3838": {
       "post_id": 3838,
@@ -136,7 +183,8 @@
       "status": "PROPOSAL ONLY - NOT DEPLOYED TO LIVE",
       "schema_types": [
         "Article",
-        "BreadcrumbList"
+        "BreadcrumbList",
+        "FAQPage"
       ],
       "excluded_types": [
         "Product",
@@ -188,9 +236,55 @@
               "item": "https://pethubonline.com/dry-vs-wet-dog-food-uk/"
             }
           ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Can I switch between dry and wet food?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, but transition gradually over 7-10 days to avoid digestive upset. Sudden changes in diet can cause loose stools regardless of the food quality."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is dry food bad for dogs with kidney problems?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not necessarily \u201cbad,\u201d but dogs with kidney issues benefit from increased water intake. Wet food provides this naturally. Your vet may recommend a specific renal diet regardless of format. Always follow veterinary dietary advice for medical conditions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "My dog only wants wet food. Is that OK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, as long as it is labelled \u201ccomplete\u201d and meets FEDIAF standards. Some dogs simply prefer the texture and aroma of wet food. The main consideration is cost and dental health \u2014 consider regular dental checks if feeding wet food exclusively."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does dry food really clean teeth?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The chewing action of kibble can modestly reduce plaque compared to soft food, but it is not a substitute for dental care. Some dogs swallow kibble with minimal chewing. VOHC-approved dental diets are specifically formulated for dental benefit and are the only kibble format with clinical evidence for plaque/tartar reduction."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does it cost to feed a dog in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For a medium dog (15-25kg), expect to spend \u00a330-100 per month on dry food or \u00a360-180 per month on wet food, depending on quality tier. Mixed feeding falls between these ranges. Prices as of May 2026 \u2014 subject to change."
+              }
+            }
+          ]
         }
       ],
-      "faq_count": 0
+      "faq_count": 5
     },
     "3839": {
       "post_id": 3839,
@@ -199,7 +293,8 @@
       "status": "PROPOSAL ONLY - NOT DEPLOYED TO LIVE",
       "schema_types": [
         "Article",
-        "BreadcrumbList"
+        "BreadcrumbList",
+        "FAQPage"
       ],
       "excluded_types": [
         "Product",
@@ -251,9 +346,63 @@
               "item": "https://pethubonline.com/best-puppy-food-uk/"
             }
           ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Can I feed my puppy adult dog food?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This is not recommended. Adult food does not meet FEDIAF nutritional requirements for growth. Puppies need higher protein, controlled calcium, and more calories per kg. Use food labelled for puppies or \u201call life stages.\u201d"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How often should I feed my puppy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "8-12 weeks: 4 meals per day. 3-6 months: 3 meals per day. 6-12 months: 2-3 meals per day. 12+ months: 2 meals per day (adult schedule). Small and toy breeds may benefit from an extra meal to maintain blood sugar levels."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "My puppy is a fussy eater. What should I do?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Offer food for 15-20 minutes, then remove it. Do not add treats or toppers to encourage eating \u2014 this trains the puppy to hold out for better options. Healthy puppies will not starve themselves. If refusal persists beyond 24 hours, consult your vet to rule out illness."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Should I give my puppy supplements?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "If feeding a complete puppy food, supplements are not necessary and can cause imbalances (particularly calcium and vitamin D). Only supplement on specific veterinary advice."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is grain-free food safe for puppies?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The FDA investigation into grain-free diets and DCM (dilated cardiomyopathy) is ongoing as of 2026. No definitive causal link has been established, but some veterinary professionals recommend caution with grain-free diets for puppies during the growth phase. A grain-inclusive, FEDIAF-compliant puppy food is a safe default choice."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What about bones and chews for puppies?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cooked bones should never be given to dogs of any age (they splinter and can cause internal injuries). Raw bones are controversial. For puppies, appropriately sized rubber chew toys (such as puppy-grade Kong toys) are safer for teething. Dental chews marketed for puppies should be size-appropriate \u2014 check the packaging for weight recommendations."
+              }
+            }
+          ]
         }
       ],
-      "faq_count": 0
+      "faq_count": 6
     }
   }
 }
