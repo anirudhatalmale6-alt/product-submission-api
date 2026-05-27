@@ -1,0 +1,235 @@
+TRUST / METHODOLOGY PAGE REVIEW PACK
+============================================================
+Status: All 4 pages are WordPress DRAFTS awaiting owner review
+Lane: B (Review First) — requires manual approval before publication
+
+============================================================
+PAGE: How We Research Pet Products
+ID: 4402 | Slug: how-we-research-pet-products
+Preview: https://pethubonline.com/?page_id=4402
+Word Count: 518
+------------------------------------------------------------
+Our Research Philosophy
+
+At PetHub Online, we believe pet owners deserve honest, evidence-based guidance when choosing products for their animals. Our research process prioritises transparency, accuracy, and practical usefulness over marketing claims.
+
+We do not accept payment for favourable reviews. We do not fabricate testing results. We do not claim expertise we do not have. Instead, we follow a structured research methodology designed to provide genuinely helpful information.
+
+How We Evaluate Products
+
+Our product research follows a multi-stage process:
+
+Source Identification — We identify manufacturer specifications, ingredient lists, safety certifications, and independent testing data where available.
+Evidence Collection — We gather data from publicly available sources including regulatory databases, manufacturer documentation, veterinary guidance publications, and consumer safety reports.
+Evidence Verification — Collected evidence is checked for accuracy, currency, and source credibility. We note when information comes from manufacturer claims versus independent verification.
+Content Creation — Our guides are written to present findings clearly, distinguishing between verified facts, manufacturer claims, and editorial analysis.
+Review and Update — Published content is periodically reviewed for accuracy and updated when new information becomes available.
+
+What We Do Not Do
+
+Honesty about our limitations is as important as describing our process:
+
+We do not operate a physical testing laboratory.
+We do not employ veterinarians on staff. When we reference veterinary guidance, we cite the specific source.
+We do not claim to have personally tested every product we discuss. When we have direct experience with a product, we state this clearly.
+We do not accept payment from manufacturers for positive coverage.
+We do not fabricate user reviews, ratings, or testing scores.
+
+Evidence Status Labels
+
+To help you understand the basis for our guidance, we use clear evidence labels:
+
+Verified Evidence — Information confirmed through independent sources, regulatory data, or published research.
+Manufacturer Stated — Claims made by the product manufacturer that we have not independently verified.
+Editorial Analysis — Our assessment based on available information, clearly identified as opinion rather than fact.
+Community Reported — Information gathered from pet owner communities, identified as anecdotal rather than verified.
+
+AI-Assisted Content
+
+Some of our content is created with the assistance of AI tools. We are transparent about this: AI helps us research, draft, and structure content more efficiently. However, all AI-generated content is reviewed for accuracy, edited for clarity, and checked against our evidence standards before publication.
+
+AI assistance does not replace human editorial judgement. It is a tool that helps us produce more comprehensive guides, not a substitute for careful research and honest assessment.
+
+Affiliate Relationships
+
+PetHub Online may earn commissions through affiliate links when you purchase products we recommend. This financial relationship does not influence our research process or editorial conclusions. Our evidence standards apply equally to all products regardless of affiliate availability.
+
+For full details, please see our Affiliate Disclosure page.
+
+How to Contact Us
+
+If you believe any of our content contains an error, or if you have information that could improve our guides, we welcome your feedback. Accuracy matters to us, and we take corrections seriously. Please visit our Corrections and Updates Policy page for details on how to report issues.
+
+============================================================
+PAGE: Our Editorial Process
+ID: 4403 | Slug: our-editorial-process
+Preview: https://pethubonline.com/?page_id=4403
+Word Count: 370
+------------------------------------------------------------
+Editorial Standards
+
+Every piece of content on PetHub Online follows a consistent editorial process designed to maintain accuracy, usefulness, and trust. We hold ourselves to these standards because pet owners making decisions about their animals deserve reliable information.
+
+Content Creation Process
+
+1. Topic Research
+
+Before writing any guide, we research the topic thoroughly. This includes reviewing existing authoritative sources, identifying common questions pet owners have, and understanding the current landscape of available products and advice.
+
+2. Source Gathering
+
+We collect information from multiple source types:
+
+Veterinary guidance publications and recognised animal welfare organisations
+Manufacturer specifications and product documentation
+Regulatory standards (such as FEDIAF nutritional guidelines for pet food)
+Published research where available and relevant
+Practical experience and community knowledge, clearly labelled as such
+
+3. Drafting
+
+Content is drafted with a focus on clarity and practical usefulness. We structure guides with clear headings, bullet points, and comparison tables to help readers find the information they need quickly.
+
+Some content is drafted with AI assistance. When AI tools are used, the output is reviewed and edited by human editors to ensure accuracy and appropriate tone. We do not publish raw AI-generated content without review.
+
+4. Fact-Checking
+
+Before publication, content is checked against our source material. Specific claims are verified where possible. When we cannot independently verify a claim, we attribute it to its source rather than presenting it as established fact.
+
+5. Publication and Monitoring
+
+Published content enters our monitoring system. We track whether guides remain accurate over time and update them when new information becomes available, products change, or errors are identified.
+
+What We Will Not Do
+
+Publish health claims without citing a credible source
+Present manufacturer marketing as independent assessment
+Claim to have tested products we have not tested
+Invent expert credentials or reviewer profiles
+Remove or hide corrections — all significant updates are noted
+Allow commercial relationships to influence editorial conclusions
+
+Content Updates
+
+Pet product markets change frequently. Prices shift, products are discontinued, new research emerges, and regulations evolve. We review published content regularly and update it when necessary. Updated guides carry a "last updated" date so readers can assess currency.
+
+If you notice outdated information in any of our guides, please let us know through our corrections process.
+
+============================================================
+PAGE: Affiliate Disclosure
+ID: 4404 | Slug: affiliate-disclosure-2
+Preview: https://pethubonline.com/?page_id=4404
+Word Count: 336
+------------------------------------------------------------
+How We Fund Our Content
+
+PetHub Online provides free educational pet care guides. To support this work, some of our content contains affiliate links. When you click these links and make a purchase, we may earn a small commission at no additional cost to you.
+
+What This Means for You
+
+You pay the same price — Affiliate links do not increase the cost of any product you purchase.
+We earn a commission — The retailer pays us a small percentage of the sale as a referral fee.
+Your choice is always yours — We provide information and guidance; the purchasing decision is entirely yours.
+
+How We Select Products
+
+Products featured on PetHub Online are selected based on our research process, not affiliate availability. We follow these principles:
+
+Products must meet our evidence standards before being recommended.
+We do not recommend products solely because they have affiliate programmes.
+If a better product exists without an affiliate programme, we still mention it.
+Product recommendations require verified evidence through our Product Evidence pipeline before they appear on the site.
+
+Current Status
+
+As of the current date, PetHub Online's product recommendation system is in development. Our educational content is live and freely available, but product-specific recommendations with affiliate links are only published once our evidence verification process is complete for that product category.
+
+This means some guides may discuss product types and features without linking to specific products. This is intentional — we prefer to publish helpful educational content immediately while taking the time needed to verify product-specific claims before making recommendations.
+
+Affiliate Link Identification
+
+Affiliate links on PetHub Online are marked with appropriate disclosure attributes. We use standard web practices to ensure transparency, including the rel="nofollow noopener noreferrer sponsored" attribute on affiliate links as required by search engine guidelines and advertising standards.
+
+Questions
+
+If you have questions about our affiliate relationships or how we select products, we welcome your enquiry. Transparency is a core value for PetHub Online, and we are happy to explain our process in more detail.
+
+============================================================
+PAGE: Corrections and Updates Policy
+ID: 4405 | Slug: corrections-and-updates-policy
+Preview: https://pethubonline.com/?page_id=4405
+Word Count: 327
+------------------------------------------------------------
+Our Commitment to Accuracy
+
+PetHub Online is committed to providing accurate, up-to-date information. When errors are identified or information becomes outdated, we take prompt action to correct our content. We believe that acknowledging and fixing mistakes is more valuable than pretending they do not exist.
+
+Types of Updates
+
+Factual Corrections
+
+If published content contains a factual error — an incorrect specification, a misattributed claim, or inaccurate guidance — we correct it promptly. Significant corrections are noted in the content with the date of the correction.
+
+Content Updates
+
+Product markets, nutritional guidelines, and veterinary recommendations change over time. We regularly review published guides and update them with current information. Updated content carries a "last updated" date.
+
+Clarity Improvements
+
+Sometimes content is accurate but unclear. We may revise wording, restructure sections, or add additional context to improve readability without changing the factual substance of the guide.
+
+How to Report an Error
+
+If you believe any content on PetHub Online contains an error, we want to know. You can report issues through the following methods:
+
+Leave a comment on the relevant page or post
+Contact us through our website contact form
+Reach out through our social media channels
+
+When reporting an error, please include:
+
+The specific page or guide where the error appears
+What you believe is incorrect
+If possible, a source or reference supporting the correction
+
+Our Response Process
+
+Acknowledgement — We aim to acknowledge reported errors promptly.
+Verification — We check the reported error against our sources and any additional references provided.
+Correction — If the error is confirmed, we update the content and note the correction.
+Transparency — Significant corrections include a note explaining what was changed and when.
+
+Content Review Schedule
+
+Beyond responding to reported errors, we proactively review published content on a rolling basis. Product guides are reviewed when significant market changes occur, nutritional guides are checked against current standards, and all content is assessed for ongoing accuracy as part of our regular editorial process.
+
+============================================================
+PUBLICATION RECOMMENDATIONS
+============================================================
+
+1. How We Research Pet Products (ID 4402)
+   RECOMMENDATION: Publish after review
+   This is the cornerstone trust page. It sets the tone for how the site
+   presents its research methodology. No fake claims, no invented credentials.
+   Plain-English transparency about evidence-based approach.
+
+2. Our Editorial Process (ID 4403)
+   RECOMMENDATION: Publish after review
+   Clear editorial standards without overstating capabilities.
+   Honest about being a small operation focused on accuracy.
+
+3. Affiliate Disclosure (ID 4404)
+   RECOMMENDATION: Publish after review
+   Straightforward disclosure. Important for regulatory compliance (ASA/CMA).
+   Explains affiliate model without hiding it.
+
+4. Corrections and Updates Policy (ID 4405)
+   RECOMMENDATION: Publish after review
+   Shows accountability and willingness to correct errors.
+   Strong trust signal for both users and search engines.
+
+REFINEMENTS RECOMMENDED BEFORE PUBLISHING:
+- Add footer links to all 4 pages from the site-wide footer
+- Cross-link the 4 pages to each other
+- Add "Last updated" dates to each page
+- Consider adding these to the main navigation under an "About" section
