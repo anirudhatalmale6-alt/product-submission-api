@@ -1,0 +1,118 @@
+PHASE 9H: SITEMAP / TAXONOMY RECOVERY + CONTROLLED DOG FOOD PUBLISHING
+EXECUTIVE SUMMARY
+Generated: 2026-05-27 18:56:19 UTC
+Approval ID: PH-PUB-2026-001
+
+=== DOG FOOD PUBLISHING (MILESTONE ACHIEVEMENT) ===
+
+For the first time in the project, 4 Dog Food educational posts have been
+published live on pethubonline.com. This is the first approved content
+publication through the controlled Publisher layer.
+
+Published Posts (in order):
+  1. Post 3838: Dry vs Wet Dog Food UK - An Honest Comparison Guide
+     URL: https://pethubonline.com/dry-vs-wet-dog-food-uk/
+     Status: LIVE (200 OK)
+
+  2. Post 3837: Best Dry Dog Food UK (2026) - Evidence-Based Guide
+     URL: https://pethubonline.com/best-dry-dog-food-uk/
+     Status: LIVE (200 OK)
+
+  3. Post 3839: Best Puppy Food UK (2026) - Growth-Stage Nutrition Guide
+     URL: https://pethubonline.com/best-puppy-food-uk/
+     Status: LIVE (200 OK)
+
+  4. Post 3836: Best Dog Food UK (2026) - Complete Buying Guide
+     URL: https://pethubonline.com/best-dog-food-uk/
+     Status: LIVE (200 OK)
+
+Pre-Publish Actions Completed:
+  - Affiliate disclosure boxes removed (educational content, no affiliate links)
+  - SEO titles verified under 60 chars with focus keyword at start
+  - Meta descriptions set at 150-160 chars with focus keyword
+  - First image alt text set with focus keyword (natural, descriptive)
+  - Assigned to Dog Food category (1467) + appropriate secondary categories
+  - Article schema deployed via Rank Math (safe schema only)
+  - No Product/Review/AggregateRating/Offer schema (BLOCKED as required)
+  - Content scanned for forbidden patterns (we tested, vet-backed, etc.) - CLEAN
+  - Rollback snapshot saved to server
+  - Audit log saved to server
+
+=== SITEMAP STATUS ===
+
+Current State: Post sitemap shows 6 URLs (58 posts are published)
+Root Cause: Posts created via REST API are not registered in Rank Math's
+internal sitemap generation table. This is a known limitation.
+
+Actions Taken:
+  1. Registered all 58 published posts with Rank Math (focus keywords + robots meta)
+  2. Toggled sitemap module off/on to force regeneration
+  3. Submitted 4 Dog Food URLs via Rank Math Instant Indexing (SUCCESS)
+  4. The 4 newly published Dog Food posts ARE in the sitemap
+
+Remaining Issue:
+  52 non-food posts are still missing from the sitemap.
+  This requires either:
+  a) Opening each post in the WordPress editor and clicking Update
+  b) A Rank Math database rebuild (requires WP Admin access)
+  c) Contact WordPress.com support for cache/sitemap assistance
+
+=== CATEGORY TAXONOMY ===
+
+All 58 published posts properly categorized:
+  - 0 posts in Uncategorized (was 52 before Phase 9G fix)
+  - 1 mismatch fixed: best-cat-harnesses-uk had Dog Harnesses category
+  - 4 Dog Food posts assigned to Dog Food (1467)
+  - All 20 sample URLs verified returning 200
+  - Permalink structure intact (post-name only, no category in URLs)
+
+=== SEO COMPLIANCE ===
+
+Dog Food Posts:
+  - Titles: All under 60 chars, focus keyword at start (PASS)
+  - Meta descriptions: All 150-160 chars with focus keyword (PASS)
+  - First image alt: All set with focus keyword, natural language (PASS)
+  - Schema: Article only, no forbidden schemas (PASS)
+  - Content: No product recommendations, no affiliate links (PASS)
+  - Forbidden claims: None found (PASS)
+
+=== TOTAL PUBLISHED CONTENT ===
+
+  58 published posts across 13 active categories
+  4 Dog Food educational posts (NEW)
+  0 drafts remaining
+
+=== BASELINE METRICS (PRE-PUBLISH) ===
+
+  GSC (28 days): 3 clicks, 104 impressions
+  GA4 (28 days): 62 sessions, 82% bounce rate, 17s avg session
+  Indexed pages: TBD (check GSC coverage)
+
+=== NEXT STEPS ===
+
+  1. Monitor Dog Food page performance (Day 1-7 checks)
+  2. Resolve sitemap for 52 non-food posts (editor save or RM support)
+  3. Image distortion audit (targeted CSS, not global)
+  4. Trust page drafts (About Us, Editorial Policy, etc.)
+  5. Phase 10 planning (after 9H acceptance)
+
+=== DELIVERABLES (18 FILES) ===
+
+  1.  Phase9H_Sitemap_Recovery_Report.csv
+  2.  Phase9H_Category_Taxonomy_Recovery_Report.csv
+  3.  Phase9H_DogFood_Pre_Publish_Checklist.csv
+  4.  Phase9H_Metadata_And_Image_Alt_Compliance_Report.csv
+  5.  Phase9H_DogFood_Schema_Deployment_Report.csv
+  6.  Phase9H_DogFood_Post_Publish_Verification.csv
+  7.  Phase9H_Sitemap_Indexing_Followup.csv
+  8.  Phase9H_DogFood_Category_Assignment_Report.csv
+  9.  Phase9H_SEO_Quick_Wins_Implementation_Report.csv
+  10. Phase9H_Image_Distortion_Fix_Report.csv
+  11. Phase9H_Jetpack_Carousel_Action_Note.csv
+  12. Phase9H_Meta_Robots_Nofollow_Audit.csv
+  13. Phase9H_Robots_Disallow_Audit.csv
+  14. Phase9H_Performance_Quick_Win_Report.csv
+  15. Phase9H_Trust_Page_Draft_Plan.csv
+  16. Phase9H_CoPilot_Publish_And_SEO_Status_Report.csv
+  17. Phase9H_DogFood_Post_Publish_Monitoring_Plan.csv
+  18. Phase9H_Executive_Summary.txt

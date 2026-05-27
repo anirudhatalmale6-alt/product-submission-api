@@ -1,0 +1,9 @@
+Item,Detail,Impact,Action
+Feature,Jetpack Carousel (Tiled Galleries),,
+Setting Path,WP Admin > Jetpack > Settings > Writing > Media > Carousel,,
+Current State,Likely enabled (default on WordPress.com),Loads extra JS/CSS on image-heavy pages,
+Performance Impact,Additional ~50-100KB JS + CSS loaded per page,Affects LCP and TBT scores,
+Risk Level,LOW - Disabling only affects image lightbox behavior,,
+Recommendation,Disable if carousel lightbox not needed,Test on one page first,
+How to Disable,1. Go to WP Admin > Jetpack > Settings,2. Find Writing > Media section,3. Toggle off Carousel
+Cannot be done via API,Jetpack Carousel setting not exposed in REST API,Requires WP Admin panel access,

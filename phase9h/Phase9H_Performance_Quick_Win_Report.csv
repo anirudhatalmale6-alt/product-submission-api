@@ -1,0 +1,11 @@
+Item,Description,Status,Notes
+Lazy Loading,WordPress native lazy loading is enabled by default,DONE,Built-in since WP 5.5
+Image Optimization,WordPress.com includes Photon CDN,ACTIVE,Images served via CDN
+Jetpack Carousel,Review for disabling (see Action Note),PENDING,Could save 50-100KB JS/CSS
+Render-Blocking CSS,Astra theme is lightweight (~50KB),OK,No action needed
+Font Loading,Check for unused font weights,TODO,Review Google Fonts load
+Database Optimization,WordPress.com handles automatically,OK,No manual intervention needed
+CDN,WordPress.com CDN active,ACTIVE,All static assets served via CDN
+Caching,Batcache active on WordPress.com,ACTIVE,Page caching is automatic
+GZIP/Brotli,Brotli compression active,ACTIVE,Verified in response headers
+HTTP/2,Active on WordPress.com,ACTIVE,Verified in response headers

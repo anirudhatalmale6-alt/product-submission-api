@@ -1,0 +1,6 @@
+Item,Value,Check,Status
+Homepage URL,https://pethubonline.com/,,
+Meta Robots Tags Found,1,,
+Tag 1,"follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",OK,PASS
+,,,
+Nofollow Links on Homepage,1,External links only should be nofollow,

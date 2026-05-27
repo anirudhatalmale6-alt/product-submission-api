@@ -1,0 +1,14 @@
+Metric,Value,Notes
+Total Published Posts,58,2026-05-27 18:56:19 UTC
+Total Draft Posts,0,All 4 Dog Food drafts now published
+Posts in Sitemap,6,Rank Math sitemap issue pending for non-food posts
+Categories Active,19,
+Dog Food Posts Published,4,Published in order: 3838 > 3837 > 3839 > 3836
+Approval ID,PH-PUB-2026-001,All publishes under single approval
+Schema Deployed,Article schema on all 4 Dog Food posts,Safe schema only
+Forbidden Schema,None deployed (Product/Review/AggregateRating blocked),Compliance: PASS
+Affiliate Links,None in Dog Food posts (educational content only),Compliance: PASS
+Instant Indexing,4 URLs submitted successfully,Rank Math Instant Indexing API
+Co-Pilot Mode,Read-only,No changes to Co-Pilot permissions
+Auto-Publish,Permanently disabled,Content Agent wp_publisher.py hardcoded to draft
+Publisher Layer,Active with approval_id validation,wp_publisher_layer.py

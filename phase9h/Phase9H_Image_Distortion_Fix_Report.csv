@@ -1,0 +1,6 @@
+Item,Status,Notes
+Global object-fit rule,NOT APPLIED,Jason's instruction: do not add global img { object-fit: cover; }
+Targeted approach needed,PENDING,Need to identify specific affected images before applying CSS fixes
+Investigation needed,TODO,"Check featured images, content images, and thumbnail grids for aspect ratio issues"
+Recommendation,Inspect live pages in browser,Identify specific img selectors with distortion before writing CSS
+Safe CSS pattern,img.wp-post-image { object-fit: cover; aspect-ratio: 16/9; },Only apply to verified affected selectors

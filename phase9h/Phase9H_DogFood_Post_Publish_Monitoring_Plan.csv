@@ -1,0 +1,12 @@
+Timeframe,Action 1,Action 2,Action 3,Action 4
+Day 1 (Today),Verify all URLs return 200,Check sitemap inclusion,Monitor GA4 for pageviews,Submit to GSC
+Day 2-3,Check GSC coverage report,Monitor crawl stats,Check for indexing,Review any errors
+Day 7,First GSC impression check,GA4 traffic baseline,Check internal link flow,Schema validation
+Day 14,GSC position tracking,Click-through rate check,Bounce rate analysis,Compare to baseline
+Day 30,Full performance review,Keyword ranking check,Organic traffic measurement,AI overview visibility
+Day 60,Authority impact assessment,Cross-cluster lift check,Conversion tracking setup,Content refresh needs
+Day 90,Comprehensive SEO audit,ROI assessment,Competitor comparison,Next content phase planning
+,,,,
+KPIs to Track,"Impressions, clicks, CTR, avg position","Pageviews, bounce rate, time on page",Indexed pages count,Schema validation status
+Tools,Google Search Console,GA4 (G-GNKSXOGY6B),Rank Math Analytics,Schema.org validator
+Baseline (Pre-Publish),3 clicks / 104 impressions (28d),62 sessions / 82% bounce,17s avg session,0 Dog Food pages indexed

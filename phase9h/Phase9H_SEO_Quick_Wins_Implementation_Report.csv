@@ -1,0 +1,13 @@
+Fix,Description,Status,Phase,Notes
+Trust Icon Alt Text,3 media items updated,DONE,Phase 9G GREEN,Media 1379/1380/1381 alt text now descriptive
+OG Image Metadata,ChatGPT references removed,DONE,Phase 9G GREEN,Media 253 title/alt/caption/description updated
+Category Reassignment,52 posts from Uncategorized,DONE,Phase 9G GREEN,All 52 posts now in correct categories
+Cat Harnesses Fix,Removed Dog Harnesses category mismatch,DONE,Phase 9H,Post 4279 now Cat Supplies/Pet Care/Product Reviews
+Dog Food Categories,4 posts assigned to Dog Food (1467),DONE,Phase 9H,All 4 Dog Food posts now categorized
+Rank Math Registration,58 posts focus keywords set,DONE,Phase 9H,All published posts have RM meta
+Instant Indexing,4 Dog Food URLs submitted,DONE,Phase 9H,Rank Math Instant Indexing API success
+Affiliate Disclosures,Removed from 4 educational posts,DONE,Phase 9H,No affiliate links = no disclosure needed
+Image Alt Text,First image alts set with focus keywords,DONE,Phase 9H,4 Dog Food posts first images updated
+SEO Titles,All under 60 chars with keyword at start,DONE,Phase 9H,Verified for all 4 Dog Food posts
+Meta Descriptions,All 150-160 chars with keyword,DONE,Phase 9H,Verified for all 4 Dog Food posts
+Sitemap Full Recovery,52 non-food posts missing,PENDING,Requires manual,Need editor-based save or RM support

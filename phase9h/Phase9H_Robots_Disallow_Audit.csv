@@ -1,0 +1,9 @@
+Line,Type,Notes
+User-agent: *,,
+Disallow: /wp-admin/,,
+Allow: /wp-admin/admin-ajax.php,,
+Sitemap: https://pethubonline.com/sitemap_index.xml,,
+,,
+Sitemap Reference,Yes,Should reference sitemap_index.xml
+Disallow Rules,1,Check for over-blocking
+WP Admin Blocked,Yes,Should be blocked
