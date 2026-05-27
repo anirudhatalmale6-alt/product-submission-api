@@ -1,0 +1,577 @@
+======================================================================
+Phase 10D: Fix Broken Internal Links — 2026-05-27T23:49:41.174783
+======================================================================
+
+[1] Fetching all published posts...
+  Fetched posts page 1/1 (86 items)
+    Total posts: 86
+
+[2] Fetching all published pages...
+  Fetched pages page 1/1 (24 items)
+    Total pages: 24
+
+[3] Building slug-to-URL map...
+    Total slugs indexed: 110
+
+[4] Looking up specific pages for correct URLs...
+    Page 1956 (Dog Training): slug='dog-training-behaviour', link='https://pethubonline.com/dog-training-behaviour/'
+    Page 1146 (Dog Harnesses): slug='dog-collars-leashes', link='https://pethubonline.com/dog-collars-leashes/'
+    Page 4405 (Corrections Policy): slug='corrections-and-updates-policy', status='draft', link='https://pethubonline.com/?page_id=4405'
+    Page 4402 (How We Research): slug='how-we-research-pet-products', status='draft' — LEAVE AS-IS
+    Page 4403 (Editorial Process): slug='our-editorial-process', status='draft' — LEAVE AS-IS
+
+[5] Searching for hub pages by slug keywords...
+    Dog care candidates: {'seasonal-dog-care-guide': 'https://pethubonline.com/seasonal-dog-care-guide/', 'best-dog-health-care-uk': 'https://pethubonline.com/best-dog-health-care-uk/', 'dog-health-care': 'https://pethubonline.com/dog-health-care/'}
+    Pet care candidates: {}
+    Harness candidates: {'harness-vs-collar-which-is-better': 'https://pethubonline.com/harness-vs-collar-which-is-better/', 'how-to-measure-dog-for-harness': 'https://pethubonline.com/how-to-measure-dog-for-harness/', 'no-pull-dog-harness-guide': 'https://pethubonline.com/no-pull-dog-harness-guide/', 'dog-harnesses-complete-guide': 'https://pethubonline.com/dog-harnesses-complete-guide/', 'best-cat-harnesses-uk': 'https://pethubonline.com/best-cat-harnesses-uk/', 'best-no-pull-dog-harnesses-uk': 'https://pethubonline.com/best-no-pull-dog-harnesses-uk/', 'best-dog-collars-and-harnesses-uk': 'https://pethubonline.com/best-dog-collars-and-harnesses-uk/'}
+    Training candidates: {'how-to-choose-dog-training-treats': 'https://pethubonline.com/how-to-choose-dog-training-treats/', 'best-dog-training-leads-uk': 'https://pethubonline.com/best-dog-training-leads-uk/', 'best-puppy-training-guide-uk': 'https://pethubonline.com/best-puppy-training-guide-uk/', 'best-dog-training-treats-uk': 'https://pethubonline.com/best-dog-training-treats-uk/', 'best-dog-training-behaviour-uk': 'https://pethubonline.com/best-dog-training-behaviour-uk/', 'dog-training-behaviour': 'https://pethubonline.com/dog-training-behaviour/'}
+    Contact candidates: {'contact-pet-hub-online': 'https://pethubonline.com/contact-pet-hub-online/'}
+
+[6] Fetching categories for fallback URLs...
+  Fetched categories page 1/1 (34 items)
+    Relevant categories: {'arthritis-care': 'https://pethubonline.com/category/arthritis-care/', 'dog-beds': 'https://pethubonline.com/category/dog-beds/', 'dog-care': 'https://pethubonline.com/category/dog-care/', 'dog-food': 'https://pethubonline.com/category/dog-food/', 'dog-harnesses': 'https://pethubonline.com/category/dog-harnesses/', 'dog-health': 'https://pethubonline.com/category/dog-health/', 'dog-supplies': 'https://pethubonline.com/category/dog-supplies/', 'dog-toys': 'https://pethubonline.com/category/dog-toys/', 'large-dogs': 'https://pethubonline.com/category/large-dogs/', 'orthopaedic-care': 'https://pethubonline.com/category/orthopaedic-care/', 'pet-beds': 'https://pethubonline.com/category/pet-beds/', 'pet-care': 'https://pethubonline.com/category/pet-care/', 'pet-care-tips': 'https://pethubonline.com/category/pet-care-tips/', 'pet-health': 'https://pethubonline.com/category/pet-health/', 'pet-nutrition': 'https://pethubonline.com/category/pet-nutrition/', 'pet-supplies': 'https://pethubonline.com/category/pet-supplies/', 'puppy-care': 'https://pethubonline.com/category/puppy-care/', 'training-supplies': 'https://pethubonline.com/category/training-supplies/'}
+
+[7] Building replacement rules...
+    /best-dog-harness -> /dog-collars-leashes/
+    /dog-care/ -> /dog-health-care/
+    /pet-care-tips/ -> /category/pet-care/ (from category)
+    /dog-training/ -> /dog-training-behaviour/
+    [SKIP] /corrections-and-updates-policy — slug matches ('corrections-and-updates-policy'), page just needs publishing
+    [SKIP] /how-we-research-pet-products — draft, will be published soon
+    [SKIP] /our-editorial-process — draft, will be published soon
+    /contact -> /contact-pet-hub-online (on About Us page only)
+    [SKIP] Dog food sub-pages (grain-free, raw, senior, wet) — future phases
+
+    Total replacement rules: 7 (plus contact fix)
+
+[8] Scanning all content for broken links...
+    Refetching posts with edit context...
+  Fetched posts page 1/1 (86 items)
+    Refetching pages with edit context...
+  Fetched pages page 1/1 (24 items)
+    Total items to scan: 110
+
+  [1] Updating post #4573: Seasonal Pet Safety: Protecting Pets Through the Year
+  Replaced 1x: href="https://pethubonline.com/pet-care-tips/" -> href="https://pethubonline.com/category/pet-care/"
+    -> Updated successfully
+
+  [2] Updating post #4570: First-Time Dog Owner Essentials: What You Need to Know
+  Replaced 1x: href="https://pethubonline.com/dog-care/" -> href="https://pethubonline.com/dog-health-care/"
+    -> Updated successfully
+
+  [3] Updating post #4576: Multi-Pet Household Tips: Living with Dogs and Cats Together
+  Replaced 1x: href="https://pethubonline.com/pet-care-tips/" -> href="https://pethubonline.com/category/pet-care/"
+    -> Updated successfully
+
+  [4] Updating post #4574: Pet Hydration Guide: How Much Water Does Your Pet Need?
+  Replaced 1x: href="https://pethubonline.com/pet-care-tips/" -> href="https://pethubonline.com/category/pet-care/"
+    -> Updated successfully
+
+  [5] Updating post #4571: Pet First Aid Basics: What Every Owner Should Know
+  Replaced 1x: href="https://pethubonline.com/pet-care-tips/" -> href="https://pethubonline.com/category/pet-care/"
+    -> Updated successfully
+
+  [6] Updating post #4568: Dog Dental Health: A Practical Care Guide
+  Replaced 1x: href="https://pethubonline.com/dog-care/" -> href="https://pethubonline.com/dog-health-care/"
+    -> Updated successfully
+
+  [7] Updating post #4566: Seasonal Dog Care: Keeping Your Dog Safe Year-Round
+  Replaced 1x: href="https://pethubonline.com/dog-care/" -> href="https://pethubonline.com/dog-health-care/"
+    -> Updated successfully
+
+  [8] Updating post #4563: Dog Grooming Basics: A Complete Guide for Owners
+  Replaced 1x: href="https://pethubonline.com/dog-care/" -> href="https://pethubonline.com/dog-health-care/"
+    -> Updated successfully
+
+  [9] Updating post #4414: Harness vs Collar: Which Is Better for Your Dog?
+  Replaced 1x: href="https://pethubonline.com/best-dog-harness/" -> href="https://pethubonline.com/dog-collars-leashes/"
+    -> Updated successfully
+
+  [10] Updating post #4413: How to Measure Your Dog for a Harness: Step-by-Step Guide
+  Replaced 1x: href="https://pethubonline.com/best-dog-harness/" -> href="https://pethubonline.com/dog-collars-leashes/"
+    -> Updated successfully
+
+  [11] Updating post #4412: No-Pull Dog Harness Guide: How They Work and When to Use One
+  Replaced 1x: href="https://pethubonline.com/best-dog-harness/" -> href="https://pethubonline.com/dog-collars-leashes/"
+    -> Updated successfully
+
+  [12] Updating post #4411: Dog Harnesses: The Complete Guide to Types, Fitting, and Safety
+  Replaced 1x: href="https://pethubonline.com/best-dog-harness/" -> href="https://pethubonline.com/dog-collars-leashes/"
+    -> Updated successfully
+
+  [13] Updating post #4335: Best Cat Litter Disposal UK (2026) – Waste Management Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [14] Updating post #4328: Best Self-Cleaning Litter Trays UK (2026) – Automatic Options
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [15] Updating post #4321: Best Cat Litter UK (2026) – Types &#038; Comparison Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [16] Updating post #4314: Best Cat Litter Trays UK (2026) – Complete Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [17] Updating post #4307: Best Wall-Mounted Cat Scratchers UK (2026) – Space Saving
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [18] Updating post #4300: Best Cardboard Cat Scratchers UK (2026) – Budget Friendly
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [19] Updating post #4293: Best Cat Trees UK (2026) – Climbing &#038; Scratching Towers
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [20] Updating post #4286: Best Cat Scratching Posts UK (2026) – Complete Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [21] Updating post #4279: Best Cat Harnesses UK (2026) – Safe Walking Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [22] Updating post #4272: Best Cat ID Tags UK (2026) – Identification Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [23] Updating post #4265: Best Cat GPS Trackers UK (2026) – Location Tracking Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [24] Updating post #4258: Best Cat Collars UK (2026) – Complete Safety Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [25] Updating post #4251: Best Cat Shampoo UK (2026) – When &#038; How to Bathe
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [26] Updating post #4244: Best Cat Nail Clippers UK (2026) – Safe Trimming Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [27] Updating post #4237: Best Cat Brushes UK (2026) – Guide by Coat Type
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [28] Updating post #4230: Best Cat Grooming Supplies UK (2026) – Complete Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [29] Updating post #4223: Best Cat Window Perches UK (2026) – Sunning &#038; Bird Watching
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [30] Updating post #4216: Best Cat Radiator Beds UK (2026) – Hook-On Warmth Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [31] Updating post #4209: Best Heated Cat Beds UK (2026) – Winter Warmth Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [32] Updating post #4202: Best Cat Beds UK (2026) – Complete Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [33] Updating post #4195: Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [34] Updating post #4188: Best Catnip Toys UK (2026) – What Works and Why
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [35] Updating post #4181: Best Interactive Cat Toys UK (2026) – Wand &#038; Puzzle Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [36] Updating post #4174: Best Cat Toys UK (2026) – Complete Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [37] Updating post #4167: Best Dog Water Bottles UK (2026) – Travel Hydration Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [38] Updating post #4160: Best Elevated Dog Bowls UK (2026) – Raised Feeder Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [39] Updating post #4153: Best Slow Feeder Dog Bowls UK (2026) – Prevent Speed Eating
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [40] Updating post #4146: Best Dog Bowls and Feeding UK (2026) – Complete Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [41] Updating post #4139: Best Dog Training Leads UK (2026) – Long Lines &#038; Harnesses
+  Replaced 1x: href="/dog-training/" -> href="/dog-training-behaviour/"
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [42] Updating post #4132: Best Puppy Training Guide UK (2026) – First Year Essentials
+  Replaced 1x: href="/dog-training/" -> href="/dog-training-behaviour/"
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [43] Updating post #4125: Best Dog Training Treats UK (2026) – Reward Guide
+  Replaced 1x: href="/dog-training/" -> href="/dog-training-behaviour/"
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [44] Updating post #4118: Best Dog Training and Behaviour UK (2026) – Complete Guide
+  Replaced 1x: href="/dog-training/" -> href="/dog-training-behaviour/"
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [45] Updating post #4110: Best Dog Joint Supplements UK (2026) – Mobility Support Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [46] Updating post #4103: Best Dog Flea Treatment UK (2026) – Prevention Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [47] Updating post #4096: Best Dog Dental Care UK (2026) – Teeth Cleaning Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [48] Updating post #4089: Best Dog Health and Care UK (2026) – Complete Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [49] Updating post #4078: Best Dog Nail Clippers UK (2026) – Trimming &#038; Grinding Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [50] Updating post #4071: Best Dog Shampoo UK (2026) – Ingredients &#038; Safety Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [51] Updating post #4064: Best Dog Brushes UK (2026) – Guide by Coat Type
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [52] Updating post #4057: Best Dog Grooming Supplies UK (2026) – Complete Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [53] Updating post #4049: Best Puppy Collars UK (2026) – First Collar &#038; Harness Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [54] Updating post #4042: Best Dog Leads UK (2026) – Walking &#038; Training Lead Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [55] Updating post #4034: Best No-Pull Dog Harnesses UK (2026) – Training &#038; Comfort Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [56] Updating post #4027: Best Dog Collars and Harnesses UK (2026) – Complete Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [57] Updating post #4018: Best Puppy Beds UK (2026) – First Bed &#038; Crate Training Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [58] Updating post #4011: Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [59] Updating post #4004: Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [60] Updating post #3996: Best Dog Beds UK (2026) – Complete Guide &#038; Honest Reviews
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [61] Updating post #3960: Best Puppy Toys UK (2026) – Teething &#038; First Toys Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [62] Updating post #3959: Best Interactive Dog Toys UK (2026) – Puzzle &#038; Enrichment Guide
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [63] Updating post #3957: Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [64] Updating post #3956: Best Dog Toys UK (2026) – Complete Guide &#038; Honest Reviews
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [65] Updating post #696: Essential Cat Supplies for Cat Owners &#8211; Number 1 Must-Haves
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [66] Updating page #3115: Cat Litter Trays
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [67] Updating page #3113: Cat Scratching Posts
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [68] Updating page #3111: Cat Collars
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [69] Updating page #3109: Cat Grooming
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [70] Updating page #3107: Cat Beds
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [71] Updating page #1960: Dog Health &#038; Care
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [72] Updating page #1956: Dog Training &#038; Behaviour
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [73] Updating page #1951: Dog Bowls &#038; Feeding
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [74] Updating page #1176: Cat Supplies
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [75] Updating page #1149: Cat Toys
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [76] Updating page #1146: Dog Collars &amp; Leashes
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [77] Updating page #1144: Dog Grooming
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [78] Updating page #1141: Dog Beds
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [79] Updating page #1041: Dog Toys
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [80] Updating page #63: Dog Supplies
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+  [81] Updating page #39: About Us
+  Replaced 1x: href="/contact" -> href="/contact-pet-hub-online"
+    -> Updated successfully
+
+  [82] Updating page #4: Pet Hub Online – Pet Supplies Online
+  Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+    -> Updated successfully
+
+======================================================================
+SUMMARY
+======================================================================
+Total items scanned: 110
+Items updated: 82
+Total link replacements: 86
+
+Replacement rules applied:
+  /best-dog-harness -> /dog-collars-leashes/
+  /dog-care/ -> /dog-health-care/
+  /dog-care -> /dog-health-care
+  /pet-care-tips/ -> /category/pet-care/
+  /pet-care-tips -> /category/pet-care
+  /dog-training/ -> /dog-training-behaviour/
+  /dog-training -> /dog-training-behaviour
+  /contact -> /contact-pet-hub-online
+  'Learn more' (affiliate) -> 'Read our affiliate disclosure'
+
+Skipped (leave as-is):
+  /how-we-research-pet-products — draft page, will be published
+  /our-editorial-process — draft page, will be published
+  Dog food sub-pages — future phase content
+
+Detailed changes:
+  post #4573: Seasonal Pet Safety: Protecting Pets Through the Year
+      Replaced 1x: href="https://pethubonline.com/pet-care-tips/" -> href="https://pethubonline.com/category/pet-care/"
+  post #4570: First-Time Dog Owner Essentials: What You Need to Know
+      Replaced 1x: href="https://pethubonline.com/dog-care/" -> href="https://pethubonline.com/dog-health-care/"
+  post #4576: Multi-Pet Household Tips: Living with Dogs and Cats Together
+      Replaced 1x: href="https://pethubonline.com/pet-care-tips/" -> href="https://pethubonline.com/category/pet-care/"
+  post #4574: Pet Hydration Guide: How Much Water Does Your Pet Need?
+      Replaced 1x: href="https://pethubonline.com/pet-care-tips/" -> href="https://pethubonline.com/category/pet-care/"
+  post #4571: Pet First Aid Basics: What Every Owner Should Know
+      Replaced 1x: href="https://pethubonline.com/pet-care-tips/" -> href="https://pethubonline.com/category/pet-care/"
+  post #4568: Dog Dental Health: A Practical Care Guide
+      Replaced 1x: href="https://pethubonline.com/dog-care/" -> href="https://pethubonline.com/dog-health-care/"
+  post #4566: Seasonal Dog Care: Keeping Your Dog Safe Year-Round
+      Replaced 1x: href="https://pethubonline.com/dog-care/" -> href="https://pethubonline.com/dog-health-care/"
+  post #4563: Dog Grooming Basics: A Complete Guide for Owners
+      Replaced 1x: href="https://pethubonline.com/dog-care/" -> href="https://pethubonline.com/dog-health-care/"
+  post #4414: Harness vs Collar: Which Is Better for Your Dog?
+      Replaced 1x: href="https://pethubonline.com/best-dog-harness/" -> href="https://pethubonline.com/dog-collars-leashes/"
+  post #4413: How to Measure Your Dog for a Harness: Step-by-Step Guide
+      Replaced 1x: href="https://pethubonline.com/best-dog-harness/" -> href="https://pethubonline.com/dog-collars-leashes/"
+  post #4412: No-Pull Dog Harness Guide: How They Work and When to Use One
+      Replaced 1x: href="https://pethubonline.com/best-dog-harness/" -> href="https://pethubonline.com/dog-collars-leashes/"
+  post #4411: Dog Harnesses: The Complete Guide to Types, Fitting, and Safety
+      Replaced 1x: href="https://pethubonline.com/best-dog-harness/" -> href="https://pethubonline.com/dog-collars-leashes/"
+  post #4335: Best Cat Litter Disposal UK (2026) – Waste Management Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4328: Best Self-Cleaning Litter Trays UK (2026) – Automatic Options
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4321: Best Cat Litter UK (2026) – Types &#038; Comparison Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4314: Best Cat Litter Trays UK (2026) – Complete Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4307: Best Wall-Mounted Cat Scratchers UK (2026) – Space Saving
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4300: Best Cardboard Cat Scratchers UK (2026) – Budget Friendly
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4293: Best Cat Trees UK (2026) – Climbing &#038; Scratching Towers
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4286: Best Cat Scratching Posts UK (2026) – Complete Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4279: Best Cat Harnesses UK (2026) – Safe Walking Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4272: Best Cat ID Tags UK (2026) – Identification Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4265: Best Cat GPS Trackers UK (2026) – Location Tracking Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4258: Best Cat Collars UK (2026) – Complete Safety Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4251: Best Cat Shampoo UK (2026) – When &#038; How to Bathe
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4244: Best Cat Nail Clippers UK (2026) – Safe Trimming Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4237: Best Cat Brushes UK (2026) – Guide by Coat Type
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4230: Best Cat Grooming Supplies UK (2026) – Complete Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4223: Best Cat Window Perches UK (2026) – Sunning &#038; Bird Watching
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4216: Best Cat Radiator Beds UK (2026) – Hook-On Warmth Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4209: Best Heated Cat Beds UK (2026) – Winter Warmth Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4202: Best Cat Beds UK (2026) – Complete Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4195: Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4188: Best Catnip Toys UK (2026) – What Works and Why
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4181: Best Interactive Cat Toys UK (2026) – Wand &#038; Puzzle Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4174: Best Cat Toys UK (2026) – Complete Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4167: Best Dog Water Bottles UK (2026) – Travel Hydration Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4160: Best Elevated Dog Bowls UK (2026) – Raised Feeder Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4153: Best Slow Feeder Dog Bowls UK (2026) – Prevent Speed Eating
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4146: Best Dog Bowls and Feeding UK (2026) – Complete Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4139: Best Dog Training Leads UK (2026) – Long Lines &#038; Harnesses
+      Replaced 1x: href="/dog-training/" -> href="/dog-training-behaviour/"
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4132: Best Puppy Training Guide UK (2026) – First Year Essentials
+      Replaced 1x: href="/dog-training/" -> href="/dog-training-behaviour/"
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4125: Best Dog Training Treats UK (2026) – Reward Guide
+      Replaced 1x: href="/dog-training/" -> href="/dog-training-behaviour/"
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4118: Best Dog Training and Behaviour UK (2026) – Complete Guide
+      Replaced 1x: href="/dog-training/" -> href="/dog-training-behaviour/"
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4110: Best Dog Joint Supplements UK (2026) – Mobility Support Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4103: Best Dog Flea Treatment UK (2026) – Prevention Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4096: Best Dog Dental Care UK (2026) – Teeth Cleaning Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4089: Best Dog Health and Care UK (2026) – Complete Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4078: Best Dog Nail Clippers UK (2026) – Trimming &#038; Grinding Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4071: Best Dog Shampoo UK (2026) – Ingredients &#038; Safety Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4064: Best Dog Brushes UK (2026) – Guide by Coat Type
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4057: Best Dog Grooming Supplies UK (2026) – Complete Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4049: Best Puppy Collars UK (2026) – First Collar &#038; Harness Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4042: Best Dog Leads UK (2026) – Walking &#038; Training Lead Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4034: Best No-Pull Dog Harnesses UK (2026) – Training &#038; Comfort Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4027: Best Dog Collars and Harnesses UK (2026) – Complete Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4018: Best Puppy Beds UK (2026) – First Bed &#038; Crate Training Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4011: Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #4004: Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #3996: Best Dog Beds UK (2026) – Complete Guide &#038; Honest Reviews
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #3960: Best Puppy Toys UK (2026) – Teething &#038; First Toys Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #3959: Best Interactive Dog Toys UK (2026) – Puzzle &#038; Enrichment Guide
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #3957: Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #3956: Best Dog Toys UK (2026) – Complete Guide &#038; Honest Reviews
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  post #696: Essential Cat Supplies for Cat Owners &#8211; Number 1 Must-Haves
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  page #3115: Cat Litter Trays
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  page #3113: Cat Scratching Posts
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  page #3111: Cat Collars
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  page #3109: Cat Grooming
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  page #3107: Cat Beds
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  page #1960: Dog Health &#038; Care
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  page #1956: Dog Training &#038; Behaviour
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  page #1951: Dog Bowls &#038; Feeding
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  page #1176: Cat Supplies
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  page #1149: Cat Toys
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  page #1146: Dog Collars &amp; Leashes
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  page #1144: Dog Grooming
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  page #1141: Dog Beds
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  page #1041: Dog Toys
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  page #63: Dog Supplies
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
+  page #39: About Us
+      Replaced 1x: href="/contact" -> href="/contact-pet-hub-online"
+  page #4: Pet Hub Online – Pet Supplies Online
+      Fixed 1x: 'Learn more' -> 'Read our affiliate disclosure' (affiliate links)
