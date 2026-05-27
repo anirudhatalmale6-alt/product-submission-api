@@ -1,0 +1,129 @@
+# generated_at: 2026-05-27T21:24:54Z
+# source_server: 167.99.198.145
+# generated_by: Phase10B_SafePublish_Policy
+# data_source_label: publishing_policy_v1
+# approval_status: active
+# next_action: apply_to_existing_drafts
+
+============================================================
+SAFE-TO-PUBLISH LANE POLICY v1.0
+============================================================
+
+SECTION 1: CONTENT THAT QUALIFIES FOR AUTO-PUBLICATION
+------------------------------------------------------------
+
+The following content types may be auto-published WITHOUT
+manual owner review, provided ALL 12 gates pass:
+
+  - Educational Authority Article
+  - Buying Guide Educational Only
+  - Faq Expansion
+  - How To Guide
+  - Comparison Educational Only
+  - Safety Guide
+  - Care Guide
+  - Trust Methodology Page
+  - Ai Visibility Improvement
+
+
+SECTION 2: THE 12 GATES (ALL MUST PASS)
+------------------------------------------------------------
+
+  gate_1_educational_only:
+    Content contains no affiliate links, no product recommendations requiring evidence, no sponsored content
+
+  gate_2_no_affiliate_links:
+    Zero affiliate hrefs detected in content scan (regex: no amazon/shareasale/cj.com/awin links)
+
+  gate_3_no_red_gate_topic:
+    Content does not cover pet insurance, regulated health claims, or RED-gated topics
+
+  gate_4_no_regulated_claims:
+    No medical claims, no 'vet-backed' without named source, no dosage recommendations
+
+  gate_5_no_fake_signals:
+    No 'we tested', 'hands-on testing', 'our veterinarian', 'certified expert', fake rankings, or fake authority signals
+
+  gate_6_metadata_valid:
+    SEO title <= 60 characters, meta description <= 160 characters, focus keyword present
+
+  gate_7_schema_safe:
+    No Product/Review/AggregateRating/Offer schema. Only FAQ, Article, BreadcrumbList allowed
+
+  gate_8_internal_linking_valid:
+    All internal links resolve to existing published pages (no 404s)
+
+  gate_9_trust_wording_safe:
+    No exaggerated trust language, no unverified expertise claims
+
+  gate_10_publisher_gate_pass:
+    Publisher layer confirms all gates pass with approval_id generated
+
+  gate_11_rollback_available:
+    Previous version stored, rollback can be triggered within 72 hours
+
+  gate_12_audit_trail_recorded:
+    Full audit record with timestamp, content hash, gate results, and approval_id logged
+
+
+SECTION 3: CONFIDENCE THRESHOLD
+------------------------------------------------------------
+
+  Minimum: 12/12 gates must pass (binary pass/fail)
+  Any single gate failure = BLOCKED for manual review
+  No partial auto-publish allowed
+
+
+SECTION 4: CONTENT REQUIRING MANUAL APPROVAL
+------------------------------------------------------------
+
+The following ALWAYS require explicit owner approval:
+
+  - Monetized Content With Affiliate Links
+  - Product Comparison With Evidence
+  - Product Recommendation
+  - Content With Product Review Offer Schema
+  - Red Gated Topic Pet Insurance
+  - Regulated Health Claims
+  - Trust Compliance Sensitive Pages
+  - Homepage Or Sitewide Changes
+  - Bulk Automation Across Live Site
+  - Content Failing Any Confidence Gate
+
+
+SECTION 5: ROLLBACK AND AUDIT
+------------------------------------------------------------
+
+  Rollback: WordPress revision history, revertible within 72h
+  Audit trail: Every publish action logged with full gate results
+  Retention: Permanent (audit records never deleted)
+
+  Audit record fields:
+    - timestamp
+    - post_id
+    - action (created/updated/published/rolled_back)
+    - content_hash_before
+    - content_hash_after
+    - gate_results (12 gate pass/fail)
+    - confidence_score
+    - publish_lane (auto/manual)
+    - approval_id
+    - operator (system/owner)
+    - rollback_available_until
+
+
+SECTION 6: MISSION CONTROL / CO-PILOT INTEGRATION
+------------------------------------------------------------
+
+  Co Pilot Visibility:
+    Co-Pilot can answer: 'what is safe to publish?', 'what is blocked?', 'what was auto-published?', 'what needs my approval?'
+
+  Mission Control Display:
+    Publishing lane status shown per content item: AUTO_SAFE / APPROVAL_REQUIRED / BLOCKED / PUBLISHED
+
+  Publisher Logic:
+    Publisher layer checks all 12 gates before allowing auto-publish. Any failure routes to manual queue.
+
+  Noc Monitoring:
+    Auto-published content monitored for 72 hours post-publish for indexing, performance, and anomaly detection
+

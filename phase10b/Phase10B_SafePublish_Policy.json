@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-05-27T21:24:54Z",
+  "source_server": "167.99.198.145",
+  "generated_by": "Phase10B_SafePublish_Policy",
+  "data_source_label": "publishing_policy_v1",
+  "version": "1.0",
+  "policy_name": "Safe-to-Publish Lane Policy",
+  "safe_auto_publish": {
+    "description": "Content types that qualify for automated publication without manual owner review",
+    "qualifying_content_types": [
+      "educational_authority_article",
+      "buying_guide_educational_only",
+      "faq_expansion",
+      "how_to_guide",
+      "comparison_educational_only",
+      "safety_guide",
+      "care_guide",
+      "trust_methodology_page",
+      "ai_visibility_improvement"
+    ],
+    "gates_that_must_pass": {
+      "gate_1_educational_only": "Content contains no affiliate links, no product recommendations requiring evidence, no sponsored content",
+      "gate_2_no_affiliate_links": "Zero affiliate hrefs detected in content scan (regex: no amazon/shareasale/cj.com/awin links)",
+      "gate_3_no_red_gate_topic": "Content does not cover pet insurance, regulated health claims, or RED-gated topics",
+      "gate_4_no_regulated_claims": "No medical claims, no 'vet-backed' without named source, no dosage recommendations",
+      "gate_5_no_fake_signals": "No 'we tested', 'hands-on testing', 'our veterinarian', 'certified expert', fake rankings, or fake authority signals",
+      "gate_6_metadata_valid": "SEO title <= 60 characters, meta description <= 160 characters, focus keyword present",
+      "gate_7_schema_safe": "No Product/Review/AggregateRating/Offer schema. Only FAQ, Article, BreadcrumbList allowed",
+      "gate_8_internal_linking_valid": "All internal links resolve to existing published pages (no 404s)",
+      "gate_9_trust_wording_safe": "No exaggerated trust language, no unverified expertise claims",
+      "gate_10_publisher_gate_pass": "Publisher layer confirms all gates pass with approval_id generated",
+      "gate_11_rollback_available": "Previous version stored, rollback can be triggered within 72 hours",
+      "gate_12_audit_trail_recorded": "Full audit record with timestamp, content hash, gate results, and approval_id logged"
+    },
+    "confidence_threshold": {
+      "minimum_score": 0.95,
+      "description": "All 12 gates must pass (score = gates_passed / 12). Any gate failure blocks auto-publish.",
+      "calculation": "Binary: 12/12 = 1.0 (auto-publish allowed), anything less = blocked for manual review"
+    }
+  },
+  "manual_approval_required": {
+    "description": "Content types that MUST have explicit owner approval before publication",
+    "content_types": [
+      "monetized_content_with_affiliate_links",
+      "product_comparison_with_evidence",
+      "product_recommendation",
+      "content_with_product_review_offer_schema",
+      "red_gated_topic_pet_insurance",
+      "regulated_health_claims",
+      "trust_compliance_sensitive_pages",
+      "homepage_or_sitewide_changes",
+      "bulk_automation_across_live_site",
+      "content_failing_any_confidence_gate"
+    ],
+    "approval_process": "Owner must explicitly approve via review. Approval recorded with owner_approval_id and timestamp."
+  },
+  "rollback_and_audit": {
+    "rollback_mechanism": "WordPress revision history preserves previous version. Rollback can be triggered via WP REST API revert to previous revision within 72 hours.",
+    "audit_record_fields": [
+      "timestamp",
+      "post_id",
+      "action (created/updated/published/rolled_back)",
+      "content_hash_before",
+      "content_hash_after",
+      "gate_results (12 gate pass/fail)",
+      "confidence_score",
+      "publish_lane (auto/manual)",
+      "approval_id",
+      "operator (system/owner)",
+      "rollback_available_until"
+    ],
+    "audit_storage": "Phase10B_Publishing_Audit_Log.csv in project repository",
+    "retention": "Permanent - audit records are never deleted"
+  },
+  "mission_control_integration": {
+    "co_pilot_visibility": "Co-Pilot can answer: 'what is safe to publish?', 'what is blocked?', 'what was auto-published?', 'what needs my approval?'",
+    "mission_control_display": "Publishing lane status shown per content item: AUTO_SAFE / APPROVAL_REQUIRED / BLOCKED / PUBLISHED",
+    "publisher_logic": "Publisher layer checks all 12 gates before allowing auto-publish. Any failure routes to manual queue.",
+    "noc_monitoring": "Auto-published content monitored for 72 hours post-publish for indexing, performance, and anomaly detection"
+  }
+}
