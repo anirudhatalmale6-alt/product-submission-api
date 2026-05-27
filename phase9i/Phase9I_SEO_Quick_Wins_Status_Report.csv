@@ -1,0 +1,23 @@
+generated_at,2026-05-27 19:28:53 UTC,,,,,,,,,,
+source_server,pethubonline.com,,,,,,,,,,
+git_commit,e639440 Phase 9H: Sitemap/Taxonomy Recovery + Dog Food Publishing,,,,,,,,,,
+generated_by,gen_phase9i.py,,,,,,,,,,
+data_source_label,WordPress REST API v2 + Live HTML + post-sitemap.xml,,,,,,,,,,
+
+Quick Win,Description,Status,Phase/Action,Traffic Light
+Trust Icons Alt Text,3 media items (1379/1380/1381) updated with descriptive alt text,DONE,Phase 9G,GREEN
+OG Image Metadata,ChatGPT references removed from media 253 (title/alt/caption/description),DONE,Phase 9G,GREEN
+Category Reassignment,52 posts moved from Uncategorized to correct categories,DONE,Phase 9G,GREEN
+Cat Harnesses Fix,"Post 4279: removed Dog Harnesses (1422), now Cat Supplies/Pet Care/Product Reviews",DONE,Phase 9H,GREEN
+Dog Food Categories,4 Dog Food posts assigned to Dog Food category (1467),DONE,Phase 9H,GREEN
+Rank Math Registration,All 58 posts have focus keywords set via Rank Math API,DONE,Phase 9H,GREEN
+Instant Indexing,4 Dog Food URLs submitted via Rank Math Instant Indexing API,DONE,Phase 9H,GREEN
+SEO Titles,All Dog Food posts titles under 60 chars with keyword at start,DONE,Phase 9H,GREEN
+Meta Descriptions,All Dog Food posts 150-160 chars with keyword,DONE,Phase 9H,GREEN
+Sitemap Full Recovery,52 non-food posts still missing from post-sitemap.xml (6 of 58 in sitemap),PENDING,Requires owner action (Option C),AMBER
+Jetpack Carousel,Cannot toggle via API; requires WP Admin > Jetpack > Settings > Writing > Media,PENDING,Owner action needed,AMBER
+Image Distortion,No global CSS applied per owner instruction; targeted audit done in Phase 9I,PENDING,See dedicated report,AMBER
+Homepage Meta Robots,Audited in Phase 9I; see dedicated report,DONE,Phase 9I,GREEN
+Robots.txt Audit,Parsed and validated in Phase 9I; see dedicated report,DONE,Phase 9I,GREEN
+Ads.txt,Not present (no ad network configured); not required until monetization,N/A,Future,GREY
+Performance Baseline,WordPress.com CDN/Batcache/HTTP2/Brotli all active; Astra theme lightweight,OK,Phase 9H,GREEN

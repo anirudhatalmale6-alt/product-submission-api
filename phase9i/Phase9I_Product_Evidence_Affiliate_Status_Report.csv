@@ -1,0 +1,15 @@
+generated_at,2026-05-27 19:28:53 UTC,,,,,,,,,,
+source_server,pethubonline.com,,,,,,,,,,
+git_commit,e639440 Phase 9H: Sitemap/Taxonomy Recovery + Dog Food Publishing,,,,,,,,,,
+generated_by,gen_phase9i.py,,,,,,,,,,
+data_source_label,WordPress REST API v2 + Live HTML + post-sitemap.xml,,,,,,,,,,
+
+Item,Status,Current State,Requirement,Next Action
+Product Evidence Pipeline,blocked_pending_evidence,No product claims published; no evidence register live,Cannot publish product recommendations until evidence pipeline is operational,Owner must approve evidence collection methodology before activation
+Product Recommendations,BLOCKED,Zero product recommendations in any published post,Dog Food posts are educational/informational only - no product picks,Requires: evidence pipeline + editorial review + owner approval
+Affiliate Links,BLOCKED,Zero affiliate links in any published post,No affiliate programs active; no tracking links deployed,Requires: affiliate disclosure page + evidence register + owner approval
+Product/Review Schema,BLOCKED,"No Product, Review, AggregateRating, or Offer schema deployed",Only Article schema on Dog Food posts; forbidden schemas actively blocked,Cannot deploy until product evidence is verified
+Monetization Status,PRE-REVENUE,No revenue streams active; site is in content-building phase,Affiliate disclosure page must be live before first affiliate link,Owner must approve monetization timeline and partner selection
+Evidence Gaps,COMPLETE GAP,No product evidence has been collected or verified for any post,Evidence labels framework designed but not populated,Phase 10 proposes automated evidence pipeline (requires approval)
+Affiliate Rel Standard,"rel=""nofollow noopener noreferrer sponsored""",Standard set but no links to apply it to,All future affiliate links must use this rel attribute,Enforcement built into publishing layer
+Pet Insurance,RED GATED,Pet Insurance content and links permanently blocked pending separate approval,No Pet Insurance mentions in any published content,Requires separate approval gate beyond standard product evidence

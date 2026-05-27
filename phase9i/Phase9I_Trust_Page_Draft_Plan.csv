@@ -1,0 +1,37 @@
+generated_at,2026-05-27 19:28:53 UTC,,,,,,,,,,
+source_server,pethubonline.com,,,,,,,,,,
+git_commit,e639440 Phase 9H: Sitemap/Taxonomy Recovery + Dog Food Publishing,,,,,,,,,,
+generated_by,gen_phase9i.py,,,,,,,,,,
+data_source_label,WordPress REST API v2 + Live HTML + post-sitemap.xml,,,,,,,,,,
+
+Page Title,Proposed Slug,Content Outline,SEO/Trust Impact,Action,Priority
+How We Research,/how-we-research/,"1. Research methodology overview
+2. Data sources we use (academic journals, manufacturer specs)
+3. How we evaluate products (criteria framework)
+4. What we do NOT do (no hands-on testing, no vet claims)
+5. Evidence labels explained (Verified, Partially Verified, Unverified)
+6. How readers can verify our sources",Builds E-E-A-T; critical for YMYL pet health topics,Draft only - requires owner review and approval before publish,HIGH
+Editorial Process,/editorial-process/,"1. Content creation workflow
+2. Fact-checking process
+3. Update schedule and freshness policy
+4. Corrections and updates policy
+5. Independence statement (no manufacturer influence)
+6. Author qualifications and expertise",Required for Google quality guidelines compliance,Draft only - requires owner review and approval before publish,HIGH
+Evidence Labels Guide,/evidence-labels/,"1. What evidence labels mean
+2. GREEN: Manufacturer-confirmed, publicly verifiable
+3. AMBER: Partially verified, some claims unconfirmed
+4. RED: Unverified or disputed claims
+5. How we assign labels
+6. How labels may change over time",Supports Product Evidence Register; builds reader trust,Draft only - requires owner review and approval before publish,MEDIUM
+Product Evidence Register,/product-evidence-register/,"1. Complete register of all product claims
+2. Evidence status for each claim (with label)
+3. Source links for verified claims
+4. Last verification date
+5. Methodology for ongoing verification
+6. How readers can submit corrections",Core trust infrastructure; supports affiliate disclosure,Draft only - blocked_pending_evidence until evidence pipeline active,HIGH
+Affiliate Disclosure,/affiliate-disclosure/,"1. Clear statement: site may earn commissions from affiliate links
+2. How affiliate links are marked (rel attributes)
+3. Statement: affiliate relationships do NOT influence recommendations
+4. List of affiliate programs (when active)
+5. How readers can identify affiliate links
+6. Contact information for questions",Legal requirement (FTC/ASA); must be live before any affiliate links go live,Draft only - not needed until monetization is approved,MEDIUM

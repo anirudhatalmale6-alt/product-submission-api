@@ -1,0 +1,65 @@
+generated_at,2026-05-27 19:28:53 UTC,,,,,,,,,,
+source_server,pethubonline.com,,,,,,,,,,
+git_commit,e639440 Phase 9H: Sitemap/Taxonomy Recovery + Dog Food Publishing,,,,,,,,,,
+generated_by,gen_phase9i.py,,,,,,,,,,
+data_source_label,WordPress REST API v2 + Live HTML + post-sitemap.xml,,,,,,,,,,
+
+Post ID,Slug,Categories,URL Status,Dog/Cat Mismatch,Uncategorized,Product Reviews,Breadcrumb Check
+4335,best-cat-litter-disposal-uk,"Cat Supplies, Pet Care, Product Reviews",200,OK,No,Yes,OK
+4328,best-self-cleaning-litter-trays-uk,"Cat Supplies, Pet Care, Product Reviews",200,OK,No,Yes,OK
+4321,best-cat-litter-uk,"Cat Supplies, Pet Care, Product Reviews",200,OK,No,Yes,OK
+4314,best-cat-litter-trays-uk,"Cat Supplies, Pet Care, Product Reviews",200,OK,No,Yes,OK
+4307,best-wall-mounted-cat-scratchers-uk,"Cat Supplies, Pet Care, Product Reviews",200,OK,No,Yes,OK
+4300,best-cardboard-cat-scratchers-uk,"Cat Supplies, Pet Care, Product Reviews",200,OK,No,Yes,OK
+4293,best-cat-trees-uk,"Cat Supplies, Pet Care, Product Reviews",200,OK,No,Yes,OK
+4286,best-cat-scratching-posts-uk,"Cat Supplies, Pet Care, Product Reviews",200,OK,No,Yes,OK
+4279,best-cat-harnesses-uk,"Cat Supplies, Pet Care, Product Reviews",200,OK,No,Yes,OK
+4272,best-cat-id-tags-uk,"Cat Supplies, Pet Care, Product Reviews",200,OK,No,Yes,OK
+4265,best-cat-gps-trackers-uk,"Cat Supplies, Pet Care, Product Reviews",200,OK,No,Yes,OK
+4258,best-cat-collars-uk,"Cat Supplies, Pet Care, Product Reviews",200,OK,No,Yes,OK
+4251,best-cat-shampoo-uk,"Cat Supplies, Pet Care, Product Reviews",200,OK,No,Yes,OK
+4244,best-cat-nail-clippers-uk,"Cat Supplies, Pet Care, Product Reviews",200,OK,No,Yes,OK
+4237,best-cat-brushes-uk,"Cat Supplies, Pet Care, Product Reviews",200,OK,No,Yes,OK
+4230,best-cat-grooming-supplies-uk,"Cat Supplies, Pet Care, Product Reviews",200,OK,No,Yes,OK
+4223,best-cat-window-perches-uk,"Cat Supplies, Pet Beds, Product Reviews",200,OK,No,Yes,OK
+4216,best-cat-radiator-beds-uk,"Cat Supplies, Pet Beds, Product Reviews",200,OK,No,Yes,OK
+4209,best-heated-cat-beds-uk,"Cat Supplies, Pet Beds, Product Reviews",200,OK,No,Yes,OK
+4202,best-cat-beds-uk,"Cat Supplies, Pet Beds, Product Reviews",200,OK,No,Yes,OK
+4195,best-cat-toys-indoor-cats-uk,"Cat Supplies, Cat Toys, Indoor Cats",200,OK,No,No,OK
+4188,best-catnip-toys-uk,"Cat Supplies, Cat Toys, Product Reviews",200,OK,No,Yes,OK
+4181,best-interactive-cat-toys-uk,"Cat Supplies, Cat Toys, Interactive Toys",200,OK,No,No,OK
+4174,best-cat-toys-uk,"Cat Supplies, Cat Toys, Product Reviews",200,OK,No,Yes,OK
+4167,best-dog-water-bottles-uk,"Dog Supplies, Pet Care, Product Reviews",200,OK,No,Yes,OK
+4160,best-elevated-dog-bowls-uk,"Dog Supplies, Pet Care, Product Reviews",NOT CHECKED (rate limit),OK,No,Yes,OK
+4153,best-slow-feeder-dog-bowls-uk,"Dog Supplies, Pet Care, Product Reviews",NOT CHECKED (rate limit),OK,No,Yes,OK
+4146,best-dog-bowls-feeding-uk,"Dog Supplies, Pet Care, Product Reviews",NOT CHECKED (rate limit),OK,No,Yes,OK
+4139,best-dog-training-leads-uk,"Dog Supplies, Product Reviews, Training Supplies",NOT CHECKED (rate limit),OK,No,Yes,OK
+4132,best-puppy-training-guide-uk,"Dog Supplies, Puppy Care, Training Supplies",NOT CHECKED (rate limit),OK,No,No,OK
+4125,best-dog-training-treats-uk,"Buying Guides, Dog Supplies, Training Supplies",NOT CHECKED (rate limit),OK,No,No,OK
+4118,best-dog-training-behaviour-uk,"Buying Guides, Dog Supplies, Training Supplies",NOT CHECKED (rate limit),OK,No,No,OK
+4110,best-dog-joint-supplements-uk,"Dog Health, Dog Supplies, Orthopaedic Care",NOT CHECKED (rate limit),OK,No,No,OK
+4103,best-dog-flea-treatment-uk,"Dog Health, Dog Supplies, Pet Health",NOT CHECKED (rate limit),OK,No,No,OK
+4096,best-dog-dental-care-uk,"Dog Health, Dog Supplies, Pet Health",NOT CHECKED (rate limit),OK,No,No,OK
+4089,best-dog-health-care-uk,"Dog Health, Dog Supplies, Pet Health",NOT CHECKED (rate limit),OK,No,No,OK
+4078,best-dog-nail-clippers-uk,"Dog Care, Dog Supplies, Product Reviews",NOT CHECKED (rate limit),OK,No,Yes,OK
+4071,best-dog-shampoo-uk,"Dog Care, Dog Supplies, Product Reviews",NOT CHECKED (rate limit),OK,No,Yes,OK
+4064,best-dog-brushes-uk,"Dog Care, Dog Supplies, Product Reviews",NOT CHECKED (rate limit),OK,No,Yes,OK
+4057,best-dog-grooming-supplies-uk,"Dog Care, Dog Supplies, Product Reviews",NOT CHECKED (rate limit),OK,No,Yes,OK
+4049,best-puppy-collars-uk,"Dog Supplies, Product Reviews, Puppy Care",NOT CHECKED (rate limit),OK,No,Yes,OK
+4042,best-dog-leads-uk,"Dog Supplies, Product Reviews, Training Supplies",NOT CHECKED (rate limit),OK,No,Yes,OK
+4034,best-no-pull-dog-harnesses-uk,"Dog Harnesses, Dog Supplies, Product Reviews",NOT CHECKED (rate limit),OK,No,Yes,OK
+4027,best-dog-collars-and-harnesses-uk,"Dog Harnesses, Dog Supplies, Product Reviews",NOT CHECKED (rate limit),OK,No,Yes,OK
+4018,best-puppy-beds-uk,"Dog Beds, Dog Supplies, Puppy Care",NOT CHECKED (rate limit),OK,No,No,OK
+4011,best-cooling-dog-beds-uk,"Dog Beds, Dog Supplies, Product Reviews",NOT CHECKED (rate limit),OK,No,Yes,OK
+4004,best-orthopaedic-dog-beds-uk,"Dog Beds, Dog Supplies, Orthopaedic Care",NOT CHECKED (rate limit),OK,No,No,OK
+3996,best-dog-beds-uk,"Dog Beds, Dog Supplies, Product Reviews",NOT CHECKED (rate limit),OK,No,Yes,OK
+3960,best-puppy-toys-uk,"Dog Supplies, Dog Toys, Puppy Care",NOT CHECKED (rate limit),OK,No,No,OK
+3959,best-interactive-dog-toys-uk,"Dog Supplies, Dog Toys, Interactive Toys",NOT CHECKED (rate limit),OK,No,No,OK
+3957,best-indestructible-dog-toys-uk,"Dog Supplies, Dog Toys, Product Reviews",NOT CHECKED (rate limit),OK,No,Yes,OK
+3956,best-dog-toys-uk,"Dog Supplies, Dog Toys, Product Reviews",NOT CHECKED (rate limit),OK,No,Yes,OK
+3839,best-puppy-food-uk,"Dog Food, Dog Supplies, Puppy Care",NOT CHECKED (rate limit),OK,No,No,OK
+3838,dry-vs-wet-dog-food-uk,"Dog Food, Dog Supplies, Product Reviews",NOT CHECKED (rate limit),OK,No,Yes,OK
+3837,best-dry-dog-food-uk,"Dog Food, Dog Supplies, Product Reviews",NOT CHECKED (rate limit),OK,No,Yes,OK
+3836,best-dog-food-uk,"Dog Food, Dog Supplies, Product Reviews",NOT CHECKED (rate limit),OK,No,Yes,OK
+696,essential-cat-supplies-for-cat-owners,"Buying Guides, Cat Supplies",NOT CHECKED (rate limit),OK,No,No,OK
+3,top-dog-toys-every-pet-owner-needs-in-2026,"Dog Supplies, Product Reviews",NOT CHECKED (rate limit),OK,No,Yes,OK

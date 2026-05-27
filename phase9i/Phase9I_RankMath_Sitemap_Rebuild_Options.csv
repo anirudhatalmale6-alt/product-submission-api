@@ -1,0 +1,12 @@
+generated_at,2026-05-27 19:28:53 UTC,,,,,,,,,,
+source_server,pethubonline.com,,,,,,,,,,
+git_commit,e639440 Phase 9H: Sitemap/Taxonomy Recovery + Dog Food Publishing,,,,,,,,,,
+generated_by,gen_phase9i.py,,,,,,,,,,
+data_source_label,WordPress REST API v2 + Live HTML + post-sitemap.xml,,,,,,,,,,
+
+Option,Description,Risk Level,Time Estimate,Rollback Path,Recommended,Requires Owner Action
+A. Safe Programmatic Post Update,"Use WP REST API to resave each post (content update trigger). Attempted multiple approaches: updateMeta, module toggle, content resave with force, draft-publish cycle.",LOW,5 minutes,Posts remain unchanged; only internal RM table affected,No - TRIED AND FAILED,No
+B. Rank Math Metadata Repair,"Set focus_keyword, robots meta, title, description via Rank Math updateMeta API for all 58 posts. All meta was set correctly but sitemap table still not populated.",LOW,10 minutes,Meta is additive only; original content untouched,No - TRIED AND FAILED,No
+C. WP Admin Batch Update (RECOMMENDED),Site owner opens each of the 52 missing posts in the WordPress block editor and clicks the Update button. This triggers Rank Math's save_post hook which registers the post in the internal sitemap table. Can be done ~1 min per post.,NONE,52 minutes (1 min per post),No changes to content; only triggers internal hooks,Yes - RECOMMENDED,Yes - requires owner to manually open and save each post in WP admin
+D. Sitemap Provider Fallback,Switch from Rank Math sitemap to WordPress native sitemap (/wp-sitemap.xml). WP native sitemap includes all published posts regardless of Rank Math state. Risk: loses Rank Math sitemap customizations.,MEDIUM,2 minutes,Re-enable Rank Math sitemap module to revert,No - not recommended without owner approval,No (would need approval if pursued)
+E. GSC Resubmission,Resubmit sitemap URL in Google Search Console after sitemap is fully recovered. Only effective after Options A-D fix the sitemap.,NONE,1 minute,N/A - read-only action in GSC,No - prerequisite: sitemap must be fixed first,No

@@ -1,0 +1,22 @@
+generated_at,2026-05-27 19:28:53 UTC,,,,,,,,,,
+source_server,pethubonline.com,,,,,,,,,,
+git_commit,e639440 Phase 9H: Sitemap/Taxonomy Recovery + Dog Food Publishing,,,,,,,,,,
+generated_by,gen_phase9i.py,,,,,,,,,,
+data_source_label,WordPress REST API v2 + Live HTML + post-sitemap.xml,,,,,,,,,,
+
+Question,Answer,Status
+How many posts are published?,58 posts are published on pethubonline.com.,LIVE
+How many posts are in the sitemap?,6 URLs in post-sitemap.xml. 52 posts missing due to Rank Math internal table issue.,PARTIAL
+Are the Dog Food posts live?,"Yes. All 4 Dog Food posts (IDs 3836, 3837, 3838, 3839) are published and returning HTTP 200.",LIVE
+Do Dog Food posts have correct schema?,Yes. Article schema deployed. No Product/Review/AggregateRating/Offer schema present.,PASS
+Are there any affiliate links in Dog Food posts?,No. Dog Food posts are educational content with no affiliate links.,PASS
+What is the sitemap issue?,52 non-food posts missing from post-sitemap.xml. Root cause: REST API-created posts not registered in Rank Math internal table.,PENDING FIX
+What is the recommended sitemap fix?,Option C: Owner opens each post in WP editor and clicks Update. This triggers Rank Math's save_post hook.,NEEDS OWNER ACTION
+Is auto-publish enabled?,No. Auto-publish is permanently disabled. wp_publisher.py hardcoded to draft mode.,SAFE
+What approval ID covers Dog Food publishing?,Approval ID: PH-PUB-2026-001. Covers all 4 Dog Food post publications.,ACTIVE
+What are the GA4 baseline metrics?,"GA4 Property: 534511727. Pre-publish baseline: 62 sessions, 82% bounce, 17s avg session (28d).",BASELINE SET
+Is Pet Insurance content live?,No. Pet Insurance remains RED gated. No Pet Insurance links or content published.,BLOCKED
+Are social posts being sent?,No. All 5 social channels are RED blocked. No auto-posting triggered.,BLOCKED
+What is the Product Evidence status?,Product Evidence remains blocked_pending_evidence. No product recommendations deployed.,BLOCKED
+Are there any forbidden content claims?,"All 58 posts scanned. Dog Food posts are clean of forbidden patterns (we tested, vet-backed, etc.).",PASS
+When should the next check happen?,"Day 7 post-publish: check GSC coverage, GA4 traffic, schema validation. Day 14: position tracking.",SCHEDULED

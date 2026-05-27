@@ -1,0 +1,17 @@
+generated_at,2026-05-27 19:28:53 UTC,,,,,,,,,,
+source_server,pethubonline.com,,,,,,,,,,
+git_commit,e639440 Phase 9H: Sitemap/Taxonomy Recovery + Dog Food Publishing,,,,,,,,,,
+generated_by,gen_phase9i.py,,,,,,,,,,
+data_source_label,WordPress REST API v2 + Live HTML + post-sitemap.xml,,,,,,,,,,
+
+Item,Detail,Impact/Notes,Action
+Exact Admin Path,WP Admin > Jetpack > Settings > Writing > Media > Carousel,,
+Current Status,Likely enabled (WordPress.com default),Cannot verify via API,
+JS Savings,~50-100KB JavaScript + CSS per page load,Affects LCP and TBT,
+Risk Level,LOW,Only affects image lightbox/slideshow overlay behavior,
+Rollback,Re-enable toggle in same admin path,Instant revert; no data loss,
+Galleries Dependency,Check if any posts use [gallery] shortcode or Jetpack Tiled Galleries,"If galleries exist, disabling carousel removes lightbox only",
+Owner Action Required,Yes - must be done in WP Admin panel,Cannot toggle via REST API or Jetpack API,
+Recommendation,Disable carousel to save JS/CSS payload,Test on one page first,Wait for owner availability
+Impact on Dog Food Posts,Minimal - Dog Food posts are text-heavy educational content,Few gallery images,
+Alternative,"If carousel is needed for galleries, keep enabled but defer-load JS",Requires custom code snippet,Not recommended without owner approval

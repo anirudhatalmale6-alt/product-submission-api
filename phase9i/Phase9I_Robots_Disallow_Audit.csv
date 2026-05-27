@@ -1,0 +1,17 @@
+generated_at,2026-05-27 19:28:53 UTC,,,,,,,,,,
+source_server,pethubonline.com,,,,,,,,,,
+git_commit,e639440 Phase 9H: Sitemap/Taxonomy Recovery + Dog Food Publishing,,,,,,,,,,
+generated_by,gen_phase9i.py,,,,,,,,,,
+data_source_label,WordPress REST API v2 + Live HTML + post-sitemap.xml,,,,,,,,,,
+
+Directive,Type,Path/Value,Assessment
+User-agent: *,User-Agent,*,
+Disallow: /wp-admin/,Disallow,/wp-admin/,OK - standard exclusion
+Allow: /wp-admin/admin-ajax.php,Allow,/wp-admin/admin-ajax.php,OK
+Sitemap: https://pethubonline.com/sitemap_index.xml,Sitemap,https://pethubonline.com/sitemap_index.xml,OK
+
+SUMMARY,,,
+Sitemap Referenced,Yes,OK,
+Total Disallow Rules,1,,
+wp-admin Blocked,Yes,Standard practice,
+Content Paths Blocked,Check above for any /category or /tag blocks,,Verify no important content is blocked

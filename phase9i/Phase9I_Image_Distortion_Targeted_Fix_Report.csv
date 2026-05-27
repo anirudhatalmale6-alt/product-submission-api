@@ -1,0 +1,49 @@
+generated_at,2026-05-27 19:28:53 UTC,,,,,,,,,,
+source_server,pethubonline.com,,,,,,,,,,
+git_commit,e639440 Phase 9H: Sitemap/Taxonomy Recovery + Dog Food Publishing,,,,,,,,,,
+generated_by,gen_phase9i.py,,,,,,,,,,
+data_source_label,WordPress REST API v2 + Live HTML + post-sitemap.xml,,,,,,,,,,
+
+Post ID,Slug,Image Source,Width,Height,Has Both Dims,Distortion Risk,Notes,Global CSS Rule
+3839,best-puppy-food-uk,https://pethubonline.com/wp-content/uploads/2026/05/cropped-LOGO123-300x306.png,300px,306px,True,LOW,OK,Do NOT apply global img { object-fit: cover; }
+3839,best-puppy-food-uk,https://pethubonline.com/wp-content/uploads/2026/05/cropped-LOGO123-300x306.png,300px,306px,True,LOW,OK,Do NOT apply global img { object-fit: cover; }
+3839,best-puppy-food-uk,ne.com/wp-content/uploads/2026/05/puppy_schedule.jpg?resize=800%2C420&#038;ssl=1,800px,420px,True,LOW,Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3839,best-puppy-food-uk,ethubonline.com/wp-content/uploads/2026/05/puppy_nutrients.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3839,best-puppy-food-uk,pethubonline.com/wp-content/uploads/2026/05/puppy_portions.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3839,best-puppy-food-uk,thubonline.com/wp-content/uploads/2026/05/puppy_transition.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3839,best-puppy-food-uk,pethubonline.com/wp-content/uploads/2026/05/puppy_mistakes.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3839,best-puppy-food-uk,hubonline.com/wp-content/uploads/2026/05/puppy_large_breed.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3839,best-puppy-food-uk,ploads/2026/04/d22e139e-caca-4f0f-b52a-7f728e30bba2.png?fit=1024%2C819&amp;ssl=1,1024px,819px,True,LOW,OK,Do NOT apply global img { object-fit: cover; }
+3839,best-puppy-food-uk,ubonline.com/wp-content/uploads/2026/05/hub_overview.jpg?fit=800%2C500&amp;ssl=1,800px,500px,True,LOW,OK,Do NOT apply global img { object-fit: cover; }
+3838,dry-vs-wet-dog-food-uk,https://pethubonline.com/wp-content/uploads/2026/05/cropped-LOGO123-300x306.png,300px,306px,True,LOW,OK,Do NOT apply global img { object-fit: cover; }
+3838,dry-vs-wet-dog-food-uk,https://pethubonline.com/wp-content/uploads/2026/05/cropped-LOGO123-300x306.png,300px,306px,True,LOW,OK,Do NOT apply global img { object-fit: cover; }
+3838,dry-vs-wet-dog-food-uk,om/wp-content/uploads/2026/05/wet_nutrition_bars.jpg?resize=800%2C450&#038;ssl=1,800px,450px,True,LOW,Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3838,dry-vs-wet-dog-food-uk,thubonline.com/wp-content/uploads/2026/05/wet_cost_compare.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3838,dry-vs-wet-dog-food-uk,hubonline.com/wp-content/uploads/2026/05/wet_mixed_feeding.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3838,dry-vs-wet-dog-food-uk,/pethubonline.com/wp-content/uploads/2026/05/wet_pros_cons.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3838,dry-vs-wet-dog-food-uk,ubonline.com/wp-content/uploads/2026/05/wet_decision_guide.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3838,dry-vs-wet-dog-food-uk,/pethubonline.com/wp-content/uploads/2026/05/wet_hydration.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3838,dry-vs-wet-dog-food-uk,ploads/2026/04/d22e139e-caca-4f0f-b52a-7f728e30bba2.png?fit=1024%2C819&amp;ssl=1,1024px,819px,True,LOW,OK,Do NOT apply global img { object-fit: cover; }
+3838,dry-vs-wet-dog-food-uk,ubonline.com/wp-content/uploads/2026/05/hub_overview.jpg?fit=800%2C500&amp;ssl=1,800px,500px,True,LOW,OK,Do NOT apply global img { object-fit: cover; }
+3837,best-dry-dog-food-uk,https://pethubonline.com/wp-content/uploads/2026/05/cropped-LOGO123-300x306.png,300px,306px,True,LOW,OK,Do NOT apply global img { object-fit: cover; }
+3837,best-dry-dog-food-uk,https://pethubonline.com/wp-content/uploads/2026/05/cropped-LOGO123-300x306.png,300px,306px,True,LOW,OK,Do NOT apply global img { object-fit: cover; }
+3837,best-dry-dog-food-uk,.com/wp-content/uploads/2026/05/dry_kibble_types.jpg?resize=800%2C420&#038;ssl=1,800px,420px,True,LOW,Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3837,best-dry-dog-food-uk,hubonline.com/wp-content/uploads/2026/05/dry_feeding_chart.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3837,best-dry-dog-food-uk,ethubonline.com/wp-content/uploads/2026/05/dry_price_tiers.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3837,best-dry-dog-food-uk,om/pethubonline.com/wp-content/uploads/2026/05/dry_storage.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3837,best-dry-dog-food-uk,hubonline.com/wp-content/uploads/2026/05/dry_quality_check.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3837,best-dry-dog-food-uk,pethubonline.com/wp-content/uploads/2026/05/dry_transition.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3837,best-dry-dog-food-uk,ploads/2026/04/d22e139e-caca-4f0f-b52a-7f728e30bba2.png?fit=1024%2C819&amp;ssl=1,1024px,819px,True,LOW,OK,Do NOT apply global img { object-fit: cover; }
+3837,best-dry-dog-food-uk,ubonline.com/wp-content/uploads/2026/05/hub_overview.jpg?fit=800%2C500&amp;ssl=1,800px,500px,True,LOW,OK,Do NOT apply global img { object-fit: cover; }
+3836,best-dog-food-uk,https://pethubonline.com/wp-content/uploads/2026/05/cropped-LOGO123-300x306.png,300px,306px,True,LOW,OK,Do NOT apply global img { object-fit: cover; }
+3836,best-dog-food-uk,https://pethubonline.com/wp-content/uploads/2026/05/cropped-LOGO123-300x306.png,300px,306px,True,LOW,OK,Do NOT apply global img { object-fit: cover; }
+3836,best-dog-food-uk,pethubonline.com/wp-content/uploads/2026/05/hub_food_types.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3836,best-dog-food-uk,ethubonline.com/wp-content/uploads/2026/05/hub_ingredients.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3836,best-dog-food-uk,pethubonline.com/wp-content/uploads/2026/05/hub_size_guide.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3836,best-dog-food-uk,ethubonline.com/wp-content/uploads/2026/05/hub_life_stages.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3836,best-dog-food-uk,ethubonline.com/wp-content/uploads/2026/05/hub_label_guide.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3836,best-dog-food-uk,com/pethubonline.com/wp-content/uploads/2026/05/hub_safety.jpg?w=1200&#038;ssl=1,MISSING,MISSING,False,MEDIUM,Missing explicit width/height - CLS risk; Has inline style dimensions,Do NOT apply global img { object-fit: cover; }
+3836,best-dog-food-uk,ploads/2026/04/d22e139e-caca-4f0f-b52a-7f728e30bba2.png?fit=1024%2C819&amp;ssl=1,1024px,819px,True,LOW,OK,Do NOT apply global img { object-fit: cover; }
+3836,best-dog-food-uk,nline.com/wp-content/uploads/2026/05/dry_food_labels.jpg?fit=800%2C450&amp;ssl=1,800px,450px,True,LOW,OK,Do NOT apply global img { object-fit: cover; }
+
+RULE,,Do NOT apply global CSS per owner instruction,,,,,,Only apply targeted CSS to specific verified selectors

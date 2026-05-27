@@ -1,0 +1,15 @@
+generated_at,2026-05-27 19:28:53 UTC,,,,,,,,,,
+source_server,pethubonline.com,,,,,,,,,,
+git_commit,e639440 Phase 9H: Sitemap/Taxonomy Recovery + Dog Food Publishing,,,,,,,,,,
+generated_by,gen_phase9i.py,,,,,,,,,,
+data_source_label,WordPress REST API v2 + Live HTML + post-sitemap.xml,,,,,,,,,,
+
+Item,Value,Check,Notes
+Homepage URL,https://pethubonline.com/,,
+HTTP Status,200,PASS,
+Meta Robots Tags Found,1,,
+Robots Tag 1,"follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",PASS,OK
+X-Robots-Tag Header,NOT SET,OK,
+
+Rank Math Settings,Homepage SEO should be set in Rank Math > Titles & Meta > Homepage,Verify in WP Admin,Owner can check
+Homepage Canonical,https://pethubonline.com/,PASS,

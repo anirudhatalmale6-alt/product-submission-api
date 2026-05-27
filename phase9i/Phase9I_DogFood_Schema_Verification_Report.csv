@@ -1,0 +1,11 @@
+generated_at,2026-05-27 19:28:53 UTC,,,,,,,,,,
+source_server,pethubonline.com,,,,,,,,,,
+git_commit,e639440 Phase 9H: Sitemap/Taxonomy Recovery + Dog Food Publishing,,,,,,,,,,
+generated_by,gen_phase9i.py,,,,,,,,,,
+data_source_label,WordPress REST API v2 + Live HTML + post-sitemap.xml,,,,,,,,,,
+
+Post ID,Slug,URL,JSON-LD Blocks,All Schema Types,Block Details,Forbidden Schemas Found,Validation Result
+3839,best-puppy-food-uk,https://pethubonline.com/best-puppy-food-uk/,1,"Article, BreadcrumbList, ImageObject, ListItem, Organization, Person, PetStore, Place, PostalAddress, WebPage, WebSite",Block 1: @type=Unknown,NONE,PASS
+3838,dry-vs-wet-dog-food-uk,https://pethubonline.com/dry-vs-wet-dog-food-uk/,1,"Article, BreadcrumbList, ImageObject, ListItem, Organization, Person, PetStore, Place, PostalAddress, WebPage, WebSite",Block 1: @type=Unknown,NONE,PASS
+3837,best-dry-dog-food-uk,https://pethubonline.com/best-dry-dog-food-uk/,1,"Article, BreadcrumbList, ImageObject, ListItem, Organization, Person, PetStore, Place, PostalAddress, WebPage, WebSite",Block 1: @type=Unknown,NONE,PASS
+3836,best-dog-food-uk,https://pethubonline.com/best-dog-food-uk/,1,"Article, BreadcrumbList, ImageObject, ListItem, Organization, Person, PetStore, Place, PostalAddress, WebPage, WebSite",Block 1: @type=Unknown,NONE,PASS

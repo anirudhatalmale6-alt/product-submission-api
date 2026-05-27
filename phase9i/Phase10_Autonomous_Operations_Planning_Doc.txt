@@ -1,0 +1,366 @@
+generated_at: 2026-05-27 19:28:53 UTC
+source_server: pethubonline.com
+git_commit: e639440 Phase 9H: Sitemap/Taxonomy Recovery + Dog Food Publishing
+generated_by: gen_phase9i.py
+data_source_label: WordPress REST API v2 + Live HTML + post-sitemap.xml
+======================================================================
+
+PHASE 10: AUTONOMOUS OPERATIONS PLANNING DOCUMENT
+==================================================
+
+THIS DOCUMENT IS A PLANNING PROPOSAL ONLY.
+NOTHING IN THIS DOCUMENT HAS BEEN EXECUTED.
+ALL ITEMS REQUIRE EXPLICIT OWNER APPROVAL BEFORE IMPLEMENTATION.
+
+Approval ID: PH-PUB-2026-001 (Phase 9I reference only - does NOT authorize Phase 10)
+Generated: 2026-05-27 19:28:53 UTC
+Git Commit: e639440 Phase 9H: Sitemap/Taxonomy Recovery + Dog Food Publishing
+
+
+1. PROPOSED SPECIALIST AGENTS (8 New)
+======================================
+
+Agent 1: Sitemap Recovery Agent
+  Purpose: Monitor post-sitemap.xml daily; detect missing posts; attempt
+           re-registration via safe API methods; alert owner if manual save needed.
+  Trigger: Daily cron (06:00 UTC)
+  Permissions: READ (WP API posts, sitemap XML), WRITE (Rank Math meta only)
+  Lane: AMBER (requires monitoring; no content changes)
+  Owner Approval: Required before activation
+
+Agent 2: Content Freshness Agent
+  Purpose: Scan all published posts for outdated information (dates, prices,
+           discontinued products); flag posts needing updates.
+  Trigger: Weekly cron (Monday 08:00 UTC)
+  Permissions: READ only (WP API, HTML scrape)
+  Lane: GREEN (read-only analysis)
+  Owner Approval: Required for any update actions
+
+Agent 3: Schema Compliance Agent
+  Purpose: Validate JSON-LD schema on all published posts; detect forbidden
+           schema types (Product, Review, AggregateRating, Offer); alert on violations.
+  Trigger: After any post publish event; weekly full scan
+  Permissions: READ only (HTML scrape, JSON-LD parse)
+  Lane: GREEN (read-only validation)
+  Owner Approval: Not required for scanning; required for remediation
+
+Agent 4: Internal Link Health Agent
+  Purpose: Crawl all internal links across published posts; detect broken links
+           (404/5xx); verify hub-spoke architecture; flag orphan pages.
+  Trigger: Weekly cron (Wednesday 08:00 UTC)
+  Permissions: READ only (HTML scrape, HEAD requests)
+  Lane: GREEN (read-only)
+  Owner Approval: Required for any link changes
+
+Agent 5: Evidence Pipeline Agent
+  Purpose: Collect and verify product evidence from manufacturer websites,
+           official sources, and public databases. Populate evidence register.
+  Trigger: On-demand (triggered by content agent or owner)
+  Permissions: READ (external websites), WRITE (evidence register database)
+  Lane: AMBER (writes to evidence register but not to live site)
+  Owner Approval: Required before activation; each evidence batch needs review
+
+Agent 6: GSC/GA4 Monitoring Agent
+  Purpose: Track indexing status, impressions, clicks, CTR, and positions for
+           all published URLs. Generate weekly performance reports.
+  Trigger: Daily data pull (09:00 UTC); weekly summary report
+  Permissions: READ only (GSC API, GA4 API via service account)
+  Lane: GREEN (read-only monitoring)
+  Owner Approval: Required for API credential setup
+
+Agent 7: Image Optimization Agent
+  Purpose: Scan published posts for image issues (missing alt text, oversized
+           images, missing dimensions, CLS risk). Generate fix recommendations.
+  Trigger: After post publish; monthly full scan
+  Permissions: READ (HTML scrape, image metadata)
+  Lane: GREEN (read-only analysis)
+  Owner Approval: Required for any image modifications
+
+Agent 8: Competitor Intelligence Agent
+  Purpose: Monitor competitor pet content sites for keyword gaps, content
+           opportunities, and trending topics. Generate content opportunity reports.
+  Trigger: Weekly cron (Friday 08:00 UTC)
+  Permissions: READ only (SERP analysis, competitor sitemap scrape)
+  Lane: GREEN (external read-only)
+  Owner Approval: Not required for reports; required for content action
+
+
+2. AUTOMATION PERMISSION LANES
+================================
+
+GREEN Lane (Autonomous - No Approval Needed):
+  - Read-only data collection (API, HTML, sitemap)
+  - Report generation (CSV, TXT deliverables)
+  - Schema validation scans
+  - Broken link detection
+  - Performance metric collection
+  - Evidence verification (read-only check)
+
+AMBER Lane (Semi-Autonomous - Owner Notified):
+  - Rank Math metadata updates (focus keywords, descriptions)
+  - Evidence register population (new entries)
+  - Sitemap re-registration attempts
+  - Image alt text suggestions
+  - Internal link suggestions
+  - Content freshness flags
+
+RED Lane (Owner Approval Required - ALWAYS):
+  - Publishing any content (draft or live)
+  - Modifying post content (text, images, links)
+  - Deploying or modifying schema
+  - Activating affiliate links
+  - Social media posting
+  - Pet Insurance content (any changes)
+  - Product recommendations (any deployment)
+  - Trust page publication
+  - Theme/plugin changes
+  - New WordPress user creation
+  - Any changes to wp_publisher.py or publishing layer
+  - Monetization decisions
+
+
+3. AI-CREDIT FALLBACK
+======================
+
+Current AI credit consumption: Minimal (REST API calls + HTML fetches)
+
+Fallback tiers:
+  Tier 1 (Normal):     All 8 agents active on schedule
+  Tier 2 (Reduced):    Priority agents only (Sitemap, Schema, Link Health)
+  Tier 3 (Minimal):    Weekly summary report only, no automated scanning
+  Tier 4 (Emergency):  Manual-only mode, no agent execution
+
+Credit monitoring: Agent manager tracks API calls per agent per day
+Alert threshold: 80% of daily budget triggers Tier 2 downgrade
+Budget owner: Site owner sets monthly AI credit limit
+
+
+4. 24/7 SCHEDULER
+==================
+
+Proposed Schedule (all times UTC):
+
+  Daily:
+    06:00 - Sitemap Recovery Agent scan
+    09:00 - GSC/GA4 data pull
+    12:00 - Schema Compliance quick check (Dog Food posts only)
+    18:00 - Internal Link Health spot check (10 random posts)
+
+  Weekly:
+    Monday  08:00 - Content Freshness full scan
+    Tuesday 08:00 - Image Optimization full scan
+    Wednesday 08:00 - Internal Link Health full crawl
+    Thursday 08:00 - Evidence Pipeline batch (if active)
+    Friday  08:00 - Competitor Intelligence report
+    Saturday 06:00 - Weekly summary generation
+    Sunday  - No scheduled tasks (maintenance window)
+
+  Monthly:
+    1st of month 06:00 - Full site audit (all agents)
+    15th of month 06:00 - Mid-month performance review
+
+  Scheduling platform: Cron jobs on project server
+  Monitoring: Agent health dashboard (proposed)
+  Alerting: Email to owner on RED lane violations or agent failures
+
+
+5. MONITORING JOBS
+===================
+
+Job 1: Sitemap Health Monitor
+  Frequency: Daily
+  Check: post-sitemap.xml URL count vs published post count
+  Alert: If missing count > 0 for 7+ consecutive days
+  Dashboard: Sitemap coverage percentage trend
+
+Job 2: Indexing Progress Tracker
+  Frequency: Daily
+  Check: GSC Coverage API for indexed page count
+  Alert: If indexed pages decrease or new posts not indexed after 14 days
+  Dashboard: Indexing rate and coverage trend
+
+Job 3: Schema Violation Detector
+  Frequency: After each publish + weekly full scan
+  Check: All published posts for forbidden schema types
+  Alert: Immediate on any Product/Review/AggregateRating/Offer detection
+  Dashboard: Schema compliance scorecard
+
+Job 4: Content Safety Scanner
+  Frequency: After each publish + weekly full scan
+  Check: All published posts for forbidden claims and affiliate links
+  Alert: Immediate on any violation
+  Dashboard: Content compliance scorecard
+
+Job 5: Performance Baseline Tracker
+  Frequency: Weekly
+  Check: Core Web Vitals, page load times, TTFB
+  Alert: If any metric degrades >20% from baseline
+  Dashboard: Performance trend charts
+
+
+6. OWNER APPROVAL QUEUES
+==========================
+
+Queue 1: Content Publish Queue
+  Items: Draft posts ready for publishing
+  Review: Title, content, schema, metadata, compliance check
+  Approval: Single click approve/reject with reason
+  SLA: 48 hours (auto-remind after 24h)
+
+Queue 2: Evidence Review Queue
+  Items: New product evidence entries pending verification
+  Review: Source URL, claim, evidence label, verification notes
+  Approval: Approve/reject/request more evidence
+  SLA: 72 hours
+
+Queue 3: Sitemap Action Queue
+  Items: Posts requiring manual editor save for sitemap inclusion
+  Review: List of post URLs with one-click open-in-editor links
+  Approval: Owner performs the save action
+  SLA: 1 week
+
+Queue 4: Configuration Change Queue
+  Items: Proposed plugin/theme/setting changes
+  Review: Change description, risk level, rollback path
+  Approval: Approve/reject
+  SLA: 48 hours
+
+
+7. EVIDENCE PIPELINE (PROPOSED)
+================================
+
+Stage 1: Claim Extraction
+  - Parse published post content for product claims
+  - Categorize claims (nutrition, ingredient, safety, price, availability)
+  - Assign initial evidence label: UNVERIFIED
+
+Stage 2: Source Discovery
+  - Search manufacturer websites for supporting data
+  - Check AAFCO/FEDIAF databases for nutrition standards
+  - Search academic journals for ingredient safety data
+  - Check government recalls databases
+
+Stage 3: Verification
+  - Match claims against discovered sources
+  - Assign evidence labels: VERIFIED / PARTIALLY VERIFIED / UNVERIFIED / DISPUTED
+  - Record source URLs and verification date
+
+Stage 4: Register Population
+  - Write verified evidence to Product Evidence Register
+  - Generate evidence cards for each product claim
+  - Update evidence labels in published posts (AMBER lane - owner notified)
+
+Stage 5: Ongoing Monitoring
+  - Re-verify evidence monthly
+  - Track source URL availability (detect dead links)
+  - Flag any manufacturer website changes that affect claims
+
+
+8. CO-PILOT DAILY SUMMARY
+===========================
+
+Proposed daily summary email/report for owner:
+
+  Section 1: Site Health
+    - Published posts: count, any changes
+    - Sitemap status: URLs in sitemap vs published
+    - Indexing status: pages indexed in GSC
+    - Schema compliance: pass/fail count
+
+  Section 2: Performance
+    - GA4 key metrics (sessions, bounce rate, avg session duration)
+    - GSC key metrics (impressions, clicks, CTR, avg position)
+    - Core Web Vitals status
+
+  Section 3: Pending Actions
+    - Items in approval queues (with priority)
+    - Overdue items
+    - Agent alerts requiring attention
+
+  Section 4: Content Pipeline
+    - Draft posts ready for review
+    - Evidence pipeline status
+    - Upcoming content calendar items
+
+  Delivery: Daily at 07:00 UTC via email or dashboard
+
+
+9. PUBLISH GATE
+=================
+
+All content must pass through the Publish Gate before going live:
+
+  Gate 1: Content Compliance
+    - No forbidden claims (FORBIDDEN_PATTERNS list)
+    - No affiliate links without disclosure page
+    - No product recommendations without evidence
+    - No Pet Insurance content (RED gated)
+
+  Gate 2: SEO Compliance
+    - Title under 60 characters with keyword at start
+    - Meta description 150-160 chars with keyword
+    - First image alt text with keyword
+    - Article schema only (no forbidden schema types)
+    - Category assigned (not Uncategorized)
+    - Focus keyword set in Rank Math
+
+  Gate 3: Technical Compliance
+    - HTTP 200 response
+    - Canonical URL correct
+    - Not noindex
+    - Not blocked by robots.txt
+    - In sitemap (or flagged for sitemap recovery)
+
+  Gate 4: Approval
+    - Valid approval_id present
+    - Owner approval recorded
+    - Publish timestamp within approval window
+
+  Gate 5: Post-Publish Verification
+    - All Gate 1-4 checks re-run on live page
+    - Schema validation on live HTML
+    - Internal link check
+    - Social channel status confirmed RED
+
+
+10. SECURITY CONSTRAINTS
+==========================
+
+  - API credentials never stored in deliverable files
+  - Git repo must not contain credentials (verified: not in tracked files)
+  - WordPress Application Password used (not admin password)
+  - All API calls use HTTPS only
+  - Rate limiting: max 1 request per 150ms to site
+  - No direct database access (all changes via REST API)
+  - No file system access to WordPress server
+  - No shell/SSH access to hosting environment
+  - Agent permissions enforced at code level (not just policy)
+  - Audit log for all write operations
+  - Rollback snapshots before any content modification
+  - No credential sharing between agents
+  - Monthly credential rotation recommended
+
+
+11. ACCEPTANCE CRITERIA FOR PHASE 10 ACTIVATION
+=================================================
+
+Phase 10 will NOT be activated until ALL of the following are met:
+
+  [ ] Phase 9I deliverables reviewed and accepted by owner
+  [ ] Sitemap full recovery completed (52 missing posts resolved)
+  [ ] Dog Food posts indexed in GSC (verified in Coverage report)
+  [ ] GA4 baseline established (minimum 14 days of post-publish data)
+  [ ] Owner approves Phase 10 planning document
+  [ ] Owner approves agent permission lanes (GREEN/AMBER/RED)
+  [ ] Owner approves automation schedule
+  [ ] Owner approves AI credit budget
+  [ ] Owner approves evidence pipeline methodology
+  [ ] Owner approves Co-Pilot daily summary format
+  [ ] Owner approves monitoring alert thresholds
+  [ ] Separate approval ID issued for Phase 10 (PH-PUB-2026-001 does NOT cover Phase 10)
+
+
+END OF PHASE 10 PLANNING DOCUMENT
+===================================
+This document is a proposal only. No Phase 10 actions have been executed.
+Owner must review, modify, and approve before any implementation begins.

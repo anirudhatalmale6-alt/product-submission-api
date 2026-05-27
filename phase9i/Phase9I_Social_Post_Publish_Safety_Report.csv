@@ -1,0 +1,15 @@
+generated_at,2026-05-27 19:28:53 UTC,,,,,,,,,,
+source_server,pethubonline.com,,,,,,,,,,
+git_commit,e639440 Phase 9H: Sitemap/Taxonomy Recovery + Dog Food Publishing,,,,,,,,,,
+generated_by,gen_phase9i.py,,,,,,,,,,
+data_source_label,WordPress REST API v2 + Live HTML + post-sitemap.xml,,,,,,,,,,
+
+Channel,Status,Auto-Post Config,Account Status,Dog Food Share Status,Action Required,Checked At
+Facebook,RED - BLOCKED,No auto-posting configured,No Facebook page connected,No Dog Food posts shared to Facebook,Owner must approve social strategy before any sharing,2026-05-27 19:28:53 UTC
+Twitter/X,RED - BLOCKED,No auto-posting configured,No Twitter account connected,No Dog Food posts shared to Twitter,Owner must approve social strategy before any sharing,2026-05-27 19:28:53 UTC
+Instagram,RED - BLOCKED,No auto-posting configured,No Instagram account connected,No Dog Food posts shared to Instagram,Owner must approve social strategy before any sharing,2026-05-27 19:28:53 UTC
+Pinterest,RED - BLOCKED,No auto-posting configured,No Pinterest account connected,No Dog Food posts shared to Pinterest,Owner must approve social strategy before any sharing,2026-05-27 19:28:53 UTC
+LinkedIn,RED - BLOCKED,No auto-posting configured,No LinkedIn page connected,No Dog Food posts shared to LinkedIn,Owner must approve social strategy before any sharing,2026-05-27 19:28:53 UTC
+
+SUMMARY,ALL CHANNELS RED,Zero social posts triggered by Dog Food publishing,Jetpack Publicize module status: unknown (check WP Admin),No IFTTT/Zapier/Buffer/Hootsuite integrations detected,,
+POLICY,No social sharing until:,1. Social strategy approved by owner,2. Brand voice guidelines established,3. Individual channel approval granted,4. Test post reviewed before automation,
