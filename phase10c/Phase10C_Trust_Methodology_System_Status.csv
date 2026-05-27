@@ -1,0 +1,7 @@
+page_id,title,page_type,wp_status,publishing_lane,awaiting_review,blocked_dependency,governance_clean,generated_at,source_server,git_commit,generated_by,data_source_label
+4402,How We Research Pet Products,trust_page,draft,B_review_first,yes,none,yes,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+4403,Our Editorial Process,trust_page,draft,B_review_first,yes,none,yes,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+4404,Affiliate Disclosure Explained,trust_page,draft,B_review_first,yes,none,yes,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+4405,Corrections and Updates Policy,trust_page,draft,B_review_first,yes,none,yes,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+pending,Evidence Status Labels Explained,dependency_page,not_created,C_blocked,N/A,evidence_pipeline,yes,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+pending,Product Evidence Overview,dependency_page,not_created,C_blocked,N/A,evidence_pipeline,yes,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath

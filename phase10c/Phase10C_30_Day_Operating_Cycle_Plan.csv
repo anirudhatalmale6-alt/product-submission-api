@@ -1,0 +1,17 @@
+week,workstream,action,status,lane,generated_at,source_server,git_commit,generated_by,data_source_label
+Week 1,Safe Publication,Publish approved Cat Toys + Dog Harness educational batch,completed,A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Week 1,Trust Pages,Submit 4 trust/methodology pages for owner review,awaiting_review,B,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Week 1,Evidence Pipeline,Begin Dog Harness candidate identification,in_progress,C,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Week 1,Quality Control,"Run quality audit on all live posts, flag thin content",completed,A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Week 2,Cluster Expansion,Draft 4-6 new educational spokes for Dog Care + Pet Care,planned,A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Week 2,AI Visibility,Add FAQ sections to posts scoring below 3/6,planned,A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Week 2,Internal Linking,Strengthen cross-cluster linking for newly published posts,planned,A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Week 2,Evidence Pipeline,Complete Dog Food source collection phase,planned,C,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Week 3,Cluster Expansion,Draft Dog Toys + Dog Beds educational spokes,planned,A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Week 3,Trust Pages,Publish approved trust pages (if review passed),planned,B,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Week 3,Quality Control,Second quality pass — address flagged issues,planned,A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Week 3,Monitoring,Check indexing status of all newly published pages,planned,A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Week 4,Cluster Expansion,Draft Training Supplies + Puppy Care spokes,planned,A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Week 4,Evidence Pipeline,Evidence extraction + verification for Dog Food top 10,planned,C,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Week 4,AI Visibility,Full site AI visibility re-score + comparison report,planned,A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Week 4,Operating Review,30-day operating review + next cycle planning,planned,A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath

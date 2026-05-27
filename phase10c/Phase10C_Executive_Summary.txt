@@ -1,0 +1,102 @@
+PHASE 10C EXECUTIVE SUMMARY — CONTROLLED LIVE AUTHORITY SCALING
+================================================================
+Generated: 2026-05-27T22:02:26.805770+00:00
+Source Server: 167.99.198.145
+Git Commit: 951759a
+
+PUBLICATION STATUS
+------------------
+Total live posts: 68
+Total draft posts: 0
+Total pages: 30
+Newly published in this pass: 10
+  - Cat Toys educational spokes: 6 (IDs 4406-4410, 4415)
+  - Dog Harness educational posts: 4 (IDs 4411-4414)
+
+3-LANE PUBLISHING MODEL
+------------------------
+Lane A (Safe Live): 13 items
+Lane B (Review First): 0 items
+Lane C (Blocked): 55 items
+
+TRUST/METHODOLOGY PAGES
+------------------------
+4 pages drafted (IDs 4402-4405), status: AWAITING OWNER REVIEW
+  - How We Research Pet Products
+  - Our Editorial Process
+  - Affiliate Disclosure Explained
+  - Corrections and Updates Policy
+2 dependency pages (Evidence Status Labels, Product Evidence Overview): BLOCKED pending evidence pipeline
+
+QUALITY OVERVIEW
+----------------
+Posts with no issues: 55
+Posts needing improvement: 13
+
+AI VISIBILITY
+-------------
+HIGH readiness: 15 posts
+MEDIUM readiness: 51 posts
+LOW readiness: 2 posts
+
+CLUSTER AUTHORITY SCORES
+------------------------
+  Cat Toys: 100/100 (10 live, scaling)
+  Cat Supplies: 100/100 (31 live, scaling)
+  Dog Supplies: 100/100 (37 live, scaling)
+  Pet Care: 100/100 (24 live, scaling)
+  Dog Food: 100/100 (4 live, expanding)
+  Dog Care: 99/100 (7 live, expanding)
+  Puppy Care: 96/100 (5 live, expanding)
+  Dog Toys: 88/100 (4 live, expanding)
+  Training Supplies: 87/100 (5 live, expanding)
+  Dog Harnesses: 85/100 (6 live, expanding)
+  Dog Beds: 81/100 (4 live, expanding)
+  Dog Health: 77/100 (4 live, expanding)
+
+EVIDENCE PIPELINE
+-----------------
+Dog Food: 35 candidates identified, source collection pending
+Dog Harnesses: 10 candidates identified, not yet started
+Commercial recommendations: BLOCKED pending evidence verification and owner approval
+
+GOVERNANCE CONFIRMATION
+-----------------------
+Throughout this execution pass:
+[CONFIRMED] No unsafe monetization
+[CONFIRMED] No affiliate insertion without evidence
+[CONFIRMED] No Product/Review/AggregateRating/Offer schema deployed
+[CONFIRMED] No RED-gated content activated
+[CONFIRMED] No fake expertise, fake testing, or fake authority signals
+[CONFIRMED] No bypass of publisher gates
+[CONFIRMED] 12-gate safe-to-publish checks enforced on all publications
+[CONFIRMED] Rollback backups saved for all published content
+
+WHAT IS READY FOR REVIEW
+-------------------------
+1. Trust/Methodology pages (4 pages, IDs 4402-4405) — need owner review before publication
+2. 30-day operating cycle plan — for owner alignment on upcoming priorities
+
+WHAT IS READY FOR SAFE PUBLICATION
+-----------------------------------
+All 10 educational posts have been published to live.
+No additional safe content pending — next batch requires new drafting.
+
+WHAT IS BLOCKED
+---------------
+1. Dog Food commercial recommendations — evidence pipeline in progress
+2. Dog Harness commercial recommendations — evidence not started
+3. Evidence Status Labels page — depends on evidence pipeline maturity
+4. Product Evidence Overview page — depends on evidence pipeline maturity
+5. All affiliate/monetization content — blocked pending evidence + approval
+6. Pet Insurance — RED gated (permanent block unless explicitly reviewed)
+
+NEXT STEPS
+----------
+1. Owner to review 4 Trust/Methodology page drafts
+2. Begin Week 2 cluster expansion: Dog Care + Pet Care educational spokes
+3. Add FAQ sections to posts scoring below 3/6 AI visibility
+4. Continue Dog Food evidence source collection
+5. Begin Dog Harness evidence candidate identification
+6. Second quality pass on flagged posts
+7. Check indexing status of newly published pages

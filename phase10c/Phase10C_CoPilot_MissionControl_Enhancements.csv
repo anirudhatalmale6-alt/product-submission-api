@@ -1,0 +1,13 @@
+component,status,enhancement,priority,generated_at,source_server,git_commit,generated_by,data_source_label
+Safe-Live Lane Controller,operational,12-gate auto-publish policy active,P1,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+3-Lane Publishing Model,operational,Lane A/B/C classification on all content,P1,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Governance Gate Engine,operational,Affiliate/schema/RED-topic checks on every publish,P1,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Rollback System,operational,Pre-publish backups with content snapshots,P1,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Cluster Scorecard,active,Per-cluster authority stage + expansion tracking,P2,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Evidence Pipeline Tracker,active,8-stage pipeline from candidate to approved,P2,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Quality Drift Detection,active,Generic phrasing + thin content + structure scoring,P2,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+AI Visibility Scorer,active,6-dimension visibility assessment per post,P2,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Internal Link Health Monitor,active,Bidirectional link tracking + orphan detection,P2,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Post-Publish Monitor,active,Indexing + rendering + issue detection loop,P3,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Improvement Proposal System,planned,Auto-propose + approval workflow for improvements,P3,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Prompt/Workflow Registry,planned,Versioned prompt templates + workflow definitions,P3,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath

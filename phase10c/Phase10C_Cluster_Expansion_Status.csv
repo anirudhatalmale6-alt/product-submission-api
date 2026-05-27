@@ -1,0 +1,13 @@
+cluster,category_id,live_posts,draft_posts,total_content,has_hub_page,authority_stage,next_action,commercial_readiness,evidence_status,generated_at,source_server,git_commit,generated_by,data_source_label
+Cat Toys,1459,10,0,10,yes,expanding,expand_spokes,monitor,N/A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Cat Supplies,1377,31,0,31,yes,expanding,expand_spokes,monitor,N/A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Dog Harnesses,1422,6,0,6,check,expanding,expand_spokes,blocked_pending_evidence,not_started,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Dog Supplies,1376,37,0,37,yes,expanding,expand_spokes,monitor,N/A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Dog Care,1489,7,0,7,check,expanding,expand_spokes,monitor,N/A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Pet Care,1397,24,0,24,check,expanding,expand_spokes,monitor,N/A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Puppy Care,1442,5,0,5,check,expanding,expand_spokes,monitor,N/A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Dog Food,1467,4,0,4,yes,building,expand_spokes,blocked_pending_evidence,collection_started,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Dog Beds,1401,4,0,4,yes,building,expand_spokes,educational_only,N/A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Dog Toys,1441,4,0,4,yes,building,expand_spokes,educational_only,N/A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Dog Health,1450,4,0,4,yes,building,expand_spokes,educational_only,N/A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Training Supplies,1474,5,0,5,check,expanding,expand_spokes,monitor,N/A,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath

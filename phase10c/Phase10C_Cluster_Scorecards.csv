@@ -1,0 +1,13 @@
+cluster,category_id,live_posts,draft_posts,total_words,avg_words_per_post,avg_internal_links,avg_ai_visibility,authority_score,commercial_status,growth_stage,next_priority,generated_at,source_server,git_commit,generated_by,data_source_label
+Cat Toys,1459,10,0,8899,889,1.8,1.6/6,100/100,educational_only,scaling,expand_spokes,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Cat Supplies,1377,31,0,34579,1115,2.8,1.9/6,100/100,educational_only,scaling,expand_spokes,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Dog Harnesses,1422,6,0,5953,992,1.7,1.7/6,85/100,blocked_pending_evidence,expanding,expand_spokes,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Dog Supplies,1376,37,0,60236,1628,2.8,2.2/6,100/100,educational_only,scaling,expand_spokes,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Dog Care,1489,7,0,7033,1004,2.1,1.9/6,99/100,educational_only,expanding,expand_spokes,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Pet Care,1397,24,0,26470,1102,2.6,1.9/6,100/100,educational_only,scaling,expand_spokes,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Puppy Care,1442,5,0,9519,1903,3.0,2.4/6,96/100,educational_only,expanding,expand_spokes,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Dog Food,1467,4,0,18088,4522,3.2,3.0/6,100/100,blocked_pending_evidence,expanding,expand_spokes,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Dog Beds,1401,4,0,5778,1444,3.0,2.5/6,81/100,educational_only,expanding,expand_spokes,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Dog Toys,1441,4,0,7830,1957,3.0,2.8/6,88/100,educational_only,expanding,expand_spokes,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Dog Health,1450,4,0,5043,1260,3.0,2.0/6,77/100,educational_only,expanding,expand_spokes,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
+Training Supplies,1474,5,0,6149,1229,3.0,2.0/6,87/100,educational_only,expanding,expand_spokes,2026-05-27T22:02:26.805770+00:00,167.99.198.145,951759a,Phase10C_Execution_Engine,WordPress REST API + RankMath
