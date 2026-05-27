@@ -1,0 +1,58 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+action,lane,agents_involved,auto_allowed,approval_required,notes
+sitemap_health_check,GREEN,SA-01,yes,no,Runs hourly
+missing_URL_detection,GREEN,SA-01,yes,no,Alert on detection
+GSC_indexing_submission,AMBER,SA-01,prepare_only,yes_if_manual,Auto for new published posts
+category_assignment_audit,GREEN,SA-02,yes,no,Runs every 6 hours
+uncategorized_post_detection,GREEN,SA-02,yes,no,Alert immediately
+bulk_category_change,AMBER,SA-02,prepare_only,yes,Owner must approve mapping
+category_deletion,RED,SA-02,no,yes_explicit,Never auto
+metadata_length_check,GREEN,SA-03,yes,no,Runs every 6 hours
+focus_keyword_check,GREEN,SA-03,yes,no,Runs every 6 hours
+first_image_alt_check,GREEN,SA-03,yes,no,Runs every 6 hours
+live_metadata_update,AMBER,SA-03,prepare_only,yes,"Prepare proposal, owner approves"
+schema_safety_scan,GREEN,SA-04,yes,no,Runs every 6 hours
+unsafe_schema_detection,GREEN,SA-04,yes,no,Alert immediately
+schema_deployment,RED,SA-04,no,yes_explicit,Only safe schema after approval
+Product_Review_Offer_schema,RED,SA-04,never,yes_plus_evidence,Blocked until Product Evidence verified
+product_evidence_collection,GREEN,SA-05,yes,no,Public source data only
+evidence_verification,RED,SA-05,no,yes_explicit,Owner verifies source proof
+affiliate_link_insertion,RED,SA-05 + SA-06,never,yes_explicit,Blocked until evidence verified
+publish_gate_check,GREEN,SA-06,yes,no,Runs before every publish
+actual_publishing,RED,SA-06,never,yes_approval_id,Requires valid approval_id
+rollback_execution,RED,SA-06,no,yes,Emergency only with approval
+AI_visibility_monitoring,GREEN,SA-07,yes,no,Weekly query set
+live_content_update_for_AI,AMBER,SA-07,prepare_only,yes,Propose improvements
+trust_page_monitoring,GREEN,SA-08,yes,no,Scan for unsafe claims
+trust_page_publishing,RED,SA-08 + SA-06,never,yes_explicit,Draft only until approved
+performance_monitoring,GREEN,SA-09,yes,no,Weekly snapshot
+analytics_script_removal,RED,SA-09,never,yes_explicit,Never remove analytics/consent
+export_timestamp_check,GREEN,SA-10,yes,no,Every export
+stale_export_archival,GREEN,SA-10,yes,no,Auto-archive superseded
+social_posting,RED,none_blocked,never,yes_explicit,All channels RED
+Pet_Insurance_content,RED,none_blocked,never,yes_explicit,RED-gated topic
+credential_changes,RED,none,never,yes_explicit,Never automated
+content_deletion,RED,none,never,yes_explicit,Never automated
+homepage_changes,RED,none,never,yes_explicit,High impact
+bulk_redirects,RED,none,never,yes_explicit,SEO impact
+broken_link_scan,GREEN,SA-01 + SA-03,yes,no,Daily scan
+internal_link_opportunity,GREEN,SA-02 + SA-07,yes_report,no,Suggest only
+internal_link_insertion,AMBER,SA-02,prepare_only,yes,Live page changes need approval
+page_speed_snapshot,GREEN,SA-09,yes,no,Weekly
+secret_scan,GREEN,SA-10,yes,no,Daily
+backup_check,GREEN,SA-10,yes,no,Hourly
+DLQ_check,GREEN,SA-10,yes,no,Hourly
+draft_content_proposal,GREEN,all,yes,no,Draft only
+draft_metadata_suggestion,GREEN,SA-03,yes,no,Draft only
+draft_schema_suggestion,GREEN,SA-04,yes,no,Safe schema only
+Mission_Control_task_creation,GREEN,all,yes,no,Backlog items
+CoPilot_status_update,GREEN,all,yes,no,Real-time
+NOC_health_check,GREEN,all,yes,no,Hourly
+report_generation,GREEN,all,yes,no,On schedule
+owner_review_pack,GREEN,all,yes,no,Prepared automatically

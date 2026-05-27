@@ -1,0 +1,53 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+field,value
+agent_name,Metadata & Image Alt Agent (SA-03)
+purpose,Enforce metadata and first-image-alt rules for all current and future posts
+business_outcome,Enforce metadata and first-image-alt rules for all current and future posts
+risk_reduced,Prevents failures in metadata & image alt agent (sa-03) area
+responsibility_1,Scan all published posts
+responsibility_2,Scan all drafts
+responsibility_3,Check title length (<60 chars)
+responsibility_4,Check focus keyword placement (start of title)
+responsibility_5,"Check description length (<160 chars, ideally 155-160)"
+responsibility_6,Check description relevance
+responsibility_7,Check first image alt (includes focus keyword naturally)
+responsibility_8,Detect unsupported claims in metadata
+responsibility_9,Propose metadata fixes
+responsibility_10,Prepare owner approval pack
+input_1,Rank Math metadata
+input_2,Post focus keyword
+input_3,Post title
+input_4,First image
+input_5,Page content
+input_6,Mission Control status
+output_1,Metadata compliance report
+output_2,Image alt compliance report
+output_3,Fix proposals
+output_4,Co-Pilot summary
+green_action_1,Scan
+green_action_2,Report
+green_action_3,Propose metadata
+green_action_4,Propose alt text
+amber_action_1,Live metadata update
+amber_action_2,Image metadata update if live
+amber_action_3,Bulk metadata changes
+red_action_1,Misleading metadata
+red_action_2,Unverified product claims in metadata
+acceptance_1,Metadata rules checked for every new post
+acceptance_2,Publisher blocks posts that fail required metadata rules
+acceptance_3,Co-Pilot can answer whether metadata is compliant
+copilot_command_1,show metadata compliance
+copilot_command_2,list posts with title issues
+copilot_command_3,list posts with alt issues
+copilot_command_4,metadata status for [post]
+copilot_command_5,which posts fail metadata rules
+dashboard_integration,Co-Pilot + Mission Control + NOC
+requires_separate_dashboard,no
+approval_status,planning_only
+next_action,owner_review_and_approval

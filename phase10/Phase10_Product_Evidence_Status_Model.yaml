@@ -1,0 +1,73 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE + planning
+# approval_status: planning_only
+# next_action: owner_review
+
+product_evidence_model:
+  version: "1.0"
+
+  statuses:
+    - status: not_started
+      description: No evidence work begun
+      allowed_transitions: [candidate_identified]
+      auto_allowed: true
+
+    - status: candidate_identified
+      description: Product URL/ASIN identified as candidate
+      allowed_transitions: [source_collected, rejected]
+      auto_allowed: true
+
+    - status: source_collected
+      description: Retailer source URL captured
+      allowed_transitions: [evidence_extracted, rejected]
+      auto_allowed: true
+
+    - status: evidence_extracted
+      description: Price/rating/review/stock data extracted from source
+      allowed_transitions: [evidence_verified, expired_recheck_required, rejected]
+      auto_allowed: true_for_extraction
+
+    - status: evidence_verified
+      description: Evidence confirmed accurate by owner
+      allowed_transitions: [owner_approved, expired_recheck_required, rejected]
+      auto_allowed: false
+      requires: owner_verification
+
+    - status: owner_approved
+      description: Owner has approved this evidence for use
+      allowed_transitions: [approved_for_draft_use, rejected]
+      auto_allowed: false
+      requires: explicit_owner_approval
+
+    - status: approved_for_draft_use
+      description: Can be used in draft content but not published
+      allowed_transitions: [approved_for_live_use, expired_recheck_required, rejected]
+      auto_allowed: false
+      requires: owner_approval
+
+    - status: approved_for_live_use
+      description: Can be used in published content with affiliate links
+      allowed_transitions: [expired_recheck_required, rejected]
+      auto_allowed: false
+      requires: explicit_owner_approval
+      unlocks: [affiliate_links, product_recommendations, Product_schema, Review_schema]
+
+    - status: expired_recheck_required
+      description: Evidence age exceeds freshness threshold
+      allowed_transitions: [evidence_extracted, rejected]
+      auto_detection: true
+      freshness_threshold_days: 30
+
+    - status: blocked_pending_evidence
+      description: Product claims exist but no evidence supports them
+      allowed_transitions: [candidate_identified]
+      blocks: [affiliate_links, product_recommendations, Product_schema]
+
+    - status: rejected
+      description: Evidence rejected or product removed
+      allowed_transitions: [not_started]
+      auto_allowed: false
+      requires: owner_decision

@@ -1,0 +1,99 @@
+{
+  "generated_at": "2026-05-27T19:57:48Z",
+  "source_server": "167.99.198.145",
+  "git_commit": "40402f2",
+  "generated_by": "PetHub AI Platform - Phase 9I.1/9J/10 Generator",
+  "data_source_label": "planning_template",
+  "approval_status": "planning_only",
+  "next_action": "owner_review",
+  "template_version": "1.0",
+  "section_launch_template": {
+    "section_name": "",
+    "section_objective": "",
+    "target_audience": "",
+    "focus_keyword_set": [],
+    "content_map": {
+      "hub_page": "",
+      "spoke_pages": [],
+      "supporting_pages": []
+    },
+    "evidence_requirements": {
+      "product_evidence_needed": false,
+      "trust_evidence_needed": true,
+      "source_verification": []
+    },
+    "category_assignment": {
+      "primary_category": "",
+      "secondary_categories": []
+    },
+    "metadata_plan": {
+      "seo_title_template": "<focus_keyword> UK (2026) - <suffix>",
+      "meta_description_template": "155-160 chars with focus keyword",
+      "first_image_alt_template": "<natural description with focus keyword>"
+    },
+    "image_alt_plan": {
+      "focus_keyword_in_first_alt": true,
+      "no_keyword_stuffing": true,
+      "descriptive_natural": true
+    },
+    "schema_plan": {
+      "allowed": [
+        "Article",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "blocked": [
+        "Product",
+        "Review",
+        "AggregateRating",
+        "Offer"
+      ],
+      "requires_evidence": [
+        "Product",
+        "Review",
+        "AggregateRating",
+        "Offer"
+      ]
+    },
+    "internal_link_plan": {
+      "hub_to_spoke": true,
+      "spoke_to_hub": true,
+      "cross_cluster": true,
+      "orphan_check": true
+    },
+    "product_evidence_plan": {
+      "evidence_status": "not_started",
+      "candidates": [],
+      "verification_sources": []
+    },
+    "affiliate_readiness": {
+      "status": "blocked_pending_evidence",
+      "rel_attribute": "nofollow noopener noreferrer sponsored",
+      "disclosure_required": true
+    },
+    "trust_risks": [],
+    "publishing_gate_status": {
+      "approval_id": null,
+      "rollback_snapshot": null,
+      "metadata_pass": false,
+      "schema_pass": false,
+      "category_pass": false,
+      "evidence_pass": false
+    },
+    "post_publish_monitoring_plan": {
+      "24h_check": true,
+      "72h_check": true,
+      "7d_check": true,
+      "sitemap_verification": true,
+      "GSC_monitoring": true,
+      "GA4_tracking": true
+    },
+    "copilot_summary": "",
+    "mission_control_entry": {
+      "mission_id": "",
+      "status": "planning",
+      "priority": "",
+      "blockers": []
+    }
+  }
+}

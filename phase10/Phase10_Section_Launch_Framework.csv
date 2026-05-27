@@ -1,0 +1,16 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+stage,stage_name,activities,responsible_agents,gate,deliverables,approval_required
+1,Research,Keyword set; competitor scan; AI visibility scan; content gap analysis; trust requirements,SA-07 + SA-02 + SA-08,research_complete,Keyword set CSV; competitor report; content gap analysis,no
+2,Mission Setup,Mission Control mission; responsible agents; milestones; approval gates; evidence requirements,All relevant,mission_configured,Mission brief; milestone plan; agent assignment,no
+3,Draft Creation,Draft posts/pages; metadata proposals; safe schema proposals; internal link suggestions,SA-03 + SA-04 + SA-02,drafts_complete,Draft posts; metadata CSV; schema proposals; link suggestions,no
+4,QA,Content QA; trust scan; metadata scan; image alt scan; schema safety scan; evidence scan,SA-03 + SA-04 + SA-05 + SA-08,qa_passed,QA report; compliance checklist; evidence status,no
+5,Approval,Owner approval; publisher approval; approval_id assigned; rollback snapshot created,SA-06,owner_approved,Approval ID; rollback snapshot; audit log entry,yes_owner
+6,Publish,Publisher layer only; audit log; no direct bypass,SA-06,published,Published URL; audit log; timestamp,yes_approval_id
+7,Verification,Public 200 check; sitemap inclusion; index status; schema check; GA4 page view; GSC monitoring,SA-01 + SA-04 + SA-06,verified,Verification report; sitemap confirmation; schema validation,no
+8,Learning,First impression; first click; CTR; ranking; engagement; internal clicks; conversion if applicable; refresh recommendations,SA-01 + SA-07 + SA-09,learning_active,Performance report; learning summary; refresh backlog,no

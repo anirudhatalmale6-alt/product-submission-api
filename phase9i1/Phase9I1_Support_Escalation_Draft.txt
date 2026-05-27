@@ -1,0 +1,113 @@
+SUPPORT ESCALATION: Rank Math Sitemap Not Including REST API-Created Posts
+==========================================================================
+generated_at: 2026-05-27T19:57:48Z
+source_server: 167.99.198.145
+git_commit: 40402f2
+generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+data_source_label: LIVE WordPress + Rank Math API
+approval_status: ready_for_owner_to_send
+next_action: owner_sends_to_WordPress.com_support_or_Rank_Math_support
+
+Site URL: https://pethubonline.com
+Sitemap URL: https://pethubonline.com/post-sitemap.xml
+Sitemap Index: https://pethubonline.com/sitemap_index.xml
+
+ISSUE SUMMARY
+=============
+
+We have 58 published posts on pethubonline.com, but only 6 appear in the Rank Math post-sitemap.xml. 52 published posts are missing from the sitemap.
+
+All missing posts:
+- Are published (status: publish)
+- Are indexable (no noindex tag)
+- Return HTTP 200
+- Have correct post type (post)
+- Have Rank Math metadata (SEO title, description, focus keyword)
+- Have correct robots meta (index)
+- Are NOT excluded by category or tag
+
+Posts appearing in sitemap (all were created or updated via WP Editor/dashboard):
+  - ID 3839: https://pethubonline.com/best-puppy-food-uk/
+  - ID 3838: https://pethubonline.com/dry-vs-wet-dog-food-uk/
+  - ID 3837: https://pethubonline.com/best-dry-dog-food-uk/
+  - ID 3836: https://pethubonline.com/best-dog-food-uk/
+  - ID 696: https://pethubonline.com/essential-cat-supplies-for-cat-owners/
+  - ID 3: https://pethubonline.com/top-dog-toys-every-pet-owner-needs-in-2026/
+
+Sample missing posts (all created via WordPress REST API):
+  - ID 4335: https://pethubonline.com/best-cat-litter-disposal-uk/
+  - ID 4328: https://pethubonline.com/best-self-cleaning-litter-trays-uk/
+  - ID 4321: https://pethubonline.com/best-cat-litter-uk/
+  - ID 4314: https://pethubonline.com/best-cat-litter-trays-uk/
+  - ID 4307: https://pethubonline.com/best-wall-mounted-cat-scratchers-uk/
+  - ID 4300: https://pethubonline.com/best-cardboard-cat-scratchers-uk/
+  - ID 4293: https://pethubonline.com/best-cat-trees-uk/
+  - ID 4286: https://pethubonline.com/best-cat-scratching-posts-uk/
+  - ID 4279: https://pethubonline.com/best-cat-harnesses-uk/
+  - ID 4272: https://pethubonline.com/best-cat-id-tags-uk/
+  - ID 4265: https://pethubonline.com/best-cat-gps-trackers-uk/
+  - ID 4258: https://pethubonline.com/best-cat-collars-uk/
+  - ID 4251: https://pethubonline.com/best-cat-shampoo-uk/
+  - ID 4244: https://pethubonline.com/best-cat-nail-clippers-uk/
+  - ID 4237: https://pethubonline.com/best-cat-brushes-uk/
+  - ID 4230: https://pethubonline.com/best-cat-grooming-supplies-uk/
+  - ID 4223: https://pethubonline.com/best-cat-window-perches-uk/
+  - ID 4216: https://pethubonline.com/best-cat-radiator-beds-uk/
+  - ID 4209: https://pethubonline.com/best-heated-cat-beds-uk/
+  - ID 4202: https://pethubonline.com/best-cat-beds-uk/
+  ... and 32 more
+
+ROOT CAUSE ANALYSIS
+===================
+
+We have confirmed through extensive testing that the issue is specific to how Rank Math registers posts in its internal sitemap generation table/cache.
+
+Posts created via the WordPress REST API (wp-json/wp/v2/posts) do not get registered in Rank Math's internal sitemap data store, even though:
+
+1. Rank Math metadata is correctly set via the REST API
+2. Rank Math's link/posts-stats endpoint shows awareness of all posts
+3. All Rank Math sitemap settings are correct:
+   - pt_post_sitemap: on
+   - items_per_page: 200
+   - robots: index
+   - custom_robots: off
+
+4. WordPress core recognizes all posts correctly
+5. Batcache is confirmed NOT caching the sitemap (X-Cache: MISS)
+
+TESTS ATTEMPTED
+===============
+
+We have tested the following API-based approaches, none of which resolved the sitemap inclusion:
+
+1. Rank Math updateMeta on all posts - metadata saved but sitemap unchanged
+2. Rank Math updateSettings - returns 403 Forbidden on WordPress.com
+3. Rank Math toolsAction (clear_transients) - returns "Something went wrong"
+4. Rank Math importSettings - returns 500 Internal Server Error
+5. REST API post re-save (same title/status/categories) - sitemap_not_updated
+6. Content re-save via REST - post updated but sitemap unchanged
+7. Draft->publish cycle via REST - timestamp updated but sitemap unchanged
+8. SEO score trigger via REST - no effect on sitemap
+9. Rank Math Instant Indexing API - accepted URLs but sitemap unchanged
+10. Article schema deployment via REST - schema deployed but sitemap unchanged
+
+COMPARISON: WORKING vs MISSING
+==============================
+
+Working posts (in sitemap): Were created or last updated via WP Editor/dashboard, which triggers the full WordPress save_post PHP hook chain including Rank Math's sitemap registration callback.
+
+Missing posts (not in sitemap): Were created via REST API, which appears to not trigger Rank Math's specific sitemap database registration.
+
+REQUESTED ACTION
+================
+
+Please rebuild/regenerate the Rank Math sitemap registration database for all published posts on pethubonline.com.
+
+Alternatively, if there is a way to trigger Rank Math's sitemap cache/table rebuild via the WordPress.com dashboard (Rank Math > Sitemap Settings > Save), please advise on the exact steps.
+
+We need a scalable solution since the site will continue to grow via REST API content creation.
+
+Thank you for your assistance.
+
+Best regards,
+PetHub Online Team

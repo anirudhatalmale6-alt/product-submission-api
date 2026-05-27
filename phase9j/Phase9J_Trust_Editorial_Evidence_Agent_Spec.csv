@@ -1,0 +1,54 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+field,value
+agent_name,Trust & Editorial Evidence Agent (SA-08)
+purpose,"Improve trust, credibility and transparency without fake E-E-A-T"
+business_outcome,"Improve trust, credibility and transparency without fake E-E-A-T"
+risk_reduced,Prevents failures in trust & editorial evidence agent (sa-08) area
+responsibility_1,Maintain methodology pages
+responsibility_2,Monitor affiliate disclosure clarity
+responsibility_3,Monitor evidence status labels
+responsibility_4,Monitor author/editorial transparency
+responsibility_5,Track last updated dates
+responsibility_6,Track corrections/update policy
+responsibility_7,Detect fake expert claims
+responsibility_8,Detect fake testing claims
+responsibility_9,Detect unsupported health claims
+responsibility_10,Prepare trust page drafts
+input_1,Published content
+input_2,Trust pages
+input_3,Evidence register
+input_4,Affiliate disclosures
+input_5,Author information
+input_6,Editorial policies
+output_1,Trust compliance report
+output_2,Trust page drafts
+output_3,Fake claim alerts
+output_4,Disclosure clarity report
+output_5,Co-Pilot trust summary
+green_action_1,Monitor trust wording
+green_action_2,Detect fake claims
+green_action_3,Prepare trust page drafts
+green_action_4,Report disclosure status
+amber_action_1,Trust page content updates
+amber_action_2,Editorial policy changes
+red_action_1,Trust page publishing
+red_action_2,Fake reviewer creation
+red_action_3,Fake testing claims
+acceptance_1,Trust pages drafted but not published without approval
+acceptance_2,Unsafe trust wording blocked
+acceptance_3,Co-Pilot can explain trust status
+copilot_command_1,show trust status
+copilot_command_2,list trust page drafts
+copilot_command_3,any fake claims detected
+copilot_command_4,disclosure compliance
+copilot_command_5,trust readiness for [section]
+dashboard_integration,Co-Pilot + Mission Control + NOC
+requires_separate_dashboard,no
+approval_status,planning_only
+next_action,owner_review_and_approval

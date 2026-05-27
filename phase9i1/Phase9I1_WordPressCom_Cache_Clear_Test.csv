@@ -1,0 +1,11 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+check,x_cache,x_cache_group,age_seconds,vary,cache_control,result,cache_is_problem,recommendation
+post-sitemap.xml_cache_headers,none,none,none,"Accept-Encoding, accept, content-type, cookie","no-cache, no-store, must-revalidate, max-age=0",X-Cache=none,no_MISS_means_not_cached,cache_not_the_issue_problem_is_RM_database
+homepage_cache_headers,none,n/a,n/a,n/a,n/a,X-Cache=none,no,homepage_cache_separate_from_sitemap
+WordPress.com_cache_clear_options,n/a,n/a,n/a,n/a,n/a,WordPress.com_does_not_expose_manual_cache_clear_API,no_cache_already_MISS,cache_clear_will_not_fix_this_RM_DB_is_root_cause

@@ -1,0 +1,31 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+operation,mode,reason,fallback_if_no_AI,safety_critical
+Owner summaries,AI,Requires natural language generation and context synthesis,Template-based summary with data placeholders,no
+Content briefs,AI,Requires creative/strategic thinking for keyword clustering,Template brief with keyword data only,no
+Evidence gap summaries,AI,Synthesizes multiple data sources into actionable gaps,List of evidence statuses per product,no
+SEO issue explanation,AI,Translates technical SEO into owner-friendly language,"Template: Issue [X] detected on [URL], severity [Y]",no
+Co-Pilot plain-English answers,AI,Natural conversation requires language model,Pre-built FAQ responses + data lookups,no
+Section launch planning,AI,Strategic planning benefits from reasoning,Template-based launch plan with manual input,no
+Query clustering,AI,Semantic grouping requires NLP,Keyword prefix/suffix grouping (rule-based),no
+Content opportunity analysis,AI,Requires cross-referencing multiple signals,Gap list based on category/keyword coverage,no
+AI visibility analysis,AI,Requires understanding AI search behavior,Basic query-to-URL matching,no
+Trust wording review,AI,Detecting subtle fake claims requires NLU,"Keyword blocklist scan (we tested, vet-backed, etc.)",yes_supplemented_by_rules
+QA summaries,AI,Synthesizes multiple check results,Pass/fail checklist,no
+Report drafting,AI,Natural language report generation,CSV/table-only reports,no
+Sitemap checks,RULE,"Deterministic XML parsing, URL matching",Same - rules always run,yes
+Metadata length checks,RULE,Character counting is deterministic,Same - rules always run,yes
+Image alt checks,RULE,Presence/keyword matching is deterministic,Same - rules always run,yes
+Category rules,RULE,Category assignment validation is lookup-based,Same - rules always run,yes
+Schema blocking,RULE,Blocked schema types are a fixed list,Same - rules always run,yes
+Product Evidence statuses,RULE,Status transitions are defined state machine,Same - rules always run,yes
+Affiliate rel checks,RULE,rel attribute parsing is deterministic,Same - rules always run,yes
+Social channel gate checks,RULE,Channel status is boolean (blocked/unblocked),Same - rules always run,yes
+Publish gate checks,RULE,Checklist validation is deterministic,Same - rules always run,yes
+Secret scans,RULE,Pattern matching for credentials/keys,Same - rules always run,yes
+Backup checks,RULE,File existence/timestamp checking,Same - rules always run,yes

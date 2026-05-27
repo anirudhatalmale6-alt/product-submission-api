@@ -1,0 +1,56 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+field,value
+agent_name,Taxonomy Authority Agent (SA-02)
+purpose,Prevent posts from falling into wrong category and strengthen topical authority
+business_outcome,Prevent posts from falling into wrong category and strengthen topical authority
+risk_reduced,Prevents failures in taxonomy authority agent (sa-02) area
+responsibility_1,Detect Uncategorized posts
+responsibility_2,Detect category mismatch
+responsibility_3,Detect dog/cat category mismatch
+responsibility_4,Detect overly broad category use
+responsibility_5,Detect category archive weakness
+responsibility_6,Suggest category assignments
+responsibility_7,Track category counts
+responsibility_8,Track content clusters
+responsibility_9,Monitor category pages for authority growth
+responsibility_10,Keep category changes aligned with SEO structure
+input_1,Post titles
+input_2,Slugs
+input_3,Current categories
+input_4,Category list
+input_5,Sitemap data
+input_6,Mission Control clusters
+input_7,Content type
+input_8,Focus keywords
+output_1,Category assignment recommendations
+output_2,Category mismatch report
+output_3,Category health report
+output_4,Uncategorized post warning
+output_5,Category archive improvement plan
+green_action_1,Propose category changes
+green_action_2,Auto-flag mismatch
+green_action_3,Create review queue
+amber_action_1,Bulk category changes
+amber_action_2,New category creation
+red_action_1,Category deletion
+red_action_2,Category slug changes
+red_action_3,Redirects if needed
+acceptance_1,No future post remains Uncategorized unintentionally
+acceptance_2,Category assignment confidence shown
+acceptance_3,Owner approval required for bulk/live changes
+acceptance_4,Co-Pilot can explain category health
+copilot_command_1,show category health
+copilot_command_2,list uncategorized posts
+copilot_command_3,which categories have mismatches
+copilot_command_4,category authority status
+copilot_command_5,show content clusters
+dashboard_integration,Co-Pilot + Mission Control + NOC
+requires_separate_dashboard,no
+approval_status,planning_only
+next_action,owner_review_and_approval

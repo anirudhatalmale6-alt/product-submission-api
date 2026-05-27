@@ -1,0 +1,61 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+field,value
+agent_name,Publisher Gate Agent (SA-06)
+purpose,Own the final pre-publish checklist and protect the live site
+business_outcome,Own the final pre-publish checklist and protect the live site
+risk_reduced,Prevents failures in publisher gate agent (sa-06) area
+responsibility_1,Validate approval_id
+responsibility_2,Confirm Publisher layer used
+responsibility_3,Confirm rollback snapshot exists
+responsibility_4,Confirm audit log exists
+responsibility_5,Verify metadata passes
+responsibility_6,Verify schema status
+responsibility_7,Verify Product Evidence restrictions
+responsibility_8,Verify affiliate restrictions
+responsibility_9,Verify category assignment
+responsibility_10,Verify sitemap readiness
+responsibility_11,Verify no RED-gated content
+responsibility_12,Verify no social autopost trigger
+responsibility_13,Verify no direct publish bypass
+responsibility_14,Report post-publish verification
+input_1,Mission Control
+input_2,Publisher
+input_3,WordPress post status
+input_4,Product Evidence
+input_5,Schema safety
+input_6,Metadata checks
+input_7,Sitemap checks
+input_8,Approval queue
+output_1,Pre-publish checklist
+output_2,Publish readiness status
+output_3,Audit log link
+output_4,Rollback link
+output_5,Post-publish verification
+output_6,Co-Pilot answer
+green_action_1,Check gates
+green_action_2,Block unsafe publish
+green_action_3,Create publish-readiness report
+amber_action_1,GSC indexing submission after publish
+red_action_1,Actual publishing
+red_action_2,Rollback execution
+red_action_3,Schema deployment
+red_action_4,Social dispatch
+acceptance_1,No publish without valid approval_id
+acceptance_2,No publish if critical gate fails
+acceptance_3,Co-Pilot can explain why a page cannot publish
+acceptance_4,Audit trail created for every publish attempt
+copilot_command_1,is [post] ready to publish
+copilot_command_2,list publish blockers
+copilot_command_3,show publish history
+copilot_command_4,what blocks [post] from publishing
+copilot_command_5,show rollback options
+dashboard_integration,Co-Pilot + Mission Control + NOC
+requires_separate_dashboard,no
+approval_status,planning_only
+next_action,owner_review_and_approval

@@ -1,0 +1,51 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+field,value
+agent_name,Export Discipline Agent (SA-10)
+purpose,Prevent stale exports and make evidence reliable
+business_outcome,Prevent stale exports and make evidence reliable
+risk_reduced,Prevents failures in export discipline agent (sa-10) area
+responsibility_1,Ensure every export has metadata
+responsibility_2,Mark files as current or stale
+responsibility_3,Archive superseded exports
+responsibility_4,Compare GitHub exports vs live server state
+responsibility_5,Detect old evidence files
+responsibility_6,Ensure generated_at/source_server/git_commit/generated_by exist
+responsibility_7,Create evidence pack indexes
+responsibility_8,Alert if stale files conflict with current state
+input_1,GitHub repository
+input_2,Live server files
+input_3,Export timestamps
+input_4,Git commit history
+output_1,Export health report
+output_2,Stale file alerts
+output_3,Evidence pack index
+output_4,Current vs stale classification
+output_5,Co-Pilot export summary
+green_action_1,Check timestamps
+green_action_2,Mark stale
+green_action_3,Archive superseded
+green_action_4,Create indexes
+green_action_5,Compare GitHub vs live
+amber_action_1,Bulk file archival
+amber_action_2,Export format changes
+red_action_1,Delete evidence files
+red_action_2,Remove audit logs
+acceptance_1,No stale current files
+acceptance_2,Current exports clearly labelled
+acceptance_3,Old files archived
+acceptance_4,Co-Pilot can say which evidence pack is current
+copilot_command_1,show export status
+copilot_command_2,which exports are stale
+copilot_command_3,current evidence pack
+copilot_command_4,compare GitHub vs live
+copilot_command_5,list archived exports
+dashboard_integration,Co-Pilot + Mission Control + NOC
+requires_separate_dashboard,no
+approval_status,planning_only
+next_action,owner_review_and_approval

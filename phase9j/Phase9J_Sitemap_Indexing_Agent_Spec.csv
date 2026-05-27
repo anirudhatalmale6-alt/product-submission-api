@@ -1,0 +1,60 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+field,value
+agent_name,Sitemap & Indexing Agent (SA-01)
+purpose,Prevent crawl/indexing issues and make sure new published content is discoverable
+business_outcome,Prevent crawl/indexing issues and make sure new published content is discoverable
+risk_reduced,Prevents failures in sitemap & indexing agent (sa-01) area
+responsibility_1,Check sitemap health
+responsibility_2,Detect missing published URLs
+responsibility_3,Detect draft URLs in sitemap
+responsibility_4,Detect 404 URLs in sitemap
+responsibility_5,Detect trashed URLs in sitemap
+responsibility_6,Track sitemap URL counts
+responsibility_7,Track GSC sitemap status
+responsibility_8,Track indexing requests
+responsibility_9,Schedule 24h/72h/7d follow-up checks
+responsibility_10,Report first impression/first click dates
+responsibility_11,Flag sitemap cache issues
+responsibility_12,Create Mission Control tasks for sitemap problems
+input_1,WordPress public URLs
+input_2,Rank Math sitemap
+input_3,GSC data
+input_4,Published post list
+input_5,Draft/trashed post list
+input_6,Server checks
+input_7,Co-Pilot status queries
+output_1,Sitemap health report
+output_2,Indexing follow-up report
+output_3,Missing URL list
+output_4,Draft/404 sitemap warning
+output_5,GSC indexing status summary
+output_6,Co-Pilot plain-English summary
+green_action_1,Monitor sitemap
+green_action_2,Report health
+green_action_3,Queue sitemap tasks
+green_action_4,Prepare indexing follow-up checklist
+amber_action_1,Manual GSC submission if owner approval required
+amber_action_2,Plugin setting changes
+red_action_1,Sitemap provider changes
+red_action_2,Broad caching changes
+red_action_3,Publish/unpublish content
+acceptance_1,Detects missing published URLs
+acceptance_2,Detects draft/404 URLs
+acceptance_3,Reports sitemap health in Co-Pilot
+acceptance_4,Creates follow-up tasks
+acceptance_5,Does not change plugin settings without approval
+copilot_command_1,show sitemap status
+copilot_command_2,list missing URLs
+copilot_command_3,show indexing progress
+copilot_command_4,when was [post] last crawled
+copilot_command_5,sitemap health summary
+dashboard_integration,Co-Pilot + Mission Control + NOC
+requires_separate_dashboard,no
+approval_status,planning_only
+next_action,owner_review_and_approval

@@ -1,0 +1,161 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE + planning
+# approval_status: planning_only
+# next_action: owner_review
+
+schedules:
+  hourly:
+    - job: noc_health_check
+      agent: SA-09
+      description: NOC infrastructure health
+      actions: [redis_ping, postgresql_ping, queue_depth, dlq_count, memory_usage, disk_usage]
+      failure_action: dlq_alert
+    - job: sitemap_health_check
+      agent: SA-01
+      description: Sitemap URL count and integrity
+      actions: [fetch_sitemap, count_urls, compare_to_published, detect_missing]
+      failure_action: mission_control_task
+    - job: social_gate_status
+      agent: SA-08
+      description: Verify all social channels remain blocked
+      actions: [check_facebook_gate, check_instagram_gate, check_tiktok_gate, check_pinterest_gate, check_youtube_gate]
+      failure_action: emergency_alert
+    - job: publish_lock_status
+      agent: SA-06
+      description: Verify publish lock and approval gates
+      actions: [check_publisher_lock, verify_approval_id_required, test_bypass_blocked]
+      failure_action: emergency_alert
+    - job: queue_dlq_status
+      agent: SA-10
+      description: Check event queues and dead letter queue
+      actions: [check_queue_depth, check_dlq_count, alert_if_above_threshold]
+      failure_action: dlq_alert
+    - job: backup_status
+      agent: SA-10
+      description: Verify backup recency
+      actions: [check_latest_backup_timestamp, verify_gpg_encryption, compare_to_schedule]
+      failure_action: backup_alert
+
+  every_6_hours:
+    - job: metadata_compliance_check
+      agent: SA-03
+      description: SEO title, meta description, focus keyword placement
+      actions: [scan_all_posts, check_title_length, check_keyword_placement, check_description_length, check_first_image_alt]
+      failure_action: compliance_report
+    - job: category_assignment_check
+      agent: SA-02
+      description: Detect uncategorized or miscategorized posts
+      actions: [scan_all_posts, check_uncategorized, detect_mismatch, report_health]
+      failure_action: mismatch_alert
+    - job: image_alt_check
+      agent: SA-03
+      description: First image alt text compliance
+      actions: [scan_published_posts, check_alt_presence, check_keyword_inclusion, detect_stuffing]
+      failure_action: compliance_report
+    - job: internal_link_check
+      agent: SA-02
+      description: Internal linking opportunities and broken links
+      actions: [scan_links, detect_broken, detect_orphans, suggest_opportunities]
+      failure_action: link_report
+    - job: schema_safety_check
+      agent: SA-04
+      description: Detect unsafe or missing schema
+      actions: [scan_all_pages, detect_product_schema, detect_review_schema, verify_article_schema, verify_faq_visibility]
+      failure_action: schema_alert
+    - job: affiliate_rel_check
+      agent: SA-05
+      description: Verify affiliate link rel attributes and disclosures
+      actions: [scan_all_links, check_rel_attributes, verify_disclosure_presence]
+      failure_action: affiliate_alert
+
+  daily:
+    - job: gsc_ga4_data_pull
+      agent: SA-01
+      description: Pull latest GSC and GA4 data
+      actions: [fetch_gsc_performance, fetch_ga4_pageviews, update_baselines]
+      failure_action: data_pull_retry
+    - job: published_page_monitoring
+      agent: SA-01
+      description: Monitor recently published pages
+      actions: [check_24h_pages, check_72h_pages, check_7d_pages, verify_indexing, verify_sitemap]
+      failure_action: monitoring_alert
+    - job: product_evidence_queue
+      agent: SA-05
+      description: Update Product Evidence Register
+      actions: [check_stale_evidence, check_new_candidates, update_statuses, flag_expired]
+      failure_action: evidence_report
+    - job: copilot_owner_summary
+      agent: all
+      description: Generate daily owner summary for Co-Pilot
+      actions: [collect_all_agent_statuses, generate_summary, update_copilot]
+      failure_action: template_summary_fallback
+    - job: security_scan
+      agent: SA-10
+      description: Secret scan, credential check, governance audit
+      actions: [scan_github_secrets, check_credential_expiry, test_publish_bypass, verify_red_gates]
+      failure_action: security_alert
+    - job: export_generation
+      agent: SA-10
+      description: Generate daily evidence exports
+      actions: [generate_exports, timestamp_all, mark_current, archive_superseded]
+      failure_action: export_alert
+
+  weekly:
+    - job: ai_visibility_query_set
+      agent: SA-07
+      description: Run AI visibility benchmark queries
+      actions: [run_query_set, compare_to_baseline, detect_changes, report_opportunities]
+      failure_action: visibility_report
+    - job: performance_snapshot
+      agent: SA-09
+      description: Core Web Vitals and page speed snapshot
+      actions: [measure_ttfb, measure_fcp, measure_lcp, measure_cls, track_js_weight, track_image_weight]
+      failure_action: performance_report
+    - job: category_authority_report
+      agent: SA-02
+      description: Category authority and topical coverage analysis
+      actions: [analyze_category_depth, check_cluster_coverage, identify_gaps, report_authority]
+      failure_action: authority_report
+    - job: mission_control_priority_review
+      agent: all
+      description: Review and reprioritize Mission Control backlog
+      actions: [review_backlog, update_priorities, identify_blockers, suggest_next_actions]
+      failure_action: priority_report
+    - job: governance_regression_tests
+      agent: SA-06
+      description: Run full governance test suite
+      actions: [test_publish_gates, test_schema_blocking, test_affiliate_gates, test_red_gates, test_social_gates, test_evidence_gates]
+      failure_action: governance_alert
+
+  # Phase 10 additions
+  hourly:
+    - job: redis_health_check
+      agent: SA-12
+      description: Redis memory, connections, latency
+      actions: [ping, info_memory, info_clients, latency_check]
+      failure_action: infrastructure_alert
+    - job: postgresql_health_check
+      agent: SA-12
+      description: PostgreSQL connections, queries, disk
+      actions: [connection_test, active_queries, disk_usage, replication_lag]
+      failure_action: infrastructure_alert
+    - job: event_bus_monitoring
+      agent: SA-12
+      description: Event bus throughput and errors
+      actions: [check_event_flow, check_error_rate, check_backlog]
+      failure_action: event_bus_alert
+
+  daily:
+    - job: security_governance_scan
+      agent: SA-11
+      description: Full security and governance audit
+      actions: [scan_secrets, check_credentials, test_publish_bypass, verify_red_gates, check_backups]
+      failure_action: security_alert
+    - job: content_authority_check
+      agent: SA-13
+      description: Entity coverage and content freshness
+      actions: [check_entity_coverage, detect_stale_content, analyze_authority_signals]
+      failure_action: authority_report

@@ -1,0 +1,90 @@
+PHASE 9J EXECUTIVE SUMMARY
+Agent Expansion + Section Launch Operating System
+==========================================================================
+generated_at: 2026-05-27T19:57:48Z
+source_server: 167.99.198.145
+git_commit: 40402f2
+generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+data_source_label: LIVE WordPress + Rank Math API + planning specs
+approval_status: planning_only
+next_action: owner_review_and_approval
+
+OVERVIEW
+========
+
+Phase 9J defines the operating system for scaling PetHubOnline.com safely. It introduces 10 specialist agents, a permission matrix covering 50 actions, a section launch framework with 8 stages, and operational infrastructure for 24/7 monitoring.
+
+CURRENT SITE STATUS
+===================
+
+Published posts: 58
+Posts in sitemap: 6
+Posts missing from sitemap: 52
+Draft posts: 0
+Categories: 34
+Dog Food posts live: 4 (verified clean)
+Product Evidence: blocked_pending_evidence
+Affiliate links: blocked
+Social channels: all RED (blocked)
+Pet Insurance: RED-gated
+
+SPECIALIST AGENTS DEFINED
+==========================
+
+1. SA-01: Sitemap & Indexing Agent - crawl/indexing monitoring
+2. SA-02: Taxonomy Authority Agent - category/authority protection
+3. SA-03: Metadata & Image Alt Agent - metadata/alt enforcement
+4. SA-04: Schema Safety Agent - structured data safety
+5. SA-05: Product Evidence Agent - evidence-first monetization bridge
+6. SA-06: Publisher Gate Agent - pre-publish protection
+7. SA-07: AI Visibility Agent - AI search optimization
+8. SA-08: Trust & Editorial Evidence Agent - credibility without fake E-E-A-T
+9. SA-09: Performance & CWV Agent - safe performance monitoring
+10. SA-10: Export Discipline Agent - evidence reliability
+
+PERMISSION LANES
+================
+
+GREEN (auto): 30 actions - monitoring, scanning, reporting, proposing
+AMBER (prepare+approve): 5 actions - metadata changes, schema deployment, category bulk changes
+RED (always approve): 15 actions - publishing, affiliate links, Product schema, social, credentials
+
+SECTION LAUNCH FRAMEWORK
+=========================
+
+8 stages: Research > Mission Setup > Draft Creation > QA > Approval > Publish > Verification > Learning
+Every section follows identical process with approval gates at Stage 5.
+
+NEXT SECTION BACKLOG (PRIORITY ORDER)
+======================================
+
+1. Cat Toys Recovery / Engagement (low risk, fast learning)
+2. Dog Harness Commercial Opportunity (needs evidence)
+3. Trust / Methodology Pages (credibility infrastructure)
+4. Homepage Engagement Improvement (routing/authority)
+5. AI Search Adaptation (cross-cluster)
+6. Pet Insurance Trust Buildout (RED-gated, planning only)
+
+24/7 SCHEDULER
+==============
+
+Hourly: 6 jobs (NOC, sitemap, social gates, publish lock, queues, backups)
+Every 6 hours: 6 jobs (metadata, categories, alts, links, schema, affiliate)
+Daily: 6 jobs (GSC/GA4, monitoring, evidence, summary, security, exports)
+Weekly: 5 jobs (AI visibility, performance, authority, priorities, governance)
+
+AI MODE vs RULE MODE
+====================
+
+AI mode: 12 operations (summaries, briefs, analysis, explanations)
+Rule mode: 11 operations (sitemap, metadata, schema, gates, scans)
+All safety-critical operations use deterministic rules, never AI alone.
+
+KEY PRINCIPLE
+=============
+
+No live changes from Phase 9J. All deliverables are planning/spec only.
+Phase 9I sitemap recovery remains the immediate live-site priority.
+After Phase 9I acceptance, owner decides which Phase 9J agents to implement first.
+
+DELIVERABLES: 20 files in phase9j/ directory

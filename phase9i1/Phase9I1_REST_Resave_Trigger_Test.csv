@@ -1,0 +1,11 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+post_id,slug,method,update_http_status,visible_content_changed,content_hash_before,content_hash_after,modified_timestamp_before,modified_timestamp_after,modified_changed,appeared_in_sitemap,sitemap_check_timestamp,url_returns_200,errors,recommendation
+4335,best-cat-litter-disposal-uk,REST_POST_same_title_status_categories,200,no,6b98a0391b1a64ee,6b98a0391b1a64ee,2026-05-27T20:16:41,2026-05-27T20:57:58,yes,no,2026-05-27T19:58:08Z,yes,none,does_not_trigger_RM_sitemap_registration
+4328,best-self-cleaning-litter-trays-uk,REST_POST_same_title_status_categories,200,no,4082e6ac9b51c62c,4082e6ac9b51c62c,2026-05-27T20:16:44,2026-05-27T20:58:08,yes,no,2026-05-27T19:58:19Z,yes,none,does_not_trigger_RM_sitemap_registration
+4321,best-cat-litter-uk,REST_POST_same_title_status_categories,200,no,996c56a446ce45d0,996c56a446ce45d0,2026-05-27T20:16:48,2026-05-27T20:58:20,yes,no,2026-05-27T19:58:30Z,yes,none,does_not_trigger_RM_sitemap_registration

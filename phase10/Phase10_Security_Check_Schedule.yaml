@@ -1,0 +1,56 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE + planning
+# approval_status: planning_only
+# next_action: owner_review
+
+security_schedule:
+  version: "1.0"
+
+  daily:
+    - check: github_secret_scan
+      agent: SA-11
+      action: scan_all_committed_files_for_patterns
+      patterns: [password, api_key, token, secret, credential, private_key]
+      alert_on: any_match
+
+    - check: credential_expiry
+      agent: SA-11
+      action: check_all_known_credentials_for_expiry
+      alert_threshold_days: 7
+
+    - check: publish_bypass_test
+      agent: SA-11
+      action: attempt_publish_without_approval_id
+      expected_result: blocked
+      alert_on: success_means_bypass_exists
+
+    - check: red_gate_enforcement
+      agent: SA-11
+      action: verify_all_RED_gates_active
+      gates: [publish, affiliate, product_schema, social, pet_insurance, credentials, deletion]
+      alert_on: any_gate_inactive
+
+    - check: backup_recency
+      agent: SA-11
+      action: verify_latest_backup_within_24h
+      alert_on: backup_older_than_24h
+
+  weekly:
+    - check: full_governance_regression
+      agent: SA-11
+      action: run_complete_governance_test_suite
+      tests: [publish_gates, schema_blocking, affiliate_gates, social_gates, evidence_gates, red_gates]
+      alert_on: any_test_failure
+
+    - check: endpoint_access_audit
+      agent: SA-11
+      action: verify_all_api_endpoints_require_auth
+      alert_on: unauthenticated_access
+
+    - check: permission_audit
+      agent: SA-11
+      action: review_all_agent_permissions_match_spec
+      alert_on: permission_drift

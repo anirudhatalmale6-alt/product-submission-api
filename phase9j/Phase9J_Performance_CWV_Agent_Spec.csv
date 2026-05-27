@@ -1,0 +1,58 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+field,value
+agent_name,Performance & Core Web Vitals Agent (SA-09)
+purpose,"Monitor performance issues without breaking analytics, consent or user experience"
+business_outcome,"Monitor performance issues without breaking analytics, consent or user experience"
+risk_reduced,Prevents failures in performance & core web vitals agent (sa-09) area
+responsibility_1,Track TTFB
+responsibility_2,Track FCP
+responsibility_3,Track LCP
+responsibility_4,Track CLS
+responsibility_5,Track request count
+responsibility_6,Track JS weight
+responsibility_7,Track image weight
+responsibility_8,Detect distorted images
+responsibility_9,Detect render-blocking resources
+responsibility_10,Monitor caching
+responsibility_11,Propose safe quick wins
+responsibility_12,Separate GREEN/AMBER/RED fixes
+input_1,Page speed data
+input_2,Core Web Vitals
+input_3,Image analysis
+input_4,Script analysis
+input_5,Caching headers
+output_1,Performance baseline report
+output_2,Safe fix backlog
+output_3,Risky fix list (approval needed)
+output_4,Image optimization proposals
+output_5,Co-Pilot performance summary
+green_action_1,Report metrics
+green_action_2,Propose fixes
+green_action_3,Identify affected images
+green_action_4,Prepare targeted CSS proposal
+green_action_5,Track before/after metrics
+amber_action_1,Non-critical CSS/performance changes
+amber_action_2,Image optimization on non-live assets
+red_action_1,Remove analytics scripts
+red_action_2,Remove consent scripts
+red_action_3,Defer compliance-critical scripts
+red_action_4,Broad design changes
+red_action_5,Global image rules without evidence
+acceptance_1,Performance baseline tracked
+acceptance_2,Risky fixes approval-gated
+acceptance_3,Co-Pilot can explain performance status
+copilot_command_1,show performance status
+copilot_command_2,list performance issues
+copilot_command_3,which images are distorted
+copilot_command_4,CWV summary
+copilot_command_5,safe fixes available
+dashboard_integration,Co-Pilot + Mission Control + NOC
+requires_separate_dashboard,no
+approval_status,planning_only
+next_action,owner_review_and_approval

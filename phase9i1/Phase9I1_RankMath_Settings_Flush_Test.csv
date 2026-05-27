@@ -1,0 +1,11 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+action,access_method,value_before,value_after,save_result,response,sitemap_before_count,sitemap_after_count,missing_posts_recovered,errors,owner_action_required
+RM_updateSettings_items_per_page_201,REST_API,200,201_attempted,HTTP_403,"{""code"":""rest_forbidden"",""message"":""Sorry, you are not allowed to do that."",""data"":{""status"":403}}",6,not_changed_api_blocked,no,403_forbidden_on_WordPress.com,yes_WP_Admin_panel_only
+RM_toolsAction_clear_transients,REST_API,n/a,n/a,HTTP_200,"{""status"":""error"",""message"":""No Rank Math transients found.""}",6,not_changed,no,returns_200_but_Something_went_wrong,yes_WP_Admin_panel_only
+RM_Settings_Sitemap_toggle_via_WP_Admin,WP_Admin_panel_MANUAL,200,change_to_201_save_then_back_to_200,not_tested_requires_WP_Admin,n/a,6,unknown_until_tested,unknown_high_probability,none_expected,yes_click_path_provided

@@ -1,0 +1,78 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+field,value
+agent_name,Taxonomy Authority Agent (SA-02)
+purpose,Protect topical authority and prevent incorrect category structure
+phase1_objective,Protect topical authority and prevent incorrect category structure
+phase1_business_outcome,Improves taxonomy authority agent for site growth and safety
+phase1_hidden_requirements,"Must integrate with Co-Pilot, Mission Control, NOC without separate dashboard"
+phase1_approval_boundaries,GREEN actions auto; AMBER prepare-only; RED always explicit approval
+phase1_risk_level,low_monitoring_only
+phase2_options,Standalone agent vs integrated module vs scheduled job
+phase2_technology,Python + FastAPI + PostgreSQL + Redis
+phase2_automation_vs_manual,Automated monitoring + manual approval for live changes
+phase2_scalability,"Handles 100+ posts, extensible to 1000+"
+phase2_security,No credential storage in agent; uses existing auth; logs all actions
+phase3_data_flow,WP API -> Agent -> PostgreSQL -> Co-Pilot/Mission Control/NOC
+phase3_api_routes,"api/taxonomy-authority-agent/scan, /status, /report"
+phase3_dashboard_feed,Co-Pilot + Mission Control + NOC (no separate dashboard)
+phase3_rollback,All state changes logged; previous state stored; rollback via restore
+phase4_agents_involved,SA-06 (Publisher Gate) for live changes; SA-10 (Export) for evidence
+phase4_tradeoffs,Frequency vs resource usage; depth vs speed
+phase4_final_decision,"Balanced approach: frequent lightweight checks, deep scans on schedule"
+phase5_success_tests,Detects known issues; reports accurately; Co-Pilot responds correctly
+phase5_failure_tests,Graceful degradation if API unavailable; DLQ for failed jobs
+phase5_edge_cases,Empty results; API timeout; stale data; concurrent runs
+phase5_rollback_test,State can be restored to pre-scan values
+phase6_weaknesses,Depends on WP API availability; cache delays possible
+phase6_maintainability,Modular design; clear separation of concerns
+phase6_owner_visibility,All outputs visible in Co-Pilot; executive summaries daily
+phase7_performance,Batch API calls; cache results; incremental scans
+phase7_cost,Minimal API calls; reuse cached data where safe
+phase7_future_proofing,"Extensible to new post types, categories, schema types"
+phase8_confidence,high
+phase8_risks,API rate limits; WordPress.com hosting constraints
+phase8_blockers,none_for_planning
+phase8_production_readiness,spec_ready_pending_implementation
+responsibility_1,Detect Uncategorized posts
+responsibility_2,Detect wrong category assignment
+responsibility_3,Detect dog/cat mismatch
+responsibility_4,Detect overly broad category usage
+responsibility_5,Detect empty categories
+responsibility_6,Track category counts
+responsibility_7,Check category archive relevance
+responsibility_8,Propose category fixes
+responsibility_9,Warn when new draft lacks category
+responsibility_10,Ensure future published posts are categorized
+input_1,Post title
+input_2,Slug
+input_3,Focus keyword
+input_4,Categories
+input_5,Sitemap
+input_6,Mission Control cluster
+input_7,Content type
+output_1,Taxonomy health report
+output_2,Category mismatch report
+output_3,Category assignment proposals
+output_4,Co-Pilot category summary
+green_action_1,Scan/report/propose
+amber_action_1,Batch category change after mapping approval
+red_action_1,Category deletion
+red_action_2,Slug change
+red_action_3,Redirects
+red_action_4,Bulk live edits without approval
+acceptance_1,No future post left Uncategorized unintentionally
+acceptance_2,Dog/cat mismatches flagged
+acceptance_3,Category changes approval-gated
+copilot_command_1,show category health
+copilot_command_2,list uncategorized posts
+copilot_command_3,which categories have mismatches
+dashboard_integration,Co-Pilot + Mission Control + NOC
+requires_separate_dashboard,no
+approval_status,planning_only
+next_action,owner_review_and_approval

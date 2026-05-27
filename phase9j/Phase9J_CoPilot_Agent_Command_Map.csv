@@ -1,0 +1,30 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+command,description,agent,response_type,data_source
+show sitemap status,"Current sitemap health, URL count, missing posts",SA-01,AI_summary + live_data,sitemap_xml + published_post_count
+list missing URLs,Posts published but not in sitemap,SA-01,data_table,sitemap_xml + WP_API
+show indexing progress,GSC indexing status for recent posts,SA-01,AI_summary + live_data,GSC_API
+show category health,"Category assignment status, mismatches, empty categories",SA-02,AI_summary + data_table,WP_API_categories
+list uncategorized posts,Posts with no category or only Uncategorized,SA-02,data_table,WP_API
+show metadata compliance,How many posts pass/fail metadata rules,SA-03,AI_summary + counts,RM_API + WP_API
+list posts with title issues,Posts with SEO title too long or missing keyword,SA-03,data_table,RM_API
+show schema status,Schema types deployed across site,SA-04,AI_summary + data_table,page_source_scan
+which pages have unsafe schema,Pages with Product/Review/Offer schema,SA-04,data_table + alert,page_source_scan
+show evidence status,Product Evidence Register summary,SA-05,AI_summary + status_counts,evidence_register
+list evidence gaps,Products lacking verified evidence,SA-05,data_table,evidence_register
+is [post] ready to publish,Pre-publish gate check for specific post,SA-06,checklist + AI_explanation,publisher_gates
+list publish blockers,What prevents posts from publishing,SA-06,data_table + AI_explanation,publisher_gates
+show AI visibility status,AI search engine visibility summary,SA-07,AI_summary,ai_visibility_baseline
+show trust status,Trust page readiness and compliance,SA-08,AI_summary + checklist,trust_pages_scan
+show performance status,Core Web Vitals and page speed summary,SA-09,AI_summary + metrics,cwv_data
+show export status,Current vs stale exports,SA-10,data_table,export_timestamps
+what should I do next,Prioritized next actions across all agents,all,AI_prioritized_list,mission_control + all_agents
+show daily summary,Full daily status across all areas,all,AI_executive_summary,all_agent_outputs
+show section launch status,Status of each section in launch pipeline,all,data_table + AI_summary,section_launch_tracker
+show current blockers,All current blockers across the platform,all,AI_prioritized_list,mission_control + publisher
+show publish readiness,Which content is ready to publish,SA-06,data_table + checklist,publisher_gates + metadata + schema

@@ -1,0 +1,12 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+capacity_level,description,ai_usage,rule_usage,co_pilot_behavior,queued_tasks,priority
+HEALTHY,AI credits/capacity fully available,"Full: summaries, briefs, explanations, planning, analysis, wording review",Standard: all deterministic checks run normally,Full AI-powered natural language responses,None - all tasks execute immediately,normal_all_features
+LOW,AI credits/capacity limited,"Reserved: owner summaries, strategy decisions, trust wording review only",Expanded: all routine checks + template-based reports,"Hybrid: AI for owner questions, templates for status queries","Content briefs, opportunity analysis, query clustering queued",high_value_decisions_only
+UNAVAILABLE,AI credits/capacity exhausted or service down,None: all AI tasks queued for later,"Full: all deterministic checks, scans, gate checks continue","Template responses: pre-built FAQ, data lookups, status tables","All AI tasks queued: summaries, briefs, analysis, explanations",safety_and_monitoring_only
+EMERGENCY,Platform-wide issue affecting all services,None,"Critical only: publish gates, schema blocking, secret scans",Minimal: system status only,Everything non-critical queued,safety_gates_only

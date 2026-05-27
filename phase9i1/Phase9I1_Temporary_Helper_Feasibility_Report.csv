@@ -1,0 +1,16 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+aspect,finding,feasibility,risk,requirement
+WordPress.com_plugin_support,WordPress.com Business plan allows plugin installation,possible_if_Business_plan,low_if_temporary,verify_hosting_plan_level
+Code_Snippets_plugin,Code Snippets plugin can run PHP snippets without full plugin,possible_alternative,low_admin_only_execution,install_Code_Snippets_plugin
+wp_update_post_approach,PHP snippet calling wp_update_post() on each missing post ID would trigger save_post hook and Rank Math registration,high_proven_mechanism,low_no_content_change_if_same_data,admin_runs_snippet_once
+Rank_Math_sitemap_invalidation,RankMath\Sitemap\Cache::invalidate_storage() is the internal method that rebuilds sitemap,high_if_callable_via_snippet,very_low_only_rebuilds_cache,PHP_snippet_access
+dry_run_mode,"Snippet should log post IDs and actions before executing, with a DRY_RUN flag",easy_to_implement,none_in_dry_run,code_in_snippet
+self_removal,Snippet should be deleted from Code Snippets after use,manual_deletion,none,owner_deletes_after_use
+backup_before_running,WordPress.com provides automatic backups via Jetpack,built_in,none,verify_backup_is_recent
+recommended_snippet_code,"foreach([3,3956,3957,...] as $id){wp_update_post(['ID'=>$id,'post_status'=>'publish']);} plus RM cache invalidation",high,low_well_understood_WP_function,owner_approval_before_running

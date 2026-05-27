@@ -1,0 +1,12 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+option,feasibility,conflict_with_RM,GSC_accepts,robots_txt_reference,maintainable,risk,recommendation
+Custom XML page on WordPress.com,low_WordPress.com_does_not_allow_custom_XML_content_type,possible_duplicate_URLs,unknown_until_tested,cannot_edit_robots.txt_on_WordPress.com,difficult_manual_updates,medium_duplicate_sitemap_confusion,not_recommended_RM_recovery_preferred
+External sitemap on DO server,high_full_server_control,separate_domain_or_subdomain_needed,only_if_same_verified_property,cannot_add_to_WP.com_robots.txt,requires_sync_script,medium_cross_domain_sitemap_issues,emergency_only_not_ideal
+GSC manual URL submission,high_via_GSC_API,none,yes_inspect_and_request_indexing,n/a,yes_can_automate_via_API,low_but_not_a_sitemap_replacement,good_complement_not_replacement
+Rank Math recovery (PREFERRED),high_multiple_paths_available,none_native_solution,yes_standard_sitemap,already_configured,yes_permanent_fix,very_low,PREFERRED_try_bulk_update_or_settings_toggle_or_snippet

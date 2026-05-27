@@ -1,0 +1,53 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+field,value
+agent_name,Schema Safety Agent (SA-04)
+purpose,Prevent unsafe structured data and support safe rich-result readiness
+business_outcome,Prevent unsafe structured data and support safe rich-result readiness
+risk_reduced,Prevents failures in schema safety agent (sa-04) area
+responsibility_1,Detect schema types on each page
+responsibility_2,Compare schema to visible content
+responsibility_3,Block unsafe schema
+responsibility_4,Verify FAQ schema matches visible FAQs
+responsibility_5,Verify Article schema required fields
+responsibility_6,Detect fake ratings/reviews/offers
+responsibility_7,Generate schema proposals
+responsibility_8,Validate snippets
+responsibility_9,Provide warnings/errors
+responsibility_10,Feed status to Publisher
+input_1,Page source
+input_2,Rank Math schema
+input_3,Schema proposal files
+input_4,Product Evidence Register
+input_5,FAQ content
+input_6,Approval status
+output_1,Schema safety report
+output_2,Safe schema proposal
+output_3,Unsafe schema alert
+output_4,Validation report
+output_5,Co-Pilot explanation
+green_action_1,Scan
+green_action_2,Propose safe schema
+green_action_3,Validate snippets
+green_action_4,Flag unsafe schema
+amber_action_1,Schema deployment for safe types (Article/BreadcrumbList/FAQPage)
+red_action_1,Any Product/Review/Offer schema
+red_action_2,Sitewide schema changes
+acceptance_1,Unsafe schema blocked
+acceptance_2,Safe schema validated
+acceptance_3,No Product/Review/Offer schema without verified evidence
+acceptance_4,Publisher checks schema safety before publish
+copilot_command_1,show schema status
+copilot_command_2,which pages have unsafe schema
+copilot_command_3,schema safety for [post]
+copilot_command_4,list schema proposals
+copilot_command_5,is [post] schema safe
+dashboard_integration,Co-Pilot + Mission Control + NOC
+requires_separate_dashboard,no
+approval_status,planning_only
+next_action,owner_review_and_approval

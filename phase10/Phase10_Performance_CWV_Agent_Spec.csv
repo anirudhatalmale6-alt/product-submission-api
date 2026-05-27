@@ -1,0 +1,78 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+field,value
+agent_name,Performance & Core Web Vitals Agent (SA-09)
+purpose,Improve speed safely without breaking tracking or compliance
+phase1_objective,Improve speed safely without breaking tracking or compliance
+phase1_business_outcome,Improves performance & core web vitals agent for site growth and safety
+phase1_hidden_requirements,"Must integrate with Co-Pilot, Mission Control, NOC without separate dashboard"
+phase1_approval_boundaries,GREEN actions auto; AMBER prepare-only; RED always explicit approval
+phase1_risk_level,low_monitoring_only
+phase2_options,Standalone agent vs integrated module vs scheduled job
+phase2_technology,Python + FastAPI + PostgreSQL + Redis
+phase2_automation_vs_manual,Automated monitoring + manual approval for live changes
+phase2_scalability,"Handles 100+ posts, extensible to 1000+"
+phase2_security,No credential storage in agent; uses existing auth; logs all actions
+phase3_data_flow,WP API -> Agent -> PostgreSQL -> Co-Pilot/Mission Control/NOC
+phase3_api_routes,"api/performance-core-web-vitals-agent/scan, /status, /report"
+phase3_dashboard_feed,Co-Pilot + Mission Control + NOC (no separate dashboard)
+phase3_rollback,All state changes logged; previous state stored; rollback via restore
+phase4_agents_involved,SA-06 (Publisher Gate) for live changes; SA-10 (Export) for evidence
+phase4_tradeoffs,Frequency vs resource usage; depth vs speed
+phase4_final_decision,"Balanced approach: frequent lightweight checks, deep scans on schedule"
+phase5_success_tests,Detects known issues; reports accurately; Co-Pilot responds correctly
+phase5_failure_tests,Graceful degradation if API unavailable; DLQ for failed jobs
+phase5_edge_cases,Empty results; API timeout; stale data; concurrent runs
+phase5_rollback_test,State can be restored to pre-scan values
+phase6_weaknesses,Depends on WP API availability; cache delays possible
+phase6_maintainability,Modular design; clear separation of concerns
+phase6_owner_visibility,All outputs visible in Co-Pilot; executive summaries daily
+phase7_performance,Batch API calls; cache results; incremental scans
+phase7_cost,Minimal API calls; reuse cached data where safe
+phase7_future_proofing,"Extensible to new post types, categories, schema types"
+phase8_confidence,high
+phase8_risks,API rate limits; WordPress.com hosting constraints
+phase8_blockers,none_for_planning
+phase8_production_readiness,spec_ready_pending_implementation
+responsibility_1,Track TTFB
+responsibility_2,Track FCP
+responsibility_3,Track LCP
+responsibility_4,Track CLS
+responsibility_5,Track request count
+responsibility_6,Track JS weight
+responsibility_7,Track image weight
+responsibility_8,Detect distorted images
+responsibility_9,Detect render-blocking resources
+responsibility_10,Propose safe improvements
+input_1,Page speed data
+input_2,Core Web Vitals
+input_3,Image analysis
+input_4,Script analysis
+input_5,Caching headers
+output_1,Performance baseline report
+output_2,Safe fix backlog
+output_3,Risky fix list
+output_4,Image optimization proposals
+output_5,Co-Pilot performance summary
+green_action_1,Report metrics
+green_action_2,Propose fixes
+green_action_3,Identify affected images
+green_action_4,Track before/after
+amber_action_1,Non-critical CSS/performance changes
+red_action_1,Remove analytics/consent scripts
+red_action_2,Defer compliance-critical scripts
+red_action_3,Broad design changes
+acceptance_1,Safe fixes separated from risky fixes
+acceptance_2,Co-Pilot explains performance status
+copilot_command_1,show performance status
+copilot_command_2,list performance issues
+copilot_command_3,CWV summary
+dashboard_integration,Co-Pilot + Mission Control + NOC
+requires_separate_dashboard,no
+approval_status,planning_only
+next_action,owner_review_and_approval

@@ -1,0 +1,60 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE + planning
+# approval_status: planning_only
+# next_action: owner_review
+
+schema_rules:
+  version: "1.0"
+
+  allowed_always:
+    - type: Article
+      condition: all_posts
+      required_fields: [headline, datePublished, dateModified, author, publisher]
+
+    - type: BreadcrumbList
+      condition: all_posts_and_pages
+      required_fields: [itemListElement]
+
+    - type: Organization
+      condition: homepage_only
+      required_fields: [name, url, logo]
+
+    - type: WebSite
+      condition: homepage_only
+      required_fields: [name, url]
+
+  allowed_conditional:
+    - type: FAQPage
+      condition: visible_FAQ_section_exists_on_page
+      validation: FAQ_text_must_match_visible_content
+      required_fields: [mainEntity]
+
+    - type: ItemList
+      condition: guide_or_supporting_page_with_visible_list
+      validation: list_items_must_match_visible_content
+
+  blocked_until_evidence:
+    - type: Product
+      requires: evidence_status_approved_for_live_use
+      gate: SA-05_Product_Evidence_Agent
+
+    - type: Review
+      requires: evidence_status_approved_for_live_use
+      gate: SA-05_Product_Evidence_Agent
+
+    - type: AggregateRating
+      requires: evidence_status_approved_for_live_use
+      gate: SA-05_Product_Evidence_Agent
+
+    - type: Offer
+      requires: evidence_status_approved_for_live_use + price_verification
+      gate: SA-05_Product_Evidence_Agent
+
+  always_blocked:
+    - price_claims_without_evidence
+    - stock_availability_claims_without_evidence
+    - review_counts_without_evidence
+    - rating_values_without_evidence

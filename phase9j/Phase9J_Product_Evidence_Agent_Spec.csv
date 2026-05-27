@@ -1,0 +1,63 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+field,value
+agent_name,Product Evidence Agent (SA-05)
+purpose,Create the bridge from educational content to trustworthy affiliate monetization
+business_outcome,Create the bridge from educational content to trustworthy affiliate monetization
+risk_reduced,Prevents failures in product evidence agent (sa-05) area
+responsibility_1,Collect candidate product URLs
+responsibility_2,Store retailer URLs/ASINs
+responsibility_3,Capture evidence source details
+responsibility_4,Track price verification
+responsibility_5,Track rating/review verification
+responsibility_6,Track stock verification
+responsibility_7,Track image source verification
+responsibility_8,Track ingredient/specification verification
+responsibility_9,Classify verified vs unverified claims
+responsibility_10,Assign evidence freshness dates
+responsibility_11,Flag stale evidence
+responsibility_12,Prepare product evidence tasks
+responsibility_13,Block product recommendations until verified
+responsibility_14,Prepare affiliate unlock recommendations
+input_1,Public retailer pages
+input_2,Product databases
+input_3,Evidence register
+input_4,Mission Control
+input_5,Publisher status
+output_1,Product evidence register
+output_2,Evidence gap report
+output_3,Stale evidence alerts
+output_4,Candidate product list
+output_5,Affiliate readiness recommendations
+green_action_1,Collect public evidence
+green_action_2,Create evidence entries
+green_action_3,Mark candidate_identified
+green_action_4,Mark source_collected
+green_action_5,Mark evidence_extracted
+green_action_6,Flag missing evidence
+amber_action_1,Prepare recommendation draft
+amber_action_2,Prepare affiliate plan
+red_action_1,Mark evidence verified
+red_action_2,Approve evidence for live use
+red_action_3,Add affiliate links
+red_action_4,Publish recommendations
+red_action_5,Use prices/ratings/review counts live
+red_action_6,Deploy Product/Offer/Review schema
+acceptance_1,Product claims cannot unlock without evidence
+acceptance_2,Co-Pilot can summarize evidence gaps
+acceptance_3,Product Evidence controls affiliate readiness
+acceptance_4,Stale evidence is flagged
+copilot_command_1,show evidence status
+copilot_command_2,list evidence gaps
+copilot_command_3,which products are ready
+copilot_command_4,evidence status for [cluster]
+copilot_command_5,list stale evidence
+dashboard_integration,Co-Pilot + Mission Control + NOC
+requires_separate_dashboard,no
+approval_status,planning_only
+next_action,owner_review_and_approval

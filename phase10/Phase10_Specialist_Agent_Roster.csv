@@ -1,0 +1,21 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+agent_id,agent_name,purpose,lane,dashboard_feed,status
+SA-01,Sitemap & Indexing Agent,"Prevent crawl/indexing issues, ensure content discoverability",GREEN_monitor_AMBER_submit,Co-Pilot + NOC + Mission Control,spec_ready
+SA-02,Taxonomy Authority Agent,"Protect topical authority, prevent category misassignment",GREEN_scan_AMBER_bulk_change,Co-Pilot + Mission Control,spec_ready
+SA-03,Metadata & Image Alt Agent,Enforce metadata and image alt standards,GREEN_scan_AMBER_update,Co-Pilot + Publisher,spec_ready
+SA-04,Schema Safety Agent,"Prevent unsafe structured data, support safe rich results",GREEN_scan_RED_deploy,Co-Pilot + Publisher,spec_ready
+SA-05,Product Evidence Agent,Bridge educational content to trustworthy monetization,GREEN_collect_RED_verify,Co-Pilot + Evidence Vault + Mission Control,spec_ready
+SA-06,Publisher Gate Agent,"Own pre-publish checklist, protect live site",GREEN_check_RED_publish,Publisher + Co-Pilot + Mission Control,spec_ready
+SA-07,AI Visibility Agent,Improve visibility in AI search/answer engines,GREEN_monitor_AMBER_content_update,Co-Pilot + SEO Dashboard,spec_ready
+SA-08,Trust & Editorial Evidence Agent,Improve credibility without fake E-E-A-T,GREEN_monitor_RED_publish,Co-Pilot + Mission Control,spec_ready
+SA-09,Performance & CWV Agent,Monitor performance safely without breaking tracking,GREEN_report_AMBER_fix,Co-Pilot + NOC,spec_ready
+SA-10,Export Discipline Agent,"Prevent stale exports, ensure evidence reliability",GREEN_auto,Co-Pilot + Evidence Vault,spec_ready
+SA-11,Security & Governance Agent,"Monitor secrets, credentials, publishing bypasses and risky permissions",GREEN_scan_RED_changes,NOC + Co-Pilot + Mission Control,spec_ready
+SA-12,AI Infrastructure Health Agent,"Monitor Redis, PostgreSQL, queues, memory, disk, event bus",GREEN_auto,NOC + Co-Pilot,spec_ready
+SA-13,Content Authority Agent,"Verify entity coverage, topical authority, content freshness",GREEN_monitor_AMBER_refresh,Co-Pilot + Mission Control + SEO Dashboard,spec_ready

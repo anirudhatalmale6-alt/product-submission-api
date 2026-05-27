@@ -1,0 +1,41 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+view,section,data_source,agents,refresh_rate,priority
+Command Centre,Owner Summary,All agent outputs,all,daily,critical
+Command Centre,Current Blockers,Mission Control + Publisher,SA-06 + all,hourly,critical
+Command Centre,Next Safest Action,AI prioritization of backlog,all,daily,high
+Command Centre,Publish Readiness,Publisher gates + metadata + schema,SA-06,on_demand,high
+Mission Control,Active Missions,Mission database,all,real_time,critical
+Mission Control,Section Launches,Section launch tracker,all,real_time,high
+Mission Control,Phase Status,Phase tracker,all,daily,high
+Mission Control,Backlog Items,Agent-created tasks,all,real_time,medium
+Mission Control,Approvals,Approval queue,SA-06,real_time,critical
+NOC,Agent Health,Agent heartbeats,SA-12,hourly,critical
+NOC,Queues / DLQ,Queue metrics,SA-12,hourly,high
+NOC,Event Bus,Event flow metrics,SA-12,hourly,high
+NOC,Redis / PostgreSQL,Infrastructure metrics,SA-12,hourly,critical
+NOC,Social Gates,Gate status,SA-08,hourly,high
+NOC,Backup Status,Backup timestamps,SA-10 + SA-11,hourly,high
+Co-Pilot,Plain-English Status,All agent summaries,all,on_demand,critical
+Co-Pilot,Action Recommendations,AI prioritization,all,daily,high
+Co-Pilot,Evidence Gaps,Evidence register,SA-05,daily,high
+Co-Pilot,Approval Needs,Approval queue,SA-06,real_time,critical
+Co-Pilot,Performance Summary,CWV metrics,SA-09,weekly,medium
+Co-Pilot,SEO/Sitemap Status,Sitemap + GSC,SA-01,hourly,high
+Publisher,Publish Gates,Gate checklist,SA-06,on_demand,critical
+Publisher,Approval IDs,Approval log,SA-06,on_demand,critical
+Publisher,Rollback Snapshots,Snapshot storage,SA-06,on_demand,high
+Publisher,Audit Logs,Audit log database,SA-06 + SA-11,on_demand,high
+Evidence Vault,Product Evidence,Evidence register,SA-05,daily,high
+Evidence Vault,Source Status,Source verification,SA-05,daily,high
+Evidence Vault,Blocked/Unblocked Claims,Evidence statuses,SA-05,daily,high
+SEO / AI Visibility,Metadata,RM metadata,SA-03,6_hourly,high
+SEO / AI Visibility,Schema,Page source scan,SA-04,6_hourly,high
+SEO / AI Visibility,Sitemap,Sitemap XML,SA-01,hourly,critical
+SEO / AI Visibility,Indexing,GSC API,SA-01,daily,high
+SEO / AI Visibility,AI Visibility,AI benchmark queries,SA-07,weekly,medium

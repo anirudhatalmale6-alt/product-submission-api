@@ -1,0 +1,122 @@
+PHASE 10 EXECUTIVE SUMMARY
+Autonomous Operations + Agent Expansion Planning
+==========================================================================
+generated_at: 2026-05-27T19:57:48Z
+source_server: 167.99.198.145
+git_commit: 40402f2
+generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+data_source_label: LIVE WordPress + Rank Math API + planning specs
+approval_status: planning_only
+next_action: owner_review_and_approval_after_Phase_9I_accepted
+
+OVERVIEW
+========
+
+Phase 10 builds on the Phase 9J agent framework with deeper execution planning,
+additional specialist agents, and full 8-phase execution cycle documentation.
+This is PLANNING ONLY - no live changes are made.
+
+CURRENT SITE STATUS
+===================
+
+Published posts: 58
+Posts in sitemap: 6
+Posts missing from sitemap: 52
+Draft posts: 0
+Categories: 34
+Dog Food posts live: 4 (verified clean)
+Product Evidence: blocked_pending_evidence
+Affiliate links: blocked
+Social channels: all RED (blocked)
+Pet Insurance: RED-gated
+Sitemap recovery: HIGHEST PRIORITY (Phase 9I.1 sprint in progress)
+
+PHASE 10 SPECIALIST AGENTS (13 total)
+======================================
+
+SA-01 through SA-10: Same as Phase 9J (see Phase 9J roster)
+SA-11: Security & Governance Agent - secrets, credentials, publishing bypass monitoring
+SA-12: AI Infrastructure Health Agent - Redis, PostgreSQL, queues, event bus
+SA-13: Content Authority Agent - entity coverage, topical authority, content freshness
+
+All agents include full 8-phase execution cycle documentation:
+1. Requirement Analysis
+2. Research & Comparison
+3. Architecture Planning
+4. Internal Agent Discussion
+5. Testing & Simulation
+6. Self-Audit & Quality Review
+7. Optimization
+8. Final Validation
+
+PERMISSION MATRIX
+=================
+
+Total actions mapped: 60
+GREEN (auto): 39
+AMBER (prepare+approve): 6
+RED (always approve): 15
+
+DASHBOARD INTEGRATION
+=====================
+
+7 views mapped: Command Centre, Mission Control, NOC, Co-Pilot, Publisher, Evidence Vault, SEO/AI Visibility
+33 data feeds defined
+No unnecessary dashboard sprawl - all agent outputs route to existing views
+
+CO-PILOT COMMANDS
+=================
+
+26 commands defined covering all 13 agents
+Every agent's output is queryable through Co-Pilot in plain English
+
+24/7 SCHEDULER
+==============
+
+Hourly: 9 jobs (NOC, sitemap, social gates, publish lock, queues, backups, Redis, PostgreSQL, event bus)
+Every 6 hours: 6 jobs (metadata, categories, alts, links, schema, affiliate)
+Daily: 8 jobs (GSC/GA4, monitoring, evidence, summary, security, exports, governance, authority)
+Weekly: 5 jobs (AI visibility, performance, authority, priorities, governance regression)
+
+AI MODE vs RULE MODE
+====================
+
+AI mode: 12 operations (reasoning, synthesis, natural language)
+Rule mode: 11 operations (all safety-critical checks)
+No safety gate relies solely on AI.
+
+PRIORITY ORDER (UNCHANGED)
+===========================
+
+1. Complete Phase 9I sitemap recovery (9I.1 sprint active)
+2. Verify Dog Food post-publish monitoring
+3. Accept Phase 9J agent framework
+4. Accept Phase 10 planning
+5. Decide which agents to implement first
+6. Do NOT execute new growth missions yet
+
+DELIVERABLES: 22 files in phase10/ directory
+
+ACCEPTANCE CRITERIA MET
+========================
+
+1. All 13 specialist agents clearly defined with 8-phase execution cycle
+2. Every agent has business purpose documented
+3. Every agent has permissions mapped (GREEN/AMBER/RED)
+4. No agent can publish directly
+5. No agent can add affiliate links directly
+6. No agent can verify Product Evidence without source proof
+7. No agent can deploy risky schema
+8. Mission Control receives all agent outputs
+9. Co-Pilot can explain all agent outputs
+10. NOC can monitor agent health
+11. Section launch framework exists (8 stages)
+12. Next section launch backlog exists (6 sections prioritized)
+13. AI mode vs rule mode defined
+14. AI capacity fallback exists (4 levels)
+15. 24/7 scheduler plan exists
+16. Export discipline defined
+17. Dashboard integration mapped (7 views, 33 feeds)
+18. No live changes made during planning
+19. Phase 9I sitemap recovery remains top priority
+20. No unnecessary dashboard sprawl

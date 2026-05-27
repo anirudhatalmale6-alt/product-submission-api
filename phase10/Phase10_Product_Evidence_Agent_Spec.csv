@@ -1,0 +1,79 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+field,value
+agent_name,Product Evidence Agent (SA-05)
+purpose,Enable safe future monetization without fake claims
+phase1_objective,Enable safe future monetization without fake claims
+phase1_business_outcome,Improves product evidence agent for site growth and safety
+phase1_hidden_requirements,"Must integrate with Co-Pilot, Mission Control, NOC without separate dashboard"
+phase1_approval_boundaries,GREEN actions auto; AMBER prepare-only; RED always explicit approval
+phase1_risk_level,low_monitoring_only
+phase2_options,Standalone agent vs integrated module vs scheduled job
+phase2_technology,Python + FastAPI + PostgreSQL + Redis
+phase2_automation_vs_manual,Automated monitoring + manual approval for live changes
+phase2_scalability,"Handles 100+ posts, extensible to 1000+"
+phase2_security,No credential storage in agent; uses existing auth; logs all actions
+phase3_data_flow,WP API -> Agent -> PostgreSQL -> Co-Pilot/Mission Control/NOC
+phase3_api_routes,"api/product-evidence-agent/scan, /status, /report"
+phase3_dashboard_feed,Co-Pilot + Mission Control + NOC (no separate dashboard)
+phase3_rollback,All state changes logged; previous state stored; rollback via restore
+phase4_agents_involved,SA-06 (Publisher Gate) for live changes; SA-10 (Export) for evidence
+phase4_tradeoffs,Frequency vs resource usage; depth vs speed
+phase4_final_decision,"Balanced approach: frequent lightweight checks, deep scans on schedule"
+phase5_success_tests,Detects known issues; reports accurately; Co-Pilot responds correctly
+phase5_failure_tests,Graceful degradation if API unavailable; DLQ for failed jobs
+phase5_edge_cases,Empty results; API timeout; stale data; concurrent runs
+phase5_rollback_test,State can be restored to pre-scan values
+phase6_weaknesses,Depends on WP API availability; cache delays possible
+phase6_maintainability,Modular design; clear separation of concerns
+phase6_owner_visibility,All outputs visible in Co-Pilot; executive summaries daily
+phase7_performance,Batch API calls; cache results; incremental scans
+phase7_cost,Minimal API calls; reuse cached data where safe
+phase7_future_proofing,"Extensible to new post types, categories, schema types"
+phase8_confidence,high
+phase8_risks,API rate limits; WordPress.com hosting constraints
+phase8_blockers,none_for_planning
+phase8_production_readiness,spec_ready_pending_implementation
+responsibility_1,Identify candidate products
+responsibility_2,Collect retailer URL/ASIN
+responsibility_3,Capture source information
+responsibility_4,Track price evidence
+responsibility_5,Track rating/review evidence
+responsibility_6,Track stock evidence
+responsibility_7,Track image source evidence
+responsibility_8,Track ingredient/specification evidence
+responsibility_9,Classify verified/unverified claims
+responsibility_10,Flag stale evidence
+responsibility_11,Create evidence tasks
+responsibility_12,Block recommendations until verified
+input_1,Public retailer pages
+input_2,Product databases
+input_3,Evidence register
+input_4,Mission Control
+input_5,Publisher status
+output_1,Product evidence register
+output_2,Evidence gap report
+output_3,Stale evidence alerts
+output_4,Affiliate readiness recommendations
+green_action_1,Collect public source data
+green_action_2,Create evidence entries
+green_action_3,Mark candidate/source collected
+amber_action_1,Prepare recommendation draft
+red_action_1,Mark verified
+red_action_2,Insert affiliate links
+red_action_3,Publish product rankings
+red_action_4,Use prices/ratings/review counts live
+acceptance_1,No product claims unlock without evidence
+acceptance_2,Co-Pilot can summarize evidence gaps
+copilot_command_1,show evidence status
+copilot_command_2,list evidence gaps
+copilot_command_3,which products are ready
+dashboard_integration,Co-Pilot + Mission Control + NOC
+requires_separate_dashboard,no
+approval_status,planning_only
+next_action,owner_review_and_approval

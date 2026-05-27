@@ -1,0 +1,46 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE + planning
+# approval_status: planning_only
+# next_action: owner_review
+
+category_rules:
+  version: "1.0"
+
+  assignment_rules:
+    - rule: no_uncategorized
+      description: Every published post must have at least one non-Uncategorized category
+      enforcement: publisher_gate_blocks
+
+    - rule: species_match
+      description: Dog content must have Dog category; Cat content must have Cat category
+      detection: title_keyword_matching + slug_analysis
+      enforcement: alert_on_mismatch
+
+    - rule: cluster_alignment
+      description: Posts must be assigned to their content cluster category
+      detection: focus_keyword_to_category_mapping
+      enforcement: proposal_for_review
+
+    - rule: single_species
+      description: Posts should not be in both Dog and Cat top-level categories unless explicitly cross-species
+      enforcement: warning_on_detection
+
+    - rule: subcategory_required
+      description: Posts should have subcategory, not just top-level Dog or Cat
+      enforcement: suggestion_only
+
+  category_hierarchy:
+    dogs:
+      top_level: Dogs
+      subcategories: [Dog Toys, Dog Beds, Dog Collars and Harnesses, Dog Grooming, Dog Health, Dog Training, Dog Bowls and Feeding, Dog Food]
+    cats:
+      top_level: Cats
+      subcategories: [Cat Toys, Cat Beds, Cat Scratching, Cat Collars and Tags, Cat Grooming, Cat Litter]
+
+  blocked_actions:
+    - category_deletion_without_approval
+    - slug_change_without_redirect
+    - bulk_reassignment_without_review

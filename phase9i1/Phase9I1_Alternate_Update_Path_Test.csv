@@ -1,0 +1,11 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+path,available,http_status,safe_to_use,triggers_save_post,tested,result,recommendation
+XML-RPC (xmlrpc.php),yes,405,requires_testing,likely_yes_if_available,availability_only,HTTP 405,test_editPost_on_1_post_if_available
+WordPress.com Public API (public-api.wordpress.com),yes,200,read_only_no_auth,unknown_requires_oauth,availability_only,HTTP 200,requires_WordPress.com_OAuth_for_write_access
+WP REST API (wp-json/wp/v2) - already used,yes,200,yes_tested,partial_no_RM_sitemap,yes_3_posts,REST_resave_sitemap_failed,does_not_fix_RM_sitemap

@@ -1,0 +1,56 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+field,value
+agent_name,AI Visibility Agent (SA-07)
+purpose,Improve PetHub visibility in AI search and answer engines
+business_outcome,Improve PetHub visibility in AI search and answer engines
+risk_reduced,Prevents failures in ai visibility agent (sa-07) area
+responsibility_1,Maintain AI visibility benchmark query set
+responsibility_2,Track brand mentions
+responsibility_3,Track category mentions
+responsibility_4,Track citation opportunities
+responsibility_5,Monitor answer-engine readiness
+responsibility_6,Identify pages needing direct-answer improvements
+responsibility_7,Identify missing FAQ opportunities
+responsibility_8,Support trust/source transparency
+responsibility_9,Compare competitors
+responsibility_10,Label data as measured/manual/modelled
+input_1,AI visibility baseline
+input_2,Co-Pilot queries
+input_3,Manual benchmark results
+input_4,Page content
+input_5,Schema status
+input_6,Trust pages
+input_7,Entity coverage
+output_1,AI visibility report
+output_2,Query set results
+output_3,Entity gaps
+output_4,Answer-readiness opportunities
+output_5,Co-Pilot summary
+green_action_1,Monitor
+green_action_2,Report
+green_action_3,Propose improvements
+green_action_4,Create draft answer blocks
+amber_action_1,Live content updates
+amber_action_2,Schema deployment
+amber_action_3,New page publication
+red_action_1,Fake AI visibility claims
+red_action_2,Automated content changes without approval
+acceptance_1,Query set exists
+acceptance_2,AI visibility baseline tracked
+acceptance_3,No fake AI visibility claims
+acceptance_4,Co-Pilot can explain AI visibility status
+copilot_command_1,show AI visibility status
+copilot_command_2,list citation opportunities
+copilot_command_3,AI readiness for [cluster]
+copilot_command_4,compare to competitors
+copilot_command_5,show query set results
+dashboard_integration,Co-Pilot + Mission Control + NOC
+requires_separate_dashboard,no
+approval_status,planning_only
+next_action,owner_review_and_approval

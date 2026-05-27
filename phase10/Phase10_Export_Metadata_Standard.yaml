@@ -1,0 +1,50 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE + planning
+# approval_status: planning_only
+# next_action: owner_review
+
+export_metadata_standard:
+  version: "1.0"
+
+  required_fields:
+    - field: generated_at
+      format: ISO8601_UTC
+      example: "2026-05-27T12:00:00Z"
+
+    - field: source_server
+      format: IP_or_hostname
+      example: "167.99.198.145"
+
+    - field: git_commit
+      format: short_hash
+      example: "40402f2"
+
+    - field: generated_by
+      format: free_text
+      example: "PetHub AI Platform - Phase 10 Generator"
+
+    - field: data_source_label
+      format: enum
+      values: [LIVE, CACHED, ESTIMATED, MANUAL, MIXED]
+
+    - field: approval_status
+      format: enum
+      values: [planning_only, draft, pending_review, approved, published, archived]
+
+    - field: next_action
+      format: free_text
+      example: "owner_review"
+
+  freshness_rules:
+    - current: less_than_24h_old
+    - recent: 24h_to_7d_old
+    - stale: more_than_7d_old
+    - archived: superseded_by_newer_export
+
+  archival_rules:
+    - when_superseded: move_to_archive_directory
+    - when_stale: flag_in_export_report
+    - when_conflicting: alert_via_CoPilot

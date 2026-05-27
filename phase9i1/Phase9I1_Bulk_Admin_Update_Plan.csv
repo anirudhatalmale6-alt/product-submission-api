@@ -1,0 +1,18 @@
+# generated_at: 2026-05-27T19:57:48Z
+# source_server: 167.99.198.145
+# git_commit: 40402f2
+# generated_by: PetHub AI Platform - Phase 9I.1/9J/10 Generator
+# data_source_label: LIVE WordPress + Rank Math API
+# approval_status: planning_only
+# next_action: owner_review
+step,screen,action,expected_result,risk,rollback,owner_action
+1,WP Admin > Posts > All Posts,Navigate to post list,All published posts visible,none,n/a,yes
+2,All Posts list,"Set filter to Published, 100 per page",All published posts shown,none,n/a,yes
+3,All Posts list,Select all posts using top checkbox,All visible posts selected,low_ensure_correct_filter,n/a,yes
+4,Bulk Actions dropdown,Select Edit from Bulk Actions dropdown,Bulk edit panel opens,none,close_panel,yes
+5,Bulk Edit panel,Do NOT change any fields. Leave all dropdowns on No Change. Click Update.,"WordPress fires save_post hook for each post, Rank Math registers in sitemap table",low_modified_dates_will_update,dates_non_critical,yes
+6,All Posts list,Wait 30 seconds for cache/sitemap refresh,Sitemap regenerates,none,n/a,yes
+7,Browser,Visit https://pethubonline.com/post-sitemap.xml,All published posts appear in sitemap,none,n/a,yes
+8,Browser,"Count URLs in sitemap, compare to published post count",Sitemap shows 58+ URLs,none,n/a,yes
+9,Rank Math > Sitemap Settings,"ALTERNATIVE: Open Sitemap Settings, change items_per_page from 200 to 201, Save, then change back to 200, Save again",Forces Rank Math sitemap cache rebuild,very_low,restore_200,yes
+10,Browser,Verify sitemap after Rank Math settings toggle,All posts now in sitemap,none,n/a,yes
