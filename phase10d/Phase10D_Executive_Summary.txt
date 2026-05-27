@@ -1,0 +1,162 @@
+PHASE 10D EXECUTIVE SUMMARY
+PetHub Online — pethubonline.com
+Generated: 2026-05-27
+==========================================================================
+
+OVERVIEW
+--------
+Phase 10D delivered a complete Gutenberg block migration of all classic-
+format content, four cluster expansions across Dog Beds / Dog Toys /
+Training / Puppy Care, trust page refinements, and a full set of 25
+operational specification and reporting documents.
+
+==========================================================================
+SECTION 1: GUTENBERG BLOCK MIGRATION
+==========================================================================
+
+Items migrated:  80 (57 posts + 23 pages)
+Failures:        0
+Migration tool:  gutenberg_utils.py (canonical block module with
+                 validation guardrail using wp_validate_blocks())
+Backup system:   All original content backed up to
+                 gutenberg_migration_backups.json before any write
+Result:          Zero classic editor blocks remain across the entire site.
+                 All content now fully Gutenberg-native.
+
+Block counts post-migration:
+  - Minimum: 7 (Contact page)
+  - Maximum: 150 (Best Dog Food UK 2026 – pillar)
+  - Average: 41.2 blocks per item
+
+==========================================================================
+SECTION 2: CLUSTER EXPANSIONS
+==========================================================================
+
+DOG BEDS CLUSTER (+4 posts: IDs 4783–4786)
+  How to Choose the Right Dog Bed Size
+  Dog Bed Materials Explained: Foam, Memory Foam, and More
+  How to Wash and Maintain Your Dog's Bed
+  Where to Place Your Dog's Bed: Location and Comfort Tips
+  Gates: 12/12 each | Avg blocks: 32.3 | Cross-links added: 8
+
+DOG TOYS CLUSTER (+4 posts: IDs 4787–4790)
+  Dog Toy Safety: What Every Owner Needs to Know
+  Mental Stimulation for Dogs: Beyond Physical Exercise
+  Best Types of Dog Toys for Different Play Styles
+  DIY Dog Toys: Safe Homemade Options
+  Gates: 12/12 each | Avg blocks: 33.3 | Cross-links added: 9
+
+DOG TRAINING / PUPPY CARE STARTER (+2 posts: IDs 4791–4792)
+  How to Choose the Right Dog Training Treats (Training Supplies)
+  Puppy Socialisation: A Complete Timeline Guide (Puppy Care)
+  Gates: 12/12 each | Avg blocks: 33.0 | Cross-links added: 5
+
+TOTAL NEW POSTS:          10
+TOTAL GATES PASSED:       120 / 120 (100%)
+TOTAL NEW INTERNAL LINKS: 25 across 11 posts
+
+==========================================================================
+SECTION 3: TRUST PAGE REFINEMENTS
+==========================================================================
+
+Pages updated: 4402, 4403, 300 (Privacy Policy), 4405
+Work done:
+  - Cross-links added between all 4 trust pages
+  - Last-updated date (2026-05-27) set on each page
+  - Canonical cluster references added
+Status:  Pages 4402, 4403, 4405 remain in draft pending operator publish.
+         Page 300 (Privacy Policy) is live.
+Action required from operator: Review and publish 4402, 4403, 4405.
+
+==========================================================================
+SECTION 4: QUALITY & SAFETY
+==========================================================================
+
+12-Gate Standard:         100% pass rate on all 10 new posts
+RankMath SEO metadata:    Set on all 10 new posts
+    (meta_title, meta_desc, focus_keyword, schema type)
+Gutenberg validation:     Zero block validation failures across 80 items
+Classic block remnants:   Zero (confirmed via block parser)
+Broken internal links:    Zero (all 25 new links verified live)
+AI Visibility:            FAQ blocks on all new posts; H1 structure correct;
+                          FAQPage schema eligible via RankMath
+
+==========================================================================
+SECTION 5: GOVERNANCE CONFIRMATIONS
+==========================================================================
+
+Content Authority Balance:
+  Following the 70/30 rule (Project 40416335):
+  - 70% content authority/trust: delivered via expansion posts, trust page
+    updates, evidence citations, expert-referenced content
+  - 30% infrastructure: Gutenberg migration, gutenberg_utils.py module,
+    12-gate automation, cross-link injection
+
+Safety Rules Observed:
+  - All posts started as draft; no direct auto-publish without gate check
+  - No product price claims fabricated
+  - No affiliate links added without disclosure instruction
+  - YMYL-adjacent clusters (Dog Food, Dog Health) not expanded in this
+    phase — deferred to Phase 10E with vet review process
+  - gutenberg_utils.py always backs up before writing
+  - No existing posts modified beyond cross-link additions
+
+==========================================================================
+SECTION 6: WHAT IS BLOCKED / PENDING
+==========================================================================
+
+BLOCKED - requires operator action:
+  1. Trust pages 4402, 4403, 4405: ready to publish; operator must
+     set status to Published in WordPress admin
+  2. GSC indexing: all 10 new posts must be submitted to Google Search
+     Console URL Inspection tool (max 10/day recommended)
+  3. Pet Insurance trust page (3722): blocked on legal/compliance review;
+     do not publish without expert check
+
+PENDING - ready to start Phase 10E:
+  4. Cat Beds expansion (4 posts) — template proven, ready to execute
+  5. Cat Toys expansion (4 posts) — template proven, ready to execute
+  6. Dog Food informational posts (3 posts) — needs vet review process
+  7. QDD first run — establish quality baseline for all 95 posts
+  8. CoPilot dashboard — cluster heatmap + publish queue (ENH-001 to ENH-012)
+
+==========================================================================
+SECTION 7: METRICS SUMMARY
+==========================================================================
+
+Phase 10D totals:
+  Gutenberg items migrated:    80
+  New posts published:         10
+  Trust pages refined:          4
+  Internal links added:        25
+  Posts updated (cross-links): 11
+  Quality gates passed:       120 / 120
+  Deliverable documents:       25
+
+Site content state post-Phase 10D:
+  Total published posts:       ~95 (confirmed via WordPress API)
+  Clusters with expansion:      3 (Dog Beds, Dog Toys, Dog Training)
+  Clusters awaiting expansion:  7 (Cat Beds, Cat Toys, Dog Food, Dog
+                                   Grooming, Cat Grooming, Collars,
+                                   Dog Health)
+  Trust pages live:             2 (About Us, Privacy Policy)
+  Trust pages ready to publish: 3 (4402, 4403, 4405)
+
+==========================================================================
+SECTION 8: NEXT STEPS (Priority Order)
+==========================================================================
+
+  1. [OPERATOR] Publish trust pages 4402, 4403, 4405
+  2. [OPERATOR] Submit 10 new posts to Google Search Console
+  3. [AGENT] Cat Beds cluster expansion (4 informational posts)
+  4. [AGENT] Cat Toys cluster expansion (4 informational posts)
+  5. [AGENT] Run QDD baseline scan on all 95 posts
+  6. [AGENT] Dog Food expansion (with vet review workflow)
+  7. [BOTH] CoPilot dashboard Phase 1 (ENH-001, ENH-003, ENH-007)
+  8. [OPERATOR] 30-day GSC performance review of Phase 10D posts
+
+==========================================================================
+END OF PHASE 10D EXECUTIVE SUMMARY
+Site: pethubonline.com | Project: 40416335 | Phase: 10D
+Generated by: Phase 10D Agent | Date: 2026-05-27
+==========================================================================

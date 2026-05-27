@@ -1,0 +1,13 @@
+enhancement_id,category,title,description,status,priority,effort_days,benefit
+ENH-001,Dashboard,Cluster Coverage Heatmap,Visual grid showing publish status per cluster × content type (pillar/supporting/expansion),planned,high,2,Instant gap identification
+ENH-002,Dashboard,Publication Velocity Chart,Line chart of posts published per week across phases,planned,medium,1,Track output rate
+ENH-003,Quality,Live Gate Status Panel,Real-time display of last 10 posts evaluated with gate pass/fail breakdown,planned,high,2,Catch quality issues early
+ENH-004,Quality,Drift Alert Banner,Top-of-dashboard alert when QDD detects metric drift,planned,high,1,Rapid response to degradation
+ENH-005,Content,Keyword Gap List,"Sortable table of target keywords not yet covered, with estimated search volume",planned,high,3,Prioritise expansion work
+ENH-006,Links,Internal Link Graph,D3.js force graph visualising all internal links between posts,planned,medium,3,Identify link silos
+ENH-007,SEO,Indexing Status Column,Show Google indexing status (indexed/crawled/not indexed) per post from GSC API,planned,high,2,Track discoverability
+ENH-008,Ops,Publish Queue Manager,"UI to review Lane B posts, approve/reject, set publish time",planned,high,3,Streamline operator workflow
+ENH-009,Ops,Prompt Version Switcher,Dropdown to select active prompt version per cluster before generation run,planned,medium,2,Safe prompt A/B testing
+ENH-010,Monitoring,Post Performance Table,"Weekly clicks/impressions/rank from GSC per post, sortable",planned,high,3,Data-driven content decisions
+ENH-011,Trust,Trust Page Status Widget,"Shows publish/draft status, last-updated date, and cross-link count for all 4 trust pages",planned,medium,1,Trust layer visibility
+ENH-012,Automation,One-Click Expansion Run,Button to trigger full cluster expansion workflow for selected cluster,planned,medium,2,Reduce manual steps

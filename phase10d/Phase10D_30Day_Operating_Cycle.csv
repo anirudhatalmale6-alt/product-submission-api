@@ -1,0 +1,11 @@
+week,days,theme,tasks,success_criteria,owner
+Week 1,Days 1-7,Indexing & Monitoring,Submit all 10 new posts to GSC; verify sitemap; first 7-day rank check on new posts,All 10 posts crawled by Googlebot; zero indexing errors,Operator
+Week 1,Days 1-7,Trust Page Publication,"Review and publish trust pages 4402, 4403, 4405; set canonical URLs",3 trust pages live; cross-links verified,Operator
+Week 2,Days 8-14,Cat Beds Cluster Expansion,Generate 4 informational expansion posts for Cat Beds cluster; run 12-gate checks,4 Cat Bed expansion posts published; 8 cross-links added,Agent + Operator
+Week 2,Days 8-14,Dog Food Expansion Start,"Plan 3 informational posts for Dog Food cluster (feeding guides, ingredients)",3 posts in draft with gates passed,Agent
+Week 3,Days 15-21,Cat Toys Cluster Expansion,Generate 4 informational expansion posts for Cat Toys cluster,4 Cat Toy expansion posts published; 8 cross-links added,Agent + Operator
+Week 3,Days 15-21,Dog Food Expansion Complete,Publish 3 Dog Food informational posts; add cross-links to food pillar,3 posts live; food pillar cross-link count >= 8,Agent + Operator
+Week 3,Days 15-21,First QDD Run,Run Quality Drift Detector on all 95 posts; establish official baseline,QDD report generated; zero critical alerts,Agent
+Week 4,Days 22-28,Dog Health Expansion Start,"Plan + draft 3 informational posts for Dog Health cluster (dental, joint, flea topics)",3 posts in draft; Lane C review for YMYL content,Agent + Operator
+Week 4,Days 22-28,30-Day Performance Review,Pull GSC data for all Phase 10D posts; document rank/impressions; adjust roadmap,Performance report CSV generated; next phase priorities set,Operator
+Month 2,Day 30+,Phase 10E Planning,Define Phase 10E scope: Cat Grooming expansion + Dog Collars deep expansion + affiliate link audit,Phase 10E brief document approved,Operator

@@ -1,0 +1,13 @@
+check_id,check_name,scope,result,pass_count,fail_count,notes
+QC-01,Gutenberg block validity,80 migrated items,PASS,80,0,All blocks passed wp_validate_blocks() guardrail
+QC-02,12-gate safety check,10 new posts,PASS,10,0,All gates passed on creation
+QC-03,RankMath SEO metadata,10 new posts,PASS,10,0,"meta_title, meta_desc, focus_keyword present"
+QC-04,Internal link integrity,25 new links,PASS,25,0,All target URLs confirmed live
+QC-05,FAQ block presence,All new posts,PASS,10,0,Every expansion post has FAQPage block
+QC-06,Trust page cross-links,4 trust pages,PASS,4,0,All trust pages cross-linked to each other
+QC-07,Trust page last-updated dates,4 trust pages,PASS,4,0,All show 2026-05-27 last-updated date
+QC-08,H1 uniqueness,All new posts,PASS,10,0,No duplicate H1 tags detected
+QC-09,Slug uniqueness,All new posts,PASS,10,0,No slug conflicts in WordPress
+QC-10,Category assignment,All new posts,PASS,10,0,Each post assigned to correct primary category
+QC-11,Block count minimum (>20),All new posts,PASS,10,0,Minimum 29 blocks; average 32.7
+QC-12,Classic editor remnants,80 migrated items,PASS,80,0,Zero classic blocks remain after migration

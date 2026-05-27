@@ -1,0 +1,21 @@
+cluster,total_posts,published,draft,new_posts_10d,avg_block_count,gates_standard,expansion_status,notes
+Cat Beds,5,5,0,0,35.6,12/12,Migrated only,Gutenberg migration completed
+Cat Collars,4,4,0,0,35.8,12/12,Migrated only,Gutenberg migration completed
+Cat Grooming,5,5,0,0,36.0,12/12,Migrated only,Gutenberg migration completed
+Cat Litter,5,5,0,0,39.4,12/12,Migrated only,Gutenberg migration completed
+Cat Scratching,5,5,0,0,37.2,12/12,Migrated only,Gutenberg migration completed
+Cat Supplies,2,2,0,0,45.0,12/12,Migrated only,Gutenberg migration completed
+Cat Toys,5,5,0,0,37.8,12/12,Migrated only,Gutenberg migration completed
+Dog Beds,9,9,0,4,40.2,12/12,Expanded,4 new posts added in 10D
+Dog Collars & Leads,4,4,0,0,43.8,12/12,Migrated only,Gutenberg migration completed
+Dog Feeding,5,5,0,0,37.2,12/12,Migrated only,Gutenberg migration completed
+Dog Food,4,4,0,0,86.5,12/12,Migrated only,Gutenberg migration completed
+Dog Grooming,5,5,0,0,40.2,12/12,Migrated only,Gutenberg migration completed
+Dog Health,5,5,0,0,40.2,12/12,Migrated only,Gutenberg migration completed
+Dog Supplies,1,1,0,0,23.0,12/12,Migrated only,Gutenberg migration completed
+Dog Toys,9,9,0,4,51.2,12/12,Expanded,4 new posts added in 10D
+Dog Training,7,7,0,0,40.9,12/12,Migrated only,Gutenberg migration completed
+General,4,4,0,0,13.2,12/12,Migrated only,Gutenberg migration completed
+Puppy Care,1,1,0,1,34.0,12/12,Expanded,1 new posts added in 10D
+Training Supplies,1,1,0,1,32.0,12/12,Expanded,1 new posts added in 10D
+Trust & Editorial,4,0,4,0,19.8,12/12,Migrated only,Gutenberg migration completed

@@ -1,0 +1,11 @@
+priority,cluster,current_posts,target_new_posts,content_types,est_search_volume,ymyl_risk,lane,notes
+1,Cat Beds,4,4,"informational: sizing guide, washing, placement, materials",medium,low,A,Direct parallel to Dog Beds expansion – proven template
+2,Cat Toys,4,4,"informational: toy safety for cats, enrichment, DIY cat toys, play styles",medium,low,A,Parallel to Dog Toys expansion
+3,Dog Food,4,3,"informational: feeding guide by age, ingredient red flags, raw vs kibble",high,medium,B,YMYL-adjacent – needs vet review on claims
+4,Dog Grooming,4,3,"informational: grooming frequency by breed, tools guide, home vs professional",medium,low,A,Lower YMYL risk; established cluster
+5,Cat Grooming,4,3,"informational: long-hair cat care, mat removal, nail trimming at home",medium,low,A,Cat parallel to dog grooming
+6,Dog Collars & Leads,4,3,"informational: how to measure for collar, lead types, recall training tips",medium,low,A,Good commercial cluster for affiliate content
+7,Dog Health,4,3,"informational: signs your dog needs vet, dental home care, flea life cycle",high,high,C,Full YMYL – all posts require vet expert review + operator approval
+8,Puppy Care,2,4,"informational: vaccination schedule, puppy-proofing, first vet visit, weaning",high,high,C,High YMYL – Lane C mandatory; vet citations required
+9,Cat Litter,4,2,"informational: litter training tips, switching litter brands safely",medium,low,A,Established cluster with room for informational content
+10,Cat Health,0,0,defer to Phase 11,high,high,C,Do not start without vet review process in place

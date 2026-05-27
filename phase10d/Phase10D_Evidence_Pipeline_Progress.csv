@@ -1,0 +1,16 @@
+cluster,evidence_type,source,status,items_collected,quality,next_action
+Dog Beds,Product testing data,Manual research,complete,24,high,Embed in pillar post tables
+Dog Beds,User search intent analysis,GSC + keyword tools,complete,12,high,Mapped to expansion topics
+Dog Beds,Expert references,Vet/behaviourist quotes,partial,3,medium,Add 2 more expert citations
+Dog Toys,Product safety data,RSPCA / KC guidelines,complete,15,high,Embedded in safety post
+Dog Toys,Mental enrichment research,Academic abstracts,complete,8,high,Cited in mental stimulation post
+Dog Toys,DIY safety guidelines,PDSA guidelines,complete,6,high,Cited in DIY post
+Dog Training,Training treat ingredient analysis,Pet food labels + FEDIAF,complete,20,high,Tables in training treats post
+Dog Training,Socialisation window research,Bateson 1979 + APDT,complete,10,high,Timeline in socialisation post
+Dog Food,Nutritional guideline data,FEDIAF 2023,complete,35,high,Embedded in food pillar
+Dog Food,Ingredient safety list,FSA + BVA guidance,complete,18,high,Embedded in food guide
+Cat Beds,Product range data,Manual research,partial,12,medium,Expand for cat bed expansion
+Cat Toys,Enrichment behaviour research,ISFM guidelines,partial,8,medium,Ready for cat toy expansion
+Cat Litter,Disposal regulations,UK waste regs,complete,5,high,Embedded in disposal post
+Dog Health,Supplement ingredient data,VetSpec + NOAH,partial,10,medium,Needs vet review
+Trust Pages,Editorial policy templates,In-house,complete,4,high,All 4 trust pages drafted

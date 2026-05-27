@@ -1,0 +1,7 @@
+page_id,title,current_status,last_updated,cross_links_count,cross_link_targets,seo_meta,publish_blocker,recommended_action
+4402,How We Research Pet Products,draft,2026-05-27,3,"4403, 4405, 300",set,None identified,Publish – content complete
+4403,Our Editorial Process,draft,2026-05-27,3,"4402, 4405, 300",set,None identified,Publish – content complete
+300,PetHub Privacy & Cookie Policy,publish,2026-05-27,2,"4402, 4403",set,N/A – already live,Verify GDPR compliance annually
+4405,Corrections and Updates Policy,draft,2026-05-27,3,"4402, 4403, 300",set,None identified,Publish – content complete
+3722,Pet Insurance UK – Methodology & Trust Framework,draft,2026-04-01,0,none,partial,Needs expert review + affiliate disclosure,Hold – requires legal/compliance check before publish
+39,About Us,publish,2026-01-01,1,63,set,N/A – already live,Add cross-link to How We Research page

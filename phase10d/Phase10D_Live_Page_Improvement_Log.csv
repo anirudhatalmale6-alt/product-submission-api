@@ -1,0 +1,9 @@
+improvement_type,scope,items_affected,description,date,phase
+Gutenberg Block Migration,Posts & Pages,80,Converted 57 posts and 23 pages from classic editor HTML to valid Gutenberg blocks using canonical gutenberg_utils.py module. Zero failures.,2026-05-27,10D
+Trust Page Cross-Linking,Pages,4,"Added cross-links and last-updated dates to pages 4402 (How We Research), 4403 (Editorial Process), 300 (Privacy Policy), 4405 (Corrections Policy).",2026-05-27,10D
+Dog Beds Cluster Expansion,Posts,4,"Created 4 new informational posts (4783-4786) covering bed sizing, materials, washing, and placement.",2026-05-27,10D
+Dog Toys Cluster Expansion,Posts,4,"Created 4 new informational posts (4787-4790) covering toy safety, mental stimulation, play styles, and DIY toys.",2026-05-27,10D
+Training/Puppy Starter,Posts,2,Created 2 new posts (4791-4792): training treats selection guide and puppy socialisation timeline.,2026-05-27,10D
+Cross-Link Injection,Posts,11,Added 25 internal links across 11 existing posts connecting pillar/supporting posts to new expansion content.,2026-05-27,10D
+RankMath SEO Metadata,Posts,10,"All 10 new expansion posts have meta_title, meta_description, focus_keyword, and schema type set via RankMath.",2026-05-27,10D
+12-Gate Safety Check,Posts,10,"All new posts passed all 12 safety gates: title, slug, excerpt, category, tags, featured image alt, meta title, meta desc, H1, internal links, FAQ block, publish status.",2026-05-27,10D
