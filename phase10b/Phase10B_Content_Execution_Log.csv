@@ -1,0 +1,25 @@
+# generated_at: 2026-05-27T21:05:46Z
+# source_server: 167.99.198.145
+# git_commit: pending
+# generated_by: Phase10B_Content_Execution
+# data_source_label: live_wordpress_api
+# approval_status: drafts_created_awaiting_owner_review
+# total_created: 14
+# total_errors: 0
+# total_skipped: 0
+# next_action: owner_review_and_publish_approval
+type,action,title,wp_id,url,slug,status,categories,seo_title,seo_title_len,meta_desc_len,governance,metadata,affiliate_links,product_schema,fake_claims,red_gate,cluster
+page,CREATED,How We Research Pet Products,4402,https://pethubonline.com/?page_id=4402,how-we-research-pet-products,draft,none (page),How We Research Pet Products | PetHub Online,44,132,ALL_PASS,ALL_PASS,PASS,PASS,PASS,PASS,trust
+page,CREATED,Our Editorial Process,4403,https://pethubonline.com/?page_id=4403,our-editorial-process,draft,none (page),Our Editorial Process | PetHub Online,37,145,ALL_PASS,ALL_PASS,PASS,PASS,PASS,PASS,trust
+page,CREATED,Affiliate Disclosure,4404,https://pethubonline.com/?page_id=4404,affiliate-disclosure,draft,none (page),Affiliate Disclosure | PetHub Online,36,145,ALL_PASS,ALL_PASS,PASS,PASS,PASS,PASS,trust
+page,CREATED,Corrections and Updates Policy,4405,https://pethubonline.com/?page_id=4405,corrections-and-updates-policy,draft,none (page),Corrections and Updates Policy | PetHub Online,46,137,ALL_PASS,ALL_PASS,PASS,PASS,PASS,PASS,trust
+post,CREATED,Best Interactive Cat Toys for Indoor Cats,4406,https://pethubonline.com/?p=4406,best-interactive-cat-toys-indoor-cats,draft,"1459,1377",Interactive Cat Toys for Indoor Cats | PetHub Online,52,155,ALL_PASS,ALL_PASS,PASS,PASS,PASS,PASS,cat_toys
+post,CREATED,Cat Toy Safety Guide,4415,https://pethubonline.com/?p=4415,cat-toy-safety-guide,draft,"1459,1377,1397",Cat Toy Safety Guide | PetHub Online,36,156,ALL_PASS,ALL_PASS,PASS,PASS,PASS,PASS,cat_toys
+post,CREATED,DIY Cat Toys: Safe Homemade Options,4407,https://pethubonline.com/?p=4407,diy-cat-toys-safe-homemade-options,draft,"1459,1377",DIY Cat Toys: Safe Homemade Ideas | PetHub Online,49,150,ALL_PASS,ALL_PASS,PASS,PASS,PASS,PASS,cat_toys
+post,CREATED,How Often Should You Replace Cat Toys?,4408,https://pethubonline.com/?p=4408,how-often-replace-cat-toys,draft,"1459,1377,1397",How Often to Replace Cat Toys | PetHub Online,45,146,ALL_PASS,ALL_PASS,PASS,PASS,PASS,PASS,cat_toys
+post,CREATED,Kitten vs Adult Cat Toys: Age-Appropriate Play,4409,https://pethubonline.com/?p=4409,kitten-vs-adult-cat-toys-age-appropriate,draft,"1459,1377,1397",Kitten vs Adult Cat Toys Guide | PetHub Online,46,135,ALL_PASS,ALL_PASS,PASS,PASS,PASS,PASS,cat_toys
+post,CREATED,Cat Enrichment Activities Beyond Toys,4410,https://pethubonline.com/?p=4410,cat-enrichment-activities-beyond-toys,draft,"1459,1377,1397",Cat Enrichment Beyond Toys | PetHub Online,42,147,ALL_PASS,ALL_PASS,PASS,PASS,PASS,PASS,cat_toys
+post,CREATED,Dog Harnesses: The Complete Guide (HUB),4411,https://pethubonline.com/?p=4411,dog-harnesses-complete-guide,draft,"1422,1376,1489",Dog Harnesses Guide: Types & Fitting | PetHub Online,52,153,ALL_PASS,ALL_PASS,PASS,PASS,PASS,PASS,dog_harness
+post,CREATED,No-Pull Dog Harness Guide,4412,https://pethubonline.com/?p=4412,no-pull-dog-harness-guide,draft,"1422,1376",No-Pull Dog Harness Guide | PetHub Online,41,140,ALL_PASS,ALL_PASS,PASS,PASS,PASS,PASS,dog_harness
+post,CREATED,How to Measure Your Dog for a Harness,4413,https://pethubonline.com/?p=4413,how-to-measure-dog-for-harness,draft,"1422,1376,1489",How to Measure Your Dog for a Harness | PetHub,46,149,ALL_PASS,ALL_PASS,PASS,PASS,PASS,PASS,dog_harness
+post,CREATED,Harness vs Collar: Which Is Better?,4414,https://pethubonline.com/?p=4414,harness-vs-collar-which-is-better,draft,"1422,1376,1489",Harness vs Collar for Dogs | PetHub Online,42,144,ALL_PASS,ALL_PASS,PASS,PASS,PASS,PASS,dog_harness
