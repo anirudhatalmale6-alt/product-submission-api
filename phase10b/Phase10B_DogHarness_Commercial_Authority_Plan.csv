@@ -1,0 +1,24 @@
+# generated_at: 2026-05-27T20:48:03Z
+# source_server: 167.99.198.145
+# git_commit: 078d7e2
+# generated_by: Phase10B_Authority_Expansion_Generator
+# data_source_label: live_wordpress_api + live_sitemap + live_site_crawl
+# existing_harness_posts: 2
+# planned_educational: 4
+# planned_commercial_gated: 2
+# evidence_model: evidence_first_affiliate_operations
+# affiliate_status: ALL_BLOCKED
+# product_schema: BLOCKED
+# approval_status: GREEN_educational_AMBER_commercial
+# next_action: build_educational_authority_first
+post_id,slug,title,url,content_type,word_count,internal_links,faq_schema,in_sitemap,evidence_status,product_evidence,affiliate_status,schema_status,trust_wording,commercial_readiness,next_action
+4049,best-puppy-collars-uk,Best Puppy Collars UK (2026) – First Collar &#038; Harness G,https://pethubonline.com/best-puppy-collars-uk/,existing_educational,23033,87,no,yes,not_started,BLOCKED,BLOCKED,safe_only,educational,not_ready,continue_educational_authority
+4027,best-dog-collars-and-harnesses-uk,Best Dog Collars and Harnesses UK (2026) – Complete Guide,https://pethubonline.com/best-dog-collars-and-harnesses-uk/,existing_educational,23547,87,no,yes,not_started,BLOCKED,BLOCKED,safe_only,educational,not_ready,continue_educational_authority
+planned,dog-harness-hub-page,Dog Harness Hub Page,planned,hub,planned,planned,planned,n/a,none_educational,not_needed,BLOCKED,safe_only,evidence_required,future,await_evidence
+planned,no-pull-harness-guide:-types-and-how-they-work,No-Pull Harness Guide: Types and How They Work,planned,spoke_educational,planned,planned,planned,n/a,none_educational,not_needed,BLOCKED,safe_only,educational,future,create_content
+planned,how-to-measure-your-dog-for-a-harness,How to Measure Your Dog for a Harness,planned,spoke_educational,planned,planned,planned,n/a,none_educational,not_needed,BLOCKED,safe_only,educational,none,create_content
+planned,harness-vs-collar:-which-is-better-for-your-dog?,Harness vs Collar: Which Is Better for Your Dog?,planned,comparison_educational,planned,planned,planned,n/a,none_educational,not_needed,BLOCKED,safe_only,educational,future,create_content
+planned,puppy-harness-training-guide,Puppy Harness Training Guide,planned,spoke_educational,planned,planned,planned,n/a,none_educational,not_needed,BLOCKED,safe_only,educational,none,create_content
+planned,dog-harness-materials:-nylon-vs-leather-vs-mesh,Dog Harness Materials: Nylon vs Leather vs Mesh,planned,trust_content,planned,planned,planned,n/a,none_educational,not_needed,BLOCKED,safe_only,evidence_required,future,await_evidence
+planned,[future]-dog-harness-product-comparison,[FUTURE] Dog Harness Product Comparison,planned,commercial_gated,planned,planned,planned,n/a,REQUIRES_VERIFIED_EVIDENCE,BLOCKED,BLOCKED,BLOCKED_until_evidence,evidence_required,blocked_pending_evidence,await_evidence
+planned,[future]-best-dog-harnesses-by-size,[FUTURE] Best Dog Harnesses by Size,planned,commercial_gated,planned,planned,planned,n/a,REQUIRES_VERIFIED_EVIDENCE,BLOCKED,BLOCKED,BLOCKED_until_evidence,evidence_required,blocked_pending_evidence,await_evidence

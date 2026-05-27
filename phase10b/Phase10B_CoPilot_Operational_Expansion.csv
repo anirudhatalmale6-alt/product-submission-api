@@ -1,0 +1,21 @@
+# generated_at: 2026-05-27T20:48:03Z
+# source_server: 167.99.198.145
+# git_commit: 078d7e2
+# generated_by: Phase10B_Authority_Expansion_Generator
+# data_source_label: live_wordpress_api + live_sitemap + live_site_crawl
+# total_capabilities: 10
+# all_live: yes
+# total_commands: 30
+# approval_status: GREEN_auto
+# next_action: continuous_evolution
+capability,commands,data_sources,answers,status,priority,agent_mode,approval_status,next_action
+SEO Operations Assistant,/seo status; /seo audit [url]; /seo gaps,SA-01 sitemap + SA-03 metadata + SA-07 AI visibility,What needs SEO attention? Which posts have metadata issues? What is indexed?,live,1,operational_intelligence,GREEN_auto,continuous_availability
+Indexing Assistant,/indexing status; /indexing missing; /indexing growth,SA-01 sitemap monitor + GSC data,What is indexed? What is missing? Is sitemap healthy? Growth trend?,live,2,operational_intelligence,GREEN_auto,continuous_availability
+Authority Assistant,/authority check; /authority gaps; /authority clusters,SA-02 taxonomy + SA-13 content authority + cluster analysis,Which clusters are strongest? Where are gaps? What should grow next?,live,3,operational_intelligence,GREEN_auto,continuous_availability
+Publishing Readiness Assistant,/publish ready; /publish queue; /publish check [id],SA-06 publisher gate + SA-03 metadata + SA-04 schema,What is ready to publish? What is blocked? What gates need passing?,live,4,operational_intelligence,GREEN_auto,continuous_availability
+Trust/Evidence Assistant,/trust status; /evidence check; /trust pages,SA-05 product evidence + SA-08 trust editorial,What evidence exists? What trust pages are ready? What claims need verification?,live,5,operational_intelligence,GREEN_auto,continuous_availability
+Infrastructure Assistant,/infra status; /infra health; /agents status,SA-12 infrastructure health + server monitoring,Are all agents running? Any infrastructure issues? Performance status?,live,6,operational_intelligence,GREEN_auto,continuous_availability
+Mission Coordination Assistant,/missions active; /missions next; /missions blocked,All agents + mission control + section launch tracker,What missions are active? What is blocked? What is the next safest action?,live,7,operational_intelligence,GREEN_auto,continuous_availability
+AI Visibility Assistant,/ai status; /ai opportunities; /ai readiness [cluster],SA-07 AI visibility + answer readiness scores,What is AI-visible? What opportunities exist? ChatGPT/Gemini/Perplexity readiness?,live,8,operational_intelligence,GREEN_auto,continuous_availability
+Governance Assistant,/gov status; /gov gates; /gov audit,SA-11 security + SA-06 publisher gate + all governance feeds,Are all gates enforced? Any bypasses? RED gate status? Compliance status?,live,9,operational_intelligence,GREEN_auto,continuous_availability
+Next-Action Recommender,/next action; /next safest; /next priority,All agents consolidated,What should improve next? What is the safest next publish? What helps authority most?,live,10,operational_intelligence,GREEN_auto,continuous_availability

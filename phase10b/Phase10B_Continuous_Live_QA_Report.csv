@@ -1,0 +1,24 @@
+# generated_at: 2026-05-27T20:48:03Z
+# source_server: 167.99.198.145
+# git_commit: 078d7e2
+# generated_by: Phase10B_Authority_Expansion_Generator
+# data_source_label: live_wordpress_api + live_sitemap + live_site_crawl
+# total_checks: 11
+# passing: 11
+# warnings: 0
+# failures: 0
+# qa_mode: PERMANENT_CONTINUOUS
+# approval_status: GREEN_auto
+# next_action: continuous_enforcement
+check,category,status,result,severity,interval,last_run,auto,agent_mode,approval_status,next_action
+sitemap_coverage,indexing,PASS,58/58 indexed,ok,6h,2026-05-27T20:48:03Z,yes,continuous_live_qa,GREEN_auto,continue_monitoring
+uncategorized_posts,taxonomy,PASS,0 uncategorized,ok,12h,2026-05-27T20:48:03Z,yes,continuous_live_qa,GREEN_auto,continue_monitoring
+blocked_schema_detection,schema,PASS,No Product/Review/Offer/AggregateRating detected,ok,6h,2026-05-27T20:48:03Z,yes,continuous_live_qa,GREEN_auto,continue_monitoring
+internal_broken_links,links,PASS,0 broken in sample of 5 posts,ok,24h,2026-05-27T20:48:03Z,yes,continuous_live_qa,GREEN_auto,continue_monitoring
+export_freshness,exports,PASS,0 stale exports,ok,24h,2026-05-27T20:48:03Z,yes,continuous_live_qa,GREEN_auto,continue_monitoring
+page_load_performance,performance,PASS,0 slow pages in sample,ok,24h,2026-05-27T20:48:03Z,yes,continuous_live_qa,GREEN_auto,continue_monitoring
+affiliate_leakage,governance,PASS,No unauthorized affiliate links detected,ok,12h,2026-05-27T20:48:03Z,yes,continuous_live_qa,GREEN_auto,continue_monitoring
+social_autopost_disabled,governance,PASS,All social autoposting remains disabled,ok,24h,2026-05-27T20:48:03Z,yes,continuous_live_qa,GREEN_auto,continue_monitoring
+red_gate_enforcement,governance,PASS,Pet Insurance and all RED topics remain blocked,ok,24h,2026-05-27T20:48:03Z,yes,continuous_live_qa,GREEN_auto,continue_monitoring
+publisher_gate_integrity,governance,PASS,"All 12 publisher gates enforced, 0 bypasses",ok,per_action,2026-05-27T20:48:03Z,yes,continuous_live_qa,GREEN_auto,continue_monitoring
+trust_wording_scan,trust,PASS,No fake testing/expertise claims detected in sample,ok,24h,2026-05-27T20:48:03Z,yes,continuous_live_qa,GREEN_auto,continue_monitoring

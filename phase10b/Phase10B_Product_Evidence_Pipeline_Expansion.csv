@@ -1,0 +1,18 @@
+# generated_at: 2026-05-27T20:48:03Z
+# source_server: 167.99.198.145
+# git_commit: 078d7e2
+# generated_by: Phase10B_Authority_Expansion_Generator
+# data_source_label: live_wordpress_api + live_sitemap + live_site_crawl
+# total_clusters: 6
+# evidence_started: 1
+# all_monetization_blocked: TRUE
+# all_schema_blocked: TRUE
+# approval_status: AMBER_evidence_only
+# next_action: begin_dog_food_evidence_collection
+cluster,existing_posts,evidence_stage,candidate_categories,sources_needed,evidence_tasks,confidence_score,freshness,product_recs_live,affiliate_links_live,product_schema_live,ratings_reviews_live,blockers,approval_status,next_action
+Dog Food,4,candidate_identification,Dry food; Wet food; Puppy food; Senior food; Grain-free,FEDIAF standards; Manufacturer data; Veterinary guidance; Independent lab tests,Identify top 5 brands per sub-category; Collect ingredient data; Verify nutritional claims,0,not_started,BLOCKED,BLOCKED,BLOCKED,BLOCKED,No product evidence collected yet,AMBER_evidence_collection_only,begin_evidence_collection
+Dog Harness,2,not_started,No-pull; Front-clip; Back-clip; Padded; Puppy,Manufacturer specs; Material testing; Sizing data; User safety reports,Identify major brands; Collect safety data; Compare sizing systems,0,not_started,BLOCKED,BLOCKED,BLOCKED,BLOCKED,Educational content first,AMBER_evidence_collection_only,await_educational_authority
+Cat Toys,4,not_started,Interactive; Catnip; Laser; Wand; Puzzle,Safety standards; Material safety; Manufacturer data,Identify safe toy categories; Collect safety data,0,not_started,BLOCKED,BLOCKED,BLOCKED,BLOCKED,Recovery content first,AMBER_evidence_collection_only,await_educational_authority
+Dog Beds,4,not_started,Orthopedic; Cooling; Memory foam; Elevated; Puppy,Material specs; Durability data; Veterinary orthopedic guidance,Identify top brands; Collect material data; Verify orthopedic claims,0,not_started,BLOCKED,BLOCKED,BLOCKED,BLOCKED,No product evidence collected yet,AMBER_evidence_collection_only,await_educational_authority
+Dog Bowls,3,not_started,Stainless steel; Ceramic; Slow feeder; Elevated; Travel,Material safety data; BPA-free verification; Capacity standards,Identify safe materials; Collect manufacturer data,0,not_started,BLOCKED,BLOCKED,BLOCKED,BLOCKED,Lower priority,AMBER_evidence_collection_only,await_educational_authority
+Dog Collars,2,not_started,Flat; Martingale; GPS; Breakaway; LED,Safety data; GPS accuracy data; Material durability,Identify safe collar types; Verify GPS feature claims,0,not_started,BLOCKED,BLOCKED,BLOCKED,BLOCKED,Lower priority,AMBER_evidence_collection_only,await_educational_authority

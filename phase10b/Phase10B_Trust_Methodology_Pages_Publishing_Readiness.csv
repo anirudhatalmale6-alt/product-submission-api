@@ -1,0 +1,20 @@
+# generated_at: 2026-05-27T20:48:03Z
+# source_server: 167.99.198.145
+# git_commit: 078d7e2
+# generated_by: Phase10B_Authority_Expansion_Generator
+# data_source_label: live_wordpress_api + live_sitemap + live_site_crawl
+# total_pages: 6
+# ready_for_review: 4
+# blocked: 1
+# current_trust_score: 58%
+# current_expertise_score: 55%
+# current_credibility_score: 45%
+# approval_status: AMBER_needs_owner_review
+# next_action: draft_content_for_owner_review
+page,type,priority,content_ready,metadata_ready,seo_title,seo_title_len,seo_title_ok,meta_desc,meta_desc_len,meta_desc_ok,schema_plan,trust_score_impact,eeat_signal,word_target,key_sections,blockers,fake_content_check,publishing_readiness,approval_status,next_action
+How We Research Pet Products,methodology,1,draft_ready,needs_creation,How We Research Pet Products | PetHub Online,44,yes,"Learn how PetHub Online researches and evaluates pet products using evidence-based methods, verified sources, and transparent editorial standards.",146,yes,Article + BreadcrumbList,high,expertise + transparency,1500,Research process; Source verification; Evidence levels; Update policy,Needs owner review before publish,No fake testing claims; No fake credentials; No fake reviewers,ready_for_review,AMBER_needs_owner_review,prepare_draft_for_review
+Our Editorial Process,editorial,2,draft_ready,needs_creation,Our Editorial Process | PetHub Online,37,yes,"Discover PetHub Online's editorial process: how we create, fact-check, and maintain pet care content with transparency and evidence-based standards.",148,yes,Article + BreadcrumbList,high,expertise + experience,1200,Content creation; Fact-checking; AI-assisted disclosure; Quality standards,Needs owner review before publish,Honest about AI assistance; No fake expert panel,ready_for_review,AMBER_needs_owner_review,prepare_draft_for_review
+Affiliate Disclosure Explained,disclosure,3,draft_ready,needs_creation,Affiliate Disclosure | PetHub Online,36,yes,"Full transparency on how PetHub Online uses affiliate links, how we select products, and how this supports our free pet care content.",133,yes,Article + BreadcrumbList,medium,trustworthiness,800,What are affiliate links; How we select products; Revenue transparency; Evidence requirements,Needs owner review; Affiliate links still blocked,No fake revenue claims; Honest about evidence requirements,ready_for_review,AMBER_needs_owner_review,prepare_draft_for_review
+Evidence Status Labels Explained,trust_system,4,design_ready,needs_creation,Evidence Status Labels | PetHub Online,38,yes,Understand PetHub Online's evidence status labels: how we rate product recommendations from verified evidence to editorial opinion.,131,yes,Article + BreadcrumbList,high,trustworthiness + transparency,1000,Label hierarchy; Verified vs researched vs opinion; How evidence is collected; Update frequency,Needs evidence system live first,No fake evidence levels; Honest about current status,design_ready,AMBER_needs_owner_review,await_dependencies
+Corrections and Updates Policy,policy,5,draft_ready,needs_creation,Corrections and Updates Policy | PetHub Online,46,yes,"How PetHub Online handles corrections, content updates, and accuracy improvements across all pet care guides and recommendations.",129,yes,Article + BreadcrumbList,medium,trustworthiness,800,How to report errors; Correction process; Update frequency; Transparency commitment,Needs owner review before publish,No unrealistic correction timeline promises,ready_for_review,AMBER_needs_owner_review,prepare_draft_for_review
+Product Evidence Overview,evidence,6,blocked,needs_creation,Product Evidence Standards | PetHub Online,42,yes,"How PetHub Online verifies and documents product evidence before making any recommendations, ensuring trustworthy pet product guidance.",135,yes,Article + BreadcrumbList,high,expertise + trustworthiness,1200,Evidence collection; Verification process; Status tracking; Approval gates,Needs evidence pipeline producing results first,No claims about evidence that doesn't exist yet,blocked,AMBER_needs_owner_review,await_dependencies

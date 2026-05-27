@@ -1,0 +1,25 @@
+# generated_at: 2026-05-27T20:48:03Z
+# source_server: 167.99.198.145
+# git_commit: 078d7e2
+# generated_by: Phase10B_Authority_Expansion_Generator
+# data_source_label: live_wordpress_api + live_sitemap + live_site_crawl
+# total_sections: 13
+# live: 9
+# planning: 4
+# total_live_posts: 31
+# approval_status: GREEN_for_live_sections
+# next_action: expand_cat_toys_and_harness_clusters
+section,stage,posts_live,authority_score,indexing,metadata,schema,trust,monetization,next_milestone,launch_ready,agent_mode,approval_status,next_action
+Dog Food,live_monitoring,4,growing,confirmed,enforced,safe,educational,blocked,GSC impression tracking,LIVE,section_launch_framework,GREEN_live,GSC impression tracking
+Dog Beds,live_monitoring,4,established,confirmed,enforced,safe,educational,blocked,Authority depth expansion,LIVE,section_launch_framework,GREEN_live,Authority depth expansion
+Dog Bowls,live_monitoring,3,established,confirmed,enforced,safe,educational,blocked,Authority depth expansion,LIVE,section_launch_framework,GREEN_live,Authority depth expansion
+Dog Collars & Leads,live_monitoring,2,established,confirmed,enforced,safe,educational,blocked,Harness sub-cluster expansion,LIVE,section_launch_framework,GREEN_live,Harness sub-cluster expansion
+Dog Training,live_monitoring,6,established,confirmed,enforced,safe,educational,blocked,Authority depth expansion,LIVE,section_launch_framework,GREEN_live,Authority depth expansion
+Dog Grooming,live_monitoring,1,established,confirmed,enforced,safe,educational,blocked,Authority depth expansion,LIVE,section_launch_framework,GREEN_live,Authority depth expansion
+Dog Health,live_monitoring,4,established,confirmed,enforced,safe,educational,blocked,Additional health guides,LIVE,section_launch_framework,GREEN_live,Additional health guides
+Cat Toys,live_recovery,4,growing,confirmed,enforced,safe,educational,blocked,Recovery content + engagement gaps,LIVE_EXPANDING,section_launch_framework,GREEN_live,Recovery content + engagement gaps
+Cat Grooming,live_monitoring,1,established,confirmed,enforced,safe,educational,blocked,Authority depth expansion,LIVE,section_launch_framework,GREEN_live,Authority depth expansion
+Dog Harness,authority_building,2,early,partial,planned,safe_only,educational_first,blocked_evidence_first,Hub + educational spokes creation,PLANNING,section_launch_framework,AMBER_needs_review,Hub + educational spokes creation
+Trust Pages,draft_preparation,0,n/a,n/a,planned,Article+BreadcrumbList,core_foundation,n/a,Draft 3 priority pages for owner review,DRAFT_READY,section_launch_framework,AMBER_needs_review,Draft 3 priority pages for owner review
+Homepage,planning,0,n/a,n/a,n/a,n/a,n/a,n/a,Engagement improvement design,PLANNING,section_launch_framework,AMBER_needs_review,Engagement improvement design
+AI Search Adaptation,monitoring,0,n/a,n/a,n/a,n/a,n/a,n/a,Benchmark query expansion,MONITORING,section_launch_framework,AMBER_needs_review,Benchmark query expansion

@@ -1,0 +1,23 @@
+# generated_at: 2026-05-27T20:48:03Z
+# source_server: 167.99.198.145
+# git_commit: 078d7e2
+# generated_by: Phase10B_Authority_Expansion_Generator
+# data_source_label: live_wordpress_api + live_sitemap + live_site_crawl
+# existing_posts: 4
+# planned_spokes: 6
+# total_items: 10
+# affiliate_status: ALL_BLOCKED
+# product_recs: EDUCATIONAL_ONLY
+# approval_status: GREEN_educational
+# next_action: begin_content_gap_creation
+post_id,slug,title,url,status_code,word_count,h2_count,h3_count,list_count,image_count,internal_links,faq_schema,article_schema,has_affiliate_links,has_product_recs,in_sitemap,content_gap,recovery_action,engagement_opportunity
+4195,best-cat-toys-indoor-cats-uk,Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide,https://pethubonline.com/best-cat-toys-indoor-cats-uk/,200,23042,10,16,17,7,87,no,yes,BLOCKED,educational_only,yes,none,monitor_and_optimize,add_faq
+4188,best-catnip-toys-uk,Best Catnip Toys UK (2026) – What Works and Why,https://pethubonline.com/best-catnip-toys-uk/,200,22989,9,16,13,7,86,no,yes,BLOCKED,educational_only,yes,none,monitor_and_optimize,add_faq
+4181,best-interactive-cat-toys-uk,Best Interactive Cat Toys UK (2026) – Wand &#038; Puzzle Gui,https://pethubonline.com/best-interactive-cat-toys-uk/,200,23018,9,16,13,7,87,no,yes,BLOCKED,educational_only,yes,none,monitor_and_optimize,add_faq
+4174,best-cat-toys-uk,Best Cat Toys UK (2026) – Complete Guide,https://pethubonline.com/best-cat-toys-uk/,200,23139,10,17,13,7,86,no,yes,BLOCKED,educational_only,yes,none,monitor_and_optimize,add_faq
+planned,best-interactive-cat-toys-for-indoor-cats,Best Interactive Cat Toys for Indoor Cats,planned,n/a,1800,planned,planned,planned,planned,planned,planned,planned,BLOCKED,BLOCKED,n/a,engagement,create_hub_spoke_content,hub_spoke
+planned,cat-toy-safety-guide-what-to-avoid,Cat Toy Safety Guide: What to Avoid,planned,n/a,1500,planned,planned,planned,planned,planned,planned,planned,BLOCKED,BLOCKED,n/a,trust,create_trust_content_content,trust_content
+planned,diy-cat-toys-safe-homemade-options,DIY Cat Toys: Safe Homemade Options,planned,n/a,1200,planned,planned,planned,planned,planned,planned,planned,BLOCKED,BLOCKED,n/a,engagement,create_engagement_content,engagement
+planned,how-often-should-you-replace-cat-toys?,How Often Should You Replace Cat Toys?,planned,n/a,1000,planned,planned,planned,planned,planned,planned,planned,BLOCKED,BLOCKED,n/a,authority,create_faq_content,faq
+planned,kitten-vs-adult-cat-toys-age-appropriate-play,Kitten vs Adult Cat Toys: Age-Appropriate Play,planned,n/a,1500,planned,planned,planned,planned,planned,planned,planned,BLOCKED,BLOCKED,n/a,depth,create_hub_spoke_content,hub_spoke
+planned,cat-enrichment-activities-beyond-toys,Cat Enrichment Activities Beyond Toys,planned,n/a,1800,planned,planned,planned,planned,planned,planned,planned,BLOCKED,BLOCKED,n/a,topical_expansion,create_authority_content,authority
