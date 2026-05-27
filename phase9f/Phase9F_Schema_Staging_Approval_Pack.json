@@ -1,0 +1,412 @@
+{
+  "pages": [
+    {
+      "post_id": 3836,
+      "title": "Best Dog Food UK (2026) - Complete Guide & Honest Reviews",
+      "slug": "best-dog-food-uk",
+      "page_url": "https://pethubonline.com/best-dog-food-uk/",
+      "schemas_proposed": [
+        {
+          "type": "Article",
+          "json_ld": {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Best Dog Food UK (2026) - Complete Guide & Honest Reviews",
+            "author": {
+              "@type": "Organization",
+              "name": "Pet Hub Online",
+              "url": "https://pethubonline.com"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Pet Hub Online",
+              "url": "https://pethubonline.com"
+            },
+            "description": "Evidence-based guide to best dog food uk for UK pet owners.",
+            "mainEntityOfPage": "https://pethubonline.com/best-dog-food-uk/"
+          },
+          "validation": "VALID - standard Article markup",
+          "safe": true
+        },
+        {
+          "type": "BreadcrumbList",
+          "json_ld": {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://pethubonline.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Dog Food",
+                "item": "https://pethubonline.com/best-dog-food-uk/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Best Dog Food UK (2026)"
+              }
+            ]
+          },
+          "validation": "VALID - standard navigation markup",
+          "safe": true
+        },
+        {
+          "type": "FAQPage",
+          "json_ld": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "[FAQ questions from page content]",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "[Answers from page content]"
+                }
+              }
+            ],
+            "_note": "FAQ questions and answers to be extracted from actual page content before deployment"
+          },
+          "validation": "TEMPLATE - FAQ questions need extraction from live content before deployment",
+          "safe": true,
+          "note": "Only deploy after FAQ content confirmed in published page"
+        }
+      ],
+      "approval_status": "PENDING_OWNER_APPROVAL",
+      "deployment_status": "NOT_DEPLOYED",
+      "risk_notes": "Safe schema types only. No Product/Review/AggregateRating/Offer schema.",
+      "blocked_schemas": [
+        {
+          "type": "Product",
+          "reason": "No specific products recommended yet"
+        },
+        {
+          "type": "Review",
+          "reason": "No verified reviews"
+        },
+        {
+          "type": "AggregateRating",
+          "reason": "No ratings data"
+        },
+        {
+          "type": "Offer",
+          "reason": "No pricing data"
+        }
+      ]
+    },
+    {
+      "post_id": 3837,
+      "title": "Best Dry Dog Food UK (2026) - Evidence-Based Guide",
+      "slug": "best-dry-dog-food-uk",
+      "page_url": "https://pethubonline.com/best-dry-dog-food-uk/",
+      "schemas_proposed": [
+        {
+          "type": "Article",
+          "json_ld": {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Best Dry Dog Food UK (2026) - Evidence-Based Guide",
+            "author": {
+              "@type": "Organization",
+              "name": "Pet Hub Online",
+              "url": "https://pethubonline.com"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Pet Hub Online",
+              "url": "https://pethubonline.com"
+            },
+            "description": "Evidence-based guide to best dry dog food uk for UK pet owners.",
+            "mainEntityOfPage": "https://pethubonline.com/best-dry-dog-food-uk/"
+          },
+          "validation": "VALID - standard Article markup",
+          "safe": true
+        },
+        {
+          "type": "BreadcrumbList",
+          "json_ld": {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://pethubonline.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Dog Food",
+                "item": "https://pethubonline.com/best-dog-food-uk/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Best Dry Dog Food UK (2026)"
+              }
+            ]
+          },
+          "validation": "VALID - standard navigation markup",
+          "safe": true
+        },
+        {
+          "type": "FAQPage",
+          "json_ld": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "[FAQ questions from page content]",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "[Answers from page content]"
+                }
+              }
+            ],
+            "_note": "FAQ questions and answers to be extracted from actual page content before deployment"
+          },
+          "validation": "TEMPLATE - FAQ questions need extraction from live content before deployment",
+          "safe": true,
+          "note": "Only deploy after FAQ content confirmed in published page"
+        }
+      ],
+      "approval_status": "PENDING_OWNER_APPROVAL",
+      "deployment_status": "NOT_DEPLOYED",
+      "risk_notes": "Safe schema types only. No Product/Review/AggregateRating/Offer schema.",
+      "blocked_schemas": [
+        {
+          "type": "Product",
+          "reason": "No specific products recommended yet"
+        },
+        {
+          "type": "Review",
+          "reason": "No verified reviews"
+        },
+        {
+          "type": "AggregateRating",
+          "reason": "No ratings data"
+        },
+        {
+          "type": "Offer",
+          "reason": "No pricing data"
+        }
+      ]
+    },
+    {
+      "post_id": 3838,
+      "title": "Dry vs Wet Dog Food UK - An Honest Comparison",
+      "slug": "dry-vs-wet-dog-food-uk",
+      "page_url": "https://pethubonline.com/dry-vs-wet-dog-food-uk/",
+      "schemas_proposed": [
+        {
+          "type": "Article",
+          "json_ld": {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Dry vs Wet Dog Food UK - An Honest Comparison",
+            "author": {
+              "@type": "Organization",
+              "name": "Pet Hub Online",
+              "url": "https://pethubonline.com"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Pet Hub Online",
+              "url": "https://pethubonline.com"
+            },
+            "description": "Evidence-based guide to dry vs wet dog food uk for UK pet owners.",
+            "mainEntityOfPage": "https://pethubonline.com/dry-vs-wet-dog-food-uk/"
+          },
+          "validation": "VALID - standard Article markup",
+          "safe": true
+        },
+        {
+          "type": "BreadcrumbList",
+          "json_ld": {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://pethubonline.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Dog Food",
+                "item": "https://pethubonline.com/best-dog-food-uk/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Dry vs Wet Dog Food UK"
+              }
+            ]
+          },
+          "validation": "VALID - standard navigation markup",
+          "safe": true
+        },
+        {
+          "type": "FAQPage",
+          "json_ld": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "[FAQ questions from page content]",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "[Answers from page content]"
+                }
+              }
+            ],
+            "_note": "FAQ questions and answers to be extracted from actual page content before deployment"
+          },
+          "validation": "TEMPLATE - FAQ questions need extraction from live content before deployment",
+          "safe": true,
+          "note": "Only deploy after FAQ content confirmed in published page"
+        }
+      ],
+      "approval_status": "PENDING_OWNER_APPROVAL",
+      "deployment_status": "NOT_DEPLOYED",
+      "risk_notes": "Safe schema types only. No Product/Review/AggregateRating/Offer schema.",
+      "blocked_schemas": [
+        {
+          "type": "Product",
+          "reason": "No specific products recommended yet"
+        },
+        {
+          "type": "Review",
+          "reason": "No verified reviews"
+        },
+        {
+          "type": "AggregateRating",
+          "reason": "No ratings data"
+        },
+        {
+          "type": "Offer",
+          "reason": "No pricing data"
+        }
+      ]
+    },
+    {
+      "post_id": 3839,
+      "title": "Best Puppy Food UK (2026) - Growth-Stage Nutrition Guide",
+      "slug": "best-puppy-food-uk",
+      "page_url": "https://pethubonline.com/best-puppy-food-uk/",
+      "schemas_proposed": [
+        {
+          "type": "Article",
+          "json_ld": {
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Best Puppy Food UK (2026) - Growth-Stage Nutrition Guide",
+            "author": {
+              "@type": "Organization",
+              "name": "Pet Hub Online",
+              "url": "https://pethubonline.com"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Pet Hub Online",
+              "url": "https://pethubonline.com"
+            },
+            "description": "Evidence-based guide to best puppy food uk for UK pet owners.",
+            "mainEntityOfPage": "https://pethubonline.com/best-puppy-food-uk/"
+          },
+          "validation": "VALID - standard Article markup",
+          "safe": true
+        },
+        {
+          "type": "BreadcrumbList",
+          "json_ld": {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://pethubonline.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Dog Food",
+                "item": "https://pethubonline.com/best-dog-food-uk/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Best Puppy Food UK (2026)"
+              }
+            ]
+          },
+          "validation": "VALID - standard navigation markup",
+          "safe": true
+        },
+        {
+          "type": "FAQPage",
+          "json_ld": {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "[FAQ questions from page content]",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "[Answers from page content]"
+                }
+              }
+            ],
+            "_note": "FAQ questions and answers to be extracted from actual page content before deployment"
+          },
+          "validation": "TEMPLATE - FAQ questions need extraction from live content before deployment",
+          "safe": true,
+          "note": "Only deploy after FAQ content confirmed in published page"
+        }
+      ],
+      "approval_status": "PENDING_OWNER_APPROVAL",
+      "deployment_status": "NOT_DEPLOYED",
+      "risk_notes": "Safe schema types only. No Product/Review/AggregateRating/Offer schema.",
+      "blocked_schemas": [
+        {
+          "type": "Product",
+          "reason": "No specific products recommended yet"
+        },
+        {
+          "type": "Review",
+          "reason": "No verified reviews"
+        },
+        {
+          "type": "AggregateRating",
+          "reason": "No ratings data"
+        },
+        {
+          "type": "Offer",
+          "reason": "No pricing data"
+        }
+      ]
+    }
+  ],
+  "_metadata": {
+    "generated_at": "2026-05-27T17:52:13.556339+00:00",
+    "source_server": "167.99.198.145",
+    "git_commit_hash": "dc8ebf4",
+    "generated_by": "Phase9F Deliverable Generator v1.0",
+    "data_source_label": "LIVE SERVER DATA + DRAFT CONTENT ANALYSIS",
+    "approval_status": "phase_9f_pre_publish_preparation"
+  }
+}
