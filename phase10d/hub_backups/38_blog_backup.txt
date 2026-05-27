@@ -1,0 +1,233 @@
+<!-- wp:cover {"url":"https://pethubonline.com/wp-content/uploads/2026/05/blog-posts-hero-image.png","id":2740,"alt":"our blog posts","dimRatio":40,"customOverlayColor":"#f8f8f8","isUserOverlayColor":true,"minHeight":800,"minHeightUnit":"px","isDark":false,"sizeSlug":"full","align":"full","className":"remove-top-gap","style":{"spacing":{"padding":{"top":"10px","bottom":"10px"},"margin":{"bottom":"40px"}}},"layout":{"type":"constrained","wideSize":"1200px"}} -->
+<div class="wp-block-cover alignfull is-light remove-top-gap" style="margin-bottom:40px;padding-top:10px;padding-bottom:10px;min-height:800px"><img class="wp-block-cover__image-background wp-image-2740 size-full" alt="our blog posts" src="https://pethubonline.com/wp-content/uploads/2026/05/blog-posts-hero-image.png" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-40 has-background-dim" style="background-color:#f8f8f8"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"full","style":{"spacing":{"blockGap":"var:preset|spacing|80"}},"layout":{"type":"constrained","justifyContent":"center"}} -->
+<div class="wp-block-group alignfull"><!-- wp:heading {"align":"full","style":{"elements":{"link":{"color":{"text":"#222222"}}},"color":{"text":"#222222"},"typography":{"fontStyle":"normal","fontWeight":"700","fontSize":"56px","lineHeight":"1.2","textAlign":"right"},"spacing":{"padding":{"right":"0px","left":"0px","top":"0","bottom":"0"},"margin":{"top":"0","bottom":"0"}}}} -->
+<h2 class="wp-block-heading has-text-align-right alignfull has-text-color has-link-color" style="color:#222222;margin-top:0;margin-bottom:0;padding-top:0;padding-right:0px;padding-bottom:0;padding-left:0px;font-size:56px;font-style:normal;font-weight:700;line-height:1.2">Our Blog</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"full","style":{"elements":{"link":{"color":{"text":"#444444"}}},"color":{"text":"#444444"},"typography":{"fontStyle":"normal","fontWeight":"600","textAlign":"right","fontSize":"18px"},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"0px","right":"0px"}}}} -->
+<p class="has-text-align-right alignfull has-text-color has-link-color" style="color:#444444;padding-top:20px;padding-right:0px;padding-bottom:20px;padding-left:0px;font-size:18px;font-style:normal;font-weight:600">Discover helpful guides, tips, and product recommendations for your pets. Keep your dog or cat happy, healthy, and entertained with our expert advice.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:columns {"verticalAlignment":"center","align":"wide"} -->
+<div class="wp-block-columns alignwide are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"style":{"typography":{"fontSize":"28px"}}} -->
+<h2 class="wp-block-heading" style="font-size:28px">Featured Post</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"18px"}}} -->
+<h3 class="wp-block-heading" style="font-size:18px"><a href="/2026/04/23/top-dog-toys-every-pet-owner-needs-in-2026/">Best Dog Toys 2026 – Top Picks for Every Pup</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"18px"}}} -->
+<p style="font-size:18px">From chew toys to puzzle games, discover the best toys to keep your dog happy and active. Our expert reviews highlight safe, durable, and fun options for every size and breed.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/top-dog-toys-every-pet-owner-needs-in-2026/">Read More</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:jetpack/sharing-buttons {"styleType":"icon","size":"has-small-icon-size","align":"left","layout":{"type":"flex","justifyContent":"center"}} -->
+<ul class="wp-block-jetpack-sharing-buttons alignleft has-small-icon-size jetpack-sharing-buttons__services-list" id="jetpack-sharing-serivces-list"><!-- wp:jetpack/sharing-button {"service":"bluesky","label":"Bluesky"} /-->
+
+<!-- wp:jetpack/sharing-button {"service":"facebook","label":"Facebook"} /-->
+
+<!-- wp:jetpack/sharing-button {"service":"pinterest","label":"Pinterest"} /-->
+
+<!-- wp:jetpack/sharing-button {"service":"x","label":"X"} /-->
+
+<!-- wp:jetpack/sharing-button {"service":"linkedin","label":"LinkedIn"} /--></ul>
+<!-- /wp:jetpack/sharing-buttons --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"id":2730,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://pethubonline.com/wp-content/uploads/2026/05/dog-playing-with-toys-.png" alt="dog playing with toys" class="wp-image-2730"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:group {"align":"wide","style":{"color":{"background":"#fafafa"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide has-background" style="background-color:#fafafa"><!-- wp:search {"label":"Search","width":75,"widthUnit":"%","buttonText":"Search","buttonUseIcon":true,"align":"center","style":{"typography":{"fontSize":"18px"},"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} /--></div>
+<!-- /wp:group -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"40px","bottom":"40px"}}},"backgroundColor":"white","layout":{"type":"constrained"},"anchor":"recent-posts"} -->
+<div class="wp-block-group alignfull has-white-background-color has-background" id="recent-posts" style="padding-top:40px;padding-bottom:40px"><!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1.2","textAlign":"left","fontSize":"28px"},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"#1a1a1a"}}}}} -->
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color" style="color:#1a1a1a;font-size:28px;font-style:normal;font-weight:700;line-height:1.2">Recent Blog Posts</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns {"style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"blockGap":{"top":"0"},"padding":{"top":"22px","bottom":"22px"}}}} -->
+<div class="wp-block-columns" style="margin-top:0px;margin-bottom:0px;padding-top:22px;padding-bottom:22px"><!-- wp:column {"verticalAlignment":"top"} -->
+<div class="wp-block-column is-vertically-aligned-top"><!-- wp:group {"style":{"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"},"color":"#e5e5e5","width":"5px"},"elements":{"link":{":hover":{"color":{"text":"#0073aa"}},"color":{"text":"var:preset|color|ast-global-color-5"}}},"shadow":"var:preset|shadow|sharp"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-link-color" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)"><!-- wp:image {"lightbox":{"enabled":false},"id":2758,"width":"150px","sizeSlug":"full","linkDestination":"custom","align":"center","style":{"spacing":{"margin":{"bottom":"16px"}},"shadow":"var:preset|shadow|natural"}} -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img src="https://pethubonline.com/wp-content/uploads/2026/05/dog-grooming-every-owner-spotlight-image.png" alt="Dog Grooming Every Owner Spotlight Image" class="wp-image-2758" style="box-shadow:var(--wp--preset--shadow--natural);width:150px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"18px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-0"}}},"spacing":{"margin":{"bottom":"8px"}}},"textColor":"ast-global-color-0"} -->
+<h3 class="wp-block-heading has-ast-global-color-0-color has-text-color has-link-color" style="margin-bottom:8px;font-size:18px;font-style:normal;font-weight:600;line-height:1.3">Dog Grooming For Every Owner </h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"18px"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:18px">Learn essential grooming techniques to keep your dog healthy, clean, and comfortable. Our step-by-step guide makes it easy for every pet owner.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Read More</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"},"color":"#e5e5e5","width":"5px"},"elements":{"link":{":hover":{"color":{"text":"#0073aa"}},"color":{"text":"var:preset|color|ast-global-color-5"}}},"shadow":"var:preset|shadow|sharp"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-link-color" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)"><!-- wp:image {"lightbox":{"enabled":false},"id":2760,"width":"150px","sizeSlug":"full","linkDestination":"custom","align":"center","style":{"spacing":{"margin":{"bottom":"16px"}},"shadow":"var:preset|shadow|natural"}} -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img src="https://pethubonline.com/wp-content/uploads/2026/05/essential-cat-supplies-blog-spotlight-image.png" alt="Essential Cat Supplies Blog Spotlight Image" class="wp-image-2760" style="box-shadow:var(--wp--preset--shadow--natural);width:150px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"18px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-0"}}},"spacing":{"margin":{"bottom":"8px"}}},"textColor":"ast-global-color-0"} -->
+<h3 class="wp-block-heading has-ast-global-color-0-color has-text-color has-link-color" style="margin-bottom:8px;font-size:18px;font-style:normal;font-weight:600;line-height:1.3">Essential Cat Supplies For Every Owner </h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"18px"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:18px">Keep your cat happy and healthy with the right essentials. From cosy beds to interactive toys, discover the must-have items.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/essential-cat-supplies-for-cat-owners/">Read More</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"style":{"spacing":{"padding":{"top":"0px","bottom":"0px"}}}} -->
+<div class="wp-block-column" style="padding-top:0px;padding-bottom:0px"><!-- wp:group {"style":{"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"color":"#e5e5e5","width":"5px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"shadow":"var:preset|shadow|sharp"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)"><!-- wp:image {"lightbox":{"enabled":false},"id":2754,"width":"150px","sizeSlug":"full","linkDestination":"custom","align":"center","style":{"spacing":{"margin":{"bottom":"16px"}},"shadow":"var:preset|shadow|natural"}} -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img src="https://pethubonline.com/wp-content/uploads/2026/05/cozy-cat-beds-spotlight-image.png" alt="Cozy Cat Beds Spotlight Image" class="wp-image-2754" style="box-shadow:var(--wp--preset--shadow--natural);width:150px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"18px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-0"}}},"spacing":{"margin":{"bottom":"8px"}}},"textColor":"ast-global-color-0"} -->
+<h3 class="wp-block-heading has-ast-global-color-0-color has-text-color has-link-color" style="margin-bottom:8px;font-size:18px;font-style:normal;font-weight:600;line-height:1.3">Best Cat Beds for Cosy Cats</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"18px"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:18px">Find the perfect bed for your feline friend. We review soft, durable, and stylish options to keep your cat comfortable and cosy all year round.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Read More</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"color":"#e5e5e5","width":"5px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"shadow":"var:preset|shadow|sharp"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)"><!-- wp:image {"id":2756,"width":"150px","sizeSlug":"full","linkDestination":"none","align":"center","style":{"spacing":{"margin":{"bottom":"16px"}},"shadow":"var:preset|shadow|natural"}} -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img src="https://pethubonline.com/wp-content/uploads/2026/05/dog-nutrition-guide-spotlight-image.png" alt="Dog Nutrition Guide Spotlight Image" class="wp-image-2756" style="box-shadow:var(--wp--preset--shadow--natural);width:150px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"18px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"elements":{"link":{":hover":{"color":{"text":"var:preset|color|cyan-bluish-gray"}}}},"spacing":{"margin":{"bottom":"8px"}}},"textColor":"ast-global-color-0"} -->
+<h3 class="wp-block-heading has-ast-global-color-0-color has-text-color" style="margin-bottom:8px;font-size:18px;font-style:normal;font-weight:600;line-height:1.3">Dog Nutrition Guide – Keeping Your Pup Healthy</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"18px"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:18px">Everything you need to know about feeding your dog. Learn about balanced diets, portion control, and healthy treats for all breeds.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">Read More</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:group {"align":"wide","style":{"color":{"background":"#fafafa"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide has-background" style="background-color:#fafafa"><!-- wp:heading {"style":{"typography":{"textAlign":"center","fontSize":"28px"}}} -->
+<h2 class="wp-block-heading has-text-align-center" style="font-size:28px">Share on Social Media</h2>
+<!-- /wp:heading -->
+
+<!-- wp:jetpack/sharing-buttons {"align":"center","layout":{"type":"flex","justifyContent":"center"}} -->
+<ul class="wp-block-jetpack-sharing-buttons aligncenter has-normal-icon-size jetpack-sharing-buttons__services-list" id="jetpack-sharing-serivces-list"><!-- wp:jetpack/sharing-button {"service":"bluesky","label":"Bluesky"} /-->
+
+<!-- wp:jetpack/sharing-button {"service":"facebook","label":"Facebook"} /-->
+
+<!-- wp:jetpack/sharing-button {"service":"pinterest","label":"Pinterest"} /-->
+
+<!-- wp:jetpack/sharing-button {"service":"x","label":"X"} /-->
+
+<!-- wp:jetpack/sharing-button {"service":"linkedin","label":"LinkedIn"} /--></ul>
+<!-- /wp:jetpack/sharing-buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:group {"metadata":{"name":"Newsletter","categories":["_ciab"],"patternName":"a8c/newsletter-commerce-sign-up-with-image-on-the-left"},"align":"full","className":"alignfull is-style-section-2","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"}}},"layout":{"type":"constrained","justifyContent":"center"}} -->
+<div class="wp-block-group alignfull is-style-section-2" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center","layout":{"type":"constrained","contentSize":"460px","justifyContent":"left"}} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"style":{"typography":{"fontSize":"28px"}}} -->
+<h2 class="wp-block-heading" style="font-size:28px">Subscribe for Pet Tips &amp; Updates</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"18px"}}} -->
+<p style="font-size:18px">Stay up-to-date with the latest guides, tips, and product recommendations for your furry friends.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:jetpack/contact-form {"customThankyouHeading":"Thank you for subscribing!","customThankyouMessage":"Please check your email to confirming your subscription.","jetpackCRM":false,"salesforceData":{"organizationId":"","sendToSalesforce":false},"mailpoet":{"listId":"3","listName":"Mailing list","enabledForForm":true},"saveResponses":false,"emailNotifications":false,"disableGoBack":true,"className":"is-style-outlined"} -->
+<div class="wp-block-jetpack-contact-form is-style-outlined"><!-- wp:jetpack/field-email {"required":true,"requiredIndicator":false} -->
+<div><!-- wp:jetpack/label {"label":"Enter your email…","requiredIndicator":false} /-->
+
+<!-- wp:jetpack/input /--></div>
+<!-- /wp:jetpack/field-email -->
+
+<!-- wp:jetpack/button {"element":"button","text":"Subscribe Now","width":"100%","lock":{"move":false,"remove":false}} /--></div>
+<!-- /wp:jetpack/contact-form --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"bottom"} -->
+<div class="wp-block-column is-vertically-aligned-bottom"><!-- wp:image {"id":2767,"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img src="https://pethubonline.com/wp-content/uploads/2026/05/newsletter-sign-up.png" alt="Newsletter Sign Up" class="wp-image-2767" style="aspect-ratio:1;object-fit:cover"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"color":{"background":"#fafafa"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-background" style="background-color:#fafafa"><!-- wp:heading {"style":{"typography":{"fontSize":"28px"}}} -->
+<h2 class="wp-block-heading" style="font-size:28px">Explore More</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"18px"}}} -->
+<p style="font-size:18px">Browse all our blog posts for pet care guides, product reviews, and helpful tips to make your pet's life better.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#recent-posts" target="_blank" rel="noopener">View All Posts</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

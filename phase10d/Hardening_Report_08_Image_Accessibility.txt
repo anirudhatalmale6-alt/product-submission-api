@@ -1,0 +1,111 @@
+SITE HARDENING REPORT 8: IMAGE / MEDIA / ACCESSIBILITY
+PetHub Online — pethubonline.com
+Generated: 2026-05-27
+==========================================================================
+
+SCOPE
+-----
+Sitewide image audit: featured images, alt text, hero images,
+filenames, and media quality across all published content.
+
+==========================================================================
+AUDIT METRICS
+==========================================================================
+Items audited:           110 (86 posts + 24 pages)
+Total images in content: 369
+Missing featured images: 52
+Missing alt text:         0 (clean)
+Weak/generic alt text:    0 (clean)
+ChatGPT-named images:    15
+Posts missing hero image: 84
+
+==========================================================================
+1. MISSING FEATURED IMAGES (52 items)
+==========================================================================
+Nearly half of all published content has no WordPress featured image set.
+
+Affected categories:
+  - ALL 28 educational posts (Phase 10C + 10D)
+  - ALL 24 hub/category pages
+  - Homepage, legal pages, Contact, About Us
+
+Hub pages have cover blocks in their content but no featured_media set.
+Educational posts have no images at all.
+
+ACTION: Set featured images on all published content.
+        Priority: 28 educational posts (currently pure text).
+
+==========================================================================
+2. ALT TEXT — CLEAN
+==========================================================================
+All 369 existing images have proper alt text.
+No generic "image", "photo", or filename-style alt text found.
+No missing alt attributes.
+
+This is good and must be maintained for all future content.
+
+==========================================================================
+3. CHATGPT FILENAME IMAGES (15 instances)
+==========================================================================
+15 images have AI-tool-revealing filenames:
+
+  Homepage (7 images):
+    ChatGPT-Image-May-20-2026-01_06_43-PM.png (and similar)
+
+  Dog Beds hub (7 images):
+    ChatGPT-Image-May-XX-2026-XX_XX_XX-XX.png (and similar)
+
+  Contact page (1 image):
+    ChatGPT-Image-May-19-2026-09_31_51-PM.png
+
+These filenames:
+  - Reveal AI-generated content to anyone inspecting source
+  - Look unprofessional in media library
+  - May appear in image search results with AI-tool attribution
+
+ACTION: Re-upload these 15 images with descriptive filenames
+        (e.g., "pet-hub-online-about-hero.png")
+
+==========================================================================
+4. EDUCATIONAL POSTS — ZERO IMAGES (28 posts)
+==========================================================================
+ALL educational/supporting posts have zero body images:
+
+Phase 10C posts (16):
+  4406, 4407, 4408, 4409, 4410, 4415 (Cat Toys spokes)
+  4411, 4412, 4413, 4414 (Dog Harnesses spokes)
+  4563, 4566, 4568, 4570 (Dog Care spokes)
+  4571, 4573, 4574, 4576 (Pet Care spokes)
+
+Phase 10D posts (12):
+  4783, 4784, 4785, 4786 (Dog Beds spokes)
+  4787, 4788, 4789, 4790 (Dog Toys spokes)
+  4791, 4792 (Training/Puppy spokes)
+
+These are purely text content. Adding relevant images would:
+  - Improve user engagement and time-on-page
+  - Support image search visibility
+  - Make pages feel more professional and complete
+  - Meet the content presentation standard requirement
+
+ACTION: Add 2-3 relevant images per educational post.
+        This requires sourcing/generating appropriate images first.
+
+==========================================================================
+5. HERO IMAGE GAP
+==========================================================================
+84 of 86 posts have no image in the first 1000 characters.
+The 2 with early images are product review posts with product photos.
+
+Hub pages generally have cover blocks (hero images) but posts do not.
+
+ACTION: Add hero/featured images near the top of posts,
+        particularly the 28 educational posts.
+
+==========================================================================
+RECOMMENDATIONS
+==========================================================================
+1. HIGH: Set featured images on 28 educational posts
+2. HIGH: Re-upload 15 ChatGPT-named images with proper filenames
+3. MEDIUM: Add 2-3 body images per educational post
+4. LOW: Set featured images on hub pages (they have cover blocks already)

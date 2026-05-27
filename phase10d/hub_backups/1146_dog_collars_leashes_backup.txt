@@ -1,0 +1,1043 @@
+<!-- wp:html -->
+<div class="affiliate-disclosure" style="background:#f8f9fa;border-left:4px solid #0073aa;padding:12px 16px;margin-bottom:24px;font-size:0.92em;color:#555;line-height:1.5;">
+<strong>Affiliate Disclosure:</strong> Some links on this page are affiliate links. If you click an affiliate link and make a purchase, we may earn a small commission at no extra cost to you. We only recommend products we would use ourselves and that meet our editorial standards. <a href="https://pethubonline.com/affiliate-disclosure/" style="color:#0073aa;">Learn more</a>.
+</div>
+<!-- /wp:html -->
+
+
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.9em"}}} -->
+<p style="font-size:0.9em;color:#555;"><strong>Last Updated:</strong> 27 May 2026<br/><strong>Website:</strong> pethubonline.com<br/><strong>Business:</strong> Pet Hub Online</p>
+<!-- /wp:paragraph -->
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:cover -->
+<div class="wp-block-cover alignfull is-light remove-top-gap" style="margin-bottom:40px;padding-top:10px;padding-bottom:10px;min-height:100vh;aspect-ratio:unset;"><img data-attachment-id="1976" data-permalink="https://pethubonline.com/dog-collars-leashes/dog-collars-and-leashes-cover-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-cover-image.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="dog collars and leashes cover image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-cover-image.png?fit=1024%2C683&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1536" height="1024" data-attachment-id="1976" data-permalink="https://pethubonline.com/dog-collars-leashes/dog-collars-and-leashes-cover-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-cover-image.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="dog collars and leashes cover image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-cover-image.png?fit=1024%2C683&amp;ssl=1" alt="Dog Collars And Leashes Cover Image" class="wp-block-cover__image-background wp-image-1976 size-full" data-object-fit="cover" data-object-position="26% 43%" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-cover-image.png?resize=1536%2C1024&#038;ssl=1" style="object-position:26% 43%" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-cover-image.png?w=1536&amp;ssl=1 1536w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-cover-image.png?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-cover-image.png?resize=1024%2C683&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-cover-image.png?resize=768%2C512&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-cover-image.png?resize=1200%2C800&amp;ssl=1 1200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#f8f8f8"></span></p>
+<div class="wp-block-cover__inner-container is-layout-constrained wp-block-cover-is-layout-constrained">
+<!-- wp:group -->
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color wp-elements-37b5b6cf39327c2338dc79ee8cbb47d8" style="color:#222222;padding-top:0;padding-right:0px;padding-bottom:0;padding-left:0px;font-size:56px;font-style:normal;font-weight:700;line-height:1.2">Better Walks Start with Better Gear</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-left alignwide has-text-color has-link-color wp-elements-9f2735cdc658c4756af82add85b03231 wp-block-paragraph" style="color:#444444;padding-top:20px;padding-right:0px;padding-bottom:20px;padding-left:0px;font-size:30px;font-style:normal;font-weight:600">Comfortable dog collars and leads for daily walks.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons alignwide has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-e1881eec wp-block-buttons-is-layout-flex" style="padding-top:50px;padding-right:16px;padding-bottom:50px;padding-left:16px;font-size:20px">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#dog-collars">Shop Dog Collars</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#bestsellers">View Top Picks</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+</div>
+<!-- /wp:cover -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Table of Contents</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><a href="#why-the-right-dog-collar-amp-leash-matters">Why the Right Dog Collar &amp; Leash Matters</a></li>
+<li><a href="#top-5-best-dog-collars-amp-leashes">Top 5 Best Dog Collars &amp; Leashes</a></li>
+<li><a href="#shop-by-collar-amp-leash-type">Shop by Collar &amp; Leash Type</a></li>
+<li><a href="#why-pet-owners-trust-pet-hub-online">Why Pet Owners Trust Pet Hub Online</a></li>
+<li><a href="#who-this-page-is-for">Who This Page Is For</a></li>
+<li><a href="#dog-collars-amp-leashes-faq">Dog Collars &amp; Leashes FAQ</a></li>
+<li><a href="#how-to-choose-the-right-collar-amp-leash">How to Choose the Right Collar &amp; Leash</a></li>
+<li><a href="#useful-tips-for-every-pet-owner">Useful Tips for Every Pet Owner</a></li>
+<li><a href="#explore-more-dog-essentials">Explore More Dog Essentials</a></li>
+<li><a href="#ready-to-upgrade-your-dog-s-walking-gear">Ready to Upgrade Your Dog&#8217;s Walking Gear?</a></li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide is-layout-constrained wp-container-core-group-is-layout-653a7e54 wp-block-group-is-layout-constrained" style="padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-053ec54d99ad8e06a77e6f23073cb71b" id="why-the-right-dog-collar-amp-leash-matters" style="color:#222222;padding-top:22px;padding-bottom:22px;font-size:32px;font-style:normal;font-weight:700">Why the Right Dog Collar &amp; Leash Matters</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-5f3ca4c0ed0abfe60e3238dc28d6e341 wp-block-paragraph" style="color:#444444;padding-top:22px;padding-bottom:22px;font-size:18px">Choosing the right <strong>dog collar and leash</strong> isn’t just about style — it’s about <strong>safety</strong>, <strong>control</strong>, and <strong>comfort</strong> for your dog. The right set can make walks more enjoyable, prevent accidents, and ensure your dog stays <strong>secure</strong> while out and about.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-e8f5535782e75cd545c149b65fb9e897 wp-block-paragraph" style="color:#444444;padding-top:22px;padding-bottom:22px;font-size:18px">Whether your dog is energetic, calm, small, or large, this guide will help you find <strong>dog collars and leashes</strong> that are <strong>durable</strong>, <strong>adjustable</strong>, and perfectly suited to their size, temperament, and daily activity. We have made it easier for you to <strong><a href="#dog-collars">Shop by type.</a></strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-3ad234054a006a17af490b0992af49eb wp-block-paragraph" style="color:#444444;padding-top:22px;padding-bottom:22px;font-size:18px">Scroll down to explore our <strong><a href="#bestsellers">top 5 best dog collars and leashes</a></strong> and shop by style or material to find the perfect match for your furry friend.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" id="bestsellers" style="padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color wp-elements-3fffddba75c804e0e94b7d61aadd0ecc" id="top-5-best-dog-collars-amp-leashes" style="color:#111111;margin-bottom:40px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Top 5 Best Dog Collars &amp; Leashes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-left wp-block-paragraph" style="font-size:18px">These are our top picks for durable, safe, and stylish collars and leashes for all dog sizes and breeds.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-52b7c8f9 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-68dcf5ba wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="2252" data-permalink="https://pethubonline.com/dog-collars-leashes/63b204be-03ae-4cbe-a385-10aa3a49d51c/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/63b204be-03ae-4cbe-a385-10aa3a49d51c.png?fit=1296%2C1214&amp;ssl=1" data-orig-size="1296,1214" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="63b204be-03ae-4cbe-a385-10aa3a49d51c" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/63b204be-03ae-4cbe-a385-10aa3a49d51c.png?fit=1024%2C959&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1296" height="1214" data-attachment-id="2252" data-permalink="https://pethubonline.com/dog-collars-leashes/63b204be-03ae-4cbe-a385-10aa3a49d51c/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/63b204be-03ae-4cbe-a385-10aa3a49d51c.png?fit=1296%2C1214&amp;ssl=1" data-orig-size="1296,1214" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="63b204be-03ae-4cbe-a385-10aa3a49d51c" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/63b204be-03ae-4cbe-a385-10aa3a49d51c.png?fit=1024%2C959&amp;ssl=1" alt="Stylish dog collars and leashes for everyday walks" class="wp-image-2252" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/63b204be-03ae-4cbe-a385-10aa3a49d51c.png?resize=1296%2C1214&#038;ssl=1" style="aspect-ratio:1.0676284941388638;width:176px;height:auto" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/63b204be-03ae-4cbe-a385-10aa3a49d51c.png?w=1296&amp;ssl=1 1296w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/63b204be-03ae-4cbe-a385-10aa3a49d51c.png?resize=300%2C281&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/63b204be-03ae-4cbe-a385-10aa3a49d51c.png?resize=1024%2C959&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/63b204be-03ae-4cbe-a385-10aa3a49d51c.png?resize=768%2C719&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/63b204be-03ae-4cbe-a385-10aa3a49d51c.png?resize=1200%2C1124&amp;ssl=1 1200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-2407f20a490efa1702a7623b9d3d7592" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Reflective Dog Collar – Padded Breathable →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-b1d32af0d5ca8cb005f2040c26be7632 wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A soft, reflective collar that combines comfort, safety, and style for dogs of all sizes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-6c5335bec0cca725f44aeebeb6c5779c" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Breathable neoprene padding</strong> prevents chafing and keeps your dog comfortable on long walks.</li>
+<li><strong>Reflective stitching</strong> enhances visibility in low‑light conditions for safer evening outings.</li>
+<li><strong>Durable nylon webbing</strong> resists wear and tear while staying lightweight.</li>
+<li><strong>Quick‑release buckle and metal D‑ring</strong> make it easy to clip on or off.</li>
+<li><strong>Adjustable fit</strong> suitable for small, medium, and large breeds.</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://amzn.to/4urbD4I" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-68dcf5ba wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img data-attachment-id="2250" data-permalink="https://pethubonline.com/dog-collars-leashes/51e09633-ad6b-4326-a629-1528102a346a/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/51e09633-ad6b-4326-a629-1528102a346a.png?fit=1254%2C1254&amp;ssl=1" data-orig-size="1254,1254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="51e09633-ad6b-4326-a629-1528102a346a" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/51e09633-ad6b-4326-a629-1528102a346a.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2250" data-permalink="https://pethubonline.com/dog-collars-leashes/51e09633-ad6b-4326-a629-1528102a346a/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/51e09633-ad6b-4326-a629-1528102a346a.png?fit=1254%2C1254&amp;ssl=1" data-orig-size="1254,1254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="51e09633-ad6b-4326-a629-1528102a346a" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/51e09633-ad6b-4326-a629-1528102a346a.png?fit=1024%2C1024&amp;ssl=1" alt="Durable dog collars in various sizes and materials" class="wp-image-2250" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/51e09633-ad6b-4326-a629-1528102a346a.png?resize=1024%2C1024&#038;ssl=1" style="width:162px;height:auto" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/51e09633-ad6b-4326-a629-1528102a346a.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/51e09633-ad6b-4326-a629-1528102a346a.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/51e09633-ad6b-4326-a629-1528102a346a.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/51e09633-ad6b-4326-a629-1528102a346a.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/51e09633-ad6b-4326-a629-1528102a346a.png?resize=1200%2C1200&amp;ssl=1 1200w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/51e09633-ad6b-4326-a629-1528102a346a.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/51e09633-ad6b-4326-a629-1528102a346a.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/51e09633-ad6b-4326-a629-1528102a346a.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/51e09633-ad6b-4326-a629-1528102a346a.png?resize=200%2C200&amp;ssl=1 200w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/51e09633-ad6b-4326-a629-1528102a346a.png?w=1254&amp;ssl=1 1254w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-be91adca6046b22d1be8b24d0b314651" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Padded Handle Dog Lead 1.2M →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-33c70e6fee3bf5f22629b370eeecfdb8 wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A comfortable, reflective lead designed for secure, everyday walks and training.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-0aaa9445f40fe7385d0345e30d2a3aa7" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>1.2 m length</strong> for close, controlled walking</li>
+<li><strong>Double‑sided reflective striping</strong> for visibility at night</li>
+<li><strong>Soft padded handle</strong> to protect your hand from pulling</li>
+<li><strong>Strong nylon construction</strong> for reliability and durability</li>
+<li><strong>Sturdy metal clip</strong> for a secure connection to the collar</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://amzn.to/4ullLf9" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-52b7c8f9 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-68dcf5ba wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img data-attachment-id="2254" data-permalink="https://pethubonline.com/dog-collars-leashes/35596300-f4a9-4f0f-ab11-966d84f4d181/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/35596300-f4a9-4f0f-ab11-966d84f4d181.png?fit=1254%2C1254&amp;ssl=1" data-orig-size="1254,1254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="35596300-f4a9-4f0f-ab11-966d84f4d181" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/35596300-f4a9-4f0f-ab11-966d84f4d181.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2254" data-permalink="https://pethubonline.com/dog-collars-leashes/35596300-f4a9-4f0f-ab11-966d84f4d181/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/35596300-f4a9-4f0f-ab11-966d84f4d181.png?fit=1254%2C1254&amp;ssl=1" data-orig-size="1254,1254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="35596300-f4a9-4f0f-ab11-966d84f4d181" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/35596300-f4a9-4f0f-ab11-966d84f4d181.png?fit=1024%2C1024&amp;ssl=1" alt="Best dog collars for training and daily use" class="wp-image-2254" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/35596300-f4a9-4f0f-ab11-966d84f4d181.png?resize=1024%2C1024&#038;ssl=1" style="width:171px;height:auto" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/35596300-f4a9-4f0f-ab11-966d84f4d181.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/35596300-f4a9-4f0f-ab11-966d84f4d181.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/35596300-f4a9-4f0f-ab11-966d84f4d181.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/35596300-f4a9-4f0f-ab11-966d84f4d181.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/35596300-f4a9-4f0f-ab11-966d84f4d181.png?resize=1200%2C1200&amp;ssl=1 1200w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/35596300-f4a9-4f0f-ab11-966d84f4d181.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/35596300-f4a9-4f0f-ab11-966d84f4d181.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/35596300-f4a9-4f0f-ab11-966d84f4d181.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/35596300-f4a9-4f0f-ab11-966d84f4d181.png?resize=200%2C200&amp;ssl=1 200w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/35596300-f4a9-4f0f-ab11-966d84f4d181.png?w=1254&amp;ssl=1 1254w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-aefa0c3a226f9a6a154213892d2213da" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Slip Lead for Dogs – 1.8 m Rope →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-d365a8d408ba50f87936b205c6fbf51d wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A simple slip‑on rope lead that combines collar and leash in one easy setup.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-8fb74af01f0aae2e3b9fdcd22f4f1bce" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>No separate collar needed</strong> — slips on over the head</li>
+<li><strong>1.8 m climbers‑style rope</strong> for strength and flexibility</li>
+<li><strong>Reflective stitching</strong> to help keep walks safer in low light</li>
+<li><strong>Adjustable slip loop</strong> to prevent backing out</li>
+<li><strong>Weather‑resistant materials</strong> for all‑season use</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://amzn.to/3OXCLJy" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-68dcf5ba wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img data-attachment-id="2264" data-permalink="https://pethubonline.com/dog-collars-leashes/34cd31d0-5c40-4d5a-88b8-202bae1c00e1/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/34cd31d0-5c40-4d5a-88b8-202bae1c00e1.png?fit=1254%2C1254&amp;ssl=1" data-orig-size="1254,1254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="34cd31d0-5c40-4d5a-88b8-202bae1c00e1" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/34cd31d0-5c40-4d5a-88b8-202bae1c00e1.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2264" data-permalink="https://pethubonline.com/dog-collars-leashes/34cd31d0-5c40-4d5a-88b8-202bae1c00e1/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/34cd31d0-5c40-4d5a-88b8-202bae1c00e1.png?fit=1254%2C1254&amp;ssl=1" data-orig-size="1254,1254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="34cd31d0-5c40-4d5a-88b8-202bae1c00e1" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/34cd31d0-5c40-4d5a-88b8-202bae1c00e1.png?fit=1024%2C1024&amp;ssl=1" alt="Premium dog collars with matching leash sets" class="wp-image-2264" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/34cd31d0-5c40-4d5a-88b8-202bae1c00e1.png?resize=1024%2C1024&#038;ssl=1" style="width:177px;height:auto" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/34cd31d0-5c40-4d5a-88b8-202bae1c00e1.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/34cd31d0-5c40-4d5a-88b8-202bae1c00e1.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/34cd31d0-5c40-4d5a-88b8-202bae1c00e1.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/34cd31d0-5c40-4d5a-88b8-202bae1c00e1.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/34cd31d0-5c40-4d5a-88b8-202bae1c00e1.png?resize=1200%2C1200&amp;ssl=1 1200w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/34cd31d0-5c40-4d5a-88b8-202bae1c00e1.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/34cd31d0-5c40-4d5a-88b8-202bae1c00e1.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/34cd31d0-5c40-4d5a-88b8-202bae1c00e1.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/34cd31d0-5c40-4d5a-88b8-202bae1c00e1.png?resize=200%2C200&amp;ssl=1 200w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/34cd31d0-5c40-4d5a-88b8-202bae1c00e1.png?w=1254&amp;ssl=1 1254w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-80c1ca5d4032259fb7c20c317824bf6f" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">No‑Pull Dog Harness – Reflective, 2 Leash Clips →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-25e92178f836bb169c9aa146910809bc wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A padded, no‑pull harness that improves control while keeping pressure off the neck.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-be907c3c19164012fddb4e8b18b7272c" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Front and back leash clips</strong> for training or relaxed walks</li>
+<li><strong>No‑choke design</strong> that avoids pressure on the throat</li>
+<li><strong>Soft padded panels</strong> for all‑day comfort</li>
+<li><strong>Reflective trim</strong> for better visibility at night</li>
+<li><strong>Top handle</strong> for quick, close control in busy areas</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://amzn.to/4999pyC" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-be441220 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-large is-resized has-custom-border" style="margin-bottom:16px"><img data-attachment-id="2283" data-permalink="https://pethubonline.com/dog-collars-leashes/ae629bc6-f588-4ca3-a039-e8469bbe7c75/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ae629bc6-f588-4ca3-a039-e8469bbe7c75.png?fit=1552%2C1013&amp;ssl=1" data-orig-size="1552,1013" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="ae629bc6-f588-4ca3-a039-e8469bbe7c75" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ae629bc6-f588-4ca3-a039-e8469bbe7c75.png?fit=1024%2C668&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="668" data-attachment-id="2283" data-permalink="https://pethubonline.com/dog-collars-leashes/ae629bc6-f588-4ca3-a039-e8469bbe7c75/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ae629bc6-f588-4ca3-a039-e8469bbe7c75.png?fit=1552%2C1013&amp;ssl=1" data-orig-size="1552,1013" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="ae629bc6-f588-4ca3-a039-e8469bbe7c75" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ae629bc6-f588-4ca3-a039-e8469bbe7c75.png?fit=1024%2C668&amp;ssl=1" alt="Adjustable dog collars suitable for all breeds" class="wp-image-2283" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ae629bc6-f588-4ca3-a039-e8469bbe7c75-1024x668.png?resize=1024%2C668&#038;ssl=1" style="border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-left-radius:8px;border-bottom-right-radius:8px;aspect-ratio:1.5321390096955672;width:274px;height:auto" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ae629bc6-f588-4ca3-a039-e8469bbe7c75.png?resize=1024%2C668&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ae629bc6-f588-4ca3-a039-e8469bbe7c75.png?resize=300%2C196&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ae629bc6-f588-4ca3-a039-e8469bbe7c75.png?resize=768%2C501&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ae629bc6-f588-4ca3-a039-e8469bbe7c75.png?resize=1536%2C1003&amp;ssl=1 1536w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ae629bc6-f588-4ca3-a039-e8469bbe7c75.png?resize=1200%2C783&amp;ssl=1 1200w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ae629bc6-f588-4ca3-a039-e8469bbe7c75.png?w=1552&amp;ssl=1 1552w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-74ed8fe76fb0e72e03a28b31e154b6b7" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">360° Tangle‑Free Retractable Dog Lead 5m →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-df67ee64c4799393b58ae02cda4cf5fb wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A retractable tape lead that offers freedom to roam with smooth, one‑handed control.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list" style="font-size:16px;line-height:1.6">
+<li><strong>5 m strong nylon tape</strong> for extra exploring distance</li>
+<li><strong>360° tangle‑free design</strong> to prevent twisting and snagging</li>
+<li><strong>Quick lock/unlock button</strong> for instant control</li>
+<li><strong>Ergonomic anti‑slip handle</strong> for comfortable grip</li>
+<li><strong>Rated for dogs up to 25 kg</strong> for everyday use</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://amzn.to/48F44Pz" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-09343060 wp-block-group-is-layout-constrained" style="padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-fa0cd4ed771741e4ea20c296c97bef5a" id="useful-tips-for-every-pet-owner" style="color:#0073aa;margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Useful Tips for Every Pet Owner</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-9be9a70ecf21de9655b6519b254bb03e wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:24px;font-size:18px">From proper fitting to material selection and seasonal care, these practical tips will help you get the most out of your dog&#8217;s collar and leash setup.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-f4cc456b19c61a5992c1ae6283ee1f28" style="color:#0073aa;margin-top:28px;margin-bottom:12px;font-size:22px;font-style:normal;font-weight:600">Proper Fitting Guide</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-1e893f421c138a6fd12251dd75617544 wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Measuring your pet&#8217;s neck circumference before purchasing dog collars online prevents the hassle of returns. Use a soft tape measure positioned where the collar naturally sits, midway between the ears and shoulders, and add two centimetres for comfort. Most manufacturers provide detailed size guides with their products, so matching your measurement to the correct range ensures a snug and safe fit from the first wear.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-c9c36bb07c7f8a947c162b25b2ba976a wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Lead length affects walking control and your pet&#8217;s experience. A standard 1.2-metre lead suits pavement walking and urban environments where close control matters. Double-ended leads that clip to both the front and back of a harness offer maximum steering for strong pullers without the discomfort of collars alone bearing the strain.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-32d362527320ad6fa53813efa2429819" style="color:#0073aa;margin-top:28px;margin-bottom:12px;font-size:22px;font-style:normal;font-weight:600">Materials and Replacement</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-ce7ac655ac9785c43bef58bbb9111a01 wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Nylon remains the most popular material for dog collars because it is lightweight, washable, and available in countless colours. Leather collars develop character with age and suit owners who prefer a classic appearance, though they require occasional conditioning to prevent cracking. Biothane, a waterproof coated webbing, has surged in popularity among active owners because it resists mud, sand, and water without absorbing odours.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-9362ca83cda0ca4fd5ac6992c697e054 wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Replace dog collars as soon as you notice fraying, faded stitching, or a weakening buckle. Hardware failure during a walk poses a serious escape risk, especially near roads. Metal D-rings and clasps should move freely without sticking or showing rust. A quick weekly check during your grooming routine catches deterioration early and gives you time to order replacements before the current one fails.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-1a7ea072e0a85fe3816e10bc188786cb" style="color:#0073aa;margin-top:28px;margin-bottom:12px;font-size:22px;font-style:normal;font-weight:600">Visibility and Night Safety</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-4056e79626392fba46a5604cb5acd468 wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Reflective and LED dog collars add a crucial layer of visibility for evening and early-morning walks. Reflective stitching bounces light from car headlamps back to the driver, while USB-rechargeable LED strips provide active illumination visible from over 500 metres. Combining reflective collars with a matching lead creates a complete high-visibility setup that keeps both you and your companion safe during low-light outings.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-4dce2ec899823d2f890fa315a73cbb12" style="color:#0073aa;margin-top:28px;margin-bottom:12px;font-size:22px;font-style:normal;font-weight:600">Personalisation and Seasonal Care</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-785ac21cbacbf2a28a00a2ba8c9a60d2 wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Personalisation options let you combine safety with style. Embroidered name and number directly on the fabric eliminates the risk of tags falling off during rough play. Engraved slide-on plates offer a slimline alternative that sits flat against the neck. Choosing bright colours or unique patterns also makes your pet instantly recognisable at the park, adding a practical identification benefit alongside the aesthetic appeal.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-8b12925f70c5136d703e08a31311a964 wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Seasonal adjustments ensure year-round comfort. A lighter, breathable webbing collar suits summer outings, while a padded neoprene-lined option prevents chafing under thick winter coats. Waterproof finishes are ideal for pets who love swimming or walking in the rain, drying quickly and resisting the odour buildup that plagues fabric alternatives. Adapting your selection to the conditions keeps your companion comfortable across every season.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-081d92b6a9fe2123bd5d1a77cd599e88" style="color:#0073aa;margin-top:28px;margin-bottom:12px;font-size:22px;font-style:normal;font-weight:600">When to Upgrade Your Walking Setup</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-e6d6d0fb998d4d97aa0f4a900d6d2461 wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Even the best dog collars and leads have a limited lifespan. If your dog has outgrown their current collar, if the buckle no longer clicks securely, or if the stitching has started to fray, it is time to invest in a replacement. Puppies in particular grow rapidly and may need a collar adjustment every few weeks during their first year. Keeping a spare collar on hand ensures you are never caught off guard when the old one wears out.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-68d570ff1ebeb2f2976e3dda25f5799a wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Consider upgrading when your walking routine changes too. A new puppy joining the household, a move to a busier neighbourhood, or a switch from city pavements to country trails all call for different gear. Double-clip leads, hands-free waist belts, and multi-dog couplers can transform your walking experience once you identify your specific needs. Reviewing your setup every six months keeps it aligned with your dog&#8217;s behaviour and your lifestyle.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-5fa0ff23b376f6b0073a737454cabaee wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Browse our full selection of leads, harnesses, and accessories at Pet Hub Online to find the perfect match for your companion&#8217;s size, breed, and lifestyle.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" id="dog-collars" style="padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-acb523ee8469bc04edc96cee06270015" id="shop-by-collar-amp-leash-type" style="color:#1a1a1a;font-size:34px;font-style:normal;font-weight:700;line-height:1.2">Shop by Collar &amp; Leash Type</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-51e967b2199225c89cb99d3ee3303b71 wp-block-paragraph" style="color:#4a4a4a;margin-top:22px;margin-bottom:22px;padding-top:22px;padding-bottom:22px;font-size:18px">Find the perfect collar and leash combination for your dog’s size, breed, and activity level.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-27ec456a wp-block-columns-is-layout-flex" id="bed-categories" style="margin-top:0px;margin-bottom:0px;padding-top:22px;padding-bottom:22px">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-link-color wp-elements-98193381cf0a9ffafbd2891e12fababa is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><a href="https://amzn.to/42LliHq" target="_blank" rel="sponsored noopener noreferrer"><img data-attachment-id="1988" data-permalink="https://pethubonline.com/dog-collars-leashes/dog-collars-icon/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-icon.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="dog collars icon" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-icon.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="1988" data-permalink="https://pethubonline.com/dog-collars-leashes/dog-collars-icon/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-icon.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="dog collars icon" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-icon.png?fit=1024%2C1024&amp;ssl=1" alt="Reflective dog collars for safe nighttime walks" class="wp-image-1988" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-icon.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-icon.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-icon.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-icon.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-icon.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-icon.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-icon.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-icon.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-icon.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-7287661157a06cc9158e334f66468329" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3"><a href="https://amzn.to/42LliHq" target="_blank" rel="sponsored noopener noreferrer">Everyday Collars →</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-8f162fc1170dd522d6424414c5b8ae2c wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Comfortable, durable collars designed for daily wear and secure ID tagging.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><a href="https://amzn.to/4uwhXYR" target="_blank" rel="sponsored noopener noreferrer"><img data-attachment-id="1999" data-permalink="https://pethubonline.com/dog-collars-leashes/training-collar-2/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="training collar 2" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="1999" data-permalink="https://pethubonline.com/dog-collars-leashes/training-collar-2/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="training collar 2" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?fit=1024%2C1024&amp;ssl=1" alt="Personalised dog collars with custom name tags" class="wp-image-1999" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-576fb49b26eacbc66e5f5ef3fcdd6f9f" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3"><a href="https://amzn.to/4uwhXYR" target="_blank" rel="sponsored noopener noreferrer">Training Collars →</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-dbb7ee1af971d5db53f5c34f907fda86 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Purpose‑built collars that support safer, more effective training and better control.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><a href="https://amzn.to/4w9qAdj" target="_blank" rel="sponsored noopener noreferrer"><img data-attachment-id="1997" data-permalink="https://pethubonline.com/dog-collars-leashes/standard-lead/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/standard-lead.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="standard lead" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/standard-lead.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="1997" data-permalink="https://pethubonline.com/dog-collars-leashes/standard-lead/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/standard-lead.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="standard lead" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/standard-lead.png?fit=1024%2C1024&amp;ssl=1" alt="Heavy-duty dog collars for large and strong breeds" class="wp-image-1997" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/standard-lead.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/standard-lead.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/standard-lead.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/standard-lead.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/standard-lead.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/standard-lead.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/standard-lead.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/standard-lead.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/standard-lead.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-51c7db2c15d17a861771bedd9ffdf67b" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3"><a href="https://amzn.to/4w9qAdj" target="_blank" rel="sponsored noopener noreferrer">Standard Leads →</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-87720c3833a882841ea9b05a803ab825 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Strong, reliable leads for everyday walks, offering steady control and comfort.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="padding-top:0px;padding-bottom:0px">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><a href="https://amzn.to/4epSVpw" target="_blank" rel="sponsored noopener noreferrer"><img data-attachment-id="1991" data-permalink="https://pethubonline.com/dog-collars-leashes/retractable-lead-icon/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/retractable-lead-icon.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="retractable lead icon" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/retractable-lead-icon.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="1991" data-permalink="https://pethubonline.com/dog-collars-leashes/retractable-lead-icon/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/retractable-lead-icon.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="retractable lead icon" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/retractable-lead-icon.png?fit=1024%2C1024&amp;ssl=1" alt="Comfortable dog collars made from soft nylon and leather" class="wp-image-1991" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/retractable-lead-icon.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/retractable-lead-icon.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/retractable-lead-icon.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/retractable-lead-icon.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/retractable-lead-icon.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/retractable-lead-icon.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/retractable-lead-icon.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/retractable-lead-icon.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/retractable-lead-icon.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-beb1a5c6555c3dfec3e813625d74d721" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3"><a href="https://amzn.to/4epSVpw" target="_blank" rel="sponsored noopener noreferrer">Retractable Leads →</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-95f97211daddc7958de453bdfa8dabda wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Flexible, adjustable leads that give dogs more freedom while keeping you in control.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><a href="https://amzn.to/4taMWbu" target="_blank" rel="sponsored noopener noreferrer"><img data-attachment-id="1995" data-permalink="https://pethubonline.com/dog-collars-leashes/long-lines-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/long-lines-image.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="long lines image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/long-lines-image.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="1995" data-permalink="https://pethubonline.com/dog-collars-leashes/long-lines-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/long-lines-image.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="long lines image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/long-lines-image.png?fit=1024%2C1024&amp;ssl=1" alt="Top-rated dog collars recommended by dog trainers" class="wp-image-1995" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/long-lines-image.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/long-lines-image.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/long-lines-image.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/long-lines-image.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/long-lines-image.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/long-lines-image.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/long-lines-image.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/long-lines-image.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/long-lines-image.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-a4c61394c9c3241de66550bb4c65e028" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3"><a href="https://amzn.to/4taMWbu" target="_blank" rel="sponsored noopener noreferrer">Long Lines →</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-330db2321df454acd4c8ef2f544c482e wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Extra‑length leads ideal for recall training, roaming, and controlled outdoor freedom.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><a href="https://amzn.to/48A9viD" target="_blank" rel="sponsored noopener noreferrer"><img data-attachment-id="1996" data-permalink="https://pethubonline.com/dog-collars-leashes/harness-icon/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/harness-icon.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="harness icon" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/harness-icon.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="1996" data-permalink="https://pethubonline.com/dog-collars-leashes/harness-icon/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/harness-icon.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="harness icon" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/harness-icon.png?fit=1024%2C1024&amp;ssl=1" alt="Designer dog collars for fashion-forward pet owners" class="wp-image-1996" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/harness-icon.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/harness-icon.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/harness-icon.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/harness-icon.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/harness-icon.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/harness-icon.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/harness-icon.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/harness-icon.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/harness-icon.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-42bdbd48a56c39f4dcdf18a57f94e611" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3"><a href="https://amzn.to/48A9viD" target="_blank" rel="sponsored noopener noreferrer">Harnesses →</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-04a3067f7a5f31f3c4653fd60d797321 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Supportive, no‑pull designs that improve comfort and reduce strain during walks.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center" id="why-pet-owners-trust-pet-hub-online" style="margin-bottom:40px;font-size:32px;font-style:normal;font-weight:700">Why Pet Owners Trust Pet Hub Online</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<!-- wp:group -->
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🛡️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Research-Based Guides</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph">Every collar and lead guide is based on manufacturer data, published reviews, and practical considerations for comfort, fit, and control.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<!-- wp:group -->
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">⭐</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Trusted by Pet Owners</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="font-size:16px">Thousands of pet parents rely on our guides to make confident, informed buying decisions.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<!-- wp:group -->
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🏅</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Expert‑Verified Quality</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph">Each product is checked for secure hardware, strong stitching, and long‑term reliability.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:50px;padding-bottom:50px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center alignwide" id="who-this-page-is-for" style="margin-bottom:25px;font-size:32px;font-style:normal;font-weight:700">Who This Page Is For</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center alignwide wp-block-paragraph" style="margin-bottom:30px;font-size:18px">Whether you’re training, walking, or exploring, each collar and lead here is made to keep your dog secure and stylish. Every product is evaluated based on durability, fit, and ease of use — so you can focus on enjoying time together.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-52b7c8f9 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🐾 Everyday Walkers</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">Perfect for daily strolls and quick outings. These collars and leads combine comfort with reliability, giving you peace of mind every time you clip in.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🎯 Trainers &amp; Active Owners</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">For those focused on control and technique. Our training collars and long lines help reinforce good habits while keeping your dog safe and responsive.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🌿 Adventurers &amp; Explorers</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">Ideal for hikes, travel, and outdoor play. Lightweight yet strong gear designed to handle mud, rain, and miles of adventure without compromise.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-background is-layout-constrained wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color wp-elements-b771268a812c17a2b32b2d55b266be56" id="dog-collars-amp-leashes-faq" style="color:#1a1a1a;margin-bottom:25px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Dog Collars &amp; Leashes FAQ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary><strong>Are collars or harnesses better for daily walks?</strong></summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Both work well — collars are simple and lightweight, while harnesses offer more control for pullers.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary><strong>How tight should a dog collar be?</strong></summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Use the two‑finger rule: snug enough to stay secure, loose enough to fit two fingers underneath.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary><strong>What lead length is best for training?</strong></summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Short leads (1–1.2m) for heel work; long lines (5–10m) for recall training.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary><strong>Are retractable leads safe?</strong></summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">They’re great for open spaces but require awareness — always lock the lead near roads or crowds.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary><strong>How often should I replace a collar or lead?</strong></summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Check regularly for fraying, rust, or weakened stitching and replace at the first signs of wear.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-62c0d5871763a99caf14a0ae1af1cfca" id="how-to-choose-the-right-collar-amp-leash" style="color:#0073aa;margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">How to Choose the Right Collar &amp; Leash</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-c9f19a44685ec72d1310e04fd9e63684 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:18px">Choosing the right collar and leash isn’t just about looks — it’s about comfort, control, and safety. The right setup helps your dog walk confidently while giving you reliable handling in every situation. Here’s how to find the perfect match for your dog’s size, habits, and lifestyle.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-a80bcc97a306e21713288dac9632a3ae" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🐾 Match the Collar &amp; Leash to Lifestyle &#8211; Everyday Walks</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-1ee99b21c4b70472a8f850efd9ae4927 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Most dogs just need something comfortable, reliable, and easy to clip on. These options are perfect for daily strolls and relaxed outings.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-22fdba094b979972a4f5eaa88634c2ed" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Soft, durable nylon or padded collars</li>
+<li>Standard leads for balanced control</li>
+<li>Quick‑release buckles for convenience</li>
+<li>Works for most breeds and sizes</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-86ced1d38067abea942d11936b9cd7c7 wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:12px;font-size:16px;line-height:1.6">Finding the perfect collar starts with proper sizing. Measure your dog&#8217;s neck and add two finger-widths of space — collars should be snug but not tight. For growing puppies, adjustable collars are ideal since you can resize them as your pup grows. Different breeds suit different styles: flat buckle collars work well for most breeds, while martingale collars are better for dogs with narrow heads like Greyhounds.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-89717737ed5361aaffae8fd67b10e42f wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:12px;font-size:16px;line-height:1.6">Material matters when choosing collars. Nylon collars are lightweight, affordable, and come in countless colours. Leather collars are more durable and develop a beautiful patina over time. For water-loving breeds, waterproof collars made from BioThane or coated nylon resist odours and dry quickly.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-d89f300c433aa25dd8d17818f88e7ae7" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🎯 For Training &amp; Behaviour Work</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-3c5af4f778d6219a105be10950e7643e wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">For dogs learning manners or needing more structure, training‑focused gear gives you better communication and control.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-31d4029b44980fd838c97832672c97c3" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Adjustable training collars</li>
+<li>Long lines for recall practice</li>
+<li>Reinforced stitching for safety</li>
+<li>Helps build consistent habits</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-a7249c6969879e16f3283c0004a28761 wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:12px;font-size:16px;line-height:1.6">Martingale options provide gentle correction without the risk of choking. They tighten slightly when your pet pulls but have a limited closure that prevents over-tightening — ideal for breeds with narrow heads. Head halters like the Halti or Gentle Leader fit around the muzzle and behind the ears, giving exceptional control for strong pullers by guiding the head rather than pulling against the neck.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-fc6c06a26ab7a798c897cdc984668ab5 wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:12px;font-size:16px;line-height:1.6">Many trainers recommend using both a harness and a traditional collar together for maximum safety. Front-clip harness designs redirect pulling, while back-clip versions are comfortable for well-behaved walkers. GPS and smart collars are the latest innovation, combining traditional designs with tracking technology so you can monitor your pet&#8217;s location in real-time through a smartphone app.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-8a552d1604312f7153a6cbb348af4c13" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🌦️ Outdoor Adventures</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-2ad88cfff83943bcfb881be5609eabce wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">If your dog loves exploring, choose gear that can handle mud, rain, and rough terrain without wearing out.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-37c3ceb4f56047b4b51f9587d14b50ab" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Weather‑resistant materials</li>
+<li>Rust‑proof metal hardware</li>
+<li>Lightweight but strong leads</li>
+<li>Easy‑grip handles for stability</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-102bbb0f89259214b168c7de48a9ff04 wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:12px;font-size:16px;line-height:1.6">The standard 1.2-metre fixed lead is the most versatile choice for everyday walks, providing enough freedom for comfortable walking while maintaining good control in busy areas. Look for a comfortable, padded handle to prevent friction burns on your hands. Training leads of 5 to 10 metres give freedom during recall practice in parks and fields.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-bb9dd213a9ef1983cbda90f562220e1b wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:12px;font-size:16px;line-height:1.6">Retractable leads offer more freedom in open spaces but should be used with caution — they can cause injuries if they snap back or wrap around legs. Never use them near roads, other animals, or in crowded areas. Reflective and LED-equipped leads are essential for evening and winter walks when visibility is reduced, keeping both you and your pet visible to motorists.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-29dbf0ea1a8d47c12012551879926879" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🛡️ Comfort &amp; Safety Needs</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-5b7a1f38e7b2b513040e4ff4c68d45c5 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Some dogs benefit from extra support, especially pullers, small breeds, or dogs with sensitive necks.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-5a7b9dfddf1ea741c17c1d35ccb4a6b1" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Padded harness options</li>
+<li>No‑pull front‑clip designs</li>
+<li>Reflective stitching for visibility</li>
+<li>Even pressure distribution for comfort</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-20a5a1d2f84266be87faef829dc02eb9 wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:12px;font-size:16px;line-height:1.6">Safety should be your top priority with dog collars. Check the fit regularly — weight changes, new coats growing in, or collar stretching can all affect the fit. Loose collars can slip off, while tight collars can cause breathing difficulties and skin irritation. Always include an ID tag: under UK law, dogs must wear collars with an ID tag showing the owner&#8217;s name and address when in public.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-5d1b04f98e1590a28d7a7a7824d02058 wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:12px;font-size:16px;line-height:1.6">Remove collars during unsupervised play, especially in homes with multiple dogs — collars can snag on crate bars, fencing, or other collars, creating a strangulation risk. Breakaway collars are a safer option for dogs that wear their collars at all times. The two-finger rule is the gold standard for fitting: you should be able to slide two fingers between the collar and your pet&#8217;s neck.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-4278ae6d wp-block-group-is-layout-constrained" style="padding-top:50px;padding-right:50px;padding-bottom:50px;padding-left:50px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center" id="explore-more-dog-essentials" style="margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700">Explore More Dog Essentials</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🧸</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Toys</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Keep your dog active and entertained with durable chew toys, fetch toys, and interactive puzzles designed for all breeds and play styles.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-layout-flex wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-toys/">View Category</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">✂️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Grooming</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Everything you need to keep your dog clean, healthy, and looking great — from brushes and shampoos to clippers and coat‑care essentials.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-layout-flex wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-grooming/">View Category</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🛏️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Beds</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Give your dog a comfortable place to rest with our top‑rated beds for every size and sleep style. From calming donut beds to orthopedic support</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-layout-flex wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-beds/">View Category</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🎯</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Training &amp; Behaviour</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Training treats, clickers, pads, and behaviour‑support tools to help build good habits and make training smoother for both of you.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-layout-flex wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-training-behaviour/">View Category</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🍖</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Bowls &amp; Feeding</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Discover stainless steel bowls, slow feeders, raised stands, and feeding accessories that make mealtimes easier and healthier for your dog.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-layout-flex wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-bowls-feeding/">View Category</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">❤️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Health &amp; Care</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Support your dog’s wellbeing with dental care, supplements, grooming wipes, and everyday essentials for a happier, healthier pet.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-layout-flex wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-health-care/">View Category</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-background is-layout-constrained wp-block-group-is-layout-constrained" style="border-top-color:#e5e5e5;border-top-width:3px;border-right-style:none;border-right-width:0px;border-bottom-width:3px;border-left-style:none;border-left-width:0px;background-color:#fafafa;padding-top:20px;padding-bottom:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-93c9c29cabda22ffe5dcadda2c053103 wp-block-paragraph" style="color:#555555;font-size:14px;line-height:1.4">Updated weekly • Independent reviews • No sponsored products • Trusted by pet owners</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-background is-layout-constrained wp-block-group-is-layout-constrained" style="background-color:#f7f7f7;padding-top:90px;padding-bottom:90px">
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-color has-link-color wp-elements-5c191bbc2114840616bea90b14f821d9" id="ready-to-upgrade-your-dog-s-walking-gear" style="color:#1a1a1a;font-size:34px;font-style:normal;font-weight:700;line-height:1.2">Ready to Upgrade Your Dog’s Walking Gear?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-4bd7c6fb4332ae57d0b36e3e4d8768bb wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:18px">Find the best collars and leads for safer, easier, more enjoyable walks.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-layout-flex wp-block-buttons-is-layout-flex" style="margin-top:28px;margin-bottom:28px;padding-top:32px;padding-right:16px;padding-bottom:32px;padding-left:16px;font-size:18px">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.amazon.co.uk/s?k=dog+collars&amp;tag=pethubonline-21" target="_blank" rel="sponsored noopener noreferrer">Shop Collars &amp; Leashes</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:image -->
+<figure class="wp-block-image size-full is-style-rounded"><img data-attachment-id="2006" data-permalink="https://pethubonline.com/dog-collars-leashes/dog-collars-and-leashes-final-cta-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-final-cta-image.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="dog collars and leashes final cta image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-final-cta-image.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2006" data-permalink="https://pethubonline.com/dog-collars-leashes/dog-collars-and-leashes-final-cta-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-final-cta-image.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="dog collars and leashes final cta image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-final-cta-image.png?fit=1024%2C1024&amp;ssl=1" alt="Dog collars and harness combo for secure walking" class="wp-image-2006" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-final-cta-image.png?resize=1024%2C1024&#038;ssl=1" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-final-cta-image.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-final-cta-image.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-final-cta-image.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-final-cta-image.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-final-cta-image.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-final-cta-image.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-final-cta-image.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-collars-and-leashes-final-cta-image.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+<!-- /wp:image -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Related Articles</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><a href="https://pethubonline.com/best-dog-leads-uk/">Best Dog Leads UK (2026) – Walking & Training Lead Guide</a></li>
+<li><a href="https://pethubonline.com/best-no-pull-dog-harnesses-uk/">Best No-Pull Dog Harnesses UK (2026) – Training & Comfort Guide</a></li>
+<li><a href="https://pethubonline.com/best-dog-collars-and-harnesses-uk/">Best Dog Collars and Harnesses UK (2026) – Complete Guide</a></li>
+</ul>
+<!-- /wp:list -->

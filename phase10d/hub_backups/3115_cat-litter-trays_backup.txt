@@ -1,0 +1,998 @@
+<!-- wp:html -->
+<div class="affiliate-disclosure" style="background:#f8f9fa;border-left:4px solid #0073aa;padding:12px 16px;margin-bottom:24px;font-size:0.92em;color:#555;line-height:1.5;">
+<strong>Affiliate Disclosure:</strong> Some links on this page are affiliate links. If you click an affiliate link and make a purchase, we may earn a small commission at no extra cost to you. We only recommend products we would use ourselves and that meet our editorial standards. <a href="https://pethubonline.com/affiliate-disclosure/" style="color:#0073aa;">Learn more</a>.
+</div>
+<!-- /wp:html -->
+
+<!-- wp:cover -->
+<div class="wp-block-cover alignfull is-light has-custom-content-position is-position-top-left remove-top-gap" style="margin-bottom:40px;padding-top:10px;padding-bottom:10px;min-height:700px;aspect-ratio:unset;"><img data-attachment-id="3332" data-permalink="https://pethubonline.com/cat-litter-trays/cat-litter-trays-cover-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-litter-trays-cover-image.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Cat litter trays cover image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-litter-trays-cover-image.png?fit=1024%2C683&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1536" height="1024" data-attachment-id="3332" data-permalink="https://pethubonline.com/cat-litter-trays/cat-litter-trays-cover-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-litter-trays-cover-image.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Cat litter trays cover image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-litter-trays-cover-image.png?fit=1024%2C683&amp;ssl=1" alt="Cat Litter Trays" class="wp-block-cover__image-background wp-image-3332 size-full" data-object-fit="cover" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-litter-trays-cover-image.png?resize=1536%2C1024&#038;ssl=1" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-litter-trays-cover-image.png?w=1536&amp;ssl=1 1536w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-litter-trays-cover-image.png?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-litter-trays-cover-image.png?resize=1024%2C683&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-litter-trays-cover-image.png?resize=768%2C512&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-litter-trays-cover-image.png?resize=1200%2C800&amp;ssl=1 1200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#f8f8f8"></span></p>
+<div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color wp-elements-f8996e5f60ea959e3ec207d035df7b5e" style="color:#222222;padding-top:0;padding-right:0px;padding-bottom:0;padding-left:0px;font-size:56px;font-style:normal;font-weight:700;line-height:1.2">Best Cat Litter Trays &amp; Accessories</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-left alignwide has-text-color has-link-color wp-elements-c4f305b49858d768af17d21270d45140 wp-block-paragraph" style="color:#444444;padding-top:20px;padding-right:0px;padding-bottom:20px;padding-left:0px;font-size:20px;font-style:normal;font-weight:600">Find the perfect litter tray to keep your home fresh and your cat comfortable</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons alignwide has-custom-font-size is-content-justification-left is-layout-flex wp-container-core-buttons-is-layout-3fe550fd wp-block-buttons-is-layout-flex" style="padding-top:50px;padding-right:16px;padding-bottom:50px;padding-left:16px;font-size:20px">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#cat-litter-trays">Shop All Litter Trays</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#bestsellers">See Our Top Picks</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+</div>
+<!-- /wp:cover -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-5ba97a05 wp-block-group-is-layout-constrained" style="border-color:#e0e0e0;border-width:1px;border-radius:8px;padding-top:20px;padding-right:25px;padding-bottom:20px;padding-left:25px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="font-size:22px">Table of Contents</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><a href="#why-the-right-cat-litter-tray-matters">Why the Right Cat Litter Tray Matters</a></li>
+<li><a href="#top-5-best-cat-litter-trays">Top 5 Best Cat Litter Trays</a></li>
+<li><a href="#shop-by-cat-litter-tray-type">Shop by Cat Litter Tray Type</a></li>
+<li><a href="#how-to-choose-the-right-cat-litter-tray">How to Choose the Right Cat Litter Tray</a></li>
+<li><a href="#who-this-page-is-for">Who This Page Is For</a></li>
+<li><a href="#cat-litter-trays-faq">Cat Litter Trays FAQ</a></li>
+<li><a href="#why-pet-owners-trust-pet-hub-online">Why Pet Owners Trust Pet Hub Online</a></li>
+<li><a href="#explore-more-cat-essentials">Explore More Cat Essentials</a></li>
+<li><a href="#find-the-perfect-cat-litter-tray-today">Find the Perfect Cat Litter Tray Today</a></li>
+<li><a href="#useful-tips-for-every-pet-owner">Useful Tips for Every Pet Owner</a></li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide is-layout-constrained wp-container-core-group-is-layout-653a7e54 wp-block-group-is-layout-constrained" style="padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-fd44b7036034680e68adfe6f7be9d999" id="why-the-right-cat-litter-tray-matters" style="color:#222222;padding-top:22px;padding-bottom:22px;font-size:32px;font-style:normal;font-weight:700">Why the Right Cat Litter Tray Matters</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-b3e4a07bc962aec77dafa25c1e033dd4 wp-block-paragraph" style="color:#444444;padding-top:0px;padding-bottom:0px;font-size:18px;line-height:1.5">A clean, well-chosen cat litter tray is one of the most important investments you can make for your cat&#8217;s health and your home&#8217;s hygiene. Cats are naturally fastidious animals that instinctively bury their waste, and providing them with a suitable tray encourages proper toileting habits, reduces stress, and prevents unwanted accidents around the home. The wrong tray — whether too small, too difficult to access, or poorly maintained — can lead to litter avoidance, behavioural problems, and even urinary health issues.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-6961062ccee32aee0cc363a7567ffccd wp-block-paragraph" style="color:#444444;padding-top:0px;padding-bottom:0px;font-size:18px;line-height:1.5">Whether you have a <strong>single indoor cat, a busy multi-cat household, or a new kitten</strong>, this guide will help you find <strong>cat litter trays</strong> that are <a href="#cat-litter-trays">hygienic, practical, and perfectly suited</a> to your <strong>cat&#8217;s size, habits, and preferences</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-099ac92574a1ca2659c589fcfbed0a15 wp-block-paragraph" style="color:#444444;padding-top:0px;padding-bottom:0px;font-size:18px;line-height:1.5">Scroll down to explore our <strong><a href="#bestsellers">top 5 best cat litter trays</a></strong> and shop by tray type to find the ideal match for your home.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator alignwide has-alpha-channel-opacity is-style-wide" style="margin-top:0;margin-bottom:0"/>
+<!-- /wp:separator -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-c09a0d19 wp-block-group-is-layout-constrained" id="bestsellers" style="padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color wp-elements-17fa8c94e8b47fa8e62c3730fd2f1f7e" id="top-5-best-cat-litter-trays" style="color:#111111;margin-bottom:40px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Top 5 Best Cat Litter Trays</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:18px">These are our top picks for clean, hygienic, and easy-to-maintain cat litter trays for every home.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns equal-cards is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-13910493 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3240" data-permalink="https://pethubonline.com/hooded-cat-litter-tray/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/hooded-cat-litter-tray.jpg?fit=500%2C489&amp;ssl=1" data-orig-size="500,489" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Hooded Cat Litter Tray" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/hooded-cat-litter-tray.jpg?fit=500%2C489&amp;ssl=1" data-recalc-dims="1" decoding="async" data-attachment-id="3240" data-permalink="https://pethubonline.com/hooded-cat-litter-tray/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/hooded-cat-litter-tray.jpg?fit=500%2C489&amp;ssl=1" data-orig-size="500,489" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Hooded Cat Litter Tray" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/hooded-cat-litter-tray.jpg?fit=500%2C489&amp;ssl=1" alt="Hooded Cat Litter Tray" class="wp-image-3240" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/hooded-cat-litter-tray-new.jpg?ssl=1" style="object-fit:contain;width:auto;height:200px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-3a6e4ebc85d6e3a8221c353157f2c0dc" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Hooded Cat Litter Tray →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-75ff813158c3eb03837f1abbbc4ab75c wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">An enclosed litter tray with a carbon filter that traps odours and gives your cat complete privacy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-bc106e848a4519a8b2db1ed3e1023072" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Hooded design</strong> — contains mess and gives cats a private, den-like space</li>
+<li><strong>Activated carbon filter</strong> — neutralises odours at the source</li>
+<li><strong>Swing door entry</strong> — easy access while keeping litter scatter contained</li>
+<li><strong>Large capacity</strong> — suitable for cats of all sizes including large breeds</li>
+<li><strong>Easy-clean smooth interior</strong> — wipe down in seconds for quick maintenance</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=hooded+cat+litter+tray&amp;tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-13910493 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3241" data-permalink="https://pethubonline.com/self-cleaning-cat-litter-box/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/self-cleaning-cat-litter-box.jpg?fit=500%2C500&amp;ssl=1" data-orig-size="500,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Self-Cleaning Cat Litter Box" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/self-cleaning-cat-litter-box.jpg?fit=500%2C500&amp;ssl=1" data-recalc-dims="1" decoding="async" data-attachment-id="3241" data-permalink="https://pethubonline.com/self-cleaning-cat-litter-box/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/self-cleaning-cat-litter-box.jpg?fit=500%2C500&amp;ssl=1" data-orig-size="500,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Self-Cleaning Cat Litter Box" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/self-cleaning-cat-litter-box.jpg?fit=500%2C500&amp;ssl=1" alt="Self-Cleaning Cat Litter Box" class="wp-image-3241" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/self-cleaning-cat-litter-box-new.jpg?ssl=1" style="object-fit:contain;width:auto;height:200px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-e1ed304b1aa2fa6e7a63468d9f5f4be6" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Self-Cleaning Cat Litter Box →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-170a2bb864f061a3ec369c6d5bdae2e9 wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">An automatic self-cleaning litter box that scoops and separates waste after each use.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-865fbd8250b9e3fcc60e8291f37d60f7" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Automatic raking system</strong> — scoops waste into a sealed drawer hands-free</li>
+<li><strong>Reduces daily scooping</strong> — only empty the waste drawer once a week</li>
+<li><strong>Odour-lock receptacle</strong> — keeps smells sealed and contained</li>
+<li><strong>Quiet motor</strong> — won&#8217;t startle even the most nervous cats</li>
+<li><strong>Compatible with clumping litter</strong> — standard supermarket brands work perfectly</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=self+cleaning+cat+litter+box&amp;tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns equal-cards is-layout-flex wp-container-core-columns-is-layout-52b7c8f9 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-13910493 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3242" data-permalink="https://pethubonline.com/large-cat-litter-tray-high-sides/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/large-cat-litter-tray-high-sides.jpg?fit=500%2C500&amp;ssl=1" data-orig-size="500,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Large Cat Litter Tray with High Sides" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/large-cat-litter-tray-high-sides.jpg?fit=500%2C500&amp;ssl=1" data-recalc-dims="1" decoding="async" data-attachment-id="3242" data-permalink="https://pethubonline.com/large-cat-litter-tray-high-sides/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/large-cat-litter-tray-high-sides.jpg?fit=500%2C500&amp;ssl=1" data-orig-size="500,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Large Cat Litter Tray with High Sides" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/large-cat-litter-tray-high-sides.jpg?fit=500%2C500&amp;ssl=1" alt="Large Cat Litter Tray with High Sides" class="wp-image-3242" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/large-cat-litter-tray-high-sides-new.jpg?ssl=1" style="object-fit:contain;width:auto;height:200px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-2166ebcacf8bab7a743f5b7646102f87" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Large Cat Litter Tray with High Sides →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-06897b8085cb8df0c12aec7bb45a50cb wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A spacious open-top tray with extra-high sides to prevent litter scatter and spillage.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-c3e58ac82dd0bd0f99dcda181c325182" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Extra-high sides</strong> — prevents litter being kicked out during digging</li>
+<li><strong>Generous dimensions</strong> — comfortable for large breeds like Maine Coons</li>
+<li><strong>Non-stick surface</strong> — clumps slide off for effortless cleaning</li>
+<li><strong>Low-cut entry point</strong> — accessible for kittens and senior cats</li>
+<li><strong>Durable BPA-free plastic</strong> — built to last with daily use</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=large+cat+litter+tray+high+sides&amp;tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-13910493 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3243" data-permalink="https://pethubonline.com/corner-cat-litter-tray/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/corner-cat-litter-tray.jpg?fit=395%2C500&amp;ssl=1" data-orig-size="395,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Corner Cat Litter Tray" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/corner-cat-litter-tray.jpg?fit=395%2C500&amp;ssl=1" data-recalc-dims="1" decoding="async" data-attachment-id="3243" data-permalink="https://pethubonline.com/corner-cat-litter-tray/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/corner-cat-litter-tray.jpg?fit=395%2C500&amp;ssl=1" data-orig-size="395,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Corner Cat Litter Tray" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/corner-cat-litter-tray.jpg?fit=395%2C500&amp;ssl=1" alt="Corner Cat Litter Tray" class="wp-image-3243" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/corner-cat-litter-tray-new.jpg?ssl=1" style="object-fit:contain;width:auto;height:200px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-39e604a8552cdd923b1f5dcf3afb25ff" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Corner Cat Litter Tray →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-23315ff7935fd1595175ddc8630cce03 wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A space-saving triangular tray designed to fit neatly into any corner of your home.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-520a65dcd2ce6dd9007cde0d70267f43" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Corner-fit design</strong> — maximises floor space in small flats and rooms</li>
+<li><strong>High back walls</strong> — prevents splashing and litter scatter</li>
+<li><strong>Open front</strong> — easy access for cats of all ages and mobility levels</li>
+<li><strong>Lightweight construction</strong> — simple to lift, empty, and wash</li>
+<li><strong>Discreet placement</strong> — tucks away neatly out of sight</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=corner+cat+litter+tray&amp;tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-be441220 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3244" data-permalink="https://pethubonline.com/sifting-cat-litter-tray/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/sifting-cat-litter-tray.jpg?fit=500%2C281&amp;ssl=1" data-orig-size="500,281" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Cat Litter Tray with Sifting System" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/sifting-cat-litter-tray.jpg?fit=500%2C281&amp;ssl=1" data-recalc-dims="1" decoding="async" data-attachment-id="3244" data-permalink="https://pethubonline.com/sifting-cat-litter-tray/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/sifting-cat-litter-tray.jpg?fit=500%2C281&amp;ssl=1" data-orig-size="500,281" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Cat Litter Tray with Sifting System" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/sifting-cat-litter-tray.jpg?fit=500%2C281&amp;ssl=1" alt="Cat Litter Tray with Sifting System" class="wp-image-3244" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/sifting-cat-litter-tray-new.jpg?ssl=1" style="object-fit:contain;width:auto;height:200px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-6ff7f57c9b193c6c5062e03af790c79b" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Litter Tray with Sifting System →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-291dd5b38a0795c57e268eac56fa9714 wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A multi-layer sifting tray that separates clean litter from clumps without scooping.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-8849d4adc5c5768861b5562085acd945" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Three-part sifting system</strong> — lift, sift, and separate waste in seconds</li>
+<li><strong>No scooping needed</strong> — saves time on daily litter maintenance</li>
+<li><strong>Works with clumping litter</strong> — compatible with all major clumping brands</li>
+<li><strong>Deep tray base</strong> — holds plenty of litter for extended use</li>
+<li><strong>Easy to disassemble</strong> — simple to wash and reassemble</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=sifting+cat+litter+tray&amp;tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" id="cat-litter-trays" style="padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-8403b879d4a9006ea29feee8f33093b8" id="shop-by-cat-litter-tray-type" style="color:#1a1a1a;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Shop by Cat Litter Tray Type</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-5b423c2130192a13899365109e43e18c wp-block-paragraph" style="color:#4a4a4a;margin-top:22px;margin-bottom:22px;padding-top:22px;padding-bottom:22px;font-size:18px">Find the right cat litter tray based on your home size, cleaning preference, and your cat&#8217;s personality.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-cbe286e1 wp-block-columns-is-layout-flex" style="margin-top:0px;margin-bottom:0px;padding-top:22px;padding-bottom:22px">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-468c2f22e5468b8d1a90f6092dc893d5" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Open Litter Trays</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-d1c62febddf4a53b106155e346135f8f wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px"><strong>Best for easy access and ventilation.</strong> Simple, uncovered trays that are affordable, easy to clean, and well-suited for kittens, anxious cats, or those who prefer open sightlines while toileting.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-ce67452eda1b370f58b1d2146dc85a7c" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Hooded &amp; Enclosed Trays</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-9f1d0f8abd9fb1fcb70746432cef67fe wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px"><strong>Ideal for odour control and privacy.</strong> Covered designs with carbon filters trap smells and give cats a secure, den-like space — perfect for busy households with children or other pets.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-cbe286e1 wp-block-columns-is-layout-flex" style="margin-top:0px;margin-bottom:0px;padding-top:22px;padding-bottom:22px">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-ecc094d55240a8d90a827272822224cb" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Self-Cleaning Trays</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-8ab00a0d85387ff82d51d2e4c5069121 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px"><strong>Great for busy owners who want hands-free maintenance.</strong> Automated raking or rotating systems sift waste into sealed compartments, reducing daily scooping to a simple weekly empty.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-8e0b91b52607094e791775d3d32e09b9" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Sifting &amp; Corner Trays</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-fa90ccf8c9fb11fa61a2bff2f3041b52 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px"><strong>Perfect for small spaces and quick litter changes.</strong> Sifting trays separate clean litter from clumps in seconds, while corner designs maximise floor space in compact homes.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-background is-layout-constrained wp-block-group-is-layout-constrained" style="background-color:#fafafa;padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-ea903d889721222613b23be88470baf8" id="how-to-choose-the-right-cat-litter-tray" style="color:#111111;margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">How to Choose the Right Cat Litter Tray</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-815268a0be985f14f2e7a2f235fcddc2 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:18px">Choosing the right cat litter tray comes down to your cat&#8217;s size, your home layout, cleaning preferences, and any specific health or behavioural needs. A well-chosen tray promotes consistent use and keeps your home fresh.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-d701d537c09d36931d8cc14330c5c2fe" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">📏 Choose the Right Size</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-6dff5e40d60ce19880f9a556c3f69b02 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">The tray should be at least 1.5 times the length of your cat from nose to base of tail. A tray that is too small will be uncomfortable and may cause your cat to eliminate outside the box.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-e890c43ffcfeb759ed874c21d8c37ba6" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Standard adult cats need a tray measuring at least <strong>50 cm x 40 cm</strong>.</li>
+<li>Large breeds like <strong>Maine Coons</strong> need extra-large trays — 60 cm x 45 cm or bigger.</li>
+<li>Kittens can start with a smaller, low-sided tray and transition to full-size by 6 months.</li>
+<li>In multi-cat homes, provide <strong>one tray per cat plus one extra</strong> to prevent resource guarding.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-38cfb16e5b521476736e375c9cfb9a98" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🏠 Open vs Hooded Design</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-428fd31adf9eb7a45d396dd62f3ae9c8 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">The choice between open and hooded trays depends on your cat&#8217;s personality and your household environment. Each design has distinct advantages.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-d4de5cf7dfb64dfa29ea4631d940e665" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Open trays:</strong> Better ventilation, easier to clean, preferred by anxious cats who need to see their surroundings.</li>
+<li><strong>Hooded trays:</strong> Contain odour and scatter, offer privacy, ideal for busy homes with children or dogs.</li>
+<li><strong>Top-entry trays:</strong> Excellent scatter control, dog-proof, but not suitable for senior or mobility-impaired cats.</li>
+<li>If unsure, start with an open tray — most cats accept them readily.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-0c862fec1f492d8a0ccb4509eb59d442" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🧹 Consider Ease of Cleaning</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-160d4acd8b60a3a207a2da55f4aeae77 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Regular cleaning is essential for your cat&#8217;s health. Choose a tray that fits your lifestyle and cleaning routine.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-5f3450c14251b10e171303d87c47d213" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Choose trays with <strong>smooth, non-stick interiors</strong> that wipe clean easily.</li>
+<li><strong>Sifting trays</strong> save time — lift, sift, and separate waste in seconds.</li>
+<li><strong>Self-cleaning models</strong> are ideal if you struggle to scoop daily.</li>
+<li>Replace plastic trays every <strong>6–12 months</strong> as scratches harbour bacteria and odour.</li>
+<li><strong>Scoop at least twice daily</strong> — ammonia and hydrogen sulphide off-gas almost immediately, so frequent cleaning is the most effective odour control strategy.</li>
+<li>Use <strong>activated carbon or charcoal additives</strong> to neutralise odours rather than masking them with heavily perfumed litters that can deter cats.</li>
+<li><strong>Weekly full clean:</strong> empty all used litter, wash the tray with warm water and mild unscented detergent, rinse thoroughly, and dry completely before adding fresh litter.</li>
+<li><strong>Monthly inspection:</strong> check for scratches, cracks, or damage that harbour bacteria — deep-clean with a pet-safe disinfectant and allow to air dry fully.</li>
+<li>Maintain a <strong>litter depth of 5–7 cm</strong> and ensure good ventilation in the tray room to reduce lingering smells.</li>
+<li>Monitor your cat&#8217;s litter habits — <strong>changes in frequency, unusual odour, or blood</strong> are early warning signs of urinary tract infections, kidney disease, or diabetes.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-7a144a9a4172f2223453bc42c45b554b" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🐱 Think About Your Cat&#8217;s Preferences</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-08cb5f658af3a0560b66602637ea1575 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Every cat has individual preferences around their toileting environment. Observing your cat&#8217;s behaviour is the best guide to choosing the right tray.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-6c01b05deff7d1be0495018802e627ee" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Cats that <strong>dig vigorously</strong> need high-sided trays to contain scatter.</li>
+<li><strong>Shy or nervous cats</strong> may prefer a hooded tray for privacy and security.</li>
+<li><strong>Senior cats</strong> need trays with a low-cut entry point for easy access.</li>
+<li>If your cat suddenly stops using the tray, try a different style or location before assuming a medical issue.</li>
+<li><strong>Placement matters:</strong> keep trays away from food and water bowls — cats refuse to eat and toilet in the same area. Avoid high-traffic zones and spots near loud appliances.</li>
+<li>In <strong>multi-storey homes</strong>, place at least one tray on each floor so your cat always has easy access.</li>
+<li>For <strong>multi-cat households</strong>, spread trays across different rooms — a row of trays in one location is seen by cats as a single large tray, defeating the purpose of multiple options.</li>
+<li>Quiet <strong>bathrooms, utility rooms, and spare bedrooms</strong> are consistently popular locations for cat litter trays.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-72c9eb19 wp-block-group-is-layout-constrained" style="padding-top:50px;padding-bottom:50px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center alignwide" id="who-this-page-is-for" style="margin-bottom:25px;font-size:32px;font-style:normal;font-weight:700">Who This Page Is For</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center alignwide wp-block-paragraph" style="margin-bottom:30px;font-size:18px">Choosing the right cat litter tray isn&#8217;t one-size-fits-all. This guide is designed to help every cat owner find the perfect solution based on their cat&#8217;s needs, home layout, and lifestyle.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-52b7c8f9 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🐱 New Kitten Owners</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">If you&#8217;re bringing home a kitten for the first time, this guide covers low-sided starter trays, litter training tips, and the best tray types for young cats still developing coordination and confidence.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🏠 Multi-Cat Households</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">Managing litter trays in a multi-cat home requires the right number, placement, and tray styles. We cover the n+1 rule, territorial considerations, and the best trays for homes with two or more cats.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🧓 Senior Cat Owners</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">Older cats with arthritis or reduced mobility need trays with low-cut entry points, easy-access designs, and generous dimensions. This guide highlights the best options for keeping senior cats comfortable.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-background is-layout-constrained wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color wp-elements-f8e01996ff9984867b4224fe6dc4d14d" id="cat-litter-trays-faq" style="color:#1a1a1a;margin-bottom:25px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Cat Litter Trays FAQ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>How many cat litter trays do I need?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">The general recommendation is one cat litter tray per cat, plus one extra. For a single cat household, having two trays is ideal. For two cats, three trays are recommended, and so on. This ensures every cat always has access to a clean tray and reduces the risk of resource guarding or territorial behaviour around the litter area.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>How often should I replace cat litter trays?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Plastic trays should typically be replaced every six to twelve months, or sooner if they become heavily scratched. Scratches in the plastic create microscopic grooves where bacteria and odour-causing compounds can accumulate and cannot be fully cleaned away. Stainless steel cat litter trays last considerably longer and can be an economical long-term investment.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>Why is my cat not using the litter tray?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">There are many possible reasons a cat may avoid using a litter tray, including: the tray is not being cleaned frequently enough; the litter type has changed; the tray is in a stressful or noisy location; the tray is too small; a medical condition such as a urinary tract infection is causing pain; or stress from a change in the household. Always consult your vet first to rule out health issues, then work through environmental and litter-related factors systematically.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>What depth of litter should I put in cat litter trays?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Most cats prefer a litter depth of approximately 5–7 cm. This gives them enough material to dig and cover their waste effectively, which is an important part of their natural behaviour. Too little litter and your cat may refuse to use the tray or waste will reach the bottom of the tray and stick. Too much litter can cause excessive scatter and may make some cats uncomfortable.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>Should I use a liner in my cat litter trays?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Litter tray liners can make cleaning easier by allowing you to lift out all the used litter in one go, but they are not universally accepted by cats. Some cats dislike the feel or crinkle of plastic liners and may scratch or shred them, which defeats the purpose. If you want to try liners, introduce them gradually and if your cat rejects them, do not force the issue.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>Can I use cat litter trays for kittens?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Yes, a standard tray is suitable for kittens, but choose a smaller option with low sides to start so the kitten can climb in and out easily. Very young kittens under 8 weeks may need extra-low sides. As the kitten grows, transition them gradually to a full-size tray. Avoid hooded designs for very young kittens as the enclosed space can be confusing and intimidating.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>What is the best way to dispose of used cat litter?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">In the UK, most used cat litter should be bagged securely and placed in your general waste bin — it cannot go in food waste or garden waste collections due to the risk of toxoplasmosis from cat faeces. Some biodegradable litters such as wood pellet or paper-based options can be composted in a dedicated compost bin. Never flush cat litter down the toilet, as it can damage plumbing and water treatment systems.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-c09a0d19 wp-block-group-is-layout-constrained" style="padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-613e62e4204bf58600ff1763686d8674" id="useful-tips-for-every-pet-owner" style="color:#111111;margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Useful Tips for Every Pet Owner</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-c154de3808ca158b69a512e15fdfd767 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:30px;font-size:18px">Beyond choosing the right tray, these practical guides will help you get the most out of your cat litter setup — from picking the best litter type to training a new kitten.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-c1793d9afdfc2642cebe6e962277112e" id="complete-guide-to-cat-litter-types" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">Complete Guide to Cat Litter Types</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-9d58efdef2261405fa4a58a95cf1cc9a wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Choosing the right litter for your cat litter trays is just as important as choosing the tray itself. The four most common types available in the UK are clumping clay, silica gel crystals, wood pellets, and recycled paper.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-0405f92f95cfd6d5783af4bc90a7da90" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Clumping clay litter</strong> — the most popular choice, forming solid clumps when wet for quick scooping and excellent odour control.</li>
+<li><strong>Silica gel crystals</strong> — absorb moisture and can last up to four weeks between full changes, making them economical despite a higher upfront cost.</li>
+<li><strong>Wood pellet litter</strong> — 100% biodegradable, made from compressed sawdust with a naturally pleasant pine scent. The most eco-friendly option.</li>
+<li><strong>Recycled paper litter</strong> — soft on paws and virtually dust-free, ideal for cats recovering from surgery or those with respiratory sensitivities.</li>
+<li>Ensure your cat accepts the texture — some cats are particular about substrate and may reject an unfamiliar litter type. Transition gradually by mixing old and new litter over a week.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-fa05a791894940b307dc0a9cd0a9a928" id="how-to-litter-train-a-kitten" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">How to Litter Train a Kitten</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-945670fd7520fe47a30618fc2ef1b424 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Most kittens take to cat litter trays instinctively, but a gentle introduction helps establish good habits early. Here is a step-by-step approach to successful litter training.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-2c973851c5d4d82ee18129afe72af0ed" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Introduce early:</strong> place your kitten directly into the tray after meals, after naps, and any time you observe sniffing or circling behaviour.</li>
+<li><strong>Start with a low-sided tray</strong> so the kitten can climb in easily, and keep it in a consistent, accessible location away from food and water.</li>
+<li><strong>Never punish accidents</strong> — simply clean the area with an enzymatic cleaner and redirect them to their tray.</li>
+<li>Kittens have small bladders and may need access to trays <strong>every 30 to 60 minutes</strong> during active periods.</li>
+<li>Consistency and patience are the keys to success — <strong>most kittens are fully trained within one to two weeks</strong> of consistent use.</li>
+<li>Avoid hooded designs for very young kittens as the enclosed space can be confusing and intimidating.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-3611205e933ad719a9305730db8a0335" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">Travelling with Cats &amp; Portable Litter Solutions</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-65e7964d10aaa30c134d27d52cb399a9 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Whether you are moving house, visiting the vet, or going on a longer trip, having a portable litter solution ensures your cat remains comfortable and stress-free during travel.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-2c98dae68e5dc09d61a7e61649575699" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Disposable travel trays</strong> — lightweight, pre-filled options perfect for short journeys and hotel stays.</li>
+<li><strong>Collapsible silicone trays</strong> — fold flat for easy packing and expand to full size when needed.</li>
+<li>Bring litter from your cat&#8217;s existing tray — the familiar scent encourages use in an unfamiliar environment.</li>
+<li>For long car journeys, set up a small tray in a secure carrier and offer breaks every two to three hours.</li>
+<li>When moving house, confine your cat to one room initially with their familiar tray before gradually giving them access to the rest of the home.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center" id="why-pet-owners-trust-pet-hub-online" style="margin-bottom:40px;font-size:32px;font-style:normal;font-weight:700">Why Pet Owners Trust Pet Hub Online</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<!-- wp:group -->
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🛡️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Expert‑Reviewed Picks</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Every cat litter tray we recommend is researched and evaluated for hygiene, durability, and ease of use.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<!-- wp:group -->
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">⭐</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Trusted by Pet Owners</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Thousands of pet parents rely on our guides to make confident, informed buying decisions.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<!-- wp:group -->
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">✔️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Independent &amp; Honest</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">We only recommend products we believe in — no sponsored placements or paid rankings.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-12bf6960 wp-block-group-is-layout-constrained" style="padding-top:50px;padding-right:50px;padding-bottom:50px;padding-left:50px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center" id="explore-more-cat-essentials" style="margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700">Explore More Cat Essentials</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🛏️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Beds</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Give your cat the perfect place to rest with cosy caves, donut beds, orthopaedic memory foam, and self-warming options for all ages and breeds.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-beds/">Shop All Cat Beds</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">✂️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Grooming</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Everything you need to keep your cat clean, healthy, and looking great — from brushes and nail clippers to shampoos and coat-care essentials.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-grooming/">View Cat Grooming</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🐾</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Collars</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Find safe, comfortable cat collars with bells, breakaway clips, and reflective designs for indoor and outdoor cats of all sizes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-collars/">Shop All Cat Collars</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🧶</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Toys</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Keep your cat active and entertained with interactive toys, feather wands, and puzzle feeders designed for all ages and play styles.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-toys/">Shop All Cat Toys</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🪵</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Scratching Posts</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Protect your furniture with sturdy scratching posts, cat trees, and sisal boards that satisfy your cat&#8217;s natural scratching instincts.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-scratching-posts/">Shop All Scratching Posts</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">❤️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Health &amp; Care</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Support your cat&#8217;s wellbeing with dental care, supplements, grooming wipes, and everyday essentials for a happier, healthier pet.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-supplies/">Browse Health &amp; Care</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide is-layout-constrained wp-container-core-group-is-layout-4de5fae8 wp-block-group-is-layout-constrained" id="find-the-perfect-cat-litter-tray-today" style="padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-d797b6d275544f6374cd6f520dbb4b41" id="find-the-perfect-cat-litter-tray-today" style="color:#222222;padding-top:22px;padding-bottom:22px;font-size:32px;font-style:normal;font-weight:700">Find the Perfect Cat Litter Tray Today</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-ea5263f2ef7720dfbacb02846234d6d6 wp-block-paragraph" style="color:#444444;padding-top:0px;padding-bottom:0px;font-size:18px;line-height:1.5">Whether you are setting up a home for a new kitten, upgrading from a basic open tray to a self-cleaning model, or managing a busy multi-cat household, there is a perfect solution waiting for you. Explore our curated selection of cat litter trays — all available with fast UK delivery.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=cat+litter+tray&amp;tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">Shop Litter Trays</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://pethubonline.com/cat-supplies/" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600">View All Cat Supplies</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-background is-layout-constrained wp-block-group-is-layout-constrained" style="border-top-color:#e5e5e5;border-top-width:3px;border-right-style:none;border-right-width:0px;border-bottom-width:3px;border-left-style:none;border-left-width:0px;background-color:#fafafa;padding-top:20px;padding-bottom:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-93c9c29cabda22ffe5dcadda2c053103 wp-block-paragraph" style="color:#555555;font-size:14px;line-height:1.4">Updated weekly • Independent reviews • No sponsored products • Trusted by pet owners</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Related Articles</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><a href="https://pethubonline.com/best-cat-litter-disposal-uk/">Best Cat Litter Disposal UK (2026) – Waste Management Guide</a></li>
+<li><a href="https://pethubonline.com/best-self-cleaning-litter-trays-uk/">Best Self-Cleaning Litter Trays UK (2026) – Automatic Options</a></li>
+<li><a href="https://pethubonline.com/best-cat-litter-uk/">Best Cat Litter UK (2026) – Types &#038; Comparison Guide</a></li>
+<li><a href="https://pethubonline.com/best-cat-litter-trays-uk/">Best Cat Litter Trays UK (2026) – Complete Guide</a></li>
+</ul>
+<!-- /wp:list -->

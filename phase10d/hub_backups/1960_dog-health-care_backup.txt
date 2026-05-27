@@ -1,0 +1,860 @@
+<div class="affiliate-disclosure" style="background:#f8f9fa;border-left:4px solid #0073aa;padding:12px 16px;margin-bottom:24px;font-size:0.92em;color:#555;line-height:1.5;">
+<strong>Affiliate Disclosure:</strong> Some links on this page are affiliate links. If you click an affiliate link and make a purchase, we may earn a small commission at no extra cost to you. We only recommend products we would use ourselves and that meet our editorial standards. <a href="https://pethubonline.com/affiliate-disclosure/" style="color:#0073aa;">Learn more</a>.
+</div>
+
+<div class="wp-block-cover alignfull is-light has-custom-content-position is-position-bottom-center remove-top-gap" style="margin-bottom:40px;padding-top:10px;padding-bottom:10px;min-height:100vh;aspect-ratio:unset;"><img data-attachment-id="173" data-permalink="https://pethubonline.com/pet-hub-online/health-and-care-category-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/04/health-and-care-category-image.png?fit=1330%2C1182&amp;ssl=1" data-orig-size="1330,1182" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="health and care category image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/04/health-and-care-category-image.png?fit=1024%2C910&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1330" height="1182" data-attachment-id="173" data-permalink="https://pethubonline.com/pet-hub-online/health-and-care-category-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/04/health-and-care-category-image.png?fit=1330%2C1182&amp;ssl=1" data-orig-size="1330,1182" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="health and care category image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/04/health-and-care-category-image.png?fit=1024%2C910&amp;ssl=1" alt="Health And Care Category Image" class="wp-block-cover__image-background wp-image-173 size-full" data-object-fit="cover" data-object-position="86% 57%" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/04/health-and-care-category-image.png?resize=1330%2C1182&#038;ssl=1" style="object-position:86% 57%"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#f8f8f8"></span><div class="wp-block-cover__inner-container is-layout-constrained wp-block-cover-is-layout-constrained">
+<div class="wp-block-group is-content-justification-center is-layout-constrained wp-block-group-is-layout-constrained">
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color wp-elements-07e55b85afd5f63c481b437037135a1d" style="color:#222222;padding-top:0;padding-right:0px;padding-bottom:0;padding-left:0px;font-size:56px;font-style:normal;font-weight:700;line-height:1.2">Keep Your Dog Happy and Healthy</h2>
+
+<p class="has-text-align-left alignwide has-text-color has-link-color wp-elements-427f8aaae86d2d328fdf5b6092848eaa wp-block-paragraph" style="color:#444444;padding-top:20px;padding-right:0px;padding-bottom:20px;padding-left:0px;font-size:30px;font-style:normal;font-weight:600">From supplements and dental care to flea treatments and first aid, support your dog’s wellbeing at every life stage.</p>
+
+<div class="wp-block-buttons alignwide has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-e1881eec wp-block-buttons-is-layout-flex" style="padding-top:50px;padding-right:16px;padding-bottom:50px;padding-left:16px;font-size:20px">
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#dog-health">Shop Dog Health</a></div>
+
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#bestsellers">View Top Picks</a></div>
+</div>
+</div>
+</div></div>
+
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-5ba97a05 wp-block-group-is-layout-constrained" style="border-color:#e0e0e0;border-width:1px;border-radius:8px;padding-top:20px;padding-right:25px;padding-bottom:20px;padding-left:25px">
+<h3 class="wp-block-heading" style="font-size:22px">Table of Contents</h3>
+
+<ul class="wp-block-list">
+<li><a href="#why-dog-health-care-matters">Why Dog Health &amp; Care Matters</a></li>
+
+<li><a href="#shop-by-type">Shop by Type</a></li>
+
+<li><a href="#why-pet-owners-trust-pet-hub-online">Why Pet Owners Trust Pet Hub Online</a></li>
+
+<li><a href="#who-this-page-is-for">Who This Page Is For</a></li>
+
+<li><a href="#dog-health-care-faq">Dog Health &amp; Care FAQ</a></li>
+
+<li><a href="#how-to-choose-the-right-products">How to Choose the Right Products</a></li>
+
+<li><a href="#explore-more-dog-essentials">Explore More Dog Essentials</a></li>
+
+<li><a href="#useful-tips-every-pet-owner">Useful Tips for Every Pet Owner</a></li>
+</ul>
+</div>
+
+<div class="wp-block-group alignwide is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:40px;padding-bottom:40px">
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color has-large-font-size wp-elements-c01d36b8833477587daa5dd2ea143c2d" id="why-dog-health-care-matters" style="color:#222222;padding-top:22px;padding-bottom:22px;font-style:normal;font-weight:700">Why Dog Health &amp; Care Matters</h2>
+
+<p class="has-text-align-center has-text-color has-link-color has-medium-font-size wp-elements-409ac20a524504f53c092bf940654e38 wp-block-paragraph" style="color:#444444;padding-top:22px;padding-bottom:22px">Your dog’s health is the foundation of a happy, active life together. From preventive care and nutrition to dental hygiene and parasite protection, the right products help you stay ahead of problems and keep your best friend thriving.</p>
+
+<hr class="wp-block-separator alignwide has-alpha-channel-opacity is-style-wide" style="margin-top:0;margin-bottom:0"/>
+</div>
+
+<div class="wp-block-group alignfull has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" id="dog-health" style="padding-top:40px;padding-bottom:40px">
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color wp-elements-4789f5b41e32922211aaf178a876c432" id="shop-by-type" style="color:#1a1a1a;font-size:34px;font-style:normal;font-weight:700;line-height:1.2">Shop by Type</h2>
+
+<p class="has-text-align-left has-text-color has-link-color wp-elements-22c2161cc11eca4fc65523c3076c52d5 wp-block-paragraph" style="color:#4a4a4a;margin-top:22px;margin-bottom:22px;padding-top:22px;padding-bottom:22px;font-size:18px">Explore the essentials that support your dog’s health, comfort, and wellbeing at every life stage.</p>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-cbe286e1 wp-block-columns-is-layout-flex" id="bed-categories" style="margin-top:0px;margin-bottom:0px;padding-top:22px;padding-bottom:22px">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-group has-border-color has-link-color wp-elements-86ac9911d1ced18d3e732ceab5c0b72e is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--deep)">
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="2194" data-permalink="https://pethubonline.com/dog-grooming/ear-and-dental-care-spotlight-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="ear and dental care spotlight image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2194" data-permalink="https://pethubonline.com/dog-grooming/ear-and-dental-care-spotlight-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="ear and dental care spotlight image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" alt="Dog dental care products including toothbrushes and dental chews" class="wp-image-2194" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-08cb3f5a1b1d1a658e6bb887efb95ddb" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Dental Care →</h3>
+
+<p class="has-text-color has-link-color wp-elements-b9ee60d8d46a572d0ad3bd258888b657 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Toothbrushes, dental chews, and water additives for fresh breath and healthy gums.</p>
+</div>
+
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--deep)">
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="173" data-permalink="https://pethubonline.com/pet-hub-online/health-and-care-category-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/04/health-and-care-category-image.png?fit=1330%2C1182&amp;ssl=1" data-orig-size="1330,1182" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="health and care category image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/04/health-and-care-category-image.png?fit=1024%2C910&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1330" height="1182" data-attachment-id="173" data-permalink="https://pethubonline.com/pet-hub-online/health-and-care-category-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/04/health-and-care-category-image.png?fit=1330%2C1182&amp;ssl=1" data-orig-size="1330,1182" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="health and care category image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/04/health-and-care-category-image.png?fit=1024%2C910&amp;ssl=1" alt="Dog supplements and vitamins for overall wellbeing" class="wp-image-173" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/04/health-and-care-category-image.png?resize=1330%2C1182&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px"/></figure>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-d3694e278759aa2d2e3a0d548c67148e" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Supplements &amp; Vitamins →</h3>
+
+<p class="has-text-color has-link-color wp-elements-077d8732d1311408c136af7f3971f4c8 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Joint support, multivitamins, and omega oils for overall wellbeing.</p>
+</div>
+
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--deep)">
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="2191" data-permalink="https://pethubonline.com/dog-grooming/clippers-and-trimmers-spotlight-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="clippers and trimmers spotlight image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2191" data-permalink="https://pethubonline.com/dog-grooming/clippers-and-trimmers-spotlight-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="clippers and trimmers spotlight image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" alt="Flea and tick treatment products for dogs" class="wp-image-2191" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-8aa21d4bddcb0c11d70ae9f742b26171" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Flea &amp; Tick Treatment →</h3>
+
+<p class="has-text-color has-link-color wp-elements-55d23e867181f1d06a48f3f3838745fa wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Spot-on treatments, collars, and sprays to protect against parasites.</p>
+</div>
+</div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="padding-top:0px;padding-bottom:0px">
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--deep)">
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="2193" data-permalink="https://pethubonline.com/dog-grooming/nail-care-tools-spotlight-imagfe/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="nail care tools spotlight imagfe" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2193" data-permalink="https://pethubonline.com/dog-grooming/nail-care-tools-spotlight-imagfe/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="nail care tools spotlight imagfe" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?fit=1024%2C1024&amp;ssl=1" alt="Dog first aid supplies and wound care essentials" class="wp-image-2193" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-4c848ad28a51ed5f5e41d7617d116edb" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">First Aid →</h3>
+
+<p class="has-text-color has-link-color wp-elements-ce08235897eb4d1fd5a7d6e397042924 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Wound care, bandages, and antiseptic supplies for minor injuries.</p>
+</div>
+
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--deep)">
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="2194" data-permalink="https://pethubonline.com/dog-grooming/ear-and-dental-care-spotlight-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="ear and dental care spotlight image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2194" data-permalink="https://pethubonline.com/dog-grooming/ear-and-dental-care-spotlight-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="ear and dental care spotlight image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" alt="Dog eye and ear care cleansers and wipes" class="wp-image-2194" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-a9ebefc07c43ca6e02ef826ba8687829" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Eye &amp; Ear Care →</h3>
+
+<p class="has-text-color has-link-color wp-elements-4d8c58e4e239962b70ead38c5eb40919 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Gentle cleansers and wipes to keep eyes and ears clean and infection-free.</p>
+</div>
+
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--deep)">
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="2222" data-permalink="https://pethubonline.com/dog-grooming/grooming-accessories-spotlight-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="grooming accessories spotlight image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2222" data-permalink="https://pethubonline.com/dog-grooming/grooming-accessories-spotlight-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="grooming accessories spotlight image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" alt="Calming products for anxious and stressed dogs" class="wp-image-2222" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-b2a3afbefa729df92bcfb6f353c7bf11" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Calming Products →</h3>
+
+<p class="has-text-color has-link-color wp-elements-8afabf81321870392756e8345fe6aab3 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Anxiety wraps, calming diffusers, and supplements for stressed dogs.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:60px;padding-bottom:60px">
+<h2 class="wp-block-heading has-text-align-center" id="why-pet-owners-trust-pet-hub-online" style="margin-bottom:40px;font-size:32px;font-style:normal;font-weight:700">Why Pet Owners Trust Pet Hub Online</h2>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🧴</p>
+
+<h3 class="wp-block-heading has-text-align-center">Quality You Can Trust</h3>
+
+<p class="has-text-align-center wp-block-paragraph">Every product is hand‑picked for safety and effectiveness. We partner with trusted brands that meet strict health and safety standards, so you can shop confidently knowing your dog’s wellbeing comes first.</p>
+</div>
+</div>
+
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🐕</p>
+
+<h3 class="wp-block-heading has-text-align-center">Expert‑Approved Essentials</h3>
+
+<p class="has-text-align-center wp-block-paragraph" style="font-size:16px">Our health products are tested by professionals and pet owners alike. Each item is chosen for quality, safety, and effectiveness — making preventive care simple and stress‑free.</p>
+</div>
+</div>
+
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">💚</p>
+
+<h3 class="wp-block-heading has-text-align-center">Happy Dogs, Happy Owners</h3>
+
+<p class="has-text-align-center wp-block-paragraph">We believe health care should strengthen the bond between you and your dog. With the right products, every supplement, treatment, and check becomes a moment of care.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:50px;padding-bottom:50px">
+<h2 class="wp-block-heading has-text-align-center alignwide" id="who-this-page-is-for" style="margin-bottom:25px;font-size:32px;font-style:normal;font-weight:700">Who This Page Is For</h2>
+
+<p class="has-text-align-center alignwide wp-block-paragraph" style="margin-bottom:30px;font-size:18px">Every dog deserves the best care — this guide helps you find the right health products for your pet.</p>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-52b7c8f9 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🐾 Health-Conscious Pet Owners</h3>
+
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">Owners who prioritise preventive care and want to stay ahead of potential health issues with the right products and routines</p>
+</div>
+</div>
+
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🐕‍🦺 Senior Dog Owners</h3>
+
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">Caring for an ageing dog with joint stiffness, mobility challenges, or age-related conditions that benefit from supplements and regular monitoring</p>
+</div>
+</div>
+
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🐶 New Puppy Parents</h3>
+
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">First-time owners learning about vaccinations, worming schedules, diet, and the essentials of raising a healthy puppy from day one</p>
+</div>
+</div>
+
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🌱 Natural Solutions</h3>
+
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">Pet parents seeking natural and vet-recommended health solutions</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="wp-block-group alignwide has-background is-layout-constrained wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:40px;padding-bottom:40px">
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color wp-elements-a235bfbfe921fd693bb1a67ab33b5e1b" id="dog-health-care-faq" style="color:#1a1a1a;margin-bottom:25px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Dog Health &amp; Care FAQ</h2>
+
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px"><summary><strong>How often should my dog visit the vet?</strong></summary>
+<p class="wp-block-paragraph">Adult dogs should have an annual check-up, while puppies and senior dogs (over 7 years) benefit from visits every 6 months. Regular check-ups catch potential issues early and keep vaccinations up to date.</p>
+</details>
+
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px"><summary><strong>What supplements does my dog actually need?</strong></summary>
+<p class="wp-block-paragraph">It depends on your dog’s age, breed, and diet. Common beneficial supplements include omega-3 fatty acids for coat and joints, glucosamine for joint support in older dogs, and probiotics for digestive health. Always consult your vet before starting any supplement.</p>
+</details>
+
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px"><summary><strong>How do I protect my dog from fleas and ticks?</strong></summary>
+<p class="wp-block-paragraph">Use a vet-recommended flea and tick treatment year-round — not just in summer. Options include spot-on treatments, oral tablets, and flea collars. Check your dog after walks in long grass, and wash bedding regularly.</p>
+</details>
+
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px"><summary><strong>What are signs my dog might be unwell?</strong></summary>
+<p class="wp-block-paragraph">Watch for changes in appetite, energy levels, drinking habits, or bathroom routine. Other warning signs include limping, excessive scratching, bad breath, vomiting, or unusual lumps. When in doubt, contact your vet.</p>
+</details>
+
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px"><summary><strong>Is dental care really important for dogs?</strong></summary>
+<p class="wp-block-paragraph">Absolutely. Around 80% of dogs show signs of dental disease by age three. Daily brushing, dental chews, and regular vet dental checks prevent painful infections, tooth loss, and can even protect heart and kidney health.</p>
+</details>
+</div>
+
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:60px;padding-bottom:60px">
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-a4783d5ae78404c6d9e002dfb4dd79b9" id="how-to-choose-the-right-products" style="color:#111111;margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">How to Choose the Right Products</h2>
+
+<p class="has-text-align-center has-text-color has-link-color wp-elements-c9e94ac8be34e304c4b8a1830708e1f0 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:18px">Choosing the right health products depends on your dog’s age, breed, and specific needs. The right combination of supplements, treatments, and preventive care ensures your dog stays healthy and happy.</p>
+
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-797e883149891e0d26934cba2d23306d" id="useful-tips-every-pet-owner" style="color:#0073aa;margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Useful Tips for Every Pet Owner</h2>
+
+<p class="has-text-align-center has-text-color has-link-color wp-elements-e0274bc1a4b01afaddf4c7c5f8b47322 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:30px;font-size:18px">Keeping your dog healthy goes beyond grooming. These practical tips cover nutrition, preventive care, seasonal safety, and knowing when to call the vet.</p>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-36884a18ff2e9a404637a47aee870d83" style="color:#0073aa;margin-top:30px;margin-bottom:16px;font-size:24px;font-style:normal;font-weight:600">Preventive Health Essentials</h3>
+
+<p class="has-text-color has-link-color wp-elements-375a4ba54338950dd5cc11dd0b856d20 wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Regular vet check-ups are the cornerstone of good dog health. Adult dogs benefit from annual visits, while seniors over seven years should be seen twice yearly. These screenings catch problems early when they are most treatable. Core vaccinations protect against distemper, parvovirus, and leptospirosis, and your vet will tailor the schedule to your dog’s lifestyle and risk factors.</p>
+
+<p class="has-text-color has-link-color wp-elements-20303796cce6d41d0326c644bb98519e wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Parasite prevention is a year-round priority. Fleas, ticks, and worms can seriously compromise your dog’s health if left untreated. Use vet-recommended products consistently and check your dog for ticks after every walk, especially during warmer months.</p>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-a15d7caaf9ade56811c79480457abf77" style="color:#0073aa;margin-top:30px;margin-bottom:16px;font-size:24px;font-style:normal;font-weight:600">Nutrition and Feeding for Wellness</h3>
+
+<p class="has-text-color has-link-color wp-elements-df0e9480f2436e6335dc0ac70c156a47 wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Diet has the single biggest impact on long-term dog health. A balanced, complete diet provides everything your dog needs — from strong bones to a glossy coat. Choose food appropriate for your dog’s age, size, and activity level. Supplements such as omega-3 fatty acids reduce inflammation and support healthy skin, while glucosamine benefits larger breeds and older dogs. Always consult your vet before adding supplements.</p>
+
+<p class="has-text-color has-link-color wp-elements-13edd8375353dc7fc20e906fab5764e4 wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Fresh water is often overlooked but essential. Dogs should drink approximately 50 ml per kilogram of body weight daily. Monitor water intake carefully — excessive thirst or reduced drinking can both signal underlying health concerns that warrant a vet visit.</p>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-4ffcb71fffca1515c633eeee8673f1f4" style="color:#0073aa;margin-top:30px;margin-bottom:16px;font-size:24px;font-style:normal;font-weight:600">Warning Signs You Should Never Ignore</h3>
+
+<p class="has-text-color has-link-color wp-elements-a038b1109950cb5dbd45d7047fdfdbdc wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Knowing the warning signs of dog health problems can save your pet’s life. Sudden changes in appetite, energy level, or behaviour are common red flags. Persistent digestive problems lasting more than 24 hours require a vet consultation, and blood in stool or vomit is always an emergency. Changes in breathing, drinking, or urination patterns can indicate heart disease, diabetes, or kidney problems.</p>
+
+<p class="has-text-color has-link-color wp-elements-3ec75137a7d60da0e72cf5c6a9ea4072 wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Regular home monitoring helps you spot changes early. Weigh your dog monthly, check eyes, ears, and teeth weekly, and keep a simple health journal noting any shifts in behaviour, appetite, or activity level. This information is invaluable for your vet when diagnosing issues.</p>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-9fd3968150ff52e9be7a8b4ff197f4e0" style="color:#0073aa;margin-top:30px;margin-bottom:16px;font-size:24px;font-style:normal;font-weight:600">Your Preventive Care Checklist</h3>
+
+<ul class="wp-block-list has-text-color has-link-color wp-elements-1cc06ef723d4ec86d4b42e9e6327fa30" style="color:#333333;font-size:16px;line-height:1.7">
+<li><strong>Daily:</strong> Check eyes for discharge, monitor appetite and energy, provide fresh water, and ensure adequate exercise.</li>
+
+<li><strong>Weekly:</strong> Examine ears for redness or odour, brush teeth, check skin and coat condition, and inspect paws for cuts.</li>
+
+<li><strong>Monthly:</strong> Weigh your dog and record the measurement, apply flea and tick prevention, check collar fit, and inspect nails.</li>
+
+<li><strong>Annually:</strong> Full vet examination including blood work for seniors, vaccination boosters, dental check-up, and discussion of any concerns.</li>
+</ul>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-dc3476c9137466dda243d7bd2166dc35" style="color:#0073aa;margin-top:30px;margin-bottom:16px;font-size:24px;font-style:normal;font-weight:600">First Aid Basics</h3>
+
+<p class="has-text-color has-link-color wp-elements-f93b156f6c825fbd4c312f52f9d47faa wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Every pet owner should keep a first aid kit containing sterile gauze, adhesive tape, blunt-end scissors, tweezers, antiseptic wipes, a digital thermometer, and your vet’s emergency number. For minor cuts, clean with saline solution, apply gentle pressure to stop bleeding, and monitor for infection. Deep wounds, heavy bleeding, or punctures always need veterinary attention.</p>
+
+<p class="has-text-color has-link-color wp-elements-02670dedf3b86c106972ff771dbfce9b wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Know the signs of common emergencies: difficulty breathing, seizures, uncontrolled bleeding, suspected poisoning, bloated abdomen, inability to urinate, and collapse. In any of these situations, contact your emergency vet immediately rather than attempting home treatment.</p>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-6cf1fb413fcb9ef4c2c68fe80daae923" style="color:#0073aa;margin-top:30px;margin-bottom:16px;font-size:24px;font-style:normal;font-weight:600">Seasonal Wellness</h3>
+
+<p class="has-text-color has-link-color wp-elements-c157fa84756694ba36413cacac6ccd83 wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Each season brings specific challenges. Spring triggers allergies — wipe paws and belly after walks to remove pollen. Summer demands vigilance around heatstroke and burnt paw pads; walk during cooler hours and always carry water. Autumn increases exposure to toxic conkers, acorns, and fallen fruit, and harvest mites peak during this period. Winter brings risks from antifreeze spills and rock salt; wipe paws after every walk and consider a waterproof coat for thin-skinned breeds.</p>
+
+<p class="has-text-color has-link-color wp-elements-b39bf4fb38e3d9fee1adfb479c332d61 wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Mental wellness is an often-overlooked aspect of your pet’s overall condition. Anxiety, boredom, and stress manifest as destructive behaviour, excessive barking, or withdrawal. Regular exercise, enrichment activities, and a predictable routine address the most common triggers. If behavioural changes persist, consult your vet to rule out underlying pain or illness.</p>
+
+<p class="has-text-color has-link-color wp-elements-f8df67ee85d2a8b96ecf69eba9c49c77 wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Building a relationship with a trusted veterinary practice is one of the best investments in long-term dog health. A vet who knows your companion’s history spots subtle changes that a new practitioner might miss. Annual wellness exams, honest conversations about diet and exercise, and prompt attention to concerns form the foundation of proactive care that extends your pet’s lifespan and improves their quality of life at every stage.</p>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-f57347b05950255b33bb8b2b7718cfc2" style="color:#0073aa;margin-top:30px;margin-bottom:16px;font-size:24px;font-style:normal;font-weight:600">Dental Health and Oral Hygiene</h3>
+
+<p class="has-text-color has-link-color wp-elements-fe7c796384efa6c3ec150286b35c300b wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Dental disease affects an estimated 80 percent of dogs by the age of three, making oral hygiene one of the most important and most neglected areas of pet care. Plaque and tartar build-up can lead to gum inflammation, tooth decay, and even systemic infections that affect the heart, liver, and kidneys. Brushing your dog&#8217;s teeth several times a week with an enzymatic toothpaste formulated for dogs is the gold standard. If your dog resists brushing, dental chews, water additives, and rubber chew toys designed to scrape plaque can supplement your routine. Ask your vet about professional dental cleanings, which typically involve anaesthesia and a thorough scale and polish. Between cleanings, lift your dog&#8217;s lip regularly to check for red or swollen gums, broken teeth, and persistent bad breath, all of which warrant prompt veterinary attention.</p>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-a4a0833064813a8c86a7d68e8b1874fb" style="color:#0073aa;margin-top:30px;margin-bottom:16px;font-size:24px;font-style:normal;font-weight:600">Exercise and Weight Management</h3>
+
+<p class="has-text-color has-link-color wp-elements-21200b7a8060a6660a263946a9f90a2e wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Obesity is one of the fastest-growing health concerns in pets, with studies suggesting that over half of dogs in developed countries are overweight or obese. Carrying excess weight places significant strain on joints, increases the risk of diabetes, and shortens lifespan by an average of two years. The right amount of exercise depends on your dog&#8217;s breed, age, and fitness level. Most adult dogs benefit from at least 30 to 60 minutes of moderate activity each day, which can include brisk walks, fetch, swimming, or agility training. Puppies need shorter, more frequent bursts of play to protect developing joints, while senior dogs benefit from gentle, consistent movement that maintains muscle tone without overexertion. Combine regular exercise with portion-controlled feeding and limited treats to keep your dog at a healthy body condition score. Your vet can show you how to assess body condition at home by feeling for ribs and checking the waistline from above.</p>
+
+<p class="has-text-color has-link-color wp-elements-4ea5b7635b9ea51be018dc03ee77a2e3 wp-block-paragraph" style="color:#333333;font-size:16px;line-height:1.7">Ultimately, a holistic approach to dog health means looking at the whole picture: nutrition, grooming, dental care, exercise, preventive medicine, mental stimulation, and a strong bond with your veterinary team. When all these elements work together, your dog enjoys a longer, happier, and more comfortable life, and you gain the peace of mind that comes from knowing you are providing the very best care possible.</p>
+</div>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-14f3bd49b898fdb1e2d0bd7e8d1e198a" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">❤️  Understand Your Dog’s Health Needs</h3>
+
+<p class="has-text-color has-link-color wp-elements-a294ed070ace3f4bbe83feb2b5406627 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Every dog has unique health requirements based on their age, breed, size, and lifestyle. Understanding these needs is the first step to choosing the right products. Speak with your vet to identify any breed-specific vulnerabilities and build a tailored care plan.</p>
+
+<ul class="wp-block-list has-text-color has-link-color wp-elements-07af5dcebd6ad559113af7658ddd601b" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Look for products endorsed or recommended by veterinarians</li>
+
+<li>Check for clinical testing or veterinary approval labels</li>
+
+<li>Read reviews from other dog owners with similar breeds</li>
+
+<li>Avoid products with vague ingredient lists or unverified claims</li>
+
+<li>Consult your vet before trying new supplements or treatments</li>
+</ul>
+
+<p class="has-text-color has-link-color wp-elements-fcb6176df562f5d5ffed4f62f825546a wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:1px;font-size:16px;line-height:1.6">Your vet knows your dog’s health history and can recommend specific brands and formulations that are safe and effective for their individual needs.</p>
+</div>
+
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-802d768b51555579c66c766cfbe8268d" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🛡️ Choose Preventive Care Products</h3>
+
+<p class="has-text-color has-link-color wp-elements-2cc4d5a9486f9ad2ad3d107cdf32a906 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Prevention is always better than cure. Invest in quality flea and tick treatments, dental care kits, and regular health check-ups to catch issues before they become serious. A consistent preventive routine saves money and keeps your dog comfortable.</p>
+
+<ul class="wp-block-list has-text-color has-link-color wp-elements-f6709ec65f3b1e6a02a7b0d5152004aa" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Look for natural, high-quality ingredients in supplements</li>
+
+<li>Avoid artificial colours, flavours, and unnecessary preservatives</li>
+
+<li>Check for third-party testing or quality certifications</li>
+
+<li>Read the full ingredient list, not just marketing claims</li>
+
+<li>Choose products appropriate for your dog’s size and age</li>
+</ul>
+
+<p class="has-text-color has-link-color wp-elements-33866daa7502d2d7602faa674a4f0287 wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:1px;font-size:16px;line-height:1.6">Quality ingredients make a real difference in effectiveness. Products with transparent labelling and recognised certifications give you confidence that you’re providing genuine health benefits.</p>
+</div>
+
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-87358d99a675a9ff5321bfee708897ae" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">💊 Select the Right Supplements</h3>
+
+<p class="has-text-color has-link-color wp-elements-4239f0a5589e49d1a00fadb56a23196c wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Not all supplements are created equal. Look for veterinary-strength formulations with proven active ingredients like glucosamine, omega-3 fatty acids, or probiotics. Always match supplements to your dog’s age, breed, and specific health concerns, and consult your vet before starting any new supplement.</p>
+
+<ul class="wp-block-list has-text-color has-link-color wp-elements-31fafb2d9e91ce89cb037ff54c2f7818" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Puppies need different supplements than senior dogs</li>
+
+<li>Large breeds often benefit from joint support earlier</li>
+
+<li>Active dogs may need extra joint and muscle recovery support</li>
+
+<li>Breed-specific health concerns should guide your choices</li>
+
+<li>Adjust products as your dog ages and their needs change</li>
+</ul>
+
+<p class="has-text-color has-link-color wp-elements-4861987c0063fb0f535c515b042a3e50 wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:1px;font-size:16px;line-height:1.6">Every dog is unique. A one-size-fits-all approach rarely works for health products. Take time to understand your dog’s specific requirements and adjust your choices as they grow and age.</p>
+</div>
+
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-6bec2fa3532f9af77c16b2c690ec3386" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">📋 Build a Home Health Monitoring Routine</h3>
+
+<p class="has-text-color has-link-color wp-elements-9b2a6be4c0dbb90735663b0b24f9a1e1 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Regular home monitoring helps you spot health changes early. Weigh your dog monthly, check their eyes, ears, teeth, and skin weekly, and keep a simple health journal. This information is invaluable for your vet and ensures small issues are caught before they become big problems.</p>
+
+<ul class="wp-block-list has-text-color has-link-color wp-elements-48bf186d28ee8a4646e46200cba2d77d" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Always weigh your dog before administering flea or tick treatments</li>
+
+<li>Never use a large-dog product on a small dog (or vice versa)</li>
+
+<li>Follow dosage instructions precisely — more is not better</li>
+
+<li>Keep a health calendar to track treatments and vet visits</li>
+
+<li>Store all health products safely out of your dog’s reach</li>
+</ul>
+
+<p class="has-text-color has-link-color wp-elements-7eec84af4789cbcab8f8529daae80331 wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:1px;font-size:16px;line-height:1.6">Incorrect dosing can cause serious side effects. When in doubt, consult your vet for guidance on the right products and quantities for your dog’s weight and health status.</p>
+</div>
+
+<p><!-- /wp:post-content --></p>
+<p><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"50px","bottom":"50px","left":"50px","right":"50px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} --></p>
+<div class="wp-block-group alignwide has-white-background-color has-background" style="padding: 50px;"><!-- wp:heading {"style":{"typography":{"fontSize":"32px","fontStyle":"normal","fontWeight":"700","textAlign":"center"},"spacing":{"margin":{"bottom":"30px"}}},"anchor":"explore-more-dog-essentials"} -->
+<h2 class="wp-block-heading has-text-align-center" id="explore-more-dog-essentials" style="margin-bottom: 30px; font-size: 32px; font-style: normal; font-weight: bold;">Explore More Dog Essentials</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:columns --></p>
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color: #e5e5e5; border-width: 1px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; background-color: #fafafa; padding: 20px;"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom: 12px; font-size: 40px;">🧸</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading" style="margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Toys</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}}} --></p>
+<p style="font-size: 16px;">Keep your dog active and entertained with durable chew toys, fetch toys, and interactive puzzles designed for all breeds and play styles.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} --></p>
+<div class="wp-block-buttons has-custom-font-size" style="font-size: 16px; font-style: normal; font-weight: 600;"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-toys/">View Category</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+<p><!-- wp:column --></p>
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color: #e5e5e5; border-width: 1px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; background-color: #fafafa; padding: 20px;"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom: 12px; font-size: 40px;">🐕‍🦺</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading" style="margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Collars &amp; Leads</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}}} --></p>
+<p style="font-size: 16px;">Find durable, safe and comfortable dog collars, dog leads, and harnesses built for everyday walks, training sessions, and reliable control</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} --></p>
+<div class="wp-block-buttons has-custom-font-size" style="font-size: 16px; font-style: normal; font-weight: 600;"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-collars-leashes/">View Category</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+<p><!-- wp:column --></p>
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color: #e5e5e5; border-width: 1px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; background-color: #fafafa; padding: 20px;"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom: 12px; font-size: 40px;">🛏️</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading" style="margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Beds</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}}} --></p>
+<p style="font-size: 16px;">Give your dog a comfortable place to rest with our top‑rated beds for every size and sleep style. From calming donut beds to orthopedic support</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} --></p>
+<div class="wp-block-buttons has-custom-font-size" style="font-size: 16px; font-style: normal; font-weight: 600;"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-beds/">View Category</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+</div>
+<p><!-- /wp:columns --></p>
+<p><!-- wp:columns --></p>
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color: #e5e5e5; border-width: 1px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; background-color: #fafafa; padding: 20px;"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom: 12px; font-size: 40px;">🎯</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading" style="margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Training &amp; Behaviour</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}}} --></p>
+<p style="font-size: 16px;">Training treats, clickers, pads, and behaviour‑support tools to help build good habits and make training smoother for both of you.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} --></p>
+<div class="wp-block-buttons has-custom-font-size" style="font-size: 16px; font-style: normal; font-weight: 600;"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-training-behaviour/">View Category</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+<p><!-- wp:column --></p>
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color: #e5e5e5; border-width: 1px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; background-color: #fafafa; padding: 20px;"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom: 12px; font-size: 40px;">🍖</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading" style="margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Bowls &amp; Feeding</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}}} --></p>
+<p style="font-size: 16px;">Discover stainless steel bowls, slow feeders, raised stands, and feeding accessories that make mealtimes easier and healthier for your dog.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} --></p>
+<div class="wp-block-buttons has-custom-font-size" style="font-size: 16px; font-style: normal; font-weight: 600;"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-bowls-feeding/">View Category</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+<p><!-- wp:column --></p>
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color: #e5e5e5; border-width: 1px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; background-color: #fafafa; padding: 20px;"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom: 12px; font-size: 40px;">✂️</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading" style="margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Grooming</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}}} --></p>
+<p style="font-size: 16px;">Keep your dog looking and feeling great with brushes, shampoos, clippers, and grooming tools for every coat type and breed.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} --></p>
+<div class="wp-block-buttons has-custom-font-size" style="font-size: 16px; font-style: normal; font-weight: 600;"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-grooming/">View Category</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+</div>
+<p><!-- /wp:columns --></p>
+</div>
+<p><!-- /wp:group --></p>
+<p><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"60px","bottom":"60px"}}},"backgroundColor":"white","layout":{"type":"constrained"},"anchor":"bestsellers"} --></p>
+<div class="wp-block-group alignwide has-white-background-color has-background" id="bestsellers" style="padding-top: 60px; padding-bottom: 60px;"><!-- wp:heading {"style":{"typography":{"fontSize":"32px","fontStyle":"normal","fontWeight":"700","lineHeight":"1.2","textAlign":"center"},"elements":{"link":{"color":{"text":"#111111"}}},"color":{"text":"#111111"},"spacing":{"margin":{"bottom":"40px"}}},"anchor":"top-5-best-dog-health-amp-care-products-in-2026"} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color" id="top-5-best-dog-health-amp-care-products-in-2026" style="color: #111111; margin-bottom: 40px; font-size: 32px; font-style: normal; font-weight: bold; line-height: 1.2;">Top 5 Best Dog Health &amp; Care Products in 2026</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"32px","left":"32px"}}}} --></p>
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"},"margin":{"bottom":"32px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; margin-bottom: 32px; padding: 24px;"><!-- wp:image {"width":"172px","height":"auto","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-recalc-dims="1" decoding="async" alt="Dog first aid kit with bandages antiseptic wipes and emergency supplies" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-first-aid-kit.jpg?ssl=1" style="width: 172px; height: auto;"/></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading has-text-color has-link-color" style="color: #0073aa; margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog First Aid Kit </h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>About this item</strong><br/>Comprehensive pet first aid kit with bandages, antiseptic wipes, tick remover, emergency blanket and more. Essential for home, walks and car journeys.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>COMPLETE KIT</strong> – Includes bandages, gauze, adhesive tape, antiseptic wipes, tick remover, emergency blanket, and scissors in a compact carry case.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>ALWAYS PREPARED</strong> – Be ready for minor injuries, insect bites, cuts, and scrapes whether at home, on walks, or travelling.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>PORTABLE &amp; LIGHTWEIGHT</strong> – Compact design fits easily in your car, rucksack, or dog walking bag for on-the-go emergencies.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>PET-SAFE SUPPLIES</strong> – All contents are selected to be safe and suitable for use on dogs of all sizes.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>VET-RECOMMENDED</strong> – Trusted by pet owners and recommended by veterinary professionals for everyday preparedness.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- /wp:list --></p>
+<p><!-- wp:buttons --></p>
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"white","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"fontStyle":"normal","fontWeight":"600"},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"left":"14px","right":"14px","top":"14px","bottom":"14px"}}}} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=dog+first+aid+kit&amp;tag=pethubonline-21" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; font-style: normal; font-weight: 600; padding: 14px;" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+<p><!-- wp:column --></p>
+<div class="wp-block-column"><!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"},"margin":{"bottom":"32px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; margin-bottom: 32px; padding: 24px;"><!-- wp:image {"width":"157px","height":"auto","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-recalc-dims="1" decoding="async" alt="Dog dental care kit with toothbrush and enzymatic toothpaste" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-dental-care-kit.jpg?ssl=1" style="width: 157px; height: auto;"/></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading has-text-color has-link-color" style="color: #0073aa; margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Dental Care Kit (Toothbrush &amp; Toothpaste)</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Complete dental hygiene kit with finger toothbrush, long-handled brush and enzymatic toothpaste. Helps prevent plaque, tartar and gum disease.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>Key Features:</strong></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>COMPLETE DENTAL KIT:</strong> Includes finger toothbrush, long-handled toothbrush, and enzymatic toothpaste formulated for dogs.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>PREVENTS PLAQUE &amp; TARTAR:</strong> Regular use helps remove plaque build-up and prevents tartar formation for healthier teeth.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>FIGHTS GUM DISEASE:</strong> Enzymatic formula targets bacteria that cause gingivitis and bad breath in dogs.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>TASTY FLAVOUR:</strong> Dog-friendly flavour makes brushing enjoyable and encourages cooperation during dental care.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>SUITABLE FOR ALL BREEDS:</strong> Works for small, medium, and large dogs with brushes sized for different mouths.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- /wp:list --></p>
+<p><!-- wp:buttons --></p>
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"white","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"fontStyle":"normal","fontWeight":"600"},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"left":"14px","right":"14px","top":"14px","bottom":"14px"}}}} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=dog+dental+care+kit+toothbrush+toothpaste&amp;tag=pethubonline-21" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; font-style: normal; font-weight: 600; padding: 14px;" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+</div>
+<p><!-- /wp:columns --></p>
+<p><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"32px","left":"32px"}}}} --></p>
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"},"margin":{"bottom":"32px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; margin-bottom: 32px; padding: 24px;"><!-- wp:image {"width":"209px","height":"auto","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-recalc-dims="1" decoding="async" alt="Dog joint supplement with glucosamine and chondroitin tablets" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-joint-supplement.jpg?ssl=1" style="width: 209px; height: auto;"/></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading has-text-color has-link-color" style="color: #0073aa; margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Joint Supplement (Glucosamine &amp; Chondroitin)</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Veterinary-strength joint support tablets with glucosamine, chondroitin and MSM. Helps maintain mobility and ease joint stiffness in older dogs.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>Key Features:</strong></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>TRIPLE-ACTION FORMULA</strong> – Combines glucosamine, chondroitin, and MSM for comprehensive joint support and cartilage health.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>SUPPORTS MOBILITY</strong> – Helps maintain flexibility and ease stiffness, especially in senior dogs and larger breeds.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>VETERINARY STRENGTH</strong> – High-potency formulation trusted by vets for dogs with age-related joint concerns.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>EASY TO ADMINISTER</strong> – Tasty chewable tablets that most dogs take willingly, no hiding in food required.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>SUITABLE FOR ALL BREEDS</strong> – Available in dosages appropriate for small, medium, and large dogs.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- /wp:list --></p>
+<p><!-- wp:buttons --></p>
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"white","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"fontStyle":"normal","fontWeight":"600"},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"left":"14px","right":"14px","top":"14px","bottom":"14px"}}}} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=dog+joint+supplement+glucosamine+chondroitin&amp;tag=pethubonline-21" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; font-style: normal; font-weight: 600; padding: 14px;" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+<p><!-- wp:column --></p>
+<div class="wp-block-column"><!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"},"margin":{"bottom":"32px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; margin-bottom: 32px; padding: 24px;"><!-- wp:image {"width":"172px","height":"auto","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-recalc-dims="1" decoding="async" alt="Dog calming aid tablets for anxiety relief with natural ingredients" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-calming-aid.jpg?ssl=1" style="width: 172px; height: auto;"/></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading has-text-color has-link-color" style="color: #0073aa; margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Calming Aid (Anxiety Relief)</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Keep your dog&#8217;s nails perfectly trimmed with these professional-grade dog nail clippers, featuring a protective guard, safety lock, and ergonomic non-slip handle for medium and large breeds.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>Key Features:</strong></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>PROTECTIVE GUARD:</strong> Built-in guard prevents over-cutting, keeping your dog&#8217;s nails safe and preventing injury.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>REDUCES ANXIETY:</strong> Helps ease stress during fireworks, thunderstorms, car journeys, and vet visits.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>SEPARATION SUPPORT:</strong> Ideal for dogs who struggle with being left alone, helping them feel more relaxed and settled.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>FAST-ACTING:</strong> Starts working within 30–60 minutes, providing reliable relief when your dog needs it most.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>SAFE &amp; VET-APPROVED:</strong> Non-drowsy formula suitable for daily use, with no known side effects for dogs of all sizes.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- /wp:list --></p>
+<p><!-- wp:buttons --></p>
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"white","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"fontStyle":"normal","fontWeight":"600"},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"left":"14px","right":"14px","top":"14px","bottom":"14px"}}}} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=dog+calming+aid+anxiety+relief&amp;tag=pethubonline-21" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; font-style: normal; font-weight: 600; padding: 14px;" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+</div>
+<p><!-- /wp:columns --></p>
+<p><!-- wp:group {"align":"wide","backgroundColor":"white","layout":{"type":"constrained"}} --></p>
+<div class="wp-block-group alignwide has-white-background-color has-background"><!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"},"margin":{"bottom":"32px"}}},"backgroundColor":"white","layout":{"type":"constrained","contentSize":"600px"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; margin-bottom: 32px; padding: 24px;"><!-- wp:image {"width":"208px","height":"auto","sizeSlug":"full","linkDestination":"none","align":"center","style":{"border":{"radius":{"topLeft":"8px","topRight":"8px","bottomLeft":"8px","bottomRight":"8px"}},"spacing":{"margin":{"bottom":"16px"}}}} -->
+<figure class="wp-block-image aligncenter size-full is-resized has-custom-border" style="margin-bottom: 16px;"><img data-recalc-dims="1" decoding="async" alt="Dog flea and tick spot-on treatment for monthly parasite protection" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-flea-tick-treatment.jpg?ssl=1" style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; width: 208px; height: auto;"/></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading has-text-color has-link-color" style="color: #0073aa; margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Flea &amp; Tick Treatment (Spot-On)</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"margin":{"bottom":"12px"}}}} --></p>
+<p class="has-text-color has-link-color" style="color: #333333; margin-bottom: 12px; font-size: 16px; line-height: 1.6;">Effective monthly spot-on treatment that kills fleas and ticks on contact. Waterproof formula provides up to 4 weeks protection.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>Key Features:</strong></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"margin":{"bottom":"12px"}}}} --></p>
+<p class="has-text-color has-link-color" style="color: #333333; margin-bottom: 12px; font-size: 16px; line-height: 1.6;"><strong>KILLS ON CONTACT</strong> – Fast-acting formula eliminates fleas and ticks without needing to bite your dog first.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>4 WEEKS PROTECTION</strong> – Each application provides up to one month of continuous parasite protection.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>WATERPROOF FORMULA</strong> – Remains effective after bathing, swimming, and rainy walks for uninterrupted coverage.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>EASY APPLICATION</strong> – Simple spot-on pipette applied to the back of the neck for hassle-free treatment.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>WEIGHT-SPECIFIC DOSES</strong> – Available in precise dosages matched to your dog’s weight for safe, effective treatment.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:buttons --></p>
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"white","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"fontStyle":"normal","fontWeight":"600"},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"left":"14px","right":"14px","top":"14px","bottom":"14px"}}}} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=dog+flea+tick+treatment+spot+on&amp;tag=pethubonline-21" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; font-style: normal; font-weight: 600; padding: 14px;" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:group --></p>
+<p><!-- wp:group {"align":"full","style":{"color":{"background":"#fafafa"},"spacing":{"padding":{"top":"20px","bottom":"20px"}},"border":{"top":{"color":"#e5e5e5","width":"3px"},"right":{"width":"0px","style":"none"},"bottom":{"width":"3px"},"left":{"width":"0px","style":"none"}}},"layout":{"type":"constrained"}} --></p>
+<div class="wp-block-group alignfull has-background" style="border-top-color: #e5e5e5; border-right-style: none; border-left-style: none; background-color: #fafafa; padding-top: 20px; padding-bottom: 20px; border-width: 3px 0px 3px 0px;"><!-- wp:paragraph {"style":{"typography":{"textAlign":"center","fontSize":"14px","lineHeight":1.4},"color":{"text":"#555555"},"elements":{"link":{"color":{"text":"#555555"}}}}} -->
+<p class="has-text-align-center has-text-color has-link-color" style="color: #555555; font-size: 14px; line-height: 1.4;">Updated weekly • Independent reviews • No sponsored products • Trusted by pet owners</p>
+<p><!-- /wp:paragraph --></p>
+</div>
+<p><!-- /wp:group --></p>
+<p><!-- wp:cover {"url":"https://pethubonline.com/wp-content/uploads/2026/04/health-and-care-category-image.png","id":173,"dimRatio":40,"customOverlayColor":"#cfc0b3","isUserOverlayColor":true,"focalPoint":{"x":0.64,"y":0.34},"minHeight":100,"minHeightUnit":"vh","contentPosition":"top left","isDark":false,"sizeSlug":"full","align":"full","layout":{"type":"constrained","wideSize":"1600px","contentSize":"1600px"}} --></p>
+<div class="wp-block-cover alignfull is-light has-custom-content-position is-position-top-left" style="min-height: 100vh;"><img data-attachment-id="173" data-permalink="https://pethubonline.com/pet-hub-online/health-and-care-category-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/04/health-and-care-category-image.png?fit=1330%2C1182&amp;ssl=1" data-orig-size="1330,1182" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="health and care category image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/04/health-and-care-category-image.png?fit=1024%2C910&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1330" height="1182" data-attachment-id="173" data-permalink="https://pethubonline.com/pet-hub-online/health-and-care-category-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/04/health-and-care-category-image.png?fit=1330%2C1182&amp;ssl=1" data-orig-size="1330,1182" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="health and care category image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/04/health-and-care-category-image.png?fit=1024%2C910&amp;ssl=1" alt="Dog health and care products collection" class="wp-block-cover__image-background wp-image-173 size-full" data-object-fit="cover" data-object-position="64% 34%" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/04/health-and-care-category-image.png?resize=1330%2C1182&#038;ssl=1" style="object-position: 64% 34%;"/>
+<div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"55px","bottom":"55px","left":"0px","right":"0px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="padding: 55px 0px 55px 0px;"><!-- wp:heading {"style":{"typography":{"fontSize":"36px","fontStyle":"normal","fontWeight":"700","lineHeight":"1.2","textAlign":"left"},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}}},"anchor":"ready-to-support-your-dogs-health"} -->
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color" id="ready-to-support-your-dogs-health" style="color: #333333; font-size: 36px; font-style: normal; font-weight: bold; line-height: 1.2; padding: 24px;">Ready to Support Your Dog’s Health?</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph {"style":{"typography":{"fontSize":"18px"},"elements":{"link":{"color":{"text":"#333333"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"},"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"color":{"text":"#333333"}}} --></p>
+<p class="has-text-color has-link-color" style="color: #333333; margin-top: 16px; margin-bottom: 16px; font-size: 18px; padding: 24px;">Browse our curated selection of health products, supplements, and preventive care essentials. Everything you need to keep your dog healthy, comfortable, and thriving — delivered to your door.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:buttons {"style":{"typography":{"fontSize":"18px"},"spacing":{"padding":{"top":"12px","bottom":"12px","left":"24px","right":"24px"},"margin":{"top":"28px","bottom":"28px"}},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"}}}} --></p>
+<div class="wp-block-buttons has-custom-font-size" style="border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; margin-top: 28px; margin-bottom: 28px; font-size: 18px; padding: 12px 24px 12px 24px;"><!-- wp:button {"style":{"spacing":{"padding":{"left":"24px","right":"24px","top":"12px","bottom":"12px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#dog-health" style="padding: 12px 24px 12px 24px;">Shop Dog Health</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+</div>
+<p><!-- /wp:cover --></p>
+<p><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"60px","bottom":"60px"}},"color":{"background":"#ffffff"}},"layout":{"type":"constrained"}} --></p>
+<div class="wp-block-group alignwide has-background" style="background-color: #ffffff; padding-top: 60px; padding-bottom: 60px;"> </div>
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Related Articles</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><a href="https://pethubonline.com/best-dog-joint-supplements-uk/">Best Dog Joint Supplements UK (2026) – Mobility Support Guide</a></li>
+<li><a href="https://pethubonline.com/best-dog-flea-treatment-uk/">Best Dog Flea Treatment UK (2026) – Prevention Guide</a></li>
+<li><a href="https://pethubonline.com/best-dog-dental-care-uk/">Best Dog Dental Care UK (2026) – Teeth Cleaning Guide</a></li>
+<li><a href="https://pethubonline.com/best-dog-health-care-uk/">Best Dog Health and Care UK (2026) – Complete Guide</a></li>
+</ul>
+<!-- /wp:list -->

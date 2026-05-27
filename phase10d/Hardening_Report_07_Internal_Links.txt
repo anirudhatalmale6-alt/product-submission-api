@@ -1,0 +1,105 @@
+SITE HARDENING REPORT 7: INTERNAL LINKING QUALITY
+PetHub Online — pethubonline.com
+Generated: 2026-05-27
+==========================================================================
+
+SCOPE
+-----
+Full internal linking audit: orphan pages, broken links, anchor text
+quality, link distribution, and cluster connectivity.
+
+==========================================================================
+AUDIT METRICS
+==========================================================================
+Items audited:       110 (86 posts + 24 pages)
+Total internal links: 837
+Average outbound:     7.6 per item
+Average inbound:      7.3 per item
+
+==========================================================================
+1. ORPHAN PAGES (13 items — zero inbound links)
+==========================================================================
+11 posts and 2 pages receive no internal links from other content.
+
+High-priority orphans:
+  - Dog Harnesses cluster (4 posts): hub + 3 spokes all orphaned
+  - Cat Toys spokes (5 posts): DIY, Kitten vs Adult, Replace Guide,
+    Safety Guide, Interactive Indoor
+  - Multi-Pet Household Tips post
+
+Lower-priority:
+  - Terms and Conditions page
+  - Homepage (linked from nav, not from content — acceptable)
+
+ACTION: Add contextual inbound links from related hub pages
+        and sibling posts to de-orphan these 11 posts.
+
+==========================================================================
+2. BROKEN INTERNAL LINKS (32 links to 13 non-existent URLs)
+==========================================================================
+
+FIXABLE NOW:
+  /best-dog-harness          -> 4 references (page doesn't exist)
+  /dog-care/                 -> 4 references (wrong URL)
+  /pet-care-tips/            -> 4 references (page doesn't exist)
+  /dog-training/             -> 4 references (wrong URL)
+  /contact                   -> 1 reference (should be /contact-pet-hub-online)
+  /best-dog-training-and-behaviour-uk -> 2 references
+
+DRAFT PAGES (links correct, pages not yet published):
+  /corrections-and-updates-policy  -> 3 references (page 4405, draft)
+  /how-we-research-pet-products    -> 3 references (page 4402, draft)
+  /our-editorial-process           -> 3 references (page 4403, draft)
+
+FUTURE CONTENT (pages planned but not yet created):
+  /best-grain-free-dog-food-uk     -> 1 reference
+  /best-raw-dog-food-uk            -> 1 reference
+  /best-senior-dog-food-uk         -> 1 reference
+  /best-wet-dog-food-uk            -> 1 reference
+
+ACTION: Fix the 5 fixable broken URLs. Publish draft pages to resolve 9.
+        Create planned content pages to resolve remaining 4.
+
+==========================================================================
+3. ANCHOR TEXT QUALITY
+==========================================================================
+71 links use generic anchor text:
+  - 69x "Learn more" (all linking to /affiliate-disclosure)
+  - 2x "Read more" (on Blog page)
+
+ACTION: Replace "Learn more" with "Read our affiliate disclosure"
+        across all instances for better SEO signal.
+
+==========================================================================
+4. LINK DISTRIBUTION
+==========================================================================
+
+Top inbound (most linked-to):
+  125 — Affiliate Disclosure (from disclosure banners)
+   25 — Dog Toys hub
+   24 — Seasonal Pet Safety post
+   22 — Dog Beds hub
+   20 — Cat Toys hub
+
+Zero outbound: Cookie Policy, Privacy Policy (acceptable for legal pages)
+
+==========================================================================
+5. CLUSTER CONNECTIVITY
+==========================================================================
+  Dog Toys:      Hub<->Spokes COMPLETE
+  Cat Toys:      Hub<->Spokes COMPLETE
+  Dog Beds:      Hub<->Spokes COMPLETE
+  Dog Care:      Hub missing links to 4 spokes
+  Dog Harnesses: Hub missing link to "Harness vs Collar"
+  Pet Care:      No hub page exists
+  Puppy Care:    No hub page exists
+  Training:      Spoke detection issue (all classified as hubs)
+
+==========================================================================
+6. TRUST PAGE CONNECTIVITY
+==========================================================================
+All 5 trust pages now cross-link to each other (fixed in this session).
+33 of 86 commercial posts have zero links to any trust page.
+
+ACTION: Add trust page references to commercial posts that lack them,
+        particularly product review and recommendation pages.

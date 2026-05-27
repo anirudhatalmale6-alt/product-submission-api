@@ -1,0 +1,79 @@
+SITE HARDENING REPORT 5: COMMENT / SUBSCRIPTION / CLUTTER CLEANUP
+PetHub Online — pethubonline.com
+Generated: 2026-05-27
+==========================================================================
+
+SCOPE
+-----
+Disable comments on non-blog pages, remove subscription/archive
+prompts, and reduce low-value template clutter across the site.
+
+==========================================================================
+COMMENT STATUS AUDIT
+==========================================================================
+
+Scanned: 24 published pages + all target pages
+Result: ALL 22 audited pages already have comments CLOSED
+
+Pages verified with comments closed:
+  - Page 39 (About Us) — closed
+  - Page 37 (Contact) — closed
+  - Page 300 (Affiliate Disclosure) — closed
+  - Page 4402 (How We Research) — closed
+  - Page 4403 (Editorial Process) — closed
+  - Page 4405 (Corrections Policy) — closed
+  - Page 63 (Dog Supplies) — closed
+  - Page 1041 (Dog Toys) — closed
+  - Page 1141 (Dog Beds) — closed
+  - Page 1144 (Dog Grooming) — closed
+  - Page 1146 (Dog Collars) — closed
+  - Page 1149 (Cat Toys) — closed
+  - Page 1176 (Cat Supplies) — closed
+  - Page 3107 (Cat Beds) — closed
+  - Page 3109 (Cat Grooming) — closed
+  - Page 3111 (Cat Collars) — closed
+  - Page 3113 (Cat Scratching Posts) — closed
+  - Page 3115 (Cat Litter Trays) — closed
+  - Page 1951 (Dog Bowls & Feeding) — closed
+  - Page 1956 (Dog Training) — closed
+  - Page 1960 (Dog Health & Care) — closed
+  - Page 4 (Homepage) — closed
+
+No action needed — all non-blog pages already have comments disabled.
+
+
+==========================================================================
+PLACEHOLDER BUG SCAN
+==========================================================================
+
+Scanned: 86 published posts + 24 published pages
+Searched for: {vendor_count}, {title}, "loading comments", {placeholder}
+
+Result: CLEAN — zero placeholder bugs found anywhere on the site.
+
+No instances of:
+  - {vendor_count} — not found
+  - {title} as placeholder — not found
+  - "loading comments" visible text — not found
+  - Any other {placeholder_name} patterns — not found
+
+
+==========================================================================
+TEMPLATE CLUTTER REDUCTION
+==========================================================================
+
+Trailing empty paragraphs removed:
+  - Contact page (37): removed trailing empty <p></p>
+
+Repeated support fragments: None found beyond the intentional trust
+footer blocks (which are by design on every page).
+
+Crawl-visible junk: No "Image:" labels, no broken template tags,
+no visible debug text found in any published content.
+
+
+==========================================================================
+STATUS: CLEAN
+==========================================================================
+The site is clean on comments, placeholders, and template clutter.
+No further action needed in this area.

@@ -1,0 +1,1043 @@
+<!-- wp:html -->
+<div class="affiliate-disclosure" style="background:#f8f9fa;border-left:4px solid #0073aa;padding:12px 16px;margin-bottom:24px;font-size:0.92em;color:#555;line-height:1.5;">
+<strong>Affiliate Disclosure:</strong> Some links on this page are affiliate links. If you click an affiliate link and make a purchase, we may earn a small commission at no extra cost to you. We only recommend products we would use ourselves and that meet our editorial standards. <a href="https://pethubonline.com/affiliate-disclosure/" style="color:#0073aa;">Learn more</a>.
+</div>
+<!-- /wp:html -->
+
+
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.9em"}}} -->
+<p style="font-size:0.9em;color:#555;"><strong>Last Updated:</strong> 27 May 2026<br/><strong>Website:</strong> pethubonline.com<br/><strong>Business:</strong> Pet Hub Online</p>
+<!-- /wp:paragraph -->
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:cover -->
+<div class="wp-block-cover alignfull is-light has-custom-content-position is-position-top-left remove-top-gap" style="margin-bottom:40px;padding-top:10px;padding-bottom:10px;min-height:100vh;aspect-ratio:unset;"><img data-attachment-id="1633" data-permalink="https://pethubonline.com/dog-beds/dog-beds-cta-banner/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-beds-cta-banner.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="dog beds cta banner" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-beds-cta-banner.png?fit=1024%2C683&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1536" height="1024" data-attachment-id="1633" data-permalink="https://pethubonline.com/dog-beds/dog-beds-cta-banner/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-beds-cta-banner.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="dog beds cta banner" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-beds-cta-banner.png?fit=1024%2C683&amp;ssl=1" alt="Dog Beds Cta Banner" class="wp-block-cover__image-background wp-image-1633 size-full" data-object-fit="cover" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-beds-cta-banner.png?resize=1536%2C1024&#038;ssl=1" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-beds-cta-banner.png?w=1536&amp;ssl=1 1536w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-beds-cta-banner.png?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-beds-cta-banner.png?resize=1024%2C683&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-beds-cta-banner.png?resize=768%2C512&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-beds-cta-banner.png?resize=1200%2C800&amp;ssl=1 1200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#f8f8f8"></span></p>
+<div class="wp-block-cover__inner-container is-layout-constrained wp-container-core-cover-is-layout-dd7a2733 wp-block-cover-is-layout-constrained">
+<!-- wp:group -->
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color wp-elements-32382347c1fc7d5875b0ca2f1df05740" style="color:#222222;padding-top:0;padding-right:0px;padding-bottom:0;padding-left:0px;font-size:56px;font-style:normal;font-weight:700;line-height:1.2">Dog Beds – Comfortable &amp; Durable</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-left alignwide has-text-color has-link-color wp-elements-edd5af125dcd4793d44fc5a83a91e332 wp-block-paragraph" style="color:#444444;padding-top:20px;padding-right:0px;padding-bottom:20px;padding-left:0px;font-size:20px;font-style:normal;font-weight:600">Discover the best dog beds for your furry friend, combining comfort, durability, and style</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons alignwide has-custom-font-size is-content-justification-left is-layout-flex wp-container-core-buttons-is-layout-3fe550fd wp-block-buttons-is-layout-flex" style="padding-top:50px;padding-right:16px;padding-bottom:50px;padding-left:16px;font-size:20px">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#dog-beds">Shop All Dog Beds</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#bestsellers">Discover Our Bestsellers</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+</div>
+<!-- /wp:cover -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-5ba97a05 wp-block-group-is-layout-constrained" style="border-color:#e0e0e0;border-width:1px;border-radius:8px;padding-top:20px;padding-right:25px;padding-bottom:20px;padding-left:25px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="font-size:22px">Table of Contents</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><a href="#why-the-right-dog-bed-matters">Why the Right Dog Bed Matters</a></li>
+<li><a href="#top-5-best-dog-beds-this-year">Top 5 Best Dog Beds This Year</a></li>
+<li><a href="#shop-by-bed-type">Shop by Bed Type</a></li>
+<li><a href="#how-to-choose-the-right-dog-bed">How to Choose the Right Dog Bed</a></li>
+<li><a href="#who-this-page-is-for">Who This Page Is For</a></li>
+<li><a href="#dog-beds-faq">Dog Beds FAQ</a></li>
+<li><a href="#useful-tips-for-every-pet-owner">Useful Tips for Every Pet Owner</a></li>
+<li><a href="#why-pet-owners-trust-pet-hub-online">Why Pet Owners Trust Pet Hub Online</a></li>
+<li><a href="#explore-more-dog-essentials">Explore More Dog Essentials</a></li>
+<li><a href="#ready-to-find-the-perfect-bed-for-your-dog">Ready to Find the Perfect Bed for Your Dog?</a></li>
+<li><a href="#dog-beds-maintenance">How to Clean and Maintain Your Dog Beds</a></li>
+<li><a href="#dog-beds-mistakes">5 Common Mistakes When Buying Dog Beds</a></li>
+<li><a href="#seasonal-bedding">Seasonal Bedding Tips for Year-Round Comfort</a></li>
+<li><a href="#toc-placement-tips">Placement Tips for Your Pet&#8217;s Sleeping Area</a></li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide is-layout-constrained wp-container-core-group-is-layout-653a7e54 wp-block-group-is-layout-constrained" style="padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-817553805af8bea5eef658dbeec9982c" id="why-the-right-dog-bed-matters" style="color:#222222;padding-top:22px;padding-bottom:22px;font-size:32px;font-style:normal;font-weight:700">Why the Right Dog Bed Matters</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-8530f5689a38b6fabf1b2fc9ec465441 wp-block-paragraph" style="color:#444444;padding-top:0px;padding-bottom:0px;font-size:18px;line-height:1.5">Choosing the right <strong>dog bed</strong> isn’t just about comfort — it’s about support, joint health, and helping your dog get restful sleep. The <strong>right bed</strong> can reduce pressure on joints, improve overall comfort, and keep your dog cosy throughout the day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-75336ad0d5e08ba8e77eef9e4e1f7129 wp-block-paragraph" style="color:#444444;padding-top:0px;padding-bottom:0px;font-size:18px;line-height:1.5">Whether your dog likes to <strong>curl up, stretch out, or sprawl</strong> across the floor, this guide will help you find <strong>dog beds</strong> that are <a href="#dog-beds">safe, durable, and perfectly suited</a> to their <strong>size, age, and sleeping style</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-d311280ee2a4d3c10bafbd06024a3113 wp-block-paragraph" style="color:#444444;padding-top:0px;padding-bottom:0px;font-size:18px;line-height:1.5">Scroll down to explore our <strong><a href="#bestsellers">top 5 best dog beds</a></strong> and shop by bed type to find the ideal match for your furry friend.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator alignwide has-alpha-channel-opacity is-style-wide" style="margin-top:0;margin-bottom:0"/>
+<!-- /wp:separator -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-c09a0d19 wp-block-group-is-layout-constrained" id="bestsellers" style="padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color wp-elements-ca6239b55c209f7368bb4e65635b23a8" id="top-5-best-dog-beds-this-year" style="color:#111111;margin-bottom:40px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Top 5 Best Dog Beds This Year</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:18px">These are our top picks for comfortable, durable, and safe dog beds for all sizes and breeds.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns equal-cards is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-13910493 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized is-style-default" style="margin-bottom:16px"><img data-attachment-id="2077" data-permalink="https://pethubonline.com/dog-beds/magic_edittufisxu2we11bvujmsmzode4m2qwzjq4nty2njnky2iymge4ywfln2yyyjqwmimxntawiynuukfou0zpuk1bvelptl9srvfvrvnu-2/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU2WE11bVUjMSMzODE4M2QwZjQ4NTY2NjNkY2IyMGE4YWFlN2YyYjQwMiMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU-1.jpg?fit=675%2C450&amp;ssl=1" data-orig-size="675,450" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1777922707&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="magic_edit#TUFISXU2WE11bVUjMSMzODE4M2QwZjQ4NTY2NjNkY2IyMGE4YWFlN2YyYjQwMiMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU2WE11bVUjMSMzODE4M2QwZjQ4NTY2NjNkY2IyMGE4YWFlN2YyYjQwMiMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU-1.jpg?fit=675%2C450&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="675" height="450" data-attachment-id="2077" data-permalink="https://pethubonline.com/dog-beds/magic_edittufisxu2we11bvujmsmzode4m2qwzjq4nty2njnky2iymge4ywfln2yyyjqwmimxntawiynuukfou0zpuk1bvelptl9srvfvrvnu-2/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU2WE11bVUjMSMzODE4M2QwZjQ4NTY2NjNkY2IyMGE4YWFlN2YyYjQwMiMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU-1.jpg?fit=675%2C450&amp;ssl=1" data-orig-size="675,450" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1777922707&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="magic_edit#TUFISXU2WE11bVUjMSMzODE4M2QwZjQ4NTY2NjNkY2IyMGE4YWFlN2YyYjQwMiMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU2WE11bVUjMSMzODE4M2QwZjQ4NTY2NjNkY2IyMGE4YWFlN2YyYjQwMiMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU-1.jpg?fit=675%2C450&amp;ssl=1" alt="Comfortable dog beds for large and small breeds" class="wp-image-2077" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU2WE11bVUjMSMzODE4M2QwZjQ4NTY2NjNkY2IyMGE4YWFlN2YyYjQwMiMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU-1.jpg?resize=675%2C450&#038;ssl=1" style="width:300px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU2WE11bVUjMSMzODE4M2QwZjQ4NTY2NjNkY2IyMGE4YWFlN2YyYjQwMiMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU-1.jpg?w=675&amp;ssl=1 675w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU2WE11bVUjMSMzODE4M2QwZjQ4NTY2NjNkY2IyMGE4YWFlN2YyYjQwMiMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU-1.jpg?resize=300%2C200&amp;ssl=1 300w" sizes="auto, (max-width: 675px) 100vw, 675px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-2603f42db3163cc73c4c00a8712203e3" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Rectangle Washable Anti‑Slip Dog Bed →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-07e941b8030f69d54e76c036645d9627 wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A soft, supportive everyday dog bed with anti‑slip backing and a fully washable design.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-92dfab0ba563c98a54ad989618d1ad30" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Ultra‑soft plush surface</strong> keeps dogs warm and comfortable year‑round</li>
+<li><strong>Anti‑slip bottom</strong> prevents sliding on wood, tile, or laminate floors</li>
+<li><strong>Machine‑washable</strong> for easy cleaning and long‑lasting freshness</li>
+<li><strong>Lightweight, flexible design</strong> fits crates, sofas, and any layout</li>
+<li><strong>Great for small to medium dogs</strong> who love a cosy, cushioned sleep</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://amzn.to/4dn889y" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-68dcf5ba wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-top:70px;margin-bottom:16px"><img data-attachment-id="2078" data-permalink="https://pethubonline.com/dog-beds/magic_edittufisxv4rje3t2mjmsnmzmuyogiyodu4n2y3mzexzmqwm2ewnjyzn2iwyta2nymxntawiynuukfou0zpuk1bvelptl9srvfvrvnu-3/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXV4RjE3T2MjMSNmZmUyOGIyODU4N2Y3MzExZmQwM2EwNjYzN2IwYTA2NyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU-2.jpg?fit=1028%2C450&amp;ssl=1" data-orig-size="1028,450" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1777922917&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="magic_edit#TUFISXV4RjE3T2MjMSNmZmUyOGIyODU4N2Y3MzExZmQwM2EwNjYzN2IwYTA2NyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXV4RjE3T2MjMSNmZmUyOGIyODU4N2Y3MzExZmQwM2EwNjYzN2IwYTA2NyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU-2.jpg?fit=1024%2C448&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1028" height="450" data-attachment-id="2078" data-permalink="https://pethubonline.com/dog-beds/magic_edittufisxv4rje3t2mjmsnmzmuyogiyodu4n2y3mzexzmqwm2ewnjyzn2iwyta2nymxntawiynuukfou0zpuk1bvelptl9srvfvrvnu-3/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXV4RjE3T2MjMSNmZmUyOGIyODU4N2Y3MzExZmQwM2EwNjYzN2IwYTA2NyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU-2.jpg?fit=1028%2C450&amp;ssl=1" data-orig-size="1028,450" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;1777922917&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="magic_edit#TUFISXV4RjE3T2MjMSNmZmUyOGIyODU4N2Y3MzExZmQwM2EwNjYzN2IwYTA2NyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXV4RjE3T2MjMSNmZmUyOGIyODU4N2Y3MzExZmQwM2EwNjYzN2IwYTA2NyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU-2.jpg?fit=1024%2C448&amp;ssl=1" alt="Orthopaedic dog beds for senior dogs with joint pain" class="wp-image-2078" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXV4RjE3T2MjMSNmZmUyOGIyODU4N2Y3MzExZmQwM2EwNjYzN2IwYTA2NyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU-2.jpg?resize=1028%2C450&#038;ssl=1" style="width:300px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXV4RjE3T2MjMSNmZmUyOGIyODU4N2Y3MzExZmQwM2EwNjYzN2IwYTA2NyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU-2.jpg?w=1028&amp;ssl=1 1028w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXV4RjE3T2MjMSNmZmUyOGIyODU4N2Y3MzExZmQwM2EwNjYzN2IwYTA2NyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU-2.jpg?resize=300%2C131&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXV4RjE3T2MjMSNmZmUyOGIyODU4N2Y3MzExZmQwM2EwNjYzN2IwYTA2NyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU-2.jpg?resize=1024%2C448&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXV4RjE3T2MjMSNmZmUyOGIyODU4N2Y3MzExZmQwM2EwNjYzN2IwYTA2NyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU-2.jpg?resize=768%2C336&amp;ssl=1 768w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-93db31c55989fe3b82954d9e291c27f4" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Orthopedic U‑Shaped Bed →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-0673e488e10f65b0f7d1351923f808fd wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A supportive orthopedic bed with bolstered sides that keep your dog secure and properly aligned.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-92b238c67a6834aa08a2c27ec7e302f3" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>High‑density egg‑crate foam</strong> cushions joints and improves airflow</li>
+<li><strong>U‑shaped bolsters</strong> support the neck and spine for better sleep posture</li>
+<li><strong>Waterproof liner</strong> protects the foam from accidents and spills</li>
+<li><strong>Soft, removable cover</strong> is machine‑washable for easy cleaning</li>
+<li><strong>Ideal for medium to large dogs</strong> needing extra joint support</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://amzn.to/4dqevbl" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns equal-cards is-layout-flex wp-container-core-columns-is-layout-52b7c8f9 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-68dcf5ba wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="2060" data-permalink="https://pethubonline.com/dog-beds/magic_edittufisxu5a0i4wmsjmsm2zmrinzcymzeyowq2ytfkzdqxndewzjmwyjg4n2ninymxntawiynuukfou0zpuk1bvelptl9srvfvrvnu/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU5a0I4WmsjMSM2ZmRiNzcyMzEyOWQ2YTFkZDQxNDEwZjMwYjg4N2NiNyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?fit=1176%2C615&amp;ssl=1" data-orig-size="1176,615" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="magic_edit#TUFISXU5a0I4WmsjMSM2ZmRiNzcyMzEyOWQ2YTFkZDQxNDEwZjMwYjg4N2NiNyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU5a0I4WmsjMSM2ZmRiNzcyMzEyOWQ2YTFkZDQxNDEwZjMwYjg4N2NiNyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?fit=1024%2C536&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1176" height="615" data-attachment-id="2060" data-permalink="https://pethubonline.com/dog-beds/magic_edittufisxu5a0i4wmsjmsm2zmrinzcymzeyowq2ytfkzdqxndewzjmwyjg4n2ninymxntawiynuukfou0zpuk1bvelptl9srvfvrvnu/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU5a0I4WmsjMSM2ZmRiNzcyMzEyOWQ2YTFkZDQxNDEwZjMwYjg4N2NiNyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?fit=1176%2C615&amp;ssl=1" data-orig-size="1176,615" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="magic_edit#TUFISXU5a0I4WmsjMSM2ZmRiNzcyMzEyOWQ2YTFkZDQxNDEwZjMwYjg4N2NiNyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU5a0I4WmsjMSM2ZmRiNzcyMzEyOWQ2YTFkZDQxNDEwZjMwYjg4N2NiNyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?fit=1024%2C536&amp;ssl=1" alt="Washable dog beds with removable covers for easy cleaning" class="wp-image-2060" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU5a0I4WmsjMSM2ZmRiNzcyMzEyOWQ2YTFkZDQxNDEwZjMwYjg4N2NiNyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?resize=1176%2C615&#038;ssl=1" style="width:300px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU5a0I4WmsjMSM2ZmRiNzcyMzEyOWQ2YTFkZDQxNDEwZjMwYjg4N2NiNyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?w=1176&amp;ssl=1 1176w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU5a0I4WmsjMSM2ZmRiNzcyMzEyOWQ2YTFkZDQxNDEwZjMwYjg4N2NiNyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?resize=300%2C157&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU5a0I4WmsjMSM2ZmRiNzcyMzEyOWQ2YTFkZDQxNDEwZjMwYjg4N2NiNyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?resize=1024%2C536&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU5a0I4WmsjMSM2ZmRiNzcyMzEyOWQ2YTFkZDQxNDEwZjMwYjg4N2NiNyMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?resize=768%2C402&amp;ssl=1 768w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-b577fbc4324dea24f9e7d8918bc02073" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Calming Crate Mattress Bed →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-574fba8110fd98f36f12ec9a45d96cbf wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A lightweight, calming mattress with a plush surface and anti‑slip base — perfect for crates, sofas, or everyday lounging.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-9b76163713f4da1936fa0448da8a9b9e" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Ultra‑soft faux‑fur top</strong> helps reduce anxiety and encourages relaxation</li>
+<li><strong>Anti‑slip bottom</strong> keeps the bed stable on smooth floors</li>
+<li><strong>Fully machine‑washable</strong> for quick, hassle‑free cleaning</li>
+<li><strong>Slim, flexible design</strong> fits crates, cars, and small spaces</li>
+<li><strong>Great for small to medium dogs</strong> who prefer a flat, cushioned surface</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://amzn.to/4tUQsIy" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-68dcf5ba wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-top:0px;margin-right:var(--wp--preset--spacing--30);margin-bottom:16px"><img data-attachment-id="2071" data-permalink="https://pethubonline.com/dog-beds/magic_edittufisxu0rdk4agcjmsnjmtvjogfjymi5zmqxmddmzdq0nzmwmzfmmgnhnwu4zsmxndk4iynuukfou0zpuk1bvelptl9srvfvrvnu/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU0RDk4aGcjMSNjMTVjOGFjYmI5ZmQxMDdmZDQ0NzMwMzFmMGNhNWU4ZSMxNDk4IyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?fit=1176%2C1105&amp;ssl=1" data-orig-size="1176,1105" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="magic_edit#TUFISXU0RDk4aGcjMSNjMTVjOGFjYmI5ZmQxMDdmZDQ0NzMwMzFmMGNhNWU4ZSMxNDk4IyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU0RDk4aGcjMSNjMTVjOGFjYmI5ZmQxMDdmZDQ0NzMwMzFmMGNhNWU4ZSMxNDk4IyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?fit=1024%2C962&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1176" height="1105" data-attachment-id="2071" data-permalink="https://pethubonline.com/dog-beds/magic_edittufisxu0rdk4agcjmsnjmtvjogfjymi5zmqxmddmzdq0nzmwmzfmmgnhnwu4zsmxndk4iynuukfou0zpuk1bvelptl9srvfvrvnu/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU0RDk4aGcjMSNjMTVjOGFjYmI5ZmQxMDdmZDQ0NzMwMzFmMGNhNWU4ZSMxNDk4IyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?fit=1176%2C1105&amp;ssl=1" data-orig-size="1176,1105" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="magic_edit#TUFISXU0RDk4aGcjMSNjMTVjOGFjYmI5ZmQxMDdmZDQ0NzMwMzFmMGNhNWU4ZSMxNDk4IyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU0RDk4aGcjMSNjMTVjOGFjYmI5ZmQxMDdmZDQ0NzMwMzFmMGNhNWU4ZSMxNDk4IyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?fit=1024%2C962&amp;ssl=1" alt="Luxury dog beds with memory foam support" class="wp-image-2071" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU0RDk4aGcjMSNjMTVjOGFjYmI5ZmQxMDdmZDQ0NzMwMzFmMGNhNWU4ZSMxNDk4IyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?resize=1176%2C1105&#038;ssl=1" style="aspect-ratio:16/9;object-fit:contain;width:300px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU0RDk4aGcjMSNjMTVjOGFjYmI5ZmQxMDdmZDQ0NzMwMzFmMGNhNWU4ZSMxNDk4IyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?w=1176&amp;ssl=1 1176w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU0RDk4aGcjMSNjMTVjOGFjYmI5ZmQxMDdmZDQ0NzMwMzFmMGNhNWU4ZSMxNDk4IyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?resize=300%2C282&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU0RDk4aGcjMSNjMTVjOGFjYmI5ZmQxMDdmZDQ0NzMwMzFmMGNhNWU4ZSMxNDk4IyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?resize=1024%2C962&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXU0RDk4aGcjMSNjMTVjOGFjYmI5ZmQxMDdmZDQ0NzMwMzFmMGNhNWU4ZSMxNDk4IyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?resize=768%2C722&amp;ssl=1 768w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-b139eba361341112080e95c63757d8ed" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Rectangle Hooded Dog Bed →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-88017eb4ee0464ac7855767fbe10256c wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A cosy hooded bed that gives dogs a warm, den‑like space to curl up and feel secure.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-1c986b5406d76873b06689c40c859fc6" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Built‑in hooded cover</strong> creates a snug, cave‑style sleeping area</li>
+<li><strong>Thick padded base</strong> offers comfort for daily naps and nighttime sleep</li>
+<li><strong>Soft sherpa interior</strong> keeps dogs warm during colder months</li>
+<li><strong>Non‑slip bottom</strong> prevents movement on hard floors</li>
+<li><strong>Perfect for small to medium dogs</strong> who love burrowing or nesting</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://amzn.to/4w8D5WB" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-be441220 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized has-custom-border" style="margin-bottom:16px"><img data-attachment-id="2063" data-permalink="https://pethubonline.com/dog-beds/magic_edittufisxuxawhgd1kjmsnhzjfjntg2nzljyzu5mdhhotu3ywyzztk3ymq3mwvjncmxntawiynuukfou0zpuk1bvelptl9srvfvrvnu/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXUxaWhGd1kjMSNhZjFjNTg2NzljYzU5MDhhOTU3YWYzZTk3YmQ3MWVjNCMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?fit=1176%2C615&amp;ssl=1" data-orig-size="1176,615" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="magic_edit#TUFISXUxaWhGd1kjMSNhZjFjNTg2NzljYzU5MDhhOTU3YWYzZTk3YmQ3MWVjNCMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXUxaWhGd1kjMSNhZjFjNTg2NzljYzU5MDhhOTU3YWYzZTk3YmQ3MWVjNCMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?fit=1024%2C536&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1176" height="615" data-attachment-id="2063" data-permalink="https://pethubonline.com/dog-beds/magic_edittufisxuxawhgd1kjmsnhzjfjntg2nzljyzu5mdhhotu3ywyzztk3ymq3mwvjncmxntawiynuukfou0zpuk1bvelptl9srvfvrvnu/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXUxaWhGd1kjMSNhZjFjNTg2NzljYzU5MDhhOTU3YWYzZTk3YmQ3MWVjNCMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?fit=1176%2C615&amp;ssl=1" data-orig-size="1176,615" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="magic_edit#TUFISXUxaWhGd1kjMSNhZjFjNTg2NzljYzU5MDhhOTU3YWYzZTk3YmQ3MWVjNCMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXUxaWhGd1kjMSNhZjFjNTg2NzljYzU5MDhhOTU3YWYzZTk3YmQ3MWVjNCMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?fit=1024%2C536&amp;ssl=1" alt="Waterproof dog beds perfect for outdoor use" class="wp-image-2063" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXUxaWhGd1kjMSNhZjFjNTg2NzljYzU5MDhhOTU3YWYzZTk3YmQ3MWVjNCMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?resize=1176%2C615&#038;ssl=1" style="border-top-left-radius:8px;border-top-right-radius:8px;border-bottom-left-radius:8px;border-bottom-right-radius:8px;width:300px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXUxaWhGd1kjMSNhZjFjNTg2NzljYzU5MDhhOTU3YWYzZTk3YmQ3MWVjNCMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?w=1176&amp;ssl=1 1176w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXUxaWhGd1kjMSNhZjFjNTg2NzljYzU5MDhhOTU3YWYzZTk3YmQ3MWVjNCMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?resize=300%2C157&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXUxaWhGd1kjMSNhZjFjNTg2NzljYzU5MDhhOTU3YWYzZTk3YmQ3MWVjNCMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?resize=1024%2C536&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/magic_editTUFISXUxaWhGd1kjMSNhZjFjNTg2NzljYzU5MDhhOTU3YWYzZTk3YmQ3MWVjNCMxNTAwIyNUUkFOU0ZPUk1BVElPTl9SRVFVRVNU.jpg?resize=768%2C402&amp;ssl=1 768w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-c32d33cf7fcba0a56970c4f60dea8061" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Waterproof Raised Dog Bed →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-71390f0c353067f9c8ce477d77e2bcbb wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A breathable elevated dog bed that keeps pets cool, clean, and comfortable indoors or outdoors.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list" style="font-size:16px;line-height:1.6">
+<li><strong>Off‑the‑ground design</strong> improves airflow and helps regulate body temperature</li>
+<li><strong>Tight, durable mesh fabric</strong> supports your dog’s weight without sagging</li>
+<li><strong>Sturdy steel frame</strong> provides stability for daily use</li>
+<li><strong>Easy to clean</strong> — wipe down or hose off for quick maintenance</li>
+<li>Ideal for warm rooms, gardens, and summer use</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://amzn.to/49qoo7n" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" id="dog-beds" style="padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-e8450343af33883810e02022c72c4651" id="shop-by-bed-type" style="color:#1a1a1a;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Shop by Bed Type</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-18e939fdfd318770e5e70d6a2ec6654e wp-block-paragraph" style="color:#4a4a4a;margin-top:22px;margin-bottom:22px;padding-top:22px;padding-bottom:22px;font-size:18px">Find the perfect dog bed for your pup based on their size, age, and sleeping style.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-cbe286e1 wp-block-columns-is-layout-flex" id="bed-categories" style="margin-top:0px;margin-bottom:0px;padding-top:22px;padding-bottom:22px">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-link-color wp-elements-dd1d93602063f75eb0b761ae89f9fe48 is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" id="orthopedic-beds" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><a href="https://amzn.to/42IyVqL" target="_blank" rel="sponsored noopener noreferrer"><img data-attachment-id="2973" data-permalink="https://pethubonline.com/dog-beds/chatgpt-image-may-20-2026-10_34_46-pm/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_34_46-PM.png?fit=1254%2C1254&amp;ssl=1" data-orig-size="1254,1254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="ChatGPT Image May 20, 2026, 10_34_46 PM" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_34_46-PM.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1254" height="1254" data-attachment-id="2973" data-permalink="https://pethubonline.com/dog-beds/chatgpt-image-may-20-2026-10_34_46-pm/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_34_46-PM.png?fit=1254%2C1254&amp;ssl=1" data-orig-size="1254,1254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="ChatGPT Image May 20, 2026, 10_34_46 PM" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_34_46-PM.png?fit=1024%2C1024&amp;ssl=1" alt="Orthopedic Beds" class="wp-image-2973" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_34_46-PM.png?resize=1254%2C1254&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_34_46-PM.png?w=1254&amp;ssl=1 1254w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_34_46-PM.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_34_46-PM.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_34_46-PM.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_34_46-PM.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_34_46-PM.png?resize=1200%2C1200&amp;ssl=1 1200w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_34_46-PM.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_34_46-PM.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_34_46-PM.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_34_46-PM.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-21a882750a4586572a15b07f46a09d39" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3"><a href="https://amzn.to/42IyVqL" target="_blank" rel="sponsored noopener noreferrer">Orthopedic Beds →</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-74b1b037510cbd1abc74058c0fc41d55 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px"><strong>Best for older dogs or pups with joint issues.</strong> Memory foam that relieves pressure and keeps your dog comfortable all night.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" id="memory-foam" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><a href="https://amzn.to/4unsNjs" target="_blank" rel="sponsored noopener noreferrer"><img data-attachment-id="2977" data-permalink="https://pethubonline.com/dog-beds/chatgpt-image-may-20-2026-10_36_31-pm/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_36_31-PM.png?fit=1254%2C1254&amp;ssl=1" data-orig-size="1254,1254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="ChatGPT Image May 20, 2026, 10_36_31 PM" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_36_31-PM.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1254" height="1254" data-attachment-id="2977" data-permalink="https://pethubonline.com/dog-beds/chatgpt-image-may-20-2026-10_36_31-pm/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_36_31-PM.png?fit=1254%2C1254&amp;ssl=1" data-orig-size="1254,1254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="ChatGPT Image May 20, 2026, 10_36_31 PM" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_36_31-PM.png?fit=1024%2C1024&amp;ssl=1" alt="Sleepy golden retriever on memory foam bed" class="wp-image-2977" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_36_31-PM.png?resize=1254%2C1254&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_36_31-PM.png?w=1254&amp;ssl=1 1254w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_36_31-PM.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_36_31-PM.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_36_31-PM.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_36_31-PM.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_36_31-PM.png?resize=1200%2C1200&amp;ssl=1 1200w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_36_31-PM.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_36_31-PM.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_36_31-PM.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_36_31-PM.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-1c966dbd2ed8c5f84bbfdbf7eb423343" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3"><a href="https://amzn.to/4unsNjs" target="_blank" rel="sponsored noopener noreferrer">Memory Foam Beds →</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-7d687f6fd955fbae81a258cae18690a2 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px"><strong>Perfect for dogs who love a soft, contouring sleep surface.</strong> Premium foam that adapts to your dog’s shape for maximum comfort.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" id="donut-beds" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><a href="https://amzn.to/4cNsQ2f" target="_blank" rel="sponsored noopener noreferrer"><img data-attachment-id="2980" data-permalink="https://pethubonline.com/dog-beds/chatgpt-image-may-20-2026-10_38_12-pm/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_12-PM.png?fit=1254%2C1254&amp;ssl=1" data-orig-size="1254,1254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="ChatGPT Image May 20, 2026, 10_38_12 PM" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_12-PM.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1254" height="1254" data-attachment-id="2980" data-permalink="https://pethubonline.com/dog-beds/chatgpt-image-may-20-2026-10_38_12-pm/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_12-PM.png?fit=1254%2C1254&amp;ssl=1" data-orig-size="1254,1254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="ChatGPT Image May 20, 2026, 10_38_12 PM" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_12-PM.png?fit=1024%2C1024&amp;ssl=1" alt="dog sleeping on donut and calming beds " class="wp-image-2980" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_12-PM.png?resize=1254%2C1254&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_12-PM.png?w=1254&amp;ssl=1 1254w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_12-PM.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_12-PM.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_12-PM.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_12-PM.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_12-PM.png?resize=1200%2C1200&amp;ssl=1 1200w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_12-PM.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_12-PM.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_12-PM.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_12-PM.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-ec821e235d54429d2dfae7b57134a0ad" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3"><a href="https://amzn.to/4cNsQ2f" target="_blank" rel="sponsored noopener noreferrer">Donut &amp; Calming Beds →</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-24be945a956e7e4aefdc7ba5357bab97 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px"><strong>Ideal for anxious dogs or snugglers.</strong> Raised edges create a cosy, secure space that helps dogs relax.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="padding-top:0px;padding-bottom:0px">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><a href="https://amzn.to/4tmCVII" target="_blank" rel="sponsored noopener noreferrer"><img data-attachment-id="2975" data-permalink="https://pethubonline.com/dog-beds/chatgpt-image-may-20-2026-10_35_34-pm/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_35_34-PM.png?fit=1254%2C1254&amp;ssl=1" data-orig-size="1254,1254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="ChatGPT Image May 20, 2026, 10_35_34 PM" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_35_34-PM.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1254" height="1254" data-attachment-id="2975" data-permalink="https://pethubonline.com/dog-beds/chatgpt-image-may-20-2026-10_35_34-pm/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_35_34-PM.png?fit=1254%2C1254&amp;ssl=1" data-orig-size="1254,1254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="ChatGPT Image May 20, 2026, 10_35_34 PM" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_35_34-PM.png?fit=1024%2C1024&amp;ssl=1" alt="raised and cooling beds - Cosy dog napping on elevated bed" class="wp-image-2975" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_35_34-PM.png?resize=1254%2C1254&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_35_34-PM.png?w=1254&amp;ssl=1 1254w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_35_34-PM.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_35_34-PM.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_35_34-PM.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_35_34-PM.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_35_34-PM.png?resize=1200%2C1200&amp;ssl=1 1200w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_35_34-PM.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_35_34-PM.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_35_34-PM.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_35_34-PM.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-e5cc072575a17a47eb1daae9ace57260" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3"><a href="https://amzn.to/4tmCVII" target="_blank" rel="sponsored noopener noreferrer">Raised &amp; Cooling Beds →</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-fb4c7c0ec06faeac5a96f5d5bcad8f10 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px"><strong>Great for warm rooms or outdoor use.</strong> Keeps dogs cool by allowing airflow underneath the bed.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" id="crate-beds" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><a href="https://amzn.to/4uonu3p" target="_blank" rel="sponsored noopener noreferrer"><img data-attachment-id="2979" data-permalink="https://pethubonline.com/dog-beds/chatgpt-image-may-20-2026-10_37_30-pm/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_37_30-PM.png?fit=1254%2C1254&amp;ssl=1" data-orig-size="1254,1254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="ChatGPT Image May 20, 2026, 10_37_30 PM" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_37_30-PM.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1254" height="1254" data-attachment-id="2979" data-permalink="https://pethubonline.com/dog-beds/chatgpt-image-may-20-2026-10_37_30-pm/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_37_30-PM.png?fit=1254%2C1254&amp;ssl=1" data-orig-size="1254,1254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="ChatGPT Image May 20, 2026, 10_37_30 PM" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_37_30-PM.png?fit=1024%2C1024&amp;ssl=1" alt="Softly resting in a cosy crate" class="wp-image-2979" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_37_30-PM.png?resize=1254%2C1254&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_37_30-PM.png?w=1254&amp;ssl=1 1254w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_37_30-PM.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_37_30-PM.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_37_30-PM.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_37_30-PM.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_37_30-PM.png?resize=1200%2C1200&amp;ssl=1 1200w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_37_30-PM.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_37_30-PM.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_37_30-PM.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_37_30-PM.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-358aa87a07c96392f03bdd96936afc11" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3"><a href="https://amzn.to/4uonu3p" target="_blank" rel="sponsored noopener noreferrer">Crate Mats &amp; Pads →</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-766f3dec23474bff826000c6caf24a5c wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px"><strong>Designed for crates, travel, and multi‑use comfort.</strong> Lightweight, easy to clean, and perfect for on‑the‑go dogs.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><a href="https://amzn.to/4tVHD1a" target="_blank" rel="sponsored noopener noreferrer"><img data-attachment-id="2982" data-permalink="https://pethubonline.com/dog-beds/chatgpt-image-may-20-2026-10_38_44-pm/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_44-PM.png?fit=1254%2C1254&amp;ssl=1" data-orig-size="1254,1254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="ChatGPT Image May 20, 2026, 10_38_44 PM" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_44-PM.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1254" height="1254" data-attachment-id="2982" data-permalink="https://pethubonline.com/dog-beds/chatgpt-image-may-20-2026-10_38_44-pm/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_44-PM.png?fit=1254%2C1254&amp;ssl=1" data-orig-size="1254,1254" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="ChatGPT Image May 20, 2026, 10_38_44 PM" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_44-PM.png?fit=1024%2C1024&amp;ssl=1" alt="Happy dog on a sunny outdoor bed" class="wp-image-2982" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_44-PM.png?resize=1254%2C1254&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_44-PM.png?w=1254&amp;ssl=1 1254w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_44-PM.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_44-PM.png?resize=1024%2C1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_44-PM.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_44-PM.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_44-PM.png?resize=1200%2C1200&amp;ssl=1 1200w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_44-PM.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_44-PM.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_44-PM.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-10_38_44-PM.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-a10d1e79ac6c93ca7b957554506f2da2" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3"><a href="https://amzn.to/4tVHD1a" target="_blank" rel="sponsored noopener noreferrer">Outdoor Beds →</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-c32761b4a841fc23d4026b54d0e455dc wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px"><strong>Built for durability and easy cleaning.</strong> Weather‑resistant materials that stand up to mud, moisture, and heavy use.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-background is-layout-constrained wp-block-group-is-layout-constrained" style="background-color:#fafafa;padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-1235aa05601f2d00579228530e990be9" id="how-to-choose-the-right-dog-bed" style="color:#111111;margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">How to Choose the Right Dog Bed</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-dd937d0469aac0ffa4e8cae913157bde wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:18px">Choosing the right dog bed comes down to your dog’s age, size, sleeping style, and any joint or health issues. A well‑chosen bed can improve their sleep quality, protect their joints, and keep them comfortable all year round.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-bc0e5c3c6fde7ed8c629f1c9bb4deb5e" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🛏️ Match the Bed to Your Dog’s Sleeping Style</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-d6802553c71cadcff6c62e79a0231a6f wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Some dogs curl up tightly, others sprawl out, and some like to lean against raised edges. Matching the bed shape to how your dog naturally sleeps makes a big difference in how much they actually use it.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-3699262b24497a73c61c93a527ed3555" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Curled‑up sleepers:</strong> <a href="#donut-beds">Donut or bolstered beds</a> give them a cosy, enclosed feeling.</li>
+<li><strong>Stretched‑out sleepers:</strong> Rectangular <a href="#memory-foam">memory foam beds</a> offer plenty of room to lie flat.</li>
+<li><strong>Warm sleepers:</strong> Elevated cooling beds allow airflow and prevent overheating.</li>
+<li><strong>Cold sleepers:</strong> Plush or faux‑fur calming beds help retain warmth and comfort.</li>
+<li><strong>Seasonal switchers:</strong> Many owners find that having two different dog beds — one for summer and one for winter — works best for year‑round comfort.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-f07bbb7bb3fd51f66ce794d407e96548" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">❤️‍🩹 Choose Beds Based on Age &amp; Health</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-7a083a82c4eb7929f66f9ba48ae8becb wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Puppies, adults, and senior dogs all have different needs. Older dogs and large breeds, in particular, benefit from extra support that reduces pressure on joints and hips.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-86c3387319f358294c07f5f374947a84" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Puppies:</strong> Durable, <a href="#crate-beds">washable beds </a>that can handle accidents and chewing.</li>
+<li><strong>Adult dogs:</strong> Supportive memory foam or high‑quality filled beds for daily comfort.</li>
+<li><strong>Senior dogs:</strong> <a href="#orthopedic-beds">Orthopedic beds</a> that ease pressure on joints and make it easier to get up.</li>
+<li><strong>Large breeds:</strong> Thick, high‑density foam that won’t flatten under their weight.</li>
+<li><strong>Anxious dogs:</strong> Bolster‑style beds with raised sides provide a sense of security and help reduce stress.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-eb17523378cf8ee91fdc49f81daa3522" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🛡️ Safety &amp; Durability Tips</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-c3e42d31989c4e74e355220f7aa329e5 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">A dog bed should be comfortable, but it also needs to be safe and long‑lasting. Paying attention to materials and construction helps you avoid <a href="#dog-beds">beds</a> that fall apart quickly or pose a risk.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-c8ccabc9e03e498cc06f96cb1e6e7ed0" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Choose non‑toxic, pet‑safe materials.</li>
+<li>Look for removable, machine‑washable covers.</li>
+<li>Avoid beds with loose zippers, buttons, or stuffing that can be chewed off.</li>
+<li>Pick chew‑resistant fabrics for destructive or teething dogs.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-acad7bcc650bf9d92603ba924df97646" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">📏 Measure Your Dog Correctly</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-ffdba0149ce1eb9628157e4a3fd39ade wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Getting the right size is one of the most important steps. A bed that’s too small will be ignored, and one that’s too big may not feel secure.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-67d121da1dce86218bd056f64497ea8a" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Measure your dog <strong>from the tip of the nose to the base of the tail</strong> while they’re lying in their natural sleeping position.</li>
+<li>Add <strong>20–30 cm</strong> to that measurement to ensure they have enough room to stretch comfortably.</li>
+<li>For curled‑up sleepers, measure them <strong>curled into a ball</strong> and choose a bed with raised sides for support.</li>
+<li>Check your dog’s <strong>weight</strong> as well — heavier dogs need thicker, high‑density foam that won’t flatten.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-72c9eb19 wp-block-group-is-layout-constrained" style="padding-top:50px;padding-bottom:50px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center alignwide" id="who-this-page-is-for" style="margin-bottom:25px;font-size:32px;font-style:normal;font-weight:700">Who This Page Is For</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center alignwide wp-block-paragraph" style="margin-bottom:30px;font-size:18px">Choosing the right dog bed isn’t one‑size‑fits‑all. This guide is designed to help every dog owner find the perfect fit based on their dog’s needs, habits, and sleeping style.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-52b7c8f9 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🦴 Senior/Arthritic Dogs</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-link-color wp-elements-3f6208a6b20103c58ac63c9edcb48e40 wp-block-paragraph" style="font-size:16px;line-height:1.6">If your dog needs extra joint support or struggles with stiffness, this guide highlights the best <a href="#orthopedic-beds">orthopedic beds</a> for pain relief and comfort.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🐾 Puppies &amp; Chewers Owners</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">For dogs who chew, dig, or get messy, Pet Hub Online covers durable, <a href="#crate-beds">easy‑clean beds</a> that can handle rough play and everyday wear.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🐕 Large Breeds/Heavy Sleepers</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">If your dog needs more space or tends to flatten cheap beds, we show you the best options for support, size, and <a href="#memory-foam">long‑lasting comfort.</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-background is-layout-constrained wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color wp-elements-2fcdc4db860b1571f78729dc08d5469e" id="dog-beds-faq" style="color:#1a1a1a;margin-bottom:25px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Dog Beds FAQ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>What size dog bed should I buy?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Choose a bed that’s at least <strong>20–30 cm longer</strong> than your dog when fully stretched out.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>Are orthopedic beds worth it?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Yes — they provide joint support, reduce pressure points, and are ideal for seniors and large breeds.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>How often should I replace a dog bed?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Most beds last <strong>1–2 years</strong>, depending on use and material quality.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>Are donut beds good for anxious dogs?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Yes — the raised edges create a sense of security and help reduce anxiety.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>Can dog beds be washed?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Most quality beds have <strong>removable, machine‑washable covers</strong>. Always check the label.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-e4e56295 wp-block-group-is-layout-constrained" style="padding-top:50px;padding-bottom:50px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center" id="useful-tips-for-every-pet-owner" style="margin-bottom:20px;font-size:32px;font-style:normal;font-weight:700">Useful Tips for Every Pet Owner</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-5f2e5684df21393387929a8f542d65d9 wp-block-paragraph" style="color:#4a4a4a;margin-bottom:20px;font-size:18px">Beyond choosing the right bed, these practical tips will help you get the most out of your purchase and keep your dog happy and well‑rested.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Introduce the bed gradually</strong> — place a familiar blanket or toy on it so your dog associates the new bed with comfort.</li>
+<li><strong>Rotate between two beds</strong> to extend the lifespan of each and give your dog variety across seasons.</li>
+<li><strong>Watch for signs of discomfort</strong> — if your dog avoids the bed or seems restless, the size, firmness, or location may need adjusting.</li>
+<li><strong>Keep a spare cover</strong> so you always have a clean one ready while the other is being washed.</li>
+<li><strong>Place the bed in a consistent location</strong> — dogs are creatures of habit and settle faster when their sleeping spot stays the same.</li>
+<li><strong>Consider your flooring</strong> — anti‑slip bases are essential on hardwood and tile, while raised beds work well on cold surfaces.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center" id="why-pet-owners-trust-pet-hub-online" style="margin-bottom:40px;font-size:32px;font-style:normal;font-weight:700">Why Pet Owners Trust Pet Hub Online</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<!-- wp:group -->
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🛡️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" id="dog-beds-maintenance" style="font-size:28px">How to Clean and Maintain Your Dog Beds</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Keeping your dog beds clean is essential for your dog&#8217;s health and your home&#8217;s hygiene. Most quality dog beds come with removable, machine-washable covers — look for this feature when buying dog beds, as it makes maintenance much easier.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Wash your dog beds at least once a fortnight, or weekly if your dog spends a lot of time outdoors. Use a pet-safe detergent and avoid fabric softeners, which can irritate sensitive skin. Between washes, vacuum your dog beds regularly to remove hair, dander, and dirt.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Inspect your dog beds monthly for signs of wear. Flat spots, lumpy filling, or worn-through fabric means it&#8217;s time for new dog beds. Most quality dog beds last 1-3 years depending on use. Rotating between two dog beds can extend their lifespan significantly.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" id="dog-beds-mistakes" style="font-size:28px">5 Common Mistakes When Buying Dog Beds</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">The biggest mistake people make with dog beds is choosing the wrong size. Dog beds that are too small leave your dog uncomfortable and unsupported, while oversized dog beds can make smaller dogs feel insecure. Always measure before buying dog beds.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Another common error is prioritising style over comfort when choosing dog beds. While it&#8217;s nice to have dog beds that match your decor, your dog&#8217;s comfort should always come first. Also, don&#8217;t place dog beds in high-traffic areas or near draughts — dogs need a quiet, warm spot to rest.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" id="seasonal-bedding" style="font-size:28px">Seasonal Bedding Tips for Year-Round Comfort</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Your pup&#8217;s sleeping needs change with the seasons. During summer months, cooling mats, elevated cots, and breathable mesh options help prevent overheating. Look for moisture-wicking fabrics and ventilated designs that promote airflow around your sleeping pup.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Winter calls for insulated, plush options with thermal linings or self-warming materials. Placing the sleeping area away from draughty windows and cold floors makes a significant difference to your pet&#8217;s comfort during colder months.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Regardless of season, the sleeping surface should always be appropriate for your pet&#8217;s weight and sleeping position. Side sleepers need wider, flatter surfaces, while dogs that curl up prefer bolstered or nest-style options with supportive sides.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Waterproof liners are a worthwhile investment year-round. They protect the filling from accidents, drool, and damp fur after rainy walks. Most quality liners are machine-washable and add an extra layer of comfort while extending the life of your pet&#8217;s sleeping area.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Multi-pet households should provide each animal with their own dedicated resting space. Sharing can lead to resource guarding and stress. Position sleeping areas in separate quiet spots where each pet feels secure and undisturbed.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading" id="toc-placement-tips">Placement Tips for Your Pet&#8217;s Sleeping Area</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Where you position your pet&#8217;s resting spot matters as much as the product itself. Choose a quiet corner away from high-traffic doorways, draughts, and direct sunlight. A consistent location helps your companion associate that area with rest, making settling down at night or during the day far easier. If your home has multiple levels, consider placing a sleeping option on each floor so your pet always has a comfortable retreat nearby.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Temperature regulation plays a role in placement. During winter, move the sleeping area away from external walls and windows that radiate cold. In summer, tile or wood floors stay cooler than carpeted rooms, making them ideal locations. Elevated options with mesh bases allow air circulation underneath, which is particularly welcome for thick-coated breeds during warmer months.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">For households with multiple pets, each animal should have their own designated resting space. Sharing can lead to resource guarding and disturbed sleep. Place sleeping areas within sight of each other if your pets are bonded, but far enough apart that each animal feels they have personal territory. This arrangement promotes harmony and ensures every companion gets the quality rest they need from their dog beds.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Matching the resting surface to your pet&#8217;s sleeping style improves comfort dramatically. Dogs who curl up prefer bolstered or nest-shaped options that cradle their body. Pets who sprawl flat need a wide, unconstrained mattress. Side sleepers benefit from a low bolster on one edge that supports the neck without restricting movement. Observing how your companion naturally settles reveals which design will deliver the most restful and restorative sleep for their individual preference.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Expert‑Reviewed Picks</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Every dog bed we recommend is researched and evaluated for comfort, durability, and safety.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<!-- wp:group -->
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">⭐</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Trusted by Pet Owners</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Thousands of pet parents rely on our guides to make confident, informed buying decisions.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<!-- wp:group -->
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">✔️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Independent &amp; Honest</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">We only recommend products we believe in — no sponsored placements or paid rankings.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-12bf6960 wp-block-group-is-layout-constrained" style="padding-top:50px;padding-right:50px;padding-bottom:50px;padding-left:50px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center" id="explore-more-dog-essentials" style="margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700">Explore More Dog Essentials</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🧸</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Toys</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Keep your dog active and entertained with durable chew toys, fetch toys, and interactive puzzles designed for all breeds and play styles.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-toys/">Shop All Dog Toys</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">✂️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Grooming</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Everything you need to keep your dog clean, healthy, and looking great — from brushes and shampoos to clippers and coat‑care essentials.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-grooming/">View Dog Grooming</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🐕‍🦺</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Collars &amp; Leads</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Find safe, comfortable dog collars, dog leads, and harnesses built for everyday walks, training sessions, and reliable control.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-collars-leashes/">Shop All Collars &amp; Leads</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🎯</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Training &amp; Behaviour</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Training treats, clickers, pads, and behaviour‑support tools to help build good habits and make training smoother for both of you.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-training-behaviour/">Shop All Training &amp; Behaviour</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🍖</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Bowls &amp; Feeding</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Discover stainless steel bowls, slow feeders, raised stands, and feeding accessories that make mealtimes easier and healthier for your dog.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-bowls-feeding/">Discover Bowls &amp; Feeding</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">❤️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Health &amp; Care</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Support your dog’s wellbeing with dental care, supplements, grooming wipes, and everyday essentials for a happier, healthier pet.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-health-care/">Browse Health &amp; Care</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-background is-layout-constrained wp-block-group-is-layout-constrained" style="border-top-color:#e5e5e5;border-top-width:3px;border-right-style:none;border-right-width:0px;border-bottom-width:3px;border-left-style:none;border-left-width:0px;background-color:#fafafa;padding-top:20px;padding-bottom:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-93c9c29cabda22ffe5dcadda2c053103 wp-block-paragraph" style="color:#555555;font-size:14px;line-height:1.4">Updated weekly • Independent reviews • No sponsored products • Trusted by pet owners</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:cover -->
+<div class="wp-block-cover alignfull is-light has-custom-content-position is-position-center-left" style="min-height:700px;aspect-ratio:unset;"><img data-attachment-id="2995" data-permalink="https://pethubonline.com/dog-beds/chatgpt-image-may-20-2026-11_08_34-pm/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-11_08_34-PM.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="ChatGPT Image May 20, 2026, 11_08_34 PM" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-11_08_34-PM.png?fit=1024%2C683&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1536" height="1024" data-attachment-id="2995" data-permalink="https://pethubonline.com/dog-beds/chatgpt-image-may-20-2026-11_08_34-pm/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-11_08_34-PM.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="ChatGPT Image May 20, 2026, 11_08_34 PM" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-11_08_34-PM.png?fit=1024%2C683&amp;ssl=1" alt="Chatgpt Image May 20 2026 11 08 34 Pm" class="wp-block-cover__image-background wp-image-2995 size-full" data-object-fit="cover" data-object-position="53% 100%" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-11_08_34-PM.png?resize=1536%2C1024&#038;ssl=1" style="object-position:53% 100%" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-11_08_34-PM.png?w=1536&amp;ssl=1 1536w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-11_08_34-PM.png?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-11_08_34-PM.png?resize=1024%2C683&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-11_08_34-PM.png?resize=768%2C512&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ChatGPT-Image-May-20-2026-11_08_34-PM.png?resize=1200%2C800&amp;ssl=1 1200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:#e4ddd7"></span></p>
+<div class="wp-block-cover__inner-container is-layout-constrained wp-block-cover-is-layout-constrained">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-color has-link-color wp-elements-67e460fa5457796a2a50d0aa43c6c51c" id="ready-to-find-the-perfect-bed-for-your-dog" style="color:#1a1a1a;font-size:34px;font-style:normal;font-weight:700;line-height:1.2">Ready to Find the Perfect Bed for Your Dog?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-140545d6553d0c2f5ed7d6718e72b076 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:18px">Give your dog the comfort and support they deserve with our top‑rated picks.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-layout-flex wp-block-buttons-is-layout-flex" style="margin-top:28px;margin-bottom:28px;padding-top:32px;padding-right:16px;padding-bottom:32px;padding-left:16px;font-size:18px">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://www.amazon.co.uk/s?k=dog+beds&amp;tag=pethubonline-21" target="_blank" rel="sponsored noopener noreferrer">Shop Dog Beds</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#dog-beds" rel="noreferrer noopener" target="_blank">Browse By Bed Type</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+</div>
+<!-- /wp:cover -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">
+
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Related Articles</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><a href="https://pethubonline.com/best-puppy-beds-uk/">Best Puppy Beds UK (2026) – First Bed & Crate Training Guide</a></li>
+<li><a href="https://pethubonline.com/best-cooling-dog-beds-uk/">Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide</a></li>
+<li><a href="https://pethubonline.com/best-orthopaedic-dog-beds-uk/">Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide</a></li>
+<li><a href="https://pethubonline.com/best-dog-beds-uk/">Best Dog Beds UK (2026) – Complete Guide & Honest Reviews</a></li>
+</ul>
+<!-- /wp:list -->

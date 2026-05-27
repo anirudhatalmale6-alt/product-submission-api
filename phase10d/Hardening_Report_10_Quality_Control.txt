@@ -1,0 +1,107 @@
+SITE HARDENING REPORT 10: QUALITY CONTROL SYSTEM HARDENING
+PetHub Online — pethubonline.com
+Generated: 2026-05-27
+==========================================================================
+
+SCOPE
+-----
+Strengthening the quality control systems that govern content creation,
+modification, and publication on the platform.
+
+==========================================================================
+QUALITY GATES IN PLACE
+==========================================================================
+
+1. GUTENBERG BLOCK VALIDATION (gutenberg_utils.py)
+   - validate_gutenberg() checks:
+     * Block comment markers properly paired (open/close match)
+     * Only approved block types used
+     * Third-party namespaced blocks (X/Y) allowed through
+   - safe_update_content() enforces validation before every API write
+   - Backup taken before every content modification
+
+2. HEADING HIERARCHY ENFORCEMENT
+   - No H1 allowed in body content (Astra supplies H1)
+   - Only H2 and H3 permitted
+   - Verified across all 110 published items
+
+3. CONTENT PRESENTATION STANDARD
+   - Template functions enforce consistent structure
+   - Info strip, FAQ, Related Reading, Trust Footer templates
+   - All future content must use template functions
+
+4. OVERCLAIM PREVENTION
+   - Banned phrase list documented (see Report 4)
+   - "Expert", "tested", "independently reviewed" blocked as PetHub claims
+   - Manufacturer claims explicitly allowed when attributed
+
+5. 12-GATE SAFE-TO-PUBLISH SYSTEM (from Phase 10D)
+   - Gate 1: Title present and under 60 chars
+   - Gate 2: Meta description under 160 chars
+   - Gate 3: Focus keyword set
+   - Gate 4: H2/H3 hierarchy correct (no H1)
+   - Gate 5: Minimum content length
+   - Gate 6: FAQ section present
+   - Gate 7: Related internal links present
+   - Gate 8: No duplicate H1
+   - Gate 9: Gutenberg validation passes
+   - Gate 10: Category assigned
+   - Gate 11: RankMath metadata set
+   - Gate 12: No banned phrases
+
+6. 3-LANE PUBLISHING MODEL
+   - Lane A: Auto-live educational content (gate-checked)
+   - Lane B: Review-first content (needs operator approval)
+   - Lane C: Blocked until evidence/approval (YMYL, commercial)
+
+==========================================================================
+NEW CONTROLS ADDED IN THIS SESSION
+==========================================================================
+
+1. wp:html added to APPROVED_BLOCKS list
+   (Required for affiliate disclosure and styled custom HTML blocks)
+
+2. Third-party block tolerance in validator
+   Namespaced blocks (e.g., jetpack/contact-form) now pass validation
+   without being flagged as unapproved. Only non-namespaced unknown
+   blocks trigger a validation failure.
+
+3. Template library enforcement
+   New template functions create structurally correct content by default.
+   Scripts using build_educational_post() and build_trust_page() will
+   automatically include info strips, trust footers, and proper hierarchy.
+
+4. Backup system expanded
+   All hub page modifications backed up to phase10d/hub_backups/
+   Trust page modifications backed up to phase10d/trust_page_backups.json
+   About Us backup saved to phase10d/about_us_backup.txt
+
+==========================================================================
+QUALITY CONTROL GAPS (FOR FUTURE PHASES)
+==========================================================================
+
+1. NO AUTOMATED PRE-PUBLISH OVERCLAIM SCAN
+   Currently, overclaim detection is manual (audit scripts).
+   Future: Add automated scan in the 12-gate system.
+
+2. NO IMAGE VALIDATION IN GATES
+   The 12-gate system doesn't check for featured images or body images.
+   Future: Add image presence check to gates.
+
+3. NO BROKEN LINK DETECTION IN GATES
+   Internal links are not validated before publish.
+   Future: Add link validation to gates.
+
+4. NO TRUST PAGE LINK CHECK IN GATES
+   Commercial pages should link to trust pages.
+   Future: Add trust link requirement for commercial content.
+
+==========================================================================
+RECOMMENDATIONS FOR 10F-10O
+==========================================================================
+1. Add overclaim scan to automated publish gates
+2. Add image validation to publish gates
+3. Add broken link detection to publish flow
+4. Add trust page link requirement for commercial content
+5. Implement approval-required mode for commercial content changes
+6. Add rollback capability for content modifications

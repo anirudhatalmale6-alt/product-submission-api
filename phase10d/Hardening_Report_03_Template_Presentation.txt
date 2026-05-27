@@ -1,0 +1,130 @@
+SITE HARDENING REPORT 3: TEMPLATE AND PRESENTATION STANDARD
+PetHub Online — pethubonline.com
+Generated: 2026-05-27
+==========================================================================
+
+SCOPE
+-----
+Implementation of a reusable Gutenberg template library and consistent
+content presentation standard across all managed content.
+
+==========================================================================
+TEMPLATE LIBRARY CREATED
+==========================================================================
+
+File: gutenberg_utils.py (canonical module)
+
+New template functions added:
+
+1. tpl_info_strip(effective_date, last_updated, website, business)
+   Standard top-of-page metadata block showing dates and site info.
+
+2. tpl_affiliate_disclosure()
+   Standard affiliate disclosure banner using wp:html block with
+   consistent styling (grey background, blue left border).
+
+3. tpl_trust_footer(pages)
+   Standard trust page cross-link section with separator, heading,
+   and bulleted links to all trust/transparency pages.
+
+4. tpl_faq_section(qa_pairs)
+   FAQ section using wp:details blocks for collapsible Q&A.
+
+5. tpl_related_reading(links)
+   Related Reading section with separator, heading, and link list.
+
+6. build_educational_post(...)
+   Complete educational post builder: info strip -> quick summary ->
+   body sections -> FAQ -> related reading -> trust footer.
+
+7. build_trust_page(...)
+   Complete trust page builder: info strip -> body sections ->
+   trust footer.
+
+
+DEFINED LAYOUT STANDARD
+========================
+All managed content follows this structure:
+
+  For Educational Posts:
+  1. Info strip (Last Updated, Website, Business)
+  2. Separator
+  3. Quick Summary (H2 + bold intro)
+  4. Separator
+  5. Body sections (H2/H3 hierarchy)
+  6. FAQ section (if appropriate)
+  7. Related Reading links
+  8. Trust footer
+
+  For Hub/Category Pages:
+  1. Affiliate disclosure (if commercial)
+  2. Info strip
+  3. Cover/hero image
+  4. Intro section
+  5. Category grid / product sections
+  6. FAQ section
+  7. Trust/support block
+  8. Related Reading
+
+  For Trust/Policy Pages:
+  1. Info strip
+  2. Separator
+  3. Body sections
+  4. Trust footer (cross-links to all trust pages)
+
+
+==========================================================================
+PRESENTATION STANDARD APPLIED
+==========================================================================
+
+INFO STRIPS DEPLOYED:
+- 28 educational posts (Phase 10C + 10D)
+- 16 hub/category pages
+- 4 trust pages
+- About Us page
+- Contact page
+- Blog page
+Total: 50 items now have standardised info strips
+
+FORMAT:
+  Last Updated: 27 May 2026
+  Website: pethubonline.com
+  Business: Pet Hub Online
+
+All info strips use consistent styling:
+  font-size: 0.9em, color: #555
+
+
+==========================================================================
+HEADING HIERARCHY VERIFIED
+==========================================================================
+All 110 published items use only H2/H3 in body content.
+Zero H1 tags found in any body content (Astra theme supplies H1).
+This is correct and must be maintained for all future content.
+
+
+==========================================================================
+BLOCK TYPE INVENTORY
+==========================================================================
+Approved block types in use across the site:
+  wp:paragraph, wp:heading, wp:list, wp:list-item, wp:image,
+  wp:separator, wp:cover, wp:columns, wp:column, wp:group,
+  wp:buttons, wp:button, wp:details, wp:html, wp:quote, wp:table
+
+Third-party blocks (preserved, not modified):
+  wp:jetpack/contact-form (Contact page only)
+
+Validator updated to allow namespaced third-party blocks (X/Y format)
+while still blocking unapproved non-namespaced blocks.
+
+
+==========================================================================
+FUTURE CONTENT REQUIREMENTS
+==========================================================================
+All new content MUST:
+1. Use gutenberg_utils.py template functions
+2. Include info strip at top
+3. Use only H2/H3 headings (no H1)
+4. Include trust footer on trust/policy pages
+5. Include related reading on educational posts
+6. Pass validate_gutenberg() before API write

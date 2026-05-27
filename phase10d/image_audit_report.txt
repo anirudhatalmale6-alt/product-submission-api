@@ -1,0 +1,478 @@
+===========================================================================
+PETHUB ONLINE - IMAGE & ALT TEXT AUDIT REPORT
+Generated: 2026-05-27 23:48 UTC
+Total items audited: 110 (86 posts, 24 pages)
+===========================================================================
+
+EXECUTIVE SUMMARY
+----------------------------------------
+  Total images found in content:   369
+  Missing featured images:         52
+  Missing alt text instances:       0
+  Weak/generic alt text instances:  0
+  ChatGPT filename images:         15
+  Posts missing hero image:         84
+  Educational posts with 0 images:  28
+
+===========================================================================
+1. MISSING FEATURED IMAGES (52 items)
+===========================================================================
+  [PAGE #4] Pet Hub Online – Pet Supplies Online
+    URL: https://pethubonline.com/
+  [PAGE #37] Contact Pet Hub Online
+    URL: https://pethubonline.com/contact-pet-hub-online/
+  [PAGE #38] Blog
+    URL: https://pethubonline.com/blog/
+  [PAGE #39] About Us
+    URL: https://pethubonline.com/about-us/
+  [PAGE #63] Dog Supplies
+    URL: https://pethubonline.com/dog-supplies/
+  [PAGE #293] Privacy Policy
+    URL: https://pethubonline.com/privacy-policy/
+  [PAGE #297] Terms and Conditions
+    URL: https://pethubonline.com/terms-and-conditions/
+  [PAGE #300] Affiliate Disclosure
+    URL: https://pethubonline.com/affiliate-disclosure/
+  [PAGE #1041] Dog Toys
+    URL: https://pethubonline.com/dog-toys/
+  [PAGE #1141] Dog Beds
+    URL: https://pethubonline.com/dog-beds/
+  [PAGE #1144] Dog Grooming
+    URL: https://pethubonline.com/dog-grooming/
+  [PAGE #1146] Dog Collars & Leashes
+    URL: https://pethubonline.com/dog-collars-leashes/
+  [PAGE #1149] Cat Toys
+    URL: https://pethubonline.com/cat-toys/
+  [PAGE #1176] Cat Supplies
+    URL: https://pethubonline.com/cat-supplies/
+  [PAGE #1951] Dog Bowls & Feeding
+    URL: https://pethubonline.com/dog-bowls-feeding/
+  [PAGE #1956] Dog Training & Behaviour
+    URL: https://pethubonline.com/dog-training-behaviour/
+  [PAGE #1960] Dog Health & Care
+    URL: https://pethubonline.com/dog-health-care/
+  [PAGE #2561] Cookie Policy
+    URL: https://pethubonline.com/cookie-policy/
+  [PAGE #3107] Cat Beds
+    URL: https://pethubonline.com/cat-beds/
+  [PAGE #3109] Cat Grooming
+    URL: https://pethubonline.com/cat-grooming/
+  [PAGE #3111] Cat Collars
+    URL: https://pethubonline.com/cat-collars/
+  [PAGE #3113] Cat Scratching Posts
+    URL: https://pethubonline.com/cat-scratching-posts/
+  [PAGE #3115] Cat Litter Trays
+    URL: https://pethubonline.com/cat-litter-trays/
+  [PAGE #3892] Best Dog Food & Puppy Food UK
+    URL: https://pethubonline.com/best-dog-food/
+  [POST #4406] Best Interactive Cat Toys for Indoor Cats: Engagement Guide
+    URL: https://pethubonline.com/best-interactive-cat-toys-indoor-cats/
+  [POST #4407] DIY Cat Toys: Safe Homemade Options Your Cat Will Love
+    URL: https://pethubonline.com/diy-cat-toys-safe-homemade-options/
+  [POST #4408] How Often Should You Replace Cat Toys? A Practical Guide
+    URL: https://pethubonline.com/how-often-replace-cat-toys/
+  [POST #4409] Kitten vs Adult Cat Toys: Age-Appropriate Play Guide
+    URL: https://pethubonline.com/kitten-vs-adult-cat-toys-age-appropriate/
+  [POST #4410] Cat Enrichment Activities Beyond Toys: Complete Guide
+    URL: https://pethubonline.com/cat-enrichment-activities-beyond-toys/
+  [POST #4411] Dog Harnesses: The Complete Guide to Types, Fitting, and Safety
+    URL: https://pethubonline.com/dog-harnesses-complete-guide/
+  [POST #4412] No-Pull Dog Harness Guide: How They Work and When to Use One
+    URL: https://pethubonline.com/no-pull-dog-harness-guide/
+  [POST #4413] How to Measure Your Dog for a Harness: Step-by-Step Guide
+    URL: https://pethubonline.com/how-to-measure-dog-for-harness/
+  [POST #4414] Harness vs Collar: Which Is Better for Your Dog?
+    URL: https://pethubonline.com/harness-vs-collar-which-is-better/
+  [POST #4415] Cat Toy Safety Guide: What Every Owner Should Know
+    URL: https://pethubonline.com/cat-toy-safety-guide/
+  [POST #4563] Dog Grooming Basics: A Complete Guide for Owners
+    URL: https://pethubonline.com/dog-grooming-basics-guide/
+  [POST #4566] Seasonal Dog Care: Keeping Your Dog Safe Year-Round
+    URL: https://pethubonline.com/seasonal-dog-care-guide/
+  [POST #4568] Dog Dental Health: A Practical Care Guide
+    URL: https://pethubonline.com/dog-dental-health-care-guide/
+  [POST #4570] First-Time Dog Owner Essentials: What You Need to Know
+    URL: https://pethubonline.com/first-time-dog-owner-essentials/
+  [POST #4571] Pet First Aid Basics: What Every Owner Should Know
+    URL: https://pethubonline.com/pet-first-aid-basics/
+  [POST #4573] Seasonal Pet Safety: Protecting Pets Through the Year
+    URL: https://pethubonline.com/seasonal-pet-safety-guide/
+  [POST #4574] Pet Hydration Guide: How Much Water Does Your Pet Need?
+    URL: https://pethubonline.com/pet-hydration-guide/
+  [POST #4576] Multi-Pet Household Tips: Living with Dogs and Cats Together
+    URL: https://pethubonline.com/multi-pet-household-tips/
+  [POST #4783] How to Choose the Right Dog Bed Size
+    URL: https://pethubonline.com/how-to-choose-dog-bed-size/
+  [POST #4784] Dog Bed Materials Explained: Foam, Memory Foam, and More
+    URL: https://pethubonline.com/dog-bed-materials-guide/
+  [POST #4785] How to Wash and Maintain Your Dog's Bed
+    URL: https://pethubonline.com/how-to-wash-dog-bed/
+  [POST #4786] Where to Place Your Dog's Bed: Location and Comfort Tips
+    URL: https://pethubonline.com/where-to-place-dog-bed/
+  [POST #4787] Dog Toy Safety: What Every Owner Needs to Know
+    URL: https://pethubonline.com/dog-toy-safety-guide/
+  [POST #4788] Mental Stimulation for Dogs: Beyond Physical Exercise
+    URL: https://pethubonline.com/mental-stimulation-for-dogs/
+  [POST #4789] Best Types of Dog Toys for Different Play Styles
+    URL: https://pethubonline.com/dog-toys-for-different-play-styles/
+  [POST #4790] DIY Dog Toys: Safe Homemade Options
+    URL: https://pethubonline.com/diy-dog-toys-homemade/
+  [POST #4791] How to Choose the Right Dog Training Treats
+    URL: https://pethubonline.com/how-to-choose-dog-training-treats/
+  [POST #4792] Puppy Socialisation: A Complete Timeline Guide
+    URL: https://pethubonline.com/puppy-socialisation-guide/
+
+===========================================================================
+2. MISSING ALT TEXT (0 images)
+===========================================================================
+  None found - all images have alt text.
+
+===========================================================================
+3. WEAK/GENERIC ALT TEXT (0 images)
+===========================================================================
+  None found - all alt text appears descriptive.
+
+===========================================================================
+4. CHATGPT IMAGE FILENAMES (15 images)
+===========================================================================
+  [PAGE #4] Pet Hub Online – Pet Supplies Online
+    File: ChatGPT-Image-May-20-2026-01_06_43-PM.png
+    URL: https://pethubonline.com/
+  [PAGE #4] Pet Hub Online – Pet Supplies Online
+    File: ChatGPT-Image-May-20-2026-01_08_18-PM.png
+    URL: https://pethubonline.com/
+  [PAGE #4] Pet Hub Online – Pet Supplies Online
+    File: ChatGPT-Image-May-20-2026-01_09_10-PM.png
+    URL: https://pethubonline.com/
+  [PAGE #4] Pet Hub Online – Pet Supplies Online
+    File: ChatGPT-Image-May-20-2026-01_10_01-PM.png
+    URL: https://pethubonline.com/
+  [PAGE #4] Pet Hub Online – Pet Supplies Online
+    File: ChatGPT-Image-May-20-2026-01_11_57-PM.png
+    URL: https://pethubonline.com/
+  [PAGE #4] Pet Hub Online – Pet Supplies Online
+    File: ChatGPT-Image-May-20-2026-01_11_15-PM.png
+    URL: https://pethubonline.com/
+  [PAGE #4] Pet Hub Online – Pet Supplies Online
+    File: ChatGPT-Image-May-20-2026-01_21_20-PM.png
+    URL: https://pethubonline.com/
+  [PAGE #37] Contact Pet Hub Online
+    File: ChatGPT-Image-May-19-2026-09_31_51-PM-1024x819.png
+    URL: https://pethubonline.com/contact-pet-hub-online/
+  [PAGE #1141] Dog Beds
+    File: ChatGPT-Image-May-20-2026-10_34_46-PM.png
+    URL: https://pethubonline.com/dog-beds/
+  [PAGE #1141] Dog Beds
+    File: ChatGPT-Image-May-20-2026-10_36_31-PM.png
+    URL: https://pethubonline.com/dog-beds/
+  [PAGE #1141] Dog Beds
+    File: ChatGPT-Image-May-20-2026-10_38_12-PM.png
+    URL: https://pethubonline.com/dog-beds/
+  [PAGE #1141] Dog Beds
+    File: ChatGPT-Image-May-20-2026-10_35_34-PM.png
+    URL: https://pethubonline.com/dog-beds/
+  [PAGE #1141] Dog Beds
+    File: ChatGPT-Image-May-20-2026-10_37_30-PM.png
+    URL: https://pethubonline.com/dog-beds/
+  [PAGE #1141] Dog Beds
+    File: ChatGPT-Image-May-20-2026-10_38_44-PM.png
+    URL: https://pethubonline.com/dog-beds/
+  [PAGE #1141] Dog Beds
+    File: ChatGPT-Image-May-20-2026-11_08_34-PM.png
+    URL: https://pethubonline.com/dog-beds/
+
+===========================================================================
+5. POSTS MISSING HERO IMAGE (first 1000 chars) (84 posts)
+===========================================================================
+  [POST #3836] Best Dog Food UK (2026) - Complete Buying Guide  (6 images total)
+  [POST #3837] Best Dry Dog Food UK (2026) - Evidence-Based Guide  (6 images total)
+  [POST #3838] Dry vs Wet Dog Food UK - An Honest Comparison Guide  (6 images total)
+  [POST #3839] Best Puppy Food UK (2026) - Growth-Stage Nutrition Guide  (6 images total)
+  [POST #3956] Best Dog Toys UK (2026) – Complete Guide & Honest Reviews  (3 images total)
+  [POST #3957] Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers  (3 images total)
+  [POST #3959] Best Interactive Dog Toys UK (2026) – Puzzle & Enrichment Guide  (3 images total)
+  [POST #3960] Best Puppy Toys UK (2026) – Teething & First Toys Guide  (3 images total)
+  [POST #3996] Best Dog Beds UK (2026) – Complete Guide & Honest Reviews  (3 images total)
+  [POST #4004] Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide  (3 images total)
+  [POST #4011] Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide  (3 images total)
+  [POST #4018] Best Puppy Beds UK (2026) – First Bed & Crate Training Guide  (3 images total)
+  [POST #4027] Best Dog Collars and Harnesses UK (2026) – Complete Guide  (3 images total)
+  [POST #4034] Best No-Pull Dog Harnesses UK (2026) – Training & Comfort Guide  (3 images total)
+  [POST #4042] Best Dog Leads UK (2026) – Walking & Training Lead Guide  (3 images total)
+  [POST #4049] Best Puppy Collars UK (2026) – First Collar & Harness Guide  (3 images total)
+  [POST #4057] Best Dog Grooming Supplies UK (2026) – Complete Guide  (3 images total)
+  [POST #4064] Best Dog Brushes UK (2026) – Guide by Coat Type  (3 images total)
+  [POST #4071] Best Dog Shampoo UK (2026) – Ingredients & Safety Guide  (3 images total)
+  [POST #4078] Best Dog Nail Clippers UK (2026) – Trimming & Grinding Guide  (3 images total)
+  [POST #4089] Best Dog Health and Care UK (2026) – Complete Guide  (3 images total)
+  [POST #4096] Best Dog Dental Care UK (2026) – Teeth Cleaning Guide  (3 images total)
+  [POST #4103] Best Dog Flea Treatment UK (2026) – Prevention Guide  (3 images total)
+  [POST #4110] Best Dog Joint Supplements UK (2026) – Mobility Support Guide  (3 images total)
+  [POST #4118] Best Dog Training and Behaviour UK (2026) – Complete Guide  (3 images total)
+  [POST #4125] Best Dog Training Treats UK (2026) – Reward Guide  (3 images total)
+  [POST #4132] Best Puppy Training Guide UK (2026) – First Year Essentials  (3 images total)
+  [POST #4139] Best Dog Training Leads UK (2026) – Long Lines & Harnesses  (3 images total)
+  [POST #4146] Best Dog Bowls and Feeding UK (2026) – Complete Guide  (3 images total)
+  [POST #4153] Best Slow Feeder Dog Bowls UK (2026) – Prevent Speed Eating  (3 images total)
+  [POST #4160] Best Elevated Dog Bowls UK (2026) – Raised Feeder Guide  (3 images total)
+  [POST #4167] Best Dog Water Bottles UK (2026) – Travel Hydration Guide  (3 images total)
+  [POST #4174] Best Cat Toys UK (2026) – Complete Guide  (3 images total)
+  [POST #4181] Best Interactive Cat Toys UK (2026) – Wand & Puzzle Guide  (3 images total)
+  [POST #4188] Best Catnip Toys UK (2026) – What Works and Why  (3 images total)
+  [POST #4195] Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide  (3 images total)
+  [POST #4202] Best Cat Beds UK (2026) – Complete Guide  (3 images total)
+  [POST #4209] Best Heated Cat Beds UK (2026) – Winter Warmth Guide  (3 images total)
+  [POST #4216] Best Cat Radiator Beds UK (2026) – Hook-On Warmth Guide  (3 images total)
+  [POST #4223] Best Cat Window Perches UK (2026) – Sunning & Bird Watching  (3 images total)
+  [POST #4230] Best Cat Grooming Supplies UK (2026) – Complete Guide  (3 images total)
+  [POST #4237] Best Cat Brushes UK (2026) – Guide by Coat Type  (3 images total)
+  [POST #4244] Best Cat Nail Clippers UK (2026) – Safe Trimming Guide  (3 images total)
+  [POST #4251] Best Cat Shampoo UK (2026) – When & How to Bathe  (3 images total)
+  [POST #4258] Best Cat Collars UK (2026) – Complete Safety Guide  (3 images total)
+  [POST #4265] Best Cat GPS Trackers UK (2026) – Location Tracking Guide  (3 images total)
+  [POST #4272] Best Cat ID Tags UK (2026) – Identification Guide  (3 images total)
+  [POST #4279] Best Cat Harnesses UK (2026) – Safe Walking Guide  (3 images total)
+  [POST #4286] Best Cat Scratching Posts UK (2026) – Complete Guide  (3 images total)
+  [POST #4293] Best Cat Trees UK (2026) – Climbing & Scratching Towers  (3 images total)
+  [POST #4300] Best Cardboard Cat Scratchers UK (2026) – Budget Friendly  (3 images total)
+  [POST #4307] Best Wall-Mounted Cat Scratchers UK (2026) – Space Saving  (3 images total)
+  [POST #4314] Best Cat Litter Trays UK (2026) – Complete Guide  (3 images total)
+  [POST #4321] Best Cat Litter UK (2026) – Types & Comparison Guide  (3 images total)
+  [POST #4328] Best Self-Cleaning Litter Trays UK (2026) – Automatic Options  (3 images total)
+  [POST #4335] Best Cat Litter Disposal UK (2026) – Waste Management Guide  (3 images total)
+  [POST #4406] Best Interactive Cat Toys for Indoor Cats: Engagement Guide  (NO images at all)
+  [POST #4407] DIY Cat Toys: Safe Homemade Options Your Cat Will Love  (NO images at all)
+  [POST #4408] How Often Should You Replace Cat Toys? A Practical Guide  (NO images at all)
+  [POST #4409] Kitten vs Adult Cat Toys: Age-Appropriate Play Guide  (NO images at all)
+  [POST #4410] Cat Enrichment Activities Beyond Toys: Complete Guide  (NO images at all)
+  [POST #4411] Dog Harnesses: The Complete Guide to Types, Fitting, and Safety  (NO images at all)
+  [POST #4412] No-Pull Dog Harness Guide: How They Work and When to Use One  (NO images at all)
+  [POST #4413] How to Measure Your Dog for a Harness: Step-by-Step Guide  (NO images at all)
+  [POST #4414] Harness vs Collar: Which Is Better for Your Dog?  (NO images at all)
+  [POST #4415] Cat Toy Safety Guide: What Every Owner Should Know  (NO images at all)
+  [POST #4563] Dog Grooming Basics: A Complete Guide for Owners  (NO images at all)
+  [POST #4566] Seasonal Dog Care: Keeping Your Dog Safe Year-Round  (NO images at all)
+  [POST #4568] Dog Dental Health: A Practical Care Guide  (NO images at all)
+  [POST #4570] First-Time Dog Owner Essentials: What You Need to Know  (NO images at all)
+  [POST #4571] Pet First Aid Basics: What Every Owner Should Know  (NO images at all)
+  [POST #4573] Seasonal Pet Safety: Protecting Pets Through the Year  (NO images at all)
+  [POST #4574] Pet Hydration Guide: How Much Water Does Your Pet Need?  (NO images at all)
+  [POST #4576] Multi-Pet Household Tips: Living with Dogs and Cats Together  (NO images at all)
+  [POST #4783] How to Choose the Right Dog Bed Size  (NO images at all)
+  [POST #4784] Dog Bed Materials Explained: Foam, Memory Foam, and More  (NO images at all)
+  [POST #4785] How to Wash and Maintain Your Dog's Bed  (NO images at all)
+  [POST #4786] Where to Place Your Dog's Bed: Location and Comfort Tips  (NO images at all)
+  [POST #4787] Dog Toy Safety: What Every Owner Needs to Know  (NO images at all)
+  [POST #4788] Mental Stimulation for Dogs: Beyond Physical Exercise  (NO images at all)
+  [POST #4789] Best Types of Dog Toys for Different Play Styles  (NO images at all)
+  [POST #4790] DIY Dog Toys: Safe Homemade Options  (NO images at all)
+  [POST #4791] How to Choose the Right Dog Training Treats  (NO images at all)
+  [POST #4792] Puppy Socialisation: A Complete Timeline Guide  (NO images at all)
+
+===========================================================================
+6. IMAGE COUNT PER ITEM
+===========================================================================
+    0 images  [PAGE #293] Privacy Policy
+    0 images  [PAGE #297] Terms and Conditions
+    0 images  [PAGE #300] Affiliate Disclosure
+    0 images  [PAGE #2561] Cookie Policy
+    0 images  [POST #4406] Best Interactive Cat Toys for Indoor Cats: Engagement Guide
+    0 images  [POST #4407] DIY Cat Toys: Safe Homemade Options Your Cat Will Love
+    0 images  [POST #4408] How Often Should You Replace Cat Toys? A Practical Guide
+    0 images  [POST #4409] Kitten vs Adult Cat Toys: Age-Appropriate Play Guide
+    0 images  [POST #4410] Cat Enrichment Activities Beyond Toys: Complete Guide
+    0 images  [POST #4411] Dog Harnesses: The Complete Guide to Types, Fitting, and Safety
+    0 images  [POST #4412] No-Pull Dog Harness Guide: How They Work and When to Use One
+    0 images  [POST #4413] How to Measure Your Dog for a Harness: Step-by-Step Guide
+    0 images  [POST #4414] Harness vs Collar: Which Is Better for Your Dog?
+    0 images  [POST #4415] Cat Toy Safety Guide: What Every Owner Should Know
+    0 images  [POST #4563] Dog Grooming Basics: A Complete Guide for Owners
+    0 images  [POST #4566] Seasonal Dog Care: Keeping Your Dog Safe Year-Round
+    0 images  [POST #4568] Dog Dental Health: A Practical Care Guide
+    0 images  [POST #4570] First-Time Dog Owner Essentials: What You Need to Know
+    0 images  [POST #4571] Pet First Aid Basics: What Every Owner Should Know
+    0 images  [POST #4573] Seasonal Pet Safety: Protecting Pets Through the Year
+    0 images  [POST #4574] Pet Hydration Guide: How Much Water Does Your Pet Need?
+    0 images  [POST #4576] Multi-Pet Household Tips: Living with Dogs and Cats Together
+    0 images  [POST #4783] How to Choose the Right Dog Bed Size
+    0 images  [POST #4784] Dog Bed Materials Explained: Foam, Memory Foam, and More
+    0 images  [POST #4785] How to Wash and Maintain Your Dog's Bed
+    0 images  [POST #4786] Where to Place Your Dog's Bed: Location and Comfort Tips
+    0 images  [POST #4787] Dog Toy Safety: What Every Owner Needs to Know
+    0 images  [POST #4788] Mental Stimulation for Dogs: Beyond Physical Exercise
+    0 images  [POST #4789] Best Types of Dog Toys for Different Play Styles
+    0 images  [POST #4790] DIY Dog Toys: Safe Homemade Options
+    0 images  [POST #4791] How to Choose the Right Dog Training Treats
+    0 images  [POST #4792] Puppy Socialisation: A Complete Timeline Guide
+    1 images  [POST #3] Top Dog Toys Every Pet Owner Needs in 2026
+    1 images  [PAGE #37] Contact Pet Hub Online
+    1 images  [PAGE #39] About Us
+    2 images  [PAGE #63] Dog Supplies
+    2 images  [PAGE #1176] Cat Supplies
+    3 images  [POST #696] Essential Cat Supplies for Cat Owners - Number 1 Must-Haves
+    3 images  [POST #3956] Best Dog Toys UK (2026) – Complete Guide & Honest Reviews
+    3 images  [POST #3957] Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers
+    3 images  [POST #3959] Best Interactive Dog Toys UK (2026) – Puzzle & Enrichment Guide
+    3 images  [POST #3960] Best Puppy Toys UK (2026) – Teething & First Toys Guide
+    3 images  [POST #3996] Best Dog Beds UK (2026) – Complete Guide & Honest Reviews
+    3 images  [POST #4004] Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide
+    3 images  [POST #4011] Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide
+    3 images  [POST #4018] Best Puppy Beds UK (2026) – First Bed & Crate Training Guide
+    3 images  [POST #4027] Best Dog Collars and Harnesses UK (2026) – Complete Guide
+    3 images  [POST #4034] Best No-Pull Dog Harnesses UK (2026) – Training & Comfort Guide
+    3 images  [POST #4042] Best Dog Leads UK (2026) – Walking & Training Lead Guide
+    3 images  [POST #4049] Best Puppy Collars UK (2026) – First Collar & Harness Guide
+    3 images  [POST #4057] Best Dog Grooming Supplies UK (2026) – Complete Guide
+    3 images  [POST #4064] Best Dog Brushes UK (2026) – Guide by Coat Type
+    3 images  [POST #4071] Best Dog Shampoo UK (2026) – Ingredients & Safety Guide
+    3 images  [POST #4078] Best Dog Nail Clippers UK (2026) – Trimming & Grinding Guide
+    3 images  [POST #4089] Best Dog Health and Care UK (2026) – Complete Guide
+    3 images  [POST #4096] Best Dog Dental Care UK (2026) – Teeth Cleaning Guide
+    3 images  [POST #4103] Best Dog Flea Treatment UK (2026) – Prevention Guide
+    3 images  [POST #4110] Best Dog Joint Supplements UK (2026) – Mobility Support Guide
+    3 images  [POST #4118] Best Dog Training and Behaviour UK (2026) – Complete Guide
+    3 images  [POST #4125] Best Dog Training Treats UK (2026) – Reward Guide
+    3 images  [POST #4132] Best Puppy Training Guide UK (2026) – First Year Essentials
+    3 images  [POST #4139] Best Dog Training Leads UK (2026) – Long Lines & Harnesses
+    3 images  [POST #4146] Best Dog Bowls and Feeding UK (2026) – Complete Guide
+    3 images  [POST #4153] Best Slow Feeder Dog Bowls UK (2026) – Prevent Speed Eating
+    3 images  [POST #4160] Best Elevated Dog Bowls UK (2026) – Raised Feeder Guide
+    3 images  [POST #4167] Best Dog Water Bottles UK (2026) – Travel Hydration Guide
+    3 images  [POST #4174] Best Cat Toys UK (2026) – Complete Guide
+    3 images  [POST #4181] Best Interactive Cat Toys UK (2026) – Wand & Puzzle Guide
+    3 images  [POST #4188] Best Catnip Toys UK (2026) – What Works and Why
+    3 images  [POST #4195] Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide
+    3 images  [POST #4202] Best Cat Beds UK (2026) – Complete Guide
+    3 images  [POST #4209] Best Heated Cat Beds UK (2026) – Winter Warmth Guide
+    3 images  [POST #4216] Best Cat Radiator Beds UK (2026) – Hook-On Warmth Guide
+    3 images  [POST #4223] Best Cat Window Perches UK (2026) – Sunning & Bird Watching
+    3 images  [POST #4230] Best Cat Grooming Supplies UK (2026) – Complete Guide
+    3 images  [POST #4237] Best Cat Brushes UK (2026) – Guide by Coat Type
+    3 images  [POST #4244] Best Cat Nail Clippers UK (2026) – Safe Trimming Guide
+    3 images  [POST #4251] Best Cat Shampoo UK (2026) – When & How to Bathe
+    3 images  [POST #4258] Best Cat Collars UK (2026) – Complete Safety Guide
+    3 images  [POST #4265] Best Cat GPS Trackers UK (2026) – Location Tracking Guide
+    3 images  [POST #4272] Best Cat ID Tags UK (2026) – Identification Guide
+    3 images  [POST #4279] Best Cat Harnesses UK (2026) – Safe Walking Guide
+    3 images  [POST #4286] Best Cat Scratching Posts UK (2026) – Complete Guide
+    3 images  [POST #4293] Best Cat Trees UK (2026) – Climbing & Scratching Towers
+    3 images  [POST #4300] Best Cardboard Cat Scratchers UK (2026) – Budget Friendly
+    3 images  [POST #4307] Best Wall-Mounted Cat Scratchers UK (2026) – Space Saving
+    3 images  [POST #4314] Best Cat Litter Trays UK (2026) – Complete Guide
+    3 images  [POST #4321] Best Cat Litter UK (2026) – Types & Comparison Guide
+    3 images  [POST #4328] Best Self-Cleaning Litter Trays UK (2026) – Automatic Options
+    3 images  [POST #4335] Best Cat Litter Disposal UK (2026) – Waste Management Guide
+    6 images  [PAGE #3109] Cat Grooming
+    6 images  [PAGE #3113] Cat Scratching Posts
+    6 images  [PAGE #3115] Cat Litter Trays
+    6 images  [POST #3836] Best Dog Food UK (2026) - Complete Buying Guide
+    6 images  [POST #3837] Best Dry Dog Food UK (2026) - Evidence-Based Guide
+    6 images  [POST #3838] Dry vs Wet Dog Food UK - An Honest Comparison Guide
+    6 images  [POST #3839] Best Puppy Food UK (2026) - Growth-Stage Nutrition Guide
+    7 images  [PAGE #38] Blog
+    7 images  [PAGE #3111] Cat Collars
+   12 images  [PAGE #1951] Dog Bowls & Feeding
+   12 images  [PAGE #3892] Best Dog Food & Puppy Food UK
+   13 images  [PAGE #1041] Dog Toys
+   13 images  [PAGE #1141] Dog Beds
+   13 images  [PAGE #1144] Dog Grooming
+   13 images  [PAGE #1146] Dog Collars & Leashes
+   13 images  [PAGE #1149] Cat Toys
+   13 images  [PAGE #1956] Dog Training & Behaviour
+   13 images  [PAGE #1960] Dog Health & Care
+   13 images  [PAGE #3107] Cat Beds
+   19 images  [PAGE #4] Pet Hub Online – Pet Supplies Online
+
+===========================================================================
+7. EDUCATIONAL POSTS WITH ZERO BODY IMAGES (28 of 28 tracked)
+===========================================================================
+  [POST #4406] Best Interactive Cat Toys for Indoor Cats: Engagement Guide
+    URL: https://pethubonline.com/best-interactive-cat-toys-indoor-cats/
+  [POST #4407] DIY Cat Toys: Safe Homemade Options Your Cat Will Love
+    URL: https://pethubonline.com/diy-cat-toys-safe-homemade-options/
+  [POST #4408] How Often Should You Replace Cat Toys? A Practical Guide
+    URL: https://pethubonline.com/how-often-replace-cat-toys/
+  [POST #4409] Kitten vs Adult Cat Toys: Age-Appropriate Play Guide
+    URL: https://pethubonline.com/kitten-vs-adult-cat-toys-age-appropriate/
+  [POST #4410] Cat Enrichment Activities Beyond Toys: Complete Guide
+    URL: https://pethubonline.com/cat-enrichment-activities-beyond-toys/
+  [POST #4411] Dog Harnesses: The Complete Guide to Types, Fitting, and Safety
+    URL: https://pethubonline.com/dog-harnesses-complete-guide/
+  [POST #4412] No-Pull Dog Harness Guide: How They Work and When to Use One
+    URL: https://pethubonline.com/no-pull-dog-harness-guide/
+  [POST #4413] How to Measure Your Dog for a Harness: Step-by-Step Guide
+    URL: https://pethubonline.com/how-to-measure-dog-for-harness/
+  [POST #4414] Harness vs Collar: Which Is Better for Your Dog?
+    URL: https://pethubonline.com/harness-vs-collar-which-is-better/
+  [POST #4415] Cat Toy Safety Guide: What Every Owner Should Know
+    URL: https://pethubonline.com/cat-toy-safety-guide/
+  [POST #4563] Dog Grooming Basics: A Complete Guide for Owners
+    URL: https://pethubonline.com/dog-grooming-basics-guide/
+  [POST #4566] Seasonal Dog Care: Keeping Your Dog Safe Year-Round
+    URL: https://pethubonline.com/seasonal-dog-care-guide/
+  [POST #4568] Dog Dental Health: A Practical Care Guide
+    URL: https://pethubonline.com/dog-dental-health-care-guide/
+  [POST #4570] First-Time Dog Owner Essentials: What You Need to Know
+    URL: https://pethubonline.com/first-time-dog-owner-essentials/
+  [POST #4571] Pet First Aid Basics: What Every Owner Should Know
+    URL: https://pethubonline.com/pet-first-aid-basics/
+  [POST #4573] Seasonal Pet Safety: Protecting Pets Through the Year
+    URL: https://pethubonline.com/seasonal-pet-safety-guide/
+  [POST #4574] Pet Hydration Guide: How Much Water Does Your Pet Need?
+    URL: https://pethubonline.com/pet-hydration-guide/
+  [POST #4576] Multi-Pet Household Tips: Living with Dogs and Cats Together
+    URL: https://pethubonline.com/multi-pet-household-tips/
+  [POST #4783] How to Choose the Right Dog Bed Size
+    URL: https://pethubonline.com/how-to-choose-dog-bed-size/
+  [POST #4784] Dog Bed Materials Explained: Foam, Memory Foam, and More
+    URL: https://pethubonline.com/dog-bed-materials-guide/
+  [POST #4785] How to Wash and Maintain Your Dog's Bed
+    URL: https://pethubonline.com/how-to-wash-dog-bed/
+  [POST #4786] Where to Place Your Dog's Bed: Location and Comfort Tips
+    URL: https://pethubonline.com/where-to-place-dog-bed/
+  [POST #4787] Dog Toy Safety: What Every Owner Needs to Know
+    URL: https://pethubonline.com/dog-toy-safety-guide/
+  [POST #4788] Mental Stimulation for Dogs: Beyond Physical Exercise
+    URL: https://pethubonline.com/mental-stimulation-for-dogs/
+  [POST #4789] Best Types of Dog Toys for Different Play Styles
+    URL: https://pethubonline.com/dog-toys-for-different-play-styles/
+  [POST #4790] DIY Dog Toys: Safe Homemade Options
+    URL: https://pethubonline.com/diy-dog-toys-homemade/
+  [POST #4791] How to Choose the Right Dog Training Treats
+    URL: https://pethubonline.com/how-to-choose-dog-training-treats/
+  [POST #4792] Puppy Socialisation: A Complete Timeline Guide
+    URL: https://pethubonline.com/puppy-socialisation-guide/
+
+  EDUCATIONAL POSTS IMAGE SUMMARY:
+    # 4406   0 images  Best Interactive Cat Toys for Indoor Cats: Engagem  ** ZERO IMAGES **
+    # 4407   0 images  DIY Cat Toys: Safe Homemade Options Your Cat Will   ** ZERO IMAGES **
+    # 4408   0 images  How Often Should You Replace Cat Toys? A Practical  ** ZERO IMAGES **
+    # 4409   0 images  Kitten vs Adult Cat Toys: Age-Appropriate Play Gui  ** ZERO IMAGES **
+    # 4410   0 images  Cat Enrichment Activities Beyond Toys: Complete Gu  ** ZERO IMAGES **
+    # 4411   0 images  Dog Harnesses: The Complete Guide to Types, Fittin  ** ZERO IMAGES **
+    # 4412   0 images  No-Pull Dog Harness Guide: How They Work and When   ** ZERO IMAGES **
+    # 4413   0 images  How to Measure Your Dog for a Harness: Step-by-Ste  ** ZERO IMAGES **
+    # 4414   0 images  Harness vs Collar: Which Is Better for Your Dog?  ** ZERO IMAGES **
+    # 4415   0 images  Cat Toy Safety Guide: What Every Owner Should Know  ** ZERO IMAGES **
+    # 4563   0 images  Dog Grooming Basics: A Complete Guide for Owners  ** ZERO IMAGES **
+    # 4566   0 images  Seasonal Dog Care: Keeping Your Dog Safe Year-Roun  ** ZERO IMAGES **
+    # 4568   0 images  Dog Dental Health: A Practical Care Guide  ** ZERO IMAGES **
+    # 4570   0 images  First-Time Dog Owner Essentials: What You Need to   ** ZERO IMAGES **
+    # 4571   0 images  Pet First Aid Basics: What Every Owner Should Know  ** ZERO IMAGES **
+    # 4573   0 images  Seasonal Pet Safety: Protecting Pets Through the Y  ** ZERO IMAGES **
+    # 4574   0 images  Pet Hydration Guide: How Much Water Does Your Pet   ** ZERO IMAGES **
+    # 4576   0 images  Multi-Pet Household Tips: Living with Dogs and Cat  ** ZERO IMAGES **
+    # 4783   0 images  How to Choose the Right Dog Bed Size  ** ZERO IMAGES **
+    # 4784   0 images  Dog Bed Materials Explained: Foam, Memory Foam, an  ** ZERO IMAGES **
+    # 4785   0 images  How to Wash and Maintain Your Dog's Bed  ** ZERO IMAGES **
+    # 4786   0 images  Where to Place Your Dog's Bed: Location and Comfor  ** ZERO IMAGES **
+    # 4787   0 images  Dog Toy Safety: What Every Owner Needs to Know  ** ZERO IMAGES **
+    # 4788   0 images  Mental Stimulation for Dogs: Beyond Physical Exerc  ** ZERO IMAGES **
+    # 4789   0 images  Best Types of Dog Toys for Different Play Styles  ** ZERO IMAGES **
+    # 4790   0 images  DIY Dog Toys: Safe Homemade Options  ** ZERO IMAGES **
+    # 4791   0 images  How to Choose the Right Dog Training Treats  ** ZERO IMAGES **
+    # 4792   0 images  Puppy Socialisation: A Complete Timeline Guide  ** ZERO IMAGES **
+
+===========================================================================
+END OF REPORT
+===========================================================================

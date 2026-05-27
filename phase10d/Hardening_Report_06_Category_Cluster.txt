@@ -1,0 +1,87 @@
+SITE HARDENING REPORT 6: CATEGORY AND CLUSTER TIGHTENING
+PetHub Online — pethubonline.com
+Generated: 2026-05-27
+==========================================================================
+
+SCOPE
+-----
+Review and tighten all category/hub pages for role clarity, commercial
+discipline, content quality, and consistent presentation.
+
+==========================================================================
+HUB PAGES AUDITED AND UPDATED (16 total)
+==========================================================================
+
+DOG CLUSTER HUBS:
+  Page 63  — Dog Supplies        | 59K chars | Cover hero | Updated
+  Page 1041 — Dog Toys           | 119K chars | Cover hero | Updated
+  Page 1141 — Dog Beds           | Updated
+  Page 1144 — Dog Grooming       | Updated
+  Page 1146 — Dog Collars        | Updated
+  Page 1951 — Dog Bowls          | Updated
+  Page 1956 — Dog Training       | Updated
+  Page 1960 — Dog Health & Care  | Updated
+  Page 3892 — Dog Food           | Updated
+
+CAT CLUSTER HUBS:
+  Page 1176 — Cat Supplies       | 59K chars | Updated
+  Page 1149 — Cat Toys           | Updated
+  Page 3107 — Cat Beds           | Updated
+  Page 3109 — Cat Grooming       | Updated
+  Page 3111 — Cat Collars        | Updated
+  Page 3113 — Cat Scratching     | Updated
+  Page 3115 — Cat Litter Trays   | Updated
+
+==========================================================================
+CHANGES APPLIED TO ALL HUB PAGES
+==========================================================================
+
+1. INFO STRIPS: Added to all 16 hub pages (none had them before)
+2. OVERCLAIM REMOVAL: "Expert" language replaced on all pages
+3. TRUST SIGNALS: Corrected to honest language
+
+==========================================================================
+PAGE ROLE CLARIFICATION
+==========================================================================
+
+Hub pages serve dual purpose on PetHub:
+  - Category gateway: Help users navigate to sub-categories and products
+  - Educational hub: Provide overview guidance on the topic
+
+Current state assessment:
+  - Dog Supplies (63): Effective category gateway with product grids
+  - Dog Toys (1041): Strong hub with product listings + educational FAQ
+  - Cat Supplies (1176): Good category gateway, mirrors Dog Supplies structure
+  - Smaller hubs (Beds, Grooming, Collars, etc.): Product-focused with
+    educational sections and FAQ
+
+All hub pages now have:
+  - Clear intro explaining the page's purpose
+  - Consistent heading hierarchy (H2/H3)
+  - FAQ sections (on most)
+  - Related reading or cross-links to spokes
+
+==========================================================================
+CLUSTER CONNECTIVITY STATUS
+==========================================================================
+
+  Cluster          Hub->Spoke    Spoke->Hub    Status
+  Dog Toys         Complete      Complete      GOOD
+  Cat Toys         Complete      Complete      GOOD
+  Dog Beds         Complete      Complete      GOOD
+  Dog Care         Partial       Partial       NEEDS WORK
+  Pet Care         No hub page   N/A           NEEDS HUB
+  Dog Harnesses    Missing link  Missing link  NEEDS WORK
+  Puppy Care       No hub page   N/A           NEEDS HUB
+  Training         Partial       Partial       NEEDS WORK
+
+Priority: Fix Dog Care and Dog Harnesses hub-spoke linking.
+          Create Pet Care and Puppy Care hub pages in future phase.
+
+==========================================================================
+REMAINING OPPORTUNITIES
+==========================================================================
+1. Reduce generic filler sections on larger hub pages
+2. Improve intro quality on weaker hubs
+3. Create missing Pet Care and Puppy Care hub pages
+4. Strengthen hub-spoke linking in Dog Care and Harnesses clusters

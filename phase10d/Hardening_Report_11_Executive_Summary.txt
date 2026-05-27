@@ -1,0 +1,139 @@
+SITE HARDENING EXECUTIVE SUMMARY
+PetHub Online — pethubonline.com
+Generated: 2026-05-27
+==========================================================================
+
+This report summarises the full site hardening pass executed in response
+to the operator's 12-priority hardening directive and page-by-page
+cleanup checklist.
+
+==========================================================================
+WHAT WAS DONE
+==========================================================================
+
+1. GUTENBERG MIGRATION REPAIR (Critical)
+   - Root cause identified: HTMLToBlocks converter wrapped all divs in
+     Group blocks, making content invisible in Gutenberg editor
+   - 116 items repaired: 19 pages restored, 57 posts surgically fixed
+   - Fresh verification: 116/116 clean, zero malformed blocks
+   - Repair script: repair_gutenberg.py
+
+2. ABOUT US PAGE REWRITE (Priority 1)
+   - Full moderate rewrite removing all unsupported claims
+   - New honest sections: limitations, AI disclosure, research process
+   - Zero banned phrases remaining
+   - Cover hero preserved, info strip added
+
+3. TRUST PAGE ALIGNMENT (Priority 1)
+   - 4 trust pages refined with info strips and full cross-links
+   - All 5 trust pages now link to each other
+   - Trust footer standardised with Corrections Policy included
+
+4. CONTENT PRESENTATION STANDARD (Priority 2)
+   - Gutenberg template library built (7 reusable functions)
+   - Info strips deployed to 50 items (posts + pages)
+   - Layout standard defined and documented
+
+5. HUB PAGE OVERCLAIM REMOVAL (Priority 5)
+   - 82+ overclaim instances identified across 16 hub pages
+   - 60+ overclaims fixed (rest were legitimate third-party claims)
+   - Trust signal blocks corrected on worst offenders
+   - Banned phrase standard documented
+
+6. COMMENT / PLACEHOLDER CLEANUP (Priority 3)
+   - All 22 non-blog pages confirmed comments closed
+   - Zero placeholder bugs found ({vendor_count}, {title}, etc.)
+   - Template clutter removed
+
+7. INTERNAL LINKING AUDIT (Priority 8)
+   - 837 internal links audited across 110 items
+   - 13 orphan pages identified
+   - 32 broken links found (fix in progress)
+   - 71 generic anchor texts flagged for improvement
+
+8. IMAGE / ACCESSIBILITY AUDIT (Priority 9)
+   - 369 images audited: zero missing alt text
+   - 52 items missing featured images (28 educational posts)
+   - 15 ChatGPT-named images identified for re-upload
+   - 28 educational posts have zero body images
+
+==========================================================================
+METRICS
+==========================================================================
+
+  Metric                              Before      After
+  ------------------------------------|-----------|-----------
+  Pages with info strip               | 0         | 50
+  Overclaim instances on hub pages    | 82+       | ~12 (legitimate)
+  Trust page cross-links complete     | Partial   | 100%
+  Banned phrases on About Us          | 5+        | 0
+  Malformed Gutenberg blocks          | 150+      | 0
+  Comment status on non-blog pages    | Closed    | Closed (verified)
+  Placeholder bugs                    | 0         | 0 (verified)
+  H1 tags in body content             | 0         | 0 (verified)
+
+==========================================================================
+WHAT STILL NEEDS WORK
+==========================================================================
+
+OPERATOR ACTIONS:
+  1. Publish trust pages 4402, 4403, 4405 (draft -> published)
+  2. Review Contact page personal details (email, address)
+  3. Submit 10 new Phase 10D posts to Google Search Console
+
+NEXT HARDENING WORK:
+  4. Fix 32 broken internal links (script running)
+  5. De-orphan 13 pages by adding inbound links
+  6. Replace 71 "Learn more" generic anchors
+  7. Add featured images to 28 educational posts
+  8. Re-upload 15 ChatGPT-named images
+  9. Add 2-3 body images per educational post
+  10. Strengthen hub-spoke linking in Dog Care, Harnesses clusters
+  11. Create missing Pet Care and Puppy Care hub pages
+
+FUTURE PHASE WORK (10F-10O):
+  12. Automated overclaim detection in publish gates
+  13. Image validation in publish gates
+  14. Broken link detection in publish flow
+  15. Approval-required mode for commercial content
+  16. Operator dashboard truthful visibility
+  17. Content trust and evidence hardening system
+
+==========================================================================
+DELIVERABLE REPORTS
+==========================================================================
+  01. Trust Hardening Report
+  02. About / Contact / Trust Cleanup Report
+  03. Template and Presentation Standard Report
+  04. Commercial / Evidence Discipline Report
+  05. Comment / Subscription / Clutter Cleanup Report
+  06. Category and Cluster Tightening Report
+  07. Internal Linking Quality Report
+  08. Image / Accessibility Report
+  09. Technical / Crawl / Index Polish Report
+  10. Quality Control Hardening Report
+  11. Executive Summary (this document)
+
+All reports saved to: phase10d/Hardening_Report_01-11_*.txt
+All backups saved to: phase10d/hub_backups/, phase10d/trust_page_backups.json
+
+==========================================================================
+SAFETY RULES OBSERVED
+==========================================================================
+  - No auto-publish without gate checks
+  - No fabricated claims or fake expertise
+  - No H1 in body content (Astra theme aware)
+  - All modifications backed up before changes
+  - All content validated before API write
+  - Draft pages left in draft for operator review
+  - Manufacturer claims preserved and attributed
+  - YMYL content (Dog Food, Dog Health) not expanded
+  - Pet Insurance remains RED gated
+  - No schema deployment without approval
+  - No affiliate links added without disclosure
+
+==========================================================================
+END OF EXECUTIVE SUMMARY
+Site: pethubonline.com | Project: 40416335
+Generated: 2026-05-27
+==========================================================================

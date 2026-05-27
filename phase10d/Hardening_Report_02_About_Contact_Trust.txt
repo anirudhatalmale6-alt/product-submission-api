@@ -1,0 +1,126 @@
+SITE HARDENING REPORT 2: ABOUT / CONTACT / TRUST PAGE CLEANUP
+PetHub Online — pethubonline.com
+Generated: 2026-05-27
+==========================================================================
+
+SCOPE
+-----
+Cleanup and alignment of About Us, Contact, and all Trust/Transparency
+pages to meet the stricter editorial and trust standard.
+
+==========================================================================
+CHANGES MADE
+==========================================================================
+
+ABOUT US (PAGE 39) — MODERATE REWRITE
+--------------------------------------
+Status: LIVE
+Backup: phase10d/about_us_backup.txt (25,707 chars original)
+
+Changes:
+- Cover hero image preserved unchanged
+- Info strip added (Last Updated, Website, Business)
+- Full body rewrite: 8 sections replacing overclaiming content
+- All banned phrases removed (experts, testing, real user feedback)
+- New "Our Limitations" section explicitly states: not veterinarians,
+  not certified behaviourists, content is educational not medical
+- New "How Our Content Is Created" section honestly discloses
+  AI-assisted creation with human oversight
+- Trust footer with cross-links to all 5 trust pages
+- Comments: closed
+
+Heading structure (post-rewrite):
+  H2: About Pet Hub Online
+  H2: Our Mission
+  H2: What We Do
+    H3: Educational Guides
+    H3: Product Information
+    H3: Ongoing Updates
+  H2: How Our Content Is Created
+  H2: Our Limitations
+  H2: Affiliate Relationships
+  H2: Contact Us
+  H2: Our Trust and Transparency Pages
+
+
+CONTACT (PAGE 37) — LIGHT REFINEMENT
+-------------------------------------
+Status: LIVE
+Backup: phase10d/hub_backups/37_contact_backup.txt
+
+Changes:
+- Info strip added at top
+- Trust footer with all 5 cross-links added
+- Trailing empty paragraph removed
+- Comments: already closed
+
+Flagged for operator review:
+- Personal email (jasonsarah2026@outlook.com) may need replacing
+  with a branded contact email for professionalism
+- Physical home address (131 Calshot Road, Birmingham) may need
+  review — consider a PO box or business address
+- Image filename contains "ChatGPT-Image-May-19" — should be
+  re-uploaded with professional filename
+
+
+AFFILIATE DISCLOSURE (PAGE 300) — LIGHT REFINEMENT
+---------------------------------------------------
+Status: LIVE
+Changes:
+- Info strip updated to include Last Updated + Business fields
+  (original Effective Date preserved)
+- Trust footer rebuilt with all 5 cross-links including
+  Corrections and Updates Policy
+- Comments: already closed
+
+
+HOW WE RESEARCH PET PRODUCTS (PAGE 4402) — LIGHT REFINEMENT
+------------------------------------------------------------
+Status: DRAFT (operator must publish)
+Changes:
+- Info strip added at top
+- Separator added after info strip
+- Trust footer rebuilt with all 5 cross-links
+- Content reviewed: no fake testing implications found
+- "We do not accept payment for favourable reviews" retained (truthful)
+- "We do not fabricate testing results" retained (truthful)
+
+
+OUR EDITORIAL PROCESS (PAGE 4403) — LIGHT REFINEMENT
+-----------------------------------------------------
+Status: DRAFT (operator must publish)
+Changes:
+- Info strip added at top
+- Separator added after info strip
+- Trust footer rebuilt with all 5 cross-links
+- Content tone verified: honest, clear, not overstating
+
+
+CORRECTIONS AND UPDATES POLICY (PAGE 4405) — LIGHT REFINEMENT
+--------------------------------------------------------------
+Status: DRAFT (operator must publish)
+Changes:
+- Info strip added at top
+- Separator added after info strip
+- Trust footer rebuilt with all 5 cross-links
+
+
+==========================================================================
+CROSS-LINK MATRIX (Post-Refinement)
+==========================================================================
+All trust pages now cross-link to each other:
+
+  From/To           About  Affil  Research  Editorial  Corrections
+  About Us            -      Y       Y          Y          Y
+  Affiliate Disc.     Y      -       Y          Y          Y
+  Research            Y      Y       -          Y          Y
+  Editorial           Y      Y       Y          -          Y
+  Corrections         Y      Y       Y          Y          -
+  Contact             Y      Y       Y          Y          Y
+
+==========================================================================
+OPERATOR ACTIONS REQUIRED
+==========================================================================
+1. Publish pages 4402, 4403, 4405 (draft -> published)
+2. Review Contact page personal details
+3. Consider replacing ChatGPT-named images with professional filenames

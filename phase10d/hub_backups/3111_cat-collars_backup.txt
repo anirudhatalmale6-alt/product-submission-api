@@ -1,0 +1,973 @@
+<!-- wp:html -->
+<div class="affiliate-disclosure" style="background:#f8f9fa;border-left:4px solid #0073aa;padding:12px 16px;margin-bottom:24px;font-size:0.92em;color:#555;line-height:1.5;">
+<strong>Affiliate Disclosure:</strong> Some links on this page are affiliate links. If you click an affiliate link and make a purchase, we may earn a small commission at no extra cost to you. We only recommend products we would use ourselves and that meet our editorial standards. <a href="https://pethubonline.com/affiliate-disclosure/" style="color:#0073aa;">Learn more</a>.
+</div>
+<!-- /wp:html -->
+
+<!-- wp:cover -->
+<div class="wp-block-cover alignfull is-light has-custom-content-position is-position-top-left remove-top-gap" style="margin-bottom:40px;padding-top:10px;padding-bottom:10px;min-height:700px;aspect-ratio:unset;"><img data-attachment-id="3340" data-permalink="https://pethubonline.com/cat-collars/cat-collars-cover-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-collars-cover-image.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Cat collars cover image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-collars-cover-image.png?fit=1024%2C683&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1536" height="1024" data-attachment-id="3340" data-permalink="https://pethubonline.com/cat-collars/cat-collars-cover-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-collars-cover-image.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Cat collars cover image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-collars-cover-image.png?fit=1024%2C683&amp;ssl=1" alt="Cat Collars, Leads &amp; Harnesses" class="wp-block-cover__image-background wp-image-3340 size-full" data-object-fit="cover" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-collars-cover-image.png?resize=1536%2C1024&#038;ssl=1" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-collars-cover-image.png?w=1536&amp;ssl=1 1536w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-collars-cover-image.png?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-collars-cover-image.png?resize=1024%2C683&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-collars-cover-image.png?resize=768%2C512&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-collars-cover-image.png?resize=1200%2C800&amp;ssl=1 1200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#f8f8f8"></span></p>
+<div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color wp-elements-cb459487c5370812548a8764487b70e7" style="color:#222222;padding-top:0;padding-right:0px;padding-bottom:0;padding-left:0px;font-size:56px;font-style:normal;font-weight:700;line-height:1.2">Best Cat Collars, Leads &amp; Harnesses</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-left alignwide has-text-color has-link-color wp-elements-e97d33fa6bcc9f972dcdc57b6adaf50a wp-block-paragraph" style="color:#444444;padding-top:20px;padding-right:0px;padding-bottom:20px;padding-left:0px;font-size:20px;font-style:normal;font-weight:600">Safe, comfortable, and stylish collars, leads, and harnesses for every cat</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons alignwide has-custom-font-size is-content-justification-left is-layout-flex wp-container-core-buttons-is-layout-3fe550fd wp-block-buttons-is-layout-flex" style="padding-top:50px;padding-right:16px;padding-bottom:50px;padding-left:16px;font-size:20px">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#cat-collars">Shop All Cat Collars</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#bestsellers">See Our Top Picks</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+</div>
+<!-- /wp:cover -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-5ba97a05 wp-block-group-is-layout-constrained" style="border-color:#e0e0e0;border-width:1px;border-radius:8px;padding-top:20px;padding-right:25px;padding-bottom:20px;padding-left:25px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="font-size:22px">Table of Contents</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><a href="#why-the-right-cat-collar-matters">Why the Right Cat Collar Matters</a></li>
+<li><a href="#top-5-best-cat-collars-this-year">Top 5 Best Cat Collars This Year</a></li>
+<li><a href="#shop-by-cat-collar-type">Shop by Cat Collar Type</a></li>
+<li><a href="#how-to-choose-the-right-cat-collar">How to Choose the Right Cat Collar</a></li>
+<li><a href="#who-this-page-is-for">Who This Page Is For</a></li>
+<li><a href="#cat-collars-faq">Cat Collars FAQ</a></li>
+<li><a href="#why-pet-owners-trust-pet-hub-online">Why Pet Owners Trust Pet Hub Online</a></li>
+<li><a href="#explore-more-cat-essentials">Explore More Cat Essentials</a></li>
+<li><a href="#find-the-perfect-cat-collar-today">Find the Perfect Cat Collar Today</a></li>
+<li><a href="#useful-tips-for-every-pet-owner">Useful Tips for Every Pet Owner</a></li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide is-layout-constrained wp-container-core-group-is-layout-653a7e54 wp-block-group-is-layout-constrained" style="padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-9b05eb0e34a98b2d5438372c0e08dba0" id="why-the-right-cat-collar-matters" style="color:#222222;padding-top:22px;padding-bottom:22px;font-size:32px;font-style:normal;font-weight:700">Why the Right Cat Collar Matters</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-e04a05ce0bf9295eb6e199ba45da55e5 wp-block-paragraph" style="color:#444444;padding-top:0px;padding-bottom:0px;font-size:18px;line-height:1.5">A cat collar is far more than a simple accessory — it is one of the most important safety tools you can give your feline companion. Whether your cat roams the neighbourhood or lives entirely indoors, a properly fitted collar with visible identification dramatically increases the chance of a safe return if they ever go missing. In the UK, where microchipping is strongly recommended but not yet compulsory for cats, a collar with an ID tag offers instant visible contact information that anyone can read without a scanner.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-34b47358156d183a8cc354ac089041ec wp-block-paragraph" style="color:#444444;padding-top:0px;padding-bottom:0px;font-size:18px;line-height:1.5">Whether you need a <strong>breakaway safety collar, a reflective hi-vis band, or a GPS tracker</strong>, this guide will help you find <strong>cat collars</strong> that are <a href="#cat-collars">safe, comfortable, and perfectly suited</a> to your cat&#8217;s <strong>size, lifestyle, and personality</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-dca4f32ed7d9f9037425a415bc69b20e wp-block-paragraph" style="color:#444444;padding-top:0px;padding-bottom:0px;font-size:18px;line-height:1.5">Scroll down to explore our <strong><a href="#bestsellers">top 5 best cat collars</a></strong> and shop by collar type to find the ideal match for your feline friend.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator alignwide has-alpha-channel-opacity is-style-wide" style="margin-top:0;margin-bottom:0"/>
+<!-- /wp:separator -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-c09a0d19 wp-block-group-is-layout-constrained" id="bestsellers" style="padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color wp-elements-4cd1a2962ad84d4d0ceca8c5502b786a" id="top-5-best-cat-collars-this-year" style="color:#111111;margin-bottom:40px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Top 5 Best Cat Collars This Year</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:18px">Our handpicked selection of the safest, most stylish, and best-value cat collars, leads, and harnesses available in the UK.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns equal-cards is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-13910493 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3220" data-permalink="https://pethubonline.com/breakaway-safety-cat-collar/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/breakaway-safety-cat-collar.jpg?fit=440%2C500&amp;ssl=1" data-orig-size="440,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Breakaway Safety Cat Collar" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/breakaway-safety-cat-collar.jpg?fit=440%2C500&amp;ssl=1" data-recalc-dims="1" decoding="async" data-attachment-id="3220" data-permalink="https://pethubonline.com/breakaway-safety-cat-collar/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/breakaway-safety-cat-collar.jpg?fit=440%2C500&amp;ssl=1" data-orig-size="440,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Breakaway Safety Cat Collar" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/breakaway-safety-cat-collar.jpg?fit=440%2C500&amp;ssl=1" alt="Breakaway Safety Cat Collar" class="wp-image-3220" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/breakaway-safety-cat-collar-new.jpg?ssl=1" style="object-fit:contain;width:auto;height:200px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-f439c62a7383b9ee3e833cb23586faf4" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Breakaway Safety Cat Collar →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-b78e20732a3cf71592812bf050020ffd wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A lightweight safety collar with a quick-release buckle that opens under pressure to protect your cat.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-c61497d9033553605cf8dfd79978e226" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Quick-release breakaway buckle</strong> — snaps open if caught to prevent choking</li>
+<li><strong>Adjustable nylon strap</strong> — fits most cats with neck size 20–30 cm</li>
+<li><strong>Includes bell attachment</strong> — alerts wildlife to your cat&#8217;s presence</li>
+<li><strong>Machine washable</strong> — easy to keep clean and hygienic</li>
+<li><strong>Available in 12+ colours</strong> — match your cat&#8217;s personality</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=breakaway+safety+cat+collar&amp;tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-13910493 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3221" data-permalink="https://pethubonline.com/personalised-cat-collar-id-tag/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/personalised-cat-collar-id-tag.jpg?fit=500%2C500&amp;ssl=1" data-orig-size="500,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Personalised Cat Collar with ID Tag" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/personalised-cat-collar-id-tag.jpg?fit=500%2C500&amp;ssl=1" data-recalc-dims="1" decoding="async" data-attachment-id="3221" data-permalink="https://pethubonline.com/personalised-cat-collar-id-tag/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/personalised-cat-collar-id-tag.jpg?fit=500%2C500&amp;ssl=1" data-orig-size="500,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Personalised Cat Collar with ID Tag" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/personalised-cat-collar-id-tag.jpg?fit=500%2C500&amp;ssl=1" alt="Personalised Cat Collar with Engraved ID Tag" class="wp-image-3221" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/personalised-cat-collar-id-tag-new.jpg?ssl=1" style="object-fit:contain;width:auto;height:200px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-2424b939ca7e8c7a56c0d65084f110a5" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Personalised Cat Collar with ID Tag →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-f3abfdc6d4ab370b9a173075f2f3fc49 wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A custom-engraved collar with your cat&#8217;s name and your phone number built right in — no dangling tags needed.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-f218cc6576c6d1185352971433ba5124" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Custom laser engraving</strong> — name and number permanently etched on the buckle</li>
+<li><strong>No dangling ID tag</strong> — quieter and completely snag-free</li>
+<li><strong>Soft velvet lining</strong> — gentle on your cat&#8217;s neck and fur</li>
+<li><strong>Breakaway safety clasp</strong> — essential safety feature included</li>
+<li><strong>Multiple colour options</strong> — choose from classic or vibrant shades</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=personalised+cat+collar+id+tag&amp;tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns equal-cards is-layout-flex wp-container-core-columns-is-layout-52b7c8f9 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-13910493 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3222" data-permalink="https://pethubonline.com/reflective-cat-collar/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/reflective-cat-collar.jpg?fit=500%2C500&amp;ssl=1" data-orig-size="500,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Reflective Cat Collar" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/reflective-cat-collar.jpg?fit=500%2C500&amp;ssl=1" data-recalc-dims="1" decoding="async" data-attachment-id="3222" data-permalink="https://pethubonline.com/reflective-cat-collar/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/reflective-cat-collar.jpg?fit=500%2C500&amp;ssl=1" data-orig-size="500,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Reflective Cat Collar" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/reflective-cat-collar.jpg?fit=500%2C500&amp;ssl=1" alt="Reflective Cat Collar" class="wp-image-3222" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/reflective-cat-collar-new.jpg?ssl=1" style="object-fit:contain;width:auto;height:200px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-dcead9d91190b6dbb514027da2c653d3" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Reflective Cat Collar →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-924f4932cd7f308a679bb0ea931c87fa wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A high-visibility collar with reflective stitching that makes your cat visible to drivers at night.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-f0074647cfc8ac524152402c92ed38fb" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>360° reflective strip</strong> — catches headlights and torchlight from any angle</li>
+<li><strong>Breakaway buckle included</strong> — combines visibility with essential safety</li>
+<li><strong>Waterproof nylon</strong> — perfect for UK weather and outdoor cats</li>
+<li><strong>Lightweight design</strong> — comfortable enough for all-day wear</li>
+<li><strong>Adjustable fit</strong> — suits cats from 20 cm to 34 cm neck size</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=reflective+cat+collar&amp;tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-13910493 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3223" data-permalink="https://pethubonline.com/cat-harness-lead-set/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-harness-lead-set.jpg?fit=500%2C500&amp;ssl=1" data-orig-size="500,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Cat Harness and Lead Set" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-harness-lead-set.jpg?fit=500%2C500&amp;ssl=1" data-recalc-dims="1" decoding="async" data-attachment-id="3223" data-permalink="https://pethubonline.com/cat-harness-lead-set/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-harness-lead-set.jpg?fit=500%2C500&amp;ssl=1" data-orig-size="500,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Cat Harness and Lead Set" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-harness-lead-set.jpg?fit=500%2C500&amp;ssl=1" alt="Cat Harness and Lead Set" class="wp-image-3223" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-harness-lead-set-new.jpg?ssl=1" style="object-fit:contain;width:auto;height:200px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-b49efc0dad49d674991ce13299a53935" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Harness and Lead Set →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-5bb7557decbd14c6c9acd1fe9ab9c055 wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A secure vest-style harness with matching lead for safe outdoor walks and adventures with your cat.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-04a73856894df52472810aad8c8bcd96" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Escape-proof vest design</strong> — distributes pressure across chest, not neck</li>
+<li><strong>Breathable mesh fabric</strong> — keeps your cat cool during walks</li>
+<li><strong>Adjustable straps</strong> — custom fit for cats of all sizes</li>
+<li><strong>Includes 1.5 m lead</strong> — perfect length for controlled walks</li>
+<li><strong>Reflective trim</strong> — added visibility during evening outings</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=cat+harness+lead+set&amp;tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-be441220 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3224" data-permalink="https://pethubonline.com/gps-cat-collar-tracker/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/gps-cat-collar-tracker.jpg?fit=500%2C489&amp;ssl=1" data-orig-size="500,489" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="GPS Cat Collar Tracker" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/gps-cat-collar-tracker.jpg?fit=500%2C489&amp;ssl=1" data-recalc-dims="1" decoding="async" data-attachment-id="3224" data-permalink="https://pethubonline.com/gps-cat-collar-tracker/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/gps-cat-collar-tracker.jpg?fit=500%2C489&amp;ssl=1" data-orig-size="500,489" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="GPS Cat Collar Tracker" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/gps-cat-collar-tracker.jpg?fit=500%2C489&amp;ssl=1" alt="GPS Cat Collar Tracker" class="wp-image-3224" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/gps-cat-collar-tracker-new.jpg?ssl=1" style="object-fit:contain;width:auto;height:200px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-e4be2af0738a26a68a67550d7674aad0" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">GPS Cat Collar Tracker →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-f3af68276772b6bd2d0f00dc8b8b98f7 wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A smart collar with built-in GPS tracking so you always know where your cat is via your smartphone.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-fd9cac346e98a1c40abccdca08f82928" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Real-time GPS tracking</strong> — locate your cat on your phone instantly</li>
+<li><strong>Lightweight under 30 g</strong> — cats barely notice they&#8217;re wearing it</li>
+<li><strong>Waterproof rated IPX7</strong> — works perfectly in rain and puddles</li>
+<li><strong>Up to 7-day battery life</strong> — long-lasting between charges</li>
+<li><strong>Safe zone alerts</strong> — get notified if your cat leaves a set area</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=gps+cat+collar+tracker&amp;tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" id="cat-collars" style="padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-609cda4671a08cd64e1b38ac3eb5ef25" id="shop-by-cat-collar-type" style="color:#1a1a1a;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Shop by Cat Collar Type</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-b9e5f2e4fdfa3268509994d2a3c3e070 wp-block-paragraph" style="color:#4a4a4a;margin-top:22px;margin-bottom:22px;padding-top:22px;padding-bottom:22px;font-size:18px">Find the perfect collar, lead, or harness for your cat based on their lifestyle, safety needs, and your personal style preference.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-cbe286e1 wp-block-columns-is-layout-flex" style="margin-top:0px;margin-bottom:0px;padding-top:22px;padding-bottom:22px">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-50afd3eaf9e5d4364688fffb7df30fdc" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Breakaway Collars</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-011e7b33f00b90e91ced04f4e755a28f wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px"><strong>The safest option for all cats.</strong> Quick-release buckles snap open under pressure to prevent choking if the collar catches on a branch, fence, or furniture. Recommended by the RSPCA and Cats Protection.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-6670da7e963b755f0f0765914e189c67" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Harnesses &amp; Leads</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-e3d872523dcd331dce448db7464b2e61 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px"><strong>Ideal for outdoor walks and adventures.</strong> Vest-style harnesses distribute pressure across the chest rather than the neck, giving you more control and preventing escape during supervised outdoor time.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-cbe286e1 wp-block-columns-is-layout-flex" style="margin-top:0px;margin-bottom:0px;padding-top:22px;padding-bottom:22px">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-dcaf22c2ae945904e24a2474ffc78254" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Reflective &amp; Hi-Vis Collars</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-7a3b6d209ff175101c061b1fc01e5b56 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px"><strong>Essential for outdoor and night-roaming cats.</strong> Reflective strips catch car headlights and torchlight, making your cat visible during UK winter evenings and early mornings.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-40a18fdc564e5ea175090f9bcf684f50" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Personalised &amp; ID Collars</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-455fa85d2a1a2c40c7a460bf085a22b7 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px"><strong>Perfect for identification without dangling tags.</strong> Engraved, embroidered, or printed collars display your contact details directly on the band for instant identification if your cat goes missing.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-background is-layout-constrained wp-block-group-is-layout-constrained" style="background-color:#ffffff;padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-7c9c969ef1cc4addd6c2b3cb7c8b74d6" id="how-to-choose-the-right-cat-collar" style="color:#111111;margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">How to Choose the Right Cat Collar</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-497011338efc668fd49d3a6e46ed0b8d wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:18px">Choosing the right cat collar depends on your cat&#8217;s lifestyle, size, and safety needs. A well-chosen collar keeps your cat identifiable, visible, and safe at all times.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-e125fa4b9b714098b8913f273e2b8ca9" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">Measure for the Right Fit</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-4c6274e7aafb6da3bcda81cb72d112ec wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Getting the right fit is the single most important step when choosing a cat collar. A collar that is too tight restricts breathing and can cause painful skin abrasions, while one that is too loose can slip off or snag on objects. Start by wrapping a soft tape measure or piece of string around the base of your cat&#8217;s neck where the collar will sit naturally, then add the width of two fingers (approximately 2-3 cm). This two-finger rule is the standard recommendation from UK vets, the RSPCA, and Cats Protection.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-658d45e7fcf945138b7f83b990149200" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Wrap a soft tape measure around the <strong>base of your cat&#8217;s neck</strong> where the collar will sit and note the measurement.</li>
+<li>Add <strong>two fingers&#8217; width</strong> of space (about 2-3 cm) — this is the standard RSPCA recommendation for safe clearance.</li>
+<li>Kittens: <strong>15-20 cm</strong> | Small adults: <strong>20-28 cm</strong> | Standard adults: <strong>25-35 cm</strong> | Large breeds (Maine Coons, Ragdolls): <strong>30-40 cm</strong>.</li>
+<li>Once fitted, check you can slide <strong>two flat fingers</strong> between the collar and neck. If you can&#8217;t, loosen it immediately; if more than two fit, tighten it to prevent jaw or paw entanglement.</li>
+<li>Re-check the fit <strong>every 2-3 weeks</strong> for adult cats and <strong>every 5-7 days</strong> for fast-growing kittens.</li>
+<li>After putting a new collar on, <strong>observe your cat for 30 minutes</strong> to ensure they are comfortable and not scratching excessively.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-e0c9bb3fcd401b9d62b68deb5cdd415a" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">Choose a Breakaway Mechanism</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-1677c93ee623c6e5c4bf13a6d9b6033c wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">A breakaway (quick-release) buckle is the single most important safety feature in any cat collar. It snaps open under pressure if your cat becomes caught on a branch, fence, or piece of furniture, preventing strangulation, degloving injuries, or broken limbs. Without a breakaway buckle, a trapped cat collar can cause life-threatening harm. Both the RSPCA and Cats Protection strongly recommend that all cat collars should have a breakaway mechanism.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-6e6c6efca5c00797d2d8ee837e0503a6" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Look for buckles that release under <strong>4-6 kg of force</strong> — strong enough for play, safe enough to open if your cat is trapped.</li>
+<li>The RSPCA and Cats Protection <strong>both recommend breakaway collars</strong> for all cats, especially those allowed outdoors.</li>
+<li>Test the breakaway buckle <strong>monthly</strong> to ensure it still releases at the correct pressure — mechanisms can stiffen over time.</li>
+<li>Never use a <strong>fixed-buckle collar</strong> on an unsupervised cat — fixed buckles have been linked to serious injuries including strangulation.</li>
+<li>Check that collars are free from <strong>sharp edges, exposed metal, or toxic dyes</strong> — smooth, rounded hardware prevents skin irritation and fur snagging.</li>
+<li>Many modern cat collars include an <strong>elasticated safety section</strong> as a secondary release mechanism in case the buckle does not open.</li>
+<li>Replace cat collars <strong>every 6-12 months</strong> or sooner if you notice fraying, wear, or damage to the buckle mechanism.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-1e3dd832c51c0d7f7268812487f43306" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">Consider Reflective Features</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-49b52de65cc2bfb18d205aaaf9246a2e wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">If your cat goes outdoors at any time — especially during the darker months — a reflective collar can be a lifesaver by making them visible to drivers and pedestrians. Indoor and outdoor cat collars serve different purposes: indoor collars prioritise comfort with soft fabrics like cotton, velvet, or neoprene, while outdoor collars need waterproof nylon or biothane that withstands the UK&#8217;s wet weather. Ideally, use a lightweight indoor collar for everyday identification and a more robust reflective outdoor collar when your cat ventures outside.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-0fd45b914166983fdde213aeae3d61a2" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Choose collars with <strong>360-degree reflective strips</strong> for maximum visibility from any angle during UK winter evenings and early mornings.</li>
+<li>Many reflective collars also include a <strong>breakaway buckle</strong> — the best of both worlds for safety and visibility.</li>
+<li>Hi-vis neon colours (yellow, orange) offer <strong>daytime visibility</strong> too, making your cat easier to spot in gardens and hedgerows.</li>
+<li>Pair with a <strong>bell</strong> to further protect local wildlife — wildlife conservationists recommend bells to warn birds and small mammals.</li>
+<li>For indoor cats, prioritise <strong>soft, lightweight fabrics</strong> (cotton, velvet, neoprene) that are comfortable for all-day wear.</li>
+<li>Outdoor cat collars should be <strong>waterproof or water-resistant</strong> to prevent moisture sitting against the skin in rainy UK weather.</li>
+<li>For the best protection, consider adding a <strong>GPS tracker attachment</strong> to your outdoor cat&#8217;s collar for real-time location monitoring.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-126e1485 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:0px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-28553a5eef4fe66a75d91384fe766d59" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">Add Identification</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-31fd1005e533967f2e40c3660ac1cc02 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">A collar with visible ID information is one of the fastest ways to reunite a lost cat with its owner. Even microchipped cats benefit from instant visual identification — not everyone who finds a stray cat has access to a microchip scanner. In the UK, where microchipping is strongly recommended but not yet compulsory for cats, a collar with an ID tag provides instant contact information that anyone can read.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-829b9d6ab197f918533af4b771248cbb" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Choose <strong>engraved buckles or embroidered text</strong> for tag-free, snag-free identification that won&#8217;t catch on objects.</li>
+<li>Include at least one <strong>mobile phone number</strong> so you can be reached quickly if your cat is found.</li>
+<li>QR code collars link to an <strong>online profile</strong> with full medical history, dietary needs, and multiple contact details.</li>
+<li>Avoid putting your <strong>full home address</strong> on the collar for personal security reasons — a phone number is sufficient.</li>
+<li>Personalised collars with <strong>printed or laser-engraved</strong> details are particularly popular for indoor cats as they avoid dangling tags.</li>
+<li>A collar and a microchip <strong>complement each other perfectly</strong> — the collar provides instant visible ID while the microchip provides permanent, tamper-proof identification readable by any vet or rescue centre.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-72c9eb19 wp-block-group-is-layout-constrained" style="padding-top:50px;padding-bottom:50px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center alignwide" id="who-this-page-is-for" style="margin-bottom:25px;font-size:32px;font-style:normal;font-weight:700">Who This Page Is For</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center alignwide wp-block-paragraph" style="margin-bottom:30px;font-size:18px">Choosing the right cat collar isn&#8217;t one-size-fits-all. This guide is designed to help every cat owner find the perfect collar based on their cat&#8217;s lifestyle, safety needs, and daily routine.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-52b7c8f9 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🐱 Indoor Cat Owners</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-link-color wp-elements-1b15d92d9d63213204ee54fa695d5c0d wp-block-paragraph" style="font-size:16px;line-height:1.6">Even indoor cats can escape through open doors or windows. A lightweight breakaway collar with ID ensures your cat can be identified and returned quickly if they slip out.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🌳 Outdoor &amp; Adventurous Cat Owners</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">If your cat roams freely or enjoys lead walks, this guide covers reflective collars, GPS trackers, and escape-proof harnesses designed to keep adventurous cats safe.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🐾 New Kitten Owners</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">First-time kitten owners will find advice on when to start wearing a collar, which kitten-sized options are safest, and how to introduce a collar gently without causing stress.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-background is-layout-constrained wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color wp-elements-73ed5e5fb409bc12103f50e1985e723d" id="cat-collars-faq" style="color:#1a1a1a;margin-bottom:25px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Cat Collars FAQ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>Should all cats wear cat collars?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Most vets and animal welfare organisations recommend that cats wear collars, provided the collar has a safety-release buckle. Even microchipped cats benefit from wearing a cat collar with an ID tag, as it provides instant visible identification without the need for a scanner. Indoor cats, outdoor cats, and kittens can all safely wear appropriately sized collars.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>At what age can kittens start wearing cat collars?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Most kittens can start wearing collars from around 6 months of age, once they&#8217;ve reached a size where the collar can be properly fitted without being too loose. Some lightweight kitten-specific collars are designed for cats as young as 3–4 months. Always check the manufacturer&#8217;s weight and age recommendations, and monitor the fit closely as kittens grow very quickly.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>How tight should a cat collar be?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">A cat collar should be snug enough to stay in place but loose enough to slip two fingers comfortably underneath. If you can&#8217;t fit two fingers under the collar, it&#8217;s too tight and could cause discomfort or injury. If you can fit more than two fingers, the collar is too loose and may catch on objects or slip over the cat&#8217;s head.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>Are breakaway cat collars really safer?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Yes. Breakaway collars are overwhelmingly recommended by vets and animal welfare charities for cats that spend time outdoors. Fixed-buckle collars have been linked to serious injuries when cats become trapped, including broken limbs, degloving injuries, and strangulation. Breakaway collars release under sufficient pressure, allowing the cat to escape safely. The only scenario where a fixed buckle might be preferred is when walking a cat on a lead with a harness — in which case a harness, not a collar, should be used for lead attachment.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>How often should I replace my cat&#8217;s collar?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Cat collars should be inspected regularly for signs of wear, fraying, or damage to the buckle mechanism. As a general rule, replace collars every 6–12 months, or sooner if you notice any deterioration. The breakaway buckle mechanism in particular should be tested periodically to ensure it still releases at the appropriate pressure. Check the fit every few weeks and adjust as needed, especially for kittens and cats that gain or lose weight.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>Can cats wear collars with bells?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Yes, and many wildlife organisations actively encourage it. A bell attached to a cat collar gives birds and small mammals a warning of an approaching cat, helping to reduce predation. Most cats adapt quickly to the sound of a bell. If your cat seems distressed by the noise initially, you can start with a quieter bell and gradually move to a louder one. Browse <a href="https://www.amazon.co.uk/s?k=cat+collars+with+bell&amp;tag=pethubonline-21" target="_blank" rel="sponsored noopener noreferrer">cat collars with bells on Amazon UK</a> for a variety of options.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>Do cat collars interfere with microchips?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">No. Cat collars do not interfere with microchips in any way. Microchips are implanted under the skin between the shoulder blades, well away from the neck where collars sit. A collar and a microchip complement each other perfectly — the collar provides instant visible identification, while the microchip provides permanent, tamper-proof identification that can be read by any vet or rescue centre in the UK.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>Where can I buy cat collars in the UK?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Cat collars are widely available across the UK from pet shops, supermarkets, and online retailers. For the widest selection, competitive prices, and customer reviews, <a href="https://www.amazon.co.uk/s?k=cat+collars&amp;tag=pethubonline-21" target="_blank" rel="sponsored noopener noreferrer">Amazon UK</a> is an excellent starting point, with next-day delivery available on many collars. You can also explore our curated selection of <a href="/cat-supplies/">cat supplies</a>, including collars, beds, litter trays, and much more.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-background is-layout-constrained wp-block-group-is-layout-constrained" style="background-color:#ffffff;padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-613e62e4204bf58600ff1763686d8674" id="useful-tips-for-every-pet-owner" style="color:#111111;margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Useful Tips for Every Pet Owner</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-89f6d1417a06d9c99a8beedca97395e6 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:30px;font-size:18px">Beyond choosing the right collar, these practical tips will help you keep your cat safe, comfortable, and happy — whether they stay indoors or explore the great outdoors.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-cc04b48222e79772805367b8a2e5128b" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">Cat Harness Training: A Step-by-Step Guide</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-c4e8cf36e265cd8bd744b5c813683f13 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Harness training a cat takes patience, but the reward is safe, enriching outdoor time for cats that might otherwise be confined indoors. The key is to take it slowly and let your cat set the pace. Most cats can be successfully harness-trained within 2-4 weeks if you follow a gradual introduction process.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-68fdfb44ab04f338f15d4078a9b950f2" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Step 1 — Familiarisation:</strong> Leave the harness near your cat&#8217;s favourite resting spot for a few days so they can sniff and investigate it at their own pace.</li>
+<li><strong>Step 2 — Draping:</strong> Drape the harness loosely over your cat&#8217;s back during play or treat time without fastening it, building positive associations.</li>
+<li><strong>Step 3 — Indoor wear:</strong> Fasten the harness indoors for short periods (5-10 minutes), gradually increasing the duration over a week. Reward calm behaviour with treats.</li>
+<li><strong>Step 4 — Attach the lead:</strong> Once your cat walks comfortably indoors in the harness, attach the lead and let them drag it (supervised) around the house.</li>
+<li><strong>Step 5 — Guided indoor walks:</strong> Hold the lead loosely while following your cat around the house — never pull or drag them.</li>
+<li><strong>Step 6 — First outdoor session:</strong> Choose a quiet, enclosed garden and keep sessions short (10-15 minutes). Use treats to encourage movement.</li>
+<li><strong>Harness type:</strong> Choose a <strong>vest-style harness</strong> rather than a figure-eight design — vest harnesses are harder to escape from and distribute pressure more evenly across the chest.</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-60b32f59b5a7fcf39a6e2d04079d623c wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:0px;font-size:16px;line-height:1.6">Browse our top-rated <a href="https://www.amazon.co.uk/s?k=cat+harness+lead+set&amp;tag=pethubonline-21" target="_blank" rel="sponsored noopener noreferrer">cat harness and lead sets on Amazon UK</a> to find the perfect fit for your feline adventurer. Pair with our recommended <a href="/cat-beds/">cat beds</a> so your explorer always has a cosy spot to return to.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-126e1485 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:0px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-1ac231003d4a5a341a66fce9564d5f25" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">Seasonal Cat Collar Care Tips</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-bb93a85d11262d67d6cb5cb4ce4a8333 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Cat collars need different attention throughout the year. A little seasonal maintenance keeps your cat comfortable and their collar functioning properly in all weather conditions.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-2ad532c1957aac549d953cf61cbc563f" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Spring:</strong> Check the fit after winter weight changes and replace any collars showing wear from the wet season. Flea collar season begins — ensure flea collars also have breakaway buckles.</li>
+<li><strong>Summer:</strong> Choose lightweight, breathable collar materials to prevent overheating. Light colours reflect heat better than dark ones. Ensure ID tags are legible — sun exposure can fade printed details.</li>
+<li><strong>Autumn:</strong> Switch to reflective or hi-vis collars as daylight hours shorten. UK clocks go back in October, meaning your cat may be outside in darkness during previously light hours.</li>
+<li><strong>Winter:</strong> Waterproof collars are essential during the UK&#8217;s wettest months. Check collars more frequently for stiffness caused by cold and damp, which can affect the breakaway mechanism.</li>
+<li><strong>Year-round:</strong> Wash fabric collars monthly in warm soapy water, rinse thoroughly, and air dry. Replace any collar that shows fraying, fading, or buckle stiffness regardless of age.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center" id="why-pet-owners-trust-pet-hub-online" style="margin-bottom:40px;font-size:32px;font-style:normal;font-weight:700">Why Pet Owners Trust Pet Hub Online</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<!-- wp:group -->
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🛡️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Expert‑Reviewed Picks</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Every cat collar we recommend is researched and evaluated for comfort, durability, and safety.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<!-- wp:group -->
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">⭐</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Trusted by Pet Owners</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Thousands of pet parents rely on our guides to make confident, informed buying decisions.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<!-- wp:group -->
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">✔️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Independent &amp; Honest</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">We only recommend products we believe in — no sponsored placements or paid rankings.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-12bf6960 wp-block-group-is-layout-constrained" style="padding-top:50px;padding-right:50px;padding-bottom:50px;padding-left:50px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center" id="explore-more-cat-essentials" style="margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700">Explore More Cat Essentials</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🛏️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Beds</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Give your cat the perfect place to rest with cosy donut beds, cave beds, memory foam options, and heated beds for every sleeping style.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-beds/">Shop All Cat Beds</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">✂️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Grooming</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Everything you need to keep your cat clean, healthy, and looking great — from brushes and nail clippers to shampoos and coat-care essentials.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-grooming/">View Cat Grooming</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🧶</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Toys</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Keep your cat active and entertained with interactive toys, feather wands, and puzzle feeders designed for all ages and play styles.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-toys/">Shop All Cat Toys</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🪵</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Scratching Posts</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Protect your furniture with sturdy scratching posts, cat trees, and sisal boards that satisfy your cat&#8217;s natural scratching instincts.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-scratching-posts/">Shop All Scratching Posts</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🚽</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Litter Trays</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Discover litter trays, self-cleaning boxes, and odour-control solutions that make litter maintenance easier for you and more comfortable for your cat.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-litter-trays/">Discover Litter Trays</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">❤️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Health &amp; Care</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Support your cat&#8217;s wellbeing with dental care, supplements, grooming wipes, and everyday essentials for a happier, healthier pet.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-supplies/">Browse Health &amp; Care</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-background is-layout-constrained wp-block-group-is-layout-constrained" style="border-top-color:#e5e5e5;border-top-width:3px;border-right-style:none;border-right-width:0px;border-bottom-width:3px;border-left-style:none;border-left-width:0px;background-color:#fafafa;padding-top:20px;padding-bottom:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-93c9c29cabda22ffe5dcadda2c053103 wp-block-paragraph" style="color:#555555;font-size:14px;line-height:1.4">Updated weekly • Independent reviews • No sponsored products • Trusted by pet owners</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:cover -->
+<div class="wp-block-cover alignfull is-light has-custom-content-position is-position-center-left" style="min-height:700px;aspect-ratio:unset;"><img data-attachment-id="2473" data-permalink="https://pethubonline.com/cat-supplies/cat-supplies-hero-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-supplies-hero-image.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="cat supplies hero image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-supplies-hero-image.png?fit=1024%2C683&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1536" height="1024" data-attachment-id="2473" data-permalink="https://pethubonline.com/cat-supplies/cat-supplies-hero-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-supplies-hero-image.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="cat supplies hero image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-supplies-hero-image.png?fit=1024%2C683&amp;ssl=1" alt="Cat Supplies Hero Image" class="wp-block-cover__image-background wp-image-2473 size-full" data-object-fit="cover" data-object-position="53% 100%" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-supplies-hero-image.png?resize=1536%2C1024&#038;ssl=1" style="object-position:53% 100%" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-supplies-hero-image.png?w=1536&amp;ssl=1 1536w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-supplies-hero-image.png?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-supplies-hero-image.png?resize=1024%2C683&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-supplies-hero-image.png?resize=768%2C512&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-supplies-hero-image.png?resize=1200%2C800&amp;ssl=1 1200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim" style="background-color:#e4ddd7"></span></p>
+<div class="wp-block-cover__inner-container is-layout-constrained wp-block-cover-is-layout-constrained">
+<p class="has-text-align-center has-large-font-size wp-block-paragraph">
+</div>
+</div>
+<!-- /wp:cover -->
+
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Related Articles</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><a href="https://pethubonline.com/best-cat-harnesses-uk/">Best Cat Harnesses UK (2026) – Safe Walking Guide</a></li>
+<li><a href="https://pethubonline.com/best-cat-gps-trackers-uk/">Best Cat GPS Trackers UK (2026) – Location Tracking Guide</a></li>
+<li><a href="https://pethubonline.com/best-cat-collars-uk/">Best Cat Collars UK (2026) – Complete Safety Guide</a></li>
+</ul>
+<!-- /wp:list -->

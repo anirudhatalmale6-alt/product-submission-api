@@ -1,0 +1,105 @@
+SITE HARDENING REPORT 9: TECHNICAL / CRAWL / INDEX POLISH
+PetHub Online — pethubonline.com
+Generated: 2026-05-27
+==========================================================================
+
+SCOPE
+-----
+Technical audit covering crawlability, indexing, Gutenberg block health,
+and content structure for search engine optimisation.
+
+==========================================================================
+GUTENBERG BLOCK HEALTH
+==========================================================================
+
+Migration repair status: COMPLETE
+  - 116/116 items verified clean (zero malformed Group blocks)
+  - 17 pages restored from block_fix backups
+  - 2 pages restored from WordPress revisions
+  - 57 posts had Group blocks converted to HTML blocks
+  - Fresh verification scan: all items pass
+
+Block type inventory (14 types in use):
+  wp:paragraph, wp:heading, wp:list, wp:list-item, wp:image,
+  wp:separator, wp:cover, wp:columns, wp:column, wp:group,
+  wp:buttons, wp:button, wp:details, wp:html
+
+Third-party: wp:jetpack/contact-form (Contact page only)
+
+Heading hierarchy: ALL items use H2/H3 only. Zero H1 in body content.
+(Astra theme supplies the H1 from the page/post title.)
+
+==========================================================================
+BROKEN INTERNAL LINKS
+==========================================================================
+32 broken internal links found pointing to 13 non-existent URLs.
+See Report 7 (Internal Links) for full details.
+
+Most impactful:
+  - /best-dog-harness (4 references)
+  - /dog-care/ (4 references)
+  - /pet-care-tips/ (4 references)
+  - /dog-training/ (4 references)
+
+These create crawl errors and waste crawl budget.
+Fix script running — see broken_links_fix_log.txt.
+
+==========================================================================
+SITEMAP STATUS
+==========================================================================
+Previous phase recovered sitemap for all 52 published posts.
+10 new Phase 10D posts need sitemap inclusion.
+Trust pages (4402, 4403, 4405) will appear in sitemap once published.
+
+==========================================================================
+CONTENT STRUCTURE FOR AI/ANSWER ENGINES
+==========================================================================
+
+FAQ sections present on:
+  - All 28 educational posts (using H2 FAQ + H3 questions)
+  - Most hub pages (using wp:details for collapsible Q&A)
+  - Dog Supplies, Dog Toys, Cat Toys, and other hub pages
+
+FAQ format supports:
+  - Google FAQ rich results (via RankMath FAQPage schema)
+  - AI answer engine extraction (clear Q&A format)
+
+Related Reading sections present on:
+  - 23 of 28 educational posts
+  - Most hub pages
+
+Missing FAQ/Related Reading:
+  - About Us (FAQ not appropriate for About page)
+  - Trust/policy pages (FAQ not appropriate)
+  - 5 educational posts missing Related Reading
+
+==========================================================================
+INFO STRIP DEPLOYMENT (SEO METADATA)
+==========================================================================
+50 items now display structured metadata:
+  Last Updated: 27 May 2026
+  Website: pethubonline.com
+  Business: Pet Hub Online
+
+This provides:
+  - Crawl-visible freshness signal
+  - Entity association (website + business name)
+  - User trust signal (shows content is maintained)
+
+==========================================================================
+COMMENT STATUS
+==========================================================================
+All non-blog pages have comments disabled (closed).
+This prevents:
+  - Spam comments appearing in crawl
+  - "Loading comments" template noise
+  - Unnecessary crawl of comment feeds
+
+==========================================================================
+RECOMMENDATIONS
+==========================================================================
+1. Fix 32 broken internal links (crawl waste)
+2. Publish draft trust pages to resolve 9 broken links
+3. Submit 10 new posts to Google Search Console
+4. Monitor sitemap inclusion after trust page publication
+5. Consider adding structured data breadcrumbs for hub pages

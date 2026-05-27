@@ -1,0 +1,1082 @@
+<!-- wp:html -->
+<div class="affiliate-disclosure" style="background:#f8f9fa;border-left:4px solid #0073aa;padding:12px 16px;margin-bottom:24px;font-size:0.92em;color:#555;line-height:1.5;">
+<strong>Affiliate Disclosure:</strong> Some links on this page are affiliate links. If you click an affiliate link and make a purchase, we may earn a small commission at no extra cost to you. We only recommend products we would use ourselves and that meet our editorial standards. <a href="https://pethubonline.com/affiliate-disclosure/" style="color:#0073aa;">Learn more</a>.
+</div>
+<!-- /wp:html -->
+
+
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.9em"}}} -->
+<p style="font-size:0.9em;color:#555;"><strong>Last Updated:</strong> 27 May 2026<br/><strong>Website:</strong> pethubonline.com<br/><strong>Business:</strong> Pet Hub Online</p>
+<!-- /wp:paragraph -->
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:cover -->
+<div class="wp-block-cover alignfull is-light remove-top-gap" style="margin-bottom:40px;padding-top:10px;padding-bottom:10px;min-height:100vh;aspect-ratio:unset;"><img data-attachment-id="2490" data-permalink="https://pethubonline.com/cat-toys/cat-toys-hero-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toys-hero-image.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="cat toys hero image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toys-hero-image.png?fit=1024%2C683&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1536" height="1024" data-attachment-id="2490" data-permalink="https://pethubonline.com/cat-toys/cat-toys-hero-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toys-hero-image.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="cat toys hero image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toys-hero-image.png?fit=1024%2C683&amp;ssl=1" alt="Cat Toys Hero Image" class="wp-block-cover__image-background wp-image-2490 size-full" data-object-fit="cover" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toys-hero-image.png?resize=1536%2C1024&#038;ssl=1" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toys-hero-image.png?w=1536&amp;ssl=1 1536w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toys-hero-image.png?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toys-hero-image.png?resize=1024%2C683&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toys-hero-image.png?resize=768%2C512&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toys-hero-image.png?resize=1200%2C800&amp;ssl=1 1200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#f8f8f8"></span></p>
+<div class="wp-block-cover__inner-container is-layout-constrained wp-container-core-cover-is-layout-dd7a2733 wp-block-cover-is-layout-constrained">
+<!-- wp:group -->
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color wp-elements-8ebc40fca44bfdcc006f4c2bfbaa4cf5" style="color:#222222;padding-top:0;padding-right:0px;padding-bottom:0;padding-left:0px;font-size:56px;font-style:normal;font-weight:700;line-height:1.2">The Best Toys for Happy Cats</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-left alignwide has-text-color has-link-color wp-elements-499827670c7286293e31fd33e889017f wp-block-paragraph" style="color:#444444;padding-top:20px;padding-right:0px;padding-bottom:20px;padding-left:0px;font-size:30px;font-style:normal;font-weight:600">Top‑rated cat toys for happier, healthier playtime.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons alignwide has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-356e831d wp-block-buttons-is-layout-flex" style="padding-top:50px;padding-right:16px;padding-bottom:50px;padding-left:16px;font-size:20px">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#cat-toys">Shop Cat Toys</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#bestsellers">Shop Bestsellers</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+</div>
+<!-- /wp:cover -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Table of Contents</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><a href="#playtime-that-keeps-cats-curious-and-content">Playtime That Keeps Cats Curious and Content</a></li>
+<li><a href="#shop-cat-toys-by-type">Shop Cat Toys by Type</a></li>
+<li><a href="#why-pet-owners-trust-pet-hub-online">Why Pet Owners Trust Pet Hub Online</a></li>
+<li><a href="#who-this-page-is-for">Who This Page Is For</a></li>
+<li><a href="#cat-toys-faq">Cat Toys FAQ</a></li>
+<li><a href="#how-to-choose-the-right-cat-toys">How to Choose the Right Cat Toys</a></li>
+<li><a href="#explore-more-cat-essentials">Explore More Cat Essentials</a></li>
+<li><a href="#top-5-best-cat-toys-this-year">Top 5 Best Cat Toys This Year</a></li>
+<li><a href="#ready-to-find-the-perfect-toy-for-your-cat">Ready to Find the Perfect Toy for Your Cat?</a></li>
+<li><a href="#choosing-cat-toys">How to Choose the Right Cat Toys</a></li>
+<li><a href="#benefits-cat-toys">5 Surprising Benefits of Cat Toys for Indoor Cats</a></li>
+<li><a href="#cat-toys-budget">Best Cat Toys on a Budget</a></li>
+<li><a href="#indoor-play-ideas">Creative Indoor Play Ideas for Your Feline</a></li>
+<li><a href="#explore-more-pet-supplies">Explore More Pet Supplies</a></li>
+<li><a href="#toc-choosing-safe">Choosing Safe and Durable Playthings for Your Feline</a></li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color has-large-font-size wp-elements-1d524f4e5d58c9ef6ee3eb7887e65cfb" id="playtime-that-keeps-cats-curious-and-content" style="color:#222222;padding-top:22px;padding-bottom:22px;font-style:normal;font-weight:700">Playtime That Keeps Cats Curious and Content</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color has-medium-font-size wp-elements-b075e1db9ba41fbe25c2a70e97bb05e6 wp-block-paragraph" style="color:#444444;padding-top:22px;padding-bottom:22px">Cats thrive on movement, stimulation, and discovery. Toys aren’t just accessories — they’re tools for health and happiness. Interactive play helps reduce stress, prevent boredom, and encourage exercise. From chasing feathers to solving treat puzzles, each toy supports your cat’s natural instincts while keeping them mentally sharp and physically fit. Explore our curated selection designed to make every play session rewarding and fun.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator alignwide has-alpha-channel-opacity is-style-wide" style="margin-top:0;margin-bottom:0"/>
+<!-- /wp:separator -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" id="bestsellers" style="padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-9869dc5238164c23aba6185ece5a5946" id="top-5-best-cat-toys-this-year" style="color:#111111;margin-bottom:40px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Top 5 Best Cat Toys This Year</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-52b7c8f9 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-68dcf5ba wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3261" data-permalink="https://pethubonline.com/cat-toy-feather-wand-real/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-feather-wand-real.jpg?fit=500%2C478&amp;ssl=1" data-orig-size="500,478" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Interactive Feather Wand Toy" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-feather-wand-real.jpg?fit=500%2C478&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="500" height="478" data-attachment-id="3261" data-permalink="https://pethubonline.com/cat-toy-feather-wand-real/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-feather-wand-real.jpg?fit=500%2C478&amp;ssl=1" data-orig-size="500,478" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Interactive Feather Wand Toy" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-feather-wand-real.jpg?fit=500%2C478&amp;ssl=1" alt="Interactive feather wand toy for cats" class="wp-image-3261" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-feather-wand-real.jpg?resize=500%2C478&#038;ssl=1" style="object-fit:contain;width:auto;height:200px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-feather-wand-real.jpg?w=500&amp;ssl=1 500w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-feather-wand-real.jpg?resize=300%2C287&amp;ssl=1 300w" sizes="auto, (max-width: 500px) 100vw, 500px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-40da843fb63b2ff69118d6fdf2b6425b" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Interactive Feather Wand Toy</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-f156a0f7d381dca26fc5563766a0e78a wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A retractable feather wand that brings out your cat’s natural hunting instinct with lifelike movement and vibrant feathers.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-32ff9e9fdb357791ddf0a66c27b4c6be" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Retractable <strong>telescopic wand</strong> extends for versatile play distances</li>
+<li>Natural <strong>feather attachments</strong> mimic real bird movement to excite cats</li>
+<li>Durable <strong>elastic string</strong> with reinforced connection for long‑lasting play</li>
+<li>Stimulates your cat’s <strong>natural hunting instinct</strong>, keeping them active and healthy</li>
+<li>Suitable for <strong>cats of all ages</strong> — from playful kittens to senior felines</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/dp/B0B8X1ZKCF?tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-68dcf5ba wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3262" data-permalink="https://pethubonline.com/cat-toy-tunnel-real/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-tunnel-real.jpg?fit=500%2C496&amp;ssl=1" data-orig-size="500,496" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Collapsible Cat Tunnel Toy" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-tunnel-real.jpg?fit=500%2C496&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="500" height="496" data-attachment-id="3262" data-permalink="https://pethubonline.com/cat-toy-tunnel-real/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-tunnel-real.jpg?fit=500%2C496&amp;ssl=1" data-orig-size="500,496" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Collapsible Cat Tunnel Toy" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-tunnel-real.jpg?fit=500%2C496&amp;ssl=1" alt="Collapsible crinkle cat tunnel toy" class="wp-image-3262" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-tunnel-real.jpg?resize=500%2C496&#038;ssl=1" style="object-fit:contain;width:auto;height:200px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-tunnel-real.jpg?w=500&amp;ssl=1 500w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-tunnel-real.jpg?resize=300%2C298&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-tunnel-real.jpg?resize=150%2C150&amp;ssl=1 150w" sizes="auto, (max-width: 500px) 100vw, 500px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-921b12f47e681bd896c599d09a3bb119" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Collapsible Cat Tunnel Toy</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-2a0ab3c3add375ae56376f54f0cc4bfd wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A pop‑up crinkle tunnel with multiple entrances and peek holes that encourages exploration, hiding, and play.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-cd0658d0cbaf98cf12a0b3fe761899ef" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Collapsible design</strong> folds flat for easy storage and portability</li>
+<li>Built‑in <strong>crinkle material</strong> produces exciting sounds that attract curious cats</li>
+<li>Features <strong>multiple entrances</strong> and peek‑a‑boo holes for interactive fun</li>
+<li>Lightweight <strong>spring‑steel frame</strong> pops open instantly and holds its shape</li>
+<li>Spacious interior suits <strong>cats of all sizes</strong>, perfect for multi‑cat households</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/dp/B0BW8SMLDM?tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-52b7c8f9 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-68dcf5ba wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3263" data-permalink="https://pethubonline.com/cat-toy-catnip-mouse-real/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-catnip-mouse-real.jpg?fit=500%2C478&amp;ssl=1" data-orig-size="500,478" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Catnip Mouse Toy Set" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-catnip-mouse-real.jpg?fit=500%2C478&amp;ssl=1" data-recalc-dims="1" decoding="async" data-attachment-id="3263" data-permalink="https://pethubonline.com/cat-toy-catnip-mouse-real/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-catnip-mouse-real.jpg?fit=500%2C478&amp;ssl=1" data-orig-size="500,478" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Catnip Mouse Toy Set" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-catnip-mouse-real.jpg?fit=500%2C478&amp;ssl=1" alt="Catnip mouse toy set for cats" class="wp-image-3263" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-catnip-mouse-new.jpg?ssl=1" style="object-fit:contain;width:auto;height:200px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-4578c2ff8e1801bc6cb6f3bd10e0fdc7" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Catnip Mouse Toy Set</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-fc5f6882d9f337735341eb7def1c44d3 wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A multi‑pack of plush mice filled with natural catnip, each with a small bell and varied textures to keep cats engaged.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-5044086883f5a861ded9c6ce302ccd14" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Filled with <strong>100% natural catnip</strong> that drives cats wild with excitement</li>
+<li><strong>Realistic fur textures</strong> and soft plush bodies satisfy your cat’s prey drive</li>
+<li>Each mouse includes a <strong>small bell</strong> for added auditory stimulation</li>
+<li>Comes in a <strong>multi‑pack</strong> with varied colours and textures for rotating play</li>
+<li>Compact size is <strong>perfect for batting, pouncing, and carrying</strong> around the house</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/dp/B083HGYH66?tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-68dcf5ba wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3264" data-permalink="https://pethubonline.com/cat-toy-puzzle-feeder-real/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-puzzle-feeder-real.jpg?fit=500%2C500&amp;ssl=1" data-orig-size="500,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Cat Puzzle Feeder Toy" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-puzzle-feeder-real.jpg?fit=500%2C500&amp;ssl=1" data-recalc-dims="1" decoding="async" data-attachment-id="3264" data-permalink="https://pethubonline.com/cat-toy-puzzle-feeder-real/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-puzzle-feeder-real.jpg?fit=500%2C500&amp;ssl=1" data-orig-size="500,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Cat Puzzle Feeder Toy" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-puzzle-feeder-real.jpg?fit=500%2C500&amp;ssl=1" alt="Interactive cat puzzle feeder toy" class="wp-image-3264" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-puzzle-feeder-new.jpg?ssl=1" style="object-fit:contain;width:auto;height:200px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-36b707d35b199cf596f90f56cdacb29b" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Puzzle Feeder Toy</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-05716f8356791446c15c6ed2564e5d5c wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">An interactive treat‑dispensing puzzle that challenges your cat’s mind and slows down mealtime for healthier eating.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-1ddb1c716f03aa325fdf70486bd7537f" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Adjustable difficulty levels</strong> to match your cat’s skill and keep them challenged</li>
+<li>Promotes <strong>slow feeding</strong>, reducing overeating and digestive issues</li>
+<li>Provides essential <strong>mental stimulation</strong> that combats boredom and anxiety</li>
+<li>Non‑slip <strong>anti‑skid base</strong> stays in place on all floor surfaces</li>
+<li>Made from <strong>BPA‑free, food‑safe materials</strong> that are easy to clean</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/dp/B07VGN7SJL?tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-52b7c8f9 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-68dcf5ba wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3265" data-permalink="https://pethubonline.com/cat-toy-laser-real/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-laser-real.jpg?fit=500%2C500&amp;ssl=1" data-orig-size="500,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Automatic Laser Cat Toy" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-laser-real.jpg?fit=500%2C500&amp;ssl=1" data-recalc-dims="1" decoding="async" data-attachment-id="3265" data-permalink="https://pethubonline.com/cat-toy-laser-real/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-laser-real.jpg?fit=500%2C500&amp;ssl=1" data-orig-size="500,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Automatic Laser Cat Toy" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-laser-real.jpg?fit=500%2C500&amp;ssl=1" alt="Automatic rotating laser cat toy" class="wp-image-3265" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-toy-laser-new.jpg?ssl=1" style="object-fit:contain;width:auto;height:200px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-63b36fe5bc994c8bd0c1aedd4e1929b7" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Automatic Laser Cat Toy</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-05158bbf65b6afefbc1ec2b2a374ccc4 wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A hands‑free rotating laser toy that projects random patterns to keep your cat chasing, pouncing, and exercising.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-17feb8936bff59172238e90ab38ff06d" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>360‑degree rotation</strong> creates unpredictable laser patterns that excite cats</li>
+<li><strong>Multiple speed settings</strong> let you adjust intensity for kittens or adult cats</li>
+<li>Powered by <strong>USB or batteries</strong> for flexible placement anywhere in your home</li>
+<li>Built‑in <strong>auto shut‑off timer</strong> prevents overstimulation and saves power</li>
+<li><strong>Class 1 laser</strong> is safe for your cat’s eyes during interactive play</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/dp/B08PBMP162?tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow"></div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" id="cat-toys" style="padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color wp-elements-4b68efb651ac344fcaf41b7db39a8553" id="shop-cat-toys-by-type" style="color:#1a1a1a;font-size:34px;font-style:normal;font-weight:700;line-height:1.2">Shop Cat Toys by Type</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-left has-text-color has-link-color wp-elements-54c4928897aba8da5f494e4073474597 wp-block-paragraph" style="color:#4a4a4a;margin-top:22px;margin-bottom:22px;padding-top:22px;padding-bottom:22px;font-size:18px">Explore different types of cat toys designed to match every personality, play style, and age.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-cbe286e1 wp-block-columns-is-layout-flex" style="margin-top:0px;margin-bottom:0px;padding-top:22px;padding-bottom:22px">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-link-color wp-elements-f5bc54052e3784d2bf300d8959097efd is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="2515" data-permalink="https://pethubonline.com/cat-toys/yarn-and-string-toys/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/yarn-and-string-toys.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="yarn and string toys" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/yarn-and-string-toys.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2515" data-permalink="https://pethubonline.com/cat-toys/yarn-and-string-toys/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/yarn-and-string-toys.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="yarn and string toys" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/yarn-and-string-toys.png?fit=1024%2C1024&amp;ssl=1" alt="Best cat toys for indoor cats and interactive play" class="wp-image-2515" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/yarn-and-string-toys.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/yarn-and-string-toys.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/yarn-and-string-toys.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/yarn-and-string-toys.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/yarn-and-string-toys.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/yarn-and-string-toys.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/yarn-and-string-toys.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/yarn-and-string-toys.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/yarn-and-string-toys.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-e17f245be1136fdc80cfd7b72cf71e6e" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Yarn &amp; String Toys →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-9c14e6bcf5b0e9c9040715c8100661ea wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Classic toys that encourage playful pawing, chasing, and gentle tugging.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="2517" data-permalink="https://pethubonline.com/cat-toys/teaser-wands/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/teaser-wands.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="teaser wands" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/teaser-wands.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2517" data-permalink="https://pethubonline.com/cat-toys/teaser-wands/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/teaser-wands.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="teaser wands" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/teaser-wands.png?fit=1024%2C1024&amp;ssl=1" alt="Interactive cat toys that stimulate natural hunting instincts" class="wp-image-2517" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/teaser-wands.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/teaser-wands.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/teaser-wands.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/teaser-wands.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/teaser-wands.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/teaser-wands.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/teaser-wands.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/teaser-wands.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/teaser-wands.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-bdd488b5d8c14d8d28e7a025f72a1313" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Teaser Wands →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-69534c575732c09935697712975469cc wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Interactive toys that strengthen your bond through movement and excitement.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="2519" data-permalink="https://pethubonline.com/cat-toys/plush-and-mouse-toys/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/plush-and-mouse-toys.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="plush and mouse toys" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/plush-and-mouse-toys.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2519" data-permalink="https://pethubonline.com/cat-toys/plush-and-mouse-toys/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/plush-and-mouse-toys.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="plush and mouse toys" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/plush-and-mouse-toys.png?fit=1024%2C1024&amp;ssl=1" alt="Feather wand cat toys for active feline play sessions" class="wp-image-2519" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/plush-and-mouse-toys.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/plush-and-mouse-toys.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/plush-and-mouse-toys.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/plush-and-mouse-toys.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/plush-and-mouse-toys.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/plush-and-mouse-toys.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/plush-and-mouse-toys.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/plush-and-mouse-toys.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/plush-and-mouse-toys.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-f49133be79a4e089eac8ed0100e1d1a7" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Plush &amp; Mouse Toys →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-2e6ad8e3773688bb79b66ad988bf3b03 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Soft, lightweight companions that satisfy your cat’s hunting instincts.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="padding-top:0px;padding-bottom:0px">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="2521" data-permalink="https://pethubonline.com/cat-toys/puzzle-and-treat-toys/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/puzzle-and-treat-toys.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="puzzle and treat toys" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/puzzle-and-treat-toys.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2521" data-permalink="https://pethubonline.com/cat-toys/puzzle-and-treat-toys/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/puzzle-and-treat-toys.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="puzzle and treat toys" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/puzzle-and-treat-toys.png?fit=1024%2C1024&amp;ssl=1" alt="Top-rated cat toys including laser pointers and mice" class="wp-image-2521" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/puzzle-and-treat-toys.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/puzzle-and-treat-toys.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/puzzle-and-treat-toys.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/puzzle-and-treat-toys.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/puzzle-and-treat-toys.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/puzzle-and-treat-toys.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/puzzle-and-treat-toys.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/puzzle-and-treat-toys.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/puzzle-and-treat-toys.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-60caaec4df60a543324e3d9c76c03732" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Puzzle &amp; Treat Toys →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-d025e6e5ced044f82e4e185db361729a wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Stimulating designs that challenge your cat’s mind and reward clever play.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="2522" data-permalink="https://pethubonline.com/cat-toys/tunnel-toys/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/tunnel-toys.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="tunnel toys" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/tunnel-toys.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2522" data-permalink="https://pethubonline.com/cat-toys/tunnel-toys/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/tunnel-toys.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="tunnel toys" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/tunnel-toys.png?fit=1024%2C1024&amp;ssl=1" alt="Durable cat toys for energetic kittens and adult cats" class="wp-image-2522" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/tunnel-toys.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/tunnel-toys.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/tunnel-toys.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/tunnel-toys.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/tunnel-toys.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/tunnel-toys.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/tunnel-toys.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/tunnel-toys.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/tunnel-toys.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-9df6a75486c475918da7be5ed893b71f" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Tunnel Toys →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-46d1dd896e94e14d523ec081ff4dbf94 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Perfect for hiding, chasing, and exploring — great for active cats.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="2525" data-permalink="https://pethubonline.com/cat-toys/ball-and-rolling-toys/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ball-and-rolling-toys.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="ball and rolling toys" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ball-and-rolling-toys.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2525" data-permalink="https://pethubonline.com/cat-toys/ball-and-rolling-toys/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ball-and-rolling-toys.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="ball and rolling toys" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ball-and-rolling-toys.png?fit=1024%2C1024&amp;ssl=1" alt="Cat toys designed for solo play and mental stimulation" class="wp-image-2525" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ball-and-rolling-toys.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ball-and-rolling-toys.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ball-and-rolling-toys.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ball-and-rolling-toys.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ball-and-rolling-toys.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ball-and-rolling-toys.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ball-and-rolling-toys.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ball-and-rolling-toys.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ball-and-rolling-toys.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-1fd63135fb98b507895af0d641a1b234" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Ball &amp; Rolling Toys →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-25339dc97aabdc1d1c1ee1d440f73c11 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Simple, durable toys that keep cats entertained and moving all day.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-background is-layout-constrained wp-block-group-is-layout-constrained" id="useful-tips-for-every-pet-owner" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f9f9f9;padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-9373162078861ff40b5151f3111ca819" style="color:#0073aa;margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Useful Tips for Every Pet Owner</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-3ec80be5ab277d50068738819d8ec2bd wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:30px;font-size:18px">Whether you are a first-time cat owner or a seasoned feline enthusiast, these practical tips and practical insights will help you create a more enriching, stimulating environment for your furry companion at home.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-b39005e8b1e57a02ed4ff8dc83619456" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🏠 Creative Indoor Play Ideas</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-3b8dda62dda5a659601513e6539bbad4 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Keeping your indoor feline entertained does not always require expensive purchases. Simple household items can become engaging playthings when used creatively. Cardboard boxes, paper bags with handles removed for safety, and scrunched-up paper balls are all favourites with most cats. Rotating the items available every few days keeps things interesting and prevents your pet from losing interest.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-4a7b7a207ca475b6472bd51f5916d60e wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Consider setting up a dedicated play area with climbing shelves, window perches, and activity centres. Vertical space is just as important as floor space for felines. A tall climbing tree near a window gives your pet hours of entertainment watching birds and squirrels outside. Scheduled play sessions at the same time each day help establish a routine that benefits both you and your cat.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-02ccfb9c1a31cf5dec10099367732b7b" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Use cardboard boxes and paper bags as free play stations</li>
+<li>Add climbing shelves and window perches for vertical enrichment</li>
+<li>Schedule play sessions at dawn and dusk when cats are naturally active</li>
+<li>Food puzzles and snuffle mats turn mealtime into mental enrichment</li>
+<li>Slow feeders encourage natural foraging behaviour and reduce boredom</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-ccf44d3c3d27bc96acd175ef885114a8" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🤖 Solo Play and Independent Entertainment</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-c67c1efe7abaf956f2cde43c794736b4 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Solo play options are essential for times when you are away from home. Battery-operated wobble toys, automated laser modules with randomised patterns, and treat-dispensing rollers all provide independent entertainment. Ensuring your feline has access to engaging solo activities reduces separation anxiety and prevents the destructive boredom that leads to scratched furniture and knocked-over ornaments while you are at work or running errands.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-6d0c2e9e25bf7d08ea21ad87a2ca6e7c wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Scented options infused with valerian or silver vine appeal to the olfactory senses and attract even the most disinterested feline into a play session. Layering multiple sensory experiences — movement, sound, and scent — creates richer interactions that keep your companion mentally sharp and physically fit throughout the day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-1615c6eb98bc9192828080351726108b" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Battery-operated wobble toys for unsupervised fun</li>
+<li>Automated laser modules with randomised patterns</li>
+<li>Treat-dispensing rollers for reward-based solo play</li>
+<li>Valerian and silver vine scented toys to attract reluctant players</li>
+<li>Crinkle tunnels and rattle balls for multi-sensory stimulation</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-817d4a111b4fa9dd1d264131d8e4e596" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">💰 Budget-Friendly Cat Toy Ideas</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-18b2b93ca5bd2024c8b19abab981bcab wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">You do not need to spend a fortune on cat toys to keep your feline happy. Some of the best cat toys are surprisingly affordable. Simple crinkle balls, catnip mice, and feather teasers are inexpensive options that most cats absolutely love. DIY cat toys can also be a great option — a cardboard box, a scrunched-up piece of paper, or a sock filled with catnip can provide hours of entertainment alongside purpose-built toys designed for safety and durability.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-7571aca7e41ccb2304731b721c60d3b6 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">When shopping on a budget, focus on versatility. A single feather wand can provide weeks of interactive play sessions, and a treat-dispensing ball serves double duty as both entertainment and slow feeder. Look for multi-packs that offer several toy types in one purchase, giving you variety without the premium price tag.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-c3b9af9f690410eaa25559b724749923" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Crinkle balls and catnip mice cost under a pound and deliver hours of fun</li>
+<li>DIY options like paper bags and cardboard tubes are free and effective</li>
+<li>Multi-packs offer variety and value in a single purchase</li>
+<li>Versatile toys like feather wands serve multiple play styles</li>
+<li>Investing in one quality interactive toy often outlasts several cheap alternatives</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-755cb27867419460b014a2cde4d41080" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🐱 Matching Toys to Your Cat’s Life Stage</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-e8589d54b38662b5c0d0e983b1590311 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Age matters when matching products to your pet. Kittens benefit from lightweight items they can bat and chase as they develop coordination and confidence. Adult felines need more challenging options that engage their hunting skills and keep them physically fit. Senior cats often prefer gentle rolling toys or puzzle feeders that provide stimulation without demanding high-energy pouncing. Adjusting your selection as your companion ages keeps engagement levels high throughout every life stage.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-8eccc53812fd72e252110d6909d772d7 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Cats that have access to engaging toys tend to be calmer, sleep better, and show fewer signs of stress. If you are introducing a new cat to your home, having plenty of toys available can help them settle in more quickly and feel secure in their new environment.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-49ddcff2e8ae11c48e1c93a7d4494f9d" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Kittens: lightweight items for batting, chasing, and coordination building</li>
+<li>Adults: challenging options that engage hunting skills and maintain agility</li>
+<li>Seniors: gentle rolling toys and puzzle feeders for low-impact stimulation</li>
+<li>New cats: plenty of toys help them settle and feel secure faster</li>
+<li>High-energy cats: interactive toys for jumping, chasing, and pouncing</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:20px;padding-bottom:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-4a0a886cd9d3d981bca6e5a1a5d0f227 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:18px">Looking for more? Browse our full range of <a href="https://pethubonline.com/cat-supplies/">cat supplies</a> including beds, grooming tools and feeding accessories. We also have a great selection of <a href="https://pethubonline.com/dog-toys/">dog toys</a> if you have a canine companion too. Check out our <a href="https://pethubonline.com/essential-cat-supplies-for-cat-owners/">essential cat supplies guide</a> for practical tips on what every cat owner needs.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:50px;padding-bottom:50px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center alignwide" id="who-this-page-is-for" style="margin-bottom:25px;font-size:32px;font-style:normal;font-weight:700">Who This Page Is For</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center alignwide wp-block-paragraph" style="margin-bottom:30px;font-size:18px">This page is for cat owners who want to bring energy, enrichment, and joy into their cat’s daily routine. Whether you’re raising a playful kitten or keeping an older cat active, these toys are designed to suit every personality and home.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-52b7c8f9 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🐱 For Playful Kittens</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">Young cats need stimulation to develop coordination and confidence. These toys encourage curiosity, gentle chasing, and safe exploration while kittens learn balance and movement through fun, interactive play.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🐈 For Adult Cats</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">Adult cats thrive when they can express natural instincts. Our toys help maintain agility, reduce stress, and prevent boredom — perfect for cats who love to stalk, pounce, and stay sharp even indoors.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🐾 For Multi‑Cat Homes</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">Shared play builds harmony and reduces tension between cats. These toys promote teamwork, gentle competition, and social bonding, turning group play into a positive, experience for every feline in the household.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-background is-layout-constrained wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color wp-elements-798980a08a7410bf64f1330b15e5e90d" id="cat-toys-faq" style="color:#1a1a1a;margin-bottom:25px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Cat Toys FAQ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary><strong>What types of toys do cats enjoy most?</strong></summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Cats love toys that mimic prey — feathers, strings, and small moving objects. These trigger natural hunting instincts and keep them engaged.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary><strong>How often should I rotate my cat’s toys?</strong></summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Swap toys weekly to keep playtime fresh and prevent boredom. Rotating toys helps maintain interest and excitement.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary><strong>Are teaser wands safe for unsupervised play?</strong></summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Use teaser wands only during interactive sessions to avoid tangling or chewing. Store them safely afterward.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary><strong>Do puzzle toys really help with mental stimulation?</strong></summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Yes, puzzle toys challenge your cat’s problem‑solving skills, reduce stress, and promote focus.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary><strong>How can I encourage a shy cat to play?</strong></summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Start with gentle movements and soft toys. Gradually introduce interactive play to build confidence and trust.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center" id="why-pet-owners-trust-pet-hub-online" style="margin-bottom:40px;font-size:32px;font-style:normal;font-weight:700">Why Pet Owners Trust Pet Hub Online</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<!-- wp:group -->
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🐾</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Expert‑Reviewed Picks</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph">Every toy is selected for safety, durability, and feline enjoyment.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<!-- wp:group -->
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">⭐</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Quality You Can Trust</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="font-size:16px">Our recommendations are refreshed weekly to include the latest, most trusted cat toys available.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<!-- wp:group -->
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">✔️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-align-center">Pet Owner Approved</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph">All reviews come from real cat owners who share honest feedback based on genuine experience.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-background is-layout-constrained wp-block-group-is-layout-constrained" style="background-color:#ffffff;padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-00ab4ad5742f2c9ebcda07af1b708de2" id="how-to-choose-the-right-cat-toys" style="color:#0073aa;margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">How to Choose the Right Cat Toys</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-f78f126023b340ab9977672d871126f7 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:18px">Choosing the right toys depends on your cat’s age, personality, and play preferences. Look for safe materials, interactive designs, and options that encourage both physical and mental activity. A balanced mix of solo and interactive toys keeps your cat stimulated and happy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-77e80fc866a4588aae8f9a0a04f850e1" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🧶 Consider Texture and Size</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-fb77d284350c8d3ca1b9ceffe9fbb8bb wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Small cats and kittens prefer plush or felt textures, while adult cats may enjoy tougher fabrics that resist wear. Avoid toys with loose threads or detachable parts that could pose choking hazards.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-4969d1cc367731d0f0ed63a695299e6f" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Soft, durable materials for comfort</li>
+<li>Lightweight for easy movement</li>
+<li>Avoid small choking hazards</li>
+<li>Washable fabrics for hygiene</li>
+<li>Secure stitching and seams</li>
+<li>Choose natural materials like sisal, untreated wood, and organic cotton for sensitive mouths</li>
+<li>Look for double-stitched seams on plush items and solid rubber on chew products</li>
+<li>Replaceable feather attachments extend toy lifespan without buying a full replacement</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-a8241acc7873b78388a909e4edb52851" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🪶Encourage Interactive Play</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-38c182411997cf4203726ca0f3bbf4e4 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Rotate interactive toys to keep sessions fresh. Cats love variety — alternating between feathers, strings, and bells keeps them engaged. Interactive play also strengthens the bond between you and your cat, reducing stress and boredom-related behaviours like excessive scratching or overeating. Aim for two fifteen-minute sessions daily, ideally at dawn and dusk when cats are naturally most active. End each session with a small treat to mimic the satisfying hunt-catch-eat cycle.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-4d6f26a53cb6aa5ad01abc69ec5704ff" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Teaser wands for active engagement</li>
+<li>String toys for gentle chasing</li>
+<li>Laser pointers for fast movement</li>
+<li>Feather teasers for instinctive play</li>
+<li>Wand toys with bells for sound stimulation</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-cbd3a9d36675f2108bc2f4a4c11e0f98" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🧩 Add Mental Stimulation</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-3bde276e8c91501aa808aac1f5b6c1ea wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Start with simple treat dispensers and gradually introduce more complex puzzles. Cats enjoy the satisfaction of earning rewards, and these toys encourage patience and focus. Regular play with puzzle toys helps prevent obesity, which affects around 60% of indoor cats. Just 15–20 minutes of active play each day makes a significant difference to your cat’s health. Multi-sensory toys that combine movement with sound — such as crinkle tunnels and rattle balls — stimulate hearing alongside vision and touch for richer, more rewarding interactions.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-036067d90777776a56a15ae30ff18486" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Treat dispensers for reward‑based play</li>
+<li>Rolling puzzles for movement and challenge</li>
+<li>Hide‑and‑seek boxes for curiosity</li>
+<li>Food mazes for slow feeding</li>
+<li>Interactive feeders for daily enrichment</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-f088f10da2937db69c65c5309201f0ca" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🐾 Rotate and Refresh Regularly</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-3369255b3a175526460739e621738d7c wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Store unused toys in a box and reintroduce them later — your cat will treat them like new. Items stored away for a fortnight feel brand new when reintroduced, reigniting interest and saving you from constantly buying replacements. You don’t need to spend a fortune either — simple crinkle balls, catnip mice, and feather teasers are affordable favourites. Even DIY options like a cardboard box, scrunched-up paper, or a sock filled with catnip can provide hours of entertainment alongside purpose-built toys.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-76b96cb1bd1beb8789e7c4042191c20f" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Weekly rotation for novelty</li>
+<li>Seasonal updates for variety</li>
+<li>Mix textures and colors</li>
+<li>Add new sounds or shapes</li>
+<li>Store extras safely and cleanly</li>
+<li>Dedicate a basket or drawer to your cat&#8217;s toys and rotate three or four into active use each week</li>
+<li>A modest collection of quality toys delivers months of entertainment with smart rotation</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-4278ae6d wp-block-group-is-layout-constrained" style="padding-top:50px;padding-right:50px;padding-bottom:50px;padding-left:50px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center" id="explore-more-cat-essentials" style="margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700">Explore More Cat Essentials</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🪵</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Scratching Posts</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Durable scratching posts to protect your furniture and satisfy natural instincts.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-layout-flex wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-scratching-posts/">View Category</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🛏️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Beds</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Discover cosy beds designed for warmth and comfort.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-layout-flex wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-beds/">View Category</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🪮</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Grooming</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Find brushes, combs, and grooming tools for a healthy coat.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-layout-flex wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-grooming/">View Category</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🎀</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Collars &amp; Accessories</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Explore safe, stylish collars and everyday accessories.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-layout-flex wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-collars/">View Category</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🧻</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Litter Trays</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Keep your home clean and fresh with popular litter trays.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-layout-flex wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-litter-trays/">View Category</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">❤️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Health &amp; Care</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Support your cat’s wellbeing with trusted care essentials.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-layout-flex wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button">View Category</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-background is-layout-constrained wp-block-group-is-layout-constrained" style="border-top-color:#e5e5e5;border-top-width:3px;border-right-style:none;border-right-width:0px;border-bottom-width:3px;border-left-style:none;border-left-width:0px;background-color:#fafafa;padding-top:20px;padding-bottom:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-93c9c29cabda22ffe5dcadda2c053103 wp-block-paragraph" style="color:#555555;font-size:14px;line-height:1.4">Updated weekly • Independent reviews • No sponsored products • Trusted by pet owners</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-background is-layout-constrained wp-block-group-is-layout-constrained" style="background-color:#f7f7f7;padding-top:90px;padding-bottom:90px">
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-color has-link-color wp-elements-ea6f6651c5064fd66be14b151052225c" id="ready-to-find-the-perfect-toy-for-your-cat" style="color:#1a1a1a;font-size:34px;font-style:normal;font-weight:700;line-height:1.2">Ready to Find the Perfect Toy for Your Cat?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-60916d2e29412c7edea610f8a484bf4c wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:18px">Explore trusted cat toy categories and discover playful favourites that keep your cat active, curious, and happy. Every toy is chosen for safety, quality, and fun — because playtime should always bring joy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-layout-flex wp-block-buttons-is-layout-flex" style="margin-top:28px;margin-bottom:28px;padding-top:32px;padding-right:16px;padding-bottom:32px;padding-left:16px;font-size:18px">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#cat-toys">Shop Cat Toys</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized is-style-rounded"><img data-attachment-id="2500" data-permalink="https://pethubonline.com/cat-toys/cat-toys-final-cta-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-toys-final-cta-image.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Cat toys final cta image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-toys-final-cta-image.png?fit=1024%2C683&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1536" height="1024" data-attachment-id="2500" data-permalink="https://pethubonline.com/cat-toys/cat-toys-final-cta-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-toys-final-cta-image.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Cat toys final cta image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-toys-final-cta-image.png?fit=1024%2C683&amp;ssl=1" alt="Cat toys for bored indoor cats and playful kittens" class="wp-image-2500" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-toys-final-cta-image.png?resize=1536%2C1024&#038;ssl=1" style="width:400px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-toys-final-cta-image.png?w=1536&amp;ssl=1 1536w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-toys-final-cta-image.png?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-toys-final-cta-image.png?resize=1024%2C683&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-toys-final-cta-image.png?resize=768%2C512&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/Cat-toys-final-cta-image.png?resize=1200%2C800&amp;ssl=1 1200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+<!-- /wp:image -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">
+
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Related Articles</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><a href="https://pethubonline.com/best-cat-toys-indoor-cats-uk/">Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide</a></li>
+<li><a href="https://pethubonline.com/best-catnip-toys-uk/">Best Catnip Toys UK (2026) – What Works and Why</a></li>
+<li><a href="https://pethubonline.com/best-interactive-cat-toys-uk/">Best Interactive Cat Toys UK (2026) – Wand & Puzzle Guide</a></li>
+<li><a href="https://pethubonline.com/best-cat-toys-uk/">Best Cat Toys UK (2026) – Complete Guide</a></li>
+</ul>
+<!-- /wp:list -->

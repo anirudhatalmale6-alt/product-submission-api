@@ -1,0 +1,87 @@
+SITE HARDENING REPORT 4: COMMERCIAL / EVIDENCE DISCIPLINE
+PetHub Online — pethubonline.com
+Generated: 2026-05-27
+==========================================================================
+
+SCOPE
+-----
+Audit and correction of commercial claims, recommendation language,
+and evidence discipline across all hub pages and commercial content.
+
+==========================================================================
+OVERCLAIM AUDIT RESULTS
+==========================================================================
+
+Total overclaim instances found:    82+ across 16 hub pages
+Total overclaim instances fixed:    60+
+Legitimate claims preserved:        12 (manufacturer/third-party claims)
+
+BEFORE STATE:
+  - 7 of 8 primary hub pages had "Expert" language
+  - 3 pages had trust blocks with fabricated claims
+  - "independently tested" appeared on Dog Toys page
+  - "tested by professionals" appeared on Dog Grooming + Dog Training
+  - "real dog owners who share honest feedback" on Dog Toys
+  - "Our team reviews and curates each item" on Dog Supplies
+
+AFTER STATE:
+  All PetHub-attributed expertise claims removed or softened:
+  - "Expert-Reviewed Picks" -> "Recommended Picks" (10 pages)
+  - "Expert-Approved Essentials" -> "Recommended Essentials" (3 pages)
+  - "Expert Recommendations" -> "Recommendations" (1 page)
+  - "Expert Testing" -> "Research-Based Recommendations" (1 page)
+  - "independently tested" -> research-based language (1 page)
+  - "tested by professionals" -> research-based language (2 pages)
+  - "our team" -> "we" (2 pages)
+  - "expert advice/tips/insights" -> "practical" (4 pages)
+  - "top-rated" -> "popular" or "well-reviewed" (1 page)
+
+PRESERVED (legitimate third-party claims):
+  - "VET-APPROVED" in product descriptions (manufacturer claim)
+  - "70 years of petware expertise" (manufacturer claim)
+  - "cat behaviour experts recommend" (general expert reference)
+  - "with veterinary and nutrition experts" (goal statement)
+  - "tested periodically" in safety context (user advice, not PetHub claim)
+
+
+==========================================================================
+RECOMMENDATION LANGUAGE STANDARD
+==========================================================================
+
+PROHIBITED (PetHub cannot claim these without evidence):
+  - "we test" / "we tested" / "independently tested"
+  - "expert team" / "our experts"
+  - "real user feedback" / "owner approved"
+  - "clinically proven" / "guaranteed"
+  - "vet-backed" (as a PetHub attribute)
+  - "#1" / "number one"
+
+ALLOWED:
+  - "we research" / "we evaluate" / "we compare"
+  - "based on manufacturer data" / "based on published reviews"
+  - "practical guidance" / "practical tips"
+  - "popular" / "well-reviewed" / "widely recommended"
+  - "recommended options" / "our picks"
+  - Manufacturer claims in product descriptions (clearly attributed)
+
+==========================================================================
+AFFILIATE DISCLOSURE CONSISTENCY
+==========================================================================
+
+Before: Mixed format — some pages had wp:html disclosure blocks,
+        some had non-block HTML, some had no disclosure at all
+
+After: Affiliate disclosure blocks present on all commercial hub pages
+       using consistent styling (grey background, blue left border)
+
+Pages still missing disclosure: Blog page (38) — low priority as it's
+a listing page, not commercial content.
+
+==========================================================================
+ACTIONS FOR FUTURE CONTENT
+==========================================================================
+1. All new commercial content must use the approved language standard
+2. Product recommendations must cite evidence source
+3. No "we tested" unless documented testing exists
+4. Manufacturer claims must be clearly attributed to manufacturer
+5. All commercial pages must include affiliate disclosure

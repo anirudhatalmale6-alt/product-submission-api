@@ -1,0 +1,850 @@
+================================================================================
+  PETHUB ONLINE - PAGE/POST LAYOUT AUDIT REPORT
+  Generated: 2026-05-27 23:34:29 UTC
+  Site: https://pethubonline.com
+================================================================================
+
+
+################################################################################
+  SECTION 1: PAGES
+################################################################################
+
+================================================================================
+  PAGE ID 39: Main page
+================================================================================
+  Title: About Us
+  Status: publish
+  Slug: about-us
+  Raw content length: 22863 chars
+
+  1. BLOCK TYPES PRESENT:
+     - wp:button
+     - wp:buttons
+     - wp:column
+     - wp:columns
+     - wp:cover
+     - wp:group
+     - wp:heading
+     - wp:image
+     - wp:list
+     - wp:paragraph
+     - wp:separator
+
+  2. HERO/FEATURED IMAGE:
+     Featured media ID: 0
+     Cover block at top: True
+     Image block at top: False
+     Media-text at top: False
+     Any hero element: True
+
+  3. TOP INFO STRIP:
+     has_date_reference: False
+     has_site_name: True
+     has_business_name: False
+     has_info_box_top: False
+
+  4. HEADING HIERARCHY:
+     Levels found: [2, 3]
+     H1 in body: False
+     Correct (no H1, only H2-H6): True
+
+  5. FAQ SECTION:
+     has_faq_heading: False
+     has_faq_block: False
+     has_faq_schema: False
+     has_details_element: False
+     has_qa_pattern: False
+
+  6. RELATED READING:
+     has_related_heading: False
+     has_internal_links_section: False
+     internal_link_count: 2
+
+  7. AFFILIATE DISCLOSURE / INFO-BOX DIVS:
+     Has affiliate disclosure text: True
+     Has info-box class: False
+     Has wp:html blocks: False
+     wp:html block count: 0
+     Has styled divs (inline bg): True
+     Custom CSS classes found: []
+
+  8. STRUCTURE PATTERN:
+     Detected sections: INTRO -> TRUST -> BODY -> BODY -> BODY -> BODY -> BODY -> DISCLOSURE -> TRUST -> BODY -> BODY
+
+  RAW CONTENT PREVIEW (first 500 chars):
+     <!-- wp:cover -->
+     <div class="wp-block-cover alignfull is-light remove-top-gap" style="margin-bottom:40px;padding-top:10px;padding-bottom:10px;min-height:700px;aspect-ratio:unset;"><img data-recalc-dims="1" loading="lazy" decoding="async" width="1717" height="916" data-attachment-id="2575" data-permalink="https://pethubonline.com/about-us/about-us-cover-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/about-us-cover-image.png?fit=1717%2C916&amp;ssl=1" data-or
+
+  ALL HEADINGS IN CONTENT:
+     H2: About Us
+     H2: Our Mission
+     H2: Who We Are
+     H2: What We Do
+     H3: Product Reviews
+     H3: Guides &amp; Tips
+     H3: Affiliate Recommendations
+     H2: Why Trust Us
+     H2: Our Values
+     H2: Contact / Connect With Us
+
+================================================================================
+  PAGE ID 63: Restored from revision
+================================================================================
+  Title: Dog Supplies
+  Status: publish
+  Slug: dog-supplies
+  Raw content length: 59753 chars
+
+  1. BLOCK TYPES PRESENT:
+     - wp:button
+     - wp:buttons
+     - wp:column
+     - wp:columns
+     - wp:heading
+     - wp:image
+     - wp:list
+     - wp:list-item
+     - wp:paragraph
+
+  2. HERO/FEATURED IMAGE:
+     Featured media ID: 0
+     Cover block at top: True
+     Image block at top: False
+     Media-text at top: False
+     Any hero element: True
+
+  3. TOP INFO STRIP:
+     has_date_reference: False
+     has_site_name: True
+     has_business_name: False
+     has_info_box_top: False
+
+  4. HEADING HIERARCHY:
+     Levels found: [2, 3]
+     H1 in body: False
+     Correct (no H1, only H2-H6): True
+
+  5. FAQ SECTION:
+     has_faq_heading: True
+     has_faq_block: False
+     has_faq_schema: False
+     has_details_element: False
+     has_qa_pattern: True
+
+  6. RELATED READING:
+     has_related_heading: True
+     has_internal_links_section: False
+     internal_link_count: 17
+
+  7. AFFILIATE DISCLOSURE / INFO-BOX DIVS:
+     Has affiliate disclosure text: True
+     Has info-box class: False
+     Has wp:html blocks: False
+     wp:html block count: 0
+     Has styled divs (inline bg): True
+     Custom CSS classes found: ['affiliate-disclosure']
+
+  8. STRUCTURE PATTERN:
+     Detected sections: INTRO -> BODY -> TOC -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> TRUST -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> FAQ -> BODY -> TRUST -> BODY -> BODY -> RELATED_READING -> BODY
+
+  RAW CONTENT PREVIEW (first 500 chars):
+     <div class="affiliate-disclosure" style="background:#f8f9fa;border-left:4px solid #0073aa;padding:12px 16px;margin-bottom:24px;font-size:0.92em;color:#555;line-height:1.5;">
+     <strong>Affiliate Disclosure:</strong> Some links on this page are affiliate links. If you click an affiliate link and make a purchase, we may earn a small commission at no extra cost to you. We only recommend products we would use ourselves and that meet our editorial standards. <a href="https://pethubonline.com/affiliate-d
+
+  ALL HEADINGS IN CONTENT:
+     H2: Shop the Best Dog Supplies for Every Pup
+     H2: Table of Contents
+     H2: Everything Your Dog Needs, All in One Place
+     H2: Shop by Type: Dog Supplies
+     H3: Dog Toys
+     H3: Dog Collars &amp; Leads
+     H3: Dog Beds
+     H3: Dog Grooming
+     H3: Dog Bowls &amp; Feeding
+     H3: Dog Health &amp; Care
+     H2: Why Pet Owners Trust Pet Hub Online
+     H2: Complete Guide to Essential Dog Supplies
+     H2: Feeding and Nutrition Essentials
+     H2: Walking and Outdoor Gear
+     H2: Comfort and Rest
+     H2: Grooming and Hygiene
+     H2: Toys and Mental Stimulation
+     H2: Health and Safety Products
+     H2: Puppy-Specific Dog Supplies
+     H2: Dog Supplies for Senior Pets
+     H2: Travel Dog Supplies
+     H2: Frequently Asked Questions
+     H2: Breed-Specific Dog Supplies
+     H3: Trusted Brands &amp; Quality Care
+     H3: Expert Recommendations for Every Breed
+     H3: Convenience You Can Count On
+     H2: Explore More Dog Guides &amp; Categories
+     H2: Find the Perfect Supplies for Your Dog Today
+
+================================================================================
+  PAGE ID 4402: About Us trust page (draft)
+================================================================================
+  Title: How We Research Pet Products
+  Status: draft
+  Slug: how-we-research-pet-products
+  Raw content length: 6010 chars
+
+  1. BLOCK TYPES PRESENT:
+     - wp:heading
+     - wp:list
+     - wp:paragraph
+     - wp:separator
+
+  2. HERO/FEATURED IMAGE:
+     Featured media ID: 0
+     Cover block at top: False
+     Image block at top: False
+     Media-text at top: False
+     Any hero element: False
+
+  3. TOP INFO STRIP:
+     has_date_reference: True
+     has_site_name: True
+     has_business_name: False
+     has_info_box_top: False
+
+  4. HEADING HIERARCHY:
+     Levels found: [2]
+     H1 in body: False
+     Correct (no H1, only H2-H6): True
+
+  5. FAQ SECTION:
+     has_faq_heading: False
+     has_faq_block: False
+     has_faq_schema: False
+     has_details_element: False
+     has_qa_pattern: False
+
+  6. RELATED READING:
+     has_related_heading: False
+     has_internal_links_section: False
+     internal_link_count: 0
+
+  7. AFFILIATE DISCLOSURE / INFO-BOX DIVS:
+     Has affiliate disclosure text: True
+     Has info-box class: False
+     Has wp:html blocks: False
+     wp:html block count: 0
+     Has styled divs (inline bg): False
+     Custom CSS classes found: []
+
+  8. STRUCTURE PATTERN:
+     Detected sections: BODY -> BODY -> BODY -> BODY -> BODY -> DISCLOSURE -> BODY -> TRUST
+
+  RAW CONTENT PREVIEW (first 500 chars):
+     <!-- wp:heading -->
+     <h2>Our Research Philosophy</h2>
+     <!-- /wp:heading -->
+     
+     <!-- wp:paragraph -->
+     <p>At PetHub Online, we believe pet owners deserve honest, evidence-based guidance when choosing products for their animals. Our research process prioritises transparency, accuracy, and practical usefulness over marketing claims.</p>
+     <!-- /wp:paragraph -->
+     
+     <!-- wp:paragraph -->
+     <p>We do not accept payment for favourable reviews. We do not fabricate testing results. We do not claim expertise we do no
+
+  ALL HEADINGS IN CONTENT:
+     H2: Our Research Philosophy
+     H2: How We Evaluate Products
+     H2: What We Do Not Do
+     H2: Evidence Status Labels
+     H2: AI-Assisted Content
+     H2: Affiliate Relationships
+     H2: How to Contact Us
+     H2: Our Trust and Transparency Pages
+
+================================================================================
+  PAGE ID 4403: Trust page (draft)
+================================================================================
+  Title: Our Editorial Process
+  Status: draft
+  Slug: our-editorial-process
+  Raw content length: 4845 chars
+
+  1. BLOCK TYPES PRESENT:
+     - wp:heading
+     - wp:list
+     - wp:paragraph
+     - wp:separator
+
+  2. HERO/FEATURED IMAGE:
+     Featured media ID: 0
+     Cover block at top: False
+     Image block at top: False
+     Media-text at top: False
+     Any hero element: False
+
+  3. TOP INFO STRIP:
+     has_date_reference: True
+     has_site_name: True
+     has_business_name: False
+     has_info_box_top: False
+
+  4. HEADING HIERARCHY:
+     Levels found: [2, 3]
+     H1 in body: False
+     Correct (no H1, only H2-H6): True
+
+  5. FAQ SECTION:
+     has_faq_heading: False
+     has_faq_block: False
+     has_faq_schema: False
+     has_details_element: False
+     has_qa_pattern: False
+
+  6. RELATED READING:
+     has_related_heading: False
+     has_internal_links_section: False
+     internal_link_count: 0
+
+  7. AFFILIATE DISCLOSURE / INFO-BOX DIVS:
+     Has affiliate disclosure text: True
+     Has info-box class: False
+     Has wp:html blocks: False
+     wp:html block count: 0
+     Has styled divs (inline bg): False
+     Custom CSS classes found: []
+
+  8. STRUCTURE PATTERN:
+     Detected sections: BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> TRUST
+
+  RAW CONTENT PREVIEW (first 500 chars):
+     <!-- wp:heading -->
+     <h2>Editorial Standards</h2>
+     <!-- /wp:heading -->
+     
+     <!-- wp:paragraph -->
+     <p>Every piece of content on PetHub Online follows a consistent editorial process designed to maintain accuracy, usefulness, and trust. We hold ourselves to these standards because pet owners making decisions about their animals deserve reliable information.</p>
+     <!-- /wp:paragraph -->
+     
+     <!-- wp:heading -->
+     <h2>Content Creation Process</h2>
+     <!-- /wp:heading -->
+     
+     <!-- wp:heading {"level":3} -->
+     <h3>1. Topic
+
+  ALL HEADINGS IN CONTENT:
+     H2: Editorial Standards
+     H2: Content Creation Process
+     H3: 1. Topic Research
+     H3: 2. Source Gathering
+     H3: 3. Drafting
+     H3: 4. Fact-Checking
+     H3: 5. Publication and Monitoring
+     H2: What We Will Not Do
+     H2: Content Updates
+     H2: Our Trust and Transparency Pages
+
+================================================================================
+  PAGE ID 300: Privacy Policy / Affiliate Disclosure (live)
+================================================================================
+  Title: Affiliate Disclosure
+  Status: publish
+  Slug: affiliate-disclosure
+  Raw content length: 5830 chars
+
+  1. BLOCK TYPES PRESENT:
+     - wp:heading
+     - wp:list
+     - wp:list-item
+     - wp:paragraph
+     - wp:separator
+
+  2. HERO/FEATURED IMAGE:
+     Featured media ID: 0
+     Cover block at top: False
+     Image block at top: False
+     Media-text at top: False
+     Any hero element: False
+
+  3. TOP INFO STRIP:
+     has_date_reference: True
+     has_site_name: True
+     has_business_name: False
+     has_info_box_top: False
+
+  4. HEADING HIERARCHY:
+     Levels found: [2, 3]
+     H1 in body: False
+     Correct (no H1, only H2-H6): True
+
+  5. FAQ SECTION:
+     has_faq_heading: False
+     has_faq_block: False
+     has_faq_schema: False
+     has_details_element: False
+     has_qa_pattern: False
+
+  6. RELATED READING:
+     has_related_heading: False
+     has_internal_links_section: False
+     internal_link_count: 0
+
+  7. AFFILIATE DISCLOSURE / INFO-BOX DIVS:
+     Has affiliate disclosure text: True
+     Has info-box class: False
+     Has wp:html blocks: False
+     wp:html block count: 0
+     Has styled divs (inline bg): False
+     Custom CSS classes found: []
+
+  8. STRUCTURE PATTERN:
+     Detected sections: DISCLOSURE -> BODY -> DISCLOSURE -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> TRUST
+
+  RAW CONTENT PREVIEW (first 500 chars):
+     <!-- wp:heading -->
+     <h2 class="wp-block-heading"><strong>Affiliate Disclosure</strong></h2>
+     <!-- /wp:heading -->
+     <!-- wp:paragraph -->
+     <p><strong>Effective Date:</strong> 18th May 2026<br/><strong>Website:</strong> www.pethubonline.com<br/><strong>Business Name:</strong> Pet Hub Online</p>
+     <!-- /wp:paragraph -->
+     <!-- wp:separator -->
+     <hr class="wp-block-separator has-alpha-channel-opacity"/>
+     <!-- /wp:separator -->
+     <!-- wp:heading -->
+     <h2 class="wp-block-heading"><strong>1. Introduction</strong><
+
+  ALL HEADINGS IN CONTENT:
+     H2: Affiliate Disclosure
+     H2: 1. Introduction
+     H2: 2. How Affiliate Links Work
+     H3: Product Recommendations
+     H3: No Extra Cost
+     H2: 3. Our Review Process
+     H2: 4. Transparency
+     H2: 5. Third-Party Vendors
+     H2: 6. Questions or Concerns
+     H2: Our Trust and Transparency Pages
+
+================================================================================
+  PAGE ID 1041: Category/hub page
+================================================================================
+  Title: Dog Toys
+  Status: publish
+  Slug: dog-toys
+  Raw content length: 118916 chars
+
+  1. BLOCK TYPES PRESENT:
+     - wp:button
+     - wp:buttons
+     - wp:column
+     - wp:columns
+     - wp:cover
+     - wp:details
+     - wp:group
+     - wp:heading
+     - wp:html
+     - wp:image
+     - wp:list
+     - wp:paragraph
+     - wp:separator
+
+  2. HERO/FEATURED IMAGE:
+     Featured media ID: 0
+     Cover block at top: True
+     Image block at top: False
+     Media-text at top: False
+     Any hero element: True
+
+  3. TOP INFO STRIP:
+     has_date_reference: False
+     has_site_name: True
+     has_business_name: False
+     has_info_box_top: False
+
+  4. HEADING HIERARCHY:
+     Levels found: [2, 3]
+     H1 in body: False
+     Correct (no H1, only H2-H6): True
+
+  5. FAQ SECTION:
+     has_faq_heading: True
+     has_faq_block: False
+     has_faq_schema: False
+     has_details_element: True
+     has_qa_pattern: True
+
+  6. RELATED READING:
+     has_related_heading: True
+     has_internal_links_section: False
+     internal_link_count: 12
+
+  7. AFFILIATE DISCLOSURE / INFO-BOX DIVS:
+     Has affiliate disclosure text: True
+     Has info-box class: False
+     Has wp:html blocks: True
+     wp:html block count: 1
+     Has styled divs (inline bg): True
+     Custom CSS classes found: ['affiliate-disclosure']
+
+  8. STRUCTURE PATTERN:
+     Detected sections: INTRO -> BODY -> TOC -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> FAQ -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> TRUST -> BODY -> BODY -> BODY -> RELATED_READING -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> RELATED_READING
+
+  RAW CONTENT PREVIEW (first 500 chars):
+     <!-- wp:html -->
+     <div class="affiliate-disclosure" style="background:#f8f9fa;border-left:4px solid #0073aa;padding:12px 16px;margin-bottom:24px;font-size:0.92em;color:#555;line-height:1.5;">
+     <strong>Affiliate Disclosure:</strong> Some links on this page are affiliate links. If you click an affiliate link and make a purchase, we may earn a small commission at no extra cost to you. We only recommend products we would use ourselves and that meet our editorial standards. <a href="https://pethubonlin
+
+  ALL HEADINGS IN CONTENT:
+     H2: Best Dog Toys for Happy Dogs
+     H3: Table of Contents
+     H2: Why Choosing the Best Dog Toys Matters
+     H2: Our Bestselling Dog Toys &#8211; Top 5 This Year
+     H3: Squeaky No‑Stuffing Octopus Toy
+     H3: Puppy Teething Toy, Soft Natural Rubber
+     H3: Green Frog Plush Squeaker Toy
+     H3: 10‑Pack Natural Cotton Rope Toys
+     H3: Interactive Puzzle Feeder
+     H2: Browse All Dog Toys By Type
+     H3: Chew Toys →
+     H3: Plush Toys →
+     H3: Interactive Toys →
+     H3: Puzzle Toys →
+     H3: Fetch Toys →
+     H3: Tug Toys →
+     H2: How to Choose the Right Dog Toys
+     H3: 🎯 Match the Toy to Your Dog’s Play Style
+     H3: ❤️‍🩹 Choose Toys Based on Age &amp; Size
+     H3: 🛡️ Safety &amp; Durability Tips
+     H3: 🔄 Rotate Toys to Keep Play Exciting
+     H2: Who This Page Is For
+     H3: 🦴 For Owners of Dog Chewers
+     H3: 💡 For Dogs Who Are Thinkers
+     H3: 🎾 For Dogs that Love to Play
+     H2: Dog Toys FAQ
+     H2: Useful Tips for Every Pet Owner
+     H3: Mental Enrichment Beyond Traditional Playtime
+     H3: Getting the Most from Your Dog Toys Budget
+     H3: Cleaning and Maintaining Dog Toys
+     H3: Signs Your Dog Needs New Toys
+     H3: Creating a Play-Friendly Home Environment
+     H2: Why Pet Owners Trust Pet Hub Online
+     H3: Expert Testing
+     H3: Updated Reviews
+     H3: Pet Owner Approved
+     H2: Explore More Dog Essentials
+     H3: Dog Beds
+     H3: Dog Grooming
+     H3: Dog Collars &amp; Leads
+     H3: Dog Training &amp; Behaviour
+     H3: Dog Bowls &amp; Feeding
+     H3: Dog Health &amp; Care
+     H2: Ready to Find Your Dog’s New Favourite Toy?
+     H2: Related Articles
+
+
+################################################################################
+  SECTION 2: POSTS
+################################################################################
+
+================================================================================
+  POST ID 4783: Phase 10D - Dog Bed Size (new educational)
+================================================================================
+  Title: How to Choose the Right Dog Bed Size
+  Status: publish
+  Slug: how-to-choose-dog-bed-size
+  Raw content length: 5329 chars
+
+  1. BLOCK TYPES PRESENT:
+     - wp:heading
+     - wp:list
+     - wp:paragraph
+     - wp:separator
+
+  2. HERO/FEATURED IMAGE:
+     Featured media ID: 0
+     Cover block at top: False
+     Image block at top: False
+     Media-text at top: False
+     Any hero element: False
+
+  3. TOP INFO STRIP:
+     has_date_reference: False
+     has_site_name: False
+     has_business_name: False
+     has_info_box_top: False
+
+  4. HEADING HIERARCHY:
+     Levels found: [2, 3]
+     H1 in body: False
+     Correct (no H1, only H2-H6): True
+
+  5. FAQ SECTION:
+     has_faq_heading: True
+     has_faq_block: False
+     has_faq_schema: False
+     has_details_element: False
+     has_qa_pattern: False
+
+  6. RELATED READING:
+     has_related_heading: True
+     has_internal_links_section: False
+     internal_link_count: 0
+
+  7. AFFILIATE DISCLOSURE / INFO-BOX DIVS:
+     Has affiliate disclosure text: False
+     Has info-box class: False
+     Has wp:html blocks: False
+     wp:html block count: 0
+     Has styled divs (inline bg): False
+     Custom CSS classes found: []
+
+  8. STRUCTURE PATTERN:
+     Detected sections: CONCLUSION -> BODY -> BODY -> BODY -> BODY -> BODY -> FAQ -> BODY -> BODY -> BODY -> RELATED_READING
+
+  RAW CONTENT PREVIEW (first 500 chars):
+     <!-- wp:heading {"level":2} -->
+     <h2>Quick Summary</h2>
+     <!-- /wp:heading -->
+     
+     <!-- wp:paragraph -->
+     <p>Getting the right bed size matters more than most owners realise. A bed that is too small forces awkward sleep positions, while one that is too large can feel insecure for anxious dogs. This guide covers measuring techniques, breed-specific sizing, and how sleep position affects bed choice.</p>
+     <!-- /wp:paragraph -->
+     
+     <!-- wp:separator -->
+     <hr class="wp-block-separator has-alpha-channel-opacity"
+
+  ALL HEADINGS IN CONTENT:
+     H2: Quick Summary
+     H2: Why Bed Size Matters
+     H2: How to Measure Your Dog
+     H2: Sleep Position and Bed Shape
+     H2: Size Guide by Breed Category
+     H2: When to Size Up
+     H2: Frequently Asked Questions
+     H3: Should I get a bigger bed for a puppy?
+     H3: Can two dogs share one bed?
+     H3: How often should I replace a dog bed?
+     H2: Related Reading
+
+================================================================================
+  POST ID 4563: Phase 10C - Dog Care post
+================================================================================
+  Title: Dog Grooming Basics: A Complete Guide for Owners
+  Status: publish
+  Slug: dog-grooming-basics-guide
+  Raw content length: 5566 chars
+
+  1. BLOCK TYPES PRESENT:
+     - wp:heading
+     - wp:list
+     - wp:paragraph
+
+  2. HERO/FEATURED IMAGE:
+     Featured media ID: 0
+     Cover block at top: False
+     Image block at top: False
+     Media-text at top: False
+     Any hero element: False
+
+  3. TOP INFO STRIP:
+     has_date_reference: False
+     has_site_name: False
+     has_business_name: False
+     has_info_box_top: False
+
+  4. HEADING HIERARCHY:
+     Levels found: [2, 3]
+     H1 in body: False
+     Correct (no H1, only H2-H6): True
+
+  5. FAQ SECTION:
+     has_faq_heading: True
+     has_faq_block: False
+     has_faq_schema: False
+     has_details_element: False
+     has_qa_pattern: False
+
+  6. RELATED READING:
+     has_related_heading: False
+     has_internal_links_section: False
+     internal_link_count: 1
+
+  7. AFFILIATE DISCLOSURE / INFO-BOX DIVS:
+     Has affiliate disclosure text: False
+     Has info-box class: False
+     Has wp:html blocks: False
+     wp:html block count: 0
+     Has styled divs (inline bg): False
+     Custom CSS classes found: []
+
+  8. STRUCTURE PATTERN:
+     Detected sections: INTRO -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> FAQ -> BODY -> BODY -> BODY
+
+  RAW CONTENT PREVIEW (first 500 chars):
+     <!-- wp:paragraph {"style":{"typography":{"fontSize":"0.95em"}}} -->
+     <p style="font-size:0.95em"><strong>Quick Summary:</strong> Regular grooming keeps your dog healthy and comfortable. This guide covers brushing, bathing, nail care, ear cleaning, and dental hygiene — with practical frequency recommendations for different coat types.</p>
+     <!-- /wp:paragraph -->
+     
+     <!-- wp:heading {"level":2} -->
+     <h2>Why Regular Grooming Matters</h2>
+     <!-- /wp:heading -->
+     
+     <!-- wp:paragraph -->
+     <p>Grooming is not jus
+
+  ALL HEADINGS IN CONTENT:
+     H2: Why Regular Grooming Matters
+     H2: Brushing: Frequency by Coat Type
+     H2: Bathing Your Dog
+     H2: Nail Trimming
+     H2: Ear Cleaning
+     H2: Dental Hygiene
+     H2: Frequently Asked Questions
+     H3: How often should I groom my dog?
+     H3: Can I use human shampoo on my dog?
+     H3: What if my dog hates being groomed?
+
+================================================================================
+  POST ID 3996: Older pillar post - Dog Beds
+================================================================================
+  Title: Best Dog Beds UK (2026) – Complete Guide & Honest Reviews
+  Status: publish
+  Slug: best-dog-beds-uk
+  Raw content length: 13732 chars
+
+  1. BLOCK TYPES PRESENT:
+     - wp:heading
+     - wp:html
+     - wp:list
+     - wp:paragraph
+     - wp:separator
+
+  2. HERO/FEATURED IMAGE:
+     Featured media ID: 3992
+     Cover block at top: False
+     Image block at top: False
+     Media-text at top: False
+     Any hero element: False
+
+  3. TOP INFO STRIP:
+     has_date_reference: True
+     has_site_name: True
+     has_business_name: False
+     has_info_box_top: False
+
+  4. HEADING HIERARCHY:
+     Levels found: [2, 3]
+     H1 in body: False
+     Correct (no H1, only H2-H6): True
+
+  5. FAQ SECTION:
+     has_faq_heading: True
+     has_faq_block: False
+     has_faq_schema: False
+     has_details_element: False
+     has_qa_pattern: False
+
+  6. RELATED READING:
+     has_related_heading: True
+     has_internal_links_section: False
+     internal_link_count: 3
+
+  7. AFFILIATE DISCLOSURE / INFO-BOX DIVS:
+     Has affiliate disclosure text: True
+     Has info-box class: False
+     Has wp:html blocks: True
+     wp:html block count: 2
+     Has styled divs (inline bg): True
+     Custom CSS classes found: ['affiliate-disclosure']
+
+  8. STRUCTURE PATTERN:
+     Detected sections: CONCLUSION -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> BODY -> FAQ -> BODY -> BODY -> BODY -> RELATED_READING -> RELATED_READING
+
+  RAW CONTENT PREVIEW (first 500 chars):
+     <!-- wp:heading -->
+     <h2 class="wp-block-heading">Quick Summary</h2>
+     <!-- /wp:heading -->
+     
+     <!-- wp:paragraph -->
+     <p><strong>Selecting the right dog bed affects your dog's sleep quality, joint health, and overall comfort. This guide covers the main types of dog beds available in the UK, how to choose the correct size, and what features matter most for your dog's specific needs.</strong></p>
+     <!-- /wp:paragraph -->
+     
+     <!-- wp:paragraph -->
+     <p style="font-size:0.95em"><strong>Part of our <a href="https
+
+  ALL HEADINGS IN CONTENT:
+     H2: Quick Summary
+     H2: Why Choosing the Best Dog Beds Matters for Your Dog
+     H2: How We Compare Dog Beds in the UK
+     H2: The 6 Main Types of Dog Beds in the UK
+     H3: 1. Bolster and Sofa Beds
+     H3: 2. Orthopaedic and Memory Foam Beds
+     H3: 3. Flat Mat and Cushion Beds
+     H3: 4. Nest and Donut Beds
+     H3: 5. Elevated and Cooling Beds
+     H3: 6. Waterproof and Tough Dog Beds
+     H2: How to Choose the Best Dog Bed for Your Dog
+     H3: Get the Size Right
+     H3: Consider Your Dog&#8217;s Sleep Style
+     H3: Prioritise Washability
+     H3: Match Support to Life Stage
+     H2: Dog Beds UK: What to Spend
+     H2: Best Dog Bed Brands Available in the UK
+     H2: Dog Bed Safety: What Every UK Owner Should Know
+     H2: Product Recommendations
+     H2: Frequently Asked Questions
+     H3: How often should I replace my dog&#8217;s bed?
+     H3: Can a good dog bed help with arthritis?
+     H3: Should I let my dog sleep on my bed instead?
+     H2: Related Guides
+     H2: Related Reading
+
+
+################################################################################
+  SECTION 3: CROSS-ITEM SUMMARY & FINDINGS
+################################################################################
+
+  ALL UNIQUE BLOCK TYPES ACROSS ALL ITEMS:
+    - wp:button
+    - wp:buttons
+    - wp:column
+    - wp:columns
+    - wp:cover
+    - wp:details
+    - wp:group
+    - wp:heading
+    - wp:html
+    - wp:image
+    - wp:list
+    - wp:list-item
+    - wp:paragraph
+    - wp:separator
+
+  ITEMS WITH H1 IN BODY (should be fixed):
+    [None - all clean]
+
+  ITEMS WITHOUT FAQ SECTION:
+    - Page 39
+    - Page 4402
+    - Page 4403
+    - Page 300
+
+  ITEMS WITHOUT RELATED READING SECTION:
+    - Page 39
+    - Page 4402
+    - Page 4403
+    - Page 300
+    - Post 4563
+
+  ITEMS WITH wp:html BLOCKS (legacy/non-Gutenberg):
+    - Page 1041 (1 blocks)
+    - Post 3996 (2 blocks)
+
+  TEMPLATE LIBRARY RECOMMENDATIONS:
+    Based on the audit, the following reusable patterns should be templated:
+    1. Educational Post Template (intro -> body -> FAQ -> related -> trust)
+    2. Hub/Category Page Template (intro -> subcategory grid -> links)
+    3. Trust/About Page Template (hero -> mission -> trust signals)
+    4. Pillar Post Template (ToC -> deep sections -> FAQ -> related)
+    5. Standard Info-Box / Disclosure Block Pattern
+
+================================================================================
+  END OF AUDIT REPORT
+================================================================================

@@ -1,0 +1,484 @@
+<div class="affiliate-disclosure" style="background:#f8f9fa;border-left:4px solid #0073aa;padding:12px 16px;margin-bottom:24px;font-size:0.92em;color:#555;line-height:1.5;">
+<strong>Affiliate Disclosure:</strong> Some links on this page are affiliate links. If you click an affiliate link and make a purchase, we may earn a small commission at no extra cost to you. We only recommend products we would use ourselves and that meet our editorial standards. <a href="https://pethubonline.com/affiliate-disclosure/" style="color:#0073aa;">Learn more</a>.
+</div>
+<!-- wp:cover {"url":"https://pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png","id":2334,"dimRatio":50,"customOverlayColor":"#f8f8f8","isUserOverlayColor":true,"minHeight":700,"contentPosition":"top right","isDark":false,"sizeSlug":"full","align":"full","className":"remove-top-gap","style":{"spacing":{"padding":{"top":"0px","bottom":"0px"},"margin":{"bottom":"0px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-cover alignfull is-light has-custom-content-position is-position-top-right remove-top-gap" style="margin-bottom:0px;padding-top:0px;padding-bottom:0px;min-height:700px"><img alt="Dog Supplies Hero Cover Image" class="wp-block-cover__image-background wp-image-2334 size-full" data-object-fit="cover" src="https://pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#f8f8f8"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"60px","bottom":"60px","left":"30px","right":"30px"}}},"layout":{"type":"constrained","justifyContent":"left"}} -->
+<div class="wp-block-group alignwide" style="padding-top:60px;padding-right:30px;padding-bottom:60px;padding-left:30px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"0.9em"}}} -->
+<p style="font-size:0.9em;color:#555;"><strong>Last Updated:</strong> 27 May 2026<br/><strong>Website:</strong> pethubonline.com<br/><strong>Business:</strong> Pet Hub Online</p>
+<!-- /wp:paragraph -->
+<!-- wp:separator -->
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"align":"wide","style":{"elements":{"link":{"color":{"text":"#1a1a1a"}}},"color":{"text":"#1a1a1a"},"typography":{"fontStyle":"normal","fontWeight":"700","lineHeight":"1.2","textAlign":"left","fontSize":"48px"},"spacing":{"padding":{"top":"0","bottom":"0","left":"0px","right":"0px"}}}} -->
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color" style="color:#1a1a1a;padding-top:0;padding-right:0px;padding-bottom:0;padding-left:0px;font-size:48px;font-style:normal;font-weight:700;line-height:1.2">Shop the Best Dog Supplies for Every Pup</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"align":"wide","style":{"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"typography":{"fontStyle":"normal","fontWeight":"600","textAlign":"left","fontSize":"24px"},"spacing":{"padding":{"top":"0px","bottom":"0px","left":"0px","right":"0px"},"margin":{"top":"10px"}}}} -->
+<p class="has-text-align-left alignwide has-text-color has-link-color" style="color:#333333;margin-top:10px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:24px;font-style:normal;font-weight:600">Trusted dog supplies for comfort, care, and play — all in one place.</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons {"align":"wide","style":{"typography":{"fontSize":"20px"},"spacing":{"padding":{"top":"0px","bottom":"0px","left":"0px","right":"0px"},"blockGap":{"top":"12px","left":"12px"}},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"}}},"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons alignwide has-custom-font-size" style="border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:0px;padding-right:0px;padding-bottom:0px;padding-left:0px;font-size:20px"><!-- wp:button {"style":{"spacing":{"padding":{"left":"24px","right":"24px","top":"12px","bottom":"12px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#shop-by-type" style="padding-top:12px;padding-right:24px;padding-bottom:12px;padding-left:24px">Shop Dog Supplies</a></div>
+<!-- /wp:button -->
+<!-- wp:button {"style":{"spacing":{"padding":{"left":"24px","right":"24px","top":"12px","bottom":"12px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#shop-by-type" style="padding-top:12px;padding-right:24px;padding-bottom:12px;padding-left:24px">Explore Categories</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover -->
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Table of Contents</h2>
+<!-- /wp:heading -->
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><a href="#toc-ds-guide">Complete Guide to Essential Dog Supplies</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><a href="#toc-ds-feeding">Feeding and Nutrition Essentials</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><a href="#toc-ds-walking">Walking and Outdoor Gear</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><a href="#toc-ds-comfort">Comfort and Rest</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><a href="#toc-ds-grooming">Grooming and Hygiene</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><a href="#toc-ds-play">Toys and Mental Stimulation</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><a href="#toc-ds-health">Health and Safety Products</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><a href="#toc-ds-puppy">Puppy-Specific Essentials</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><a href="#toc-ds-senior">Senior Pet Products</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><a href="#toc-ds-travel">Travel Gear</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><a href="#toc-ds-breed">Breed-Specific Supplies</a></li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li><a href="#toc-ds-faq">Frequently Asked Questions</a></li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"40px","bottom":"40px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide has-white-background-color has-background" style="padding-top:40px;padding-bottom:40px"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"#1a1a1a"}}},"color":{"text":"#1a1a1a"},"typography":{"fontStyle":"normal","fontWeight":"700","textAlign":"center"},"spacing":{"padding":{"top":"22px","bottom":"22px"}}},"fontSize":"large"} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color has-large-font-size" style="color:#1a1a1a;padding-top:22px;padding-bottom:22px;font-style:normal;font-weight:700">Everything Your Dog Needs, All in One Place</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"typography":{"textAlign":"center"},"spacing":{"padding":{"top":"22px","bottom":"22px"}}},"fontSize":"medium"} -->
+<p class="has-text-align-center has-text-color has-link-color has-medium-font-size" style="color:#333333;padding-top:22px;padding-bottom:22px">From playtime to bedtime, our Dog Supplies hub gathers every must‑have for happy, healthy pups. Explore trusted products for feeding, grooming, comfort, and fun — all chosen to make caring for your dog simple and rewarding.</p>
+<!-- /wp:paragraph -->
+<!-- wp:separator {"align":"wide","className":"is-style-wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<hr class="wp-block-separator alignwide has-alpha-channel-opacity is-style-wide" style="margin-top:0;margin-bottom:0"/>
+<!-- /wp:separator --></div>
+<!-- /wp:group -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"90px","bottom":"90px","left":"30px","right":"30px"}},"color":{"background":"#f7f7f7"}},"layout":{"type":"constrained"},"anchor":"shop-by-type"} -->
+<div class="wp-block-group alignfull has-background" id="shop-by-type" style="background-color:#f7f7f7;padding-top:90px;padding-right:30px;padding-bottom:90px;padding-left:30px"><!-- wp:group {"align":"wide","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide"><!-- wp:heading {"style":{"typography":{"fontSize":"32px","fontStyle":"normal","fontWeight":"700","textAlign":"center"},"spacing":{"margin":{"bottom":"0px"}},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"#1a1a1a"}}}}} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:0px;font-size:32px;font-style:normal;font-weight:700">Shop by Type: Dog Supplies</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"color":{"text":"#333333"},"elements":{"link":{"color":{"text":"#333333"}}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333">Find exactly what your dog needs by browsing our most popular supply categories.</p>
+<!-- /wp:paragraph -->
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"28px","left":"28px"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"border":{"color":"#e5e5e5","width":"5px","radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"}},"spacing":{"padding":{"top":"26px","bottom":"26px","left":"26px","right":"26px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}},"color":{"text":"#333333"},"elements":{"link":{"color":{"text":"#333333"}}}}} -->
+<p class="has-text-align-center has-text-color has-link-color" style="color:#333333;margin-bottom:12px;font-size:40px">🧸</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"#1a1a1a"}}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Toys</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#333333"},"elements":{"link":{"color":{"text":"#333333"}}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;font-size:16px">Fun, durable toys for fetch, chewing, and mental stimulation.</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} -->
+<div class="wp-block-buttons has-custom-font-size" style="font-size:16px;font-style:normal;font-weight:600"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-toys/" rel="noreferrer noopener" target="_blank">View Category</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"border":{"color":"#e5e5e5","width":"5px","radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"}},"spacing":{"padding":{"top":"26px","bottom":"26px","left":"26px","right":"26px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}},"color":{"text":"#333333"},"elements":{"link":{"color":{"text":"#333333"}}}}} -->
+<p class="has-text-align-center has-text-color has-link-color" style="color:#333333;margin-bottom:12px;font-size:40px">🐕‍🦺</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"#1a1a1a"}}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Collars &amp; Leads</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#333333"},"elements":{"link":{"color":{"text":"#333333"}}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;font-size:16px">Everyday walking gear for safety, comfort, and control.</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} -->
+<div class="wp-block-buttons has-custom-font-size" style="font-size:16px;font-style:normal;font-weight:600"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-collars-leashes/">View Category</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#e5e5e5","width":"5px"},"spacing":{"padding":{"top":"26px","bottom":"26px","left":"26px","right":"26px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}},"color":{"text":"#333333"},"elements":{"link":{"color":{"text":"#333333"}}}}} -->
+<p class="has-text-align-center has-text-color has-link-color" style="color:#333333;margin-bottom:12px;font-size:40px">🛏️</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"#1a1a1a"}}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Beds</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#333333"},"elements":{"link":{"color":{"text":"#333333"}}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;font-size:16px">Comfy sleeping spots for every size and sleeping style.</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} -->
+<div class="wp-block-buttons has-custom-font-size" style="font-size:16px;font-style:normal;font-weight:600"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-beds/">View Category</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"28px","left":"28px"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"border":{"color":"#e5e5e5","width":"5px","radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"}},"spacing":{"padding":{"top":"26px","bottom":"26px","left":"26px","right":"26px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:26px;padding-right:26px;padding-bottom:26px;padding-left:26px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom:12px;font-size:40px">✂️</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"#1a1a1a"}}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Grooming</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#333333"},"elements":{"link":{"color":{"text":"#333333"}}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;font-size:16px">Brushes, shampoos, and tools to keep coats clean and healthy.</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} -->
+<div class="wp-block-buttons has-custom-font-size" style="font-size:16px;font-style:normal;font-weight:600"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-grooming/">View Category</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"border":{"color":"#e5e5e5","width":"5px","radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"}},"spacing":{"padding":{"top":"26px","bottom":"26px","left":"25px","right":"25px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:26px;padding-right:25px;padding-bottom:26px;padding-left:25px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom:12px;font-size:40px">🍖</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"#1a1a1a"}}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Bowls &amp; Feeding</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#333333"},"elements":{"link":{"color":{"text":"#333333"}}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;font-size:16px">Bowls, feeders, and mats to keep mealtimes clean and easy.</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} -->
+<div class="wp-block-buttons has-custom-font-size" style="font-size:16px;font-style:normal;font-weight:600"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-bowls-feeding/">View Category</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"border":{"color":"#e5e5e5","width":"5px","radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"}},"spacing":{"padding":{"top":"26px","bottom":"26px","left":"25px","right":"25px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:26px;padding-right:25px;padding-bottom:26px;padding-left:25px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom:12px;font-size:40px">❤️</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"#1a1a1a"}}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Health &amp; Care</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#333333"},"elements":{"link":{"color":{"text":"#333333"}}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;font-size:16px">Essentials that support your dog’s wellbeing and daily comfort.</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} -->
+<div class="wp-block-buttons has-custom-font-size" style="font-size:16px;font-style:normal;font-weight:600"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-health-care/">View Category</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"60px","bottom":"60px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide has-white-background-color has-background" style="padding-top:60px;padding-bottom:60px"><!-- wp:heading {"style":{"typography":{"fontSize":"32px","fontStyle":"normal","fontWeight":"700","textAlign":"center"},"spacing":{"margin":{"bottom":"40px"}},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"#1a1a1a"}}}}} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:40px;font-size:32px;font-style:normal;font-weight:700">Why Pet Owners Trust Pet Hub Online</h2>
+<!-- /wp:heading -->
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}}}} -->
+<div class="wp-block-column has-border-color" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px"><!-- wp:group {"style":{"color":{"background":"#f7f7f7"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-background" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom:12px;font-size:40px">🦴</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"anchor":"toc-ds-guide"} -->
+<h2 class="wp-block-heading" id="toc-ds-guide">Complete Guide to Essential Dog Supplies</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Bringing a dog into your life is one of the most rewarding decisions you can make, but it comes with responsibility. Having the right dog supplies on hand from day one ensures your new companion settles in comfortably and stays healthy for years to come. This guide walks through every category of essential items so you can build a well-stocked home for your four-legged family member.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>The sheer variety of products on the market can feel overwhelming, especially for first-time owners. Not every trending item is necessary, and some basics are worth spending more on for durability and safety. We focus on what genuinely improves your pet's daily life rather than novelty products that end up unused in a cupboard.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"anchor":"toc-ds-feeding"} -->
+<h2 class="wp-block-heading" id="toc-ds-feeding">Feeding and Nutrition Essentials</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>A quality feeding setup starts with the right bowls. Stainless steel is the gold standard because it resists bacteria, withstands daily use, and stays put with a non-slip rubber base. Elevated feeders benefit larger breeds by reducing strain on the neck and aiding digestion. For enthusiastic eaters, slow-feeder bowls with ridged patterns prevent gulping and reduce the risk of bloat.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Fresh water should always be available. A large capacity water dispenser or fountain keeps the supply flowing and filtered throughout the day. During walks, a collapsible silicone bowl fits neatly in your pocket or attaches to your lead. Hydration matters just as much as nutrition, particularly during summer months and after exercise sessions.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Treat pouches and training reward bags are practical dog supplies that make positive reinforcement convenient during walks and obedience sessions. Choose treats that complement your pet's diet rather than adding excessive calories. Many owners find that small pieces of cooked chicken or commercial training treats with a single protein source work best for maintaining focus without overfeeding.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"anchor":"toc-ds-walking"} -->
+<h2 class="wp-block-heading" id="toc-ds-walking">Walking and Outdoor Gear</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>A well-fitted collar or harness paired with a reliable lead is the most fundamental piece of equipment you will buy. Flat collars suit calm walkers, while front-clip harnesses help manage pullers without placing pressure on the throat. Retractable leads offer freedom in open spaces but should be avoided near roads or crowded areas where instant control is essential.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Reflective gear transforms evening walks from risky to safe. LED clip-on lights, reflective collars, and high-visibility harnesses ensure you and your companion are seen by motorists and cyclists. Paw protection matters too. Boots or wax balm shields delicate pads from hot tarmac in summer and road salt in winter, preventing cracks and burns that are painful to heal.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Waste bags and a dispenser that clips to your lead keep walkies tidy and responsible. Biodegradable bags are widely available now and break down significantly faster than standard plastic. A hands-free lead belt allows joggers and hikers to maintain natural movement while keeping their pet securely attached at the waist.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"anchor":"toc-ds-comfort"} -->
+<h2 class="wp-block-heading" id="toc-ds-comfort">Comfort and Rest</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Every pet deserves a dedicated sleeping area that provides support for joints and muscles. Orthopaedic memory foam beds are particularly beneficial for senior animals or breeds prone to hip dysplasia. Waterproof liners underneath the cover protect against accidents, and machine-washable covers simplify maintenance after muddy adventures.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Crate training offers a safe den where your pet can retreat when overstimulated or tired. Wire crates fold flat for travel, while fabric soft crates suit well-behaved companions at outdoor events. Size the crate so your pet can stand, turn around, and lie stretched out comfortably. Adding a familiar blanket and a chew toy makes the space inviting rather than confining.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Cooling mats provide relief during heatwaves. Gel-based pads activate with pressure and require no refrigeration, making them effortless to use indoors or in the car. Elevated mesh beds also promote airflow beneath your pet, keeping them comfortable on warm days without the clinginess of a padded surface.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"anchor":"toc-ds-grooming"} -->
+<h2 class="wp-block-heading" id="toc-ds-grooming">Grooming and Hygiene</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Regular grooming maintains a healthy coat, reduces household shedding, and strengthens the bond between you and your companion. A slicker brush removes loose undercoat efficiently, while a bristle brush adds shine to the topcoat. De-shedding tools are invaluable dog supplies during seasonal coat changes when fur seems to appear on every surface in the house.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Bathing frequency depends on breed and lifestyle. A gentle, pH-balanced shampoo designed for canines preserves natural oils that protect the skin. Oatmeal-based formulas soothe itchy or sensitive skin, and waterless sprays offer a quick freshen-up between full baths. Always dry your pet thoroughly afterwards, especially around the ears, to prevent moisture-related infections.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Nail clipping, ear cleaning, and dental care complete the hygiene routine. Guillotine-style clippers suit small to medium breeds, while rotary grinders work well for large, thick nails. Ear cleaning solution on a cotton pad prevents wax buildup, and enzymatic toothpaste with a finger brush keeps gum disease at bay. Establishing these routines early in puppyhood makes lifelong maintenance far easier.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"anchor":"toc-ds-play"} -->
+<h2 class="wp-block-heading" id="toc-ds-play">Toys and Mental Stimulation</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Physical exercise alone is not enough to keep a canine mind sharp. Puzzle toys that dispense treats when manipulated correctly challenge problem-solving abilities and prevent destructive boredom. Kong-style fillable toys, snuffle mats, and hide-and-seek games provide enrichment that tires your pet mentally as much as a long walk tires them physically.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Chew toys satisfy the natural urge to gnaw while promoting dental health. Nylon bones, rubber chews, and braided rope toys each serve different chewing strengths. Always match the toy size and durability to your pet's breed and jaw strength. A toy that is too small poses a choking risk, while one that is too flimsy will be destroyed in minutes and potentially ingested.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Fetch toys like balls, frisbees, and launcher sticks encourage outdoor activity and strengthen recall training. Squeaky plush toys appeal to the prey drive and provide comfort during quiet evenings at home. Rotating the selection weekly keeps interest high without requiring a constant stream of new purchases from your dog supplies budget.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"anchor":"toc-ds-health"} -->
+<h2 class="wp-block-heading" id="toc-ds-health">Health and Safety Products</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Preventative healthcare products protect your companion from parasites, infections, and seasonal hazards. Monthly flea and tick treatments are non-negotiable, whether you choose topical spot-on solutions, oral tablets, or long-lasting collars. Worming treatments should follow the schedule recommended by your vet, typically every three months for adult animals.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>A first aid kit tailored for pets should live in an accessible spot in your home. Include wound spray, bandages, a tick removal tool, saline eye wash, and your vet's emergency number. For travel, a portable version in the car ensures you are prepared for incidents far from home. Familiarise yourself with basic first aid techniques so you can act calmly in the moment.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Identification is a safety essential that is often overlooked until it is too late. A microchip registered with up-to-date contact details provides permanent identification. Pair this with a sturdy collar tag showing your phone number as a visible backup. GPS tracking collars offer real-time location monitoring for escape artists or working animals that cover large areas off-lead.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"anchor":"toc-ds-puppy"} -->
+<h2 class="wp-block-heading" id="toc-ds-puppy">Puppy-Specific Dog Supplies</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Puppies have different needs than adult animals, and age-appropriate products support healthy development during those critical first months. Puppy pads and enzymatic cleaners handle the inevitable house-training accidents. Teething toys made from soft rubber soothe sore gums without risking damage to developing teeth. Sizing up collars and harnesses every few weeks keeps pace with rapid growth.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Socialisation tools help build confidence during the early learning window. A lightweight puppy lead, a treat pouch for reward-based training, and a range of textures and sounds in toy form all contribute to raising a well-adjusted adult animal. Investing in quality puppy dog supplies pays dividends in behaviour and health for years to come.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"anchor":"toc-ds-senior"} -->
+<h2 class="wp-block-heading" id="toc-ds-senior">Dog Supplies for Senior Pets</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Older animals benefit from specialised products that accommodate reduced mobility and changing health needs. Orthopaedic beds with memory foam ease joint pain, ramps provide access to sofas and cars without jumping, and raised feeders reduce strain on arthritic necks and shoulders. Adapting your dog supplies as your pet ages ensures they remain comfortable and dignified in their later years.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Supplements and health monitoring products become increasingly important with age. Joint support chews containing glucosamine and chondroitin help maintain cartilage. Non-slip socks or grip pads prevent sliding on hard floors. These senior-focused dog supplies may seem like a small investment, but they dramatically improve quality of life for animals dealing with the aches and limitations of old age.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"anchor":"toc-ds-travel"} -->
+<h2 class="wp-block-heading" id="toc-ds-travel">Travel Dog Supplies</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Whether it is a trip to the vet or a holiday road trip, travel-specific products make journeys safer and less stressful. A crash-tested car harness or secured crate prevents injury during sudden stops. Window shades keep the rear of the vehicle cool, and waterproof seat covers protect upholstery from muddy paws and drool.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Portable versions of everyday items adapt your routine to any location. Collapsible bowls, travel-sized treat bags, and compact waste bag dispensers fit easily into a rucksack or car boot. For overnight stays, a lightweight travel bed gives your pet a familiar sleeping surface that smells like home, reducing anxiety in unfamiliar environments.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"anchor":"toc-ds-faq"} -->
+<h2 class="wp-block-heading" id="toc-ds-faq">Frequently Asked Questions</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p><strong>What should I buy first for a new puppy?</strong> Prioritise a collar and tag, lead, food and water bowls, age-appropriate food, a crate or bed, puppy pads, a few chew toys, and enzymatic cleaner for inevitable accidents. Add grooming tools and training treats within the first week.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>How do I choose the right size products?</strong> Measure your pet's neck for collars, chest girth for harnesses, and nose-to-tail length for beds and crates. Most manufacturers provide sizing charts. When between sizes, choose the larger option to allow room for adjustment and comfort.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>Are expensive products always better?</strong> Not necessarily, but investing in quality for high-use items like beds, leads, and feeding bowls pays off through longevity and safety. Budget options work fine for items with a shorter lifespan, such as plush toys that get destroyed during play.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p><strong>How often should I replace worn items?</strong> Inspect toys, leads, and harnesses weekly for fraying, cracking, or loose parts. Beds should be replaced when the filling no longer provides adequate cushioning. Bowls with scratches or chips can harbour bacteria and should be swapped for new ones.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>At Pet Hub Online, we curate our dog supplies from trusted brands that meet high standards for safety, durability, and value. Browse our full collection today and discover why thousands of pet owners trust us for their dog supplies needs.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"anchor":"toc-ds-breed"} -->
+<h2 class="wp-block-heading" id="toc-ds-breed">Breed-Specific Dog Supplies</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph -->
+<p>Different breeds have distinct needs that influence which dog supplies work best. Large breeds like Labradors and German Shepherds benefit from heavy-duty chew toys, XL beds, and raised feeders that protect their joints during meals. Small breeds such as Chihuahuas and Yorkshire Terriers need appropriately sized dog supplies including lightweight harnesses, small-kibble bowls, and snug-fitting coats for cold weather walks.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Working breeds and high-energy dogs require dog supplies that channel their drive. Agility sets, scent-tracking kits, and long training leads support structured exercise and mental engagement. Conversely, brachycephalic breeds like Bulldogs and Pugs need cooling dog supplies, padded harnesses that avoid neck pressure, and shallow water bowls that accommodate their flat faces during drinking.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Double-coated breeds demand specific grooming dog supplies. An undercoat rake, de-shedding tool, and high-velocity dryer make seasonal coat management far more efficient. Wire-haired breeds benefit from stripping knives and bristle brushes in their dog supplies grooming kit. Understanding your breed's unique requirements helps you select dog supplies that genuinely improve their quality of life rather than collecting products that sit unused.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>Choosing the right dog supplies does not have to be complicated. Focus on safety, comfort, nutrition, and mental stimulation as your four guiding principles. When every product in your dog supplies collection serves one of those purposes, you know your companion is well cared for. Visit Pet Hub Online to explore our hand-picked range of dog supplies designed for every breed, size, and life stage.</p>
+<!-- /wp:paragraph -->
+<!-- wp:paragraph -->
+<p>A well-prepared home makes all the difference for your companion's happiness and health. By investing in quality essentials, maintaining a consistent care routine, and adapting your product selection as your pet grows and ages, you provide the foundation for a long, fulfilling life together. Start with the basics outlined in this guide, and build from there based on your individual pet's needs and preferences.</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3,"style":{"typography":{"textAlign":"center"},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"#1a1a1a"}}}}} -->
+<h3 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#1a1a1a">Trusted Brands &amp; Quality Care</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"typography":{"textAlign":"center"},"color":{"text":"#333333"},"elements":{"link":{"color":{"text":"#333333"}}}}} -->
+<p class="has-text-align-center has-text-color has-link-color" style="color:#333333">We only feature products from reputable brands that meet strict safety and durability standards. Every recommendation is evaluated based on manufacturer data, available reviews, and value.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+<!-- wp:column {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}}}} -->
+<div class="wp-block-column has-border-color" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px"><!-- wp:group {"style":{"color":{"background":"#f7f7f7"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-background" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom:12px;font-size:40px">🐕</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3,"style":{"typography":{"textAlign":"center"},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"#1a1a1a"}}}}} -->
+<h3 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#1a1a1a">Recommendations by Breed</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","textAlign":"center"},"color":{"text":"#333333"},"elements":{"link":{"color":{"text":"#333333"}}}}} -->
+<p class="has-text-align-center has-text-color has-link-color" style="color:#333333;font-size:16px">We research and curate product information to suit different breeds, sizes, and lifestyles — helping you choose confidently without endless searching saving you time.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+<!-- wp:column {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}}}} -->
+<div class="wp-block-column has-border-color" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px"><!-- wp:group {"style":{"color":{"background":"#f7f7f7"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-background" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom:12px;font-size:40px">🏡</p>
+<!-- /wp:paragraph -->
+<!-- wp:heading {"level":3,"style":{"typography":{"textAlign":"center"},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"#1a1a1a"}}}}} -->
+<h3 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#1a1a1a">Convenience You Can Count On</h3>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"typography":{"textAlign":"center"},"color":{"text":"#333333"},"elements":{"link":{"color":{"text":"#333333"}}}}} -->
+<p class="has-text-align-center has-text-color has-link-color" style="color:#333333">Shop smarter with organised categories and extremely clear guides. We make it easy to find what your dog needs, from playtime to bedtime, all in one trusted place.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"60px","bottom":"60px","left":"30px","right":"30px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide has-white-background-color has-background" style="padding-top:60px;padding-right:30px;padding-bottom:60px;padding-left:30px"><!-- wp:heading {"style":{"typography":{"fontSize":"34px","fontStyle":"normal","fontWeight":"700","lineHeight":"1.2","textAlign":"left"},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"#1a1a1a"}}}}} -->
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color" style="color:#1a1a1a;font-size:34px;font-style:normal;font-weight:700;line-height:1.2">Explore More Dog Guides &amp; Categories</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"18px","textAlign":"left"},"color":{"text":"#333333"},"elements":{"link":{"color":{"text":"#333333"}}},"spacing":{"margin":{"top":"22px","bottom":"22px"},"padding":{"top":"22px","bottom":"22px"}}}} -->
+<p class="has-text-align-left has-text-color has-link-color" style="color:#333333;margin-top:22px;margin-bottom:22px;padding-top:22px;padding-bottom:22px;font-size:18px">Looking for something more specific? Explore these popular dog categories and helpful guides to find exactly what your pup needs.</p>
+<!-- /wp:paragraph -->
+<!-- wp:columns {"align":"wide","style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"blockGap":{"top":"26px","left":"26px"},"padding":{"top":"0px","bottom":"0px"}}},"backgroundColor":"white"} -->
+<div class="wp-block-columns alignwide has-white-background-color has-background" style="margin-top:0px;margin-bottom:0px;padding-top:0px;padding-bottom:0px"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"top":"18px","bottom":"18px","left":"18px","right":"18px"},"margin":{"bottom":"16px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;margin-bottom:16px;padding-top:18px;padding-right:18px;padding-bottom:18px;padding-left:18px"><!-- wp:paragraph {"style":{"typography":{"textAlign":"left"}}} -->
+<p class="has-text-align-left">🐾 <a data-id="1041" data-type="page" href="https://pethubonline.com/dog-toys/">Dog Toys</a> - Fun, durable toys for fetch, chewing, and mental stimulation.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- wp:group {"style":{"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"top":"18px","bottom":"18px","left":"18px","right":"18px"},"margin":{"bottom":"16px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;margin-bottom:16px;padding-top:18px;padding-right:18px;padding-bottom:18px;padding-left:18px"><!-- wp:paragraph -->
+<p>🐾 <a data-id="1141" data-type="page" href="https://pethubonline.com/dog-beds/">Dog Beds</a> - Comfortable sleeping options for every size and sleeping style.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- wp:group {"style":{"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"top":"18px","bottom":"18px","left":"18px","right":"18px"},"margin":{"bottom":"16px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;margin-bottom:16px;padding-top:18px;padding-right:18px;padding-bottom:18px;padding-left:18px"><!-- wp:paragraph -->
+<p>🐾 <a data-id="1146" data-type="page" href="https://pethubonline.com/dog-collars-leashes/">Dog Collars &amp; Leashes</a> - Safe, reliable walking gear for daily adventures.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- wp:group {"style":{"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"top":"18px","bottom":"18px","left":"18px","right":"18px"},"margin":{"bottom":"16px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;margin-bottom:16px;padding-top:18px;padding-right:18px;padding-bottom:18px;padding-left:18px"><!-- wp:paragraph -->
+<p>🐾 <a data-id="1951" data-type="page" href="https://pethubonline.com/dog-bowls-feeding/">Dog Bowls &amp; Feeding</a> - Bowls, feeders, and mats for clean, easy mealtimes.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- wp:group {"style":{"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"top":"18px","bottom":"18px","left":"18px","right":"18px"},"margin":{"bottom":"16px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;margin-bottom:16px;padding-top:18px;padding-right:18px;padding-bottom:18px;padding-left:18px"><!-- wp:paragraph -->
+<p>🐾 <a data-id="1144" data-type="page" href="https://pethubonline.com/dog-grooming/">Dog Grooming</a> - Brushes, shampoos, and tools for healthy coats.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- wp:group {"style":{"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"top":"18px","bottom":"18px","left":"18px","right":"18px"},"margin":{"bottom":"16px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;margin-bottom:16px;padding-top:18px;padding-right:18px;padding-bottom:18px;padding-left:18px"><!-- wp:paragraph -->
+<p>🐾 <a data-id="1956" data-type="page" href="https://pethubonline.com/dog-training-behaviour/">Dog Training &amp; Behaviour</a> - Essentials to build confidence and good habits.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- wp:group {"style":{"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"top":"18px","bottom":"18px","left":"18px","right":"18px"},"margin":{"bottom":"16px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;margin-bottom:16px;padding-top:18px;padding-right:18px;padding-bottom:18px;padding-left:18px"><!-- wp:paragraph -->
+<p>🐾 <a data-id="1960" data-type="page" href="https://pethubonline.com/dog-health-care/">Dog Health &amp; Care</a> - Everyday wellness products for happy, healthy dogs.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- wp:group {"style":{"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"top":"18px","bottom":"18px","left":"18px","right":"18px"},"margin":{"bottom":"16px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;margin-bottom:16px;padding-top:18px;padding-right:18px;padding-bottom:18px;padding-left:18px"><!-- wp:paragraph -->
+<p>🐾 <a data-id="37" data-type="page" href="https://pethubonline.com/contact-pet-hub-online/">Contact Us</a> - Get in touch with we for help or questions.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- wp:group {"style":{"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"top":"18px","bottom":"18px","left":"18px","right":"18px"},"margin":{"bottom":"16px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;margin-bottom:16px;padding-top:18px;padding-right:18px;padding-bottom:18px;padding-left:18px"><!-- wp:paragraph -->
+<p>🐾 <a data-id="39" data-type="page" href="https://pethubonline.com/about-us/">About Pet Hub Online</a> - Learn more about Pet Hub Online and our mission.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- wp:group {"style":{"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"top":"18px","bottom":"18px","left":"18px","right":"18px"},"margin":{"bottom":"16px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;margin-bottom:16px;padding-top:18px;padding-right:18px;padding-bottom:18px;padding-left:18px"><!-- wp:paragraph -->
+<p>🐾 <a data-id="38" data-type="page" href="https://pethubonline.com/blog/">Pet Blog Posts</a> - Read guides, tips, and product insights for dog owners.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+<!-- wp:group {"align":"full","style":{"color":{"background":"#fafafa"},"spacing":{"padding":{"top":"90px","bottom":"90px","left":"30px","right":"30px"}},"border":{"width":"0px","style":"none"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-background" style="border-style:none;border-width:0px;background-color:#fafafa;padding-top:90px;padding-right:30px;padding-bottom:90px;padding-left:30px"><!-- wp:paragraph {"style":{"typography":{"textAlign":"center","fontSize":"14px","lineHeight":1.4},"color":{"text":"#333333"},"elements":{"link":{"color":{"text":"#333333"}}}}} -->
+<p class="has-text-align-center has-text-color has-link-color" style="color:#333333;font-size:14px;line-height:1.4">Updated weekly • Independent reviews • No sponsored products • Trusted by pet owners</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+<!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull"><!-- wp:columns {"align":"wide"} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"#1a1a1a"}}},"color":{"text":"#1a1a1a"},"typography":{"fontSize":"40px","textAlign":"left"},"spacing":{"margin":{"bottom":"16px"}}}} -->
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:16px;font-size:40px">Find the Perfect Supplies for Your Dog Today</h2>
+<!-- /wp:heading -->
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"margin":{"bottom":"28px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;margin-bottom:28px">From everyday essentials to comfort, care, and play, we make it easy to find the right supplies for your dog. Explore trusted categories and discover products that help your pup live a happier, healthier life.</p>
+<!-- /wp:paragraph -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"style":{"spacing":{"padding":{"left":"28px","right":"28px","top":"14px","bottom":"14px"}},"typography":{"fontSize":"18px"}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-custom-font-size wp-element-button" href="#shop-by-type" style="padding-top:14px;padding-right:28px;padding-bottom:14px;padding-left:28px;font-size:18px">Shop Dog Supplies</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
+<!-- wp:column {"verticalAlignment":"center"} -->
+<div class="wp-block-column is-vertically-aligned-center"><!-- wp:image {"id":2424,"sizeSlug":"full","linkDestination":"none"} -->
+<figure class="wp-block-image size-full"><img alt="Featured image for dog supplies guide on PetHubOnline" class="wp-image-2424" src="https://pethubonline.com/wp-content/uploads/2026/05/dog-supplies-final-cta-image.png"/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

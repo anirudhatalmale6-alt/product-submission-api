@@ -1,0 +1,980 @@
+<!-- wp:html -->
+<div class="affiliate-disclosure" style="background:#f8f9fa;border-left:4px solid #0073aa;padding:12px 16px;margin-bottom:24px;font-size:0.92em;color:#555;line-height:1.5;">
+<strong>Affiliate Disclosure:</strong> Some links on this page are affiliate links. If you click an affiliate link and make a purchase, we may earn a small commission at no extra cost to you. We only recommend products we would use ourselves and that meet our editorial standards. <a href="https://pethubonline.com/affiliate-disclosure/" style="color:#0073aa;">Learn more</a>.
+</div>
+<!-- /wp:html -->
+
+<!-- wp:cover -->
+<div class="wp-block-cover alignfull is-light has-custom-content-position is-position-top-left remove-top-gap" style="margin-bottom:40px;padding-top:10px;padding-bottom:10px;min-height:750px;aspect-ratio:unset;"><img data-attachment-id="3326" data-permalink="https://pethubonline.com/cat-scratching-posts/cat-scratching-post-cover-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-scratching-post-cover-image.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="cat scratching post cover image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-scratching-post-cover-image.png?fit=1024%2C683&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1536" height="1024" data-attachment-id="3326" data-permalink="https://pethubonline.com/cat-scratching-posts/cat-scratching-post-cover-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-scratching-post-cover-image.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="cat scratching post cover image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-scratching-post-cover-image.png?fit=1024%2C683&amp;ssl=1" alt="cat scratching posts " class="wp-block-cover__image-background wp-image-3326 size-full" data-object-fit="cover" data-object-position="56% 64%" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-scratching-post-cover-image.png?resize=1536%2C1024&#038;ssl=1" style="object-position:56% 64%" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-scratching-post-cover-image.png?w=1536&amp;ssl=1 1536w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-scratching-post-cover-image.png?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-scratching-post-cover-image.png?resize=1024%2C683&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-scratching-post-cover-image.png?resize=768%2C512&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-scratching-post-cover-image.png?resize=1200%2C800&amp;ssl=1 1200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#f8f8f8"></span></p>
+<div class="wp-block-cover__inner-container is-layout-flow wp-block-cover-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color wp-elements-695e493c5bbe87d9c8ff2345839f7d2a" style="color:#222222;padding-top:0;padding-right:0px;padding-bottom:0;padding-left:0px;font-size:56px;font-style:normal;font-weight:700;line-height:1.2">Best Cat Scratching Posts &amp; Trees</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-left alignwide has-text-color has-link-color wp-elements-e7353b8107b988c162186564ed60a2ed wp-block-paragraph" style="color:#444444;padding-top:20px;padding-right:0px;padding-bottom:20px;padding-left:0px;font-size:20px;font-style:normal;font-weight:600">Keep your cat happy and your furniture safe with the perfect scratching post</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons alignwide has-custom-font-size is-content-justification-left is-layout-flex wp-container-core-buttons-is-layout-3fe550fd wp-block-buttons-is-layout-flex" style="padding-top:50px;padding-right:16px;padding-bottom:50px;padding-left:16px;font-size:20px">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#cat-scratching-posts">Shop All Scratching Posts</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#bestsellers">See Our Top Picks</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+</div>
+<!-- /wp:cover -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-5ba97a05 wp-block-group-is-layout-constrained" style="border-color:#e0e0e0;border-width:1px;border-radius:8px;padding-top:20px;padding-right:25px;padding-bottom:20px;padding-left:25px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="font-size:22px">Table of Contents</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><a href="#why-cats-need-a-scratching-post">Why Cats Need a Scratching Post</a></li>
+<li><a href="#top-5-best-cat-scratching-posts">Top 5 Best Cat Scratching Posts</a></li>
+<li><a href="#shop-by-scratching-post-type">Shop by Scratching Post Type</a></li>
+<li><a href="#how-to-choose-the-right-cat-scratching-post">How to Choose the Right Cat Scratching Post</a></li>
+<li><a href="#who-this-page-is-for">Who This Page Is For</a></li>
+<li><a href="#cat-scratching-posts-faq">Cat Scratching Posts FAQ</a></li>
+<li><a href="#useful-tips-for-every-pet-owner">Useful Tips for Every Pet Owner</a></li>
+<li><a href="#why-pet-owners-trust-pet-hub-online">Why Pet Owners Trust Pet Hub Online</a></li>
+<li><a href="#explore-more-cat-essentials">Explore More Cat Essentials</a></li>
+<li><a href="#find-the-perfect-cat-scratching-post-today">Find the Perfect Cat Scratching Post Today</a></li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide is-layout-constrained wp-container-core-group-is-layout-653a7e54 wp-block-group-is-layout-constrained" style="padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-651828ae491132f00eca98e8fc96b2c0" id="why-cats-need-a-scratching-post" style="color:#222222;padding-top:22px;padding-bottom:22px;font-size:32px;font-style:normal;font-weight:700">Why Cats Need a Scratching Post</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-bb879fbf7e4ae8cdb543b4f972b6c537 wp-block-paragraph" style="color:#444444;padding-top:0px;padding-bottom:0px;font-size:18px;line-height:1.5">Scratching is one of the most fundamental behaviours in the feline world. It is not a sign of naughtiness or boredom — it is a deeply ingrained instinct that every cat needs to express. A quality <strong>cat scratching post</strong> gives your cat a dedicated outlet for claw maintenance, full-body stretching, territorial marking, and emotional regulation. Without one, cats will redirect this behaviour to your sofa, carpets, and door frames.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-46a03d81dc04b91992217771a59525df wp-block-paragraph" style="color:#444444;padding-top:0px;padding-bottom:0px;font-size:18px;line-height:1.5">Whether your cat prefers to <strong>scratch vertically, horizontally, or at an angle</strong>, this guide will help you find <strong>cat scratching posts</strong> that are <a href="#cat-scratching-posts">sturdy, satisfying, and perfectly suited</a> to their <strong>size, scratching style, and living space</strong>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-001f8cd72ea3d9487c778cc2518f3192 wp-block-paragraph" style="color:#444444;padding-top:0px;padding-bottom:0px;font-size:18px;line-height:1.5">Scroll down to explore our <strong><a href="#bestsellers">top 5 best cat scratching posts</a></strong> and shop by type to find the ideal match for your feline friend.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator alignwide has-alpha-channel-opacity is-style-wide" style="margin-top:0;margin-bottom:0"/>
+<!-- /wp:separator -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-c09a0d19 wp-block-group-is-layout-constrained" id="bestsellers" style="padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color wp-elements-c98402721d8ac9305fda7a7ce50492e1" id="top-5-best-cat-scratching-posts" style="color:#111111;margin-bottom:40px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Top 5 Best Cat Scratching Posts</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:18px">These are our top picks for sturdy, satisfying, and durable cat scratching posts for all breeds and ages.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns equal-cards is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-13910493 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3234" data-permalink="https://pethubonline.com/tall-sisal-scratching-post/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/tall-sisal-scratching-post.jpg?fit=464%2C500&amp;ssl=1" data-orig-size="464,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Tall Sisal Rope Scratching Post" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/tall-sisal-scratching-post.jpg?fit=464%2C500&amp;ssl=1" data-recalc-dims="1" decoding="async" data-attachment-id="3234" data-permalink="https://pethubonline.com/tall-sisal-scratching-post/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/tall-sisal-scratching-post.jpg?fit=464%2C500&amp;ssl=1" data-orig-size="464,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Tall Sisal Rope Scratching Post" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/tall-sisal-scratching-post.jpg?fit=464%2C500&amp;ssl=1" alt="Tall Sisal Rope Scratching Post" class="wp-image-3234" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/tall-sisal-scratching-post-new.jpg?ssl=1" style="object-fit:contain;width:auto;height:200px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-d47f3f6324fdcfd8b641a3e229535ac5" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Tall Sisal Rope Scratching Post →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-02e9a8f9a0abc554b24691508b8156f7 wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A sturdy full-height sisal post that lets cats stretch and scratch to their heart&#8217;s content.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-274fd6cd29428d1d5c8efe994d7ba749" style="color:#333333;font-size:15px;line-height:1.6">
+<li><strong>Natural sisal rope</strong> — cats prefer it over carpet or furniture</li>
+<li><strong>Heavy weighted base</strong> — won&#8217;t topple even with vigorous scratching</li>
+<li><strong>80cm tall</strong> — allows full-body stretching for adult cats</li>
+<li><strong>Replaceable sisal wrap</strong> — extend the life of the post</li>
+<li><strong>Small footprint</strong> — fits easily in any room</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=tall+sisal+cat+scratching+post&amp;tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-13910493 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3235" data-permalink="https://pethubonline.com/cat-tree-scratching-post/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-tree-scratching-post.jpg?fit=360%2C500&amp;ssl=1" data-orig-size="360,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Cat Tree with Scratching Post" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-tree-scratching-post.jpg?fit=360%2C500&amp;ssl=1" data-recalc-dims="1" decoding="async" data-attachment-id="3235" data-permalink="https://pethubonline.com/cat-tree-scratching-post/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-tree-scratching-post.jpg?fit=360%2C500&amp;ssl=1" data-orig-size="360,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Cat Tree with Scratching Post" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-tree-scratching-post.jpg?fit=360%2C500&amp;ssl=1" alt="Cat Tree with Scratching Post" class="wp-image-3235" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cat-tree-scratching-post-new.jpg?ssl=1" style="object-fit:contain;width:auto;height:200px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-8610e0dfa321eb3af9728eac144eca69" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Tree with Scratching Post →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-8b7d7eab9c5c66c9212ee581461612a6 wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A multi-level activity centre combining scratching posts, platforms, and a cosy hideaway.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-790f83bc3c58b8021e425784cd83efe7" style="color:#333333;font-size:15px;line-height:1.6">
+<li><strong>Multiple scratching surfaces</strong> — sisal posts on every level</li>
+<li><strong>Plush platforms</strong> — perfect for resting and perching</li>
+<li><strong>Enclosed cave bed</strong> — private hideaway for shy cats</li>
+<li><strong>Dangling toy</strong> — built-in entertainment for playful cats</li>
+<li><strong>Sturdy construction</strong> — supports multiple cats at once</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=cat+tree+scratching+post&amp;tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns equal-cards is-layout-flex wp-container-core-columns-is-layout-52b7c8f9 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-13910493 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3236" data-permalink="https://pethubonline.com/wall-mounted-cat-scratcher/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/wall-mounted-cat-scratcher.jpg?fit=500%2C500&amp;ssl=1" data-orig-size="500,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Wall-Mounted Cat Scratcher" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/wall-mounted-cat-scratcher.jpg?fit=500%2C500&amp;ssl=1" data-recalc-dims="1" decoding="async" data-attachment-id="3236" data-permalink="https://pethubonline.com/wall-mounted-cat-scratcher/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/wall-mounted-cat-scratcher.jpg?fit=500%2C500&amp;ssl=1" data-orig-size="500,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Wall-Mounted Cat Scratcher" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/wall-mounted-cat-scratcher.jpg?fit=500%2C500&amp;ssl=1" alt="Wall-Mounted Cat Scratcher" class="wp-image-3236" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/wall-mounted-cat-scratcher-new.jpg?ssl=1" style="object-fit:contain;width:auto;height:200px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-88c1b1dc0407d28191b12dee03a66427" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Wall-Mounted Cat Scratcher →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-353533624bc22f6a3a8391b8d3e97ff5 wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A space-saving wall-mounted scratcher that keeps floors clear and cats entertained.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-d229708e61a1102cee98bf6adfb0774f" style="color:#333333;font-size:15px;line-height:1.6">
+<li><strong>Mounts directly to the wall</strong> — zero floor space required</li>
+<li><strong>Natural sisal surface</strong> — irresistible scratching texture</li>
+<li><strong>Adjustable height</strong> — position at the perfect level for your cat</li>
+<li><strong>Modern minimalist design</strong> — blends with any home décor</li>
+<li><strong>Ideal for small flats</strong> — perfect for renters with limited space</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=wall+mounted+cat+scratcher&amp;tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-13910493 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3237" data-permalink="https://pethubonline.com/cardboard-cat-scratcher-lounge/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cardboard-cat-scratcher-lounge.jpg?fit=500%2C398&amp;ssl=1" data-orig-size="500,398" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Cardboard Cat Scratcher Lounge" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cardboard-cat-scratcher-lounge.jpg?fit=500%2C398&amp;ssl=1" data-recalc-dims="1" decoding="async" data-attachment-id="3237" data-permalink="https://pethubonline.com/cardboard-cat-scratcher-lounge/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cardboard-cat-scratcher-lounge.jpg?fit=500%2C398&amp;ssl=1" data-orig-size="500,398" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Cardboard Cat Scratcher Lounge" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cardboard-cat-scratcher-lounge.jpg?fit=500%2C398&amp;ssl=1" alt="Cardboard Cat Scratcher Lounge" class="wp-image-3237" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/cardboard-cat-scratcher-lounge-new.jpg?ssl=1" style="object-fit:contain;width:auto;height:200px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-524cba47b4a272920a5f3bc0a1394077" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cardboard Cat Scratcher Lounge →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-5feaa28b57f0b0b640241bce2df5b021 wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A curved corrugated cardboard scratcher that doubles as a lounger.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-ddf38afa878695b9afcd05ae5be95e0c" style="color:#333333;font-size:15px;line-height:1.6">
+<li><strong>Corrugated cardboard</strong> — satisfying texture cats love to scratch</li>
+<li><strong>Reversible design</strong> — flip it over for double the lifespan</li>
+<li><strong>Includes catnip</strong> — sprinkle it on to attract your cat instantly</li>
+<li><strong>Eco-friendly material</strong> — recyclable and biodegradable</li>
+<li><strong>Budget-friendly</strong> — great value for money</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=cardboard+cat+scratcher+lounge&amp;tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-be441220 wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:image -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-attachment-id="3238" data-permalink="https://pethubonline.com/corner-cat-scratching-post/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/corner-cat-scratching-post.jpg?fit=500%2C500&amp;ssl=1" data-orig-size="500,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Corner Cat Scratching Post" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/corner-cat-scratching-post.jpg?fit=500%2C500&amp;ssl=1" data-recalc-dims="1" decoding="async" data-attachment-id="3238" data-permalink="https://pethubonline.com/corner-cat-scratching-post/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/corner-cat-scratching-post.jpg?fit=500%2C500&amp;ssl=1" data-orig-size="500,500" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;,&quot;alt&quot;:&quot;&quot;}" data-image-title="Corner Cat Scratching Post" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/corner-cat-scratching-post.jpg?fit=500%2C500&amp;ssl=1" alt="Corner Cat Scratching Post" class="wp-image-3238" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/corner-cat-scratching-post-new.jpg?ssl=1" style="object-fit:contain;width:auto;height:200px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-5d9b816d2f8932c6cbaf077967d1f4ad" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Corner Cat Scratching Post →</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-324ceffb7d92d85b50cc70441729610a wp-block-paragraph" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">A clever corner-fitting scratching post that protects furniture edges while saving space.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-2598dbf5344e631a6f3dc37d8cce3754" style="color:#333333;font-size:15px;line-height:1.6">
+<li><strong>Fits snugly into corners</strong> — protects the exact spot cats target most</li>
+<li><strong>Durable sisal fabric</strong> — long-lasting and satisfying to scratch</li>
+<li><strong>Wall-mountable design</strong> — secure it in place for heavy scratchers</li>
+<li><strong>Neutral colour options</strong> — blends with furniture and walls</li>
+<li><strong>Easy to install</strong> — no tools required for freestanding use</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-layout-flex wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=corner+cat+scratching+post&amp;tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" id="cat-scratching-posts" style="padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-8e6c7c07895a5bf3187b094ab5a1ec99" id="shop-by-scratching-post-type" style="color:#1a1a1a;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Shop by Scratching Post Type</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-5fbdae8ed7b37a567eae7cb4d84d18c1 wp-block-paragraph" style="color:#4a4a4a;margin-top:22px;margin-bottom:22px;padding-top:22px;padding-bottom:22px;font-size:18px">Find the perfect scratching post for your cat based on their scratching style, your space, and your budget.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-cbe286e1 wp-block-columns-is-layout-flex" style="margin-top:0px;margin-bottom:0px;padding-top:22px;padding-bottom:22px">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-8b2f71d4a5a16975840ddfce53ddef1f" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Sisal Rope Posts</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-c68a5fb12835d25039af3b0449fb5965 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px"><strong>Best for vertical scratchers.</strong> Classic upright posts wrapped in natural sisal rope provide the rough, bark-like texture cats crave. Ideal for cats that scratch door frames and sofa corners.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-457d9a8a8b9a649df4e6fd9228e62aa1" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Cat Trees &amp; Towers</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-8b86aaa348f2a0f00a73dd682a6ed020 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px"><strong>Perfect for active, multi-cat homes.</strong> Multi-level activity centres combining scratching posts, platforms, hideaways, and toys in one space-saving unit.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-cbe286e1 wp-block-columns-is-layout-flex" style="margin-top:0px;margin-bottom:0px;padding-top:22px;padding-bottom:22px">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-949409f50fd3f0dabac66a40f7e3f22c" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Cardboard Scratchers</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-5ec3e10a93be7addaf8dd58b06d499ff wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px"><strong>Great for horizontal scratchers on a budget.</strong> Corrugated cardboard pads and loungers offer a satisfying scratching surface that cats love, at an affordable price. Eco-friendly and replaceable.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-a4d851691163dbd9ca695b2f7097a287" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Wall-Mounted Scratchers</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-ccfe18edd3bf6b2de25c9acc82b6d0d3 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px"><strong>Ideal for small spaces and modern homes.</strong> Mount directly to the wall to save floor space. Adjustable positioning and sleek designs that blend seamlessly with your decor.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignfull has-background is-layout-constrained wp-block-group-is-layout-constrained" style="background-color:#fafafa;padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-1317dcadb2a82e4bc0f9f135684cc094" id="how-to-choose-the-right-cat-scratching-post" style="color:#111111;margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">How to Choose the Right Cat Scratching Post</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-8a0826ded5731782efc02f447b091d49 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:18px">Choosing the right cat scratching post comes down to your cat&#8217;s size, scratching style, the material they prefer, and where you place it. A well-chosen post protects your furniture and keeps your cat physically and mentally healthy.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-173d781f7a5f565540a2c2f823cf53f3" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">📏 Consider Your Cat&#8217;s Size</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-3851503d7feacb72960d77781a5148fe wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">The scratching post must be tall enough for your cat to stretch to full length. A post that&#8217;s too short will be ignored in favour of your furniture.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-d163dbfe2550f2265b3db170d71726e3" style="color:#333333;font-size:16px;line-height:1.6">
+<li>For most adult cats, choose a post <strong>at least 60–70 cm tall</strong>.</li>
+<li>Large breeds like <strong>Maine Coons and Ragdolls</strong> need 80–100 cm or taller.</li>
+<li>Kittens can start with smaller posts, but <strong>they&#8217;ll outgrow them quickly</strong>.</li>
+<li>Always check the <strong>base width</strong> — it should be at least as wide as the post is tall for stability.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-29e3023b55b1878b80640b25853a71a9" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🪵 Choose the Right Material</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-f8d8a671cf09ac683ca2ea40f2ee642e wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Different cats have strong preferences for scratching surfaces. Offering the right material dramatically increases the chances your cat will use their post.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-800f4da5a730e1e6933857cc9227a80a" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Sisal rope/fabric:</strong> The gold standard — coarse, durable, and universally loved by cats.</li>
+<li><strong>Corrugated cardboard:</strong> Affordable, satisfying texture, ideal for horizontal scratchers.</li>
+<li><strong>Carpet:</strong> Budget-friendly but can reinforce carpet-scratching habits elsewhere.</li>
+<li><strong>Natural wood/bark:</strong> Eco-friendly and instinctive — mimics scratching trees outdoors.</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-c36c469126f0b70584cf5c9bfffcc945 wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:12px;font-size:16px;line-height:1.6"><strong>Sisal</strong> is a natural plant fibre with a coarse, rope-like texture that cats find enormously satisfying. Sisal-wrapped <strong>cat scratching posts</strong> fray in a way that mimics bark, appealing to cats&#8217; instincts. A good sisal post can last two to four years with regular use.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-ee8520eeac7eb47540f7f4cd61b4695d wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6"><strong>Corrugated cardboard</strong> creates a deeply satisfying scratching experience and is the most affordable option. The downside is that it wears through quickly and sheds debris, so plan for regular replacements every one to four months.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-ad0cccf19c657b8ea41f3bfb27574c8d wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6"><strong>Natural wood and bark</strong> — particularly birch logs — are increasingly popular for eco-conscious cat owners. Cats evolved to scratch trees, and many take to natural wood surfaces with great enthusiasm. They can be found at garden centres as well as pet shops.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-ad0e1e1e14a0e8095f27b3946689bddf" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🏠 Think About Placement</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-70ffdf7d652c24bd1c8266fc38e99828 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Even the best scratching post will be ignored if placed in the wrong spot. Cats scratch where it matters to them — usually in prominent, social areas.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-e1e501ef0917311c0137b97cfd88c19c" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Place posts <strong>near sleeping areas</strong> — cats scratch when they wake up.</li>
+<li>Position in <strong>main living areas</strong> where your cat spends the most time.</li>
+<li>If your cat scratches furniture, place the post <strong>right next to the targeted spot</strong>.</li>
+<li>In multi-storey homes, provide <strong>at least one post per floor</strong>.</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-b35d644c694de0e785d62e2e613598b2 wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:12px;font-size:16px;line-height:1.6"><strong>Small spaces need creative solutions.</strong> Wall-mounted scratchers are the ultimate space-saver — they fix directly to the wall and take up zero floor space. You can mount them at the precise height that suits your cat and combine them with wall shelves for a complete vertical playground.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-eed5264cecd5148755b7a9ebc00a75d1 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6"><strong>Corner scratching posts</strong> fit snugly into room corners, protecting the exact spots cats tend to target while using minimal floor area. <strong>Door-hanging scratchers</strong> hook over any standard door with no permanent installation — ideal for renters who cannot drill into walls.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-b726cc1a5d8eb945947d78b3f37626ac wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Even a simple <strong>flat cardboard scratcher pad</strong> can slide under furniture when not in use, providing an affordable, replaceable scratching option for the smallest of homes.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-01aeb11526b0f1647f78aeeaf5cd3b08" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🐱 Match Your Cat&#8217;s Scratching Style</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-3383d1e3812d7ae56ba166844b35ba56 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Observe how your cat scratches — their preferred orientation and surface will guide you to the best type of post.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-7d08924694d3b6acf25a9c7e2113317d" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Vertical scratchers</strong> (door frames, sofa sides) need tall upright sisal posts.</li>
+<li><strong>Horizontal scratchers</strong> (carpets, rugs) prefer flat cardboard pads or mats.</li>
+<li><strong>Angle scratchers</strong> benefit from inclined ramp-style scratchers.</li>
+<li>Many cats enjoy <strong>multiple orientations</strong> — offer variety for the best results.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-72c9eb19 wp-block-group-is-layout-constrained" style="padding-top:50px;padding-bottom:50px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center alignwide" id="who-this-page-is-for" style="margin-bottom:25px;font-size:32px;font-style:normal;font-weight:700">Who This Page Is For</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center alignwide wp-block-paragraph" style="margin-bottom:30px;font-size:18px">Choosing the right cat scratching post isn&#8217;t one-size-fits-all. This guide is designed to help every cat owner find the perfect fit based on their cat&#8217;s needs, habits, and scratching style.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-52b7c8f9 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🐱 Kitten Owners</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">If you&#8217;re raising a kitten, establishing good scratching habits early is essential. This guide highlights the best starter posts and training tips to protect your furniture from day one.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🛋️ Furniture-Conscious Owners</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">If your cat is already scratching your sofa, carpets, or door frames, Pet Hub Online covers the most effective scratching posts and redirection techniques to save your home.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🐈 Multi-Cat Households</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">Managing scratching behaviour with multiple cats requires more posts, varied types, and strategic placement. This guide explains exactly how many you need and where to put them.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide is-layout-constrained wp-container-core-group-is-layout-4de5fae8 wp-block-group-is-layout-constrained" id="cat-scratching-posts-faq" style="padding-top:40px;padding-bottom:40px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-5e6f09264bb3e994d261e4a2d3a2371a" id="cat-scratching-posts-faq" style="color:#222222;padding-top:22px;padding-bottom:22px;font-size:32px;font-style:normal;font-weight:700">Cat Scratching Posts FAQ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>How many cat scratching posts does one cat need?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Most cat behaviour experts recommend at least two <strong>cat scratching posts</strong> per cat: one vertical post in a main living area and one horizontal pad near a sleeping spot. If your home has multiple floors, each floor should have at least one <strong>cat scratching post</strong>. Having more <strong>cat scratching posts</strong> is rarely a problem — having too few almost always is.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>How often should I replace a cat scratching post?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">A sisal-wrapped <strong>cat scratching post</strong> used by one cat typically lasts one to three years before the covering is worn through. Cardboard horizontal pads may need replacing every one to four months depending on use. Check your <strong>cat scratching posts</strong> regularly — when the material is smooth, shredded to the core, or no longer engaging your cat, it&#8217;s time to replace it. Don&#8217;t wait until the post is completely destroyed, as a worn-out <strong>cat scratching post</strong> is less effective at claw maintenance.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>My cat ignores the cat scratching post — what should I do?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">First, check the location: a scratching post tucked in a corner is likely to be ignored. Move it to a prominent spot near where the cat sleeps or spends time. Second, check the height — if the post doesn&#8217;t allow a full stretch, try a taller one. Third, try a different material: if your post is carpet-covered, try sisal. If sisal isn&#8217;t working, try a cardboard pad. Finally, use catnip or silvervine to spark interest. Hanging a <a href="/cat-toys/">cat toy</a> from the top of a vertical <strong>cat scratching post</strong> can also encourage a cat to reach up and start scratching.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>Are cat scratching posts safe for kittens?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Yes — introducing <strong>cat scratching posts</strong> to kittens early is one of the best habits you can establish. Kittens start scratching at just a few weeks old, so having a small, stable <strong>cat scratching post</strong> available from the moment they arrive home helps build good habits from the start. Make sure the base is stable enough that a playful kitten can&#8217;t knock the post over — a toppled <strong>cat scratching post</strong> can frighten a kitten and put them off using it permanently.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>Do declawed cats still need cat scratching posts?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Declawing is illegal in the UK under the Animal Welfare Act 2006, so this is less of a concern for UK cat owners. However, cats that have been declawed abroad still exhibit scratching behaviour — they go through the motions even without claws, as it&#8217;s an ingrained instinct. Declawed cats should still be provided with <strong>cat scratching posts</strong> to allow them to stretch, mark, and self-soothe, though softer materials like carpet or fleece are more comfortable for them than sisal.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>Can I use cat scratching post deterrent spray on furniture?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Yes. Deterrent sprays use citrus or bitter scents that cats find unpleasant, making treated furniture less attractive as a scratching target. They work best when used alongside <strong>cat scratching posts</strong> placed nearby — deterring the furniture while simultaneously offering an appealing alternative. Always test sprays on a hidden patch of fabric first, as some formulations can affect upholstery colours. Also check out our <a href="/cat-grooming/">cat grooming</a> section for advice on regular nail trimming, which reduces the urgency of scratching and protects furniture.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+
+<!-- wp:details -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px">
+<summary>What is the best cat scratching post for a large cat?</summary>
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Large breeds need tall, heavy-duty <strong>cat scratching posts</strong> — look for a minimum height of 80–90 cm and a very wide, weighted base. Sisal-wrapped posts with a diameter of at least 10 cm are more satisfying for large cats than thin posts, which can feel unstable under their weight. Maine Coons, Ragdolls, and Norwegian Forest Cats in particular benefit from extra-tall <strong>cat scratching posts</strong> or full cat trees with robust scratching columns.</p>
+<!-- /wp:paragraph -->
+</details>
+<!-- /wp:details -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide is-layout-constrained wp-container-core-group-is-layout-e4e56295 wp-block-group-is-layout-constrained" style="padding-top:50px;padding-bottom:50px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-1b505b7a1589fbbbcde1701117d172da" id="useful-tips-for-every-pet-owner" style="color:#222222;padding-top:22px;padding-bottom:22px;font-size:32px;font-style:normal;font-weight:700">Useful Tips for Every Pet Owner</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center has-text-color has-link-color wp-elements-1d6e6daf50963f8374f92dad2d617995 wp-block-paragraph" style="color:#444444;margin-bottom:30px;font-size:18px;line-height:1.6">From training your cat to use a scratching post to building your own DIY version, these practical tips will help you get the most out of your purchase.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-d8dd9bbc2421a8b6ca92597199ed7a97" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🎓 How to Train Your Cat to Use a Scratching Post</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-abf25130277acb9a8ff28a4ae5507f32 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Most cats will investigate a new <strong>cat scratching post</strong> fairly quickly, especially if it&#8217;s placed correctly and made from an appealing material. However, some cats — particularly those who have been scratching furniture for a long time — may need a little encouragement.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-ee7bf7ea9575d803f62b8d509f5540ea" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Step 1: Make it irresistible.</strong> Rub dried catnip into the surface or hang a favourite <a href="/cat-toys/">cat toy</a> from the top. Placing the post near where the cat already spends time increases the likelihood of a first investigation.</li>
+<li><strong>Step 2: Reward any interaction.</strong> The moment your cat sniffs, rubs against, or scratches the post, reward them immediately with a treat and verbal praise. You&#8217;re building a positive association between the <strong>cat scratching post</strong> and good things happening.</li>
+<li><strong>Step 3: Redirect, don&#8217;t punish.</strong> If you catch your cat scratching the sofa, calmly carry them to the nearest <strong>cat scratching post</strong>. Gently place their paws on the surface. Never shout at or punish a cat for scratching — punishment creates anxiety, which often increases scratching behaviour.</li>
+<li><strong>Step 4: Make unwanted surfaces less appealing.</strong> Temporarily protect furniture with double-sided sticky tape, aluminium foil, or scratch-deterrent sprays. Most of these solutions are only needed for a few weeks while the cat learns to prefer their new posts.</li>
+<li><strong>Step 5: Be patient and consistent.</strong> Training can take anywhere from a few days to a few weeks. Consistency is key — every time you redirect your cat and reward them, you reinforce the behaviour. Most cats are fully redirected within a month.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#ffffff;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-257476ee9ea70c1ab1b9338b502c88cb" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🔨 DIY Cat Scratching Post Ideas</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-color has-link-color wp-elements-9c3316e91e072a2da285cead70e3fcb3 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">If you&#8217;re handy with basic tools, making your own <strong>cat scratching posts</strong> is a rewarding and cost-effective project. Homemade posts can be customised exactly to your cat&#8217;s size preferences and your home&#8217;s décor.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list has-text-color has-link-color wp-elements-a6de9220ad9ddea3a71a62415d5c2d51" style="color:#333333;font-size:16px;line-height:1.6">
+<li><strong>Simple sisal post:</strong> A piece of 4×4 timber (at least 70 cm tall), a heavy base board, wood screws, and a roll of sisal rope. Sand the timber smooth, fix it vertically to the base, then wrap tightly with sisal from bottom to top, securing each end with a staple gun. Cover the base with carpet to prevent sliding — a sturdy post for under £20.</li>
+<li><strong>Wall-mounted post:</strong> Fix fence posts to wall brackets for a space-saving vertical scratcher. Or fashion horizontal pads from offcuts of sisal matting stapled to a backing board.</li>
+<li><strong>Natural branch scratcher:</strong> Natural tree branches — particularly birch or apple wood — can be mounted at an angle to create a natural-looking <strong>cat scratching post</strong> that doubles as décor.</li>
+<li><strong>Easy repairs:</strong> The main advantage of DIY posts is repairability. When the sisal wears through, simply unwrap the old rope and rewrap with new. This extends the life of a well-built frame almost indefinitely, making it a sustainable and economical choice.</li>
+</ul>
+<!-- /wp:list -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center" id="why-pet-owners-trust-pet-hub-online" style="margin-bottom:40px;font-size:32px;font-style:normal;font-weight:700">Why Pet Owners Trust Pet Hub Online</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<!-- wp:group -->
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🛡️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Expert‑Reviewed Picks</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">Every cat scratching post we recommend is researched and evaluated for durability, stability, and feline appeal.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<!-- wp:group -->
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">⭐</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Trusted by Pet Owners</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Thousands of pet parents rely on our guides to make confident, informed buying decisions.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<!-- wp:group -->
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">✔️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Independent &amp; Honest</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph">We only recommend products we believe in — no sponsored placements or paid rankings.</p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-12bf6960 wp-block-group-is-layout-constrained" style="padding-top:50px;padding-right:50px;padding-bottom:50px;padding-left:50px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center" id="explore-more-cat-essentials" style="margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700">Explore More Cat Essentials</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🛏️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Beds</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Find the cosiest beds for your feline friend — from calming donut beds to orthopaedic memory foam options for senior cats.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-beds/">Shop All Cat Beds</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">✂️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Grooming</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Everything you need to keep your cat clean, healthy, and looking great — from brushes and shampoos to nail clippers.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-grooming/">View Cat Grooming</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🐾</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Collars</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Find safe, comfortable cat collars with breakaway buckles, reflective strips, and ID tags for indoor and outdoor cats.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-collars/">Shop All Cat Collars</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🧶</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Toys</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Keep your cat active and entertained with interactive toys, feather wands, laser pointers, and puzzle feeders.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-toys/">Shop All Cat Toys</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🚽</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Litter Trays</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Discover the best litter trays, self-cleaning options, and litter types to keep your home fresh and your cat comfortable.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-litter-trays/">View Litter Trays</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<!-- wp:group -->
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-b62443b2 wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px">
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">❤️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Cat Health &amp; Care</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="wp-block-paragraph" style="font-size:16px">Support your cat&#8217;s wellbeing with dental care, supplements, flea treatments, and everyday essentials for a healthier pet.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3e41869c wp-block-buttons-is-layout-flex" style="font-size:16px;font-style:normal;font-weight:600">
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/cat-supplies/">Browse Health &amp; Care</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+</div>
+<!-- /wp:column -->
+</div>
+<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group -->
+<div class="wp-block-group alignwide has-background is-layout-constrained wp-block-group-is-layout-constrained" style="background-color:#f0f7fc;padding-top:60px;padding-bottom:60px">
+<!-- wp:heading -->
+<h2 class="wp-block-heading has-text-align-center" id="find-the-perfect-cat-scratching-post-today" style="margin-bottom:20px;font-size:32px;font-style:normal;font-weight:700">Find the Perfect Cat Scratching Post Today</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:30px;font-size:18px">Protect your furniture, keep your cat&#8217;s claws healthy, and give them the scratching outlet they need. Browse our top picks and find the ideal post for your home.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-5389cbe7 wp-block-buttons-is-layout-flex">
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=cat+scratching+post&amp;tag=pethubonline-21" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="sponsored noopener noreferrer">Shop Scratching Posts</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://pethubonline.com/cat-supplies/" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600">View All Cat Supplies</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
+</div>
+<!-- /wp:group -->
+
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Related Articles</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><a href="https://pethubonline.com/best-wall-mounted-cat-scratchers-uk/">Best Wall-Mounted Cat Scratchers UK (2026) – Space Saving</a></li>
+<li><a href="https://pethubonline.com/best-cardboard-cat-scratchers-uk/">Best Cardboard Cat Scratchers UK (2026) – Budget Friendly</a></li>
+<li><a href="https://pethubonline.com/best-cat-trees-uk/">Best Cat Trees UK (2026) – Climbing & Scratching Towers</a></li>
+<li><a href="https://pethubonline.com/best-cat-scratching-posts-uk/">Best Cat Scratching Posts UK (2026) – Complete Guide</a></li>
+</ul>
+<!-- /wp:list -->

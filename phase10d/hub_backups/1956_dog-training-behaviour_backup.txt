@@ -1,0 +1,992 @@
+<div class="affiliate-disclosure" style="background:#f8f9fa;border-left:4px solid #0073aa;padding:12px 16px;margin-bottom:24px;font-size:0.92em;color:#555;line-height:1.5;">
+<strong>Affiliate Disclosure:</strong> Some links on this page are affiliate links. If you click an affiliate link and make a purchase, we may earn a small commission at no extra cost to you. We only recommend products we would use ourselves and that meet our editorial standards. <a href="https://pethubonline.com/affiliate-disclosure/" style="color:#0073aa;">Learn more</a>.
+</div>
+
+<div class="wp-block-cover alignfull is-light has-custom-content-position is-position-bottom-center remove-top-gap" style="margin-bottom:40px;padding-top:10px;padding-bottom:10px;min-height:100vh;aspect-ratio:unset;"><img data-attachment-id="2334" data-permalink="https://pethubonline.com/dog-supplies/dog-supplies-hero-cover-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="dog supplies hero cover image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?fit=1024%2C683&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1536" height="1024" data-attachment-id="2334" data-permalink="https://pethubonline.com/dog-supplies/dog-supplies-hero-cover-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="dog supplies hero cover image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?fit=1024%2C683&amp;ssl=1" alt="Dog Supplies Hero Cover Image" class="wp-block-cover__image-background wp-image-2334 size-full" data-object-fit="cover" data-object-position="86% 57%" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?resize=1536%2C1024&#038;ssl=1" style="object-position:86% 57%" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?w=1536&amp;ssl=1 1536w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?resize=1024%2C683&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?resize=768%2C512&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?resize=1200%2C800&amp;ssl=1 1200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#f8f8f8"></span><div class="wp-block-cover__inner-container is-layout-constrained wp-block-cover-is-layout-constrained">
+<div class="wp-block-group is-content-justification-center is-layout-constrained wp-block-group-is-layout-constrained">
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color wp-elements-6e58c2c0e5b45a8be5f94c3bd69cb589" style="color:#222222;padding-top:0;padding-right:0px;padding-bottom:0;padding-left:0px;font-size:56px;font-style:normal;font-weight:700;line-height:1.2">Train Your Dog with Confidence</h2>
+
+<p class="has-text-align-left alignwide has-text-color has-link-color wp-elements-8eab21ff0ef8a55c65d8d24b431ad81c wp-block-paragraph" style="color:#444444;padding-top:20px;padding-right:0px;padding-bottom:20px;padding-left:0px;font-size:30px;font-style:normal;font-weight:600">From training treats and clickers to harnesses and leads, find everything you need for a well-behaved companion.</p>
+
+<div class="wp-block-buttons alignwide has-custom-font-size is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-e1881eec wp-block-buttons-is-layout-flex" style="padding-top:50px;padding-right:16px;padding-bottom:50px;padding-left:16px;font-size:20px">
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#dog-training">Shop Dog Training</a></div>
+
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#bestsellers">View Top Picks</a></div>
+</div>
+</div>
+</div></div>
+
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-5ba97a05 wp-block-group-is-layout-constrained" style="border-color:#e0e0e0;border-width:1px;border-radius:8px;padding-top:20px;padding-right:25px;padding-bottom:20px;padding-left:25px">
+<h3 class="wp-block-heading" style="font-size:22px">Table of Contents</h3>
+
+<ul class="wp-block-list">
+<li><a href="#why-dog-training-matters">Why Dog Training Matters</a></li>
+
+<li><a href="#shop-by-type">Shop by Type</a></li>
+
+<li><a href="#why-pet-owners-trust-pet-hub-online">Why Pet Owners Trust Pet Hub Online</a></li>
+
+<li><a href="#who-this-page-is-for">Who This Page Is For</a></li>
+
+<li><a href="#dog-training-faq">Dog Training FAQ</a></li>
+
+<li><a href="#how-to-choose-the-right-equipment">How to Choose the Right Equipment</a></li>
+
+<li><a href="#explore-more-dog-essentials">Explore More Dog Essentials</a></li>
+
+<li><a href="#dog-training-section">Dog Training Essentials</a></li>
+</ul>
+</div>
+
+<div class="wp-block-group alignwide is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:40px;padding-bottom:40px">
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color has-large-font-size wp-elements-b22a488c9ba247878b74817adf97e825" id="why-dog-training-matters" style="color:#222222;padding-top:22px;padding-bottom:22px;font-style:normal;font-weight:700">Why Dog Training Matters</h2>
+
+<p class="has-text-align-center has-text-color has-link-color has-medium-font-size wp-elements-1c063664a20781710217fb640d4e5c67 wp-block-paragraph" style="color:#444444;padding-top:22px;padding-bottom:22px">Proper training builds a strong bond between you and your dog, keeps them safe, and makes everyday life more enjoyable. Whether you&#8217;re teaching basic commands or working on behavioural challenges, the right approach and tools make all the difference.</p>
+
+<hr class="wp-block-separator alignwide has-alpha-channel-opacity is-style-wide" style="margin-top:0;margin-bottom:0"/>
+</div>
+
+<div class="wp-block-group alignfull has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" id="dog-training" style="padding-top:40px;padding-bottom:40px">
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color wp-elements-4789f5b41e32922211aaf178a876c432" id="shop-by-type" style="color:#1a1a1a;font-size:34px;font-style:normal;font-weight:700;line-height:1.2">Shop by Type</h2>
+
+<p class="has-text-align-left has-text-color has-link-color wp-elements-e98d3d4d64f9e660b5d9b8b77c83561e wp-block-paragraph" style="color:#4a4a4a;margin-top:22px;margin-bottom:22px;padding-top:22px;padding-bottom:22px;font-size:18px">Explore the essentials that make training effective, rewarding, and enjoyable for both you and your dog.</p>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-cbe286e1 wp-block-columns-is-layout-flex" id="bed-categories" style="margin-top:0px;margin-bottom:0px;padding-top:22px;padding-bottom:22px">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-group has-border-color has-link-color wp-elements-1d105951c31835f10f42f462a6228f6b is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--deep)">
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="1990" data-permalink="https://pethubonline.com/dog-collars-leashes/training-collar-icon/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-icon.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="training collar icon" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-icon.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="1990" data-permalink="https://pethubonline.com/dog-collars-leashes/training-collar-icon/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-icon.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="training collar icon" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-icon.png?fit=1024%2C1024&amp;ssl=1" alt="Dog training treats for positive reinforcement" class="wp-image-1990" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-icon.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-icon.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-icon.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-icon.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-icon.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-icon.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-icon.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-icon.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-icon.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-69fa0debfa6690c888bd9d138d7d427f" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Training Treats →</h3>
+
+<p class="has-text-color has-link-color wp-elements-54edc4dec2290e24dcfbb0b650a476ed wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">High-value rewards that keep your dog motivated during every session.</p>
+</div>
+
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--deep)">
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="1999" data-permalink="https://pethubonline.com/dog-collars-leashes/training-collar-2/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="training collar 2" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="1999" data-permalink="https://pethubonline.com/dog-collars-leashes/training-collar-2/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="training collar 2" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?fit=1024%2C1024&amp;ssl=1" alt="Dog training clicker and whistle tools" class="wp-image-1999" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/training-collar-2.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-fa8eb44fbcad1f8cf000a8d6da83913c" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Clickers &amp; Whistles →</h3>
+
+<p class="has-text-color has-link-color wp-elements-0fbda7599c6119ed2b5e10a3276d7183 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Precise communication tools for consistent, effective training.</p>
+</div>
+
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--deep)">
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="2191" data-permalink="https://pethubonline.com/dog-grooming/clippers-and-trimmers-spotlight-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="clippers and trimmers spotlight image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2191" data-permalink="https://pethubonline.com/dog-grooming/clippers-and-trimmers-spotlight-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="clippers and trimmers spotlight image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" alt="Dog training leads and long lines for recall practice" class="wp-image-2191" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/clippers-and-trimmers-spotlight-image.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-4ef81a4e7a11b82628f48c558118a71f" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Training Leads &amp; Lines →</h3>
+
+<p class="has-text-color has-link-color wp-elements-d54a01d3c7295e218e1ceb35b68b32d1 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Long lines and training leads for recall practice and controlled freedom.</p>
+</div>
+</div>
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="padding-top:0px;padding-bottom:0px">
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--deep)">
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="2193" data-permalink="https://pethubonline.com/dog-grooming/nail-care-tools-spotlight-imagfe/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="nail care tools spotlight imagfe" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2193" data-permalink="https://pethubonline.com/dog-grooming/nail-care-tools-spotlight-imagfe/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="nail care tools spotlight imagfe" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?fit=1024%2C1024&amp;ssl=1" alt="Dog training harness for no-pull walks" class="wp-image-2193" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/nail-care-tools-spotlight-imagfe.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-6b4827946ff267ea3372ffa942f3da61" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Training Harnesses →</h3>
+
+<p class="has-text-color has-link-color wp-elements-f2ed6cc2d2c91719e5a2ac6c64815490 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">No-pull, front-clip harnesses designed for comfortable training walks.</p>
+</div>
+
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--deep)">
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="2194" data-permalink="https://pethubonline.com/dog-grooming/ear-and-dental-care-spotlight-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="ear and dental care spotlight image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2194" data-permalink="https://pethubonline.com/dog-grooming/ear-and-dental-care-spotlight-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="ear and dental care spotlight image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" alt="Dog agility training equipment tunnels and jumps" class="wp-image-2194" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/ear-and-dental-care-spotlight-image.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-596966c6ec87f54597f75be2254de819" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Agility Equipment →</h3>
+
+<p class="has-text-color has-link-color wp-elements-7b2b9d67129e428006ad6810346596ca wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Tunnels, jumps, and weave poles for fun, active training sessions.</p>
+</div>
+
+<div class="wp-block-group has-border-color is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--deep)">
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img data-attachment-id="2222" data-permalink="https://pethubonline.com/dog-grooming/grooming-accessories-spotlight-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="grooming accessories spotlight image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1024" height="1024" data-attachment-id="2222" data-permalink="https://pethubonline.com/dog-grooming/grooming-accessories-spotlight-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" data-orig-size="1024,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="grooming accessories spotlight image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?fit=1024%2C1024&amp;ssl=1" alt="Dog training pads for puppy house training" class="wp-image-2222" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?resize=1024%2C1024&#038;ssl=1" style="box-shadow:var(--wp--preset--shadow--natural);width:150px" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?w=1024&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?resize=300%2C300&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?resize=150%2C150&amp;ssl=1 150w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?resize=768%2C768&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?resize=800%2C800&amp;ssl=1 800w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?resize=600%2C600&amp;ssl=1 600w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?resize=400%2C400&amp;ssl=1 400w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/grooming-accessories-spotlight-image.png?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" /></figure>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-4004ea6d3988c511082feffbadcc1069" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Training Pads →</h3>
+
+<p class="has-text-color has-link-color wp-elements-f349afcc41d13062ebb07a33835487cf wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Absorbent pads for puppy house-training and indoor convenience.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:60px;padding-bottom:60px">
+<h2 class="wp-block-heading has-text-align-center" id="why-pet-owners-trust-pet-hub-online" style="margin-bottom:40px;font-size:32px;font-style:normal;font-weight:700">Why Pet Owners Trust Pet Hub Online</h2>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-7387b849 wp-block-columns-is-layout-flex">
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🎯</p>
+
+<h3 class="wp-block-heading has-text-align-center">Quality You Can Trust</h3>
+
+<p class="has-text-align-center wp-block-paragraph">Every product is hand-picked for safety and effectiveness. We partner with trusted brands that meet strict training standards, so you can shop confidently knowing your dog&#8217;s wellbeing comes first.</p>
+</div>
+</div>
+
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">🐕</p>
+
+<h3 class="wp-block-heading has-text-align-center">Expert-Approved Essentials</h3>
+
+<p class="has-text-align-center wp-block-paragraph" style="font-size:16px">Our training tools are tested by professionals and pet owners alike. Each item is chosen for durability, comfort, and performance — making home training simple and stress-free.</p>
+</div>
+</div>
+
+<div class="wp-block-column has-border-color is-layout-flow wp-block-column-is-layout-flow" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px">
+<div class="wp-block-group has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<p class="has-text-align-center wp-block-paragraph" style="margin-bottom:12px;font-size:40px">💚</p>
+
+<h3 class="wp-block-heading has-text-align-center">Happy Dogs, Happy Owners</h3>
+
+<p class="has-text-align-center wp-block-paragraph">We believe training should strengthen the bond between you and your dog. With the right tools, every session becomes a moment of connection and progress.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:50px;padding-bottom:50px">
+<h2 class="wp-block-heading has-text-align-center alignwide" id="who-this-page-is-for" style="margin-bottom:25px;font-size:32px;font-style:normal;font-weight:700">Who This Page Is For</h2>
+
+<p class="has-text-align-center alignwide wp-block-paragraph" style="margin-bottom:30px;font-size:18px">Training needs vary from dog to dog — this guide helps you find the right approach and equipment for your pet.</p>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-52b7c8f9 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🐾 New Puppy Owners</h3>
+
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">New puppy owners looking to start training early. Get the fundamentals right from day one with age-appropriate tools, treats, and positive reinforcement techniques that set your puppy up for success.</p>
+</div>
+</div>
+
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🐕 Behaviour Challenges</h3>
+
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">Dog owners dealing with pulling, jumping, or barking. The right equipment and consistent approach can transform challenging behaviours into calm, confident habits for both you and your dog.</p>
+</div>
+</div>
+
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🐶 Bond Builders</h3>
+
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">Anyone wanting to strengthen their bond through positive training. Training is not just about obedience — it is about building trust, communication, and a deeper connection with your companion.</p>
+</div>
+</div>
+</div>
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-5ae4abff wp-block-columns-is-layout-flex" style="margin-top:32px">
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-318022ab wp-block-group-is-layout-constrained" style="border-color:#e5e5e5;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;min-height:0px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
+<h3 class="wp-block-heading" style="margin-bottom:10px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">🏆 Class &amp; Agility Prep</h3>
+
+<p class="wp-block-paragraph" style="font-size:16px;line-height:1.6">Owners preparing for obedience classes or agility. Whether you are gearing up for your first class or training for competitions, the right equipment helps you and your dog perform at your best.</p>
+</div>
+</div>
+
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow"></div>
+
+<div class="wp-block-column is-vertically-aligned-top is-layout-flow wp-block-column-is-layout-flow"></div>
+</div>
+</div>
+
+<div class="wp-block-group alignwide has-background is-layout-constrained wp-block-group-is-layout-constrained" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:40px;padding-bottom:40px">
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color wp-elements-85ced15dc353f59a16f83de8ce30fe83" id="dog-training-faq" style="color:#1a1a1a;margin-bottom:25px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Dog Training FAQ</h2>
+
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px"><summary><strong>When should I start training my puppy?</strong></summary>
+<p class="wp-block-paragraph">You can begin basic training as early as 8 weeks old. Start with simple commands like sit and name recognition, keeping sessions short (5-10 minutes) and always positive.</p>
+</details>
+
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px"><summary><strong>What is positive reinforcement training?</strong></summary>
+<p class="wp-block-paragraph">Positive reinforcement means rewarding your dog for desired behaviour with treats, praise, or play. It&#8217;s the most effective and humane training method, recommended by veterinary behaviourists worldwide.</p>
+</details>
+
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px"><summary><strong>How long does it take to train a dog?</strong></summary>
+<p class="wp-block-paragraph">Basic commands can be learned in a few weeks with consistent daily practice. More complex behaviours may take months. Every dog learns at their own pace — patience and consistency are key.</p>
+</details>
+
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px"><summary><strong>My dog pulls on the lead — what should I do?</strong></summary>
+<p class="wp-block-paragraph">Use a front-clip harness and practice the &#8216;stop and wait&#8217; technique — stop walking whenever your dog pulls and only continue when the lead is loose. Reward them for walking beside you.</p>
+</details>
+
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background is-layout-flow wp-block-details-is-layout-flow" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px"><summary><strong>Do I need a professional trainer?</strong></summary>
+<p class="wp-block-paragraph">Many owners successfully train their dogs at home using online resources and quality equipment. However, a professional trainer can help with specific behavioural issues like aggression, separation anxiety, or reactivity.</p>
+</details>
+</div>
+
+<div class="wp-block-group alignwide has-white-background-color has-background is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:60px;padding-bottom:60px">
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-21e494c1e1f1cda054b6a134b92805f5" id="how-to-choose-the-right-equipment" style="color:#111111;margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">How to Choose the Right Equipment</h2>
+
+<p class="has-text-align-center has-text-color has-link-color wp-elements-b385efc7033ad87c095e9b8c3ac1ff46 wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:18px">Choosing the right training equipment depends on your dog&#8217;s size, temperament, and training goals. The right combination of tools ensures a safe, effective, and enjoyable experience for both of you.</p>
+
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-b9e28dc7e44a06c28dd61126cef144c9" id="dog-training-essentials" style="color:#111111;margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Dog Training Essentials</h2>
+
+<p class="has-text-align-center has-text-color has-link-color wp-elements-8f813f33ab713f74a3e001075e55092f wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:24px;font-size:18px">From basic commands to solving common behaviour challenges, these expert-backed training cards give you everything you need to raise a well-mannered, happy dog.</p>
+
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-a84c35bfa15546d1d4a9f4cfb27098f5" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🎓 Dog Training Fundamentals and Key Commands</h3>
+
+<p class="has-text-color has-link-color wp-elements-fdd67c92f12dd5f4146225a5ecc70a06 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Successful dog training begins with understanding how dogs learn. Positive reinforcement — rewarding good behaviour with treats, praise, or play — is the most effective approach backed by modern science. Every training programme should start with five foundation commands that keep your dog safe in everyday situations.</p>
+
+<ul class="wp-block-list has-text-color has-link-color wp-elements-2eda38805cce907851c5ee3e5c40c4af" style="color:#333333;font-size:16px;line-height:1.6">
+
+<li>Use positive reinforcement (treats, praise, play) rather than punishment-based methods that can damage your bond</li>
+
+<li>Keep sessions short and frequent — aim for 5–10 minutes, 3–4 times per day, to maintain your dog’s focus</li>
+
+<li>Ensure every family member uses the same commands and follows the same rules to avoid mixed signals</li>
+
+<li>Master the five essentials first: sit, stay, come, down, and leave it — these form the building blocks for all advanced training</li>
+
+<li>Practise the ‘come’ recall in a quiet, enclosed space before adding distance and distractions — a reliable recall can save your dog’s life</li>
+
+<li>Train ‘leave it’ regularly with increasing temptations so your dog learns to ignore dangerous items on walks</li>
+
+<li>End every session on a successful note, even if you need to simplify the task, to build confidence and enthusiasm</li>
+
+</ul>
+
+</div>
+
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-5ed88a97ff3e3f05d83efae78e932cdb" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🧰 Must-Have Dog Training Tools and Equipment</h3>
+
+<p class="has-text-color has-link-color wp-elements-593e9fe78729b9248ba0641e720eb52c wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">The right equipment makes training more effective and enjoyable. From treat pouches to long lines, investing in quality tools creates a clear communication bridge between you and your dog.</p>
+
+<ul class="wp-block-list has-text-color has-link-color wp-elements-7613b0184d438125475d177837fa8c2d" style="color:#333333;font-size:16px;line-height:1.6">
+
+<li>A treat pouch keeps high-value rewards (cheese, chicken, or commercial treats) accessible during every session</li>
+
+<li>Choose tiny treats so your dog doesn’t fill up — small, soft pieces allow rapid-fire repetitions</li>
+
+<li>A clicker marks the exact moment your dog performs the desired behaviour, creating precise communication</li>
+
+<li>If a clicker isn’t your style, pick a short, consistent verbal marker word and use it the same way every time</li>
+
+<li>Long lines (5–10 metres) are invaluable for recall practice and loose-lead walking in open spaces</li>
+
+<li>Always attach a long line to a well-fitted harness rather than a collar to protect your dog’s neck during training exercises</li>
+
+<li>A front-clip harness combined with the ‘be a tree’ method significantly reduces lead pulling within weeks</li>
+
+</ul>
+
+</div>
+
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-c2802e457666acd2b8d1686675058a2f" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">📅 Puppy Training Timeline: What to Teach and When</h3>
+
+<p class="has-text-color has-link-color wp-elements-a08d0aaebe2cf00306588ec6862a212d wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Puppies develop rapidly, and timing your training to each developmental stage sets the foundation for lifelong good behaviour. Here is a stage-by-stage guide to building skills at the right pace.</p>
+
+<ul class="wp-block-list has-text-color has-link-color wp-elements-4b447e86ce3a9b1a8c427adc51fd26ef" style="color:#333333;font-size:16px;line-height:1.6">
+
+<li>Weeks 8–12: Focus on socialisation and name recognition — expose your puppy to different people, sounds, surfaces, and environments in positive ways</li>
+
+<li>Months 3–4: Introduce sit, stay, and come in 3–5 minute sessions with high-value rewards; toilet training should follow a consistent routine after meals, naps, and play</li>
+
+<li>Months 4–6: Build on basics with ‘leave it’, ‘drop it’, and loose-lead walking as your puppy’s attention span grows enough for 10-minute sessions</li>
+
+<li>Months 6–12: Stay patient through adolescence — hormones may make your pup seem to forget everything, but consistent reinforcement through this crucial phase establishes lifelong habits</li>
+
+<li>Beyond 12 months: Continue reinforcing good behaviours and introduce advanced skills like agility, scent work, or trick training to keep your dog mentally stimulated</li>
+
+<li>The critical socialisation window (8–16 weeks) shapes your puppy’s confidence and temperament for life — make every new experience a positive one</li>
+
+</ul>
+
+</div>
+
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-dacd3189e7e7f7f65137001f4ae554da" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🐕 Common Behaviour Challenges and Solutions</h3>
+
+<p class="has-text-color has-link-color wp-elements-bf1ebfac208567cd13f75f43fe2b047c wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Even well-trained dogs develop challenging behaviours. Understanding the root cause helps you apply the right solution — most issues respond well to patient, consistent redirection rather than punishment.</p>
+
+<ul class="wp-block-list has-text-color has-link-color wp-elements-5ac21a541b1a93d6eb55293b8440cd3c" style="color:#333333;font-size:16px;line-height:1.6">
+
+<li>Jumping up: completely ignore the behaviour (turn away, cross arms, no eye contact) and only reward four paws on the ground — ensure every person your dog meets follows the same rule</li>
+
+<li>Lead pulling: use the ‘be a tree’ method — stop completely when the lead goes taut and move forward only when it goes slack</li>
+
+<li>Barking at visitors: teach a ‘place’ command where your dog goes to a designated spot when the doorbell rings, and reward calm behaviour generously</li>
+
+<li>Anxiety-based barking: gradual desensitisation to the trigger, paired with high-value rewards, produces lasting results without increasing stress</li>
+
+<li>Counter-surfing or stealing food: manage the environment first (clear surfaces), then train a reliable ‘leave it’ and reward your dog for choosing to stay on the floor</li>
+
+<li>Separation anxiety: build alone-time tolerance gradually, starting with seconds and increasing duration — never punish anxious behaviour</li>
+
+</ul>
+
+</div>
+</div>
+
+<div class="wp-block-group alignwide is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:40px;padding-bottom:40px">
+
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color wp-elements-613e62e4204bf58600ff1763686d8674" id="useful-tips-for-every-pet-owner" style="color:#111111;margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Useful Tips for Every Pet Owner</h2>
+
+<p class="has-text-align-center has-text-color has-link-color wp-elements-13c11de5a5f8135a59c66ba31f9eabef wp-block-paragraph" style="color:#4a4a4a;margin-top:16px;margin-bottom:24px;font-size:18px">Whether you are a first-time owner or an experienced handler, these practical tips will help you build a stronger bond with your dog through training, environmental awareness, and daily care.</p>
+
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-bde6d1c4150d3e72023612335aec30fc" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🌍 Adapting Training to Different Environments</h3>
+
+<p class="has-text-color has-link-color wp-elements-43a604757607d8fd3a202d98c927e4ea wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Skills learned in the living room do not automatically transfer to the park, the street, or a friend&#8217;s house. Practising commands in varied settings builds reliability and teaches your dog to focus despite distractions.</p>
+
+<ul class="wp-block-list has-text-color has-link-color wp-elements-f283eb633e5d7d56d4da1f469909b3fe" style="color:#333333;font-size:16px;line-height:1.6">
+
+<li>Start in low-stimulus environments and gradually increase the challenge — a quiet garden is easier than a busy park, which is easier than a pet-friendly shop</li>
+
+<li>Practise on different surfaces (wet grass, gravel, sand, paving) to normalise unfamiliar terrain and build confidence</li>
+
+<li>Controlled introductions to new people, animals, bicycles, pushchairs, and loud vehicles prevent reactive behaviour</li>
+
+<li>Group training classes provide structured social encounters with professional oversight that catches emerging issues early</li>
+
+<li>Combine solo practice with group sessions to develop both obedience skills and a well-rounded temperament</li>
+
+<li>Always carry high-value rewards in new environments — unfamiliar settings need stronger motivation than your living room</li>
+
+</ul>
+
+</div>
+
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-83fac74b06d65fe93aa893af21b67e24" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">📝 Consistency, Patience, and Tracking Progress</h3>
+
+<p class="has-text-color has-link-color wp-elements-18dcff1dd5c120c99b42e6d0cdb11350 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">The most underrated tools in any training programme are patience and consistency. Rushed sessions lead to frustration, while steady, recorded progress keeps both you and your dog motivated for the long journey ahead.</p>
+
+<ul class="wp-block-list has-text-color has-link-color wp-elements-ba8ece9f23abcd1c7a0200556ca57751" style="color:#333333;font-size:16px;line-height:1.6">
+
+<li>Agree on a shared set of commands, reward criteria, and boundaries with every household member before you begin</li>
+
+<li>Post written house rules in a visible spot so everyone gives your dog the same clear guidance regardless of who holds the lead</li>
+
+<li>Keep a simple training journal noting date, commands practised, success rate, and distractions present for objective progress tracking</li>
+
+<li>End every session on a successful repetition — even if you need to simplify the task — to build your dog&#8217;s confidence and eagerness</li>
+
+<li>Review your journal weekly; many owners are surprised to find their dog&#8217;s reliability has improved significantly even when daily sessions feel slow</li>
+
+<li>Quality always outweighs quantity — five focused minutes beat thirty distracted ones when building lasting behavioural habits</li>
+
+</ul>
+
+</div>
+
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-8558a2a39a661f9887cff871537b3fb1" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">💡 Everyday Habits That Strengthen Your Bond</h3>
+
+<p class="has-text-color has-link-color wp-elements-b4dfd2ba349c3b5302be72a364838f53 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Training does not stop when the formal session ends. The way you interact with your dog throughout the day reinforces the behaviours you want to see and deepens the trust between you.</p>
+
+<ul class="wp-block-list has-text-color has-link-color wp-elements-a4c953921a374fdcebf92e33b53ab38b" style="color:#333333;font-size:16px;line-height:1.6">
+
+<li>Use meal times as mini training sessions — ask for a sit or a stay before placing the bowl down</li>
+
+<li>Reward calm behaviour spontaneously throughout the day, not just during dedicated training windows</li>
+
+<li>Rotate toys and enrichment puzzles weekly to keep your dog mentally stimulated and prevent boredom-based misbehaviour</li>
+
+<li>Incorporate short training cues into daily walks — practise recalls, direction changes, and sit-stays at kerbs</li>
+
+<li>Groom your dog regularly; brushing and handling exercises build tolerance for vet visits and reduce stress</li>
+
+<li>Spend at least 15 minutes of quiet, focused time with your dog each day — simply being present strengthens your relationship</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-b0768d8fe5fd92d8fa6611959326cede" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🎯 Start with the Basics</h3>
+
+<p class="has-text-color has-link-color wp-elements-39c765b46da1ceb1d182de2d6cc49080 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">A quality training lead, treat pouch, and clicker are the foundation of any training toolkit.</p>
+
+<ul class="wp-block-list has-text-color has-link-color wp-elements-8d6b67a4a7e83ea066f0d8f1a8669697" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Start with the basics: a quality training lead, treat pouch, and clicker</li>
+
+<li>Choose treats that are small, soft, and high-value — your dog should be excited to earn them</li>
+
+<li>A treat pouch keeps rewards accessible and your hands free during sessions</li>
+
+<li>A standard 1.8m lead is ideal for heel work and basic obedience</li>
+
+<li>Box clickers are louder outdoors; button clickers are better for sensitive dogs</li>
+</ul>
+
+<p class="has-text-color has-link-color wp-elements-3d2fe8dac10f10cd5068e1f052a5321c wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:1px;font-size:16px;line-height:1.6">Having the right basics from the start prevents frustration and helps you focus on building good habits rather than fighting poor equipment. Invest in quality items that will last through months of daily training sessions.</p>
+</div>
+
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-38500a1c524c5f92585902fbcc0a4d34" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🐾 Choose the Right Harness</h3>
+
+<p class="has-text-color has-link-color wp-elements-36cdd7543648b275bcfac4c6b4548f22 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Front-clip harnesses are best for dogs that pull; avoid choke chains and prong collars.</p>
+
+<ul class="wp-block-list has-text-color has-link-color wp-elements-f5d73ff0689b98df47ddb54ac9ef37f4" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Front-clip harnesses redirect pulling without causing discomfort</li>
+
+<li>Avoid choke chains and prong collars — they cause pain and damage trust</li>
+
+<li>Measure your dog&#8217;s chest and neck for a proper fit</li>
+
+<li>Padded harnesses reduce rubbing during longer training walks</li>
+
+<li>Y-shaped harnesses allow natural shoulder movement</li>
+</ul>
+
+<p class="has-text-color has-link-color wp-elements-12c23d5d72083852d8c47c4cbd0d41f8 wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:1px;font-size:16px;line-height:1.6">The right harness transforms walks from a tug-of-war into a pleasant experience. A well-fitted front-clip harness is one of the most effective tools for teaching loose-lead walking, especially when combined with reward-based training.</p>
+</div>
+
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-2beeb0a415174ef4eb2c4d3c75ede77f" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">📏 Long Lines for Recall Training</h3>
+
+<p class="has-text-color has-link-color wp-elements-3be2b1fa43ecbe3269b64dc2cfbbfde8 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Long lines (5-10 metres) are essential for recall training in open spaces.</p>
+
+<ul class="wp-block-list has-text-color has-link-color wp-elements-3a727d9d6306c47e04662cbf2694d991" style="color:#333333;font-size:16px;line-height:1.6">
+<li>5-metre lines work well in gardens and enclosed spaces</li>
+
+<li>10-metre lines are ideal for parks and open fields</li>
+
+<li>Choose lightweight, biothane or waterproof material for easy handling</li>
+
+<li>Never use retractable leads for recall training — they teach pulling</li>
+
+<li>Attach to a harness (not a collar) to protect your dog&#8217;s neck</li>
+</ul>
+
+<p class="has-text-color has-link-color wp-elements-9d92a39f41ecbb277326ff8278e04909 wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:1px;font-size:16px;line-height:1.6">A long line gives your dog the feeling of freedom while keeping you in control. It is the safest way to practise recall in unenclosed areas before your dog is reliable off-lead. Let the line drag rather than holding it taut — this teaches your dog to make good choices independently.</p>
+</div>
+
+<div class="wp-block-group has-border-color has-white-background-color has-background is-layout-constrained wp-container-core-group-is-layout-d06944bd wp-block-group-is-layout-constrained" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px">
+<h3 class="wp-block-heading has-text-color has-link-color wp-elements-f471b8e6097c1e66cf0a41a2a7078531" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🏠 Indoor Training Essentials</h3>
+
+<p class="has-text-color has-link-color wp-elements-7180d2ea855d6a029cd5e702d5805ec5 wp-block-paragraph" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Indoor training tools help with house-training puppies and practising commands in a distraction-free environment.</p>
+
+<ul class="wp-block-list has-text-color has-link-color wp-elements-c93a50273f48da5bab8bc181e69bfe55" style="color:#333333;font-size:16px;line-height:1.6">
+<li>Training pads are essential for puppy house-training</li>
+
+<li>Place pads near the door to encourage outdoor transition</li>
+
+<li>Use a house line (short indoor lead) for gentle redirection</li>
+
+<li>Interactive puzzle toys build mental stimulation between sessions</li>
+
+<li>A designated training mat teaches your dog a &#8216;place&#8217; command</li>
+</ul>
+
+<p class="has-text-color has-link-color wp-elements-b0936995b11c6cacd216fb42b52a3462 wp-block-paragraph" style="color:#333333;margin-top:12px;margin-bottom:1px;font-size:16px;line-height:1.6">Training does not stop at the front door. Indoor sessions are just as important as outdoor work, especially for puppies who cannot yet go outside. Short, focused indoor sessions build the foundation for everything your dog will learn later.</p>
+</div>
+
+<p><!-- /wp:post-content --></p>
+<p><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"50px","bottom":"50px","left":"50px","right":"50px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} --></p>
+<div class="wp-block-group alignwide has-white-background-color has-background" style="padding: 50px;"><!-- wp:heading {"style":{"typography":{"fontSize":"32px","fontStyle":"normal","fontWeight":"700","textAlign":"center"},"spacing":{"margin":{"bottom":"30px"}}},"anchor":"explore-more-dog-essentials"} -->
+<h2 class="wp-block-heading has-text-align-center" id="explore-more-dog-essentials" style="margin-bottom: 30px; font-size: 32px; font-style: normal; font-weight: bold;">Explore More Dog Essentials</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:columns --></p>
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color: #e5e5e5; border-width: 1px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; background-color: #fafafa; padding: 20px;"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom: 12px; font-size: 40px;">🧸</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading" style="margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Toys</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}}} --></p>
+<p style="font-size: 16px;">Keep your dog active and entertained with durable chew toys, fetch toys, and interactive puzzles designed for all breeds and play styles.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} --></p>
+<div class="wp-block-buttons has-custom-font-size" style="font-size: 16px; font-style: normal; font-weight: 600;"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-toys/">View Category</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+<p><!-- wp:column --></p>
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color: #e5e5e5; border-width: 1px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; background-color: #fafafa; padding: 20px;"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom: 12px; font-size: 40px;">🐕‍🦺</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading" style="margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Collars &amp; Leads</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}}} --></p>
+<p style="font-size: 16px;">Find durable, safe and comfortable dog collars, dog leads, and harnesses built for everyday walks, training sessions, and reliable control</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} --></p>
+<div class="wp-block-buttons has-custom-font-size" style="font-size: 16px; font-style: normal; font-weight: 600;"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-collars-leashes/">View Category</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+<p><!-- wp:column --></p>
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color: #e5e5e5; border-width: 1px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; background-color: #fafafa; padding: 20px;"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom: 12px; font-size: 40px;">🛏️</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading" style="margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Beds</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}}} --></p>
+<p style="font-size: 16px;">Give your dog a comfortable place to rest with our top‑rated beds for every size and sleep style. From calming donut beds to orthopedic support</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} --></p>
+<div class="wp-block-buttons has-custom-font-size" style="font-size: 16px; font-style: normal; font-weight: 600;"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-beds/">View Category</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+</div>
+<p><!-- /wp:columns --></p>
+<p><!-- wp:columns --></p>
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color: #e5e5e5; border-width: 1px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; background-color: #fafafa; padding: 20px;"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom: 12px; font-size: 40px;">✂️</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading" style="margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Grooming</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}}} --></p>
+<p style="font-size: 16px;">Brushes, clippers, shampoos, and grooming kits to keep your dog’s coat healthy, clean, and looking their best.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} --></p>
+<div class="wp-block-buttons has-custom-font-size" style="font-size: 16px; font-style: normal; font-weight: 600;"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-grooming/">View Category</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+<p><!-- wp:column --></p>
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color: #e5e5e5; border-width: 1px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; background-color: #fafafa; padding: 20px;"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom: 12px; font-size: 40px;">🍖</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading" style="margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Bowls &amp; Feeding</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}}} --></p>
+<p style="font-size: 16px;">Discover stainless steel bowls, slow feeders, raised stands, and feeding accessories that make mealtimes easier and healthier for your dog.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} --></p>
+<div class="wp-block-buttons has-custom-font-size" style="font-size: 16px; font-style: normal; font-weight: 600;"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-bowls-feeding/">View Category</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+<p><!-- wp:column --></p>
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color: #e5e5e5; border-width: 1px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; background-color: #fafafa; padding: 20px;"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom: 12px; font-size: 40px;">❤️</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading" style="margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Health &amp; Care</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}}} --></p>
+<p style="font-size: 16px;">Support your dog’s wellbeing with dental care, supplements, grooming wipes, and everyday essentials for a happier, healthier pet.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} --></p>
+<div class="wp-block-buttons has-custom-font-size" style="font-size: 16px; font-style: normal; font-weight: 600;"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-health-care/">View Category</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+</div>
+<p><!-- /wp:columns --></p>
+</div>
+<p><!-- /wp:group --></p>
+<p><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"60px","bottom":"60px"}}},"backgroundColor":"white","layout":{"type":"constrained"},"anchor":"bestsellers"} --></p>
+<div class="wp-block-group alignwide has-white-background-color has-background" id="bestsellers" style="padding-top: 60px; padding-bottom: 60px;"><!-- wp:heading {"style":{"typography":{"fontSize":"32px","fontStyle":"normal","fontWeight":"700","lineHeight":"1.2","textAlign":"center"},"elements":{"link":{"color":{"text":"#111111"}}},"color":{"text":"#111111"},"spacing":{"margin":{"bottom":"40px"}}},"anchor":"top-5-best-dog-training-products-in-2026"} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color" id="top-5-best-dog-training-products-in-2026" style="color: #111111; margin-bottom: 40px; font-size: 32px; font-style: normal; font-weight: bold; line-height: 1.2;">Top 5 Best Dog Training Products in 2026</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"32px","left":"32px"}}}} --></p>
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"},"margin":{"bottom":"32px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; margin-bottom: 32px; padding: 24px;"><!-- wp:image {"id":2365,"width":"172px","height":"auto","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img data-recalc-dims="1" decoding="async" alt="Dog training clicker with wrist strap for positive reinforcement" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-training-clicker.jpg?ssl=1" style="width: 172px; height: auto;"/></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading has-text-color has-link-color" style="color: #0073aa; margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Training Clicker with Wrist Strap</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Professional-grade clicker for positive reinforcement training. Clear click sound, ergonomic design with wrist strap for easy handling during training sessions.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>CLEAR CLICK SOUND</strong> – Consistent, distinct click for precise timing during reward-based training.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>ERGONOMIC DESIGN</strong> – Comfortable to hold during extended training sessions without hand fatigue.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>WRIST STRAP INCLUDED</strong> – Keeps the clicker secure and accessible, leaving your hands free for treats.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>SUITABLE FOR ALL BREEDS</strong> – Works with puppies and adult dogs of every size and temperament.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>POSITIVE REINFORCEMENT</strong> – The proven, science-backed method for faster, more effective training results.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- /wp:list --></p>
+<p><!-- wp:buttons --></p>
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"white","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"fontStyle":"normal","fontWeight":"600"},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"left":"14px","right":"14px","top":"14px","bottom":"14px"}}}} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=dog+training+clicker+wrist+strap&amp;tag=pethubonline-21" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; font-style: normal; font-weight: 600; padding: 14px;" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+<p><!-- wp:column --></p>
+<div class="wp-block-column"><!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"},"margin":{"bottom":"32px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; margin-bottom: 32px; padding: 24px;"><!-- wp:image {"id":2372,"width":"157px","height":"auto","aspectRatio":"0.8164297693343964","sizeSlug":"large","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img data-recalc-dims="1" decoding="async" alt="Adjustable dog training lead for recall practice and obedience" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-training-lead.jpg?ssl=1" style="aspect-ratio: 0.8164297693343964; width: 157px; height: auto;"/></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading has-text-color has-link-color" style="color: #0073aa; margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Adjustable Dog Training Lead (2m)</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Heavy-duty training lead perfect for recall practice and obedience training. Adjustable length from 1m to 2m with padded handle for comfort.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>Key Features:</strong></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>ADJUSTABLE LENGTH:</strong> Easily extends from 1m to 2m, giving you versatile control for different training scenarios.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>PADDED HANDLE:</strong> Soft, cushioned grip reduces hand strain during long recall practice sessions.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>HEAVY-DUTY CONSTRUCTION:</strong> Strong webbing and reinforced clip withstand pulling from dogs of all sizes.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>REFLECTIVE STITCHING:</strong> Enhanced visibility for safe training sessions in low-light conditions.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>MULTI-PURPOSE:</strong> Ideal for recall training, heel work, and controlled outdoor freedom during walks.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- /wp:list --></p>
+<p><!-- wp:buttons --></p>
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"white","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"fontStyle":"normal","fontWeight":"600"},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"left":"14px","right":"14px","top":"14px","bottom":"14px"}}}} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=adjustable+dog+training+lead+2m&amp;tag=pethubonline-21" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; font-style: normal; font-weight: 600; padding: 14px;" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+</div>
+<p><!-- /wp:columns --></p>
+<p><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"32px","left":"32px"}}}} --></p>
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"},"margin":{"bottom":"32px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; margin-bottom: 32px; padding: 24px;"><!-- wp:image {"id":2374,"width":"209px","height":"auto","aspectRatio":"1.0332637439109256","sizeSlug":"large","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img data-recalc-dims="1" decoding="async" alt="Dog treat training pouch with magnetic closure for quick access" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-treat-pouch.jpg?ssl=1" style="aspect-ratio: 1.0332637439109256; width: 209px; height: auto;"/></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading has-text-color has-link-color" style="color: #0073aa; margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Treat Training Pouch</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Hands-free treat pouch with magnetic closure for quick access during training. Multiple pockets, adjustable belt clip, and built-in poo bag dispenser.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>Key Features:</strong></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>MAGNETIC CLOSURE</strong> – Opens and closes instantly for quick treat access without fumbling during training.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>HANDS-FREE DESIGN</strong> – Adjustable belt clip and waistband attachment let you keep both hands on your dog.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>MULTIPLE POCKETS</strong> – Separate compartments for treats, keys, phone, and training accessories.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>BUILT-IN POO BAG DISPENSER</strong> – Convenient holder keeps waste bags always within reach on walks.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>EASY TO CLEAN</strong> – Waterproof inner lining wipes clean, keeping the pouch fresh and hygienic.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- /wp:list --></p>
+<p><!-- wp:buttons --></p>
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"white","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"fontStyle":"normal","fontWeight":"600"},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"left":"14px","right":"14px","top":"14px","bottom":"14px"}}}} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=dog+treat+training+pouch&amp;tag=pethubonline-21" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; font-style: normal; font-weight: 600; padding: 14px;" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+<p><!-- wp:column --></p>
+<div class="wp-block-column"><!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"},"margin":{"bottom":"32px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; margin-bottom: 32px; padding: 24px;"><!-- wp:image {"id":2382,"width":"172px","height":"auto","aspectRatio":"0.8525493798805696","sizeSlug":"large","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-large is-resized"><img data-recalc-dims="1" decoding="async" alt="Interactive dog puzzle toy for mental stimulation and enrichment" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-puzzle-toy.jpg?ssl=1" style="aspect-ratio: 0.8525493798805696; width: 172px; height: auto;"/></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading has-text-color has-link-color" style="color: #0073aa; margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Interactive Dog Puzzle Toy for Mental Stimulation</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Multi-level puzzle feeder that challenges your dog&#8217;s problem-solving skills. Helps reduce boredom, anxiety and destructive behaviour through mental enrichment.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>Key Features:</strong></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li><strong>MULTI-LEVEL CHALLENGE:</strong> Progressive difficulty levels keep your dog engaged and mentally stimulated for longer.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>REDUCES BOREDOM &amp; ANXIETY:</strong> Mental enrichment helps calm anxious dogs and prevents destructive behaviour.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>SLOW FEEDER FUNCTION:</strong> Use as a puzzle feeder to slow down fast eaters and improve digestion.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>DURABLE &amp; SAFE MATERIALS:</strong> Made from non-toxic, BPA-free plastic that withstands enthusiastic play.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- wp:list-item --></p>
+<ul class="wp-block-list">
+<li style="list-style-type: none;">
+<ul class="wp-block-list">
+<li><strong>EASY TO CLEAN:</strong> Dishwasher-safe design makes cleanup quick and hassle-free after every use.</li>
+</ul>
+</li>
+</ul>
+<p><!-- /wp:list-item --></p>
+<p><!-- /wp:list --></p>
+<p><!-- wp:buttons --></p>
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"white","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"fontStyle":"normal","fontWeight":"600"},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"left":"14px","right":"14px","top":"14px","bottom":"14px"}}}} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=interactive+dog+puzzle+toy+mental+stimulation&amp;tag=pethubonline-21" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; font-style: normal; font-weight: 600; padding: 14px;" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:column --></p>
+</div>
+<p><!-- /wp:columns --></p>
+<p><!-- wp:group {"align":"wide","backgroundColor":"white","layout":{"type":"constrained"}} --></p>
+<div class="wp-block-group alignwide has-white-background-color has-background"><!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"},"margin":{"bottom":"32px"}}},"backgroundColor":"white","layout":{"type":"constrained","contentSize":"600px"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; margin-bottom: 32px; padding: 24px;"><!-- wp:image {"id":2398,"width":"208px","height":"auto","aspectRatio":"0.8901664425796282","sizeSlug":"large","linkDestination":"none","align":"center","style":{"border":{"radius":{"topLeft":"8px","topRight":"8px","bottomLeft":"8px","bottomRight":"8px"}},"spacing":{"margin":{"bottom":"16px"}}}} -->
+<figure class="wp-block-image aligncenter size-large is-resized has-custom-border" style="margin-bottom: 16px;"><img data-recalc-dims="1" decoding="async" alt="Professional dog training whistle with adjustable frequency" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-training-whistle.jpg?ssl=1" style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; aspect-ratio: 0.8901664425796282; width: 208px; height: auto;"/></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"8px"}}}} --></p>
+<h3 class="wp-block-heading has-text-color has-link-color" style="color: #0073aa; margin-bottom: 8px; font-size: 20px; font-style: normal; font-weight: 600;">Dog Training Whistle (Adjustable Frequency)</h3>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"margin":{"bottom":"12px"}}}} --></p>
+<p class="has-text-color has-link-color" style="color: #333333; margin-bottom: 12px; font-size: 16px; line-height: 1.6;">Professional ultrasonic dog whistle with adjustable pitch. Ideal for recall training, comes with lanyard and frequency guide for different commands.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>Key Features:</strong></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"margin":{"bottom":"12px"}}}} --></p>
+<p class="has-text-color has-link-color" style="color: #333333; margin-bottom: 12px; font-size: 16px; line-height: 1.6;"><strong>ADJUSTABLE FREQUENCY</strong> – Customise the pitch to find the perfect tone your dog responds to best.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>LANYARD INCLUDED</strong> – Wear around your neck for instant access during outdoor training and recall sessions.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>FREQUENCY GUIDE</strong> – Includes a printed guide showing recommended frequencies for sit, stay, come, and other commands.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>LIGHTWEIGHT &amp; DURABLE</strong> – Crafted from high-quality stainless steel, built to last through years of daily training.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><strong>SILENT TO HUMANS</strong> – Ultrasonic frequency is barely audible to people but clearly heard by dogs, perfect for public spaces.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:buttons --></p>
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"white","className":"is-style-fill","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"fontStyle":"normal","fontWeight":"600"},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"left":"14px","right":"14px","top":"14px","bottom":"14px"}}}} -->
+<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://www.amazon.co.uk/s?k=dog+training+whistle+adjustable+frequency&amp;tag=pethubonline-21" style="border-color: #0073aa; border-width: 3px; border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; font-style: normal; font-weight: 600; padding: 14px;" target="_blank" rel="sponsored noopener noreferrer">View on Amazon →</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+<p><!-- /wp:group --></p>
+<p><!-- wp:group {"align":"full","style":{"color":{"background":"#fafafa"},"spacing":{"padding":{"top":"20px","bottom":"20px"}},"border":{"top":{"color":"#e5e5e5","width":"3px"},"right":{"width":"0px","style":"none"},"bottom":{"width":"3px"},"left":{"width":"0px","style":"none"}}},"layout":{"type":"constrained"}} --></p>
+<div class="wp-block-group alignfull has-background" style="border-top-color: #e5e5e5; border-right-style: none; border-left-style: none; background-color: #fafafa; padding-top: 20px; padding-bottom: 20px; border-width: 3px 0px 3px 0px;"><!-- wp:paragraph {"style":{"typography":{"textAlign":"center","fontSize":"14px","lineHeight":1.4},"color":{"text":"#555555"},"elements":{"link":{"color":{"text":"#555555"}}}}} -->
+<p class="has-text-align-center has-text-color has-link-color" style="color: #555555; font-size: 14px; line-height: 1.4;">Updated weekly • Independent reviews • No sponsored products • Trusted by pet owners</p>
+<p><!-- /wp:paragraph --></p>
+</div>
+<p><!-- /wp:group --></p>
+<p><!-- wp:cover {"url":"https://pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png","id":2334,"dimRatio":40,"customOverlayColor":"#cfc0b3","isUserOverlayColor":true,"focalPoint":{"x":0.64,"y":0.34},"minHeight":100,"minHeightUnit":"vh","contentPosition":"top left","isDark":false,"sizeSlug":"full","align":"full","layout":{"type":"constrained","wideSize":"1600px","contentSize":"1600px"}} --></p>
+<div class="wp-block-cover alignfull is-light has-custom-content-position is-position-top-left" style="min-height: 100vh;"><img data-attachment-id="2334" data-permalink="https://pethubonline.com/dog-supplies/dog-supplies-hero-cover-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="dog supplies hero cover image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?fit=1024%2C683&amp;ssl=1" data-recalc-dims="1" loading="lazy" decoding="async" width="1536" height="1024" data-attachment-id="2334" data-permalink="https://pethubonline.com/dog-supplies/dog-supplies-hero-cover-image/" data-orig-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?fit=1536%2C1024&amp;ssl=1" data-orig-size="1536,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="dog supplies hero cover image" data-image-description="" data-image-caption="" data-large-file="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?fit=1024%2C683&amp;ssl=1" alt="Dog Training CTA Image" class="wp-block-cover__image-background wp-image-2334 size-full" data-object-fit="cover" data-object-position="64% 34%" src="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?resize=1536%2C1024&#038;ssl=1" style="object-position: 64% 34%;" srcset="https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?w=1536&amp;ssl=1 1536w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?resize=300%2C200&amp;ssl=1 300w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?resize=1024%2C683&amp;ssl=1 1024w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?resize=768%2C512&amp;ssl=1 768w, https://i0.wp.com/pethubonline.com/wp-content/uploads/2026/05/dog-supplies-hero-cover-image.png?resize=1200%2C800&amp;ssl=1 1200w" sizes="auto, (max-width: 1000px) 100vw, 1000px" />
+<div class="wp-block-cover__inner-container"><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"55px","bottom":"55px","left":"0px","right":"0px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="padding: 55px 0px 55px 0px;"><!-- wp:heading {"style":{"typography":{"fontSize":"36px","fontStyle":"normal","fontWeight":"700","lineHeight":"1.2","textAlign":"left"},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}}},"anchor":"ready-to-train-your-dog"} -->
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color" id="ready-to-train-your-dog" style="color: #333333; font-size: 36px; font-style: normal; font-weight: bold; line-height: 1.2; padding: 24px;">Ready to Start Training Your Dog?</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph {"style":{"typography":{"fontSize":"18px"},"elements":{"link":{"color":{"text":"#333333"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"},"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"color":{"text":"#333333"}}} --></p>
+<p class="has-text-color has-link-color" style="color: #333333; margin-top: 16px; margin-bottom: 16px; font-size: 18px; padding: 24px;">Browse our curated selection of training equipment, treats, and accessories. Everything you need to build a happy, well-behaved companion — delivered to your door.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:buttons {"style":{"typography":{"fontSize":"18px"},"spacing":{"padding":{"top":"12px","bottom":"12px","left":"24px","right":"24px"},"margin":{"top":"28px","bottom":"28px"}},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"}}}} --></p>
+<div class="wp-block-buttons has-custom-font-size" style="border-top-left-radius: 6px; border-top-right-radius: 6px; border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; margin-top: 28px; margin-bottom: 28px; font-size: 18px; padding: 12px 24px 12px 24px;"><!-- wp:button {"style":{"spacing":{"padding":{"left":"24px","right":"24px","top":"12px","bottom":"12px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="#dog-training" style="padding: 12px 24px 12px 24px;">Shop Dog Training</a></div>
+<p><!-- /wp:button --></p>
+</div>
+<p><!-- /wp:buttons --></p>
+</div>
+<p><!-- /wp:group --></p>
+</div>
+</div>
+<p><!-- /wp:cover --></p>
+<p><!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"40px","bottom":"40px"}}},"layout":{"type":"constrained"},"anchor":"dog-training-section"} --></p>
+<div class="wp-block-group alignwide" style="padding-top: 40px; padding-bottom: 40px;"> </div>
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Related Articles</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><a href="https://pethubonline.com/best-dog-training-leads-uk/">Best Dog Training Leads UK (2026) – Long Lines & Harnesses</a></li>
+<li><a href="https://pethubonline.com/best-puppy-training-guide-uk/">Best Puppy Training Guide UK (2026) – First Year Essentials</a></li>
+<li><a href="https://pethubonline.com/best-dog-training-treats-uk/">Best Dog Training Treats UK (2026) – Reward Guide</a></li>
+<li><a href="https://pethubonline.com/best-dog-training-behaviour-uk/">Best Dog Training and Behaviour UK (2026) – Complete Guide</a></li>
+</ul>
+<!-- /wp:list -->

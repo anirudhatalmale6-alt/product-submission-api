@@ -1,0 +1,641 @@
+================================================================================
+PET HUB ONLINE - HUB/CATEGORY PAGE OVERCLAIM & TRUST AUDIT
+Generated: 2026-05-27 23:43:34
+================================================================================
+
+EXECUTIVE SUMMARY
+----------------------------------------
+Pages audited:            8
+Total overclaim instances: 82
+Pages with overclaims:    7/8
+Pages with trust issues:  2/8
+
+================================================================================
+PAGE 63: Dog Supplies
+  Slug: dog-supplies
+  Status: publish
+  URL: https://pethubonline.com/dog-supplies/
+  Content length: 59753 chars (raw), 16797 chars (plain)
+  Comment status: closed
+
+  [1] OVERCLAIM AUDIT: 8 instance(s) found
+  ------------------------------------------------------------
+    (1) Pattern: expert/experts
+        Matched: "Expert"
+        Context: ...that meet strict safety and durability standards. Every recommendation is tested for comfort, reliability, and value. 🐕 Expert Recommendations for Every Breed Our team reviews and curates each item to suit different breeds, sizes, and lifestyles ...
+
+    (2) Pattern: tested/testing/we test
+        Matched: "tested"
+        Context: ...t is a trip to the vet or a holiday road trip, travel-specific products make journeys safer and less stressful. A crash-tested car harness or secured crate prevents injury during sudden stops. Window shades keep the rear of the vehicle cool, and ...
+
+    (3) Pattern: tested/testing/we test
+        Matched: "tested"
+        Context: ...e only feature products from reputable brands that meet strict safety and durability standards. Every recommendation is tested for comfort, reliability, and value. 🐕 Expert Recommendations for Every Breed Our team reviews and curates each item to...
+
+    (4) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ... to you. We only recommend products we would use ourselves and that meet our editorial standards. Learn more . Shop the Best Dog Supplies for Every Pup Trusted dog supplies for comfort, care, and play — all in one place. Shop Dog Supplies Explo...
+
+    (5) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ...s. Many owners find that small pieces of cooked chicken or commercial training treats with a single protein source work best for maintaining focus without overfeeding. Walking and Outdoor Gear A well-fitted collar or harness paired with a relia...
+
+    (6) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ...supplies needs. Breed-Specific Dog Supplies Different breeds have distinct needs that influence which dog supplies work best. Large breeds like Labradors and German Shepherds benefit from heavy-duty chew toys, XL beds, and raised feeders that p...
+
+    (7) Pattern: our team
+        Matched: "Our team"
+        Context: ...standards. Every recommendation is tested for comfort, reliability, and value. 🐕 Expert Recommendations for Every Breed Our team reviews and curates each item to suit different breeds, sizes, and lifestyles — helping you choose confidently without ...
+
+    (8) Pattern: our team
+        Matched: "our team"
+        Context: ...good habits. 🐾 Dog Health & Care - Everyday wellness products for happy, healthy dogs. 🐾 Contact Us - Get in touch with our team for help or questions. 🐾 About Pet Hub Online - Learn more about Pet Hub Online and our mission. 🐾 Pet Blog Posts - Rea...
+
+  [2] TRUST SIGNAL AUDIT:
+      Trust block FOUND on this page.
+      Heading: "Why Pet Owners Trust"
+      Context: ...egory 🍖 Dog Bowls & Feeding Bowls, feeders, and mats to keep mealtimes clean and easy. View Category ❤️ Dog Health & Care Essentials that support your dog’s wellbeing and daily comfort. View Catego
+      Heading: "Trusted by pet owners"
+      Context: ...Hub Online - Learn more about Pet Hub Online and our mission. 🐾 Pet Blog Posts - Read guides, tips, and product insights for dog owners. Updated weekly • Independent reviews • No sponsored products
+
+  [3] INFO STRIP CHECK:
+      NOT FOUND - No info strip detected.
+
+  [4] AFFILIATE DISCLOSURE CHECK:
+      Present.
+      Is wp:html block: NO
+      Snippet: Affiliate Disclosure: Some links on this page are affiliate links. If you click an affiliate link and make a
+
+  [5] IMAGE/MEDIA:
+      Featured media: NO
+      Cover/hero image in content: YES
+      Details: wp:cover block, wp:image block(s)
+
+  [6] COMMENT STATUS: CLOSED
+
+================================================================================
+PAGE 1041: Dog Toys
+  Slug: dog-toys
+  Status: publish
+  URL: https://pethubonline.com/dog-toys/
+  Content length: 118916 chars (raw), 15957 chars (plain)
+  Comment status: closed
+
+  [1] OVERCLAIM AUDIT: 16 instance(s) found
+  ------------------------------------------------------------
+    (1) Pattern: expert/experts
+        Matched: "Expert"
+        Context: ...o clean and provide enough grip for active play sessions without risking injury. Why Pet Owners Trust Pet Hub Online 🛡️ Expert Testing Every toy featured on Pet Hub Online is independently tested for safety, durability, and play value. ⭐ Updated ...
+
+    (2) Pattern: tested/testing/we test
+        Matched: "Testing"
+        Context: ... and provide enough grip for active play sessions without risking injury. Why Pet Owners Trust Pet Hub Online 🛡️ Expert Testing Every toy featured on Pet Hub Online is independently tested for safety, durability, and play value. ⭐ Updated Reviews ...
+
+    (3) Pattern: tested/testing/we test
+        Matched: "tested"
+        Context: ...ing injury. Why Pet Owners Trust Pet Hub Online 🛡️ Expert Testing Every toy featured on Pet Hub Online is independently tested for safety, durability, and play value. ⭐ Updated Reviews Our recommendations are refreshed weekly to include the lates...
+
+    (4) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...xtra cost to you. We only recommend products we would use ourselves and that meet our editorial standards. Learn more . Best Dog Toys for Happy Dogs Discover safe, durable, and fun dog toys that keep your dog happy, healthy, and entertained. Br...
+
+    (5) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...ur dog happy, healthy, and entertained. Browse All Dog Toys See Our Bestselling Toys Table of Contents Why Choosing the Best Dog Toys Matters Our Bestselling Dog Toys – Top 5 This Year Browse All Dog Toys By Type How to Choose the Right Dog Toy...
+
+    (6) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...et Owners Trust Pet Hub Online Explore More Dog Essentials Ready to Find Your Dog’s New Favourite Toy? Why Choosing the Best Dog Toys Matters Choosing the right dog toy isn’t just about fun — it’s about safety, enrichment, and supporting your d...
+
+    (7) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ...and mentally healthy . Whether your dog loves to chew, chase, tug, or solve puzzles , this guide will help you find the best dog toys that are safe, durable, and perfect for their personality . Scroll down to explore our top 5 best dog toys and...
+
+    (8) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ...you find the best dog toys that are safe, durable, and perfect for their personality . Scroll down to explore our top 5 best dog toys and shop by toy type to find the perfect match for your furry friend. Toys also play a vital role in strengthe...
+
+    (9) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...ring solo or shared playtime Great for chewing, fetching, and stress relief , helping reduce boredom throughout the day Best suited for small and medium dogs ; not recommended for aggressive chewers due to softer construction View on Amazon → 1...
+
+    (10) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ...s safe? Yes — as long as you supervise play and remove the toy if your dog tries to swallow the squeaker. What toys are best for aggressive chewers? Look for rubber, nylon, or reinforced toys labelled “power chewer” or “indestructible.” How oft...
+
+    (11) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ... of ownership over their play space. For indoor play, choose an area with good flooring — tiles or short-pile rugs work best, as they are easy to clean and provide enough grip for active play sessions without risking injury. Why Pet Owners Trus...
+
+    (12) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...er options that keep your dog happy, active, and mentally stimulated. Shop Dog Toys Browse By Toy Type Related Articles Best Puppy Toys UK (2026) – Teething & First Toys Guide Best Interactive Dog Toys UK (2026) – Puzzle & Enrichment Guide Best...
+
+    (13) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...y stimulated. Shop Dog Toys Browse By Toy Type Related Articles Best Puppy Toys UK (2026) – Teething & First Toys Guide Best Interactive Dog Toys UK (2026) – Puzzle & Enrichment Guide Best Indestructible Dog Toys UK (2026) – Tough Toys for Heav...
+
+    (14) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...Best Puppy Toys UK (2026) – Teething & First Toys Guide Best Interactive Dog Toys UK (2026) – Puzzle & Enrichment Guide Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers Best Dog Toys UK (2026) – Complete Guide & Honest Revi...
+
+    (15) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...ve Dog Toys UK (2026) – Puzzle & Enrichment Guide Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers Best Dog Toys UK (2026) – Complete Guide & Honest Reviews Top Dog Toys Every Pet Owner Needs in 2026
+
+    (16) Pattern: real user feedback / owner-approved
+        Matched: "Owner Approved"
+        Context: ...Updated Reviews Our recommendations are refreshed weekly to include the latest, most trusted dog toys available. ✔️ Pet Owner Approved All reviews come from real dog owners who share honest feedback based on genuine experience. Explore More Dog Essential...
+
+  [2] TRUST SIGNAL AUDIT:
+      Trust block FOUND on this page.
+      Heading: "Why Pet Owners Trust"
+      Context: ...ing the Best Dog Toys Matters Our Bestselling Dog Toys – Top 5 This Year Browse All Dog Toys By Type How to Choose the Right Dog Toys Who This Page Is For Dog Toys FAQ Useful Tips for Every Pet Own
+      Heading: "Trusted by pet owners"
+      Context: ...dog’s wellbeing with dental care, supplements, grooming wipes, and everyday essentials for a happier, healthier pet Browse Health & Care Updated weekly • Independent reviews • No sponsored products
+      ** TRUST BLOCK OVERCLAIMS (4 found):
+         - "expert testing"
+           Context: ... work best, as they are easy to clean and provide enough grip for active play sessions without risking injury. Why Pet Owners Trust Pet Hub Online 🛡️ Expert Testing Every toy featured on Pet Hub On
+         - "updated reviews"
+           Context: ... Owners Trust Pet Hub Online 🛡️ Expert Testing Every toy featured on Pet Hub Online is independently tested for safety, durability, and play value. ⭐ Updated Reviews Our recommendations are refresh
+         - "pet owner approved"
+           Context: ...ty, durability, and play value. ⭐ Updated Reviews Our recommendations are refreshed weekly to include the latest, most trusted dog toys available. ✔️ Pet Owner Approved All reviews come from real d
+         - "owner approved"
+           Context: ...durability, and play value. ⭐ Updated Reviews Our recommendations are refreshed weekly to include the latest, most trusted dog toys available. ✔️ Pet Owner Approved All reviews come from real dog o
+
+  [3] INFO STRIP CHECK:
+      NOT FOUND - No info strip detected.
+
+  [4] AFFILIATE DISCLOSURE CHECK:
+      Present.
+      Is wp:html block: YES
+      Snippet: Affiliate Disclosure: Some links on this page are affiliate links. If you click an affiliate
+
+  [5] IMAGE/MEDIA:
+      Featured media: NO
+      Cover/hero image in content: YES
+      Details: wp:cover block, wp:image block(s)
+
+  [6] COMMENT STATUS: CLOSED
+
+================================================================================
+PAGE 37: Contact Pet Hub Online
+  Slug: contact-pet-hub-online
+  Status: publish
+  URL: https://pethubonline.com/contact-pet-hub-online/
+  Content length: 5519 chars (raw), 876 chars (plain)
+  Comment status: closed
+
+  [1] OVERCLAIM AUDIT: 0 instance(s) found
+      CLEAN - No overclaim phrases detected.
+
+  [2] TRUST SIGNAL AUDIT:
+      No trust block heading detected.
+
+  [3] INFO STRIP CHECK:
+      NOT FOUND - No info strip detected.
+
+  [4] AFFILIATE DISCLOSURE CHECK:
+      Present.
+      Is wp:html block: NO
+      Snippet: nter" style="font-size:18px">If you have questions about our dog and cat products, contact Pet Hub Online today. We’d love to hear from you! Whether you have questions about our products, website, or 
+
+  [5] IMAGE/MEDIA:
+      Featured media: NO
+      Cover/hero image in content: YES
+      Details: wp:image block(s)
+
+  [6] COMMENT STATUS: CLOSED
+
+================================================================================
+PAGE 38: Blog
+  Slug: blog
+  Status: publish
+  URL: https://pethubonline.com/blog/
+  Content length: 22250 chars (raw), 1444 chars (plain)
+  Comment status: closed
+
+  [1] OVERCLAIM AUDIT: 5 instance(s) found
+  ------------------------------------------------------------
+    (1) Pattern: expert/experts
+        Matched: "expert"
+        Context: ... guides, tips, and product recommendations for your pets. Keep your dog or cat happy, healthy, and entertained with our expert advice. Featured Post Best Dog Toys 2026 – Top Picks for Every Pup From chew toys to puzzle games, discover the best to...
+
+    (2) Pattern: expert/experts
+        Matched: "expert"
+        Context: ...– Top Picks for Every Pup From chew toys to puzzle games, discover the best toys to keep your dog happy and active. Our expert reviews highlight safe, durable, and fun options for every size and breed. Read More Recent Blog Posts Dog Grooming For...
+
+    (3) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...commendations for your pets. Keep your dog or cat happy, healthy, and entertained with our expert advice. Featured Post Best Dog Toys 2026 – Top Picks for Every Pup From chew toys to puzzle games, discover the best toys to keep your dog happy a...
+
+    (4) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ... expert advice. Featured Post Best Dog Toys 2026 – Top Picks for Every Pup From chew toys to puzzle games, discover the best toys to keep your dog happy and active. Our expert reviews highlight safe, durable, and fun options for every size and ...
+
+    (5) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...appy and healthy with the right essentials. From cosy beds to interactive toys, discover the must-have items. Read More Best Cat Beds for Cosy Cats Find the perfect bed for your feline friend. We review soft, durable, and stylish options to kee...
+
+  [2] TRUST SIGNAL AUDIT:
+      No trust block heading detected.
+
+  [3] INFO STRIP CHECK:
+      NOT FOUND - No info strip detected.
+
+  [4] AFFILIATE DISCLOSURE CHECK:
+      NOT FOUND - No affiliate disclosure detected.
+
+  [5] IMAGE/MEDIA:
+      Featured media: NO
+      Cover/hero image in content: YES
+      Details: wp:cover block, wp:image block(s)
+
+  [6] COMMENT STATUS: CLOSED
+
+================================================================================
+PAGE 1141: Dog Beds
+  Slug: dog-beds
+  Status: publish
+  URL: https://pethubonline.com/dog-beds/
+  Content length: 122442 chars (raw), 15940 chars (plain)
+  Comment status: closed
+
+  [1] OVERCLAIM AUDIT: 14 instance(s) found
+  ------------------------------------------------------------
+    (1) Pattern: expert/experts
+        Matched: "Expert"
+        Context: ...rally settles reveals which design will deliver the most restful and restorative sleep for their individual preference. Expert‑Reviewed Picks Every dog bed we recommend is researched and evaluated for comfort, durability, and safety. ⭐ Trusted by...
+
+    (2) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ...e would use ourselves and that meet our editorial standards. Learn more . Dog Beds – Comfortable & Durable Discover the best dog beds for your furry friend, combining comfort, durability, and style Shop All Dog Beds Discover Our Bestsellers Tab...
+
+    (3) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ... durability, and style Shop All Dog Beds Discover Our Bestsellers Table of Contents Why the Right Dog Bed Matters Top 5 Best Dog Beds This Year Shop by Bed Type How to Choose the Right Dog Bed Who This Page Is For Dog Beds FAQ Useful Tips for E...
+
+    (4) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ... that are safe, durable, and perfectly suited to their size, age, and sleeping style . Scroll down to explore our top 5 best dog beds and shop by bed type to find the ideal match for your furry friend. Top 5 Best Dog Beds This Year These are ou...
+
+    (5) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...croll down to explore our top 5 best dog beds and shop by bed type to find the ideal match for your furry friend. Top 5 Best Dog Beds This Year These are our top picks for comfortable, durable, and safe dog beds for all sizes and breeds. Rectan...
+
+    (6) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ... Shop by Bed Type Find the perfect dog bed for your pup based on their size, age, and sleeping style. Orthopedic Beds → Best for older dogs or pups with joint issues. Memory foam that relieves pressure and keeps your dog comfortable all night. ...
+
+    (7) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ...rt. Seasonal switchers: Many owners find that having two different dog beds — one for summer and one for winter — works best for year‑round comfort. ❤️‍🩹 Choose Beds Based on Age & Health Puppies, adults, and senior dogs all have different need...
+
+    (8) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ...e. 🦴 Senior/Arthritic Dogs If your dog needs extra joint support or struggles with stiffness, this guide highlights the best orthopedic beds for pain relief and comfort. 🐾 Puppies & Chewers Owners For dogs who chew, dig, or get messy, Pet Hub O...
+
+    (9) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ...eryday wear. 🐕 Large Breeds/Heavy Sleepers If your dog needs more space or tends to flatten cheap beds, we show you the best options for support, size, and long‑lasting comfort. Dog Beds FAQ What size dog bed should I buy? Choose a bed that’s a...
+
+    (10) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...ur dog the comfort and support they deserve with our top‑rated picks. Shop Dog Beds Browse By Bed Type Related Articles Best Puppy Beds UK (2026) – First Bed & Crate Training Guide Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide ...
+
+    (11) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...d picks. Shop Dog Beds Browse By Bed Type Related Articles Best Puppy Beds UK (2026) – First Bed & Crate Training Guide Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide Bes...
+
+    (12) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ... Puppy Beds UK (2026) – First Bed & Crate Training Guide Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide Best Dog Beds UK (2026) – Complete Guide & Honest Reviews
+
+    (13) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...est Cooling Dog Beds UK (2026) – Temperature Regulation Guide Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide Best Dog Beds UK (2026) – Complete Guide & Honest Reviews
+
+    (14) Pattern: we recommend
+        Matched: "we recommend"
+        Context: ...ill deliver the most restful and restorative sleep for their individual preference. Expert‑Reviewed Picks Every dog bed we recommend is researched and evaluated for comfort, durability, and safety. ⭐ Trusted by Pet Owners Thousands of pet parents rely ...
+
+  [2] TRUST SIGNAL AUDIT:
+      Trust block FOUND on this page.
+      Heading: "Why Pet Owners Trust"
+      Context: ...ellers Table of Contents Why the Right Dog Bed Matters Top 5 Best Dog Beds This Year Shop by Bed Type How to Choose the Right Dog Bed Who This Page Is For Dog Beds FAQ Useful Tips for Every Pet Own
+      Heading: "Trusted by Pet Owners"
+      Context: ...ill deliver the most restful and restorative sleep for their individual preference. Expert‑Reviewed Picks Every dog bed we recommend is researched and evaluated for comfort, durability, and safety.
+
+  [3] INFO STRIP CHECK:
+      NOT FOUND - No info strip detected.
+
+  [4] AFFILIATE DISCLOSURE CHECK:
+      Present.
+      Is wp:html block: YES
+      Snippet: Affiliate Disclosure: Some links on this page are affiliate links. If you click an affiliate
+
+  [5] IMAGE/MEDIA:
+      Featured media: NO
+      Cover/hero image in content: YES
+      Details: wp:cover block, wp:image block(s)
+
+  [6] COMMENT STATUS: CLOSED
+
+================================================================================
+PAGE 1144: Dog Grooming
+  Slug: dog-grooming
+  Status: publish
+  URL: https://pethubonline.com/dog-grooming/
+  Content length: 111242 chars (raw), 16304 chars (plain)
+  Comment status: closed
+
+  [1] OVERCLAIM AUDIT: 13 instance(s) found
+  ------------------------------------------------------------
+    (1) Pattern: expert/experts
+        Matched: "Expert"
+        Context: ...ted brands that meet strict grooming standards, so you can shop confidently knowing your dog’s wellbeing comes first. 🐕 Expert‑Approved Essentials Our grooming tools are tested by professionals and pet owners alike. Each item is chosen for durabi...
+
+    (2) Pattern: tested/testing/we test
+        Matched: "tested"
+        Context: ... you can shop confidently knowing your dog’s wellbeing comes first. 🐕 Expert‑Approved Essentials Our grooming tools are tested by professionals and pet owners alike. Each item is chosen for durability, comfort, and performance — making home groom...
+
+    (3) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...st Pet Hub Online Who This Page Is For Dog Grooming FAQ How to Choose the Right Tools Explore More Dog Essentials Top 5 Best Dog Collars & Leashes in 2026 Ready to Keep Your Dog Clean, Healthy & Happy? Useful Tips for Every Pet Owner Why Keepin...
+
+    (4) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...gentle shampoos to precision clippers, every product here helps you care for your pup at home with ease and love. Top 5 Best Dog Grooming Tools in 2026 Detangling Comb for Dogs – Double-Sided Pet Grooming Keep your pet’s coat healthy and tangle...
+
+    (5) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ...grooming at home. View on Amazon → 4-in-1 Dog Grooming Kit – Professional Pet Hair Cutting Keep your pets looking their best with this 4-in-1 professional dog grooming kit, featuring precision scissors, safety tips, a steel comb, and a convenie...
+
+    (6) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...s require consistent brushing and trimming to prevent matting and maintain a soft, healthy texture. 🐶 Short‑Haired Dogs Best for quick, low‑maintenance grooming routines. Gentle bristle brushes and lightweight shampoos keep short coats smooth a...
+
+    (7) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ...or a seasoned pet parent, these practical grooming insights will help you keep your companion looking and feeling their best all year round. Follow a Logical Grooming Order The best grooming routine follows a logical order: brushing first to re...
+
+    (8) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ...ts will help you keep your companion looking and feeling their best all year round. Follow a Logical Grooming Order The best grooming routine follows a logical order: brushing first to remove tangles and loose hair, then bathing if needed, foll...
+
+    (9) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ...pendent reviews • No sponsored products • Trusted by pet owners Ready to Keep Your Dog Clean, Healthy & Happy? Find the best grooming tools, shampoos, and accessories to make every bath and brush a breeze. Shop Dog Grooming Related Articles Bes...
+
+    (10) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...est grooming tools, shampoos, and accessories to make every bath and brush a breeze. Shop Dog Grooming Related Articles Best Dog Nail Clippers UK (2026) – Trimming & Grinding Guide Best Dog Shampoo UK (2026) – Ingredients & Safety Guide Best Do...
+
+    (11) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...ath and brush a breeze. Shop Dog Grooming Related Articles Best Dog Nail Clippers UK (2026) – Trimming & Grinding Guide Best Dog Shampoo UK (2026) – Ingredients & Safety Guide Best Dog Brushes UK (2026) – Guide by Coat Type Best Dog Grooming Su...
+
+    (12) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...es Best Dog Nail Clippers UK (2026) – Trimming & Grinding Guide Best Dog Shampoo UK (2026) – Ingredients & Safety Guide Best Dog Brushes UK (2026) – Guide by Coat Type Best Dog Grooming Supplies UK (2026) – Complete Guide
+
+    (13) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ... Grinding Guide Best Dog Shampoo UK (2026) – Ingredients & Safety Guide Best Dog Brushes UK (2026) – Guide by Coat Type Best Dog Grooming Supplies UK (2026) – Complete Guide
+
+  [2] TRUST SIGNAL AUDIT:
+      Trust block FOUND on this page.
+      Heading: "Why Pet Owners Trust"
+      Context: ...king and Feeling Great From everyday dog grooming brushes to salon‑grade clippers, we have it all. Shop Dog Grooming View Top Picks Table of Contents Why Keeping Your Dog Groomed Matters Shop by Ty
+      Heading: "Trusted by pet owners"
+      Context: ... your dog’s wellbeing with dental care, supplements, grooming wipes, and everyday essentials for a happier, healthier pet. View Category Updated weekly • Independent reviews • No sponsored products
+
+  [3] INFO STRIP CHECK:
+      NOT FOUND - No info strip detected.
+
+  [4] AFFILIATE DISCLOSURE CHECK:
+      Present.
+      Is wp:html block: NO
+      Snippet: Affiliate Disclosure: Some links on this page are affiliate links. If you click an affiliate link and make a
+
+  [5] IMAGE/MEDIA:
+      Featured media: NO
+      Cover/hero image in content: YES
+      Details: wp:cover block
+
+  [6] COMMENT STATUS: CLOSED
+
+================================================================================
+PAGE 1146: Dog Collars &amp; Leashes
+  Slug: dog-collars-leashes
+  Status: publish
+  URL: https://pethubonline.com/dog-collars-leashes/
+  Content length: 119395 chars (raw), 16386 chars (plain)
+  Comment status: closed
+
+  [1] OVERCLAIM AUDIT: 12 instance(s) found
+  ------------------------------------------------------------
+    (1) Pattern: expert/experts
+        Matched: "Expert"
+        Context: ...ol. ⭐ Trusted by Pet Owners Thousands of pet parents rely on our guides to make confident, informed buying decisions. 🏅 Expert‑Verified Quality Each product is checked for secure hardware, strong stitching, and long‑term reliability. Who This Pag...
+
+    (2) Pattern: tested/testing/we test
+        Matched: "tested"
+        Context: ...nd reduce strain during walks. Why Pet Owners Trust Pet Hub Online 🛡️ Independent Only Reviews Every collar and lead is tested and reviewed by real dog owners for comfort, fit, and control. ⭐ Trusted by Pet Owners Thousands of pet parents rely on...
+
+    (3) Pattern: tested/testing/we test
+        Matched: "tested"
+        Context: ...raining, walking, or exploring, each collar and lead here is made to keep your dog secure and stylish. Every product is tested for durability, fit, and ease of use — so you can focus on enjoying time together. 🐾 Everyday Walkers Perfect for daily...
+
+    (4) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...leads for daily walks. Shop Dog Collars View Top Picks Table of Contents Why the Right Dog Collar & Leash Matters Top 5 Best Dog Collars & Leashes Shop by Collar & Leash Type Why Pet Owners Trust Pet Hub Online Who This Page Is For Dog Collars ...
+
+    (5) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ...size, temperament, and daily activity. We have made it easier for you to Shop by type. Scroll down to explore our top 5 best dog collars and leashes and shop by style or material to find the perfect match for your furry friend. Top 5 Best Dog C...
+
+    (6) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...top 5 best dog collars and leashes and shop by style or material to find the perfect match for your furry friend. Top 5 Best Dog Collars & Leashes These are our top picks for durable, safe, and stylish collars and leashes for all dog sizes and ...
+
+    (7) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ...ion to the conditions keeps your companion comfortable across every season. When to Upgrade Your Walking Setup Even the best dog collars and leads have a limited lifespan. If your dog has outgrown their current collar, if the buckle no longer c...
+
+    (8) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ...e? Use the two‑finger rule: snug enough to stay secure, loose enough to fit two fingers underneath. What lead length is best for training? Short leads (1–1.2m) for heel work; long lines (5–10m) for recall training. Are retractable leads safe? T...
+
+    (9) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ... Independent reviews • No sponsored products • Trusted by pet owners Ready to Upgrade Your Dog’s Walking Gear? Find the best collars and leads for safer, easier, more enjoyable walks. Shop Collars & Leashes Related Articles Best Dog Leads UK (2...
+
+    (10) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ... Gear? Find the best collars and leads for safer, easier, more enjoyable walks. Shop Collars & Leashes Related Articles Best Dog Leads UK (2026) – Walking & Training Lead Guide Best No-Pull Dog Harnesses UK (2026) – Training & Comfort Guide Bes...
+
+    (11) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ... more enjoyable walks. Shop Collars & Leashes Related Articles Best Dog Leads UK (2026) – Walking & Training Lead Guide Best No-Pull Dog Harnesses UK (2026) – Training & Comfort Guide Best Dog Collars and Harnesses UK (2026) – Complete Guide
+
+    (12) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...est Dog Leads UK (2026) – Walking & Training Lead Guide Best No-Pull Dog Harnesses UK (2026) – Training & Comfort Guide Best Dog Collars and Harnesses UK (2026) – Complete Guide
+
+  [2] TRUST SIGNAL AUDIT:
+      Trust block FOUND on this page.
+      Heading: "Why Pet Owners Trust"
+      Context: ...fortable dog collars and leads for daily walks. Shop Dog Collars View Top Picks Table of Contents Why the Right Dog Collar & Leash Matters Top 5 Best Dog Collars & Leashes Shop by Collar & Leash Ty
+      Heading: "Trusted by Pet Owners"
+      Context: ...omfort and reduce strain during walks. Why Pet Owners Trust Pet Hub Online 🛡️ Independent Only Reviews Every collar and lead is tested and reviewed by real dog owners for comfort, fit, and control.
+
+  [3] INFO STRIP CHECK:
+      NOT FOUND - No info strip detected.
+
+  [4] AFFILIATE DISCLOSURE CHECK:
+      Present.
+      Is wp:html block: YES
+      Snippet: Affiliate Disclosure: Some links on this page are affiliate links. If you click an affiliate
+
+  [5] IMAGE/MEDIA:
+      Featured media: NO
+      Cover/hero image in content: YES
+      Details: wp:cover block, wp:image block(s)
+
+  [6] COMMENT STATUS: CLOSED
+
+================================================================================
+PAGE 1149: Cat Toys
+  Slug: cat-toys
+  Status: publish
+  URL: https://pethubonline.com/cat-toys/
+  Content length: 112404 chars (raw), 16264 chars (plain)
+  Comment status: closed
+
+  [1] OVERCLAIM AUDIT: 14 instance(s) found
+  ------------------------------------------------------------
+    (1) Pattern: expert/experts
+        Matched: "expert"
+        Context: ...ps for Every Pet Owner Whether you are a first-time cat owner or a seasoned feline enthusiast, these practical tips and expert insights will help you create a more enriching, stimulating environment for your furry companion at home. 🏠 Creative In...
+
+    (2) Pattern: expert/experts
+        Matched: "expert"
+        Context: ...o have a great selection of dog toys if you have a canine companion too. Check out our essential cat supplies guide for expert tips on what every cat owner needs. Who This Page Is For This page is for cat owners who want to bring energy, enrichme...
+
+    (3) Pattern: expert/experts
+        Matched: "Expert"
+        Context: ...nd soft toys. Gradually introduce interactive play to build confidence and trust. Why Pet Owners Trust Pet Hub Online 🐾 Expert‑Reviewed Picks Every toy is selected for safety, durability, and feline enjoyment. ⭐ Quality You Can Trust Our recommen...
+
+    (4) Pattern: top rated/top-rated
+        Matched: "top-rated"
+        Context: ...re safe, stylish collars and everyday accessories. View Category 🧻 Cat Litter Trays Keep your home clean and fresh with top-rated litter trays. View Category ❤️ Cat Health & Care Support your cat’s wellbeing with trusted care essentials. View Catego...
+
+    (5) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ... cost to you. We only recommend products we would use ourselves and that meet our editorial standards. Learn more . The Best Toys for Happy Cats Top‑rated cat toys for happier, healthier playtime. Shop Cat Toys Shop Bestsellers Table of Content...
+
+    (6) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...ust Pet Hub Online Who This Page Is For Cat Toys FAQ How to Choose the Right Cat Toys Explore More Cat Essentials Top 5 Best Cat Toys This Year Ready to Find the Perfect Toy for Your Cat? How to Choose the Right Cat Toys 5 Surprising Benefits o...
+
+    (7) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...o Find the Perfect Toy for Your Cat? How to Choose the Right Cat Toys 5 Surprising Benefits of Cat Toys for Indoor Cats Best Cat Toys on a Budget Creative Indoor Play Ideas for Your Feline Explore More Pet Supplies Choosing Safe and Durable Pla...
+
+    (8) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...ly sharp and physically fit. Explore our curated selection designed to make every play session rewarding and fun. Top 5 Best Cat Toys This Year Interactive Feather Wand Toy A retractable feather wand that brings out your cat’s natural hunting i...
+
+    (9) Pattern: best (ranking context)
+        Matched: "best"
+        Context: ...n 💰 Budget-Friendly Cat Toy Ideas You do not need to spend a fortune on cat toys to keep your feline happy. Some of the best cat toys are surprisingly affordable. Simple crinkle balls, catnip mice, and feather teasers are inexpensive options th...
+
+    (10) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...y toy is chosen for safety, quality, and fun — because playtime should always bring joy. Shop Cat Toys Related Articles Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide Best Catnip Toys UK (2026) – What Works and Why Best Interactive ...
+
+    (11) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...time should always bring joy. Shop Cat Toys Related Articles Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide Best Catnip Toys UK (2026) – What Works and Why Best Interactive Cat Toys UK (2026) – Wand & Puzzle Guide Best Cat Toys UK (...
+
+    (12) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...ted Articles Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide Best Catnip Toys UK (2026) – What Works and Why Best Interactive Cat Toys UK (2026) – Wand & Puzzle Guide Best Cat Toys UK (2026) – Complete Guide
+
+    (13) Pattern: best (ranking context)
+        Matched: "Best"
+        Context: ...ichment Guide Best Catnip Toys UK (2026) – What Works and Why Best Interactive Cat Toys UK (2026) – Wand & Puzzle Guide Best Cat Toys UK (2026) – Complete Guide
+
+    (14) Pattern: real user feedback / owner-approved
+        Matched: "Owner Approved"
+        Context: ...y You Can Trust Our recommendations are refreshed weekly to include the latest, most trusted cat toys available. ✔️ Pet Owner Approved All reviews come from real cat owners who share honest feedback based on genuine experience. How to Choose the Right Ca...
+
+  [2] TRUST SIGNAL AUDIT:
+      Trust block FOUND on this page.
+      Heading: "Why Pet Owners Trust"
+      Context: ... . The Best Toys for Happy Cats Top‑rated cat toys for happier, healthier playtime. Shop Cat Toys Shop Bestsellers Table of Contents Playtime That Keeps Cats Curious and Content Shop Cat Toys by Ty
+      Heading: "Trusted by pet owners"
+      Context: ...with top-rated litter trays. View Category ❤️ Cat Health & Care Support your cat’s wellbeing with trusted care essentials. View Category Updated weekly • Independent reviews • No sponsored products
+      ** TRUST BLOCK OVERCLAIMS (2 found):
+         - "pet owner approved"
+           Context: ...ty, and feline enjoyment. ⭐ Quality You Can Trust Our recommendations are refreshed weekly to include the latest, most trusted cat toys available. ✔️ Pet Owner Approved All reviews come from real c
+         - "owner approved"
+           Context: ...and feline enjoyment. ⭐ Quality You Can Trust Our recommendations are refreshed weekly to include the latest, most trusted cat toys available. ✔️ Pet Owner Approved All reviews come from real cat o
+
+  [3] INFO STRIP CHECK:
+      NOT FOUND - No info strip detected.
+
+  [4] AFFILIATE DISCLOSURE CHECK:
+      Present.
+      Is wp:html block: YES
+      Snippet: Affiliate Disclosure: Some links on this page are affiliate links. If you click an affiliate
+
+  [5] IMAGE/MEDIA:
+      Featured media: NO
+      Cover/hero image in content: YES
+      Details: wp:cover block, wp:image block(s)
+
+  [6] COMMENT STATUS: CLOSED
+
+================================================================================
+ACTIONABLE FINDINGS - PAGES NEEDING FIXES
+================================================================================
+
+PAGE 63 (Dog Supplies):
+  - OVERCLAIMS (8 instances): tested/testing/we test, best (ranking context), our team, expert/experts
+  - MISSING info strip
+  - Affiliate disclosure is NOT a wp:html block
+
+PAGE 1041 (Dog Toys):
+  - OVERCLAIMS (16 instances): real user feedback / owner-approved, tested/testing/we test, best (ranking context), expert/experts
+  - TRUST BLOCK OVERCLAIMS: expert testing, updated reviews, pet owner approved, owner approved
+  - MISSING info strip
+
+PAGE 37 (Contact Pet Hub Online):
+  - MISSING info strip
+  - Affiliate disclosure is NOT a wp:html block
+
+PAGE 38 (Blog):
+  - OVERCLAIMS (5 instances): best (ranking context), expert/experts
+  - MISSING info strip
+  - MISSING affiliate disclosure
+
+PAGE 1141 (Dog Beds):
+  - OVERCLAIMS (14 instances): we recommend, best (ranking context), expert/experts
+  - MISSING info strip
+
+PAGE 1144 (Dog Grooming):
+  - OVERCLAIMS (13 instances): tested/testing/we test, best (ranking context), expert/experts
+  - MISSING info strip
+  - Affiliate disclosure is NOT a wp:html block
+
+PAGE 1146 (Dog Collars &amp; Leashes):
+  - OVERCLAIMS (12 instances): tested/testing/we test, best (ranking context), expert/experts
+  - MISSING info strip
+
+PAGE 1149 (Cat Toys):
+  - OVERCLAIMS (14 instances): real user feedback / owner-approved, best (ranking context), top rated/top-rated, expert/experts
+  - TRUST BLOCK OVERCLAIMS: pet owner approved, owner approved
+  - MISSING info strip

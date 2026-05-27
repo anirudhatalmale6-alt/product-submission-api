@@ -1,0 +1,82 @@
+SITE HARDENING REPORT 1: LIVE SITE TRUST HARDENING
+PetHub Online — pethubonline.com
+Generated: 2026-05-27
+==========================================================================
+
+SCOPE
+-----
+Full trust posture audit and correction across all published pages
+and posts, focusing on unsupported claims, fake expertise signals,
+and trust infrastructure alignment.
+
+==========================================================================
+WORK COMPLETED
+==========================================================================
+
+1. ABOUT US PAGE (ID 39) — MODERATE REWRITE
+   Before: Contained "experts", "Expert Testing", "real user feedback",
+           "we only recommend products we believe in", implied direct
+           product testing, "Our team reviews and curates each item"
+   After:  All unsupported phrases removed. New honest sections:
+           - "About Pet Hub Online" — clear identity statement
+           - "Our Mission" — plain language, no overclaiming
+           - "What We Do" — Educational Guides, Product Information, Updates
+           - "How Our Content Is Created" — honest AI-assisted disclosure
+           - "Our Limitations" — explicit non-vet, non-expert acknowledgment
+           - "Affiliate Relationships" — transparent disclosure
+   Status: LIVE, verified via screenshot
+
+2. TRUST PAGES REFINED (IDs 4402, 4403, 4405, 300)
+   All 4 trust pages now have:
+   - Top info strip (Last Updated, Website, Business)
+   - Separator after info strip
+   - Trust footer with cross-links to ALL 5 trust pages
+   - Corrections Policy link added where missing
+   Pages 4402, 4403, 4405 remain in DRAFT (operator must publish)
+   Page 300 (Affiliate Disclosure) is LIVE with updates
+
+3. HUB PAGE OVERCLAIM REMOVAL (16 pages)
+   Systematic removal of unsupported claims across all hub pages:
+
+   Dog Toys (1041): 16 overclaims fixed
+   - "Expert Testing" -> "Research-Based Recommendations"
+   - "independently tested" -> research-based language
+   - "Pet Owner Approved" -> "Community Focused"
+   - "real dog owners who share honest feedback" -> removed
+
+   Dog Beds (1141): Info strip added, overclaim language reviewed
+   Dog Grooming (1144): "tested by professionals" -> research language
+   Dog Collars (1146): "Independent Only Reviews" -> "Research-Based Guides"
+   Cat Toys (1149): "top-rated" -> "popular", "expert" -> "practical"
+   Dog Supplies (63): "Our team reviews" -> "We research", "tested" -> "evaluated"
+   Blog (38): "expert advice" -> "practical guidance"
+
+   Remaining hubs (Cat Supplies, Cat Beds, Cat Grooming, Cat Collars,
+   Cat Scratching Posts, Cat Litter Trays, Dog Bowls, Dog Training,
+   Dog Health, Dog Food): "Expert-Reviewed Picks" -> "Recommended Picks",
+   info strips added to all
+
+4. TRUST SIGNAL BLOCKS CORRECTED
+   Before: Trust blocks on multiple pages said "Expert Testing",
+           "Pet Owner Approved", "independently tested"
+   After:  Replaced with honest alternatives across all instances
+
+==========================================================================
+BANNED PHRASES — VERIFICATION
+==========================================================================
+Post-fix verification scan confirmed zero instances of:
+- "Expert Testing" (as a PetHub claim)
+- "independently tested" (as a PetHub claim)
+- "real user feedback" (as a PetHub claim)
+- "our team reviews" or "our team tests"
+- "we test products"
+
+Manufacturer claims (e.g., "VET-APPROVED" on product descriptions) were
+intentionally preserved as they refer to the manufacturer, not PetHub.
+
+==========================================================================
+REMAINING ITEMS (Operator Action Required)
+==========================================================================
+1. Publish trust pages 4402, 4403, 4405 (currently draft)
+2. Review Contact page personal details (email, physical address)
+3. Review whether "best" in page titles needs softening per brand strategy

@@ -1,0 +1,846 @@
+<!-- wp:cover {"url":"https://pethubonline.com/wp-content/uploads/2026/05/DOG-FOOD-COVER-IMAGE.webp","id":4393,"alt":"Golden retriever puppy eating the best dog food","dimRatio":50,"customOverlayColor":"#f8f8f8","isUserOverlayColor":true,"minHeight":900,"minHeightUnit":"px","isDark":false,"sizeSlug":"full","align":"full","className":"remove-top-gap","style":{"spacing":{"padding":{"top":"10px","bottom":"10px"},"margin":{"bottom":"40px"}}},"layout":{"type":"constrained","wideSize":"1200px"}} -->
+<div class="wp-block-cover alignfull is-light remove-top-gap" style="margin-bottom:40px;padding-top:10px;padding-bottom:10px;min-height:900px"><img class="wp-block-cover__image-background wp-image-4393 size-full" alt="Golden retriever puppy eating the best dog food" src="https://pethubonline.com/wp-content/uploads/2026/05/DOG-FOOD-COVER-IMAGE.webp" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#f8f8f8"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"align":"wide","style":{"elements":{"link":{"color":{"text":"#222222"}}},"color":{"text":"#222222"},"typography":{"fontStyle":"normal","fontWeight":"700","fontSize":"56px","lineHeight":"1.2","textAlign":"left"},"spacing":{"padding":{"right":"0px","left":"0px","top":"0","bottom":"0"}}}} -->
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color" style="color:#222222;padding-top:0;padding-right:0px;padding-bottom:0;padding-left:0px;font-size:56px;font-style:normal;font-weight:700;line-height:1.2">Healthy Dog Food &amp; Puppy Nutrition Guides</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"wide","style":{"elements":{"link":{"color":{"text":"#444444"}}},"color":{"text":"#444444"},"typography":{"fontStyle":"normal","fontWeight":"600","textAlign":"left","fontSize":"20px"},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"0px","right":"0px"}}}} -->
+<p class="has-text-align-left alignwide has-text-color has-link-color" style="color:#444444;padding-top:20px;padding-right:0px;padding-bottom:20px;padding-left:0px;font-size:20px;font-style:normal;font-weight:600">Explore top rated dog food, puppy food, dry food, wet food, and feeding advice for dogs of all ages and breeds.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"align":"wide","style":{"typography":{"fontSize":"20px"},"spacing":{"padding":{"top":"50px","bottom":"50px","left":"16px","right":"16px"}}},"layout":{"type":"flex","justifyContent":"center","verticalAlignment":"center"}} -->
+<div class="wp-block-buttons alignwide has-custom-font-size" style="padding-top:50px;padding-right:16px;padding-bottom:50px;padding-left:16px;font-size:20px"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/best-dog-food-uk/">Best Dog Food UK</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/best-puppy-food-uk/">Best Puppy Food UK</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"40px","bottom":"40px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide" style="padding-top:40px;padding-bottom:40px"><!-- wp:heading {"style":{"elements":{"link":{"color":{"text":"#222222"}}},"color":{"text":"#222222"},"typography":{"fontStyle":"normal","fontWeight":"700","textAlign":"center"},"spacing":{"padding":{"top":"22px","bottom":"22px"}}},"fontSize":"large","anchor":"why-choosing-the-best-dog-toys-matters"} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color has-large-font-size" id="why-choosing-the-best-dog-toys-matters" style="color:#222222;padding-top:22px;padding-bottom:22px;font-style:normal;font-weight:700"><strong>Finding the Right Dog Food for Your Pet</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"#444444"}}},"color":{"text":"#444444"},"typography":{"textAlign":"center","fontSize":"18px","lineHeight":"1.5"},"spacing":{"padding":{"top":"22px","bottom":"22px"}}}} -->
+<p class="has-text-align-center has-text-color has-link-color" style="color:#444444;padding-top:22px;padding-bottom:22px;font-size:18px;line-height:1.5">Choosing the right dog food plays an important role in your dog’s overall health, energy levels, digestion, coat condition, and long-term wellbeing. Puppies, adult dogs, and senior dogs all have different nutritional requirements, making it important to choose food designed for their life stage and breed size.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"18px","lineHeight":"1.5","textAlign":"center"},"elements":{"link":{"color":{"text":"#444444"},":hover":{"color":{"text":"var:preset|color|ast-global-color-0"}}}},"color":{"text":"#444444"}}} -->
+<p class="has-text-align-center has-text-color has-link-color" style="color:#444444;font-size:18px;line-height:1.5">At Pet Hub Online, we help UK dog owners discover trusted dog food brands, puppy nutrition advice, feeding guides, and highly rated products that support healthy growth and balanced nutrition.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"#444444"},":hover":{"color":{"text":"var:preset|color|ast-global-color-0"}}}},"color":{"text":"#444444"},"typography":{"textAlign":"center","fontSize":"18px","lineHeight":"1.5"},"spacing":{"padding":{"top":"22px","bottom":"22px"}}}} -->
+<p class="has-text-align-center has-text-color has-link-color" style="color:#444444;padding-top:22px;padding-bottom:22px;font-size:18px;line-height:1.5">Whether you are searching for the <strong><a href="https://pethubonline.com/best-dog-food-uk/" data-type="post" data-id="3836">best dog food UK</a></strong>, comparing <strong><a href="https://pethubonline.com/dry-vs-wet-dog-food-uk/" data-type="post" data-id="3838">dry vs wet dog food</a></strong>, or looking for the <strong><a href="https://pethubonline.com/best-puppy-food-uk/" data-type="post" data-id="3839">best puppy food UK</a></strong>, choosing balanced nutrition is essential for healthy growth and long-term health.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator {"align":"wide","className":"is-style-wide","style":{"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+<hr class="wp-block-separator alignwide has-alpha-channel-opacity is-style-wide" style="margin-top:0;margin-bottom:0"/>
+<!-- /wp:separator --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"40px","bottom":"40px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-white-background-color has-background" style="padding-top:40px;padding-bottom:40px"><!-- wp:heading {"style":{"typography":{"fontSize":"34px","fontStyle":"normal","fontWeight":"700","lineHeight":"1.2","textAlign":"left"},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"#1a1a1a"}}}}} -->
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color" style="color:#1a1a1a;font-size:34px;font-style:normal;font-weight:700;line-height:1.2">Popular Dog Food Guides</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns {"style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"blockGap":{"top":"0"},"padding":{"top":"22px","bottom":"22px"}}}} -->
+<div class="wp-block-columns" style="margin-top:0px;margin-bottom:0px;padding-top:22px;padding-bottom:22px"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"},"color":"#e5e5e5","width":"5px"},"elements":{"link":{":hover":{"color":{"text":"#0073aa"}},"color":{"text":"var:preset|color|ast-global-color-5"}}},"shadow":"var:preset|shadow|sharp"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-link-color" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)"><!-- wp:image {"id":4021,"width":"150px","sizeSlug":"full","linkDestination":"none","align":"center","style":{"spacing":{"margin":{"bottom":"16px"}},"shadow":"var:preset|shadow|natural"}} -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img src="https://pethubonline.com/wp-content/uploads/2026/05/Copilot_20260527_003833.png" alt="best dog food UK food guide" class="wp-image-4021" style="box-shadow:var(--wp--preset--shadow--natural);width:150px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-0"},":hover":{"color":{"text":"var:preset|color|cyan-bluish-gray"}}}},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Best Dog Food UK</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Discover top rated dog food brands for adult dogs, including dry food, wet food, and balanced nutrition options.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/best-dog-food-uk/">Read Guide</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"color":"#e5e5e5","width":"5px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"shadow":"var:preset|shadow|sharp"},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)"><!-- wp:image {"id":4040,"width":"150px","sizeSlug":"full","linkDestination":"none","align":"center","style":{"spacing":{"margin":{"bottom":"16px"}},"shadow":"var:preset|shadow|natural"}} -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img src="https://pethubonline.com/wp-content/uploads/2026/05/Copilot_20260527_004112.png" alt="Dry vs Wet Dog Food - Learn the differences between them" class="wp-image-4040" style="box-shadow:var(--wp--preset--shadow--natural);width:150px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-0"},":hover":{"color":{"text":"var:preset|color|cyan-bluish-gray"}}}},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Dry vs Wet Dog Food</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Learn the differences between dry and wet dog food, including nutrition, cost, storage, and feeding benefits.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dry-vs-wet-dog-food-uk/">Read Guide</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"style":{"spacing":{"padding":{"top":"0px","bottom":"0px"}}}} -->
+<div class="wp-block-column" style="padding-top:0px;padding-bottom:0px"><!-- wp:group {"style":{"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"color":"#e5e5e5","width":"5px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"shadow":"var:preset|shadow|sharp"},"layout":{"type":"constrained"},"anchor":"puzzle-toys"} -->
+<div id="puzzle-toys" class="wp-block-group has-border-color" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)"><!-- wp:image {"id":4054,"width":"150px","sizeSlug":"full","linkDestination":"none","align":"center","style":{"spacing":{"margin":{"bottom":"16px"}},"shadow":"var:preset|shadow|natural"}} -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img src="https://pethubonline.com/wp-content/uploads/2026/05/Copilot_20260527_004427.png" alt="Best dry dog food UK reading guide" class="wp-image-4054" style="box-shadow:var(--wp--preset--shadow--natural);width:150px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-0"},":hover":{"color":{"text":"var:preset|color|cyan-bluish-gray"}}}},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Best Dry Dog Food UK</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Compare highly rated dry dog food for small breeds, large breeds, sensitive stomachs, and active dogs.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/best-dry-dog-food-uk/">Read Guide</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"color":"#e5e5e5","width":"5px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"shadow":"var:preset|shadow|sharp"},"layout":{"type":"constrained"},"anchor":"fetch-toys"} -->
+<div id="fetch-toys" class="wp-block-group has-border-color" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)"><!-- wp:image {"id":4081,"width":"150px","sizeSlug":"full","linkDestination":"none","align":"center","style":{"spacing":{"margin":{"bottom":"16px"}},"shadow":"var:preset|shadow|natural"}} -->
+<figure class="wp-block-image aligncenter size-full is-resized" style="margin-bottom:16px"><img src="https://pethubonline.com/wp-content/uploads/2026/05/Copilot_20260527_004604.png" alt="Best Puppy Food UK reading guide" class="wp-image-4081" style="box-shadow:var(--wp--preset--shadow--natural);width:150px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-0"},":hover":{"color":{"text":"var:preset|color|cyan-bluish-gray"}}}},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Best Puppy Food UK</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Explore growth-stage puppy food recommendations, feeding schedules, and nutritional advice for puppies.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/best-puppy-food-uk/">Read Guide</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"60px","bottom":"60px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide has-white-background-color has-background" style="padding-top:60px;padding-bottom:60px"><!-- wp:heading {"style":{"typography":{"fontSize":"32px","fontStyle":"normal","fontWeight":"700","lineHeight":"1.2","textAlign":"center"},"elements":{"link":{"color":{"text":"#111111"}}},"color":{"text":"#111111"},"spacing":{"margin":{"bottom":"40px"}}},"anchor":"our-bestselling-dog-toys-top-5-this-year"} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color" id="our-bestselling-dog-toys-top-5-this-year" style="color:#111111;margin-bottom:40px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Top Rated Dog Food Products</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"},"margin":{"bottom":"32px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px"><!-- wp:image {"id":4352,"width":"300px","height":"300px","scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://pethubonline.com/wp-content/uploads/2026/05/41qVVji3ouL._AC_.jpg" alt="Royal Canin Puppy food for growth-stage nutrition" class="wp-image-4352" style="object-fit:cover;width:300px;height:300px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Royal Canin Puppy Food</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
+<p style="font-style:normal;font-weight:700"><strong>Rating</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
+<p style="font-style:normal;font-weight:700"><strong>★★★★★</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6"><strong>Best For</strong>: Puppies and growth-stage nutrition</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">Pros</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"}}} -->
+<ul style="color:#333333;font-size:16px;line-height:1.6" class="wp-block-list has-text-color has-link-color"><!-- wp:list-item -->
+<li>Complete balanced nutrition</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Breed-specific formulas</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Trusted veterinary brand</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"white","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"fontStyle":"normal","fontWeight":"600"},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"left":"14px","right":"14px","top":"14px","bottom":"14px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://amzn.to/4dyiLGV" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="noopener nofollow">Check Price on Amazon</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"},"margin":{"bottom":"32px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px"><!-- wp:image {"id":4358,"width":"300px","height":"300px","scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://pethubonline.com/wp-content/uploads/2026/05/71rDIpsMwxL._AC_SL1500_.jpg" alt="Purina Pro Plan dry dog food for active dogs" class="wp-image-4358" style="object-fit:cover;width:300px;height:300px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Purina Pro Plan Dog Food</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
+<p style="font-style:normal;font-weight:700"><strong>Rating</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>★★★★★</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6"><strong>Best For</strong>: Active dogs and advanced nutritional support</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">Pros</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"}}} -->
+<ul style="color:#333333;font-size:16px;line-height:1.6" class="wp-block-list has-text-color has-link-color"><!-- wp:list-item -->
+<li>High protein formulas</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Supports digestion and immunity</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Developed with veterinary and nutrition experts</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"white","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"fontStyle":"normal","fontWeight":"600"},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"left":"14px","right":"14px","top":"14px","bottom":"14px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://amzn.to/4e4sBQZ" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="noopener nofollow">Check Price on Amazon</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"},"margin":{"bottom":"32px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px"><!-- wp:image {"id":4359,"width":"300px","height":"300px","scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://pethubonline.com/wp-content/uploads/2026/05/81-1j2LHrLL._AC_SL1500_.jpg" alt="Harringtons natural dry dog food for adult dogs" class="wp-image-4359" style="object-fit:cover;width:300px;height:300px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Harringtons Dog Food</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
+<p style="font-style:normal;font-weight:700"><strong>Rating</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
+<p style="font-style:normal;font-weight:700"><strong>★★★★★</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6"><strong>Best For</strong>: Affordable everyday balanced nutrition</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">Pros</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"}}} -->
+<ul style="color:#333333;font-size:16px;line-height:1.6" class="wp-block-list has-text-color has-link-color"><!-- wp:list-item -->
+<li>Natural ingredients</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>No artificial colours or flavours</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Great value for money</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"white","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"fontStyle":"normal","fontWeight":"600"},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"left":"14px","right":"14px","top":"14px","bottom":"14px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://amzn.to/4xc4sjd" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="noopener nofollow">Check Price on Amazon</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"},"margin":{"bottom":"32px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px"><!-- wp:image {"id":4360,"width":"300px","height":"300px","scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://pethubonline.com/wp-content/uploads/2026/05/71qM6G278zL._AC_SL1500_.jpg" alt="Lily’s Kitchen grain free dog food recipe" class="wp-image-4360" style="object-fit:cover;width:300px;height:300px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Lily’s Kitchen Dog Food</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
+<p style="font-style:normal;font-weight:700"><strong>Rating</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
+<p style="font-style:normal;font-weight:700"><strong>★★★★★</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6"><strong>Best For</strong>: Natural recipes and premium ingredients</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">Pros</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"}}} -->
+<ul style="color:#333333;font-size:16px;line-height:1.6" class="wp-block-list has-text-color has-link-color"><!-- wp:list-item -->
+<li>Grain-free options available</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Proper meat ingredients</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Trusted veterinary brand</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"white","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"fontStyle":"normal","fontWeight":"600"},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"left":"14px","right":"14px","top":"14px","bottom":"14px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://amzn.to/4f6U45B" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="noopener nofollow">Check Price on Amazon</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"},"margin":{"bottom":"32px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px"><!-- wp:image {"id":4366,"width":"300px","height":"300px","scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://pethubonline.com/wp-content/uploads/2026/05/71Pn6uuIIIL._AC_SL1500_.jpg" alt="Wellness CORE high protein dog food" class="wp-image-4366" style="object-fit:cover;width:300px;height:300px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Wellness CORE Dog Food</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
+<p style="font-style:normal;font-weight:700"><strong>Rating</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
+<p style="font-style:normal;font-weight:700"><strong>★★★★★</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6"><strong>Best For</strong>: High protein and grain-free nutrition</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">Pros</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"}}} -->
+<ul style="color:#333333;font-size:16px;line-height:1.6" class="wp-block-list has-text-color has-link-color"><!-- wp:list-item -->
+<li>Protein-rich recipes</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Grain-free formulas</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Supports lean muscle maintenance</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"white","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"fontStyle":"normal","fontWeight":"600"},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"left":"14px","right":"14px","top":"14px","bottom":"14px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://amzn.to/4agjfiH" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="noopener nofollow">Check Price on Amazon</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"},"margin":{"bottom":"32px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:32px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px"><!-- wp:image {"id":4367,"width":"300px","height":"300px","scale":"cover","sizeSlug":"full","linkDestination":"none","align":"center"} -->
+<figure class="wp-block-image aligncenter size-full is-resized"><img src="https://pethubonline.com/wp-content/uploads/2026/05/61q-qQ0q0EL._AC_SL1500_.jpg" alt="Pedigree adult dog food for everyday feeding" class="wp-image-4367" style="object-fit:cover;width:300px;height:300px"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#0073aa;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Pedigree Dog Food</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
+<p style="font-style:normal;font-weight:700"><strong>Rating</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontStyle":"normal","fontWeight":"700"}}} -->
+<p style="font-style:normal;font-weight:700"><strong>★★★★★</strong></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6"><strong>Best For</strong>: Everyday feeding and trusted mainstream nutrition</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;margin-bottom:12px;font-size:16px;line-height:1.6">Pros</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list {"style":{"typography":{"fontSize":"16px","lineHeight":1.6},"elements":{"link":{"color":{"text":"#333333"}}},"color":{"text":"#333333"}}} -->
+<ul style="color:#333333;font-size:16px;line-height:1.6" class="wp-block-list has-text-color has-link-color"><!-- wp:list-item -->
+<li>Widely available</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Balanced daily nutrition</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Suitable for adult dogs</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button {"textColor":"white","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"fontStyle":"normal","fontWeight":"600"},"border":{"radius":{"topLeft":"6px","topRight":"6px","bottomLeft":"6px","bottomRight":"6px"},"color":"#0073aa","width":"3px"},"spacing":{"padding":{"left":"14px","right":"14px","top":"14px","bottom":"14px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-white-color has-text-color has-link-color has-border-color wp-element-button" href="https://amzn.to/49VvEsc" style="border-color:#0073aa;border-width:3px;border-top-left-radius:6px;border-top-right-radius:6px;border-bottom-left-radius:6px;border-bottom-right-radius:6px;padding-top:14px;padding-right:14px;padding-bottom:14px;padding-left:14px;font-style:normal;font-weight:600" target="_blank" rel="noopener nofollow">Check Price on Amazon</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"40px","bottom":"40px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-white-background-color has-background" style="padding-top:40px;padding-bottom:40px"><!-- wp:heading {"style":{"typography":{"fontSize":"34px","fontStyle":"normal","fontWeight":"700","lineHeight":"1.2","textAlign":"left"},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"#1a1a1a"}}}},"anchor":"browse-all-dog-toys-by-type"} -->
+<h2 class="wp-block-heading has-text-align-left has-text-color has-link-color" id="browse-all-dog-toys-by-type" style="color:#1a1a1a;font-size:34px;font-style:normal;font-weight:700;line-height:1.2">Explore Dog Food Categories</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns {"style":{"spacing":{"margin":{"top":"0px","bottom":"0px"},"blockGap":{"top":"0"},"padding":{"top":"22px","bottom":"22px"}}},"anchor":"bed-categories"} -->
+<div class="wp-block-columns" id="bed-categories" style="margin-top:0px;margin-bottom:0px;padding-top:22px;padding-bottom:22px"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"},"color":"#e5e5e5","width":"5px"},"elements":{"link":{":hover":{"color":{"text":"#0073aa"}},"color":{"text":"var:preset|color|ast-global-color-5"}}},"shadow":"var:preset|shadow|sharp"},"layout":{"type":"constrained"},"anchor":"chew-toys"} -->
+<div id="chew-toys" class="wp-block-group has-border-color has-link-color" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-align-center has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:40px">🥣</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-0"},":hover":{"color":{"text":"var:preset|color|cyan-bluish-gray"}}}},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3"><a href="https://pethubonline.com/best-dry-dog-food-uk/" data-type="post" data-id="3837">Dry Dog Food</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Long-lasting kibble designed to support dental health, balanced nutrition, and convenient feeding.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"color":"#e5e5e5","width":"5px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"shadow":"var:preset|shadow|sharp"},"layout":{"type":"constrained"},"anchor":"plush-toys"} -->
+<div id="plush-toys" class="wp-block-group has-border-color" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-align-center has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:40px">🍼</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-0"},":hover":{"color":{"text":"var:preset|color|cyan-bluish-gray"}}}},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3"><a href="https://pethubonline.com/best-puppy-food-uk/" data-type="post" data-id="3839">Puppy Food</a></h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Specially formulated nutrition for healthy puppy growth, development, and energy needs.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"color":"#e5e5e5","width":"5px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"shadow":"var:preset|shadow|sharp"},"layout":{"type":"constrained"},"anchor":"interactive-toys"} -->
+<div id="interactive-toys" class="wp-block-group has-border-color" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-align-center has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:40px">🌾🚫</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-0"},":hover":{"color":{"text":"var:preset|color|cyan-bluish-gray"}}}},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Grain-Free Dog Food</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Alternative recipes for dogs with specific dietary sensitivities or preferences.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"style":{"spacing":{"padding":{"top":"0px","bottom":"0px"}}}} -->
+<div class="wp-block-column" style="padding-top:0px;padding-bottom:0px"><!-- wp:group {"style":{"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"color":"#e5e5e5","width":"5px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"shadow":"var:preset|shadow|sharp"},"layout":{"type":"constrained"},"anchor":"puzzle-toys"} -->
+<div id="puzzle-toys" class="wp-block-group has-border-color" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-align-center has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:40px">🍖</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-0"},":hover":{"color":{"text":"var:preset|color|cyan-bluish-gray"}}}},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Wet Dog Food</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Moist, flavour-rich meals ideal for picky eaters, hydration support, and mixed feeding routines.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"color":"#e5e5e5","width":"5px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"shadow":"var:preset|shadow|sharp"},"layout":{"type":"constrained"},"anchor":"fetch-toys"} -->
+<div id="fetch-toys" class="wp-block-group has-border-color" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-align-center has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:40px">🦴</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-0"},":hover":{"color":{"text":"var:preset|color|cyan-bluish-gray"}}}},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Senior Dog Food</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Recipes designed to support ageing dogs with joint support, digestion, and weight management.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"color":"#e5e5e5","width":"5px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"shadow":"var:preset|shadow|sharp"},"layout":{"type":"constrained"},"anchor":"tug-toys"} -->
+<div id="tug-toys" class="wp-block-group has-border-color" style="border-color:#e5e5e5;border-width:5px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px;box-shadow:var(--wp--preset--shadow--sharp)"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-align-center has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:40px">🌿</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600","lineHeight":"1.3"},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-0"},":hover":{"color":{"text":"var:preset|color|cyan-bluish-gray"}}}},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#1a1a1a;margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600;line-height:1.3">Sensitive Stomach Food</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"},"color":{"text":"#4a4a4a"},"elements":{"link":{"color":{"text":"#4a4a4a"}}},"spacing":{"margin":{"top":"16px","bottom":"16px"}}}} -->
+<p class="has-text-color has-link-color" style="color:#4a4a4a;margin-top:16px;margin-bottom:16px;font-size:16px">Gentle dog food options formulated for digestive comfort and food sensitivities.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"60px","bottom":"60px"}},"color":{"background":"#fafafa"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide has-background" style="background-color:#fafafa;padding-top:60px;padding-bottom:60px"><!-- wp:heading {"style":{"typography":{"fontSize":"32px","fontStyle":"normal","fontWeight":"700","lineHeight":"1.2","textAlign":"center"},"color":{"text":"#111111"},"elements":{"link":{"color":{"text":"#111111"}}},"spacing":{"margin":{"bottom":"30px"}}}} -->
+<h2 class="wp-block-heading has-text-align-center has-text-color has-link-color" style="color:#111111;margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">How to Choose the Best Dog Food</h2>
+<!-- /wp:heading -->
+
+<!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"28px","right":"28px"},"margin":{"bottom":"28px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px"><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🐶 Choose Food Based on Life Stage</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":"1.6"},"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-0"},":hover":{"color":{"text":"var:preset|color|ast-global-color-1"}}}},"spacing":{"margin":{"top":"1px","bottom":"12px"}},"color":{"text":"#333333"}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Puppies, adult dogs, and senior dogs require different nutrient balances to support healthy growth, maintenance, and ageing. Always choose food designed for your dog’s age group.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"28px","right":"28px"},"margin":{"bottom":"28px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px"><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🥩 Check Protein &amp; Ingredient Quality</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":"1.6"},"elements":{"link":{"color":{"text":"#333333"}}},"spacing":{"margin":{"top":"1px","bottom":"12px"}},"color":{"text":"#333333"}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Look for quality protein sources, balanced fats, vitamins, and minerals. Avoid foods with excessive fillers, artificial colours, or low-quality ingredients where possible.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"28px","right":"28px"},"margin":{"bottom":"28px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px"><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🐕‍🦺 Consider Breed Size &amp; Activity Level</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":"1.6"},"elements":{"link":{"color":{"text":"#333333"}}},"spacing":{"margin":{"top":"1px","bottom":"12px"}},"color":{"text":"#333333"}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Large breed dogs often require different calorie levels and joint support compared to small breeds. Active dogs may also benefit from higher protein and energy content.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"28px","bottom":"28px","left":"28px","right":"28px"},"margin":{"bottom":"28px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-white-background-color has-background" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;margin-bottom:28px;padding-top:28px;padding-right:28px;padding-bottom:28px;padding-left:28px"><!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"color":{"text":"#0073aa"},"elements":{"link":{"color":{"text":"#0073aa"}}},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<h3 class="wp-block-heading has-text-color has-link-color" style="color:#0073aa;margin-bottom:12px;font-size:20px;font-style:normal;font-weight:600">🌿 Monitor Digestion &amp; Allergies</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","lineHeight":"1.6"},"elements":{"link":{"color":{"text":"var:preset|color|ast-global-color-0"},":hover":{"color":{"text":"var:preset|color|ast-global-color-1"}}}},"spacing":{"margin":{"top":"1px","bottom":"12px"}},"color":{"text":"#333333"}}} -->
+<p class="has-text-color has-link-color" style="color:#333333;margin-top:1px;margin-bottom:12px;font-size:16px;line-height:1.6">Some dogs may develop sensitivities to certain ingredients. If your dog experiences digestive upset or itching, consider limited ingredient or sensitive stomach formulas.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom:12px;font-size:40px">🍼</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Puppy Feeding &amp; Growth Nutrition</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px"}}} -->
+<p style="font-size:16px">Puppies require carefully balanced nutrition to support healthy bone development, muscle growth, brain function, and immune health. Feeding schedules and portion sizes vary depending on breed size, age, and activity levels.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Large breed puppies may benefit from specially formulated puppy food that supports controlled growth and joint health.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} -->
+<div class="wp-block-buttons has-custom-font-size" style="font-size:16px;font-style:normal;font-weight:600"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/best-puppy-food-uk/">View Best Puppy Food UK</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"60px","bottom":"60px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide has-white-background-color has-background" style="padding-top:60px;padding-bottom:60px"><!-- wp:heading {"style":{"typography":{"fontSize":"32px","fontStyle":"normal","fontWeight":"700","textAlign":"center"},"spacing":{"margin":{"bottom":"40px"}}},"anchor":"why-pet-owners-trust-pet-hub-online"} -->
+<h2 class="wp-block-heading has-text-align-center" id="why-pet-owners-trust-pet-hub-online" style="margin-bottom:40px;font-size:32px;font-style:normal;font-weight:700">Why Dog Owners Trust Pet Hub Online</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"style":{"border":{"color":"#0073aa","width":"3px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}}}} -->
+<div class="wp-block-column has-border-color" style="border-color:#0073aa;border-width:3px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px"><!-- wp:group {"style":{"color":{"background":"#f7f7f7"},"spacing":{"padding":{"top":"24px","bottom":"24px","left":"24px","right":"24px"}},"border":{"radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-background" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#f7f7f7;padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom:12px;font-size:40px">🛡️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"typography":{"textAlign":"center"}}} -->
+<p class="has-text-align-center">We research and compare popular dog food products to help UK dog owners make informed feeding decisions. Our recommendations focus on:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Nutritional balance</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Ingredient quality</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Customer reviews</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Value for money</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Feeding suitability</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Brand reputation</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph {"style":{"typography":{"textAlign":"center"}}} -->
+<p class="has-text-align-center">We regularly update our dog food guides with highly rated products and practical feeding advice.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"40px","bottom":"40px"}},"color":{"background":"#fafafa"},"border":{"radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide has-background" style="border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:40px;padding-bottom:40px"><!-- wp:heading {"align":"wide","style":{"typography":{"fontSize":"32px","fontStyle":"normal","fontWeight":"700","lineHeight":"1.2","textAlign":"left"},"color":{"text":"#1a1a1a"},"elements":{"link":{"color":{"text":"#1a1a1a"}}},"spacing":{"margin":{"bottom":"25px"}}},"anchor":"dog-food-faq"} -->
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color" id="dog-food-faq" style="color:#1a1a1a;margin-bottom:25px;font-size:32px;font-style:normal;font-weight:700;line-height:1.2">Dog Food FAQ</h2>
+<!-- /wp:heading -->
+
+<!-- wp:details {"align":"wide","style":{"border":{"color":"#e5e5e5","width":"8px"},"spacing":{"padding":{"top":"20px","bottom":"20px"},"margin":{"bottom":"12px"}},"typography":{"fontSize":"18px"}},"backgroundColor":"ast-global-color-4"} -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px"><summary><strong>What is the best dog food in the UK?</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
+<p>The best dog food depends on your dog’s age, breed size, activity level, and dietary needs. Popular UK brands include Royal Canin, Purina Pro Plan, Harringtons, and James Wellbeloved.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"align":"wide","style":{"border":{"color":"#e5e5e5","width":"8px"},"spacing":{"padding":{"top":"20px","bottom":"20px"},"margin":{"bottom":"12px"}},"typography":{"fontSize":"18px"}},"backgroundColor":"ast-global-color-4"} -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px"><summary><strong>Is dry or wet dog food better?</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
+<p>Both dry and wet dog food have benefits. Dry food is convenient and supports dental health, while wet food provides higher moisture content and strong flavour appeal.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"align":"wide","style":{"border":{"color":"#e5e5e5","width":"8px"},"spacing":{"padding":{"top":"20px","bottom":"20px"},"margin":{"bottom":"12px"}},"typography":{"fontSize":"18px"}},"backgroundColor":"ast-global-color-4"} -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px"><summary><strong>How often should puppies eat?</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
+<p>Young puppies usually require 3–4 meals per day, gradually transitioning to 2 meals daily as they mature.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details -->
+
+<!-- wp:details {"align":"wide","style":{"border":{"color":"#e5e5e5","width":"8px"},"spacing":{"padding":{"top":"20px","bottom":"20px"},"margin":{"bottom":"12px"}},"typography":{"fontSize":"18px"}},"backgroundColor":"ast-global-color-4"} -->
+<details class="wp-block-details alignwide has-border-color has-ast-global-color-4-background-color has-background" style="border-color:#e5e5e5;border-width:8px;margin-bottom:12px;padding-top:20px;padding-bottom:20px;font-size:18px"><summary><strong>Should large breed puppies eat special food?</strong></summary><!-- wp:paragraph {"placeholder":"Type / to add a hidden block"} -->
+<p>Yes. Large breed puppies benefit from carefully balanced nutrition that supports controlled growth and healthy joint development.</p>
+<!-- /wp:paragraph --></details>
+<!-- /wp:details --></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"50px","bottom":"50px","left":"50px","right":"50px"}}},"backgroundColor":"white","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide has-white-background-color has-background" style="padding-top:50px;padding-right:50px;padding-bottom:50px;padding-left:50px"><!-- wp:heading {"style":{"typography":{"fontSize":"32px","fontStyle":"normal","fontWeight":"700","textAlign":"center"},"spacing":{"margin":{"bottom":"30px"}}},"anchor":"explore-more-dog-essentials"} -->
+<h2 class="wp-block-heading has-text-align-center" id="explore-more-dog-essentials" style="margin-bottom:30px;font-size:32px;font-style:normal;font-weight:700">Explore More Dog Supply Guides</h2>
+<!-- /wp:heading -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom:12px;font-size:40px">🛏️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Beds</h3>
+<!-- /wp:heading -->
+
+<!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} -->
+<div class="wp-block-buttons has-custom-font-size" style="font-size:16px;font-style:normal;font-weight:600"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-beds/">View Dog Beds</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom:12px;font-size:40px">🧸</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Toys</h3>
+<!-- /wp:heading -->
+
+<!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} -->
+<div class="wp-block-buttons has-custom-font-size" style="font-size:16px;font-style:normal;font-weight:600"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-toys/">Browse Dog Toys</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom:12px;font-size:40px">🐕‍🦺</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Best Puppy Food UK</h3>
+<!-- /wp:heading -->
+
+<!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} -->
+<div class="wp-block-buttons has-custom-font-size" style="font-size:16px;font-style:normal;font-weight:600"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/best-puppy-food-uk/">Read Puppy Food Guide</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom:12px;font-size:40px">🥇</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Best Dry Dog Food UK</h3>
+<!-- /wp:heading -->
+
+<!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} -->
+<div class="wp-block-buttons has-custom-font-size" style="font-size:16px;font-style:normal;font-weight:600"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/best-dog-food-uk/">Compare Dry Dog Food</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom:12px;font-size:40px">🍖</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Bowls &amp; Feeding</h3>
+<!-- /wp:heading -->
+
+<!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} -->
+<div class="wp-block-buttons has-custom-font-size" style="font-size:16px;font-style:normal;font-weight:600"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-bowls-feeding/">Shop Dog Feeding Supplies</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:group {"style":{"color":{"background":"#fafafa"},"border":{"color":"#e5e5e5","width":"1px","radius":{"topLeft":"12px","topRight":"12px","bottomLeft":"12px","bottomRight":"12px"}},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group has-border-color has-background" style="border-color:#e5e5e5;border-width:1px;border-top-left-radius:12px;border-top-right-radius:12px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;background-color:#fafafa;padding-top:20px;padding-right:20px;padding-bottom:20px;padding-left:20px"><!-- wp:paragraph {"style":{"typography":{"fontSize":"40px","textAlign":"center"},"spacing":{"margin":{"bottom":"12px"}}}} -->
+<p class="has-text-align-center" style="margin-bottom:12px;font-size:40px">❤️</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"20px","fontStyle":"normal","fontWeight":"600"},"spacing":{"margin":{"bottom":"8px"}}}} -->
+<h3 class="wp-block-heading" style="margin-bottom:8px;font-size:20px;font-style:normal;font-weight:600">Dog Health &amp; Care</h3>
+<!-- /wp:heading -->
+
+<!-- wp:buttons {"style":{"typography":{"fontStyle":"normal","fontWeight":"600","fontSize":"16px"}}} -->
+<div class="wp-block-buttons has-custom-font-size" style="font-size:16px;font-style:normal;font-weight:600"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/dog-health-care/">Explore Dog Health Guides</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+
+<!-- wp:cover {"url":"https://pethubonline.com/wp-content/uploads/2026/05/final-cta-dog-food-page.webp","id":4396,"alt":"Golden retriever and bulldog eating the best dog food UK has to offer","dimRatio":50,"customOverlayColor":"#f8f8f8","isUserOverlayColor":true,"minHeight":650,"minHeightUnit":"px","isDark":false,"sizeSlug":"full","align":"full","className":"remove-top-gap","style":{"spacing":{"padding":{"top":"10px","bottom":"10px"},"margin":{"bottom":"40px"}}},"layout":{"type":"constrained","wideSize":"1200px"}} -->
+<div class="wp-block-cover alignfull is-light remove-top-gap" style="margin-bottom:40px;padding-top:10px;padding-bottom:10px;min-height:650px"><img class="wp-block-cover__image-background wp-image-4396 size-full" alt="Golden retriever and bulldog eating the best dog food UK has to offer" src="https://pethubonline.com/wp-content/uploads/2026/05/final-cta-dog-food-page.webp" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background-color:#f8f8f8"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:heading {"align":"wide","style":{"elements":{"link":{"color":{"text":"#222222"}}},"color":{"text":"#222222"},"typography":{"fontStyle":"normal","fontWeight":"700","fontSize":"56px","lineHeight":"1.2","textAlign":"left"},"spacing":{"padding":{"right":"0px","left":"0px","top":"0","bottom":"0"}}}} -->
+<h2 class="wp-block-heading has-text-align-left alignwide has-text-color has-link-color" style="color:#222222;padding-top:0;padding-right:0px;padding-bottom:0;padding-left:0px;font-size:56px;font-style:normal;font-weight:700;line-height:1.2">Find the Best Dog Food for Your Dog</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"wide","style":{"elements":{"link":{"color":{"text":"#444444"}}},"color":{"text":"#444444"},"typography":{"fontStyle":"normal","fontWeight":"600","textAlign":"left","fontSize":"20px"},"spacing":{"padding":{"top":"20px","bottom":"20px","left":"0px","right":"0px"}}}} -->
+<p class="has-text-align-left alignwide has-text-color has-link-color" style="color:#444444;padding-top:20px;padding-right:0px;padding-bottom:20px;padding-left:0px;font-size:20px;font-style:normal;font-weight:600">Explore trusted dog food products, feeding guides, and puppy nutrition advice for healthy and happy dogs.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"align":"wide","style":{"typography":{"fontSize":"20px"},"spacing":{"padding":{"top":"50px","bottom":"50px","left":"16px","right":"16px"}}},"layout":{"type":"flex","justifyContent":"center","verticalAlignment":"center"}} -->
+<div class="wp-block-buttons alignwide has-custom-font-size" style="padding-top:50px;padding-right:16px;padding-bottom:50px;padding-left:16px;font-size:20px"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://pethubonline.com/best-dog-food-uk/">Browse Best Dog Food UK</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:group --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":2} -->
+<h2 class="wp-block-heading">Related Articles</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><a href="https://pethubonline.com/best-puppy-food-uk/">Best Puppy Food UK (2026) - Growth-Stage Nutrition Guide</a></li>
+<li><a href="https://pethubonline.com/dry-vs-wet-dog-food-uk/">Dry vs Wet Dog Food UK - An Honest Comparison Guide</a></li>
+<li><a href="https://pethubonline.com/best-dry-dog-food-uk/">Best Dry Dog Food UK (2026) - Evidence-Based Guide</a></li>
+<li><a href="https://pethubonline.com/best-dog-food-uk/">Best Dog Food UK (2026) - Complete Buying Guide</a></li>
+</ul>
+<!-- /wp:list -->

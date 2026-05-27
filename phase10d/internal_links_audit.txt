@@ -1,0 +1,386 @@
+======================================================================
+INTERNAL LINKING QUALITY AUDIT - pethubonline.com
+Generated: 2026-05-27 23:47:30
+Content Audited: 86 posts + 24 pages = 110 total
+Total Internal Links Found: 837
+======================================================================
+
+======================================================================
+1. ORPHAN PAGES (Zero Inbound Internal Links)
+======================================================================
+Found: 13 orphan pages
+
+  ORPHAN POSTS (11):
+    - Multi-Pet Household Tips: Living with Dogs and Cats Together
+      URL: https://pethubonline.com/multi-pet-household-tips/
+    - Cat Toy Safety Guide: What Every Owner Should Know
+      URL: https://pethubonline.com/cat-toy-safety-guide/
+    - Best Interactive Cat Toys for Indoor Cats: Engagement Guide
+      URL: https://pethubonline.com/best-interactive-cat-toys-indoor-cats/
+    - Harness vs Collar: Which Is Better for Your Dog?
+      URL: https://pethubonline.com/harness-vs-collar-which-is-better/
+    - How to Measure Your Dog for a Harness: Step-by-Step Guide
+      URL: https://pethubonline.com/how-to-measure-dog-for-harness/
+    - No-Pull Dog Harness Guide: How They Work and When to Use One
+      URL: https://pethubonline.com/no-pull-dog-harness-guide/
+    - Dog Harnesses: The Complete Guide to Types, Fitting, and Safety
+      URL: https://pethubonline.com/dog-harnesses-complete-guide/
+    - Cat Enrichment Activities Beyond Toys: Complete Guide
+      URL: https://pethubonline.com/cat-enrichment-activities-beyond-toys/
+    - Kitten vs Adult Cat Toys: Age-Appropriate Play Guide
+      URL: https://pethubonline.com/kitten-vs-adult-cat-toys-age-appropriate/
+    - How Often Should You Replace Cat Toys? A Practical Guide
+      URL: https://pethubonline.com/how-often-replace-cat-toys/
+    - DIY Cat Toys: Safe Homemade Options Your Cat Will Love
+      URL: https://pethubonline.com/diy-cat-toys-safe-homemade-options/
+
+  ORPHAN PAGES (2):
+    - Terms and Conditions
+      URL: https://pethubonline.com/terms-and-conditions/
+    - Pet Hub Online – Pet Supplies Online
+      URL: https://pethubonline.com/
+
+  ACTION: Add contextual internal links from related content
+  to these 13 orphan items to improve crawlability.
+
+======================================================================
+2. BROKEN INTERNAL LINKS
+======================================================================
+Found: 32 potentially broken internal links
+
+  BROKEN TARGET: /best-dog-harness
+  Referenced from 4 page(s):
+    - Harness vs Collar: Which Is Better for Your Dog?
+      Anchor: "Best Dog Harness"
+      Link: https://pethubonline.com/best-dog-harness/
+    - How to Measure Your Dog for a Harness: Step-by-Step Guide
+      Anchor: "Best Dog Harness"
+      Link: https://pethubonline.com/best-dog-harness/
+    - No-Pull Dog Harness Guide: How They Work and When to Use One
+      Anchor: "Best Dog Harness"
+      Link: https://pethubonline.com/best-dog-harness/
+    - Dog Harnesses: The Complete Guide to Types, Fitting, and Safety
+      Anchor: "Best Dog Harness"
+      Link: https://pethubonline.com/best-dog-harness/
+
+  BROKEN TARGET: /best-dog-training-and-behaviour-uk
+  Referenced from 2 page(s):
+    - How to Choose the Right Dog Training Treats
+      Anchor: "Best Dog Training and Behaviour UK"
+      Link: /best-dog-training-and-behaviour-uk
+    - Mental Stimulation for Dogs: Beyond Physical Exercise
+      Anchor: "Best Dog Training and Behaviour UK"
+      Link: /best-dog-training-and-behaviour-uk
+
+  BROKEN TARGET: /best-grain-free-dog-food-uk
+  Referenced from 1 page(s):
+    - Best Dog Food UK (2026) &#8211; Complete Buying Guide
+      Anchor: "Best Grain Free Dog Food UK"
+      Link: /best-grain-free-dog-food-uk/
+
+  BROKEN TARGET: /best-raw-dog-food-uk
+  Referenced from 1 page(s):
+    - Best Dog Food UK (2026) &#8211; Complete Buying Guide
+      Anchor: "Best Raw Dog Food UK"
+      Link: /best-raw-dog-food-uk/
+
+  BROKEN TARGET: /best-senior-dog-food-uk
+  Referenced from 1 page(s):
+    - Best Dog Food UK (2026) &#8211; Complete Buying Guide
+      Anchor: "Best Senior Dog Food UK"
+      Link: /best-senior-dog-food-uk/
+
+  BROKEN TARGET: /best-wet-dog-food-uk
+  Referenced from 1 page(s):
+    - Best Dog Food UK (2026) &#8211; Complete Buying Guide
+      Anchor: "Best Wet Dog Food UK"
+      Link: /best-wet-dog-food-uk/
+
+  BROKEN TARGET: /contact
+  Referenced from 1 page(s):
+    - About Us
+      Anchor: "Contact"
+      Link: /contact
+
+  BROKEN TARGET: /corrections-and-updates-policy
+  Referenced from 3 page(s):
+    - Affiliate Disclosure
+      Anchor: "Corrections and Updates Policy"
+      Link: /corrections-and-updates-policy
+    - About Us
+      Anchor: "Corrections and Updates Policy"
+      Link: /corrections-and-updates-policy
+    - Contact Pet Hub Online
+      Anchor: "Corrections and Updates Policy"
+      Link: /corrections-and-updates-policy
+
+  BROKEN TARGET: /dog-care
+  Referenced from 4 page(s):
+    - First-Time Dog Owner Essentials: What You Need to Know
+      Anchor: "Dog Care"
+      Link: https://pethubonline.com/dog-care/
+    - Dog Dental Health: A Practical Care Guide
+      Anchor: "Dog Care"
+      Link: https://pethubonline.com/dog-care/
+    - Seasonal Dog Care: Keeping Your Dog Safe Year-Round
+      Anchor: "Dog Care"
+      Link: https://pethubonline.com/dog-care/
+    - Dog Grooming Basics: A Complete Guide for Owners
+      Anchor: "Dog Care"
+      Link: https://pethubonline.com/dog-care/
+
+  BROKEN TARGET: /dog-training
+  Referenced from 4 page(s):
+    - Best Dog Training Leads UK (2026) – Long Lines &#038; Harnesses
+      Anchor: "Browse All Dog Training"
+      Link: /dog-training/
+    - Best Puppy Training Guide UK (2026) – First Year Essentials
+      Anchor: "Browse All Dog Training"
+      Link: /dog-training/
+    - Best Dog Training Treats UK (2026) – Reward Guide
+      Anchor: "Browse All Dog Training"
+      Link: /dog-training/
+    - Best Dog Training and Behaviour UK (2026) – Complete Guide
+      Anchor: "Browse All Dog Training"
+      Link: /dog-training/
+
+  BROKEN TARGET: /how-we-research-pet-products
+  Referenced from 3 page(s):
+    - Affiliate Disclosure
+      Anchor: "How We Research Pet Products"
+      Link: /how-we-research-pet-products
+    - About Us
+      Anchor: "How We Research Pet Products"
+      Link: /how-we-research-pet-products
+    - Contact Pet Hub Online
+      Anchor: "How We Research Pet Products"
+      Link: /how-we-research-pet-products
+
+  BROKEN TARGET: /our-editorial-process
+  Referenced from 3 page(s):
+    - Affiliate Disclosure
+      Anchor: "Our Editorial Process"
+      Link: /our-editorial-process
+    - About Us
+      Anchor: "Our Editorial Process"
+      Link: /our-editorial-process
+    - Contact Pet Hub Online
+      Anchor: "Our Editorial Process"
+      Link: /our-editorial-process
+
+  BROKEN TARGET: /pet-care-tips
+  Referenced from 4 page(s):
+    - Seasonal Pet Safety: Protecting Pets Through the Year
+      Anchor: "Pet Care Tips"
+      Link: https://pethubonline.com/pet-care-tips/
+    - Multi-Pet Household Tips: Living with Dogs and Cats Together
+      Anchor: "Pet Care Tips"
+      Link: https://pethubonline.com/pet-care-tips/
+    - Pet Hydration Guide: How Much Water Does Your Pet Need?
+      Anchor: "Pet Care Tips"
+      Link: https://pethubonline.com/pet-care-tips/
+    - Pet First Aid Basics: What Every Owner Should Know
+      Anchor: "Pet Care Tips"
+      Link: https://pethubonline.com/pet-care-tips/
+
+  ACTION: Fix or redirect these 13 broken targets.
+
+======================================================================
+3. ANCHOR TEXT QUALITY (Generic Anchors)
+======================================================================
+Found: 71 links with generic anchor text
+
+  "learn more" - 69 instance(s):
+    - On: Best Cat Litter Disposal UK (2026) – Waste Management Guide
+      Links to: /affiliate-disclosure
+    - On: Best Self-Cleaning Litter Trays UK (2026) – Automatic Options
+      Links to: /affiliate-disclosure
+    - On: Best Cat Litter UK (2026) – Types &#038; Comparison Guide
+      Links to: /affiliate-disclosure
+    ... and 66 more
+
+  "read more" - 2 instance(s):
+    - On: Blog
+      Links to: /top-dog-toys-every-pet-owner-needs-in-2026
+    - On: Blog
+      Links to: /essential-cat-supplies-for-cat-owners
+
+  ACTION: Replace generic anchors with descriptive, keyword-rich text.
+  Example: "click here" -> "best orthopedic dog beds for large breeds"
+
+======================================================================
+4. LINK DISTRIBUTION
+======================================================================
+
+  TOP 15 PAGES BY OUTBOUND INTERNAL LINKS:
+     23 links - Best Dog Food &amp; Puppy Food UK [page]
+     19 links - Cat Grooming [page]
+     17 links - Dog Supplies [page]
+     15 links - Cat Scratching Posts [page]
+     15 links - Pet Hub Online – Pet Supplies Online [page]
+     14 links - Best Dog Beds UK (2026) – Complete Guide &#038; Honest Reviews [post]
+     14 links - Best Dog Toys UK (2026) – Complete Guide &#038; Honest Reviews [post]
+     13 links - Cat Toys [page]
+     12 links - Cat Litter Trays [page]
+     12 links - Cat Collars [page]
+     12 links - Cat Beds [page]
+     12 links - Dog Toys [page]
+     11 links - Dog Health &#038; Care [page]
+     11 links - Dog Training &#038; Behaviour [page]
+     11 links - Dog Bowls &#038; Feeding [page]
+
+  TOP 15 PAGES BY INBOUND INTERNAL LINKS:
+    125 links - Affiliate Disclosure [page]
+     25 links - Dog Toys [page]
+     24 links - Seasonal Pet Safety: Protecting Pets Through the Year [post]
+     24 links - Pet Hydration Guide: How Much Water Does Your Pet Need? [post]
+     24 links - Pet First Aid Basics: What Every Owner Should Know [post]
+     22 links - Dog Beds [page]
+     20 links - Cat Toys [page]
+     19 links - Cat Beds [page]
+     19 links - Cat Supplies [page]
+     17 links - Dog Health &#038; Care [page]
+     17 links - Dog Bowls &#038; Feeding [page]
+     17 links - Dog Grooming [page]
+     16 links - Dog Collars &amp; Leashes [page]
+     15 links - Cat Litter Trays [page]
+     15 links - Cat Scratching Posts [page]
+
+  PAGES WITH ZERO OUTBOUND INTERNAL LINKS (2):
+    - Cookie Policy [page]
+      URL: https://pethubonline.com/cookie-policy/
+    - Privacy Policy [page]
+      URL: https://pethubonline.com/privacy-policy/
+
+  ACTION: Add at least 2-3 contextual internal links to each page with zero outbound links.
+
+  AVERAGES:
+    Average outbound internal links per page: 7.6
+    Average inbound internal links per page:  7.3
+
+======================================================================
+5. CLUSTER CONNECTIVITY (Hub-Spoke Analysis)
+======================================================================
+
+  --- DOG BEDS CLUSTER ---
+  Hubs found: 4 | Spokes found: 2
+  Hub page(s): Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide, Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide, Best Dog Beds UK (2026) – Complete Guide &#038; Honest Reviews, Dog Beds
+  Hub links to 1/2 spokes
+  MISSING hub->spoke links:
+    - Hub does NOT link to: How to Choose the Right Dog Bed Size
+  2/2 spokes link back to hub
+
+  --- DOG TOYS CLUSTER ---
+  Hubs found: 7 | Spokes found: 1
+  Hub page(s): DIY Dog Toys: Safe Homemade Options, Best Types of Dog Toys for Different Play Styles, Best Interactive Dog Toys UK (2026) – Puzzle &#038; Enrichment Guide, Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers, Best Dog Toys UK (2026) – Complete Guide &#038; Honest Reviews, Top Dog Toys Every Pet Owner Needs in 2026, Dog Toys
+  Hub links to 1/1 spokes
+  1/1 spokes link back to hub
+  EXCELLENT - Full hub-spoke connectivity!
+
+  --- DOG CARE CLUSTER ---
+  Hubs found: 3 | Spokes found: 7
+  Hub page(s): Seasonal Dog Care: Keeping Your Dog Safe Year-Round, Best Dog Health and Care UK (2026) – Complete Guide, Dog Health &#038; Care
+  Hub links to 3/7 spokes
+  MISSING hub->spoke links:
+    - Hub does NOT link to: Dog Grooming Basics: A Complete Guide for Owners
+    - Hub does NOT link to: Best Dog Shampoo UK (2026) – Ingredients &#038; Safety Guide
+    - Hub does NOT link to: Best Dog Brushes UK (2026) – Guide by Coat Type
+    - Hub does NOT link to: Best Dog Grooming Supplies UK (2026) – Complete Guide
+  6/7 spokes link back to hub
+  MISSING spoke->hub links:
+    - Dog Grooming Basics: A Complete Guide for Owners does NOT link back to hub
+
+  --- PET CARE CLUSTER ---
+  Hubs found: 0 | Spokes found: 1
+  WARNING: No hub page found for Pet Care!
+
+  --- CAT TOYS CLUSTER ---
+  Hubs found: 8 | Spokes found: 1
+  Hub page(s): Best Interactive Cat Toys for Indoor Cats: Engagement Guide, Kitten vs Adult Cat Toys: Age-Appropriate Play Guide, How Often Should You Replace Cat Toys? A Practical Guide, DIY Cat Toys: Safe Homemade Options Your Cat Will Love, Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide, Best Interactive Cat Toys UK (2026) – Wand &#038; Puzzle Guide, Best Cat Toys UK (2026) – Complete Guide, Cat Toys
+  Hub links to 1/1 spokes
+  1/1 spokes link back to hub
+  EXCELLENT - Full hub-spoke connectivity!
+
+  --- DOG HARNESSES CLUSTER ---
+  Hubs found: 3 | Spokes found: 4
+  Hub page(s): No-Pull Dog Harness Guide: How They Work and When to Use One, Dog Harnesses: The Complete Guide to Types, Fitting, and Safety, Best No-Pull Dog Harnesses UK (2026) – Training &#038; Comfort Guide
+  Hub links to 3/4 spokes
+  MISSING hub->spoke links:
+    - Hub does NOT link to: Harness vs Collar: Which Is Better for Your Dog?
+  3/4 spokes link back to hub
+  MISSING spoke->hub links:
+    - Harness vs Collar: Which Is Better for Your Dog? does NOT link back to hub
+
+  --- TRAINING CLUSTER ---
+  Hubs found: 6 | Spokes found: 0
+  Hub page(s): How to Choose the Right Dog Training Treats, Best Dog Training Leads UK (2026) – Long Lines &#038; Harnesses, Best Puppy Training Guide UK (2026) – First Year Essentials, Best Dog Training Treats UK (2026) – Reward Guide, Best Dog Training and Behaviour UK (2026) – Complete Guide, Dog Training &#038; Behaviour
+
+  --- PUPPY CARE CLUSTER ---
+  Hubs found: 0 | Spokes found: 3
+  WARNING: No hub page found for Puppy Care!
+
+======================================================================
+6. TRUST PAGE CONNECTIVITY
+======================================================================
+
+  Trust pages found: 5
+
+  Affiliate Disclosure:
+    Links to 1 other trust pages
+    MISSING links to: Terms and Conditions, Privacy Policy, Contact Pet Hub Online
+
+  Terms and Conditions:
+    Links to 1 other trust pages
+    MISSING links to: Affiliate Disclosure, About Us, Contact Pet Hub Online
+
+  Privacy Policy:
+    MISSING links to: Affiliate Disclosure, Terms and Conditions, About Us, Contact Pet Hub Online
+
+  About Us:
+    Links to 1 other trust pages
+    MISSING links to: Terms and Conditions, Privacy Policy, Contact Pet Hub Online
+
+  Contact Pet Hub Online:
+    Links to 2 other trust pages
+    MISSING links to: Terms and Conditions, Privacy Policy
+
+  COMMERCIAL PAGES WITHOUT TRUST LINKS (33/86):
+    - Puppy Socialisation: A Complete Timeline Guide
+    - How to Choose the Right Dog Training Treats
+    - DIY Dog Toys: Safe Homemade Options
+    - Best Types of Dog Toys for Different Play Styles
+    - Mental Stimulation for Dogs: Beyond Physical Exercise
+    - Dog Toy Safety: What Every Owner Needs to Know
+    - Where to Place Your Dog&#8217;s Bed: Location and Comfort Tips
+    - How to Wash and Maintain Your Dog&#8217;s Bed
+    - Dog Bed Materials Explained: Foam, Memory Foam, and More
+    - How to Choose the Right Dog Bed Size
+    - Seasonal Pet Safety: Protecting Pets Through the Year
+    - First-Time Dog Owner Essentials: What You Need to Know
+    - Multi-Pet Household Tips: Living with Dogs and Cats Together
+    - Pet Hydration Guide: How Much Water Does Your Pet Need?
+    - Pet First Aid Basics: What Every Owner Should Know
+    ... and 18 more
+
+  ACTION: Ensure all commercial posts link to at least the affiliate
+  disclosure and/or editorial process trust pages for E-E-A-T compliance.
+
+======================================================================
+EXECUTIVE SUMMARY & PRIORITY ACTIONS
+======================================================================
+
+  HEALTH SCORES:
+    Orphan pages:         13 (target: 0)
+    Broken internal links:32 (target: 0)
+    Generic anchors:      71 (target: 0)
+    Zero-outbound pages:  2 (target: 0)
+    Avg outbound links:   7.6 (target: 3-5)
+    Avg inbound links:    7.3 (target: 2-3)
+
+  PRIORITY ACTIONS (ordered by SEO impact):
+    1. Fix 32 broken internal links (crawl health)
+    2. Link to 13 orphan pages (indexation)
+    3. Add outbound links to 2 dead-end pages (link equity flow)
+    4. Replace 71 generic anchors with keyword-rich text (relevance)
+    5. Complete hub-spoke linking in all clusters (topical authority)
+    6. Add trust page links to 33 commercial pages (E-E-A-T)
