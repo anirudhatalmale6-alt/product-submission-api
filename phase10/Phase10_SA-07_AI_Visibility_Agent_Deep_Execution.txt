@@ -1,0 +1,113 @@
+# generated_at: 2026-05-27T20:15:51Z
+# source_server: 167.99.198.145
+# git_commit: e584d34
+# generated_by: PetHub AI Platform - Phase 10 Deep Execution Generator
+# data_source_label: LIVE + planning
+# approval_status: planning_only
+# next_action: owner_review
+# execution_mode: enterprise_deep_execution
+
+AI VISIBILITY AGENT (SA-07) — DEEP EXECUTION PLAN
+==========================================================================
+
+PHASE 1 — REQUIREMENT ANALYSIS
+================================
+
+Business Goal: Improve PetHub visibility in ChatGPT, Gemini, Perplexity, and AI search
+Current State: Baseline not yet established
+Risk Level: low_measurement_challenge
+
+Owner Goal: Automated monitoring with governed approval for live changes.
+
+Hidden Requirements:
+- Must integrate with Co-Pilot for owner-facing plain English summaries
+- Must feed Mission Control for task tracking
+- Must follow GREEN/AMBER/RED permission lanes
+- Must produce evidence exports with standard metadata
+
+Approval Boundaries:
+- GREEN: Query set monitoring, Citation tracking, Answer-readiness assessment
+- AMBER: Content improvement proposals, FAQ enrichment proposals
+- RED: Live content changes, Schema deployment, Fake AI citation claims
+
+PHASE 2 — RESEARCH & COMPARISON
+=================================
+
+Architecture: Query Set -> Manual/API Benchmarks -> PostgreSQL -> Co-Pilot/SEO Dashboard
+
+API Routes:
+  - api/ai-visibility/baseline
+  - api/ai-visibility/queries
+  - api/ai-visibility/opportunities
+  - api/ai-visibility/competitors
+
+Chosen Approach: Modular Python agent with FastAPI routes, PostgreSQL storage,
+Co-Pilot/Mission Control/NOC integration. No separate dashboard.
+
+PHASE 3 — ARCHITECTURE PLANNING
+=================================
+
+Data Flow: Query Set -> Manual/API Benchmarks -> PostgreSQL -> Co-Pilot/SEO Dashboard
+
+Dashboard Integration:
+- NOC: Health indicator (green/amber/red)
+- Co-Pilot: Natural language query responses
+- Mission Control: Auto-created tasks for detected issues
+- Executive Summary: Daily roll-up of agent findings
+
+Rollback: Agent is primarily read-only monitoring. Any proposed changes
+go through AMBER/RED approval gates before execution.
+
+PHASE 4 — INTERNAL AGENT DISCUSSION
+=====================================
+
+SA-07 <-> SA-06 (Publisher Gate):
+  "All live changes require Publisher Gate approval before execution."
+
+SA-07 <-> SA-10 (Export Discipline):
+  "All reports must include standard metadata headers."
+
+SA-07 <-> SA-11 (Security):
+  "Agent must not expose credentials in logs or reports."
+
+Cross-Agent Consensus: Monitoring is GREEN, proposals are AMBER, execution is RED.
+
+PHASE 5 — TESTING & SIMULATION
+================================
+
+Test Plan:
+  1. Track brand mention in AI responses
+  2. Detect missing FAQ opportunities
+  3. Compare competitor visibility
+  4. Label data as measured vs modelled
+
+Failure Handling:
+- API timeout: Queue for DLQ retry, report last-known state
+- Parse error: Graceful degradation, alert NOC
+- Rate limit: Exponential backoff
+
+PHASE 6 — SELF-AUDIT & QUALITY REVIEW
+=======================================
+
+Live Finding: AI visibility baseline not yet captured. Requires manual benchmark queries.
+
+Weaknesses:
+- Depends on WordPress.com API availability
+- Some checks require page source fetching (slower)
+
+Maintainability: Modular design, clear function separation, standard interfaces.
+
+PHASE 7 — OPTIMIZATION
+========================
+
+Performance: Batch API calls, cache results, incremental scans.
+Cost: Minimal API usage, no external paid services.
+Future-Proofing: Extensible to new post types, categories, schema types.
+
+PHASE 8 — FINAL VALIDATION
+============================
+
+Confidence Score: 75%
+Risks: WordPress.com hosting constraints, API rate limits
+Production Readiness: SPEC READY - awaiting implementation approval
+Acceptance: All acceptance criteria defined in Phase 9J/10 specs

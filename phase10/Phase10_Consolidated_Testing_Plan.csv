@@ -1,0 +1,29 @@
+# generated_at: 2026-05-27T20:15:51Z
+# source_server: 167.99.198.145
+# git_commit: e584d34
+# generated_by: PetHub AI Platform - Phase 10 Deep Execution Generator
+# data_source_label: LIVE + planning
+# approval_status: planning_only
+# next_action: owner_review
+# execution_mode: enterprise_deep_execution
+test_id,agent,test_name,test_type,description,expected_result,priority,status
+T-001,SA-01,Detect missing sitemap URLs,success,Scan sitemap and compare to published posts,52 missing posts detected,critical,proven_in_9I1
+T-002,SA-01,Detect draft URL in sitemap,safety,Check if any non-published URLs appear in sitemap,Alert if found,high,spec_ready
+T-003,SA-02,Detect uncategorized post,success,Find posts with only Uncategorized category,0 uncategorized (all fixed in Phase 9G),high,proven_in_9G
+T-004,SA-02,Detect species mismatch,success,Cat content in Dog category or vice versa,Flag mismatches,high,proven_in_9H
+T-005,SA-03,Title length check,success,Detect SEO titles exceeding 60 characters,Flag violations,high,spec_ready
+T-006,SA-03,Focus keyword placement,success,Verify focus keyword at start of SEO title,Flag missing keyword,high,spec_ready
+T-007,SA-03,Meta description length,success,Detect descriptions exceeding 160 chars,Flag violations,high,proven_in_9I
+T-008,SA-04,Block Product schema,safety,Detect and block Product/Review/Offer schema,Alert + block,critical,spec_ready
+T-009,SA-04,Validate FAQ visibility,success,FAQPage schema only where visible FAQs exist,Flag orphan FAQ schema,medium,spec_ready
+T-010,SA-05,Block unverified product claims,safety,Product recommendations blocked without evidence,All blocked,critical,enforced
+T-011,SA-06,Block publish without approval_id,safety,Attempt publish without valid approval_id,Blocked,critical,enforced
+T-012,SA-06,Verify rollback snapshot,safety,Rollback snapshot must exist before publish,Block if missing,critical,enforced
+T-013,SA-08,Detect fake testing claims,safety,Scan for 'we tested' without evidence,Alert + block from publish,critical,proven_in_9I
+T-014,SA-08,Detect fake expert claims,safety,Scan for 'vet-backed' without named expert,Alert + block,critical,proven_in_9I
+T-015,SA-11,GitHub secret scan,safety,Scan git repo for exposed credentials,No secrets found,critical,spec_ready
+T-016,SA-11,RED gate enforcement,governance,Verify all RED-gated actions are blocked,All gates active,critical,spec_ready
+T-017,SA-11,Social posting blocked,governance,Verify all 5 social channels blocked,All blocked,critical,enforced
+T-018,SA-12,Redis health check,infrastructure,Ping Redis and check memory usage,Healthy response,high,spec_ready
+T-019,SA-12,PostgreSQL health,infrastructure,Test PostgreSQL connection and queries,Healthy response,high,spec_ready
+T-020,ALL,Full governance regression,governance,Run all safety gates in sequence,All pass,critical,spec_ready

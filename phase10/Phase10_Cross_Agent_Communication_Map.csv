@@ -1,0 +1,24 @@
+# generated_at: 2026-05-27T20:15:51Z
+# source_server: 167.99.198.145
+# git_commit: e584d34
+# generated_by: PetHub AI Platform - Phase 10 Deep Execution Generator
+# data_source_label: LIVE + planning
+# approval_status: planning_only
+# next_action: owner_review
+# execution_mode: enterprise_deep_execution
+from_agent,to_agent,trigger,message,response,frequency
+SA-06,SA-01,POST_PUBLISHED event,"New URL published, schedule follow-up checks",SA-01 creates 24h/72h/7d verification tasks,on_publish
+SA-01,SA-06,Missing URL detected,Published post not in sitemap,SA-06 flags in publish audit as potential issue,hourly_scan
+SA-03,SA-06,Pre-publish gate check,Metadata compliance status for post,SA-06 includes in publish checklist,on_demand
+SA-04,SA-06,Pre-publish gate check,Schema safety status for post,SA-06 blocks if unsafe schema detected,on_demand
+SA-05,SA-06,Pre-publish gate check,Product Evidence status for post,SA-06 blocks if product claims without evidence,on_demand
+SA-02,SA-06,Pre-publish gate check,Category assignment status,SA-06 warns if Uncategorized,on_demand
+SA-08,SA-03,Fake claim detected,Metadata contains unverified claim,SA-03 flags in compliance report,on_detection
+SA-11,ALL,Security alert,Secret exposed / bypass detected / gate inactive,All agents pause non-critical operations,on_detection
+SA-12,ALL,Infrastructure alert,Redis/PostgreSQL/queue issue,All agents switch to degraded mode,on_detection
+SA-09,SA-06,Performance issue on published page,CWV regression detected after publish,SA-06 logs in post-publish audit,on_detection
+SA-05,SA-04,Evidence status change,Product evidence now verified/approved,SA-04 may unlock Product schema proposal,on_status_change
+SA-07,SA-08,AI visibility improvement opportunity,FAQ section could improve AI visibility,SA-08 reviews trust/wording safety,weekly
+SA-10,ALL,Stale export detected,"Export older than threshold, may conflict with live state",Agents regenerate affected reports,daily
+SA-13,SA-02,Authority gap detected,Content cluster has weak topical coverage,SA-02 reviews category structure for gaps,weekly
+SA-13,SA-07,Entity coverage gap,Missing entities in content cluster,SA-07 evaluates AI visibility impact,weekly

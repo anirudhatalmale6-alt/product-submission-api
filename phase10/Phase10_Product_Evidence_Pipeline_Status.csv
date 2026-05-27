@@ -1,0 +1,17 @@
+# generated_at: 2026-05-27T20:15:51Z
+# source_server: 167.99.198.145
+# git_commit: e584d34
+# generated_by: PetHub AI Platform - Phase 10 Deep Execution Generator
+# data_source_label: LIVE + planning
+# approval_status: planning_only
+# next_action: owner_review
+# execution_mode: enterprise_deep_execution
+cluster,product_category,evidence_status,candidates,verified,approved,blockers,next_action
+Dog Food,Dry Dog Food,blocked_pending_evidence,0,0,0,No evidence collection started,Identify candidate products from UK retailers
+Dog Food,Wet Dog Food,blocked_pending_evidence,0,0,0,No evidence collection started,Identify candidate products
+Dog Food,Puppy Food,blocked_pending_evidence,0,0,0,No evidence collection started,Identify candidate products
+Dog Beds,All Dog Beds,blocked_pending_evidence,0,0,0,Content exists but no evidence pipeline,Start evidence collection for top products
+Dog Toys,All Dog Toys,blocked_pending_evidence,0,0,0,Content exists but no evidence pipeline,Start evidence collection
+Dog Collars,Harnesses & Collars,blocked_pending_evidence,0,0,0,Commercial opportunity identified,Priority evidence collection
+Cat Toys,All Cat Toys,blocked_pending_evidence,0,0,0,Recovery section planned,Audit existing content first
+Cat Beds,All Cat Beds,blocked_pending_evidence,0,0,0,Content exists,Start evidence collection

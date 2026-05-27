@@ -1,0 +1,17 @@
+# generated_at: 2026-05-27T20:15:51Z
+# source_server: 167.99.198.145
+# git_commit: e584d34
+# generated_by: PetHub AI Platform - Phase 10 Deep Execution Generator
+# data_source_label: LIVE + planning
+# approval_status: planning_only
+# next_action: owner_review
+# execution_mode: enterprise_deep_execution
+capability,description,agents_feeding,implementation_priority,status
+Owner Assistant,Answer owner questions about site status in plain English,ALL,1_critical,foundation_exists
+Operations Assistant,"Explain agent health, queue status, infrastructure state",SA-12 + SA-10,2_high,planned
+SEO Assistant,"Explain sitemap status, indexing progress, metadata compliance",SA-01 + SA-03,1_critical,planned
+Indexing Assistant,"Track per-URL indexing status, GSC impressions, first click",SA-01,2_high,planned
+Governance Assistant,"Explain why something is blocked, what approval is needed",SA-06 + SA-11,1_critical,planned
+Mission Assistant,"Track section launch progress, mission status, backlog",ALL,2_high,planned
+Evidence Assistant,"Summarize product evidence gaps, stale evidence, readiness",SA-05,3_medium,planned
+Performance Assistant,"Explain CWV status, safe fixes available, risky fixes pending",SA-09,3_medium,planned

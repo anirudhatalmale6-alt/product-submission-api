@@ -1,0 +1,16 @@
+# generated_at: 2026-05-27T20:15:51Z
+# source_server: 167.99.198.145
+# git_commit: e584d34
+# generated_by: PetHub AI Platform - Phase 10 Deep Execution Generator
+# data_source_label: LIVE + planning
+# approval_status: planning_only
+# next_action: owner_review
+# execution_mode: enterprise_deep_execution
+section,stage,status,posts_count,evidence_status,metadata_pass,schema_safe,approval_status,blockers,next_action
+Dog Food Educational,7_Verification,LIVE,4,n/a_educational,yes,yes_Article_BreadcrumbList,approved_PH-PUB-2026-001,sitemap_52_posts_missing,monitor_GSC_impressions
+Cat Toys Recovery,1_Research,planned,4_existing,not_started,needs_audit,needs_audit,not_started,none_low_risk,audit_existing_posts_prepare_metadata_fixes
+Dog Harness Commercial,1_Research,planned,4-5_needed,not_started,not_started,not_started,not_started,product_evidence_needed_before_affiliate,keyword_research_content_map
+Trust / Methodology Pages,1_Research,planned,6_pages,n/a_trust_infrastructure,not_started,Article_BreadcrumbList_only,not_started,wording_review_needed_no_fake_claims,draft_all_6_trust_pages
+Homepage Engagement,1_Research,planned,1_page,n/a,not_started,Organization_WebSite,not_started,high_impact_needs_explicit_approval,audit_current_homepage
+AI Search Adaptation,1_Research,planned,cross_cluster,n/a,n/a,FAQPage_where_visible,not_started,none_content_improvement,create_AI_visibility_query_set
+Pet Insurance,0_RED_Gated,RED_planning_only,5-8_needed,not_started,not_started,Article_BreadcrumbList_ONLY,RED_gated,RED_gated_regulatory_high_risk,research_only_no_content_creation

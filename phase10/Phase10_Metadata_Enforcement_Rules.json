@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-05-27T20:15:51Z",
+  "source_server": "167.99.198.145",
+  "git_commit": "e584d34",
+  "generated_by": "PetHub AI Platform - Phase 10 Deep Execution Generator",
+  "version": "1.0",
+  "enforcement": "publisher_gate_blocks_on_failure",
+  "rules": {
+    "seo_title": {
+      "max_length": 60,
+      "focus_keyword_position": "start",
+      "blocked_patterns": [
+        "we tested",
+        "vet-backed",
+        "vet-approved",
+        "expert-reviewed",
+        "clinically proven"
+      ],
+      "required": true,
+      "publisher_gate": "blocks_if_fails"
+    },
+    "meta_description": {
+      "max_length": 160,
+      "ideal_min_length": 150,
+      "ideal_max_length": 160,
+      "must_include_focus_keyword_or_variant": true,
+      "blocked_patterns": [
+        "we tested",
+        "vet-backed",
+        "vet-approved",
+        "expert-reviewed",
+        "best price",
+        "cheapest",
+        "guaranteed"
+      ],
+      "required": true,
+      "publisher_gate": "blocks_if_fails"
+    },
+    "first_image_alt": {
+      "must_include_focus_keyword": true,
+      "no_keyword_stuffing": true,
+      "natural_descriptive": true,
+      "max_length": 125,
+      "required": true,
+      "publisher_gate": "warns_if_fails"
+    },
+    "focus_keyword": {
+      "required": true,
+      "unique_per_post": true,
+      "publisher_gate": "blocks_if_missing"
+    }
+  },
+  "blocked_claims_in_any_metadata": [
+    "we tested",
+    "we reviewed",
+    "we tried",
+    "vet-backed",
+    "vet-approved",
+    "vet-recommended",
+    "expert-reviewed",
+    "expert-approved",
+    "clinically proven",
+    "scientifically proven",
+    "best price guaranteed",
+    "lowest price",
+    "customer reviews show",
+    "rated #1"
+  ]
+}
