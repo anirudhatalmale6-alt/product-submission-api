@@ -1,0 +1,414 @@
+{
+  "endpoints": {
+    "/api/health": {
+      "status_code": "404",
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    "/api/redis/status": {
+      "status_code": "404",
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    "/api/postgres/status": {
+      "status_code": "404",
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    "/api/event-bus/health": {
+      "status_code": "404",
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    "/api/kill-switch/status": {
+      "status_code": "404",
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    "/api/recovery/status": {
+      "status_code": "404",
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    "/api/cache/status": {
+      "status_code": "404",
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    "/api/queue/status": {
+      "status_code": "404",
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    "/api/dlq/status": {
+      "status_code": "404",
+      "response": {
+        "detail": "Not Found"
+      }
+    },
+    "/api/backup/status": {
+      "status_code": "200",
+      "response": {
+        "last_backup": {
+          "timestamp": "2026-05-24T03:00:03.411978",
+          "type": "full",
+          "location": "/opt/pethub-agents/backups/pethub_full_20260524_0300.tar.gz",
+          "size_bytes": 302666,
+          "files_included": 152,
+          "status": "ok"
+        },
+        "backup_schedule": "0 3 * * * /opt/pethub-agents/backup.sh",
+        "data_included": [
+          "Agent config files (*/config.py)",
+          "Environment file (.env)",
+          "Nginx site configs",
+          "Systemd service files",
+          "Shared data: knowledge_base.json",
+          "Shared data: evidence_vault.json",
+          "Shared data: pethub.db",
+          "Shared data: compliance_register.json",
+          "Shared data: standing_approvals.json",
+          "Shared data: social_channels.json",
+          "Shared data: tool_audit_log.json",
+          "Shared data: openai_usage.json",
+          "Shared data: openai_status.json",
+          "Shared data: learning_loops.json"
+        ],
+        "data_NOT_included": [],
+        "restore_tested": false,
+        "last_restore_drill": "2026-05-24T02:43:11.987815"
+      }
+    },
+    "/api/agents": {
+      "status_code": "200",
+      "response": {
+        "seo": {
+          "agent": "seo",
+          "healthy": true,
+          "status": "running",
+          "data": {
+            "agent": "seo",
+            "status": "running",
+            "last_audit_date": "2026-05-27T17:33:53.205957+00:00",
+            "last_audit_score": 81,
+            "total_pages_audited": 77,
+            "total_issues": 6,
+            "audit_history": [
+              {
+                "date": "2026-05-25T00:33:59.920449+00:00",
+                "total_pages": 25,
+                "average_score": 87,
+                "total_issues": 5
+              },
+              {
+                "date": "2026-05-25T00:36:58.986664+00:00",
+                "total_pages": 25,
+                "average_score": 87,
+                "total_issues": 5
+              },
+              {
+                "date": "2026-05-25T03:00:16.632796+00:00",
+                "total_pages": 25,
+                "average_score": 87,
+                "total_issues": 5
+              },
+              {
+                "date": "2026-05-25T18:15:55.864705+00:00",
+                "total_pages": 25,
+                "average_score": 87,
+                "total_issues": 6
+              },
+              {
+                "date": "2026-05-25T18:56:11.462769+00:00",
+                "total_pages": 25,
+                "average_score": 87,
+                "total_issues": 5
+              },
+              {
+                "date": "2026-05-25T21:31:05.407739+00:00",
+                "total_pages": 25,
+                "average_score": 86,
+                "total_issues": 5
+              },
+              {
+                "date": "2026-05-25T22:21:09.421123+00:00",
+                "total_pages": 25,
+                "average_score": 86,
+                "total_issues": 5
+              },
+              {
+                "date": "2026-05-26T03:00:14.779019+00:00",
+                "total_pages": 25,
+                "average_score": 86,
+                "total_issues": 5
+              },
+              {
+                "date": "2026-05-27T03:01:03.781707+00:00",
+                "total_pages": 81,
+                "average_score": 81,
+                "total_issues": 9
+              },
+              {
+                "date": "2026-05-27T17:33:53.208680+00:00",
+                "total_pages": 77,
+                "average_score": 81,
+                "total_issues": 6
+              }
+            ]
+          },
+          "checked_at": "2026-05-27T17:34:09.890928+00:00"
+        },
+        "analytics": {
+          "agent": "analytics",
+          "healthy": true,
+          "status": "idle",
+          "data": {
+            "agent": "analytics",
+            "status": "idle",
+            "running_task": null,
+            "last_collection": "2026-05-27T06:00:08.597237+00:00",
+            "last_indexing": "2026-05-25T05:00:07.073956+00:00",
+            "last_performance": "2026-05-27T06:01:21.278279+00:00",
+            "total_pages": 81,
+            "views_week": 0,
+            "indexable_count": 25,
+            "avg_response_time_ms": 837,
+            "history_count": 32,
+            "anomaly_status": "critical",
+            "agent_score": 39,
+            "weekly_reports_count": 10
+          },
+          "checked_at": "2026-05-27T17:34:09.931640+00:00"
+        },
+        "social": {
+          "agent": "social",
+          "healthy": true,
+          "status": "active",
+          "data": {
+            "agent": "social",
+            "status": "active",
+            "uptime": "0:01:12",
+            "started_at": "2026-05-27T17:32:57.186905+00:00",
+            "total_posts": 85,
+            "total_posts_fb": 28,
+            "total_posts_ig": 15,
+            "last_post_time": "2026-05-27T12:00:12.712471+00:00",
+            "next_scheduled": {
+              "scheduled_at": "2026-05-28T09:00:00+01:00",
+              "slot": "morning",
+              "platform": "both",
+              "status": "pending"
+            },
+            "recent_errors": 50,
+            "fb_stats": {
+              "success": true,
+              "platform": "facebook",
+              "page_name": "Pet Hub Online",
+              "followers": 1,
+              "likes": 1,
+              "talking_about": 303,
+              "fetched_at": "2026-05-23T20:47:45.761190+00:00"
+            },
+            "ig_stats": {
+              "success": true,
+              "platform": "instagram",
+              "username": "pethubonline1",
+              "name": "Jason Stephen Parr",
+              "followers": 1,
+              "following": 0,
+              "media_count": 186,
+              "biography": "",
+              "profile_picture": "https://scontent.xx.fbcdn.net/v/t51.82787-15/704732210_18035690663617244_5086446245423627025_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=7d201b&_nc_ohc=6TqQKtoxHWIQ7kNvwHG8hWx&_nc_oc=AdpO6TCeJNYuTqICUnR5T8Z7cd4fGfQTBURmJxiqlBeD58yYR3Ii7kV0mr2uPUjYoDPVA2diBXPsKFjzlhHwBwgm&_nc_zt=23&_nc_ht=scontent.xx&edm=AL-3X8kEAAAA&_nc_gid=YxMLgM9WYTsHKmkwC8hJHg&oh=00_Af6sCJTOGTb99wBhVNsy3tAvlaWcSlUWDGbQKBDCSPh0dQ&oe=6A17EA6C",
+              "fetched_at": "2026-05-23T20:47:46.590664+00:00"
+            }
+          },
+          "checked_at": "2026-05-27T17:34:09.969525+00:00"
+        },
+        "maintenance": {
+          "agent": "maintenance",
+          "healthy": true,
+          "status": "active",
+          "data": {
+            "agent": "maintenance",
+            "status": "active",
+            "uptime": "0:09:45",
+            "started_at": "2026-05-27T17:24:24.432167+00:00",
+            "last_link_scan": "2026-05-27T06:00:00.032349+00:00",
+            "last_duplicate_scan": "2026-05-25T18:25:05.701504+00:00",
+            "last_performance_scan": "2026-05-27T05:00:00.006247+00:00",
+            "last_metadata_audit": "2026-05-27T03:00:00.063241+00:00",
+            "last_content_audit": "2026-05-26T04:00:00.004180+00:00",
+            "last_security_scan": "2026-05-25T18:24:18.515928+00:00",
+            "total_scans": 100,
+            "recent_errors": 0
+          },
+          "checked_at": "2026-05-27T17:34:10.007677+00:00"
+        },
+        "content": {
+          "agent": "content",
+          "healthy": true,
+          "status": "active",
+          "data": {
+            "agent": "content",
+            "status": "active",
+            "articles_created": 25,
+            "articles_refreshed": 0,
+            "faqs_generated": 0,
+            "total_words_written": 59133,
+            "last_action": "topic_research",
+            "last_action_time": "2026-05-25T02:00:10.030570+00:00",
+            "auto_publish": false,
+            "queue_size": 0,
+            "calendar_items": 5,
+            "started_at": "2026-05-27T17:24:25.732120+00:00"
+          },
+          "checked_at": "2026-05-27T17:34:10.044174+00:00"
+        },
+        "product_research": {
+          "agent": "product_research",
+          "healthy": true,
+          "status": "active",
+          "data": {
+            "agent": "product_research",
+            "status": "active",
+            "trends_discovered": 327,
+            "gaps_identified": 0,
+            "topics_pushed": 0,
+            "articles_triggered": 0,
+            "trending_count": 5,
+            "gaps_count": 3,
+            "forecast_count": 6,
+            "last_action": "gap_analysis",
+            "last_action_time": "2026-05-26T01:30:11.660245+00:00",
+            "started_at": "2026-05-27T17:24:24.087236+00:00"
+          },
+          "checked_at": "2026-05-27T17:34:10.080392+00:00"
+        },
+        "affiliate": {
+          "agent": "affiliate",
+          "healthy": true,
+          "status": "active",
+          "data": {
+            "agent": "affiliate",
+            "status": "active",
+            "posts_scanned": 81,
+            "affiliate_links_found": 142,
+            "broken_links_found": 0,
+            "links_inserted": 0,
+            "opportunities_found": 20,
+            "scan_count": 81,
+            "broken_count": 0,
+            "opportunity_count": 20,
+            "keyword_count": 34,
+            "last_action": "opportunity_scan",
+            "last_action_time": "2026-05-27T04:00:07.068361+00:00",
+            "started_at": "2026-05-27T17:24:24.374381+00:00"
+          },
+          "checked_at": "2026-05-27T17:34:10.119890+00:00"
+        },
+        "engagement": {
+          "agent": "engagement",
+          "healthy": true,
+          "status": "active",
+          "data": {
+            "agent": "engagement",
+            "status": "active",
+            "posts_analyzed": 58,
+            "stale_posts_found": 0,
+            "comments_monitored": 0,
+            "pending_comments": 0,
+            "link_suggestions_found": 50,
+            "links_inserted": 0,
+            "score_count": 58,
+            "stale_count": 0,
+            "suggestion_count": 50,
+            "last_action": "engagement_scan",
+            "last_action_time": "2026-05-27T03:00:06.272958+00:00",
+            "started_at": "2026-05-27T17:24:24.385154+00:00"
+          },
+          "checked_at": "2026-05-27T17:34:10.157283+00:00"
+        },
+        "manager": {
+          "agent": "manager",
+          "healthy": true,
+          "status": "active",
+          "data": {
+            "agent": "manager",
+            "status": "active",
+            "uptime": "0:11:26",
+            "total_cycles": 1490,
+            "total_events": 500,
+            "total_dispatches": 231,
+            "recent_error_count": 0,
+            "latest_error": null,
+            "approval_queue_count": 1
+          },
+          "checked_at": "2026-05-27T17:35:36.518412+00:00"
+        }
+      }
+    },
+    "/api/copilot/status": {
+      "status_code": "200",
+      "response": {
+        "issues_open": 7,
+        "issues_critical": 0,
+        "actions_pending": 0,
+        "drafts_pending": 1,
+        "sources_active": 10,
+        "sources_healthy": 11,
+        "last_scan": "2026-05-25T22:35:35.569454+00:00",
+        "settings": {
+          "ai_analysis_enabled": true,
+          "auto_detect": true,
+          "detection_sensitivity": "high",
+          "draft_replies": true,
+          "scan_interval_seconds": 30,
+          "last_updated": "2026-05-24T21:23:47.051828+00:00"
+        },
+        "timestamp": "2026-05-27T17:35:37.212169+00:00"
+      }
+    },
+    "/api/dlq/stats": {
+      "status_code": "200",
+      "response": {
+        "total_entries": 4,
+        "by_status": {
+          "escalated": 1,
+          "dismissed": 2,
+          "pending": 1
+        },
+        "by_agent": {
+          "seo_agent": 1,
+          "content_agent": 1,
+          "social_agent": 1,
+          "manager_agent": 1
+        },
+        "lifetime_stats": {
+          "total_added": 4,
+          "total_retried": 2,
+          "total_escalated": 2,
+          "total_dismissed": 2
+        },
+        "oldest_pending": "2026-05-26T15:26:17.856302+00:00",
+        "newest_entry": "2026-05-26T16:02:19.661795+00:00"
+      }
+    }
+  },
+  "scan_timestamp": "2026-05-27T17:35:28.583200+00:00",
+  "_metadata": {
+    "generated_at": "2026-05-27T17:35:28.583200+00:00",
+    "source_server": "167.99.198.145",
+    "git_commit_hash": "f8d21cb",
+    "generated_by": "Phase9E Deliverable Generator v1.0",
+    "data_source_label": "LIVE SERVER DATA",
+    "approval_status": "phase_9e_closeout"
+  }
+}
