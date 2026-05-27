@@ -1,0 +1,28 @@
+# generated_at: 2026-05-27T20:31:35Z
+# source_server: 167.99.198.145
+# git_commit: 379fe1f
+# generated_by: Phase10A_Implementation_Generator
+# data_source_label: live_wordpress_api + live_sitemap + live_rankmath
+# total_sections: 18
+# live: 9
+# draft_ready: 4
+# planning: 5
+section,status,posts_live,posts_draft,metadata_ready,schema_safe,internal_links,evidence_pipeline,monetization,next_action,priority,agent_mode,approval_status
+Dog Food,live_educational,4,0,yes,yes,yes,educational_only,blocked,continue_monitoring,1,live,GREEN_live
+Dog Beds,live_educational,7,0,yes,yes,yes,educational_only,blocked,continue_monitoring,2,live,GREEN_live
+Dog Bowls,live_educational,7,0,yes,yes,yes,educational_only,blocked,continue_monitoring,3,live,GREEN_live
+Dog Collars & Leads,live_educational,7,0,yes,yes,yes,educational_only,blocked,continue_monitoring,4,live,GREEN_live
+Dog Training,live_educational,7,0,yes,yes,yes,educational_only,blocked,continue_monitoring,5,live,GREEN_live
+Dog Grooming,live_educational,7,0,yes,yes,yes,educational_only,blocked,continue_monitoring,6,live,GREEN_live
+Dog Health,live_educational,6,0,yes,yes,yes,educational_only,blocked,continue_monitoring,7,live,GREEN_live
+Cat Toys,live_educational,7,0,yes,yes,yes,educational_only,blocked,continue_monitoring,8,live,GREEN_live
+Cat Grooming,live_educational,7,0,yes,yes,yes,educational_only,blocked,continue_monitoring,9,live,GREEN_live
+Cat Beds,draft_ready,0,7,partial,yes,partial,not_started,blocked,prepare_metadata_then_publish,10,planning,AMBER_needs_review
+Cat Collars,draft_ready,0,7,partial,yes,partial,not_started,blocked,prepare_metadata_then_publish,11,planning,AMBER_needs_review
+Cat Litter,draft_ready,0,7,partial,yes,partial,not_started,blocked,prepare_metadata_then_publish,12,planning,AMBER_needs_review
+Cat Scratching,draft_ready,0,7,partial,yes,partial,not_started,blocked,prepare_metadata_then_publish,13,planning,AMBER_needs_review
+Cat Toys Recovery,planning,0,0,no,n/a,no,not_started,blocked,content_brief_creation,14,planning,AMBER_needs_review
+Dog Harness Commercial,planning,0,0,no,n/a,no,not_started,blocked,content_brief_creation,15,planning,AMBER_needs_review
+Homepage Engagement,planning,0,0,n/a,n/a,n/a,n/a,n/a,design_planning,16,planning,AMBER_needs_review
+Trust / Methodology,draft_preparation,0,0,no,n/a,no,n/a,n/a,draft_trust_pages,17,planning,AMBER_needs_review
+AI Search Adaptation,monitoring,0,0,n/a,n/a,n/a,n/a,n/a,continue_ai_visibility_monitoring,18,planning,AMBER_needs_review

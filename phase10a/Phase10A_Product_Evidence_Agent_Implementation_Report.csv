@@ -1,0 +1,21 @@
+# generated_at: 2026-05-27T20:31:35Z
+# source_server: 167.99.198.145
+# git_commit: 379fe1f
+# generated_by: Phase10A_Implementation_Generator
+# data_source_label: live_wordpress_api + live_sitemap + live_rankmath
+# total_clusters: 8
+# red_gated: 1
+# live_educational: 7
+# product_recs_enabled: 0
+# affiliate_links_enabled: 0
+# agent_status: LIVE_EVIDENCE_MODE
+# check_interval: every_24_hours
+cluster,evidence_stage,products_identified,sources_collected,evidence_verified,affiliate_approved,schema_approved,product_recs_live,affiliate_links_live,product_schema_live,notes,agent_mode,approval_status,next_action
+Dog Food,educational_content_live,0,0,no,BLOCKED,BLOCKED,no,no,no,Educational content live. Product recs blocked pending evidence.,evidence_tracking_only,AMBER_needs_evidence,await_evidence_collection
+Dog Beds,educational_content_live,0,0,no,BLOCKED,BLOCKED,no,no,no,Hub + subcategory content live. No product evidence yet.,evidence_tracking_only,AMBER_needs_evidence,await_evidence_collection
+Dog Bowls,educational_content_live,0,0,no,BLOCKED,BLOCKED,no,no,no,Hub + subcategory content live. No product evidence yet.,evidence_tracking_only,AMBER_needs_evidence,await_evidence_collection
+Dog Collars,educational_content_live,0,0,no,BLOCKED,BLOCKED,no,no,no,Hub + subcategory content live. No product evidence yet.,evidence_tracking_only,AMBER_needs_evidence,await_evidence_collection
+Dog Training,educational_content_live,0,0,no,BLOCKED,BLOCKED,no,no,no,Hub + subcategory content live. No product evidence yet.,evidence_tracking_only,AMBER_needs_evidence,await_evidence_collection
+Cat Toys,educational_content_live,0,0,no,BLOCKED,BLOCKED,no,no,no,Hub + subcategory content live. No product evidence yet.,evidence_tracking_only,AMBER_needs_evidence,await_evidence_collection
+Cat Grooming,educational_content_live,0,0,no,BLOCKED,BLOCKED,no,no,no,Content live. No product evidence yet.,evidence_tracking_only,AMBER_needs_evidence,await_evidence_collection
+Pet Insurance,RED_gated,0,0,no,BLOCKED,BLOCKED,no,no,no,RED GATED. Cannot proceed without explicit owner approval.,evidence_tracking_only,RED_blocked,await_owner_approval

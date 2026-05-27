@@ -1,0 +1,25 @@
+# generated_at: 2026-05-27T20:31:35Z
+# source_server: 167.99.198.145
+# git_commit: 379fe1f
+# generated_by: Phase10A_Implementation_Generator
+# data_source_label: live_wordpress_api + live_sitemap + live_rankmath
+# total_feeds: 14
+# healthy: 12
+# attention: 1
+# critical: 0
+# system_mode: SAFE_CONTINUOUS_LIVE_EXECUTION
+feed,agent,interval,type,last_run,result,status,auto,agent_mode,approval_status,next_action
+sitemap_monitor,SA-01,6h,monitoring,2026-05-27T20:31:35Z,58/58 indexed,healthy,yes,live,GREEN_auto,continuous_execution
+taxonomy_scan,SA-02,12h,monitoring,2026-05-27T20:31:35Z,0 uncategorized,healthy,yes,live,GREEN_auto,continuous_execution
+metadata_enforcement,SA-03,12h,enforcement,2026-05-27T20:31:35Z,58 issues,attention,yes,live,GREEN_auto,continuous_execution
+schema_safety_scan,SA-04,6h,enforcement,2026-05-27T20:31:35Z,0 blocked,healthy,yes,live,GREEN_auto,continuous_execution
+evidence_pipeline,SA-05,24h,tracking,2026-05-27T20:31:35Z,0 verified,pending,yes,live,GREEN_auto,continuous_execution
+publisher_gate,SA-06,per_action,enforcement,2026-05-27T20:31:35Z,0 violations,healthy,yes,live,GREEN_auto,continuous_execution
+ai_visibility,SA-07,24h,monitoring,2026-05-27T20:31:35Z,56 high readiness,healthy,yes,live,GREEN_auto,continuous_execution
+performance_cwv,SA-09,24h,monitoring,2026-05-27T20:31:35Z,10/10 pass,healthy,yes,live,GREEN_auto,continuous_execution
+export_discipline,SA-10,24h,enforcement,2026-05-27T20:31:35Z,103 compliant,healthy,yes,live,GREEN_auto,continuous_execution
+governance_regression,SA-11,24h,testing,2026-05-27T20:31:35Z,all gates enforced,healthy,yes,live,GREEN_auto,continuous_execution
+infrastructure_health,SA-12,5m,monitoring,2026-05-27T20:31:35Z,9 agents online,healthy,yes,live,GREEN_auto,continuous_execution
+content_authority,SA-13,24h,monitoring,2026-05-27T20:31:35Z,58 posts live,healthy,yes,live,GREEN_auto,continuous_execution
+dlq_monitoring,system,1h,monitoring,2026-05-27T20:31:35Z,0 stuck items,healthy,yes,live,GREEN_auto,continuous_execution
+backup_verification,system,24h,operations,2026-05-27T20:31:35Z,last backup valid,healthy,yes,live,GREEN_auto,continuous_execution

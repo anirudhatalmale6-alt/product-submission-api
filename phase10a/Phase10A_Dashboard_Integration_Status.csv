@@ -1,0 +1,35 @@
+# generated_at: 2026-05-27T20:31:35Z
+# source_server: 167.99.198.145
+# git_commit: 379fe1f
+# generated_by: Phase10A_Implementation_Generator
+# data_source_label: live_wordpress_api + live_sitemap + live_rankmath
+# total_feeds: 26
+# dashboards_covered: 5 (Operations Centre, Mission Control, NOC, Co-Pilot, Executive)
+# all_live: yes
+dashboard,feed,agent,status,refresh,integration_type,agent_mode,approval_status,next_action
+Operations Centre,sitemap_health,SA-01,live,6h,api_feed,live,GREEN_auto,continuous_feed
+Operations Centre,taxonomy_alerts,SA-02,live,12h,api_feed,live,GREEN_auto,continuous_feed
+Operations Centre,metadata_compliance,SA-03,live,12h,api_feed,live,GREEN_auto,continuous_feed
+Operations Centre,schema_safety,SA-04,live,6h,api_feed,live,GREEN_auto,continuous_feed
+Operations Centre,export_freshness,SA-10,live,24h,api_feed,live,GREEN_auto,continuous_feed
+Operations Centre,performance_cwv,SA-09,live,24h,api_feed,live,GREEN_auto,continuous_feed
+Operations Centre,ai_visibility,SA-07,live,24h,api_feed,live,GREEN_auto,continuous_feed
+Mission Control,sitemap_alerts,SA-01,live,6h,api_feed,live,GREEN_auto,continuous_feed
+Mission Control,taxonomy_missions,SA-02,live,12h,api_feed,live,GREEN_auto,continuous_feed
+Mission Control,metadata_fix_queue,SA-03,live,12h,api_feed,live,GREEN_auto,continuous_feed
+Mission Control,schema_violations,SA-04,live,6h,api_feed,live,GREEN_auto,continuous_feed
+Mission Control,evidence_pipeline,SA-05,live,24h,api_feed,live,GREEN_auto,continuous_feed
+Mission Control,publisher_gate_log,SA-06,live,per_action,api_feed,live,GREEN_auto,continuous_feed
+NOC,agent_health,all,live,5m,api_feed,live,GREEN_auto,continuous_feed
+NOC,governance_regression,SA-11,live,24h,api_feed,live,GREEN_auto,continuous_feed
+NOC,infrastructure_health,SA-12,live,5m,api_feed,live,GREEN_auto,continuous_feed
+Co-Pilot,sitemap_summary,SA-01,live,on_demand,api_feed,live,GREEN_auto,continuous_feed
+Co-Pilot,taxonomy_summary,SA-02,live,on_demand,api_feed,live,GREEN_auto,continuous_feed
+Co-Pilot,metadata_summary,SA-03,live,on_demand,api_feed,live,GREEN_auto,continuous_feed
+Co-Pilot,schema_summary,SA-04,live,on_demand,api_feed,live,GREEN_auto,continuous_feed
+Co-Pilot,evidence_summary,SA-05,live,on_demand,api_feed,live,GREEN_auto,continuous_feed
+Co-Pilot,ai_visibility_summary,SA-07,live,on_demand,api_feed,live,GREEN_auto,continuous_feed
+Co-Pilot,performance_summary,SA-09,live,on_demand,api_feed,live,GREEN_auto,continuous_feed
+Executive,executive_briefing,multi,live,daily,api_feed,live,GREEN_auto,continuous_feed
+Executive,governance_status,SA-11,live,daily,api_feed,live,GREEN_auto,continuous_feed
+Executive,section_progress,multi,live,daily,api_feed,live,GREEN_auto,continuous_feed

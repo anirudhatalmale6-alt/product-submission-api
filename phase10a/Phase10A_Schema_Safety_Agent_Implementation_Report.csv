@@ -1,0 +1,71 @@
+# generated_at: 2026-05-27T20:31:35Z
+# source_server: 167.99.198.145
+# git_commit: 379fe1f
+# generated_by: Phase10A_Implementation_Generator
+# data_source_label: live_wordpress_api + live_sitemap + live_rankmath
+# total_scanned: 58
+# safe: 58
+# blocked_detected: 0
+# warnings: 0
+# blocked_types: Product,Review,AggregateRating,Offer,SoftwareApplication
+# agent_status: LIVE
+# check_interval: every_6_hours
+post_id,slug,title,schema_types,safe_schemas,blocked_schemas,unknown_schemas,issues,severity,action,agent_mode,approval_status,next_action
+4335,best-cat-litter-disposal-uk,Best Cat Litter Disposal UK (2026) – Waste Managem,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4328,best-self-cleaning-litter-trays-uk,Best Self-Cleaning Litter Trays UK (2026) – Automa,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4321,best-cat-litter-uk,Best Cat Litter UK (2026) – Types &#038; Compariso,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4314,best-cat-litter-trays-uk,Best Cat Litter Trays UK (2026) – Complete Guide,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4307,best-wall-mounted-cat-scratchers-uk,Best Wall-Mounted Cat Scratchers UK (2026) – Space,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4300,best-cardboard-cat-scratchers-uk,Best Cardboard Cat Scratchers UK (2026) – Budget F,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4293,best-cat-trees-uk,Best Cat Trees UK (2026) – Climbing &#038; Scratch,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4286,best-cat-scratching-posts-uk,Best Cat Scratching Posts UK (2026) – Complete Gui,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4279,best-cat-harnesses-uk,Best Cat Harnesses UK (2026) – Safe Walking Guide,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4272,best-cat-id-tags-uk,Best Cat ID Tags UK (2026) – Identification Guide,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4265,best-cat-gps-trackers-uk,Best Cat GPS Trackers UK (2026) – Location Trackin,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4258,best-cat-collars-uk,Best Cat Collars UK (2026) – Complete Safety Guide,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4251,best-cat-shampoo-uk,Best Cat Shampoo UK (2026) – When &#038; How to Ba,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4244,best-cat-nail-clippers-uk,Best Cat Nail Clippers UK (2026) – Safe Trimming G,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4237,best-cat-brushes-uk,Best Cat Brushes UK (2026) – Guide by Coat Type,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4230,best-cat-grooming-supplies-uk,Best Cat Grooming Supplies UK (2026) – Complete Gu,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4223,best-cat-window-perches-uk,Best Cat Window Perches UK (2026) – Sunning &#038;,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4216,best-cat-radiator-beds-uk,Best Cat Radiator Beds UK (2026) – Hook-On Warmth ,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4209,best-heated-cat-beds-uk,Best Heated Cat Beds UK (2026) – Winter Warmth Gui,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4202,best-cat-beds-uk,Best Cat Beds UK (2026) – Complete Guide,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4195,best-cat-toys-indoor-cats-uk,Best Cat Toys for Indoor Cats UK (2026) – Enrichme,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4188,best-catnip-toys-uk,Best Catnip Toys UK (2026) – What Works and Why,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4181,best-interactive-cat-toys-uk,Best Interactive Cat Toys UK (2026) – Wand &#038; ,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4174,best-cat-toys-uk,Best Cat Toys UK (2026) – Complete Guide,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4167,best-dog-water-bottles-uk,Best Dog Water Bottles UK (2026) – Travel Hydratio,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4160,best-elevated-dog-bowls-uk,Best Elevated Dog Bowls UK (2026) – Raised Feeder ,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4153,best-slow-feeder-dog-bowls-uk,Best Slow Feeder Dog Bowls UK (2026) – Prevent Spe,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4146,best-dog-bowls-feeding-uk,Best Dog Bowls and Feeding UK (2026) – Complete Gu,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4139,best-dog-training-leads-uk,Best Dog Training Leads UK (2026) – Long Lines &#0,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4132,best-puppy-training-guide-uk,Best Puppy Training Guide UK (2026) – First Year E,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4125,best-dog-training-treats-uk,Best Dog Training Treats UK (2026) – Reward Guide,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4118,best-dog-training-behaviour-uk,Best Dog Training and Behaviour UK (2026) – Comple,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4110,best-dog-joint-supplements-uk,Best Dog Joint Supplements UK (2026) – Mobility Su,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4103,best-dog-flea-treatment-uk,Best Dog Flea Treatment UK (2026) – Prevention Gui,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4096,best-dog-dental-care-uk,Best Dog Dental Care UK (2026) – Teeth Cleaning Gu,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4089,best-dog-health-care-uk,Best Dog Health and Care UK (2026) – Complete Guid,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4078,best-dog-nail-clippers-uk,Best Dog Nail Clippers UK (2026) – Trimming &#038;,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4071,best-dog-shampoo-uk,Best Dog Shampoo UK (2026) – Ingredients &#038; Sa,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4064,best-dog-brushes-uk,Best Dog Brushes UK (2026) – Guide by Coat Type,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4057,best-dog-grooming-supplies-uk,Best Dog Grooming Supplies UK (2026) – Complete Gu,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4049,best-puppy-collars-uk,Best Puppy Collars UK (2026) – First Collar &#038;,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4042,best-dog-leads-uk,Best Dog Leads UK (2026) – Walking &#038; Training,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4034,best-no-pull-dog-harnesses-uk,Best No-Pull Dog Harnesses UK (2026) – Training &#,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4027,best-dog-collars-and-harnesses-uk,Best Dog Collars and Harnesses UK (2026) – Complet,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4018,best-puppy-beds-uk,Best Puppy Beds UK (2026) – First Bed &#038; Crate,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4011,best-cooling-dog-beds-uk,Best Cooling Dog Beds UK (2026) – Temperature Regu,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+4004,best-orthopaedic-dog-beds-uk,Best Orthopaedic Dog Beds UK (2026) – Joint Suppor,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+3996,best-dog-beds-uk,Best Dog Beds UK (2026) – Complete Guide &#038; Ho,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+3960,best-puppy-toys-uk,Best Puppy Toys UK (2026) – Teething &#038; First ,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+3959,best-interactive-dog-toys-uk,Best Interactive Dog Toys UK (2026) – Puzzle &#038,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+3957,best-indestructible-dog-toys-uk,Best Indestructible Dog Toys UK (2026) – Tough Toy,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+3956,best-dog-toys-uk,Best Dog Toys UK (2026) – Complete Guide &#038; Ho,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+3839,best-puppy-food-uk,Best Puppy Food UK (2026) &#8211; Growth-Stage Nut,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+3838,dry-vs-wet-dog-food-uk,Dry vs Wet Dog Food UK &#8211; An Honest Compariso,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+3837,best-dry-dog-food-uk,Best Dry Dog Food UK (2026) &#8211; Evidence-Based,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+3836,best-dog-food-uk,Best Dog Food UK (2026) &#8211; Complete Buying Gu,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+696,essential-cat-supplies-for-cat-owners,Essential Cat Supplies for Cat Owners &#8211; Numb,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring
+3,top-dog-toys-every-pet-owner-needs-in-2026,Top Dog Toys Every Pet Owner Needs in 2026,(none),,none,none,pass,ok,none,live_enforcement,GREEN_auto,continue_monitoring

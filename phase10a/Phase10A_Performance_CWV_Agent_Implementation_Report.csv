@@ -1,0 +1,20 @@
+# generated_at: 2026-05-27T20:31:35Z
+# source_server: 167.99.198.145
+# git_commit: 379fe1f
+# generated_by: Phase10A_Implementation_Generator
+# data_source_label: live_wordpress_api + live_sitemap + live_rankmath
+# sample_size: 10
+# agent_status: LIVE_SAFE_MODE
+# check_interval: every_24_hours
+# not_approved: broad_optimization,analytics_removal,consent_changes,major_css_rewrites
+url,slug,status_code,load_time_s,page_size_kb,css_files,js_files,total_images,lazy_images,has_consent,has_analytics,issues,severity,agent_mode,approval_status,next_action
+https://pethubonline.com/best-cat-litter-disposal-uk/,best-cat-litter-disposal-uk,200,1.33,231,5,14,7,0,yes,yes,pass,ok,safe_monitoring,GREEN_auto,continue_monitoring
+https://pethubonline.com/best-self-cleaning-litter-trays-uk/,best-self-cleaning-litter-trays-uk,200,1.06,231,5,14,7,0,yes,yes,pass,ok,safe_monitoring,GREEN_auto,continue_monitoring
+https://pethubonline.com/best-cat-litter-uk/,best-cat-litter-uk,200,1.11,231,5,14,7,0,yes,yes,pass,ok,safe_monitoring,GREEN_auto,continue_monitoring
+https://pethubonline.com/best-cat-litter-trays-uk/,best-cat-litter-trays-uk,200,1.15,232,5,14,7,0,yes,yes,pass,ok,safe_monitoring,GREEN_auto,continue_monitoring
+https://pethubonline.com/best-wall-mounted-cat-scratchers-uk/,best-wall-mounted-cat-scratchers-uk,200,1.19,231,5,14,7,0,yes,yes,pass,ok,safe_monitoring,GREEN_auto,continue_monitoring
+https://pethubonline.com/best-cardboard-cat-scratchers-uk/,best-cardboard-cat-scratchers-uk,200,1.02,231,5,14,7,0,yes,yes,pass,ok,safe_monitoring,GREEN_auto,continue_monitoring
+https://pethubonline.com/best-cat-trees-uk/,best-cat-trees-uk,200,1.54,231,5,14,7,0,yes,yes,pass,ok,safe_monitoring,GREEN_auto,continue_monitoring
+https://pethubonline.com/best-cat-scratching-posts-uk/,best-cat-scratching-posts-uk,200,1.19,232,5,14,7,0,yes,yes,pass,ok,safe_monitoring,GREEN_auto,continue_monitoring
+https://pethubonline.com/best-cat-harnesses-uk/,best-cat-harnesses-uk,200,1.35,231,5,14,7,0,yes,yes,pass,ok,safe_monitoring,GREEN_auto,continue_monitoring
+https://pethubonline.com/best-cat-id-tags-uk/,best-cat-id-tags-uk,200,1.33,231,5,14,7,0,yes,yes,pass,ok,safe_monitoring,GREEN_auto,continue_monitoring

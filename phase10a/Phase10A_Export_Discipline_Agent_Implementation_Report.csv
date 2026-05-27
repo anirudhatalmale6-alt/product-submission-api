@@ -1,0 +1,121 @@
+# generated_at: 2026-05-27T20:31:35Z
+# source_server: 167.99.198.145
+# git_commit: 379fe1f
+# generated_by: Phase10A_Implementation_Generator
+# data_source_label: live_wordpress_api + live_sitemap + live_rankmath
+# total_files: 108
+# compliant: 103
+# stale: 0
+# missing_metadata: 5
+# agent_status: LIVE
+# check_interval: every_24_hours
+# stale_threshold: 168_hours
+directory,filename,extension,size_kb,modified,age_hours,is_stale,meta_found,meta_missing,issues,severity,agent_mode,approval_status,next_action
+phase9i1,Phase9I1_Alternate_Update_Path_Test.csv,.csv,0.8,2026-05-27T19:58:48Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9i1,Phase9I1_Bulk_Admin_Update_Plan.csv,.csv,1.6,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9i1,Phase9I1_Post_Update_Verification.csv,.csv,9.2,2026-05-27T20:16:11Z,0,no,generated_at,source_server; git_commit; generated_by; data_source,"missing_meta:source_server,git_commit,generated_by,data_source",medium,live_enforcement,GREEN_auto,add_metadata
+phase9i1,Phase9I1_Pre_Update_Snapshot.csv,.csv,18.2,2026-05-27T20:09:10Z,0,no,generated_at,source_server; git_commit; generated_by; data_source,"missing_meta:source_server,git_commit,generated_by,data_source",medium,live_enforcement,GREEN_auto,add_metadata
+phase9i1,Phase9I1_REST_Resave_Trigger_Test.csv,.csv,1.2,2026-05-27T19:58:46Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9i1,Phase9I1_RankMath_Settings_Flush_Test.csv,.csv,1.1,2026-05-27T19:58:50Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9i1,Phase9I1_RankMath_Sitemap_Root_Cause_Report.csv,.csv,19.3,2026-05-27T19:57:57Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9i1,Phase9I1_Supplemental_Sitemap_Fallback_Plan.csv,.csv,1.2,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9i1,Phase9I1_Support_Escalation_Draft.txt,.txt,5.2,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9i1,Phase9I1_Temporary_Helper_Feasibility_Report.csv,.csv,1.6,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9i1,Phase9I1_WordPressCom_Cache_Clear_Test.csv,.csv,0.8,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9i1,Phase9I1_Working_vs_Missing_Sitemap_Posts_Comparison.csv,.csv,24.6,2026-05-27T19:57:57Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9i1,pre_update_snapshot.json,.json,32.9,2026-05-27T20:09:10Z,0,no,none,generated_at; source_server; git_commit; generated_by; data_source,"missing_meta:generated_at,source_server,git_commit,generated_by,data_source",medium,live_enforcement,GREEN_auto,add_metadata
+phase9j,Phase9J_24_7_Agent_Scheduler_Plan.yaml,.yaml,5.7,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_AI_Credit_Fallback_Plan.csv,.csv,1.4,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_AI_Enterprise_Agent_Operations_Matrix.csv,.csv,2.7,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_AI_Visibility_Agent_Spec.csv,.csv,2.2,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_Agent_Permission_Matrix.csv,.csv,3.5,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_CoPilot_Agent_Command_Map.csv,.csv,2.6,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_Executive_Summary.txt,.txt,3.4,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_Export_Discipline_Agent_Spec.csv,.csv,2.0,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_Metadata_ImageAlt_Agent_Spec.csv,.csv,2.2,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_New_Section_Launch_Template.json,.json,2.6,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_Next_Section_Launch_Backlog.csv,.csv,4.2,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_Performance_CWV_Agent_Spec.csv,.csv,2.3,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_Product_Evidence_Agent_Spec.csv,.csv,2.7,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_Publisher_Gate_Agent_Spec.csv,.csv,2.4,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_Schema_Safety_Agent_Spec.csv,.csv,2.2,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_Section_Launch_Framework.csv,.csv,1.8,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_Sitemap_Indexing_Agent_Spec.csv,.csv,2.5,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_Specialist_Agent_Roster.csv,.csv,1.7,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_Taxonomy_Authority_Agent_Spec.csv,.csv,2.3,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9j,Phase9J_Trust_Editorial_Evidence_Agent_Spec.csv,.csv,2.2,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_24_7_Agent_Scheduler_Plan.yaml,.yaml,6.9,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_AI_Capacity_Fallback_Plan.csv,.csv,1.4,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_AI_Enterprise_Operations_Matrix.csv,.csv,2.7,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_AI_Visibility_Agent_Spec.csv,.csv,4.1,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Agent_Permission_Matrix.csv,.csv,4.2,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Category_Rule_Set.yaml,.yaml,1.6,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_CoPilot_Agent_Command_Map.csv,.csv,3.1,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_CoPilot_Expansion_Plan.csv,.csv,1.2,2026-05-27T20:15:57Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Consolidated_Testing_Plan.csv,.csv,2.8,2026-05-27T20:15:57Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Cross_Agent_Communication_Map.csv,.csv,2.2,2026-05-27T20:15:57Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Dashboard_CoPilot_Integration_Map.csv,.csv,2.5,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Executive_Summary.txt,.txt,4.1,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Export_Discipline_Agent_Spec.csv,.csv,3.8,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Export_Metadata_Standard.yaml,.yaml,1.3,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Metadata_Enforcement_Rules.json,.json,1.7,2026-05-27T20:15:57Z,0,no,generated_at; generated_by; git_commit; source_server,data_source,missing_meta:data_source,medium,live_enforcement,GREEN_auto,add_metadata
+phase10,Phase10_Metadata_ImageAlt_Agent_Spec.csv,.csv,3.9,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_New_Section_Launch_Template.json,.json,3.7,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Next_Section_Launch_Backlog.csv,.csv,4.2,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Performance_CWV_Agent_Spec.csv,.csv,4.0,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Product_Evidence_Agent_Spec.csv,.csv,4.1,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Product_Evidence_Pipeline_Status.csv,.csv,1.3,2026-05-27T20:15:57Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Product_Evidence_Status_Model.yaml,.yaml,2.6,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Publisher_Gate_Agent_Spec.csv,.csv,4.2,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_SA-02_Taxonomy_Authority_Agent_Deep_Execution.txt,.txt,3.8,2026-05-27T20:15:57Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_SA-03_Metadata_&_Image_Alt_Agent_Deep_Execution.txt,.txt,3.9,2026-05-27T20:15:57Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_SA-04_Schema_Safety_Agent_Deep_Execution.txt,.txt,3.9,2026-05-27T20:15:57Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_SA-05_Product_Evidence_Agent_Deep_Execution.txt,.txt,4.0,2026-05-27T20:15:57Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_SA-06_Publisher_Gate_Agent_Deep_Execution.txt,.txt,3.8,2026-05-27T20:15:57Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_SA-07_AI_Visibility_Agent_Deep_Execution.txt,.txt,3.8,2026-05-27T20:15:57Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_SA-08_Trust_&_Editorial_Evidence_Agent_Deep_Execution.txt,.txt,3.8,2026-05-27T20:15:57Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_SA-09_Performance_&_CWV_Agent_Deep_Execution.txt,.txt,3.8,2026-05-27T20:15:57Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_SA-10_Export_Discipline_Agent_Deep_Execution.txt,.txt,3.7,2026-05-27T20:15:57Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_SA-11_Security_&_Governance_Agent_Deep_Execution.txt,.txt,3.8,2026-05-27T20:15:57Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_SA-12_AI_Infrastructure_Health_Agent_Deep_Execution.txt,.txt,3.7,2026-05-27T20:15:57Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_SA-13_Content_Authority_Agent_Deep_Execution.txt,.txt,3.8,2026-05-27T20:15:57Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_SA01_Sitemap_Indexing_Deep_Execution.txt,.txt,10.2,2026-05-27T20:15:57Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Schema_Blocking_Rules.yaml,.yaml,1.7,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Schema_Safety_Agent_Spec.csv,.csv,3.9,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Section_Launch_Framework.csv,.csv,1.8,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Section_Launch_Tracker.csv,.csv,1.6,2026-05-27T20:15:57Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Security_Check_Schedule.yaml,.yaml,1.7,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Security_Governance_Agent_Spec.csv,.csv,4.1,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Sitemap_Indexing_Agent_Spec.csv,.csv,4.4,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Specialist_Agent_Roster.csv,.csv,2.2,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Taxonomy_Authority_Agent_Spec.csv,.csv,4.0,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10,Phase10_Trust_Editorial_Evidence_Agent_Spec.csv,.csv,3.9,2026-05-27T19:58:52Z,1,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10a,Phase10A_Metadata_ImageAlt_Agent_Implementation_Report.csv,.csv,13.3,2026-05-27T20:32:51Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10a,Phase10A_Schema_Safety_Agent_Implementation_Report.csv,.csv,9.7,2026-05-27T20:32:51Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10a,Phase10A_Sitemap_Indexing_Agent_Implementation_Report.csv,.csv,14.4,2026-05-27T20:32:51Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase10a,Phase10A_Taxonomy_Authority_Agent_Implementation_Report.csv,.csv,12.6,2026-05-27T20:32:51Z,0,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9c,Phase9C_CoPilot_Owner_Review_Commands.csv,.csv,3.9,2026-05-27T16:00:44Z,5,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9c,Phase9C_DogFood_Owner_Review_Status.csv,.csv,2.6,2026-05-27T16:00:44Z,5,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9c,Phase9C_Evidence_Index.txt,.txt,5.7,2026-05-27T16:14:40Z,4,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9c,Phase9C_Executive_Summary.txt,.txt,11.4,2026-05-27T16:00:44Z,5,no,none,generated_at; source_server; git_commit; generated_by; data_source,"missing_meta:generated_at,source_server,git_commit,generated_by,data_source",medium,live_enforcement,GREEN_auto,add_metadata
+phase9c,Phase9C_Incident_Report.txt,.txt,12.8,2026-05-27T16:14:14Z,4,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9c,Phase9C_Internal_Link_Final_Check.csv,.csv,3.7,2026-05-27T16:00:44Z,5,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9c,Phase9C_Metadata_Approval_Pack.csv,.csv,2.4,2026-05-27T16:00:44Z,5,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9c,Phase9C_Phase9_Technical_Cleanup_Status.csv,.csv,2.5,2026-05-27T16:00:44Z,5,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9c,Phase9C_Product_Evidence_Action_Queue.csv,.csv,2.6,2026-05-27T16:00:44Z,5,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9c,Phase9C_Publishing_Gate_Status.csv,.csv,1.3,2026-05-27T16:00:44Z,5,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9c,Phase9C_Schema_Staging_Pack.json,.json,21.9,2026-05-27T16:00:44Z,5,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9d,Affiliate_Compliance_Final_Report.csv,.csv,4.9,2026-05-27T17:04:29Z,3,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9d,CoPilot_Safety_Command_Report.csv,.csv,3.2,2026-05-27T17:04:29Z,3,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9d,Export_Discipline_Report.csv,.csv,5.3,2026-05-27T17:04:29Z,3,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9d,Google_Data_Source_Reconciliation_Final.csv,.csv,1.7,2026-05-27T17:04:29Z,3,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9d,NOC_Endpoint_Cleanup_Report.csv,.csv,2.3,2026-05-27T17:04:29Z,3,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9d,NOC_Raw_API_Status.json,.json,3.9,2026-05-27T17:04:29Z,3,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9d,Next_Mission_Preparation_Pack.csv,.csv,2.6,2026-05-27T17:04:29Z,3,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9d,Phase9D_Executive_Summary.txt,.txt,10.3,2026-05-27T17:04:29Z,3,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9d,Phase9D_Security_Public_Safety_Report.csv,.csv,2.3,2026-05-27T17:04:29Z,3,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9d,Phase9D_Write_Path_Governance_Tests.json,.json,4.4,2026-05-27T17:04:29Z,3,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9d,Product_Evidence_Action_Queue_Final.csv,.csv,4.8,2026-05-27T17:04:29Z,3,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9d,Publish_Governance_Hardening_Report.csv,.csv,2.9,2026-05-27T17:04:29Z,3,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9d,Publish_Lock_Status_Report.csv,.csv,2.0,2026-05-27T17:04:29Z,3,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none
+phase9d,Social_Channel_Safety_Report.csv,.csv,0.9,2026-05-27T17:04:29Z,3,no,data_source; generated_at; generated_by; git_commit; source_server,none,compliant,ok,live_enforcement,GREEN_auto,none

@@ -1,0 +1,21 @@
+# generated_at: 2026-05-27T20:31:35Z
+# source_server: 167.99.198.145
+# git_commit: 379fe1f
+# generated_by: Phase10A_Implementation_Generator
+# data_source_label: live_wordpress_api + live_sitemap + live_rankmath
+# total_commands: 12
+# all_live: yes
+# copilot_mode: operational_intelligence
+command,agent,response_type,data,status,agent_mode,approval_status,next_action
+/sitemap status,SA-01,summary,Sitemap healthy: 58/58 posts indexed. Missing: 0. Last check: 2026-05-27T20:31:35Z,live,live,GREEN_auto,continuous_availability
+/taxonomy check,SA-02,summary,"Taxonomy: 58 healthy, 0 uncategorized, 0 mismatched",live,live,GREEN_auto,continuous_availability
+/metadata scan,SA-03,summary,"Metadata: 0 pass, 58 issues. Enforcement: active",live,live,GREEN_auto,continuous_availability
+/schema safety,SA-04,summary,"Schema: 58 safe, 0 blocked types detected, 0 warnings",live,live,GREEN_auto,continuous_availability
+/evidence status,SA-05,summary,Product Evidence: 0 verified clusters. 7 educational-only. 1 RED gated. Affiliate: all blocked.,live,live,GREEN_auto,continuous_availability
+/publisher gates,SA-06,summary,"Publisher gates: 12 enforced, 0 bypasses, 0 violations",live,live,GREEN_auto,continuous_availability
+/ai visibility,SA-07,summary,"AI readiness: 56 high, rest medium/low. No fake claims.",live,live,GREEN_auto,continuous_availability
+/performance check,SA-09,summary,Performance: 10/10 sampled pass. Safe mode only.,live,live,GREEN_auto,continuous_availability
+/export freshness,SA-10,summary,"Exports: 103 compliant, 0 stale, 5 missing metadata",live,live,GREEN_auto,continuous_availability
+/governance status,SA-11,summary,Governance: All gates enforced. No RED bypasses. Social posting disabled. Auto-publish disabled.,live,live,GREEN_auto,continuous_availability
+/scan all,multi,full_report,Triggers all agent scans and returns consolidated status,live,live,GREEN_auto,continuous_availability
+/next action,multi,recommendation,Returns safest next action based on all agent assessments,live,live,GREEN_auto,continuous_availability

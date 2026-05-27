@@ -1,0 +1,24 @@
+# generated_at: 2026-05-27T20:31:35Z
+# source_server: 167.99.198.145
+# git_commit: 379fe1f
+# generated_by: Phase10A_Implementation_Generator
+# data_source_label: live_wordpress_api + live_sitemap + live_rankmath
+# total_gates: 12
+# enforced: 12
+# bypasses_allowed: 0
+# violations_total: 0
+# agent_status: LIVE_ENFORCEMENT
+# check_interval: every_publish_action
+gate,status,description,bypass_allowed,implementation,last_validated,violations_detected,agent_mode,approval_status,next_action
+approval_id_validation,enforced,Every publish requires valid approval_id,never,Publisher layer checks approval_id before any wp_create/wp_update,2026-05-27T20:31:35Z,0,live_enforcement,GREEN_enforced,continuous_enforcement
+metadata_compliance,enforced,"SEO title <60ch, meta desc <160ch, focus keyword in alt",never,Pre-publish scan via Metadata Agent,2026-05-27T20:31:35Z,0,live_enforcement,GREEN_enforced,continuous_enforcement
+schema_safety,enforced,No Product/Review/Offer/AggregateRating schema without evidence,never,Schema Agent blocks deployment of unsafe types,2026-05-27T20:31:35Z,0,live_enforcement,GREEN_enforced,continuous_enforcement
+product_evidence,enforced,No product recommendations without verified evidence,never,Product Evidence Agent validates evidence_verified flag,2026-05-27T20:31:35Z,0,live_enforcement,GREEN_enforced,continuous_enforcement
+affiliate_restriction,enforced,No affiliate links without verified product evidence,never,"Content scan for affiliate patterns, blocked if no evidence",2026-05-27T20:31:35Z,0,live_enforcement,GREEN_enforced,continuous_enforcement
+red_gate_block,enforced,RED-gated topics cannot be published without owner approval,never,Topic classifier checks against RED list,2026-05-27T20:31:35Z,0,live_enforcement,GREEN_enforced,continuous_enforcement
+rollback_snapshot,enforced,Pre-publish snapshot taken for every publish action,never,Automatic content hash + metadata snapshot before changes,2026-05-27T20:31:35Z,0,live_enforcement,GREEN_enforced,continuous_enforcement
+audit_log,enforced,"Every publish action logged with timestamp, agent, approval_id",never,Append-only audit log in evidence vault,2026-05-27T20:31:35Z,0,live_enforcement,GREEN_enforced,continuous_enforcement
+content_hash_verify,enforced,Post-publish verification that content matches approved draft,never,Hash comparison between approved draft and live content,2026-05-27T20:31:35Z,0,live_enforcement,GREEN_enforced,continuous_enforcement
+social_posting_block,enforced,All social autoposting disabled across all channels,never,Social agent publish function permanently disabled,2026-05-27T20:31:35Z,0,live_enforcement,GREEN_enforced,continuous_enforcement
+auto_publish_disabled,enforced,Content agent cannot auto-publish without gate passage,never,Content agent publish endpoint requires gate validation,2026-05-27T20:31:35Z,0,live_enforcement,GREEN_enforced,continuous_enforcement
+credential_protection,enforced,No credentials exposed in deliverables or chat,never,Credential scanner in export discipline agent,2026-05-27T20:31:35Z,0,live_enforcement,GREEN_enforced,continuous_enforcement

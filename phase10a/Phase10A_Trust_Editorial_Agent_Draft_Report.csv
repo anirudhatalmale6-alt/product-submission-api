@@ -1,0 +1,16 @@
+# generated_at: 2026-05-27T20:31:35Z
+# source_server: 167.99.198.145
+# git_commit: 379fe1f
+# generated_by: Phase10A_Implementation_Generator
+# data_source_label: live_wordpress_api + live_sitemap + live_rankmath
+# agent_status: DRAFT_MODE
+# auto_publish: DISABLED
+# ready_for_review: 3
+# blocked: 1
+item,type,status,description,requirements,blockers,priority,agent_mode,approval_status,next_action
+Methodology Page,trust_page,draft_ready,Explains how PetHub evaluates products and creates content,"Evidence-based process, named methodology, no fake testing claims",Needs owner review before publish,high,draft_preparation,AMBER_needs_review,prepare_draft
+Editorial Standards Page,trust_page,draft_ready,"Describes editorial process, fact-checking, update policy","Honest about AI-assisted content, update frequency commitment",Needs owner review before publish,high,draft_preparation,AMBER_needs_review,prepare_draft
+Corrections & Updates Policy,trust_page,draft_ready,"How errors are handled, how outdated content is updated","Clear process, contact method, timeline commitment",Needs owner review before publish,medium,draft_preparation,AMBER_needs_review,prepare_draft
+Evidence Labels System,trust_system,design_complete,Visual labels showing evidence level for each claim/recommendation,Clear hierarchy: verified > researched > editorial opinion,Needs schema integration review,medium,draft_preparation,AMBER_needs_review,prepare_draft
+Author/Expert Profiles,trust_page,blocked,Named experts/reviewers for authority content,Real named individuals with verifiable credentials,No verified experts identified yet,high,draft_preparation,AMBER_needs_review,identify_blockers
+Source Attribution System,trust_system,design_complete,Inline citations linking to original research/sources,"Linked references, date of access, source credibility rating",Implementation needs publisher gate integration,medium,draft_preparation,AMBER_needs_review,prepare_draft

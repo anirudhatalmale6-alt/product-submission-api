@@ -1,0 +1,70 @@
+# generated_at: 2026-05-27T20:31:35Z
+# source_server: 167.99.198.145
+# git_commit: 379fe1f
+# generated_by: Phase10A_Implementation_Generator
+# data_source_label: live_wordpress_api + live_sitemap + live_rankmath
+# total_scanned: 58
+# passing: 0
+# issues_found: 58
+# agent_status: LIVE
+# check_interval: every_12_hours
+# enforcement_mode: publisher_gate_integrated
+post_id,slug,title,seo_title_len,meta_desc_len,first_img_alt,issues,severity,seo_title_preview,meta_desc_preview,action,agent_mode,approval_status,next_action
+4335,best-cat-litter-disposal-uk,Best Cat Litter Disposal UK (2026) – Waste Managem,0,0,Catdispose Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4328,best-self-cleaning-litter-trays-uk,Best Self-Cleaning Litter Trays UK (2026) – Automa,0,0,Catauto Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4321,best-cat-litter-uk,Best Cat Litter UK (2026) – Types &#038; Compariso,0,0,Catlitter Lit Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4314,best-cat-litter-trays-uk,Best Cat Litter Trays UK (2026) – Complete Guide,0,0,Catlitter Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4307,best-wall-mounted-cat-scratchers-uk,Best Wall-Mounted Cat Scratchers UK (2026) – Space,0,0,Catwall Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4300,best-cardboard-cat-scratchers-uk,Best Cardboard Cat Scratchers UK (2026) – Budget F,0,0,Catcard Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4293,best-cat-trees-uk,Best Cat Trees UK (2026) – Climbing &#038; Scratch,0,0,Cattree Sizes,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4286,best-cat-scratching-posts-uk,Best Cat Scratching Posts UK (2026) – Complete Gui,0,0,Catscratch Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4279,best-cat-harnesses-uk,Best Cat Harnesses UK (2026) – Safe Walking Guide,0,0,Catharness Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4272,best-cat-id-tags-uk,Best Cat ID Tags UK (2026) – Identification Guide,0,0,Cattag Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4265,best-cat-gps-trackers-uk,Best Cat GPS Trackers UK (2026) – Location Trackin,0,0,Catgps Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4258,best-cat-collars-uk,Best Cat Collars UK (2026) – Complete Safety Guide,0,0,Catcollar Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4251,best-cat-shampoo-uk,Best Cat Shampoo UK (2026) – When &#038; How to Ba,0,0,Catshampoo Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4244,best-cat-nail-clippers-uk,Best Cat Nail Clippers UK (2026) – Safe Trimming G,0,0,Catnail Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4237,best-cat-brushes-uk,Best Cat Brushes UK (2026) – Guide by Coat Type,0,0,Catbrush Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4230,best-cat-grooming-supplies-uk,Best Cat Grooming Supplies UK (2026) – Complete Gu,0,0,Catgroom Tools,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4223,best-cat-window-perches-uk,Best Cat Window Perches UK (2026) – Sunning &#038;,0,0,Cat Window Types,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4216,best-cat-radiator-beds-uk,Best Cat Radiator Beds UK (2026) – Hook-On Warmth ,0,0,Cat Rad Types,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4209,best-heated-cat-beds-uk,Best Heated Cat Beds UK (2026) – Winter Warmth Gui,0,0,Cat Heated Types,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4202,best-cat-beds-uk,Best Cat Beds UK (2026) – Complete Guide,0,0,Cat Beds Types,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4195,best-cat-toys-indoor-cats-uk,Best Cat Toys for Indoor Cats UK (2026) – Enrichme,0,0,Cat Indoor Types,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4188,best-catnip-toys-uk,Best Catnip Toys UK (2026) – What Works and Why,0,0,Cat Nip Science,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4181,best-interactive-cat-toys-uk,Best Interactive Cat Toys UK (2026) – Wand &#038; ,0,0,Cat Inter Types,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4174,best-cat-toys-uk,Best Cat Toys UK (2026) – Complete Guide,0,0,Cat Toys Types,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4167,best-dog-water-bottles-uk,Best Dog Water Bottles UK (2026) – Travel Hydratio,0,0,Bowl Water Types,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4160,best-elevated-dog-bowls-uk,Best Elevated Dog Bowls UK (2026) – Raised Feeder ,0,0,Bowl Elev Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4153,best-slow-feeder-dog-bowls-uk,Best Slow Feeder Dog Bowls UK (2026) – Prevent Spe,0,0,Bowl Slow Types,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4146,best-dog-bowls-feeding-uk,Best Dog Bowls and Feeding UK (2026) – Complete Gu,0,0,Bowl Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4139,best-dog-training-leads-uk,Best Dog Training Leads UK (2026) – Long Lines &#0,0,0,Train Lead Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4132,best-puppy-training-guide-uk,Best Puppy Training Guide UK (2026) – First Year E,0,0,Train Puppy Timeline,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4125,best-dog-training-treats-uk,Best Dog Training Treats UK (2026) – Reward Guide,0,0,Train Treat Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4118,best-dog-training-behaviour-uk,Best Dog Training and Behaviour UK (2026) – Comple,0,0,Train Commands,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4110,best-dog-joint-supplements-uk,Best Dog Joint Supplements UK (2026) – Mobility Su,0,0,Health Joint Ingredients,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4103,best-dog-flea-treatment-uk,Best Dog Flea Treatment UK (2026) – Prevention Gui,0,0,Health Flea Types,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4096,best-dog-dental-care-uk,Best Dog Dental Care UK (2026) – Teeth Cleaning Gu,0,0,Health Dental Tools,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4089,best-dog-health-care-uk,Best Dog Health and Care UK (2026) – Complete Guid,0,0,Health Checklist,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4078,best-dog-nail-clippers-uk,Best Dog Nail Clippers UK (2026) – Trimming &#038;,0,0,Groom Nail Types,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4071,best-dog-shampoo-uk,Best Dog Shampoo UK (2026) – Ingredients &#038; Sa,0,0,Groom Shampoo Types,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4064,best-dog-brushes-uk,Best Dog Brushes UK (2026) – Guide by Coat Type,0,0,Groom Brush Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4057,best-dog-grooming-supplies-uk,Best Dog Grooming Supplies UK (2026) – Complete Gu,0,0,Groom Tools,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4049,best-puppy-collars-uk,Best Puppy Collars UK (2026) – First Collar &#038;,0,0,Collars Puppy Timeline,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4042,best-dog-leads-uk,Best Dog Leads UK (2026) – Walking &#038; Training,0,0,Leads Types,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4034,best-no-pull-dog-harnesses-uk,Best No-Pull Dog Harnesses UK (2026) – Training &#,0,0,Collars Nopull Types,no_seo_title; no_meta_desc; alt_missing_keyword,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4027,best-dog-collars-and-harnesses-uk,Best Dog Collars and Harnesses UK (2026) – Complet,0,0,Collars Types,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4018,best-puppy-beds-uk,Best Puppy Beds UK (2026) – First Bed &#038; Crate,0,0,Beds Puppy Types,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4011,best-cooling-dog-beds-uk,Best Cooling Dog Beds UK (2026) – Temperature Regu,0,0,Beds Cooling Types,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+4004,best-orthopaedic-dog-beds-uk,Best Orthopaedic Dog Beds UK (2026) – Joint Suppor,0,0,Beds Foam Density,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+3996,best-dog-beds-uk,Best Dog Beds UK (2026) – Complete Guide &#038; Ho,0,0,Beds Types,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+3960,best-puppy-toys-uk,Best Puppy Toys UK (2026) – Teething &#038; First ,0,0,Puppy Teething Timeline - 8 Weeks to 7 Months,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+3959,best-interactive-dog-toys-uk,Best Interactive Dog Toys UK (2026) – Puzzle &#038,0,0,Types of Interactive Dog Toys,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+3957,best-indestructible-dog-toys-uk,Best Indestructible Dog Toys UK (2026) – Tough Toy,0,0,Tough Dog Toy Materials - What Lasts vs What to Av,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+3956,best-dog-toys-uk,Best Dog Toys UK (2026) – Complete Guide &#038; Ho,0,0,"6 Types of Dog Toys - Chew, Fetch, Interactive, Tu",no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+3839,best-puppy-food-uk,Best Puppy Food UK (2026) &#8211; Growth-Stage Nut,0,0,Best puppy food UK nutrition guide covering growth,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+3838,dry-vs-wet-dog-food-uk,Dry vs Wet Dog Food UK &#8211; An Honest Compariso,0,0,Dry vs wet dog food UK comparison showing nutritio,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+3837,best-dry-dog-food-uk,Best Dry Dog Food UK (2026) &#8211; Evidence-Based,0,0,Best dry dog food UK guide showing different kibbl,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+3836,best-dog-food-uk,Best Dog Food UK (2026) &#8211; Complete Buying Gu,0,0,Best dog food UK complete buying guide covering fo,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+696,essential-cat-supplies-for-cat-owners,Essential Cat Supplies for Cat Owners &#8211; Numb,0,0,Essential Cat Supplies for Cat Owners,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
+3,top-dog-toys-every-pet-owner-needs-in-2026,Top Dog Toys Every Pet Owner Needs in 2026,0,0,Top Dog Toys Every Pet Owner Needs in 2026,no_seo_title; no_meta_desc,high,(missing),(missing),fix_metadata,live_enforcement,GREEN_auto,queue_for_fix
