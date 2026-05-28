@@ -1,0 +1,11 @@
+cluster,posts,replication_readiness,faq_rate,glossary_rate,trust_rate,comparison_rate,practical_rate,external_ref_rate,related_rate,post_gap,top_gaps
+Dog Health,5,71.3,60.0,100.0,80.0,0.0,0.0,20.0,100.0,10,Need 10 more posts to reach 15-post baseline | comparison tables: 0% vs ref 33% (5 posts missing) | practical examples: 0% vs ref 41% (5 posts missing)
+Puppy Care,5,73.2,100.0,100.0,100.0,0.0,0.0,40.0,80.0,10,Need 10 more posts to reach 15-post baseline | comparison tables: 0% vs ref 33% (5 posts missing) | practical examples: 0% vs ref 41% (5 posts missing)
+Dog Supplies,6,74.2,83.3,100.0,83.3,0.0,0.0,0.0,100.0,9,Need 9 more posts to reach 15-post baseline | comparison tables: 0% vs ref 33% (6 posts missing) | practical examples: 0% vs ref 41% (6 posts missing)
+Dog Harnesses,9,75.7,44.4,100.0,55.6,33.3,0.0,11.1,88.9,6,Need 6 more posts to reach 15-post baseline | practical examples: 0% vs ref 41% (9 posts missing) | trust editorial blocks: 56% vs ref 96% (4 posts missing)
+Dog Food,4,80.9,100.0,100.0,100.0,100.0,0.0,0.0,100.0,11,Need 11 more posts to reach 15-post baseline | practical examples: 0% vs ref 41% (4 posts missing)
+Dog Beds,9,84.7,100.0,100.0,100.0,33.3,0.0,22.2,88.9,6,Need 6 more posts to reach 15-post baseline | practical examples: 0% vs ref 41% (9 posts missing) | Related Reading sections: 89% vs ref 100% (1 posts missing)
+Pet Care General,9,88.1,100.0,100.0,100.0,22.2,22.2,44.4,100.0,6,Need 6 more posts to reach 15-post baseline | comparison tables: 22% vs ref 33% (7 posts missing) | practical examples: 22% vs ref 41% (7 posts missing)
+Cat Supplies,24,89.4,87.5,100.0,95.8,12.5,8.3,8.3,100.0,0,comparison tables: 12% vs ref 33% (21 posts missing) | practical examples: 8% vs ref 41% (22 posts missing)
+Cat Toys,14,96.3,78.6,100.0,78.6,28.6,35.7,0.0,100.0,1,Need 1 more posts to reach 15-post baseline | trust editorial blocks: 79% vs ref 96% (3 posts missing)
+Dog Care,21,96.3,76.2,95.2,81.0,33.3,38.1,4.8,85.7,0,trust editorial blocks: 81% vs ref 96% (4 posts missing) | Related Reading sections: 86% vs ref 100% (3 posts missing)
