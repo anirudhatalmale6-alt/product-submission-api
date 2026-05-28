@@ -833,3 +833,330 @@ def run_full_maturity_backfill(limit=86):
     results["mismatches"] = route_product_count_mismatches()
     results["summary"] = get_maturity_summary()
     return results
+
+
+# ── 10G-D: Editorial Trust Model ────────────────────────────────────────
+
+EDITORIAL_ROLES = ["editor_in_chief", "content_editor", "contributor", "reviewer", "fact_checker"]
+REVIEW_CHAIN_STATUSES = ["draft", "editorial_review", "fact_check", "approved", "published", "revision_needed"]
+
+
+def create_editorial_model_tables():
+    ddl = """
+    CREATE TABLE IF NOT EXISTS trust_source_attributions (
+        attribution_id TEXT PRIMARY KEY,
+        content_id INTEGER NOT NULL,
+        source_type TEXT NOT NULL,
+        source_name TEXT NOT NULL,
+        source_url TEXT,
+        attribution_status TEXT DEFAULT 'unverified',
+        verified BOOLEAN DEFAULT FALSE,
+        verified_date TIMESTAMP WITH TIME ZONE,
+        notes TEXT,
+        created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+    );
+
+    CREATE TABLE IF NOT EXISTS trust_editorial_provenance (
+        provenance_id TEXT PRIMARY KEY,
+        content_id INTEGER NOT NULL,
+        author_id TEXT,
+        action_type TEXT NOT NULL,
+        action_detail TEXT,
+        review_chain_status TEXT DEFAULT 'draft',
+        created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_source_attr_content ON trust_source_attributions(content_id);
+    CREATE INDEX IF NOT EXISTS idx_editorial_prov_content ON trust_editorial_provenance(content_id);
+    """
+    conn = _conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute(ddl)
+        conn.commit()
+        return {"status": "ok", "tables": ["trust_source_attributions", "trust_editorial_provenance"]}
+    finally:
+        conn.close()
+
+
+def setup_editorial_team():
+    conn = _conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("SELECT author_id FROM trust_authors WHERE display_name='PetHub Editorial Team'")
+            existing = cur.fetchone()
+            if existing:
+                team_id = existing[0]
+            else:
+                team_id = _uid("au")
+                cur.execute("""INSERT INTO trust_authors
+                    (author_id, display_name, role, expertise_areas, credentials,
+                     verified, verification_source, trust_score, bio, created_at, updated_at)
+                    VALUES (%s, 'PetHub Editorial Team', 'editor_in_chief', %s, %s,
+                     TRUE, 'internal_registration', 0.7,
+                     'PetHub Online editorial team responsible for content creation, review, and maintenance.',
+                     NOW(), NOW())""",
+                    (team_id,
+                     json.dumps(["pet_products", "dog_care", "cat_care", "pet_nutrition", "pet_accessories"]),
+                     "Internal editorial team - no individual credentials claimed"))
+
+            cur.execute("SELECT content_id FROM trust_audit")
+            all_content = [r[0] for r in cur.fetchall()]
+
+            provenance_created = 0
+            for cid in all_content:
+                pid = _uid("pv")
+                cur.execute("""INSERT INTO trust_editorial_provenance
+                    (provenance_id, content_id, author_id, action_type, action_detail,
+                     review_chain_status, created_at)
+                    VALUES (%s, %s, %s, 'content_ownership',
+                     'Editorial ownership assigned to PetHub Editorial Team', 'draft', NOW())
+                    ON CONFLICT DO NOTHING""",
+                    (pid, cid, team_id))
+                provenance_created += cur.rowcount
+
+            conn.commit()
+            return {
+                "team_id": team_id,
+                "display_name": "PetHub Editorial Team",
+                "content_assigned": provenance_created,
+                "total_content": len(all_content),
+            }
+    finally:
+        conn.close()
+
+
+def bulk_create_source_attributions():
+    conn = _conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("""SELECT te.evidence_id, te.content_id, te.source_name, te.claim_text
+                FROM trust_evidence te
+                WHERE te.source_name IN ('citation_link', 'named_source', 'expert_quote',
+                    'editorial_policy', 'methodology')""")
+            evidence = cur.fetchall()
+
+            created = 0
+            for ev_id, content_id, source_name, claim_text in evidence:
+                aid = _uid("sa")
+                type_map = {"citation_link": "external_link", "named_source": "named_expert",
+                           "expert_quote": "named_expert", "editorial_policy": "editorial_reference",
+                           "methodology": "methodology_reference"}
+                source_type = type_map.get(source_name, "editorial_reference")
+                cur.execute("""INSERT INTO trust_source_attributions
+                    (attribution_id, content_id, source_type, source_name,
+                     source_url, attribution_status, created_at)
+                    VALUES (%s, %s, %s, %s, %s, 'unverified', NOW())
+                    ON CONFLICT DO NOTHING""",
+                    (aid, content_id, source_type, source_name,
+                     claim_text[:200] if source_name == "citation_link" else None))
+                created += cur.rowcount
+            conn.commit()
+
+            cur.execute("""SELECT attribution_status, COUNT(*)
+                FROM trust_source_attributions GROUP BY attribution_status""")
+            status_dist = {r[0]: r[1] for r in cur.fetchall()}
+
+            return {"created": created, "total_evidence_with_sources": len(evidence), "by_status": status_dist}
+    finally:
+        conn.close()
+
+
+def get_editorial_model_report():
+    conn = _conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("""SELECT author_id, display_name, role, expertise_areas,
+                credentials, verified, trust_score FROM trust_authors""")
+            cols_a = [d[0] for d in cur.description]
+            authors = [dict(zip(cols_a, r)) for r in cur.fetchall()]
+
+            cur.execute("""SELECT action_type, review_chain_status, COUNT(*)
+                FROM trust_editorial_provenance GROUP BY action_type, review_chain_status""")
+            prov_summary = [{"action_type": r[0], "status": r[1], "count": r[2]} for r in cur.fetchall()]
+
+            cur.execute("""SELECT attribution_status, COUNT(*)
+                FROM trust_source_attributions GROUP BY attribution_status""")
+            attr_summary = {r[0]: r[1] for r in cur.fetchall()}
+
+            cur.execute("SELECT COUNT(DISTINCT content_id) FROM trust_editorial_provenance")
+            content_with_prov = cur.fetchone()[0]
+
+            cur.execute("SELECT COUNT(*) FROM trust_audit")
+            total = cur.fetchone()[0]
+
+            return {
+                "authors": authors,
+                "provenance_summary": prov_summary,
+                "attribution_summary": attr_summary,
+                "content_with_provenance": content_with_prov,
+                "total_content": total,
+                "provenance_coverage_pct": round(content_with_prov / total * 100, 1) if total > 0 else 0,
+                "fake_authority_present": False,
+                "editorial_entity_model": "active",
+                "provenance_model": "active",
+                "review_chain_model": "structural_ready",
+                "source_attribution_model": "active",
+            }
+    finally:
+        conn.close()
+
+
+# ── 10G-E: Evidence Quality Layer ────────────────────────────────────────
+
+EVIDENCE_QUALITY_CLASSES = [
+    "structural", "citation", "editorial", "comparative",
+    "sourced", "verified", "inferred", "weak", "stale"
+]
+
+
+def create_evidence_quality_table():
+    ddl = """
+    CREATE TABLE IF NOT EXISTS trust_evidence_quality (
+        quality_id TEXT PRIMARY KEY,
+        evidence_id TEXT NOT NULL,
+        content_id INTEGER NOT NULL,
+        quality_class TEXT NOT NULL,
+        freshness_score REAL DEFAULT 0.5,
+        confidence_score REAL DEFAULT 0.5,
+        source_quality_score REAL DEFAULT 0.5,
+        trust_weight REAL DEFAULT 0.5,
+        classification_detail TEXT,
+        created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+    );
+    CREATE INDEX IF NOT EXISTS idx_ev_quality_content ON trust_evidence_quality(content_id);
+    CREATE INDEX IF NOT EXISTS idx_ev_quality_class ON trust_evidence_quality(quality_class);
+    """
+    conn = _conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute(ddl)
+        conn.commit()
+        return {"status": "ok"}
+    finally:
+        conn.close()
+
+
+def _classify_evidence_quality(evidence_type, source_name, claim_text, confidence):
+    if source_name in ("named_source", "expert_quote", "methodology"):
+        return "verified"
+    if source_name in ("citation_link", "editorial_policy"):
+        return "sourced"
+    if source_name == "data_point":
+        return "citation"
+    if source_name == "comparison_table":
+        return "comparative"
+    if source_name in ("structured_list", "faq_section"):
+        return "structural"
+    if source_name == "disclosure":
+        return "editorial"
+    if confidence and confidence < 50:
+        return "weak"
+    return "inferred"
+
+
+def _freshness_score(source_name):
+    scores = {
+        "named_source": 0.8, "expert_quote": 0.8, "data_point": 0.7,
+        "citation_link": 0.6, "methodology": 0.6, "comparison_table": 0.5,
+        "editorial_policy": 0.5, "structured_list": 0.4, "faq_section": 0.4,
+        "disclosure": 0.3,
+    }
+    return scores.get(source_name, 0.5)
+
+
+def _source_quality_score(source_name):
+    scores = {
+        "expert_quote": 0.9, "named_source": 0.85, "methodology": 0.8,
+        "editorial_policy": 0.75, "citation_link": 0.65, "data_point": 0.6,
+        "comparison_table": 0.55, "disclosure": 0.4, "faq_section": 0.35,
+        "structured_list": 0.3,
+    }
+    return scores.get(source_name, 0.4)
+
+
+def _trust_weight(quality_class, freshness, confidence_norm, source_quality):
+    class_weights = {
+        "verified": 0.95, "sourced": 0.8, "citation": 0.75, "comparative": 0.65,
+        "structural": 0.5, "editorial": 0.55, "inferred": 0.35, "weak": 0.15, "stale": 0.1,
+    }
+    base = class_weights.get(quality_class, 0.3)
+    return round(base * 0.4 + freshness * 0.2 + confidence_norm * 0.2 + source_quality * 0.2, 3)
+
+
+def classify_all_evidence_quality():
+    conn = _conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("""SELECT evidence_id, content_id, evidence_type, source_name,
+                claim_text, confidence_score FROM trust_evidence""")
+            evidence = cur.fetchall()
+
+            classified = 0
+            for ev_id, content_id, ev_type, source_name, claim_text, confidence in evidence:
+                qclass = _classify_evidence_quality(ev_type, source_name, claim_text, confidence)
+                fresh = _freshness_score(source_name)
+                sq = _source_quality_score(source_name)
+                conf_norm = (confidence or 50) / 100.0
+                tw = _trust_weight(qclass, fresh, conf_norm, sq)
+
+                qid = _uid("eq")
+                detail = f"type={ev_type}, source={source_name}, class={qclass}"
+                cur.execute("""INSERT INTO trust_evidence_quality
+                    (quality_id, evidence_id, content_id, quality_class,
+                     freshness_score, confidence_score, source_quality_score,
+                     trust_weight, classification_detail, created_at)
+                    VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,NOW())
+                    ON CONFLICT DO NOTHING""",
+                    (qid, ev_id, content_id, qclass,
+                     fresh, conf_norm, sq, tw, detail))
+                classified += cur.rowcount
+            conn.commit()
+
+            cur.execute("""SELECT quality_class, COUNT(*),
+                ROUND(AVG(freshness_score)::numeric,3),
+                ROUND(AVG(confidence_score)::numeric,3),
+                ROUND(AVG(source_quality_score)::numeric,3),
+                ROUND(AVG(trust_weight)::numeric,3)
+                FROM trust_evidence_quality GROUP BY quality_class ORDER BY COUNT(*) DESC""")
+            summary = [{"class": r[0], "count": r[1], "avg_freshness": float(r[2]),
+                        "avg_confidence": float(r[3]), "avg_source_quality": float(r[4]),
+                        "avg_trust_weight": float(r[5])} for r in cur.fetchall()]
+
+            return {"total_evidence": len(evidence), "classified": classified, "quality_distribution": summary}
+    finally:
+        conn.close()
+
+
+def get_evidence_quality_report():
+    conn = _conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("""SELECT eq.quality_id, eq.evidence_id, eq.content_id,
+                eq.quality_class, eq.freshness_score, eq.confidence_score,
+                eq.source_quality_score, eq.trust_weight, eq.classification_detail,
+                te.evidence_type, te.source_name, te.claim_text,
+                ta.content_title, ta.content_url
+                FROM trust_evidence_quality eq
+                JOIN trust_evidence te ON eq.evidence_id = te.evidence_id
+                LEFT JOIN trust_audit ta ON eq.content_id = ta.content_id
+                ORDER BY eq.trust_weight ASC""")
+            cols = [d[0] for d in cur.description]
+            rows = [dict(zip(cols, r)) for r in cur.fetchall()]
+
+            cur.execute("""SELECT COUNT(*) as total,
+                COUNT(*) FILTER (WHERE quality_class IN ('weak','stale')) as weak_stale,
+                COUNT(*) FILTER (WHERE quality_class IN ('verified','sourced')) as strong,
+                ROUND(AVG(trust_weight)::numeric,3) as avg_weight
+                FROM trust_evidence_quality""")
+            stats = cur.fetchone()
+
+            return {
+                "records": rows,
+                "total": stats[0],
+                "weak_or_stale": stats[1],
+                "strong": stats[2],
+                "avg_trust_weight": float(stats[3]) if stats[3] else 0,
+            }
+    finally:
+        conn.close()

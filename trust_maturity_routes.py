@@ -100,3 +100,35 @@ def update_review(review_id: str, body: ReviewUpdate):
 @router.post("/full-backfill")
 def full_backfill(limit: int = 86):
     return tm.run_full_maturity_backfill(limit=limit)
+
+# ── 10G-D: Editorial Trust Model ──
+
+@router.post("/editorial/setup-tables")
+def editorial_setup_tables():
+    return tm.create_editorial_model_tables()
+
+@router.post("/editorial/setup-team")
+def editorial_setup_team():
+    return tm.setup_editorial_team()
+
+@router.post("/editorial/bulk-attributions")
+def editorial_bulk_attributions():
+    return tm.bulk_create_source_attributions()
+
+@router.get("/editorial/report")
+def editorial_report():
+    return tm.get_editorial_model_report()
+
+# ── 10G-E: Evidence Quality Layer ──
+
+@router.post("/evidence-quality/setup")
+def evidence_quality_setup():
+    return tm.create_evidence_quality_table()
+
+@router.post("/evidence-quality/classify-all")
+def evidence_quality_classify():
+    return tm.classify_all_evidence_quality()
+
+@router.get("/evidence-quality/report")
+def evidence_quality_report():
+    return tm.get_evidence_quality_report()

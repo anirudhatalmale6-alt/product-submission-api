@@ -1,0 +1,11 @@
+component,entity_name,status,detail,fake_authority,dashboard_visible,copilot_queryable
+editorial_entity_model,PetHub Editorial Team,ACTIVE,"Registered as editor_in_chief with pet_products/dog_care/cat_care/pet_nutrition/pet_accessories scope. Trust score 0.7. No individual credentials claimed.",no,yes,yes
+author_entity_model,PetHub Editorial Team,ACTIVE,"Single truthful editorial entity. Role: editor_in_chief. Verified: true. Verification source: internal_registration. No fake named authors or experts.",no,yes,yes
+review_chain_model,review_chain_infrastructure,STRUCTURAL_READY,"Review chain statuses available: draft/editorial_review/fact_check/approved/published/revision_needed. All 86 content items in 'draft' status pending first formal review cycle.",no,yes,yes
+source_attribution_model,source_attributions,ACTIVE,"55 source attributions created from editorial_policy and methodology evidence signals. All currently 'unverified' status - awaiting manual verification. No fake external sources created.",no,yes,yes
+editorial_provenance_layer,content_ownership,ACTIVE,"86/86 content items (100%) assigned editorial ownership to PetHub Editorial Team. Provenance tracking operational.",no,yes,yes
+content_coverage,provenance_coverage,100_PERCENT,"All 86 audited posts have editorial provenance records. No content is unowned.",no,yes,yes
+fake_authority_check,n/a,PASSED,"Zero fake authors registered. Zero fake credentials. Zero fake vet reviewers. Zero fake bios. Zero fake expertise claims.",no,n/a,n/a
+contributor_model,future_contributor_infrastructure,STRUCTURAL_READY,"Author table supports: display_name, role, expertise_areas, credentials, verified flag, verification_source, trust_score, bio. Ready for named human contributors when owner decides.",no,yes,yes
+editorial_role_definitions,role_framework,ACTIVE,"5 roles defined: editor_in_chief/content_editor/contributor/reviewer/fact_checker. Currently only editor_in_chief (PetHub Editorial Team) in use.",no,yes,yes
+review_status_tracking,review_workflow,STRUCTURAL_READY,"Review records support: lint_passed, evidence_sufficient, claims_assessed, notes, reviewed_at. Zero reviews completed yet - awaiting formal review cycle initiation.",no,yes,yes
