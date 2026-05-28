@@ -1160,3 +1160,177 @@ def get_evidence_quality_report():
             }
     finally:
         conn.close()
+
+
+# ── 10G-D: Editorial Footprint Tracking ────────────────────────────────
+
+FOOTPRINT_REVIEW_TYPES = ["editorial", "trust", "metadata", "evidence", "freshness"]
+PUBLICATION_CONFIDENCE_LEVELS = ["high", "medium", "low"]
+
+
+def create_editorial_footprint_table():
+    """Create the trust_editorial_footprints table for per-post review history tracking."""
+    ddl = """
+    CREATE TABLE IF NOT EXISTS trust_editorial_footprints (
+        footprint_id TEXT PRIMARY KEY,
+        content_id INTEGER NOT NULL UNIQUE,
+        content_title TEXT,
+        content_url TEXT,
+        editorial_owner TEXT DEFAULT 'PetHub Editorial Team',
+        last_editorial_review TIMESTAMP WITH TIME ZONE,
+        last_trust_review TIMESTAMP WITH TIME ZONE,
+        last_metadata_review TIMESTAMP WITH TIME ZONE,
+        last_evidence_review TIMESTAMP WITH TIME ZONE,
+        last_freshness_review TIMESTAMP WITH TIME ZONE,
+        trust_status TEXT DEFAULT 'unreviewed',
+        evidence_maturity TEXT DEFAULT 'partial',
+        ai_readiness_score REAL DEFAULT 0.0,
+        publication_confidence TEXT DEFAULT 'low',
+        created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+        updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+    );
+    CREATE INDEX IF NOT EXISTS idx_footprint_content ON trust_editorial_footprints(content_id);
+    """
+    conn = _conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute(ddl)
+        conn.commit()
+        return {"status": "ok", "table": "trust_editorial_footprints"}
+    finally:
+        conn.close()
+
+
+def populate_editorial_footprints():
+    """Populate editorial footprints from existing trust_audit data."""
+    conn = _conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("""SELECT content_id, content_title, content_url,
+                trust_state, evidence_state
+                FROM trust_audit""")
+            audit_rows = cur.fetchall()
+
+            created = 0
+            for content_id, title, url, trust_state, evidence_state in audit_rows:
+                fid = _uid("fp")
+
+                # Determine trust_status from trust_state
+                trust_status = trust_state if trust_state else "unreviewed"
+
+                # Determine evidence_maturity from evidence_state
+                good_evidence = {"source_attributed", "live_verified", "editorial_inference"}
+                if evidence_state in good_evidence:
+                    evidence_maturity = "complete"
+                elif evidence_state and evidence_state != "missing_insufficient":
+                    evidence_maturity = "partial"
+                else:
+                    evidence_maturity = "missing"
+
+                ai_readiness = 0.0
+
+                # Determine publication_confidence
+                if trust_state == "green" and evidence_state in good_evidence:
+                    pub_confidence = "high"
+                elif trust_state == "amber":
+                    pub_confidence = "medium"
+                else:
+                    pub_confidence = "low"
+
+                cur.execute("""INSERT INTO trust_editorial_footprints
+                    (footprint_id, content_id, content_title, content_url,
+                     editorial_owner, trust_status, evidence_maturity,
+                     ai_readiness_score, publication_confidence,
+                     created_at, updated_at)
+                    VALUES (%s,%s,%s,%s,'PetHub Editorial Team',%s,%s,%s,%s,NOW(),NOW())
+                    ON CONFLICT (content_id) DO UPDATE SET
+                    content_title=EXCLUDED.content_title,
+                    content_url=EXCLUDED.content_url,
+                    trust_status=EXCLUDED.trust_status,
+                    evidence_maturity=EXCLUDED.evidence_maturity,
+                    ai_readiness_score=EXCLUDED.ai_readiness_score,
+                    publication_confidence=EXCLUDED.publication_confidence,
+                    updated_at=NOW()""",
+                    (fid, content_id, title, url,
+                     trust_status, evidence_maturity,
+                     ai_readiness, pub_confidence))
+                created += cur.rowcount
+
+            conn.commit()
+            return {
+                "status": "ok",
+                "total_audit_rows": len(audit_rows),
+                "footprints_upserted": created,
+            }
+    finally:
+        conn.close()
+
+
+def get_editorial_footprints(limit=50, sort_by="publication_confidence"):
+    """Return editorial footprint records sorted by the given field."""
+    allowed_sort = {
+        "publication_confidence", "trust_status", "evidence_maturity",
+        "ai_readiness_score", "content_id", "updated_at", "created_at",
+        "last_editorial_review", "last_trust_review", "last_metadata_review",
+        "last_evidence_review", "last_freshness_review",
+    }
+    if sort_by not in allowed_sort:
+        sort_by = "publication_confidence"
+
+    conn = _conn()
+    try:
+        with conn.cursor() as cur:
+            # For publication_confidence, use a CASE to order: low first (needs attention), then medium, then high
+            if sort_by == "publication_confidence":
+                order_clause = """ORDER BY CASE publication_confidence
+                    WHEN 'low' THEN 0 WHEN 'medium' THEN 1 WHEN 'high' THEN 2 ELSE 3 END,
+                    updated_at DESC"""
+            elif sort_by == "ai_readiness_score":
+                order_clause = f"ORDER BY {sort_by} ASC, updated_at DESC"
+            else:
+                order_clause = f"ORDER BY {sort_by} ASC NULLS LAST, updated_at DESC"
+
+            cur.execute(f"SELECT * FROM trust_editorial_footprints {order_clause} LIMIT %s",
+                        (limit,))
+            cols = [d[0] for d in cur.description]
+            return [dict(zip(cols, r)) for r in cur.fetchall()]
+    finally:
+        conn.close()
+
+
+def update_footprint_review(content_id, review_type):
+    """Update the appropriate last_*_review timestamp for a content footprint."""
+    review_column_map = {
+        "editorial": "last_editorial_review",
+        "trust": "last_trust_review",
+        "metadata": "last_metadata_review",
+        "evidence": "last_evidence_review",
+        "freshness": "last_freshness_review",
+    }
+    if review_type not in review_column_map:
+        return {"error": f"Invalid review_type '{review_type}'. Must be one of: {', '.join(review_column_map.keys())}"}
+
+    column = review_column_map[review_type]
+    now = _ts()
+
+    conn = _conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute(f"""UPDATE trust_editorial_footprints
+                SET {column}=%s, updated_at=%s
+                WHERE content_id=%s
+                RETURNING footprint_id, content_id""",
+                (now, now, content_id))
+            row = cur.fetchone()
+            if not row:
+                return {"error": f"No footprint found for content_id={content_id}"}
+        conn.commit()
+        return {
+            "footprint_id": row[0],
+            "content_id": row[1],
+            "review_type": review_type,
+            "column_updated": column,
+            "reviewed_at": now,
+        }
+    finally:
+        conn.close()

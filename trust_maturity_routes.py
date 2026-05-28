@@ -132,3 +132,21 @@ def evidence_quality_classify():
 @router.get("/evidence-quality/report")
 def evidence_quality_report():
     return tm.get_evidence_quality_report()
+
+# ── 10G-D: Editorial Footprint Tracking ──
+
+@router.post("/footprints/setup")
+def footprint_setup():
+    return tm.create_editorial_footprint_table()
+
+@router.post("/footprints/populate")
+def footprint_populate():
+    return tm.populate_editorial_footprints()
+
+@router.get("/footprints")
+def footprint_list(limit: int = 50, sort_by: str = 'publication_confidence'):
+    return tm.get_editorial_footprints(limit=limit, sort_by=sort_by)
+
+@router.post("/footprints/{content_id}/review")
+def footprint_review(content_id: int, review_type: str = 'editorial'):
+    return tm.update_footprint_review(content_id, review_type)
