@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>10I Indexing, Crawl &amp; AI Search</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#080a0f;--card:#111621;--border:#1a2236;
+  --text:#e2e8f0;--dim:#7a8ba8;--accent:#10b981;
+  --accent2:#6366f1;--red:#ef4444;--amber:#f59e0b;
+  --cyan:#06b6d4;--emerald:#10b981;--purple:#a855f7;
+}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;padding:20px 28px;overflow-x:hidden}
+.mono{font-family:'JetBrains Mono',monospace}
+
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+.header-left{display:flex;align-items:center;gap:14px}
+.header-icon{width:40px;height:40px;background:linear-gradient(135deg,var(--emerald),var(--cyan));border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px;color:#fff}
+.header h1{font-size:20px;font-weight:600;letter-spacing:-0.3px}
+.header h1 span{color:var(--emerald)}
+.header-right{display:flex;align-items:center;gap:16px;font-size:12px;color:var(--dim)}
+.btn{padding:7px 16px;border-radius:6px;border:1px solid var(--border);background:var(--card);color:var(--text);cursor:pointer;font-family:'Outfit',sans-serif;font-size:12px;transition:all .2s}
+.btn:hover{border-color:var(--emerald);color:var(--emerald)}
+.btn-accent{background:var(--emerald);border-color:var(--emerald);color:#000;font-weight:600}
+.btn-accent:hover{background:#059669}
+
+.section-label{font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--emerald);margin:28px 0 14px;display:flex;align-items:center;gap:10px}
+.section-label::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--emerald) 0%,transparent 80%)}
+.section-num{width:22px;height:22px;background:var(--emerald);color:#000;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+
+/* Summary bar */
+.summary-bar{display:grid;grid-template-columns:repeat(7,1fr);gap:12px;margin-bottom:6px}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center}
+.stat-num{font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:600;color:var(--text);line-height:1.1}
+.stat-label{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+.stat-badge{display:inline-block;padding:4px 12px;border-radius:20px;font-size:11px;font-weight:600;font-family:'JetBrains Mono',monospace;letter-spacing:0.5px}
+.badge-green{background:rgba(16,185,129,.15);color:var(--emerald);border:1px solid rgba(16,185,129,.3)}
+.badge-amber{background:rgba(245,158,11,.15);color:var(--amber);border:1px solid rgba(245,158,11,.3)}
+.badge-red{background:rgba(239,68,68,.15);color:var(--red);border:1px solid rgba(239,68,68,.3)}
+.badge-blue{background:rgba(99,102,241,.15);color:var(--accent2);border:1px solid rgba(99,102,241,.3)}
+.badge-cyan{background:rgba(6,182,212,.15);color:var(--cyan);border:1px solid rgba(6,182,212,.3)}
+.badge-purple{background:rgba(168,85,247,.15);color:var(--purple);border:1px solid rgba(168,85,247,.3)}
+.badge-grey{background:rgba(122,139,168,.12);color:var(--dim);border:1px solid rgba(122,139,168,.25)}
+
+/* Crawl health */
+.crawl-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.crawl-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px}
+.crawl-card h3{font-size:13px;font-weight:600;margin-bottom:12px;color:var(--text)}
+.dist-row{display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(26,34,54,.5)}
+.dist-row:last-child{border-bottom:none}
+.dist-label{font-size:12px;color:var(--dim)}
+.dist-val{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:500}
+.bar-track{height:6px;background:rgba(26,34,54,.8);border-radius:3px;flex:1;margin:0 12px;max-width:120px}
+.bar-fill{height:100%;border-radius:3px;transition:width .5s}
+
+/* AI readiness cluster cards */
+.cluster-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:14px}
+.cluster-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px}
+.cluster-card h3{font-size:14px;font-weight:600;margin-bottom:10px;display:flex;align-items:center;justify-content:space-between}
+.score-row{display:flex;align-items:center;gap:8px;margin:4px 0;font-size:12px}
+.score-label{width:120px;color:var(--dim);flex-shrink:0}
+.score-bar{flex:1;height:5px;background:rgba(26,34,54,.8);border-radius:3px;overflow:hidden}
+.score-fill{height:100%;border-radius:3px;transition:width .4s}
+.score-val{font-family:'JetBrains Mono',monospace;font-size:11px;width:36px;text-align:right;flex-shrink:0}
+
+/* Engine readiness */
+.engine-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-top:8px}
+.engine-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px;text-align:center}
+.engine-name{font-size:12px;font-weight:600;margin-bottom:6px}
+.engine-score{font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:600}
+
+/* Table */
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{padding:10px 12px;text-align:left;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.8px;color:var(--dim);border-bottom:1px solid var(--border);white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid rgba(26,34,54,.4);vertical-align:middle}
+tr:hover td{background:rgba(16,185,129,.03)}
+.page-url{color:var(--cyan);font-size:11px;font-family:'JetBrains Mono',monospace;max-width:250px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.td-score{font-family:'JetBrains Mono',monospace;font-weight:500}
+
+/* Adaptation queue */
+.adapt-tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:10px;margin:1px;font-family:'JetBrains Mono',monospace}
+
+/* Controls */
+.controls-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.control-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px}
+.control-card h3{font-size:13px;font-weight:600;margin-bottom:10px}
+.control-card p{font-size:11px;color:var(--dim);margin-bottom:12px}
+input[type="text"],input[type="number"]{background:var(--bg);border:1px solid var(--border);color:var(--text);padding:7px 10px;border-radius:6px;font-family:'JetBrains Mono',monospace;font-size:12px;width:100%;margin-bottom:8px}
+.loading{text-align:center;padding:40px;color:var(--dim);font-size:13px}
+.toast{position:fixed;bottom:20px;right:20px;padding:10px 18px;border-radius:8px;font-size:12px;z-index:9999;opacity:0;transition:opacity .3s}
+.toast.show{opacity:1}
+.toast-ok{background:rgba(16,185,129,.2);border:1px solid var(--emerald);color:var(--emerald)}
+.toast-err{background:rgba(239,68,68,.2);border:1px solid var(--red);color:var(--red)}
+
+@media(max-width:900px){
+  .summary-bar{grid-template-columns:repeat(3,1fr)}
+  .crawl-grid{grid-template-columns:1fr}
+  .cluster-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-left">
+    <div class="header-icon">I</div>
+    <h1>10I <span>Indexing, Crawl &amp; AI Search</span></h1>
+  </div>
+  <div class="header-right">
+    <span id="lastUpdate">Loading...</span>
+    <button class="btn" onclick="refresh()">Refresh Now</button>
+  </div>
+</div>
+
+<!-- 1. INDEXING SUMMARY -->
+<div class="section-label"><span class="section-num">1</span> INDEXING SUMMARY</div>
+<div class="summary-bar" id="summaryBar">
+  <div class="stat-card"><div class="stat-num mono" id="sTotalPages">--</div><div class="stat-label">Total Pages</div></div>
+  <div class="stat-card"><div class="stat-num mono" id="sIndexed">--</div><div class="stat-label">Indexed</div></div>
+  <div class="stat-card"><div class="stat-num mono" id="sDiscovered">--</div><div class="stat-label">Discovered</div></div>
+  <div class="stat-card"><div class="stat-num mono" id="sErrors">--</div><div class="stat-label">Errors</div></div>
+  <div class="stat-card"><div class="stat-num mono" id="sReadiness">--</div><div class="stat-label">Avg Readiness</div></div>
+  <div class="stat-card"><div class="stat-num mono" id="sCitations">--</div><div class="stat-label">Citations</div></div>
+  <div class="stat-card"><div class="stat-num mono" id="sAssessed">--</div><div class="stat-label">Assessed</div></div>
+</div>
+
+<!-- 2. CRAWL HEALTH -->
+<div class="section-label"><span class="section-num">2</span> CRAWL HEALTH</div>
+<div class="crawl-grid" id="crawlHealth">
+  <div class="crawl-card"><h3>Index Status Distribution</h3><div id="statusDist"><div class="loading">Loading...</div></div></div>
+  <div class="crawl-card"><h3>Page Type Distribution</h3><div id="typeDist"><div class="loading">Loading...</div></div></div>
+</div>
+
+<!-- 3. AI SEARCH READINESS BY CLUSTER -->
+<div class="section-label"><span class="section-num">3</span> AI SEARCH READINESS BY CLUSTER</div>
+<div class="cluster-grid" id="clusterReadiness"><div class="loading">Loading...</div></div>
+
+<!-- 4. ENGINE READINESS -->
+<div class="section-label"><span class="section-num">4</span> AI ENGINE READINESS</div>
+<div class="engine-grid" id="engineReadiness"><div class="loading">Loading...</div></div>
+
+<!-- 5. ADAPTATION QUEUE -->
+<div class="section-label"><span class="section-num">5</span> ADAPTATION QUEUE</div>
+<div style="background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden">
+<table>
+  <thead><tr><th>URL</th><th>Cluster</th><th>Score</th><th>Type</th><th>Adaptations Needed</th></tr></thead>
+  <tbody id="adaptTable"><tr><td colspan="5" class="loading">Loading...</td></tr></tbody>
+</table>
+</div>
+
+<!-- 6. PAGE INDEX TABLE -->
+<div class="section-label"><span class="section-num">6</span> PAGE INDEX</div>
+<div style="background:var(--card);border:1px solid var(--border);border-radius:10px;overflow:hidden">
+<table>
+  <thead><tr><th>URL</th><th>Type</th><th>Status</th><th>HTTP</th><th>Sitemap</th><th>Structured Data</th><th>Words</th><th>Last Crawled</th></tr></thead>
+  <tbody id="pageTable"><tr><td colspan="8" class="loading">Loading...</td></tr></tbody>
+</table>
+</div>
+
+<!-- 7. CONTROLS -->
+<div class="section-label"><span class="section-num">7</span> CONTROLS</div>
+<div class="controls-grid">
+  <div class="control-card">
+    <h3>Crawl Sitemap</h3>
+    <p>Fetch pethubonline.com sitemap and discover all pages.</p>
+    <button class="btn btn-accent" onclick="doAction('/api/indexing/crawl-sitemap','POST')">Crawl Sitemap</button>
+  </div>
+  <div class="control-card">
+    <h3>Bulk Index Check</h3>
+    <p>Check indexing signals for unchecked pages.</p>
+    <input type="number" id="bulkLimit" value="20" min="1" max="100" style="width:80px;display:inline-block">
+    <button class="btn btn-accent" onclick="doAction('/api/indexing/bulk-check?limit='+document.getElementById('bulkLimit').value,'POST')">Check Pages</button>
+  </div>
+  <div class="control-card">
+    <h3>Bulk Assess Readiness</h3>
+    <p>Score AI search readiness for assessed pages.</p>
+    <input type="number" id="assessLimit" value="20" min="1" max="100" style="width:80px;display:inline-block">
+    <button class="btn btn-accent" onclick="doAction('/api/indexing/readiness/bulk-assess?limit='+document.getElementById('assessLimit').value,'POST')">Assess Readiness</button>
+  </div>
+  <div class="control-card">
+    <h3>Link Clusters</h3>
+    <p>Link crawled pages to expansion clusters.</p>
+    <button class="btn btn-accent" onclick="doAction('/api/indexing/link-clusters','POST')">Link Clusters</button>
+  </div>
+  <div class="control-card">
+    <h3>Full Scan</h3>
+    <p>Run complete pipeline: crawl, check, assess, link.</p>
+    <button class="btn btn-accent" onclick="doAction('/api/indexing/full-scan','POST')">Run Full Scan</button>
+  </div>
+  <div class="control-card">
+    <h3>Assess Single Page</h3>
+    <p>Enter a page ID to assess its AI search readiness.</p>
+    <input type="text" id="assessPageId" placeholder="pg-xxxxxxxxxx">
+    <button class="btn btn-accent" onclick="doAction('/api/indexing/readiness/'+document.getElementById('assessPageId').value+'/assess','POST')">Assess</button>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const API='/';
+let autoTimer=null;
+
+function fmt(d){return new Date().toLocaleString('en-GB',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'})}
+function trunc(s,n){return s&&s.length>n?s.slice(0,n)+'...':s||'--'}
+function scoreColor(s){return s>=0.7?'var(--emerald)':s>=0.4?'var(--amber)':'var(--red)'}
+function badgeClass(s){return s>=0.7?'badge-green':s>=0.4?'badge-amber':'badge-red'}
+
+function statusBadge(st){
+  const m={indexed:'badge-green',discovered:'badge-cyan',not_indexed:'badge-amber',error:'badge-red',unknown:'badge-grey'};
+  return '<span class="stat-badge '+(m[st]||'badge-grey')+'">'+((st||'unknown').toUpperCase())+'</span>';
+}
+function typeBadge(t){
+  const m={post:'badge-blue',hub:'badge-purple',category:'badge-amber',static:'badge-grey',homepage:'badge-cyan'};
+  return '<span class="stat-badge '+(m[t]||'badge-grey')+'">'+((t||'unknown').toUpperCase())+'</span>';
+}
+
+function toast(msg,ok){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.className='toast show '+(ok?'toast-ok':'toast-err');
+  setTimeout(()=>t.className='toast',3000);
+}
+
+async function fetchJ(url){
+  try{const r=await fetch(API+url);return await r.json();}catch(e){return null;}
+}
+
+async function loadSummary(){
+  const d=await fetchJ('api/indexing/summary');
+  if(!d)return;
+  document.getElementById('sTotalPages').textContent=d.total_pages||0;
+  document.getElementById('sIndexed').textContent=d.indexed||0;
+  document.getElementById('sDiscovered').textContent=d.discovered||0;
+  document.getElementById('sErrors').textContent=d.errors||0;
+  document.getElementById('sReadiness').textContent=(d.avg_readiness!==undefined?Math.round(d.avg_readiness*100)+'%':'--');
+  document.getElementById('sCitations').textContent=d.total_citations||0;
+  document.getElementById('sAssessed').textContent=d.assessed||0;
+
+  // Status distribution
+  const sd=d.status_distribution||{};
+  let sdH='';
+  const total=d.total_pages||1;
+  for(const[k,v] of Object.entries(sd)){
+    const pct=Math.round(v/total*100);
+    const col=k==='indexed'?'var(--emerald)':k==='error'?'var(--red)':k==='not_indexed'?'var(--amber)':'var(--cyan)';
+    sdH+='<div class="dist-row"><span class="dist-label">'+k+'</span><div class="bar-track"><div class="bar-fill" style="width:'+pct+'%;background:'+col+'"></div></div><span class="dist-val">'+v+'</span></div>';
+  }
+  document.getElementById('statusDist').innerHTML=sdH||'<div class="dist-row"><span class="dist-label">No data yet</span></div>';
+
+  // Type distribution
+  const td=d.type_distribution||{};
+  let tdH='';
+  for(const[k,v] of Object.entries(td)){
+    const pct=Math.round(v/total*100);
+    tdH+='<div class="dist-row"><span class="dist-label">'+k+'</span><div class="bar-track"><div class="bar-fill" style="width:'+pct+'%;background:var(--accent2)"></div></div><span class="dist-val">'+v+'</span></div>';
+  }
+  document.getElementById('typeDist').innerHTML=tdH||'<div class="dist-row"><span class="dist-label">No data yet</span></div>';
+}
+
+async function loadClusterReadiness(){
+  const d=await fetchJ('api/indexing/readiness/clusters');
+  const el=document.getElementById('clusterReadiness');
+  if(!d||!d.length){el.innerHTML='<div class="loading">No cluster readiness data. Run a Full Scan first.</div>';return;}
+  let h='';
+  for(const c of d){
+    const pct=Math.round((c.avg_score||0)*100);
+    const col=scoreColor(c.avg_score||0);
+    const criteria=[
+      ['Structured Data',c.avg_sd],['Answer Format',c.avg_af],['Citation Signals',c.avg_cs],
+      ['Entity Markup',c.avg_em],['Freshness',c.avg_fr],['Evidence Depth',c.avg_ed],
+      ['Trust Signals',c.avg_ts],['Internal Links',c.avg_il]
+    ];
+    h+='<div class="cluster-card"><h3>'+(c.cluster_slug||'--').replace(/_/g,' ').replace(/\b\w/g,l=>l.toUpperCase())+' <span class="stat-badge '+badgeClass(c.avg_score)+'">'+pct+'%</span></h3>';
+    h+='<div style="font-size:11px;color:var(--dim);margin-bottom:8px">'+c.pages+' pages | '+c.ready+' ready | '+c.needs_work+' need work</div>';
+    for(const[label,val] of criteria){
+      const v=val||0;const vp=Math.round(v*100);
+      h+='<div class="score-row"><span class="score-label">'+label+'</span><div class="score-bar"><div class="score-fill" style="width:'+vp+'%;background:'+scoreColor(v)+'"></div></div><span class="score-val" style="color:'+scoreColor(v)+'">'+vp+'%</span></div>';
+    }
+    h+='</div>';
+  }
+  el.innerHTML=h;
+}
+
+async function loadEngineReadiness(){
+  const d=await fetchJ('api/indexing/readiness/engines');
+  const el=document.getElementById('engineReadiness');
+  if(!d||!d.length){el.innerHTML='<div class="loading">No engine data. Run assessments first.</div>';return;}
+  let h='';
+  for(const e of d){
+    const pct=Math.round((e.avg_score||0)*100);
+    const col=scoreColor(e.avg_score||0);
+    h+='<div class="engine-card"><div class="engine-name">'+e.engine+'</div><div class="engine-score" style="color:'+col+'">'+pct+'%</div><div style="font-size:10px;color:var(--dim);margin-top:4px">'+e.pages_assessed+' pages | '+e.ready_count+' ready</div></div>';
+  }
+  el.innerHTML=h;
+}
+
+async function loadAdaptations(){
+  const d=await fetchJ('api/indexing/adaptations?limit=20');
+  const el=document.getElementById('adaptTable');
+  if(!d||!d.length){el.innerHTML='<tr><td colspan="5" class="loading">No adaptations needed or no data yet.</td></tr>';return;}
+  let h='';
+  for(const a of d){
+    const adapts=(a.adaptations_needed||[]).map(t=>'<span class="adapt-tag badge-amber">'+t.replace(/_/g,' ')+'</span>').join(' ');
+    h+='<tr><td class="page-url">'+trunc(a.url,45)+'</td><td>'+typeBadge(a.page_type)+'</td><td class="td-score" style="color:'+scoreColor(a.overall_score)+'">'+Math.round(a.overall_score*100)+'%</td><td>'+(a.cluster_slug||'--')+'</td><td>'+adapts+'</td></tr>';
+  }
+  el.innerHTML=h;
+}
+
+async function loadPages(){
+  const d=await fetchJ('api/indexing/pages?limit=50');
+  const el=document.getElementById('pageTable');
+  if(!d||!d.length){el.innerHTML='<tr><td colspan="8" class="loading">No pages indexed. Run Crawl Sitemap first.</td></tr>';return;}
+  let h='';
+  for(const p of d){
+    let sdTypes='--';
+    try{const arr=JSON.parse(p.structured_data_types||'[]');sdTypes=arr.length?arr.join(', '):'none';}catch(e){}
+    const lc=p.last_crawled?new Date(p.last_crawled).toLocaleDateString('en-GB'):'--';
+    h+='<tr><td class="page-url" title="'+p.url+'">'+trunc((p.url||'').replace('https://pethubonline.com',''),40)+'</td>';
+    h+='<td>'+typeBadge(p.page_type)+'</td>';
+    h+='<td>'+statusBadge(p.index_status)+'</td>';
+    h+='<td class="mono" style="font-size:11px">'+(p.http_status||'--')+'</td>';
+    h+='<td>'+(p.sitemap_present?'<span class="stat-badge badge-green">YES</span>':'<span class="stat-badge badge-grey">NO</span>')+'</td>';
+    h+='<td style="font-size:10px;max-width:150px;overflow:hidden;text-overflow:ellipsis">'+trunc(sdTypes,30)+'</td>';
+    h+='<td class="mono" style="font-size:11px">'+(p.word_count||'--')+'</td>';
+    h+='<td style="font-size:11px;color:var(--dim)">'+lc+'</td></tr>';
+  }
+  el.innerHTML=h;
+}
+
+async function doAction(url,method){
+  try{
+    const r=await fetch(API+url,{method:method||'POST'});
+    const d=await r.json();
+    toast(JSON.stringify(d).slice(0,100),r.ok);
+    setTimeout(refresh,2000);
+  }catch(e){toast('Error: '+e.message,false);}
+}
+
+async function refresh(){
+  document.getElementById('lastUpdate').textContent='Last updated: '+fmt();
+  await Promise.all([loadSummary(),loadClusterReadiness(),loadEngineReadiness(),loadAdaptations(),loadPages()]);
+}
+
+refresh();
+autoTimer=setInterval(refresh,60000);
+</script>
+</body>
+</html>
