@@ -226,3 +226,40 @@ async def get_operational_summary():
 @router.get("/comparison/summary")
 async def get_comparison_summary():
     return ops.get_comparison_summary()
+
+
+@router.get("/comparison/shadow-report")
+async def get_shadow_report():
+    """Full shadow mode report comparing JSON and PostgreSQL stores."""
+    import json as _json
+    import os
+
+    comparison = ops.get_comparison_summary()
+    ops_summary = ops.get_operational_summary()
+
+    # Load JSON job summary for comparison
+    json_jobs = []
+    jobs_file = os.path.join(os.path.dirname(__file__), 'data', 'jobs.json')
+    try:
+        with open(jobs_file, 'r') as f:
+            json_jobs = _json.load(f)
+    except Exception:
+        pass
+
+    json_summary = {
+        'total': len(json_jobs),
+        'running': sum(1 for j in json_jobs if j.get('status') == 'running'),
+        'completed': sum(1 for j in json_jobs if j.get('status') == 'completed'),
+        'failed': sum(1 for j in json_jobs if j.get('status') == 'failed'),
+    }
+
+    return {
+        'shadow_mode': 'active',
+        'primary_store': 'JSON (legacy)',
+        'shadow_store': 'PostgreSQL (10F)',
+        'json_summary': json_summary,
+        'ops_summary': ops_summary,
+        'comparison': comparison,
+        'match_rate': round(comparison['matches'] / max(comparison['total_checks'], 1) * 100, 1),
+        'recommendation': 'safe_to_proceed' if comparison['discrepancies'] == 0 else 'investigate_discrepancies',
+    }
