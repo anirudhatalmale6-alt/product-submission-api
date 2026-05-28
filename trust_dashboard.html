@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280, initial-scale=1">
+<title>10G Trust &amp; Evidence Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#080a0f;--card:#111621;--border:#1a2236;
+  --text:#e2e8f0;--dim:#7a8ba8;--muted:#4a5568;
+  --accent:#10b981;--accent-dim:#059669;--accent-glow:rgba(16,185,129,0.15);
+  --green:#10b981;--red:#ef4444;--amber:#f59e0b;--blue:#3b82f6;--cyan:#06b6d4;--violet:#8b5cf6;
+  --orange:#f97316;--yellow:#eab308;--bright-green:#22c55e;
+  --card-hover:#151d2e;--radius:10px;
+}
+html{font-size:14px;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;line-height:1.5;min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(16,185,129,0.05),transparent 70%),radial-gradient(ellipse 50% 40% at 80% 100%,rgba(5,150,105,0.03),transparent);pointer-events:none;z-index:0}
+.shell{position:relative;z-index:1;max-width:1440px;margin:0 auto;padding:20px 24px 60px}
+
+.hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.hdr-left{display:flex;align-items:center;gap:14px}
+.hdr-icon{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#34d399);display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 0 20px rgba(16,185,129,0.3)}
+.hdr h1{font-size:1.35rem;font-weight:700;letter-spacing:-0.02em}
+.hdr h1 span{color:var(--accent);font-weight:800}
+.hdr-right{display:flex;align-items:center;gap:12px}
+.scan-time{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--dim)}
+.btn{font-family:'Outfit',sans-serif;font-size:.8rem;font-weight:600;border:none;border-radius:7px;padding:8px 16px;cursor:pointer;transition:all .2s}
+.btn-accent{background:var(--accent);color:#fff}
+.btn-accent:hover{background:var(--accent-dim);box-shadow:0 0 16px rgba(16,185,129,0.4)}
+.btn-ghost{background:rgba(16,185,129,0.1);color:var(--accent);border:1px solid rgba(16,185,129,0.25)}
+.btn-ghost:hover{background:rgba(16,185,129,0.2)}
+.loading-pulse{animation:pulse 1.5s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+.sec{margin-bottom:32px}
+.sec-title{display:flex;align-items:center;gap:10px;margin-bottom:16px;font-size:1.05rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
+.sec-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--accent-dim),transparent)}
+.sec-num{font-family:'JetBrains Mono',monospace;font-size:.7rem;background:var(--accent);color:#fff;padding:2px 8px;border-radius:4px;font-weight:600}
+
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;transition:border-color .25s,box-shadow .25s}
+.card:hover{border-color:rgba(16,185,129,0.3);box-shadow:0 0 20px var(--accent-glow)}
+.card-title{font-size:.85rem;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.card-dim{color:var(--dim);font-size:.78rem}
+
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.grid-6{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
+
+.badge{display:inline-block;font-size:.68rem;font-weight:600;padding:2px 9px;border-radius:5px;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.badge-green{background:rgba(16,185,129,0.15);color:var(--green)}
+.badge-bright-green{background:rgba(34,197,94,0.18);color:var(--bright-green)}
+.badge-red{background:rgba(239,68,68,0.15);color:var(--red)}
+.badge-amber{background:rgba(245,158,11,0.15);color:var(--amber)}
+.badge-blue{background:rgba(59,130,246,0.15);color:var(--blue)}
+.badge-gray{background:rgba(122,139,168,0.15);color:var(--dim)}
+.badge-violet{background:rgba(139,92,246,0.15);color:var(--violet)}
+.badge-cyan{background:rgba(6,182,212,0.15);color:var(--cyan)}
+.badge-orange{background:rgba(249,115,22,0.15);color:var(--orange)}
+.badge-yellow{background:rgba(234,179,8,0.15);color:var(--yellow)}
+
+.bar-track{height:6px;border-radius:3px;background:var(--border);overflow:hidden;margin:4px 0}
+.bar-fill{height:100%;border-radius:3px;transition:width .6s ease}
+
+.summary-row{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:8px}
+.summary-card{text-align:center;padding:16px 10px;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);transition:border-color .25s}
+.summary-card:hover{border-color:rgba(16,185,129,0.3)}
+.summary-val{font-family:'JetBrains Mono',monospace;font-size:1.6rem;font-weight:700;color:var(--accent)}
+.summary-label{font-size:.7rem;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;margin-top:4px}
+
+.tbl{width:100%;border-collapse:separate;border-spacing:0;font-size:.82rem}
+.tbl th{text-align:left;padding:10px 12px;font-weight:600;color:var(--dim);text-transform:uppercase;font-size:.7rem;letter-spacing:.05em;border-bottom:1px solid var(--border);white-space:nowrap}
+.tbl td{padding:10px 12px;border-bottom:1px solid rgba(26,34,54,0.5);vertical-align:top}
+.tbl tr:hover td{background:rgba(16,185,129,0.04)}
+.tbl .mono{font-family:'JetBrains Mono',monospace;font-size:.78rem}
+
+.lint-card{margin-bottom:12px}
+.lint-stats{display:flex;gap:14px;margin:8px 0;font-size:.78rem}
+.lint-stats span{font-family:'JetBrains Mono',monospace;font-weight:600}
+.lint-rules{margin-top:8px}
+.lint-rule{display:flex;align-items:center;gap:8px;padding:4px 0;font-size:.78rem;color:var(--dim)}
+.lint-rule .rule-name{color:var(--text);font-weight:500}
+
+.evidence-card{padding:14px}
+.evidence-claim{font-size:.78rem;color:var(--dim);margin:6px 0}
+.evidence-source{font-size:.72rem;color:var(--muted);margin-bottom:6px}
+.confidence-bar{display:flex;align-items:center;gap:8px;font-size:.75rem}
+.confidence-bar .mono{font-family:'JetBrains Mono',monospace;font-weight:600;min-width:36px;text-align:right}
+
+.gate-card{margin-bottom:12px}
+.gate-row{display:flex;align-items:center;gap:10px;padding:6px 0;font-size:.82rem}
+.gate-icon{font-size:.9rem}
+.gate-pass{color:var(--green)}
+.gate-fail{color:var(--red)}
+.gate-pending{color:var(--amber)}
+.gate-overall{margin-top:8px;padding-top:8px;border-top:1px solid var(--border);font-weight:700;font-size:.85rem}
+
+.audit-form{display:flex;gap:12px;align-items:center;margin-bottom:16px}
+.audit-input{font-family:'JetBrains Mono',monospace;font-size:.85rem;background:var(--card);border:1px solid var(--border);border-radius:7px;padding:10px 14px;color:var(--text);width:240px;outline:none;transition:border-color .2s}
+.audit-input:focus{border-color:var(--accent)}
+.audit-input::placeholder{color:var(--muted)}
+.audit-result{margin-top:12px}
+.audit-result pre{font-family:'JetBrains Mono',monospace;font-size:.78rem;background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;overflow-x:auto;color:var(--dim);white-space:pre-wrap;max-height:400px;overflow-y:auto}
+
+.empty-state{text-align:center;padding:40px 20px;color:var(--dim);font-size:.85rem}
+
+@media(max-width:1100px){.summary-row{grid-template-columns:repeat(3,1fr)}.grid-3,.grid-4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.summary-row,.grid-2,.grid-3,.grid-4{grid-template-columns:1fr}.hdr{flex-direction:column;gap:12px;text-align:center}}
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <!-- Header -->
+  <div class="hdr">
+    <div class="hdr-left">
+      <div class="hdr-icon">&#x1f6e1;</div>
+      <h1>10G <span>Trust &amp; Evidence</span> Dashboard</h1>
+    </div>
+    <div class="hdr-right">
+      <span class="scan-time" id="lastUpdated">Loading...</span>
+      <button class="btn btn-ghost" onclick="refreshAll()">Refresh Now</button>
+    </div>
+  </div>
+
+  <!-- 1. Trust Summary -->
+  <div class="sec">
+    <div class="sec-title"><span class="sec-num">1</span> Trust Summary</div>
+    <div class="summary-row" id="summaryRow">
+      <div class="summary-card"><div class="summary-val loading-pulse" id="sumAudited">--</div><div class="summary-label">Content Audited</div></div>
+      <div class="summary-card"><div class="summary-val loading-pulse" id="sumPassRate">--%</div><div class="summary-label">Trust Pass Rate</div></div>
+      <div class="summary-card"><div class="summary-val loading-pulse" id="sumBlockers">--</div><div class="summary-label">Active Blockers</div></div>
+      <div class="summary-card"><div class="summary-val loading-pulse" id="sumEvidence">--%</div><div class="summary-label">Evidence Coverage</div></div>
+      <div class="summary-card"><div class="summary-val loading-pulse" id="sumGates">--</div><div class="summary-label">Pending Gates</div></div>
+      <div class="summary-card"><div class="summary-val loading-pulse" id="sumClaims">--</div><div class="summary-label">Claims Assessed</div></div>
+    </div>
+  </div>
+
+  <!-- 2. Trust Audit Table -->
+  <div class="sec">
+    <div class="sec-title"><span class="sec-num">2</span> Trust Audit Table</div>
+    <div class="card" style="padding:0;overflow-x:auto">
+      <table class="tbl">
+        <thead><tr>
+          <th>Content ID</th><th>Title</th><th>Trust State</th><th>Risk State</th>
+          <th>Evidence State</th><th>Approval</th><th>Blocking Reason</th><th>Action</th>
+        </tr></thead>
+        <tbody id="auditBody"><tr><td colspan="8" class="empty-state loading-pulse">Loading audit data...</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 3. Lint Results -->
+  <div class="sec">
+    <div class="sec-title"><span class="sec-num">3</span> Lint Results</div>
+    <div class="grid-2" id="lintGrid"><div class="card empty-state loading-pulse">Loading lint results...</div></div>
+  </div>
+
+  <!-- 4. Evidence Tracker -->
+  <div class="sec">
+    <div class="sec-title"><span class="sec-num">4</span> Evidence Tracker</div>
+    <div class="grid-3" id="evidenceGrid"><div class="card empty-state loading-pulse">Loading evidence records...</div></div>
+  </div>
+
+  <!-- 5. Claim Risk Matrix -->
+  <div class="sec">
+    <div class="sec-title"><span class="sec-num">5</span> Claim Risk Matrix</div>
+    <div class="card" style="padding:0;overflow-x:auto">
+      <table class="tbl">
+        <thead><tr>
+          <th>Claim Type</th><th>Risk Level</th><th>Claim Text</th>
+          <th>Evidence Sufficient</th><th>Lint Status</th><th>Disclosure Req.</th>
+        </tr></thead>
+        <tbody id="claimBody"><tr><td colspan="6" class="empty-state loading-pulse">Loading claims...</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 6. Publish Gates -->
+  <div class="sec">
+    <div class="sec-title"><span class="sec-num">6</span> Publish Gates</div>
+    <div class="grid-2" id="gateGrid"><div class="card empty-state loading-pulse">Loading gate status...</div></div>
+  </div>
+
+  <!-- 7. Run Trust Audit -->
+  <div class="sec">
+    <div class="sec-title"><span class="sec-num">7</span> Run Trust Audit</div>
+    <div class="card">
+      <div class="audit-form">
+        <input type="text" class="audit-input" id="auditPostId" placeholder="WordPress Post ID (e.g. 1234)">
+        <button class="btn btn-accent" id="auditBtn" onclick="runAudit()">Run Audit</button>
+      </div>
+      <div class="audit-result" id="auditResult" style="display:none">
+        <pre id="auditOutput"></pre>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+const API_BASE = '';
+
+function ts(){return new Date().toLocaleString('en-GB',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'})}
+function trunc(s,n){return s&&s.length>n?s.slice(0,n)+'...':s||'--'}
+function pct(v){return typeof v==='number'?(v>1?v:v*100).toFixed(1)+'%':'--'}
+function num(v){return typeof v==='number'?v.toLocaleString():'--'}
+
+function trustBadge(state){
+  const map={
+    untested:['gray','UNTESTED'],lint_pass:['green','LINT PASS'],lint_fail:['red','LINT FAIL'],
+    evidence_sufficient:['green','EVIDENCE OK'],evidence_insufficient:['amber','EVIDENCE LOW'],
+    approved_publish:['bright-green','APPROVED'],blocked:['red','BLOCKED'],needs_review:['amber','NEEDS REVIEW']
+  };
+  const m=map[state]||['gray',state||'UNKNOWN'];
+  return `<span class="badge badge-${m[0]}">${m[1]}</span>`;
+}
+function riskBadge(level){
+  const map={low:'green',medium:'amber',high:'orange',critical:'red'};
+  return `<span class="badge badge-${map[level]||'gray'}">${(level||'unknown').toUpperCase()}</span>`;
+}
+function yesNo(v){
+  return v?'<span class="badge badge-amber">YES</span>':'<span class="badge badge-gray">NO</span>';
+}
+function evidenceTypeBadge(type){
+  const map={
+    live_verified:['bright-green','LIVE VERIFIED'],source_attributed:['green','SOURCE ATTR'],
+    manufacturer_claim:['blue','MANUFACTURER'],editorial_inference:['amber','EDITORIAL'],
+    estimated_proxy:['yellow','ESTIMATED'],simulated_modelled:['violet','SIMULATED'],
+    missing_insufficient:['red','MISSING']
+  };
+  const m=map[type]||['gray',type||'UNKNOWN'];
+  return `<span class="badge badge-${m[0]}">${m[1]}</span>`;
+}
+function statusBadge(status){
+  const map={verified:'green',pending:'amber',rejected:'red',review:'amber',active:'green',expired:'orange'};
+  return `<span class="badge badge-${map[status]||'gray'}">${(status||'unknown').toUpperCase()}</span>`;
+}
+function gateIcon(state){
+  if(state==='passed'||state===true)return '<span class="gate-icon gate-pass">&#10003;</span>';
+  if(state==='failed'||state===false)return '<span class="gate-icon gate-fail">&#10007;</span>';
+  return '<span class="gate-icon gate-pending">&#9203;</span>';
+}
+function barHTML(value,color){
+  const w=Math.min(100,Math.max(0,typeof value==='number'?(value>1?value:value*100):0));
+  return `<div class="bar-track"><div class="bar-fill" style="width:${w}%;background:var(--${color||'accent'})"></div></div>`;
+}
+
+async function api(path){
+  try{
+    const r=await fetch(API_BASE+path);
+    if(!r.ok)throw new Error(r.status);
+    return await r.json();
+  }catch(e){console.warn('API error:',path,e);return null;}
+}
+
+async function loadSummary(){
+  const d=await api('api/trust/audit/summary');
+  document.querySelectorAll('.summary-val').forEach(el=>el.classList.remove('loading-pulse'));
+  if(!d){document.getElementById('sumAudited').textContent='ERR';return;}
+  document.getElementById('sumAudited').textContent=num(d.total_audited??d.content_audited??0);
+  document.getElementById('sumPassRate').textContent=pct(d.trust_pass_rate??d.pass_rate??0);
+  document.getElementById('sumBlockers').textContent=num(d.active_blockers??d.blockers??0);
+  document.getElementById('sumEvidence').textContent=pct(d.evidence_coverage??0);
+  document.getElementById('sumGates').textContent=num(d.pending_gates??0);
+  document.getElementById('sumClaims').textContent=num(d.claims_assessed??d.claims_count??0);
+}
+
+async function loadAuditTable(){
+  const d=await api('api/trust/audit?limit=20');
+  const body=document.getElementById('auditBody');
+  if(!d||!d.audits||!d.audits.length){body.innerHTML='<tr><td colspan="8" class="empty-state">No audit records found</td></tr>';return;}
+  body.innerHTML=d.audits.map(a=>`<tr>
+    <td class="mono">${a.content_id||a.post_id||'--'}</td>
+    <td>${trunc(a.title,50)}</td>
+    <td>${trustBadge(a.trust_state)}</td>
+    <td>${riskBadge(a.risk_state||a.risk_level)}</td>
+    <td class="card-dim">${trunc(a.evidence_state||a.evidence_summary||'--',40)}</td>
+    <td>${yesNo(a.approval_required)}</td>
+    <td class="card-dim">${trunc(a.blocking_reason||'',40)||'<span style="color:var(--muted)">--</span>'}</td>
+    <td class="card-dim">${a.action||a.recommended_action||'--'}</td>
+  </tr>`).join('');
+}
+
+async function loadLintResults(){
+  const d=await api('api/trust/audit?limit=20');
+  const grid=document.getElementById('lintGrid');
+  const audits=d&&d.audits?d.audits.filter(a=>a.lint_result||a.lint):[];
+  if(!audits.length){grid.innerHTML='<div class="card empty-state">No lint results available</div>';return;}
+  grid.innerHTML=audits.slice(0,8).map(a=>{
+    const l=a.lint_result||a.lint||{};
+    const total=l.total_checks||l.total||0;
+    const passed=l.passed||0;
+    const warnings=l.warnings||0;
+    const errors=l.errors||0;
+    const blockers=l.blockers||0;
+    const rate=total>0?((passed/total)*100):0;
+    const rules=(l.failed_rules||l.failures||[]).slice(0,5);
+    const barColor=rate>=80?'green':rate>=50?'amber':'red';
+    return `<div class="card lint-card">
+      <div class="card-title">${trunc(a.title,40)}</div>
+      <div class="lint-stats">
+        <span style="color:var(--dim)">Total: <span style="color:var(--text)">${total}</span></span>
+        <span style="color:var(--green)">Pass: ${passed}</span>
+        <span style="color:var(--amber)">Warn: ${warnings}</span>
+        <span style="color:var(--red)">Err: ${errors}</span>
+        <span style="color:var(--red)">Block: ${blockers}</span>
+      </div>
+      ${barHTML(rate,barColor)}
+      <div style="font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--dim);margin-top:2px">${rate.toFixed(1)}% pass rate</div>
+      ${rules.length?'<div class="lint-rules">'+rules.map(r=>`<div class="lint-rule">
+        <span class="badge badge-${r.severity==='blocker'||r.severity==='error'?'red':r.severity==='warning'?'amber':'gray'}">${r.severity||'rule'}</span>
+        <span class="rule-name">${r.rule||r.name||'--'}</span>
+        <span style="color:var(--muted)">${trunc(r.message||'',50)}</span>
+      </div>`).join('')+'</div>':''}
+    </div>`;
+  }).join('');
+}
+
+async function loadEvidence(){
+  const d=await api('api/trust/evidence?limit=20');
+  const grid=document.getElementById('evidenceGrid');
+  const items=d&&(d.evidence||d.records||d.items);
+  if(!items||!items.length){grid.innerHTML='<div class="card empty-state">No evidence records found</div>';return;}
+  grid.innerHTML=items.slice(0,12).map(e=>{
+    const conf=e.confidence_score??e.confidence??0;
+    const confPct=conf>1?conf:conf*100;
+    const confColor=confPct>=70?'green':confPct>=40?'amber':'red';
+    return `<div class="card evidence-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+        ${evidenceTypeBadge(e.evidence_type||e.type)}
+        ${statusBadge(e.status)}
+      </div>
+      <div class="mono" style="font-size:.75rem;color:var(--dim)">Content #${e.content_id||e.post_id||'--'}</div>
+      <div class="evidence-claim">${trunc(e.claim_text||e.claim||'No claim text',60)}</div>
+      <div class="evidence-source">Source: ${e.source_name||e.source||'Unknown'}</div>
+      <div class="confidence-bar">
+        <span class="mono" style="color:var(--${confColor})">${confPct.toFixed(0)}%</span>
+        <div style="flex:1">${barHTML(confPct,confColor)}</div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+async function loadClaims(){
+  const d=await api('api/trust/claims?limit=20');
+  const body=document.getElementById('claimBody');
+  const items=d&&(d.claims||d.items||d.records);
+  if(!items||!items.length){body.innerHTML='<tr><td colspan="6" class="empty-state">No claims assessed</td></tr>';return;}
+  body.innerHTML=items.map(c=>{
+    const typeMap={health:'red',safety:'red',efficacy:'orange',nutritional:'amber',behavioral:'blue',general:'gray',comparative:'violet'};
+    const ct=c.claim_type||c.type||'general';
+    return `<tr>
+      <td><span class="badge badge-${typeMap[ct]||'gray'}">${ct.toUpperCase()}</span></td>
+      <td>${riskBadge(c.risk_level||c.risk)}</td>
+      <td class="card-dim">${trunc(c.claim_text||c.text||'--',55)}</td>
+      <td>${yesNo(c.evidence_sufficient)}</td>
+      <td>${c.lint_status?trustBadge(c.lint_status):'<span class="badge badge-gray">N/A</span>'}</td>
+      <td>${yesNo(c.disclosure_required)}</td>
+    </tr>`;
+  }).join('');
+}
+
+async function loadGates(){
+  const d=await api('api/trust/audit?limit=20');
+  const grid=document.getElementById('gateGrid');
+  const audits=d&&d.audits?d.audits.filter(a=>a.gates||a.publish_gates):[];
+  if(!audits.length){grid.innerHTML='<div class="card empty-state">No publish gate data available</div>';return;}
+  const gateTypes=['trust_lint','evidence_check','risk_review','owner_approval'];
+  const gateLabels={trust_lint:'Trust Lint',evidence_check:'Evidence Check',risk_review:'Risk Review',owner_approval:'Owner Approval'};
+  grid.innerHTML=audits.slice(0,8).map(a=>{
+    const gates=a.gates||a.publish_gates||{};
+    const allPassed=gateTypes.every(g=>{const v=gates[g];return v==='passed'||v===true;});
+    return `<div class="card gate-card">
+      <div class="card-title">
+        <span class="mono" style="font-size:.75rem;color:var(--dim)">#${a.content_id||a.post_id||'--'}</span>
+        ${trunc(a.title,35)}
+      </div>
+      ${gateTypes.map(g=>{
+        const v=gates[g];
+        const state=v==='passed'||v===true?'passed':v==='failed'||v===false?'failed':'pending';
+        return `<div class="gate-row">${gateIcon(state)} <span>${gateLabels[g]}</span> <span class="badge badge-${state==='passed'?'green':state==='failed'?'red':'amber'}" style="margin-left:auto">${state.toUpperCase()}</span></div>`;
+      }).join('')}
+      <div class="gate-overall ${allPassed?'gate-pass':'gate-fail'}">
+        Overall: ${allPassed?'<span style="color:var(--green)">ALL PASSED &#10003;</span>':'<span style="color:var(--red)">BLOCKED &#10007;</span>'}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+async function runAudit(){
+  const postId=document.getElementById('auditPostId').value.trim();
+  if(!postId){alert('Enter a WordPress Post ID');return;}
+  const btn=document.getElementById('auditBtn');
+  const result=document.getElementById('auditResult');
+  const output=document.getElementById('auditOutput');
+  btn.disabled=true;btn.textContent='Running...';
+  result.style.display='block';
+  output.textContent='Fetching post content and running trust lint...\n';
+  try{
+    const r=await fetch(API_BASE+'api/trust/lint/run',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({post_id:parseInt(postId)})
+    });
+    if(!r.ok)throw new Error(`HTTP ${r.status}: ${await r.text()}`);
+    const data=await r.json();
+    output.textContent=JSON.stringify(data,null,2);
+  }catch(e){
+    output.textContent='Error: '+e.message;
+  }finally{
+    btn.disabled=false;btn.textContent='Run Audit';
+  }
+}
+
+async function refreshAll(){
+  document.getElementById('lastUpdated').textContent='Refreshing...';
+  await Promise.all([loadSummary(),loadAuditTable(),loadLintResults(),loadEvidence(),loadClaims(),loadGates()]);
+  document.getElementById('lastUpdated').textContent='Last updated: '+ts();
+}
+
+refreshAll();
+setInterval(refreshAll,60000);
+</script>
+</body>
+</html>
