@@ -1,0 +1,57 @@
+URL,Page_Name,Bot_Name,User_Agent,HTTP_Status,Blocked,Response_Size,TTFB,Robots_Disallow,Tested_At
+https://pethubonline.com/,Homepage,ChatGPT-User,ChatGPT-User,200,NO,436212,0.037s,NO,2026-05-28 15:38
+https://pethubonline.com/,Homepage,PerplexityBot,PerplexityBot,200,NO,436212,0.037s,NO,2026-05-28 15:38
+https://pethubonline.com/,Homepage,ClaudeBot,ClaudeBot/1.0,200,NO,436212,0.036s,NO,2026-05-28 15:38
+https://pethubonline.com/,Homepage,Google-Extended,Google-Extended,429,YES,229,0.036s,NO,2026-05-28 15:38
+https://pethubonline.com/,Homepage,CCBot,CCBot/2.0 (https://commoncrawl.org/faq/),429,YES,229,0.036s,NO,2026-05-28 15:38
+https://pethubonline.com/,Homepage,GPTBot,GPTBot/1.0,200,NO,436212,0.037s,NO,2026-05-28 15:38
+https://pethubonline.com/,Homepage,Amazonbot,Amazonbot/0.1,429,YES,229,0.036s,NO,2026-05-28 15:38
+https://pethubonline.com/,Homepage,Applebot,Applebot/0.1,200,NO,436212,0.038s,NO,2026-05-28 15:38
+https://pethubonline.com/dog-supplies/,Dog Supplies,ChatGPT-User,ChatGPT-User,200,NO,314776,0.040s,NO,2026-05-28 15:38
+https://pethubonline.com/dog-supplies/,Dog Supplies,PerplexityBot,PerplexityBot,200,NO,314776,0.037s,NO,2026-05-28 15:38
+https://pethubonline.com/dog-supplies/,Dog Supplies,ClaudeBot,ClaudeBot/1.0,200,NO,314776,0.038s,NO,2026-05-28 15:38
+https://pethubonline.com/dog-supplies/,Dog Supplies,Google-Extended,Google-Extended,429,YES,229,0.036s,NO,2026-05-28 15:38
+https://pethubonline.com/dog-supplies/,Dog Supplies,CCBot,CCBot/2.0 (https://commoncrawl.org/faq/),429,YES,229,0.037s,NO,2026-05-28 15:38
+https://pethubonline.com/dog-supplies/,Dog Supplies,GPTBot,GPTBot/1.0,200,NO,314776,0.038s,NO,2026-05-28 15:38
+https://pethubonline.com/dog-supplies/,Dog Supplies,Amazonbot,Amazonbot/0.1,429,YES,229,0.049s,NO,2026-05-28 15:38
+https://pethubonline.com/dog-supplies/,Dog Supplies,Applebot,Applebot/0.1,200,NO,314776,0.045s,NO,2026-05-28 15:38
+https://pethubonline.com/cat-supplies/,Cat Supplies,ChatGPT-User,ChatGPT-User,200,NO,313521,0.038s,NO,2026-05-28 15:38
+https://pethubonline.com/cat-supplies/,Cat Supplies,PerplexityBot,PerplexityBot,200,NO,313521,0.039s,NO,2026-05-28 15:38
+https://pethubonline.com/cat-supplies/,Cat Supplies,ClaudeBot,ClaudeBot/1.0,200,NO,313521,0.037s,NO,2026-05-28 15:38
+https://pethubonline.com/cat-supplies/,Cat Supplies,Google-Extended,Google-Extended,429,YES,229,0.040s,NO,2026-05-28 15:38
+https://pethubonline.com/cat-supplies/,Cat Supplies,CCBot,CCBot/2.0 (https://commoncrawl.org/faq/),429,YES,229,0.038s,NO,2026-05-28 15:38
+https://pethubonline.com/cat-supplies/,Cat Supplies,GPTBot,GPTBot/1.0,200,NO,313521,0.039s,NO,2026-05-28 15:38
+https://pethubonline.com/cat-supplies/,Cat Supplies,Amazonbot,Amazonbot/0.1,429,YES,229,0.037s,NO,2026-05-28 15:38
+https://pethubonline.com/cat-supplies/,Cat Supplies,Applebot,Applebot/0.1,200,NO,313521,0.037s,NO,2026-05-28 15:38
+https://pethubonline.com/dog-toys/,Dog Toys,ChatGPT-User,ChatGPT-User,200,NO,495852,0.045s,NO,2026-05-28 15:38
+https://pethubonline.com/dog-toys/,Dog Toys,PerplexityBot,PerplexityBot,200,NO,495852,0.039s,NO,2026-05-28 15:38
+https://pethubonline.com/dog-toys/,Dog Toys,ClaudeBot,ClaudeBot/1.0,200,NO,495852,0.039s,NO,2026-05-28 15:38
+https://pethubonline.com/dog-toys/,Dog Toys,Google-Extended,Google-Extended,429,YES,229,0.038s,NO,2026-05-28 15:38
+https://pethubonline.com/dog-toys/,Dog Toys,CCBot,CCBot/2.0 (https://commoncrawl.org/faq/),429,YES,229,0.039s,NO,2026-05-28 15:38
+https://pethubonline.com/dog-toys/,Dog Toys,GPTBot,GPTBot/1.0,200,NO,495852,0.039s,NO,2026-05-28 15:38
+https://pethubonline.com/dog-toys/,Dog Toys,Amazonbot,Amazonbot/0.1,429,YES,229,0.045s,NO,2026-05-28 15:38
+https://pethubonline.com/dog-toys/,Dog Toys,Applebot,Applebot/0.1,200,NO,495852,0.046s,NO,2026-05-28 15:38
+https://pethubonline.com/blog/,Blog,ChatGPT-User,ChatGPT-User,200,NO,322976,0.038s,NO,2026-05-28 15:38
+https://pethubonline.com/blog/,Blog,PerplexityBot,PerplexityBot,200,NO,322976,0.038s,NO,2026-05-28 15:38
+https://pethubonline.com/blog/,Blog,ClaudeBot,ClaudeBot/1.0,200,NO,322976,0.040s,NO,2026-05-28 15:38
+https://pethubonline.com/blog/,Blog,Google-Extended,Google-Extended,429,YES,229,0.036s,NO,2026-05-28 15:38
+https://pethubonline.com/blog/,Blog,CCBot,CCBot/2.0 (https://commoncrawl.org/faq/),429,YES,229,0.035s,NO,2026-05-28 15:38
+https://pethubonline.com/blog/,Blog,GPTBot,GPTBot/1.0,200,NO,322976,0.036s,NO,2026-05-28 15:38
+https://pethubonline.com/blog/,Blog,Amazonbot,Amazonbot/0.1,429,YES,229,0.038s,NO,2026-05-28 15:38
+https://pethubonline.com/blog/,Blog,Applebot,Applebot/0.1,200,NO,322976,0.037s,NO,2026-05-28 15:38
+https://pethubonline.com/sitemap_index.xml,Sitemap,ChatGPT-User,ChatGPT-User,200,NO,661,0.782s,NO,2026-05-28 15:38
+https://pethubonline.com/sitemap_index.xml,Sitemap,PerplexityBot,PerplexityBot,200,NO,661,0.729s,NO,2026-05-28 15:38
+https://pethubonline.com/sitemap_index.xml,Sitemap,ClaudeBot,ClaudeBot/1.0,200,NO,661,0.209s,NO,2026-05-28 15:38
+https://pethubonline.com/sitemap_index.xml,Sitemap,Google-Extended,Google-Extended,429,YES,229,0.062s,NO,2026-05-28 15:38
+https://pethubonline.com/sitemap_index.xml,Sitemap,CCBot,CCBot/2.0 (https://commoncrawl.org/faq/),429,YES,229,0.050s,NO,2026-05-28 15:38
+https://pethubonline.com/sitemap_index.xml,Sitemap,GPTBot,GPTBot/1.0,200,NO,661,0.208s,NO,2026-05-28 15:38
+https://pethubonline.com/sitemap_index.xml,Sitemap,Amazonbot,Amazonbot/0.1,429,YES,229,0.051s,NO,2026-05-28 15:38
+https://pethubonline.com/sitemap_index.xml,Sitemap,Applebot,Applebot/0.1,200,NO,661,0.619s,NO,2026-05-28 15:38
+https://pethubonline.com/robots.txt,Robots.txt,ChatGPT-User,ChatGPT-User,200,NO,119,0.063s,NO,2026-05-28 15:38
+https://pethubonline.com/robots.txt,Robots.txt,PerplexityBot,PerplexityBot,200,NO,119,0.053s,NO,2026-05-28 15:38
+https://pethubonline.com/robots.txt,Robots.txt,ClaudeBot,ClaudeBot/1.0,200,NO,119,0.037s,NO,2026-05-28 15:38
+https://pethubonline.com/robots.txt,Robots.txt,Google-Extended,Google-Extended,429,YES,229,0.036s,NO,2026-05-28 15:38
+https://pethubonline.com/robots.txt,Robots.txt,CCBot,CCBot/2.0 (https://commoncrawl.org/faq/),429,YES,229,0.037s,NO,2026-05-28 15:38
+https://pethubonline.com/robots.txt,Robots.txt,GPTBot,GPTBot/1.0,200,NO,119,0.037s,NO,2026-05-28 15:38
+https://pethubonline.com/robots.txt,Robots.txt,Amazonbot,Amazonbot/0.1,429,YES,229,0.035s,NO,2026-05-28 15:38
+https://pethubonline.com/robots.txt,Robots.txt,Applebot,Applebot/0.1,200,NO,119,0.036s,NO,2026-05-28 15:38

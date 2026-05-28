@@ -1,0 +1,101 @@
+URL,Page_Name,User_Agent,HTTP_Status,Is_429,TTFB,Retry_After,Rate_Limit_Header,Cache_Status,Tested_At
+https://pethubonline.com/,Homepage,Default,200,NO,0.060s,N/A,N/A,31.hhn _atomic_ams STALE,2026-05-28 15:34
+https://pethubonline.com/,Homepage,Googlebot,200,NO,0.064s,N/A,N/A,31.hhn _atomic_ams UPDATING,2026-05-28 15:34
+https://pethubonline.com/,Homepage,Bingbot,200,NO,0.047s,N/A,N/A,31.hhn _atomic_ams UPDATING,2026-05-28 15:34
+https://pethubonline.com/,Homepage,Screaming Frog,200,NO,0.046s,N/A,N/A,31.hhn _atomic_ams UPDATING,2026-05-28 15:34
+https://pethubonline.com/,Homepage,Ahrefs,200,NO,0.040s,N/A,N/A,31.hhn _atomic_ams UPDATING,2026-05-28 15:34
+https://pethubonline.com/,Homepage,Lighthouse,200,NO,0.037s,N/A,N/A,31.hhn _atomic_ams UPDATING,2026-05-28 15:34
+https://pethubonline.com/,Homepage,WAVE,200,NO,0.037s,N/A,N/A,31.hhn _atomic_ams UPDATING,2026-05-28 15:34
+https://pethubonline.com/,Homepage,ChatGPT-User,200,NO,0.040s,N/A,N/A,31.hhn _atomic_ams UPDATING,2026-05-28 15:34
+https://pethubonline.com/,Homepage,PerplexityBot,200,NO,0.037s,N/A,N/A,31.hhn _atomic_ams UPDATING,2026-05-28 15:34
+https://pethubonline.com/,Homepage,ClaudeBot,200,NO,0.037s,N/A,N/A,31.hhn _atomic_ams UPDATING,2026-05-28 15:34
+https://pethubonline.com/dog-supplies/,Dog Supplies Hub,Default,200,NO,0.042s,N/A,N/A,21.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-supplies/,Dog Supplies Hub,Googlebot,200,NO,0.043s,N/A,N/A,21.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-supplies/,Dog Supplies Hub,Bingbot,200,NO,0.036s,N/A,N/A,21.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-supplies/,Dog Supplies Hub,Screaming Frog,200,NO,0.039s,N/A,N/A,21.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-supplies/,Dog Supplies Hub,Ahrefs,200,NO,0.037s,N/A,N/A,21.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-supplies/,Dog Supplies Hub,Lighthouse,200,NO,0.038s,N/A,N/A,21.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-supplies/,Dog Supplies Hub,WAVE,200,NO,0.041s,N/A,N/A,21.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-supplies/,Dog Supplies Hub,ChatGPT-User,200,NO,0.040s,N/A,N/A,21.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-supplies/,Dog Supplies Hub,PerplexityBot,200,NO,0.039s,N/A,N/A,21.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-supplies/,Dog Supplies Hub,ClaudeBot,200,NO,0.040s,N/A,N/A,21.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-supplies/,Cat Supplies Hub,Default,200,NO,0.037s,N/A,N/A,17.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-supplies/,Cat Supplies Hub,Googlebot,200,NO,0.037s,N/A,N/A,17.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-supplies/,Cat Supplies Hub,Bingbot,200,NO,0.036s,N/A,N/A,17.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-supplies/,Cat Supplies Hub,Screaming Frog,200,NO,0.042s,N/A,N/A,17.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-supplies/,Cat Supplies Hub,Ahrefs,200,NO,0.036s,N/A,N/A,17.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-supplies/,Cat Supplies Hub,Lighthouse,200,NO,0.041s,N/A,N/A,17.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-supplies/,Cat Supplies Hub,WAVE,200,NO,0.046s,N/A,N/A,17.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-supplies/,Cat Supplies Hub,ChatGPT-User,200,NO,0.046s,N/A,N/A,17.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-supplies/,Cat Supplies Hub,PerplexityBot,200,NO,0.041s,N/A,N/A,17.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-supplies/,Cat Supplies Hub,ClaudeBot,200,NO,0.045s,N/A,N/A,17.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-toys/,Dog Toys Hub,Default,200,NO,0.039s,N/A,N/A,29.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-toys/,Dog Toys Hub,Googlebot,200,NO,0.038s,N/A,N/A,29.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-toys/,Dog Toys Hub,Bingbot,200,NO,0.038s,N/A,N/A,29.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-toys/,Dog Toys Hub,Screaming Frog,200,NO,0.039s,N/A,N/A,29.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-toys/,Dog Toys Hub,Ahrefs,200,NO,0.044s,N/A,N/A,29.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-toys/,Dog Toys Hub,Lighthouse,200,NO,0.046s,N/A,N/A,29.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-toys/,Dog Toys Hub,WAVE,200,NO,0.044s,N/A,N/A,29.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-toys/,Dog Toys Hub,ChatGPT-User,200,NO,0.044s,N/A,N/A,29.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-toys/,Dog Toys Hub,PerplexityBot,200,NO,0.044s,N/A,N/A,29.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/dog-toys/,Dog Toys Hub,ClaudeBot,200,NO,0.044s,N/A,N/A,29.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-toys/,Cat Toys Hub,Default,200,NO,0.043s,N/A,N/A,20.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-toys/,Cat Toys Hub,Googlebot,200,NO,0.044s,N/A,N/A,20.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-toys/,Cat Toys Hub,Bingbot,200,NO,0.043s,N/A,N/A,20.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-toys/,Cat Toys Hub,Screaming Frog,200,NO,0.044s,N/A,N/A,20.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-toys/,Cat Toys Hub,Ahrefs,200,NO,0.037s,N/A,N/A,20.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-toys/,Cat Toys Hub,Lighthouse,200,NO,0.043s,N/A,N/A,20.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-toys/,Cat Toys Hub,WAVE,200,NO,0.044s,N/A,N/A,20.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-toys/,Cat Toys Hub,ChatGPT-User,200,NO,0.044s,N/A,N/A,20.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-toys/,Cat Toys Hub,PerplexityBot,200,NO,0.042s,N/A,N/A,20.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/cat-toys/,Cat Toys Hub,ClaudeBot,200,NO,0.045s,N/A,N/A,20.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/about-us/,About Us,Default,200,NO,0.044s,N/A,N/A,30.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/about-us/,About Us,Googlebot,200,NO,0.038s,N/A,N/A,30.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/about-us/,About Us,Bingbot,200,NO,0.037s,N/A,N/A,30.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/about-us/,About Us,Screaming Frog,200,NO,0.038s,N/A,N/A,30.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/about-us/,About Us,Ahrefs,200,NO,0.038s,N/A,N/A,30.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/about-us/,About Us,Lighthouse,200,NO,0.037s,N/A,N/A,30.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/about-us/,About Us,WAVE,200,NO,0.038s,N/A,N/A,30.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/about-us/,About Us,ChatGPT-User,200,NO,0.036s,N/A,N/A,30.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/about-us/,About Us,PerplexityBot,200,NO,0.039s,N/A,N/A,30.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/about-us/,About Us,ClaudeBot,200,NO,0.038s,N/A,N/A,30.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/blog/,Blog,Default,200,NO,0.038s,N/A,N/A,35.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/blog/,Blog,Googlebot,200,NO,0.041s,N/A,N/A,35.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/blog/,Blog,Bingbot,200,NO,0.036s,N/A,N/A,35.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/blog/,Blog,Screaming Frog,200,NO,0.040s,N/A,N/A,35.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/blog/,Blog,Ahrefs,200,NO,0.043s,N/A,N/A,35.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/blog/,Blog,Lighthouse,200,NO,0.044s,N/A,N/A,35.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/blog/,Blog,WAVE,200,NO,0.046s,N/A,N/A,35.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/blog/,Blog,ChatGPT-User,200,NO,0.044s,N/A,N/A,35.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/blog/,Blog,PerplexityBot,200,NO,0.043s,N/A,N/A,35.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/blog/,Blog,ClaudeBot,200,NO,0.044s,N/A,N/A,35.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/sitemap_index.xml,Sitemap Index,Default,200,NO,0.753s,N/A,N/A,16.hhn _atomic_ams MISS,2026-05-28 15:34
+https://pethubonline.com/sitemap_index.xml,Sitemap Index,Googlebot,200,NO,0.802s,N/A,N/A,16.hhn _atomic_ams MISS,2026-05-28 15:34
+https://pethubonline.com/sitemap_index.xml,Sitemap Index,Bingbot,200,NO,0.235s,N/A,N/A,16.hhn _atomic_ams MISS,2026-05-28 15:34
+https://pethubonline.com/sitemap_index.xml,Sitemap Index,Screaming Frog,200,NO,0.242s,N/A,N/A,16.hhn _atomic_ams MISS,2026-05-28 15:34
+https://pethubonline.com/sitemap_index.xml,Sitemap Index,Ahrefs,200,NO,0.233s,N/A,N/A,16.hhn _atomic_ams MISS,2026-05-28 15:34
+https://pethubonline.com/sitemap_index.xml,Sitemap Index,Lighthouse,429,YES,0.213s,N/A,N/A,16.hhn _atomic_ams MISS,2026-05-28 15:34
+https://pethubonline.com/sitemap_index.xml,Sitemap Index,WAVE,200,NO,0.764s,N/A,N/A,16.hhn _atomic_ams MISS,2026-05-28 15:34
+https://pethubonline.com/sitemap_index.xml,Sitemap Index,ChatGPT-User,200,NO,0.769s,N/A,N/A,16.hhn _atomic_ams MISS,2026-05-28 15:34
+https://pethubonline.com/sitemap_index.xml,Sitemap Index,PerplexityBot,200,NO,0.823s,N/A,N/A,16.hhn _atomic_ams MISS,2026-05-28 15:34
+https://pethubonline.com/sitemap_index.xml,Sitemap Index,ClaudeBot,200,NO,0.934s,N/A,N/A,16.hhn _atomic_ams MISS,2026-05-28 15:34
+https://pethubonline.com/robots.txt,Robots.txt,Default,200,NO,0.062s,N/A,N/A,24.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/robots.txt,Robots.txt,Googlebot,200,NO,0.054s,N/A,N/A,24.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/robots.txt,Robots.txt,Bingbot,200,NO,0.044s,N/A,N/A,24.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/robots.txt,Robots.txt,Screaming Frog,200,NO,0.062s,N/A,N/A,24.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/robots.txt,Robots.txt,Ahrefs,200,NO,0.052s,N/A,N/A,24.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/robots.txt,Robots.txt,Lighthouse,200,NO,0.036s,N/A,N/A,24.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/robots.txt,Robots.txt,WAVE,200,NO,0.041s,N/A,N/A,24.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/robots.txt,Robots.txt,ChatGPT-User,200,NO,0.038s,N/A,N/A,24.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/robots.txt,Robots.txt,PerplexityBot,200,NO,0.037s,N/A,N/A,24.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/robots.txt,Robots.txt,ClaudeBot,200,NO,0.038s,N/A,N/A,24.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/wp-json/wp/v2/posts?per_page=1,REST API,Default,200,NO,0.903s,N/A,N/A,31.hhn _atomic_ams MISS,2026-05-28 15:34
+https://pethubonline.com/wp-json/wp/v2/posts?per_page=1,REST API,Googlebot,200,NO,0.049s,N/A,N/A,31.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/wp-json/wp/v2/posts?per_page=1,REST API,Bingbot,200,NO,0.040s,N/A,N/A,31.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/wp-json/wp/v2/posts?per_page=1,REST API,Screaming Frog,200,NO,0.041s,N/A,N/A,31.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/wp-json/wp/v2/posts?per_page=1,REST API,Ahrefs,200,NO,0.036s,N/A,N/A,31.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/wp-json/wp/v2/posts?per_page=1,REST API,Lighthouse,200,NO,0.037s,N/A,N/A,31.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/wp-json/wp/v2/posts?per_page=1,REST API,WAVE,200,NO,0.036s,N/A,N/A,31.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/wp-json/wp/v2/posts?per_page=1,REST API,ChatGPT-User,200,NO,0.037s,N/A,N/A,31.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/wp-json/wp/v2/posts?per_page=1,REST API,PerplexityBot,200,NO,0.039s,N/A,N/A,31.hhn _atomic_ams HIT,2026-05-28 15:34
+https://pethubonline.com/wp-json/wp/v2/posts?per_page=1,REST API,ClaudeBot,200,NO,0.036s,N/A,N/A,31.hhn _atomic_ams HIT,2026-05-28 15:34

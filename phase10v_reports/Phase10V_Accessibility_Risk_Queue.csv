@@ -1,0 +1,5 @@
+Severity,Issue_Type,Description,Affected_Pages,Remediation,Source,Impact,Found_At
+MEDIUM,submenu_aria,15 Astra submenu dropdown toggle links lack aria-label,All pages,Add aria-label='Expand submenu' via JS snippet or Astra hook,Astra theme,Screen readers cannot identify submenu toggles,2026-05-28 15:38
+LOW,contrast_cookie,2 elements at 4.47:1 ratio (need 4.5:1),Cookie modal only,Adjust Complianz color settings for 'Functional' label,Complianz GDPR,"Marginal WCAG AA failure, modal only",2026-05-28 15:38
+INFO,tracking_pixel_alt,WP tracking pixel uses alt='' (correct for decorative),All pages,No action needed - correct implementation,WordPress.com,Compliant - decorative images should have empty alt,2026-05-28 15:38
+INFO,search_landmark,No search role/landmark present,All pages,Not needed if site has no visible search form,N/A,Only needed if search functionality exists,2026-05-28 15:38

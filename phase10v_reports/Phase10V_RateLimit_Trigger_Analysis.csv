@@ -1,0 +1,9 @@
+Test_Type,Method,Target,429_Count,Rate_Limited,Detail,Classification,Tested_At
+rapid_sequential,"20 requests, 0ms delay",homepage,0/20 = 429,NO,All HTTP 200,NO_TRIGGER,2026-05-28 15:34
+burst_concurrent,30 simultaneous requests,homepage,0/30 = 429,NO,"All HTTP 200, CDN cached",NO_TRIGGER,2026-05-28 15:34
+api_sequential,10 authenticated REST API calls,wp-json/wp/v2/posts,0/10 = 429,NO,All HTTP 200,NO_TRIGGER,2026-05-28 15:34
+bot_ua_rotation,10 different bot user agents,homepage,0/10 = 429,NO,"All HTTP 200, no UA blocking",NO_TRIGGER,2026-05-28 15:34
+ai_crawler_ua,"ChatGPT-User, PerplexityBot, ClaudeBot",homepage,0/3 = 429,NO,All HTTP 200,NO_TRIGGER,2026-05-28 15:34
+sitemap_access,Sitemap index + sub-sitemaps,sitemap_index.xml,0/4 = 429,NO,All HTTP 200,NO_TRIGGER,2026-05-28 15:34
+xmlrpc_probe,XML-RPC endpoint,xmlrpc.php,405 Method Not Allowed,SECURED,"POST-only, properly locked",EXPECTED,2026-05-28 15:34
+wp_login_probe,Login page,wp-login.php,302 -> Jetpack SSO,SECURED,Redirects to WordPress.com SSO,EXPECTED,2026-05-28 15:34

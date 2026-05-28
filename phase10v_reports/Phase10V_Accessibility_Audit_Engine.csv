@@ -1,0 +1,9 @@
+Check_Category,Description,Count,Coverage,Priority,Status,Checked_At
+alt_text_coverage,Image alt text completeness,108/110,98%,HIGH,PASS,2026-05-28 15:38
+heading_hierarchy,"Correct heading structure (no skips, single H1)",47/50,94%,HIGH,NEEDS_REVIEW,2026-05-28 15:38
+link_accessibility,All links have accessible text,84/99 on homepage,84.8%,MEDIUM,NEEDS_FIX,2026-05-28 15:38
+form_labels,All form inputs have labels,8/8,100%,HIGH,PASS,2026-05-28 15:38
+color_contrast,WCAG AA contrast compliance,98/100 elements pass,98%,MEDIUM,MINOR_ISSUE,2026-05-28 15:38
+aria_landmarks,Essential ARIA landmarks present,6/7 landmarks,85.7%,MEDIUM,PASS,2026-05-28 15:38
+skip_link,Skip-to-content link present,1/1,100%,HIGH,PASS,2026-05-28 15:38
+keyboard_nav,Keyboard navigation support,Standard Astra theme,BASELINE,HIGH,NOT_TESTED,2026-05-28 15:38

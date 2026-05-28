@@ -1,0 +1,11 @@
+Check,Description,Result,Detail,Risk_If_Failed,Checked_At
+sitemap_accessible,Sitemap index loads at /sitemap_index.xml,PASS,"HTTP 200, 3 sub-sitemaps",LOW,2026-05-28 15:34
+robots_clean,"robots.txt is standard WordPress, no aggressive blocking",PASS,"Only blocks /wp-admin/, sitemap declared",LOW,2026-05-28 15:34
+no_noindex_on_content,No published content has noindex,PASS,0 pages with noindex,LOW,2026-05-28 15:34
+canonicals_consistent,All canonicals self-referencing correctly,PASS,Category pages have correct root-level canonicals with 301 redirects,LOW,2026-05-28 15:34
+no_429_from_crawlers,No 429 responses from any bot user agent,PASS,"Tested 10 UAs including Googlebot, Bingbot, AI crawlers - all HTTP 200",LOW,2026-05-28 15:34
+https_enforced,"HSTS enabled, HTTPS only",PASS,max-age=31536000,LOW,2026-05-28 15:34
+nav_uses_canonical_urls,Navigation links match canonical URLs,PASS,"All nav links use correct /slug/ format, not nested /parent/slug/",LOW,2026-05-28 15:34
+xmlrpc_secured,XML-RPC properly locked down,PASS,"Returns 405, POST-only",LOW,2026-05-28 15:34
+login_secured,WP login redirects to Jetpack SSO,PASS,302 -> wordpress.com SSO,LOW,2026-05-28 15:34
+cdn_active,CDN serving cached responses,PASS,"Automattic CDN active, cache HIT confirmed",LOW,2026-05-28 15:34

@@ -1,0 +1,51 @@
+WP_ID,Title,Type,Total_Headings,H1_Count,Duplicate_H1,Skipped_Levels,Skip_Details,Heading_Flow,Status,Checked_At
+3892,Best Dog Food &amp; Puppy Food UK,page,46,1,NO,NO,,h1 > h2 > h2 > h2 > h3 > h3 > h3 > h3 > h2 > h3,PASS,2026-05-28 15:38
+3115,Cat Litter Trays,page,49,1,NO,NO,,h1 > h2 > h3 > h2 > h2 > h3 > h3 > h3 > h3 > h3,PASS,2026-05-28 15:38
+3113,Cat Scratching Posts,page,48,1,NO,NO,,h1 > h2 > h3 > h2 > h2 > h3 > h3 > h3 > h3 > h3,PASS,2026-05-28 15:38
+3111,Cat Collars,page,47,1,NO,NO,,h1 > h2 > h3 > h2 > h2 > h3 > h3 > h3 > h3 > h3,PASS,2026-05-28 15:38
+3109,Cat Grooming,page,47,1,NO,NO,,h1 > h2 > h3 > h2 > h2 > h3 > h3 > h3 > h3 > h3,PASS,2026-05-28 15:38
+3107,Cat Beds,page,51,1,NO,NO,,h1 > h2 > h3 > h2 > h2 > h3 > h3 > h3 > h3 > h3,PASS,2026-05-28 15:38
+2561,Cookie Policy,page,17,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h3 > h3 > h3 > h3 > h2,PASS,2026-05-28 15:38
+1960,Dog Health &#038; Care,page,57,1,NO,NO,,h1 > h2 > h3 > h2 > h2 > h3 > h3 > h3 > h3 > h3,PASS,2026-05-28 15:38
+1956,Dog Training &#038; Behaviour,page,57,1,NO,NO,,h1 > h2 > h3 > h2 > h2 > h3 > h3 > h3 > h3 > h3,PASS,2026-05-28 15:38
+1951,Dog Bowls &#038; Feeding,page,48,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h3 > h3 > h3 > h3 > h3,PASS,2026-05-28 15:38
+1176,Cat Supplies,page,36,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h3 > h3 > h3 > h3 > h3,PASS,2026-05-28 15:38
+1149,Cat Toys,page,52,1,NO,NO,,h1 > h2 > h3 > h2 > h2 > h3 > h3 > h3 > h3 > h3,PASS,2026-05-28 15:38
+1146,Dog Collars &amp; Leashes,page,53,1,NO,NO,,h1 > h2 > h3 > h2 > h2 > h3 > h3 > h3 > h3 > h3,PASS,2026-05-28 15:38
+1144,Dog Grooming,page,54,1,NO,YES,h1->h3,h1 > h3 > h2 > h2 > h3 > h3 > h3 > h3 > h3 > h2,NEEDS_REVIEW,2026-05-28 15:38
+1141,Dog Beds,page,52,1,NO,NO,,h1 > h2 > h3 > h2 > h2 > h3 > h3 > h3 > h3 > h3,PASS,2026-05-28 15:38
+1041,Dog Toys,page,53,1,NO,NO,,h1 > h2 > h3 > h2 > h2 > h3 > h3 > h3 > h3 > h3,PASS,2026-05-28 15:38
+300,Affiliate Disclosure,page,14,1,NO,NO,,h1 > h2 > h2 > h3 > h3 > h2 > h2 > h2 > h2 > h2,PASS,2026-05-28 15:38
+297,Terms and Conditions,page,21,1,NO,NO,,h1 > h2 > h2 > h2 > h3 > h3 > h2 > h3 > h3 > h3,PASS,2026-05-28 15:38
+293,Privacy Policy,page,18,1,NO,NO,,h1 > h2 > h2 > h2 > h3 > h3 > h3 > h2 > h2 > h2,PASS,2026-05-28 15:38
+63,Dog Supplies,page,36,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h3 > h3 > h3 > h3 > h3,PASS,2026-05-28 15:38
+39,About Us,page,20,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h3 > h3 > h3 > h2 > h2,PASS,2026-05-28 15:38
+38,Blog,page,20,1,NO,YES,h2->h4,h1 > h2 > h2 > h3 > h2 > h3 > h3 > h3 > h3 > h2,NEEDS_REVIEW,2026-05-28 15:38
+37,Contact Pet Hub Online,page,17,1,NO,YES,h2->h4,h1 > h2 > h2 > h3 > h3 > h2 > h4 > h2 > h2 > h2,NEEDS_REVIEW,2026-05-28 15:38
+4,Pet Hub Online – Pet Supplies Online,page,28,1,NO,NO,,h1 > h2 > h2 > h2 > h3 > h3 > h2 > h2 > h3 > h3,PASS,2026-05-28 15:38
+4792,Puppy Socialisation: A Complete Timeline Guide,post,25,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h3,PASS,2026-05-28 15:38
+4791,How to Choose the Right Dog Training Treats,post,25,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h3,PASS,2026-05-28 15:38
+4790,DIY Dog Toys: Safe Homemade Options,post,25,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h3,PASS,2026-05-28 15:38
+4789,Best Types of Dog Toys for Different Play Styles,post,25,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h3,PASS,2026-05-28 15:38
+4788,Mental Stimulation for Dogs: Beyond Physical Exerc,post,25,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h3,PASS,2026-05-28 15:38
+4787,Dog Toy Safety: What Every Owner Needs to Know,post,25,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h3,PASS,2026-05-28 15:38
+4786,Where to Place Your Dog&#8217;s Bed: Location and ,post,25,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h3,PASS,2026-05-28 15:38
+4785,How to Wash and Maintain Your Dog&#8217;s Bed,post,25,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h3,PASS,2026-05-28 15:38
+4784,"Dog Bed Materials Explained: Foam, Memory Foam, an",post,25,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h3,PASS,2026-05-28 15:38
+4783,How to Choose the Right Dog Bed Size,post,24,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h3 > h3,PASS,2026-05-28 15:38
+4573,Seasonal Pet Safety: Protecting Pets Through the Y,post,21,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h2 > h3 > h3 > h3,PASS,2026-05-28 15:38
+4570,First-Time Dog Owner Essentials: What You Need to ,post,23,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h3 > h3,PASS,2026-05-28 15:38
+4576,Multi-Pet Household Tips: Living with Dogs and Cat,post,22,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h2 > h3 > h3 > h3,PASS,2026-05-28 15:38
+4574,Pet Hydration Guide: How Much Water Does Your Pet ,post,21,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h2 > h3 > h3 > h3,PASS,2026-05-28 15:38
+4571,Pet First Aid Basics: What Every Owner Should Know,post,21,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h2 > h3 > h3 > h3,PASS,2026-05-28 15:38
+4568,Dog Dental Health: A Practical Care Guide,post,22,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h2 > h3 > h3 > h3,PASS,2026-05-28 15:38
+4566,Seasonal Dog Care: Keeping Your Dog Safe Year-Roun,post,21,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h3 > h3 > h3 > h3,PASS,2026-05-28 15:38
+4563,Dog Grooming Basics: A Complete Guide for Owners,post,23,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h3 > h3,PASS,2026-05-28 15:38
+4415,Cat Toy Safety Guide: What Every Owner Should Know,post,25,1,NO,NO,,h1 > h2 > h3 > h3 > h3 > h3 > h2 > h2 > h2 > h2,PASS,2026-05-28 15:38
+4406,Best Interactive Cat Toys for Indoor Cats: Engagem,post,25,1,NO,NO,,h1 > h2 > h2 > h3 > h3 > h3 > h3 > h2 > h2 > h2,PASS,2026-05-28 15:38
+4414,Harness vs Collar: Which Is Better for Your Dog?,post,21,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h3 > h3 > h2 > h3,PASS,2026-05-28 15:38
+4413,How to Measure Your Dog for a Harness: Step-by-Ste,post,24,1,NO,NO,,h1 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h2 > h3,PASS,2026-05-28 15:38
+4412,No-Pull Dog Harness Guide: How They Work and When ,post,22,1,NO,NO,,h1 > h2 > h3 > h3 > h3 > h2 > h2 > h2 > h3 > h3,PASS,2026-05-28 15:38
+4411,"Dog Harnesses: The Complete Guide to Types, Fittin",post,28,1,NO,NO,,h1 > h2 > h2 > h3 > h3 > h3 > h3 > h3 > h2 > h2,PASS,2026-05-28 15:38
+4410,Cat Enrichment Activities Beyond Toys: Complete Gu,post,27,1,NO,NO,,h1 > h2 > h3 > h3 > h3 > h2 > h3 > h3 > h2 > h2,PASS,2026-05-28 15:38
+4409,Kitten vs Adult Cat Toys: Age-Appropriate Play Gui,post,25,1,NO,NO,,h1 > h2 > h3 > h3 > h2 > h3 > h2 > h3 > h2 > h2,PASS,2026-05-28 15:38
