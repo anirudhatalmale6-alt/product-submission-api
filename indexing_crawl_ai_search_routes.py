@@ -113,3 +113,45 @@ def link_clusters():
 @router.post("/full-scan")
 def full_scan():
     return ix.run_full_scan()
+
+@router.get("/orphans")
+def orphan_pages():
+    return ix.detect_orphan_pages()
+
+@router.get("/broken-links")
+def broken_links():
+    return ix.scan_broken_links()
+
+# ── 10I PATCHES: Crawl Monitoring + Active Link Crawler + Publish Trigger ──
+
+@router.post("/10i/setup-tables")
+def setup_10i_tables():
+    return ix.create_10i_patch_tables()
+
+@router.post("/10i/broken-link-crawl")
+def run_link_crawl(limit: int = 50):
+    return ix.run_broken_link_crawler(limit=limit)
+
+@router.get("/10i/broken-links")
+def get_crawled_broken_links(limit: int = 50):
+    return ix.get_broken_links(limit=limit)
+
+@router.post("/10i/crawl-budget-check")
+def crawl_budget_check():
+    return ix.run_crawl_budget_check()
+
+@router.get("/10i/crawl-budget-history")
+def crawl_budget_history(limit: int = 20):
+    return ix.get_crawl_budget_history(limit=limit)
+
+@router.post("/10i/publish-trigger")
+def publish_trigger(post_id: int, title: str = None, url: str = None):
+    return ix.register_publish_trigger(post_id, title, url)
+
+@router.post("/10i/check-index-status")
+def check_index_status():
+    return ix.check_publish_index_status()
+
+@router.get("/10i/publish-log")
+def publish_log(limit: int = 20):
+    return ix.get_publish_trigger_log(limit=limit)

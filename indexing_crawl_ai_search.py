@@ -926,3 +926,396 @@ def run_full_scan():
     results["readiness"] = bulk_assess_readiness(limit=50)
     results["summary"] = get_indexing_summary()
     return results
+
+
+# ── Orphan Detection + Broken Link Scanner ──────────────────────────────
+
+def detect_orphan_pages():
+    """Identify pages with zero inbound internal links (orphan risk)."""
+    import psycopg2.extras
+    conn = _conn()
+    try:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("""
+                SELECT c.page_id, c.url, c.slug as title, c.index_status, c.sitemap_present,
+                    COALESCE(link_count.inbound, 0) as inbound_links
+                FROM crawl_index_status c
+                LEFT JOIN (
+                    SELECT target_spoke_id, COUNT(*) as inbound
+                    FROM expansion_link_plan
+                    WHERE status != 'broken' AND status != 'removed'
+                    GROUP BY target_spoke_id
+                ) link_count ON c.page_id::text = link_count.target_spoke_id
+                WHERE COALESCE(link_count.inbound, 0) = 0
+                ORDER BY c.slug
+            """)
+            orphans = [dict(r) for r in cur.fetchall()]
+            return {
+                "orphan_count": len(orphans),
+                "orphan_pages": orphans,
+                "total_pages_checked": _get_total_pages(cur),
+            }
+    finally:
+        conn.close()
+
+
+def scan_broken_links():
+    """Scan expansion_link_plan for broken links and report them."""
+    import psycopg2.extras
+    conn = _conn()
+    try:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("""
+                SELECT link_id, source_spoke_id, target_spoke_id, anchor_text,
+                    link_type, status, created_at
+                FROM expansion_link_plan
+                WHERE status = 'broken'
+                ORDER BY created_at DESC
+            """)
+            broken = [dict(r) for r in cur.fetchall()]
+
+            cur.execute("SELECT COUNT(*) FROM expansion_link_plan")
+            total = cur.fetchone()["count"]
+
+            return {
+                "broken_count": len(broken),
+                "total_links": total,
+                "broken_links": broken,
+            }
+    except Exception:
+        return {"broken_count": 0, "total_links": 0, "broken_links": [], "note": "expansion_link_plan table may not exist"}
+    finally:
+        conn.close()
+
+
+def _get_total_pages(cur):
+    cur.execute("SELECT COUNT(*) as cnt FROM crawl_index_status")
+    return cur.fetchone()["cnt"]
+
+
+# ── 10I PATCHES: Broken-Link Crawler + Crawl Monitoring + Publish Trigger ──
+
+def create_10i_patch_tables():
+    """Create tables for crawl monitoring, broken links, and publish triggers."""
+    conn = _conn()
+    try:
+        with conn.cursor() as cur:
+            cur.execute("""
+                CREATE TABLE IF NOT EXISTS crawl_budget_monitoring (
+                    id SERIAL PRIMARY KEY,
+                    check_id TEXT UNIQUE NOT NULL,
+                    total_pages INTEGER DEFAULT 0,
+                    indexed_pages INTEGER DEFAULT 0,
+                    not_indexed_pages INTEGER DEFAULT 0,
+                    error_pages INTEGER DEFAULT 0,
+                    crawl_rate FLOAT DEFAULT 0.0,
+                    index_rate FLOAT DEFAULT 0.0,
+                    degradation_alert BOOLEAN DEFAULT FALSE,
+                    alert_reason TEXT,
+                    checked_at TIMESTAMPTZ DEFAULT NOW()
+                );
+
+                CREATE TABLE IF NOT EXISTS broken_link_scan (
+                    id SERIAL PRIMARY KEY,
+                    scan_id TEXT UNIQUE NOT NULL,
+                    source_url TEXT NOT NULL,
+                    source_post_id INTEGER,
+                    target_url TEXT NOT NULL,
+                    http_status INTEGER,
+                    link_text TEXT,
+                    link_type TEXT DEFAULT 'internal',
+                    is_broken BOOLEAN DEFAULT FALSE,
+                    first_detected TIMESTAMPTZ DEFAULT NOW(),
+                    last_checked TIMESTAMPTZ DEFAULT NOW(),
+                    resolved BOOLEAN DEFAULT FALSE,
+                    resolved_at TIMESTAMPTZ
+                );
+
+                CREATE TABLE IF NOT EXISTS publish_trigger_log (
+                    id SERIAL PRIMARY KEY,
+                    trigger_id TEXT UNIQUE NOT NULL,
+                    post_id INTEGER NOT NULL,
+                    post_title TEXT,
+                    post_url TEXT,
+                    action TEXT DEFAULT 'publish',
+                    triggered_at TIMESTAMPTZ DEFAULT NOW(),
+                    sitemap_submitted_at TIMESTAMPTZ,
+                    first_crawled_at TIMESTAMPTZ,
+                    first_indexed_at TIMESTAMPTZ,
+                    time_to_crawl_seconds INTEGER,
+                    time_to_index_seconds INTEGER,
+                    status TEXT DEFAULT 'triggered'
+                );
+
+                CREATE INDEX IF NOT EXISTS idx_broken_link_source ON broken_link_scan(source_post_id);
+                CREATE INDEX IF NOT EXISTS idx_broken_link_broken ON broken_link_scan(is_broken) WHERE is_broken = TRUE;
+                CREATE INDEX IF NOT EXISTS idx_publish_trigger_status ON publish_trigger_log(status);
+            """)
+            conn.commit()
+            return {"status": "ok", "tables_created": ["crawl_budget_monitoring", "broken_link_scan", "publish_trigger_log"]}
+    finally:
+        conn.close()
+
+
+def run_broken_link_crawler(limit=50):
+    """Active broken-link crawler: fetches pages, extracts internal links, checks each one."""
+    import requests
+    import psycopg2.extras
+    from bs4 import BeautifulSoup
+
+    conn = _conn()
+    results = {"scanned_pages": 0, "links_checked": 0, "broken_found": 0, "errors": []}
+    try:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("SELECT page_id, url FROM crawl_index_status WHERE http_status = 200 ORDER BY last_crawled ASC NULLS FIRST LIMIT %s", (limit,))
+            pages = cur.fetchall()
+
+        for page in pages:
+            try:
+                resp = requests.get(page["url"], timeout=10, allow_redirects=True,
+                                    headers={"User-Agent": "PetHub-LinkChecker/1.0"})
+                if resp.status_code != 200:
+                    continue
+
+                soup = BeautifulSoup(resp.text, "html.parser")
+                links = soup.find_all("a", href=True)
+                results["scanned_pages"] += 1
+
+                for link in links:
+                    href = link.get("href", "")
+                    if not href.startswith(SITE_URL):
+                        continue
+
+                    text = link.get_text(strip=True)[:100]
+                    results["links_checked"] += 1
+
+                    try:
+                        lr = requests.head(href, timeout=5, allow_redirects=True,
+                                          headers={"User-Agent": "PetHub-LinkChecker/1.0"})
+                        status = lr.status_code
+                        is_broken = status >= 400
+                    except:
+                        status = 0
+                        is_broken = True
+
+                    if is_broken:
+                        results["broken_found"] += 1
+
+                    scan_id = f"bl-{hashlib.md5(f'{page["url"]}-{href}'.encode()).hexdigest()[:12]}"
+                    with conn.cursor() as cur2:
+                        cur2.execute("""
+                            INSERT INTO broken_link_scan (scan_id, source_url, source_post_id, target_url, http_status, link_text, is_broken, last_checked)
+                            VALUES (%s, %s, %s, %s, %s, %s, %s, NOW())
+                            ON CONFLICT (scan_id) DO UPDATE SET http_status = %s, is_broken = %s, last_checked = NOW()
+                        """, (scan_id, page["url"], page.get("page_id"), href, status, text, is_broken, status, is_broken))
+                    conn.commit()
+
+            except Exception as e:
+                results["errors"].append(f"{page['url']}: {str(e)[:60]}")
+
+        return results
+    finally:
+        conn.close()
+
+
+def get_broken_links(limit=50):
+    """Return all broken links found by the crawler."""
+    import psycopg2.extras
+    conn = _conn()
+    try:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("""
+                SELECT scan_id, source_url, source_post_id, target_url, http_status, link_text, first_detected, last_checked
+                FROM broken_link_scan
+                WHERE is_broken = TRUE AND resolved = FALSE
+                ORDER BY first_detected DESC
+                LIMIT %s
+            """, (limit,))
+            broken = [dict(r) for r in cur.fetchall()]
+            cur.execute("SELECT COUNT(*) as cnt FROM broken_link_scan WHERE is_broken = TRUE AND resolved = FALSE")
+            total_broken = cur.fetchone()["cnt"]
+            cur.execute("SELECT COUNT(*) as cnt FROM broken_link_scan")
+            total_scanned = cur.fetchone()["cnt"]
+            return {"total_broken": total_broken, "total_scanned": total_scanned, "broken_links": broken}
+    finally:
+        conn.close()
+
+
+def run_crawl_budget_check():
+    """Check crawl budget health and detect degradation."""
+    import psycopg2.extras
+    conn = _conn()
+    try:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("""
+                SELECT
+                    COUNT(*) as total,
+                    SUM(CASE WHEN index_status = 'indexed' THEN 1 ELSE 0 END) as indexed,
+                    SUM(CASE WHEN index_status = 'not_indexed' THEN 1 ELSE 0 END) as not_indexed,
+                    SUM(CASE WHEN http_status >= 400 OR http_status = 0 THEN 1 ELSE 0 END) as errors
+                FROM crawl_index_status
+            """)
+            stats = dict(cur.fetchone())
+
+            total = stats["total"] or 1
+            index_rate = (stats["indexed"] or 0) / total
+            crawl_rate = 1.0 - ((stats["not_indexed"] or 0) / total)
+
+            # Check for degradation vs previous check
+            degradation = False
+            alert_reason = None
+
+            cur.execute("SELECT index_rate, crawl_rate FROM crawl_budget_monitoring ORDER BY checked_at DESC LIMIT 1")
+            prev = cur.fetchone()
+            if prev:
+                if index_rate < prev["index_rate"] - 0.05:
+                    degradation = True
+                    alert_reason = f"Index rate dropped from {prev['index_rate']:.2f} to {index_rate:.2f}"
+                elif crawl_rate < prev["crawl_rate"] - 0.05:
+                    degradation = True
+                    alert_reason = f"Crawl rate dropped from {prev['crawl_rate']:.2f} to {crawl_rate:.2f}"
+
+            if stats["errors"] and stats["errors"] > 3:
+                degradation = True
+                alert_reason = (alert_reason or "") + f" {stats['errors']} error pages detected."
+
+            check_id = f"cb-{_ts()}"
+            cur.execute("""
+                INSERT INTO crawl_budget_monitoring
+                    (check_id, total_pages, indexed_pages, not_indexed_pages, error_pages, crawl_rate, index_rate, degradation_alert, alert_reason)
+                VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+            """, (check_id, stats["total"], stats["indexed"], stats["not_indexed"], stats["errors"],
+                  crawl_rate, index_rate, degradation, alert_reason))
+            conn.commit()
+
+            return {
+                "check_id": check_id,
+                "total_pages": stats["total"],
+                "indexed": stats["indexed"],
+                "not_indexed": stats["not_indexed"],
+                "errors": stats["errors"],
+                "crawl_rate": round(crawl_rate, 3),
+                "index_rate": round(index_rate, 3),
+                "degradation_alert": degradation,
+                "alert_reason": alert_reason
+            }
+    finally:
+        conn.close()
+
+
+def get_crawl_budget_history(limit=20):
+    """Return crawl budget monitoring history."""
+    import psycopg2.extras
+    conn = _conn()
+    try:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("""
+                SELECT check_id, total_pages, indexed_pages, not_indexed_pages, error_pages,
+                       crawl_rate, index_rate, degradation_alert, alert_reason, checked_at
+                FROM crawl_budget_monitoring
+                ORDER BY checked_at DESC
+                LIMIT %s
+            """, (limit,))
+            return {"history": [dict(r) for r in cur.fetchall()]}
+    finally:
+        conn.close()
+
+
+def register_publish_trigger(post_id, post_title=None, post_url=None):
+    """Register a publish event and start time-to-index tracking."""
+    conn = _conn()
+    try:
+        trigger_id = f"pub-{post_id}-{_ts()}"
+        with conn.cursor() as cur:
+            cur.execute("""
+                INSERT INTO publish_trigger_log (trigger_id, post_id, post_title, post_url, action, status)
+                VALUES (%s, %s, %s, %s, 'publish', 'triggered')
+            """, (trigger_id, post_id, post_title, post_url))
+            conn.commit()
+        return {"trigger_id": trigger_id, "post_id": post_id, "status": "triggered"}
+    finally:
+        conn.close()
+
+
+def check_publish_index_status():
+    """Check pending publish triggers and update time-to-crawl/index."""
+    import requests
+    import psycopg2.extras
+
+    conn = _conn()
+    results = {"checked": 0, "crawled": 0, "indexed": 0}
+    try:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("""
+                SELECT trigger_id, post_id, post_url, triggered_at, first_crawled_at, first_indexed_at
+                FROM publish_trigger_log
+                WHERE status != 'indexed'
+                ORDER BY triggered_at DESC
+                LIMIT 50
+            """)
+            pending = cur.fetchall()
+
+        for p in pending:
+            results["checked"] += 1
+            url = p["post_url"]
+            if not url:
+                continue
+
+            try:
+                resp = requests.head(url, timeout=10, allow_redirects=True,
+                                    headers={"User-Agent": "PetHub-IndexChecker/1.0"})
+                if resp.status_code == 200 and not p["first_crawled_at"]:
+                    triggered = p["triggered_at"]
+                    ttc = int((datetime.now(triggered.tzinfo) - triggered).total_seconds()) if triggered else None
+                    with conn.cursor() as cur2:
+                        cur2.execute("""
+                            UPDATE publish_trigger_log SET
+                                first_crawled_at = NOW(),
+                                time_to_crawl_seconds = %s,
+                                status = 'crawled'
+                            WHERE trigger_id = %s AND first_crawled_at IS NULL
+                        """, (ttc, p["trigger_id"]))
+                    conn.commit()
+                    results["crawled"] += 1
+            except:
+                pass
+
+            # Check index status from crawl_index_status
+            with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur3:
+                cur3.execute("SELECT index_status FROM crawl_index_status WHERE url = %s", (url,))
+                idx = cur3.fetchone()
+                if idx and idx["index_status"] == "indexed" and not p["first_indexed_at"]:
+                    triggered = p["triggered_at"]
+                    tti = int((datetime.now(triggered.tzinfo) - triggered).total_seconds()) if triggered else None
+                    cur3.execute("""
+                        UPDATE publish_trigger_log SET
+                            first_indexed_at = NOW(),
+                            time_to_index_seconds = %s,
+                            status = 'indexed'
+                        WHERE trigger_id = %s AND first_indexed_at IS NULL
+                    """, (tti, p["trigger_id"]))
+                    conn.commit()
+                    results["indexed"] += 1
+
+        return results
+    finally:
+        conn.close()
+
+
+def get_publish_trigger_log(limit=20):
+    """Return recent publish trigger events with time-to-index data."""
+    import psycopg2.extras
+    conn = _conn()
+    try:
+        with conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cur:
+            cur.execute("""
+                SELECT trigger_id, post_id, post_title, post_url, action, triggered_at,
+                       sitemap_submitted_at, first_crawled_at, first_indexed_at,
+                       time_to_crawl_seconds, time_to_index_seconds, status
+                FROM publish_trigger_log
+                ORDER BY triggered_at DESC
+                LIMIT %s
+            """, (limit,))
+            return {"triggers": [dict(r) for r in cur.fetchall()]}
+    finally:
+        conn.close()
