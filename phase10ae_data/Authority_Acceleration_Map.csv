@@ -1,0 +1,196 @@
+cluster,dimension,current_score,target_score,gap,effort_to_close,priority,suggested_first_action
+Birds,Trust Intensity,38.0,60,22.0,High,Critical,Add 'Reviewed by' credentials and editorial methodology section to Birds posts
+Birds,Glossary Density,32.0,60,28.0,High,High,Add Key Terms block with bold-dash definitions to each Birds post
+Birds,Faq Coverage,24.0,60,36.0,High,High,Add structured FAQ section (5+ questions) with schema markup to Birds posts
+Birds,Comparison Density,0.0,60,60.0,Very High,Critical,Add comparison tables with ratings and pro/con sections to Birds posts
+Birds,Practical Usefulness,41.0,60,19.0,Medium,High,"Add step-by-step guides, checklists, and troubleshooting sections to Birds posts"
+Birds,Educational Depth,67.0,82.0,15.0,Medium,Medium,"Expand Birds posts with deeper subheadings, lists, and 1500+ word targets"
+Birds,External References,16.0,60,44.0,Very High,Critical,Add 3+ authoritative citations (RSPCA/BVA/PDSA/gov.uk) to each Birds post
+Birds,Internal Link Density,98.0,100,2.0,Low,Low,Add 3-5 contextual internal links per Birds post to related content
+Birds,Answer Readiness,63.0,78.0,15.0,Medium,Medium,Add quick-answer boxes and structured data markup to Birds posts
+Birds,Citation Confidence,27.0,60,33.0,High,High,Add named expert quotes and data-backed claims to Birds posts
+Birds,Semantic Depth,37.0,60,23.0,High,Medium,Incorporate more domain-specific terminology and definitions in Birds posts
+Birds,Beginner Accessibility,30.0,60,30.0,High,Medium,Add beginner-friendly explanations and 'what this means' sections to Birds posts
+Birds,Safety Coverage,29.0,60,31.0,High,Medium,Add safety warnings and 'when to see a vet' sections to Birds posts
+Birds,Decision Support,31.0,60,29.0,High,Medium,Add buying guides with evaluation criteria and size/breed matching to Birds posts
+Birds,Authority Balance,55.0,70.0,15.0,Medium,Low,Balance dimension scores across Birds posts by lifting weakest areas
+Cat Accessories,Trust Intensity,35.57,60,24.43,High,Critical,Add 'Reviewed by' credentials and editorial methodology section to Cat Accessories posts
+Cat Accessories,Glossary Density,29.0,60,31.0,High,High,Add Key Terms block with bold-dash definitions to each Cat Accessories post
+Cat Accessories,Faq Coverage,25.43,60,34.57,High,High,Add structured FAQ section (5+ questions) with schema markup to Cat Accessories posts
+Cat Accessories,Comparison Density,3.14,60,56.86,Very High,Critical,Add comparison tables with ratings and pro/con sections to Cat Accessories posts
+Cat Accessories,Practical Usefulness,29.64,60,30.36,High,Critical,"Add step-by-step guides, checklists, and troubleshooting sections to Cat Accessories posts"
+Cat Accessories,Educational Depth,71.36,86.36,15.0,Medium,Medium,"Expand Cat Accessories posts with deeper subheadings, lists, and 1500+ word targets"
+Cat Accessories,External References,15.86,60,44.14,Very High,Critical,Add 3+ authoritative citations (RSPCA/BVA/PDSA/gov.uk) to each Cat Accessories post
+Cat Accessories,Internal Link Density,96.14,100,3.86,Low,Low,Add 3-5 contextual internal links per Cat Accessories post to related content
+Cat Accessories,Answer Readiness,61.0,76.0,15.0,Medium,Medium,Add quick-answer boxes and structured data markup to Cat Accessories posts
+Cat Accessories,Citation Confidence,27.5,60,32.5,High,High,Add named expert quotes and data-backed claims to Cat Accessories posts
+Cat Accessories,Semantic Depth,28.86,60,31.14,High,Medium,Incorporate more domain-specific terminology and definitions in Cat Accessories posts
+Cat Accessories,Beginner Accessibility,28.5,60,31.5,High,Medium,Add beginner-friendly explanations and 'what this means' sections to Cat Accessories posts
+Cat Accessories,Safety Coverage,10.14,60,49.86,Very High,Medium,Add safety warnings and 'when to see a vet' sections to Cat Accessories posts
+Cat Accessories,Decision Support,25.79,60,34.21,High,Medium,Add buying guides with evaluation criteria and size/breed matching to Cat Accessories posts
+Cat Accessories,Authority Balance,45.93,60.93,15.0,Medium,Low,Balance dimension scores across Cat Accessories posts by lifting weakest areas
+Cat Toys,Trust Intensity,31.76,60,28.24,High,Critical,Add 'Reviewed by' credentials and editorial methodology section to Cat Toys posts
+Cat Toys,Glossary Density,36.38,60,23.62,High,High,Add Key Terms block with bold-dash definitions to each Cat Toys post
+Cat Toys,Faq Coverage,27.86,60,32.14,High,High,Add structured FAQ section (5+ questions) with schema markup to Cat Toys posts
+Cat Toys,Comparison Density,7.38,60,52.62,Very High,Critical,Add comparison tables with ratings and pro/con sections to Cat Toys posts
+Cat Toys,Practical Usefulness,31.14,60,28.86,High,High,"Add step-by-step guides, checklists, and troubleshooting sections to Cat Toys posts"
+Cat Toys,Educational Depth,68.33,83.33,15.0,Medium,Medium,"Expand Cat Toys posts with deeper subheadings, lists, and 1500+ word targets"
+Cat Toys,External References,13.29,60,46.71,Very High,Critical,Add 3+ authoritative citations (RSPCA/BVA/PDSA/gov.uk) to each Cat Toys post
+Cat Toys,Internal Link Density,97.9,100,2.1,Low,Low,Add 3-5 contextual internal links per Cat Toys post to related content
+Cat Toys,Answer Readiness,56.52,71.52000000000001,15.0,Medium,Medium,Add quick-answer boxes and structured data markup to Cat Toys posts
+Cat Toys,Citation Confidence,22.24,60,37.76,High,Critical,Add named expert quotes and data-backed claims to Cat Toys posts
+Cat Toys,Semantic Depth,33.67,60,26.33,High,Medium,Incorporate more domain-specific terminology and definitions in Cat Toys posts
+Cat Toys,Beginner Accessibility,27.19,60,32.81,High,Medium,Add beginner-friendly explanations and 'what this means' sections to Cat Toys posts
+Cat Toys,Safety Coverage,7.76,60,52.24,Very High,Medium,Add safety warnings and 'when to see a vet' sections to Cat Toys posts
+Cat Toys,Decision Support,10.38,60,49.62,Very High,Medium,Add buying guides with evaluation criteria and size/breed matching to Cat Toys posts
+Cat Toys,Authority Balance,41.81,60,18.19,Medium,Low,Balance dimension scores across Cat Toys posts by lifting weakest areas
+Dog Accessories,Trust Intensity,40.64,60,19.36,Medium,High,Add 'Reviewed by' credentials and editorial methodology section to Dog Accessories posts
+Dog Accessories,Glossary Density,30.27,60,29.73,High,High,Add Key Terms block with bold-dash definitions to each Dog Accessories post
+Dog Accessories,Faq Coverage,30.36,60,29.64,High,High,Add structured FAQ section (5+ questions) with schema markup to Dog Accessories posts
+Dog Accessories,Comparison Density,5.45,60,54.55,Very High,Critical,Add comparison tables with ratings and pro/con sections to Dog Accessories posts
+Dog Accessories,Practical Usefulness,34.73,60,25.27,High,High,"Add step-by-step guides, checklists, and troubleshooting sections to Dog Accessories posts"
+Dog Accessories,Educational Depth,71.36,86.36,15.0,Medium,Medium,"Expand Dog Accessories posts with deeper subheadings, lists, and 1500+ word targets"
+Dog Accessories,External References,11.0,60,49.0,Very High,Critical,Add 3+ authoritative citations (RSPCA/BVA/PDSA/gov.uk) to each Dog Accessories post
+Dog Accessories,Internal Link Density,96.36,100,3.64,Low,Low,Add 3-5 contextual internal links per Dog Accessories post to related content
+Dog Accessories,Answer Readiness,63.0,78.0,15.0,Medium,Medium,Add quick-answer boxes and structured data markup to Dog Accessories posts
+Dog Accessories,Citation Confidence,24.09,60,35.91,High,High,Add named expert quotes and data-backed claims to Dog Accessories posts
+Dog Accessories,Semantic Depth,28.64,60,31.36,High,Medium,Incorporate more domain-specific terminology and definitions in Dog Accessories posts
+Dog Accessories,Beginner Accessibility,26.36,60,33.64,High,Medium,Add beginner-friendly explanations and 'what this means' sections to Dog Accessories posts
+Dog Accessories,Safety Coverage,6.91,60,53.09,Very High,Medium,Add safety warnings and 'when to see a vet' sections to Dog Accessories posts
+Dog Accessories,Decision Support,22.27,60,37.73,High,Medium,Add buying guides with evaluation criteria and size/breed matching to Dog Accessories posts
+Dog Accessories,Authority Balance,44.18,60,15.82,Medium,Low,Balance dimension scores across Dog Accessories posts by lifting weakest areas
+Dog Beds,Trust Intensity,30.88,60,29.12,High,Critical,Add 'Reviewed by' credentials and editorial methodology section to Dog Beds posts
+Dog Beds,Glossary Density,23.0,60,37.0,High,High,Add Key Terms block with bold-dash definitions to each Dog Beds post
+Dog Beds,Faq Coverage,33.38,60,26.62,High,High,Add structured FAQ section (5+ questions) with schema markup to Dog Beds posts
+Dog Beds,Comparison Density,13.5,60,46.5,Very High,Critical,Add comparison tables with ratings and pro/con sections to Dog Beds posts
+Dog Beds,Practical Usefulness,35.5,60,24.5,High,High,"Add step-by-step guides, checklists, and troubleshooting sections to Dog Beds posts"
+Dog Beds,Educational Depth,71.75,86.75,15.0,Medium,Medium,"Expand Dog Beds posts with deeper subheadings, lists, and 1500+ word targets"
+Dog Beds,External References,20.0,60,40.0,High,Critical,Add 3+ authoritative citations (RSPCA/BVA/PDSA/gov.uk) to each Dog Beds post
+Dog Beds,Internal Link Density,93.88,100,6.12,Medium,Low,Add 3-5 contextual internal links per Dog Beds post to related content
+Dog Beds,Answer Readiness,55.38,70.38,15.0,Medium,Medium,Add quick-answer boxes and structured data markup to Dog Beds posts
+Dog Beds,Citation Confidence,25.12,60,34.88,High,High,Add named expert quotes and data-backed claims to Dog Beds posts
+Dog Beds,Semantic Depth,32.12,60,27.88,High,Medium,Incorporate more domain-specific terminology and definitions in Dog Beds posts
+Dog Beds,Beginner Accessibility,27.0,60,33.0,High,Medium,Add beginner-friendly explanations and 'what this means' sections to Dog Beds posts
+Dog Beds,Safety Coverage,4.88,60,55.12,Very High,Medium,Add safety warnings and 'when to see a vet' sections to Dog Beds posts
+Dog Beds,Decision Support,31.25,60,28.75,High,Medium,Add buying guides with evaluation criteria and size/breed matching to Dog Beds posts
+Dog Beds,Authority Balance,46.0,61.0,15.0,Medium,Low,Balance dimension scores across Dog Beds posts by lifting weakest areas
+Dog Breeds,Trust Intensity,24.09,60,35.91,High,Critical,Add 'Reviewed by' credentials and editorial methodology section to Dog Breeds posts
+Dog Breeds,Glossary Density,36.91,60,23.09,High,High,Add Key Terms block with bold-dash definitions to each Dog Breeds post
+Dog Breeds,Faq Coverage,36.82,60,23.18,High,High,Add structured FAQ section (5+ questions) with schema markup to Dog Breeds posts
+Dog Breeds,Comparison Density,7.55,60,52.45,Very High,Critical,Add comparison tables with ratings and pro/con sections to Dog Breeds posts
+Dog Breeds,Practical Usefulness,34.27,60,25.73,High,High,"Add step-by-step guides, checklists, and troubleshooting sections to Dog Breeds posts"
+Dog Breeds,Educational Depth,70.36,85.36,15.0,Medium,Medium,"Expand Dog Breeds posts with deeper subheadings, lists, and 1500+ word targets"
+Dog Breeds,External References,32.91,60,27.09,High,Critical,Add 3+ authoritative citations (RSPCA/BVA/PDSA/gov.uk) to each Dog Breeds post
+Dog Breeds,Internal Link Density,86.27,100,13.73,Medium,Medium,Add 3-5 contextual internal links per Dog Breeds post to related content
+Dog Breeds,Answer Readiness,52.64,67.64,15.0,Medium,Medium,Add quick-answer boxes and structured data markup to Dog Breeds posts
+Dog Breeds,Citation Confidence,32.27,60,27.73,High,High,Add named expert quotes and data-backed claims to Dog Breeds posts
+Dog Breeds,Semantic Depth,40.36,60,19.64,Medium,Medium,Incorporate more domain-specific terminology and definitions in Dog Breeds posts
+Dog Breeds,Beginner Accessibility,28.55,60,31.45,High,Medium,Add beginner-friendly explanations and 'what this means' sections to Dog Breeds posts
+Dog Breeds,Safety Coverage,13.91,60,46.09,Very High,Medium,Add safety warnings and 'when to see a vet' sections to Dog Breeds posts
+Dog Breeds,Decision Support,4.45,60,55.55,Very High,Medium,Add buying guides with evaluation criteria and size/breed matching to Dog Breeds posts
+Dog Breeds,Authority Balance,49.09,64.09,15.0,Medium,Low,Balance dimension scores across Dog Breeds posts by lifting weakest areas
+Dog Food,Trust Intensity,37.38,60,22.62,High,Critical,Add 'Reviewed by' credentials and editorial methodology section to Dog Food posts
+Dog Food,Glossary Density,47.0,62.0,15.0,Medium,Medium,Add Key Terms block with bold-dash definitions to each Dog Food post
+Dog Food,Faq Coverage,40.88,60,19.12,Medium,Medium,Add structured FAQ section (5+ questions) with schema markup to Dog Food posts
+Dog Food,Comparison Density,35.38,60,24.62,High,High,Add comparison tables with ratings and pro/con sections to Dog Food posts
+Dog Food,Practical Usefulness,38.0,60,22.0,High,High,"Add step-by-step guides, checklists, and troubleshooting sections to Dog Food posts"
+Dog Food,Educational Depth,76.38,91.38,15.0,Medium,Medium,"Expand Dog Food posts with deeper subheadings, lists, and 1500+ word targets"
+Dog Food,External References,15.88,60,44.12,Very High,Critical,Add 3+ authoritative citations (RSPCA/BVA/PDSA/gov.uk) to each Dog Food post
+Dog Food,Internal Link Density,94.88,100,5.12,Medium,Low,Add 3-5 contextual internal links per Dog Food post to related content
+Dog Food,Answer Readiness,57.0,72.0,15.0,Medium,Medium,Add quick-answer boxes and structured data markup to Dog Food posts
+Dog Food,Citation Confidence,42.62,60,17.38,Medium,Medium,Add named expert quotes and data-backed claims to Dog Food posts
+Dog Food,Semantic Depth,48.75,63.75,15.0,Medium,Low,Incorporate more domain-specific terminology and definitions in Dog Food posts
+Dog Food,Beginner Accessibility,25.75,60,34.25,High,Medium,Add beginner-friendly explanations and 'what this means' sections to Dog Food posts
+Dog Food,Safety Coverage,15.12,60,44.88,Very High,Medium,Add safety warnings and 'when to see a vet' sections to Dog Food posts
+Dog Food,Decision Support,13.12,60,46.88,Very High,Medium,Add buying guides with evaluation criteria and size/breed matching to Dog Food posts
+Dog Food,Authority Balance,54.25,69.25,15.0,Medium,Low,Balance dimension scores across Dog Food posts by lifting weakest areas
+Dog Grooming,Trust Intensity,40.0,60,20.0,Medium,Critical,Add 'Reviewed by' credentials and editorial methodology section to Dog Grooming posts
+Dog Grooming,Glossary Density,26.0,60,34.0,High,High,Add Key Terms block with bold-dash definitions to each Dog Grooming post
+Dog Grooming,Faq Coverage,25.0,60,35.0,High,High,Add structured FAQ section (5+ questions) with schema markup to Dog Grooming posts
+Dog Grooming,Comparison Density,1.6,60,58.4,Very High,Critical,Add comparison tables with ratings and pro/con sections to Dog Grooming posts
+Dog Grooming,Practical Usefulness,27.6,60,32.4,High,Critical,"Add step-by-step guides, checklists, and troubleshooting sections to Dog Grooming posts"
+Dog Grooming,Educational Depth,69.8,84.8,15.0,Medium,Medium,"Expand Dog Grooming posts with deeper subheadings, lists, and 1500+ word targets"
+Dog Grooming,External References,3.2,60,56.8,Very High,Critical,Add 3+ authoritative citations (RSPCA/BVA/PDSA/gov.uk) to each Dog Grooming post
+Dog Grooming,Internal Link Density,97.0,100,3.0,Low,Low,Add 3-5 contextual internal links per Dog Grooming post to related content
+Dog Grooming,Answer Readiness,63.0,78.0,15.0,Medium,Medium,Add quick-answer boxes and structured data markup to Dog Grooming posts
+Dog Grooming,Citation Confidence,14.6,60,45.4,Very High,Critical,Add named expert quotes and data-backed claims to Dog Grooming posts
+Dog Grooming,Semantic Depth,22.4,60,37.6,High,Medium,Incorporate more domain-specific terminology and definitions in Dog Grooming posts
+Dog Grooming,Beginner Accessibility,29.2,60,30.8,High,Medium,Add beginner-friendly explanations and 'what this means' sections to Dog Grooming posts
+Dog Grooming,Safety Coverage,15.4,60,44.6,Very High,Medium,Add safety warnings and 'when to see a vet' sections to Dog Grooming posts
+Dog Grooming,Decision Support,26.4,60,33.6,High,Medium,Add buying guides with evaluation criteria and size/breed matching to Dog Grooming posts
+Dog Grooming,Authority Balance,40.6,60,19.4,Medium,Low,Balance dimension scores across Dog Grooming posts by lifting weakest areas
+Dog Health,Trust Intensity,30.77,60,29.23,High,Critical,Add 'Reviewed by' credentials and editorial methodology section to Dog Health posts
+Dog Health,Glossary Density,35.05,60,24.95,High,High,Add Key Terms block with bold-dash definitions to each Dog Health post
+Dog Health,Faq Coverage,31.18,60,28.82,High,High,Add structured FAQ section (5+ questions) with schema markup to Dog Health posts
+Dog Health,Comparison Density,6.32,60,53.68,Very High,Critical,Add comparison tables with ratings and pro/con sections to Dog Health posts
+Dog Health,Practical Usefulness,35.0,60,25.0,High,High,"Add step-by-step guides, checklists, and troubleshooting sections to Dog Health posts"
+Dog Health,Educational Depth,71.55,86.55,15.0,Medium,Medium,"Expand Dog Health posts with deeper subheadings, lists, and 1500+ word targets"
+Dog Health,External References,17.09,60,42.91,Very High,Critical,Add 3+ authoritative citations (RSPCA/BVA/PDSA/gov.uk) to each Dog Health post
+Dog Health,Internal Link Density,92.55,100,7.45,Medium,Low,Add 3-5 contextual internal links per Dog Health post to related content
+Dog Health,Answer Readiness,61.82,76.82,15.0,Medium,Medium,Add quick-answer boxes and structured data markup to Dog Health posts
+Dog Health,Citation Confidence,27.27,60,32.73,High,High,Add named expert quotes and data-backed claims to Dog Health posts
+Dog Health,Semantic Depth,37.82,60,22.18,High,Medium,Incorporate more domain-specific terminology and definitions in Dog Health posts
+Dog Health,Beginner Accessibility,26.5,60,33.5,High,Medium,Add beginner-friendly explanations and 'what this means' sections to Dog Health posts
+Dog Health,Safety Coverage,27.14,60,32.86,High,Medium,Add safety warnings and 'when to see a vet' sections to Dog Health posts
+Dog Health,Decision Support,12.55,60,47.45,Very High,Medium,Add buying guides with evaluation criteria and size/breed matching to Dog Health posts
+Dog Health,Authority Balance,47.55,62.55,15.0,Medium,Low,Balance dimension scores across Dog Health posts by lifting weakest areas
+Dog Toys,Trust Intensity,21.03,60,38.97,High,Critical,Add 'Reviewed by' credentials and editorial methodology section to Dog Toys posts
+Dog Toys,Glossary Density,36.7,60,23.3,High,High,Add Key Terms block with bold-dash definitions to each Dog Toys post
+Dog Toys,Faq Coverage,38.33,60,21.67,High,High,Add structured FAQ section (5+ questions) with schema markup to Dog Toys posts
+Dog Toys,Comparison Density,8.23,60,51.77,Very High,Critical,Add comparison tables with ratings and pro/con sections to Dog Toys posts
+Dog Toys,Practical Usefulness,35.77,60,24.23,High,High,"Add step-by-step guides, checklists, and troubleshooting sections to Dog Toys posts"
+Dog Toys,Educational Depth,68.6,83.6,15.0,Medium,Medium,"Expand Dog Toys posts with deeper subheadings, lists, and 1500+ word targets"
+Dog Toys,External References,30.9,60,29.1,High,Critical,Add 3+ authoritative citations (RSPCA/BVA/PDSA/gov.uk) to each Dog Toys post
+Dog Toys,Internal Link Density,93.67,100,6.33,Medium,Low,Add 3-5 contextual internal links per Dog Toys post to related content
+Dog Toys,Answer Readiness,46.73,61.73,15.0,Medium,Medium,Add quick-answer boxes and structured data markup to Dog Toys posts
+Dog Toys,Citation Confidence,22.67,60,37.33,High,High,Add named expert quotes and data-backed claims to Dog Toys posts
+Dog Toys,Semantic Depth,33.33,60,26.67,High,Medium,Incorporate more domain-specific terminology and definitions in Dog Toys posts
+Dog Toys,Beginner Accessibility,28.83,60,31.17,High,Medium,Add beginner-friendly explanations and 'what this means' sections to Dog Toys posts
+Dog Toys,Safety Coverage,16.5,60,43.5,Very High,Medium,Add safety warnings and 'when to see a vet' sections to Dog Toys posts
+Dog Toys,Decision Support,8.43,60,51.57,Very High,Medium,Add buying guides with evaluation criteria and size/breed matching to Dog Toys posts
+Dog Toys,Authority Balance,46.5,61.5,15.0,Medium,Low,Balance dimension scores across Dog Toys posts by lifting weakest areas
+Dog Training,Trust Intensity,32.12,60,27.88,High,Critical,Add 'Reviewed by' credentials and editorial methodology section to Dog Training posts
+Dog Training,Glossary Density,35.62,60,24.38,High,High,Add Key Terms block with bold-dash definitions to each Dog Training post
+Dog Training,Faq Coverage,31.5,60,28.5,High,High,Add structured FAQ section (5+ questions) with schema markup to Dog Training posts
+Dog Training,Comparison Density,4.62,60,55.38,Very High,Critical,Add comparison tables with ratings and pro/con sections to Dog Training posts
+Dog Training,Practical Usefulness,36.88,60,23.12,High,High,"Add step-by-step guides, checklists, and troubleshooting sections to Dog Training posts"
+Dog Training,Educational Depth,73.38,88.38,15.0,Medium,Medium,"Expand Dog Training posts with deeper subheadings, lists, and 1500+ word targets"
+Dog Training,External References,12.88,60,47.12,Very High,Critical,Add 3+ authoritative citations (RSPCA/BVA/PDSA/gov.uk) to each Dog Training post
+Dog Training,Internal Link Density,98.25,100,1.75,Low,Low,Add 3-5 contextual internal links per Dog Training post to related content
+Dog Training,Answer Readiness,55.62,70.62,15.0,Medium,Medium,Add quick-answer boxes and structured data markup to Dog Training posts
+Dog Training,Citation Confidence,16.75,60,43.25,Very High,Critical,Add named expert quotes and data-backed claims to Dog Training posts
+Dog Training,Semantic Depth,36.5,60,23.5,High,Medium,Incorporate more domain-specific terminology and definitions in Dog Training posts
+Dog Training,Beginner Accessibility,35.25,60,24.75,High,Low,Add beginner-friendly explanations and 'what this means' sections to Dog Training posts
+Dog Training,Safety Coverage,5.25,60,54.75,Very High,Medium,Add safety warnings and 'when to see a vet' sections to Dog Training posts
+Dog Training,Decision Support,23.25,60,36.75,High,Medium,Add buying guides with evaluation criteria and size/breed matching to Dog Training posts
+Dog Training,Authority Balance,44.12,60,15.88,Medium,Low,Balance dimension scores across Dog Training posts by lifting weakest areas
+General Pet Care,Trust Intensity,21.0,60,39.0,High,Critical,Add 'Reviewed by' credentials and editorial methodology section to General Pet Care posts
+General Pet Care,Glossary Density,46.5,61.5,15.0,Medium,Medium,Add Key Terms block with bold-dash definitions to each General Pet Care post
+General Pet Care,Faq Coverage,40.25,60,19.75,Medium,Medium,Add structured FAQ section (5+ questions) with schema markup to General Pet Care posts
+General Pet Care,Comparison Density,9.75,60,50.25,Very High,Critical,Add comparison tables with ratings and pro/con sections to General Pet Care posts
+General Pet Care,Practical Usefulness,27.25,60,32.75,High,Critical,"Add step-by-step guides, checklists, and troubleshooting sections to General Pet Care posts"
+General Pet Care,Educational Depth,66.75,81.75,15.0,Medium,Medium,"Expand General Pet Care posts with deeper subheadings, lists, and 1500+ word targets"
+General Pet Care,External References,33.75,60,26.25,High,Critical,Add 3+ authoritative citations (RSPCA/BVA/PDSA/gov.uk) to each General Pet Care post
+General Pet Care,Internal Link Density,91.5,100,8.5,Medium,Low,Add 3-5 contextual internal links per General Pet Care post to related content
+General Pet Care,Answer Readiness,39.5,60,20.5,High,High,Add quick-answer boxes and structured data markup to General Pet Care posts
+General Pet Care,Citation Confidence,22.5,60,37.5,High,Critical,Add named expert quotes and data-backed claims to General Pet Care posts
+General Pet Care,Semantic Depth,39.75,60,20.25,High,Medium,Incorporate more domain-specific terminology and definitions in General Pet Care posts
+General Pet Care,Beginner Accessibility,32.75,60,27.25,High,Medium,Add beginner-friendly explanations and 'what this means' sections to General Pet Care posts
+General Pet Care,Safety Coverage,1.5,60,58.5,Very High,Medium,Add safety warnings and 'when to see a vet' sections to General Pet Care posts
+General Pet Care,Decision Support,5.25,60,54.75,Very High,Medium,Add buying guides with evaluation criteria and size/breed matching to General Pet Care posts
+General Pet Care,Authority Balance,43.75,60,16.25,Medium,Low,Balance dimension scores across General Pet Care posts by lifting weakest areas
+Pet Adoption,Trust Intensity,17.0,60,43.0,Very High,Critical,Add 'Reviewed by' credentials and editorial methodology section to Pet Adoption posts
+Pet Adoption,Glossary Density,26.0,60,34.0,High,High,Add Key Terms block with bold-dash definitions to each Pet Adoption post
+Pet Adoption,Faq Coverage,39.0,60,21.0,High,Medium,Add structured FAQ section (5+ questions) with schema markup to Pet Adoption posts
+Pet Adoption,Comparison Density,16.0,60,44.0,Very High,Critical,Add comparison tables with ratings and pro/con sections to Pet Adoption posts
+Pet Adoption,Practical Usefulness,23.0,60,37.0,High,Critical,"Add step-by-step guides, checklists, and troubleshooting sections to Pet Adoption posts"
+Pet Adoption,Educational Depth,60.0,75.0,15.0,Medium,Medium,"Expand Pet Adoption posts with deeper subheadings, lists, and 1500+ word targets"
+Pet Adoption,External References,41.0,60,19.0,Medium,High,Add 3+ authoritative citations (RSPCA/BVA/PDSA/gov.uk) to each Pet Adoption post
+Pet Adoption,Internal Link Density,78.0,93.0,15.0,Medium,Medium,Add 3-5 contextual internal links per Pet Adoption post to related content
+Pet Adoption,Answer Readiness,42.0,60,18.0,Medium,Medium,Add quick-answer boxes and structured data markup to Pet Adoption posts
+Pet Adoption,Citation Confidence,17.0,60,43.0,Very High,Critical,Add named expert quotes and data-backed claims to Pet Adoption posts
+Pet Adoption,Semantic Depth,32.0,60,28.0,High,Medium,Incorporate more domain-specific terminology and definitions in Pet Adoption posts
+Pet Adoption,Beginner Accessibility,35.0,60,25.0,High,Medium,Add beginner-friendly explanations and 'what this means' sections to Pet Adoption posts
+Pet Adoption,Safety Coverage,6.0,60,54.0,Very High,Medium,Add safety warnings and 'when to see a vet' sections to Pet Adoption posts
+Pet Adoption,Decision Support,0.0,60,60.0,Very High,Medium,Add buying guides with evaluation criteria and size/breed matching to Pet Adoption posts
+Pet Adoption,Authority Balance,47.0,62.0,15.0,Medium,Low,Balance dimension scores across Pet Adoption posts by lifting weakest areas

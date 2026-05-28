@@ -1,0 +1,14 @@
+cluster,top_action,avg_roi,total_improvement_potential,posts_affected,priority
+Cat Toys,Add external references (UK authorities),7.17,1900,14,P0-Critical
+Pet Care General,Add external references (UK authorities),7.11,771,6,P0-Critical
+Cat Supplies,Add external references (UK authorities),7.11,3304,24,P0-Critical
+Dog Harnesses,Add external references (UK authorities),7.11,1165,9,P0-Critical
+Dog Health,Add external references (UK authorities),7.06,676,5,P0-Critical
+Dog Supplies,Add external references (UK authorities),6.99,933,7,P1-High
+Puppy Care,Add external references (UK authorities),6.89,777,6,P1-High
+Dog Beds,Add external references (UK authorities),6.75,832,7,P1-High
+Dog Care,Add external references (UK authorities),6.72,2264,18,P1-High
+Uncategorized,Add external references (UK authorities),6.68,253,2,P1-High
+Educational,Add external references (UK authorities),6.64,948,8,P1-High
+Dog Toys,Add external references (UK authorities),6.44,4044,34,P1-High
+Dog Food,Add external references (UK authorities),6.24,349,4,P1-High

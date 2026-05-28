@@ -1,0 +1,11 @@
+cluster,post_count,avg_trust_depth,posts_with_references,posts_without,improvement_pct
+cat,5,26.8,5,0,77.5
+cat_food,44,22.7,44,0,77.3
+dog_beds,2,19.5,2,0,35.4
+dog_dental,11,22.5,11,0,60.7
+dog_flea,2,22.0,2,0,93.0
+dog_food,17,25.5,17,0,47.4
+dog_health,1,26.3,1,0,78.9
+dog_joint,5,25.7,5,0,59.6
+puppy,26,23.5,26,0,48.7
+training,31,22.9,31,0,42.2

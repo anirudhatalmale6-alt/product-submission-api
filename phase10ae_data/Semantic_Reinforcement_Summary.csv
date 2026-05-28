@@ -1,0 +1,8 @@
+cluster,total_detections,missing_terms,weak_definitions,weak_beginner_support,avg_semantic_completeness
+Cat,372,309,33,30,12.3%
+Dog Beds,294,254,19,21,7.1%
+Dog Food,204,156,37,11,10.7%
+Dog Health,162,134,17,11,3.2%
+Dog Toys,928,782,94,52,8.2%
+General,0,0,0,0,0.0%
+Puppy Care,196,156,25,15,19.6%

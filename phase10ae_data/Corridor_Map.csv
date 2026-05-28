@@ -1,0 +1,106 @@
+source_cluster,target_cluster,link_count,unique_posts,corridor_strength,is_priority,status
+Dog Beds,Dog Care,0,0,Missing,YES,PRIORITY_NEEDS_LINKS
+Dog Food,Dog Health,0,0,Missing,YES,PRIORITY_NEEDS_LINKS
+Dog Harnesses,Dog Training/Care,1,1,Weak,YES,PRIORITY_NEEDS_REINFORCEMENT
+Dog Toys,Puppy Care,1,1,Weak,YES,PRIORITY_NEEDS_REINFORCEMENT
+Cat Supplies,Cat Toys,2,2,Moderate,YES,OK
+Educational,Pet Care,11,10,Strong,YES,GOOD
+Cat Care,Dog Beds,0,0,Missing,NO,NEEDS_LINKS
+Cat Care,Dog Care,0,0,Missing,NO,NEEDS_LINKS
+Cat Care,Dog Food,0,0,Missing,NO,NEEDS_LINKS
+Cat Care,Dog Harnesses,0,0,Missing,NO,NEEDS_LINKS
+Cat Care,Dog Health,0,0,Missing,NO,NEEDS_LINKS
+Cat Care,Dog Toys,0,0,Missing,NO,NEEDS_LINKS
+Cat Care,Dog Training/Care,0,0,Missing,NO,NEEDS_LINKS
+Cat Care,Puppy Care,0,0,Missing,NO,NEEDS_LINKS
+Cat Care,Uncategorized,0,0,Missing,NO,NEEDS_LINKS
+Cat Supplies,Comparison,0,0,Missing,NO,NEEDS_LINKS
+Cat Supplies,Dog Beds,0,0,Missing,NO,NEEDS_LINKS
+Cat Supplies,Dog Care,0,0,Missing,NO,NEEDS_LINKS
+Cat Supplies,Dog Food,0,0,Missing,NO,NEEDS_LINKS
+Cat Supplies,Dog Harnesses,0,0,Missing,NO,NEEDS_LINKS
+Cat Supplies,Dog Health,0,0,Missing,NO,NEEDS_LINKS
+Cat Supplies,Dog Toys,0,0,Missing,NO,NEEDS_LINKS
+Cat Supplies,Puppy Care,0,0,Missing,NO,NEEDS_LINKS
+Cat Supplies,Uncategorized,0,0,Missing,NO,NEEDS_LINKS
+Cat Toys,Dog Beds,0,0,Missing,NO,NEEDS_LINKS
+Cat Toys,Dog Care,0,0,Missing,NO,NEEDS_LINKS
+Cat Toys,Dog Food,0,0,Missing,NO,NEEDS_LINKS
+Cat Toys,Dog Harnesses,0,0,Missing,NO,NEEDS_LINKS
+Cat Toys,Dog Health,0,0,Missing,NO,NEEDS_LINKS
+Cat Toys,Dog Toys,0,0,Missing,NO,NEEDS_LINKS
+Cat Toys,Puppy Care,0,0,Missing,NO,NEEDS_LINKS
+Cat Toys,Uncategorized,0,0,Missing,NO,NEEDS_LINKS
+Comparison,Dog Beds,0,0,Missing,NO,NEEDS_LINKS
+Comparison,Dog Food,0,0,Missing,NO,NEEDS_LINKS
+Comparison,Puppy Care,0,0,Missing,NO,NEEDS_LINKS
+Comparison,Uncategorized,0,0,Missing,NO,NEEDS_LINKS
+Dog Beds,Dog Food,0,0,Missing,NO,NEEDS_LINKS
+Dog Beds,Dog Harnesses,0,0,Missing,NO,NEEDS_LINKS
+Dog Beds,Dog Health,0,0,Missing,NO,NEEDS_LINKS
+Dog Beds,Dog Toys,0,0,Missing,NO,NEEDS_LINKS
+Dog Beds,Dog Training/Care,0,0,Missing,NO,NEEDS_LINKS
+Dog Beds,Pet Care,0,0,Missing,NO,NEEDS_LINKS
+Dog Beds,Puppy Care,0,0,Missing,NO,NEEDS_LINKS
+Dog Beds,Uncategorized,0,0,Missing,NO,NEEDS_LINKS
+Dog Care,Dog Food,0,0,Missing,NO,NEEDS_LINKS
+Dog Care,Dog Toys,0,0,Missing,NO,NEEDS_LINKS
+Dog Care,Dog Training/Care,0,0,Missing,NO,NEEDS_LINKS
+Dog Care,Pet Care,0,0,Missing,NO,NEEDS_LINKS
+Dog Care,Puppy Care,0,0,Missing,NO,NEEDS_LINKS
+Dog Care,Uncategorized,0,0,Missing,NO,NEEDS_LINKS
+Dog Food,Dog Harnesses,0,0,Missing,NO,NEEDS_LINKS
+Dog Food,Dog Training/Care,0,0,Missing,NO,NEEDS_LINKS
+Dog Food,Educational,0,0,Missing,NO,NEEDS_LINKS
+Dog Food,Pet Care,0,0,Missing,NO,NEEDS_LINKS
+Dog Food,Puppy Care,0,0,Missing,NO,NEEDS_LINKS
+Dog Food,Uncategorized,0,0,Missing,NO,NEEDS_LINKS
+Dog Harnesses,Pet Care,0,0,Missing,NO,NEEDS_LINKS
+Dog Harnesses,Puppy Care,0,0,Missing,NO,NEEDS_LINKS
+Dog Health,Dog Toys,0,0,Missing,NO,NEEDS_LINKS
+Dog Health,Uncategorized,0,0,Missing,NO,NEEDS_LINKS
+Dog Training/Care,Pet Care,0,0,Missing,NO,NEEDS_LINKS
+Dog Training/Care,Uncategorized,0,0,Missing,NO,NEEDS_LINKS
+Educational,Puppy Care,0,0,Missing,NO,NEEDS_LINKS
+Pet Care,Puppy Care,0,0,Missing,NO,NEEDS_LINKS
+Pet Care,Uncategorized,0,0,Missing,NO,NEEDS_LINKS
+Puppy Care,Uncategorized,0,0,Missing,NO,NEEDS_LINKS
+Cat Supplies,Dog Training/Care,1,1,Weak,NO,NEEDS_REINFORCEMENT
+Cat Toys,Dog Training/Care,1,1,Weak,NO,NEEDS_REINFORCEMENT
+Comparison,Dog Health,1,1,Weak,NO,NEEDS_REINFORCEMENT
+Dog Food,Dog Toys,1,1,Weak,NO,NEEDS_REINFORCEMENT
+Dog Harnesses,Dog Health,1,1,Weak,NO,NEEDS_REINFORCEMENT
+Dog Harnesses,Dog Toys,1,1,Weak,NO,NEEDS_REINFORCEMENT
+Dog Harnesses,Uncategorized,1,1,Weak,NO,NEEDS_REINFORCEMENT
+Dog Health,Dog Training/Care,1,1,Weak,NO,NEEDS_REINFORCEMENT
+Dog Health,Puppy Care,1,1,Weak,NO,NEEDS_REINFORCEMENT
+Dog Training/Care,Puppy Care,1,1,Weak,NO,NEEDS_REINFORCEMENT
+Comparison,Dog Care,2,1,Moderate,NO,OK
+Comparison,Pet Care,2,1,Moderate,NO,OK
+Dog Care,Educational,2,1,Moderate,NO,OK
+Dog Harnesses,Educational,2,2,Moderate,NO,OK
+Dog Health,Pet Care,2,2,Moderate,NO,OK
+Dog Training/Care,Educational,2,2,Moderate,NO,OK
+Educational,Uncategorized,2,1,Moderate,NO,OK
+Cat Toys,Pet Care,3,3,Moderate,NO,OK
+Comparison,Dog Harnesses,3,3,Moderate,NO,OK
+Dog Care,Dog Harnesses,3,2,Moderate,NO,OK
+Dog Health,Educational,3,3,Moderate,NO,OK
+Dog Toys,Dog Training/Care,3,3,Moderate,NO,OK
+Dog Toys,Pet Care,3,2,Moderate,NO,OK
+Cat Care,Comparison,4,4,Moderate,NO,OK
+Dog Care,Dog Health,4,4,Moderate,NO,OK
+Dog Toys,Uncategorized,4,2,Moderate,NO,OK
+Cat Care,Educational,5,5,Strong,NO,GOOD
+Cat Care,Pet Care,5,4,Strong,NO,GOOD
+Dog Beds,Educational,5,3,Strong,NO,GOOD
+Comparison,Dog Training/Care,6,4,Strong,NO,GOOD
+Cat Toys,Educational,8,5,Strong,NO,GOOD
+Comparison,Educational,13,9,Strong,NO,GOOD
+Cat Toys,Comparison,14,8,Strong,NO,GOOD
+Cat Supplies,Pet Care,15,15,Strong,NO,GOOD
+Cat Supplies,Educational,16,16,Strong,NO,GOOD
+Cat Care,Cat Supplies,18,18,Strong,NO,GOOD
+Dog Toys,Educational,19,10,Strong,NO,GOOD
+Cat Care,Cat Toys,23,15,Strong,NO,GOOD
+Comparison,Dog Toys,29,11,Strong,NO,GOOD

@@ -1,0 +1,11 @@
+cluster,post_count,posts_with_comparisons,posts_needing_comparisons,avg_comparison_score,priority
+cat_specific,21,3,18,10.4,1
+general_pet_care,14,2,12,10.6,1
+grooming,10,0,10,4.5,1
+health_and_wellness,8,0,8,6.2,1
+training,6,1,5,13.5,1
+bowls_and_feeders,4,0,4,5.0,1
+toys,56,19,38,19.5,2
+beds_and_furniture,12,3,9,18.0,2
+collars_leashes_harnesses,7,3,4,20.7,3
+food_and_nutrition,6,5,1,55.8,4
