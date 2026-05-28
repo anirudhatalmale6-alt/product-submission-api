@@ -1,0 +1,31 @@
+PHASE 10Y — AUTHORITY ACCELERATION MODE
+Generated: 2026-05-28 17:01
+
+TRUST SIGNAL DISTRIBUTION:
+  STRONG: 0 | PRESENT: 55 | WEAK: 2 | NONE: 47
+  Trust visibility gaps: 47 posts
+
+ENTITY RELATIONSHIP MAP:
+  Entity richness: HIGH=35 | MEDIUM=35 | LOW=34
+
+CLUSTER MATURITY RANKINGS:
+  A   |  83 | Dog Supplies         | 61 posts | pub:53
+  A   |  82 | Product Reviews      | 43 posts | pub:43
+  A   |  82 | Cat Supplies         | 32 posts | pub:31
+  A   |  82 | Buying Guides        |  3 posts | pub:3
+  A   |  82 | Interactive Toys     |  2 posts | pub:2
+  A   |  80 | Pet Care             | 29 posts | pub:28
+  A   |  80 | Indoor Cats          |  1 posts | pub:1
+  A   |  79 | Cat Toys             | 15 posts | pub:15
+  A   |  77 | Dog Food             |  4 posts | pub:4
+  A   |  76 | Training Supplies    |  6 posts | pub:6
+  A   |  76 | Orthopaedic Care     |  2 posts | pub:2
+  A   |  75 | Dog Toys             | 14 posts | pub:8
+  A   |  75 | Dog Care             | 12 posts | pub:11
+  A   |  75 | Dog Beds             |  9 posts | pub:8
+  A   |  75 | Puppy Care           |  8 posts | pub:7
+  A   |  75 | Pet Health           |  3 posts | pub:3
+  B   |  74 | Pet Beds             |  4 posts | pub:4
+  B   |  73 | Dog Health           |  5 posts | pub:5
+  B   |  72 | Dog Harnesses        |  7 posts | pub:6
+  B   |  69 | Uncategorized        |  3 posts | pub:1

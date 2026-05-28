@@ -1,0 +1,21 @@
+cluster,total_posts,published,draft,content_density,faq_density,answer_density,glossary_support,crawl_reinforcement,trust_maturity,indexing_penetration,ai_readiness,entity_richness,publication_velocity,maturity_score,grade
+Dog Supplies,61,53,8,100,100,100,100,51,22,86,100,78,86,83,A
+Product Reviews,43,43,0,98,100,100,25,73,45,100,100,57,100,82,A
+Cat Supplies,32,31,1,78,100,100,50,77,39,96,100,59,96,82,A
+Buying Guides,3,3,0,74,100,100,0,75,50,100,100,96,100,82,A
+Interactive Toys,2,2,0,100,100,100,0,52,50,100,100,100,100,82,A
+Pet Care,29,28,1,78,100,100,50,71,34,96,100,49,96,80,A
+Indoor Cats,1,1,0,75,100,100,0,60,50,100,100,100,100,80,A
+Cat Toys,15,15,0,70,100,100,0,84,13,100,100,92,100,79,A
+Dog Food,4,4,0,100,100,100,0,48,0,100,100,100,100,77,A
+Training Supplies,6,6,0,79,100,100,0,45,41,100,100,69,100,76,A
+Orthopaedic Care,2,2,0,90,100,100,0,45,50,100,100,56,100,76,A
+Dog Toys,14,8,6,100,100,100,25,65,14,57,100,100,57,75,A
+Dog Care,12,11,1,77,100,100,25,50,16,91,100,71,91,75,A
+Dog Beds,9,8,1,93,100,100,50,40,22,88,100,49,88,75,A
+Puppy Care,8,7,1,100,100,100,0,35,25,87,100,98,87,75,A
+Pet Health,3,3,0,83,100,100,0,45,50,100,100,45,100,75,A
+Pet Beds,4,4,0,76,100,100,0,45,50,100,100,46,100,74,B
+Dog Health,5,5,0,79,100,100,0,39,40,100,100,48,100,73,B
+Dog Harnesses,7,6,1,87,100,100,50,40,14,85,100,30,85,72,B
+Uncategorized,3,1,2,87,100,100,50,55,0,33,100,100,33,69,B

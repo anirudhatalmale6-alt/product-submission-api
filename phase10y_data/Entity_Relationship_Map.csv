@@ -1,0 +1,105 @@
+post_id,title,cluster,cat_behavior,dog_behavior,enrichment,safety,nutrition,training,grooming,materials,total_entities,primary_domains,entity_richness
+5425,Dog Toys FAQ: Common Questions Answered,Dog Supplies,1,6,4,5,0,0,0,4,20,dog_behavior; safety; enrichment,HIGH
+5424,Aggressive Chewer Guide: Safe Toys for Power Chewers,Dog Supplies,1,4,4,4,0,2,1,2,18,dog_behavior; enrichment; safety,HIGH
+5423,Dog Toy Enrichment: Beyond Basic Fetch,Dog Supplies,1,4,6,2,1,4,0,1,19,enrichment; dog_behavior; training,HIGH
+5422,Indoor vs Outdoor Dog Toys: Choosing the Right Type,Dog Supplies,2,4,4,1,0,0,0,1,12,dog_behavior; enrichment; cat_behavior,HIGH
+5421,Puppy-Safe Dog Toys: What to Look For and What to Avoid,Dog Supplies,1,3,3,4,0,1,1,4,17,safety; materials; dog_behavior,HIGH
+5420,Dog Toy Cleaning Guide: How to Keep Toys Hygienic,Dog Supplies,1,3,1,4,0,0,2,4,15,safety; materials; dog_behavior,HIGH
+5419,Cat Care Basics: A Glossary for New Cat Owners,Cat Supplies,5,0,5,3,2,0,4,0,19,cat_behavior; enrichment; grooming,HIGH
+5418,Dog Harness Types Explained: Finding the Right Fit,Dog Harnesses,0,0,0,1,0,2,1,1,5,training; safety; grooming,LOW
+5417,Puppy Care Essentials: Key Terms Every New Owner Should Know,Dog Care,1,1,1,4,2,5,0,1,15,training; safety; nutrition,HIGH
+5416,Dog Bed Types Explained: A Complete Glossary,Dog Beds,0,1,0,0,0,1,1,3,6,materials; dog_behavior; training,MEDIUM
+5415,Dog Play Styles Explained: Understanding How Your Dog Plays,Uncategorized,1,4,7,1,0,0,0,2,15,enrichment; dog_behavior; materials,HIGH
+5414,Cat Toy Types Explained: A Complete Glossary,Uncategorized,4,0,5,1,1,0,0,1,12,enrichment; cat_behavior; safety,HIGH
+5296,Best Indoor Cat Toys UK (2026): Complete Guide for House Cats,Uncategorized,6,0,6,3,1,0,1,0,17,cat_behavior; enrichment; safety,HIGH
+5033,How to Choose the Right Cat Toy for Your Cat's Personality,Cat Toys,3,0,4,0,0,0,0,0,7,enrichment; cat_behavior,MEDIUM
+5036,Understanding Cat Play Behaviour: What Different Play Styles Mean,Cat Toys,4,0,3,0,0,0,0,0,7,cat_behavior; enrichment,MEDIUM
+5032,Cat Toys FAQ: Common Questions Answered,Cat Toys,4,0,5,3,0,0,1,4,17,enrichment; cat_behavior; materials,HIGH
+5035,Cat Enrichment Beyond Toys: Creating a Stimulating Home,Cat Toys,4,1,6,1,0,2,1,0,15,enrichment; cat_behavior; training,HIGH
+5034,Cat Toy Rotation: How to Keep Toys Fresh and Engaging,Cat Toys,4,1,6,0,0,0,0,1,12,enrichment; cat_behavior; dog_behavior,HIGH
+4792,Puppy Socialisation: A Complete Timeline Guide,Dog Supplies,0,0,2,0,0,3,0,0,5,training; enrichment,LOW
+4791,How to Choose the Right Dog Training Treats,Dog Supplies,1,2,1,0,3,2,0,0,9,nutrition; dog_behavior; training,MEDIUM
+4790,DIY Dog Toys: Safe Homemade Options,Dog Supplies,1,3,6,2,1,0,0,3,16,enrichment; dog_behavior; materials,HIGH
+4789,Best Types of Dog Toys for Different Play Styles,Dog Supplies,1,4,4,2,0,0,1,2,14,dog_behavior; enrichment; safety,HIGH
+4788,Mental Stimulation for Dogs: Beyond Physical Exercise,Dog Supplies,3,6,7,1,2,2,2,1,24,enrichment; dog_behavior; cat_behavior,HIGH
+4787,Dog Toy Safety: What Every Owner Needs to Know,Dog Supplies,1,3,2,4,0,1,0,3,14,safety; dog_behavior; materials,HIGH
+4786,Where to Place Your Dog's Bed: Location and Comfort Tips,Dog Beds,0,1,0,0,0,1,1,0,3,dog_behavior; training; grooming,LOW
+4785,How to Wash and Maintain Your Dog's Bed,Dog Beds,1,0,0,0,0,0,0,4,5,materials; cat_behavior,LOW
+4784,"Dog Bed Materials Explained: Foam, Memory Foam, and More",Dog Beds,0,0,0,0,0,0,0,3,3,materials,LOW
+4783,How to Choose the Right Dog Bed Size,Dog Beds,0,3,0,0,0,0,0,1,4,dog_behavior; materials,LOW
+4573,Seasonal Pet Safety: Protecting Pets Through the Year,Pet Care,0,0,0,4,0,0,1,0,5,safety; grooming,LOW
+4570,First-Time Dog Owner Essentials: What You Need to Know,Dog Care,2,2,3,2,1,5,3,0,18,training; enrichment; grooming,HIGH
+4576,Multi-Pet Household Tips: Living with Dogs and Cats Together,Pet Care,1,1,0,1,3,0,0,0,6,nutrition; cat_behavior; dog_behavior,MEDIUM
+4574,Pet Hydration Guide: How Much Water Does Your Pet Need?,Dog Supplies,0,0,0,0,2,0,0,0,2,nutrition,LOW
+4571,Pet First Aid Basics: What Every Owner Should Know,Dog Supplies,0,1,0,2,0,1,0,0,4,safety; dog_behavior; training,LOW
+4568,Dog Dental Health: A Practical Care Guide,Dog Care,1,1,0,2,2,0,1,1,8,safety; nutrition; cat_behavior,MEDIUM
+4566,Seasonal Dog Care: Keeping Your Dog Safe Year-Round,Dog Care,1,0,0,4,0,0,1,0,6,safety; cat_behavior; grooming,MEDIUM
+4563,Dog Grooming Basics: A Complete Guide for Owners,Dog Care,1,1,0,0,0,0,7,2,11,grooming; materials; cat_behavior,MEDIUM
+4415,Cat Toy Safety Guide: What Every Owner Should Know,Cat Supplies,2,2,2,4,0,0,1,4,15,safety; materials; cat_behavior,HIGH
+4406,Best Interactive Cat Toys for Indoor Cats: Engagement Guide,Cat Supplies,3,0,6,1,0,0,1,0,11,enrichment; cat_behavior; safety,MEDIUM
+4414,Harness vs Collar: Which Is Better for Your Dog?,Dog Care,1,0,0,1,0,0,1,0,3,cat_behavior; safety; grooming,LOW
+4413,How to Measure Your Dog for a Harness: Step-by-Step Guide,Dog Care,1,0,0,0,0,0,2,0,3,grooming; cat_behavior,LOW
+4412,No-Pull Dog Harness Guide: How They Work and When to Use One,Dog Harnesses,0,0,1,0,0,2,0,0,3,training; enrichment,LOW
+4411,"Dog Harnesses: The Complete Guide to Types, Fitting, and Safety",Dog Care,1,0,0,1,0,1,1,0,4,cat_behavior; safety; training,LOW
+4410,Cat Enrichment Activities Beyond Toys: Complete Guide,Cat Supplies,4,0,6,1,2,0,1,1,15,enrichment; cat_behavior; nutrition,HIGH
+4409,Kitten vs Adult Cat Toys: Age-Appropriate Play Guide,Cat Supplies,2,0,4,1,0,1,0,0,8,enrichment; cat_behavior; safety,MEDIUM
+4408,How Often Should You Replace Cat Toys? A Practical Guide,Cat Supplies,0,0,3,2,0,0,0,2,7,enrichment; safety; materials,MEDIUM
+4407,DIY Cat Toys: Safe Homemade Options Your Cat Will Love,Cat Supplies,2,1,4,5,1,0,0,2,15,safety; enrichment; cat_behavior,HIGH
+4335,Best Cat Litter Disposal UK (2026) – Waste Management Guide,Cat Supplies,0,0,1,1,0,0,0,0,2,enrichment; safety,LOW
+4328,Best Self-Cleaning Litter Trays UK (2026) – Automatic Options,Cat Supplies,0,0,0,1,0,0,0,0,1,safety,LOW
+4321,Best Cat Litter UK (2026) – Types & Comparison Guide,Cat Supplies,0,0,1,1,1,0,0,0,3,enrichment; safety; nutrition,LOW
+4314,Best Cat Litter Trays UK (2026) – Complete Guide,Cat Supplies,0,0,0,1,0,0,0,0,1,safety,LOW
+4307,Best Wall-Mounted Cat Scratchers UK (2026) – Space Saving,Cat Supplies,1,0,1,1,0,0,0,0,3,cat_behavior; enrichment; safety,LOW
+4300,Best Cardboard Cat Scratchers UK (2026) – Budget Friendly,Cat Supplies,2,0,1,1,0,0,0,0,4,cat_behavior; enrichment; safety,LOW
+4293,Best Cat Trees UK (2026) – Climbing & Scratching Towers,Cat Supplies,2,0,0,1,0,0,0,0,3,cat_behavior; safety,LOW
+4286,Best Cat Scratching Posts UK (2026) – Complete Guide,Cat Supplies,2,1,2,1,0,0,0,0,6,cat_behavior; enrichment; dog_behavior,MEDIUM
+4279,Best Cat Harnesses UK (2026) – Safe Walking Guide,Cat Supplies,1,0,0,1,0,1,0,0,3,cat_behavior; safety; training,LOW
+4272,Best Cat ID Tags UK (2026) – Identification Guide,Cat Supplies,0,0,0,1,0,0,0,0,1,safety,LOW
+4265,Best Cat GPS Trackers UK (2026) – Location Tracking Guide,Cat Supplies,0,0,0,1,0,0,0,1,2,safety; materials,LOW
+4258,Best Cat Collars UK (2026) – Complete Safety Guide,Cat Supplies,0,0,0,1,0,0,0,0,1,safety,LOW
+4251,Best Cat Shampoo UK (2026) – When & How to Bathe,Cat Supplies,1,0,0,2,0,0,5,0,8,grooming; safety; cat_behavior,MEDIUM
+4244,Best Cat Nail Clippers UK (2026) – Safe Trimming Guide,Cat Supplies,1,0,0,1,0,0,3,0,5,grooming; cat_behavior; safety,LOW
+4237,Best Cat Brushes UK (2026) – Guide by Coat Type,Cat Supplies,2,0,0,1,0,0,6,2,11,grooming; cat_behavior; materials,MEDIUM
+4230,Best Cat Grooming Supplies UK (2026) – Complete Guide,Cat Supplies,2,0,0,1,0,0,7,0,10,grooming; cat_behavior; safety,MEDIUM
+4223,Best Cat Window Perches UK (2026) – Sunning & Bird Watching,Cat Supplies,0,2,2,2,0,0,1,0,7,dog_behavior; enrichment; safety,MEDIUM
+4216,Best Cat Radiator Beds UK (2026) – Hook-On Warmth Guide,Cat Supplies,1,1,0,2,0,0,0,0,4,safety; cat_behavior; dog_behavior,LOW
+4209,Best Heated Cat Beds UK (2026) – Winter Warmth Guide,Cat Supplies,0,1,0,2,1,0,1,0,5,safety; dog_behavior; nutrition,LOW
+4202,Best Cat Beds UK (2026) – Complete Guide,Cat Supplies,0,1,2,2,0,0,1,1,7,enrichment; safety; dog_behavior,MEDIUM
+4195,Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide,Cat Supplies,4,0,6,1,2,0,2,0,15,enrichment; cat_behavior; nutrition,HIGH
+4188,Best Catnip Toys UK (2026) – What Works and Why,Cat Supplies,1,0,3,1,0,0,0,0,5,enrichment; cat_behavior; safety,LOW
+4181,Best Interactive Cat Toys UK (2026) – Wand & Puzzle Guide,Cat Supplies,4,0,6,1,0,0,0,0,11,enrichment; cat_behavior; safety,MEDIUM
+4174,Best Cat Toys UK (2026) – Complete Guide,Cat Supplies,5,0,6,1,1,0,0,0,13,enrichment; cat_behavior; safety,HIGH
+4167,Best Dog Water Bottles UK (2026) – Travel Hydration Guide,Dog Supplies,0,1,0,2,2,0,0,1,6,safety; nutrition; dog_behavior,MEDIUM
+4160,Best Elevated Dog Bowls UK (2026) – Raised Feeder Guide,Dog Supplies,0,1,0,1,2,0,0,0,4,nutrition; dog_behavior; safety,LOW
+4153,Best Slow Feeder Dog Bowls UK (2026) – Prevent Speed Eating,Dog Supplies,0,2,6,2,4,0,0,0,14,enrichment; nutrition; dog_behavior,HIGH
+4146,Best Dog Bowls and Feeding UK (2026) – Complete Guide,Dog Supplies,1,2,2,1,3,0,0,1,10,nutrition; dog_behavior; enrichment,MEDIUM
+4139,Best Dog Training Leads UK (2026) – Long Lines & Harnesses,Dog Supplies,0,0,0,2,0,2,0,2,6,safety; training; materials,MEDIUM
+4132,Best Puppy Training Guide UK (2026) – First Year Essentials,Dog Supplies,2,1,0,1,1,5,1,0,11,training; cat_behavior; dog_behavior,MEDIUM
+4125,Best Dog Training Treats UK (2026) – Reward Guide,Buying Guides,1,1,0,0,3,2,0,0,7,nutrition; training; cat_behavior,MEDIUM
+4118,Best Dog Training and Behaviour UK (2026) – Complete Guide,Buying Guides,1,1,4,2,0,4,0,0,12,enrichment; training; safety,HIGH
+4110,Best Dog Joint Supplements UK (2026) – Mobility Support Guide,Dog Health,1,2,0,0,1,0,1,0,5,dog_behavior; cat_behavior; nutrition,LOW
+4103,Best Dog Flea Treatment UK (2026) – Prevention Guide,Dog Health,1,1,0,1,0,0,2,0,5,grooming; cat_behavior; dog_behavior,LOW
+4096,Best Dog Dental Care UK (2026) – Teeth Cleaning Guide,Dog Health,0,1,0,3,0,0,1,0,5,safety; dog_behavior; grooming,LOW
+4089,Best Dog Health and Care UK (2026) – Complete Guide,Dog Health,1,2,1,0,2,0,1,0,7,dog_behavior; nutrition; cat_behavior,MEDIUM
+4078,Best Dog Nail Clippers UK (2026) – Trimming & Grinding Guide,Dog Care,1,1,0,1,0,0,4,0,7,grooming; cat_behavior; dog_behavior,MEDIUM
+4071,Best Dog Shampoo UK (2026) – Ingredients & Safety Guide,Dog Care,1,0,0,2,0,0,7,0,10,grooming; safety; cat_behavior,MEDIUM
+4064,Best Dog Brushes UK (2026) – Guide by Coat Type,Dog Care,2,1,0,1,0,0,6,1,11,grooming; cat_behavior; dog_behavior,MEDIUM
+4057,Best Dog Grooming Supplies UK (2026) – Complete Guide,Dog Care,1,0,0,1,0,0,7,2,11,grooming; materials; cat_behavior,MEDIUM
+4049,Best Puppy Collars UK (2026) – First Collar & Harness Guide,Dog Supplies,1,0,0,2,0,0,0,1,4,safety; cat_behavior; materials,LOW
+4042,Best Dog Leads UK (2026) – Walking & Training Lead Guide,Dog Supplies,0,0,0,2,0,3,0,2,7,training; safety; materials,MEDIUM
+4034,Best No-Pull Dog Harnesses UK (2026) – Training & Comfort Guide,Dog Harnesses,0,0,0,1,0,2,0,0,3,training; safety,LOW
+4027,Best Dog Collars and Harnesses UK (2026) – Complete Guide,Dog Harnesses,1,0,0,2,0,1,0,2,6,safety; materials; cat_behavior,MEDIUM
+4018,Best Puppy Beds UK (2026) – First Bed & Crate Training Guide,Dog Beds,0,2,0,1,0,2,0,1,6,dog_behavior; training; safety,MEDIUM
+4011,Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide,Dog Beds,0,2,0,2,0,2,1,2,9,dog_behavior; safety; training,MEDIUM
+4004,Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide,Dog Beds,0,2,0,2,0,2,1,2,9,dog_behavior; safety; training,MEDIUM
+3996,Best Dog Beds UK (2026) – Complete Guide & Honest Reviews,Dog Beds,1,3,0,1,0,2,1,3,11,dog_behavior; materials; training,MEDIUM
+3960,Best Puppy Toys UK (2026) – Teething & First Toys Guide,Dog Supplies,1,3,5,5,1,4,1,4,24,enrichment; safety; training,HIGH
+3959,Best Interactive Dog Toys UK (2026) – Puzzle & Enrichment Guide,Dog Supplies,2,5,7,3,2,0,0,0,19,enrichment; dog_behavior; safety,HIGH
+3957,Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers,Dog Supplies,1,3,5,4,0,0,1,2,16,enrichment; safety; dog_behavior,HIGH
+3956,Best Dog Toys UK (2026) – Complete Guide & Honest Reviews,Dog Supplies,1,4,6,4,0,0,0,2,17,enrichment; dog_behavior; safety,HIGH
+3839,Best Puppy Food UK (2026) &#8211; Growth-Stage Nutrition Guide,Dog Food,0,3,1,1,6,1,1,2,15,nutrition; dog_behavior; materials,HIGH
+3838,Dry vs Wet Dog Food UK &#8211; An Honest Comparison Guide,Dog Food,0,2,0,1,6,0,0,0,9,nutrition; dog_behavior; safety,MEDIUM
+3837,Best Dry Dog Food UK (2026) &#8211; Evidence-Based Guide,Dog Food,0,2,0,2,6,1,1,0,12,nutrition; dog_behavior; safety,HIGH
+3836,Best Dog Food UK (2026) &#8211; Complete Buying Guide,Dog Food,0,3,1,4,7,1,1,0,17,nutrition; safety; dog_behavior,HIGH
+696,Essential Cat Supplies for Cat Owners &#8211; Number 1 Must-Haves,Buying Guides,3,0,4,1,5,0,4,0,17,nutrition; enrichment; grooming,HIGH
+3,Dog Toys UK (2026) – Essential Guide for Pet Owners,Dog Supplies,1,3,5,2,0,0,0,2,13,enrichment; dog_behavior; safety,HIGH

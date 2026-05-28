@@ -1,0 +1,12 @@
+cluster,total_posts,posts_with_trust_links,trust_link_coverage,total_trust_links,trust_pages_referenced,trust_density,priority_action
+Cat Supplies,31,24,77%,24,Affiliate Disclosure,HIGH,MAINTAIN
+Dog Supplies,27,12,44%,12,Affiliate Disclosure,MEDIUM,EXPAND
+Dog Care,12,4,33%,4,Affiliate Disclosure,MEDIUM,EXPAND
+Dog Beds,9,4,44%,4,Affiliate Disclosure,MEDIUM,EXPAND
+Cat Toys,5,0,0%,0,NONE,LOW,BUILD
+Dog Harnesses,4,2,50%,2,Affiliate Disclosure,HIGH,MAINTAIN
+Dog Health,4,4,100%,4,Affiliate Disclosure,HIGH,MAINTAIN
+Dog Food,4,0,0%,0,NONE,LOW,BUILD
+Uncategorized,3,0,0%,0,NONE,LOW,BUILD
+Buying Guides,3,3,100%,3,Affiliate Disclosure,HIGH,MAINTAIN
+Pet Care,2,0,0%,0,NONE,LOW,BUILD
