@@ -263,3 +263,22 @@ async def get_shadow_report():
         'match_rate': round(comparison['matches'] / max(comparison['total_checks'], 1) * 100, 1),
         'recommendation': 'safe_to_proceed' if comparison['discrepancies'] == 0 else 'investigate_discrepancies',
     }
+
+
+
+
+# ── 10F Sign-off Pack ────────────────────────────────────────
+
+@router.get("/signoff/rec-vs-action")
+async def get_rec_vs_action():
+    return ops.get_recommendation_vs_action_report()
+
+
+@router.get("/signoff/fallback")
+async def get_fallback_state():
+    return ops.get_fallback_visibility()
+
+
+@router.get("/signoff/pack")
+async def get_signoff_pack():
+    return ops.get_signoff_pack()
