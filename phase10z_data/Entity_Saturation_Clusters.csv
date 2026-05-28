@@ -1,0 +1,12 @@
+cluster,post_count,avg_semantic_depth,total_faq_questions,glossary_coverage_pct,quick_answer_pct,trust_block_pct,avg_entity_density,avg_internal_links,total_words,semantic_grade
+Uncategorized,23,83.2,797,65.2,95.7,91.3,6.0,26.5,197024,A
+Dog Food,4,59.5,17,25.0,75.0,50.0,6.0,5.2,10892,B
+Dog Beds,9,47.1,28,11.1,100.0,44.4,4.4,4.4,8723,C
+Dog Supplies,27,43.5,80,0.0,88.9,22.2,4.7,4.9,26980,C
+Pet Care,2,43.0,5,0.0,100.0,50.0,5.0,3.0,1336,C
+Cat Toys,5,42.8,6,0.0,100.0,100.0,4.0,11.0,4053,C
+Dog Harnesses,4,41.2,12,25.0,100.0,0.0,3.5,1.8,4405,C
+Dog Care,12,41.1,32,8.3,100.0,0.0,4.5,3.3,9508,C
+Buying Guides,3,40.7,6,0.0,100.0,0.0,5.0,5.0,2301,C
+Dog Health,4,37.8,8,0.0,100.0,0.0,4.5,3.0,3461,C
+Cat Supplies,31,36.8,65,3.2,100.0,3.2,3.0,5.2,25123,C

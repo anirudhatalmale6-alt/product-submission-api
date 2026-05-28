@@ -1,0 +1,149 @@
+==========================================================================
+   AI ANSWER EXTRACTION SIMULATION - SUMMARY REPORT
+   pethubonline.com | 2026-05-28 18:07
+==========================================================================
+
+OVERVIEW
+--------------------------------------------------------------------------
+  Total posts analyzed:          124
+  Average word count:            2342
+  Average AI readiness score:    72.8/100
+
+DIMENSION AVERAGES (0-100)
+--------------------------------------------------------------------------
+  Answer Extraction Success:     87.4
+  Summary Extraction Quality:    81.8
+  FAQ Extraction Quality:        75.5
+  Conversational Usefulness:     71.2
+  Citation Likelihood:           59.5
+  Comparison Usefulness:         37.3
+
+CONTENT STRUCTURE FEATURES
+--------------------------------------------------------------------------
+  Posts with Quick Answer block:  122/124 (98.4%)
+  Posts with FAQ section:         122/124 (98.4%)
+  Posts with Glossary/Key Terms:  23/124 (18.5%)
+  Posts with Trust/Editorial:     91/124 (73.4%)
+  Posts with Comparison content:  34/124 (27.4%)
+
+GRADE DISTRIBUTION
+--------------------------------------------------------------------------
+  A+ :  14 ( 11.3%)  ##############
+  A  :  25 ( 20.2%)  #########################
+  B+ :  67 ( 54.0%)  ###################################################################
+  B  :  16 ( 12.9%)  ################
+  C+ :   2 (  1.6%)  ##
+  C  :   0 (  0.0%)  
+  D  :   0 (  0.0%)  
+  F  :   0 (  0.0%)  
+
+CLUSTER PERFORMANCE
+--------------------------------------------------------------------------
+  Cluster                        Posts  Avg Score  Avg Words
+  ────────────────────────────── ───── ────────── ──────────
+  Dog Food & Nutrition               6       81.8       2186
+  General Pet Care                   5       76.4       1322
+  Pet Gear                          11       74.0       1193
+  Beginner Guides                    7       73.1       1343
+  Horses                             1       73.0        934
+  Dog Health                        12       72.5       1150
+  Product Reviews                   24       72.5        849
+  Toys & Enrichment                 31       72.0       5967
+  Grooming                          17       71.8       1156
+  Cat Health                         5       70.8        805
+  Dog Breeds                         2       70.5       1090
+  Birds                              3       68.0        723
+
+TOP 10 HIGHEST-SCORING POSTS
+--------------------------------------------------------------------------
+   1. [A+ ]  89/100  ID   5523  Dog Training Equipment Explained: Tools, Uses, and What
+   2. [A+ ]  89/100  ID   3837  Best Dry Dog Food UK (2026) – Evidence-Based Guide
+   3. [A+ ]  88/100  ID   5522  Orthopaedic Care for Dogs: Joint Health, Mobility, and 
+   4. [A+ ]  88/100  ID   5521  Pet Health Terminology: A Guide to Common Veterinary Te
+   5. [A+ ]  88/100  ID   5519  Indoor Cat Care: A Complete Guide to Keeping House Cats
+   6. [A+ ]  88/100  ID   5509  Pet Toy Safety: Understanding Materials, Hazards, and S
+   7. [A+ ]  88/100  ID   5508  Puppy Development Stages: A Complete Guide from Birth t
+   8. [A+ ]  88/100  ID   3836  Best Dog Food UK (2026) – Complete Buying Guide
+   9. [A+ ]  87/100  ID   5467  Pet Feeding Guide: Understanding Portions, Schedules, a
+  10. [A+ ]  87/100  ID   5464  Pet Grooming Glossary: Understanding Grooming Terms and
+
+BOTTOM 10 LOWEST-SCORING POSTS
+--------------------------------------------------------------------------
+   1. [B  ]  63/100  ID   4413  How to Measure Your Dog for a Harness: Step-by-Step Gui
+   2. [B  ]  62/100  ID   5032  Cat Toys FAQ: Common Questions Answered
+   3. [B  ]  62/100  ID   4414  Harness vs Collar: Which Is Better for Your Dog?
+   4. [B  ]  62/100  ID   4412  No-Pull Dog Harness Guide: How They Work and When to Us
+   5. [B  ]  61/100  ID   4571  Pet First Aid Basics: What Every Owner Should Know
+   6. [B  ]  61/100  ID    696  Essential Cat Supplies for Cat Owners – Number 1 Must-H
+   7. [B  ]  61/100  ID      3  Dog Toys UK (2026) – Essential Guide for Pet Owners
+   8. [B  ]  60/100  ID   4407  DIY Cat Toys: Safe Homemade Options Your Cat Will Love
+   9. [C+ ]  49/100  ID   5033  How to Choose the Right Cat Toy for Your Cat’s Personal
+  10. [C+ ]  46/100  ID   5036  Understanding Cat Play Behaviour: What Different Play S
+
+OPTIMIZATION OPPORTUNITIES
+--------------------------------------------------------------------------
+
+  1. ADD QUICK ANSWER BLOCKS (2 posts missing)
+     Adding a 'Quick Answer' or 'Key Takeaway' box at the top of each
+     post dramatically improves AI answer extraction. These 2 posts
+     currently lack one:
+       - ID   5483: Dog Toy Lifespan: When to Replace Toys and How to Exten (131369w)
+       - ID   5476: Mental Stimulation Toys for Dogs: Puzzles, Games, and B (16484w)
+
+  2. ADD FAQ SECTIONS (2 posts missing)
+     FAQ sections with structured Q&A enable direct extraction by AI
+     assistants. Priority posts to add FAQ:
+       - ID   5036: Understanding Cat Play Behaviour: What Different Play S (481w)
+       - ID   5033: How to Choose the Right Cat Toy for Your Cat’s Personal (478w)
+
+  3. ADD TRUST/EDITORIAL BLOCKS (33 posts missing)
+     Trust signals (vet-reviewed, editorial standards, author credentials)
+     increase citation likelihood by AI systems. Posts missing:
+       - ID   5520: Dog Health Basics: Common Conditions, Prevention, and W (2711w)
+       - ID   3839: Best Puppy Food UK (2026) – Growth-Stage Nutrition Guid (1919w)
+       - ID   5419: Cat Care Basics: A Glossary for New Cat Owners (1778w)
+       - ID   5418: Dog Harness Types Explained: Finding the Right Fit (1629w)
+       - ID   5425: Dog Toys FAQ: Common Questions Answered (1613w)
+       - ID   3838: Dry vs Wet Dog Food UK – An Honest Comparison Guide (1610w)
+       - ID   5417: Puppy Care Essentials: Key Terms Every New Owner Should (1581w)
+       - ID   5416: Dog Bed Types Explained: A Complete Glossary (1483w)
+       - ID   5424: Aggressive Chewer Guide: Safe Toys for Power Chewers (1376w)
+       - ID   5423: Dog Toy Enrichment: Beyond Basic Fetch (1360w)
+       ... and 23 more
+
+  4. EXPAND THIN CONTENT (4 posts under 500 words)
+     Posts with <500 words rarely get cited by AI. Consider expanding:
+       - ID   4414: Harness vs Collar: Which Is Better for Your Dog? (470w)
+       - ID      3: Dog Toys UK (2026) – Essential Guide for Pet Owner (326w)
+       - ID   5033: How to Choose the Right Cat Toy for Your Cat’s Per (478w)
+       - ID   5036: Understanding Cat Play Behaviour: What Different P (481w)
+
+SCORING METHODOLOGY
+--------------------------------------------------------------------------
+  Each post is scored on 6 dimensions (0-100):
+
+  - Answer Extraction (25%): Can AI pull a direct answer? Boosted by
+    quick-answer blocks, word count, headings, lists, FAQ sections.
+
+  - Summary Extraction (20%): Can AI generate a useful summary? Boosted
+    by word count, heading structure, lists, images.
+
+  - FAQ Extraction (15%): Can Q&A pairs be extracted? Boosted by FAQ
+    sections, question-style headings, question-style titles.
+
+  - Conversational Use (15%): Would AI assistants find this useful in
+    chat? Boosted by quick answers, FAQs, comparisons, trust signals.
+
+  - Citation Likelihood (15%): Will AI cite this page? Boosted by trust
+    blocks, external references, structure, word count.
+
+  - Comparison Use (10%): Can this be used for comparisons? Boosted by
+    tables, vs-content, review-style titles, structured lists.
+
+  Overall AI Readiness = weighted average of all 6 dimensions.
+  Grades: A+ (85+), A (75-84), B+ (65-74), B (55-64),
+          C+ (45-54), C (35-44), D (25-34), F (<25)
+
+==========================================================================
+  Generated by AI Answer Extraction Simulation | 2026-05-28 18:07
+==========================================================================

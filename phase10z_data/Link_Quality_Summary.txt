@@ -1,0 +1,111 @@
+================================================================================
+LINK QUALITY SCORING ENGINE - SUMMARY REPORT
+pethubonline.com | Generated: 2026-05-28 18:07:15
+================================================================================
+
+OVERVIEW
+----------------------------------------
+  Total Published Posts Analyzed:  124
+  Total Internal Links Found:      1403
+  Avg Internal Links Per Post:     11.3
+  Avg Inbound Links Per Post:      5.2
+  Avg Outbound Links Per Post:     11.3
+  Avg Anchor Text Quality:         83.2/100
+  Orphan Pages (0 inbound):        22
+  Dead-End Pages (0 outbound):     1
+
+LINK QUALITY GRADE DISTRIBUTION
+----------------------------------------
+  Grade A:   0 posts  
+  Grade B:   2 posts  ##
+  Grade C:   6 posts  ######
+  Grade D:  92 posts  ############################################################################################
+  Grade F:  24 posts  ########################
+
+CONTENT CLUSTER DISTRIBUTION
+----------------------------------------
+  Dog Care                 :  49 posts
+  Pet Products             :  31 posts
+  Cat Care                 :  27 posts
+  Pet Grooming             :   6 posts
+  Pet Health               :   4 posts
+  General                  :   4 posts
+  Pet Nutrition            :   3 posts
+
+TOP 10 AUTHORITY PAGES (highest authority flow)
+----------------------------------------
+   1. [100.0] Aggressive Chewer Guide: Safe Toys for Power Chewers
+      Inbound: 74 | Outbound: 7 | Grade: B
+   2. [100.0] Dog Toy Cleaning Guide: How to Keep Toys Hygienic
+      Inbound: 73 | Outbound: 5 | Grade: B
+   3. [ 58.0] Pet Hydration Guide: How Much Water Does Your Pet Need?
+      Inbound: 24 | Outbound: 1 | Grade: C
+   4. [ 56.9] Seasonal Pet Safety: Protecting Pets Through the Year
+      Inbound: 24 | Outbound: 5 | Grade: C
+   5. [ 56.8] Pet First Aid Basics: What Every Owner Should Know
+      Inbound: 24 | Outbound: 1 | Grade: C
+   6. [ 48.5] Dog Toy Safety: What Every Owner Needs to Know
+      Inbound: 20 | Outbound: 12 | Grade: C
+   7. [ 44.9] Best Dog Toys UK (2026) – Complete Guide  Honest Reviews
+      Inbound: 19 | Outbound: 14 | Grade: C
+   8. [ 38.4] Best Cat Toys UK (2026) – Complete Guide
+      Inbound: 16 | Outbound: 12 | Grade: D
+   9. [ 32.7] Best Types of Dog Toys for Different Play Styles
+      Inbound: 14 | Outbound: 12 | Grade: D
+  10. [ 29.0] Best Dog Beds UK (2026) – Complete Guide  Honest Reviews
+      Inbound: 13 | Outbound: 14 | Grade: D
+
+BOTTOM 10 PAGES (lowest overall score)
+----------------------------------------
+   1. [ 10.5] Puppy Care Essentials: Key Terms Every New Owner Should Know
+      Inbound: 0 | Outbound: 0 | Grade: F
+   2. [ 25.3] Essential Cat Supplies for Cat Owners  Number 1 Must-Haves
+      Inbound: 0 | Outbound: 9 | Grade: F
+   3. [ 26.3] Pet Grooming Glossary: Understanding Grooming Terms and Tech
+      Inbound: 0 | Outbound: 4 | Grade: F
+   4. [ 27.9] Pet Health Terminology: A Guide to Common Veterinary Terms
+      Inbound: 0 | Outbound: 6 | Grade: F
+   5. [ 27.9] Senior Dog Toys: Gentle Play Options for Older Dogs
+      Inbound: 0 | Outbound: 6 | Grade: F
+   6. [ 28.0] Orthopaedic Care for Dogs: Joint Health, Mobility, and Suppo
+      Inbound: 0 | Outbound: 7 | Grade: F
+   7. [ 28.4] Dog Training Equipment Explained: Tools, Uses, and What to A
+      Inbound: 0 | Outbound: 7 | Grade: F
+   8. [ 28.4] Dog Behaviour Explained: Understanding Your Dogs Body Langua
+      Inbound: 0 | Outbound: 7 | Grade: F
+   9. [ 28.4] Pet Toy Safety: Understanding Materials, Hazards, and Standa
+      Inbound: 0 | Outbound: 7 | Grade: F
+  10. [ 28.4] Dog Bed Types Explained: A Complete Glossary
+      Inbound: 0 | Outbound: 2 | Grade: F
+
+IMPROVEMENT OPPORTUNITIES SUMMARY
+----------------------------------------
+  Total Opportunities Found:  46
+
+  By Severity:
+    HIGH    :  22
+    MEDIUM  :  16
+    LOW     :   8
+
+  By Type:
+    ORPHAN_PAGE         :  22
+    UNDERLINKED         :  15
+    OVERLINKED          :   8
+    DEAD_END            :   1
+
+KEY RECOMMENDATIONS
+----------------------------------------
+  1. Fix orphan pages: Add 2-3 contextual internal links from related posts
+  2. Fix dead-end pages: Add outbound links to keep crawlers and users moving
+  3. Improve weak anchors: Replace generic text with descriptive, keyword-rich anchors
+  4. Balance link equity: Reduce excessive inbound links to overlinked pages
+  5. Strengthen clusters: Ensure posts within the same topic cluster interlink well
+
+FILES GENERATED
+----------------------------------------
+  Link_Quality_Scores.csv    - Per-page quality scores and grades
+  Internal_Link_Graph.csv    - Complete internal link graph with scores
+  Link_Opportunities.csv     - Actionable improvement opportunities
+  Link_Quality_Summary.txt   - This summary report
+
+================================================================================

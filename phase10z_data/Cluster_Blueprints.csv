@@ -1,0 +1,21 @@
+cluster,required_page_types,expected_total_posts,current_published,faq_saturation_target,answer_density_target,internal_link_density_target,glossary_requirement,trust_maturity_target,trust_coverage_current,publication_confidence_threshold,ai_readiness_threshold,current_completion_pct,maturity_grade
+Cat Supplies,hub|faq|glossary|how_to|guide|comparison,50,32,50,3,5,YES,85,77.0,75,85,81.3,A
+Dog Supplies,hub|faq|glossary|how_to|guide|comparison,75,61,50,3,5,YES,85,44.0,75,85,79.9,A
+Buying Guides,hub|faq|how_to|guide|comparison,12,3,20,2,3,NO,85,100.0,70,85,74.2,A
+Dog Health,hub|faq|glossary|guide,12,5,20,2,3,YES,85,100.0,70,85,73.9,B
+Uncategorized,none,5,6,10,2,3,NO,85,0.0,70,85,70.9,B
+Dog Care,hub|faq|glossary|how_to|guide,20,12,30,3,4,YES,85,33.0,75,85,70.6,A
+Dog Beds,hub|faq|glossary|how_to|guide|comparison,15,9,20,2,4,YES,85,44.0,70,85,68.3,A
+Dog Harnesses,hub|faq|glossary|how_to|guide|comparison,12,7,20,2,3,YES,85,50.0,70,85,64.1,B
+Cat Toys,hub|faq|glossary|how_to|guide|comparison,25,15,30,3,4,YES,85,0.0,75,85,59.9,A
+Product Reviews,hub|faq|guide|comparison,60,43,50,3,5,NO,85,0.0,75,85,59.3,A
+Pet Care,hub|faq|glossary|how_to|guide,40,29,50,3,5,YES,85,0.0,75,85,59.1,A
+Dog Toys,hub|faq|glossary|how_to|guide|comparison,25,14,30,3,4,YES,85,0.0,75,85,53.8,A
+Puppy Care,hub|faq|glossary|how_to|guide,15,8,20,2,4,YES,85,0.0,70,85,52.9,A
+Dog Food,hub|faq|glossary|guide|comparison,15,4,20,2,4,YES,85,0.0,70,85,49.8,A
+Training Supplies,hub|faq|glossary|how_to|guide,15,6,20,2,4,YES,85,0.0,70,85,49.1,A
+Pet Beds,hub|faq|how_to|guide|comparison,10,4,20,2,3,NO,85,0.0,70,85,48.9,B
+Interactive Toys,faq|how_to|guide|comparison,8,2,10,2,3,NO,85,0.0,70,85,45.2,A
+Orthopaedic Care,faq|glossary|guide|comparison,8,2,10,2,3,YES,85,0.0,70,85,44.6,A
+Pet Health,hub|faq|glossary|guide,12,3,20,2,3,YES,85,0.0,70,85,44.5,A
+Indoor Cats,faq|how_to|guide,6,1,10,2,3,NO,85,0.0,70,85,42.6,A

@@ -1,0 +1,102 @@
+========================================================================
+FAQ QUALITY SCORING SUMMARY - pethubonline.com
+Generated: 2026-05-28 18:08:41
+========================================================================
+
+OVERVIEW
+----------------------------------------
+Total published posts analyzed:    124
+Posts with FAQ sections:            122
+Posts without FAQs:                 2
+Total FAQ questions found:          1064
+Average FAQs per post (w/ FAQs):   8.7
+Overall average quality score:      7.21/10
+
+GRADE DISTRIBUTION
+----------------------------------------
+  Grade A:   3 posts (  2.5%) #
+  Grade A-:  31 posts ( 25.4%) ############
+  Grade B+:  55 posts ( 45.1%) ######################
+  Grade B:  25 posts ( 20.5%) ##########
+  Grade B-:   8 posts (  6.6%) ###
+  Grade C:   0 posts (  0.0%) 
+  Grade D:   0 posts (  0.0%) 
+
+SCORING METHODOLOGY
+----------------------------------------
+Each FAQ is scored on 7 dimensions (1-10 scale):
+  1. Conversational Quality (12%):  Natural question phrasing
+  2. Extraction Quality (18%):      AI can extract clean answers
+  3. Answer Usefulness (18%):       Helpful and actionable content
+  4. Directness (12%):              Gets to the point quickly
+  5. Query Coverage (15%):          Covers likely search queries
+  6. Beginner Usefulness (10%):     Accessible to new pet owners
+  7. AI Answer Suitability (15%):   Works as chatbot response
+
+Grading: A >= 7.8 | A- >= 7.4 | B+ >= 7.1 | B >= 6.8 | B- >= 6.5 | C >= 5.5 | D < 5.5
+
+DIMENSION AVERAGES (scored posts only)
+----------------------------------------
+  Conversational Quality   :  7.0/10 #######
+  Extraction Quality       :  8.3/10 ########
+  Answer Usefulness        :  5.9/10 #####
+  Directness               :  7.9/10 #######
+  Query Coverage           :  7.4/10 #######
+  Beginner Usefulness      :  6.1/10 ######
+  AI Answer Suitability    :  7.5/10 #######
+
+  Strongest dimension: Extraction Quality
+  Weakest dimension:   Answer Usefulness
+
+CLUSTER ANALYSIS
+----------------------------------------
+Cluster              Posts  FAQs  Avg Score
+------------------------------------------
+  dog-food               4    17       7.5
+  dog-health             3    13       7.4
+  pet-products           3    15       7.4
+  cat-health             2     6       7.3
+  dog-care               2     7       7.3
+  pet-insurance          1     3       7.3
+  dog-grooming           3     7       7.3
+  dog-training           8    30       7.2
+  general-pets          80   918       7.2
+  cat-care               7    24       7.1
+  cat-grooming           3     6       7.1
+  cat-behavior           4    14       7.0
+  birds                  2     4       6.8
+
+TOP 5 POSTS (highest FAQ quality)
+----------------------------------------
+  1. [A] 7.8/10 - Dog Health Basics: Common Conditions, Prevention, and When to See
+     FAQs: 8 | Cluster: dog-health
+  2. [A] 7.8/10 - Puppy Development Stages: A Complete Guide from Birth to Maturity
+     FAQs: 8 | Cluster: general-pets
+  3. [A] 7.8/10 - Best Puppy Food UK (2026) – Growth-Stage Nutrition Guide
+     FAQs: 6 | Cluster: dog-food
+  4. [A-] 7.7/10 - Dog Training Equipment Explained: Tools, Uses, and What to Avoid
+     FAQs: 8 | Cluster: dog-training
+  5. [A-] 7.7/10 - Pet Feeding Guide: Understanding Portions, Schedules, and Methods
+     FAQs: 8 | Cluster: general-pets
+
+BOTTOM 5 POSTS (lowest FAQ quality, excluding 0-FAQ posts)
+----------------------------------------
+  1. [B-] 6.6/10 - Best Cat Trees UK (2026) – Climbing & Scratching Towers
+     FAQs: 2 | Cluster: birds
+  2. [B-] 6.7/10 - Harness vs Collar: Which Is Better for Your Dog?
+     FAQs: 2 | Cluster: general-pets
+  3. [B-] 6.7/10 - Best Cat Scratching Posts UK (2026) – Complete Guide
+     FAQs: 2 | Cluster: cat-behavior
+  4. [B-] 6.7/10 - Best Cat Radiator Beds UK (2026) – Hook-On Warmth Guide
+     FAQs: 2 | Cluster: general-pets
+  5. [B-] 6.7/10 - Best Elevated Dog Bowls UK (2026) – Raised Feeder Guide
+     FAQs: 2 | Cluster: general-pets
+
+RECOMMENDATIONS
+----------------------------------------
+  1. ADD FAQs: 2 posts have no FAQ sections. Adding
+     H3 question headings would improve SEO and AI discoverability.
+
+========================================================================
+END OF REPORT
+========================================================================

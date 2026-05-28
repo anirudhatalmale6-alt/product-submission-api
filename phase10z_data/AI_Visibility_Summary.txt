@@ -1,0 +1,76 @@
+========================================================================
+AI VISIBILITY ACCELERATION ENGINE - PHASE 10Z
+Generated: 2026-05-28 18:10
+========================================================================
+
+OVERVIEW
+----------------------------------------
+  Total posts analyzed:          124
+  Average AI Visibility Score:   46.1/100
+  Citation-Ready posts:          0/124 (0.0%)
+  Answer-Ready posts:            64/124 (51.6%)
+
+GRADE DISTRIBUTION
+----------------------------------------
+   A+:   0 (  0.0%)  
+    A:   0 (  0.0%)  
+   B+:   0 (  0.0%)  
+    B:  19 ( 15.3%)  ###################
+   C+:  43 ( 34.7%)  ###########################################
+    C:  60 ( 48.4%)  ############################################################
+    D:   2 (  1.6%)  ##
+
+CLUSTER AI VISIBILITY
+------------------------------------------------------------------------
+  Cluster                        Posts Avg Score Citation Answer
+  ----------------------------   ---       ---    Ready  Ready
+  Dog Breeds                         2     53.2     0/2     0/2  
+  Dog Food & Nutrition               6     51.4     0/6     6/6  
+  General Pet Care                   5     48.5     0/5     2/5  
+  Beginner Guides                    7     46.5     0/7     5/7  
+  Toys & Enrichment                 31     46.5     0/31   16/31 
+  Dog Health                        12     46.0     0/12    9/12 
+  Horses                             1     45.7     0/1     0/1  
+  Pet Gear                          11     45.5     0/11    7/11 
+  Product Reviews                   24     45.4     0/24   13/24 
+  Grooming                          17     45.3     0/17    6/17 
+  Cat Health                         5     42.8     0/5     0/5  
+  Birds                              3     41.3     0/3     0/3  
+
+TOP 10 HIGHEST AI VISIBILITY POSTS
+------------------------------------------------------------------------
+   1. [  B]  58.5  ID  5508  Puppy Development Stages: A Complete Guide from Birth t
+   2. [  B]  58.5  ID  5420  Dog Toy Cleaning Guide: How to Keep Toys Hygienic
+   3. [  B]  58.4  ID  5522  Orthopaedic Care for Dogs: Joint Health, Mobility, and 
+   4. [  B]  58.4  ID  3956  Best Dog Toys UK (2026) – Complete Guide & Honest Revie
+   5. [  B]  58.3  ID  5519  Indoor Cat Care: A Complete Guide to Keeping House Cats
+   6. [  B]  58.2  ID  5521  Pet Health Terminology: A Guide to Common Veterinary Te
+   7. [  B]  58.1  ID  5509  Pet Toy Safety: Understanding Materials, Hazards, and S
+   8. [  B]  58.1  ID  5467  Pet Feeding Guide: Understanding Portions, Schedules, a
+   9. [  B]  58.0  ID  5510  Dog Bed Sizing Guide: How to Measure Your Dog and Choos
+  10. [  B]  57.8  ID  5464  Pet Grooming Glossary: Understanding Grooming Terms and
+
+BOTTOM 10 LOWEST AI VISIBILITY POSTS
+------------------------------------------------------------------------
+   1. [  C]  37.4  ID  4409  Kitten vs Adult Cat Toys: Age-Appropriate Play Guide
+   2. [  C]  37.4  ID  4413  How to Measure Your Dog for a Harness: Step-by-Step Gui
+   3. [  C]  37.1  ID  4408  How Often Should You Replace Cat Toys? A Practical Guid
+   4. [  C]  36.8  ID  4570  First-Time Dog Owner Essentials: What You Need to Know
+   5. [  C]  36.6  ID  4414  Harness vs Collar: Which Is Better for Your Dog?
+   6. [  C]  36.5  ID     3  Dog Toys UK (2026) – Essential Guide for Pet Owners
+   7. [  C]  35.5  ID  4412  No-Pull Dog Harness Guide: How They Work and When to Us
+   8. [  C]  35.3  ID  5033  How to Choose the Right Cat Toy for Your Cat’s Personal
+   9. [  D]  34.5  ID  4407  DIY Cat Toys: Safe Homemade Options Your Cat Will Love
+  10. [  D]  33.7  ID  5036  Understanding Cat Play Behaviour: What Different Play S
+
+ACCELERATION PRIORITIES
+----------------------------------------
+  1. Insert trust/editorial blocks into 33 posts missing them
+  2. Add FAQ sections to 2 posts without FAQs
+  3. Add quick-answer blocks to 2 posts missing them
+  4. Expand 4 thin-content posts to 500+ words
+  5. Add comparison tables to product review pages
+  6. Fix 22 orphan pages with 0 inbound links
+  7. Increase glossary/key-terms coverage (currently 18.5%)
+
+========================================================================

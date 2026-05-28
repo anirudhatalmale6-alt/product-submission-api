@@ -1,0 +1,37 @@
+ENTITY SATURATION ENGINE - 10Z-B
+Generated: 2026-05-28
+
+Total posts analyzed: 124
+Semantic depth grades: A=15 B=15 C=74 D=20
+
+CLUSTER RANKINGS:
+  A |  83.2 | Uncategorized             |  23 posts
+  B |  59.5 | Dog Food                  |   4 posts
+  C |  47.1 | Dog Beds                  |   9 posts
+  C |  43.5 | Dog Supplies              |  27 posts
+  C |  43.0 | Pet Care                  |   2 posts
+  C |  42.8 | Cat Toys                  |   5 posts
+  C |  41.2 | Dog Harnesses             |   4 posts
+  C |  41.1 | Dog Care                  |  12 posts
+  C |  40.7 | Buying Guides             |   3 posts
+  C |  37.8 | Dog Health                |   4 posts
+  C |  36.8 | Cat Supplies              |  31 posts
+
+SEMANTIC GAPS IDENTIFIED: 17
+  - Dog Food: needs glossary pages (25.0% coverage)
+  - Dog Beds: needs glossary pages (11.1% coverage)
+  - Dog Beds: needs trust blocks (44.4% coverage)
+  - Dog Supplies: needs glossary pages (0.0% coverage)
+  - Dog Supplies: needs trust blocks (22.2% coverage)
+  - Pet Care: needs glossary pages (0.0% coverage)
+  - Cat Toys: needs glossary pages (0.0% coverage)
+  - Dog Harnesses: needs glossary pages (25.0% coverage)
+  - Dog Harnesses: needs trust blocks (0.0% coverage)
+  - Dog Care: needs glossary pages (8.3% coverage)
+  - Dog Care: needs trust blocks (0.0% coverage)
+  - Buying Guides: needs glossary pages (0.0% coverage)
+  - Buying Guides: needs trust blocks (0.0% coverage)
+  - Dog Health: needs glossary pages (0.0% coverage)
+  - Dog Health: needs trust blocks (0.0% coverage)
+  - Cat Supplies: needs glossary pages (3.2% coverage)
+  - Cat Supplies: needs trust blocks (3.2% coverage)

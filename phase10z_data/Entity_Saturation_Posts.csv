@@ -1,0 +1,125 @@
+post_id,title,cluster,word_count,has_quick_answer,faq_count,has_glossary,glossary_terms,entity_types,entity_list,has_trust_block,internal_links,semantic_depth_score,grade
+5522,"Orthopaedic Care for Dogs: Joint Health, Mobility, and Support",Uncategorized,3559,1,8,1,40,7,age_stage|anatomy_term|breed_mention|health_term|nutrition_term|product_type|safety_term,1,7,100,A
+5519,Indoor Cat Care: A Complete Guide to Keeping House Cats Happy and Healthy,Uncategorized,2915,1,8,1,25,8,age_stage|anatomy_term|behavior_term|breed_mention|health_term|nutrition_term|product_type|safety_term,1,8,99,A
+5521,Pet Health Terminology: A Guide to Common Veterinary Terms,Uncategorized,2621,1,8,1,10,7,age_stage|anatomy_term|behavior_term|health_term|nutrition_term|product_type|safety_term,1,6,98,A
+5510,Dog Bed Sizing Guide: How to Measure Your Dog and Choose the Right Fit,Uncategorized,3370,1,8,1,11,6,age_stage|anatomy_term|breed_mention|health_term|product_type|safety_term,1,7,98,A
+5511,"Pet Enrichment Explained: Types, Benefits, and Practical Ideas",Uncategorized,2970,1,8,1,8,6,age_stage|anatomy_term|behavior_term|health_term|product_type|safety_term,1,7,97,A
+5509,"Pet Toy Safety: Understanding Materials, Hazards, and Standards",Uncategorized,2742,1,8,1,11,6,age_stage|anatomy_term|health_term|nutrition_term|product_type|safety_term,1,7,97,A
+5508,Puppy Development Stages: A Complete Guide from Birth to Maturity,Uncategorized,2780,1,8,1,10,6,age_stage|anatomy_term|behavior_term|health_term|product_type|safety_term,1,7,97,A
+5464,Pet Grooming Glossary: Understanding Grooming Terms and Techniques,Uncategorized,2720,1,8,1,26,8,age_stage|anatomy_term|behavior_term|breed_mention|health_term|nutrition_term|product_type|safety_term,1,4,97,A
+5467,"Pet Feeding Guide: Understanding Portions, Schedules, and Methods",Uncategorized,2654,1,8,1,26,7,age_stage|anatomy_term|behavior_term|breed_mention|health_term|nutrition_term|product_type,1,4,96,A
+5512,Dog Behaviour Explained: Understanding Your Dog's Body Language and Actions,Uncategorized,2248,1,8,1,31,6,age_stage|behavior_term|breed_mention|health_term|product_type|safety_term,1,7,95,A
+5458,Cat Scratching Behaviour Explained: Why Cats Scratch and How to Help,Uncategorized,2030,1,8,1,16,6,age_stage|anatomy_term|behavior_term|health_term|nutrition_term|product_type,1,7,94,A
+5523,"Dog Training Equipment Explained: Tools, Uses, and What to Avoid",Uncategorized,2556,1,8,1,14,5,age_stage|anatomy_term|behavior_term|product_type|safety_term,1,7,93,A
+5462,Dog Training Terminology Explained: Key Concepts for New Owners,Uncategorized,2334,1,8,1,21,5,age_stage|behavior_term|health_term|product_type|safety_term,1,6,92,A
+5460,Pet Nutrition Terminology: A Guide to Common Terms on Pet Food Labels,Uncategorized,2149,1,8,1,23,5,age_stage|anatomy_term|health_term|nutrition_term|product_type,1,5,92,A
+5520,"Dog Health Basics: Common Conditions, Prevention, and When to See a Vet",Uncategorized,2747,1,8,1,17,6,age_stage|anatomy_term|behavior_term|breed_mention|health_term|product_type,1,0,87,A
+5483,Dog Toy Lifespan: When to Replace Toys and How to Extend Their Life,Uncategorized,131286,1,580,0,0,6,anatomy_term|behavior_term|health_term|nutrition_term|product_type|safety_term,1,438,73,B
+5476,"Mental Stimulation Toys for Dogs: Puzzles, Games, and Brain Work",Uncategorized,16767,1,64,0,0,6,age_stage|anatomy_term|behavior_term|health_term|nutrition_term|product_type,1,48,73,B
+5473,Senior Dog Toys: Gentle Play Options for Older Dogs,Uncategorized,2001,1,7,0,0,7,age_stage|anatomy_term|behavior_term|health_term|nutrition_term|product_type|safety_term,1,6,71,B
+5419,Cat Care Basics: A Glossary for New Cat Owners,Cat Supplies,1805,1,4,1,6,8,age_stage|anatomy_term|behavior_term|breed_mention|health_term|nutrition_term|product_type|safety_term,0,0,70,B
+3837,Best Dry Dog Food UK (2026) - Evidence-Based Guide,Dog Food,2830,1,5,0,0,6,age_stage|anatomy_term|breed_mention|health_term|nutrition_term|safety_term,1,8,67,B
+5471,"Dog Boredom Prevention: Signs, Solutions, and Enrichment Ideas",Uncategorized,2026,1,8,0,0,5,age_stage|behavior_term|health_term|nutrition_term|product_type,1,6,66,B
+5469,Dog Toy Rotation: How to Keep Your Dog Interested and Engaged,Uncategorized,1808,1,8,0,0,5,age_stage|anatomy_term|behavior_term|health_term|product_type,1,7,66,B
+5417,Puppy Care Essentials: Key Terms Every New Owner Should Know,Dog Care,1595,1,4,1,4,6,age_stage|anatomy_term|behavior_term|health_term|product_type|safety_term,0,0,63,B
+5416,Dog Bed Types Explained: A Complete Glossary,Dog Beds,1508,1,4,1,5,5,age_stage|anatomy_term|breed_mention|health_term|product_type,0,0,62,B
+3839,Best Puppy Food UK (2026) - Growth-Stage Nutrition Guide,Dog Food,2030,1,6,0,0,6,age_stage|anatomy_term|breed_mention|health_term|nutrition_term|product_type,0,4,60,B
+5418,Dog Harness Types Explained: Finding the Right Fit,Dog Harnesses,1678,1,4,1,5,4,age_stage|anatomy_term|behavior_term|product_type,0,0,59,B
+3836,Best Dog Food UK (2026) - Complete Buying Guide,Dog Food,4380,0,1,1,0,7,age_stage|anatomy_term|breed_mention|health_term|nutrition_term|product_type|safety_term,1,5,58,B
+5425,Dog Toys FAQ: Common Questions Answered,Dog Supplies,1628,1,4,0,0,7,age_stage|anatomy_term|breed_mention|health_term|nutrition_term|product_type|safety_term,0,8,57,B
+5421,Puppy-Safe Dog Toys: What to Look For and What to Avoid,Dog Supplies,1329,1,4,0,0,8,age_stage|anatomy_term|behavior_term|breed_mention|health_term|nutrition_term|product_type|safety_term,0,5,56,B
+5296,Best Indoor Cat Toys UK (2026): Complete Guide for House Cats,Uncategorized,1144,1,4,0,0,5,anatomy_term|behavior_term|health_term|product_type|safety_term,1,7,55,B
+5424,Aggressive Chewer Guide: Safe Toys for Power Chewers,Dog Supplies,1395,1,4,0,0,6,anatomy_term|behavior_term|breed_mention|health_term|product_type|safety_term,0,7,54,C
+4791,How to Choose the Right Dog Training Treats,Dog Supplies,733,1,3,0,0,6,age_stage|anatomy_term|behavior_term|health_term|nutrition_term|product_type,1,7,54,C
+3956,Best Dog Toys UK (2026) – Complete Guide & Honest Reviews,Dog Supplies,1532,1,4,0,0,7,age_stage|anatomy_term|behavior_term|breed_mention|health_term|product_type|safety_term,0,3,53,C
+3838,Dry vs Wet Dog Food UK - An Honest Comparison Guide,Dog Food,1652,1,5,0,0,5,age_stage|anatomy_term|health_term|nutrition_term|product_type,0,4,53,C
+5423,Dog Toy Enrichment: Beyond Basic Fetch,Dog Supplies,1382,1,4,0,0,5,age_stage|anatomy_term|behavior_term|product_type|safety_term,0,6,51,C
+4784,"Dog Bed Materials Explained: Foam, Memory Foam, and More",Dog Beds,769,1,3,0,0,5,age_stage|anatomy_term|health_term|nutrition_term|product_type,1,7,51,C
+5035,Cat Enrichment Beyond Toys: Creating a Stimulating Home,Cat Toys,1241,1,3,0,0,4,anatomy_term|behavior_term|health_term|product_type,1,11,50,C
+3960,Best Puppy Toys UK (2026) – Teething & First Toys Guide,Dog Supplies,1483,1,4,0,0,6,age_stage|anatomy_term|behavior_term|health_term|product_type|safety_term,0,3,50,C
+3959,Best Interactive Dog Toys UK (2026) – Puzzle & Enrichment Guide,Dog Supplies,1419,1,4,0,0,6,age_stage|anatomy_term|behavior_term|health_term|product_type|safety_term,0,3,50,C
+3957,Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers,Dog Supplies,1330,1,3,0,0,8,age_stage|anatomy_term|behavior_term|breed_mention|health_term|nutrition_term|product_type|safety_term,0,3,49,C
+5420,Dog Toy Cleaning Guide: How to Keep Toys Hygienic,Dog Supplies,1275,1,4,0,0,4,anatomy_term|nutrition_term|product_type|safety_term,0,5,48,C
+4792,Puppy Socialisation: A Complete Timeline Guide,Dog Supplies,853,1,3,0,0,4,age_stage|behavior_term|health_term|product_type,1,7,48,C
+4788,Mental Stimulation for Dogs: Beyond Physical Exercise,Dog Supplies,802,1,3,0,0,4,age_stage|anatomy_term|behavior_term|product_type,1,7,48,C
+4783,How to Choose the Right Dog Bed Size,Dog Beds,664,1,3,0,0,4,age_stage|anatomy_term|breed_mention|product_type,1,7,48,C
+4573,Seasonal Pet Safety: Protecting Pets Through the Year,Pet Care,607,1,2,0,0,5,anatomy_term|behavior_term|health_term|product_type|safety_term,1,5,48,C
+5034,Cat Toy Rotation: How to Keep Toys Fresh and Engaging,Cat Toys,1043,1,3,0,0,3,age_stage|behavior_term|product_type,1,11,46,C
+4004,Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide,Dog Beds,1006,1,3,0,0,6,age_stage|anatomy_term|breed_mention|health_term|product_type|safety_term,0,3,46,C
+5422,Indoor vs Outdoor Dog Toys: Choosing the Right Type,Dog Supplies,1203,1,3,0,0,4,anatomy_term|health_term|nutrition_term|product_type,0,6,45,C
+5032,Cat Toys FAQ: Common Questions Answered,Cat Toys,789,1,0,0,0,6,age_stage|anatomy_term|behavior_term|health_term|product_type|safety_term,1,11,45,C
+4786,Where to Place Your Dog's Bed: Location and Comfort Tips,Dog Beds,830,1,3,0,0,3,age_stage|anatomy_term|product_type,1,7,45,C
+5414,Cat Toy Types Explained: A Complete Glossary,Uncategorized,776,1,3,0,0,5,age_stage|anatomy_term|behavior_term|health_term|product_type,0,4,44,C
+3996,Best Dog Beds UK (2026) – Complete Guide & Honest Reviews,Dog Beds,1247,1,3,0,0,5,age_stage|anatomy_term|behavior_term|health_term|product_type,0,3,44,C
+4566,Seasonal Dog Care: Keeping Your Dog Safe Year-Round,Dog Care,633,1,3,0,0,7,age_stage|anatomy_term|behavior_term|breed_mention|health_term|product_type|safety_term,0,1,43,C
+4071,Best Dog Shampoo UK (2026) – Ingredients & Safety Guide,Dog Care,743,1,2,0,0,5,age_stage|anatomy_term|behavior_term|health_term|product_type,0,6,43,C
+4042,Best Dog Leads UK (2026) – Walking & Training Lead Guide,Dog Supplies,926,1,3,0,0,5,age_stage|anatomy_term|behavior_term|product_type|safety_term,0,3,43,C
+4018,Best Puppy Beds UK (2026) – First Bed & Crate Training Guide,Dog Beds,965,1,3,0,0,5,age_stage|anatomy_term|breed_mention|health_term|product_type,0,3,43,C
+4011,Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide,Dog Beds,922,1,3,0,0,5,age_stage|anatomy_term|breed_mention|product_type|safety_term,0,3,43,C
+696,Essential Cat Supplies for Cat Owners - Number 1 Must-Haves,Buying Guides,614,1,2,0,0,5,age_stage|anatomy_term|behavior_term|nutrition_term|product_type,0,9,43,C
+4785,How to Wash and Maintain Your Dog's Bed,Dog Beds,812,1,3,0,0,2,anatomy_term|product_type,1,7,42,C
+4216,Best Cat Radiator Beds UK (2026) – Hook-On Warmth Guide,Cat Supplies,742,1,2,0,0,3,behavior_term|product_type|safety_term,1,7,42,C
+4132,Best Puppy Training Guide UK (2026) – First Year Essentials,Dog Supplies,796,1,2,0,0,6,age_stage|anatomy_term|behavior_term|health_term|product_type|safety_term,0,3,42,C
+3,Dog Toys UK (2026) – Essential Guide for Pet Owners,Dog Supplies,330,1,2,0,0,5,age_stage|anatomy_term|behavior_term|product_type|safety_term,0,5,42,C
+4789,Best Types of Dog Toys for Different Play Styles,Dog Supplies,823,0,3,0,0,5,age_stage|breed_mention|nutrition_term|product_type|safety_term,1,7,41,C
+4286,Best Cat Scratching Posts UK (2026) – Complete Guide,Cat Supplies,953,1,2,0,0,4,age_stage|anatomy_term|behavior_term|product_type,0,6,41,C
+4181,Best Interactive Cat Toys UK (2026) – Wand & Puzzle Guide,Cat Supplies,750,1,2,0,0,5,age_stage|anatomy_term|behavior_term|health_term|product_type,0,4,41,C
+4146,Best Dog Bowls and Feeding UK (2026) – Complete Guide,Dog Supplies,967,1,2,0,0,4,age_stage|anatomy_term|health_term|product_type,0,6,41,C
+4057,Best Dog Grooming Supplies UK (2026) – Complete Guide,Dog Care,1037,1,3,0,0,3,anatomy_term|breed_mention|health_term,0,6,41,C
+4027,Best Dog Collars and Harnesses UK (2026) – Complete Guide,Dog Harnesses,1252,1,3,0,0,4,age_stage|breed_mention|product_type|safety_term,0,3,41,C
+4415,Cat Toy Safety Guide: What Every Owner Should Know,Cat Supplies,575,1,2,0,0,5,age_stage|anatomy_term|behavior_term|product_type|safety_term,0,4,40,C
+4406,Best Interactive Cat Toys for Indoor Cats: Engagement Guide,Cat Supplies,767,1,3,0,0,3,age_stage|behavior_term|product_type,0,7,40,C
+4414,Harness vs Collar: Which Is Better for Your Dog?,Dog Care,476,1,2,0,0,5,age_stage|anatomy_term|breed_mention|health_term|product_type,0,4,40,C
+4413,How to Measure Your Dog for a Harness: Step-by-Step Guide,Dog Care,592,1,2,0,0,5,age_stage|anatomy_term|breed_mention|health_term|product_type,0,4,40,C
+4307,Best Wall-Mounted Cat Scratchers UK (2026) – Space Saving,Cat Supplies,770,1,2,0,0,4,age_stage|anatomy_term|behavior_term|product_type,0,6,40,C
+4293,Best Cat Trees UK (2026) – Climbing & Scratching Towers,Cat Supplies,807,1,2,0,0,4,age_stage|anatomy_term|behavior_term|product_type,0,6,40,C
+4251,Best Cat Shampoo UK (2026) – When & How to Bathe,Cat Supplies,805,1,2,0,0,4,age_stage|anatomy_term|product_type|safety_term,0,6,40,C
+4188,Best Catnip Toys UK (2026) – What Works and Why,Cat Supplies,809,1,2,0,0,4,age_stage|anatomy_term|behavior_term|product_type,0,9,40,C
+4118,Best Dog Training and Behaviour UK (2026) – Complete Guide,Buying Guides,903,1,2,0,0,5,age_stage|behavior_term|health_term|product_type|safety_term,0,3,40,C
+4089,Best Dog Health and Care UK (2026) – Complete Guide,Dog Health,934,1,2,0,0,5,age_stage|anatomy_term|health_term|nutrition_term|product_type,0,3,40,C
+4064,Best Dog Brushes UK (2026) – Guide by Coat Type,Dog Care,784,1,2,0,0,4,anatomy_term|behavior_term|breed_mention|health_term,0,6,40,C
+4209,Best Heated Cat Beds UK (2026) – Winter Warmth Guide,Cat Supplies,758,1,2,0,0,5,age_stage|anatomy_term|health_term|product_type|safety_term,0,3,39,C
+4125,Best Dog Training Treats UK (2026) – Reward Guide,Buying Guides,784,1,2,0,0,5,age_stage|behavior_term|health_term|nutrition_term|product_type,0,3,39,C
+4110,Best Dog Joint Supplements UK (2026) – Mobility Support Guide,Dog Health,881,1,2,0,0,5,age_stage|anatomy_term|breed_mention|health_term|nutrition_term,0,3,39,C
+4103,Best Dog Flea Treatment UK (2026) – Prevention Guide,Dog Health,813,1,2,0,0,5,anatomy_term|behavior_term|health_term|product_type|safety_term,0,3,39,C
+5033,How to Choose the Right Cat Toy for Your Cat's Personality,Cat Toys,499,1,0,0,0,4,age_stage|anatomy_term|behavior_term|product_type,1,11,38,C
+4790,DIY Dog Toys: Safe Homemade Options,Dog Supplies,746,0,3,0,0,4,behavior_term|nutrition_term|product_type|safety_term,1,7,38,C
+4787,Dog Toy Safety: What Every Owner Needs to Know,Dog Supplies,730,0,3,0,0,4,age_stage|nutrition_term|product_type|safety_term,1,7,38,C
+4570,First-Time Dog Owner Essentials: What You Need to Know,Dog Care,761,1,3,0,0,5,age_stage|behavior_term|health_term|product_type|safety_term,0,1,38,C
+4576,Multi-Pet Household Tips: Living with Dogs and Cats Together,Pet Care,729,1,3,0,0,5,age_stage|breed_mention|nutrition_term|product_type|safety_term,0,1,38,C
+4568,Dog Dental Health: A Practical Care Guide,Dog Care,623,1,3,0,0,5,age_stage|anatomy_term|health_term|product_type|safety_term,0,1,38,C
+4411,"Dog Harnesses: The Complete Guide to Types, Fitting, and Safety",Dog Care,837,1,3,0,0,3,anatomy_term|health_term|product_type,0,4,38,C
+4174,Best Cat Toys UK (2026) – Complete Guide,Cat Supplies,953,1,2,0,0,3,behavior_term|health_term|product_type,0,8,38,C
+4409,Kitten vs Adult Cat Toys: Age-Appropriate Play Guide,Cat Supplies,574,1,2,0,0,4,age_stage|anatomy_term|behavior_term|product_type,0,4,37,C
+4321,Best Cat Litter UK (2026) – Types &#038; Comparison Guide,Cat Supplies,771,1,2,0,0,3,age_stage|anatomy_term|product_type,0,6,37,C
+4300,Best Cardboard Cat Scratchers UK (2026) – Budget Friendly,Cat Supplies,742,1,2,0,0,3,anatomy_term|behavior_term|product_type,0,6,37,C
+4160,Best Elevated Dog Bowls UK (2026) – Raised Feeder Guide,Dog Supplies,858,1,2,0,0,3,age_stage|anatomy_term|health_term,0,6,37,C
+4153,Best Slow Feeder Dog Bowls UK (2026) – Prevent Speed Eating,Dog Supplies,789,1,2,0,0,3,behavior_term|product_type|safety_term,0,6,37,C
+4049,Best Puppy Collars UK (2026) – First Collar & Harness Guide,Dog Supplies,755,1,3,0,0,4,age_stage|health_term|product_type|safety_term,0,2,37,C
+4034,Best No-Pull Dog Harnesses UK (2026) – Training & Comfort Guide,Dog Harnesses,922,1,3,0,0,3,age_stage|behavior_term|product_type,0,3,37,C
+4139,Best Dog Training Leads UK (2026) – Long Lines & Harnesses,Dog Supplies,832,1,2,0,0,4,age_stage|health_term|product_type|safety_term,0,3,36,C
+5036,Understanding Cat Play Behaviour: What Different Play Styles Mean,Cat Toys,481,1,0,0,0,3,anatomy_term|behavior_term|product_type,1,11,35,C
+4563,Dog Grooming Basics: A Complete Guide for Owners,Dog Care,676,1,3,0,0,4,anatomy_term|breed_mention|health_term|product_type,0,1,35,C
+4314,Best Cat Litter Trays UK (2026) – Complete Guide,Cat Supplies,1018,1,2,0,0,2,age_stage|product_type,0,6,35,C
+4258,Best Cat Collars UK (2026) – Complete Safety Guide,Cat Supplies,946,1,2,0,0,2,age_stage|product_type,0,6,35,C
+4195,Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide,Cat Supplies,766,1,2,0,0,3,behavior_term|health_term|product_type,0,4,35,C
+5415,Dog Play Styles Explained: Understanding How Your Dog Plays,Uncategorized,821,0,3,0,0,5,anatomy_term|behavior_term|breed_mention|health_term|product_type,0,4,34,D
+4408,How Often Should You Replace Cat Toys? A Practical Guide,Cat Supplies,538,1,2,0,0,3,behavior_term|product_type|safety_term,0,4,34,D
+4279,Best Cat Harnesses UK (2026) – Safe Walking Guide,Cat Supplies,807,1,2,0,0,2,age_stage|product_type,0,6,34,D
+4244,Best Cat Nail Clippers UK (2026) – Safe Trimming Guide,Cat Supplies,782,1,2,0,0,2,anatomy_term|health_term,0,6,34,D
+4230,Best Cat Grooming Supplies UK (2026) – Complete Guide,Cat Supplies,816,1,2,0,0,2,anatomy_term|breed_mention,0,6,34,D
+4078,Best Dog Nail Clippers UK (2026) – Trimming & Grinding Guide,Dog Care,751,1,2,0,0,2,anatomy_term|health_term,0,6,34,D
+4223,Best Cat Window Perches UK (2026) – Sunning & Bird Watching,Cat Supplies,780,1,2,0,0,3,behavior_term|product_type|safety_term,0,3,33,D
+4202,Best Cat Beds UK (2026) – Complete Guide,Cat Supplies,878,1,2,0,0,3,behavior_term|product_type|safety_term,0,3,33,D
+4096,Best Dog Dental Care UK (2026) – Teeth Cleaning Guide,Dog Health,833,1,2,0,0,3,anatomy_term|health_term|safety_term,0,3,33,D
+4410,Cat Enrichment Activities Beyond Toys: Complete Guide,Cat Supplies,639,1,2,0,0,2,behavior_term|product_type,0,4,32,D
+4335,Best Cat Litter Disposal UK (2026) – Waste Management Guide,Cat Supplies,847,1,2,0,0,1,health_term,0,6,31,D
+4272,Best Cat ID Tags UK (2026) – Identification Guide,Cat Supplies,816,1,2,0,0,1,product_type,0,5,31,D
+4265,Best Cat GPS Trackers UK (2026) – Location Tracking Guide,Cat Supplies,802,1,2,0,0,1,product_type,0,6,31,D
+4237,Best Cat Brushes UK (2026) – Guide by Coat Type,Cat Supplies,756,1,2,0,0,1,anatomy_term,0,6,31,D
+4167,Best Dog Water Bottles UK (2026) – Travel Hydration Guide,Dog Supplies,824,1,2,0,0,1,safety_term,0,6,31,D
+4412,No-Pull Dog Harness Guide: How They Work and When to Use One,Dog Harnesses,553,1,2,0,0,3,age_stage|behavior_term|product_type,0,1,28,D
+4407,DIY Cat Toys: Safe Homemade Options Your Cat Will Love,Cat Supplies,568,1,2,0,0,3,behavior_term|product_type|safety_term,0,1,28,D
+4328,Best Self-Cleaning Litter Trays UK (2026) – Automatic Options,Cat Supplies,783,1,2,0,0,0,,0,6,28,D
+4571,Pet First Aid Basics: What Every Owner Should Know,Dog Supplies,614,1,2,0,0,2,anatomy_term|safety_term,0,1,26,D
+4574,Pet Hydration Guide: How Much Water Does Your Pet Need?,Dog Supplies,626,1,2,0,0,1,anatomy_term,0,1,23,D
