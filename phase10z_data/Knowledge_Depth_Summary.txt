@@ -1,0 +1,113 @@
+========================================================================
+KNOWLEDGE DEPTH SCORING ENGINE - Phase 10AA
+Generated: 2026-05-28 18:26 UTC
+Site: https://pethubonline.com
+========================================================================
+
+OVERVIEW
+----------------------------------------
+  Total posts analyzed:            124
+  Average Knowledge Depth Score:   59.8/100
+  Highest score:                   84.9 (ID 5521)
+  Lowest score:                    29.2 (ID 5033)
+  Clusters identified:             15
+
+DIMENSION AVERAGES (0-100 scale)
+----------------------------------------
+  Educational Depth                72.5
+  Entity Density                   54.7
+  Faq Richness                     72.8
+  Glossary Richness                 8.2
+  Answer Density                   46.0
+  Support Content Richness         56.1
+  Semantic Breadth                 97.3
+  Ai Answer Coverage               51.4
+  Trust Reinforcement              76.0
+
+GRADE DISTRIBUTION
+----------------------------------------
+   A+:   0 (  0.0%)  
+    A:   2 (  1.6%)  ##
+   A-:  16 ( 12.9%)  ################
+   B+:  42 ( 33.9%)  ##########################################
+    B:  36 ( 29.0%)  ####################################
+   B-:  18 ( 14.5%)  ##################
+   C+:   6 (  4.8%)  ######
+    C:   2 (  1.6%)  ##
+   C-:   2 (  1.6%)  ##
+    D:   0 (  0.0%)  
+    F:   0 (  0.0%)  
+
+CLUSTER ANALYSIS
+------------------------------------------------------------------------
+  Cluster                   Posts Avg Score   Best  Worst Top Grade
+  -----------------------   --- --------- ------ ------ ---------
+  Dog Food & Nutrition          7     71.8   81.0   63.8         A
+  Pet Education                 3     67.6   84.9   52.1         A
+  Dog Beds                     10     66.0   74.2   60.1        A-
+  Cat Care                      2     65.2   73.5   57.0        A-
+  Dog Training                  8     63.9   74.2   56.3        A-
+  Cat Supplies                 21     63.6   70.1   37.2        A-
+  General                       4     63.1   70.7   56.7        A-
+  Grooming                      7     60.8   73.1   46.7        A-
+  Product Reviews               2     60.8   63.0   58.5        B+
+  Toys & Enrichment            18     60.7   71.3   32.1        A-
+  Beginner Guides               3     58.9   69.8   51.4        B+
+  Dog Health                    7     56.9   70.5   42.0        A-
+  Dog Gear                     10     55.4   66.5   42.9        B+
+  General Pet Care              5     49.3   59.9   43.7         B
+  Cat Toys                     17     47.0   59.3   29.2         B
+
+TOP 15 HIGHEST KNOWLEDGE DEPTH POSTS
+------------------------------------------------------------------------
+   1. [  A]  84.9  ID  5521  Pet Health Terminology: A Guide to Common Veterina
+   2. [  A]  81.0  ID  3837  Best Dry Dog Food UK (2026) - Evidence-Based Guide
+   3. [ A-]  74.9  ID  3836  Best Dog Food UK (2026) - Complete Buying Guide
+   4. [ A-]  74.2  ID  5522  Orthopaedic Care for Dogs: Joint Health, Mobility,
+   5. [ A-]  74.2  ID  5512  Dog Behaviour Explained: Understanding Your Dog's 
+   6. [ A-]  73.5  ID  5519  Indoor Cat Care: A Complete Guide to Keeping House
+   7. [ A-]  73.5  ID  5467  Pet Feeding Guide: Understanding Portions, Schedul
+   8. [ A-]  73.1  ID  5464  Pet Grooming Glossary: Understanding Grooming Term
+   9. [ A-]  72.6  ID  3839  Best Puppy Food UK (2026) - Growth-Stage Nutrition
+  10. [ A-]  72.4  ID  5460  Pet Nutrition Terminology: A Guide to Common Terms
+  11. [ A-]  72.3  ID  5462  Dog Training Terminology Explained: Key Concepts f
+  12. [ A-]  71.7  ID  5510  Dog Bed Sizing Guide: How to Measure Your Dog and 
+  13. [ A-]  71.3  ID  3956  Best Dog Toys UK (2026) – Complete Guide & Honest 
+  14. [ A-]  70.7  ID  5509  Pet Toy Safety: Understanding Materials, Hazards, 
+  15. [ A-]  70.6  ID  3996  Best Dog Beds UK (2026) – Complete Guide & Honest 
+
+BOTTOM 15 LOWEST KNOWLEDGE DEPTH POSTS
+------------------------------------------------------------------------
+   1. [ B-]  47.1  ID  4415  Cat Toy Safety Guide: What Every Owner Should Know
+   2. [ B-]  46.7  ID  4563  Dog Grooming Basics: A Complete Guide for Owners
+   3. [ B-]  46.4  ID  4566  Seasonal Dog Care: Keeping Your Dog Safe Year-Roun
+   4. [ B-]  46.1  ID  4413  How to Measure Your Dog for a Harness: Step-by-Ste
+   5. [ B-]  46.0  ID  5032  Cat Toys FAQ: Common Questions Answered
+   6. [ C+]  45.5  ID  4410  Cat Enrichment Activities Beyond Toys: Complete Gu
+   7. [ C+]  45.1  ID  4408  How Often Should You Replace Cat Toys? A Practical
+   8. [ C+]  43.7  ID  4573  Seasonal Pet Safety: Protecting Pets Through the Y
+   9. [ C+]  42.9  ID  4412  No-Pull Dog Harness Guide: How They Work and When 
+  10. [ C+]  42.0  ID  4571  Pet First Aid Basics: What Every Owner Should Know
+  11. [ C+]  40.4  ID  4407  DIY Cat Toys: Safe Homemade Options Your Cat Will 
+  12. [  C]  37.2  ID   696  Essential Cat Supplies for Cat Owners - Number 1 M
+  13. [  C]  32.1  ID     3  Dog Toys UK (2026) – Essential Guide for Pet Owner
+  14. [ C-]  29.6  ID  5036  Understanding Cat Play Behaviour: What Different P
+  15. [ C-]  29.2  ID  5033  How to Choose the Right Cat Toy for Your Cat's Per
+
+WEAKEST DIMENSIONS (improvement priorities)
+----------------------------------------
+  Glossary Richness                 8.2  <-- priority
+  Answer Density                   46.0  <-- priority
+  Ai Answer Coverage               51.4  <-- priority
+  Entity Density                   54.7  <-- priority
+
+IMPROVEMENT RECOMMENDATIONS
+----------------------------------------
+  1. Add glossary/key-terms sections to 105 posts missing them
+  2. Expand FAQ sections for 2 posts with weak FAQ coverage
+  3. Add trust reinforcement blocks to 4 posts below threshold
+  4. Improve answer density (quick answers/tables) for 43 posts
+  5. Add cross-references and related reading to 14 posts
+  6. Focus on weakest clusters: Dog Gear, General Pet Care, Cat Toys
+
+========================================================================

@@ -1,0 +1,82 @@
+Outlier Post Cleanup Report
+===========================
+Date: 2026-05-28
+Site: pethubonline.com
+
+SUMMARY
+-------
+Two posts were flagged as outliers due to massively inflated content from
+template/generation errors that duplicated content blocks dozens of times.
+Both have been cleaned to contain a single copy of the educational content
+with a proper Related Reading section (5 links each) and the trust editorial block.
+
+POST 5483: Dog Toy Lifespan: When to Replace Toys and How to Extend Their Life
+URL: https://pethubonline.com/dog-toy-lifespan-replacement/
+
+  BEFORE:
+    Word count:     131,913
+    Internal links: 438
+    Content size:   1,191,910 chars
+    Duplication:    ~73 copies of content fragments
+
+  AFTER:
+    Word count:     2,389
+    Internal links: 9 (5 Related Reading + 4 trust block)
+    Content size:   21,357 chars
+
+  Root cause: Content was split into 4 unique fragments, each duplicated
+  ~73 times with trust blocks appended to each fragment. 130 wp:post-content
+  markers were present. Extracted the most complete fragment (segment 3)
+  which contained the full article structure from "Why Toy Safety Inspection
+  Matters" through FAQ, Related Reading, and trust block.
+
+  Related Reading links added:
+    - /dog-toys/ (Dog Toys Hub)
+    - /dog-toy-cleaning-guide/
+    - /aggressive-chewer-dog-toys/
+    - /pet-toy-safety-guide/
+    - /dog-toy-rotation-guide/
+
+POST 5476: Mental Stimulation Toys for Dogs: Puzzles, Games, and Brain Work
+URL: https://pethubonline.com/mental-stimulation-toys-dogs/
+
+  BEFORE:
+    Word count:     16,530
+    Internal links: 48
+    Content size:   150,952 chars
+    Duplication:    ~8 copies of content fragments
+
+  AFTER:
+    Word count:     2,284
+    Internal links: 9 (5 Related Reading + 4 trust block)
+    Content size:   20,724 chars
+
+  Root cause: Content was split into 3 unique fragments, each duplicated
+  ~8 times with trust blocks appended. 12 wp:post-content markers were
+  present. Extracted the most complete fragment (segment 2) which contained
+  the full article from "Why Mental Exercise Matters" through FAQ, Related
+  Reading, and trust block.
+
+  Related Reading links added:
+    - /dog-toys/ (Dog Toys Hub)
+    - /dog-boredom-prevention/
+    - /dog-toy-rotation-guide/
+    - /dog-toy-enrichment-beyond-fetch/
+    - /mental-stimulation-for-dogs/
+
+IMPACT ON SITE METRICS
+----------------------
+Total internal links removed: 438 + 48 - 9 - 9 = 468 excess links eliminated
+Total words removed: 131,913 + 16,530 - 2,389 - 2,284 = 143,770 words of duplicate content eliminated
+These two posts alone were inflating the site's total internal link graph
+and content metrics substantially.
+
+CLEANUP ACTIONS PERFORMED
+-------------------------
+1. Fetched raw Gutenberg content for both posts via WP REST API (context=edit)
+2. Analyzed duplication pattern (content fragments x N copies)
+3. Identified and extracted the most complete unique fragment for each post
+4. Cleaned broken Gutenberg block markers (doubled /wp:heading, /wp:post-content artifacts)
+5. Replaced sparse Related Reading sections (2 links) with proper 5-link sections
+6. Updated both posts via PUT to WP REST API
+7. Verified final content via re-fetch

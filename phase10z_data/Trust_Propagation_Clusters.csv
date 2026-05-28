@@ -1,0 +1,16 @@
+cluster,post_count,avg_trust_score,avg_trust_links,trust_block_coverage_pct,methodology_link_pct,transparency_link_pct,qa_link_pct,corrections_link_pct,avg_keyword_density,trust_propagation_strength,grade
+Pet Education,3,98.0,4.0,100.0,100.0,100.0,100.0,100.0,7.03,99.4,A
+Beginner Guides,3,98.0,4.0,100.0,100.0,100.0,100.0,100.0,7.88,99.4,A
+General,4,97.0,4.0,100.0,100.0,100.0,100.0,100.0,5.85,99.1,A
+Cat Supplies,21,98.5,5.7,100.0,95.2,95.2,95.2,95.2,12.96,98.0,A
+General Pet Care,5,96.8,3.6,100.0,80.0,80.0,80.0,80.0,8.94,94.5,A
+Cat Care,2,94.0,4.0,100.0,100.0,100.0,100.0,100.0,3.74,94.4,A
+Cat Toys,17,97.2,3.8,100.0,82.4,82.4,82.4,82.4,8.6,90.9,A
+Dog Training,8,92.5,3.2,100.0,62.5,62.5,62.5,62.5,6.24,89.3,A
+Toys & Enrichment,18,87.9,3.3,94.4,72.2,72.2,72.2,72.2,4.88,87.9,A
+Dog Beds,10,89.0,3.0,100.0,50.0,50.0,50.0,50.0,6.45,85.5,A
+Product Reviews,2,92.0,4.0,100.0,50.0,50.0,50.0,50.0,10.82,85.1,A
+Dog Health,7,90.9,2.9,100.0,42.9,42.9,42.9,42.9,10.22,84.4,A
+Grooming,7,89.1,2.9,100.0,42.9,42.9,42.9,42.9,7.08,83.9,A
+Dog Gear,10,82.0,2.6,90.0,40.0,40.0,40.0,40.0,6.6,77.8,B
+Dog Food & Nutrition,7,75.1,2.6,71.4,57.1,57.1,57.1,57.1,5.56,73.6,B

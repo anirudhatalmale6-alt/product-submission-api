@@ -1,0 +1,125 @@
+post_id,title,cluster,word_count,trust_link_count,trust_block_present,trust_keyword_count,trust_keyword_density,has_methodology_link,has_transparency_link,has_qa_link,has_corrections_link,has_disclosure_link,trust_propagation_score,grade,top_trust_keywords
+5522,"Orthopaedic Care for Dogs: Joint Health, Mobility, and Support",Dog Beds,3497,4,yes,33,9.44,yes,yes,yes,yes,no,100,A+,veterinary:26|editorial:2|methodology:1|transparency:1|quality assurance:1
+5521,Pet Health Terminology: A Guide to Common Veterinary Terms,Pet Education,2609,4,yes,29,11.12,yes,yes,yes,yes,no,100,A+,veterinary:23|editorial:2|methodology:1|transparency:1|quality assurance:1
+5520,"Dog Health Basics: Common Conditions, Prevention, and When to See a Vet",Dog Health,2764,4,yes,29,10.49,yes,yes,yes,yes,no,100,A+,veterinary:19|editorial:3|transparency:2|methodology:1|quality assurance:1
+5512,Dog Behaviour Explained: Understanding Your Dog's Body Language and Actions,Dog Training,2216,4,yes,12,5.42,yes,yes,yes,yes,no,100,A+,veterinary:3|editorial:2|reliable:2|methodology:1|transparency:1
+5422,Indoor vs Outdoor Dog Toys: Choosing the Right Type,Toys & Enrichment,1231,4,yes,7,5.69,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+5417,Puppy Care Essentials: Key Terms Every New Owner Should Know,Beginner Guides,1617,4,yes,9,5.57,yes,yes,yes,yes,no,100,A+,reliable:3|editorial:2|methodology:1|transparency:1|quality assurance:1
+5415,Dog Play Styles Explained: Understanding How Your Dog Plays,Pet Education,869,4,yes,6,6.9,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+5414,Cat Toy Types Explained: A Complete Glossary,Cat Toys,831,4,yes,6,7.22,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+5296,Best Indoor Cat Toys UK (2026): Complete Guide for House Cats,Cat Toys,1136,4,yes,6,5.28,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+5033,How to Choose the Right Cat Toy for Your Cat's Personality,Cat Toys,484,4,yes,6,12.4,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+5036,Understanding Cat Play Behaviour: What Different Play Styles Mean,Cat Toys,487,4,yes,6,12.32,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+5032,Cat Toys FAQ: Common Questions Answered,Cat Toys,792,4,yes,6,7.58,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+5035,Cat Enrichment Beyond Toys: Creating a Stimulating Home,Cat Toys,1233,4,yes,8,6.49,yes,yes,yes,yes,no,100,A+,editorial:2|reliable:2|methodology:1|transparency:1|quality assurance:1
+5034,Cat Toy Rotation: How to Keep Toys Fresh and Engaging,Cat Toys,1049,4,yes,6,5.72,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4792,Puppy Socialisation: A Complete Timeline Guide,Dog Training,845,4,yes,6,7.1,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4791,How to Choose the Right Dog Training Treats,Dog Training,712,4,yes,6,8.43,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4790,DIY Dog Toys: Safe Homemade Options,Toys & Enrichment,759,4,yes,6,7.91,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4789,Best Types of Dog Toys for Different Play Styles,Toys & Enrichment,815,4,yes,6,7.36,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4788,Mental Stimulation for Dogs: Beyond Physical Exercise,General,793,4,yes,6,7.57,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4787,Dog Toy Safety: What Every Owner Needs to Know,Toys & Enrichment,729,4,yes,9,12.35,yes,yes,yes,yes,no,100,A+,editorial:2|veterinary:2|methodology:1|transparency:1|quality assurance:1
+4786,Where to Place Your Dog's Bed: Location and Comfort Tips,General,822,4,yes,6,7.3,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4785,How to Wash and Maintain Your Dog's Bed,Grooming,797,4,yes,6,7.53,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4784,"Dog Bed Materials Explained: Foam, Memory Foam, and More",Dog Beds,756,4,yes,6,7.94,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4783,How to Choose the Right Dog Bed Size,Dog Beds,657,4,yes,6,9.13,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4573,Seasonal Pet Safety: Protecting Pets Through the Year,General Pet Care,618,4,yes,6,9.71,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4570,First-Time Dog Owner Essentials: What You Need to Know,Beginner Guides,807,4,yes,11,13.63,yes,yes,yes,yes,no,100,A+,veterinary:5|editorial:2|methodology:1|transparency:1|quality assurance:1
+4576,Multi-Pet Household Tips: Living with Dogs and Cats Together,General Pet Care,759,4,yes,6,7.91,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4574,Pet Hydration Guide: How Much Water Does Your Pet Need?,General Pet Care,660,4,yes,7,10.61,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|veterinary:1
+4571,Pet First Aid Basics: What Every Owner Should Know,Dog Health,637,4,yes,6,9.42,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4568,Dog Dental Health: A Practical Care Guide,Dog Health,664,4,yes,9,13.55,yes,yes,yes,yes,no,100,A+,veterinary:3|editorial:2|methodology:1|transparency:1|quality assurance:1
+4566,Seasonal Dog Care: Keeping Your Dog Safe Year-Round,General Pet Care,674,4,yes,6,8.9,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4563,Dog Grooming Basics: A Complete Guide for Owners,Grooming,694,4,yes,7,10.09,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|veterinary:1
+4415,Cat Toy Safety Guide: What Every Owner Should Know,Cat Toys,610,4,yes,6,9.84,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4406,Best Interactive Cat Toys for Indoor Cats: Engagement Guide,Cat Toys,799,4,yes,6,7.51,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4414,Harness vs Collar: Which Is Better for Your Dog?,Dog Gear,510,4,yes,6,11.76,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4413,How to Measure Your Dog for a Harness: Step-by-Step Guide,Dog Gear,615,4,yes,6,9.76,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4411,"Dog Harnesses: The Complete Guide to Types, Fitting, and Safety",Dog Gear,857,4,yes,6,7.0,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4410,Cat Enrichment Activities Beyond Toys: Complete Guide,Cat Toys,669,4,yes,6,8.97,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4409,Kitten vs Adult Cat Toys: Age-Appropriate Play Guide,Cat Toys,609,4,yes,6,9.85,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4408,How Often Should You Replace Cat Toys? A Practical Guide,Cat Toys,570,4,yes,6,10.53,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4407,DIY Cat Toys: Safe Homemade Options Your Cat Will Love,Cat Toys,602,4,yes,6,9.97,yes,yes,yes,yes,no,100,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4335,Best Cat Litter Disposal UK (2026) – Waste Management Guide,Cat Supplies,863,6,yes,11,12.75,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4328,Best Self-Cleaning Litter Trays UK (2026) – Automatic Options,Product Reviews,792,6,yes,12,15.15,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4321,Best Cat Litter UK (2026) – Types &#038; Comparison Guide,Cat Supplies,784,6,yes,11,14.03,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4314,Best Cat Litter Trays UK (2026) – Complete Guide,Cat Supplies,1027,6,yes,11,10.71,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4307,Best Wall-Mounted Cat Scratchers UK (2026) – Space Saving,Cat Supplies,782,6,yes,11,14.07,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4300,Best Cardboard Cat Scratchers UK (2026) – Budget Friendly,Cat Supplies,764,6,yes,11,14.4,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4293,Best Cat Trees UK (2026) – Climbing & Scratching Towers,Cat Supplies,816,6,yes,11,13.48,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4286,Best Cat Scratching Posts UK (2026) – Complete Guide,Cat Supplies,973,6,yes,11,11.31,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4279,Best Cat Harnesses UK (2026) – Safe Walking Guide,Cat Supplies,821,6,yes,12,14.62,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4272,Best Cat ID Tags UK (2026) – Identification Guide,Cat Supplies,833,6,yes,12,14.41,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4265,Best Cat GPS Trackers UK (2026) – Location Tracking Guide,Cat Supplies,817,6,yes,12,14.69,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4258,Best Cat Collars UK (2026) – Complete Safety Guide,Cat Supplies,950,6,yes,11,11.58,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4251,Best Cat Shampoo UK (2026) – When & How to Bathe,Cat Supplies,817,6,yes,12,14.69,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4244,Best Cat Nail Clippers UK (2026) – Safe Trimming Guide,Cat Supplies,799,6,yes,11,13.77,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4237,Best Cat Brushes UK (2026) – Guide by Coat Type,Cat Supplies,763,6,yes,11,14.42,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4230,Best Cat Grooming Supplies UK (2026) – Complete Guide,Cat Supplies,818,6,yes,11,13.45,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4223,Best Cat Window Perches UK (2026) – Sunning & Bird Watching,Cat Supplies,799,6,yes,13,16.27,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4216,Best Cat Radiator Beds UK (2026) – Hook-On Warmth Guide,Cat Supplies,735,6,yes,11,14.97,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4209,Best Heated Cat Beds UK (2026) – Winter Warmth Guide,Cat Supplies,768,6,yes,11,14.32,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4202,Best Cat Beds UK (2026) – Complete Guide,Cat Supplies,890,6,yes,11,12.36,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+4195,Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide,Cat Toys,788,6,yes,11,13.96,yes,yes,yes,yes,yes,100,A+,editorial:4|disclosure:2|methodology:1|transparency:1|quality assurance:1
+3837,Best Dry Dog Food UK (2026) - Evidence-Based Guide,Dog Food & Nutrition,2753,4,yes,25,9.08,yes,yes,yes,yes,no,100,A+,verified:8|editorial:4|transparency:3|veterinary:3|methodology:2
+5523,"Dog Training Equipment Explained: Tools, Uses, and What to Avoid",Dog Training,2500,4,yes,9,3.6,yes,yes,yes,yes,no,94,A+,editorial:2|veterinary:2|methodology:1|transparency:1|quality assurance:1
+5519,Indoor Cat Care: A Complete Guide to Keeping House Cats Happy and Healthy,Cat Care,2885,4,yes,12,4.16,yes,yes,yes,yes,no,94,A+,veterinary:5|editorial:2|methodology:1|transparency:1|quality assurance:1
+5511,"Pet Enrichment Explained: Types, Benefits, and Practical Ideas",Pet Education,2918,4,yes,9,3.08,yes,yes,yes,yes,no,94,A+,veterinary:3|editorial:2|methodology:1|transparency:1|quality assurance:1
+5509,"Pet Toy Safety: Understanding Materials, Hazards, and Standards",General,2694,4,yes,11,4.08,yes,yes,yes,yes,no,94,A+,veterinary:4|editorial:2|methodology:1|transparency:1|quality assurance:1
+5508,Puppy Development Stages: A Complete Guide from Birth to Maturity,Beginner Guides,2701,4,yes,12,4.44,yes,yes,yes,yes,no,94,A+,veterinary:3|reliable:3|editorial:2|methodology:1|transparency:1
+5483,Dog Toy Lifespan: When to Replace Toys and How to Extend Their Life,Toys & Enrichment,2391,4,yes,8,3.35,yes,yes,yes,yes,no,94,A+,editorial:2|veterinary:2|methodology:1|transparency:1|quality assurance:1
+5476,"Mental Stimulation Toys for Dogs: Puzzles, Games, and Brain Work",Toys & Enrichment,2286,4,yes,7,3.06,yes,yes,yes,yes,no,94,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+5473,Senior Dog Toys: Gentle Play Options for Older Dogs,Toys & Enrichment,2013,4,yes,10,4.97,yes,yes,yes,yes,no,94,A+,veterinary:4|editorial:2|methodology:1|transparency:1|quality assurance:1
+5471,"Dog Boredom Prevention: Signs, Solutions, and Enrichment Ideas",General,2016,4,yes,9,4.46,yes,yes,yes,yes,no,94,A+,reliable:3|editorial:2|methodology:1|transparency:1|quality assurance:1
+5469,Dog Toy Rotation: How to Keep Your Dog Interested and Engaged,Toys & Enrichment,1815,4,yes,6,3.31,yes,yes,yes,yes,no,94,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+5467,"Pet Feeding Guide: Understanding Portions, Schedules, and Methods",Dog Food & Nutrition,2646,4,yes,10,3.78,yes,yes,yes,yes,no,94,A+,editorial:2|veterinary:2|reliable:2|methodology:1|transparency:1
+5464,Pet Grooming Glossary: Understanding Grooming Terms and Techniques,Grooming,2688,4,yes,10,3.72,yes,yes,yes,yes,no,94,A+,editorial:2|veterinary:2|reliable:2|methodology:1|transparency:1
+5462,Dog Training Terminology Explained: Key Concepts for New Owners,Dog Training,2354,4,yes,10,4.25,yes,yes,yes,yes,no,94,A+,reliable:4|editorial:2|methodology:1|transparency:1|quality assurance:1
+5460,Pet Nutrition Terminology: A Guide to Common Terms on Pet Food Labels,Dog Food & Nutrition,2162,4,yes,10,4.63,yes,yes,yes,yes,no,94,A+,veterinary:3|editorial:2|methodology:1|transparency:1|quality assurance:1
+5458,Cat Scratching Behaviour Explained: Why Cats Scratch and How to Help,Cat Supplies,2039,4,yes,7,3.43,yes,yes,yes,yes,no,94,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|veterinary:1
+5425,Dog Toys FAQ: Common Questions Answered,Toys & Enrichment,1651,4,yes,6,3.63,yes,yes,yes,yes,no,94,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+5424,Aggressive Chewer Guide: Safe Toys for Power Chewers,Toys & Enrichment,1414,4,yes,7,4.95,yes,yes,yes,yes,no,94,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|veterinary:1
+5423,Dog Toy Enrichment: Beyond Basic Fetch,Toys & Enrichment,1408,4,yes,6,4.26,yes,yes,yes,yes,no,94,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+5421,Puppy-Safe Dog Toys: What to Look For and What to Avoid,Toys & Enrichment,1387,4,yes,6,4.33,yes,yes,yes,yes,no,94,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+5420,Dog Toy Cleaning Guide: How to Keep Toys Hygienic,Toys & Enrichment,1304,4,yes,6,4.6,yes,yes,yes,yes,no,94,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+5419,Cat Care Basics: A Glossary for New Cat Owners,Cat Care,1815,4,yes,6,3.31,yes,yes,yes,yes,no,94,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+5418,Dog Harness Types Explained: Finding the Right Fit,Dog Gear,1666,4,yes,6,3.6,yes,yes,yes,yes,no,94,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+5416,Dog Bed Types Explained: A Complete Glossary,Dog Beds,1520,4,yes,6,3.95,yes,yes,yes,yes,no,94,A+,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+3836,Best Dog Food UK (2026) - Complete Buying Guide,Dog Food & Nutrition,4074,4,yes,19,4.66,yes,yes,yes,yes,no,94,A+,editorial:4|veterinary:4|transparency:3|verified:2|methodology:1
+4188,Best Catnip Toys UK (2026) – What Works and Why,Cat Toys,787,2,yes,5,6.35,no,no,no,no,yes,84,A,editorial:2|disclosure:2|accuracy:1
+4181,Best Interactive Cat Toys UK (2026) – Wand & Puzzle Guide,Cat Toys,728,2,yes,5,6.87,no,no,no,no,yes,84,A,editorial:2|disclosure:2|accuracy:1
+4174,Best Cat Toys UK (2026) – Complete Guide,Cat Toys,925,2,yes,5,5.41,no,no,no,no,yes,84,A,editorial:2|disclosure:2|accuracy:1
+4167,Best Dog Water Bottles UK (2026) – Travel Hydration Guide,General Pet Care,794,2,yes,6,7.56,no,no,no,no,yes,84,A,editorial:2|disclosure:2|evidence-based:1|accuracy:1
+4160,Best Elevated Dog Bowls UK (2026) – Raised Feeder Guide,Dog Beds,834,2,yes,5,6.0,no,no,no,no,yes,84,A,editorial:2|disclosure:2|accuracy:1
+4153,Best Slow Feeder Dog Bowls UK (2026) – Prevent Speed Eating,Product Reviews,772,2,yes,5,6.48,no,no,no,no,yes,84,A,editorial:2|disclosure:2|accuracy:1
+4146,Best Dog Bowls and Feeding UK (2026) – Complete Guide,Dog Food & Nutrition,936,2,yes,5,5.34,no,no,no,no,yes,84,A,editorial:2|disclosure:2|accuracy:1
+4139,Best Dog Training Leads UK (2026) – Long Lines & Harnesses,Dog Gear,802,2,yes,5,6.23,no,no,no,no,yes,84,A,editorial:2|disclosure:2|accuracy:1
+4132,Best Puppy Training Guide UK (2026) – First Year Essentials,Dog Training,775,2,yes,6,7.74,no,no,no,no,yes,84,A,editorial:2|disclosure:2|accuracy:1|reliable:1
+4125,Best Dog Training Treats UK (2026) – Reward Guide,Dog Training,763,2,yes,5,6.55,no,no,no,no,yes,84,A,editorial:2|disclosure:2|accuracy:1
+4118,Best Dog Training and Behaviour UK (2026) – Complete Guide,Dog Training,875,2,yes,6,6.86,no,no,no,no,yes,84,A,editorial:2|disclosure:2|accuracy:1|reliable:1
+4110,Best Dog Joint Supplements UK (2026) – Mobility Support Guide,Dog Health,854,2,yes,7,8.2,no,no,no,no,yes,84,A,editorial:2|veterinary:2|disclosure:2|accuracy:1
+4103,Best Dog Flea Treatment UK (2026) – Prevention Guide,Dog Health,789,2,yes,7,8.87,no,no,no,no,yes,84,A,editorial:2|veterinary:2|disclosure:2|accuracy:1
+4096,Best Dog Dental Care UK (2026) – Teeth Cleaning Guide,Dog Health,811,2,yes,9,11.1,no,no,no,no,yes,84,A,veterinary:4|editorial:2|disclosure:2|accuracy:1
+4089,Best Dog Health and Care UK (2026) – Complete Guide,Dog Health,909,2,yes,9,9.9,no,no,no,no,yes,84,A,veterinary:4|editorial:2|disclosure:2|accuracy:1
+4078,Best Dog Nail Clippers UK (2026) – Trimming & Grinding Guide,Grooming,736,2,yes,5,6.79,no,no,no,no,yes,84,A,editorial:2|disclosure:2|accuracy:1
+4071,Best Dog Shampoo UK (2026) – Ingredients & Safety Guide,Grooming,708,2,yes,7,9.89,no,no,no,no,yes,84,A,editorial:2|veterinary:2|disclosure:2|accuracy:1
+4064,Best Dog Brushes UK (2026) – Guide by Coat Type,Grooming,767,2,yes,5,6.52,no,no,no,no,yes,84,A,editorial:2|disclosure:2|accuracy:1
+4049,Best Puppy Collars UK (2026) – First Collar & Harness Guide,Dog Gear,736,2,yes,6,8.15,no,no,no,no,yes,84,A,editorial:2|disclosure:2|evidence-based:1|accuracy:1
+4042,Best Dog Leads UK (2026) – Walking & Training Lead Guide,Dog Gear,879,2,yes,7,7.96,no,no,no,no,yes,84,A,editorial:2|disclosure:2|reliable:2|accuracy:1
+4034,Best No-Pull Dog Harnesses UK (2026) – Training & Comfort Guide,Dog Gear,890,2,yes,5,5.62,no,no,no,no,yes,84,A,editorial:2|disclosure:2|accuracy:1
+4018,Best Puppy Beds UK (2026) – First Bed & Crate Training Guide,Dog Beds,946,2,yes,6,6.34,no,no,no,no,yes,84,A,editorial:2|disclosure:2|evidence-based:1|accuracy:1
+4011,Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide,Dog Beds,896,2,yes,5,5.58,no,no,no,no,yes,84,A,editorial:2|disclosure:2|accuracy:1
+4004,Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide,Dog Beds,959,2,yes,9,9.38,no,no,no,no,yes,84,A,veterinary:4|editorial:2|disclosure:2|accuracy:1
+5510,Dog Bed Sizing Guide: How to Measure Your Dog and Choose the Right Fit,Dog Beds,3315,4,yes,6,1.81,yes,yes,yes,yes,no,82,A,editorial:2|methodology:1|transparency:1|quality assurance:1|corrections:1
+4057,Best Dog Grooming Supplies UK (2026) – Complete Guide,Grooming,1002,2,yes,5,4.99,no,no,no,no,yes,78,A,editorial:2|disclosure:2|accuracy:1
+4027,Best Dog Collars and Harnesses UK (2026) – Complete Guide,Dog Gear,1220,2,yes,5,4.1,no,no,no,no,yes,78,A,editorial:2|disclosure:2|accuracy:1
+3996,Best Dog Beds UK (2026) – Complete Guide & Honest Reviews,Dog Beds,1216,2,yes,6,4.93,no,no,no,no,yes,78,A,editorial:2|disclosure:2|veterinary:1|accuracy:1
+3960,Best Puppy Toys UK (2026) – Teething & First Toys Guide,Toys & Enrichment,1444,2,yes,6,4.16,no,no,no,no,yes,78,A,editorial:2|disclosure:2|evidence-based:1|accuracy:1
+3959,Best Interactive Dog Toys UK (2026) – Puzzle & Enrichment Guide,Toys & Enrichment,1380,2,yes,5,3.62,no,no,no,no,yes,78,A,editorial:2|disclosure:2|accuracy:1
+3957,Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers,Toys & Enrichment,1292,2,yes,5,3.87,no,no,no,no,yes,78,A,editorial:2|disclosure:2|accuracy:1
+3956,Best Dog Toys UK (2026) – Complete Guide & Honest Reviews,Toys & Enrichment,1494,2,yes,5,3.35,no,no,no,no,yes,78,A,editorial:2|disclosure:2|accuracy:1
+696,Essential Cat Supplies for Cat Owners - Number 1 Must-Haves,Cat Supplies,599,1,yes,5,8.35,no,no,no,no,yes,74,B+,disclosure:2|editorial:1|evidence-based:1|veterinary:1
+3839,Best Puppy Food UK (2026) - Growth-Stage Nutrition Guide,Dog Food & Nutrition,1919,0,no,10,5.21,no,no,no,no,no,30,C-,veterinary:5|editorial:2|evidence-based:1|editorial team:1|verified:1
+3838,Dry vs Wet Dog Food UK - An Honest Comparison Guide,Dog Food & Nutrition,1611,0,no,10,6.21,no,no,no,no,no,30,C-,veterinary:5|editorial:2|verified:2|editorial team:1
+3,Dog Toys UK (2026) – Essential Guide for Pet Owners,Toys & Enrichment,328,0,no,1,3.05,no,no,no,no,no,24,D,reliable:1
+4412,No-Pull Dog Harness Guide: How They Work and When to Use One,Dog Gear,543,0,no,1,1.84,no,no,no,no,no,12,F,veterinary:1
