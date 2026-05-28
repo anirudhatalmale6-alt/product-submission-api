@@ -1,0 +1,64 @@
+========================================================================
+AUTHORITY FLOW BALANCER - PHASE 10AA
+Generated: 2026-05-28
+========================================================================
+
+OVERVIEW
+----------------------------------------
+  Total posts:          124
+  Total outbound links: 1351
+  Total inbound links:  622
+  Avg flow balance:     39.4%
+  Orphan pages:         0
+  Underlinked pages:    27
+  Overlinked pages:     5
+  Balanced pages:       19
+
+CLUSTER FLOW ANALYSIS
+------------------------------------------------------------------------
+  Cluster                   Posts   Out    In  Orphan  Under  Over  Bal
+  Cat Supplies                 31   395   135       0      2     1    1
+  Dog Supplies                 27   327   194       0      5     3    3
+  Uncategorized                16   134    29       0     11     0    1
+  Dog Care                     12   119    50       0      1     0    4
+  Dog Beds                      9   113    57       0      3     0    0
+  Pages                         7    44    16       0      3     0    2
+  Cat Toys                      5    55    39       0      0     0    3
+  Dog Harnesses                 4    35    11       0      2     0    0
+  Dog Health                    4    44    16       0      0     0    0
+  Dog Food                      4    35    31       0      0     0    4
+  Buying Guides                 3    38    17       0      0     0    0
+  Pet Care                      2    12    27       0      0     1    1
+
+MOST UNDERLINKED (low inbound)
+------------------------------------------------------------------------
+  In: 1 Out:12 [UNDERLINKED ] ID  5520  Dog Health Basics: Common Conditions, Prevention, 
+  In: 1 Out: 7 [UNDERLINKED ] ID  5511  Pet Enrichment Explained: Types, Benefits, and Pra
+  In: 1 Out: 7 [UNDERLINKED ] ID  5510  Dog Bed Sizing Guide: How to Measure Your Dog and 
+  In: 1 Out: 7 [UNDERLINKED ] ID  5508  Puppy Development Stages: A Complete Guide from Bi
+  In: 1 Out: 9 [UNDERLINKED ] ID  5483  Dog Toy Lifespan: When to Replace Toys and How to 
+  In: 1 Out: 6 [UNDERLINKED ] ID  5467  Pet Feeding Guide: Understanding Portions, Schedul
+  In: 1 Out: 7 [UNDERLINKED ] ID  5460  Pet Nutrition Terminology: A Guide to Common Terms
+  In: 1 Out: 8 [UNDERLINKED ] ID  5458  Cat Scratching Behaviour Explained: Why Cats Scrat
+  In: 1 Out:11 [UNDERLINKED ] ID  5421  Puppy-Safe Dog Toys: What to Look For and What to 
+  In: 1 Out:10 [UNDERLINKED ] ID  5420  Dog Toy Cleaning Guide: How to Keep Toys Hygienic
+  In: 1 Out: 7 [UNDERLINKED ] ID  5419  Cat Care Basics: A Glossary for New Cat Owners
+  In: 1 Out: 5 [UNDERLINKED ] ID  5418  Dog Harness Types Explained: Finding the Right Fit
+  In: 1 Out:12 [UNDERLINKED ] ID  5415  Dog Play Styles Explained: Understanding How Your 
+  In: 1 Out:11 [UNDERLINKED ] ID  5414  Cat Toy Types Explained: A Complete Glossary
+  In: 1 Out: 8 [UNDERLINKED ] ID  5296  Best Indoor Cat Toys UK (2026): Complete Guide for
+
+MOST OVERLINKED (high inbound)
+------------------------------------------------------------------------
+  In:24 Out: 7 [OVERLINKED  ] ID  4573  Seasonal Pet Safety: Protecting Pets Through the Y
+  In:24 Out: 6 [OVERLINKED  ] ID  4574  Pet Hydration Guide: How Much Water Does Your Pet 
+  In:24 Out: 5 [OVERLINKED  ] ID  4571  Pet First Aid Basics: What Every Owner Should Know
+  In:20 Out:13 [OVERLINKED  ] ID  4787  Dog Toy Safety: What Every Owner Needs to Know
+  In:17 Out:16 [OVERLINKED  ] ID  4174  Best Cat Toys UK (2026) – Complete Guide
+  In:14 Out:13 [BALANCED    ] ID  4789  Best Types of Dog Toys for Different Play Styles
+  In:14 Out:18 [SPOKE       ] ID  3996  Best Dog Beds UK (2026) – Complete Guide &#038; Ho
+  In:11 Out:14 [BALANCED    ] ID  4790  DIY Dog Toys: Safe Homemade Options
+  In:11 Out: 8 [BALANCED    ] ID  3839  Best Puppy Food UK (2026) &#8211; Growth-Stage Nut
+  In:10 Out:17 [SPOKE       ] ID  4188  Best Catnip Toys UK (2026) – What Works and Why
+
+========================================================================

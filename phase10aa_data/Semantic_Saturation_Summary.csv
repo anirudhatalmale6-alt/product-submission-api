@@ -1,0 +1,11 @@
+cluster,current_posts,expected_posts,post_gap,topics_covered,topics_total,saturation_pct,missing_count,priority_gaps
+Cat Supplies,31,20,0,10,15,66.7,5,0
+Cat Toys,5,20,15,13,18,72.2,5,0
+Dog Beds,9,15,6,13,13,100.0,0,0
+Dog Care,12,15,3,6,12,50.0,6,0
+Dog Food,4,15,11,3,13,23.1,10,10
+Dog Harnesses,4,12,8,4,11,36.4,7,7
+Dog Health,4,15,11,1,11,9.1,10,10
+Dog Supplies,27,20,0,8,16,50.0,8,0
+Dog Toys,0,25,25,0,23,0.0,23,23
+Puppy Care,0,12,12,0,10,0.0,10,10

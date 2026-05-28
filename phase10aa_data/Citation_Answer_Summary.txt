@@ -1,0 +1,70 @@
+========================================================================
+CITATION READINESS + PRACTICAL ANSWER ENGINE - PHASE 10AA
+Generated: 2026-05-28
+========================================================================
+
+CITATION READINESS
+----------------------------------------
+  Average score:       58.0/100
+  Citation-ready:      4/124
+
+  Dimension averages:
+    direct_answer              41.6  ####################
+    uniqueness                 42.5  #####################
+    specificity                56.1  ############################
+    educational_usefulness    100.0  #################################################
+    trust                     100.0  ##################################################
+    comparison                 40.8  ####################
+    glossary_support           16.9  ########
+    answer_confidence          66.0  #################################
+
+  Top 10 citation-ready:
+     88.1  ID  3836  Best Dog Food UK (2026) &#8211; Complete Buying Guide
+     82.5  ID  3839  Best Puppy Food UK (2026) &#8211; Growth-Stage Nutrition Gui
+     81.9  ID  3837  Best Dry Dog Food UK (2026) &#8211; Evidence-Based Guide
+     75.0  ID  5508  Puppy Development Stages: A Complete Guide from Birth to Mat
+     72.6  ID  5520  Dog Health Basics: Common Conditions, Prevention, and When t
+     71.9  ID  3838  Dry vs Wet Dog Food UK &#8211; An Honest Comparison Guide
+     70.8  ID  5519  Indoor Cat Care: A Complete Guide to Keeping House Cats Happ
+     70.5  ID  4409  Kitten vs Adult Cat Toys: Age-Appropriate Play Guide
+     69.4  ID  5464  Pet Grooming Glossary: Understanding Grooming Terms and Tech
+     68.1  ID  5510  Dog Bed Sizing Guide: How to Measure Your Dog and Choose the
+
+PRACTICAL ANSWER ENGINE
+----------------------------------------
+  Average actionability: 47.5/100
+
+  Dimension averages:
+    specific_steps             41.0  ####################
+    measurable_guidance        49.0  ########################
+    practical_examples         16.3  ########
+    beginner_clarity           74.0  ####################################
+    troubleshooting            58.5  #############################
+    temporal_guidance          48.3  ########################
+    faq_quality                45.1  ######################
+
+  Top 10 most actionable:
+     90.9  ID  5519  Indoor Cat Care: A Complete Guide to Keeping House Cats Happ
+     89.4  ID  5510  Dog Bed Sizing Guide: How to Measure Your Dog and Choose the
+     86.6  ID  5520  Dog Health Basics: Common Conditions, Prevention, and When t
+     85.1  ID  5467  Pet Feeding Guide: Understanding Portions, Schedules, and Me
+     83.0  ID  5509  Pet Toy Safety: Understanding Materials, Hazards, and Standa
+     83.0  ID  5508  Puppy Development Stages: A Complete Guide from Birth to Mat
+     82.3  ID  5464  Pet Grooming Glossary: Understanding Grooming Terms and Tech
+     79.4  ID  5523  Dog Training Equipment Explained: Tools, Uses, and What to A
+     72.3  ID  5522  Orthopaedic Care for Dogs: Joint Health, Mobility, and Suppo
+     72.3  ID  5511  Pet Enrichment Explained: Types, Benefits, and Practical Ide
+
+  Bottom 10 (need improvement):
+     11.4  ID  5033  How to Choose the Right Cat Toy for Your Cat&#8217;s Persona
+     15.1  ID     3  Dog Toys UK (2026) – Essential Guide for Pet Owners
+     16.4  ID  5036  Understanding Cat Play Behaviour: What Different Play Styles
+     17.7  ID  4573  Seasonal Pet Safety: Protecting Pets Through the Year
+     20.6  ID  4209  Best Heated Cat Beds UK (2026) – Winter Warmth Guide
+     20.6  ID   696  Essential Cat Supplies for Cat Owners &#8211; Number 1 Must-
+     20.9  ID  4566  Seasonal Dog Care: Keeping Your Dog Safe Year-Round
+     24.9  ID  4272  Best Cat ID Tags UK (2026) – Identification Guide
+     25.9  ID  5415  Dog Play Styles Explained: Understanding How Your Dog Plays
+     27.7  ID  4412  No-Pull Dog Harness Guide: How They Work and When to Use One
+
+========================================================================

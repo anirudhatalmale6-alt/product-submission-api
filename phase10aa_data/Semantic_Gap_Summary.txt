@@ -1,0 +1,52 @@
+========================================================================
+SEMANTIC GAP AUTO-DETECTION ENGINE - PHASE 10AA
+Generated: 2026-05-28
+========================================================================
+
+OVERVIEW
+----------------------------------------
+  Clusters analyzed:     10
+  Total semantic gaps:   84
+  HIGH priority:         60
+  MEDIUM priority:       24
+  LOW priority:          0
+
+CLUSTER SATURATION
+------------------------------------------------------------------------
+  Cluster              Posts Expected  Covered  Total   Sat%  Gaps
+  ------------------     ---      ---      ---    ---    ---   ---
+  Dog Toys                 0       25        0     23   0.0%    23
+  Dog Food                 4       15        3     13  23.1%    10
+  Dog Health               4       15        1     11   9.1%    10
+  Puppy Care               0       12        0     10   0.0%    10
+  Dog Supplies            27       20        8     16  50.0%     8
+  Dog Harnesses            4       12        4     11  36.4%     7
+  Dog Care                12       15        6     12  50.0%     6
+  Cat Toys                 5       20       13     18  72.2%     5
+  Cat Supplies            31       20       10     15  66.7%     5
+  Dog Beds                 9       15       13     13 100.0%     0
+
+TOP 20 HIGH-PRIORITY GAPS
+------------------------------------------------------------------------
+  [  HIGH] Dog Food             nutrition basics
+  [  HIGH] Dog Food             puppy feeding
+  [  HIGH] Dog Food             senior feeding
+  [  HIGH] Dog Food             raw diet
+  [  HIGH] Dog Food             grain free
+  [  HIGH] Dog Food             allergies
+  [  HIGH] Dog Food             portions
+  [  HIGH] Dog Food             treats
+  [  HIGH] Dog Food             supplements
+  [  HIGH] Dog Food             weight management
+  [  HIGH] Dog Harnesses        sizing
+  [  HIGH] Dog Harnesses        vest
+  [  HIGH] Dog Harnesses        puppy
+  [  HIGH] Dog Harnesses        senior
+  [  HIGH] Dog Harnesses        measuring
+  [  HIGH] Dog Harnesses        collar comparison
+  [  HIGH] Dog Harnesses        walking training
+  [  HIGH] Dog Health           vaccination
+  [  HIGH] Dog Health           dental health
+  [  HIGH] Dog Health           joint health
+
+========================================================================

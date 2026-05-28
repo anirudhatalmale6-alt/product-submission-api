@@ -1,0 +1,85 @@
+cluster,missing_topic,current_posts,expected_posts,saturation_pct,post_gap,priority,recommended_action
+Dog Food,nutrition basics,4,15,23.1,11,HIGH,Create educational post about nutrition basics in Dog Food cluster
+Dog Food,puppy feeding,4,15,23.1,11,HIGH,Create educational post about puppy feeding in Dog Food cluster
+Dog Food,senior feeding,4,15,23.1,11,HIGH,Create educational post about senior feeding in Dog Food cluster
+Dog Food,raw diet,4,15,23.1,11,HIGH,Create educational post about raw diet in Dog Food cluster
+Dog Food,grain free,4,15,23.1,11,HIGH,Create educational post about grain free in Dog Food cluster
+Dog Food,allergies,4,15,23.1,11,HIGH,Create educational post about allergies in Dog Food cluster
+Dog Food,portions,4,15,23.1,11,HIGH,Create educational post about portions in Dog Food cluster
+Dog Food,treats,4,15,23.1,11,HIGH,Create educational post about treats in Dog Food cluster
+Dog Food,supplements,4,15,23.1,11,HIGH,Create educational post about supplements in Dog Food cluster
+Dog Food,weight management,4,15,23.1,11,HIGH,Create educational post about weight management in Dog Food cluster
+Dog Harnesses,sizing,4,12,36.4,8,HIGH,Create educational post about sizing in Dog Harnesses cluster
+Dog Harnesses,vest,4,12,36.4,8,HIGH,Create educational post about vest in Dog Harnesses cluster
+Dog Harnesses,puppy,4,12,36.4,8,HIGH,Create educational post about puppy in Dog Harnesses cluster
+Dog Harnesses,senior,4,12,36.4,8,HIGH,Create educational post about senior in Dog Harnesses cluster
+Dog Harnesses,measuring,4,12,36.4,8,HIGH,Create educational post about measuring in Dog Harnesses cluster
+Dog Harnesses,collar comparison,4,12,36.4,8,HIGH,Create educational post about collar comparison in Dog Harnesses cluster
+Dog Harnesses,walking training,4,12,36.4,8,HIGH,Create educational post about walking training in Dog Harnesses cluster
+Dog Health,vaccination,4,15,9.1,11,HIGH,Create educational post about vaccination in Dog Health cluster
+Dog Health,dental health,4,15,9.1,11,HIGH,Create educational post about dental health in Dog Health cluster
+Dog Health,joint health,4,15,9.1,11,HIGH,Create educational post about joint health in Dog Health cluster
+Dog Health,weight management,4,15,9.1,11,HIGH,Create educational post about weight management in Dog Health cluster
+Dog Health,common illnesses,4,15,9.1,11,HIGH,Create educational post about common illnesses in Dog Health cluster
+Dog Health,emergency signs,4,15,9.1,11,HIGH,Create educational post about emergency signs in Dog Health cluster
+Dog Health,vet visits,4,15,9.1,11,HIGH,Create educational post about vet visits in Dog Health cluster
+Dog Health,puppy health,4,15,9.1,11,HIGH,Create educational post about puppy health in Dog Health cluster
+Dog Health,senior health,4,15,9.1,11,HIGH,Create educational post about senior health in Dog Health cluster
+Dog Health,breed-specific health,4,15,9.1,11,HIGH,Create educational post about breed-specific health in Dog Health cluster
+Dog Toys,safety,0,25,0.0,25,HIGH,Create educational post about safety in Dog Toys cluster
+Dog Toys,cleaning,0,25,0.0,25,HIGH,Create educational post about cleaning in Dog Toys cluster
+Dog Toys,enrichment,0,25,0.0,25,HIGH,Create educational post about enrichment in Dog Toys cluster
+Dog Toys,rotation,0,25,0.0,25,HIGH,Create educational post about rotation in Dog Toys cluster
+Dog Toys,puppy,0,25,0.0,25,HIGH,Create educational post about puppy in Dog Toys cluster
+Dog Toys,senior,0,25,0.0,25,HIGH,Create educational post about senior in Dog Toys cluster
+Dog Toys,indoor,0,25,0.0,25,HIGH,Create educational post about indoor in Dog Toys cluster
+Dog Toys,outdoor,0,25,0.0,25,HIGH,Create educational post about outdoor in Dog Toys cluster
+Dog Toys,aggressive chewer,0,25,0.0,25,HIGH,Create educational post about aggressive chewer in Dog Toys cluster
+Dog Toys,mental stimulation,0,25,0.0,25,HIGH,Create educational post about mental stimulation in Dog Toys cluster
+Dog Toys,boredom,0,25,0.0,25,HIGH,Create educational post about boredom in Dog Toys cluster
+Dog Toys,tug play,0,25,0.0,25,HIGH,Create educational post about tug play in Dog Toys cluster
+Dog Toys,fetch,0,25,0.0,25,HIGH,Create educational post about fetch in Dog Toys cluster
+Dog Toys,puzzle,0,25,0.0,25,HIGH,Create educational post about puzzle in Dog Toys cluster
+Dog Toys,breed size,0,25,0.0,25,HIGH,Create educational post about breed size in Dog Toys cluster
+Dog Toys,overstimulation,0,25,0.0,25,HIGH,Create educational post about overstimulation in Dog Toys cluster
+Dog Toys,scent game,0,25,0.0,25,HIGH,Create educational post about scent game in Dog Toys cluster
+Dog Toys,crate enrichment,0,25,0.0,25,HIGH,Create educational post about crate enrichment in Dog Toys cluster
+Dog Toys,storage,0,25,0.0,25,HIGH,Create educational post about storage in Dog Toys cluster
+Dog Toys,durability,0,25,0.0,25,HIGH,Create educational post about durability in Dog Toys cluster
+Dog Toys,materials,0,25,0.0,25,HIGH,Create educational post about materials in Dog Toys cluster
+Dog Toys,enrichment schedule,0,25,0.0,25,HIGH,Create educational post about enrichment schedule in Dog Toys cluster
+Dog Toys,cognitive decline,0,25,0.0,25,HIGH,Create educational post about cognitive decline in Dog Toys cluster
+Puppy Care,development stages,0,12,0.0,12,HIGH,Create educational post about development stages in Puppy Care cluster
+Puppy Care,socialisation,0,12,0.0,12,HIGH,Create educational post about socialisation in Puppy Care cluster
+Puppy Care,training basics,0,12,0.0,12,HIGH,Create educational post about training basics in Puppy Care cluster
+Puppy Care,feeding,0,12,0.0,12,HIGH,Create educational post about feeding in Puppy Care cluster
+Puppy Care,health checks,0,12,0.0,12,HIGH,Create educational post about health checks in Puppy Care cluster
+Puppy Care,teething,0,12,0.0,12,HIGH,Create educational post about teething in Puppy Care cluster
+Puppy Care,crate training,0,12,0.0,12,HIGH,Create educational post about crate training in Puppy Care cluster
+Puppy Care,house training,0,12,0.0,12,HIGH,Create educational post about house training in Puppy Care cluster
+Puppy Care,first vet visit,0,12,0.0,12,HIGH,Create educational post about first vet visit in Puppy Care cluster
+Puppy Care,essentials checklist,0,12,0.0,12,HIGH,Create educational post about essentials checklist in Puppy Care cluster
+Cat Supplies,carrier,31,20,66.7,0,MEDIUM,Create educational post about carrier in Cat Supplies cluster
+Cat Supplies,water fountain,31,20,66.7,0,MEDIUM,Create educational post about water fountain in Cat Supplies cluster
+Cat Supplies,kitten essentials,31,20,66.7,0,MEDIUM,Create educational post about kitten essentials in Cat Supplies cluster
+Cat Supplies,senior cat needs,31,20,66.7,0,MEDIUM,Create educational post about senior cat needs in Cat Supplies cluster
+Cat Supplies,multi-cat household,31,20,66.7,0,MEDIUM,Create educational post about multi-cat household in Cat Supplies cluster
+Cat Toys,senior cat,5,20,72.2,15,MEDIUM,Create educational post about senior cat in Cat Toys cluster
+Cat Toys,laser,5,20,72.2,15,MEDIUM,Create educational post about laser in Cat Toys cluster
+Cat Toys,replacement,5,20,72.2,15,MEDIUM,Create educational post about replacement in Cat Toys cluster
+Cat Toys,diy,5,20,72.2,15,MEDIUM,Create educational post about diy in Cat Toys cluster
+Cat Toys,overstimulation,5,20,72.2,15,MEDIUM,Create educational post about overstimulation in Cat Toys cluster
+Dog Care,eye care,12,15,50.0,3,MEDIUM,Create educational post about eye care in Dog Care cluster
+Dog Care,paw care,12,15,50.0,3,MEDIUM,Create educational post about paw care in Dog Care cluster
+Dog Care,coat care,12,15,50.0,3,MEDIUM,Create educational post about coat care in Dog Care cluster
+Dog Care,seasonal care,12,15,50.0,3,MEDIUM,Create educational post about seasonal care in Dog Care cluster
+Dog Care,exercise,12,15,50.0,3,MEDIUM,Create educational post about exercise in Dog Care cluster
+Dog Care,anxiety,12,15,50.0,3,MEDIUM,Create educational post about anxiety in Dog Care cluster
+Dog Supplies,crate,27,20,50.0,0,MEDIUM,Create educational post about crate in Dog Supplies cluster
+Dog Supplies,grooming,27,20,50.0,0,MEDIUM,Create educational post about grooming in Dog Supplies cluster
+Dog Supplies,coat,27,20,50.0,0,MEDIUM,Create educational post about coat in Dog Supplies cluster
+Dog Supplies,puppy essentials,27,20,50.0,0,MEDIUM,Create educational post about puppy essentials in Dog Supplies cluster
+Dog Supplies,senior dog needs,27,20,50.0,0,MEDIUM,Create educational post about senior dog needs in Dog Supplies cluster
+Dog Supplies,winter gear,27,20,50.0,0,MEDIUM,Create educational post about winter gear in Dog Supplies cluster
+Dog Supplies,summer safety,27,20,50.0,0,MEDIUM,Create educational post about summer safety in Dog Supplies cluster
+Dog Supplies,outdoor adventure,27,20,50.0,0,MEDIUM,Create educational post about outdoor adventure in Dog Supplies cluster
