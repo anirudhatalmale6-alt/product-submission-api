@@ -1,0 +1,145 @@
+post_id,title,cluster,outbound_links,inbound_links,outbound_clusters,inbound_clusters,glossary_links,faq_links,trust_links,semantic_flow_score
+3,Dog Toys UK (2026) – Essential Guide for Pet Owners,Dog Toys,1,3,Dog Toys,Educational,0,1,0,35
+696,Essential Cat Supplies for Cat Owners &#8211; Number 1 Must-Haves,Cat Supplies,1,3,Cat Supplies,Cat Supplies; Cat Toys; Educational,1,1,0,40
+3836,Best Dog Food UK (2026) &#8211; Complete Buying Guide,Educational,3,3,Dog Food; Dog Toys; Educational,Dog Food; Educational,0,3,0,50
+3837,Best Dry Dog Food UK (2026) &#8211; Evidence-Based Guide,Dog Food,4,4,Educational,Educational; Pet Care General,0,4,0,70
+3838,Dry vs Wet Dog Food UK &#8211; An Honest Comparison Guide,Educational,4,2,Dog Food; Educational,Dog Food; Educational,0,4,0,45
+3839,Best Puppy Food UK (2026) &#8211; Growth-Stage Nutrition Guide,Educational,4,4,Dog Food; Dog Harnesses; Educational,Dog Food; Educational,1,4,0,65
+3956,Best Dog Toys UK (2026) – Complete Guide &#038; Honest Reviews,Educational,9,14,Dog Harnesses; Dog Toys; Educational; Pet Care General,Dog Toys; Educational; Pet Care General,1,9,0,90
+3957,Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers,Dog Toys,5,5,Dog Toys; Educational,Dog Toys; Educational,0,5,0,75
+3959,Best Interactive Dog Toys UK (2026) – Puzzle &#038; Enrichment Guide,Dog Toys,5,6,Dog Toys; Educational; Pet Care General,Dog Toys; Educational; Pet Care General,0,5,0,85
+3960,Best Puppy Toys UK (2026) – Teething &#038; First Toys Guide,Educational,5,5,Dog Toys; Educational,Dog Toys; Educational,0,5,0,80
+3996,Best Dog Beds UK (2026) – Complete Guide &#038; Honest Reviews,Educational,7,8,Dog Beds; Educational; Pet Care General,Dog Beds; Educational; Pet Care General,0,7,0,85
+4004,Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide,Dog Beds,5,6,Dog Beds; Educational,Dog Beds; Educational,0,5,0,80
+4011,Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide,Dog Beds,5,6,Dog Beds; Educational; Pet Care General,Dog Beds; Educational; Pet Care General,0,5,0,85
+4018,Best Puppy Beds UK (2026) – First Bed &#038; Crate Training Guide,Educational,5,5,Dog Beds; Educational,Dog Beds; Educational; Pet Care General,0,5,0,80
+4027,Best Dog Collars and Harnesses UK (2026) – Complete Guide,Educational,3,3,Dog Harnesses; Educational,Dog Harnesses; Educational,0,3,0,45
+4034,Best No-Pull Dog Harnesses UK (2026) – Training &#038; Comfort Guide,Dog Harnesses,3,3,Educational,Educational,0,3,0,60
+4042,Best Dog Leads UK (2026) – Walking &#038; Training Lead Guide,Educational,3,3,Dog Harnesses; Educational,Dog Harnesses; Educational,0,3,0,45
+4049,Best Puppy Collars UK (2026) – First Collar &#038; Harness Guide,Educational,3,4,Dog Harnesses; Educational,Dog Harnesses; Educational,0,3,0,50
+4057,Best Dog Grooming Supplies UK (2026) – Complete Guide,Educational,6,3,Dog Care; Dog Health; Educational,Educational,0,6,0,55
+4064,Best Dog Brushes UK (2026) – Guide by Coat Type,Educational,6,3,Dog Care; Dog Health; Educational,Educational,0,6,0,55
+4071,Best Dog Shampoo UK (2026) – Ingredients &#038; Safety Guide,Educational,6,3,Dog Care; Dog Health; Educational,Educational,0,6,0,55
+4078,Best Dog Nail Clippers UK (2026) – Trimming &#038; Grinding Guide,Educational,6,3,Dog Care; Dog Health; Educational,Educational,0,6,0,55
+4089,Best Dog Health and Care UK (2026) – Complete Guide,Educational,3,3,Educational,Educational,0,3,0,35
+4096,Best Dog Dental Care UK (2026) – Teeth Cleaning Guide,Educational,3,3,Educational,Educational,0,3,0,35
+4103,Best Dog Flea Treatment UK (2026) – Prevention Guide,Educational,3,3,Educational,Educational,0,3,0,35
+4110,Best Dog Joint Supplements UK (2026) – Mobility Support Guide,Educational,3,3,Educational,Educational,0,3,0,35
+4118,Best Dog Training and Behaviour UK (2026) – Complete Guide,Educational,5,3,Educational,Educational,0,5,0,45
+4125,Best Dog Training Treats UK (2026) – Reward Guide,Educational,4,4,Educational,Educational,0,4,0,45
+4132,Best Puppy Training Guide UK (2026) – First Year Essentials,Educational,5,5,Educational,Educational,0,5,0,55
+4139,Best Dog Training Leads UK (2026) – Long Lines &#038; Harnesses,Educational,3,4,Educational,Educational,0,3,0,40
+4146,Best Dog Bowls and Feeding UK (2026) – Complete Guide,Educational,7,3,Cat Supplies; Educational; Pet Care General,Educational,1,7,0,65
+4153,Best Slow Feeder Dog Bowls UK (2026) – Prevent Speed Eating,Educational,7,3,Educational; Pet Care General,Educational,0,7,0,55
+4160,Best Elevated Dog Bowls UK (2026) – Raised Feeder Guide,Educational,8,3,Dog Toys; Educational; Pet Care General,Educational,0,8,0,60
+4167,Best Dog Water Bottles UK (2026) – Travel Hydration Guide,Educational,7,3,Dog Toys; Educational; Pet Care General,Educational,0,7,0,60
+4174,Best Cat Toys UK (2026) – Complete Guide,Cat Toys,8,16,Cat Toys; Educational; Pet Care General,Cat Supplies; Cat Toys; Educational; Pet Care General,0,8,0,85
+4181,Best Interactive Cat Toys UK (2026) – Wand &#038; Puzzle Guide,Cat Toys,4,3,Cat Toys; Educational,Cat Toys; Educational,0,4,0,65
+4188,Best Catnip Toys UK (2026) – What Works and Why,Educational,9,9,Cat Toys; Educational; Pet Care General,Cat Toys; Educational; Pet Care General,0,9,0,85
+4195,Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide,Educational,4,3,Cat Toys; Educational; Pet Care General,Cat Toys; Educational,0,4,0,65
+4202,Best Cat Beds UK (2026) – Complete Guide,Educational,3,3,Educational,Educational,0,3,0,35
+4209,Best Heated Cat Beds UK (2026) – Winter Warmth Guide,Educational,3,3,Educational,Educational,0,3,0,35
+4216,Best Cat Radiator Beds UK (2026) – Hook-On Warmth Guide,Educational,3,3,Educational,Educational,0,3,0,35
+4223,Best Cat Window Perches UK (2026) – Sunning &#038; Bird Watching,Educational,3,3,Educational,Educational,0,3,0,35
+4230,Best Cat Grooming Supplies UK (2026) – Complete Guide,Educational,7,3,Cat Supplies; Educational; Pet Care General,Educational,0,7,0,60
+4237,Best Cat Brushes UK (2026) – Guide by Coat Type,Educational,6,3,Educational; Pet Care General,Educational,0,6,0,55
+4244,Best Cat Nail Clippers UK (2026) – Safe Trimming Guide,Educational,6,3,Educational; Pet Care General,Educational,0,6,0,55
+4251,Best Cat Shampoo UK (2026) – When &#038; How to Bathe,Educational,6,3,Educational; Pet Care General,Educational,0,6,0,55
+4258,Best Cat Collars UK (2026) – Complete Safety Guide,Educational,6,3,Educational; Pet Care General,Educational,0,6,0,55
+4265,Best Cat GPS Trackers UK (2026) – Location Tracking Guide,Educational,6,3,Educational; Pet Care General,Educational,0,6,0,55
+4272,Best Cat ID Tags UK (2026) – Identification Guide,Educational,6,3,Educational; Pet Care General,Educational,0,6,0,55
+4279,Best Cat Harnesses UK (2026) – Safe Walking Guide,Educational,6,3,Educational; Pet Care General,Educational,0,6,0,55
+4286,Best Cat Scratching Posts UK (2026) – Complete Guide,Educational,6,3,Educational; Pet Care General,Educational,0,6,0,55
+4293,Best Cat Trees UK (2026) – Climbing &#038; Scratching Towers,Educational,6,3,Educational; Pet Care General,Educational,0,6,0,55
+4300,Best Cardboard Cat Scratchers UK (2026) – Budget Friendly,Educational,6,3,Educational; Pet Care General,Educational,0,6,0,55
+4307,Best Wall-Mounted Cat Scratchers UK (2026) – Space Saving,Educational,6,3,Educational; Pet Care General,Educational,0,6,0,55
+4314,Best Cat Litter Trays UK (2026) – Complete Guide,Educational,6,3,Educational; Pet Care General,Educational,0,6,0,55
+4321,Best Cat Litter UK (2026) – Types &#038; Comparison Guide,Educational,6,3,Educational; Pet Care General,Educational,0,6,0,55
+4328,Best Self-Cleaning Litter Trays UK (2026) – Automatic Options,Educational,6,3,Educational; Pet Care General,Educational,0,6,0,55
+4335,Best Cat Litter Disposal UK (2026) – Waste Management Guide,Educational,6,3,Educational; Pet Care General,Educational,0,6,0,55
+4406,Best Interactive Cat Toys for Indoor Cats: Engagement Guide,Cat Toys,9,6,Cat Supplies; Cat Toys; Educational; Pet Care General,Cat Toys; Educational; Pet Care General,0,9,0,85
+4407,DIY Cat Toys: Safe Homemade Options Your Cat Will Love,Cat Toys,4,3,Cat Toys; Pet Care General,Cat Toys; Educational,0,4,0,50
+4408,How Often Should You Replace Cat Toys? A Practical Guide,Cat Toys,5,4,Cat Toys; Educational; Pet Care General,Cat Toys; Educational,0,5,0,70
+4409,Kitten vs Adult Cat Toys: Age-Appropriate Play Guide,Cat Toys,6,3,Cat Toys; Educational; Pet Care General,Cat Toys; Educational,0,6,0,65
+4410,Cat Enrichment Activities Beyond Toys: Complete Guide,Educational,7,3,Cat Toys; Educational; Pet Care General,Cat Supplies; Educational,0,7,0,70
+4411,"Dog Harnesses: The Complete Guide to Types, Fitting, and Safety",Dog Harnesses,5,4,Dog Care; Dog Health; Educational,Dog Health; Dog Toys; Educational,0,5,0,75
+4412,No-Pull Dog Harness Guide: How They Work and When to Use One,Dog Harnesses,2,2,Dog Harnesses; Educational,Dog Care; Educational,1,2,0,45
+4413,How to Measure Your Dog for a Harness: Step-by-Step Guide,Educational,5,3,Dog Care; Dog Harnesses; Dog Health; Educational,Dog Harnesses; Educational,0,5,0,65
+4414,Harness vs Collar: Which Is Better for Your Dog?,Educational,5,3,Dog Care; Dog Harnesses; Dog Health; Educational,Dog Harnesses; Educational,0,5,0,70
+4415,Cat Toy Safety Guide: What Every Owner Should Know,Cat Toys,8,3,Cat Supplies; Cat Toys; Educational; Pet Care General,Cat Toys; Educational,0,8,0,65
+4563,Dog Grooming Basics: A Complete Guide for Owners,Dog Health,1,7,Dog Harnesses,Dog Harnesses; Educational,0,1,0,55
+4566,Seasonal Dog Care: Keeping Your Dog Safe Year-Round,Dog Care,0,7,none,Dog Harnesses; Educational,0,0,0,40
+4568,Dog Dental Health: A Practical Care Guide,Educational,2,7,Educational; Puppy Care,Dog Harnesses; Educational,1,2,1,65
+4570,First-Time Dog Owner Essentials: What You Need to Know,Puppy Care,1,1,Puppy Care,Educational,1,1,1,30
+4571,Pet First Aid Basics: What Every Owner Should Know,Pet Care General,0,24,none,Cat Toys; Educational,0,0,0,40
+4573,Seasonal Pet Safety: Protecting Pets Through the Year,Pet Care General,2,24,Educational; Pet Care General,Cat Toys; Educational,0,2,0,60
+4574,Pet Hydration Guide: How Much Water Does Your Pet Need?,Educational,1,24,Pet Care General,Cat Toys; Educational,0,1,0,55
+4576,Multi-Pet Household Tips: Living with Dogs and Cats Together,Pet Care General,0,3,none,Cat Supplies; Educational; Pet Care General,0,0,0,25
+4783,How to Choose the Right Dog Bed Size,Dog Beds,5,8,Dog Beds; Educational,Dog Beds; Educational; Pet Care General,1,5,0,85
+4784,"Dog Bed Materials Explained: Foam, Memory Foam, and More",Dog Beds,5,4,Dog Beds; Educational,Dog Beds; Educational,1,5,0,70
+4785,How to Wash and Maintain Your Dog&#8217;s Bed,Educational,4,2,Dog Beds; Educational,Educational,0,4,0,50
+4786,Where to Place Your Dog&#8217;s Bed: Location and Comfort Tips,Pet Care General,4,2,Dog Beds; Educational,Dog Beds; Educational,0,4,0,60
+4787,Dog Toy Safety: What Every Owner Needs to Know,Dog Toys,5,16,Dog Toys; Educational,Dog Toys; Educational; Pet Care General,0,5,0,85
+4788,Mental Stimulation for Dogs: Beyond Physical Exercise,Pet Care General,3,6,Dog Toys; Educational,Dog Toys; Educational; Pet Care General,0,3,0,75
+4789,Best Types of Dog Toys for Different Play Styles,Dog Toys,5,10,Dog Toys; Educational; Pet Care General,Dog Toys; Educational; Pet Care General,0,5,0,80
+4790,DIY Dog Toys: Safe Homemade Options,Dog Toys,6,8,Dog Toys; Educational; Pet Care General,Dog Toys; Educational,0,6,0,80
+4791,How to Choose the Right Dog Training Treats,Educational,3,6,Educational,Dog Care; Educational,0,3,0,60
+4792,Puppy Socialisation: A Complete Timeline Guide,Educational,6,2,Educational; Puppy Care,Educational,1,6,1,60
+5032,Cat Toys FAQ: Common Questions Answered,Cat Toys,7,7,Cat Toys; Educational; Pet Care General,Cat Toys; Educational; Pet Care General,0,7,0,85
+5033,How to Choose the Right Cat Toy for Your Cat&#8217;s Personality,Educational,8,8,Cat Supplies; Cat Toys; Educational; Pet Care General,Cat Toys; Educational; Pet Care General,0,8,0,85
+5034,Cat Toy Rotation: How to Keep Toys Fresh and Engaging,Educational,7,8,Cat Toys; Educational; Pet Care General,Cat Toys; Educational; Pet Care General,0,7,0,85
+5035,Cat Enrichment Beyond Toys: Creating a Stimulating Home,Pet Care General,7,10,Cat Toys; Educational; Pet Care General,Cat Toys; Educational; Pet Care General,0,7,0,85
+5036,Understanding Cat Play Behaviour: What Different Play Styles Mean,Pet Care General,8,7,Cat Supplies; Cat Toys; Educational; Pet Care General,Cat Toys; Educational; Pet Care General,0,8,0,85
+5296,Best Indoor Cat Toys UK (2026): Complete Guide for House Cats,Cat Toys,1,4,Cat Supplies,Cat Supplies; Dog Toys; Educational; Pet Care General,0,1,0,45
+5414,Cat Toy Types Explained: A Complete Glossary,Cat Toys,7,4,Cat Supplies; Cat Toys; Dog Care; Educational; Pet Care General,Cat Supplies; Dog Toys; Educational; Pet Care General,0,7,0,75
+5415,Dog Play Styles Explained: Understanding How Your Dog Plays,Pet Care General,8,4,Dog Care; Dog Toys; Educational; Pet Care General,Dog Toys; Educational; Pet Care General,0,8,0,75
+5416,Dog Bed Types Explained: A Complete Glossary,Dog Beds,1,2,Educational,Dog Beds,0,1,0,25
+5417,Puppy Care Essentials: Key Terms Every New Owner Should Know,Puppy Care,0,3,none,Educational; Puppy Care,0,0,0,25
+5418,Dog Harness Types Explained: Finding the Right Fit,Dog Harnesses,0,3,none,Dog Harnesses; Educational,0,0,0,25
+5419,Cat Care Basics: A Glossary for New Cat Owners,Cat Supplies,3,3,Cat Supplies; Cat Toys; Pet Care General,Cat Supplies; Educational,0,3,0,50
+5420,Dog Toy Cleaning Guide: How to Keep Toys Hygienic,Educational,5,9,Dog Toys; Educational,Dog Food; Dog Toys; Educational; Pet Care General,0,5,0,85
+5421,Puppy-Safe Dog Toys: What to Look For and What to Avoid,Dog Toys,6,5,Dog Toys; Educational,Dog Toys; Educational; Pet Care General,0,6,0,70
+5422,Indoor vs Outdoor Dog Toys: Choosing the Right Type,Dog Toys,4,3,Dog Toys; Educational,Dog Toys,0,4,0,45
+5423,Dog Toy Enrichment: Beyond Basic Fetch,Dog Toys,6,12,Dog Harnesses; Dog Toys; Educational,Dog Toys; Educational; Pet Care General,0,6,0,80
+5424,Aggressive Chewer Guide: Safe Toys for Power Chewers,Educational,4,6,Dog Toys; Educational,Dog Toys; Educational,0,4,0,80
+5425,Dog Toys FAQ: Common Questions Answered,Dog Toys,4,2,Dog Toys; Educational,Dog Toys; Educational,0,4,0,45
+5458,Cat Scratching Behaviour Explained: Why Cats Scratch and How to Help,Cat Supplies,4,6,Cat Supplies; Cat Toys; Educational; Pet Care General,Cat Supplies; Dog Toys; Educational; Pet Care General,2,4,0,85
+5460,Pet Nutrition Terminology: A Guide to Common Terms on Pet Food Labels,Educational,3,4,Educational; Pet Care General,Dog Toys; Educational; Pet Care General,2,3,2,75
+5462,Dog Training Terminology Explained: Key Concepts for New Owners,Dog Care,2,5,Educational; Pet Care General,Dog Care; Dog Toys; Educational; Pet Care General,0,2,0,60
+5464,Pet Grooming Glossary: Understanding Grooming Terms and Techniques,Pet Care General,0,3,none,Educational; Pet Care General,0,0,0,25
+5467,"Pet Feeding Guide: Understanding Portions, Schedules, and Methods",Educational,2,6,Educational; Pet Care General,Dog Toys; Educational; Pet Care General,1,2,1,70
+5469,Dog Toy Rotation: How to Keep Your Dog Interested and Engaged,Educational,18,10,Cat Supplies; Cat Toys; Dog Care; Dog Health; Dog Toys; Educational; Pet Care General,Dog Toys; Educational; Pet Care General,4,18,2,100
+5471,"Dog Boredom Prevention: Signs, Solutions, and Enrichment Ideas",Pet Care General,18,4,Cat Supplies; Cat Toys; Dog Care; Dog Health; Dog Toys; Educational; Pet Care General,Educational; Pet Care General,4,18,2,90
+5473,Senior Dog Toys: Gentle Play Options for Older Dogs,Dog Toys,17,3,Cat Supplies; Cat Toys; Dog Care; Dog Health; Dog Toys; Educational; Pet Care General,Dog Toys; Pet Care General,4,17,2,80
+5476,"Mental Stimulation Toys for Dogs: Puzzles, Games, and Brain Work",Pet Care General,5,15,Dog Food; Dog Toys; Educational; Pet Care General,Dog Toys; Educational; Pet Care General,0,5,0,85
+5483,Dog Toy Lifespan: When to Replace Toys and How to Extend Their Life,Dog Toys,4,8,Educational,Dog Toys; Educational; Pet Care General,0,4,0,80
+5508,Puppy Development Stages: A Complete Guide from Birth to Maturity,Educational,2,4,Dog Toys; Educational,Dog Toys; Educational; Pet Care General,0,2,0,50
+5509,"Pet Toy Safety: Understanding Materials, Hazards, and Standards",Educational,3,17,Cat Toys; Dog Toys; Educational,Cat Toys; Dog Toys; Educational; Pet Care General,0,3,0,70
+5510,Dog Bed Sizing Guide: How to Measure Your Dog and Choose the Right Fit,Educational,1,3,Dog Beds,Dog Care; Pet Care General,0,1,0,40
+5511,"Pet Enrichment Explained: Types, Benefits, and Practical Ideas",Educational,3,4,Dog Toys; Educational; Pet Care General,Cat Supplies; Dog Care; Pet Care General,0,3,0,60
+5512,Dog Behaviour Explained: Understanding Your Dog&#8217;s Body Language and Actions,Pet Care General,3,3,Dog Care; Educational; Pet Care General,Cat Supplies; Dog Care; Pet Care General,1,3,0,60
+5519,Indoor Cat Care: A Complete Guide to Keeping House Cats Happy and Healthy,Cat Supplies,5,7,Cat Supplies; Cat Toys; Educational; Pet Care General,Cat Toys; Dog Toys; Educational; Pet Care General,1,5,1,95
+5520,"Dog Health Basics: Common Conditions, Prevention, and When to See a Vet",Dog Health,3,4,Dog Care; Pet Care General,Dog Toys; Educational; Pet Care General,1,3,1,75
+5521,Pet Health Terminology: A Guide to Common Veterinary Terms,Pet Care General,6,6,Cat Supplies; Dog Health; Educational; Pet Care General,Cat Supplies; Dog Health; Dog Toys; Educational; Pet Care General,2,6,2,100
+5522,"Orthopaedic Care for Dogs: Joint Health, Mobility, and Support",Pet Care General,3,6,Dog Beds; Educational,Cat Toys; Dog Health; Dog Toys; Educational; Pet Care General,0,3,0,75
+5523,"Dog Training Equipment Explained: Tools, Uses, and What to Avoid",Dog Care,5,6,Dog Care; Dog Harnesses; Educational,Cat Toys; Dog Health; Dog Toys; Educational; Pet Care General,1,5,0,90
+5930,Dog Toy Safety by Breed Size: Choosing the Right Size Toy,Dog Toys,4,1,Dog Toys; Educational,Dog Toys,0,4,0,40
+5931,Signs of Toy Overstimulation in Dogs: When Play Becomes Too Much,Educational,4,4,Dog Toys; Educational; Pet Care General,Dog Toys; Pet Care General,0,4,0,65
+5932,Scent-Game Enrichment for Dogs: Using Smell to Engage Your Dog,Educational,4,4,Dog Toys; Educational; Pet Care General,Educational; Pet Care General,0,4,0,70
+5933,"Safe Tug Play with Dogs: Rules, Benefits, and Common Mistakes",Educational,5,1,Dog Harnesses; Dog Toys; Educational; Pet Care General,Dog Toys,0,5,0,55
+5934,Crate and Play Enrichment: Keeping Dogs Happy in Confined Spaces,Pet Care General,4,3,Dog Toys; Educational; Pet Care General,Dog Toys; Educational; Pet Care General,0,4,0,60
+5935,Dog Toy Storage and Organisation: Keeping Toys Clean and Accessible,Dog Toys,4,1,Dog Toys; Educational,Dog Toys,0,4,0,40
+5938,Enrichment Schedules for Dogs: Structuring Daily Play and Mental Work,Educational,5,6,Dog Toys; Educational; Pet Care General,Dog Toys; Educational; Pet Care General,0,5,0,85
+5942,Cognitive Enrichment for Senior Dogs: Gentle Play for Ageing Minds,Pet Care General,4,4,Dog Toys; Educational; Pet Care General,Educational; Pet Care General,0,4,0,70
+5946,"Dog Toy Materials Compared: Rubber, Rope, Plush, and Nylon",Dog Toys,4,2,Dog Toys; Educational,Dog Toys; Educational,0,4,0,55
+5950,Dog Toy Durability Guide: What Lasts and What Does Not,Dog Toys,5,1,Dog Toys; Educational,Dog Toys,0,5,0,50
+6039,Dog Toy Anxiety Reduction: Using Toys to Calm Nervous Dogs,Dog Toys,4,0,Educational; Pet Care General,none,0,4,0,40
+6042,Enrichment by Breed Group: Tailoring Play to Your Dog&#8217;s Instincts,Pet Care General,0,0,none,none,0,0,0,0
+6044,Rotating Puzzle Complexity: Progressive Challenge for Smart Dogs,Pet Care General,5,0,Dog Toys; Educational; Pet Care General,none,0,5,0,45
+6045,Safe Multi-Dog Toy Management: Preventing Resource Guarding,Dog Toys,5,0,Dog Toys; Educational,none,0,5,0,45
+6046,Dog Toy Hygiene Schedules: A Practical Cleaning Timetable,Dog Toys,5,0,Dog Toys; Educational,none,0,5,0,40
+6047,Play Recovery After Surgery: Gentle Enrichment for Healing Dogs,Educational,4,0,Educational; Pet Care General,none,0,4,0,35
+6048,Confidence-Building Play: Helping Shy and Fearful Dogs Through Toys,Pet Care General,4,0,Dog Toys; Educational; Pet Care General,none,0,4,0,40
+6049,Sensory Enrichment for Dogs: Engaging All Five Senses Through Play,Educational,5,0,Dog Toys; Educational; Pet Care General,none,0,5,0,45
+6050,Toy Overstimulation Recovery: Calming Down an Overexcited Dog,Dog Toys,4,0,Educational; Pet Care General,none,0,4,0,40
+6052,Low-Mobility Enrichment: Mental Stimulation for Dogs with Limited Movement,Pet Care General,4,0,Educational; Pet Care General,none,0,4,0,35

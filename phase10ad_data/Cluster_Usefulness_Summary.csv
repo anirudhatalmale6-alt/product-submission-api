@@ -1,0 +1,14 @@
+cluster,post_count,avg_usefulness,strongest_dimension,weakest_dimension,actionable_guidance_growth_pct,troubleshooting_growth_pct
+Cat Supplies,23,32.5,Practical Routines,Scenario Walkthroughs,64.9,85.2
+Cat Toys,14,31.4,Practical Routines,Scenario Walkthroughs,50.3,80.1
+Dog Beds,7,31.3,Checklists,Troubleshooting,45.5,86.2
+Dog Care,7,42.8,Practical Routines,Scenario Walkthroughs,53.6,83.9
+Dog Food,4,49.6,Checklists,Beginner Guidance,33.1,66.5
+Dog Harnesses,10,30.9,Checklists,When to Seek Help,58.6,76.2
+Dog Health,5,42.1,When to Seek Help,Troubleshooting,56.2,88.8
+Dog Supplies,3,26.6,Practical Routines,Troubleshooting,56.2,95.9
+Dog Toys,34,39.0,Safety Checks,Scenario Walkthroughs,59.4,67.9
+Educational,5,39.6,Checklists,Scenario Walkthroughs,63.7,71.2
+Pet Care General,9,47.1,When to Seek Help,Scenario Walkthroughs,46.2,73.8
+Puppy Care,6,46.2,Checklists,Troubleshooting,25.6,80.2
+Uncategorized,17,34.7,Checklists,Troubleshooting,63.6,81.9

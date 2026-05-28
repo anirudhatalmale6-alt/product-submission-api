@@ -1,0 +1,54 @@
+Cluster,Dimension,Gap,Action Items,Priority Rank
+Dog Food,External References,38.8,"Add citations from RSPCA, BVA, PDSA to Dog Food posts | Link to gov.uk pet regulations where relevant | Reference Battersea, Blue Cross, or FEDIAF guidelines | Cite cats.org.uk for cat-related content or general pet welfare bodies",1
+Dog Food,Trust Density,1.8,Add 'Editorial Standards' section to all Dog Food posts | Include 'editorial methodology' reference in post footer,2
+Dog Beds,External References,30.3,"Add citations from RSPCA, BVA, PDSA to Dog Beds posts | Link to gov.uk pet regulations where relevant | Reference Battersea, Blue Cross, or FEDIAF guidelines | Cite cats.org.uk for cat-related content or general pet welfare bodies",1
+Dog Beds,Internal Links,4.6,Add 3-5 internal links per Dog Beds post to related content | Cross-link between cluster posts (hub and spoke model),2
+Dog Beds,Glossary Coverage,4.5,Add 'Key Terms' block to each Dog Beds post | Use <strong>Term</strong> - Definition format for 5+ terms per post,3
+Dog Beds,Answer Readiness,1.4,Add 'Quick Answer' summary box at top of Dog Beds posts | Include FAQ blocks with structured question-answer format,4
+Dog Harnesses,External References,36.6,"Add citations from RSPCA, BVA, PDSA to Dog Harnesses posts | Link to gov.uk pet regulations where relevant | Reference Battersea, Blue Cross, or FEDIAF guidelines | Cite cats.org.uk for cat-related content or general pet welfare bodies",1
+Dog Harnesses,Answer Readiness,11.1,Add 'Quick Answer' summary box at top of Dog Harnesses posts | Include FAQ blocks with structured question-answer format,2
+Dog Harnesses,FAQ Coverage,6.0,Add FAQ section with 3-5 questions to each Dog Harnesses post | Use H3 headings for each FAQ question,3
+Dog Harnesses,Internal Links,2.7,Add 3-5 internal links per Dog Harnesses post to related content | Cross-link between cluster posts (hub and spoke model),4
+Dog Health,External References,30.8,"Add citations from RSPCA, BVA, PDSA to Dog Health posts | Link to gov.uk pet regulations where relevant | Reference Battersea, Blue Cross, or FEDIAF guidelines | Cite cats.org.uk for cat-related content or general pet welfare bodies",1
+Dog Health,Comparison Tables,21.4,"Add at least 1 comparison table per Dog Health post | Use wp-block-table for structured product/feature comparisons | Include columns for price range, features, pros/cons",2
+Dog Health,Answer Readiness,12.0,Add 'Quick Answer' summary box at top of Dog Health posts | Include FAQ blocks with structured question-answer format,3
+Dog Health,FAQ Coverage,5.6,Add FAQ section with 3-5 questions to each Dog Health post | Use H3 headings for each FAQ question,4
+Dog Health,Internal Links,0.4,Add 3-5 internal links per Dog Health post to related content | Cross-link between cluster posts (hub and spoke model),5
+Dog Care,External References,24.5,"Add citations from RSPCA, BVA, PDSA to Dog Care posts | Link to gov.uk pet regulations where relevant | Reference Battersea, Blue Cross, or FEDIAF guidelines",1
+Dog Care,FAQ Coverage,10.9,Add FAQ section with 3-5 questions to each Dog Care post | Use H3 headings for each FAQ question,2
+Dog Care,Answer Readiness,8.6,Add 'Quick Answer' summary box at top of Dog Care posts | Include FAQ blocks with structured question-answer format,3
+Dog Care,Internal Links,6.1,Add 3-5 internal links per Dog Care post to related content | Cross-link between cluster posts (hub and spoke model),4
+Dog Care,Practical Guidance,2.8,Add step-by-step guides or checklists to Dog Care posts | Include ordered lists for how-to instructions,5
+Dog Care,Comparison Tables,2.5,Add at least 1 comparison table per Dog Care post | Use wp-block-table for structured product/feature comparisons,6
+Cat Toys,External References,38.8,"Add citations from RSPCA, BVA, PDSA to Cat Toys posts | Link to gov.uk pet regulations where relevant | Reference Battersea, Blue Cross, or FEDIAF guidelines | Cite cats.org.uk for cat-related content or general pet welfare bodies",1
+Cat Toys,FAQ Coverage,10.7,Add FAQ section with 3-5 questions to each Cat Toys post | Use H3 headings for each FAQ question,2
+Cat Toys,Answer Readiness,10.0,Add 'Quick Answer' summary box at top of Cat Toys posts | Include FAQ blocks with structured question-answer format,3
+Cat Toys,Educational Depth,4.8,Expand Cat Toys posts to 1500+ words minimum | Add more H2/H3 subheadings for detailed topic coverage,4
+Cat Toys,Practical Guidance,2.8,Add step-by-step guides or checklists to Cat Toys posts | Include ordered lists for how-to instructions,5
+Cat Toys,Comparison Tables,2.5,Add at least 1 comparison table per Cat Toys post | Use wp-block-table for structured product/feature comparisons,6
+Cat Supplies,External References,35.5,"Add citations from RSPCA, BVA, PDSA to Cat Supplies posts | Link to gov.uk pet regulations where relevant | Reference Battersea, Blue Cross, or FEDIAF guidelines | Cite cats.org.uk for cat-related content or general pet welfare bodies",1
+Cat Supplies,Answer Readiness,13.8,Add 'Quick Answer' summary box at top of Cat Supplies posts | Include FAQ blocks with structured question-answer format,2
+Cat Supplies,Comparison Tables,13.1,Add at least 1 comparison table per Cat Supplies post | Use wp-block-table for structured product/feature comparisons,3
+Cat Supplies,FAQ Coverage,11.3,Add FAQ section with 3-5 questions to each Cat Supplies post | Use H3 headings for each FAQ question,4
+Cat Supplies,Practical Guidance,8.4,Add step-by-step guides or checklists to Cat Supplies posts | Include ordered lists for how-to instructions,5
+Cat Supplies,Educational Depth,0.0,Expand Cat Supplies posts to 1500+ words minimum | Add more H2/H3 subheadings for detailed topic coverage,6
+Puppy Care,External References,22.2,"Add citations from RSPCA, BVA, PDSA to Puppy Care posts | Link to gov.uk pet regulations where relevant | Reference Battersea, Blue Cross, or FEDIAF guidelines",1
+Puppy Care,Comparison Tables,21.4,"Add at least 1 comparison table per Puppy Care post | Use wp-block-table for structured product/feature comparisons | Include columns for price range, features, pros/cons",2
+Puppy Care,Internal Links,7.0,Add 3-5 internal links per Puppy Care post to related content | Cross-link between cluster posts (hub and spoke model),3
+Puppy Care,Answer Readiness,5.0,Add 'Quick Answer' summary box at top of Puppy Care posts | Include FAQ blocks with structured question-answer format,4
+Dog Supplies,External References,38.8,"Add citations from RSPCA, BVA, PDSA to Dog Supplies posts | Link to gov.uk pet regulations where relevant | Reference Battersea, Blue Cross, or FEDIAF guidelines | Cite cats.org.uk for cat-related content or general pet welfare bodies",1
+Dog Supplies,Comparison Tables,21.4,"Add at least 1 comparison table per Dog Supplies post | Use wp-block-table for structured product/feature comparisons | Include columns for price range, features, pros/cons",2
+Dog Supplies,FAQ Coverage,11.6,Add FAQ section with 3-5 questions to each Dog Supplies post | Use H3 headings for each FAQ question,3
+Dog Supplies,Answer Readiness,10.0,Add 'Quick Answer' summary box at top of Dog Supplies posts | Include FAQ blocks with structured question-answer format,4
+Dog Supplies,Educational Depth,1.1,Expand Dog Supplies posts to 1500+ words minimum | Add more H2/H3 subheadings for detailed topic coverage,5
+Pet Care General,External References,14.4,"Add citations from RSPCA, BVA, PDSA to Pet Care General posts | Link to gov.uk pet regulations where relevant",1
+Pet Care General,Glossary Coverage,7.4,Add 'Key Terms' block to each Pet Care General post | Use <strong>Term</strong> - Definition format for 5+ terms per post,2
+Pet Care General,Comparison Tables,6.7,Add at least 1 comparison table per Pet Care General post | Use wp-block-table for structured product/feature comparisons,3
+Pet Care General,Internal Links,5.6,Add 3-5 internal links per Pet Care General post to related content | Cross-link between cluster posts (hub and spoke model),4
+Pet Care General,FAQ Coverage,2.1,Add FAQ section with 3-5 questions to each Pet Care General post | Use H3 headings for each FAQ question,5
+Pet Care General,Trust Density,1.8,Add 'Editorial Standards' section to all Pet Care General posts | Include 'editorial methodology' reference in post footer,6
+Educational,Glossary Coverage,14.6,Add 'Key Terms' block to each Educational post | Use <strong>Term</strong> - Definition format for 5+ terms per post,1
+Educational,Comparison Tables,8.2,Add at least 1 comparison table per Educational post | Use wp-block-table for structured product/feature comparisons,2
+Educational,External References,2.8,"Add citations from RSPCA, BVA, PDSA to Educational posts | Link to gov.uk pet regulations where relevant",3
+Educational,Internal Links,0.4,Add 3-5 internal links per Educational post to related content | Cross-link between cluster posts (hub and spoke model),4
+Educational,Trust Intensity,0.1,Add methodology disclosure to Educational posts | Include editorial process links and AI transparency notes,5

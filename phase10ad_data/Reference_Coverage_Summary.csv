@@ -1,0 +1,12 @@
+source_name,domain,posts_with_links,posts_with_mentions,posts_missing,coverage_pct,priority_clusters
+RSPCA,rspca.org.uk,40,3,101,29.9,"Cat, Dog Beds, Dog Breeds, Dog Food, Dog Grooming, Dog Health, Dog Toys, Dog Training, Dog Walking, Puppy Care"
+Battersea,battersea.org.uk,17,1,126,12.5,"Dog Beds, Dog Breeds, Dog Toys, Puppy Care"
+Cats Protection,cats.org.uk,2,2,140,2.8,"Cat, Dog Beds, Dog Walking"
+Blue Cross,bluecross.org.uk,30,0,114,20.8,"Dog Breeds, Dog Food, Dog Grooming, Dog Health, Dog Toys, Dog Training"
+PDSA,pdsa.org.uk,18,2,124,13.9,"Dog Beds, Dog Food, Dog Grooming, Dog Health, Dog Toys, Dog Training"
+BVA,bva.co.uk,6,8,130,9.7,"Dog Food, Dog Health, Dog Toys, Dog Training, Puppy Care"
+FEDIAF,fediaf.org,2,5,137,4.9,"Cat, Dog Food, Puppy Care"
+DEFRA,gov.uk/defra,0,1,143,0.7,Dog Training
+UK Government,gov.uk,4,0,140,2.8,"Dog Food, Dog Toys, Dog Walking"
+Kennel Club,thekennelclub.org.uk,0,39,105,27.1,"Dog Beds, Dog Grooming, Dog Health, Dog Toys, Dog Training, Dog Walking, Pet Travel, Puppy Care"
+PFMA,pfma.org.uk,0,2,142,1.4,Dog Food

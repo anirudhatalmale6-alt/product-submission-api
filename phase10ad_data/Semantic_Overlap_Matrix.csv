@@ -1,0 +1,7 @@
+cluster,posts_in_cluster,terms_found,shared_terms_count,unique_terms_count,overlap_with_dog_toys,overlap_score
+dog_toys,60,16,23,10,16,24.0
+dog_food,18,18,24,12,5,22.2
+dog_beds,22,10,19,6,4,31.7
+dog_health,16,9,20,4,4,37.0
+puppy_care,8,13,22,8,5,28.2
+cat,20,11,22,5,5,33.3

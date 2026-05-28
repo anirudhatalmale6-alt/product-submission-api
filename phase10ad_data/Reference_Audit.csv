@@ -1,0 +1,145 @@
+post_id,title,cluster,rspca_status,battersea_status,cats_protection_status,blue_cross_status,pdsa_status,bva_status,fediaf_status,defra_status,uk_gov_status,kennel_club_status,pfma_status,total_linked,total_mentioned,total_missing,reference_score
+6052,Low-Mobility Enrichment: Mental Stimulation for Dogs with Limited Movement,Dog Training,linked,absent,absent,linked,linked,mentioned,absent,absent,absent,absent,absent,3,1,7,40
+6050,Toy Overstimulation Recovery: Calming Down an Overexcited Dog,Dog Toys,linked,linked,absent,linked,absent,mentioned,absent,absent,absent,absent,absent,3,1,7,40
+6049,Sensory Enrichment for Dogs: Engaging All Five Senses Through Play,Dog Toys,linked,absent,absent,linked,linked,mentioned,absent,absent,absent,absent,absent,3,1,7,40
+6048,Confidence-Building Play: Helping Shy and Fearful Dogs Through Toys,Dog Toys,linked,linked,absent,linked,absent,absent,absent,absent,absent,absent,absent,3,0,8,34
+6047,Play Recovery After Surgery: Gentle Enrichment for Healing Dogs,Dog Toys,linked,absent,absent,linked,linked,mentioned,absent,absent,absent,absent,absent,3,1,7,40
+6046,Dog Toy Hygiene Schedules: A Practical Cleaning Timetable,Dog Toys,linked,linked,absent,linked,absent,absent,absent,absent,absent,absent,absent,3,0,8,34
+6045,Safe Multi-Dog Toy Management: Preventing Resource Guarding,Dog Toys,linked,linked,absent,linked,absent,mentioned,absent,absent,absent,absent,absent,3,1,7,40
+6044,Rotating Puzzle Complexity: Progressive Challenge for Smart Dogs,Dog Toys,linked,absent,absent,linked,linked,absent,absent,absent,absent,absent,absent,3,0,8,34
+6042,Enrichment by Breed Group: Tailoring Play to Your Dog’s Instincts,Dog Toys,linked,absent,absent,linked,linked,absent,absent,absent,absent,absent,absent,3,0,8,34
+6039,Dog Toy Anxiety Reduction: Using Toys to Calm Nervous Dogs,Dog Toys,linked,linked,absent,linked,absent,mentioned,absent,absent,absent,absent,absent,3,1,7,40
+5950,Dog Toy Durability Guide: What Lasts and What Does Not,Dog Toys,linked,linked,absent,linked,absent,absent,absent,absent,absent,absent,absent,3,0,8,34
+5946,"Dog Toy Materials Compared: Rubber, Rope, Plush, and Nylon",Dog Toys,linked,linked,absent,linked,absent,absent,absent,absent,absent,absent,absent,3,0,8,34
+5942,Cognitive Enrichment for Senior Dogs: Gentle Play for Ageing Minds,Dog Toys,linked,absent,absent,linked,linked,absent,absent,absent,absent,absent,absent,3,0,8,34
+5938,Enrichment Schedules for Dogs: Structuring Daily Play and Mental Work,Dog Toys,linked,absent,absent,linked,linked,absent,absent,absent,absent,absent,absent,3,0,8,34
+5935,Dog Toy Storage and Organisation: Keeping Toys Clean and Accessible,Dog Toys,linked,linked,absent,linked,absent,absent,absent,absent,absent,absent,absent,3,0,8,34
+5934,Crate and Play Enrichment: Keeping Dogs Happy in Confined Spaces,Dog Toys,linked,absent,absent,linked,linked,absent,absent,absent,absent,absent,absent,3,0,8,34
+5933,"Safe Tug Play with Dogs: Rules, Benefits, and Common Mistakes",Dog Toys,linked,absent,absent,linked,linked,absent,absent,absent,absent,absent,absent,3,0,8,34
+5932,Scent-Game Enrichment for Dogs: Using Smell to Engage Your Dog,Dog Food,linked,absent,absent,linked,linked,absent,absent,absent,absent,absent,absent,3,0,8,34
+5931,Signs of Toy Overstimulation in Dogs: When Play Becomes Too Much,Dog Toys,linked,linked,absent,linked,absent,absent,absent,absent,absent,absent,absent,3,0,8,34
+5930,Dog Toy Safety by Breed Size: Choosing the Right Size Toy,Dog Breeds,linked,linked,absent,linked,absent,absent,absent,absent,absent,absent,absent,3,0,8,34
+5523,"Dog Training Equipment Explained: Tools, Uses, and What to Avoid",Dog Training,linked,absent,absent,linked,linked,mentioned,absent,mentioned,absent,mentioned,absent,3,3,5,51
+5522,"Orthopaedic Care for Dogs: Joint Health, Mobility, and Support",Dog Health,absent,absent,absent,absent,mentioned,linked,absent,absent,absent,mentioned,absent,1,2,8,22
+5521,Pet Health Terminology: A Guide to Common Veterinary Terms,Dog Health,linked,absent,absent,linked,linked,absent,absent,absent,absent,absent,absent,3,0,8,34
+5520,"Dog Health Basics: Common Conditions, Prevention, and When to See a Vet",Dog Health,linked,absent,absent,absent,absent,linked,absent,absent,absent,absent,absent,2,0,9,23
+5519,Indoor Cat Care: A Complete Guide to Keeping House Cats Happy and Healthy,Cat,linked,absent,linked,absent,absent,absent,absent,absent,absent,absent,absent,2,0,9,23
+5512,Dog Behaviour Explained: Understanding Your Dog’s Body Language and Actions,Dog Training,linked,absent,absent,linked,linked,absent,absent,absent,absent,absent,absent,3,0,8,34
+5511,"Pet Enrichment Explained: Types, Benefits, and Practical Ideas",Dog Breeds,linked,linked,absent,absent,absent,absent,absent,absent,absent,absent,absent,2,0,9,23
+5510,Dog Bed Sizing Guide: How to Measure Your Dog and Choose the Right Fit,Dog Beds,linked,linked,absent,absent,absent,absent,absent,absent,absent,absent,absent,2,0,9,23
+5509,"Pet Toy Safety: Understanding Materials, Hazards, and Standards",Dog Toys,linked,absent,absent,absent,absent,absent,absent,absent,linked,absent,absent,2,0,9,23
+5508,Puppy Development Stages: A Complete Guide from Birth to Maturity,Puppy Care,linked,linked,absent,absent,absent,linked,absent,absent,absent,mentioned,absent,3,1,7,40
+5483,Dog Toy Lifespan: When to Replace Toys and How to Extend Their Life,Dog Toys,linked,linked,absent,linked,absent,absent,absent,absent,absent,mentioned,absent,3,1,7,40
+5476,"Mental Stimulation Toys for Dogs: Puzzles, Games, and Brain Work",Dog Toys,linked,linked,absent,linked,absent,absent,absent,absent,absent,mentioned,absent,3,1,7,40
+5473,Senior Dog Toys: Gentle Play Options for Older Dogs,Dog Toys,linked,linked,absent,linked,absent,absent,absent,absent,absent,mentioned,absent,3,1,7,40
+5471,"Dog Boredom Prevention: Signs, Solutions, and Enrichment Ideas",Dog Toys,linked,absent,absent,linked,linked,absent,absent,absent,absent,absent,absent,3,0,8,34
+5469,Dog Toy Rotation: How to Keep Your Dog Interested and Engaged,Dog Toys,linked,linked,absent,linked,absent,absent,absent,absent,absent,mentioned,absent,3,1,7,40
+5467,"Pet Feeding Guide: Understanding Portions, Schedules, and Methods",Dog Food,absent,absent,absent,absent,absent,linked,linked,absent,absent,absent,absent,2,0,9,23
+5464,Pet Grooming Glossary: Understanding Grooming Terms and Techniques,Dog Grooming,linked,absent,absent,linked,linked,absent,absent,absent,absent,absent,absent,3,0,8,34
+5462,Dog Training Terminology Explained: Key Concepts for New Owners,Dog Training,linked,absent,absent,linked,linked,absent,absent,absent,absent,absent,absent,3,0,8,34
+5460,Pet Nutrition Terminology: A Guide to Common Terms on Pet Food Labels,Dog Food,absent,absent,absent,absent,absent,absent,linked,absent,linked,absent,absent,2,0,9,23
+5458,Cat Scratching Behaviour Explained: Why Cats Scratch and How to Help,Cat,linked,absent,linked,absent,absent,absent,absent,absent,absent,absent,absent,2,0,9,23
+5425,Dog Toys FAQ: Common Questions Answered,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+5424,Aggressive Chewer Guide: Safe Toys for Power Chewers,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+5423,Dog Toy Enrichment: Beyond Basic Fetch,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+5422,Indoor vs Outdoor Dog Toys: Choosing the Right Type,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+5421,Puppy-Safe Dog Toys: What to Look For and What to Avoid,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+5420,Dog Toy Cleaning Guide: How to Keep Toys Hygienic,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+5419,Cat Care Basics: A Glossary for New Cat Owners,Cat,absent,absent,absent,absent,absent,absent,mentioned,absent,absent,absent,absent,0,1,10,5
+5418,Dog Harness Types Explained: Finding the Right Fit,Dog Walking,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+5417,Puppy Care Essentials: Key Terms Every New Owner Should Know,Puppy Care,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+5416,Dog Bed Types Explained: A Complete Glossary,Dog Beds,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+5415,Dog Play Styles Explained: Understanding How Your Dog Plays,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+5414,Cat Toy Types Explained: A Complete Glossary,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+5296,Best Indoor Cat Toys UK (2026): Complete Guide for House Cats,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+5033,How to Choose the Right Cat Toy for Your Cat’s Personality,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+5036,Understanding Cat Play Behaviour: What Different Play Styles Mean,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+5032,Cat Toys FAQ: Common Questions Answered,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+5035,Cat Enrichment Beyond Toys: Creating a Stimulating Home,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+5034,Cat Toy Rotation: How to Keep Toys Fresh and Engaging,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4792,Puppy Socialisation: A Complete Timeline Guide,Puppy Care,linked,absent,absent,absent,absent,linked,absent,absent,absent,mentioned,absent,2,1,8,28
+4791,How to Choose the Right Dog Training Treats,Dog Food,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4790,DIY Dog Toys: Safe Homemade Options,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4789,Best Types of Dog Toys for Different Play Styles,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+4788,Mental Stimulation for Dogs: Beyond Physical Exercise,Dog Walking,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4787,Dog Toy Safety: What Every Owner Needs to Know,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4786,Where to Place Your Dog’s Bed: Location and Comfort Tips,Dog Beds,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+4785,How to Wash and Maintain Your Dog’s Bed,Dog Beds,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+4784,"Dog Bed Materials Explained: Foam, Memory Foam, and More",Dog Beds,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+4783,How to Choose the Right Dog Bed Size,Dog Beds,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+4573,Seasonal Pet Safety: Protecting Pets Through the Year,Dog Beds,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4570,First-Time Dog Owner Essentials: What You Need to Know,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+4576,Multi-Pet Household Tips: Living with Dogs and Cats Together,Cat,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4574,Pet Hydration Guide: How Much Water Does Your Pet Need?,Dog Food,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4571,Pet First Aid Basics: What Every Owner Should Know,Dog Training,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4568,Dog Dental Health: A Practical Care Guide,Dog Health,linked,absent,absent,absent,absent,linked,absent,absent,absent,absent,absent,2,0,9,23
+4566,Seasonal Dog Care: Keeping Your Dog Safe Year-Round,Dog Health,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4563,Dog Grooming Basics: A Complete Guide for Owners,Dog Grooming,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+4415,Cat Toy Safety Guide: What Every Owner Should Know,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4406,Best Interactive Cat Toys for Indoor Cats: Engagement Guide,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4414,Harness vs Collar: Which Is Better for Your Dog?,Dog Walking,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+4413,How to Measure Your Dog for a Harness: Step-by-Step Guide,Dog Walking,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+4412,No-Pull Dog Harness Guide: How They Work and When to Use One,Dog Walking,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+4411,"Dog Harnesses: The Complete Guide to Types, Fitting, and Safety",Dog Walking,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+4410,Cat Enrichment Activities Beyond Toys: Complete Guide,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4409,Kitten vs Adult Cat Toys: Age-Appropriate Play Guide,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4408,How Often Should You Replace Cat Toys? A Practical Guide,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4407,DIY Cat Toys: Safe Homemade Options Your Cat Will Love,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4335,Best Cat Litter Disposal UK (2026) – Waste Management Guide,Cat,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4328,Best Self-Cleaning Litter Trays UK (2026) – Automatic Options,Dog Beds,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4321,Best Cat Litter UK (2026) – Types & Comparison Guide,Cat,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4314,Best Cat Litter Trays UK (2026) – Complete Guide,Cat,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4307,Best Wall-Mounted Cat Scratchers UK (2026) – Space Saving,Cat,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4300,Best Cardboard Cat Scratchers UK (2026) – Budget Friendly,Cat,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4293,Best Cat Trees UK (2026) – Climbing & Scratching Towers,Cat,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4286,Best Cat Scratching Posts UK (2026) – Complete Guide,Cat,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4279,Best Cat Harnesses UK (2026) – Safe Walking Guide,Dog Walking,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4272,Best Cat ID Tags UK (2026) – Identification Guide,Dog Beds,mentioned,mentioned,mentioned,absent,absent,absent,absent,absent,absent,absent,absent,0,3,8,16
+4265,Best Cat GPS Trackers UK (2026) – Location Tracking Guide,Cat,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4258,Best Cat Collars UK (2026) – Complete Safety Guide,Dog Walking,mentioned,absent,mentioned,absent,absent,absent,absent,absent,absent,absent,absent,0,2,9,11
+4251,Best Cat Shampoo UK (2026) – When & How to Bathe,Dog Grooming,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4244,Best Cat Nail Clippers UK (2026) – Safe Trimming Guide,Dog Grooming,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4237,Best Cat Brushes UK (2026) – Guide by Coat Type,Dog Grooming,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4230,Best Cat Grooming Supplies UK (2026) – Complete Guide,Dog Grooming,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4223,Best Cat Window Perches UK (2026) – Sunning & Bird Watching,Cat,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4216,Best Cat Radiator Beds UK (2026) – Hook-On Warmth Guide,Dog Beds,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4209,Best Heated Cat Beds UK (2026) – Winter Warmth Guide,Dog Beds,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4202,Best Cat Beds UK (2026) – Complete Guide,Dog Beds,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4195,Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4188,Best Catnip Toys UK (2026) – What Works and Why,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4181,Best Interactive Cat Toys UK (2026) – Wand & Puzzle Guide,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4174,Best Cat Toys UK (2026) – Complete Guide,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4167,Best Dog Water Bottles UK (2026) – Travel Hydration Guide,Pet Travel,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+4160,Best Elevated Dog Bowls UK (2026) – Raised Feeder Guide,Dog Food,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4153,Best Slow Feeder Dog Bowls UK (2026) – Prevent Speed Eating,Dog Food,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4146,Best Dog Bowls and Feeding UK (2026) – Complete Guide,Dog Food,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4139,Best Dog Training Leads UK (2026) – Long Lines & Harnesses,Dog Training,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4132,Best Puppy Training Guide UK (2026) – First Year Essentials,Dog Training,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+4125,Best Dog Training Treats UK (2026) – Reward Guide,Dog Training,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4118,Best Dog Training and Behaviour UK (2026) – Complete Guide,Dog Training,mentioned,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,2,9,11
+4110,Best Dog Joint Supplements UK (2026) – Mobility Support Guide,Dog Health,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4103,Best Dog Flea Treatment UK (2026) – Prevention Guide,Dog Health,absent,absent,absent,absent,absent,mentioned,absent,absent,absent,absent,absent,0,1,10,5
+4096,Best Dog Dental Care UK (2026) – Teeth Cleaning Guide,Dog Health,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4089,Best Dog Health and Care UK (2026) – Complete Guide,Dog Health,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4078,Best Dog Nail Clippers UK (2026) – Trimming & Grinding Guide,Dog Grooming,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+4071,Best Dog Shampoo UK (2026) – Ingredients & Safety Guide,Dog Grooming,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+4064,Best Dog Brushes UK (2026) – Guide by Coat Type,Dog Grooming,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4057,Best Dog Grooming Supplies UK (2026) – Complete Guide,Dog Grooming,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+4049,Best Puppy Collars UK (2026) – First Collar & Harness Guide,Dog Walking,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4042,Best Dog Leads UK (2026) – Walking & Training Lead Guide,Dog Walking,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4034,Best No-Pull Dog Harnesses UK (2026) – Training & Comfort Guide,Dog Training,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+4027,Best Dog Collars and Harnesses UK (2026) – Complete Guide,Dog Walking,absent,absent,absent,absent,absent,absent,absent,absent,linked,mentioned,absent,1,1,9,17
+4018,Best Puppy Beds UK (2026) – First Bed & Crate Training Guide,Dog Beds,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+4011,Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide,Dog Beds,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+4004,Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide,Dog Beds,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+3996,Best Dog Beds UK (2026) – Complete Guide & Honest Reviews,Dog Beds,absent,absent,absent,absent,linked,absent,absent,absent,absent,mentioned,absent,1,1,9,17
+3960,Best Puppy Toys UK (2026) – Teething & First Toys Guide,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+3959,Best Interactive Dog Toys UK (2026) – Puzzle & Enrichment Guide,Dog Toys,linked,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,1,0,10,11
+3957,Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5
+3956,Best Dog Toys UK (2026) – Complete Guide & Honest Reviews,Dog Toys,absent,absent,absent,absent,linked,absent,absent,absent,linked,mentioned,absent,2,1,8,28
+3839,Best Puppy Food UK (2026) – Growth-Stage Nutrition Guide,Puppy Care,absent,absent,absent,absent,absent,absent,mentioned,absent,absent,absent,absent,0,1,10,5
+3838,Dry vs Wet Dog Food UK – An Honest Comparison Guide,Dog Food,absent,absent,absent,absent,absent,absent,mentioned,absent,absent,absent,absent,0,1,10,5
+3837,Best Dry Dog Food UK (2026) – Evidence-Based Guide,Dog Food,absent,absent,absent,absent,absent,absent,mentioned,absent,absent,absent,mentioned,0,2,9,11
+3836,Best Dog Food UK (2026) – Complete Buying Guide,Dog Food,absent,absent,absent,absent,mentioned,absent,mentioned,absent,absent,absent,mentioned,0,3,8,16
+696,Essential Cat Supplies for Cat Owners – Number 1 Must-Haves,Cat,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,absent,0,0,11,0
+3,Dog Toys UK (2026) – Essential Guide for Pet Owners,Dog Toys,absent,absent,absent,absent,absent,absent,absent,absent,absent,mentioned,absent,0,1,10,5

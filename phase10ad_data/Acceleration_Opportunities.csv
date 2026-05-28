@@ -1,0 +1,75 @@
+cluster,dimension,current_score,next_tier_threshold,gap_to_next,suggested_actions,priority
+Dog Toys,semantic,59.8,60,0.2,"Add Key Terms blocks, bold-dash definitions, inline terminology, glossary sections",HIGH
+Cat Toys,ai_readiness,59.3,60,0.7,"Add FAQ sections, quick-answer blocks, structured Q&A, summary/verdict sections",HIGH
+Educational,trust,58.7,60,1.3,"Add 'last updated' dates, editorial disclosures, author attribution, methodology transparency",HIGH
+Dog Toys,trust,42.9,45,2.1,"Add 'last updated' dates, editorial disclosures, author attribution, methodology transparency",HIGH
+Educational,ai_readiness,72.7,75,2.3,"Add FAQ sections, quick-answer blocks, structured Q&A, summary/verdict sections",HIGH
+Dog Beds,glossary,87.0,90,3.0,"Create dedicated glossary blocks, add definition patterns, structured terminology lists",HIGH
+Dog Beds,ai_readiness,72.0,75,3.0,"Add FAQ sections, quick-answer blocks, structured Q&A, summary/verdict sections",HIGH
+Puppy Care,glossary,87.0,90,3.0,"Create dedicated glossary blocks, add definition patterns, structured terminology lists",HIGH
+Dog Food,authority,41.5,45,3.5,"Add expert citations, vet references, methodology sections, external authoritative links",HIGH
+Dog Health,ai_readiness,71.4,75,3.6,"Add FAQ sections, quick-answer blocks, structured Q&A, summary/verdict sections",HIGH
+Pet Care General,semantic,56.2,60,3.8,"Add Key Terms blocks, bold-dash definitions, inline terminology, glossary sections",HIGH
+Pet Care General,trust,40.7,45,4.3,"Add 'last updated' dates, editorial disclosures, author attribution, methodology transparency",HIGH
+Dog Food,semantic,69.8,75,5.2,"Add Key Terms blocks, bold-dash definitions, inline terminology, glossary sections",HIGH
+Dog Beds,trust,39.7,45,5.3,"Add 'last updated' dates, editorial disclosures, author attribution, methodology transparency",HIGH
+Puppy Care,ai_readiness,69.7,75,5.3,"Add FAQ sections, quick-answer blocks, structured Q&A, summary/verdict sections",HIGH
+Dog Toys,ai_readiness,69.6,75,5.4,"Add FAQ sections, quick-answer blocks, structured Q&A, summary/verdict sections",HIGH
+Cat Supplies,trust,54.3,60,5.7,"Add 'last updated' dates, editorial disclosures, author attribution, methodology transparency",HIGH
+Dog Care,ai_readiness,69.0,75,6.0,"Add FAQ sections, quick-answer blocks, structured Q&A, summary/verdict sections",HIGH
+Pet Care General,ai_readiness,68.7,75,6.3,"Add FAQ sections, quick-answer blocks, structured Q&A, summary/verdict sections",HIGH
+Dog Health,trust,53.6,60,6.4,"Add 'last updated' dates, editorial disclosures, author attribution, methodology transparency",HIGH
+Dog Beds,semantic,52.7,60,7.3,"Add Key Terms blocks, bold-dash definitions, inline terminology, glossary sections",HIGH
+Dog Food,glossary,82.5,90,7.5,"Create dedicated glossary blocks, add definition patterns, structured terminology lists",HIGH
+Dog Food,trust,52.0,60,8.0,"Add 'last updated' dates, editorial disclosures, author attribution, methodology transparency",HIGH
+Pet Care General,glossary,81.7,90,8.3,"Create dedicated glossary blocks, add definition patterns, structured terminology lists",HIGH
+Cat Toys,trust,51.0,60,9.0,"Add 'last updated' dates, editorial disclosures, author attribution, methodology transparency",HIGH
+Educational,glossary,80.8,90,9.2,"Create dedicated glossary blocks, add definition patterns, structured terminology lists",HIGH
+Dog Health,glossary,80.4,90,9.6,"Create dedicated glossary blocks, add definition patterns, structured terminology lists",HIGH
+Dog Harnesses,ai_readiness,65.3,75,9.7,"Add FAQ sections, quick-answer blocks, structured Q&A, summary/verdict sections",HIGH
+Pet Care General,authority,34.8,45,10.2,"Add expert citations, vet references, methodology sections, external authoritative links",MEDIUM
+Dog Harnesses,trust,49.7,60,10.3,"Add 'last updated' dates, editorial disclosures, author attribution, methodology transparency",MEDIUM
+Cat Supplies,ai_readiness,64.6,75,10.4,"Add FAQ sections, quick-answer blocks, structured Q&A, summary/verdict sections",MEDIUM
+Dog Toys,glossary,79.4,90,10.6,"Create dedicated glossary blocks, add definition patterns, structured terminology lists",MEDIUM
+Puppy Care,trust,49.3,60,10.7,"Add 'last updated' dates, editorial disclosures, author attribution, methodology transparency",MEDIUM
+Dog Care,trust,64.0,75,11.0,"Add 'last updated' dates, editorial disclosures, author attribution, methodology transparency",MEDIUM
+Dog Food,ai_readiness,79.0,90,11.0,"Add FAQ sections, quick-answer blocks, structured Q&A, summary/verdict sections",MEDIUM
+Dog Supplies,trust,64.0,75,11.0,"Add 'last updated' dates, editorial disclosures, author attribution, methodology transparency",MEDIUM
+Educational,semantic,63.5,75,11.5,"Add Key Terms blocks, bold-dash definitions, inline terminology, glossary sections",MEDIUM
+Cat Supplies,glossary,78.4,90,11.6,"Create dedicated glossary blocks, add definition patterns, structured terminology lists",MEDIUM
+Dog Health,authority,33.4,45,11.6,"Add expert citations, vet references, methodology sections, external authoritative links",MEDIUM
+Dog Harnesses,glossary,78.3,90,11.7,"Create dedicated glossary blocks, add definition patterns, structured terminology lists",MEDIUM
+Cat Supplies,semantic,63.1,75,11.9,"Add Key Terms blocks, bold-dash definitions, inline terminology, glossary sections",MEDIUM
+Dog Care,semantic,63.0,75,12.0,"Add Key Terms blocks, bold-dash definitions, inline terminology, glossary sections",MEDIUM
+Dog Health,semantic,62.8,75,12.2,"Add Key Terms blocks, bold-dash definitions, inline terminology, glossary sections",MEDIUM
+Dog Care,glossary,77.0,90,13.0,"Create dedicated glossary blocks, add definition patterns, structured terminology lists",MEDIUM
+Dog Food,comparison,32.0,45,13.0,"Add comparison tables, vs sections, pro/con lists, rating structures",MEDIUM
+Dog Beds,comparison,31.0,45,14.0,"Add comparison tables, vs sections, pro/con lists, rating structures",MEDIUM
+Dog Harnesses,semantic,61.0,75,14.0,"Add Key Terms blocks, bold-dash definitions, inline terminology, glossary sections",MEDIUM
+Dog Supplies,ai_readiness,76.0,90,14.0,"Add FAQ sections, quick-answer blocks, structured Q&A, summary/verdict sections",MEDIUM
+Puppy Care,practical,31.0,45,14.0,"Add step-by-step guides, checklists, tips blocks, troubleshooting sections, examples",MEDIUM
+Cat Toys,semantic,60.7,75,14.3,"Add Key Terms blocks, bold-dash definitions, inline terminology, glossary sections",MEDIUM
+Cat Toys,glossary,75.5,90,14.5,"Create dedicated glossary blocks, add definition patterns, structured terminology lists",MEDIUM
+Pet Care General,practical,30.2,45,14.8,"Add step-by-step guides, checklists, tips blocks, troubleshooting sections, examples",MEDIUM
+Dog Supplies,semantic,60.0,75,15.0,"Add Key Terms blocks, bold-dash definitions, inline terminology, glossary sections",MEDIUM
+Dog Supplies,glossary,75.0,90,15.0,"Create dedicated glossary blocks, add definition patterns, structured terminology lists",MEDIUM
+Puppy Care,semantic,60.0,75,15.0,"Add Key Terms blocks, bold-dash definitions, inline terminology, glossary sections",MEDIUM
+Dog Beds,practical,29.0,45,16.0,"Add step-by-step guides, checklists, tips blocks, troubleshooting sections, examples",MEDIUM
+Puppy Care,authority,29.0,45,16.0,"Add expert citations, vet references, methodology sections, external authoritative links",MEDIUM
+Educational,authority,28.7,45,16.3,"Add expert citations, vet references, methodology sections, external authoritative links",MEDIUM
+Dog Toys,authority,27.9,45,17.1,"Add expert citations, vet references, methodology sections, external authoritative links",MEDIUM
+Dog Food,practical,27.2,45,17.8,"Add step-by-step guides, checklists, tips blocks, troubleshooting sections, examples",MEDIUM
+Cat Supplies,authority,26.7,45,18.3,"Add expert citations, vet references, methodology sections, external authoritative links",LOW
+Dog Beds,authority,26.7,45,18.3,"Add expert citations, vet references, methodology sections, external authoritative links",LOW
+Dog Harnesses,practical,26.7,45,18.3,"Add step-by-step guides, checklists, tips blocks, troubleshooting sections, examples",LOW
+Dog Toys,practical,26.7,45,18.3,"Add step-by-step guides, checklists, tips blocks, troubleshooting sections, examples",LOW
+Dog Health,practical,26.2,45,18.8,"Add step-by-step guides, checklists, tips blocks, troubleshooting sections, examples",LOW
+Educational,practical,24.5,45,20.5,"Add step-by-step guides, checklists, tips blocks, troubleshooting sections, examples",LOW
+Dog Harnesses,authority,24.0,45,21.0,"Add expert citations, vet references, methodology sections, external authoritative links",LOW
+Dog Supplies,authority,24.0,45,21.0,"Add expert citations, vet references, methodology sections, external authoritative links",LOW
+Cat Supplies,practical,23.0,45,22.0,"Add step-by-step guides, checklists, tips blocks, troubleshooting sections, examples",LOW
+Cat Toys,practical,22.7,45,22.3,"Add step-by-step guides, checklists, tips blocks, troubleshooting sections, examples",LOW
+Dog Supplies,practical,22.0,45,23.0,"Add step-by-step guides, checklists, tips blocks, troubleshooting sections, examples",LOW
+Cat Toys,authority,21.5,45,23.5,"Add expert citations, vet references, methodology sections, external authoritative links",LOW
+Pet Care General,citation,20.5,45,24.5,"Add external references, academic sources, 'according to' attributions, source sections",LOW
+Dog Care,authority,20.0,45,25.0,"Add expert citations, vet references, methodology sections, external authoritative links",LOW

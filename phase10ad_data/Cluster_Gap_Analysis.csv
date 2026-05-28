@@ -1,0 +1,121 @@
+Cluster,Dimension,Dog Toys Score,Cluster Score,Gap,Priority
+Dog Food,Trust Density,66.8,65.0,1.8,Low
+Dog Food,FAQ Coverage,81.2,100.0,-18.8,Low
+Dog Food,Glossary Coverage,96.0,100.0,-4.0,Low
+Dog Food,Comparison Tables,21.4,100.0,-78.6,Low
+Dog Food,Practical Guidance,70.3,100.0,-29.7,Low
+Dog Food,External References,38.8,0.0,38.8,Critical
+Dog Food,Internal Links,90.0,90.5,-0.5,Low
+Dog Food,Answer Readiness,90.0,90.0,0.0,Low
+Dog Food,Educational Depth,79.7,99.0,-19.3,Low
+Dog Food,Trust Intensity,89.7,100.0,-10.3,Low
+Dog Beds,Trust Density,66.8,73.6,-6.8,Low
+Dog Beds,FAQ Coverage,81.2,82.7,-1.5,Low
+Dog Beds,Glossary Coverage,96.0,91.6,4.5,Low
+Dog Beds,Comparison Tables,21.4,28.3,-6.9,Low
+Dog Beds,Practical Guidance,70.3,83.0,-12.7,Low
+Dog Beds,External References,38.8,8.6,30.3,Critical
+Dog Beds,Internal Links,90.0,85.4,4.6,Low
+Dog Beds,Answer Readiness,90.0,88.6,1.4,Low
+Dog Beds,Educational Depth,79.7,82.9,-3.1,Low
+Dog Beds,Trust Intensity,89.7,96.3,-6.6,Low
+Dog Harnesses,Trust Density,66.8,73.9,-7.1,Low
+Dog Harnesses,FAQ Coverage,81.2,75.2,6.0,Medium
+Dog Harnesses,Glossary Coverage,96.0,100.0,-4.0,Low
+Dog Harnesses,Comparison Tables,21.4,22.0,-0.6,Low
+Dog Harnesses,Practical Guidance,70.3,78.4,-8.1,Low
+Dog Harnesses,External References,38.8,2.2,36.6,Critical
+Dog Harnesses,Internal Links,90.0,87.3,2.7,Low
+Dog Harnesses,Answer Readiness,90.0,78.9,11.1,Medium
+Dog Harnesses,Educational Depth,79.7,81.0,-1.3,Low
+Dog Harnesses,Trust Intensity,89.7,98.6,-8.9,Low
+Dog Health,Trust Density,66.8,76.0,-9.2,Low
+Dog Health,FAQ Coverage,81.2,75.6,5.6,Medium
+Dog Health,Glossary Coverage,96.0,98.2,-2.2,Low
+Dog Health,Comparison Tables,21.4,0.0,21.4,High
+Dog Health,Practical Guidance,70.3,76.4,-6.1,Low
+Dog Health,External References,38.8,8.0,30.8,Critical
+Dog Health,Internal Links,90.0,89.6,0.4,Low
+Dog Health,Answer Readiness,90.0,78.0,12.0,Medium
+Dog Health,Educational Depth,79.7,84.8,-5.1,Low
+Dog Health,Trust Intensity,89.7,100.0,-10.3,Low
+Dog Care,Trust Density,66.8,70.7,-3.9,Low
+Dog Care,FAQ Coverage,81.2,70.3,10.9,Medium
+Dog Care,Glossary Coverage,96.0,96.4,-0.4,Low
+Dog Care,Comparison Tables,21.4,18.9,2.5,Low
+Dog Care,Practical Guidance,70.3,67.6,2.8,Low
+Dog Care,External References,38.8,14.3,24.5,High
+Dog Care,Internal Links,90.0,83.9,6.1,Medium
+Dog Care,Answer Readiness,90.0,81.4,8.6,Medium
+Dog Care,Educational Depth,79.7,82.0,-2.3,Low
+Dog Care,Trust Intensity,89.7,98.1,-8.5,Low
+Cat Toys,Trust Density,66.8,69.3,-2.5,Low
+Cat Toys,FAQ Coverage,81.2,70.6,10.7,Medium
+Cat Toys,Glossary Coverage,96.0,100.0,-4.0,Low
+Cat Toys,Comparison Tables,21.4,18.9,2.5,Low
+Cat Toys,Practical Guidance,70.3,67.5,2.8,Low
+Cat Toys,External References,38.8,0.0,38.8,Critical
+Cat Toys,Internal Links,90.0,100.0,-10.0,Low
+Cat Toys,Answer Readiness,90.0,80.0,10.0,Medium
+Cat Toys,Educational Depth,79.7,74.9,4.8,Low
+Cat Toys,Trust Intensity,89.7,94.4,-4.8,Low
+Cat Supplies,Trust Density,66.8,80.0,-13.2,Low
+Cat Supplies,FAQ Coverage,81.2,70.0,11.3,Medium
+Cat Supplies,Glossary Coverage,96.0,97.2,-1.1,Low
+Cat Supplies,Comparison Tables,21.4,8.2,13.1,Medium
+Cat Supplies,Practical Guidance,70.3,61.9,8.4,Medium
+Cat Supplies,External References,38.8,3.3,35.5,Critical
+Cat Supplies,Internal Links,90.0,96.8,-6.8,Low
+Cat Supplies,Answer Readiness,90.0,76.2,13.8,Medium
+Cat Supplies,Educational Depth,79.7,79.7,0.0,Low
+Cat Supplies,Trust Intensity,89.7,97.8,-8.2,Low
+Puppy Care,Trust Density,66.8,75.0,-8.2,Low
+Puppy Care,FAQ Coverage,81.2,84.3,-3.1,Low
+Puppy Care,Glossary Coverage,96.0,100.0,-4.0,Low
+Puppy Care,Comparison Tables,21.4,0.0,21.4,High
+Puppy Care,Practical Guidance,70.3,80.3,-10.0,Low
+Puppy Care,External References,38.8,16.7,22.2,High
+Puppy Care,Internal Links,90.0,83.0,7.0,Medium
+Puppy Care,Answer Readiness,90.0,85.0,5.0,Low
+Puppy Care,Educational Depth,79.7,85.5,-5.8,Low
+Puppy Care,Trust Intensity,89.7,95.7,-6.0,Low
+Dog Supplies,Trust Density,66.8,81.7,-14.9,Low
+Dog Supplies,FAQ Coverage,81.2,69.7,11.6,Medium
+Dog Supplies,Glossary Coverage,96.0,100.0,-4.0,Low
+Dog Supplies,Comparison Tables,21.4,0.0,21.4,High
+Dog Supplies,Practical Guidance,70.3,70.5,-0.2,Low
+Dog Supplies,External References,38.8,0.0,38.8,Critical
+Dog Supplies,Internal Links,90.0,93.5,-3.5,Low
+Dog Supplies,Answer Readiness,90.0,80.0,10.0,Medium
+Dog Supplies,Educational Depth,79.7,78.7,1.1,Low
+Dog Supplies,Trust Intensity,89.7,100.0,-10.3,Low
+Pet Care General,Trust Density,66.8,65.0,1.8,Low
+Pet Care General,FAQ Coverage,81.2,79.1,2.1,Low
+Pet Care General,Glossary Coverage,96.0,88.7,7.4,Medium
+Pet Care General,Comparison Tables,21.4,14.7,6.7,Medium
+Pet Care General,Practical Guidance,70.3,71.9,-1.6,Low
+Pet Care General,External References,38.8,24.4,14.4,Medium
+Pet Care General,Internal Links,90.0,84.4,5.6,Medium
+Pet Care General,Answer Readiness,90.0,91.1,-1.1,Low
+Pet Care General,Educational Depth,79.7,88.3,-8.6,Low
+Pet Care General,Trust Intensity,89.7,92.8,-3.1,Low
+Educational,Trust Density,66.8,69.0,-2.2,Low
+Educational,FAQ Coverage,81.2,89.2,-8.0,Low
+Educational,Glossary Coverage,96.0,81.4,14.6,Medium
+Educational,Comparison Tables,21.4,13.2,8.2,Medium
+Educational,Practical Guidance,70.3,79.6,-9.3,Low
+Educational,External References,38.8,36.0,2.8,Low
+Educational,Internal Links,90.0,89.6,0.4,Low
+Educational,Answer Readiness,90.0,90.0,0.0,Low
+Educational,Educational Depth,79.7,90.0,-10.3,Low
+Educational,Trust Intensity,89.7,89.6,0.1,Low
+Unclassified,Trust Density,66.8,73.6,-6.8,Low
+Unclassified,FAQ Coverage,81.2,70.6,10.7,Medium
+Unclassified,Glossary Coverage,96.0,95.1,1.0,Low
+Unclassified,Comparison Tables,21.4,14.1,7.2,Medium
+Unclassified,Practical Guidance,70.3,69.4,0.9,Low
+Unclassified,External References,38.8,18.6,20.3,High
+Unclassified,Internal Links,90.0,93.6,-3.6,Low
+Unclassified,Answer Readiness,90.0,85.7,4.3,Low
+Unclassified,Educational Depth,79.7,77.4,2.3,Low
+Unclassified,Trust Intensity,89.7,95.4,-5.7,Low

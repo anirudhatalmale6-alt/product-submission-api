@@ -1,0 +1,122 @@
+source_cluster,target_cluster,link_count,unique_posts_linking,flow_strength,is_weak_corridor
+Cat Supplies,Cat Supplies,4,4,moderate,
+Cat Supplies,Cat Toys,3,3,moderate,no
+Cat Supplies,Dog Beds,0,0,none,yes
+Cat Supplies,Dog Care,0,0,none,yes
+Cat Supplies,Dog Food,0,0,none,yes
+Cat Supplies,Dog Harnesses,0,0,none,yes
+Cat Supplies,Dog Health,0,0,none,yes
+Cat Supplies,Dog Toys,0,0,none,yes
+Cat Supplies,Educational,3,2,moderate,no
+Cat Supplies,Pet Care General,3,3,moderate,no
+Cat Supplies,Puppy Care,0,0,none,yes
+Cat Toys,Cat Supplies,4,4,moderate,no
+Cat Toys,Cat Toys,21,9,strong,
+Cat Toys,Dog Beds,0,0,none,yes
+Cat Toys,Dog Care,1,1,weak,yes
+Cat Toys,Dog Food,0,0,none,yes
+Cat Toys,Dog Harnesses,0,0,none,yes
+Cat Toys,Dog Health,0,0,none,yes
+Cat Toys,Dog Toys,0,0,none,yes
+Cat Toys,Educational,18,8,strong,no
+Cat Toys,Pet Care General,15,8,strong,no
+Cat Toys,Puppy Care,0,0,none,yes
+Dog Beds,Cat Supplies,0,0,none,yes
+Dog Beds,Cat Toys,0,0,none,yes
+Dog Beds,Dog Beds,12,4,strong,
+Dog Beds,Dog Care,0,0,none,yes
+Dog Beds,Dog Food,0,0,none,yes
+Dog Beds,Dog Harnesses,0,0,none,yes
+Dog Beds,Dog Health,0,0,none,yes
+Dog Beds,Dog Toys,0,0,none,yes
+Dog Beds,Educational,8,5,moderate,no
+Dog Beds,Pet Care General,1,1,weak,yes
+Dog Beds,Puppy Care,0,0,none,yes
+Dog Care,Cat Supplies,0,0,none,yes
+Dog Care,Cat Toys,0,0,none,yes
+Dog Care,Dog Beds,0,0,none,yes
+Dog Care,Dog Care,1,1,weak,
+Dog Care,Dog Food,0,0,none,yes
+Dog Care,Dog Harnesses,1,1,weak,yes
+Dog Care,Dog Health,0,0,none,yes
+Dog Care,Dog Toys,0,0,none,yes
+Dog Care,Educational,4,2,moderate,no
+Dog Care,Pet Care General,1,1,weak,yes
+Dog Care,Puppy Care,0,0,none,yes
+Dog Food,Cat Supplies,0,0,none,yes
+Dog Food,Cat Toys,0,0,none,yes
+Dog Food,Dog Beds,0,0,none,yes
+Dog Food,Dog Care,0,0,none,yes
+Dog Food,Dog Food,0,0,none,
+Dog Food,Dog Harnesses,0,0,none,yes
+Dog Food,Dog Health,0,0,none,yes
+Dog Food,Dog Toys,0,0,none,yes
+Dog Food,Educational,4,1,moderate,no
+Dog Food,Pet Care General,0,0,none,yes
+Dog Food,Puppy Care,0,0,none,yes
+Dog Harnesses,Cat Supplies,0,0,none,yes
+Dog Harnesses,Cat Toys,0,0,none,yes
+Dog Harnesses,Dog Beds,0,0,none,yes
+Dog Harnesses,Dog Care,1,1,weak,yes
+Dog Harnesses,Dog Food,0,0,none,yes
+Dog Harnesses,Dog Harnesses,1,1,weak,
+Dog Harnesses,Dog Health,1,1,weak,yes
+Dog Harnesses,Dog Toys,0,0,none,yes
+Dog Harnesses,Educational,7,3,moderate,no
+Dog Harnesses,Pet Care General,0,0,none,yes
+Dog Harnesses,Puppy Care,0,0,none,yes
+Dog Health,Cat Supplies,0,0,none,yes
+Dog Health,Cat Toys,0,0,none,yes
+Dog Health,Dog Beds,0,0,none,yes
+Dog Health,Dog Care,1,1,weak,yes
+Dog Health,Dog Food,0,0,none,yes
+Dog Health,Dog Harnesses,1,1,weak,yes
+Dog Health,Dog Health,0,0,none,
+Dog Health,Dog Toys,0,0,none,yes
+Dog Health,Educational,0,0,none,yes
+Dog Health,Pet Care General,2,1,weak,yes
+Dog Health,Puppy Care,0,0,none,yes
+Dog Toys,Cat Supplies,2,1,weak,yes
+Dog Toys,Cat Toys,2,1,weak,yes
+Dog Toys,Dog Beds,0,0,none,yes
+Dog Toys,Dog Care,2,1,weak,yes
+Dog Toys,Dog Food,0,0,none,yes
+Dog Toys,Dog Harnesses,1,1,weak,yes
+Dog Toys,Dog Health,1,1,weak,yes
+Dog Toys,Dog Toys,43,17,strong,
+Dog Toys,Educational,42,19,strong,no
+Dog Toys,Pet Care General,10,6,strong,no
+Dog Toys,Puppy Care,0,0,none,yes
+Educational,Cat Supplies,5,4,moderate,no
+Educational,Cat Toys,19,7,strong,no
+Educational,Dog Beds,11,4,strong,no
+Educational,Dog Care,8,7,moderate,no
+Educational,Dog Food,3,3,moderate,no
+Educational,Dog Harnesses,8,8,moderate,no
+Educational,Dog Health,7,7,moderate,no
+Educational,Dog Toys,31,16,strong,no
+Educational,Educational,201,71,strong,
+Educational,Pet Care General,70,38,strong,no
+Educational,Puppy Care,3,2,moderate,no
+Pet Care General,Cat Supplies,4,3,moderate,no
+Pet Care General,Cat Toys,8,3,moderate,no
+Pet Care General,Dog Beds,3,2,moderate,no
+Pet Care General,Dog Care,4,3,moderate,no
+Pet Care General,Dog Food,1,1,weak,yes
+Pet Care General,Dog Harnesses,0,0,none,yes
+Pet Care General,Dog Health,2,2,weak,yes
+Pet Care General,Dog Toys,12,8,strong,no
+Pet Care General,Educational,32,16,strong,no
+Pet Care General,Pet Care General,22,13,strong,
+Pet Care General,Puppy Care,0,0,none,yes
+Puppy Care,Cat Supplies,0,0,none,yes
+Puppy Care,Cat Toys,0,0,none,yes
+Puppy Care,Dog Beds,0,0,none,yes
+Puppy Care,Dog Care,0,0,none,yes
+Puppy Care,Dog Food,0,0,none,yes
+Puppy Care,Dog Harnesses,0,0,none,yes
+Puppy Care,Dog Health,0,0,none,yes
+Puppy Care,Dog Toys,0,0,none,yes
+Puppy Care,Educational,0,0,none,yes
+Puppy Care,Pet Care General,0,0,none,yes
+Puppy Care,Puppy Care,1,1,weak,

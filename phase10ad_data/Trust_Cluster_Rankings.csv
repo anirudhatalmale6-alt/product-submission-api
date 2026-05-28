@@ -1,0 +1,13 @@
+cluster,avg_trust_intensity,strongest_trust_dimension,weakest_trust_dimension,posts_above_70_trust,posts_below_40_trust,priority_actions
+Dog Supplies,36.8,Disclosure Visibility,Reference Support,0,1,"Add methodology/testing process sections | Add authoritative external references (RSPCA, AVMA, etc.) | Improve plain-language explanations and beginner context"
+Dog Health,34.6,Disclosure Visibility,Reference Support,0,3,"Add methodology/testing process sections | Add authoritative external references (RSPCA, AVMA, etc.) | Improve plain-language explanations and beginner context"
+Dog Care,33.4,Disclosure Visibility,Reference Support,0,4,"Add methodology/testing process sections | Add authoritative external references (RSPCA, AVMA, etc.) | Improve plain-language explanations and beginner context"
+Cat Supplies,30.5,Disclosure Visibility,Reference Support,0,8,"Add methodology/testing process sections | Add authoritative external references (RSPCA, AVMA, etc.) | Improve plain-language explanations and beginner context"
+Dog Harnesses,28.0,Disclosure Visibility,Reference Support,0,4,"Add methodology/testing process sections | Add authoritative external references (RSPCA, AVMA, etc.) | Improve plain-language explanations and beginner context"
+Puppy Care,27.5,Disclosure Visibility,Reference Support,0,8,"Add methodology/testing process sections | Add authoritative external references (RSPCA, AVMA, etc.) | Improve plain-language explanations and beginner context"
+Educational,27.3,Disclosure Visibility,Reference Support,0,60,"Add methodology/testing process sections | Add authoritative external references (RSPCA, AVMA, etc.) | Improve plain-language explanations and beginner context"
+Dog Beds,26.8,Disclosure Visibility,Reference Support,0,4,"Add methodology/testing process sections | Add authoritative external references (RSPCA, AVMA, etc.) | URGENT: 4 posts below 40 trust — prioritize trust uplift"
+Dog Food,21.3,Correction Visibility,Disclosure Visibility,0,3,"Add affiliate/advertising disclosures | Add authoritative external references (RSPCA, AVMA, etc.) | Improve plain-language explanations and beginner context"
+Cat Toys,20.9,Correction Visibility,Reference Support,0,15,"Add methodology/testing process sections | Add affiliate/advertising disclosures | Add authoritative external references (RSPCA, AVMA, etc.)"
+Dog Toys,19.4,Reference Support,Disclosure Visibility,0,25,Add methodology/testing process sections | Add affiliate/advertising disclosures | Improve plain-language explanations and beginner context
+Pet Care General,19.3,Reference Support,Disclosure Visibility,0,7,Add methodology/testing process sections | Add affiliate/advertising disclosures | Improve plain-language explanations and beginner context
