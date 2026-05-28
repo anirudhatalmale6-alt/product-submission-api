@@ -1,0 +1,6 @@
+spoke_id,title,cluster,content_type,word_target,status,trust_signals,faq_count,entity_domains_covered
+sp-gl-scratching,"Cat Scratching Behaviour Explained",Cat Supplies,glossary,1500,drafting,4,7,"cat behavior|scratching behavior"
+sp-gl-nutrition,"Pet Nutrition Terminology Guide",Pet Care,glossary,1600,drafting,4,8,"nutrition terminology|feeding terminology"
+sp-gl-training,"Dog Training Terminology Explained",Dog Care,glossary,1500,drafting,4,7,"training terminology"
+sp-gl-grooming,"Pet Grooming Glossary",Pet Care,glossary,1500,drafting,4,7,"grooming terminology"
+sp-gl-feeding,"Pet Feeding Guide: Portions Schedules Methods",Pet Care,glossary,1500,drafting,4,7,"feeding terminology"
