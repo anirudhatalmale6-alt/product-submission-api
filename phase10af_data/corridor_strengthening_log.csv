@@ -1,0 +1,9 @@
+source_id,source_cluster,target_slug,target_cluster,status
+5510,Dog Beds,dog-health-basics-guide,Dog Care/Supplies,OK
+5416,Dog Beds,orthopaedic-care-dogs,Dog Care/Supplies,OK
+5522,Dog Care/Supplies,dog-bed-sizing-guide,Dog Beds,SKIP_EXISTS
+5520,Dog Care/Supplies,dog-bed-types-glossary,Dog Beds,OK
+5511,Educational,pet-health-terminology-guide,Pet Care General,OK
+5512,Educational,pet-first-aid-basics,Pet Care General,OK
+5521,Pet Care General,dog-behaviour-explained,Educational,OK
+4571,Pet Care General,dog-health-basics-guide,Educational,OK

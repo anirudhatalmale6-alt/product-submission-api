@@ -1,0 +1,70 @@
+source_cluster,target_cluster,link_count
+Cat Supplies,Cat Toys,2
+Cat Supplies,Dog Toys,1
+Cat Supplies,Uncategorized,9
+Cat Toys,Cat Supplies,15
+Cat Toys,Dog Grooming,8
+Cat Toys,Dog Harnesses,4
+Cat Toys,Dog Toys,13
+Cat Toys,Dog Training,5
+Cat Toys,Indoor Cats,1
+Cat Toys,Uncategorized,25
+Dog Beds,Dog Grooming,7
+Dog Beds,Dog Harnesses,1
+Dog Beds,Dog Health,2
+Dog Beds,Dog Toys,1
+Dog Beds,Educational,2
+Dog Beds,Uncategorized,7
+Dog Food,Dog Grooming,2
+Dog Food,Dog Health,4
+Dog Food,Dog Toys,1
+Dog Grooming,Cat Supplies,1
+Dog Grooming,Cat Toys,1
+Dog Grooming,Dog Beds,3
+Dog Grooming,Dog Harnesses,2
+Dog Grooming,Dog Health,9
+Dog Grooming,Dog Toys,2
+Dog Grooming,Uncategorized,17
+Dog Harnesses,Dog Grooming,3
+Dog Harnesses,Dog Health,3
+Dog Harnesses,Dog Training,6
+Dog Harnesses,Uncategorized,14
+Dog Health,Dog Beds,1
+Dog Health,Dog Food,1
+Dog Health,Dog Grooming,1
+Dog Health,Dog Harnesses,1
+Dog Health,Dog Training,1
+Dog Health,Indoor Cats,1
+Dog Health,Puppy Care,1
+Dog Health,Uncategorized,1
+Dog Toys,Cat Supplies,6
+Dog Toys,Cat Toys,21
+Dog Toys,Dog Food,1
+Dog Toys,Dog Grooming,4
+Dog Toys,Dog Harnesses,4
+Dog Toys,Dog Health,1
+Dog Toys,Dog Training,4
+Dog Toys,Uncategorized,27
+Dog Training,Cat Toys,5
+Dog Training,Dog Harnesses,1
+Dog Training,Dog Health,1
+Dog Training,Dog Toys,7
+Dog Training,Educational,5
+Dog Training,Puppy Care,3
+Educational,Cat Supplies,1
+Educational,Cat Toys,1
+Educational,Dog Beds,2
+Educational,Dog Toys,9
+Educational,Dog Training,5
+Educational,Indoor Cats,1
+Educational,Uncategorized,1
+Indoor Cats,Dog Health,1
+Indoor Cats,Dog Toys,2
+Indoor Cats,Dog Training,1
+Puppy Care,Dog Toys,5
+Puppy Care,Dog Training,1
+Puppy Care,Uncategorized,1
+Uncategorized,Dog Beds,4
+Uncategorized,Dog Health,1
+Uncategorized,Dog Toys,21
+Uncategorized,Puppy Care,1
