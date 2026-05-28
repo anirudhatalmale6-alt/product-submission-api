@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetHub NOC Dashboard — Phase 10F</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 14px; scroll-behavior: smooth; }
+body {
+  background: #080a0f;
+  color: #e2e8f0;
+  font-family: 'Outfit', system-ui, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #080a0f; }
+::-webkit-scrollbar-thumb { background: #1a2236; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #253352; }
+
+/* ===== VARIABLES ===== */
+:root {
+  --bg: #080a0f;
+  --card: #111621;
+  --card-raised: #151c2a;
+  --border: #1a2236;
+  --border-light: #253352;
+  --text: #e2e8f0;
+  --dim: #7a8ba8;
+  --accent: #06b6d4;
+  --accent-glow: rgba(6, 182, 212, 0.15);
+  --accent-dim: rgba(6, 182, 212, 0.6);
+  --green: #22c55e;
+  --green-dim: rgba(34, 197, 94, 0.15);
+  --red: #ef4444;
+  --red-dim: rgba(239, 68, 68, 0.15);
+  --amber: #f59e0b;
+  --amber-dim: rgba(245, 158, 11, 0.15);
+  --orange: #f97316;
+  --orange-dim: rgba(249, 115, 22, 0.15);
+  --blue: #3b82f6;
+  --blue-dim: rgba(59, 130, 246, 0.15);
+  --grey: #64748b;
+  --grey-dim: rgba(100, 116, 139, 0.15);
+  --mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --radius: 8px;
+  --radius-sm: 5px;
+  --transition: 0.2s ease;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.fade-in {
+  animation: fadeInUp 0.4s ease forwards;
+  opacity: 0;
+}
+.fade-in-delay-1 { animation-delay: 0.05s; }
+.fade-in-delay-2 { animation-delay: 0.10s; }
+.fade-in-delay-3 { animation-delay: 0.15s; }
+.fade-in-delay-4 { animation-delay: 0.20s; }
+.fade-in-delay-5 { animation-delay: 0.25s; }
+.fade-in-delay-6 { animation-delay: 0.30s; }
+.fade-in-delay-7 { animation-delay: 0.35s; }
+.fade-in-delay-8 { animation-delay: 0.40s; }
+.fade-in-delay-9 { animation-delay: 0.45s; }
+
+/* ===== LAYOUT ===== */
+.noc-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px 20px 40px;
+}
+
+/* ===== HEADER BAR ===== */
+.noc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.noc-header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.noc-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--accent), #0891b2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+.noc-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+.noc-subtitle {
+  font-size: 0.8rem;
+  color: var(--dim);
+  font-weight: 400;
+}
+.noc-header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.refresh-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: var(--dim);
+  font-family: var(--mono);
+}
+.refresh-dot {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--green);
+  animation: pulse-dot 2s infinite;
+}
+.refresh-dot.error { background: var(--red); animation: none; }
+.btn-refresh {
+  background: var(--accent-glow);
+  color: var(--accent);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.btn-refresh:hover {
+  background: rgba(6, 182, 212, 0.25);
+  border-color: var(--accent);
+}
+.btn-refresh:active { transform: scale(0.97); }
+
+/* ===== SECTION ===== */
+.noc-section {
+  margin-bottom: 24px;
+}
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.section-icon {
+  width: 28px; height: 28px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  flex-shrink: 0;
+}
+.section-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+.section-count {
+  font-size: 0.72rem;
+  font-family: var(--mono);
+  color: var(--dim);
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  transition: border-color var(--transition);
+}
+.card:hover { border-color: var(--border-light); }
+
+/* ===== OPERATIONAL SUMMARY ===== */
+.ops-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 10px;
+}
+.ops-stat {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  text-align: center;
+  transition: all var(--transition);
+}
+.ops-stat:hover {
+  border-color: var(--border-light);
+  transform: translateY(-1px);
+}
+.ops-stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: var(--mono);
+  line-height: 1.2;
+}
+.ops-stat-value.accent { color: var(--accent); }
+.ops-stat-value.green { color: var(--green); }
+.ops-stat-value.red { color: var(--red); }
+.ops-stat-value.amber { color: var(--amber); }
+.ops-stat-value.blue { color: var(--blue); }
+.ops-stat-label {
+  font-size: 0.7rem;
+  color: var(--dim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+/* ===== AGENT GRID ===== */
+.agent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+}
+.agent-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+.agent-card:hover { border-color: var(--border-light); }
+.agent-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 3px;
+  height: 100%;
+  border-radius: 3px 0 0 3px;
+}
+.agent-card.healthy::before { background: var(--green); }
+.agent-card.down::before { background: var(--red); }
+.agent-card.unreachable::before { background: var(--amber); }
+.agent-card.unknown::before { background: var(--grey); }
+
+.agent-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.agent-name {
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-transform: capitalize;
+}
+.agent-port {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--dim);
+  background: rgba(122, 139, 168, 0.1);
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.agent-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 12px;
+  margin-bottom: 10px;
+}
+.agent-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+}
+.agent-meta-label { color: var(--dim); }
+.agent-meta-value { color: var(--text); font-family: var(--mono); font-size: 0.72rem; }
+
+.health-bar-container {
+  margin-top: 10px;
+}
+.health-bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  color: var(--dim);
+  margin-bottom: 4px;
+}
+.health-bar {
+  width: 100%;
+  height: 5px;
+  background: rgba(122, 139, 168, 0.15);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.health-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.6s ease;
+}
+.health-bar-fill.good { background: var(--green); }
+.health-bar-fill.warn { background: var(--amber); }
+.health-bar-fill.bad { background: var(--red); }
+
+.agent-tasks {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  font-size: 0.72rem;
+  font-family: var(--mono);
+}
+.agent-tasks span { color: var(--dim); }
+.agent-tasks .completed { color: var(--green); }
+.agent-tasks .failed { color: var(--red); }
+
+/* ===== BADGES ===== */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  font-family: var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+.badge-healthy, .badge-completed, .badge-green {
+  background: var(--green-dim);
+  color: var(--green);
+}
+.badge-down, .badge-failed, .badge-critical, .badge-red {
+  background: var(--red-dim);
+  color: var(--red);
+}
+.badge-unreachable, .badge-warning, .badge-amber {
+  background: var(--amber-dim);
+  color: var(--amber);
+}
+.badge-error, .badge-orange {
+  background: var(--orange-dim);
+  color: var(--orange);
+}
+.badge-running, .badge-blue {
+  background: var(--blue-dim);
+  color: var(--blue);
+}
+.badge-queued, .badge-unknown, .badge-grey {
+  background: var(--grey-dim);
+  color: var(--grey);
+}
+.badge-accent {
+  background: var(--accent-glow);
+  color: var(--accent);
+}
+.badge-info {
+  background: rgba(6, 182, 212, 0.12);
+  color: var(--accent-dim);
+}
+
+/* ===== ALERTS ===== */
+.alert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.alert-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition: border-color var(--transition);
+}
+.alert-item:hover { border-color: var(--border-light); }
+.alert-item.critical { border-left: 3px solid var(--red); }
+.alert-item.error { border-left: 3px solid var(--orange); }
+.alert-item.warning { border-left: 3px solid var(--amber); }
+.alert-body { flex: 1; min-width: 0; }
+.alert-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+.alert-type {
+  font-weight: 600;
+  font-size: 0.82rem;
+}
+.alert-component {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--dim);
+}
+.alert-summary {
+  font-size: 0.78rem;
+  color: var(--dim);
+  line-height: 1.45;
+}
+.alert-time {
+  font-size: 0.68rem;
+  color: var(--dim);
+  font-family: var(--mono);
+  margin-top: 4px;
+}
+.alert-actions {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+/* ===== TABLES ===== */
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+}
+thead {
+  background: var(--card-raised);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+th {
+  text-align: left;
+  padding: 10px 14px;
+  font-weight: 600;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--dim);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+td {
+  padding: 9px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  vertical-align: middle;
+}
+tr:last-child td { border-bottom: none; }
+tbody tr {
+  background: var(--card);
+  transition: background var(--transition);
+}
+tbody tr:hover { background: var(--card-raised); }
+td.mono {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+}
+td.dim { color: var(--dim); }
+td.truncate {
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ===== FILTER BUTTONS ===== */
+.filter-bar {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.filter-btn {
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--dim);
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.filter-btn:hover {
+  border-color: var(--border-light);
+  color: var(--text);
+}
+.filter-btn.active {
+  background: var(--accent-glow);
+  border-color: rgba(6, 182, 212, 0.4);
+  color: var(--accent);
+}
+
+/* ===== ACTION BUTTONS ===== */
+.btn-sm {
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid;
+  transition: all var(--transition);
+  white-space: nowrap;
+}
+.btn-sm:active { transform: scale(0.96); }
+.btn-approve {
+  background: var(--green-dim);
+  color: var(--green);
+  border-color: rgba(34, 197, 94, 0.3);
+}
+.btn-approve:hover { background: rgba(34, 197, 94, 0.25); border-color: var(--green); }
+.btn-reject {
+  background: var(--red-dim);
+  color: var(--red);
+  border-color: rgba(239, 68, 68, 0.3);
+}
+.btn-reject:hover { background: rgba(239, 68, 68, 0.25); border-color: var(--red); }
+.btn-resolve {
+  background: var(--green-dim);
+  color: var(--green);
+  border-color: rgba(34, 197, 94, 0.3);
+}
+.btn-resolve:hover { background: rgba(34, 197, 94, 0.25); }
+.btn-suppress {
+  background: var(--amber-dim);
+  color: var(--amber);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+.btn-suppress:hover { background: rgba(245, 158, 11, 0.25); }
+
+/* ===== APPROVAL ITEMS ===== */
+.approval-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.approval-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  transition: border-color var(--transition);
+}
+.approval-item:hover { border-color: var(--border-light); }
+.approval-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+.approval-action {
+  font-weight: 600;
+  font-size: 0.82rem;
+}
+.approval-affected {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--dim);
+}
+.approval-details {
+  font-size: 0.78rem;
+  color: var(--dim);
+  margin-bottom: 4px;
+  line-height: 1.45;
+}
+.approval-reason {
+  font-size: 0.72rem;
+  color: var(--dim);
+  font-style: italic;
+  margin-bottom: 8px;
+}
+.approval-actions {
+  display: flex;
+  gap: 6px;
+}
+
+/* ===== TIMELINE ===== */
+.timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  transition: background var(--transition);
+  font-size: 0.78rem;
+}
+.timeline-item:hover { background: var(--card-raised); }
+.timeline-icon {
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.timeline-icon.critical { background: var(--red-dim); color: var(--red); }
+.timeline-icon.error { background: var(--orange-dim); color: var(--orange); }
+.timeline-icon.warning { background: var(--amber-dim); color: var(--amber); }
+.timeline-icon.info { background: var(--blue-dim); color: var(--blue); }
+.timeline-icon.success { background: var(--green-dim); color: var(--green); }
+.timeline-body { flex: 1; min-width: 0; }
+.timeline-top {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.timeline-type { font-weight: 600; font-size: 0.78rem; }
+.timeline-summary { color: var(--dim); font-size: 0.75rem; margin-top: 2px; }
+.timeline-time {
+  font-size: 0.68rem;
+  font-family: var(--mono);
+  color: var(--dim);
+  flex-shrink: 0;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+/* ===== COMPARISON SECTION ===== */
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+.comparison-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  text-align: center;
+}
+.comparison-value {
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-family: var(--mono);
+  line-height: 1.2;
+}
+.comparison-label {
+  font-size: 0.72rem;
+  color: var(--dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 6px;
+}
+
+/* ===== EMPTY / LOADING / ERROR STATES ===== */
+.state-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+  text-align: center;
+}
+.state-message-icon {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.state-message-icon.loading {
+  background: var(--accent-glow);
+  color: var(--accent);
+  animation: pulse-dot 1.5s infinite;
+}
+.state-message-icon.empty {
+  background: var(--grey-dim);
+  color: var(--grey);
+}
+.state-message-icon.error {
+  background: var(--red-dim);
+  color: var(--red);
+}
+.state-message-text {
+  font-size: 0.82rem;
+  color: var(--dim);
+}
+.state-message-sub {
+  font-size: 0.7rem;
+  color: var(--grey);
+  margin-top: 4px;
+  font-family: var(--mono);
+}
+
+/* Skeleton shimmer for loading */
+.skeleton {
+  background: linear-gradient(90deg, var(--card) 25%, var(--card-raised) 50%, var(--card) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--radius-sm);
+}
+
+/* ===== SUB-SECTION LABEL ===== */
+.sub-label {
+  font-size: 0.72rem;
+  color: var(--dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .noc-wrapper { padding: 10px 12px 30px; }
+  .noc-header { flex-direction: column; align-items: flex-start; }
+  .ops-summary-grid { grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); }
+  .agent-grid { grid-template-columns: 1fr; }
+  .ops-stat-value { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="noc-wrapper">
+  <!-- HEADER -->
+  <header class="noc-header fade-in">
+    <div class="noc-header-left">
+      <div class="noc-logo">N</div>
+      <div>
+        <div class="noc-title">PetHub NOC</div>
+        <div class="noc-subtitle">Network Operations Centre &mdash; Phase 10F Truthful Operations</div>
+      </div>
+    </div>
+    <div class="noc-header-right">
+      <div class="refresh-info">
+        <span class="refresh-dot" id="refreshDot"></span>
+        <span id="lastRefresh">Loading...</span>
+      </div>
+      <button class="btn-refresh" onclick="refreshAll()" id="btnRefresh">Refresh Now</button>
+    </div>
+  </header>
+
+  <!-- 1. OPERATIONAL SUMMARY -->
+  <section class="noc-section fade-in fade-in-delay-1" id="secSummary">
+    <div class="section-header">
+      <div class="section-icon" style="background:var(--accent-glow);color:var(--accent);">&#9670;</div>
+      <div class="section-title">Operational Summary</div>
+    </div>
+    <div class="ops-summary-grid" id="opsSummary">
+      <div class="state-message"><div class="state-message-icon loading">&#8635;</div><div class="state-message-text">Loading...</div></div>
+    </div>
+  </section>
+
+  <!-- 2. AGENT STATUS GRID -->
+  <section class="noc-section fade-in fade-in-delay-2" id="secAgents">
+    <div class="section-header">
+      <div class="section-icon" style="background:var(--green-dim);color:var(--green);">&#9632;</div>
+      <div class="section-title">Agent Status</div>
+      <span class="section-count" id="agentCount">0 agents</span>
+    </div>
+    <div class="agent-grid" id="agentGrid">
+      <div class="state-message"><div class="state-message-icon loading">&#8635;</div><div class="state-message-text">Loading agents...</div></div>
+    </div>
+  </section>
+
+  <!-- 3. ACTIVE ALERTS -->
+  <section class="noc-section fade-in fade-in-delay-3" id="secAlerts">
+    <div class="section-header">
+      <div class="section-icon" style="background:var(--red-dim);color:var(--red);">&#9888;</div>
+      <div class="section-title">Active Alerts</div>
+      <span class="section-count" id="alertCount">0 alerts</span>
+    </div>
+    <div class="alert-list" id="alertList">
+      <div class="state-message"><div class="state-message-icon loading">&#8635;</div><div class="state-message-text">Loading alerts...</div></div>
+    </div>
+  </section>
+
+  <!-- 4. JOB CENTRE -->
+  <section class="noc-section fade-in fade-in-delay-4" id="secJobs">
+    <div class="section-header">
+      <div class="section-icon" style="background:var(--blue-dim);color:var(--blue);">&#9881;</div>
+      <div class="section-title">Job Centre</div>
+      <span class="section-count" id="jobCount">0 jobs</span>
+    </div>
+    <div class="filter-bar" id="jobFilters">
+      <button class="filter-btn active" data-filter="all" onclick="setJobFilter('all',this)">All</button>
+      <button class="filter-btn" data-filter="running" onclick="setJobFilter('running',this)">Running</button>
+      <button class="filter-btn" data-filter="failed" onclick="setJobFilter('failed',this)">Failed</button>
+      <button class="filter-btn" data-filter="completed" onclick="setJobFilter('completed',this)">Completed</button>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Job ID</th>
+            <th>Agent</th>
+            <th>Action</th>
+            <th>Status</th>
+            <th>Result</th>
+            <th>Duration</th>
+            <th>Created</th>
+          </tr>
+        </thead>
+        <tbody id="jobTableBody">
+          <tr><td colspan="7"><div class="state-message"><div class="state-message-icon loading">&#8635;</div><div class="state-message-text">Loading jobs...</div></div></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 5. APPROVAL QUEUE -->
+  <section class="noc-section fade-in fade-in-delay-5" id="secApprovals">
+    <div class="section-header">
+      <div class="section-icon" style="background:var(--amber-dim);color:var(--amber);">&#10003;</div>
+      <div class="section-title">Approval Queue</div>
+      <span class="section-count" id="approvalCount">0 pending</span>
+    </div>
+    <div class="sub-label">Pending Approvals</div>
+    <div class="approval-list" id="approvalPending">
+      <div class="state-message"><div class="state-message-icon loading">&#8635;</div><div class="state-message-text">Loading approvals...</div></div>
+    </div>
+    <div class="sub-label">Recently Decided</div>
+    <div class="approval-list" id="approvalRecent">
+      <div class="state-message"><div class="state-message-icon loading">&#8635;</div><div class="state-message-text">Loading...</div></div>
+    </div>
+  </section>
+
+  <!-- 6. EVENT TIMELINE -->
+  <section class="noc-section fade-in fade-in-delay-6" id="secEvents">
+    <div class="section-header">
+      <div class="section-icon" style="background:var(--accent-glow);color:var(--accent);">&#9201;</div>
+      <div class="section-title">Event Timeline</div>
+      <span class="section-count" id="eventCount">0 events</span>
+    </div>
+    <div class="filter-bar" id="eventFilters">
+      <button class="filter-btn active" data-filter="all" onclick="setEventFilter('category','all',this)">All Categories</button>
+      <button class="filter-btn" data-filter="critical" onclick="setEventFilter('severity','critical',this)">Critical</button>
+      <button class="filter-btn" data-filter="error" onclick="setEventFilter('severity','error',this)">Error</button>
+      <button class="filter-btn" data-filter="warning" onclick="setEventFilter('severity','warning',this)">Warning</button>
+      <button class="filter-btn" data-filter="info" onclick="setEventFilter('severity','info',this)">Info</button>
+    </div>
+    <div class="timeline-list card" id="eventTimeline">
+      <div class="state-message"><div class="state-message-icon loading">&#8635;</div><div class="state-message-text">Loading events...</div></div>
+    </div>
+  </section>
+
+  <!-- 7. PIPELINE HISTORY -->
+  <section class="noc-section fade-in fade-in-delay-7" id="secPipeline">
+    <div class="section-header">
+      <div class="section-icon" style="background:rgba(168, 85, 247, 0.15);color:#a855f7;">&#9654;</div>
+      <div class="section-title">Pipeline History</div>
+      <span class="section-count" id="pipelineCount">0 runs</span>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Run ID</th>
+            <th>Mode</th>
+            <th>Status</th>
+            <th>Started By</th>
+            <th>Article Topic</th>
+            <th>Duration</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody id="pipelineTableBody">
+          <tr><td colspan="7"><div class="state-message"><div class="state-message-icon loading">&#8635;</div><div class="state-message-text">Loading pipeline history...</div></div></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 8. ACTION RECEIPTS -->
+  <section class="noc-section fade-in fade-in-delay-8" id="secActions">
+    <div class="section-header">
+      <div class="section-icon" style="background:rgba(236, 72, 153, 0.15);color:#ec4899;">&#9998;</div>
+      <div class="section-title">Action Receipts</div>
+      <span class="section-count" id="actionCount">0 actions</span>
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>Actor</th>
+            <th>Status</th>
+            <th>Source Screen</th>
+            <th>Job ID</th>
+            <th>Requested</th>
+          </tr>
+        </thead>
+        <tbody id="actionTableBody">
+          <tr><td colspan="6"><div class="state-message"><div class="state-message-icon loading">&#8635;</div><div class="state-message-text">Loading action receipts...</div></div></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 9. COMPARISON / SHADOW MODE -->
+  <section class="noc-section fade-in fade-in-delay-9" id="secComparison">
+    <div class="section-header">
+      <div class="section-icon" style="background:rgba(99, 102, 241, 0.15);color:#6366f1;">&#8644;</div>
+      <div class="section-title">Comparison / Shadow Mode</div>
+    </div>
+    <div class="comparison-grid" id="comparisonGrid">
+      <div class="state-message"><div class="state-message-icon loading">&#8635;</div><div class="state-message-text">Loading comparison data...</div></div>
+    </div>
+  </section>
+</div>
+
+<script>
+/* ============================================================
+   PetHub NOC Dashboard — Phase 10F
+   Vanilla JS, no external dependencies
+   ============================================================ */
+
+// ===== STATE =====
+const state = {
+  jobFilter: 'all',
+  eventFilter: { type: 'category', value: 'all' },
+  allJobs: [],
+  allEvents: [],
+  refreshTimer: null,
+  lastRefreshTime: null,
+  errors: {}
+};
+
+// ===== UTILITIES =====
+function relativeTime(dateStr) {
+  if (!dateStr) return '—';
+  const now = Date.now();
+  const then = new Date(dateStr).getTime();
+  if (isNaN(then)) return dateStr;
+  const diffMs = now - then;
+  if (diffMs < 0) return 'just now';
+  const secs = Math.floor(diffMs / 1000);
+  if (secs < 60) return secs + 's ago';
+  const mins = Math.floor(secs / 60);
+  if (mins < 60) return mins + 'm ago';
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24) return hrs + 'h ' + (mins % 60) + 'm ago';
+  const days = Math.floor(hrs / 24);
+  return days + 'd ' + (hrs % 24) + 'h ago';
+}
+
+function esc(str) {
+  if (str == null) return '';
+  const d = document.createElement('div');
+  d.textContent = String(str);
+  return d.innerHTML;
+}
+
+function truncate(str, len) {
+  if (!str) return '';
+  return str.length > len ? str.substring(0, len) + '...' : str;
+}
+
+function formatDuration(ms) {
+  if (ms == null) return '—';
+  if (ms < 1000) return ms + 'ms';
+  const s = (ms / 1000).toFixed(1);
+  if (s < 60) return s + 's';
+  const m = Math.floor(ms / 60000);
+  const rem = ((ms % 60000) / 1000).toFixed(0);
+  return m + 'm ' + rem + 's';
+}
+
+function statusBadgeClass(status) {
+  if (!status) return 'badge-grey';
+  const s = status.toLowerCase();
+  if (s === 'healthy' || s === 'completed' || s === 'approved' || s === 'success' || s === 'resolved') return 'badge-completed';
+  if (s === 'down' || s === 'failed' || s === 'rejected' || s === 'critical') return 'badge-failed';
+  if (s === 'unreachable' || s === 'warning') return 'badge-unreachable';
+  if (s === 'error') return 'badge-error';
+  if (s === 'running' || s === 'in_progress' || s === 'active') return 'badge-running';
+  if (s === 'queued' || s === 'pending' || s === 'unknown') return 'badge-queued';
+  return 'badge-grey';
+}
+
+function riskBadgeClass(level) {
+  if (!level) return 'badge-grey';
+  const l = level.toUpperCase();
+  if (l === 'RED' || l === 'HIGH') return 'badge-red';
+  if (l === 'AMBER' || l === 'MEDIUM') return 'badge-amber';
+  if (l === 'GREEN' || l === 'LOW') return 'badge-green';
+  return 'badge-grey';
+}
+
+function severityIcon(severity) {
+  const s = (severity || '').toLowerCase();
+  if (s === 'critical') return { cls: 'critical', char: '!!' };
+  if (s === 'error') return { cls: 'error', char: '!' };
+  if (s === 'warning') return { cls: 'warning', char: '~' };
+  if (s === 'success') return { cls: 'success', char: '✓' };
+  return { cls: 'info', char: 'i' };
+}
+
+function renderState(container, type, detail) {
+  const icons = { loading: '&#8635;', empty: '&#8709;', error: '&#10007;' };
+  const texts = {
+    loading: 'Loading...',
+    empty: 'No data available',
+    error: 'Failed to load data'
+  };
+  container.innerHTML = `
+    <div class="state-message">
+      <div class="state-message-icon ${type}">${icons[type]}</div>
+      <div class="state-message-text">${texts[type]}</div>
+      ${detail ? '<div class="state-message-sub">' + esc(detail) + '</div>' : ''}
+    </div>`;
+}
+
+// ===== API FETCH =====
+async function apiFetch(path) {
+  try {
+    const resp = await fetch(path, {
+      headers: { 'Accept': 'application/json' },
+      signal: AbortSignal.timeout(15000)
+    });
+    if (!resp.ok) throw new Error('HTTP ' + resp.status);
+    return await resp.json();
+  } catch (e) {
+    console.warn('[NOC] Fetch failed:', path, e.message);
+    throw e;
+  }
+}
+
+// ===== SECTION RENDERERS =====
+
+// 1. Operational Summary
+async function loadSummary() {
+  const el = document.getElementById('opsSummary');
+  try {
+    const data = await apiFetch('api/ops/summary');
+    const items = [
+      { label: 'Total Jobs', value: data.total_jobs ?? 0, cls: 'accent' },
+      { label: 'Active', value: data.active ?? 0, cls: 'blue' },
+      { label: 'Queued', value: data.queued ?? 0, cls: 'accent' },
+      { label: 'Failed', value: data.failed ?? 0, cls: data.failed > 0 ? 'red' : 'green' },
+      { label: 'Completed', value: data.completed ?? 0, cls: 'green' },
+      { label: 'Pending Approvals', value: data.pending_approvals ?? 0, cls: data.pending_approvals > 0 ? 'amber' : 'green' },
+      { label: 'Active Alerts', value: data.active_alerts ?? 0, cls: data.active_alerts > 0 ? 'red' : 'green' },
+      { label: 'Events (24h)', value: data.events_24h ?? 0, cls: 'accent' }
+    ];
+    el.innerHTML = items.map(i => `
+      <div class="ops-stat">
+        <div class="ops-stat-value ${i.cls}">${i.value}</div>
+        <div class="ops-stat-label">${i.label}</div>
+      </div>`).join('');
+  } catch (e) {
+    renderState(el, 'error', e.message);
+  }
+}
+
+// 2. Agent Status Grid
+async function loadAgents() {
+  const el = document.getElementById('agentGrid');
+  const countEl = document.getElementById('agentCount');
+  try {
+    const data = await apiFetch('api/ops/agents/status');
+    const agents = Array.isArray(data) ? data : (data.agents || []);
+    countEl.textContent = agents.length + ' agents';
+    if (agents.length === 0) { renderState(el, 'empty'); return; }
+    el.innerHTML = agents.map(a => {
+      const st = (a.status || 'unknown').toLowerCase();
+      const hs = a.health_score ?? 0;
+      const barCls = hs >= 80 ? 'good' : hs >= 50 ? 'warn' : 'bad';
+      const httpOk = a.http_healthy;
+      return `
+      <div class="agent-card ${st}">
+        <div class="agent-header">
+          <span class="agent-name">${esc(a.agent_name || a.name || '—')}</span>
+          <span class="agent-port">${esc(a.port || '—')}</span>
+        </div>
+        <div class="agent-meta">
+          <div class="agent-meta-item">
+            <span class="agent-meta-label">Status</span>
+            <span class="badge ${statusBadgeClass(st)}">${esc(st)}</span>
+          </div>
+          <div class="agent-meta-item">
+            <span class="agent-meta-label">Mode</span>
+            <span class="agent-meta-value">${esc(a.current_mode || '—')}</span>
+          </div>
+          <div class="agent-meta-item">
+            <span class="agent-meta-label">HTTP</span>
+            <span style="color:${httpOk ? 'var(--green)' : httpOk === false ? 'var(--red)' : 'var(--grey)'}">${httpOk ? '✓ OK' : httpOk === false ? '✗ Down' : '—'}</span>
+          </div>
+          <div class="agent-meta-item">
+            <span class="agent-meta-label">Heartbeat</span>
+            <span class="agent-meta-value">${relativeTime(a.last_heartbeat)}</span>
+          </div>
+        </div>
+        <div class="health-bar-container">
+          <div class="health-bar-label">
+            <span>Health</span>
+            <span>${hs}%</span>
+          </div>
+          <div class="health-bar"><div class="health-bar-fill ${barCls}" style="width:${hs}%"></div></div>
+        </div>
+        <div class="agent-tasks">
+          <span>Tasks:</span>
+          <span class="completed">${a.total_completed ?? 0} done</span>
+          <span class="failed">${a.total_failed ?? 0} failed</span>
+        </div>
+      </div>`;
+    }).join('');
+  } catch (e) {
+    renderState(el, 'error', e.message);
+  }
+}
+
+// 3. Active Alerts
+async function loadAlerts() {
+  const el = document.getElementById('alertList');
+  const countEl = document.getElementById('alertCount');
+  try {
+    const data = await apiFetch('api/ops/alerts/active');
+    const alerts = Array.isArray(data) ? data : (data.alerts || []);
+    countEl.textContent = alerts.length + ' alerts';
+    if (alerts.length === 0) { renderState(el, 'empty', 'No active alerts — all clear'); return; }
+    el.innerHTML = alerts.map(a => {
+      const sev = (a.severity || 'warning').toLowerCase();
+      return `
+      <div class="alert-item ${sev}">
+        <div class="alert-body">
+          <div class="alert-top">
+            <span class="badge badge-${sev === 'critical' ? 'critical' : sev === 'error' ? 'error' : 'unreachable'}">${esc(sev)}</span>
+            <span class="alert-type">${esc(a.alert_type || '—')}</span>
+            <span class="alert-component">${esc(a.affected_component || '')}</span>
+          </div>
+          <div class="alert-summary">${esc(a.summary || '—')}</div>
+          <div class="alert-time">${relativeTime(a.created_at)}</div>
+        </div>
+        <div class="alert-actions">
+          <button class="btn-sm btn-resolve" onclick="resolveAlert('${esc(a.alert_id || a.id)}')">Resolve</button>
+          <button class="btn-sm btn-suppress" onclick="suppressAlert('${esc(a.alert_id || a.id)}')">Suppress</button>
+        </div>
+      </div>`;
+    }).join('');
+  } catch (e) {
+    renderState(el, 'error', e.message);
+  }
+}
+
+// 4. Job Centre
+async function loadJobs() {
+  const el = document.getElementById('jobTableBody');
+  const countEl = document.getElementById('jobCount');
+  try {
+    const data = await apiFetch('api/ops/jobs/recent?limit=50');
+    state.allJobs = Array.isArray(data) ? data : (data.jobs || []);
+    countEl.textContent = state.allJobs.length + ' jobs';
+    renderJobs();
+  } catch (e) {
+    el.innerHTML = `<tr><td colspan="7"><div class="state-message"><div class="state-message-icon error">&#10007;</div><div class="state-message-text">Failed to load jobs</div><div class="state-message-sub">${esc(e.message)}</div></div></td></tr>`;
+  }
+}
+
+function renderJobs() {
+  const el = document.getElementById('jobTableBody');
+  let jobs = state.allJobs;
+  if (state.jobFilter !== 'all') {
+    jobs = jobs.filter(j => (j.status || '').toLowerCase() === state.jobFilter);
+  }
+  if (jobs.length === 0) {
+    el.innerHTML = `<tr><td colspan="7"><div class="state-message"><div class="state-message-icon empty">&#8709;</div><div class="state-message-text">No ${state.jobFilter === 'all' ? '' : state.jobFilter + ' '}jobs</div></div></td></tr>`;
+    return;
+  }
+  el.innerHTML = jobs.map(j => `
+    <tr>
+      <td class="mono">${esc(truncate(j.job_id || j.id || '—', 12))}</td>
+      <td>${esc(j.agent || '—')}</td>
+      <td>${esc(j.action || '—')}</td>
+      <td><span class="badge ${statusBadgeClass(j.status)}">${esc(j.status || '—')}</span></td>
+      <td class="truncate dim">${esc(j.result_summary || '—')}</td>
+      <td class="mono">${formatDuration(j.duration_ms)}</td>
+      <td class="mono dim">${relativeTime(j.created_at)}</td>
+    </tr>`).join('');
+}
+
+function setJobFilter(filter, btn) {
+  state.jobFilter = filter;
+  document.querySelectorAll('#jobFilters .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderJobs();
+}
+
+// 5. Approval Queue
+async function loadApprovals() {
+  const pendingEl = document.getElementById('approvalPending');
+  const recentEl = document.getElementById('approvalRecent');
+  const countEl = document.getElementById('approvalCount');
+
+  // Load pending
+  try {
+    const data = await apiFetch('api/ops/approvals/pending');
+    const items = Array.isArray(data) ? data : (data.approvals || []);
+    countEl.textContent = items.length + ' pending';
+    if (items.length === 0) { renderState(pendingEl, 'empty', 'No pending approvals'); }
+    else {
+      pendingEl.innerHTML = items.map(a => `
+        <div class="approval-item">
+          <div class="approval-top">
+            <span class="approval-action">${esc(a.action_type || '—')}</span>
+            <span class="badge ${riskBadgeClass(a.risk_level)}">${esc(a.risk_level || '—')}</span>
+            <span class="approval-affected">${esc(a.affected_item || '')}</span>
+          </div>
+          <div class="approval-details">${esc(a.proposed_change || '—')}</div>
+          <div class="approval-reason">${esc(a.reason || '')}</div>
+          <div class="approval-actions">
+            <button class="btn-sm btn-approve" onclick="approveItem('${esc(a.approval_id || a.id)}')">Approve</button>
+            <button class="btn-sm btn-reject" onclick="rejectItem('${esc(a.approval_id || a.id)}')">Reject</button>
+          </div>
+        </div>`).join('');
+    }
+  } catch (e) {
+    renderState(pendingEl, 'error', e.message);
+  }
+
+  // Load recent
+  try {
+    const data = await apiFetch('api/ops/approvals/recent?limit=20');
+    const items = Array.isArray(data) ? data : (data.approvals || []);
+    if (items.length === 0) { renderState(recentEl, 'empty', 'No recent decisions'); }
+    else {
+      recentEl.innerHTML = items.map(a => `
+        <div class="approval-item" style="opacity:0.7;">
+          <div class="approval-top">
+            <span class="approval-action">${esc(a.action_type || '—')}</span>
+            <span class="badge ${statusBadgeClass(a.decision || a.status)}">${esc(a.decision || a.status || '—')}</span>
+            <span class="approval-affected">${esc(a.affected_item || '')}</span>
+          </div>
+          <div class="approval-details">${esc(a.proposed_change || a.result_summary || '—')}</div>
+        </div>`).join('');
+    }
+  } catch (e) {
+    renderState(recentEl, 'error', e.message);
+  }
+}
+
+// 6. Event Timeline
+async function loadEvents() {
+  const el = document.getElementById('eventTimeline');
+  const countEl = document.getElementById('eventCount');
+  try {
+    const data = await apiFetch('api/ops/events/timeline?hours=24&limit=200');
+    state.allEvents = Array.isArray(data) ? data : (data.events || []);
+    countEl.textContent = state.allEvents.length + ' events';
+    renderEvents();
+  } catch (e) {
+    renderState(el, 'error', e.message);
+  }
+}
+
+function renderEvents() {
+  const el = document.getElementById('eventTimeline');
+  let events = state.allEvents;
+  const f = state.eventFilter;
+  if (f.value !== 'all') {
+    if (f.type === 'severity') {
+      events = events.filter(ev => (ev.severity || '').toLowerCase() === f.value);
+    } else if (f.type === 'category') {
+      events = events.filter(ev => (ev.category || '').toLowerCase() === f.value);
+    }
+  }
+  if (events.length === 0) {
+    renderState(el, 'empty', 'No matching events');
+    return;
+  }
+  el.innerHTML = events.map(ev => {
+    const icon = severityIcon(ev.severity);
+    return `
+    <div class="timeline-item">
+      <div class="timeline-icon ${icon.cls}">${icon.char}</div>
+      <div class="timeline-body">
+        <div class="timeline-top">
+          <span class="timeline-type">${esc(ev.event_type || '—')}</span>
+          ${ev.category ? '<span class="badge badge-accent">' + esc(ev.category) + '</span>' : ''}
+          ${ev.source_agent ? '<span class="badge badge-info">' + esc(ev.source_agent) + '</span>' : ''}
+        </div>
+        <div class="timeline-summary">${esc(ev.summary || '—')}</div>
+      </div>
+      <div class="timeline-time">${relativeTime(ev.created_at)}</div>
+    </div>`;
+  }).join('');
+}
+
+function setEventFilter(type, value, btn) {
+  state.eventFilter = { type, value };
+  document.querySelectorAll('#eventFilters .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderEvents();
+}
+
+// 7. Pipeline History
+async function loadPipeline() {
+  const el = document.getElementById('pipelineTableBody');
+  const countEl = document.getElementById('pipelineCount');
+  try {
+    const data = await apiFetch('api/ops/pipeline/history');
+    const runs = Array.isArray(data) ? data : (data.runs || data.history || []);
+    countEl.textContent = runs.length + ' runs';
+    if (runs.length === 0) {
+      el.innerHTML = `<tr><td colspan="7"><div class="state-message"><div class="state-message-icon empty">&#8709;</div><div class="state-message-text">No pipeline runs</div></div></td></tr>`;
+      return;
+    }
+    el.innerHTML = runs.map(r => `
+      <tr>
+        <td class="mono">${esc(truncate(r.run_id || r.id || '—', 12))}</td>
+        <td>${esc(r.mode || '—')}</td>
+        <td><span class="badge ${statusBadgeClass(r.status)}">${esc(r.status || '—')}</span></td>
+        <td>${esc(r.started_by || '—')}</td>
+        <td class="truncate">${esc(r.article_topic || '—')}</td>
+        <td class="mono">${formatDuration(r.duration_ms || r.duration)}</td>
+        <td class="truncate dim">${esc(r.result_summary || '—')}</td>
+      </tr>`).join('');
+  } catch (e) {
+    el.innerHTML = `<tr><td colspan="7"><div class="state-message"><div class="state-message-icon error">&#10007;</div><div class="state-message-text">Failed to load</div><div class="state-message-sub">${esc(e.message)}</div></div></td></tr>`;
+  }
+}
+
+// 8. Action Receipts
+async function loadActions() {
+  const el = document.getElementById('actionTableBody');
+  const countEl = document.getElementById('actionCount');
+  try {
+    const data = await apiFetch('api/ops/actions/recent');
+    const actions = Array.isArray(data) ? data : (data.actions || []);
+    countEl.textContent = actions.length + ' actions';
+    if (actions.length === 0) {
+      el.innerHTML = `<tr><td colspan="6"><div class="state-message"><div class="state-message-icon empty">&#8709;</div><div class="state-message-text">No recent actions</div></div></td></tr>`;
+      return;
+    }
+    el.innerHTML = actions.map(a => `
+      <tr>
+        <td>${esc(a.action_name || a.action || '—')}</td>
+        <td>${esc(a.actor || '—')}</td>
+        <td><span class="badge ${statusBadgeClass(a.status)}">${esc(a.status || '—')}</span></td>
+        <td class="mono dim">${esc(a.source_screen || '—')}</td>
+        <td class="mono">${esc(truncate(a.job_id || '—', 12))}</td>
+        <td class="mono dim">${relativeTime(a.requested_at)}</td>
+      </tr>`).join('');
+  } catch (e) {
+    el.innerHTML = `<tr><td colspan="6"><div class="state-message"><div class="state-message-icon error">&#10007;</div><div class="state-message-text">Failed to load</div><div class="state-message-sub">${esc(e.message)}</div></div></td></tr>`;
+  }
+}
+
+// 9. Comparison / Shadow Mode
+async function loadComparison() {
+  const el = document.getElementById('comparisonGrid');
+  try {
+    const data = await apiFetch('api/ops/comparison/summary');
+    const matches = data.matches ?? data.match_count ?? 0;
+    const mismatches = data.mismatches ?? data.mismatch_count ?? 0;
+    const total = matches + mismatches;
+    const pct = total > 0 ? ((matches / total) * 100).toFixed(1) : '—';
+    const mode = data.shadow_mode ?? data.mode ?? '—';
+    const lastRun = data.last_run ?? data.last_comparison ?? null;
+
+    el.innerHTML = `
+      <div class="comparison-card">
+        <div class="comparison-value" style="color:var(--green)">${matches}</div>
+        <div class="comparison-label">Matches</div>
+      </div>
+      <div class="comparison-card">
+        <div class="comparison-value" style="color:${mismatches > 0 ? 'var(--red)' : 'var(--green)'}">${mismatches}</div>
+        <div class="comparison-label">Mismatches</div>
+      </div>
+      <div class="comparison-card">
+        <div class="comparison-value" style="color:var(--accent)">${pct}${pct !== '—' ? '%' : ''}</div>
+        <div class="comparison-label">Match Rate</div>
+      </div>
+      <div class="comparison-card">
+        <div class="comparison-value" style="color:var(--text);font-size:1.4rem">${esc(mode)}</div>
+        <div class="comparison-label">Shadow Mode</div>
+      </div>
+      <div class="comparison-card">
+        <div class="comparison-value" style="color:var(--dim);font-size:1rem">${lastRun ? relativeTime(lastRun) : '—'}</div>
+        <div class="comparison-label">Last Comparison</div>
+      </div>`;
+  } catch (e) {
+    renderState(el, 'error', e.message);
+  }
+}
+
+// ===== ACTION HANDLERS =====
+async function resolveAlert(id) {
+  if (!id) return;
+  try {
+    await fetch('api/ops/alerts/' + encodeURIComponent(id) + '/resolve', { method: 'POST' });
+    loadAlerts();
+    loadSummary();
+  } catch (e) { console.warn('Resolve failed', e); }
+}
+
+async function suppressAlert(id) {
+  if (!id) return;
+  try {
+    await fetch('api/ops/alerts/' + encodeURIComponent(id) + '/suppress', { method: 'POST' });
+    loadAlerts();
+    loadSummary();
+  } catch (e) { console.warn('Suppress failed', e); }
+}
+
+async function approveItem(id) {
+  if (!id) return;
+  try {
+    await fetch('api/ops/approvals/' + encodeURIComponent(id) + '/approve', { method: 'POST' });
+    loadApprovals();
+    loadSummary();
+  } catch (e) { console.warn('Approve failed', e); }
+}
+
+async function rejectItem(id) {
+  if (!id) return;
+  try {
+    await fetch('api/ops/approvals/' + encodeURIComponent(id) + '/reject', { method: 'POST' });
+    loadApprovals();
+    loadSummary();
+  } catch (e) { console.warn('Reject failed', e); }
+}
+
+// ===== REFRESH ORCHESTRATION =====
+function updateRefreshTimestamp() {
+  state.lastRefreshTime = new Date();
+  const el = document.getElementById('lastRefresh');
+  const dot = document.getElementById('refreshDot');
+  el.textContent = 'Last: ' + state.lastRefreshTime.toLocaleTimeString();
+  dot.classList.remove('error');
+}
+
+function markRefreshError() {
+  document.getElementById('refreshDot').classList.add('error');
+}
+
+async function refreshAll() {
+  const btn = document.getElementById('btnRefresh');
+  btn.textContent = 'Refreshing...';
+  btn.disabled = true;
+
+  try {
+    await Promise.allSettled([
+      loadSummary(),
+      loadAgents(),
+      loadAlerts(),
+      loadJobs(),
+      loadApprovals(),
+      loadEvents(),
+      loadPipeline(),
+      loadActions(),
+      loadComparison()
+    ]);
+    updateRefreshTimestamp();
+  } catch (e) {
+    markRefreshError();
+  } finally {
+    btn.textContent = 'Refresh Now';
+    btn.disabled = false;
+  }
+}
+
+// ===== INIT =====
+function init() {
+  refreshAll();
+  // Auto-refresh every 30 seconds
+  state.refreshTimer = setInterval(refreshAll, 30000);
+}
+
+// Start on DOM ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  init();
+}
+</script>
+</body>
+</html>

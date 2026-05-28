@@ -1,0 +1,1582 @@
+================================================================================
+PHASE 10F: OPERATOR CONTROL AND TRUTHFUL VISIBILITY
+FULL IMPLEMENTATION PACK
+================================================================================
+PetHub AI Platform — pethubonline.com
+Server: 167.99.198.145
+Date: 2026-05-28
+================================================================================
+
+TABLE OF CONTENTS
+
+  PART 1:  SCOPE
+  PART 2:  CURRENT-STATE DIAGNOSIS SUMMARY
+  PART 3:  PROPOSED CHANGES
+  PART 4:  DATA CONTRACT (Canonical Schemas)
+  PART 5:  AGENT/JOB MODEL
+  PART 6:  STATE MODEL
+  PART 7:  ACCEPTANCE CRITERIA
+  PART 8:  ROLLBACK PATH
+  PART 9:  OWNER REVIEW POINTS
+  PART 10: DEPENDENCY MAP
+  PART 11: SCREENSHOT/WIREFRAME INTENT
+  PART 12: OPEN RISKS
+  PART 13: ESTIMATED IMPLEMENTATION ORDER
+  PART 14: PROOF STRATEGY
+  PART 15: WORK ALLOCATION SPLIT
+  PART 16: 10G/10H/10I DEPENDENCY BRIDGE
+
+================================================================================
+PART 1: SCOPE
+================================================================================
+
+MODULES IN SCOPE:
+
+  Backend (Python files to modify/create):
+    1. truthful_ops.py          — NEW: Unified operational truth layer (single source)
+    2. truthful_ops_routes.py   — NEW: API routes for all 10F surfaces
+    3. job_centre.py            — MODIFY: Migrate from JSON to PostgreSQL
+    4. tracked_dispatch.py      — MODIFY: Wire to unified ops layer + async tracking
+    5. event_engine.py          — MODIFY: Persist events to PostgreSQL
+    6. pipeline_runner.py       — MODIFY: Persist pipeline runs + step states
+    7. main.py                  — MODIFY: Mount new routes, startup migrations
+    8. noc_routes.py            — MODIFY: Add job/approval/timeline panels
+    9. postgres_phase1.py       — MODIFY: Add new tables for 10F
+
+  Dashboards (HTML files to modify):
+    1. manager_dashboard.html      — ADD: Job History panel, Recent Actions panel
+    2. operations_centre.html      — ADD: Job/Approval/Timeline tabs in NOC view
+    3. operations_noc_dashboard.html — REBUILD: Truthful NOC with all 10F surfaces
+
+  Endpoints in scope (~40 new/modified):
+    /api/ops/jobs/*              — Unified job CRUD (replaces dual JSON+PG)
+    /api/ops/approvals/*         — Unified approval CRUD
+    /api/ops/events/*            — Persistent event timeline
+    /api/ops/actions/*           — Action receipt history
+    /api/ops/pipeline/*          — Pipeline run history + step states
+    /api/ops/agents/*            — Truthful agent status with timeout detection
+    /api/ops/alerts/*            — Stateful alert lifecycle
+    /api/ops/timeline            — Unified operational timeline (last 24h)
+    /api/ops/workflow/{item_id}  — Content item lifecycle tracking
+
+  Approval systems in scope:
+    - Traffic light system (GREEN/AMBER/RED)
+    - Standing approvals
+    - Approval queue (JSON + PostgreSQL -> unified PostgreSQL only)
+
+  Agent surfaces in scope:
+    - All 9 agents (manager + 8 children) health/status
+    - Heartbeat timeout detection
+    - Status transition logging
+
+  Infrastructure:
+    - PostgreSQL: 8 new tables (see Part 4)
+    - Redis: Pub/sub only (no longer a data store for jobs/events)
+    - JSON files: Deprecated as data stores (kept as backup cache only)
+
+
+MODULES EXPLICITLY OUT OF SCOPE:
+
+  - Strategy/Forecasting/Authority analytical dashboards (14 dashboards)
+    These are on-demand computed analytics, not operational state.
+    They will benefit from 10F indirectly (better data provenance).
+  - Content creation or scaling workflows
+  - Affiliate pipeline changes
+  - WordPress content modifications
+  - External API integrations (Google, social, eBay)
+
+
+================================================================================
+PART 2: CURRENT-STATE DIAGNOSIS SUMMARY
+================================================================================
+
+Full diagnosis: phase10f/10F_Phase1_Diagnosis.txt (825 lines)
+
+KEY FINDINGS:
+
+  SURFACE               | STATUS     | CORE PROBLEM
+  ----------------------|------------|--------------------------------------------
+  Jobs System           | SHALLOW    | 2 parallel stores (JSON+PG), neither on dashboard
+  Approval Queue        | MISLEADING | Only test data, no agent creates real approvals
+  Event Feed            | MISLEADING | 3 stores (memory+Redis+PG), near-zero real data
+  Agent Health          | SHALLOW    | Heartbeats 6 days stale, no timeout detection
+  Action Receipts       | SHALLOW    | Transient, overwritten, no history
+  Workflow States       | SHALLOW    | Pipeline exists but no persistent history
+  Manager Dashboard     | SHALLOW    | Has buttons but no job/approval visibility
+  Operations Centre     | SHALLOW    | 19 tabs but no operational truth in NOC
+
+  CRITICAL STRUCTURAL ISSUE:
+  Parallel data stores everywhere — JSON files, PostgreSQL tables, Redis
+  streams, and in-memory lists all storing the same types of data with
+  no synchronization. 10F consolidates to PostgreSQL as single truth.
+
+  10 GAPS IDENTIFIED (see diagnosis for full detail):
+  1. No unified job visibility
+  2. Approval queue is theater
+  3. Event feed is ephemeral
+  4. Heartbeat staleness
+  5. No content lifecycle tracking
+  6. Action receipts are transient
+  7. Pipeline history not persisted
+  8. Two parallel systems everywhere
+  9. Async action misrepresentation
+  10. No operator activity log
+
+
+================================================================================
+PART 3: PROPOSED CHANGES
+================================================================================
+
+CHANGE 1: UNIFIED OPERATIONAL TRUTH LAYER (truthful_ops.py)
+  What: Single Python module that owns ALL operational state.
+  Why: Eliminates parallel JSON/PG/Redis/memory stores.
+  How: PostgreSQL is the single source of truth. Redis used for
+       pub/sub notifications only (not data storage). JSON files
+       deprecated to read-only backup cache.
+
+  Functions:
+    create_job()        — Create job in PostgreSQL, publish Redis notification
+    update_job()        — Update job state with full lifecycle tracking
+    create_approval()   — Create approval with full context + diff
+    decide_approval()   — Approve/reject with operator audit trail
+    log_event()         — Persist event to PostgreSQL + publish Redis
+    log_action()        — Create action receipt with full traceability
+    update_agent()      — Update agent status with transition logging
+    create_alert()      — Create stateful alert
+    resolve_alert()     — Resolve/suppress alert with reason
+    store_pipeline_run() — Persist full pipeline run with step states
+    get_timeline()      — Query recent events across all types
+
+CHANGE 2: JOB CENTRE MIGRATION (job_centre.py)
+  What: Replace JSON file storage with PostgreSQL.
+  Why: JSON file is fragile, not queryable, not visible on dashboards.
+  How: New ops_jobs table in PostgreSQL. job_centre.py becomes a thin
+       wrapper that calls truthful_ops functions.
+  Backward compat: Old /api/jobs/* endpoints still work (redirect to new).
+
+CHANGE 3: TRACKED DISPATCH UPGRADE (tracked_dispatch.py)
+  What: Track async operations through to completion (not just dispatch ACK).
+  Why: Current system shows "completed in 65ms" when the real work hasn't
+       started. Operators see false completion signals.
+  How: tracked_dispatch creates job as "dispatched". Child agent calls back
+       to /api/ops/jobs/{id}/progress and /api/ops/jobs/{id}/complete when
+       the actual work finishes. If no callback within timeout, job auto-
+       transitions to "stale" with alert.
+
+CHANGE 4: EVENT PERSISTENCE (event_engine.py)
+  What: All events written to PostgreSQL via truthful_ops.log_event().
+  Why: In-memory events vanish on restart. Three parallel stores with
+       near-zero data in each.
+  How: event_engine._log_event() calls truthful_ops.log_event() which
+       writes to ops_events table AND publishes to Redis stream.
+       Old in-memory list becomes a read-through cache only.
+
+CHANGE 5: PIPELINE HISTORY (pipeline_runner.py)
+  What: Persist every pipeline run and step to PostgreSQL.
+  Why: Pipeline runs produce valuable data but it's lost on completion.
+  How: truthful_ops.store_pipeline_run() saves run + all step details.
+       New /api/ops/pipeline/history endpoint returns past runs.
+
+CHANGE 6: APPROVAL QUEUE WIRING
+  What: Connect traffic light system to real approval creation.
+  Why: Approval queue only has test data. No agent creates real approvals.
+  How: When tracked_dispatch encounters an AMBER or RED action:
+       - AMBER: Create approval, block action until approved
+       - RED: Create approval, require human decision before any execution
+       Standing approvals can auto-approve specific AMBER actions.
+
+CHANGE 7: AGENT HEALTH TRUTHFULNESS
+  What: Heartbeat timeout detection + status transition logging.
+  Why: Agents with 6-day-old heartbeats still show "ACTIVE".
+  How: Background task checks heartbeats every 60s.
+       If heartbeat > 5 minutes old: status -> UNREACHABLE.
+       If HTTP health check fails: status -> DEGRADED.
+       All transitions logged to ops_agent_transitions table.
+       Dashboard shows real-time status with "last seen" age indicator.
+
+CHANGE 8: ALERT LIFECYCLE
+  What: Stateful alerts with active/resolved/stale/suppressed states.
+  Why: Current alerts are fire-and-forget with no resolution tracking.
+  How: ops_alerts table tracks full lifecycle. Alerts auto-transition to
+       "stale" if unresolved after configurable period. Suppressed alerts
+       still logged but hidden from active view.
+
+CHANGE 9: NOC DASHBOARD REBUILD
+  What: Rebuild NOC view with 6 truthful panels.
+  Why: Current NOC shows infrastructure health but not operational state.
+  How: New panels: Recent Jobs, Approval Queue, Event Timeline, Agent
+       Health Grid, Active Alerts, Action Receipt Log. All fetching from
+       unified /api/ops/* endpoints.
+
+CHANGE 10: MANAGER DASHBOARD ADDITIONS
+  What: Add Job History + Recent Actions panels to main dashboard.
+  Why: Action buttons produce results but they vanish immediately.
+  How: New scrollable panels below quick actions showing last 50 jobs
+       and last 50 action receipts with clickable job ID links.
+
+
+================================================================================
+PART 4: DATA CONTRACT (Canonical Schemas)
+================================================================================
+
+All objects use the canonical state model defined in Part 6.
+PostgreSQL is the single source of truth.
+All timestamps are TIMESTAMPTZ (UTC).
+All IDs are VARCHAR(50) with prefixed format (job-xxx, apr-xxx, evt-xxx, etc.).
+
+------------------------------------------------------------------------
+TABLE 1: ops_jobs
+------------------------------------------------------------------------
+Purpose: Unified job tracking (replaces JSON jobs.json + PG tasks table)
+
+CREATE TABLE ops_jobs (
+    id              BIGSERIAL PRIMARY KEY,
+    job_id          VARCHAR(50) UNIQUE NOT NULL,     -- "job-a329b926"
+    parent_job_id   VARCHAR(50),                     -- parent mission/pipeline
+    correlation_id  VARCHAR(50),                     -- links related jobs
+    agent           VARCHAR(50) NOT NULL,            -- "seo", "content", etc.
+    action          VARCHAR(200) NOT NULL,           -- "SEO audit"
+    endpoint        VARCHAR(200),                    -- "/api/audit/run"
+    input_data      JSONB DEFAULT '{}',
+    triggered_by    VARCHAR(100) NOT NULL DEFAULT 'manual',  -- "manual", "pipeline:pipe-xxx", "retry:job-xxx", "scheduled"
+    queue           VARCHAR(50) DEFAULT 'default',   -- workstream/queue name
+    target_item     VARCHAR(200),                    -- what this job acts on (post ID, URL, etc.)
+
+    -- State
+    status          VARCHAR(30) NOT NULL DEFAULT 'draft',  -- canonical state model
+    risk_class      VARCHAR(10) DEFAULT 'GREEN',     -- GREEN/AMBER/RED
+    progress_pct    INT DEFAULT 0,
+
+    -- Results
+    output          JSONB,
+    result_summary  TEXT,
+    error_summary   TEXT,
+    blocking_reason TEXT,
+    dependency_reason TEXT,
+    fallback_indicator BOOLEAN DEFAULT FALSE,
+    completion_summary TEXT,
+
+    -- Approval linkage
+    approval_id     VARCHAR(50),                     -- linked approval if required
+
+    -- Lifecycle
+    retry_count     INT DEFAULT 0,
+    max_retries     INT DEFAULT 3,
+    retryable       BOOLEAN DEFAULT TRUE,
+    cancellable     BOOLEAN DEFAULT TRUE,
+
+    -- Timestamps
+    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    started_at      TIMESTAMPTZ,
+    updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    completed_at    TIMESTAMPTZ,
+    stale_after     TIMESTAMPTZ,                     -- auto-stale detection
+
+    -- Duration
+    duration_ms     INT,
+
+    -- Follow-up
+    follow_up       TEXT,
+    next_expected   TEXT                              -- "estimated review-ready today"
+);
+
+CREATE INDEX idx_ops_jobs_status ON ops_jobs(status);
+CREATE INDEX idx_ops_jobs_agent ON ops_jobs(agent);
+CREATE INDEX idx_ops_jobs_created ON ops_jobs(created_at DESC);
+CREATE INDEX idx_ops_jobs_correlation ON ops_jobs(correlation_id);
+CREATE INDEX idx_ops_jobs_parent ON ops_jobs(parent_job_id);
+CREATE INDEX idx_ops_jobs_approval ON ops_jobs(approval_id);
+
+------------------------------------------------------------------------
+TABLE 2: ops_approvals
+------------------------------------------------------------------------
+Purpose: Real approval decisions with full context (replaces dual JSON+PG)
+
+CREATE TABLE ops_approvals (
+    id                  BIGSERIAL PRIMARY KEY,
+    approval_id         VARCHAR(50) UNIQUE NOT NULL,  -- "apr-f3a7c912"
+    correlation_id      VARCHAR(50),
+
+    -- What
+    action_type         VARCHAR(100) NOT NULL,        -- "publish_draft", "seo_autofix", "social_post"
+    affected_item       VARCHAR(200) NOT NULL,        -- page/post/URL affected
+    proposed_change     TEXT NOT NULL,                 -- exact change description
+    before_summary      TEXT,                         -- current state
+    after_summary       TEXT,                         -- state if approved
+    change_category     VARCHAR(50),                  -- "draft_change", "live_change", "metadata_change", "affiliate_change", "publish_action", "policy_sensitive"
+
+    -- Who
+    proposing_agent     VARCHAR(50) NOT NULL,
+    decided_by          VARCHAR(100),                 -- "operator:jason", "standing_approval:sa-xxx"
+
+    -- Why
+    reason              TEXT NOT NULL,                 -- why the system recommends it
+    evidence_level      VARCHAR(30) DEFAULT 'none',   -- "live_verified", "forecast", "simulated", "estimated", "none"
+    data_source_type    VARCHAR(30) DEFAULT 'live',   -- "live", "forecast", "simulated", "estimated"
+
+    -- Risk
+    risk_level          VARCHAR(10) NOT NULL,          -- GREEN/AMBER/RED
+    traffic_light       VARCHAR(10) NOT NULL,
+
+    -- Decision
+    status              VARCHAR(30) NOT NULL DEFAULT 'pending',  -- pending, approved, rejected, expired, auto_approved
+    decision_reason     TEXT,
+    impact_if_approved  TEXT,                          -- what happens if yes
+    impact_if_rejected  TEXT,                          -- what happens if no
+
+    -- Timestamps
+    created_at          TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    decided_at          TIMESTAMPTZ,
+    expires_at          TIMESTAMPTZ,
+    auto_approved       BOOLEAN DEFAULT FALSE,
+
+    -- Linked job
+    job_id              VARCHAR(50)                    -- linked job waiting on this approval
+);
+
+CREATE INDEX idx_ops_approvals_status ON ops_approvals(status);
+CREATE INDEX idx_ops_approvals_risk ON ops_approvals(risk_level);
+CREATE INDEX idx_ops_approvals_created ON ops_approvals(created_at DESC);
+CREATE INDEX idx_ops_approvals_job ON ops_approvals(job_id);
+
+------------------------------------------------------------------------
+TABLE 3: ops_events
+------------------------------------------------------------------------
+Purpose: Persistent event timeline (replaces in-memory + Redis + old PG)
+
+CREATE TABLE ops_events (
+    id              BIGSERIAL PRIMARY KEY,
+    event_id        VARCHAR(50) UNIQUE NOT NULL,      -- "evt-8a73f1c0"
+    event_type      VARCHAR(100) NOT NULL,            -- "job_created", "approval_requested", "agent_unhealthy", etc.
+    category        VARCHAR(50) NOT NULL DEFAULT 'system',  -- "job", "approval", "agent", "pipeline", "alert", "operator", "content"
+    severity        VARCHAR(20) NOT NULL DEFAULT 'info',    -- "info", "warning", "error", "critical"
+
+    -- Source
+    source_agent    VARCHAR(50),
+    source_module   VARCHAR(100),                     -- which code module emitted this
+    actor           VARCHAR(100),                     -- "operator:jason", "agent:seo", "system:scheduler"
+
+    -- Target
+    target_entity   VARCHAR(200),                     -- what this event is about
+    target_type     VARCHAR(50),                      -- "job", "post", "agent", "approval", "pipeline"
+
+    -- Correlation
+    correlation_id  VARCHAR(50),
+    causation_id    VARCHAR(50),                      -- which event caused this one
+    job_id          VARCHAR(50),                      -- linked job
+
+    -- Content
+    summary         TEXT NOT NULL,                    -- human-readable description
+    detail          JSONB DEFAULT '{}',               -- structured data payload
+    risk_level      VARCHAR(10) DEFAULT 'GREEN',
+
+    -- State
+    status          VARCHAR(20) DEFAULT 'active',     -- "active", "acknowledged", "resolved"
+
+    -- Timestamps
+    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    acknowledged_at TIMESTAMPTZ,
+    resolved_at     TIMESTAMPTZ
+);
+
+CREATE INDEX idx_ops_events_type ON ops_events(event_type);
+CREATE INDEX idx_ops_events_category ON ops_events(category);
+CREATE INDEX idx_ops_events_created ON ops_events(created_at DESC);
+CREATE INDEX idx_ops_events_severity ON ops_events(severity);
+CREATE INDEX idx_ops_events_correlation ON ops_events(correlation_id);
+CREATE INDEX idx_ops_events_job ON ops_events(job_id);
+
+------------------------------------------------------------------------
+TABLE 4: ops_action_receipts
+------------------------------------------------------------------------
+Purpose: Persistent record of every operator/system action
+
+CREATE TABLE ops_action_receipts (
+    id              BIGSERIAL PRIMARY KEY,
+    receipt_id      VARCHAR(50) UNIQUE NOT NULL,       -- "rcpt-d4e5f6a7"
+    action_name     VARCHAR(200) NOT NULL,             -- "SEO Audit"
+    source_screen   VARCHAR(100),                      -- "manager_dashboard", "noc", "operations_centre"
+    source_module   VARCHAR(100),                      -- "quick_actions", "pipeline", "approval"
+
+    -- Who/What
+    actor           VARCHAR(100) NOT NULL DEFAULT 'operator',  -- "operator:jason", "system:scheduler"
+    target_entity   VARCHAR(200),                      -- what was acted upon
+
+    -- Result
+    job_id          VARCHAR(50),                       -- resulting job
+    correlation_id  VARCHAR(50),
+    status          VARCHAR(30) NOT NULL,              -- canonical state
+    accepted        BOOLEAN,                           -- was the action accepted by the system
+
+    -- Timing
+    requested_at    TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    last_update     TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    next_expected   TEXT,                              -- "queued behind 2 jobs" or "waiting for approval"
+
+    -- Context
+    detail          JSONB DEFAULT '{}'
+);
+
+CREATE INDEX idx_ops_receipts_created ON ops_action_receipts(requested_at DESC);
+CREATE INDEX idx_ops_receipts_job ON ops_action_receipts(job_id);
+CREATE INDEX idx_ops_receipts_actor ON ops_action_receipts(actor);
+
+------------------------------------------------------------------------
+TABLE 5: ops_pipeline_runs
+------------------------------------------------------------------------
+Purpose: Persistent pipeline execution history
+
+CREATE TABLE ops_pipeline_runs (
+    id              BIGSERIAL PRIMARY KEY,
+    run_id          VARCHAR(50) UNIQUE NOT NULL,       -- "pipe-a329b926"
+    mode            VARCHAR(20) NOT NULL,              -- "draft", "approval", "dry_run", "live"
+    category        VARCHAR(100),
+    started_by      VARCHAR(100) NOT NULL DEFAULT 'manual',
+    correlation_id  VARCHAR(50),
+
+    -- Content produced
+    article_topic   VARCHAR(500),
+    article_title   VARCHAR(500),
+    article_post_id INT,
+
+    -- State
+    status          VARCHAR(30) NOT NULL DEFAULT 'running',  -- canonical state model
+    current_step    INT DEFAULT 1,
+    total_steps     INT DEFAULT 6,
+
+    -- Timing
+    started_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    completed_at    TIMESTAMPTZ,
+    duration_ms     INT,
+
+    -- Results
+    result_summary  TEXT,
+    next_action     TEXT,
+    error_summary   TEXT
+);
+
+CREATE INDEX idx_ops_pipeline_status ON ops_pipeline_runs(status);
+CREATE INDEX idx_ops_pipeline_started ON ops_pipeline_runs(started_at DESC);
+
+------------------------------------------------------------------------
+TABLE 6: ops_pipeline_steps
+------------------------------------------------------------------------
+Purpose: Individual pipeline step tracking
+
+CREATE TABLE ops_pipeline_steps (
+    id              BIGSERIAL PRIMARY KEY,
+    run_id          VARCHAR(50) NOT NULL REFERENCES ops_pipeline_runs(run_id),
+    step_number     INT NOT NULL,
+    agent           VARCHAR(50) NOT NULL,
+    action          VARCHAR(200) NOT NULL,
+
+    -- State (canonical model)
+    status          VARCHAR(30) NOT NULL DEFAULT 'queued',
+
+    -- Skip tracking
+    skipped_reason  TEXT,                              -- why it was skipped
+    skipped_by      VARCHAR(100),                      -- who/what skipped it
+
+    -- Results
+    result          JSONB DEFAULT '{}',
+    error_summary   TEXT,
+    fallback_used   BOOLEAN DEFAULT FALSE,
+    fallback_detail TEXT,
+
+    -- Timing
+    started_at      TIMESTAMPTZ,
+    completed_at    TIMESTAMPTZ,
+    duration_ms     INT,
+
+    -- Dependencies
+    waiting_for     VARCHAR(200),                      -- what this step is waiting on
+    blocked_reason  TEXT
+);
+
+CREATE INDEX idx_ops_steps_run ON ops_pipeline_steps(run_id);
+CREATE INDEX idx_ops_steps_status ON ops_pipeline_steps(status);
+
+------------------------------------------------------------------------
+TABLE 7: ops_agent_status
+------------------------------------------------------------------------
+Purpose: Truthful agent status with transition history
+
+CREATE TABLE ops_agent_status (
+    id              BIGSERIAL PRIMARY KEY,
+    agent_name      VARCHAR(50) UNIQUE NOT NULL,
+    port            INT NOT NULL,
+
+    -- State
+    status          VARCHAR(30) NOT NULL DEFAULT 'unknown',  -- idle, queued, running, degraded, blocked, paused, fallback_mode, failed, unreachable, unknown
+    previous_status VARCHAR(30),
+
+    -- Operational mode
+    current_mode    VARCHAR(50) DEFAULT 'unknown',     -- "primary_ai", "fallback_template", "read_only", "awaiting_token_refresh", "paused_by_policy"
+
+    -- Health
+    last_heartbeat  TIMESTAMPTZ,
+    last_successful_run TIMESTAMPTZ,
+    last_failed_run TIMESTAMPTZ,
+    last_http_check TIMESTAMPTZ,
+    http_healthy    BOOLEAN,
+
+    -- Workload
+    current_queue_depth INT DEFAULT 0,
+    current_task_summary TEXT,
+    last_error_summary TEXT,
+
+    -- Metrics
+    total_tasks_completed INT DEFAULT 0,
+    total_tasks_failed INT DEFAULT 0,
+    error_count     INT DEFAULT 0,
+    uptime_pct      NUMERIC(5,2),
+
+    -- Confidence/health
+    health_score    INT DEFAULT 0,                     -- 0-100 composite score
+    health_factors  JSONB DEFAULT '{}',                -- what contributes to score
+
+    -- Timestamps
+    status_changed_at TIMESTAMPTZ,
+    updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX idx_ops_agent_status ON ops_agent_status(status);
+CREATE INDEX idx_ops_agent_name ON ops_agent_status(agent_name);
+
+------------------------------------------------------------------------
+TABLE 8: ops_agent_transitions
+------------------------------------------------------------------------
+Purpose: Log every agent status change for audit
+
+CREATE TABLE ops_agent_transitions (
+    id              BIGSERIAL PRIMARY KEY,
+    agent_name      VARCHAR(50) NOT NULL,
+    from_status     VARCHAR(30) NOT NULL,
+    to_status       VARCHAR(30) NOT NULL,
+    reason          TEXT,
+    trigger_source  VARCHAR(100),                      -- "heartbeat_timeout", "http_check", "manual", "error_threshold"
+    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE INDEX idx_ops_transitions_agent ON ops_agent_transitions(agent_name);
+CREATE INDEX idx_ops_transitions_created ON ops_agent_transitions(created_at DESC);
+
+------------------------------------------------------------------------
+TABLE 9: ops_alerts
+------------------------------------------------------------------------
+Purpose: Stateful alert lifecycle
+
+CREATE TABLE ops_alerts (
+    id              BIGSERIAL PRIMARY KEY,
+    alert_id        VARCHAR(50) UNIQUE NOT NULL,       -- "alrt-c8d9e0f1"
+    alert_type      VARCHAR(100) NOT NULL,             -- "agent_unreachable", "job_stale", "heartbeat_timeout", etc.
+
+    -- What
+    severity        VARCHAR(20) NOT NULL,              -- "info", "warning", "error", "critical"
+    affected_component VARCHAR(100) NOT NULL,          -- "agent:seo", "redis", "pipeline", "approval_queue"
+    summary         TEXT NOT NULL,
+    detail          JSONB DEFAULT '{}',
+
+    -- State
+    status          VARCHAR(30) NOT NULL DEFAULT 'active',  -- "active", "resolved", "stale", "suppressed"
+    user_action_required BOOLEAN DEFAULT FALSE,
+    auto_retry_in_progress BOOLEAN DEFAULT FALSE,
+    resolved_but_pending_clear BOOLEAN DEFAULT FALSE,
+
+    -- Resolution
+    resolution_summary TEXT,
+    resolved_by     VARCHAR(100),
+
+    -- Timing
+    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    last_changed_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    resolved_at     TIMESTAMPTZ,
+    suppressed_at   TIMESTAMPTZ,
+    stale_after     TIMESTAMPTZ                        -- auto-stale threshold
+);
+
+CREATE INDEX idx_ops_alerts_status ON ops_alerts(status);
+CREATE INDEX idx_ops_alerts_severity ON ops_alerts(severity);
+CREATE INDEX idx_ops_alerts_created ON ops_alerts(created_at DESC);
+CREATE INDEX idx_ops_alerts_component ON ops_alerts(affected_component);
+
+------------------------------------------------------------------------
+TABLE 10: ops_workflow_items (Content Item Lifecycle)
+------------------------------------------------------------------------
+Purpose: Track individual content items through the full workflow
+
+CREATE TABLE ops_workflow_items (
+    id              BIGSERIAL PRIMARY KEY,
+    item_id         VARCHAR(50) UNIQUE NOT NULL,       -- "wf-a1b2c3d4"
+    wp_post_id      INT,
+    title           VARCHAR(500),
+    item_type       VARCHAR(50) NOT NULL,              -- "post", "page", "product_listing"
+    category        VARCHAR(100),
+
+    -- Workflow stages (each has canonical state)
+    stage_research  VARCHAR(30) DEFAULT 'pending',
+    stage_content   VARCHAR(30) DEFAULT 'pending',
+    stage_seo       VARCHAR(30) DEFAULT 'pending',
+    stage_affiliate VARCHAR(30) DEFAULT 'pending',
+    stage_social    VARCHAR(30) DEFAULT 'pending',
+    stage_engagement VARCHAR(30) DEFAULT 'pending',
+
+    -- Overall
+    overall_status  VARCHAR(30) DEFAULT 'draft',
+    current_stage   VARCHAR(30),
+    blocked_at_stage VARCHAR(30),
+    blocked_reason  TEXT,
+
+    -- Pipeline linkage
+    pipeline_run_id VARCHAR(50),
+    last_job_id     VARCHAR(50),
+
+    -- Timestamps
+    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    published_at    TIMESTAMPTZ,
+
+    -- Quality
+    quality_score   INT,
+    trust_score     INT,
+    readiness_pct   INT DEFAULT 0
+);
+
+CREATE INDEX idx_ops_workflow_status ON ops_workflow_items(overall_status);
+CREATE INDEX idx_ops_workflow_wp ON ops_workflow_items(wp_post_id);
+CREATE INDEX idx_ops_workflow_stage ON ops_workflow_items(current_stage);
+
+
+================================================================================
+PART 5: AGENT/JOB MODEL
+================================================================================
+
+HOW JOBS ARE CREATED:
+
+  1. MANUAL DISPATCH (operator clicks dashboard button):
+     Dashboard -> POST /api/dispatch/{action}
+     -> tracked_dispatch() creates ops_jobs entry (status: "queued")
+     -> If traffic_light == GREEN: execute immediately
+     -> If traffic_light == AMBER: create ops_approvals entry, job status -> "waiting_for_approval"
+     -> If traffic_light == RED: create ops_approvals entry, job status -> "waiting_for_approval"
+     -> Action receipt created in ops_action_receipts
+     -> Event logged in ops_events
+
+  2. PIPELINE DISPATCH (pipeline stage):
+     pipeline_runner -> each step creates a child job
+     -> Parent job: pipeline run (ops_pipeline_runs)
+     -> Child jobs: individual agent tasks (ops_jobs with parent_job_id)
+     -> All steps tracked in ops_pipeline_steps
+
+  3. SCHEDULED DISPATCH (cron/scheduler):
+     scheduled_jobs -> triggers via tracked_dispatch
+     -> triggered_by: "scheduled:{job_name}"
+
+  4. CROSS-AGENT DISPATCH (agent-to-agent):
+     Agent A -> manager /api/dispatch/{action}
+     -> triggered_by: "agent:{agent_name}"
+
+HOW JOBS ARE UPDATED:
+
+  After dispatch, the job tracks through these transitions:
+
+  draft -> queued -> running -> completed
+                            \-> failed_retryable -> queued (retry)
+                            \-> failed_terminal
+                 \-> waiting_for_approval -> queued (after approval)
+                                          \-> cancelled (after rejection)
+                 \-> waiting_for_dependency -> queued (after dependency met)
+                 \-> fallback_mode -> completed (with fallback_indicator=true)
+                 \-> paused -> queued (after resume)
+
+  ASYNC TRACKING (new in 10F):
+  When a child agent receives a job, the dispatch response is NOT the
+  completion. The job stays in "running" until:
+  a) Child agent calls POST /api/ops/jobs/{job_id}/progress (updates progress_pct)
+  b) Child agent calls POST /api/ops/jobs/{job_id}/complete (marks done)
+  c) Stale timeout reached -> job auto-transitions to "stale" alert raised
+
+  For backward compatibility with current agents that don't callback:
+  - tracked_dispatch sets stale_after = now + 5 minutes
+  - If no update received by stale_after, job transitions to "completed_unverified"
+  - "completed_unverified" is visually distinct from "completed" on dashboard
+
+HOW JOBS ARE LINKED:
+
+  Pipeline run (ops_pipeline_runs.run_id)
+    -> Pipeline steps (ops_pipeline_steps.run_id)
+    -> Each step creates a job (ops_jobs.parent_job_id = run_id)
+    -> Each job may require approval (ops_jobs.approval_id -> ops_approvals.approval_id)
+    -> All linked via correlation_id
+
+HOW JOBS ARE RETRIED:
+
+  Failed jobs with retryable=true can be retried:
+  POST /api/ops/jobs/{job_id}/retry
+  -> Creates new job with triggered_by="retry:{original_job_id}"
+  -> Original job linked via correlation_id
+  -> Retry count incremented
+  -> If retry_count >= max_retries -> failed_terminal
+
+HOW JOBS ARE BLOCKED:
+
+  Jobs enter "waiting_for_dependency" when:
+  - A prerequisite job hasn't completed
+  - A required API token is expired
+  - A required approval hasn't been granted
+  - A required data source is unavailable
+
+  blocking_reason and dependency_reason fields explain why.
+  When the dependency resolves, job auto-transitions to "queued".
+
+HOW JOBS ARE DISPLAYED:
+
+  Recent Jobs table shows: last 50 jobs sorted by created_at DESC
+  Columns: Job ID, Agent, Action, Status (badge), Duration, Created, Summary
+  Click job ID -> expandable detail with full lifecycle + linked events
+  Filter by: status, agent, time range
+  Status badges: color-coded per canonical state model (see Part 6)
+
+
+================================================================================
+PART 6: STATE MODEL
+================================================================================
+
+CANONICAL JOB STATE MODEL:
+
+  STATE                    | COLOR     | MEANING
+  -------------------------|-----------|--------------------------------------------
+  draft                    | GRAY      | Created but not yet queued
+  queued                   | BLUE      | In queue, waiting for execution slot
+  running                  | CYAN      | Currently executing
+  waiting_for_approval     | AMBER     | Blocked pending operator decision
+  waiting_for_dependency   | ORANGE    | Blocked pending prerequisite
+  fallback_mode            | YELLOW    | Running with degraded capability
+  paused                   | GRAY      | Manually paused by operator
+  failed_retryable         | RED       | Failed but can be retried
+  failed_terminal          | DARK RED  | Failed and cannot be retried
+  completed                | GREEN     | Successfully completed
+  completed_unverified     | LIME      | Dispatch ACKed but outcome unconfirmed
+  rolled_back              | PURPLE    | Completed but changes were reversed
+  skipped                  | GRAY+LINE | Intentionally not executed (reason logged)
+  stale                    | BROWN     | No updates received past timeout threshold
+  cancelled                | GRAY      | Cancelled by operator or system
+
+APPROVAL STATE MODEL:
+
+  STATE                    | COLOR     | MEANING
+  -------------------------|-----------|--------------------------------------------
+  pending                  | AMBER     | Awaiting operator decision
+  approved                 | GREEN     | Operator approved
+  rejected                 | RED       | Operator rejected
+  expired                  | GRAY      | Timed out without decision
+  auto_approved            | TEAL      | Approved by standing approval rule
+
+ALERT STATE MODEL:
+
+  STATE                    | COLOR     | MEANING
+  -------------------------|-----------|--------------------------------------------
+  active                   | RED       | Currently active, needs attention
+  resolved                 | GREEN     | Issue resolved
+  stale                    | AMBER     | Unresolved past threshold, needs review
+  suppressed               | GRAY      | Acknowledged but hidden from active view
+
+AGENT STATUS MODEL:
+
+  STATE                    | COLOR     | MEANING
+  -------------------------|-----------|--------------------------------------------
+  idle                     | GREEN     | Running, no current task
+  running                  | CYAN      | Actively processing a task
+  degraded                 | YELLOW    | Running but with reduced capability
+  blocked                  | ORANGE    | Cannot proceed (missing dependency)
+  paused                   | GRAY      | Manually paused
+  fallback_mode            | YELLOW    | Using template/rules instead of AI
+  failed                   | RED       | Agent process has errored
+  unreachable              | DARK RED  | No heartbeat or HTTP response
+  unknown                  | GRAY      | Never connected
+
+PIPELINE STEP STATE MODEL:
+  Same as canonical job state model, plus:
+  - Each step also records if it was skipped (with reason + who skipped it)
+  - If a step is skipped, the timeline preserves that event
+
+WORKFLOW STAGE STATE MODEL:
+  Each stage in ops_workflow_items uses:
+  pending, queued, running, completed, failed, skipped, waiting_for_approval
+
+VISUAL INDICATORS:
+
+  Recommendation vs Action:
+    RECOMMENDATION  | Dotted border, lightbulb icon, "Suggested" label
+    QUEUED ACTION   | Solid border, clock icon, "Queued" label
+    IN-PROGRESS     | Pulsing border, spinner, "Running" label
+    COMPLETED       | Green check, solid border, "Done" label
+    APPROVAL-NEEDED | Amber border, shield icon, "Needs Approval" label
+    SIMULATED       | Dashed border, flask icon, "Simulated" label
+    FORECAST        | Gradient border, chart icon, "Forecast" label
+    ESTIMATED       | Light border, ~icon, "Estimated" label
+    LIVE VERIFIED   | Bold border, check-shield icon, "Live Data" label
+
+  Data Source Badges:
+    LIVE            | Green badge: "LIVE"
+    FORECAST        | Blue badge: "FORECAST"
+    SIMULATED       | Purple badge: "SIMULATED"
+    ESTIMATED       | Amber badge: "ESTIMATED"
+    PROXY           | Gray badge: "PROXY"
+
+  Fallback Badges:
+    PRIMARY AI      | No badge (normal state)
+    FALLBACK TEMPLATE | Yellow badge: "FALLBACK"
+    READ ONLY       | Gray badge: "READ-ONLY"
+    AWAITING TOKEN  | Orange badge: "TOKEN REFRESH"
+    PAUSED BY POLICY | Red badge: "POLICY PAUSED"
+
+  Severity Badges:
+    INFO            | Blue
+    WARNING         | Amber
+    ERROR           | Red
+    CRITICAL        | Dark red with pulse animation
+
+
+================================================================================
+PART 7: ACCEPTANCE CRITERIA
+================================================================================
+
+10F is complete when ALL of the following are true:
+
+JOBS:
+  AC-1: Every dashboard dispatch button creates a traceable job in PostgreSQL
+  AC-2: Jobs page shows: ID, agent, action, status badge, duration, created time
+  AC-3: Job detail shows full lifecycle: state transitions, linked events, linked approval
+  AC-4: Failed jobs show error summary and offer retry button
+  AC-5: Stale jobs (no update past timeout) are auto-detected and flagged
+  AC-6: Old JSON jobs.json file is no longer the primary store
+
+APPROVALS:
+  AC-7:  AMBER actions create real approval requests before execution
+  AC-8:  RED actions create real approval requests and block execution
+  AC-9:  Each approval shows: action type, affected item, before/after, risk level, evidence level
+  AC-10: Approved/rejected decisions are logged with operator identity and reason
+  AC-11: Standing approvals auto-approve matching AMBER actions (logged as auto_approved)
+  AC-12: Expired approvals auto-transition after configurable timeout
+
+EVENTS:
+  AC-13: All operational events persist to PostgreSQL (survive restart)
+  AC-14: Event timeline shows: jobs created/completed/failed, approvals, alerts, agent status changes
+  AC-15: Events have correlation_id linking related activity
+  AC-16: "What happened in the last 24h" query returns a complete operational story
+
+AGENTS:
+  AC-17: Agent status shows actual current state (not 6-day-old heartbeat)
+  AC-18: Heartbeat timeout detection: agent -> UNREACHABLE after 5 minutes of silence
+  AC-19: Status transitions are logged (from/to/reason/timestamp)
+  AC-20: Agent cards show: status, last successful run, queue depth, current mode, health score
+
+PIPELINE:
+  AC-21: Every pipeline run is persisted with all step details
+  AC-22: Past pipeline runs are queryable and visible on dashboard
+  AC-23: Skipped steps explicitly show why and who/what skipped them
+  AC-24: Pipeline step states use the canonical model
+
+ALERTS:
+  AC-25: Alerts have lifecycle: active -> resolved/stale/suppressed
+  AC-26: No ghost warnings (alerts that persist without state explanation)
+  AC-27: Alert resolution is logged with reason
+
+ACTION RECEIPTS:
+  AC-28: Every action produces a persistent receipt (not overwritten by next action)
+  AC-29: Receipt shows: action name, source screen, time, actor, target, job ID, status
+  AC-30: Last 50 receipts visible on dashboard
+
+DASHBOARD/UI:
+  AC-31: NOC view has 6 panels: Jobs, Approvals, Timeline, Agents, Alerts, Receipts
+  AC-32: Manager dashboard has: Recent Jobs table, Recent Actions panel
+  AC-33: All status badges use canonical colors defined in state model
+  AC-34: Recommendation vs action is visually distinct everywhere
+  AC-35: Data source type (live/forecast/simulated/estimated) is badged
+  AC-36: Fallback mode is visually indicated on affected agent cards
+  AC-37: All wording is plain English (no ambiguous internal language)
+
+OPERATIONAL TRUTH:
+  AC-38: Operator can determine "what happened in the last hour" within 30 seconds
+  AC-39: No silent step skipping (every skip is logged with reason)
+  AC-40: No invisible degradation (fallback mode is always visible)
+  AC-41: Async actions show real completion, not dispatch ACK
+  AC-42: Single source of truth: PostgreSQL (no parallel JSON/Redis data stores for ops data)
+
+
+================================================================================
+PART 8: ROLLBACK PATH
+================================================================================
+
+10F changes are designed for safe rollback at each stage:
+
+STAGE 1 — Database tables:
+  New tables are all prefixed "ops_". They do not modify existing tables.
+  Rollback: DROP TABLE ops_* (old tables still intact)
+
+STAGE 2 — truthful_ops.py module:
+  New module. Does not replace existing modules initially.
+  Rollback: Remove import, old code still works.
+
+STAGE 3 — job_centre.py modification:
+  Current approach: job_centre.py will call truthful_ops under the hood
+  but the external API remains identical.
+  Rollback: Revert job_centre.py to previous version (git checkout).
+  data/jobs.json continues to work as fallback.
+
+STAGE 4 — tracked_dispatch.py modification:
+  Adds truthful_ops integration alongside existing job_centre calls.
+  Rollback: Revert to previous version.
+
+STAGE 5 — event_engine.py modification:
+  Adds PostgreSQL persistence alongside existing in-memory storage.
+  In-memory events still work as before.
+  Rollback: Revert, in-memory events continue working.
+
+STAGE 6 — Dashboard changes:
+  New panels added to existing dashboards (not replacing existing panels).
+  Rollback: Remove new panel HTML sections.
+
+STAGE 7 — Route mounting:
+  New routes mounted at /api/ops/* (does not replace /api/jobs/*, /api/events/*, etc.)
+  Old endpoints continue to work.
+  Rollback: Remove router include from main.py.
+
+FULL ROLLBACK PROCEDURE:
+  1. SSH to server
+  2. cd /opt/pethub-agents/manager-agent
+  3. git checkout main -- job_centre.py tracked_dispatch.py event_engine.py pipeline_runner.py main.py noc_routes.py
+  4. Remove truthful_ops.py and truthful_ops_routes.py
+  5. Restart manager agent: systemctl restart pethub-manager
+  6. Old JSON-based systems resume automatically
+  7. New ops_* tables can be dropped at leisure (no other code references them after rollback)
+
+
+================================================================================
+PART 9: OWNER REVIEW POINTS
+================================================================================
+
+When signing off 10F, the operator should verify:
+
+  1. JOB VISIBILITY TEST
+     Click any quick action button on the manager dashboard.
+     Verify: job appears in Recent Jobs table with a real job ID.
+     Verify: job status updates from queued -> running -> completed/failed.
+     Verify: clicking the job ID shows full detail including events.
+
+  2. APPROVAL FLOW TEST
+     Trigger an AMBER action (e.g., SEO auto-fix).
+     Verify: approval request appears in Approval Queue.
+     Verify: approval shows what will change, affected item, risk level.
+     Verify: approving the request triggers the actual action.
+     Verify: rejecting the request cancels the linked job.
+
+  3. EVENT TIMELINE TEST
+     Perform several actions (dispatch, approve, pipeline run).
+     Navigate to NOC -> Event Timeline.
+     Verify: all actions appear chronologically with clear descriptions.
+     Verify: events survive a manager agent restart.
+
+  4. AGENT HEALTH TEST
+     Check agent status cards.
+     Verify: no agent shows "ACTIVE" with a stale heartbeat.
+     Verify: unreachable agents show "UNREACHABLE" with last-seen time.
+     Verify: agent status transitions are visible in the timeline.
+
+  5. PIPELINE HISTORY TEST
+     Run a pipeline (draft mode).
+     Verify: pipeline run appears in pipeline history.
+     Verify: each step shows its state, duration, and result.
+     Verify: if a step was skipped, the reason is visible.
+
+  6. ALERT LIFECYCLE TEST
+     Trigger a condition that raises an alert (e.g., stop an agent).
+     Verify: alert appears as "active" with severity and component.
+     Verify: resolving the alert changes state to "resolved" with reason.
+     Verify: no ghost alerts persist without explanation.
+
+  7. ACTION RECEIPT TEST
+     Click 5 different quick action buttons.
+     Verify: all 5 receipts visible in Recent Actions panel.
+     Verify: each shows action name, time, job ID, current status.
+     Verify: none are overwritten (all 5 persist).
+
+  8. PLAIN LANGUAGE TEST
+     Review all visible text on NOC, manager dashboard, and operations centre.
+     Verify: no ambiguous internal jargon.
+     Verify: every status, every alert, every job description is
+             understandable by a non-technical operator.
+
+  9. DATA SOURCE DISTINCTION TEST
+     Look at any surface that shows scores or metrics.
+     Verify: live data vs forecast vs simulated vs estimated is badged.
+
+  10. SINGLE TRUTH TEST
+      Check that /api/ops/jobs/list and the dashboard jobs table show
+      identical data. Verify old JSON jobs.json is not being actively
+      written to for new jobs.
+
+
+================================================================================
+PART 10: DEPENDENCY MAP
+================================================================================
+
+WHAT 10F DEPENDS ON:
+  - PostgreSQL operational (currently running on port 5432) ........... YES
+  - Redis operational (currently running on port 6379) ............... YES
+  - Manager agent running on port 8100 ............................... YES
+  - All 8 child agents running on ports 8101-8108 .................... YES
+  - Nginx routing operational ........................................ YES
+  - Existing job_centre.py, tracked_dispatch.py, event_engine.py ..... YES
+  - Existing traffic_light.py classification system .................. YES
+  - Existing postgres_phase1.py table creation infrastructure ........ YES
+  - Hardening pass completed and signed off .......................... YES
+
+WHAT DEPENDS ON 10F:
+
+  Phase 10G (Content Trust and Evidence Hardening):
+    - Needs 10F approval queue to enforce evidence-gated publishing
+    - Needs 10F event timeline to log trust-sensitive changes
+    - Needs 10F action receipts for audit trail on content modifications
+    - Needs 10F agent health for trust in content agent reliability
+
+  Phase 10H (Safe Cluster Expansion):
+    - Needs 10F job model to track expansion tasks
+    - Needs 10F approval queue for draft-only expansion gating
+    - Needs 10F pipeline history to trace expansion through stages
+    - Needs 10F workflow items to track content lifecycle per cluster
+
+  Phase 10I (Indexing, Crawl, AI Search):
+    - Needs 10F event timeline for publish-to-index follow-up tracking
+    - Needs 10F job model for sitemap/crawl assurance tasks
+    - Needs 10F alert lifecycle for index-status monitoring
+
+  Content Scaling (paused until 10F complete):
+    - Every content action must go through 10F's truthful dispatch
+    - Every publish must create an approval if AMBER/RED
+    - Every content item must be tracked in workflow_items
+
+
+================================================================================
+PART 11: SCREENSHOT/WIREFRAME INTENT
+================================================================================
+
+SURFACE 1: NOC DASHBOARD (Rebuilt)
+  Layout: 2-column grid, 6 panels
+
+  +----------------------------------+----------------------------------+
+  | RECENT JOBS (last 50)            | APPROVAL QUEUE                   |
+  | Table: ID | Agent | Action |     | Cards: Action | Item | Risk |    |
+  |   Status | Duration | Created   |   Status | Approve/Reject btns    |
+  | Status badges: color-coded       | Risk badges: GREEN/AMBER/RED     |
+  | Click ID -> expand detail        | Pending count badge in header    |
+  +----------------------------------+----------------------------------+
+  | EVENT TIMELINE (last 24h)        | AGENT HEALTH GRID               |
+  | Chronological feed:              | 9 cards (1 per agent):           |
+  |   [time] [icon] [description]    |   Name | Status badge | Mode     |
+  |   Color-coded by severity        |   Last seen | Queue depth        |
+  |   Filterable by category         |   Health score gauge              |
+  +----------------------------------+----------------------------------+
+  | ACTIVE ALERTS                    | ACTION RECEIPTS (last 50)        |
+  | Cards: Severity | Component |    | Table: Action | Time | Actor |   |
+  |   Summary | Status | Action      |   Target | Job ID | Status       |
+  |   Required?                      | Click job ID -> linked job       |
+  +----------------------------------+----------------------------------+
+
+SURFACE 2: MANAGER DASHBOARD (Additions)
+  Below existing quick actions grid, add:
+
+  +----------------------------------------------------------------------+
+  | RECENT JOBS                                                          |
+  | Scrollable table, 15 rows visible, 50 total                         |
+  | Columns: Job ID | Agent | Action | Status | Duration | Created      |
+  | Each row: click to expand with full detail                           |
+  +----------------------------------------------------------------------+
+  | RECENT ACTIONS                                                       |
+  | Scrollable list, 10 items visible                                    |
+  | Each: action name, time, actor, target, job_id link, status badge    |
+  +----------------------------------------------------------------------+
+
+SURFACE 3: JOB DETAIL (Expandable Panel)
+  When clicking a job ID anywhere:
+
+  +----------------------------------------------------------------------+
+  | JOB: job-a329b926                                  Status: RUNNING   |
+  |                                                                      |
+  | Agent: SEO | Action: SEO Audit | Queue: default                     |
+  | Triggered by: manual | Risk: GREEN | Progress: 45%                  |
+  | Target: Full site audit                                              |
+  |                                                                      |
+  | TIMELINE:                                                            |
+  |   10:31:05  Created (manual dispatch from manager dashboard)         |
+  |   10:31:05  Queued                                                   |
+  |   10:31:06  Running (dispatched to SEO agent)                        |
+  |   10:31:15  Progress 25% - Scanning pages                            |
+  |   10:31:45  Progress 75% - Analyzing results                         |
+  |   (waiting for completion...)                                        |
+  |                                                                      |
+  | LINKED: Approval: none | Pipeline: none | Parent: none               |
+  | Error: none | Retry count: 0 | Follow-up: pending                   |
+  +----------------------------------------------------------------------+
+
+SURFACE 4: APPROVAL CARD (Expanded)
+
+  +----------------------------------------------------------------------+
+  | APPROVAL: apr-f3a7c912                             Status: PENDING   |
+  |                                                                      |
+  | Action: Publish draft post to live                                   |
+  | Affected: "Best Dog Beds for Large Breeds" (Post #4521)              |
+  | Risk Level: AMBER                                                    |
+  | Proposed by: Content Agent                                           |
+  |                                                                      |
+  | PROPOSED CHANGE:                                                     |
+  |   Before: Draft (not published)                                      |
+  |   After: Published on pethubonline.com                               |
+  |   Category: publish_action                                           |
+  |                                                                      |
+  | WHY: Content passed 12-gate check. Quality score: 87/100.            |
+  |      All internal links verified. No banned phrases detected.        |
+  |                                                                      |
+  | EVIDENCE: Live verified (12-gate scan results attached)              |
+  | DATA SOURCE: Live                                                    |
+  |                                                                      |
+  | IF APPROVED: Post goes live, sitemap updated, social promotion queued|
+  | IF REJECTED: Post remains in draft, content agent notified           |
+  |                                                                      |
+  | [ APPROVE ]  [ REJECT ]  [ REQUEST MORE INFO ]                      |
+  +----------------------------------------------------------------------+
+
+SURFACE 5: AGENT HEALTH CARD
+
+  +------------------------------+
+  | SEO AGENT                    |
+  | Status: RUNNING (green dot)  |
+  | Mode: Primary AI             |
+  | Health: 92/100 [==========]  |
+  |                              |
+  | Last seen: 45 seconds ago    |
+  | Last success: 2 min ago      |
+  | Queue: 3 tasks               |
+  | Current: SEO audit (45%)     |
+  | Last error: none             |
+  +------------------------------+
+
+SURFACE 6: WORKFLOW PIPELINE VISUAL (per content item)
+
+  Research -> Content -> SEO -> Affiliate -> Social -> Engagement
+  [DONE]     [DONE]    [RUN]   [QUEUED]    [WAIT]    [PENDING]
+
+  Each stage: clickable, shows detail including skip reason if skipped.
+  Blocked stages show orange with dependency explanation.
+  Fallback stages show yellow with degradation explanation.
+
+
+================================================================================
+PART 12: OPEN RISKS
+================================================================================
+
+RISK 1: AGENT CALLBACK ADOPTION (Medium)
+  10F introduces async job tracking that requires child agents to call back
+  to the manager with progress/completion. Currently no agent does this.
+  MITIGATION: "completed_unverified" state handles agents that don't callback.
+  Gradually upgrade agents to support callbacks. Stale timeout catches stuck jobs.
+
+RISK 2: POSTGRESQL PERFORMANCE UNDER LOAD (Low)
+  Moving from JSON files to PostgreSQL for all operations data.
+  With ~50 jobs/day currently, this is well within PostgreSQL capacity.
+  MITIGATION: Proper indexing already defined. Partition tables later if needed.
+
+RISK 3: DASHBOARD BACKWARD COMPATIBILITY (Medium)
+  Old /api/jobs/* and /api/events/* endpoints used by existing dashboards.
+  MITIGATION: Keep old endpoints working (redirect to new ops layer).
+  New /api/ops/* endpoints for new dashboard panels. Gradual migration.
+
+RISK 4: DATA MIGRATION FROM EXISTING STORES (Low)
+  17 jobs in JSON, 14 tasks in PostgreSQL, 3 approvals in JSON, 1 in PG.
+  MITIGATION: One-time migration script moves existing data to ops_* tables.
+  Low volume makes this trivial.
+
+RISK 5: AGENT RESTART DURING MIGRATION (Low)
+  If the manager agent restarts during 10F deployment, in-progress jobs
+  could be in an inconsistent state.
+  MITIGATION: All job state is in PostgreSQL (survives restart).
+  Startup routine checks for stale "running" jobs and marks them appropriately.
+
+RISK 6: EVENT VOLUME GROWTH (Low)
+  Persistent events will accumulate over time.
+  MITIGATION: 90-day retention policy. Auto-archive events older than 90 days.
+  ops_events partitioned by month if needed later.
+
+RISK 7: COMPLEXITY OF UNIFIED MODULE (Medium)
+  truthful_ops.py becomes a critical dependency for all operational surfaces.
+  MITIGATION: Keep it focused on CRUD + state transitions only.
+  No business logic in the ops layer. Well-tested with clear interfaces.
+
+
+================================================================================
+PART 13: ESTIMATED IMPLEMENTATION ORDER
+================================================================================
+
+Module-by-module execution plan:
+
+WEEK 1: FOUNDATION (Backend)
+
+  Step 1: Create ops_* tables in PostgreSQL
+    File: postgres_phase1.py (add new table definitions)
+    Why first: All other code depends on these tables existing.
+    Duration: ~1 hour
+    Allocation: Freelancer
+
+  Step 2: Build truthful_ops.py
+    File: NEW truthful_ops.py
+    Core functions: create_job, update_job, create_approval, decide_approval,
+      log_event, log_action, update_agent_status, create_alert, resolve_alert,
+      store_pipeline_run, get_timeline, get_jobs, get_approvals
+    Why second: This is the single source of truth that everything else calls.
+    Duration: ~3-4 hours
+    Allocation: Freelancer
+
+  Step 3: Build truthful_ops_routes.py
+    File: NEW truthful_ops_routes.py
+    All /api/ops/* endpoints.
+    Why third: Dashboard needs endpoints before it can display data.
+    Duration: ~2-3 hours
+    Allocation: Freelancer
+
+  Step 4: Wire job_centre.py to truthful_ops
+    File: MODIFY job_centre.py
+    Change create_job/complete_job to write to PostgreSQL via truthful_ops.
+    Keep JSON file as backup write (dual-write initially).
+    Duration: ~1 hour
+    Allocation: Freelancer
+
+  Step 5: Wire tracked_dispatch.py to truthful_ops
+    File: MODIFY tracked_dispatch.py
+    Add action receipt creation + event logging on every dispatch.
+    Duration: ~1 hour
+    Allocation: Freelancer
+
+  Step 6: Wire event_engine.py to truthful_ops
+    File: MODIFY event_engine.py
+    _log_event() now also calls truthful_ops.log_event() for persistence.
+    Duration: ~30 minutes
+    Allocation: Freelancer
+
+  Step 7: Wire pipeline_runner.py to truthful_ops
+    File: MODIFY pipeline_runner.py
+    Store pipeline runs and steps to PostgreSQL.
+    Duration: ~1 hour
+    Allocation: Freelancer
+
+WEEK 1-2: AGENT HEALTH + ALERTS
+
+  Step 8: Agent heartbeat timeout detection
+    File: MODIFY main.py (add background task)
+    Check heartbeats every 60 seconds. If > 5 min old -> UNREACHABLE.
+    Log transitions to ops_agent_transitions.
+    Duration: ~1 hour
+    Allocation: Freelancer
+
+  Step 9: Alert lifecycle system
+    File: truthful_ops.py (already built in Step 2)
+    Wire agent health, job staleness, and infrastructure checks to create alerts.
+    Duration: ~1 hour
+    Allocation: Freelancer
+
+  Step 10: Approval queue wiring
+    File: MODIFY tracked_dispatch.py + traffic_light.py
+    AMBER/RED actions create real approvals that block execution.
+    Duration: ~2 hours
+    Allocation: Freelancer
+
+WEEK 2: DASHBOARD (Frontend)
+
+  Step 11: NOC dashboard rebuild
+    File: operations_noc_dashboard.html
+    6 panels: Jobs, Approvals, Timeline, Agents, Alerts, Receipts
+    Duration: ~4-5 hours
+    Allocation: Freelancer
+
+  Step 12: Manager dashboard additions
+    File: manager_dashboard.html
+    Add Recent Jobs table + Recent Actions panel below quick actions.
+    Duration: ~2-3 hours
+    Allocation: Freelancer
+
+  Step 13: Job detail expandable component
+    Part of NOC and manager dashboard.
+    Click job ID -> shows full lifecycle.
+    Duration: ~1-2 hours
+    Allocation: Freelancer
+
+  Step 14: Approval detail card component
+    Part of NOC dashboard.
+    Rich approval cards with before/after, approve/reject buttons.
+    Duration: ~1-2 hours
+    Allocation: Freelancer
+
+WEEK 2-3: INTEGRATION + TESTING
+
+  Step 15: Mount routes + data migration
+    File: MODIFY main.py
+    Mount truthful_ops_routes, run one-time migration of existing data.
+    Duration: ~1 hour
+    Allocation: Freelancer
+
+  Step 16: Acceptance testing (all 42 criteria)
+    Run through every acceptance criterion with real actions.
+    Screenshot verification with Playwright.
+    Duration: ~3-4 hours
+    Allocation: Freelancer
+
+  Step 17: Owner sign-off pack preparation
+    Screenshots, before/after, test results, known limits.
+    Duration: ~1-2 hours
+    Allocation: Freelancer
+
+TOTAL ESTIMATED: ~25-30 hours of implementation work
+
+
+================================================================================
+PART 14: PROOF STRATEGY
+================================================================================
+
+How we prove the dashboard is now truthful:
+
+PROOF 1: ACTION-TO-JOB TRACEABILITY
+  Test: Click "SEO Audit" on dashboard.
+  Proof: Job appears in Recent Jobs table with unique ID.
+         Job detail shows state transitions with timestamps.
+         Event timeline shows "Job created" and "Job started" entries.
+         Action receipt shows in Recent Actions panel.
+  Evidence: Playwright screenshot of dashboard showing all 4 surfaces
+            with matching job ID.
+
+PROOF 2: APPROVAL GATE ACTUALLY BLOCKS
+  Test: Trigger an AMBER action (e.g., social post to live).
+  Proof: Action does NOT execute immediately.
+         Approval appears in approval queue with full context.
+         Approving triggers the action. Rejecting cancels it.
+  Evidence: Screenshot sequence: (1) approval in queue, (2) after approve
+            showing job completion, (3) after reject showing cancellation.
+
+PROOF 3: EVENTS SURVIVE RESTART
+  Test: Perform several actions. Restart manager agent. Check timeline.
+  Proof: All events from before restart still visible in timeline.
+  Evidence: Screenshot before restart, restart command, screenshot after.
+
+PROOF 4: HEARTBEAT TIMEOUT WORKS
+  Test: Stop one child agent. Wait 6 minutes. Check agent health.
+  Proof: Agent shows "UNREACHABLE" (not "ACTIVE" with stale heartbeat).
+         Transition logged in ops_agent_transitions.
+         Alert raised for "agent unreachable".
+  Evidence: Screenshot of agent card showing UNREACHABLE + alert.
+
+PROOF 5: PIPELINE HISTORY PERSISTS
+  Test: Run a pipeline (draft mode). Complete it. Check history.
+  Proof: Pipeline run visible in history with all 6 step states.
+  Evidence: Screenshot of pipeline history showing completed run with steps.
+
+PROOF 6: NO MORE PARALLEL STORES
+  Test: Check that new jobs are written to PostgreSQL, not JSON.
+  Proof: Query ops_jobs table -> new jobs present.
+         Check data/jobs.json -> no new entries after migration.
+  Evidence: SQL query output + JSON file timestamp comparison.
+
+PROOF 7: ASYNC TRUTH
+  Test: Dispatch SEO audit. Check job status over time.
+  Proof: Job shows "running" (not "completed" in 65ms).
+         Progress updates appear if agent supports callbacks.
+         If no callback, job transitions to "completed_unverified" after timeout.
+  Evidence: Multiple screenshots at 0s, 30s, 2min, 5min showing state changes.
+
+PROOF 8: OPERATIONAL STORY
+  Test: Perform 10 different actions over 30 minutes. Navigate to timeline.
+  Proof: All 10 actions visible chronologically with clear descriptions.
+         Operator can understand what happened without forensic analysis.
+  Evidence: Single screenshot of timeline showing 10 events.
+
+
+================================================================================
+PART 15: WORK ALLOCATION SPLIT
+================================================================================
+
+ITEM                                          | ALLOCATION
+----------------------------------------------|----------------------------
+PostgreSQL table creation                     | Freelancer (code + deploy)
+truthful_ops.py core module                   | Freelancer (code + deploy)
+truthful_ops_routes.py API routes             | Freelancer (code + deploy)
+job_centre.py migration to PostgreSQL         | Freelancer (code + deploy)
+tracked_dispatch.py upgrade                   | Freelancer (code + deploy)
+event_engine.py persistence wiring            | Freelancer (code + deploy)
+pipeline_runner.py history persistence        | Freelancer (code + deploy)
+Agent heartbeat timeout detection             | Freelancer (code + deploy)
+Alert lifecycle system                        | Freelancer (code + deploy)
+Approval queue wiring to traffic light        | Freelancer (code + deploy)
+NOC dashboard rebuild (HTML/CSS/JS)           | Freelancer (code + deploy)
+Manager dashboard additions (HTML/CSS/JS)     | Freelancer (code + deploy)
+Job detail component                          | Freelancer (code + deploy)
+Approval card component                       | Freelancer (code + deploy)
+Route mounting + data migration               | Freelancer (code + deploy)
+Acceptance testing (42 criteria)              | Freelancer (test + evidence)
+Owner sign-off pack                           | Freelancer (prepare + send)
+----------------------------------------------|----------------------------
+Agent callback support (future)               | Hybrid (freelancer codes, agents execute)
+Ongoing alert monitoring                      | Agent-executable (automated checks)
+Event generation during monitoring cycles     | Agent-executable (event_engine runs)
+Standing approval management                  | Hybrid (freelancer sets rules, agents check)
+Content lifecycle tracking                    | Hybrid (freelancer builds, agents populate)
+
+SUMMARY:
+  Freelancer/manual implementation:   17 items (all 10F core work)
+  Agent-executable:                    3 items (automated monitoring)
+  Hybrid:                              3 items (freelancer builds, agents use)
+
+
+================================================================================
+PART 16: 10G/10H/10I DEPENDENCY BRIDGE
+================================================================================
+
+------------------------------------------------------------------------
+PHASE 10G: CONTENT TRUST AND EVIDENCE HARDENING
+------------------------------------------------------------------------
+
+OBJECTIVE:
+  Ensure every piece of content on PetHub is backed by verifiable evidence,
+  follows anti-overclaim rules, and meets editorial trust standards.
+
+WHY IT DEPENDS ON 10F:
+  - 10F's approval queue provides the mechanism for gating trust-sensitive content
+  - 10F's event timeline provides the audit trail for content changes
+  - 10F's job model tracks evidence collection and trust-check tasks
+  - 10F's agent health ensures the content agent is actually reliable
+
+PREREQUISITE OUTPUTS FROM 10F:
+  1. Working approval queue with AMBER/RED gating
+  2. Persistent event timeline
+  3. ops_workflow_items table tracking content lifecycle
+  4. Action receipt system for content modifications
+
+WHAT CAN BE PREPARED IN PARALLEL:
+  - Anti-overclaim rule definitions (banned phrases, evidence requirements)
+  - Evidence classification taxonomy (live_verified, manufacturer_claim, etc.)
+  - Trust lint logic rules (can be defined as data without 10F infrastructure)
+  - Author/editorial trust surface designs
+  - Claim/risk policy framework document
+  - Content proof standard definitions
+  - Disclosure enforcement rule set
+
+WHAT MUST NOT START UNTIL 10F IS COMPLETE:
+  - Automated pre-publish trust checking (needs 10F approval pipeline)
+  - Evidence vault integration with approval queue
+  - Trust-sensitive content gating (needs AMBER/RED approval working)
+  - Content trust scoring that feeds into approval risk levels
+
+------------------------------------------------------------------------
+PHASE 10H: SAFE CLUSTER EXPANSION ENGINE
+------------------------------------------------------------------------
+
+OBJECTIVE:
+  Enable controlled content scaling through draft-only expansion with
+  quality gates, approval requirements, and cluster-level tracking.
+
+WHY IT DEPENDS ON 10F:
+  - 10F's job model tracks expansion tasks per cluster
+  - 10F's approval queue gates new content before publishing
+  - 10F's pipeline history shows expansion pipeline execution
+  - 10F's workflow items track each new piece through stages
+
+PREREQUISITE OUTPUTS FROM 10F:
+  1. ops_jobs with parent_job_id (for cluster-level mission tracking)
+  2. ops_pipeline_runs + ops_pipeline_steps (for expansion pipeline tracking)
+  3. ops_approvals with change_category (for publish-gating new content)
+  4. ops_workflow_items (for content lifecycle per expansion piece)
+  5. ops_alerts (for quality threshold violations)
+
+WHAT CAN BE PREPARED IN PARALLEL:
+  - Draft-only expansion logic (content generation that never auto-publishes)
+  - Cluster template contract (structure for new hub+spoke clusters)
+  - Internal-link planning model (how new content links to existing)
+  - Educational spoke rollout rules (order, priority, quality thresholds)
+  - Expansion gating criteria (what quality score before publish-ready)
+  - Cluster definition data (which clusters exist, which need expansion)
+
+WHAT MUST NOT START UNTIL 10F IS COMPLETE:
+  - Actual content expansion execution (needs job tracking)
+  - Publish-readiness approval flow (needs approval queue working)
+  - Cluster-level mission tracking (needs parent_job_id linkage)
+  - Expansion quality monitoring (needs alert lifecycle)
+
+------------------------------------------------------------------------
+PHASE 10I: INDEXING, CRAWL, AND AI SEARCH ADAPTATION
+------------------------------------------------------------------------
+
+OBJECTIVE:
+  Ensure published content is indexed, discoverable, and formatted for
+  AI answer engines (Google AI Overview, Bing Copilot, etc.).
+
+WHY IT DEPENDS ON 10F:
+  - 10F's event timeline tracks publish-to-index workflow
+  - 10F's job model tracks sitemap/crawl assurance tasks
+  - 10F's alert lifecycle monitors index-status issues
+
+PREREQUISITE OUTPUTS FROM 10F:
+  1. ops_events (for publish events that trigger index workflows)
+  2. ops_jobs (for crawl/index monitoring tasks)
+  3. ops_alerts (for index-status warnings)
+  4. ops_workflow_items (to add indexing stage to content lifecycle)
+
+WHAT CAN BE PREPARED IN PARALLEL:
+  - Index-status tracking data model (indexed/not-indexed/deindexed per URL)
+  - Sitemap validation logic (compare published pages vs sitemap entries)
+  - AI-readiness indicators (extractability score, answer-format compliance)
+  - Content formatting requirements for answer engines
+  - Crawl assurance signal definitions (what confirms Google has crawled)
+
+WHAT MUST NOT START UNTIL 10F IS COMPLETE:
+  - Automated publish-to-index follow-up workflow (needs event pipeline)
+  - Index-status alerting (needs alert lifecycle)
+  - Crawl budget monitoring as a tracked job (needs job model)
+  - AI search readiness scoring integration with content lifecycle
+
+
+================================================================================
+UPDATED ROADMAP STATUS
+================================================================================
+
+  PHASE           | STATUS           | NOTES
+  ----------------|------------------|----------------------------------------
+  Phase 1-9       | COMPLETED        | Full platform build + content + WP
+  Phase 10A       | COMPLETED        | Agent implementation activation
+  Phase 10B       | COMPLETED        | Authority expansion
+  Phase 10C       | COMPLETED        | Content presentation standard
+  Phase 10D       | COMPLETED        | Full site hardening (11 reports)
+  Phase 10E       | SIGNED OFF       | Hardening pass accepted and closed
+  Phase 10F       | ACTIVE           | Operator Control & Truthful Visibility
+    Phase 1       | COMPLETED        | Diagnosis (825-line report)
+    Phase 2       | COMPLETED        | State/event contract (this document)
+    Phase 3       | NEXT             | UI/control design
+    Phase 4       | PENDING          | Module-by-module implementation
+    Phase 5       | PENDING          | Validation and testing
+    Phase 6       | PENDING          | Owner sign-off pack
+  Phase 10G       | PREP READY       | Content Trust (dependency bridge defined)
+  Phase 10H       | PREP READY       | Safe Cluster Expansion (bridge defined)
+  Phase 10I       | PREP READY       | Indexing/AI Search (bridge defined)
+  Phase 10J+      | NOT STARTED      | Broader controlled scaling
+
+  PAUSED: Content scaling, new cluster expansion, broad publishing
+  TRACKED FOLLOW-ONS FROM HARDENING:
+    - De-orphan 13 pages
+    - Image sourcing for 28 educational posts
+    - Featured image completion for 52 items
+    - Re-upload 15 ChatGPT-named images
+
+
+================================================================================
+END OF 10F IMPLEMENTATION PACK
+================================================================================
+PetHub AI Platform | Phase 10F: Operator Control and Truthful Visibility
+Generated: 2026-05-28
+Site: pethubonline.com | Server: 167.99.198.145
+================================================================================

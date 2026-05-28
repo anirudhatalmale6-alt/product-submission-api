@@ -1,0 +1,825 @@
+================================================================================
+10F PHASE 1: OPERATOR CONTROL AND TRUTHFUL VISIBILITY — FULL DIAGNOSIS
+================================================================================
+PetHub AI Platform — Server 167.99.198.145
+Date: 2026-05-28
+================================================================================
+
+TABLE OF CONTENTS
+  1. Dashboard Inventory
+  2. API Endpoint Inventory
+  3. Manager Dashboard Analysis
+  4. Operations Centre Analysis
+  5. Jobs System Analysis
+  6. Approval Queue Analysis
+  7. Event Feed Analysis
+  8. Agent Health Analysis
+  9. Action Receipts Analysis
+  10. Workflow States Analysis
+  11. Summary Classification Table
+  12. Critical Gaps for Phase 10F
+
+================================================================================
+1. DASHBOARD INVENTORY
+================================================================================
+
+Total HTML dashboard files found: 35
+
+MANAGER AGENT (Port 8100) — 22 dashboards:
+  [templates/] Served via FastAPI routes:
+  1. templates/manager_dashboard.html     — Main Command Center (3872 lines)
+     Served at: GET / (root of manager agent)
+  2. templates/operations_centre.html     — Operations Centre inner HTML
+     Served at: (included in operations_centre.html shell)
+  3. templates/copilot_dashboard.html     — AI Copilot panel
+     Served at: (embedded in operations centre)
+
+  [root dir] Standalone dashboards served at dedicated routes:
+  4. operations_centre.html               — Master Operations Centre (152KB, 2200+ lines)
+     Served at: iframe shell with 19 tabbed views
+  5. operations_noc_dashboard.html        — NOC Dashboard (39KB)
+     Served at: /noc
+  6. executive_dashboard.html             — Executive Dashboard (55KB)
+     Served at: via iframe in operations centre
+  7. event_flow_dashboard.html            — Event Flow (52KB)
+  8. agent_thinking_dashboard.html        — Agent Thinking (23KB)
+  9. memory_topology_dashboard.html       — Memory & Topology (54KB)
+  10. optimization_dashboard.html         — Self-Optimization (30KB)
+  11. strategist_dashboard.html           — AI Strategist (30KB)
+  12. forecasting_dashboard.html          — Forecasting (47KB)
+  13. authority_dashboard.html            — SEO Authority (47KB)
+  14. monetization_dashboard.html         — Monetization (37KB)
+  15. customer_dashboard.html             — Customer Intelligence (43KB)
+  16. strategic_planning_dashboard.html   — Strategic Planning (69KB)
+  17. adaptive_workflow_dashboard.html     — Adaptive Workflow (45KB)
+  18. capacity_planning_dashboard.html    — Capacity Planning (46KB)
+  19. ai_search_monetization_dashboard.html — AI Search Monetization (45KB)
+  20. authority_forecasting_dashboard.html — Authority Forecasting (51KB)
+  21. behavioral_forecasting_dashboard.html — Behavioral Forecasting (48KB)
+  22. mission_control_dashboard.html      — Mission Control (42KB)
+  23. reasoning_visualization_dashboard.html — Reasoning Visualization (37KB)
+  24. ai_sidepanel.html                   — AI Side Panel (51KB)
+
+INDIVIDUAL AGENT DASHBOARDS (1 each, in templates/):
+  25. seo-agent/templates/seo_dashboard.html
+  26. content-agent/templates/content_dashboard.html
+  27. analytics-agent/templates/analytics_dashboard.html
+  28. social-agent/templates/social_dashboard.html
+  29. maintenance-agent/templates/maintenance_dashboard.html
+  30. product-research-agent/templates/product_research_dashboard.html
+  31. affiliate-agent/templates/affiliate_dashboard.html
+  32. engagement-agent/templates/engagement_dashboard.html
+
+OPERATIONS DASHBOARD (separate directory):
+  33. operations-dashboard/index.html      — Standalone operations dashboard
+  34. operations-dashboard/forecasting_dashboard.html
+
+SHARED:
+  35. shared/operations_noc_dashboard.html  — NOC dashboard copy
+
+NGINX ROUTING:
+  /agents/manager/    -> port 8100 (all manager dashboards)
+  /agents/seo/        -> port 8101
+  /agents/analytics/  -> port 8102  (note: nginx says analytics but port mapping may differ)
+  /agents/social/     -> port 8103
+  /agents/maintenance/ -> port 8104
+  /agents/content/    -> port 8105
+  /agents/product-research/ -> port 8106
+  /agents/affiliate/  -> port 8107
+  /agents/engagement/ -> port 8108
+  /noc/               -> port 8100/noc
+  All protected by basic auth (.htpasswd)
+
+CLASSIFICATION: SHALLOW
+  Reason: There are 35 dashboards — a massive surface area. Most are
+  single-page HTML files that fetch from APIs. The problem is not that
+  dashboards are missing, but that many show computed/analytical data
+  (forecasting, strategy, authority scores) that is generated on-demand
+  rather than reflecting persistent operational state. The core operational
+  dashboards (manager, NOC, operations centre) exist but have truthfulness
+  gaps detailed below.
+
+
+================================================================================
+2. API ENDPOINT INVENTORY
+================================================================================
+
+MANAGER AGENT (Port 8100) — ~350+ endpoints across main.py + routers
+
+  STATUS/HEALTH:
+    GET  /api/status           — Agent status + counts
+    GET  /api/health           — System health (NOC: Redis, PG, event bus, kill switch)
+    GET  /api/redis/status     — Detailed Redis status
+    GET  /api/postgres/status  — Detailed PostgreSQL status
+    GET  /api/event-bus/health — Event bus health
+    GET  /api/kill-switch/status — Kill switch status
+    GET  /api/recovery/status  — Recovery drills
+    GET  /api/cache/status     — Cache status
+    GET  /api/queue/status     — Queue manager status
+    GET  /api/dlq/status       — Dead letter queue
+    GET  /api/agents           — All agent statuses
+    POST /api/agents/check     — Check all agent health
+
+  JOBS:
+    GET  /api/jobs/summary     — Job centre summary
+    GET  /api/jobs/active      — Running jobs
+    GET  /api/jobs/queued      — Queued jobs
+    GET  /api/jobs/failed      — Failed jobs
+    GET  /api/jobs/completed   — Completed jobs
+    GET  /api/jobs/list        — List with filters
+    GET  /api/jobs/{id}        — Job detail
+    POST /api/jobs/{id}/cancel — Cancel job
+    POST /api/jobs/{id}/retry  — Retry failed job
+
+  DISPATCH (action buttons):
+    POST /api/dispatch/seo/audit
+    POST /api/dispatch/seo/autofix
+    POST /api/dispatch/social/post
+    POST /api/dispatch/social/reel
+    POST /api/dispatch/maintenance/links
+    POST /api/dispatch/maintenance/performance
+    POST /api/dispatch/maintenance/security
+    POST /api/dispatch/analytics/collect
+    POST /api/dispatch/content/topics
+
+  PIPELINE:
+    POST /api/pipeline/run     — Full 6-stage pipeline
+    GET  /api/pipeline/status  — Pipeline status
+    GET  /api/pipeline/history — Pipeline run history
+
+  APPROVALS:
+    GET  /api/approvals        — List approval items
+    POST /api/approvals/create — Create approval request
+    POST /api/approvals/{id}/approve
+    POST /api/approvals/{id}/reject
+
+  EVENTS:
+    GET  /api/events           — Event feed (in-memory)
+    GET  /api/events/summary   — Event summary
+    GET  /api/events/list      — Event list
+    POST /api/events/emit      — Emit event
+    POST /api/events/emit-and-process
+    GET  /api/events/rules     — Event rules
+    POST /api/events/rules     — Create rule
+    GET  /api/events/actions/pending
+    GET  /api/events/agent/{agent}
+    POST /api/events/{id}/process
+    POST /api/events/actions/{id}/acknowledge
+    POST /api/events/actions/{id}/complete
+
+  KNOWLEDGE BASE:
+    GET  /api/kb/full
+    GET  /api/kb/section/{section}
+    POST /api/kb/section/{section}
+    GET  /api/kb/banned-claims
+    POST /api/kb/banned-claims/add
+    POST /api/kb/banned-claims/remove
+    GET  /api/kb/disclosures
+    POST /api/kb/check-text
+    POST /api/kb/quality-check
+    POST /api/kb/approved-wording/add
+    GET  /api/kb/approved-wording
+    GET  /api/kb/product-evidence
+    POST /api/kb/product-evidence/add
+
+  SAFETY:
+    GET  /api/safety/alerts
+    GET  /api/safety/summary
+    POST /api/safety/check-product
+    POST /api/safety/{id}/resolve
+    POST /api/safety/{id}/dismiss
+    POST /api/safety/{id}/do-not-recommend
+    POST /api/safety/{id}/send-to-{agent}
+
+  STRATEGY/FORECASTING/AUTHORITY/etc. (~200+ endpoints):
+    /api/optimize/*        — Self-optimization (8 endpoints)
+    /api/strategist/*      — AI Strategist (16 endpoints)
+    /api/forecasting/*     — Forecasting (24 endpoints)
+    /api/authority/*       — SEO Authority (24 endpoints)
+    /api/monetization/*    — Monetization (24 endpoints)
+    /api/customer/*        — Customer Intelligence (22 endpoints)
+    /api/strategy/*        — Strategic Planning (24 endpoints)
+    /api/workflow/*        — Adaptive Workflow (22 endpoints)
+    /api/capacity/*        — Capacity Planning (22 endpoints)
+
+INDIVIDUAL AGENTS (8101-8108) — ~30-60 endpoints each:
+  Each agent has: GET /api/status (health/status endpoint)
+  All agents send heartbeats to manager every 120 seconds.
+
+  SEO (8101):         /api/audit/*, /api/schema/*, /api/linking/*, /api/freshness/*
+  Analytics (8102):   /api/collect/*, /api/traffic, /api/indexing/*, /api/performance/*
+  Social (8103):      /api/post/*, /api/engagement, /api/reels/*, /api/calendar/*
+  Maintenance (8104): /api/links/*, /api/performance/*, /api/security/*, /api/tickets/*
+  Content (8105):     /api/generate/*, /api/topics/*, /api/calendar/*, /api/content/*
+  Product Research (8106): /api/scan/*, /api/research/*, /api/amazon/*, /api/categories/*
+  Affiliate (8107):   /api/scan/*, /api/compliance, /api/inventory/*, /api/clicks/*
+  Engagement (8108):  /api/scan/*, /api/comments/*, /api/newsletter/*, /api/email/*
+
+PRODUCT SUBMISSION API (8000):
+  eBay dropshipping pipeline — separate FastAPI app
+
+CLASSIFICATION: TRUTHFUL (for health/status endpoints), SHALLOW (for most others)
+  The NOC routes (health, redis, postgres, event-bus, kill-switch) return REAL
+  data from real service checks. The dispatch endpoints use tracked_dispatch
+  which creates real jobs. However, the strategy/forecasting/authority endpoints
+  return computed-on-demand analysis that is not persisted state.
+
+
+================================================================================
+3. MANAGER DASHBOARD ANALYSIS
+================================================================================
+
+File: /opt/pethub-agents/manager-agent/templates/manager_dashboard.html
+Size: 3872 lines
+Served at: /agents/manager/ (root)
+
+SECTIONS/WIDGETS:
+  1. HEADER: Status dot (online/offline), dispatch count, cycle count, uptime
+  2. AGENT HEALTH GRID: 4-column grid showing each agent's health status
+     - Fetches from /api/agents endpoint
+     - Shows: agent name, status dot, last active time
+  3. PIPELINE SECTION:
+     - 6-stage visual pipeline: Research -> Content -> SEO -> Affiliate -> Social -> Engagement
+     - "Run Full Pipeline" button with mode selector (draft/approval/dry_run/live)
+     - Category filter
+     - Live pipeline step animation during run
+  4. EVENT FEED: Scrolling list of recent events from /api/events
+  5. DISPATCH LOG: Recent dispatch results
+  6. QUICK ACTIONS GRID (10 action buttons):
+     - SEO Audit, Social Post, Generate Reel, Link Scan, Perf Scan,
+       Security Scan, Research Topics, Full Cycle, Reset Cooldowns,
+       Learning, ROI Predictor
+  7. GOVERNANCE SECTION: Approval queue + changelog
+  8. WORDPRESS SNAPSHOTS: Content + health snapshots
+  9. PUBLISHER LAYER: Recent publish log + snapshots
+  10. QA TESTS: Run QA tests button + results
+  11. CONTENT REFRESH: Find stale content
+  12. GROWTH BRANCHES: Growth branch management
+  13. PRODUCT TESTING: Product test records
+  14. ANSWER READINESS: Page readiness scores
+  15. SAFETY ALERTS: Safety/recall alerts
+  16. PERFORMANCE LEARNING: Learning loop data
+  17. EXECUTIVE INTELLIGENCE: Briefings
+  18. KNOWLEDGE BASE: Full KB management (7 sub-tabs)
+
+ACTION BUTTONS BEHAVIOR:
+  When clicked, each dispatch button:
+  1. Shows loading spinner on button
+  2. Calls POST to /api/dispatch/{action}
+  3. tracked_dispatch creates a Job Centre job
+  4. On success: shows inline result with job_id, agent, endpoint, timestamp
+  5. Shows toast notification
+  6. If follow_up exists, shows follow-up action
+
+CLASSIFICATION: SHALLOW (approaching TRUTHFUL for dispatch actions)
+  STRENGTHS:
+  - Action buttons DO produce job IDs via tracked_dispatch
+  - Toast + inline results show real responses
+  - Agent health grid shows real HTTP-check results
+  WEAKNESSES:
+  - No persistent job list visible on the dashboard (must use /api/jobs/*)
+  - Event feed is in-memory only (resets on restart)
+  - No visible "job history" table — results vanish after button re-use
+  - Approval queue fetches from /api/governance/approvals (not /api/approvals)
+  - No pipeline run history visible on the dashboard
+  - No workflow state tracking visible to the user
+
+
+================================================================================
+4. OPERATIONS CENTRE ANALYSIS
+================================================================================
+
+File: /opt/pethub-agents/manager-agent/operations_centre.html
+Size: 152KB (~2200+ lines)
+Served at: /agents/manager/ (as iframe shell)
+
+ARCHITECTURE:
+  The Operations Centre is an iframe-based shell with 19 navigation tabs.
+  Each tab loads a different sub-dashboard via iframe src change.
+  Right side has an AI Copilot panel with chat interface.
+
+TABS (19 views):
+  1. NOC                    — operations_noc_dashboard.html
+  2. Event Flow             — event_flow_dashboard.html
+  3. SEO Intelligence       — reasoning_visualization_dashboard.html
+  4. Executive              — executive_dashboard.html
+  5. Agent Thinking         — agent_thinking_dashboard.html
+  6. Memory & Topology      — memory_topology_dashboard.html
+  7. Self-Optimization      — optimization_dashboard.html
+  8. AI Strategist          — strategist_dashboard.html
+  9. Forecasting            — forecasting_dashboard.html
+  10. SEO Authority         — authority_dashboard.html
+  11. Monetization          — monetization_dashboard.html
+  12. Customer Intelligence — customer_dashboard.html
+  13. Strategic Planning    — strategic_planning_dashboard.html
+  14. Adaptive Workflow     — adaptive_workflow_dashboard.html
+  15. Capacity Planning     — capacity_planning_dashboard.html
+  16. AI Search Monetization — ai_search_monetization_dashboard.html
+  17. Authority Forecasting — authority_forecasting_dashboard.html
+  18. Mission Control       — mission_control_dashboard.html
+  19. Behavioral Forecasting — behavioral_forecasting_dashboard.html
+
+COPILOT PANEL:
+  - Chat interface with thread support
+  - Quick action chips (context-dependent)
+  - Mode toggle: Technical / Executive
+  - Commands: /status, /risks, /opportunities, /what-next, /approvals,
+    /seo, /serp, /ai-search, /events, /threads, /investigations,
+    /system-health, /trends, /profile, /memory-trust, /postgres,
+    /redis, /reasoning, /wins, /daily-brief
+  - Investigation engine: can start investigations on topics
+  - Overlay intelligence: contextual overlays per view
+  - Narration strip: investigation progress
+
+COPILOT DATA SOURCES:
+  - /api/proactive/summary
+  - /api/executive-view/briefing
+  - /api/live/summary
+  - /api/seo-intelligence/summary
+  - /api/copilot-intelligence/*
+  - /api/investigation/*
+  - /api/memory-trust/summary
+  - /api/pg-migration/summary
+  - /api/reasoning-governance/summary
+
+CLASSIFICATION: SHALLOW
+  STRENGTHS:
+  - Comprehensive 19-tab layout with copilot
+  - Real NOC health checks (Redis, PG, event bus, kill switch)
+  - AI copilot with thread persistence (localStorage)
+  WEAKNESSES:
+  - NOC view shows health but NOT jobs/approvals/workflows
+  - No job queue visible anywhere in the operations centre
+  - No approval queue visible in the operations centre
+  - No event timeline visible (separate Event Flow tab exists but is analytics-focused)
+  - Tab health dots are cosmetic — not connected to real monitoring
+  - Many tabs show on-demand computed data, not persistent state
+  - No "what just happened in the last hour" operational timeline
+
+
+================================================================================
+5. JOBS SYSTEM ANALYSIS
+================================================================================
+
+TWO PARALLEL JOB SYSTEMS EXIST:
+
+A. Job Centre (JSON file-based) — /opt/pethub-agents/manager-agent/data/jobs.json
+   Implementation: job_centre.py + job_centre_api.py + tracked_dispatch.py
+   Storage: JSON file (data/jobs.json), capped at 1000 entries
+   Current state: 17 jobs total (11 completed, 5 failed, 1 queued)
+   Job schema:
+     {
+       "id": "job-xxxxxxxx",
+       "agent": "seo",
+       "action": "SEO audit",
+       "endpoint": "/api/audit/run",
+       "input_data": {},
+       "triggered_by": "manual" | "retry:job-xxx" | "pipeline",
+       "status": "queued|running|completed|failed|partial|cancelled|skipped",
+       "progress_pct": 0-100,
+       "output": {...},
+       "result_summary": "...",
+       "retryable": true/false,
+       "cancellable": true/false,
+       "created_at", "started_at", "updated_at", "completed_at",
+       "duration_ms", "follow_up", "status_code"
+     }
+
+   ASSESSMENT:
+   - Job model is well-structured with real states
+   - tracked_dispatch wraps all dashboard button actions
+   - Jobs have real duration tracking and result summaries
+   - API endpoints exist: /api/jobs/summary, /api/jobs/list, etc.
+   - BUT: jobs are stored in a flat JSON file, not PostgreSQL
+   - BUT: no dashboard surface shows the job list to the operator
+   - BUT: 1 job stuck in "queued" state (retry of failed analytics)
+
+B. PostgreSQL Tasks table — agent_manager.tasks
+   Implementation: postgres_phase1.py + manager_client.py
+   Current state: 14 tasks in DB (all COMPLETED, from May 22)
+   Task schema:
+     id, agent_id, title, task_type, status, priority,
+     input_data, output_data, error_message,
+     scheduled_at, started_at, completed_at, latency_ms,
+     retry_count, max_retries, created_at
+
+   ASSESSMENT:
+   - More robust schema (PostgreSQL, foreign keys to agents table)
+   - Used by scheduled jobs (SEO audits, analytics collection, indexing)
+   - Has real output_data with detailed results
+   - Has latency_ms tracking
+   - BUT: only 14 tasks recorded — most dispatches go through Job Centre instead
+   - BUT: not visible on any dashboard
+   - The two systems are NOT connected
+
+CLASSIFICATION: SHALLOW
+  The Job Centre is a real system with proper states, but:
+  - Two parallel job systems exist (JSON + PostgreSQL) with no integration
+  - Neither is surfaced on any dashboard
+  - No operator visibility into job history, active jobs, or failed jobs
+  - The PostgreSQL tasks table has richer data but is underused
+  - The JSON job store loses all data on file corruption
+
+
+================================================================================
+6. APPROVAL QUEUE ANALYSIS
+================================================================================
+
+TWO PARALLEL APPROVAL SYSTEMS:
+
+A. JSON-based Approvals — /opt/pethub-agents/manager-agent/data/approvals.json
+   Current state: 3 items (1 pending, 2 rejected)
+   Schema:
+     {
+       "id": "5f01fafe-074",
+       "requesting_agent": "test_script",
+       "target": "test_post_999999",
+       "action_type": "publish_draft",
+       "reason": "regression_test_pending",
+       "risk_level": "low",
+       "rollback_available": true,
+       "status": "pending",
+       "proposed_value": "",
+       "current_value": "",
+       "expected_benefit": "",
+       "notes": "",
+       "created_at": "2026-05-27T17:35:11+00:00",
+       "approved_at": null,
+       "approved_by": null,
+       "applied_at": null,
+       "applied_by": null
+     }
+
+B. PostgreSQL Approvals — agent_manager.approvals
+   Current state: 1 item (test_action, pending, from May 24)
+   Schema:
+     approval_id, action_type, source_agent, risk_level, description,
+     context (jsonb), status, requested_at, decided_at, decided_by,
+     decision_reason, expires_at, auto_approved, created_at
+
+ASSESSMENT:
+  - Two parallel approval stores exist (JSON + PostgreSQL)
+  - All items are test data — no real approval decisions recorded
+  - JSON schema has "proposed_value" and "current_value" but they're empty
+  - No diff/before-after view for approvals
+  - No expiry enforcement
+  - No auto-approval rules connected to the traffic-light system
+  - Dashboard fetches from /api/governance/approvals — a third path
+  - The approval model has the right SHAPE but no real CONTENT
+  - No approval is ever created by an actual agent workflow
+
+CLASSIFICATION: MISLEADING
+  The approval queue exists as UI and API, but:
+  - Contains only test data
+  - No real agent ever creates an approval request
+  - No workflow gate is connected to approval decisions
+  - Two disconnected stores (JSON + PG) with different data
+  - "Pending" items are never resolved because nothing checks them
+  - The UI shows an approval count badge but it's test artifacts
+
+
+================================================================================
+7. EVENT FEED ANALYSIS
+================================================================================
+
+THREE PARALLEL EVENT SYSTEMS:
+
+A. In-Memory Events (EventEngine) — manager-agent/event_engine.py
+   Storage: self.events list (in-memory), capped at 500
+   Event schema:
+     {
+       "type": "new_post_published|engagement_dropping|agent_unhealthy|...",
+       "source": "wordpress|social|cross-agent|agent:seo|...",
+       "detail": "human-readable description",
+       "severity": "info|warning|critical",
+       "data": {},
+       "time": "ISO timestamp"
+     }
+   Lost on restart. Used by monitoring cycle (WordPress, social, agent health).
+   API: GET /api/events
+
+B. Redis Streams Event Bus — eventbus:stream:*
+   Streams found:
+     eventbus:stream:general   (1 message)
+     eventbus:stream:content   (1 message)
+     eventbus:stream:seo       (1 message)
+     eventbus:stream:social    (0 messages)
+     eventbus:stream:system    (0 messages)
+     eventbus:stream:product   (exists)
+     eventbus:stream:ebay      (exists)
+     eventbus:stream:queue     (exists)
+     eventbus:stream:safety    (exists)
+     eventbus:stream:scheduler (exists)
+     eventbus:stream:analytics (exists)
+     eventbus:stats            (exists)
+
+   Sample message from general stream:
+     event_id: evt_8a73f1c029d5
+     event_type: content_published
+     source_agent: content-agent
+     risk_level: amber
+     payload: {"title": "Test Article", "url": "/test"}
+     status: pending
+
+   ASSESSMENT: Only test events exist. The streams are structurally set up
+   but almost empty (1-3 messages across all streams).
+
+C. PostgreSQL Event History — agent_manager.event_history
+   Current state: 2 events total
+     1. test.event (from May 24, test data)
+     2. checkpoint.complete (from May 24, maturity checkpoint)
+   Schema is comprehensive: event_id, event_type, version, source_agent,
+     target_agent, correlation_id, causation_id, priority, risk_level,
+     payload, status, stream_name, acknowledged_at, dead_lettered, replayed
+
+ASSESSMENT:
+  - Three parallel event stores with minimal data in each
+  - In-memory events are the only "live" ones but lost on restart
+  - Redis Streams are structurally ready but unused in practice
+  - PostgreSQL event_history has a rich schema but only 2 records
+  - No event timeline visible to the operator on any dashboard
+  - Events are generated during monitoring cycles but cycles must be
+    manually triggered (no automated scheduling running)
+
+CLASSIFICATION: MISLEADING
+  The event infrastructure exists at three levels but:
+  - Contains almost no real operational events
+  - In-memory events vanish on agent restart
+  - No persistent event timeline visible to operator
+  - Redis and PostgreSQL stores have test data only
+  - No event correlation or causation chain visible
+  - The "Event Flow" dashboard tab exists but shows analytics, not a timeline
+
+
+================================================================================
+8. AGENT HEALTH ANALYSIS
+================================================================================
+
+HEARTBEAT SYSTEM:
+  Each agent runs an APScheduler job every 120 seconds that sends a POST to:
+    {MANAGER_URL}/api/heartbeat
+  Payload: {"agent_name": "...", "status": "active", "metrics": {...}}
+
+  The heartbeat endpoint stores data in PostgreSQL agents table:
+    - last_heartbeat timestamp
+    - status (ACTIVE/STOPPED)
+    - error_count
+    - total_tasks_completed / total_tasks_failed
+
+  CURRENT DATABASE STATE (agents table):
+    manager           ACTIVE   last_heartbeat: 2026-05-22 19:21:42 (6 days ago!)
+    seo               ACTIVE   last_heartbeat: 2026-05-22 19:22:11 (6 days ago!)
+    analytics         ACTIVE   last_heartbeat: 2026-05-22 19:22:05 (6 days ago!)
+    social            ACTIVE   last_heartbeat: 2026-05-22 19:21:33 (6 days ago!)
+    content           STOPPED  last_heartbeat: NULL
+    product_research  STOPPED  last_heartbeat: NULL
+    affiliate_links   STOPPED  last_heartbeat: NULL
+    engagement        STOPPED  last_heartbeat: NULL
+
+  All "ACTIVE" agents have heartbeats from 6 days ago.
+  4 agents have never sent a heartbeat.
+
+MANAGER HEALTH CHECK (agent_dispatcher.py):
+  check_all_agents() calls GET /api/status on each agent port.
+  Returns: {"agent": "seo", "healthy": true/false, "data": {...}}
+  This is a live HTTP check — truthful at the moment of checking.
+
+NOC HEALTH (noc_routes.py):
+  GET /api/health checks: Redis, PostgreSQL, Event Bus, Kill Switch
+  These are REAL service checks — truthful results.
+
+POSSIBLE STATUS STATES:
+  PostgreSQL agents table: ACTIVE, STOPPED (enum: agentstatus)
+  Job Centre: queued, running, completed, failed, partial, cancelled, skipped
+  Pipeline: complete, partial
+  Agent health check: healthy=true/false (HTTP-based)
+
+CLASSIFICATION: SHALLOW
+  STRENGTHS:
+  - Real heartbeat system with 120s interval
+  - Real HTTP health checks via /api/status on each port
+  - Real infrastructure checks (Redis, PG, event bus)
+  WEAKNESSES:
+  - Heartbeat data is 6 days stale — agents may have restarted
+  - No heartbeat timeout detection (an agent with a 6-day-old heartbeat
+    still shows as ACTIVE)
+  - 4 agents show STOPPED with no heartbeat — unclear if they're running
+  - No aggregated "last 24h uptime" or "time since last failure"
+  - Status transitions are not recorded (no history of when agent went
+    from ACTIVE to STOPPED or vice versa)
+  - Dashboard agent grid does live checks but database is stale
+
+
+================================================================================
+9. ACTION RECEIPTS ANALYSIS
+================================================================================
+
+WHAT HAPPENS WHEN A BUTTON IS CLICKED:
+
+1. Dashboard dispatch() function called
+2. POST to /api/dispatch/{action} on manager agent
+3. Manager uses tracked_dispatch() which:
+   a. create_job() — writes to data/jobs.json with status "queued"
+   b. start_job() — updates status to "running"
+   c. Calls the actual agent endpoint
+   d. complete_job() — updates status to "completed" or "failed"
+   e. Returns response with: job_id, success, agent, action, endpoint,
+      status, result_summary, follow_up, duration_ms, timestamp
+4. Dashboard receives response and shows:
+   a. Toast notification with result_summary
+   b. Inline result below button with:
+      - Result summary (bold)
+      - Agent name + endpoint
+      - Job ID + timestamp (purple text)
+      - Follow-up action (if any, amber text)
+
+SAMPLE RECEIPT (from actual job data):
+  Job ID: job-a329b926
+  Agent: seo
+  Action: SEO audit
+  Status: completed
+  Duration: 65ms
+  Result: "Audit started"
+  Triggered by: manual
+
+ASSESSMENT:
+  Action receipts DO exist and are reasonably well structured:
+  - Each action gets a unique job ID
+  - Status is tracked (queued -> running -> completed/failed)
+  - Duration is recorded
+  - Result summary is extracted from agent response
+  - Follow-up actions are detected
+
+  BUT:
+  - The receipt appears as a tiny inline text below the button — easy to miss
+  - There is no central "Recent Actions" panel showing all receipts
+  - If you click another action, the previous receipt is overwritten
+  - No way to go back and see "what did I do 10 minutes ago"
+  - The /api/jobs/list endpoint exists but is not shown in any dashboard
+  - "Audit started" is misleading — the SEO audit is async; "started" is the
+    HTTP response, not the audit outcome. The job completes in 65ms because
+    the agent just acknowledged the request, not finished the work.
+
+CLASSIFICATION: SHALLOW
+  Receipts exist but are:
+  - Transient (overwritten on next action)
+  - Not collected into a visible history
+  - Misleading on async tasks (shows "completed" when the agent just ACKed)
+  - No traceability chain (can't click a job ID to see its full lifecycle)
+
+
+================================================================================
+10. WORKFLOW STATES ANALYSIS
+================================================================================
+
+PIPELINE SYSTEM (pipeline_runner.py):
+  6-stage pipeline: Research -> Content -> SEO -> Affiliate -> Social -> Engagement
+
+  Each stage has states: success, no_results, error, skipped
+  Pipeline modes: draft, approval, dry_run, live
+
+  Pipeline output includes:
+    run_id, mode, started_by, category, status, article_topic,
+    article_title, article_post_id, steps[], next_action,
+    started_at, completed_at
+
+  Each step in steps[] has:
+    step, agent, action, status, result, started_at, completed_at
+
+  The pipeline IS a real workflow with real state tracking.
+
+  BUT:
+  - Pipeline history is stored in-memory only (data/snapshots.json may have some)
+  - No persistent pipeline run history in PostgreSQL
+  - Pipeline runs are not visible on any dashboard except during execution
+  - No way to see past pipeline runs
+  - No "re-run step 3" capability
+  - When a step fails, the pipeline stops — no retry of individual stages
+  - Content -> SEO handoff is sequential but not state-tracked between runs
+  - No "this article was created by pipeline X, audited by pipeline X" tracing
+
+WORKFLOW TRACKING (Adaptive Workflow module):
+  /api/workflow/* endpoints exist with:
+    evolution, routing, specialization, confidence, heatmaps,
+    approval, healing, learning, visibility, governance
+
+  These are analytical/evaluation endpoints — they compute workflow
+  metrics on demand. They do NOT track individual content item progress
+  through the pipeline stages.
+
+MISSING: Content Item Lifecycle Tracking
+  There is no system that answers: "What happened to article X after it was
+  created? Did SEO audit it? Did Affiliate scan it? Was it promoted on social?"
+  Each agent works independently; there is no shared content-item state machine.
+
+CLASSIFICATION: SHALLOW
+  The pipeline exists as a real sequential workflow, but:
+  - No persistent history of pipeline runs
+  - No individual content-item lifecycle tracking
+  - No cross-run tracing ("article X went through these pipeline runs")
+  - No stage retry capability
+  - No workflow state machine (only sequential execution)
+  - The "Adaptive Workflow" dashboard is analytical, not operational
+
+
+================================================================================
+11. SUMMARY CLASSIFICATION TABLE
+================================================================================
+
+SURFACE                          | CLASSIFICATION | KEY ISSUE
+---------------------------------|----------------|------------------------------------------
+1. Dashboard Inventory           | SHALLOW        | 35 dashboards; many show computed, not persistent data
+2. API Endpoints                 | TRUTHFUL*      | Health/NOC endpoints are truthful; strategy endpoints are on-demand
+3. Manager Dashboard             | SHALLOW        | Has action buttons but no job history panel
+4. Operations Centre             | SHALLOW        | 19 tabs but no jobs/approvals/timeline in NOC
+5. Jobs System                   | SHALLOW        | Two parallel stores (JSON+PG); neither visible on dashboard
+6. Approval Queue                | MISLEADING     | Only test data; no real agent creates approvals
+7. Event Feed                    | MISLEADING     | Three stores with near-zero real events; in-memory lost on restart
+8. Agent Health                  | SHALLOW        | Real heartbeats but 6-day stale; no timeout detection
+9. Action Receipts               | SHALLOW        | Job IDs exist but receipts are transient; no history view
+10. Workflow States              | SHALLOW        | Pipeline exists but no persistent history; no item lifecycle
+
+
+MISSING (needed but doesn't exist):
+  A. Unified Job History Dashboard     — A table/list of all jobs with filter/search
+  B. Operational Timeline              — "What happened in the last 24h" chronological view
+  C. Content Item Lifecycle Tracker    — Track an article through all pipeline stages
+  D. Heartbeat Timeout Detection       — Alert when agent heartbeat is overdue
+  E. Event Persistence                 — In-memory events must persist to PG
+  F. Approval-Workflow Integration     — Agent actions should create real approvals
+  G. Pipeline Run History              — Past pipeline runs visible and queryable
+  H. Job-to-Event Correlation          — Link jobs to the events they produce
+  I. Dashboard Job Panel               — Active/recent jobs visible on main dashboard
+  J. Stale Data Detection              — Flag when displayed data is old/stale
+
+
+================================================================================
+12. CRITICAL GAPS FOR PHASE 10F IMPLEMENTATION
+================================================================================
+
+GAP 1: NO UNIFIED JOB VISIBILITY
+  Two parallel job stores exist (JSON + PostgreSQL) but neither is shown
+  on any dashboard. An operator clicking "SEO Audit" gets a fleeting toast
+  and inline text, but cannot later see "what jobs ran today?"
+  FIX: Migrate jobs to PostgreSQL, add a Job History panel to the manager
+  dashboard and NOC view.
+
+GAP 2: APPROVAL QUEUE IS THEATER
+  The approval UI exists but contains only test data. No agent workflow
+  ever creates a real approval request. The traffic-light system (Green/
+  Amber/Red) is not wired to the approval queue.
+  FIX: Wire content publishing, social posting, and SEO auto-fix to create
+  amber/red approvals. Ensure approval decisions block/allow the action.
+
+GAP 3: EVENT FEED IS EPHEMERAL
+  In-memory events are the only "live" source and they vanish on restart.
+  Redis Streams and PostgreSQL event_history have near-zero real data.
+  FIX: Funnel all in-memory events through to PostgreSQL. Add an event
+  timeline panel to the NOC view.
+
+GAP 4: HEARTBEAT STALENESS
+  Agent heartbeats are 6 days old but agents still show "ACTIVE". No
+  timeout detection or status transition logging.
+  FIX: Add heartbeat timeout (e.g., 5 minutes). Auto-set status to
+  UNREACHABLE if no heartbeat received. Log status transitions.
+
+GAP 5: NO CONTENT LIFECYCLE TRACKING
+  Once a pipeline runs, there is no way to trace what happened to the
+  content it produced. Each agent works in isolation.
+  FIX: Create a content_items table with lifecycle states:
+  draft -> seo_audited -> affiliate_linked -> social_promoted -> monitoring
+
+GAP 6: ACTION RECEIPTS ARE TRANSIENT
+  Clicking a button produces a job ID but the receipt is overwritten when
+  the next action runs. No persistent receipt history.
+  FIX: Add a "Recent Actions" panel that persists the last N receipts
+  with clickable job IDs linking to full job detail.
+
+GAP 7: PIPELINE HISTORY NOT PERSISTED
+  Pipeline runs produce detailed step-by-step results but they are not
+  saved to any persistent store. Previous runs cannot be reviewed.
+  FIX: Store pipeline runs in PostgreSQL with all step details.
+
+GAP 8: TWO PARALLEL SYSTEMS EVERYWHERE
+  Jobs: JSON file + PostgreSQL tasks table
+  Approvals: JSON file + PostgreSQL approvals table
+  Events: In-memory + Redis Streams + PostgreSQL event_history
+  FIX: Consolidate to PostgreSQL as single source of truth. Keep Redis
+  for pub/sub only. Remove JSON file stores.
+
+GAP 9: ASYNC ACTION MISREPRESENTATION
+  When SEO Audit is dispatched, the job completes in 65ms with
+  "Audit started" — but the actual audit runs for 30+ seconds. The job
+  tracks the dispatch, not the execution.
+  FIX: Keep jobs open until the actual operation completes. Add webhook
+  callbacks from child agents to update job status.
+
+GAP 10: NO OPERATOR ACTIVITY LOG
+  No record of what the human operator did: which buttons they clicked,
+  which approvals they granted, which dashboards they visited.
+  FIX: Add an operator_actions table logging all UI interactions.
+
+
+================================================================================
+END OF DIAGNOSIS — PHASE 10F PHASE 1 COMPLETE
+================================================================================

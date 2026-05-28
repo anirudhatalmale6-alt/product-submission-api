@@ -1,0 +1,1535 @@
+================================================================================
+PHASE 10F: EXECUTIVE EXTRACTION AND OWNER REVIEW LAYER
+================================================================================
+PetHub AI Platform — pethubonline.com
+Date: 2026-05-28
+Purpose: Decision-oriented overlay on the full 10F Implementation Pack
+================================================================================
+
+TABLE OF CONTENTS
+
+  SECTION A:  TOP 10 CURRENT TRUTHFULNESS FAILURES
+  SECTION B:  TOP 10 CHANGES 10F WILL MAKE
+  SECTION C:  TOP 5 OWNER-FACING IMPROVEMENTS
+  SECTION D:  TOP 5 HIGHEST-RISK IMPLEMENTATION AREAS
+  SECTION E:  PLAIN-ENGLISH DEFINITION OF "10F COMPLETE"
+  SECTION F:  PRACTICAL UI/CONTROL BREAKDOWN (9 SURFACES)
+  SECTION G:  MIGRATION / CUTOVER SAFETY
+  SECTION H:  STAGED OWNER REVIEW POINTS
+  SECTION I:  CONFIRMED IMPLEMENTATION ORDER WITH REASONING
+  SECTION J:  PRACTICAL DEPENDENCY BRIDGE (10G / 10H / 10I)
+
+
+================================================================================
+SECTION A: TOP 10 CURRENT TRUTHFULNESS FAILURES
+================================================================================
+
+FAILURE 1: JOBS ARE INVISIBLE
+  What: When you click any action button, a job is created internally but
+        you never see it. There is no jobs table, no jobs panel, no way
+        to answer "what has the system done today?"
+  Where: Manager dashboard, Operations Centre, NOC — none show jobs.
+  Owner risk: You have no way to know if an action you triggered actually
+        ran, is still running, failed silently, or completed. You are
+        operating blind on system activity.
+  Classification: SHALLOW
+  10F fix: Real-time Recent Jobs table on the manager dashboard and NOC.
+        Every action produces a visible, persistent, clickable job entry.
+
+FAILURE 2: APPROVAL QUEUE IS THEATER
+  What: The approval queue exists as UI and API but contains only test
+        data from setup scripts. No agent has ever created a real approval
+        request. No workflow gate is connected to approval decisions.
+  Where: Manager dashboard governance section, /api/approvals endpoint.
+  Owner risk: You see an "approvals" badge that implies governance is active,
+        but nothing in the system actually asks for your permission before
+        acting. The traffic light system (GREEN/AMBER/RED) classifies actions
+        but does not enforce approval gates.
+  Classification: MISLEADING
+  10F fix: Wire AMBER and RED actions to create real approval requests.
+        The action physically cannot execute until you approve or reject it.
+        Standing approvals can auto-approve specific AMBER actions you trust.
+
+FAILURE 3: EVENTS VANISH ON RESTART
+  What: The primary event feed is an in-memory Python list. When the
+        manager agent restarts, all events are lost. Redis Streams and
+        PostgreSQL event_history exist but contain near-zero real data
+        (1-3 test entries each).
+  Where: Event feed on manager dashboard, /api/events endpoint.
+  Owner risk: If the system restarts (update, crash, maintenance), you
+        lose all record of what happened. There is no persistent operational
+        story. You cannot audit what occurred overnight or over a weekend.
+  Classification: MISLEADING
+  10F fix: All events written to PostgreSQL on creation. Survive any
+        restart. Queryable event timeline showing the last 24 hours,
+        7 days, or 30 days of operational activity.
+
+FAILURE 4: AGENT HEARTBEATS ARE 6 DAYS STALE
+  What: The PostgreSQL agents table shows agents as "ACTIVE" with
+        heartbeat timestamps from 6 days ago. There is no timeout
+        detection. An agent that crashed 6 days ago still shows as active.
+  Where: Agent health grid on manager dashboard, /api/agents endpoint,
+        PostgreSQL agents table.
+  Owner risk: You look at the agent grid and see green dots, but you
+        have no idea if those agents are actually running right now. The
+        status display is frozen in time and does not reflect reality.
+  Classification: SHALLOW
+  10F fix: Heartbeat timeout detection every 60 seconds. If no heartbeat
+        within 5 minutes, agent status auto-transitions to UNREACHABLE.
+        All transitions logged. Agent cards show "last seen X ago" with
+        color-coded freshness.
+
+FAILURE 5: ASYNC ACTIONS SHOW FALSE COMPLETION
+  What: When you click "SEO Audit", the system reports "completed" in
+        65 milliseconds with the message "Audit started". The actual SEO
+        audit has not started yet — what completed is the HTTP request to
+        the SEO agent, not the audit itself.
+  Where: Every dispatch button on the manager dashboard.
+  Owner risk: You believe the audit is done when it has not even begun.
+        If the actual audit fails 30 seconds later, you will never know.
+        The dashboard gives you false confidence in completed work.
+  Classification: SHALLOW (approaching MISLEADING for async operations)
+  10F fix: Jobs stay in "running" state until the real work completes.
+        Progress updates show actual progress. If no completion callback
+        arrives within the timeout window, the job transitions to
+        "completed_unverified" — a visually distinct state that tells you
+        the dispatch was acknowledged but the outcome is unconfirmed.
+
+FAILURE 6: ACTION RECEIPTS ARE OVERWRITTEN
+  What: When you click a button, a small inline result appears below
+        the button. If you click another button, the previous result
+        disappears. There is no history of actions you have taken.
+  Where: Quick actions grid on manager dashboard.
+  Owner risk: You cannot answer "what did I do 10 minutes ago?" or
+        "which actions have I triggered today?" Every action receipt is
+        temporary and lost when the next action runs.
+  Classification: SHALLOW
+  10F fix: Persistent action receipts in a dedicated Recent Actions panel.
+        Every action creates a receipt that stays visible. Last 50 receipts
+        always available. Click any receipt to see the linked job.
+
+FAILURE 7: PIPELINE HISTORY IS LOST
+  What: The 6-stage pipeline (Research->Content->SEO->Affiliate->Social->
+        Engagement) runs and produces detailed step results, but this data
+        is not saved anywhere persistent. Previous pipeline runs cannot
+        be reviewed.
+  Where: Pipeline section on manager dashboard.
+  Owner risk: You run a pipeline, it finishes, and the results vanish.
+        You cannot compare runs, identify patterns, or review what a
+        previous pipeline actually did. There is no production history.
+  Classification: SHALLOW
+  10F fix: Every pipeline run and its step details saved to PostgreSQL.
+        Pipeline history panel shows past runs with step-by-step state
+        breakdown. Click any run to see full detail including which
+        steps succeeded, failed, or were skipped (with reasons).
+
+FAILURE 8: THREE PARALLEL DATA STORES FOR EVERYTHING
+  What: The same types of data (jobs, events, approvals) are stored in
+        up to three different places simultaneously with no synchronization.
+        Jobs: JSON file + PostgreSQL tasks table.
+        Events: in-memory list + Redis Streams + PostgreSQL event_history.
+        Approvals: JSON file + PostgreSQL approvals table.
+  Where: Throughout the entire backend.
+  Owner risk: This is the root cause of most other failures. When data
+        lives in multiple places, no single surface can be trusted to
+        show the complete picture. Different dashboards may show different
+        versions of reality depending on which store they query.
+  Classification: STRUCTURALLY FALSE (the architecture itself prevents truth)
+  10F fix: Single source of truth: PostgreSQL. One unified ops layer
+        (truthful_ops.py) that all code writes through. Redis for pub/sub
+        notifications only. JSON files deprecated to backup cache.
+
+FAILURE 9: NO WORKFLOW STATE TRACKING PER CONTENT ITEM
+  What: There is no system that tracks what happened to a specific article
+        after it was created. Did SEO audit it? Did Affiliate scan it?
+        Was it promoted on social? Each agent works in isolation with no
+        shared lifecycle state.
+  Where: Nowhere — this capability does not exist.
+  Owner risk: You cannot answer "what stage is this article at?" or
+        "which articles are waiting for SEO review?" Content moves through
+        the system invisibly. You have no pipeline visibility per item.
+  Classification: MISSING (not shallow or misleading — it does not exist)
+  10F fix: ops_workflow_items table tracks each content item through 6
+        stages (research, content, SEO, affiliate, social, engagement).
+        Each stage has a canonical state. Visual pipeline shows where
+        each item sits and what is blocking progress.
+
+FAILURE 10: ALERTS HAVE NO LIFECYCLE
+  What: When something goes wrong (agent unhealthy, social instability,
+        job failure), an event is logged but there is no structured alert
+        system. Warnings can repeat indefinitely without resolution.
+        Issues can quietly disappear without being resolved.
+  Where: Safety alerts section, event feed, agent health grid.
+  Owner risk: Ghost warnings persist without explanation. Real problems
+        can vanish from view without being fixed. There is no way to
+        distinguish "active problem requiring your attention" from
+        "already resolved" from "acknowledged but deferred."
+  Classification: SHALLOW
+  10F fix: Stateful alert lifecycle: active -> resolved / stale / suppressed.
+        Every alert has severity, affected component, whether user action
+        is required, and whether auto-retry is in progress. Resolution
+        is logged with reason. Stale alerts auto-flag after configurable
+        timeout. No ghost warnings.
+
+
+================================================================================
+SECTION B: TOP 10 CHANGES 10F WILL MAKE
+================================================================================
+
+CHANGE 1: UNIFIED OPERATIONAL TRUTH LAYER
+  What changes: New truthful_ops.py module becomes the single gateway for
+        all operational state (jobs, approvals, events, alerts, agent status).
+  Where: Backend (new Python module + PostgreSQL tables)
+  Type: Backend + state
+  Owner problem solved: Eliminates the root cause of most truthfulness
+        failures — parallel data stores showing different versions of reality.
+
+CHANGE 2: REAL-TIME JOB VISIBILITY
+  What changes: Every action creates a visible, persistent job. Jobs table
+        appears on manager dashboard and NOC with status badges, durations,
+        and clickable detail.
+  Where: Manager dashboard + NOC dashboard (new panels)
+  Type: Backend + UI
+  Owner problem solved: You can now see what the system is doing, what it
+        has done, and what has failed — instead of operating blind.
+
+CHANGE 3: APPROVAL QUEUE WIRED TO TRAFFIC LIGHT
+  What changes: AMBER and RED classified actions now physically create
+        approval requests and block execution until you decide. Approvals
+        show full context including what will change and why.
+  Where: Backend (tracked_dispatch + traffic_light integration) + UI
+        (approval cards on NOC and manager dashboard)
+  Type: Backend + event/state + UI
+  Owner problem solved: The system actually asks for your permission before
+        doing anything risky. You see what it wants to do, why, and what
+        happens either way — before it acts.
+
+CHANGE 4: PERSISTENT EVENT TIMELINE
+  What changes: All operational events persist to PostgreSQL. New event
+        timeline panel shows chronological operational story.
+  Where: Backend (event_engine persistence) + UI (timeline panel on NOC)
+  Type: Backend + event/state + UI
+  Owner problem solved: You can log in after being away and understand
+        what happened. Events survive restarts. Full audit trail.
+
+CHANGE 5: AGENT HEALTH WITH TIMEOUT DETECTION
+  What changes: Background task checks heartbeats every 60 seconds.
+        Agents auto-transition to UNREACHABLE after 5 minutes of silence.
+        Status transitions logged. Health score based on real conditions.
+  Where: Backend (main.py background task) + UI (agent cards)
+  Type: Backend + UI
+  Owner problem solved: Agent cards show actual current reality. No more
+        green dots on agents that crashed 6 days ago.
+
+CHANGE 6: ASYNC JOB TRUTH
+  What changes: Jobs stay in "running" until the actual work completes.
+        Progress updates show real progress. Stale timeout catches jobs
+        that never report back.
+  Where: Backend (tracked_dispatch + child agent callbacks)
+  Type: Backend + event/state
+  Owner problem solved: When you dispatch an action, the status you see
+        reflects actual progress — not just "the HTTP request worked."
+
+CHANGE 7: PERSISTENT ACTION RECEIPTS
+  What changes: Every button click, every dispatch, every approval action
+        creates a permanent receipt. Recent Actions panel shows last 50.
+  Where: Manager dashboard + NOC (new panel)
+  Type: Backend + UI
+  Owner problem solved: You can always see what you have done and what
+        the system has done. No more vanishing results.
+
+CHANGE 8: PIPELINE HISTORY
+  What changes: Every pipeline run saved with all step details to PostgreSQL.
+        Pipeline history panel shows past runs. Step-by-step state visible.
+  Where: Backend (pipeline_runner persistence) + UI (history panel)
+  Type: Backend + UI
+  Owner problem solved: You can review past pipeline runs, compare results,
+        and see exactly which steps succeeded, failed, or were skipped.
+
+CHANGE 9: ALERT LIFECYCLE
+  What changes: Structured alerts with active/resolved/stale/suppressed
+        states. Resolution logging. Stale detection. No ghost warnings.
+  Where: Backend (truthful_ops alert functions) + UI (alerts panel on NOC)
+  Type: Backend + event/state + UI
+  Owner problem solved: Every warning has a clear status. Problems are
+        tracked to resolution. Nothing quietly disappears or repeats
+        indefinitely without explanation.
+
+CHANGE 10: NOC DASHBOARD REBUILD WITH 6 TRUTH PANELS
+  What changes: NOC view rebuilt with: Recent Jobs, Approval Queue,
+        Event Timeline, Agent Health Grid, Active Alerts, Action Receipts.
+        All powered by the unified ops layer.
+  Where: NOC dashboard (operations_noc_dashboard.html)
+  Type: UI
+  Owner problem solved: One screen where you can see the truthful state
+        of the entire operation. Your control tower.
+
+
+================================================================================
+SECTION C: TOP 5 OWNER-FACING IMPROVEMENTS
+================================================================================
+
+1. WHEN I CLICK A BUTTON, I WILL SEE THE FULL STORY
+
+   Right now: You click "SEO Audit", see a tiny result that says "Audit
+   started" for 65 milliseconds, and then it vanishes when you click
+   something else.
+
+   After 10F: You click "SEO Audit" and a job appears in the Recent Jobs
+   table. It shows "queued", then "running" with a progress bar, then
+   "completed" with a result summary — or "failed" with an error
+   explanation. The job stays visible. You can click it to see the full
+   timeline of what happened. An action receipt appears in the Recent
+   Actions panel confirming what you did and when.
+
+2. WHEN I LOG IN AFTER BEING AWAY, I CAN SEE WHAT HAPPENED
+
+   Right now: If you log in after a weekend, the dashboard looks the same
+   as when you left. There is no record of what the system did while you
+   were gone (events were in-memory and lost on restart).
+
+   After 10F: The Event Timeline shows every significant thing that happened
+   since your last visit — jobs that ran, approvals that were auto-approved,
+   alerts that were raised, agents that went unreachable and recovered,
+   pipeline runs that completed or failed. All in chronological order with
+   plain English descriptions.
+
+3. WHEN SOMETHING NEEDS MY APPROVAL, I WILL SEE EXACTLY WHAT AND WHY
+
+   Right now: The approval queue contains only test data. No agent actually
+   asks for your permission before acting.
+
+   After 10F: When the system wants to publish a draft post, run a live
+   social campaign, or apply an SEO auto-fix, an approval card appears
+   with: what it wants to do, what will change, what the current state is,
+   what the new state will be, why it recommends this, what risk level it
+   carries, and what happens if you approve or reject. You make an informed
+   decision with full context.
+
+4. WHEN AN AGENT IS DOWN OR DEGRADED, I WILL KNOW IMMEDIATELY
+
+   Right now: Agent cards can show green "ACTIVE" status even when the
+   agent has not responded in 6 days. There is no timeout detection. You
+   could be looking at a healthy-seeming dashboard while half the agents
+   are actually crashed.
+
+   After 10F: Agent cards show live status with "last seen X ago." If an
+   agent misses its heartbeat for 5 minutes, it turns red and says
+   "UNREACHABLE — last seen 7 minutes ago." If it is running in fallback
+   mode (using templates instead of AI), a yellow badge says "FALLBACK."
+   An alert is raised that you can see in the alerts panel. When the agent
+   recovers, the transition is logged.
+
+5. WHEN A WORKFLOW STEP IS SKIPPED OR FAILS, I WILL KNOW WHY
+
+   Right now: If a pipeline step fails or gets skipped, there may be no
+   visible trace. The pipeline just stops or moves on silently.
+
+   After 10F: Every pipeline step shows its state in the visual pipeline
+   display. If a step is skipped, it explicitly says why ("no trends
+   found", "social token expired", "operator paused social posting").
+   If a step fails, it shows the error and whether it is retryable.
+   The step state is logged in the timeline so you can see exactly what
+   happened at each stage.
+
+
+================================================================================
+SECTION D: TOP 5 HIGHEST-RISK IMPLEMENTATION AREAS
+================================================================================
+
+RISK 1: JOB CENTRE MIGRATION (JSON -> PostgreSQL)
+  What: Moving the active job tracking system from a JSON file to PostgreSQL.
+  Why risky: The JSON-based job centre is the one component that currently
+        works — tracked_dispatch creates real jobs with real IDs. Breaking
+        it during migration would make the dashboard worse, not better.
+  Risk reduction:
+        - Dual-write period: write to both JSON and PostgreSQL simultaneously
+        - Verify PostgreSQL data matches JSON after each operation
+        - Old /api/jobs/* endpoints continue to work during migration
+        - Only switch dashboard to PostgreSQL source after verification period
+  Rollback: Revert job_centre.py to previous version. JSON file is still
+        intact and becomes primary again immediately. Zero data loss.
+
+RISK 2: APPROVAL QUEUE BLOCKING REAL ACTIONS
+  What: Wiring AMBER/RED actions to actually block execution pending approval.
+  Why risky: If the approval gate has a bug, it could block ALL actions
+        including ones that should be GREEN (auto-allowed). An operator
+        who is not actively monitoring could have work silently stall.
+  Risk reduction:
+        - GREEN actions are never gated (hardcoded bypass)
+        - AMBER actions that match standing approvals auto-approve instantly
+        - Approval expiry: if no decision within 24 hours, alert raised
+        - Manual override endpoint: POST /api/ops/approvals/force-approve
+        - Approval gating deployed per-action-type incrementally, not all at once
+  Rollback: Remove approval check from tracked_dispatch. All actions
+        revert to auto-execute (the current behavior). No blocked work.
+
+RISK 3: EVENT PERSISTENCE PERFORMANCE
+  What: Writing every operational event to PostgreSQL in real-time.
+  Why risky: If event volume is high during a monitoring cycle (many
+        WordPress changes, many agent actions), the database write load
+        could slow down the manager agent's response time.
+  Risk reduction:
+        - Async write queue with batch flushing (write 50 events at once)
+        - In-memory cache still serves reads (PostgreSQL is backup truth)
+        - Event table has 90-day retention with auto-cleanup
+        - If PostgreSQL write fails, event still exists in memory + logged to disk
+  Rollback: Remove PostgreSQL write call from event_engine._log_event().
+        Events revert to in-memory only (current behavior).
+
+RISK 4: HEARTBEAT TIMEOUT FALSE POSITIVES
+  What: Auto-transitioning agents to UNREACHABLE after 5 minutes of no heartbeat.
+  Why risky: If an agent is busy with a long-running task (e.g., bulk SEO audit
+        taking 10 minutes), it might not send heartbeats during execution.
+        The system would incorrectly mark it as UNREACHABLE.
+  Risk reduction:
+        - Timeout check uses both heartbeat AND HTTP health check
+        - If heartbeat is stale but HTTP /api/status responds, agent is "busy" not "unreachable"
+        - Timeout threshold is configurable (start at 5 min, adjust if needed)
+        - UNREACHABLE status triggers an alert but does NOT stop or restart the agent
+  Rollback: Disable the background heartbeat checker. Agent cards revert
+        to showing the raw heartbeat data without timeout interpretation.
+
+RISK 5: NOC DASHBOARD REBUILD BREAKING EXISTING ACCESS
+  What: Rebuilding the NOC dashboard with 6 new panels.
+  Why risky: The NOC is currently a working dashboard showing real
+        infrastructure health (Redis, PostgreSQL, event bus, kill switch).
+        A bad rebuild could lose those working health checks.
+  Risk reduction:
+        - Keep existing infrastructure health panels intact
+        - Add new panels below/alongside existing ones
+        - Build the new NOC as a separate file first (ops_noc_v2.html)
+        - Test in parallel before replacing the current version
+        - Screenshot comparison before and after
+  Rollback: Swap back to the original operations_noc_dashboard.html.
+        The file is version-controlled and backed up.
+
+
+================================================================================
+SECTION E: PLAIN-ENGLISH DEFINITION OF "10F COMPLETE"
+================================================================================
+
+10F is complete when the dashboard tells the truth.
+
+Specifically:
+
+When you click a button, you see what happened — not a fleeting message
+that vanishes.
+
+When an agent is down, the dashboard says it is down — not green and
+healthy.
+
+When the system wants to do something risky, it asks you first — with
+enough information for you to say yes or no with confidence.
+
+When you log in after being away, you can see what happened while you
+were gone — jobs that ran, things that failed, alerts that were raised,
+decisions that were made.
+
+When a pipeline runs, you can see every step — what succeeded, what
+failed, what was skipped, and why.
+
+When something is a recommendation, it looks different from something
+the system has actually done. When data is estimated or forecast, it
+is labelled as such — not presented as if it were measured fact.
+
+When a warning appears, it has a clear status — active, resolved, or
+stale. It does not repeat forever without explanation, and it does not
+quietly vanish without being resolved.
+
+The one-sentence version:
+
+10F is complete when you can trust what the dashboard shows you, act on
+it with confidence, and verify after the fact that the system did what
+it said it did.
+
+
+================================================================================
+SECTION F: PRACTICAL UI/CONTROL BREAKDOWN (9 SURFACES)
+================================================================================
+
+------------------------------------------------------------------------
+SURFACE 1: MANAGER DASHBOARD ADDITIONS
+------------------------------------------------------------------------
+
+Where it appears:
+  Below the existing quick actions grid on the main manager dashboard
+  (manager_dashboard.html, served at /agents/manager/).
+
+What you will see:
+  Two new panels:
+  a) Recent Jobs table — last 50 jobs in a scrollable table.
+     Columns: Job ID (clickable), Agent, Action, Status (color badge),
+     Duration, Created time, Summary.
+  b) Recent Actions list — last 50 action receipts.
+     Each shows: action name, time, who triggered it, target, linked
+     job ID (clickable), current status badge.
+
+What action or decision it supports:
+  "What has the system been doing?" "Did my last action work?" "Are
+  there any failed jobs I need to deal with?"
+
+What data powers it:
+  GET /api/ops/jobs/recent (returns last 50 from ops_jobs table)
+  GET /api/ops/actions/recent (returns last 50 from ops_action_receipts table)
+  Auto-refreshes every 15 seconds.
+
+What states it uses:
+  Job states: draft, queued, running, completed, completed_unverified,
+  failed_retryable, failed_terminal, waiting_for_approval,
+  waiting_for_dependency, fallback_mode, paused, stale, cancelled, skipped.
+  Each state has a specific color badge.
+
+What happens if data is stale:
+  A "last refreshed X seconds ago" indicator shows at the top of each
+  panel. If the API has not responded in 30+ seconds, the panel border
+  turns amber with "Data may be stale" warning.
+
+What happens if data is missing:
+  If the ops_jobs table is empty (fresh install or after migration),
+  the panel shows "No jobs recorded yet. Actions you take from this
+  dashboard will appear here." — not a broken or blank state.
+
+What happens if the underlying process fails:
+  If a job fails, it appears in the table with a RED "FAILED" badge.
+  The summary column shows the error reason. A retry button appears
+  if the job is retryable.
+
+What happens if the system is degraded or in fallback mode:
+  A banner appears at the top of the manager dashboard: "System operating
+  in degraded mode — [specific component] is running in fallback."
+  Jobs created during degraded mode have fallback_indicator=true and
+  show a yellow "FALLBACK" badge.
+
+------------------------------------------------------------------------
+SURFACE 2: NOC / OPERATIONS CONTROL SURFACE
+------------------------------------------------------------------------
+
+Where it appears:
+  The NOC tab in the Operations Centre (operations_noc_dashboard.html),
+  accessed via /noc or the NOC tab in the iframe shell.
+
+What you will see:
+  6 panels in a 2-column grid layout:
+  Top row: Recent Jobs (left), Approval Queue (right)
+  Middle row: Event Timeline (left), Agent Health Grid (right)
+  Bottom row: Active Alerts (left), Action Receipts (right)
+  Existing infrastructure health section (Redis, PG, Event Bus, Kill
+  Switch) preserved above the new panels.
+
+What action or decision it supports:
+  "What is the state of the entire operation right now?" This is your
+  control tower. One screen to see jobs, approvals, events, agent health,
+  alerts, and recent actions all together.
+
+What data powers it:
+  GET /api/ops/jobs/recent
+  GET /api/ops/approvals/pending
+  GET /api/ops/events/timeline?hours=24
+  GET /api/ops/agents/status
+  GET /api/ops/alerts/active
+  GET /api/ops/actions/recent
+  Plus existing /api/health for infrastructure panels.
+  Auto-refreshes every 15 seconds.
+
+What states it uses:
+  Each panel uses its own canonical state model (see Section A).
+
+What happens if data is stale:
+  Each panel has its own freshness indicator. If any panel cannot reach
+  its API, that panel shows an amber border with "Unable to reach [source]
+  — showing last known data from [timestamp]."
+
+What happens if data is missing:
+  Each panel has a meaningful empty state. Approval Queue: "No pending
+  approvals." Alerts: "No active alerts — system healthy." Jobs: "No
+  recent jobs recorded."
+
+What happens if the underlying process fails:
+  If PostgreSQL is unreachable, the NOC shows a red infrastructure
+  health warning (existing behavior) AND each ops panel shows "Database
+  unreachable — operational data unavailable." If only one agent is
+  down, the agent health panel shows that specific agent as UNREACHABLE
+  while other panels continue working normally.
+
+What happens if the system is degraded or in fallback mode:
+  The NOC header shows a degradation banner. Affected agent cards show
+  their degraded mode. Jobs running in fallback show the fallback badge.
+  A "system degraded" alert appears in the alerts panel with details
+  about which capability is affected and what quality impact exists.
+
+------------------------------------------------------------------------
+SURFACE 3: RECENT JOBS
+------------------------------------------------------------------------
+
+Where it appears:
+  As a panel on the manager dashboard and the NOC dashboard.
+
+What you will see:
+  A table of the most recent 50 jobs sorted by creation time (newest first).
+  Each row: Job ID (blue clickable link), Agent name, Action description,
+  Status badge (color-coded), Duration (or "running..." if active),
+  Created timestamp, one-line Summary.
+  Click a row to expand: full job detail including input data, output data,
+  error details, linked approval, linked events, retry count, and a
+  timeline of state transitions for that job.
+  Filter controls: by status (all/active/failed/completed), by agent,
+  by time range (last hour/day/week).
+
+What action or decision it supports:
+  "Is the action I just triggered running?" "Did the SEO audit complete
+  or fail?" "What has each agent done today?" "Are there stuck jobs I
+  need to investigate?"
+
+What data powers it:
+  GET /api/ops/jobs/recent?limit=50&status=all
+  GET /api/ops/jobs/{job_id} (for expanded detail)
+  Source: ops_jobs table in PostgreSQL.
+
+What states it uses:
+  Full canonical job state model (15 states with colors).
+
+What happens if data is stale:
+  "Last refreshed" timestamp shown. If the fetch fails, last-known data
+  is shown with amber border and "Showing cached data" indicator.
+
+What happens if data is missing:
+  "No jobs recorded yet" with explanation.
+
+What happens if the underlying process fails:
+  Failed jobs appear with RED badge, error summary visible without
+  expanding. Retry button visible for retryable failures.
+
+What happens if the system is degraded or in fallback mode:
+  Jobs created during degraded mode show YELLOW "FALLBACK" badge.
+  The expanded detail shows which capability was degraded, when
+  degradation started, and whether rerun is recommended.
+
+------------------------------------------------------------------------
+SURFACE 4: APPROVAL QUEUE
+------------------------------------------------------------------------
+
+Where it appears:
+  As a panel on the NOC dashboard. Also accessible on the manager
+  dashboard governance section (existing location, upgraded).
+
+What you will see:
+  A list of pending approval cards, sorted by creation time (oldest first,
+  so the most urgent decisions are at the top).
+  Each card shows:
+  - Action type (e.g., "Publish draft post to live")
+  - Affected item (e.g., "Best Dog Beds for Large Breeds, Post #4521")
+  - Risk level badge (GREEN/AMBER/RED)
+  - Proposing agent (e.g., "Content Agent")
+  - One-line reason ("Content passed 12-gate check, quality score 87/100")
+  - Evidence level badge ("Live Verified" / "Estimated" / etc.)
+  - APPROVE button (green) and REJECT button (red)
+  Expanding a card shows: before/after summary, detailed reason, what
+  happens if approved, what happens if rejected, linked job, data source
+  type, change category.
+  Tabs: Pending | Approved (recent) | Rejected (recent)
+
+What action or decision it supports:
+  "Should I allow this action?" "What exactly will change?" "Why does the
+  system recommend this?" "What is the risk?" "What evidence supports it?"
+
+What data powers it:
+  GET /api/ops/approvals/pending
+  GET /api/ops/approvals/recent?status=approved
+  GET /api/ops/approvals/recent?status=rejected
+  POST /api/ops/approvals/{id}/approve (with reason)
+  POST /api/ops/approvals/{id}/reject (with reason)
+  Source: ops_approvals table in PostgreSQL.
+
+What states it uses:
+  pending, approved, rejected, expired, auto_approved.
+
+What happens if data is stale:
+  Freshness indicator on panel. If the approval is approaching its expiry
+  time, an amber "expires in X hours" warning appears on the card.
+
+What happens if data is missing:
+  "No pending approvals" (clean state, not broken).
+
+What happens if the underlying process fails:
+  If the approval API is unreachable, the panel shows a red warning.
+  The blocked job stays in waiting_for_approval state — it does NOT
+  auto-execute. This is a safe failure mode (fail-closed, not fail-open).
+
+What happens if the system is degraded or in fallback mode:
+  Approvals created during degraded mode show a yellow "Created during
+  fallback mode" indicator. The card explains which capability was
+  degraded and whether the recommendation quality may be affected.
+
+------------------------------------------------------------------------
+SURFACE 5: ACTION RECEIPTS
+------------------------------------------------------------------------
+
+Where it appears:
+  As a panel on the NOC dashboard and the manager dashboard.
+
+What you will see:
+  A scrollable list of the last 50 action receipts.
+  Each receipt shows: action name, source screen (where you were when
+  you triggered it), time requested, who triggered it (operator or system),
+  target entity, linked job ID (clickable), current status badge.
+  Most recent at top.
+
+What action or decision it supports:
+  "What did I just do?" "What has happened in the last hour?" "Did my
+  action create a job, and what is that job's status?"
+
+What data powers it:
+  GET /api/ops/actions/recent?limit=50
+  Source: ops_action_receipts table in PostgreSQL.
+
+What states it uses:
+  Status reflects the linked job's state (so it updates as the job progresses).
+
+What happens if data is stale:
+  Freshness indicator. Each receipt shows "last updated X ago" for its
+  linked job status.
+
+What happens if data is missing:
+  "No actions recorded yet."
+
+What happens if the underlying process fails:
+  If the action itself failed, the receipt shows a RED status badge.
+  The linked job ID points to the full error detail.
+
+What happens if the system is degraded or in fallback mode:
+  Receipts during degraded mode show the fallback badge.
+  The "next expected" field may say "degraded — outcome uncertain."
+
+------------------------------------------------------------------------
+SURFACE 6: WORKFLOW PIPELINE
+------------------------------------------------------------------------
+
+Where it appears:
+  On the manager dashboard (existing pipeline section, upgraded) and
+  a new pipeline history view accessible from the NOC.
+
+What you will see:
+  Visual 6-stage pipeline: Research -> Content -> SEO -> Affiliate ->
+  Social -> Engagement.
+  Each stage is a labeled box with a state badge.
+  For the currently running pipeline: live step-by-step progress.
+  Below: pipeline history table showing past runs with date, mode,
+  topic/title, overall status, and step-by-step breakdown.
+  Click any run to expand full detail.
+
+What action or decision it supports:
+  "What stage is the current pipeline at?" "Which step failed?" "Why
+  was a step skipped?" "How do recent pipeline runs compare?"
+
+What data powers it:
+  GET /api/ops/pipeline/current (active run if any)
+  GET /api/ops/pipeline/history?limit=20
+  GET /api/ops/pipeline/{run_id} (expanded detail)
+  Source: ops_pipeline_runs + ops_pipeline_steps tables.
+
+What states it uses:
+  Canonical job states for each step. Plus skipped (with reason and
+  who/what skipped it).
+
+What happens if data is stale:
+  "Pipeline data last refreshed X seconds ago" indicator.
+
+What happens if data is missing:
+  "No pipeline runs recorded. Use the Run Full Pipeline button above."
+
+What happens if the underlying process fails:
+  Failed step shows RED badge with error summary. Subsequent steps
+  show "blocked" or "skipped" depending on pipeline mode.
+  The pipeline run status shows "failed" with the specific step that failed.
+
+What happens if the system is degraded or in fallback mode:
+  Steps running in fallback show YELLOW badge with "FALLBACK" label.
+  The pipeline run itself shows that degraded capability was used.
+  A note appears: "Step 3 ran in fallback mode — consider rerunning
+  when full capability is restored."
+
+------------------------------------------------------------------------
+SURFACE 7: AGENT HEALTH CARDS
+------------------------------------------------------------------------
+
+Where it appears:
+  Agent health grid on manager dashboard (existing, upgraded) and
+  as a panel on the NOC dashboard.
+
+What you will see:
+  One card per agent (9 total). Each card shows:
+  - Agent name
+  - Status badge: idle (green), running (cyan), degraded (yellow),
+    blocked (orange), unreachable (red), unknown (gray)
+  - Current mode: "Primary AI", "Fallback Template", "Read Only",
+    "Awaiting Token Refresh", "Paused by Policy"
+  - Health score: 0-100 with a small gauge bar
+  - Last seen: "45 seconds ago" (green), "3 minutes ago" (amber),
+    "12 minutes ago — UNREACHABLE" (red)
+  - Last successful run: time + what it was
+  - Current queue: "3 tasks queued" or "idle"
+  - Current task: "SEO audit (45%)" or "none"
+  - Last error: one-line summary or "none"
+
+What action or decision it supports:
+  "Are all my agents running?" "Which agents are unhealthy?" "Is the
+  social agent still having instability issues?" "Should I be concerned
+  about any agent?"
+
+What data powers it:
+  GET /api/ops/agents/status (returns all 9 agents)
+  Source: ops_agent_status table + live HTTP health checks.
+  Auto-refreshes every 15 seconds.
+  Health score computed from: heartbeat freshness (30%), HTTP check
+  result (30%), recent error rate (20%), task completion rate (20%).
+
+What states it uses:
+  idle, running, degraded, blocked, paused, fallback_mode, failed,
+  unreachable, unknown.
+
+What happens if data is stale:
+  "Last checked X seconds ago" indicator. If the health check itself
+  fails, the card shows "Health check failed — agent may be unreachable"
+  rather than showing stale healthy data.
+
+What happens if data is missing:
+  Agents that have never connected show "unknown" status with gray badge.
+  "This agent has not connected yet" explanation.
+
+What happens if the underlying process fails:
+  The background heartbeat checker logs failures. If the checker itself
+  fails, an alert is raised. Agent cards default to "unknown" rather
+  than falsely showing healthy.
+
+What happens if the system is degraded or in fallback mode:
+  Affected agent cards show mode: "Fallback Template" with YELLOW badge.
+  The card explains: "AI quota exhausted — using template responses.
+  Quality may be reduced. Rerun recommended when quota resets."
+
+------------------------------------------------------------------------
+SURFACE 8: EVENT TIMELINE
+------------------------------------------------------------------------
+
+Where it appears:
+  As a panel on the NOC dashboard. Also accessible as a standalone
+  view from the Operations Centre.
+
+What you will see:
+  Chronological feed of operational events, newest at top.
+  Each event shows: timestamp, category icon (job/approval/agent/
+  pipeline/alert/operator/content), severity color stripe,
+  one-line summary in plain English.
+  Filter controls: by category, by severity, by time range.
+  Click any event to expand: full detail, linked job, linked approval,
+  correlation chain.
+  Category icons:
+  - Briefcase = job event
+  - Shield = approval event
+  - Server = agent event
+  - Arrows = pipeline event
+  - Bell = alert event
+  - Person = operator action
+  - Document = content event
+
+What action or decision it supports:
+  "What happened in the last hour?" "What happened overnight?" "Why
+  did this failure occur — what led up to it?" "What is the operational
+  story of today?"
+
+What data powers it:
+  GET /api/ops/events/timeline?hours=24 (default last 24h)
+  GET /api/ops/events/timeline?hours=168 (last 7 days)
+  Source: ops_events table in PostgreSQL.
+
+What states it uses:
+  Event states: active, acknowledged, resolved.
+  Event severities: info (blue), warning (amber), error (red),
+  critical (dark red with pulse).
+
+What happens if data is stale:
+  "Timeline last updated X seconds ago" indicator.
+
+What happens if data is missing:
+  "No events recorded in the selected time range."
+  If the table is empty: "Event tracking is active. Events will appear
+  here as the system operates."
+
+What happens if the underlying process fails:
+  Failure events themselves appear in the timeline (self-referential).
+  If PostgreSQL is unreachable, the timeline shows in-memory events
+  with a warning: "Showing in-memory events only — persistent history
+  unavailable."
+
+What happens if the system is degraded or in fallback mode:
+  A degradation event appears in the timeline with details.
+  Subsequent events during degradation show a small fallback indicator.
+
+------------------------------------------------------------------------
+SURFACE 9: ALERTS / TOP CONCERNS
+------------------------------------------------------------------------
+
+Where it appears:
+  As a panel on the NOC dashboard. Alert count badge also visible on
+  the Operations Centre header.
+
+What you will see:
+  Active alerts at top, sorted by severity (critical first).
+  Each alert shows: severity badge, affected component, one-line summary,
+  when it was raised, whether user action is required, whether auto-retry
+  is in progress.
+  Below: recently resolved alerts (collapsed by default).
+  Tab options: Active | Resolved | Stale | Suppressed.
+  Each active alert has action buttons: Resolve (with reason),
+  Suppress (acknowledge but hide), Investigate (opens linked job/event).
+
+What action or decision it supports:
+  "Is anything broken right now?" "Do I need to do anything?" "What
+  problems were recently resolved?" "Are there any stale warnings I
+  should look at?"
+
+What data powers it:
+  GET /api/ops/alerts/active
+  GET /api/ops/alerts/resolved?limit=20
+  GET /api/ops/alerts/stale
+  POST /api/ops/alerts/{id}/resolve (with reason)
+  POST /api/ops/alerts/{id}/suppress (with reason)
+  Source: ops_alerts table in PostgreSQL.
+
+What states it uses:
+  active (red), resolved (green), stale (amber), suppressed (gray).
+
+What happens if data is stale:
+  "Last checked X seconds ago" indicator. If the alert check itself is
+  stale, an alert is raised about the alert system (self-monitoring).
+
+What happens if data is missing:
+  "No active alerts — system healthy." (Green checkmark, not blank.)
+
+What happens if the underlying process fails:
+  If the alert system itself fails, the NOC header shows a red warning:
+  "Alert system unreachable — check system health manually."
+
+What happens if the system is degraded or in fallback mode:
+  A degradation alert is automatically raised with: which capability
+  degraded, when degradation started, what fallback mode is being used,
+  what quality impact exists, whether rerun is recommended later, and
+  whether output is still safe to use.
+
+
+================================================================================
+SECTION G: MIGRATION / CUTOVER SAFETY
+================================================================================
+
+------------------------------------------------------------------------
+G1: WHAT STAYS UNTOUCHED INITIALLY
+------------------------------------------------------------------------
+
+These remain completely unchanged during 10F build:
+
+  - All 14 analytical dashboards (strategist, forecasting, authority,
+    monetization, customer, planning, workflow, capacity, AI search,
+    authority forecasting, behavioral forecasting, mission control,
+    reasoning, AI side panel) — no modifications at all
+
+  - The existing manager dashboard quick actions — buttons still work
+    exactly as before. 10F adds panels below them, not changes to them.
+
+  - The existing Operations Centre iframe shell and 19-tab navigation —
+    unchanged. 10F modifies only the NOC tab content.
+
+  - All 8 child agent codebases — no changes to SEO, Content, Analytics,
+    Social, Maintenance, Product Research, Affiliate, or Engagement agents.
+
+  - The existing pipeline_runner execution logic — pipelines still run
+    the same way. 10F adds persistence of results, not changes to how
+    pipelines execute.
+
+  - WordPress content, theme, and plugins — completely untouched.
+
+  - The eBay/product submission API (port 8000) — completely untouched.
+
+  - Nginx configuration — unchanged.
+
+  - Existing PostgreSQL tables (observability_logs, queue_items,
+    scheduler_executions, event_history, approvals, audit_log,
+    performance_snapshots, agents, tasks) — not modified. New ops_*
+    tables are created alongside them.
+
+------------------------------------------------------------------------
+G2: WHAT RUNS IN PARALLEL DURING MIGRATION
+------------------------------------------------------------------------
+
+Phase A — Shadow Mode (first 1-2 days of build):
+
+  New ops_* tables exist in PostgreSQL but are NOT the primary source.
+  Old systems (JSON jobs, in-memory events) continue as primary.
+  truthful_ops.py writes to ops_* tables IN ADDITION TO old stores.
+  This means every job is recorded in both places.
+
+  Dashboard still reads from old sources during this phase.
+  No visible change to the operator.
+
+  Behind the scenes, a comparison log records:
+  - Does ops_jobs match jobs.json for the same job_id?
+  - Does ops_events match the in-memory event list?
+  - Are there discrepancies?
+
+Phase B — Parallel Display (next 1-2 days):
+
+  New dashboard panels are added, reading from ops_* tables.
+  Old panels remain visible alongside new panels.
+  The operator can compare old view vs new view side by side.
+
+  For example:
+  - Old "event feed" section still shows in-memory events
+  - New "event timeline" panel shows PostgreSQL events
+  - They should show the same data — if they differ, we investigate
+
+Phase C — Primary Cutover (after verification):
+
+  Dashboard panels switch to reading exclusively from ops_* tables.
+  Old JSON write continues as backup (dual-write maintained).
+  Old panels removed or collapsed.
+
+  The operator sees the new truthful panels as the primary surfaces.
+
+Phase D — Cleanup (after owner sign-off):
+
+  JSON file writes disabled (read-only archive).
+  Old in-memory event list reduced to a short read-through cache.
+  Redis data stores for jobs/events cleaned up.
+  Only PostgreSQL remains as operational truth.
+
+------------------------------------------------------------------------
+G3: HOW OLD VS NEW TRUTH IS COMPARED
+------------------------------------------------------------------------
+
+During Phase A and B, a comparison script runs after every dispatch:
+
+  1. Read the job from ops_jobs (new PostgreSQL store)
+  2. Read the same job from jobs.json (old JSON store)
+  3. Compare: job_id, status, agent, action, timestamps
+  4. Log any discrepancy to a comparison_log.json file
+
+  Expected discrepancies (acceptable):
+  - ops_jobs has richer data (approval_id, correlation_id, risk_class)
+    that the old store does not have — this is expected.
+  - Timestamps may differ by milliseconds — acceptable.
+
+  Unexpected discrepancies (investigate):
+  - Job exists in one store but not the other
+  - Status differs between stores
+  - Agent or action differs
+
+  I will report the comparison results at each staged review point.
+
+------------------------------------------------------------------------
+G4: WHAT THE CUTOVER POINT IS
+------------------------------------------------------------------------
+
+  Cutover from shadow to primary happens when ALL of these are true:
+
+  1. ops_* tables have been receiving data for at least 24 hours
+  2. Zero unexpected discrepancies between old and new stores
+  3. At least 20 jobs successfully recorded in ops_jobs
+  4. At least 50 events successfully recorded in ops_events
+  5. Dashboard panels reading from ops_* are rendering correctly
+  6. Owner has reviewed the parallel display and confirmed new panels
+     show accurate, readable, useful data
+
+------------------------------------------------------------------------
+G5: EVIDENCE THAT NEW LAYER IS SAFE ENOUGH TO BE PRIMARY
+------------------------------------------------------------------------
+
+  Required evidence before cutover:
+
+  a) Comparison log showing zero unexpected discrepancies over 24+ hours
+  b) Screenshot of new dashboard panel alongside old panel showing
+     matching data for the same time period
+  c) PostgreSQL query showing ops_jobs row count matches expected number
+     of dispatches during the test period
+  d) At least one agent restart during the test period, with ops_events
+     showing events from before AND after the restart (proving persistence)
+  e) At least one failed job correctly recorded with error detail
+  f) Owner confirmation: "The new panels look right to me"
+
+
+================================================================================
+SECTION H: STAGED OWNER REVIEW POINTS
+================================================================================
+
+------------------------------------------------------------------------
+REVIEW GATE 1: DATA/STATE CONTRACT LIVE IN SHADOW
+------------------------------------------------------------------------
+
+When: After Steps 1-6 of implementation (tables created, truthful_ops
+      built, job_centre wired, tracked_dispatch wired, event_engine wired)
+
+What is ready to inspect:
+  - ops_* tables exist in PostgreSQL with correct schemas
+  - Dispatching an action writes to both old and new stores
+  - Events are being persisted to ops_events
+  - Comparison logging is active
+
+What you should test:
+  - Click 2-3 quick action buttons on the manager dashboard
+  - I will then show you the data in ops_jobs vs jobs.json
+  - I will show you events in ops_events vs the in-memory list
+
+Evidence I will provide:
+  - SQL query output showing ops_jobs entries matching your actions
+  - SQL query output showing ops_events entries
+  - Comparison log showing no unexpected discrepancies
+
+Pass: Jobs and events appear in both stores with matching data.
+Fail: Jobs appear in one store but not the other, or data does not match.
+
+------------------------------------------------------------------------
+REVIEW GATE 2: ACTION RECEIPTS WORKING
+------------------------------------------------------------------------
+
+When: After action receipt persistence is live (part of Steps 4-5)
+
+What is ready to inspect:
+  - Every button click produces a persistent receipt in ops_action_receipts
+  - Receipt includes action name, source screen, actor, target, job ID
+
+What you should test:
+  - Click 5 different action buttons in sequence
+  - I will show you all 5 receipts persisted in the database
+
+Evidence I will provide:
+  - SQL query showing 5 receipt records with correct data
+  - Screenshot plan: once dashboard panel is built (Gate 3), receipts
+    will be visible on screen
+
+Pass: All 5 receipts present with correct action names, timestamps, job IDs.
+Fail: Any receipt missing, or data incorrect.
+
+------------------------------------------------------------------------
+REVIEW GATE 3: JOBS AND APPROVAL QUEUE VISIBLE ON DASHBOARD
+------------------------------------------------------------------------
+
+When: After Steps 11-14 (NOC rebuild, manager dashboard additions,
+      job detail component, approval card component)
+
+What is ready to inspect:
+  - Recent Jobs table visible on manager dashboard and NOC
+  - Approval queue visible on NOC
+  - Job detail expandable
+  - Approval cards with before/after and approve/reject buttons
+
+What you should test:
+  - Click an action and watch it appear in the Recent Jobs table
+  - Trigger an AMBER action and check the approval queue
+  - Expand a job detail and verify the timeline shows state transitions
+  - Approve or reject an approval and verify the linked job updates
+
+Evidence I will provide:
+  - Playwright screenshots of: Recent Jobs table with populated data,
+    Approval Queue with a real pending approval, Job detail expanded,
+    Approval card with full context visible
+
+Pass: Jobs appear in real-time on dashboard. Approvals show full context.
+      Approve/reject actually works and updates the linked job.
+Fail: Jobs do not appear, or approval buttons do not work, or job detail
+      is empty/incorrect.
+
+------------------------------------------------------------------------
+REVIEW GATE 4: AGENT CARDS AND ALERT LIFECYCLE
+------------------------------------------------------------------------
+
+When: After Steps 8-9 (heartbeat timeout, alert lifecycle)
+
+What is ready to inspect:
+  - Agent cards show live status with "last seen" freshness
+  - Heartbeat timeout detection is active
+  - Alert panel shows active/resolved alerts
+
+What you should test:
+  - Look at agent cards — do they show recent "last seen" times?
+  - If any agent is down, does it show UNREACHABLE?
+  - Check the alerts panel for any active alerts
+
+Evidence I will provide:
+  - Screenshot of agent health grid showing live statuses
+  - If any agent is unreachable: screenshot showing UNREACHABLE badge
+  - SQL query of ops_agent_transitions showing recent status changes
+  - SQL query of ops_alerts showing alert lifecycle entries
+
+Pass: Agent cards reflect actual current state. Unreachable agents
+      show as unreachable. At least one transition is logged.
+Fail: Agent cards show stale data, or unreachable agents show healthy.
+
+------------------------------------------------------------------------
+REVIEW GATE 5: WORKFLOW PIPELINE TRUTH
+------------------------------------------------------------------------
+
+When: After Step 7 (pipeline_runner persistence) and dashboard pipeline
+      history panel is built
+
+What is ready to inspect:
+  - Pipeline runs saved to PostgreSQL with step details
+  - Pipeline history visible on dashboard
+  - Step states use canonical model
+
+What you should test:
+  - Run a pipeline in draft mode
+  - Check pipeline history shows the run with all steps
+  - Verify step states are accurate (completed, skipped with reason, etc.)
+
+Evidence I will provide:
+  - Screenshot of pipeline history showing a completed run
+  - SQL query showing ops_pipeline_runs and ops_pipeline_steps data
+  - If any step was skipped: screenshot showing the skip reason
+
+Pass: Pipeline run fully recorded with all step states. History visible.
+Fail: Pipeline run missing, or steps not recorded, or states incorrect.
+
+------------------------------------------------------------------------
+REVIEW GATE 6: FINAL SIGN-OFF
+------------------------------------------------------------------------
+
+When: After all implementation is complete and tested
+
+What is ready to inspect:
+  - All 10F surfaces working
+  - All 42 acceptance criteria tested
+  - Owner sign-off pack prepared
+
+What you should test:
+  - The 10 owner review tests from the implementation pack (Part 9)
+  - Walk through the full operational story: dispatch actions, check jobs,
+    approve items, review timeline, check agent health, review alerts
+
+Evidence I will provide:
+  - Screenshot pack: all 6 NOC panels populated with real data
+  - Screenshot pack: manager dashboard with jobs and actions panels
+  - Test results: 42 acceptance criteria checklist (pass/fail each)
+  - Comparison log: final zero-discrepancy report
+  - Before/after comparison: old dashboard vs new
+  - Known limits document: what 10F does not solve (deferred to later)
+
+Pass: All 42 criteria pass. Dashboard is operationally truthful.
+      Owner can answer "what happened today" within 30 seconds.
+Fail: Any critical acceptance criterion fails. Dashboard still shows
+      misleading or incomplete operational data.
+
+
+================================================================================
+SECTION I: CONFIRMED IMPLEMENTATION ORDER WITH REASONING
+================================================================================
+
+Your suggested priority order is:
+
+  1. action receipts
+  2. real jobs model
+  3. approval queue truthfulness
+  4. agent status honesty
+  5. workflow pipeline truth
+  6. alerts lifecycle
+  7. event timeline improvements
+  8. recommendation vs action separation
+  9. expected-ready / dependency visibility
+  10. fallback mode visibility
+
+My implementation order differs slightly, and here is why:
+
+------------------------------------------------------------------------
+ACTUAL BUILD ORDER WITH REASONING
+------------------------------------------------------------------------
+
+STEP 1: PostgreSQL tables (1 hour)
+  Why first: Every other component needs somewhere to write data.
+  This is invisible infrastructure but takes only 1 hour and unblocks
+  everything else.
+  Visible benefit: None yet (but takes only 1 hour).
+
+STEP 2: truthful_ops.py core module (3-4 hours)
+  Why second: This is the single gateway that all visible surfaces call.
+  Without it, nothing can write to the new tables correctly.
+  This is the second invisible step, but it directly enables everything
+  your priority list asks for.
+  Visible benefit: None yet (but enables all visible benefits below).
+
+STEP 3: Action receipts (1 hour)
+  YOUR PRIORITY #1 — FIRST VISIBLE IMPROVEMENT
+  Wire tracked_dispatch to create receipts via truthful_ops.
+  After this step: every button click creates a persistent receipt.
+  Not yet visible on dashboard (panel comes in Step 11), but the data
+  is flowing and provable via SQL query.
+  Visible benefit at review: "Here are your last 10 actions, all recorded."
+
+STEP 4: Real jobs model (1 hour)
+  YOUR PRIORITY #2 — SECOND VISIBLE IMPROVEMENT
+  Wire job_centre to write to ops_jobs via truthful_ops.
+  After this step: every dispatch creates a real job in PostgreSQL.
+  Visible benefit at review: "Here are your jobs, all in one place."
+
+STEP 5: Event persistence (30 minutes)
+  YOUR PRIORITY #7 BUT TECHNICALLY NEEDED NOW
+  Wire event_engine to persist events.
+  Reason for ordering here: events are generated by Steps 3 and 4.
+  If we wait until Step 7 in your order, we lose events from the early
+  testing period. Better to capture everything from the start.
+  Visible benefit: Events survive restart. Provable via SQL.
+
+STEP 6: Approval queue wiring (2 hours)
+  YOUR PRIORITY #3
+  Wire tracked_dispatch + traffic_light to create real approvals.
+  After this step: AMBER/RED actions are physically blocked pending decision.
+  Visible benefit at review: "Try dispatching an SEO auto-fix — it will
+  now create an approval that blocks until you decide."
+
+STEP 7: Pipeline history (1 hour)
+  YOUR PRIORITY #5
+  Wire pipeline_runner to persist runs and steps.
+  Visible benefit: Run a pipeline, then query the history from SQL.
+
+STEP 8: Agent heartbeat timeout (1 hour)
+  YOUR PRIORITY #4
+  Background task checks heartbeats. UNREACHABLE after 5 min.
+  Visible benefit: Agent cards will soon show truthful status.
+
+STEP 9: Alert lifecycle (1 hour)
+  YOUR PRIORITY #6
+  Wire agent health, job staleness, and infra checks to create alerts.
+  Visible benefit: First real alerts start appearing.
+
+--- AT THIS POINT, ALL BACKEND TRUTH IS FLOWING ---
+--- NOW WE MAKE IT VISIBLE ON DASHBOARDS ---
+
+STEP 10: Approval queue wiring to traffic light (included in Step 6)
+
+STEP 11: NOC dashboard rebuild (4-5 hours)
+  THE BIG VISIBLE MOMENT
+  6 panels all at once: Jobs, Approvals, Timeline, Agents, Alerts, Receipts.
+  After this step: you see everything on one screen.
+  This is the single biggest visible improvement.
+
+STEP 12: Manager dashboard additions (2-3 hours)
+  Recent Jobs table + Recent Actions panel below quick actions.
+  After this step: the main dashboard becomes operationally useful.
+
+STEP 13: Job detail component (1-2 hours)
+  Click any job ID to see full lifecycle.
+  YOUR PRIORITY #9 (expected-ready/dependency) is built into this.
+
+STEP 14: Approval card component (1-2 hours)
+  Rich approval cards with before/after, approve/reject.
+  YOUR PRIORITY #8 (recommendation vs action separation) is built into
+  the visual indicators and badges used across all new panels.
+
+STEP 15: Route mounting + data migration (1 hour)
+  Connect everything, migrate existing data.
+
+STEP 16: Full acceptance testing (3-4 hours)
+  All 42 criteria.
+  YOUR PRIORITY #10 (fallback visibility) is tested here as part of
+  the degraded-mode acceptance criteria.
+
+STEP 17: Owner sign-off pack (1-2 hours)
+
+------------------------------------------------------------------------
+WHY MY ORDER DIFFERS FROM YOURS
+------------------------------------------------------------------------
+
+Your order prioritizes visible surfaces first. My order does invisible
+foundation first (2 steps, ~5 hours total), then visible surfaces in
+roughly your order.
+
+The reason: without the PostgreSQL tables and the truthful_ops module,
+none of the visible surfaces have anywhere to read data from. Building
+a "Recent Jobs" panel that reads from a table that does not exist yet
+means building it twice.
+
+The invisible period is short: Steps 1-2 take about 5 hours total.
+After that, Steps 3-9 produce backend truth that is immediately provable
+(via SQL queries), and Steps 11-14 make it all visible on dashboards.
+
+The first owner-visible moment comes at Review Gate 1 (after Steps 1-6),
+roughly 10 hours into the build. The big visual payoff comes at Review
+Gate 3 (after Steps 11-14), when the NOC and manager dashboard show
+all the new truth panels.
+
+I will NOT have a long silent period. At each step I will show you
+what is now flowing into the database, even before the dashboard panels
+make it pretty.
+
+
+================================================================================
+SECTION J: PRACTICAL DEPENDENCY BRIDGE (10G / 10H / 10I)
+================================================================================
+
+------------------------------------------------------------------------
+10G: CONTENT TRUST AND EVIDENCE HARDENING
+------------------------------------------------------------------------
+
+What 10F must output first:
+  1. ops_approvals table with working AMBER/RED gating
+     (so content trust checks can block publishing)
+  2. ops_events table with persistent event logging
+     (so every content modification is auditable)
+  3. ops_action_receipts table
+     (so content changes have traceable receipts)
+  4. ops_workflow_items table
+     (so content items can carry trust scores and evidence ratings)
+  5. Traffic light wiring working for publish actions
+     (so Lane B and Lane C content gates are enforceable)
+
+What can be prepared in parallel safely:
+  - Anti-overclaim banned phrase rule set (already partially done in hardening)
+  - Evidence classification taxonomy: live_verified, manufacturer_claim,
+    third_party_study, user_report, editorial_judgment, AI_generated, proxy
+  - Trust lint rules: a set of content checks that score trust quality
+  - Author/editorial trust surface designs (what author pages should show)
+  - Claim/risk policy document (which claims need what evidence level)
+  - Content proof standards (what "verified" means per content type)
+  - Disclosure enforcement rule definitions
+
+  All of these are data/policy definitions that do not need 10F infrastructure
+  to write. They can be designed and documented now, then wired to 10F's
+  approval and event systems when 10F is complete.
+
+What must wait until 10F is complete:
+  - Automated pre-publish trust lint (needs approval pipeline to block bad content)
+  - Evidence vault integration with approval cards (needs approval cards to exist)
+  - Trust score feeding into approval risk levels (needs approval risk system)
+  - Content trust violations raising alerts (needs alert lifecycle)
+
+Owner-facing benefit this unlocks:
+  When 10G is live, you will see on every approval card: "evidence level:
+  manufacturer claim" or "evidence level: live verified." You will be able
+  to reject content that lacks sufficient evidence. Trust scores will
+  appear on workflow items so you know which content is trustworthy and
+  which needs more evidence.
+
+------------------------------------------------------------------------
+10H: SAFE CLUSTER EXPANSION ENGINE
+------------------------------------------------------------------------
+
+What 10F must output first:
+  1. ops_jobs with parent_job_id support
+     (so cluster-level expansion missions can track individual tasks)
+  2. ops_pipeline_runs + ops_pipeline_steps
+     (so expansion pipelines are fully recorded)
+  3. ops_approvals with change_category
+     (so publish-gating works for new expansion content)
+  4. ops_workflow_items
+     (so each new piece of content is tracked through stages)
+  5. ops_alerts
+     (so quality threshold violations trigger alerts)
+
+What can be prepared in parallel safely:
+  - Draft-only expansion logic (content agent generates drafts, never publishes)
+  - Cluster template contract (hub + spoke structure definitions per cluster)
+  - Internal-link planning model (how new spokes link to hub and to each other)
+  - Educational spoke rollout priority list (which clusters expand first)
+  - Quality thresholds (what score a draft must reach before it is publish-ready)
+  - Expansion gating criteria definitions
+
+What must wait until 10F is complete:
+  - Actual content expansion execution with job tracking
+  - Publish-readiness approval flow (draft -> review -> approve -> publish)
+  - Cluster-level mission dashboards (mission = parent job with child tasks)
+  - Expansion quality monitoring via alerts
+
+Owner-facing benefit this unlocks:
+  When 10H is live, you will see cluster expansion progress as tracked
+  missions. Each cluster shows: how many pieces are drafted, how many
+  passed quality checks, how many are awaiting your approval, how many
+  are published. You approve each piece individually with full context.
+  No content goes live without your decision.
+
+------------------------------------------------------------------------
+10I: INDEXING, CRAWL, AND AI SEARCH ADAPTATION
+------------------------------------------------------------------------
+
+What 10F must output first:
+  1. ops_events with category "content" for publish events
+     (so publish -> index follow-up workflow can trigger)
+  2. ops_jobs for crawl/index monitoring tasks
+     (so sitemap checks and crawl verification are tracked)
+  3. ops_alerts for index-status warnings
+     (so deindexed or uncrawled pages raise alerts)
+  4. ops_workflow_items with published_at field
+     (so we know when content went live and can track time-to-index)
+
+What can be prepared in parallel safely:
+  - Index-status data model (indexed / not_indexed / deindexed / pending per URL)
+  - Sitemap validation rules (what should be in sitemap vs what is)
+  - AI-readiness scoring criteria (extractability, answer format, entity completeness)
+  - Content formatting requirements for answer engines
+  - Crawl assurance signal definitions (what confirms Google has seen a page)
+
+What must wait until 10F is complete:
+  - Automated publish-to-index follow-up workflow (needs event pipeline to trigger)
+  - Index-status alerting (needs alert lifecycle to flag problems)
+  - Crawl verification as a tracked job (needs job model)
+  - AI search readiness feeding into content workflow stages (needs workflow items)
+
+Owner-facing benefit this unlocks:
+  When 10I is live, you will see on each published content item: whether
+  it has been indexed by Google, when it was last crawled, its AI-readiness
+  score, and whether it appears in AI overviews. If a page drops out of
+  the index, an alert is raised. Publish-to-index time is tracked so you
+  know how long it takes for new content to appear in search.
+
+------------------------------------------------------------------------
+STATE/DATA CONTRACTS FUTURE PHASES WILL RELY ON
+------------------------------------------------------------------------
+
+  10G relies on:
+    ops_approvals.evidence_level, ops_approvals.data_source_type
+    ops_workflow_items.trust_score, ops_workflow_items.quality_score
+    ops_events with category="content" for audit trail
+    ops_alerts for trust violation warnings
+
+  10H relies on:
+    ops_jobs.parent_job_id for mission-level tracking
+    ops_pipeline_runs + ops_pipeline_steps for expansion pipelines
+    ops_approvals.change_category for publish gating
+    ops_workflow_items.stage_* fields for lifecycle tracking
+    ops_alerts for quality threshold violations
+
+  10I relies on:
+    ops_events for publish event triggering
+    ops_jobs for crawl/index monitoring tasks
+    ops_alerts for index-status warnings
+    ops_workflow_items.published_at for time-to-index tracking
+
+All three phases inherit 10F's canonical state model, visual indicator
+standards, and wording conventions. This means future dashboards built
+for 10G/10H/10I will use the same state badges, colors, and plain
+English wording established in 10F.
+
+
+================================================================================
+CLOSING SUMMARY
+================================================================================
+
+This document is the owner-facing decision layer on top of the full 10F
+implementation pack. It translates architecture into operational reality.
+
+The core promise:
+  10F makes the dashboard tell the truth.
+
+The core structural change:
+  One source of truth (PostgreSQL) via one module (truthful_ops.py).
+
+The owner experience change:
+  You will see what is happening, what has happened, what needs your
+  decision, what has failed, and what is degraded. In plain English.
+  With evidence. Persistently.
+
+The safety posture:
+  Shadow mode first. Parallel comparison. Staged cutover with owner
+  review gates. Full rollback at every stage.
+
+Ready for your go-ahead to begin build execution.
+
+
+================================================================================
+END OF EXECUTIVE EXTRACTION
+================================================================================
