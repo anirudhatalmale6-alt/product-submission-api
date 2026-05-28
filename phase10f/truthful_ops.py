@@ -730,6 +730,12 @@ def update_agent_status(
     with _db() as cur:
         cur.execute(f"UPDATE ops_agent_status SET {', '.join(updates)} WHERE agent_name=%s RETURNING *", params)
         row = cur.fetchone()
+        if not row:
+            cur.execute(
+                "INSERT INTO ops_agent_status (agent_name, port, status, updated_at) VALUES (%s, 0, %s, NOW()) RETURNING *",
+                (agent_name, status or 'unknown')
+            )
+            row = cur.fetchone()
     return dict(row) if row else None
 
 
