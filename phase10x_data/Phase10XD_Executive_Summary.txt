@@ -1,0 +1,30 @@
+PHASE 10XD — ENTITY/GLOSSARY EXPANSION
+Generated: 2026-05-28 16:47
+
+ENTITY COVERAGE:
+  Total posts assessed: 98
+  Glossary/definition pages: 14
+  High entity density: 17
+  Medium: 50
+  Low: 31
+
+GLOSSARY PAGES CREATED THIS SPRINT:
+  5414 - Cat Toy Types Glossary (draft)
+  5415 - Dog Play Styles Explained (draft)
+  5416 - Dog Bed Types Glossary (draft)
+  5417 - Puppy Care Essentials (draft)
+  5418 - Dog Harness Types Glossary (draft)
+  5419 - Cat Care Basics Glossary (draft)
+
+CLUSTER ENTITY GRADES:
+  Cat Supplies         | Grade: B | avg entities: 5.3 | glossary: 2
+  Dog Supplies         | Grade: A | avg entities: 8.3 | glossary: 3
+  Dog Care             | Grade: B | avg entities: 7.3 | glossary: 4
+  Dog Beds             | Grade: B | avg entities: 6.1 | glossary: 2
+  Cat Toys             | Grade: B | avg entities: 7.2 | glossary: 0
+  Dog Harnesses        | Grade: B | avg entities: 5.5 | glossary: 1
+  Dog Health           | Grade: C | avg entities: 4.8 | glossary: 0
+  Dog Food             | Grade: B | avg entities: 7.5 | glossary: 0
+  Uncategorized        | Grade: A | avg entities: 8.3 | glossary: 2
+  Buying Guides        | Grade: A | avg entities: 10.0 | glossary: 0
+  Pet Care             | Grade: B | avg entities: 6.5 | glossary: 0

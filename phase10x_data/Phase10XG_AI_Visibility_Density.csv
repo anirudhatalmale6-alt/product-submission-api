@@ -1,0 +1,21 @@
+cluster,total_posts,ai_ready_posts,ai_visibility_score,answer_saturation,faq_saturation,overall_ai_density
+Dog Supplies,55,55,100,100,62,HIGH
+Product Reviews,43,43,100,100,53,HIGH
+Cat Supplies,32,32,100,100,44,HIGH
+Pet Care,29,29,100,100,49,HIGH
+Cat Toys,15,10,66,66,46,MEDIUM
+Dog Care,12,12,100,100,55,HIGH
+Dog Beds,9,9,100,100,66,HIGH
+Puppy Care,8,8,100,100,72,HIGH
+Dog Toys,8,8,100,100,72,HIGH
+Dog Harnesses,7,7,100,100,57,HIGH
+Training Supplies,6,6,100,100,46,HIGH
+Dog Health,5,5,100,100,48,HIGH
+Pet Beds,4,4,100,100,45,HIGH
+Dog Food,4,4,100,100,100,HIGH
+Uncategorized,3,3,100,100,66,HIGH
+Buying Guides,3,3,100,100,40,HIGH
+Pet Health,3,3,100,100,40,HIGH
+Interactive Toys,2,2,100,100,60,HIGH
+Orthopaedic Care,2,2,100,100,80,HIGH
+Indoor Cats,1,1,100,100,40,HIGH

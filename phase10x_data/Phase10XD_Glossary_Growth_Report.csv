@@ -1,0 +1,15 @@
+post_id,title,status,cluster,is_glossary_page,has_definitions,product_type_entities,care_concept_entities,safety_entities,behavioral_entities,material_entities,total_entity_mentions,entity_density
+5419,Cat Care Basics: A Glossary for New Cat Owners,draft,Cat Supplies,YES,NO,7,5,3,1,1,17,HIGH
+5418,Dog Harness Types Explained: Finding the Right Fit,draft,Dog Harnesses,YES,YES,3,1,1,0,1,6,MEDIUM
+5417,Puppy Care Essentials: Key Terms Every New Owner Should Know,draft,Dog Care,YES,YES,3,4,4,3,1,15,HIGH
+5416,Dog Bed Types Explained: A Complete Glossary,draft,Dog Beds,YES,YES,5,0,0,2,2,9,MEDIUM
+5415,Dog Play Styles Explained: Understanding How Your Dog Plays,draft,Uncategorized,YES,YES,2,3,1,2,2,10,HIGH
+5414,Cat Toy Types Explained: A Complete Glossary,draft,Uncategorized,YES,YES,2,2,1,1,0,6,MEDIUM
+4789,Best Types of Dog Toys for Different Play Styles,publish,Dog Supplies,YES,YES,2,1,2,2,2,9,MEDIUM
+4784,"Dog Bed Materials Explained: Foam, Memory Foam, and More",publish,Dog Beds,YES,YES,1,0,0,0,3,4,LOW
+4570,First-Time Dog Owner Essentials: What You Need to Know,publish,Dog Care,YES,YES,8,5,2,3,0,18,HIGH
+4571,Pet First Aid Basics: What Every Owner Should Know,publish,Dog Supplies,YES,NO,0,1,2,0,0,3,LOW
+4563,Dog Grooming Basics: A Complete Guide for Owners,publish,Dog Care,YES,YES,2,2,0,0,2,6,MEDIUM
+4411,"Dog Harnesses: The Complete Guide to Types, Fitting, and Safety",publish,Dog Care,YES,YES,3,3,1,0,0,7,MEDIUM
+4321,Best Cat Litter UK (2026) – Types & Comparison Guide,publish,Cat Supplies,YES,YES,1,0,1,0,0,2,LOW
+4132,Best Puppy Training Guide UK (2026) – First Year Essentials,publish,Dog Supplies,YES,YES,2,4,1,2,0,9,MEDIUM

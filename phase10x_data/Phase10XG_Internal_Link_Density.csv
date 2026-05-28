@@ -1,0 +1,21 @@
+cluster,total_posts,total_outgoing_links,links_per_post,link_density_score,density_level
+Dog Supplies,55,174,3.2,47,MODERATE
+Product Reviews,43,212,4.9,73,STRONG
+Cat Supplies,32,165,5.2,77,STRONG
+Pet Care,29,139,4.8,71,STRONG
+Cat Toys,15,84,5.6,84,STRONG
+Dog Care,12,40,3.3,50,MODERATE
+Dog Beds,9,24,2.7,40,MODERATE
+Puppy Care,8,19,2.4,35,MODERATE
+Dog Toys,8,24,3.0,45,MODERATE
+Dog Harnesses,7,19,2.7,40,MODERATE
+Training Supplies,6,18,3.0,45,MODERATE
+Dog Health,5,13,2.6,39,MODERATE
+Pet Beds,4,12,3.0,45,MODERATE
+Dog Food,4,13,3.2,48,MODERATE
+Uncategorized,3,11,3.7,55,MODERATE
+Buying Guides,3,15,5.0,75,STRONG
+Pet Health,3,9,3.0,45,MODERATE
+Interactive Toys,2,7,3.5,52,MODERATE
+Orthopaedic Care,2,6,3.0,45,MODERATE
+Indoor Cats,1,4,4.0,60,STRONG

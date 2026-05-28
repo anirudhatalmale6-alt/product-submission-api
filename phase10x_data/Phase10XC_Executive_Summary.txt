@@ -1,0 +1,47 @@
+PHASE 10XC — INTERNAL LINK REINFORCEMENT
+Generated: 2026-05-28 16:44
+
+LINK HEALTH SUMMARY:
+  Total posts: 94
+  STRONG: 67
+  MODERATE: 5
+  WEAK: 8
+  ORPHAN: 0
+  NO_INCOMING: 14
+  NO_OUTGOING: 0
+
+TOTAL INTERNAL LINKS: 413
+
+AUTHORITY FLOW BY CLUSTER:
+  Cat Supplies         | STRONG   | 5.2 links/post | cross: 49%
+  Dog Supplies         | STRONG   | 4.5 links/post | cross: 17%
+  Dog Beds             | STRONG   | 5.9 links/post | cross: 0%
+  Cat Toys             | STRONG   | 7.0 links/post | cross: 42%
+  Dog Care             | STRONG   | 3.0 links/post | cross: 0%
+  Dog Health           | STRONG   | 3.0 links/post | cross: 0%
+  Dog Food             | MODERATE | 2.8 links/post | cross: 0%
+  Buying Guides        | STRONG   | 3.0 links/post | cross: 77%
+  Uncategorized        | MODERATE | 2.7 links/post | cross: 100%
+  Dog Harnesses        | MODERATE | 2.0 links/post | cross: 66%
+
+ATTENTION NEEDED (22 posts):
+  ID:5415 | NO_INCOMING  | Dog Play Styles Explained: Understanding How Your 
+  ID:5414 | NO_INCOMING  | Cat Toy Types Explained: A Complete Glossary
+  ID:5296 | NO_INCOMING  | Best Indoor Cat Toys UK (2026): Complete Guide for
+  ID:4573 | WEAK         | Seasonal Pet Safety: Protecting Pets Through the Y
+  ID:4570 | WEAK         | First-Time Dog Owner Essentials: What You Need to 
+  ID:4576 | NO_INCOMING  | Multi-Pet Household Tips: Living with Dogs and Cat
+  ID:4574 | WEAK         | Pet Hydration Guide: How Much Water Does Your Pet 
+  ID:4571 | WEAK         | Pet First Aid Basics: What Every Owner Should Know
+  ID:4568 | WEAK         | Dog Dental Health: A Practical Care Guide
+  ID:4566 | WEAK         | Seasonal Dog Care: Keeping Your Dog Safe Year-Roun
+  ID:4563 | WEAK         | Dog Grooming Basics: A Complete Guide for Owners
+  ID:4415 | WEAK         | Cat Toy Safety Guide: What Every Owner Should Know
+  ID:4414 | NO_INCOMING  | Harness vs Collar: Which Is Better for Your Dog?
+  ID:4413 | NO_INCOMING  | How to Measure Your Dog for a Harness: Step-by-Ste
+  ID:4412 | NO_INCOMING  | No-Pull Dog Harness Guide: How They Work and When 
+  ID:4411 | NO_INCOMING  | Dog Harnesses: The Complete Guide to Types, Fittin
+  ID:4410 | NO_INCOMING  | Cat Enrichment Activities Beyond Toys: Complete Gu
+  ID:4409 | NO_INCOMING  | Kitten vs Adult Cat Toys: Age-Appropriate Play Gui
+  ID:4408 | NO_INCOMING  | How Often Should You Replace Cat Toys? A Practical
+  ID:4407 | NO_INCOMING  | DIY Cat Toys: Safe Homemade Options Your Cat Will 

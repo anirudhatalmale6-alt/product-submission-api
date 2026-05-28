@@ -1,0 +1,27 @@
+PHASE 10XA — FAQ SATURATION ENGINE
+Generated: 2026-05-28 16:42
+
+SUMMARY:
+  Total posts assessed: 94
+  Posts with FAQ gaps: 3
+  AI-FAQ readiness HIGH: 13
+  AI-FAQ readiness MEDIUM: 79
+  AI-FAQ readiness LOW: 2
+
+CLUSTER SATURATION:
+  Cat Supplies         | MODERATE   | avg score: 52.5 | action: EXPAND
+  Dog Supplies         | SATURATED  | avg score: 67.9 | action: MAINTAIN
+  Dog Care             | MODERATE   | avg score: 59.5 | action: EXPAND
+  Dog Beds             | SATURATED  | avg score: 68.8 | action: MAINTAIN
+  Cat Toys             | MODERATE   | avg score: 54.0 | action: EXPAND
+  Dog Health           | MODERATE   | avg score: 53.8 | action: EXPAND
+  Dog Food             | SATURATED  | avg score: 83.8 | action: MAINTAIN
+  Uncategorized        | SATURATED  | avg score: 70.0 | action: MAINTAIN
+  Dog Harnesses        | SATURATED  | avg score: 60.0 | action: MAINTAIN
+  Buying Guides        | MODERATE   | avg score: 50.0 | action: EXPAND
+  Pet Care             | MODERATE   | avg score: 57.5 | action: EXPAND
+
+PRIORITY GAPS (posts needing FAQ expansion):
+  ID:5033 | How to Choose the Right Cat Toy for Your Cat's Per | score: 20
+  ID:5036 | Understanding Cat Play Behaviour: What Different P | score: 20
+  ID:3836 | Best Dog Food UK (2026) - Complete Buying Guide | score: 35

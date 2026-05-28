@@ -1,0 +1,15 @@
+PHASE 10XE — TRUST PAGE MATURITY
+Generated: 2026-05-28 16:47
+
+TRUST PAGES:
+  ID:4402 | DEVELOPING | score:  40 | 548w | How We Research Pet Products
+  ID:4405 | DEVELOPING | score:  40 | 538w | Corrections and Updates Policy
+  ID:4403 | DEVELOPING | score:  40 | 558w | Our Editorial Process
+  ID:3722 | DEVELOPING | score:  55 | 415w | Pet Insurance UK &#8211; Methodology &#038; Trust Framework [RED APPROVAL REQUIRED]
+  ID:2561 | DEVELOPING | score:  55 | 299w | Cookie Policy
+  ID:300 | IMMATURE   | score:  30 | 242w | Affiliate Disclosure
+  ID:297 | DEVELOPING | score:  60 | 384w | Terms and Conditions
+  ID:293 | DEVELOPING | score:  50 | 352w | Privacy Policy
+  ID:39 | MATURE     | score:  80 | 537w | About Us
+
+  MATURE: 1/9

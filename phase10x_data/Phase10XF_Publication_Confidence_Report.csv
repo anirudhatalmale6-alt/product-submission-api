@@ -1,0 +1,12 @@
+cluster,total,published,publish_ready_low_risk,publish_ready,publish_ready_owner_review,review_ready,not_ready,blocked
+Cat Supplies,31,30,0,1,0,0,0,0
+Dog Supplies,21,21,0,0,0,0,0,0
+Dog Care,12,11,0,1,0,0,0,0
+Dog Beds,9,8,0,1,0,0,0,0
+Cat Toys,5,5,0,0,0,0,0,0
+Dog Harnesses,4,3,0,1,0,0,0,0
+Dog Health,4,4,0,0,0,0,0,0
+Dog Food,4,4,0,0,0,0,0,0
+Uncategorized,3,1,2,0,0,0,0,0
+Buying Guides,3,3,0,0,0,0,0,0
+Pet Care,2,2,0,0,0,0,0,0

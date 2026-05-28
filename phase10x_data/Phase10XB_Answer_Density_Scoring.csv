@@ -1,0 +1,12 @@
+cluster,total_posts,quick_answer_coverage,quality_high,quality_medium,quality_low,avg_answer_density,avg_structure_score,cluster_answer_grade
+Cat Supplies,30,100%,27,3,0,68.3,99.5,A
+Dog Supplies,21,100%,20,1,0,66.4,98.3,A
+Dog Care,11,100%,9,2,0,64.1,96.3,A
+Dog Beds,8,100%,8,0,0,65.0,100.0,A
+Cat Toys,5,0%,0,5,0,4.0,83.6,C
+Dog Health,4,100%,4,0,0,60.0,100.0,A
+Dog Food,4,75%,4,0,0,66.2,100.0,A
+Uncategorized,3,100%,2,1,0,48.3,100.0,A
+Dog Harnesses,3,100%,3,0,0,68.3,93.7,A
+Buying Guides,3,100%,3,0,0,55.0,100.0,A
+Pet Care,2,100%,2,0,0,65.0,92.5,A

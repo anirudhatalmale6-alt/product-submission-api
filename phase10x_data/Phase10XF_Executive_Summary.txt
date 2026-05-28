@@ -1,0 +1,25 @@
+PHASE 10XF — PUBLICATION CONFIDENCE SCORING
+Generated: 2026-05-28 16:45
+
+CONFIDENCE DISTRIBUTION:
+  PUBLISHED:                    92
+  PUBLISH_READY_LOW_RISK:       2
+  REVIEW_READY:                 0
+  NOT_READY:                    0
+  BLOCKED:                      0
+
+SAFE PUBLICATION LANE:
+  ID:5419 | PUBLISH_READY | Cat Care Basics: A Glossary for New Cat Owners
+  ID:5418 | PUBLISH_READY | Dog Harness Types Explained: Finding the Right Fit
+  ID:5417 | PUBLISH_READY | Puppy Care Essentials: Key Terms Every New Owner S
+  ID:5416 | PUBLISH_READY | Dog Bed Types Explained: A Complete Glossary
+  ID:5415 | PUBLISH_READY_LOW_RISK | Dog Play Styles Explained: Understanding How Your 
+  ID:5414 | PUBLISH_READY_LOW_RISK | Cat Toy Types Explained: A Complete Glossary
+
+DRAFT POSTS (6):
+  ID:5419 | PUBLISH_READY | Gates pass | Cat Care Basics: A Glossary for New Cat Owners
+  ID:5418 | PUBLISH_READY | Gates pass | Dog Harness Types Explained: Finding the Right Fit
+  ID:5417 | PUBLISH_READY | Gates pass | Puppy Care Essentials: Key Terms Every New Owner S
+  ID:5416 | PUBLISH_READY | Gates pass | Dog Bed Types Explained: A Complete Glossary
+  ID:5415 | PUBLISH_READY_LOW_RISK | All gates pass, educational content | Dog Play Styles Explained: Understanding How Your 
+  ID:5414 | PUBLISH_READY_LOW_RISK | All gates pass, educational content | Cat Toy Types Explained: A Complete Glossary

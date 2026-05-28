@@ -1,0 +1,95 @@
+post_id,title,status,primary_cluster,word_count,faq_sections,individual_faqs,question_count,faq_density_score,conversational_readiness,has_faq_schema,faq_gap,ai_faq_readiness
+5033,How to Choose the Right Cat Toy for Your Cat's Personality,publish,Cat Toys,404,3,0,1,20,8,False,YES,LOW
+5036,Understanding Cat Play Behaviour: What Different Play Styles Mean,publish,Cat Toys,405,3,0,2,20,16,False,YES,LOW
+3836,Best Dog Food UK (2026) - Complete Buying Guide,publish,Dog Food,4038,1,1,15,35,100,False,YES,MEDIUM
+4573,Seasonal Pet Safety: Protecting Pets Through the Year,publish,Pet Care,567,1,2,2,50,16,False,NO,MEDIUM
+4415,Cat Toy Safety Guide: What Every Owner Should Know,publish,Cat Supplies,570,1,2,2,50,16,False,NO,MEDIUM
+4414,Harness vs Collar: Which Is Better for Your Dog?,publish,Dog Care,470,2,2,2,50,16,False,NO,MEDIUM
+4413,How to Measure Your Dog for a Harness: Step-by-Step Guide,publish,Dog Care,575,1,2,4,50,32,False,NO,MEDIUM
+4412,No-Pull Dog Harness Guide: How They Work and When to Use One,publish,Dog Harnesses,531,1,2,2,50,16,False,NO,MEDIUM
+4410,Cat Enrichment Activities Beyond Toys: Complete Guide,publish,Cat Supplies,629,1,2,2,50,16,False,NO,MEDIUM
+4409,Kitten vs Adult Cat Toys: Age-Appropriate Play Guide,publish,Cat Supplies,569,1,2,2,50,16,False,NO,MEDIUM
+4408,How Often Should You Replace Cat Toys? A Practical Guide,publish,Cat Supplies,530,1,2,2,50,16,False,NO,MEDIUM
+4407,DIY Cat Toys: Safe Homemade Options Your Cat Will Love,publish,Cat Supplies,564,1,2,2,50,16,False,NO,MEDIUM
+4335,Best Cat Litter Disposal UK (2026) – Waste Management Guide,publish,Cat Supplies,824,1,2,5,50,40,False,NO,MEDIUM
+4328,Best Self-Cleaning Litter Trays UK (2026) – Automatic Options,publish,Cat Supplies,753,2,2,5,50,40,False,NO,MEDIUM
+4321,Best Cat Litter UK (2026) – Types & Comparison Guide,publish,Cat Supplies,745,1,2,5,50,40,False,NO,MEDIUM
+4307,Best Wall-Mounted Cat Scratchers UK (2026) – Space Saving,publish,Cat Supplies,743,1,2,5,50,40,False,NO,MEDIUM
+4300,Best Cardboard Cat Scratchers UK (2026) – Budget Friendly,publish,Cat Supplies,725,1,2,5,50,40,False,NO,MEDIUM
+4293,Best Cat Trees UK (2026) – Climbing & Scratching Towers,publish,Cat Supplies,777,1,2,5,50,40,False,NO,MEDIUM
+4279,Best Cat Harnesses UK (2026) – Safe Walking Guide,publish,Cat Supplies,782,2,2,5,50,40,False,NO,MEDIUM
+4272,Best Cat ID Tags UK (2026) – Identification Guide,publish,Cat Supplies,794,2,2,5,50,40,False,NO,MEDIUM
+4265,Best Cat GPS Trackers UK (2026) – Location Tracking Guide,publish,Cat Supplies,778,2,2,5,50,40,False,NO,MEDIUM
+4258,Best Cat Collars UK (2026) – Complete Safety Guide,publish,Cat Supplies,911,1,2,5,50,40,False,NO,MEDIUM
+4244,Best Cat Nail Clippers UK (2026) – Safe Trimming Guide,publish,Cat Supplies,760,1,2,5,50,40,False,NO,MEDIUM
+4237,Best Cat Brushes UK (2026) – Guide by Coat Type,publish,Cat Supplies,724,1,2,5,50,40,False,NO,MEDIUM
+4230,Best Cat Grooming Supplies UK (2026) – Complete Guide,publish,Cat Supplies,779,1,2,5,50,40,False,NO,MEDIUM
+4223,Best Cat Window Perches UK (2026) – Sunning & Bird Watching,publish,Cat Supplies,762,2,2,5,50,40,False,NO,MEDIUM
+4209,Best Heated Cat Beds UK (2026) – Winter Warmth Guide,publish,Cat Supplies,731,1,2,5,50,40,False,NO,MEDIUM
+4202,Best Cat Beds UK (2026) – Complete Guide,publish,Cat Supplies,853,1,2,5,50,40,False,NO,MEDIUM
+4195,Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide,publish,Cat Supplies,750,1,2,5,50,40,False,NO,MEDIUM
+4188,Best Catnip Toys UK (2026) – What Works and Why,publish,Cat Supplies,783,3,2,6,50,48,False,NO,MEDIUM
+4181,Best Interactive Cat Toys UK (2026) – Wand & Puzzle Guide,publish,Cat Supplies,726,1,2,5,50,40,False,NO,MEDIUM
+4174,Best Cat Toys UK (2026) – Complete Guide,publish,Cat Supplies,921,2,2,6,50,48,False,NO,MEDIUM
+4146,Best Dog Bowls and Feeding UK (2026) – Complete Guide,publish,Dog Supplies,933,1,2,5,50,40,False,NO,MEDIUM
+4139,Best Dog Training Leads UK (2026) – Long Lines & Harnesses,publish,Dog Supplies,801,1,2,5,50,40,False,NO,MEDIUM
+4132,Best Puppy Training Guide UK (2026) – First Year Essentials,publish,Dog Supplies,774,1,2,5,50,40,False,NO,MEDIUM
+4125,Best Dog Training Treats UK (2026) – Reward Guide,publish,Buying Guides,762,1,2,5,50,40,False,NO,MEDIUM
+4118,Best Dog Training and Behaviour UK (2026) – Complete Guide,publish,Buying Guides,874,1,2,5,50,40,False,NO,MEDIUM
+4103,Best Dog Flea Treatment UK (2026) – Prevention Guide,publish,Dog Health,788,1,2,5,50,40,False,NO,MEDIUM
+4096,Best Dog Dental Care UK (2026) – Teeth Cleaning Guide,publish,Dog Health,810,1,2,5,50,40,False,NO,MEDIUM
+4089,Best Dog Health and Care UK (2026) – Complete Guide,publish,Dog Health,908,1,2,5,50,40,False,NO,MEDIUM
+4078,Best Dog Nail Clippers UK (2026) – Trimming & Grinding Guide,publish,Dog Care,733,1,2,5,50,40,False,NO,MEDIUM
+4071,Best Dog Shampoo UK (2026) – Ingredients & Safety Guide,publish,Dog Care,705,1,2,5,50,40,False,NO,MEDIUM
+4064,Best Dog Brushes UK (2026) – Guide by Coat Type,publish,Dog Care,764,1,2,5,50,40,False,NO,MEDIUM
+696,Essential Cat Supplies for Cat Owners - Number 1 Must-Haves,publish,Buying Guides,594,1,2,2,50,16,False,NO,MEDIUM
+3,Dog Toys UK (2026) – Essential Guide for Pet Owners,publish,Dog Supplies,326,1,2,5,50,40,False,NO,MEDIUM
+5415,Dog Play Styles Explained: Understanding How Your Dog Plays,draft,Uncategorized,793,1,3,7,65,56,False,NO,HIGH
+5414,Cat Toy Types Explained: A Complete Glossary,draft,Uncategorized,761,1,3,3,65,24,False,NO,MEDIUM
+5035,Cat Enrichment Beyond Toys: Creating a Stimulating Home,publish,Cat Toys,1159,4,3,5,65,40,False,NO,MEDIUM
+5034,Cat Toy Rotation: How to Keep Toys Fresh and Engaging,publish,Cat Toys,969,3,3,5,65,40,False,NO,MEDIUM
+4792,Puppy Socialisation: A Complete Timeline Guide,publish,Dog Supplies,807,1,3,3,65,24,False,NO,MEDIUM
+4791,How to Choose the Right Dog Training Treats,publish,Dog Supplies,674,1,3,3,65,24,False,NO,MEDIUM
+4790,DIY Dog Toys: Safe Homemade Options,publish,Dog Supplies,701,1,3,3,65,24,False,NO,MEDIUM
+4789,Best Types of Dog Toys for Different Play Styles,publish,Dog Supplies,769,1,3,7,65,56,False,NO,HIGH
+4788,Mental Stimulation for Dogs: Beyond Physical Exercise,publish,Dog Supplies,755,1,3,3,65,24,False,NO,MEDIUM
+4787,Dog Toy Safety: What Every Owner Needs to Know,publish,Dog Supplies,681,1,3,3,65,24,False,NO,MEDIUM
+4786,Where to Place Your Dog's Bed: Location and Comfort Tips,publish,Dog Beds,784,1,3,3,65,24,False,NO,MEDIUM
+4785,How to Wash and Maintain Your Dog's Bed,publish,Dog Beds,759,1,3,3,65,24,False,NO,MEDIUM
+4784,"Dog Bed Materials Explained: Foam, Memory Foam, and More",publish,Dog Beds,718,1,3,3,65,24,False,NO,MEDIUM
+4783,How to Choose the Right Dog Bed Size,publish,Dog Beds,619,1,3,3,65,24,False,NO,MEDIUM
+4570,First-Time Dog Owner Essentials: What You Need to Know,publish,Dog Care,769,1,3,3,65,24,False,NO,MEDIUM
+4576,Multi-Pet Household Tips: Living with Dogs and Cats Together,publish,Pet Care,713,1,3,3,65,24,False,NO,MEDIUM
+4571,Pet First Aid Basics: What Every Owner Should Know,publish,Dog Supplies,599,1,3,3,65,24,False,NO,MEDIUM
+4568,Dog Dental Health: A Practical Care Guide,publish,Dog Care,626,1,3,3,65,24,False,NO,MEDIUM
+4566,Seasonal Dog Care: Keeping Your Dog Safe Year-Round,publish,Dog Care,635,1,3,3,65,24,False,NO,MEDIUM
+4563,Dog Grooming Basics: A Complete Guide for Owners,publish,Dog Care,656,1,3,3,65,24,False,NO,MEDIUM
+4406,Best Interactive Cat Toys for Indoor Cats: Engagement Guide,publish,Cat Supplies,757,4,3,5,65,40,False,NO,MEDIUM
+4314,Best Cat Litter Trays UK (2026) – Complete Guide,publish,Cat Supplies,988,1,3,7,65,56,False,NO,HIGH
+4286,Best Cat Scratching Posts UK (2026) – Complete Guide,publish,Cat Supplies,934,1,3,6,65,48,False,NO,MEDIUM
+4251,Best Cat Shampoo UK (2026) – When & How to Bathe,publish,Cat Supplies,778,1,3,6,65,48,False,NO,MEDIUM
+4216,Best Cat Radiator Beds UK (2026) – Hook-On Warmth Guide,publish,Cat Supplies,698,1,3,6,65,48,False,NO,MEDIUM
+4167,Best Dog Water Bottles UK (2026) – Travel Hydration Guide,publish,Dog Supplies,791,2,3,6,65,48,False,NO,MEDIUM
+4153,Best Slow Feeder Dog Bowls UK (2026) – Prevent Speed Eating,publish,Dog Supplies,769,1,3,6,65,48,False,NO,MEDIUM
+4110,Best Dog Joint Supplements UK (2026) – Mobility Support Guide,publish,Dog Health,853,1,3,6,65,48,False,NO,MEDIUM
+4057,Best Dog Grooming Supplies UK (2026) – Complete Guide,publish,Dog Care,999,1,3,6,65,48,False,NO,MEDIUM
+4049,Best Puppy Collars UK (2026) – First Collar & Harness Guide,publish,Dog Supplies,735,2,3,6,65,48,False,NO,MEDIUM
+4042,Best Dog Leads UK (2026) – Walking & Training Lead Guide,publish,Dog Supplies,878,1,3,6,65,48,False,NO,MEDIUM
+4034,Best No-Pull Dog Harnesses UK (2026) – Training & Comfort Guide,publish,Dog Harnesses,879,1,3,6,65,48,False,NO,MEDIUM
+4027,Best Dog Collars and Harnesses UK (2026) – Complete Guide,publish,Dog Harnesses,1208,1,3,6,65,48,False,NO,MEDIUM
+4018,Best Puppy Beds UK (2026) – First Bed & Crate Training Guide,publish,Dog Beds,945,2,3,6,65,48,False,NO,MEDIUM
+4011,Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide,publish,Dog Beds,895,1,3,6,65,48,False,NO,MEDIUM
+3996,Best Dog Beds UK (2026) – Complete Guide & Honest Reviews,publish,Dog Beds,1214,1,3,6,65,48,False,NO,MEDIUM
+5296,Best Indoor Cat Toys UK (2026): Complete Guide for House Cats,publish,Uncategorized,1083,1,4,4,80,32,False,NO,MEDIUM
+4574,Pet Hydration Guide: How Much Water Does Your Pet Need?,publish,Dog Supplies,620,1,4,4,80,32,False,NO,MEDIUM
+4411,"Dog Harnesses: The Complete Guide to Types, Fitting, and Safety",publish,Dog Care,817,1,4,4,80,32,False,NO,MEDIUM
+3960,Best Puppy Toys UK (2026) – Teething & First Toys Guide,publish,Dog Supplies,1443,2,4,7,80,56,False,NO,HIGH
+3959,Best Interactive Dog Toys UK (2026) – Puzzle & Enrichment Guide,publish,Dog Supplies,1371,1,4,7,80,56,False,NO,HIGH
+3957,Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers,publish,Dog Supplies,1291,1,4,7,80,56,False,NO,HIGH
+4160,Best Elevated Dog Bowls UK (2026) – Raised Feeder Guide,publish,Dog Supplies,831,1,5,8,95,64,False,NO,HIGH
+4004,Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide,publish,Dog Beds,958,1,5,8,95,64,False,NO,HIGH
+3956,Best Dog Toys UK (2026) – Complete Guide & Honest Reviews,publish,Dog Supplies,1491,1,5,9,95,72,False,NO,HIGH
+5032,Cat Toys FAQ: Common Questions Answered,publish,Cat Toys,709,1,8,10,100,80,False,NO,HIGH
+3839,Best Puppy Food UK (2026) - Growth-Stage Nutrition Guide,publish,Dog Food,1919,2,7,14,100,100,False,NO,HIGH
+3838,Dry vs Wet Dog Food UK - An Honest Comparison Guide,publish,Dog Food,1610,2,7,7,100,56,False,NO,HIGH
+3837,Best Dry Dog Food UK (2026) - Evidence-Based Guide,publish,Dog Food,2717,1,6,13,100,100,False,NO,HIGH

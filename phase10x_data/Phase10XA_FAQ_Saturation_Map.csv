@@ -1,0 +1,12 @@
+cluster,total_posts,faq_high_count,faq_medium_count,faq_low_count,avg_faq_score,total_individual_faqs,total_questions,saturation_level,priority_action
+Cat Supplies,30,1,29,0,52.5,65,142,MODERATE,EXPAND
+Dog Supplies,21,6,15,0,67.9,67,111,SATURATED,MAINTAIN
+Dog Care,11,0,11,0,59.5,29,43,MODERATE,EXPAND
+Dog Beds,8,1,7,0,68.8,26,38,SATURATED,MAINTAIN
+Cat Toys,5,1,2,2,54.0,14,23,MODERATE,EXPAND
+Dog Health,4,0,4,0,53.8,9,21,MODERATE,EXPAND
+Dog Food,4,3,1,0,83.8,21,49,SATURATED,MAINTAIN
+Uncategorized,3,1,2,0,70.0,10,14,SATURATED,MAINTAIN
+Dog Harnesses,3,0,3,0,60.0,8,14,SATURATED,MAINTAIN
+Buying Guides,3,0,3,0,50.0,6,12,MODERATE,EXPAND
+Pet Care,2,0,2,0,57.5,5,5,MODERATE,EXPAND

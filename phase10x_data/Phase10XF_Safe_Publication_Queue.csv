@@ -1,0 +1,7 @@
+post_id,title,status,cluster,word_count,trust_lint,structure,metadata,ai_readiness,crawl_readiness,internal_links,red_gated,publication_confidence,confidence_reason
+5419,Cat Care Basics: A Glossary for New Cat Owners,draft,Cat Supplies,1778,PASS,PASS,PASS,PASS,FAIL,0,NO,PUBLISH_READY,Gates pass
+5418,Dog Harness Types Explained: Finding the Right Fit,draft,Dog Harnesses,1629,PASS,PASS,PASS,PASS,FAIL,0,NO,PUBLISH_READY,Gates pass
+5417,Puppy Care Essentials: Key Terms Every New Owner Should Know,draft,Dog Care,1581,PASS,PASS,PASS,PASS,FAIL,0,NO,PUBLISH_READY,Gates pass
+5416,Dog Bed Types Explained: A Complete Glossary,draft,Dog Beds,1483,PASS,PASS,PASS,PASS,FAIL,0,NO,PUBLISH_READY,Gates pass
+5415,Dog Play Styles Explained: Understanding How Your Dog Plays,draft,Uncategorized,793,PASS,PASS,PASS,PASS,PASS,4,NO,PUBLISH_READY_LOW_RISK,"All gates pass, educational content"
+5414,Cat Toy Types Explained: A Complete Glossary,draft,Uncategorized,761,PASS,PASS,PASS,PASS,PASS,4,NO,PUBLISH_READY_LOW_RISK,"All gates pass, educational content"

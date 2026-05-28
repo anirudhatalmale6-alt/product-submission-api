@@ -1,0 +1,45 @@
+PHASE 10XG — CLUSTER AUTHORITY DENSITY
+Generated: 2026-05-28 16:46
+
+CLUSTER AUTHORITY RANKINGS:
+
+  Dog Supplies         | Grade: A | Score:  85 | Posts: 55 | AI: 100% | Links:  47% | FAQ:  62%
+  Cat Supplies         | Grade: A | Score:  85 | Posts: 32 | AI: 100% | Links:  77% | FAQ:  44%
+  Pet Care             | Grade: A | Score:  85 | Posts: 29 | AI: 100% | Links:  71% | FAQ:  49%
+  Product Reviews      | Grade: A | Score:  82 | Posts: 43 | AI: 100% | Links:  73% | FAQ:  53%
+  Dog Care             | Grade: A | Score:  81 | Posts: 12 | AI: 100% | Links:  50% | FAQ:  55%
+  Dog Toys             | Grade: A | Score:  80 | Posts:  8 | AI: 100% | Links:  45% | FAQ:  72%
+  Dog Beds             | Grade: A | Score:  79 | Posts:  9 | AI: 100% | Links:  40% | FAQ:  66%
+  Dog Harnesses        | Grade: A | Score:  78 | Posts:  7 | AI: 100% | Links:  40% | FAQ:  57%
+  Puppy Care           | Grade: A | Score:  77 | Posts:  8 | AI: 100% | Links:  35% | FAQ:  72%
+  Training Supplies    | Grade: A | Score:  75 | Posts:  6 | AI: 100% | Links:  45% | FAQ:  46%
+  Buying Guides        | Grade: A | Score:  75 | Posts:  3 | AI: 100% | Links:  75% | FAQ:  40%
+  Orthopaedic Care     | Grade: A | Score:  75 | Posts:  2 | AI: 100% | Links:  45% | FAQ:  80%
+  Uncategorized        | Grade: B | Score:  74 | Posts:  3 | AI: 100% | Links:  55% | FAQ:  66%
+  Dog Health           | Grade: B | Score:  73 | Posts:  5 | AI: 100% | Links:  39% | FAQ:  48%
+  Interactive Toys     | Grade: B | Score:  73 | Posts:  2 | AI: 100% | Links:  52% | FAQ:  60%
+  Pet Beds             | Grade: B | Score:  71 | Posts:  4 | AI: 100% | Links:  45% | FAQ:  45%
+  Dog Food             | Grade: B | Score:  71 | Posts:  4 | AI: 100% | Links:  48% | FAQ: 100%
+  Indoor Cats          | Grade: B | Score:  71 | Posts:  1 | AI: 100% | Links:  60% | FAQ:  40%
+  Pet Health           | Grade: B | Score:  70 | Posts:  3 | AI: 100% | Links:  45% | FAQ:  40%
+  Cat Toys             | Grade: B | Score:  68 | Posts: 15 | AI:  66% | Links:  84% | FAQ:  46%
+
+GRADE DISTRIBUTION:
+  Grade A: 12 clusters
+  Grade B: 8 clusters
+  Grade C: 0 clusters
+  Grade D: 0 clusters
+
+HIGHEST AUTHORITY OPPORTUNITIES:
+  Dog Supplies: score 85, 55 posts, 53 published
+  Cat Supplies: score 85, 32 posts, 31 published
+  Pet Care: score 85, 29 posts, 28 published
+  Product Reviews: score 82, 43 posts, 43 published
+  Dog Care: score 81, 12 posts, 11 published
+
+WEAKEST CLUSTERS (growth priority):
+  Cat Toys: score 68, gaps: entity   
+  Pet Health: score 70, gaps: entity   
+  Pet Beds: score 71, gaps: entity   
+  Dog Food: score 71, gaps: entity   
+  Indoor Cats: score 71, gaps: entity   

@@ -1,0 +1,23 @@
+post_id,title,status,cluster,outgoing_links,incoming_links,link_health,hub_reinforcement,spoke_reinforcement,needs_attention
+5415,Dog Play Styles Explained: Understanding How Your Dog Plays,draft,Uncategorized,4,0,NO_INCOMING,YES,NO,YES
+5414,Cat Toy Types Explained: A Complete Glossary,draft,Uncategorized,4,0,NO_INCOMING,YES,NO,YES
+5296,Best Indoor Cat Toys UK (2026): Complete Guide for House Cats,publish,Uncategorized,3,0,NO_INCOMING,YES,NO,YES
+4573,Seasonal Pet Safety: Protecting Pets Through the Year,publish,Pet Care,1,24,WEAK,NO,YES,YES
+4570,First-Time Dog Owner Essentials: What You Need to Know,publish,Dog Care,1,1,WEAK,NO,NO,YES
+4576,Multi-Pet Household Tips: Living with Dogs and Cats Together,publish,Pet Care,1,0,NO_INCOMING,NO,NO,YES
+4574,Pet Hydration Guide: How Much Water Does Your Pet Need?,publish,Dog Supplies,1,24,WEAK,NO,YES,YES
+4571,Pet First Aid Basics: What Every Owner Should Know,publish,Dog Supplies,1,24,WEAK,NO,YES,YES
+4568,Dog Dental Health: A Practical Care Guide,publish,Dog Care,1,7,WEAK,NO,YES,YES
+4566,Seasonal Dog Care: Keeping Your Dog Safe Year-Round,publish,Dog Care,1,7,WEAK,NO,YES,YES
+4563,Dog Grooming Basics: A Complete Guide for Owners,publish,Dog Care,1,7,WEAK,NO,YES,YES
+4415,Cat Toy Safety Guide: What Every Owner Should Know,publish,Cat Supplies,4,1,WEAK,YES,NO,YES
+4414,Harness vs Collar: Which Is Better for Your Dog?,publish,Dog Care,4,0,NO_INCOMING,YES,NO,YES
+4413,How to Measure Your Dog for a Harness: Step-by-Step Guide,publish,Dog Care,4,0,NO_INCOMING,YES,NO,YES
+4412,No-Pull Dog Harness Guide: How They Work and When to Use One,publish,Dog Harnesses,1,0,NO_INCOMING,NO,NO,YES
+4411,"Dog Harnesses: The Complete Guide to Types, Fitting, and Safety",publish,Dog Care,4,0,NO_INCOMING,YES,NO,YES
+4410,Cat Enrichment Activities Beyond Toys: Complete Guide,publish,Cat Supplies,4,0,NO_INCOMING,YES,NO,YES
+4409,Kitten vs Adult Cat Toys: Age-Appropriate Play Guide,publish,Cat Supplies,4,0,NO_INCOMING,YES,NO,YES
+4408,How Often Should You Replace Cat Toys? A Practical Guide,publish,Cat Supplies,4,0,NO_INCOMING,YES,NO,YES
+4407,DIY Cat Toys: Safe Homemade Options Your Cat Will Love,publish,Cat Supplies,1,0,NO_INCOMING,NO,NO,YES
+696,Essential Cat Supplies for Cat Owners - Number 1 Must-Haves,publish,Buying Guides,9,0,NO_INCOMING,YES,NO,YES
+3,Dog Toys UK (2026) – Essential Guide for Pet Owners,publish,Dog Supplies,5,0,NO_INCOMING,YES,NO,YES

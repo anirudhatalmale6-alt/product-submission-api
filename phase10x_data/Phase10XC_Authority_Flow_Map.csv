@@ -1,0 +1,11 @@
+cluster,total_posts,internal_links,cross_cluster_links,total_links,links_per_post,authority_flow,cross_cluster_ratio
+Cat Supplies,30,80,77,157,5.2,STRONG,49%
+Dog Supplies,21,78,17,95,4.5,STRONG,17%
+Dog Beds,8,47,0,47,5.9,STRONG,0%
+Cat Toys,5,20,15,35,7.0,STRONG,42%
+Dog Care,11,33,0,33,3.0,STRONG,0%
+Dog Health,4,12,0,12,3.0,STRONG,0%
+Dog Food,4,11,0,11,2.8,MODERATE,0%
+Buying Guides,3,2,7,9,3.0,STRONG,77%
+Uncategorized,3,0,8,8,2.7,MODERATE,100%
+Dog Harnesses,3,2,4,6,2.0,MODERATE,66%

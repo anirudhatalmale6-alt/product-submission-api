@@ -1,0 +1,94 @@
+post_id,title,status,cluster,word_count,trust_lint,structure,metadata,ai_readiness,crawl_readiness,internal_links,red_gated,publication_confidence,confidence_reason
+5419,Cat Care Basics: A Glossary for New Cat Owners,draft,Cat Supplies,1778,PASS,PASS,PASS,PASS,FAIL,0,NO,PUBLISH_READY,Gates pass
+5418,Dog Harness Types Explained: Finding the Right Fit,draft,Dog Harnesses,1629,PASS,PASS,PASS,PASS,FAIL,0,NO,PUBLISH_READY,Gates pass
+5417,Puppy Care Essentials: Key Terms Every New Owner Should Know,draft,Dog Care,1581,PASS,PASS,PASS,PASS,FAIL,0,NO,PUBLISH_READY,Gates pass
+5416,Dog Bed Types Explained: A Complete Glossary,draft,Dog Beds,1483,PASS,PASS,PASS,PASS,FAIL,0,NO,PUBLISH_READY,Gates pass
+5415,Dog Play Styles Explained: Understanding How Your Dog Plays,draft,Uncategorized,793,PASS,PASS,PASS,PASS,PASS,4,NO,PUBLISH_READY_LOW_RISK,"All gates pass, educational content"
+5414,Cat Toy Types Explained: A Complete Glossary,draft,Uncategorized,761,PASS,PASS,PASS,PASS,PASS,4,NO,PUBLISH_READY_LOW_RISK,"All gates pass, educational content"
+5296,Best Indoor Cat Toys UK (2026): Complete Guide for House Cats,publish,Uncategorized,1083,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4792,Puppy Socialisation: A Complete Timeline Guide,publish,Dog Supplies,807,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4791,How to Choose the Right Dog Training Treats,publish,Dog Supplies,674,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4790,DIY Dog Toys: Safe Homemade Options,publish,Dog Supplies,701,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4789,Best Types of Dog Toys for Different Play Styles,publish,Dog Supplies,769,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4788,Mental Stimulation for Dogs: Beyond Physical Exercise,publish,Dog Supplies,755,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4787,Dog Toy Safety: What Every Owner Needs to Know,publish,Dog Supplies,681,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4786,Where to Place Your Dog's Bed: Location and Comfort Tips,publish,Dog Beds,784,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4785,How to Wash and Maintain Your Dog's Bed,publish,Dog Beds,759,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4784,"Dog Bed Materials Explained: Foam, Memory Foam, and More",publish,Dog Beds,718,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4783,How to Choose the Right Dog Bed Size,publish,Dog Beds,619,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4573,Seasonal Pet Safety: Protecting Pets Through the Year,publish,Pet Care,567,PASS,PASS,PASS,PASS,PASS,1,NO,PUBLISHED,Live
+4570,First-Time Dog Owner Essentials: What You Need to Know,publish,Dog Care,769,PASS,PASS,PASS,PASS,PASS,1,NO,PUBLISHED,Live
+4576,Multi-Pet Household Tips: Living with Dogs and Cats Together,publish,Pet Care,713,PASS,PASS,PASS,PASS,PASS,1,NO,PUBLISHED,Live
+4574,Pet Hydration Guide: How Much Water Does Your Pet Need?,publish,Dog Supplies,620,PASS,PASS,PASS,PASS,PASS,1,NO,PUBLISHED,Live
+4571,Pet First Aid Basics: What Every Owner Should Know,publish,Dog Supplies,599,PASS,PASS,PASS,PASS,PASS,1,NO,PUBLISHED,Live
+4568,Dog Dental Health: A Practical Care Guide,publish,Dog Care,626,PASS,PASS,PASS,PASS,PASS,1,NO,PUBLISHED,Live (evidence-sensitive - monitor)
+4566,Seasonal Dog Care: Keeping Your Dog Safe Year-Round,publish,Dog Care,635,PASS,PASS,PASS,PASS,PASS,1,NO,PUBLISHED,Live
+4563,Dog Grooming Basics: A Complete Guide for Owners,publish,Dog Care,656,PASS,PASS,PASS,PASS,PASS,1,NO,PUBLISHED,Live
+4415,Cat Toy Safety Guide: What Every Owner Should Know,publish,Cat Supplies,570,PASS,PASS,PASS,PASS,PASS,4,NO,PUBLISHED,Live
+4406,Best Interactive Cat Toys for Indoor Cats: Engagement Guide,publish,Cat Supplies,757,PASS,PASS,PASS,PASS,PASS,7,NO,PUBLISHED,Live
+4414,Harness vs Collar: Which Is Better for Your Dog?,publish,Dog Care,470,PASS,PASS,PASS,PASS,PASS,4,NO,PUBLISHED,Live
+4413,How to Measure Your Dog for a Harness: Step-by-Step Guide,publish,Dog Care,575,PASS,PASS,PASS,PASS,PASS,4,NO,PUBLISHED,Live
+4412,No-Pull Dog Harness Guide: How They Work and When to Use One,publish,Dog Harnesses,531,PASS,PASS,PASS,PASS,PASS,1,NO,PUBLISHED,Live
+4411,"Dog Harnesses: The Complete Guide to Types, Fitting, and Safety",publish,Dog Care,817,PASS,PASS,PASS,PASS,PASS,4,NO,PUBLISHED,Live
+4410,Cat Enrichment Activities Beyond Toys: Complete Guide,publish,Cat Supplies,629,PASS,PASS,PASS,PASS,PASS,4,NO,PUBLISHED,Live
+4409,Kitten vs Adult Cat Toys: Age-Appropriate Play Guide,publish,Cat Supplies,569,PASS,PASS,PASS,PASS,PASS,4,NO,PUBLISHED,Live
+4408,How Often Should You Replace Cat Toys? A Practical Guide,publish,Cat Supplies,530,PASS,PASS,PASS,PASS,PASS,4,NO,PUBLISHED,Live
+4407,DIY Cat Toys: Safe Homemade Options Your Cat Will Love,publish,Cat Supplies,564,PASS,PASS,PASS,PASS,PASS,1,NO,PUBLISHED,Live
+4335,Best Cat Litter Disposal UK (2026) – Waste Management Guide,publish,Cat Supplies,824,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4328,Best Self-Cleaning Litter Trays UK (2026) – Automatic Options,publish,Cat Supplies,753,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4321,Best Cat Litter UK (2026) – Types & Comparison Guide,publish,Cat Supplies,745,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4314,Best Cat Litter Trays UK (2026) – Complete Guide,publish,Cat Supplies,988,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4307,Best Wall-Mounted Cat Scratchers UK (2026) – Space Saving,publish,Cat Supplies,743,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4300,Best Cardboard Cat Scratchers UK (2026) – Budget Friendly,publish,Cat Supplies,725,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4293,Best Cat Trees UK (2026) – Climbing & Scratching Towers,publish,Cat Supplies,777,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4286,Best Cat Scratching Posts UK (2026) – Complete Guide,publish,Cat Supplies,934,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4279,Best Cat Harnesses UK (2026) – Safe Walking Guide,publish,Cat Supplies,782,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4272,Best Cat ID Tags UK (2026) – Identification Guide,publish,Cat Supplies,794,PASS,PASS,PASS,PASS,PASS,5,NO,PUBLISHED,Live
+4265,Best Cat GPS Trackers UK (2026) – Location Tracking Guide,publish,Cat Supplies,778,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4258,Best Cat Collars UK (2026) – Complete Safety Guide,publish,Cat Supplies,911,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4251,Best Cat Shampoo UK (2026) – When & How to Bathe,publish,Cat Supplies,778,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4244,Best Cat Nail Clippers UK (2026) – Safe Trimming Guide,publish,Cat Supplies,760,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4237,Best Cat Brushes UK (2026) – Guide by Coat Type,publish,Cat Supplies,724,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4230,Best Cat Grooming Supplies UK (2026) – Complete Guide,publish,Cat Supplies,779,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4223,Best Cat Window Perches UK (2026) – Sunning & Bird Watching,publish,Cat Supplies,762,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4216,Best Cat Radiator Beds UK (2026) – Hook-On Warmth Guide,publish,Cat Supplies,698,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4209,Best Heated Cat Beds UK (2026) – Winter Warmth Guide,publish,Cat Supplies,731,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4202,Best Cat Beds UK (2026) – Complete Guide,publish,Cat Supplies,853,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4195,Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide,publish,Cat Supplies,750,PASS,PASS,PASS,PASS,PASS,4,NO,PUBLISHED,Live
+4188,Best Catnip Toys UK (2026) – What Works and Why,publish,Cat Supplies,783,PASS,PASS,PASS,PASS,PASS,9,NO,PUBLISHED,Live
+4181,Best Interactive Cat Toys UK (2026) – Wand & Puzzle Guide,publish,Cat Supplies,726,PASS,PASS,PASS,PASS,PASS,4,NO,PUBLISHED,Live
+4174,Best Cat Toys UK (2026) – Complete Guide,publish,Cat Supplies,921,PASS,PASS,PASS,PASS,PASS,8,NO,PUBLISHED,Live
+4167,Best Dog Water Bottles UK (2026) – Travel Hydration Guide,publish,Dog Supplies,791,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4160,Best Elevated Dog Bowls UK (2026) – Raised Feeder Guide,publish,Dog Supplies,831,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4153,Best Slow Feeder Dog Bowls UK (2026) – Prevent Speed Eating,publish,Dog Supplies,769,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4146,Best Dog Bowls and Feeding UK (2026) – Complete Guide,publish,Dog Supplies,933,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4139,Best Dog Training Leads UK (2026) – Long Lines & Harnesses,publish,Dog Supplies,801,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4132,Best Puppy Training Guide UK (2026) – First Year Essentials,publish,Dog Supplies,774,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4125,Best Dog Training Treats UK (2026) – Reward Guide,publish,Buying Guides,762,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4118,Best Dog Training and Behaviour UK (2026) – Complete Guide,publish,Buying Guides,874,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4110,Best Dog Joint Supplements UK (2026) – Mobility Support Guide,publish,Dog Health,853,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live (evidence-sensitive - monitor)
+4103,Best Dog Flea Treatment UK (2026) – Prevention Guide,publish,Dog Health,788,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live (evidence-sensitive - monitor)
+4096,Best Dog Dental Care UK (2026) – Teeth Cleaning Guide,publish,Dog Health,810,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live (evidence-sensitive - monitor)
+4089,Best Dog Health and Care UK (2026) – Complete Guide,publish,Dog Health,908,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live (evidence-sensitive - monitor)
+4078,Best Dog Nail Clippers UK (2026) – Trimming & Grinding Guide,publish,Dog Care,733,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4071,Best Dog Shampoo UK (2026) – Ingredients & Safety Guide,publish,Dog Care,705,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4064,Best Dog Brushes UK (2026) – Guide by Coat Type,publish,Dog Care,764,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4057,Best Dog Grooming Supplies UK (2026) – Complete Guide,publish,Dog Care,999,PASS,PASS,PASS,PASS,PASS,6,NO,PUBLISHED,Live
+4049,Best Puppy Collars UK (2026) – First Collar & Harness Guide,publish,Dog Supplies,735,PASS,PASS,PASS,PASS,PASS,2,NO,PUBLISHED,Live
+4042,Best Dog Leads UK (2026) – Walking & Training Lead Guide,publish,Dog Supplies,878,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4034,Best No-Pull Dog Harnesses UK (2026) – Training & Comfort Guide,publish,Dog Harnesses,879,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4027,Best Dog Collars and Harnesses UK (2026) – Complete Guide,publish,Dog Harnesses,1208,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4018,Best Puppy Beds UK (2026) – First Bed & Crate Training Guide,publish,Dog Beds,945,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4011,Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide,publish,Dog Beds,895,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+4004,Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide,publish,Dog Beds,958,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+3996,Best Dog Beds UK (2026) – Complete Guide & Honest Reviews,publish,Dog Beds,1214,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+3960,Best Puppy Toys UK (2026) – Teething & First Toys Guide,publish,Dog Supplies,1443,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+3959,Best Interactive Dog Toys UK (2026) – Puzzle & Enrichment Guide,publish,Dog Supplies,1371,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+3957,Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers,publish,Dog Supplies,1291,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+3956,Best Dog Toys UK (2026) – Complete Guide & Honest Reviews,publish,Dog Supplies,1491,PASS,PASS,PASS,PASS,PASS,3,NO,PUBLISHED,Live
+3839,Best Puppy Food UK (2026) - Growth-Stage Nutrition Guide,publish,Dog Food,1919,FAIL,PASS,PASS,PASS,PASS,4,NO,PUBLISHED,Live (evidence-sensitive - monitor)
+3838,Dry vs Wet Dog Food UK - An Honest Comparison Guide,publish,Dog Food,1610,FAIL,PASS,PASS,PASS,PASS,4,NO,PUBLISHED,Live (evidence-sensitive - monitor)
+3837,Best Dry Dog Food UK (2026) - Evidence-Based Guide,publish,Dog Food,2717,FAIL,PASS,PASS,PASS,PASS,4,NO,PUBLISHED,Live (evidence-sensitive - monitor)
+3836,Best Dog Food UK (2026) - Complete Buying Guide,publish,Dog Food,4038,FAIL,PASS,PASS,PASS,PASS,1,NO,PUBLISHED,Live (evidence-sensitive - monitor)
+696,Essential Cat Supplies for Cat Owners - Number 1 Must-Haves,publish,Buying Guides,594,PASS,PASS,PASS,PASS,PASS,9,NO,PUBLISHED,Live
+3,Dog Toys UK (2026) – Essential Guide for Pet Owners,publish,Dog Supplies,326,PASS,PASS,PASS,PASS,FAIL,5,NO,PUBLISHED,Live
