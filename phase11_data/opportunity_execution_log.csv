@@ -1,0 +1,13 @@
+post_id,title,cluster,opportunity_type,status,word_count,has_faq,has_comparison,uk_signals
+12756,Catio Kits UK: Complete Guide to Outdoor Cat Enclosures,Indoor Cats,low_competition + AI_answer,draft_created,619,yes,yes,"UK_pricing, UK_focus, UK_regulations"
+12757,DIY Catio Plans: How to Build a Cat Enclosure in the UK,Indoor Cats,how_to + AI_answer,draft_created,593,yes,yes,"UK_pricing, UK_focus, UK_brands"
+12758,Indoor Cat Exercise: Daily Routines to Keep UK Cats Active,Indoor Cats,AI_answer + UK_gap,draft_created,668,yes,yes,UK_focus
+12759,Multi-Pet Household Management: UK Guide for Harmony,Pet Care,UK_gap + AI_answer,draft_created,663,yes,yes,"UK_pricing, UK_focus, UK_regulations"
+12760,Seasonal Pet Care Calendar UK: Monthly Guide for Pet Owners,Pet Care,UK_gap + AI_answer,draft_created,631,yes,yes,UK_focus
+12761,First-Time Pet Owner UK: Complete Beginner Guide,Pet Care,UK_gap + AI_answer,draft_created,725,yes,yes,"UK_pricing, UK_focus, UK_brands, UK_regulations"
+12762,Dog Coats and Jackets UK: Choosing the Right One,Dog Supplies,low_competition + UK_gap,draft_created,594,yes,yes,"UK_pricing, UK_focus, UK_brands"
+12763,Dog Travel Accessories UK: Essential Gear for UK Trips,Dog Supplies,UK_gap + low_competition,draft_created,645,yes,yes,"UK_pricing, UK_focus, UK_regulations"
+12764,Dog Feeding Station Setup: Complete Guide for UK Owners,Dog Supplies,low_competition + AI_answer,draft_created,680,yes,yes,"UK_pricing, UK_focus"
+12765,DIY Cat Toys from Household Items: Easy Projects,Cat Toys,AI_answer + low_competition,draft_created,644,yes,no,
+12766,Cat Puzzle Feeders UK: Guide to Food Puzzles for Cats,Cat Toys,UK_gap + AI_answer,draft_created,646,yes,yes,"UK_pricing, UK_focus"
+12767,Interactive Cat Toys for Solo Play UK: Keep Cats Busy,Cat Toys,UK_gap + AI_answer,draft_created,612,yes,yes,"UK_pricing, UK_focus, UK_brands"
