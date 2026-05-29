@@ -1,0 +1,13 @@
+week,target_category,targets_count,template,seasonal_hook,expected_response_rate
+Week 1,UK Pet Blog,5,pet_blog_outreach.txt,"Summer pet safety content — heatwave guides, travel tips",15-25%
+Week 2,UK Pet Blog,5,pet_blog_outreach.txt,"Summer pet safety content — garden dangers, water safety",15-25%
+Week 3,Rescue Organization,5,rescue_org_outreach.txt,"Summer adoption campaigns, holiday pet care resources",10-15%
+Week 4,Rescue Organization,5,rescue_org_outreach.txt,"Post-summer rehoming prevention, back-to-school pet adjustment",10-15%
+Week 5,Animal Welfare Group,5,welfare_group_outreach.txt,"Autumn health alerts, tick season data, conker warnings",5-10%
+Week 6,UK Pet Blog,5,pet_blog_outreach.txt,"Autumn pet content — fireworks prep, darker evenings safety",15-25%
+Week 7,Local News / Press,5,news_pitch.txt,"Fireworks Night data — pet anxiety stats, safety tips, local angles",3-8%
+Week 8,UK Pet Blog,5,pet_blog_outreach.txt,"Winter pet care — cold weather, indoor enrichment, Christmas prep",15-25%
+Week 9,Pet Forum / Community,5,forum_engagement.txt,"Christmas pet safety discussions, gift guides, seasonal advice",N/A (community building)
+Week 10,Animal Welfare Group,5,welfare_group_outreach.txt,"Christmas puppy campaign, New Year pet resolutions data",5-10%
+Week 11,Local News / Press,5,news_pitch.txt,"Christmas pet dangers, New Year fireworks, January rehoming stats",5-10%
+Week 12,Pet Forum / Community + Rescue Organization (follow-up),10,forum_engagement.txt + rescue_org_outreach.txt,"New Year pet health check-ups, winter safety, resolution content",Mixed

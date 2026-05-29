@@ -1,0 +1,9 @@
+event,trigger,ga4_event,priority
+email_signup,Newsletter form submission,generate_lead,high
+lead_magnet_download,PDF download click,file_download,high
+product_link_click,Outbound product link click,click,high
+comparison_table_view,Comparison table scroll into view,view_item_list,medium
+faq_expand,FAQ accordion click,select_content,low
+internal_nav,Related article click,click,medium
+scroll_depth_75,75% page scroll,scroll,medium
+time_on_page_60s,60 seconds on page,user_engagement,low

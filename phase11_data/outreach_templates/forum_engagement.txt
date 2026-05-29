@@ -1,0 +1,131 @@
+===============================================================================
+FORUM & COMMUNITY ENGAGEMENT GUIDE
+PetHub Online — Digital PR Phase 11U
+===============================================================================
+
+This is NOT an email template — it's an operational guide for genuine
+community participation that builds brand awareness and authority naturally.
+
+===============================================================================
+SECTION 1: CORE PRINCIPLES
+===============================================================================
+
+  1. BE GENUINELY HELPFUL FIRST
+     Every post should provide real value. If you can't help without
+     linking to PetHub, don't link. Simple as that.
+
+  2. ESTABLISH BEFORE YOU SHARE
+     Build a reputation in each community before EVER sharing a PetHub
+     link:
+       - Minimum 20-30 helpful posts before any self-referencing
+       - Reply to others' questions with genuine expertise
+       - Share personal experiences (real ones)
+
+  3. FOLLOW COMMUNITY RULES
+     Every forum has self-promotion rules. Read them. Follow them.
+     Getting banned helps no one.
+
+  4. ONE PERSON, ONE ACCOUNT
+     Never use multiple accounts or sockpuppets. This will destroy your
+     reputation permanently.
+
+===============================================================================
+SECTION 2: HOW TO PARTICIPATE GENUINELY
+===============================================================================
+
+  DAILY ACTIVITIES (15-20 minutes):
+    - Browse new posts in your target communities
+    - Answer 2-3 questions where you have genuine expertise
+    - Upvote/like other helpful responses
+    - Share relevant personal anecdotes
+
+  WEEKLY ACTIVITIES (30 minutes):
+    - Start 1 discussion thread on a topic you're knowledgeable about
+    - Share a useful tip or data point (NOT linked to PetHub)
+    - Engage in ongoing conversations you've contributed to
+
+  MONTHLY ACTIVITIES:
+    - Review which communities you're most active in
+    - Identify threads where a PetHub resource would genuinely help
+    - Share PetHub content ONLY when it's the best answer available
+
+===============================================================================
+SECTION 3: WHEN TO SHARE PETHUB CONTENT (Natural Sharing)
+===============================================================================
+
+  DO share a PetHub link when:
+    [✓] Someone has asked a specific question that your content answers
+        comprehensively
+    [✓] You've written a detailed reply AND a link adds extra depth
+    [✓] The content is genuinely the best resource for their question
+    [✓] You disclose your affiliation ("I work with PetHub Online...")
+    [✓] The community rules explicitly allow resource sharing
+
+  DO NOT share a PetHub link when:
+    [✗] You're just dropping a link without context
+    [✗] Someone else has already answered adequately
+    [✗] The post is about something PetHub doesn't cover well
+    [✗] You haven't established yourself in the community yet
+    [✗] The forum rules prohibit self-promotion
+    [✗] You're replying to your own post/thread
+
+===============================================================================
+SECTION 4: WHAT NOT TO DO (Critical)
+===============================================================================
+
+  NEVER:
+    - Spam links in multiple threads
+    - Create fake questions to answer with PetHub links
+    - Use multiple accounts to upvote your own posts
+    - Copy-paste the same response across communities
+    - Disguise promotional content as organic advice
+    - Argue with people who criticise your content
+    - Post in threads older than 30 days just to add a link
+    - Use a community ONLY for link building — that's not engagement
+    - Ignore negative feedback about your content (learn from it)
+
+  REMEMBER:
+    One genuine, helpful community member who happens to work for PetHub
+    is worth more than 100 spam links that get deleted and reported.
+
+===============================================================================
+SECTION 5: COMMUNITY-SPECIFIC NOTES
+===============================================================================
+
+  REDDIT:
+    - Disclose affiliation in your profile bio
+    - Reddit's self-promotion rule: <10% of posts should be your own links
+    - Build karma through genuinely helpful comments first
+    - r/UKPets is small but targeted; r/CasualUK is large but strict
+
+  PETFORUMS.CO.UK:
+    - Long-established community with experienced members
+    - Respect the expertise of long-standing members
+    - Add your website to your forum signature (most forums allow this)
+    - Participate in breed-specific sub-forums
+
+  MUMSNET:
+    - Family-focused — frame all content around children + pet safety
+    - "The Litter Tray" is the pet section
+    - Very direct community — be authentic, not corporate
+
+  FACEBOOK GROUPS:
+    - Vary wildly in quality and rules
+    - Ask admin permission before sharing any links
+    - Photo + story posts get far more engagement than link posts
+    - Respond to comments on your posts promptly
+
+===============================================================================
+SECTION 6: TRACKING
+===============================================================================
+
+  For each community, track:
+    - Date joined
+    - Number of helpful posts (no links)
+    - Number of posts with PetHub links
+    - Ratio (should be 10:1 or higher, helpful:promotional)
+    - Traffic referred (use UTM: ?utm_source=forum&utm_medium=community
+      &utm_campaign=[forum_name])
+    - Sentiment (are people responding positively?)
+
+===============================================================================
