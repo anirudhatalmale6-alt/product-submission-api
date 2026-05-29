@@ -1,0 +1,575 @@
+Found 59 posts in target clusters (Dog Toys + Uncategorized)
+
+############################################################
+Phase 10BU Dog Toys + Uncategorized Cluster Enrichment
+Total posts to process: 59
+############################################################
+
+============================================================
+Processing: [3960] Best Puppy Toys UK (2026) – Teething & First Toys Guide (Dog Toys)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [3957] Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers (Dog Toys)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5467] Pet Feeding Guide: Understanding Portions, Schedules, and Methods (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'glossary']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Key Terms already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5509] Pet Toy Safety: Understanding Materials, Hazards, and Standards (Uncategorized)
+  Needed blocks: ['research_sources', 'practical_guide']
+  ~ Research Sources already exists, skipping
+  ~ Practical guide already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5460] Pet Nutrition Terminology: A Guide to Common Terms on Pet Food Labels (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5522] Orthopaedic Care for Dogs: Joint Health, Mobility, and Support (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'at_a_glance', 'glossary']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Key Terms already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5510] Dog Bed Sizing Guide: How to Measure Your Dog and Choose the Right Fit (Uncategorized)
+  Needed blocks: ['comparison_table', 'practical_guide', 'at_a_glance', 'glossary']
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Key Terms already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5523] Dog Training Equipment Explained: Tools, Uses, and What to Avoid (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'glossary']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Key Terms already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5520] Dog Health Basics: Common Conditions, Prevention, and When to See a Vet (Uncategorized)
+  Needed blocks: ['comparison_table', 'practical_guide', 'at_a_glance']
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5464] Pet Grooming Glossary: Understanding Grooming Terms and Techniques (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources', 'glossary']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  ~ Key Terms already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5476] Mental Stimulation Toys for Dogs: Puzzles, Games, and Brain Work (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5483] Dog Toy Lifespan: When to Replace Toys and How to Extend Their Life (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5458] Cat Scratching Behaviour Explained: Why Cats Scratch and How to Help (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5930] Dog Toy Safety by Breed Size: Choosing the Right Size Toy (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5473] Senior Dog Toys: Gentle Play Options for Older Dogs (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5512] Dog Behaviour Explained: Understanding Your Dog’s Body Language and Actions (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5469] Dog Toy Rotation: How to Keep Your Dog Interested and Engaged (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [6050] Toy Overstimulation Recovery: Calming Down an Overexcited Dog (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [3959] Best Interactive Dog Toys UK (2026) – Puzzle & Enrichment Guide (Dog Toys)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [6047] Play Recovery After Surgery: Gentle Enrichment for Healing Dogs (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5421] Puppy-Safe Dog Toys: What to Look For and What to Avoid (Dog Toys)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5508] Puppy Development Stages: A Complete Guide from Birth to Maturity (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [6042] Enrichment by Breed Group: Tailoring Play to Your Dog’s Instincts (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [6039] Dog Toy Anxiety Reduction: Using Toys to Calm Nervous Dogs (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5424] Aggressive Chewer Guide: Safe Toys for Power Chewers (Dog Toys)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources', 'glossary']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  ~ Key Terms already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5950] Dog Toy Durability Guide: What Lasts and What Does Not (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [3956] Best Dog Toys UK (2026) – Complete Guide & Honest Reviews (Dog Toys)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [6052] Low-Mobility Enrichment: Mental Stimulation for Dogs with Limited Movement (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5938] Enrichment Schedules for Dogs: Structuring Daily Play and Mental Work (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5519] Indoor Cat Care: A Complete Guide to Keeping House Cats Happy and Healthy (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'glossary']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Key Terms already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5521] Pet Health Terminology: A Guide to Common Veterinary Terms (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [6049] Sensory Enrichment for Dogs: Engaging All Five Senses Through Play (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5415] Dog Play Styles Explained: Understanding How Your Dog Plays (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5425] Dog Toys FAQ: Common Questions Answered (Dog Toys)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5471] Dog Boredom Prevention: Signs, Solutions, and Enrichment Ideas (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [6044] Rotating Puzzle Complexity: Progressive Challenge for Smart Dogs (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'glossary']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Key Terms already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5933] Safe Tug Play with Dogs: Rules, Benefits, and Common Mistakes (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5296] Best Indoor Cat Toys UK (2026): Complete Guide for House Cats (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'glossary', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  ~ Key Terms already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [6046] Dog Toy Hygiene Schedules: A Practical Cleaning Timetable (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5414] Cat Toy Types Explained: A Complete Glossary (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'glossary', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  ~ Key Terms already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [6048] Confidence-Building Play: Helping Shy and Fearful Dogs Through Toys (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5932] Scent-Game Enrichment for Dogs: Using Smell to Engage Your Dog (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5931] Signs of Toy Overstimulation in Dogs: When Play Becomes Too Much (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5422] Indoor vs Outdoor Dog Toys: Choosing the Right Type (Dog Toys)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [4789] Best Types of Dog Toys for Different Play Styles (Dog Toys)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [6045] Safe Multi-Dog Toy Management: Preventing Resource Guarding (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5511] Pet Enrichment Explained: Types, Benefits, and Practical Ideas (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5946] Dog Toy Materials Compared: Rubber, Rope, Plush, and Nylon (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5942] Cognitive Enrichment for Senior Dogs: Gentle Play for Ageing Minds (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5934] Crate and Play Enrichment: Keeping Dogs Happy in Confined Spaces (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5462] Dog Training Terminology Explained: Key Concepts for New Owners (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5935] Dog Toy Storage and Organisation: Keeping Toys Clean and Accessible (Uncategorized)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [4788] Mental Stimulation for Dogs: Beyond Physical Exercise (Dog Toys)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [8172] Our Research Standards (Uncategorized)
+  Needed blocks: ['comparison_table', 'practical_guide', 'at_a_glance', 'glossary']
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Key Terms already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5423] Dog Toy Enrichment: Beyond Basic Fetch (Dog Toys)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [5420] Dog Toy Cleaning Guide: How to Keep Toys Hygienic (Dog Toys)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources']
+  ~ Research Sources already exists, skipping
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  ~ At a Glance already exists, skipping
+  ~ Why We Reference Sources already exists, skipping
+  All needed blocks already present in content
+
+============================================================
+Processing: [8171] Why PetHub Online Exists (Uncategorized)
+  Needed blocks: ['comparison_table', 'practical_guide', 'at_a_glance', 'glossary', 'research_sources']
+  + Research Sources and Standards
+  ~ Comparison table already exists, skipping
+  + Practical Guide
+  ~ At a Glance already exists, skipping
+  + Key Terms Glossary
+  Updating post 8171 with 3 new blocks...
+  SUCCESS: Updated post 8171
+
+============================================================
+Processing: [4787] Dog Toy Safety: What Every Owner Needs to Know (Dog Toys)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources']
+  + Research Sources and Standards
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  + At a Glance
+  + Why We Reference Sources
+  Updating post 4787 with 3 new blocks...
+  SUCCESS: Updated post 4787
+
+============================================================
+Processing: [4790] DIY Dog Toys: Safe Homemade Options (Dog Toys)
+  Needed blocks: ['research_sources', 'comparison_table', 'practical_guide', 'at_a_glance', 'why_sources']
+  + Research Sources and Standards
+  ~ Comparison table already exists, skipping
+  ~ Practical guide already exists, skipping
+  + At a Glance
+  + Why We Reference Sources
+  Updating post 4790 with 3 new blocks...
+  SUCCESS: Updated post 4790
+
+############################################################
+ENRICHMENT COMPLETE
+############################################################
+Posts processed:     59
+Total blocks added:  9
+Comparison tables:   0
+Trust references:    5
+Glossaries:          1
+Practical guides:    1
+At a Glance blocks:  2
+Output CSV:          /var/lib/freelancer/projects/40416335/phase10bu_data/citation_moat_trust_dogtoys_uncat_clusters.csv

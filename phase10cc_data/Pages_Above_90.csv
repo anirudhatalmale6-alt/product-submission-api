@@ -4,6 +4,7 @@ id,title,cluster,reference_quality,comparison_usefulness,practical_specificity,e
 4570,First-Time Dog Owner Essentials: What You Need to Know,Dog Care,95,90,90,100,100,100,95.8
 4414,Harness vs Collar: Which Is Better for Your Dog?,Dog Harnesses,95,90,90,100,100,100,95.8
 5424,Aggressive Chewer Guide: Safe Toys for Power Chewers,Dog Toys,95,85,90,100,100,100,95
+5422,Indoor vs Outdoor Dog Toys: Choosing the Right Type,Dog Toys,95,85,90,100,100,100,95
 5418,Dog Harness Types Explained: Finding the Right Fit,Dog Harnesses,95,85,90,100,100,100,95
 4057,Best Dog Grooming Supplies UK (2026) – Complete Guide,Dog Care,95,85,90,100,100,100,95
 4049,Best Puppy Collars UK (2026) – First Collar & Harness Guide,Puppy Care,95,85,90,100,100,100,95
@@ -11,9 +12,11 @@ id,title,cluster,reference_quality,comparison_usefulness,practical_specificity,e
 4018,Best Puppy Beds UK (2026) – First Bed & Crate Training Guide,Dog Beds,85,95,90,100,100,100,95
 3996,Best Dog Beds UK (2026) – Complete Guide & Honest Reviews,Dog Beds,85,95,90,100,100,100,95
 3838,Dry vs Wet Dog Food UK - An Honest Comparison Guide,Dog Food,95,85,90,100,100,100,95
+5425,Dog Toys FAQ: Common Questions Answered,Dog Toys,95,80,90,100,100,100,94.2
 5421,Puppy-Safe Dog Toys: What to Look For and What to Avoid,Dog Toys,95,80,90,100,100,100,94.2
 4786,Where to Place Your Dog's Bed: Location and Comfort Tips,Dog Beds,95,80,90,100,100,100,94.2
 4132,Best Puppy Training Guide UK (2026) – First Year Essentials,Training Supplies,95,80,90,100,100,100,94.2
+5935,Dog Toy Storage and Organisation: Keeping Toys Clean and Accessible,Uncategorized,95,75,90,100,100,100,93.3
 5476,"Mental Stimulation Toys for Dogs: Puzzles, Games, and Brain Work",Uncategorized,95,75,90,100,100,100,93.3
 4791,How to Choose the Right Dog Training Treats,Training Supplies,95,75,90,100,100,100,93.3
 4406,Best Interactive Cat Toys for Indoor Cats: Engagement Guide,Cat Toys,95,75,90,100,100,100,93.3
@@ -34,7 +37,10 @@ id,title,cluster,reference_quality,comparison_usefulness,practical_specificity,e
 4011,Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide,Dog Beds,85,85,90,100,100,100,93.3
 4004,Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide,Dog Beds,95,75,90,100,100,100,93.3
 3960,Best Puppy Toys UK (2026) – Teething & First Toys Guide,Dog Toys,95,75,90,100,100,100,93.3
+6046,Dog Toy Hygiene Schedules: A Practical Cleaning Timetable,Uncategorized,95,70,90,100,100,100,92.5
+6045,Safe Multi-Dog Toy Management: Preventing Resource Guarding,Uncategorized,95,70,90,100,100,100,92.5
 6039,Dog Toy Anxiety Reduction: Using Toys to Calm Nervous Dogs,Uncategorized,95,70,90,100,100,100,92.5
+5950,Dog Toy Durability Guide: What Lasts and What Does Not,Uncategorized,95,70,90,100,100,100,92.5
 5473,Senior Dog Toys: Gentle Play Options for Older Dogs,Uncategorized,95,70,90,100,100,100,92.5
 3839,Best Puppy Food UK (2026) - Growth-Stage Nutrition Guide,Dog Food,95,70,90,100,100,100,92.5
 3836,Best Dog Food UK (2026) - Complete Buying Guide,Dog Food,95,85,90,100,85,100,92.5
@@ -44,6 +50,7 @@ id,title,cluster,reference_quality,comparison_usefulness,practical_specificity,e
 7338,Puppy-Proofing Your Home: A Room-by-Room Safety Guide,Dog Care,95,95,90,90,100,80,91.7
 7337,Puppy Vaccination Schedule UK: What to Expect and When,Dog Health,95,95,90,90,100,80,91.7
 7334,Puppy Bed Training: Helping Your Dog Love Their Bed,Dog Beds,85,95,90,90,100,90,91.7
+5946,"Dog Toy Materials Compared: Rubber, Rope, Plush, and Nylon",Uncategorized,95,75,80,100,100,100,91.7
 4784,"Dog Bed Materials Explained: Foam, Memory Foam, and More",Dog Beds,85,75,90,100,100,100,91.7
 4568,Dog Dental Health: A Practical Care Guide,Dog Health,95,75,90,100,100,90,91.7
 4563,Dog Grooming Basics: A Complete Guide for Owners,Dog Care,85,75,90,100,100,100,91.7
@@ -51,8 +58,18 @@ id,title,cluster,reference_quality,comparison_usefulness,practical_specificity,e
 4251,Best Cat Shampoo UK (2026) – When & How to Bathe,Cat Supplies,95,75,80,100,100,100,91.7
 7336,Dog Bed Safety: Avoiding Hazards and Choosing Non-Toxic Materials,Dog Beds,95,90,90,90,100,80,90.8
 7172,Dog Food Glossary: Understanding Ingredients and Nutrition Labels,Dog Food,95,90,90,90,100,80,90.8
+6048,Confidence-Building Play: Helping Shy and Fearful Dogs Through Toys,Uncategorized,95,60,90,100,100,100,90.8
+5938,Enrichment Schedules for Dogs: Structuring Daily Play and Mental Work,Uncategorized,95,70,80,100,100,100,90.8
+5471,"Dog Boredom Prevention: Signs, Solutions, and Enrichment Ideas",Uncategorized,95,60,90,100,100,100,90.8
 5464,Pet Grooming Glossary: Understanding Grooming Terms and Techniques,Uncategorized,95,60,90,100,100,100,90.8
+5462,Dog Training Terminology Explained: Key Concepts for New Owners,Uncategorized,95,60,90,100,100,100,90.8
+5423,Dog Toy Enrichment: Beyond Basic Fetch,Dog Toys,85,70,90,100,100,100,90.8
+5420,Dog Toy Cleaning Guide: How to Keep Toys Hygienic,Dog Toys,85,70,90,100,100,100,90.8
+5414,Cat Toy Types Explained: A Complete Glossary,Uncategorized,95,60,90,100,100,100,90.8
+5296,Best Indoor Cat Toys UK (2026): Complete Guide for House Cats,Uncategorized,95,60,90,100,100,100,90.8
 5035,Cat Enrichment Beyond Toys: Creating a Stimulating Home,Cat Toys,95,60,90,100,100,100,90.8
+4790,DIY Dog Toys: Safe Homemade Options,Dog Toys,85,70,90,100,100,100,90.8
+4788,Mental Stimulation for Dogs: Beyond Physical Exercise,Dog Toys,95,60,90,100,100,100,90.8
 4785,How to Wash and Maintain Your Dog's Bed,Dog Beds,85,70,90,100,100,100,90.8
 4783,How to Choose the Right Dog Bed Size,Dog Beds,95,75,90,100,85,100,90.8
 4576,Multi-Pet Household Tips: Living with Dogs and Cats Together,Pet Care,95,60,90,100,100,100,90.8
@@ -72,7 +89,12 @@ id,title,cluster,reference_quality,comparison_usefulness,practical_specificity,e
 3837,Best Dry Dog Food UK (2026) - Evidence-Based Guide,Dog Food,95,75,90,100,85,100,90.8
 7333,Dog Bed Placement Guide: Where to Put Your Dog’s Bed,Dog Beds,95,95,80,90,100,80,90
 7174,"Dog Bed Terminology: Materials, Types, and Sizing Terms Explained",Dog Beds,95,95,90,90,90,80,90
+6052,Low-Mobility Enrichment: Mental Stimulation for Dogs with Limited Movement,Uncategorized,95,55,90,100,100,100,90
+6049,Sensory Enrichment for Dogs: Engaging All Five Senses Through Play,Uncategorized,95,55,90,100,100,100,90
 6047,Play Recovery After Surgery: Gentle Enrichment for Healing Dogs,Uncategorized,95,55,90,100,100,100,90
+5942,Cognitive Enrichment for Senior Dogs: Gentle Play for Ageing Minds,Uncategorized,95,55,90,100,100,100,90
+5932,Scent-Game Enrichment for Dogs: Using Smell to Engage Your Dog,Uncategorized,95,55,90,100,100,100,90
+5931,Signs of Toy Overstimulation in Dogs: When Play Becomes Too Much,Uncategorized,95,55,90,100,100,100,90
 5930,Dog Toy Safety by Breed Size: Choosing the Right Size Toy,Uncategorized,95,55,90,100,100,100,90
 5512,Dog Behaviour Explained: Understanding Your Dog's Body Language and Actions,Uncategorized,95,70,90,100,85,100,90
 5509,"Pet Toy Safety: Understanding Materials, Hazards, and Standards",Uncategorized,95,70,90,100,85,100,90
@@ -80,6 +102,7 @@ id,title,cluster,reference_quality,comparison_usefulness,practical_specificity,e
 5417,Puppy Care Essentials: Key Terms Every New Owner Should Know,Dog Care,95,70,90,100,85,100,90
 5033,How to Choose the Right Cat Toy for Your Cat's Personality,Cat Toys,95,55,90,100,100,100,90
 5034,Cat Toy Rotation: How to Keep Toys Fresh and Engaging,Cat Toys,95,55,90,100,100,100,90
+4787,Dog Toy Safety: What Every Owner Needs to Know,Dog Toys,95,55,90,100,100,100,90
 4408,How Often Should You Replace Cat Toys? A Practical Guide,Cat Toys,95,55,90,100,100,100,90
 4335,Best Cat Litter Disposal UK (2026) – Waste Management Guide,Cat Supplies,95,55,90,100,100,100,90
 4328,Best Self-Cleaning Litter Trays UK (2026) – Automatic Options,Cat Supplies,95,55,90,100,100,100,90

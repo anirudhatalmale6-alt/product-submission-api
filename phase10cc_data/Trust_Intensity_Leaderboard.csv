@@ -4,6 +4,7 @@ id,title,cluster,trust_blocks_count,named_refs_count,trust_score
 4570,First-Time Dog Owner Essentials: What You Need to Know,Dog Care,4,7,100
 4414,Harness vs Collar: Which Is Better for Your Dog?,Dog Harnesses,4,6,100
 5424,Aggressive Chewer Guide: Safe Toys for Power Chewers,Dog Toys,4,7,100
+5422,Indoor vs Outdoor Dog Toys: Choosing the Right Type,Dog Toys,4,5,100
 5418,Dog Harness Types Explained: Finding the Right Fit,Dog Harnesses,4,6,100
 4057,Best Dog Grooming Supplies UK (2026) – Complete Guide,Dog Care,4,5,100
 4049,Best Puppy Collars UK (2026) – First Collar & Harness Guide,Puppy Care,4,5,100
@@ -11,9 +12,11 @@ id,title,cluster,trust_blocks_count,named_refs_count,trust_score
 4018,Best Puppy Beds UK (2026) – First Bed & Crate Training Guide,Dog Beds,4,4,100
 3996,Best Dog Beds UK (2026) – Complete Guide & Honest Reviews,Dog Beds,4,4,100
 3838,Dry vs Wet Dog Food UK - An Honest Comparison Guide,Dog Food,4,6,100
+5425,Dog Toys FAQ: Common Questions Answered,Dog Toys,4,6,100
 5421,Puppy-Safe Dog Toys: What to Look For and What to Avoid,Dog Toys,4,5,100
 4786,Where to Place Your Dog's Bed: Location and Comfort Tips,Dog Beds,4,6,100
 4132,Best Puppy Training Guide UK (2026) – First Year Essentials,Training Supplies,4,5,100
+5935,Dog Toy Storage and Organisation: Keeping Toys Clean and Accessible,Uncategorized,4,6,100
 5476,"Mental Stimulation Toys for Dogs: Puzzles, Games, and Brain Work",Uncategorized,4,6,100
 4791,How to Choose the Right Dog Training Treats,Training Supplies,4,6,100
 4406,Best Interactive Cat Toys for Indoor Cats: Engagement Guide,Cat Toys,4,8,100
@@ -26,6 +29,3 @@ id,title,cluster,trust_blocks_count,named_refs_count,trust_score
 4202,Best Cat Beds UK (2026) – Complete Guide,Cat Supplies,4,6,100
 4188,Best Catnip Toys UK (2026) – What Works and Why,Cat Toys,4,8,100
 4174,Best Cat Toys UK (2026) – Complete Guide,Cat Toys,4,8,100
-4139,Best Dog Training Leads UK (2026) – Long Lines & Harnesses,Training Supplies,4,4,100
-4118,Best Dog Training and Behaviour UK (2026) – Complete Guide,Training Supplies,4,6,100
-4078,Best Dog Nail Clippers UK (2026) – Trimming & Grinding Guide,Dog Care,4,5,100

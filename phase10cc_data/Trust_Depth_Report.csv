@@ -4,6 +4,7 @@ id,title,cluster,trust_blocks_count,named_refs_count,trust_score
 4570,First-Time Dog Owner Essentials: What You Need to Know,Dog Care,4,7,100
 4414,Harness vs Collar: Which Is Better for Your Dog?,Dog Harnesses,4,6,100
 5424,Aggressive Chewer Guide: Safe Toys for Power Chewers,Dog Toys,4,7,100
+5422,Indoor vs Outdoor Dog Toys: Choosing the Right Type,Dog Toys,4,5,100
 5418,Dog Harness Types Explained: Finding the Right Fit,Dog Harnesses,4,6,100
 4057,Best Dog Grooming Supplies UK (2026) – Complete Guide,Dog Care,4,5,100
 4049,Best Puppy Collars UK (2026) – First Collar & Harness Guide,Puppy Care,4,5,100
@@ -11,9 +12,11 @@ id,title,cluster,trust_blocks_count,named_refs_count,trust_score
 4018,Best Puppy Beds UK (2026) – First Bed & Crate Training Guide,Dog Beds,4,4,100
 3996,Best Dog Beds UK (2026) – Complete Guide & Honest Reviews,Dog Beds,4,4,100
 3838,Dry vs Wet Dog Food UK - An Honest Comparison Guide,Dog Food,4,6,100
+5425,Dog Toys FAQ: Common Questions Answered,Dog Toys,4,6,100
 5421,Puppy-Safe Dog Toys: What to Look For and What to Avoid,Dog Toys,4,5,100
 4786,Where to Place Your Dog's Bed: Location and Comfort Tips,Dog Beds,4,6,100
 4132,Best Puppy Training Guide UK (2026) – First Year Essentials,Training Supplies,4,5,100
+5935,Dog Toy Storage and Organisation: Keeping Toys Clean and Accessible,Uncategorized,4,6,100
 5476,"Mental Stimulation Toys for Dogs: Puzzles, Games, and Brain Work",Uncategorized,4,6,100
 4791,How to Choose the Right Dog Training Treats,Training Supplies,4,6,100
 4406,Best Interactive Cat Toys for Indoor Cats: Engagement Guide,Cat Toys,4,8,100
@@ -34,7 +37,10 @@ id,title,cluster,trust_blocks_count,named_refs_count,trust_score
 4011,Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide,Dog Beds,4,4,100
 4004,Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide,Dog Beds,4,5,100
 3960,Best Puppy Toys UK (2026) – Teething & First Toys Guide,Dog Toys,4,6,100
+6046,Dog Toy Hygiene Schedules: A Practical Cleaning Timetable,Uncategorized,4,6,100
+6045,Safe Multi-Dog Toy Management: Preventing Resource Guarding,Uncategorized,4,6,100
 6039,Dog Toy Anxiety Reduction: Using Toys to Calm Nervous Dogs,Uncategorized,4,6,100
+5950,Dog Toy Durability Guide: What Lasts and What Does Not,Uncategorized,4,7,100
 5473,Senior Dog Toys: Gentle Play Options for Older Dogs,Uncategorized,4,6,100
 3839,Best Puppy Food UK (2026) - Growth-Stage Nutrition Guide,Dog Food,4,7,100
 3836,Best Dog Food UK (2026) - Complete Buying Guide,Dog Food,3,6,85
@@ -44,6 +50,7 @@ id,title,cluster,trust_blocks_count,named_refs_count,trust_score
 7338,Puppy-Proofing Your Home: A Room-by-Room Safety Guide,Dog Care,4,5,100
 7337,Puppy Vaccination Schedule UK: What to Expect and When,Dog Health,4,6,100
 7334,Puppy Bed Training: Helping Your Dog Love Their Bed,Dog Beds,4,4,100
+5946,"Dog Toy Materials Compared: Rubber, Rope, Plush, and Nylon",Uncategorized,4,7,100
 4784,"Dog Bed Materials Explained: Foam, Memory Foam, and More",Dog Beds,4,4,100
 4568,Dog Dental Health: A Practical Care Guide,Dog Health,4,6,100
 4563,Dog Grooming Basics: A Complete Guide for Owners,Dog Care,4,4,100
@@ -51,8 +58,18 @@ id,title,cluster,trust_blocks_count,named_refs_count,trust_score
 4251,Best Cat Shampoo UK (2026) – When & How to Bathe,Cat Supplies,4,6,100
 7336,Dog Bed Safety: Avoiding Hazards and Choosing Non-Toxic Materials,Dog Beds,4,5,100
 7172,Dog Food Glossary: Understanding Ingredients and Nutrition Labels,Dog Food,4,6,100
+6048,Confidence-Building Play: Helping Shy and Fearful Dogs Through Toys,Uncategorized,4,7,100
+5938,Enrichment Schedules for Dogs: Structuring Daily Play and Mental Work,Uncategorized,4,6,100
+5471,"Dog Boredom Prevention: Signs, Solutions, and Enrichment Ideas",Uncategorized,4,6,100
 5464,Pet Grooming Glossary: Understanding Grooming Terms and Techniques,Uncategorized,4,8,100
+5462,Dog Training Terminology Explained: Key Concepts for New Owners,Uncategorized,4,7,100
+5423,Dog Toy Enrichment: Beyond Basic Fetch,Dog Toys,4,4,100
+5420,Dog Toy Cleaning Guide: How to Keep Toys Hygienic,Dog Toys,4,4,100
+5414,Cat Toy Types Explained: A Complete Glossary,Uncategorized,4,9,100
+5296,Best Indoor Cat Toys UK (2026): Complete Guide for House Cats,Uncategorized,4,9,100
 5035,Cat Enrichment Beyond Toys: Creating a Stimulating Home,Cat Toys,4,8,100
+4790,DIY Dog Toys: Safe Homemade Options,Dog Toys,4,4,100
+4788,Mental Stimulation for Dogs: Beyond Physical Exercise,Dog Toys,4,6,100
 4785,How to Wash and Maintain Your Dog's Bed,Dog Beds,4,4,100
 4783,How to Choose the Right Dog Bed Size,Dog Beds,3,5,85
 4576,Multi-Pet Household Tips: Living with Dogs and Cats Together,Pet Care,4,9,100
@@ -72,7 +89,12 @@ id,title,cluster,trust_blocks_count,named_refs_count,trust_score
 3837,Best Dry Dog Food UK (2026) - Evidence-Based Guide,Dog Food,3,6,85
 7333,Dog Bed Placement Guide: Where to Put Your Dog’s Bed,Dog Beds,4,5,100
 7174,"Dog Bed Terminology: Materials, Types, and Sizing Terms Explained",Dog Beds,3,5,90
+6052,Low-Mobility Enrichment: Mental Stimulation for Dogs with Limited Movement,Uncategorized,4,5,100
+6049,Sensory Enrichment for Dogs: Engaging All Five Senses Through Play,Uncategorized,4,6,100
 6047,Play Recovery After Surgery: Gentle Enrichment for Healing Dogs,Uncategorized,4,5,100
+5942,Cognitive Enrichment for Senior Dogs: Gentle Play for Ageing Minds,Uncategorized,4,5,100
+5932,Scent-Game Enrichment for Dogs: Using Smell to Engage Your Dog,Uncategorized,4,6,100
+5931,Signs of Toy Overstimulation in Dogs: When Play Becomes Too Much,Uncategorized,4,6,100
 5930,Dog Toy Safety by Breed Size: Choosing the Right Size Toy,Uncategorized,4,7,100
 5512,Dog Behaviour Explained: Understanding Your Dog's Body Language and Actions,Uncategorized,3,5,85
 5509,"Pet Toy Safety: Understanding Materials, Hazards, and Standards",Uncategorized,3,9,85
@@ -80,6 +102,7 @@ id,title,cluster,trust_blocks_count,named_refs_count,trust_score
 5417,Puppy Care Essentials: Key Terms Every New Owner Should Know,Dog Care,3,7,85
 5033,How to Choose the Right Cat Toy for Your Cat's Personality,Cat Toys,4,8,100
 5034,Cat Toy Rotation: How to Keep Toys Fresh and Engaging,Cat Toys,4,8,100
+4787,Dog Toy Safety: What Every Owner Needs to Know,Dog Toys,4,5,100
 4408,How Often Should You Replace Cat Toys? A Practical Guide,Cat Toys,4,8,100
 4335,Best Cat Litter Disposal UK (2026) – Waste Management Guide,Cat Supplies,4,6,100
 4328,Best Self-Cleaning Litter Trays UK (2026) – Automatic Options,Cat Supplies,4,6,100
@@ -97,13 +120,17 @@ id,title,cluster,trust_blocks_count,named_refs_count,trust_score
 4410,Cat Enrichment Activities Beyond Toys: Complete Guide,Cat Toys,4,6,100
 3959,Best Interactive Dog Toys UK (2026) – Puzzle & Enrichment Guide,Dog Toys,4,5,100
 3957,Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers,Dog Toys,4,6,100
+3956,Best Dog Toys UK (2026) – Complete Guide & Honest Reviews,Dog Toys,4,6,100
 7346,Indoor Cat Diet and Nutrition: Feeding Guidelines for House Cats,Indoor Cats,4,9,100
 7345,Indoor Cat Behaviour: Understanding and Managing Common Issues,Indoor Cats,4,7,100
 7344,Creating a Cat-Friendly Home: Environmental Enrichment for Indoor Cats,Indoor Cats,4,7,100
 7343,Indoor Cat Safety: Common Household Hazards for Cats,Indoor Cats,4,7,100
 7342,Indoor Cat Exercise: Keeping House Cats Active and Healthy,Indoor Cats,4,7,100
 6050,Toy Overstimulation Recovery: Calming Down an Overexcited Dog,Uncategorized,4,6,100
+6044,Rotating Puzzle Complexity: Progressive Challenge for Smart Dogs,Uncategorized,3,7,85
 6042,Enrichment by Breed Group: Tailoring Play to Your Dog's Instincts,Uncategorized,4,6,100
+5934,Crate and Play Enrichment: Keeping Dogs Happy in Confined Spaces,Uncategorized,4,6,100
+5933,"Safe Tug Play with Dogs: Rules, Benefits, and Common Mistakes",Uncategorized,3,6,85
 5523,"Dog Training Equipment Explained: Tools, Uses, and What to Avoid",Uncategorized,3,6,85
 5521,Pet Health Terminology: A Guide to Common Veterinary Terms,Uncategorized,3,7,85
 5511,"Pet Enrichment Explained: Types, Benefits, and Practical Ideas",Uncategorized,3,8,85
@@ -111,10 +138,8 @@ id,title,cluster,trust_blocks_count,named_refs_count,trust_score
 5467,"Pet Feeding Guide: Understanding Portions, Schedules, and Methods",Uncategorized,3,7,85
 5460,Pet Nutrition Terminology: A Guide to Common Terms on Pet Food Labels,Uncategorized,3,8,85
 5458,Cat Scratching Behaviour Explained: Why Cats Scratch and How to Help,Uncategorized,4,7,100
-5425,Dog Toys FAQ: Common Questions Answered,Dog Toys,2,5,70
 5419,Cat Care Basics: A Glossary for New Cat Owners,Cat Supplies,3,8,85
-5414,Cat Toy Types Explained: A Complete Glossary,Uncategorized,3,9,85
-5296,Best Indoor Cat Toys UK (2026): Complete Guide for House Cats,Uncategorized,3,8,85
+5415,Dog Play Styles Explained: Understanding How Your Dog Plays,Uncategorized,3,8,85
 5036,Understanding Cat Play Behaviour: What Different Play Styles Mean,Cat Toys,4,9,100
 4566,Seasonal Dog Care: Keeping Your Dog Safe Year-Round,Dog Care,4,8,100
 4195,Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide,Cat Toys,4,8,100
@@ -126,44 +151,19 @@ id,title,cluster,trust_blocks_count,named_refs_count,trust_score
 7169,Puppy Care Glossary: Essential Terms for New Puppy Owners,Dog Care,2,5,75
 5519,Indoor Cat Care: A Complete Guide to Keeping House Cats Happy and Healthy,Uncategorized,3,8,85
 5508,Puppy Development Stages: A Complete Guide from Birth to Maturity,Uncategorized,3,7,85
-5422,Indoor vs Outdoor Dog Toys: Choosing the Right Type,Dog Toys,2,4,70
 4574,Pet Hydration Guide: How Much Water Does Your Pet Need?,Dog Supplies,3,8,85
 4571,Pet First Aid Basics: What Every Owner Should Know,Dog Supplies,3,5,85
 4300,Best Cardboard Cat Scratchers UK (2026) – Budget Friendly,Cat Supplies,3,6,85
 4293,Best Cat Trees UK (2026) – Climbing & Scratching Towers,Cat Supplies,3,8,85
 7175,Cat Supply Essentials Glossary: Understanding Cat Care Products,Cat Supplies,4,6,100
 7167,Indoor Cat Terminology: A Complete Glossary for Cat Owners,Indoor Cats,3,7,90
+4789,Best Types of Dog Toys for Different Play Styles,Dog Toys,4,5,100
 3,Dog Toys UK (2026) – Essential Guide for Pet Owners,Dog Supplies,4,4,100
 5520,"Dog Health Basics: Common Conditions, Prevention, and When to See a Vet",Uncategorized,2,7,70
 5510,Dog Bed Sizing Guide: How to Measure Your Dog and Choose the Right Fit,Uncategorized,2,7,70
 5032,Cat Toys FAQ: Common Questions Answered,Cat Toys,2,8,70
 4314,Best Cat Litter Trays UK (2026) – Complete Guide,Cat Supplies,3,8,85
-5423,Dog Toy Enrichment: Beyond Basic Fetch,Dog Toys,2,3,70
-5420,Dog Toy Cleaning Guide: How to Keep Toys Hygienic,Dog Toys,2,3,70
-3956,Best Dog Toys UK (2026) – Complete Guide & Honest Reviews,Dog Toys,2,6,70
-5934,Crate and Play Enrichment: Keeping Dogs Happy in Confined Spaces,Uncategorized,2,5,70
+8171,Why PetHub Online Exists,Uncategorized,3,7,85
 7177,Cat Toy Terminology: Understanding Play Types and Toy Features,Cat Toys,3,6,90
-6046,Dog Toy Hygiene Schedules: A Practical Cleaning Timetable,Uncategorized,2,5,70
-6045,Safe Multi-Dog Toy Management: Preventing Resource Guarding,Uncategorized,2,5,70
-5935,Dog Toy Storage and Organisation: Keeping Toys Clean and Accessible,Uncategorized,2,5,70
 5522,"Orthopaedic Care for Dogs: Joint Health, Mobility, and Support",Uncategorized,3,7,85
-5950,Dog Toy Durability Guide: What Lasts and What Does Not,Uncategorized,2,6,70
-5946,"Dog Toy Materials Compared: Rubber, Rope, Plush, and Nylon",Uncategorized,2,6,70
-4789,Best Types of Dog Toys for Different Play Styles,Dog Toys,2,4,70
-5938,Enrichment Schedules for Dogs: Structuring Daily Play and Mental Work,Uncategorized,2,5,70
-5933,"Safe Tug Play with Dogs: Rules, Benefits, and Common Mistakes",Uncategorized,2,6,70
-5471,"Dog Boredom Prevention: Signs, Solutions, and Enrichment Ideas",Uncategorized,2,5,70
-5462,Dog Training Terminology Explained: Key Concepts for New Owners,Uncategorized,2,7,70
-5415,Dog Play Styles Explained: Understanding How Your Dog Plays,Uncategorized,2,8,70
-6052,Low-Mobility Enrichment: Mental Stimulation for Dogs with Limited Movement,Uncategorized,2,5,70
-6049,Sensory Enrichment for Dogs: Engaging All Five Senses Through Play,Uncategorized,2,6,70
-6048,Confidence-Building Play: Helping Shy and Fearful Dogs Through Toys,Uncategorized,2,5,70
-6044,Rotating Puzzle Complexity: Progressive Challenge for Smart Dogs,Uncategorized,2,5,70
-5942,Cognitive Enrichment for Senior Dogs: Gentle Play for Ageing Minds,Uncategorized,2,5,70
-5932,Scent-Game Enrichment for Dogs: Using Smell to Engage Your Dog,Uncategorized,2,6,70
-5931,Signs of Toy Overstimulation in Dogs: When Play Becomes Too Much,Uncategorized,2,5,70
-4790,DIY Dog Toys: Safe Homemade Options,Dog Toys,2,4,70
-4788,Mental Stimulation for Dogs: Beyond Physical Exercise,Dog Toys,2,5,70
-4787,Dog Toy Safety: What Every Owner Needs to Know,Dog Toys,2,4,70
 8172,Our Research Standards,Uncategorized,2,9,70
-8171,Why PetHub Online Exists,Uncategorized,2,7,70
