@@ -1,0 +1,14 @@
+cluster,avg_citation_confidence,highest_citation_page_id,highest_citation_page_title,highest_citation_score,lowest_citation_page_id,lowest_citation_page_title,lowest_citation_score,pages_above_70,pages_above_80
+Educational,86.0,5464,Pet Grooming Glossary: Understanding Grooming Terms and Techniques,100.0,7175,Cat Supply Essentials Glossary: Understanding Cat Care Products,40.0,4,4
+Dog Food,87.8,5460,Pet Nutrition Terminology: A Guide to Common Terms on Pet Food Labels,100.0,7346,Indoor Cat Diet and Nutrition: Feeding Guidelines for House Cats,40.0,8,8
+Dog Health,85.0,5520,"Dog Health Basics: Common Conditions, Prevention, and When to See a Vet",100.0,7170,Dog Health Terminology: Understanding Common Veterinary and Care Terms,40.0,8,8
+Cat Toys,88.7,4174,Best Cat Toys UK (2026) – Complete Guide,100.0,7177,Cat Toy Terminology: Understanding Play Types and Toy Features,40.0,14,14
+Cat Supplies,90.0,4202,Best Cat Beds UK (2026) – Complete Guide,90.0,696,Essential Cat Supplies for Cat Owners – Number 1 Must-Haves,90.0,8,8
+Dog Toys,88.4,5473,Senior Dog Toys: Gentle Play Options for Older Dogs,100.0,7344,Creating a Cat-Friendly Home: Environmental Enrichment for Indoor Cats,40.0,39,35
+Dog Training,82.3,5512,Dog Behaviour Explained: Understanding Your Dog’s Body Language and Actions,100.0,7345,Indoor Cat Behaviour: Understanding and Managing Common Issues,30.0,10,8
+Dog Harnesses,86.7,5418,Dog Harness Types Explained: Finding the Right Fit,100.0,4412,No-Pull Dog Harness Guide: How They Work and When to Use One,75.0,6,4
+Uncategorized,84.3,5509,"Pet Toy Safety: Understanding Materials, Hazards, and Standards",100.0,8171,Why PetHub Online Exists,15.0,27,24
+Dog Grooming,86.9,4251,Best Cat Shampoo UK (2026) – When & How to Bathe,100.0,4071,Best Dog Shampoo UK (2026) – Ingredients & Safety Guide,75.0,8,5
+Dog Beds,91.2,4783,How to Choose the Right Dog Bed Size,100.0,7174,"Dog Bed Terminology: Materials, Types, and Sizing Terms Explained",83.0,11,11
+Puppy Care,64.6,5417,Puppy Care Essentials: Key Terms Every New Owner Should Know,100.0,7338,Puppy-Proofing Your Home: A Room-by-Room Safety Guide,30.0,7,7
+Indoor Cats,52.5,5519,Indoor Cat Care: A Complete Guide to Keeping House Cats Happy and Healthy,100.0,7342,Indoor Cat Exercise: Keeping House Cats Active and Healthy,30.0,1,1

@@ -1,0 +1,14 @@
+cluster,current_dominance_score,baseline_score,delta,momentum_direction,current_rank,rank_change
+Educational,81.6,81.6,0.0,stable,1,0
+Dog Food,79.6,91.0,-11.4,decelerating,2,0
+Dog Health,79.3,90.6,-11.3,decelerating,3,0
+Cat Toys,78.6,82.4,-3.8,decelerating,4,0
+Cat Supplies,78.4,87.6,-9.2,decelerating,5,0
+Dog Toys,78.0,91.4,-13.4,decelerating,6,0
+Dog Training,77.4,88.4,-11.0,decelerating,7,0
+Dog Harnesses,76.8,80.7,-3.9,decelerating,8,0
+Uncategorized,75.4,75.4,0.0,stable,9,0
+Dog Grooming,73.9,66.6,7.3,accelerating,10,0
+Dog Beds,64.4,82.4,-18.0,decelerating,11,0
+Puppy Care,62.0,89.3,-27.3,decelerating,12,0
+Indoor Cats,57.7,57.7,0.0,stable,13,0

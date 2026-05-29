@@ -1,0 +1,20 @@
+id,title,cluster,has_table,table_quality,recommended_table_type,priority
+7172,Dog Food Glossary: Understanding Ingredients and Nutrition Labels,Dog Food,False,none,term definition table,critical
+7170,Dog Health Terminology: Understanding Common Veterinary and Care Terms,Dog Health,False,none,term definition table,critical
+7177,Cat Toy Terminology: Understanding Play Types and Toy Features,Cat Toys,False,none,term definition table,critical
+3,Dog Toys UK (2026) – Essential Guide for Pet Owners,Dog Toys,False,none,feature/specification summary,critical
+5420,Dog Toy Cleaning Guide: How to Keep Toys Hygienic,Dog Toys,False,none,feature/specification summary,critical
+8172,Our Research Standards,Uncategorized,False,none,general comparison table,critical
+8171,Why PetHub Online Exists,Uncategorized,False,none,general comparison table,critical
+7174,"Dog Bed Terminology: Materials, Types, and Sizing Terms Explained",Dog Beds,False,none,term definition table,critical
+7336,Dog Bed Safety: Avoiding Hazards and Choosing Non-Toxic Materials,Dog Beds,False,none,general comparison table,critical
+7332,How to Wash and Dry a Dog Bed Safely,Dog Beds,False,none,feature/specification summary,critical
+7335,Seasonal Dog Bedding: Adjusting Comfort Through the Year,Dog Beds,False,none,general comparison table,critical
+7333,Dog Bed Placement Guide: Where to Put Your Dog’s Bed,Dog Beds,False,none,feature/specification summary,critical
+7169,Puppy Care Glossary: Essential Terms for New Puppy Owners,Puppy Care,False,none,term definition table,critical
+7334,Puppy Bed Training: Helping Your Dog Love Their Bed,Puppy Care,False,none,general comparison table,critical
+7337,Puppy Vaccination Schedule UK: What to Expect and When,Puppy Care,False,none,timeline/schedule table,critical
+7341,First Week with a New Puppy: A Day-by-Day Guide,Puppy Care,False,none,feature/specification summary,critical
+7339,Puppy Sleep Guide: How Much Sleep Puppies Need by Age,Puppy Care,False,none,feature/specification summary,critical
+7340,"Puppy Teething Guide: Stages, Signs, and Soothing Tips",Puppy Care,False,none,feature/specification summary,critical
+7338,Puppy-Proofing Your Home: A Room-by-Room Safety Guide,Puppy Care,False,none,feature/specification summary,critical

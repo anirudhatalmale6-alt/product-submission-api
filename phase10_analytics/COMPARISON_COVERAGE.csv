@@ -1,0 +1,14 @@
+cluster,total_posts,posts_with_table,comparison_coverage_pct,posts_needing_tables,posts_with_strong_comparisons,posts_with_weak_comparisons
+Educational,5,5,100.0,,5,0
+Dog Food,9,8,88.9,7172,8,0
+Dog Health,9,8,88.9,7170,8,0
+Cat Toys,15,14,93.3,7177,14,0
+Cat Supplies,8,8,100.0,,8,0
+Dog Toys,40,38,95.0,3;5420,38,0
+Dog Training,11,11,100.0,,11,0
+Dog Harnesses,6,6,100.0,,6,0
+Uncategorized,29,27,93.1,8172;8171,27,0
+Dog Grooming,8,8,100.0,,8,0
+Dog Beds,11,6,54.5,7174;7336;7332;7335;7333,6,0
+Puppy Care,13,6,46.2,7169;7334;7337;7341;7339;7340;7338,6,0
+Indoor Cats,4,4,100.0,,4,0

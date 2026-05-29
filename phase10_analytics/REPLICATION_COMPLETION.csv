@@ -1,0 +1,14 @@
+cluster,faq_parity_pct,glossary_parity_pct,trust_parity_pct,comparison_parity_pct,practical_guidance_parity_pct,authority_parity_pct,overall_replication_pct
+Educational,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Dog Food,99.8,100.0,98.1,98.3,97.1,99.2,98.8
+Dog Health,96.5,100.0,97.4,97.5,96.6,99.7,98.0
+Cat Toys,100.0,99.6,98.6,97.8,99.1,100.0,99.2
+Cat Supplies,97.4,99.6,94.5,92.6,93.0,99.2,96.1
+Dog Toys,100.0,100.0,100.0,100.0,100.0,100.0,100.0
+Dog Training,92.9,100.0,98.9,100.0,99.3,99.5,98.4
+Dog Harnesses,95.1,100.0,100.0,100.0,100.0,99.6,99.1
+Uncategorized,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Dog Grooming,98.7,98.1,96.7,96.4,100.0,100.0,98.3
+Dog Beds,96.8,100.0,96.1,94.6,94.4,99.1,96.8
+Puppy Care,95.1,92.0,96.1,93.0,95.4,99.4,95.2
+Indoor Cats,0.0,0.0,0.0,0.0,0.0,0.0,0.0
