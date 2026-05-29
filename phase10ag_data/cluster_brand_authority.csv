@@ -1,0 +1,14 @@
+cluster,post_count,avg_eeat,avg_humanization,avg_comparison,avg_buyer_intent,avg_citation,avg_brand_authority,weakest_dimension
+Cat Supplies,10,26.5,7.5,24.0,23.0,92.4,34.7,Humanization
+Cat Toys,19,31.3,0.0,28.9,21.1,92.4,34.7,Humanization
+Dog Beds,9,35.0,2.8,50.0,39.4,94.7,44.4,Humanization
+Dog Care,2,32.5,0.0,20.0,12.5,92.0,31.4,Humanization
+Dog Food,7,43.6,10.7,45.7,33.6,94.3,45.6,Humanization
+Dog Grooming,10,26.5,0.0,16.0,14.5,92.8,30.0,Humanization
+Dog Harnesses,10,28.5,5.0,30.0,25.0,92.4,36.2,Humanization
+Dog Health,8,35.6,6.2,22.5,16.9,91.4,34.5,Humanization
+Dog Toys,41,42.4,3.7,48.5,34.4,97.5,45.3,Humanization
+Dog Training,8,36.9,3.1,31.2,23.1,96.0,38.1,Humanization
+Educational,8,32.5,15.6,28.8,22.5,93.0,38.5,Humanization
+Puppy Care,1,60.0,25.0,0.0,0.0,92.0,35.4,Comparison
+Uncategorised,11,36.4,6.8,30.0,21.4,92.4,37.4,Humanization
