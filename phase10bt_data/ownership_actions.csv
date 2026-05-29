@@ -1,0 +1,19 @@
+cluster,action,dimension_targeted,estimated_impact,posts_affected,priority
+Cat Supplies,Create 2 new subtopic posts to increase Cat Supplies density,authority_density,High (+5-8 points),13,1
+Cat Supplies,Add UK trust references (RSPCA/BVA/DEFRA) to 13 posts in Cat Supplies,trust_intensity,Medium (+3-5 points),13,2
+Cat Supplies,Add practical step-by-step guide blocks to 13 posts in Cat Supplies,practical_usefulness,Low (+1-3 points),13,3
+Training Supplies,Create 4 new subtopic posts to increase Training Supplies density,authority_density,High (+8-12 points),3,1
+Training Supplies,Add UK trust references (RSPCA/BVA/DEFRA) to 3 posts in Training Supplies,trust_intensity,High (+5-8 points),3,2
+Training Supplies,Add structured comparison tables and summary blocks to 3 posts in Training Supplies,citation_confidence,Low (+1-3 points),3,3
+Puppy Care,Create 5 new subtopic posts to increase Puppy Care density,authority_density,High (+8-12 points),2,1
+Puppy Care,Add UK trust references (RSPCA/BVA/DEFRA) to 2 posts in Puppy Care,trust_intensity,Medium (+3-5 points),2,2
+Puppy Care,Add structured comparison tables and summary blocks to 2 posts in Puppy Care,citation_confidence,Medium (+3-5 points),2,3
+Cat Toys,Create 2 new subtopic posts to increase Cat Toys density,authority_density,High (+5-8 points),9,1
+Cat Toys,Add UK trust references (RSPCA/BVA/DEFRA) to 9 posts in Cat Toys,trust_intensity,High (+5-8 points),9,2
+Cat Toys,Add practical step-by-step guide blocks to 9 posts in Cat Toys,practical_usefulness,Medium (+3-5 points),9,3
+Dog Beds,Create 2 new subtopic posts to increase Dog Beds density,authority_density,High (+8-12 points),9,1
+Dog Beds,Add UK trust references (RSPCA/BVA/DEFRA) to 9 posts in Dog Beds,trust_intensity,Medium (+3-5 points),9,2
+Dog Beds,Add structured comparison tables and summary blocks to 9 posts in Dog Beds,citation_confidence,Medium (+3-5 points),9,3
+Indoor Cats,Add practical step-by-step guide blocks to 3 posts in Indoor Cats,practical_usefulness,High (+5-8 points),3,1
+Indoor Cats,Create 4 new subtopic posts to increase Indoor Cats density,authority_density,High (+5-8 points),3,2
+Indoor Cats,Add UK trust references (RSPCA/BVA/DEFRA) to 3 posts in Indoor Cats,trust_intensity,Medium (+3-5 points),3,3

@@ -1,0 +1,15 @@
+cluster,avg_comparison_score,total_tables,posts_with_tables,coverage_pct
+Cat Supplies,63.7,32,23,100.0
+Cat Toys,63.4,22,16,100.0
+Dog Beds,86.7,51,15,100.0
+Dog Care,81.7,38,12,100.0
+Dog Food,81,20,5,100.0
+Dog Harnesses,72.1,15,7,100.0
+Dog Health,80,31,8,100.0
+Dog Supplies,60,8,7,100.0
+Dog Toys,70.7,28,14,100.0
+Indoor Cats,75,12,6,100.0
+Pet Care,60,2,2,100.0
+Puppy Care,87.5,7,2,100.0
+Training Supplies,78.3,15,6,100.0
+Uncategorized,62.1,60,45,100.0

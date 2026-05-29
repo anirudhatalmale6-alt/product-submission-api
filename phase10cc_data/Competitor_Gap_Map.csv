@@ -1,0 +1,55 @@
+cluster,competitor,competitor_has_guides,competitor_has_glossary,competitor_has_comparisons,competitor_trust_signals,competitor_advantage,pethub_avg_comparison,pethub_avg_trust
+Dog Food,Pets at Home,yes,no,yes,yes,product-level comparisons with pricing; retail trust and in-store vet access; product-driven guides with buy links,81,94
+Dog Food,Zooplus,yes,no,yes,no,product-level comparisons with pricing; product-driven guides with buy links; product listings and user reviews,81,94
+Dog Food,Purina,yes,no,no,yes,in-house vet team and brand credibility; brand-backed educational content,81,94
+Dog Food,Rover,yes,no,no,no,lifestyle and community content,81,94
+Dog Health,Pets at Home,yes,no,no,yes,retail trust and in-store vet access; product-driven guides with buy links; product listings and user reviews,80,93.1
+Dog Health,Zooplus,yes,no,no,no,product-driven guides with buy links; product listings and user reviews,80,93.1
+Dog Health,Purina,yes,no,no,yes,in-house vet team and brand credibility; brand-backed educational content,80,93.1
+Dog Health,Rover,yes,no,no,no,lifestyle and community content,80,93.1
+Dog Beds,Pets at Home,yes,no,yes,no,product-level comparisons with pricing; product-driven guides with buy links; product listings and user reviews,86.7,98.3
+Dog Beds,Zooplus,no,no,no,no,product listings and user reviews,86.7,98.3
+Dog Beds,Rover,yes,no,no,no,lifestyle and community content,86.7,98.3
+Dog Care,Pets at Home,yes,no,no,yes,retail trust and in-store vet access; product-driven guides with buy links; product listings and user reviews,81.7,96.7
+Dog Care,Zooplus,yes,no,no,no,product-driven guides with buy links; product listings and user reviews,81.7,96.7
+Dog Care,Purina,yes,no,no,yes,in-house vet team and brand credibility; brand-backed educational content,81.7,96.7
+Dog Care,Rover,yes,no,no,no,lifestyle and community content,81.7,96.7
+Dog Supplies,Pets at Home,yes,no,yes,no,product-level comparisons with pricing; product-driven guides with buy links; product listings and user reviews,60,89.3
+Dog Supplies,Zooplus,yes,no,no,no,product-driven guides with buy links; product listings and user reviews,60,89.3
+Dog Supplies,Rover,yes,no,no,no,lifestyle and community content,60,89.3
+Dog Toys,Pets at Home,yes,no,yes,no,product-level comparisons with pricing; product-driven guides with buy links; product listings and user reviews,70.7,80.7
+Dog Toys,Zooplus,yes,no,no,no,product-driven guides with buy links; product listings and user reviews,70.7,80.7
+Dog Toys,Purina,yes,no,no,no,brand-backed educational content,70.7,80.7
+Dog Toys,Rover,yes,no,yes,no,comparison content present; lifestyle and community content,70.7,80.7
+Cat Supplies,Pets at Home,yes,no,yes,no,product-level comparisons with pricing; product-driven guides with buy links; product listings and user reviews,63.7,96.1
+Cat Supplies,Zooplus,yes,no,no,no,product-driven guides with buy links; product listings and user reviews,63.7,96.1
+Cat Supplies,Cats.com,yes,yes,yes,yes,glossary content present; comparison content present; DVM/MRCVS reviewed content,63.7,96.1
+Cat Toys,Pets at Home,yes,no,yes,no,product-level comparisons with pricing; product-driven guides with buy links; product listings and user reviews,63.4,97.5
+Cat Toys,Zooplus,yes,no,no,no,product-driven guides with buy links; product listings and user reviews,63.4,97.5
+Cat Toys,Purina,yes,no,no,no,brand-backed educational content,63.4,97.5
+Cat Toys,Cats.com,yes,yes,yes,yes,glossary content present; comparison content present; DVM/MRCVS reviewed content,63.4,97.5
+Dog Harnesses,Pets at Home,yes,no,yes,no,product-level comparisons with pricing; product-driven guides with buy links; product listings and user reviews,72.1,100
+Dog Harnesses,Zooplus,no,no,no,no,product listings and user reviews,72.1,100
+Dog Harnesses,Rover,yes,no,no,no,lifestyle and community content,72.1,100
+Training Supplies,Pets at Home,yes,no,yes,no,product-level comparisons with pricing; product-driven guides with buy links; product listings and user reviews,78.3,100
+Training Supplies,Zooplus,yes,no,no,no,product-driven guides with buy links; product listings and user reviews,78.3,100
+Training Supplies,Purina,yes,no,no,yes,in-house vet team and brand credibility; brand-backed educational content,78.3,100
+Training Supplies,Rover,yes,no,no,no,lifestyle and community content,78.3,100
+Puppy Care,Pets at Home,yes,no,no,yes,retail trust and in-store vet access; product-driven guides with buy links; product listings and user reviews,87.5,100
+Puppy Care,Zooplus,yes,no,no,no,product-driven guides with buy links; product listings and user reviews,87.5,100
+Puppy Care,Purina,yes,no,no,yes,in-house vet team and brand credibility; brand-backed educational content,87.5,100
+Puppy Care,Rover,yes,no,no,no,lifestyle and community content,87.5,100
+Indoor Cats,Pets at Home,no,no,no,no,product listings and user reviews,75,98.3
+Indoor Cats,Zooplus,yes,no,no,no,product-driven guides with buy links; product listings and user reviews,75,98.3
+Indoor Cats,Purina,yes,no,no,yes,in-house vet team and brand credibility; brand-backed educational content,75,98.3
+Indoor Cats,Cats.com,yes,yes,yes,yes,glossary content present; comparison content present; DVM/MRCVS reviewed content,75,98.3
+Pet Care,Pets at Home,yes,no,no,yes,retail trust and in-store vet access; product-driven guides with buy links; product listings and user reviews,60,100
+Pet Care,Zooplus,yes,no,no,no,product-driven guides with buy links; product listings and user reviews,60,100
+Pet Care,Purina,yes,no,no,yes,in-house vet team and brand credibility; brand-backed educational content,60,100
+Pet Care,Rover,yes,no,no,no,lifestyle and community content,60,100
+Pet Care,Cats.com,yes,no,no,yes,DVM/MRCVS reviewed content; 2150+ guides,60,100
+Uncategorized,Pets at Home,no,no,no,no,product listings and user reviews,62.1,80.7
+Uncategorized,Zooplus,yes,no,no,no,product-driven guides with buy links; product listings and user reviews,62.1,80.7
+Uncategorized,Purina,yes,no,no,yes,in-house vet team and brand credibility; brand-backed educational content,62.1,80.7
+Uncategorized,Rover,yes,no,no,no,lifestyle and community content,62.1,80.7
+Uncategorized,Cats.com,yes,no,no,yes,DVM/MRCVS reviewed content; 2150+ guides,62.1,80.7
