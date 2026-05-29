@@ -1,0 +1,53 @@
+cluster,current_score,target_score,weakest_dimension,dimension_score,action_required,posts_affected,priority,estimated_lift
+Indoor Cats,57.7,75,Comparison Usefulness,25.0,Add comparison tables and side-by-side analysis to 3 posts (cluster avg 25.0),7167; 7343; 7342,1,6.5
+Indoor Cats,57.7,75,Practical Usefulness,30.0,"Add practical UK-specific guidance, measurement tables, cost breakdowns to 3 posts (cluster avg 30.0)",7167; 7343; 7342,2,6.0
+Indoor Cats,57.7,75,Glossary Density,37.5,Add glossary/terminology sections to 3 posts lacking definitions (cluster avg 37.5),5519; 7343; 7342,3,5.2
+Indoor Cats,57.7,75,AI Readiness,50.0,"Add FAQ sections, At a Glance, Key Takeaways to 3 posts (cluster avg 50.0)",7167; 7343; 7342,4,4.0
+Indoor Cats,57.7,75,Weak Post Upgrade,39.5,"Major upgrade needed: 'Indoor Cat Exercise: Keeping House Cats Active and Healthy' (score 39.5) — expand content, add all standard sections, improve trust depth",7342,5,1.0
+Indoor Cats,57.7,75,Weak Post Upgrade,43.0,"Major upgrade needed: 'Indoor Cat Safety: Common Household Hazards for Cats' (score 43.0) — expand content, add all standard sections, improve trust depth",7343,6,0.9
+Puppy Care,62.0,75,Glossary Density,12.3,Add glossary/terminology sections to 12 posts lacking definitions (cluster avg 12.3),5417; 3960; 5508; 4132; 4018; 4049; 7334; 7337; 7341; 7339 (+2 more),1,7.8
+Puppy Care,62.0,75,Comparison Usefulness,44.6,Add comparison tables and side-by-side analysis to 7 posts (cluster avg 44.6),7169; 7334; 7337; 7341; 7339; 7340; 7338,2,4.5
+Puppy Care,62.0,75,Practical Usefulness,48.8,"Add practical UK-specific guidance, measurement tables, cost breakdowns to 9 posts (cluster avg 48.8)",4018; 4049; 7169; 7334; 7337; 7341; 7339; 7340; 7338,3,4.1
+Puppy Care,62.0,75,AI Readiness,56.9,"Add FAQ sections, At a Glance, Key Takeaways to 9 posts (cluster avg 56.9)",4018; 4049; 7169; 7334; 7337; 7341; 7339; 7340; 7338,4,3.3
+Puppy Care,62.0,75,Replication Gap,92.1,Add Common Mistakes section to 43 posts to match Dog Toys reference (62.6% coverage),43 posts,5,1.6
+Puppy Care,62.0,75,Replication Gap,93.8,Add Key Takeaways section to 15 posts to match Dog Toys reference (90.1% coverage),15 posts,6,1.2
+Puppy Care,62.0,75,Replication Gap,94.2,Add Comparison Table section to 12 posts to match Dog Toys reference (92.4% coverage),12 posts,7,1.2
+Puppy Care,62.0,75,Missing Spoke Topic,0,Publish new spoke: Puppy Socialisation Timeline — Developmental stages content adds depth,New post required,8,4
+Puppy Care,62.0,75,Missing Spoke Topic,0,Publish new spoke: Puppy-Proofing Your Home Guide — Practical safety content matches reference style,New post required,9,3.8
+Puppy Care,62.0,75,Missing Spoke Topic,0,Publish new spoke: Puppy Vaccination Schedule UK — UK-specific authority content fills gap,New post required,10,3.6
+Puppy Care,62.0,75,Weak Post Upgrade,40.0,"Major upgrade needed: 'Puppy-Proofing Your Home: A Room-by-Room Safety Guide' (score 40.0) — expand content, add all standard sections, improve trust depth",7338,11,1.0
+Puppy Care,62.0,75,Weak Post Upgrade,42.5,"Major upgrade needed: 'Puppy Teething Guide: Stages, Signs, and Soothing Tips' (score 42.5) — expand content, add all standard sections, improve trust depth",7340,12,0.9
+Puppy Care,62.0,75,Weak Post Upgrade,43.0,"Major upgrade needed: 'Puppy Sleep Guide: How Much Sleep Puppies Need by Age' (score 43.0) — expand content, add all standard sections, improve trust depth",7339,13,0.9
+Dog Beds,64.4,75,Glossary Density,21.8,Add glossary/terminology sections to 10 posts lacking definitions (cluster avg 21.8),5510; 3996; 5416; 4783; 4011; 4784; 7336; 7332; 7335; 7333,1,6.8
+Dog Beds,64.4,75,Practical Usefulness,41.8,"Add practical UK-specific guidance, measurement tables, cost breakdowns to 9 posts (cluster avg 41.8)",5416; 4783; 4011; 4784; 7174; 7336; 7332; 7335; 7333,2,4.8
+Dog Beds,64.4,75,Comparison Usefulness,54.5,Add comparison tables and side-by-side analysis to 5 posts (cluster avg 54.5),7174; 7336; 7332; 7335; 7333,3,3.6
+Dog Beds,64.4,75,AI Readiness,58.2,"Add FAQ sections, At a Glance, Key Takeaways to 7 posts (cluster avg 58.2)",5416; 4784; 7174; 7336; 7332; 7335; 7333,4,3.2
+Dog Beds,64.4,75,Replication Gap,94.9,Add Common Mistakes section to 51 posts to match Dog Toys reference (62.6% coverage),51 posts,5,1.0
+Dog Beds,64.4,75,Replication Gap,95.0,Add Key Takeaways section to 18 posts to match Dog Toys reference (90.1% coverage),18 posts,6,1.0
+Dog Beds,64.4,75,Replication Gap,95.5,Add Comparison Table section to 14 posts to match Dog Toys reference (92.4% coverage),14 posts,7,0.9
+Dog Beds,64.4,75,Missing Spoke Topic,0,Publish new spoke: Orthopaedic Dog Beds for Older Dogs — Age-specific subtopic matches reference depth,New post required,8,4
+Dog Beds,64.4,75,Missing Spoke Topic,0,Publish new spoke: Outdoor & Waterproof Dog Beds — Environment-specific guide fills cluster gap,New post required,9,3.8
+Dog Beds,64.4,75,Missing Spoke Topic,0,Publish new spoke: Anxiety-Relief Dog Beds (Calming Beds) — Behavioural-crossover content adds authority,New post required,10,3.6
+Dog Beds,64.4,75,Weak Post Upgrade,42.0,"Major upgrade needed: 'Seasonal Dog Bedding: Adjusting Comfort Through the Year' (score 42.0) — expand content, add all standard sections, improve trust depth",7335,11,0.9
+Dog Beds,64.4,75,Weak Post Upgrade,42.0,"Major upgrade needed: 'Dog Bed Placement Guide: Where to Put Your Dog’s Bed' (score 42.0) — expand content, add all standard sections, improve trust depth",7333,12,0.9
+Dog Beds,64.4,75,Weak Post Upgrade,46.5,"Major upgrade needed: 'How to Wash and Dry a Dog Bed Safely' (score 46.5) — expand content, add all standard sections, improve trust depth",7332,13,0.7
+Dog Grooming,73.9,75,Glossary Density,7.5,Add glossary/terminology sections to 8 posts lacking definitions (cluster avg 7.5),4057; 4251; 4078; 4244; 4064; 4237; 4563; 4071,1,8.2
+Dog Grooming,73.9,75,Practical Usefulness,57.5,"Add practical UK-specific guidance, measurement tables, cost breakdowns to 8 posts (cluster avg 57.5)",4057; 4251; 4078; 4244; 4064; 4237; 4563; 4071,2,3.2
+Dog Grooming,73.9,75,Content Saturation,62.5,Expand thin content — increase word count and depth on 7 posts below 2000 words (cluster avg 62.5),4251; 4078; 4244; 4064; 4237; 4563; 4071,3,2.8
+Dog Grooming,73.9,75,Indexing Momentum,69.4,"Improve indexing signals: add internal links, schema markup, breadcrumbs to 1 posts (cluster avg 69.4)",4563,4,2.1
+Dog Grooming,73.9,75,Replication Gap,94.8,Add Key Takeaways section to 9 posts to match Dog Toys reference (90.1% coverage),9 posts,5,1.0
+Dog Grooming,73.9,75,Replication Gap,95.1,Add Common Mistakes section to 25 posts to match Dog Toys reference (62.6% coverage),25 posts,6,1.0
+Dog Grooming,73.9,75,Replication Gap,96.8,Add How We Evaluated section to 8 posts to match Dog Toys reference (90.1% coverage),8 posts,7,0.6
+Dog Grooming,73.9,75,Missing Spoke Topic,0,Publish new spoke: Dog Grooming Schedule by Coat Type — Breed-specific practical guide adds depth,New post required,8,4
+Dog Grooming,73.9,75,Missing Spoke Topic,0,Publish new spoke: Dog Nail Trimming Complete Guide — Specific grooming subtopic expands cluster,New post required,9,3.8
+Dog Grooming,73.9,75,Missing Spoke Topic,0,Publish new spoke: Dog Ear Cleaning Guide — Health-adjacent grooming content adds authority,New post required,10,3.6
+Cat Supplies,78.4,75,Glossary Density,1.2,Add glossary/terminology sections to 8 posts lacking definitions (cluster avg 1.2),4202; 4321; 4209; 4335; 4314; 4258; 4279; 696,1,8.9
+Cat Supplies,78.4,75,Practical Usefulness,66.9,"Add practical UK-specific guidance, measurement tables, cost breakdowns to 5 posts (cluster avg 66.9)",4335; 4314; 4258; 4279; 696,2,2.3
+Cat Supplies,78.4,75,Indexing Momentum,73.8,"Improve indexing signals: add internal links, schema markup, breadcrumbs to 0 posts (cluster avg 73.8)",All cluster posts,3,1.6
+Cat Supplies,78.4,75,Content Saturation,75.0,Expand thin content — increase word count and depth on 2 posts below 2000 words (cluster avg 75.0),4279; 696,4,1.5
+Cat Supplies,78.4,75,Replication Gap,93.8,Add Key Takeaways section to 22 posts to match Dog Toys reference (90.1% coverage),22 posts,5,1.2
+Cat Supplies,78.4,75,Replication Gap,93.9,Add Comparison Table section to 18 posts to match Dog Toys reference (92.4% coverage),18 posts,6,1.2
+Cat Supplies,78.4,75,Replication Gap,94.6,Add How We Evaluated section to 22 posts to match Dog Toys reference (90.1% coverage),22 posts,7,1.1
+Cat Supplies,78.4,75,Missing Spoke Topic,0,Publish new spoke: Best Self-Cleaning Litter Boxes UK — Product-specific guide adds cluster depth,New post required,8,4
+Cat Supplies,78.4,75,Missing Spoke Topic,0,Publish new spoke: Cat Bed Buying Guide by Cat Size — Practical guide matches reference style,New post required,9,3.8
+Cat Supplies,78.4,75,Missing Spoke Topic,0,Publish new spoke: Eco-Friendly Cat Litter Options — Niche subtopic expands cluster coverage,New post required,10,3.6
