@@ -1,0 +1,49 @@
+cluster,competitor,dimension,pethub_score,competitor_score,gap,displacement_action,effort_level,priority
+Cat Toys,Cats.com,comparison_content,63,97,-34,Build more comparison tables and feature matrices to displace Cats.com,HIGH,1
+Cat Supplies,Cats.com,comparison_content,64,97,-33,Build more comparison tables and feature matrices to displace Cats.com,HIGH,2
+Dog Supplies,Pets at Home,comparison_content,60,92,-32,Build more comparison tables and feature matrices to displace Pets at Home,HIGH,2
+Indoor Cats,Cats.com,content_depth,68,98,-30,Deepen educational content to outmatch Cats.com's coverage depth,HIGH,2
+Cat Supplies,Pets at Home,comparison_content,64,89,-25,Build more comparison tables and feature matrices to displace Pets at Home,MEDIUM,2
+Dog Supplies,Pets at Home,content_breadth,60,84,-24,Expand topic coverage across more sub-topics to close breadth gap with Pets at Home,MEDIUM,2
+Cat Toys,Pets at Home,comparison_content,63,86,-23,Build more comparison tables and feature matrices to displace Pets at Home,MEDIUM,2
+Cat Toys,Cats.com,content_depth,76,98,-22,Deepen educational content to outmatch Cats.com's coverage depth,MEDIUM,2
+Indoor Cats,Cats.com,comparison_content,75,97,-22,Build more comparison tables and feature matrices to displace Cats.com,MEDIUM,2
+Dog Toys,Pets at Home,comparison_content,71,92,-21,Build more comparison tables and feature matrices to displace Pets at Home,MEDIUM,2
+Cat Supplies,Cats.com,glossary_coverage,80,100,-20,Expand glossary/terminology content to close gap with Cats.com,MEDIUM,2
+Cat Toys,Cats.com,glossary_coverage,80,100,-20,Expand glossary/terminology content to close gap with Cats.com,MEDIUM,2
+Indoor Cats,Cats.com,glossary_coverage,80,100,-20,Expand glossary/terminology content to close gap with Cats.com,MEDIUM,2
+Cat Toys,Cats.com,content_breadth,73,92,-19,Expand topic coverage across more sub-topics to close breadth gap with Cats.com,MEDIUM,2
+Cat Supplies,Cats.com,content_depth,80,98,-18,Deepen educational content to outmatch Cats.com's coverage depth,MEDIUM,2
+Dog Harnesses,Pets at Home,comparison_content,72,89,-17,Build more comparison tables and feature matrices to displace Pets at Home,MEDIUM,2
+Cat Supplies,Cats.com,content_breadth,76,92,-16,Expand topic coverage across more sub-topics to close breadth gap with Cats.com,MEDIUM,2
+Dog Food,Pets at Home,comparison_content,81,95,-14,Build more comparison tables and feature matrices to displace Pets at Home,MEDIUM,2
+Indoor Cats,Cats.com,content_breadth,78,92,-14,Expand topic coverage across more sub-topics to close breadth gap with Cats.com,MEDIUM,2
+Pet Care,Cats.com,content_breadth,60,78,-18,Expand topic coverage across more sub-topics to close breadth gap with Cats.com,MEDIUM,3
+Training Supplies,Pets at Home,comparison_content,78,86,-8,Build more comparison tables and feature matrices to displace Pets at Home,LOW,3
+Pet Care,Purina,content_depth,68,76,-8,Deepen educational content to outmatch Purina's coverage depth,LOW,3
+Dog Harnesses,Pets at Home,content_breadth,75,82,-7,Expand topic coverage across more sub-topics to close breadth gap with Pets at Home,LOW,3
+Indoor Cats,Cats.com,citation_quality,88,95,-7,Strengthen authoritative citations (BVA/RSPCA/PDSA) vs Cats.com,LOW,3
+Dog Food,Pets at Home,trust_signals,94,100,-6,Add vet-reviewed badges and UK authority endorsements to counter Pets at Home,LOW,3
+Dog Food,Purina,trust_signals,94,100,-6,Add vet-reviewed badges and UK authority endorsements to counter Purina,LOW,3
+Cat Supplies,Pets at Home,content_breadth,76,82,-6,Expand topic coverage across more sub-topics to close breadth gap with Pets at Home,LOW,3
+Cat Toys,Pets at Home,content_breadth,73,79,-6,Expand topic coverage across more sub-topics to close breadth gap with Pets at Home,LOW,3
+Dog Beds,Pets at Home,comparison_content,87,92,-5,Build more comparison tables and feature matrices to displace Pets at Home,LOW,3
+Cat Supplies,Cats.com,citation_quality,90,95,-5,Strengthen authoritative citations (BVA/RSPCA/PDSA) vs Cats.com,LOW,3
+Cat Toys,Cats.com,citation_quality,90,95,-5,Strengthen authoritative citations (BVA/RSPCA/PDSA) vs Cats.com,LOW,3
+Dog Supplies,Zooplus,content_breadth,60,64,-4,Expand topic coverage across more sub-topics to close breadth gap with Zooplus,LOW,3
+Cat Supplies,Cats.com,trust_signals,96,100,-4,Add vet-reviewed badges and UK authority endorsements to counter Cats.com,LOW,3
+Cat Supplies,Cats.com,update_frequency,78,82,-4,Increase content update cadence to match Cats.com's freshness,LOW,3
+Cat Toys,Cats.com,update_frequency,78,82,-4,Increase content update cadence to match Cats.com's freshness,LOW,3
+Indoor Cats,Cats.com,update_frequency,78,82,-4,Increase content update cadence to match Cats.com's freshness,LOW,3
+Dog Health,Purina,trust_signals,93,96,-3,Add vet-reviewed badges and UK authority endorsements to counter Purina,LOW,3
+Dog Toys,Pets at Home,content_breadth,81,84,-3,Expand topic coverage across more sub-topics to close breadth gap with Pets at Home,LOW,3
+Puppy Care,Purina,content_depth,75,78,-3,Deepen educational content to outmatch Purina's coverage depth,LOW,3
+Indoor Cats,Cats.com,faq_coverage,80,83,-3,Expand FAQ sections and Q&A content to match Cats.com,LOW,3
+Dog Food,Pets at Home,update_frequency,78,80,-2,Increase content update cadence to match Pets at Home's freshness,LOW,3
+Dog Care,Purina,content_depth,74,76,-2,Deepen educational content to outmatch Purina's coverage depth,LOW,3
+Cat Supplies,Pets at Home,update_frequency,78,80,-2,Increase content update cadence to match Pets at Home's freshness,LOW,3
+Cat Toys,Cats.com,trust_signals,98,100,-2,Add vet-reviewed badges and UK authority endorsements to counter Cats.com,LOW,3
+Indoor Cats,Cats.com,trust_signals,98,100,-2,Add vet-reviewed badges and UK authority endorsements to counter Cats.com,LOW,3
+Dog Food,Pets at Home,content_breadth,81,82,-1,Expand topic coverage across more sub-topics to close breadth gap with Pets at Home,LOW,3
+Pet Care,Cats.com,content_depth,68,74,-6,Deepen educational content to outmatch Cats.com's coverage depth,LOW,4
+Pet Care,Pets at Home,content_breadth,60,63,-3,Expand topic coverage across more sub-topics to close breadth gap with Pets at Home,LOW,4

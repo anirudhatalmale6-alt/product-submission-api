@@ -1,0 +1,12 @@
+cluster,total_queries,avg_readiness,queries_with_matching_content,google_visible_count,ai_answer_ready_count
+Cat Supplies,3,100,3,0,2
+Cat Toys,3,100,3,0,0
+Dog Beds,3,100,3,0,2
+Dog Care,3,100,3,0,3
+Dog Food,3,100,3,0,3
+Dog Harnesses,3,100,3,0,2
+Dog Health,3,100,3,0,3
+Dog Toys,3,100,3,0,0
+General,2,100,2,0,1
+Indoor Cats,1,100,1,0,0
+Training Supplies,3,100,3,0,1

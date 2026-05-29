@@ -1,0 +1,15 @@
+cluster,pethub_score,pets_at_home_score,zooplus_score,purina_score,cats_com_score,rover_score,leader,pethub_rank,status,gap_to_leader
+Dog Food,87.7,69.2,50.9,62.2,11.4,27.2,PetHub,1,WINNING,0
+Dog Health,86.2,55.3,32.8,58.7,11.4,30.2,PetHub,1,WINNING,0
+Dog Beds,88.8,65.2,39.5,23.1,11.4,18.5,PetHub,1,WINNING,0
+Dog Care,87.8,59.2,35.6,56.8,11.4,35.8,PetHub,1,WINNING,0
+Dog Supplies,83.2,65.2,44.8,33.4,11.4,27.2,PetHub,1,WINNING,0
+Dog Toys,87.2,65.2,41.8,38.9,11.4,34.9,PetHub,1,WINNING,0
+Cat Supplies,85.2,63.2,44.8,33.4,87.9,18.5,Cats.com,2,COMPETITIVE,-2.7
+Cat Toys,84.7,61.2,40.5,38.9,87.9,18.5,Cats.com,2,COMPETITIVE,-3.2
+Dog Harnesses,86.8,63.2,33.7,23.1,11.4,27.2,PetHub,1,WINNING,0
+Training Supplies,88.3,61.2,38.6,52.8,30.5,32.8,PetHub,1,WINNING,0
+Puppy Care,89.3,59.2,35.6,58.7,11.4,32.8,PetHub,1,WINNING,0
+Indoor Cats,83.8,35.6,35.6,48.8,87.9,7.1,Cats.com,2,COMPETITIVE,-4.1
+Pet Care,83.2,55.3,32.8,56.8,63.2,30.2,PetHub,1,WINNING,0
+Uncategorized,84.8,39.3,31.0,45.3,53.4,27.2,PetHub,1,WINNING,0

@@ -1,0 +1,71 @@
+competitor,cluster,content_depth,content_breadth,trust_signals,structured_data,ai_readiness,glossary_coverage,comparison_content,practical_guides,faq_coverage,citation_quality,update_frequency,user_engagement,total_score
+Pets at Home,Dog Food,63,82,100,78,52,20,95,63,60,50,80,87,69.2
+Pets at Home,Dog Health,52,63,82,64,39,16,56,52,49,41,70,80,55.3
+Pets at Home,Dog Beds,61,84,76,76,46,19,92,61,58,39,82,89,65.2
+Pets at Home,Dog Care,55,68,88,69,41,18,60,55,53,44,75,85,59.2
+Pets at Home,Dog Supplies,61,84,76,76,46,19,92,61,58,39,82,89,65.2
+Pets at Home,Dog Toys,61,84,76,76,46,19,92,61,58,39,82,89,65.2
+Pets at Home,Cat Supplies,59,82,73,73,44,19,89,59,56,38,80,86,63.2
+Pets at Home,Cat Toys,57,79,71,71,43,18,86,57,55,36,77,84,61.2
+Pets at Home,Dog Harnesses,59,82,73,73,44,19,89,59,56,38,80,86,63.2
+Pets at Home,Training Supplies,57,79,71,71,43,18,86,57,55,36,77,84,61.2
+Pets at Home,Puppy Care,55,68,88,69,41,18,60,55,53,44,75,85,59.2
+Pets at Home,Indoor Cats,32,45,45,41,27,12,39,29,32,23,49,53,35.6
+Pets at Home,Pet Care,52,63,82,64,39,16,56,52,49,41,70,80,55.3
+Pets at Home,Uncategorized,35,49,50,45,30,13,44,32,35,26,54,59,39.3
+Zooplus,Dog Food,45,78,33,69,38,14,68,48,42,24,75,77,50.9
+Zooplus,Dog Health,31,47,22,47,26,10,29,33,29,16,51,52,32.8
+Zooplus,Dog Beds,33,60,29,53,33,12,37,31,33,20,66,67,39.5
+Zooplus,Dog Care,34,51,24,51,28,10,31,36,31,18,56,57,35.6
+Zooplus,Dog Supplies,42,64,31,64,35,13,40,45,40,22,70,72,44.8
+Zooplus,Dog Toys,39,60,29,60,33,12,37,42,37,20,66,67,41.8
+Zooplus,Cat Supplies,42,64,31,64,35,13,40,45,40,22,70,72,44.8
+Zooplus,Cat Toys,38,58,28,58,32,12,36,40,36,20,63,65,40.5
+Zooplus,Dog Harnesses,28,51,24,46,28,10,31,27,28,18,56,57,33.7
+Zooplus,Training Supplies,36,55,27,55,30,11,34,39,34,19,61,62,38.6
+Zooplus,Puppy Care,34,51,24,51,28,10,31,36,31,18,56,57,35.6
+Zooplus,Indoor Cats,34,51,24,51,28,10,31,36,31,18,56,57,35.6
+Zooplus,Pet Care,31,47,22,47,26,10,29,33,29,16,51,52,32.8
+Zooplus,Uncategorized,29,45,21,45,24,9,27,31,27,15,49,50,31.0
+Purina,Dog Food,83,53,100,63,56,24,27,76,63,68,68,66,62.2
+Purina,Dog Health,78,50,96,59,53,23,25,71,59,64,64,62,58.7
+Purina,Dog Beds,27,22,30,26,23,12,11,25,24,22,28,27,23.1
+Purina,Dog Care,76,48,92,57,51,22,25,69,57,62,62,60,56.8
+Purina,Dog Supplies,39,32,44,38,34,15,16,36,35,32,41,39,33.4
+Purina,Dog Toys,55,35,48,42,37,16,18,50,42,35,45,44,38.9
+Purina,Cat Supplies,39,32,44,38,34,15,16,36,35,32,41,39,33.4
+Purina,Cat Toys,55,35,48,42,37,16,18,50,42,35,45,44,38.9
+Purina,Dog Harnesses,27,22,30,26,23,12,11,25,24,22,28,27,23.1
+Purina,Training Supplies,71,45,86,53,48,20,23,64,53,57,57,56,52.8
+Purina,Puppy Care,78,50,96,59,53,23,25,71,59,64,64,62,58.7
+Purina,Indoor Cats,65,42,80,49,44,19,21,59,49,53,53,52,48.8
+Purina,Pet Care,76,48,92,57,51,22,25,69,57,62,62,60,56.8
+Purina,Uncategorized,60,38,74,46,41,18,20,55,46,49,49,48,45.3
+Cats.com,Dog Food,12,12,13,11,10,11,11,11,12,10,12,12,11.4
+Cats.com,Dog Health,12,12,13,11,10,11,11,11,12,10,12,12,11.4
+Cats.com,Dog Beds,12,12,13,11,10,11,11,11,12,10,12,12,11.4
+Cats.com,Dog Care,12,12,13,11,10,11,11,11,12,10,12,12,11.4
+Cats.com,Dog Supplies,12,12,13,11,10,11,11,11,12,10,12,12,11.4
+Cats.com,Dog Toys,12,12,13,11,10,11,11,11,12,10,12,12,11.4
+Cats.com,Cat Supplies,98,92,100,72,73,100,97,83,83,95,82,80,87.9
+Cats.com,Cat Toys,98,92,100,72,73,100,97,83,83,95,82,80,87.9
+Cats.com,Dog Harnesses,12,12,13,11,10,11,11,11,12,10,12,12,11.4
+Cats.com,Training Supplies,31,33,34,29,26,30,29,30,31,28,33,32,30.5
+Cats.com,Puppy Care,12,12,13,11,10,11,11,11,12,10,12,12,11.4
+Cats.com,Indoor Cats,98,92,100,72,73,100,97,83,83,95,82,80,87.9
+Cats.com,Pet Care,74,78,85,55,55,19,55,63,74,72,68,61,63.2
+Cats.com,Uncategorized,63,65,72,46,47,16,46,53,63,61,58,51,53.4
+Rover,Dog Food,31,26,24,32,23,7,20,32,29,17,38,48,27.2
+Rover,Dog Health,34,29,27,35,26,8,22,36,32,19,42,53,30.2
+Rover,Dog Beds,20,18,17,22,16,10,14,19,18,12,26,30,18.5
+Rover,Dog Care,40,34,32,42,30,9,27,43,38,23,49,63,35.8
+Rover,Dog Supplies,31,26,24,32,23,7,20,32,29,17,38,48,27.2
+Rover,Dog Toys,37,38,29,38,28,8,42,39,35,21,46,58,34.9
+Rover,Cat Supplies,20,18,17,22,16,10,14,19,18,12,26,30,18.5
+Rover,Cat Toys,20,18,17,22,16,10,14,19,18,12,26,30,18.5
+Rover,Dog Harnesses,31,26,24,32,23,7,20,32,29,17,38,48,27.2
+Rover,Training Supplies,37,31,29,38,28,8,24,39,35,21,46,58,32.8
+Rover,Puppy Care,37,31,29,38,28,8,24,39,35,21,46,58,32.8
+Rover,Indoor Cats,8,7,6,8,6,5,5,7,7,5,10,11,7.1
+Rover,Pet Care,34,29,27,35,26,8,22,36,32,19,42,53,30.2
+Rover,Uncategorized,31,26,24,32,23,7,20,32,29,17,38,48,27.2

@@ -1,0 +1,15 @@
+cluster,dominance_score,gap_to_90,ownership_status,post_count,avg_citation,avg_moat,avg_ai_pref,weakest_dimension,priority_action
+Indoor Cats,86.9,3.1,CONTESTED,6,88.0,80.2,88.0,comparison (75),Strengthen comparison depth to 85+ (currently 75.0); need +3.1 overall
+Dog Supplies,87.8,2.2,CONTESTED,7,88.6,79.1,85.1,comparison (60),Add striped comparison tables (comparison at 60.0); need +2.2 overall
+Uncategorized,88.1,1.9,CONTESTED,45,89.0,78.6,85.5,comparison (62.3),Add striped comparison tables (comparison at 62.3); need +1.9 overall
+Cat Toys,88.9,1.1,CONTESTED,16,89.7,80.6,87.0,comparison (63.4),Add striped comparison tables (comparison at 63.4); need +1.1 overall
+Pet Care,89.2,0.8,CONTESTED,2,90.0,79.2,86.0,comparison (60),Add striped comparison tables (comparison at 60.0); need +0.8 overall
+Cat Supplies,89.3,0.7,CONTESTED,23,90.1,81.3,86.5,comparison (63.7),Add striped comparison tables (comparison at 63.7); need +0.7 overall
+Dog Health,89.5,0.5,CONTESTED,8,90.3,82.6,88.9,comparison (80),Strengthen comparison depth to 85+ (currently 80.0); need +0.5 overall
+Dog Toys,91.1,0,OWNED,14,91.4,81.5,89.1,comparison (70.7),Maintain current position; strengthen comparison depth
+Dog Care,91.6,0,OWNED,12,91.9,81.6,90.2,comparison (81.7),Maintain current position; strengthen comparison depth
+Dog Food,91.9,0,OWNED,5,92.3,84.7,89.9,comparison (81),Maintain current position; strengthen comparison depth
+Dog Beds,92.3,0,OWNED,15,92.1,81.4,91.0,comparison (86.7),Maintain current position; strengthen comparison depth
+Dog Harnesses,92.5,0,OWNED,7,92.8,81.0,89.7,comparison (72.1),Maintain current position; strengthen comparison depth
+Training Supplies,93.6,0,OWNED,6,93.3,83.3,91.0,comparison (78.3),Maintain current position; strengthen comparison depth
+Puppy Care,95.5,0,OWNED,2,95.4,82.5,92.8,comparison (87.5),Maintain current position; strengthen comparison depth

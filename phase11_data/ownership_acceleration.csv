@@ -1,0 +1,68 @@
+cluster,current_score,target_score,gap,action_type,specific_action,estimated_impact,priority
+Indoor Cats,86.9,90.0,3.1,comparison_enhancement,Add/improve striped comparison tables in all posts (current avg: 75.0),+1.5,1
+Dog Supplies,87.8,90.0,2.2,comparison_enhancement,Add/improve striped comparison tables in all posts (current avg: 60.0),+2.2,1
+Uncategorized,88.1,90.0,1.9,comparison_enhancement,Add/improve striped comparison tables in all posts (current avg: 62.3),+1.9,1
+Cat Toys,88.9,90.0,1.1,comparison_enhancement,Add/improve striped comparison tables in all posts (current avg: 63.4),+1.1,1
+Pet Care,89.2,90.0,0.8,comparison_enhancement,Add/improve striped comparison tables in all posts (current avg: 60.0),+0.8,1
+Cat Supplies,89.3,90.0,0.7,comparison_enhancement,Add/improve striped comparison tables in all posts (current avg: 63.7),+0.7,1
+Dog Health,89.5,90.0,0.5,comparison_enhancement,Add/improve striped comparison tables in all posts (current avg: 80.0),+0.5,1
+Dog Care,91.6,90.0,0,comparison_enhancement,Add/improve striped comparison tables in all posts (current avg: 81.7),+0,1
+Dog Food,91.9,90.0,0,comparison_enhancement,Add/improve striped comparison tables in all posts (current avg: 81.0),+0,1
+Dog Harnesses,92.5,90.0,0,comparison_enhancement,Add/improve striped comparison tables in all posts (current avg: 72.1),+0,1
+Dog Toys,91.1,90.0,0,comparison_enhancement,Add/improve striped comparison tables in all posts (current avg: 70.7),+0,1
+Training Supplies,93.6,90.0,0,comparison_enhancement,Add/improve striped comparison tables in all posts (current avg: 78.3),+0,1
+Indoor Cats,86.9,90.0,3.1,moat_deepening,"Add educational sections, glossary depth, and unique methodology (moat avg: 80.2)",+0.5,2
+Indoor Cats,86.9,90.0,3.1,content_expansion,Publish additional posts to strengthen cluster depth (currently 6 posts),+2.0,2
+Dog Supplies,87.8,90.0,2.2,moat_deepening,"Add educational sections, glossary depth, and unique methodology (moat avg: 79.1)",+0.6,2
+Dog Supplies,87.8,90.0,2.2,content_expansion,Publish additional posts to strengthen cluster depth (currently 7 posts),+2.0,2
+Uncategorized,88.1,90.0,1.9,moat_deepening,"Add educational sections, glossary depth, and unique methodology (moat avg: 78.6)",+0.6,2
+Cat Toys,88.9,90.0,1.1,moat_deepening,"Add educational sections, glossary depth, and unique methodology (moat avg: 80.6)",+0.4,2
+Pet Care,89.2,90.0,0.8,moat_deepening,"Add educational sections, glossary depth, and unique methodology (moat avg: 79.2)",+0.6,2
+Cat Supplies,89.3,90.0,0.7,moat_deepening,"Add educational sections, glossary depth, and unique methodology (moat avg: 81.3)",+0.4,2
+Dog Health,89.5,90.0,0.5,moat_deepening,"Add educational sections, glossary depth, and unique methodology (moat avg: 82.6)",+0.2,2
+Dog Beds,92.3,90.0,0,moat_deepening,"Add educational sections, glossary depth, and unique methodology (moat avg: 81.4)",+0,2
+Dog Care,91.6,90.0,0,moat_deepening,"Add educational sections, glossary depth, and unique methodology (moat avg: 81.6)",+0,2
+Dog Food,91.9,90.0,0,moat_deepening,"Add educational sections, glossary depth, and unique methodology (moat avg: 84.7)",+0,2
+Dog Harnesses,92.5,90.0,0,moat_deepening,"Add educational sections, glossary depth, and unique methodology (moat avg: 81.0)",+0,2
+Dog Toys,91.1,90.0,0,moat_deepening,"Add educational sections, glossary depth, and unique methodology (moat avg: 81.5)",+0,2
+Puppy Care,95.5,90.0,0,moat_deepening,"Add educational sections, glossary depth, and unique methodology (moat avg: 82.5)",+0,2
+Training Supplies,93.6,90.0,0,moat_deepening,"Add educational sections, glossary depth, and unique methodology (moat avg: 83.3)",+0,2
+Indoor Cats,86.9,90.0,3.1,citation_improvement,Improve extractability and reference quality (citation avg: 88.0),+0.6,3
+Indoor Cats,86.9,90.0,3.1,ai_optimization,Optimize for AI answer extraction with clear summaries (AI pref avg: 88.0),+0.4,3
+Dog Supplies,87.8,90.0,2.2,citation_improvement,Improve extractability and reference quality (citation avg: 88.6),+0.5,3
+Dog Supplies,87.8,90.0,2.2,ai_optimization,Optimize for AI answer extraction with clear summaries (AI pref avg: 85.1),+0.7,3
+Uncategorized,88.1,90.0,1.9,citation_improvement,Improve extractability and reference quality (citation avg: 89.0),+0.5,3
+Uncategorized,88.1,90.0,1.9,ai_optimization,Optimize for AI answer extraction with clear summaries (AI pref avg: 85.5),+0.7,3
+Cat Toys,88.9,90.0,1.1,citation_improvement,Improve extractability and reference quality (citation avg: 89.7),+0.4,3
+Cat Toys,88.9,90.0,1.1,ai_optimization,Optimize for AI answer extraction with clear summaries (AI pref avg: 87.0),+0.5,3
+Pet Care,89.2,90.0,0.8,citation_improvement,Improve extractability and reference quality (citation avg: 90.0),+0.4,3
+Pet Care,89.2,90.0,0.8,ai_optimization,Optimize for AI answer extraction with clear summaries (AI pref avg: 86.0),+0.6,3
+Cat Supplies,89.3,90.0,0.7,citation_improvement,Improve extractability and reference quality (citation avg: 90.1),+0.4,3
+Cat Supplies,89.3,90.0,0.7,ai_optimization,Optimize for AI answer extraction with clear summaries (AI pref avg: 86.5),+0.6,3
+Dog Health,89.5,90.0,0.5,citation_improvement,Improve extractability and reference quality (citation avg: 90.3),+0.4,3
+Dog Health,89.5,90.0,0.5,ai_optimization,Optimize for AI answer extraction with clear summaries (AI pref avg: 88.9),+0.3,3
+Dog Beds,92.3,90.0,0,citation_improvement,Improve extractability and reference quality (citation avg: 92.1),+0,3
+Dog Beds,92.3,90.0,0,ai_optimization,Optimize for AI answer extraction with clear summaries (AI pref avg: 91.0),+0,3
+Dog Care,91.6,90.0,0,citation_improvement,Improve extractability and reference quality (citation avg: 91.9),+0,3
+Dog Care,91.6,90.0,0,ai_optimization,Optimize for AI answer extraction with clear summaries (AI pref avg: 90.2),+0,3
+Dog Food,91.9,90.0,0,citation_improvement,Improve extractability and reference quality (citation avg: 92.3),+0,3
+Dog Food,91.9,90.0,0,ai_optimization,Optimize for AI answer extraction with clear summaries (AI pref avg: 89.9),+0,3
+Dog Harnesses,92.5,90.0,0,citation_improvement,Improve extractability and reference quality (citation avg: 92.8),+0,3
+Dog Harnesses,92.5,90.0,0,ai_optimization,Optimize for AI answer extraction with clear summaries (AI pref avg: 89.7),+0,3
+Dog Toys,91.1,90.0,0,citation_improvement,Improve extractability and reference quality (citation avg: 91.4),+0,3
+Dog Toys,91.1,90.0,0,ai_optimization,Optimize for AI answer extraction with clear summaries (AI pref avg: 89.1),+0,3
+Training Supplies,93.6,90.0,0,citation_improvement,Improve extractability and reference quality (citation avg: 93.3),+0,3
+Training Supplies,93.6,90.0,0,ai_optimization,Optimize for AI answer extraction with clear summaries (AI pref avg: 91.0),+0,3
+Pet Care,89.2,90.0,0.8,content_expansion,Publish additional posts to strengthen cluster depth (currently 2 posts),+0.8,4
+Dog Health,89.5,90.0,0.5,content_expansion,Publish additional posts to strengthen cluster depth (currently 8 posts),+0.5,4
+Dog Food,91.9,90.0,0,content_expansion,Publish additional posts to strengthen cluster depth (currently 5 posts),+0,4
+Dog Harnesses,92.5,90.0,0,content_expansion,Publish additional posts to strengthen cluster depth (currently 7 posts),+0,4
+Puppy Care,95.5,90.0,0,content_expansion,Publish additional posts to strengthen cluster depth (currently 2 posts),+0,4
+Training Supplies,93.6,90.0,0,content_expansion,Publish additional posts to strengthen cluster depth (currently 6 posts),+0,4
+Dog Toys,91.1,95.0,3.9,dominance_defense,Maintain and defend position; update content quarterly; monitor competitor entries,+0.5,5
+Dog Care,91.6,95.0,3.4,dominance_defense,Maintain and defend position; update content quarterly; monitor competitor entries,+0.5,5
+Dog Food,91.9,95.0,3.1,dominance_defense,Maintain and defend position; update content quarterly; monitor competitor entries,+0.5,5
+Dog Beds,92.3,95.0,2.7,dominance_defense,Maintain and defend position; update content quarterly; monitor competitor entries,+0.5,5
+Dog Harnesses,92.5,95.0,2.5,dominance_defense,Maintain and defend position; update content quarterly; monitor competitor entries,+0.5,5
+Training Supplies,93.6,95.0,1.4,dominance_defense,Maintain and defend position; update content quarterly; monitor competitor entries,+0.5,5
+Puppy Care,95.5,95.0,-0.5,dominance_defense,Maintain and defend position; update content quarterly; monitor competitor entries,+0.5,5
