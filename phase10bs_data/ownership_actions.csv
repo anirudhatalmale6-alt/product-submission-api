@@ -1,0 +1,15 @@
+cluster,ownership_status,gap_to_owned,top_3_priorities,estimated_posts_to_fix
+Pet Care,CONTESTED,11.5,"Add specific UK prices, measurements, timelines (current: 4.0); Add more UK org references per post (current: 47.7); Deepen trust signals: methodology, welfare, editorial (current: 48.0)",2
+Dog Toys,CONTESTED,10.1,"Add more UK org references per post (current: 24.3); Deepen trust signals: methodology, welfare, editorial (current: 46.3); Add specific UK prices, measurements, timelines (current: 52.3)",9
+Dog Harnesses,CONTESTED,8.4,"Add specific UK prices, measurements, timelines (current: 25.1); Add more UK org references per post (current: 31.1); Deepen trust signals: methodology, welfare, editorial (current: 54.0)",2
+Indoor Cats,CONTESTED,8.0,"Add specific UK prices, measurements, timelines (current: 30.0); Add more UK org references per post (current: 34.4); Deepen trust signals: methodology, welfare, editorial (current: 50.0)",4
+Dog Beds,CONTESTED,5.9,"Add more UK org references per post (current: 21.6); Deepen trust signals: methodology, welfare, editorial (current: 53.2); Strengthen citation quality and UK authority links (current: 64.5)",6
+Cat Toys,CONTESTED,4.8,"Add more UK org references per post (current: 33.9); Deepen trust signals: methodology, welfare, editorial (current: 49.1); Add specific UK prices, measurements, timelines (current: 59.8)",3
+Uncategorized,CONTESTED,4.2,"Add more UK org references per post (current: 28.2); Add specific UK prices, measurements, timelines (current: 52.5); Deepen trust signals: methodology, welfare, editorial (current: 58.5)",5
+Puppy Care,CONTESTED,4.2,"Add more UK org references per post (current: 20.5); Deepen trust signals: methodology, welfare, editorial (current: 57.0); Strengthen citation quality and UK authority links (current: 58.0)",1
+Training Supplies,CONTESTED,2.2,"Add more UK org references per post (current: 29.3); Deepen trust signals: methodology, welfare, editorial (current: 49.0); Strengthen citation quality and UK authority links (current: 70.8)",1
+Cat Supplies,CONTESTED,1.6,"Add more UK org references per post (current: 32.0); Deepen trust signals: methodology, welfare, editorial (current: 56.6); Add specific UK prices, measurements, timelines (current: 70.3)",1
+Dog Care,OWNED,0,"Add more UK org references per post (current: 26.9); Deepen trust signals: methodology, welfare, editorial (current: 54.5); Strengthen citation quality and UK authority links (current: 73.1)",3
+Dog Health,OWNED,0,"Add more UK org references per post (current: 29.1); Deepen trust signals: methodology, welfare, editorial (current: 54.8); Improve overall answer quality across cluster (current: 75.7)",1
+Dog Supplies,OWNED,0,"Add more UK org references per post (current: 39.4); Deepen trust signals: methodology, welfare, editorial (current: 66.0); Build authority moat: glossary, comparisons, structure (current: 72.7)",1
+Dog Food,OWNED,0,"Add more UK org references per post (current: 20.1); Deepen trust signals: methodology, welfare, editorial (current: 61.2); Strengthen citation quality and UK authority links (current: 80.0)",0
