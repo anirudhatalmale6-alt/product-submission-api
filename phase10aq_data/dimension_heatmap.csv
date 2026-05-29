@@ -1,0 +1,131 @@
+cluster,dimension,score,status
+Educational,Saturation,84.0,green
+Educational,Authority Density,100.0,green
+Educational,Semantic Coverage,100.0,green
+Educational,Glossary Density,82.0,green
+Educational,Trust Intensity,92.0,green
+Educational,Citation Confidence,86.0,green
+Educational,Practical Usefulness,59.0,amber
+Educational,Comparison Usefulness,69.0,amber
+Educational,AI Readiness,72.0,green
+Educational,Indexing Momentum,72.0,green
+Dog Food,Saturation,88.9,green
+Dog Food,Authority Density,95.6,green
+Dog Food,Semantic Coverage,100.0,green
+Dog Food,Glossary Density,40.0,red
+Dog Food,Trust Intensity,92.2,green
+Dog Food,Citation Confidence,82.2,green
+Dog Food,Practical Usefulness,71.1,green
+Dog Food,Comparison Usefulness,76.7,green
+Dog Food,AI Readiness,73.3,green
+Dog Food,Indexing Momentum,75.6,green
+Dog Health,Saturation,84.4,green
+Dog Health,Authority Density,100.0,green
+Dog Health,Semantic Coverage,100.0,green
+Dog Health,Glossary Density,15.6,red
+Dog Health,Trust Intensity,97.2,green
+Dog Health,Citation Confidence,85.0,green
+Dog Health,Practical Usefulness,75.6,green
+Dog Health,Comparison Usefulness,87.2,green
+Dog Health,AI Readiness,73.3,green
+Dog Health,Indexing Momentum,74.4,green
+Cat Toys,Saturation,78.7,green
+Cat Toys,Authority Density,99.3,green
+Cat Toys,Semantic Coverage,100.0,green
+Cat Toys,Glossary Density,8.7,red
+Cat Toys,Trust Intensity,97.3,green
+Cat Toys,Citation Confidence,88.7,green
+Cat Toys,Practical Usefulness,72.0,green
+Cat Toys,Comparison Usefulness,89.7,green
+Cat Toys,AI Readiness,77.3,green
+Cat Toys,Indexing Momentum,74.3,green
+Cat Supplies,Saturation,75.0,green
+Cat Supplies,Authority Density,100.0,green
+Cat Supplies,Semantic Coverage,100.0,green
+Cat Supplies,Glossary Density,1.2,red
+Cat Supplies,Trust Intensity,100.0,green
+Cat Supplies,Citation Confidence,90.0,green
+Cat Supplies,Practical Usefulness,66.9,amber
+Cat Supplies,Comparison Usefulness,100.0,green
+Cat Supplies,AI Readiness,77.5,green
+Cat Supplies,Indexing Momentum,73.8,green
+Dog Toys,Saturation,79.5,green
+Dog Toys,Authority Density,97.1,green
+Dog Toys,Semantic Coverage,100.0,green
+Dog Toys,Glossary Density,9.2,red
+Dog Toys,Trust Intensity,97.5,green
+Dog Toys,Citation Confidence,88.4,green
+Dog Toys,Practical Usefulness,70.5,green
+Dog Toys,Comparison Usefulness,86.4,green
+Dog Toys,AI Readiness,78.5,green
+Dog Toys,Indexing Momentum,73.2,green
+Dog Training,Saturation,80.0,green
+Dog Training,Authority Density,96.4,green
+Dog Training,Semantic Coverage,100.0,green
+Dog Training,Glossary Density,15.5,red
+Dog Training,Trust Intensity,94.5,green
+Dog Training,Citation Confidence,82.3,green
+Dog Training,Practical Usefulness,69.1,amber
+Dog Training,Comparison Usefulness,86.4,green
+Dog Training,AI Readiness,76.4,green
+Dog Training,Indexing Momentum,73.6,green
+Dog Harnesses,Saturation,73.3,green
+Dog Harnesses,Authority Density,100.0,green
+Dog Harnesses,Semantic Coverage,97.2,green
+Dog Harnesses,Glossary Density,8.3,red
+Dog Harnesses,Trust Intensity,100.0,green
+Dog Harnesses,Citation Confidence,86.7,green
+Dog Harnesses,Practical Usefulness,61.7,amber
+Dog Harnesses,Comparison Usefulness,100.0,green
+Dog Harnesses,AI Readiness,70.0,green
+Dog Harnesses,Indexing Momentum,70.8,green
+Uncategorized,Saturation,71.0,green
+Uncategorized,Authority Density,100.0,green
+Uncategorized,Semantic Coverage,95.0,green
+Uncategorized,Glossary Density,6.6,red
+Uncategorized,Trust Intensity,100.0,green
+Uncategorized,Citation Confidence,84.3,green
+Uncategorized,Practical Usefulness,66.6,amber
+Uncategorized,Comparison Usefulness,87.9,green
+Uncategorized,AI Readiness,73.1,green
+Uncategorized,Indexing Momentum,69.8,amber
+Dog Grooming,Saturation,62.5,amber
+Dog Grooming,Authority Density,97.5,green
+Dog Grooming,Semantic Coverage,97.9,green
+Dog Grooming,Glossary Density,7.5,red
+Dog Grooming,Trust Intensity,100.0,green
+Dog Grooming,Citation Confidence,86.9,green
+Dog Grooming,Practical Usefulness,57.5,amber
+Dog Grooming,Comparison Usefulness,87.5,green
+Dog Grooming,AI Readiness,72.5,green
+Dog Grooming,Indexing Momentum,69.4,amber
+Dog Beds,Saturation,67.3,amber
+Dog Beds,Authority Density,80.5,green
+Dog Beds,Semantic Coverage,100.0,green
+Dog Beds,Glossary Density,21.8,red
+Dog Beds,Trust Intensity,85.5,green
+Dog Beds,Citation Confidence,65.5,amber
+Dog Beds,Practical Usefulness,41.8,red
+Dog Beds,Comparison Usefulness,54.5,amber
+Dog Beds,AI Readiness,58.2,amber
+Dog Beds,Indexing Momentum,68.6,amber
+Puppy Care,Saturation,67.7,amber
+Puppy Care,Authority Density,78.5,green
+Puppy Care,Semantic Coverage,100.0,green
+Puppy Care,Glossary Density,12.3,red
+Puppy Care,Trust Intensity,83.1,green
+Puppy Care,Citation Confidence,59.2,amber
+Puppy Care,Practical Usefulness,48.8,red
+Puppy Care,Comparison Usefulness,44.6,red
+Puppy Care,AI Readiness,56.9,amber
+Puppy Care,Indexing Momentum,68.8,amber
+Indoor Cats,Saturation,65.0,amber
+Indoor Cats,Authority Density,76.2,green
+Indoor Cats,Semantic Coverage,100.0,green
+Indoor Cats,Glossary Density,37.5,red
+Indoor Cats,Trust Intensity,75.0,green
+Indoor Cats,Citation Confidence,52.5,amber
+Indoor Cats,Practical Usefulness,30.0,red
+Indoor Cats,Comparison Usefulness,25.0,red
+Indoor Cats,AI Readiness,50.0,amber
+Indoor Cats,Indexing Momentum,66.2,amber
