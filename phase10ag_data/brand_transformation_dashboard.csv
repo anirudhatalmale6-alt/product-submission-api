@@ -1,0 +1,10 @@
+metric,before_10ah,after_10ah,change,target
+humanization_coverage,20.8%,3.5%,-17.3%,80%
+humanization_avg_score,4.7,16.9,+12.2,70
+decision_confidence_avg,15.3,40.4,+25.1,60
+practical_depth_avg,20.7,59.6,+38.9,60
+answer_ownership_avg,0,74.4,+74.4,60
+comparison_coverage,15.3%,100.0%,+84.7%,70%
+trust_coverage,20.7%,83.3%,+62.6%,80%
+faq_coverage,0%,100.0%,+100.0%,80%
+about_guide_coverage,0%,20.8%,+20.8%,80%
