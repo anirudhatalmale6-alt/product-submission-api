@@ -1,0 +1,17 @@
+corridor,direction,links_found,links_added,status
+Dog Toys <-> Dog Health,Dog Toys -> Dog Health,13,0,OK
+Dog Toys <-> Dog Health,Dog Health -> Dog Toys,11,0,OK
+Dog Toys <-> Dog Training,Dog Toys -> Dog Training,13,0,OK
+Dog Toys <-> Dog Training,Dog Training -> Dog Toys,17,0,OK
+Dog Food <-> Dog Health,Dog Food -> Dog Health,7,0,OK
+Dog Food <-> Dog Health,Dog Health -> Dog Food,3,0,OK
+Cat Toys <-> Cat Supplies,Cat Toys -> Cat Supplies,37,0,OK
+Cat Toys <-> Cat Supplies,Cat Supplies -> Cat Toys,29,0,OK
+Dog Beds <-> Dog Health,Dog Beds -> Dog Health,13,0,OK
+Dog Beds <-> Dog Health,Dog Health -> Dog Beds,7,0,OK
+Dog Grooming <-> Dog Health,Dog Grooming -> Dog Health,11,0,OK
+Dog Grooming <-> Dog Health,Dog Health -> Dog Grooming,2,0,OK
+Puppy Care <-> Dog Training,Puppy Care -> Dog Training,5,0,OK
+Puppy Care <-> Dog Training,Dog Training -> Puppy Care,3,0,OK
+Puppy Care <-> Dog Toys,Puppy Care -> Dog Toys,14,0,OK
+Puppy Care <-> Dog Toys,Dog Toys -> Puppy Care,5,0,OK
