@@ -1,15 +1,15 @@
 cluster,current_dominance,target,gap,acceleration_actions
-Indoor Cats,86.9,96.9,10.0,Add comparison tables (avg 75) with striped style; Boost citations (avg 88.0) with more UK authority refs
-Dog Supplies,87.8,97.8,10.0,Add comparison tables (avg 60) with striped style; Boost citations (avg 88.6) with more UK authority refs
-Uncategorized,88.1,98.1,10.0,Add comparison tables (avg 62.3) with striped style; Add practical guides (avg 87.8) with step-by-step blocks
-Cat Toys,88.9,98.9,10.0,Add comparison tables (avg 63.4) with striped style; Boost citations (avg 89.7) with more UK authority refs
-Pet Care,89.2,99.2,10.0,Add comparison tables (avg 60) with striped style; Add practical guides (avg 85) with step-by-step blocks
-Cat Supplies,89.3,99.3,10.0,Add comparison tables (avg 63.7) with striped style; Add practical guides (avg 87.4) with step-by-step blocks
-Dog Health,89.5,99.5,10.0,Add comparison tables (avg 80) with striped style; Add practical guides (avg 90) with step-by-step blocks
-Dog Toys,91.1,101.1,10.0,Add comparison tables (avg 70.7) with striped style; Add practical guides (avg 90) with step-by-step blocks
-Dog Care,91.6,101.6,10.0,Add comparison tables (avg 81.7) with striped style; Add practical guides (avg 90) with step-by-step blocks
+Indoor Cats,90.8,100.8,10.0,Add practical guides (avg 90) with step-by-step blocks; Boost citations (avg 91.4) with more UK authority refs
+Dog Supplies,91.8,101.8,10.0,Add comparison tables (avg 80.7) with striped style; Deepen trust signals (avg 89.3) with source methodology blocks
 Dog Food,91.9,101.9,10.0,Add comparison tables (avg 81) with striped style; Add practical guides (avg 90) with step-by-step blocks
-Dog Beds,92.3,102.3,10.0,Add comparison tables (avg 86.7) with striped style; Add practical guides (avg 88) with step-by-step blocks
+Dog Health,92.4,102.4,10.0,Add practical guides (avg 90) with step-by-step blocks; Boost citations (avg 92.8) with more UK authority refs
 Dog Harnesses,92.5,102.5,10.0,Add comparison tables (avg 72.1) with striped style; Add practical guides (avg 90) with step-by-step blocks
-Training Supplies,93.6,103.6,10.0,Add comparison tables (avg 78.3) with striped style; Add practical guides (avg 90) with step-by-step blocks
-Puppy Care,95.5,105.5,10.0,Add comparison tables (avg 87.5) with striped style; Add practical guides (avg 90) with step-by-step blocks
+Uncategorized,92.8,102.8,10.0,Add comparison tables (avg 86.3) with striped style; Add practical guides (avg 88) with step-by-step blocks
+Cat Toys,93.5,103.5,10.0,Add comparison tables (avg 86.9) with striped style; Add practical guides (avg 90) with step-by-step blocks
+Dog Care,93.6,103.6,10.0,Add practical guides (avg 90) with step-by-step blocks; Add comparison tables (avg 92.1) with striped style
+Dog Beds,93.9,103.9,10.0,Add practical guides (avg 88) with step-by-step blocks; Boost citations (avg 93.5) with more UK authority refs
+Cat Supplies,94.0,104.0,10.0,Add practical guides (avg 87.4) with step-by-step blocks; Add comparison tables (avg 87.6) with striped style
+Pet Care,94.0,104.0,10.0,Add comparison tables (avg 85) with striped style; Add practical guides (avg 85) with step-by-step blocks
+Dog Toys,95.2,105.2,10.0,Add practical guides (avg 90) with step-by-step blocks; Add comparison tables (avg 91.4) with striped style
+Training Supplies,96.5,106.5,10.0,Add practical guides (avg 90) with step-by-step blocks; Add comparison tables (avg 93.3) with striped style
+Puppy Care,97.0,107.0,10.0,Add practical guides (avg 90) with step-by-step blocks; Add comparison tables (avg 95) with striped style

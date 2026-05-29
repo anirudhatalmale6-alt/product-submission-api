@@ -1,15 +1,15 @@
 cluster,dominance_score,weakest_dim,action_needed,posts_to_modify
-Indoor Cats,86.9,comparison (75),Add striped comparison tables with Compared/Comparison headings,0
-Dog Supplies,87.8,comparison (60),Add striped comparison tables with Compared/Comparison headings,6
-Uncategorized,88.1,comparison (62.3),Add striped comparison tables with Compared/Comparison headings,30
-Cat Toys,88.9,comparison (63.4),Add striped comparison tables with Compared/Comparison headings,10
-Pet Care,89.2,comparison (60),Add striped comparison tables with Compared/Comparison headings,2
-Cat Supplies,89.3,comparison (63.7),Add striped comparison tables with Compared/Comparison headings,14
-Dog Health,89.5,comparison (80),Add striped comparison tables with Compared/Comparison headings,0
-Dog Toys,91.1,comparison (70.7),Add striped comparison tables with Compared/Comparison headings,5
-Dog Care,91.6,comparison (81.7),Add striped comparison tables with Compared/Comparison headings,1
+Indoor Cats,90.8,summary (80),"Add At a Glance, Key Takeaways, What to Do Next, Conclusion",0
+Dog Supplies,91.8,comparison (80.7),Add striped comparison tables with Compared/Comparison headings,1
 Dog Food,91.9,comparison (81),Add striped comparison tables with Compared/Comparison headings,0
-Dog Beds,92.3,comparison (86.7),Add striped comparison tables with Compared/Comparison headings,0
+Dog Health,92.4,summary (87.5),"Add At a Glance, Key Takeaways, What to Do Next, Conclusion",0
 Dog Harnesses,92.5,comparison (72.1),Add striped comparison tables with Compared/Comparison headings,3
-Training Supplies,93.6,comparison (78.3),Add striped comparison tables with Compared/Comparison headings,1
-Puppy Care,95.5,comparison (87.5),Add striped comparison tables with Compared/Comparison headings,0
+Uncategorized,92.8,comparison (86.3),Add striped comparison tables with Compared/Comparison headings,0
+Cat Toys,93.5,comparison (86.9),Add striped comparison tables with Compared/Comparison headings,0
+Dog Care,93.6,practical (90),"Add Step-by-Step blocks, numbered steps, measurable details",0
+Dog Beds,93.9,practical (88),"Add Step-by-Step blocks, numbered steps, measurable details",0
+Cat Supplies,94.0,practical (87.4),"Add Step-by-Step blocks, numbered steps, measurable details",1
+Pet Care,94.0,comparison (85),Add striped comparison tables with Compared/Comparison headings,0
+Dog Toys,95.2,practical (90),"Add Step-by-Step blocks, numbered steps, measurable details",0
+Training Supplies,96.5,practical (90),"Add Step-by-Step blocks, numbered steps, measurable details",0
+Puppy Care,97.0,practical (90),"Add Step-by-Step blocks, numbered steps, measurable details",0

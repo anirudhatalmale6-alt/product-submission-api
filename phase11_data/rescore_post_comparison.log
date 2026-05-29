@@ -1,0 +1,109 @@
+======================================================================
+Phase 10CC Re-Scoring Engine – PetHub Online
+======================================================================
+Loaded 168 cluster assignments from CSV
+Fetching categories …
+  Loaded 36 categories
+Fetching posts page 1 …
+  Got 100 posts from page 1
+Fetching posts page 2 …
+  Got 68 posts from page 2
+Total posts fetched: 168
+  Scored 10/168 posts …
+  Scored 20/168 posts …
+  Scored 30/168 posts …
+  Scored 40/168 posts …
+  Scored 50/168 posts …
+  Scored 60/168 posts …
+  Scored 70/168 posts …
+  Scored 80/168 posts …
+  Scored 90/168 posts …
+  Scored 100/168 posts …
+  Scored 110/168 posts …
+  Scored 120/168 posts …
+  Scored 130/168 posts …
+  Scored 140/168 posts …
+  Scored 150/168 posts …
+  Scored 160/168 posts …
+
+Scoring complete: 168 scored, 0 errors
+----------------------------------------------------------------------
+
+Generating 10CC-A: Citation Dominance …
+  Wrote Citation_Dominance_Report.csv (168 rows)
+  Wrote Citation_Leaderboard.csv (30 rows)
+  Wrote Pages_Above_90.csv (156 rows)
+
+Generating 10CC-B: Comparison Coverage …
+  Wrote Comparison_Coverage.csv (168 rows)
+  Wrote Comparison_Gap_Report.csv (4 rows)
+  Wrote Comparison_Dominance_Report.csv (14 rows)
+
+Generating 10CC-C: Practical Guidance …
+  Wrote Practical_Guidance_Scores.csv (168 rows)
+  Wrote Decision_Support_Growth.csv (14 rows)
+  Wrote Troubleshooting_Expansion.csv (2 rows)
+
+Generating 10CC-D: Trust Depth …
+  Wrote Trust_Depth_Report.csv (168 rows)
+  Wrote Trust_Intensity_Leaderboard.csv (30 rows)
+  Wrote Authority_Reference_Expansion.csv (14 rows)
+
+Generating 10CC-E: Semantic Market Share …
+  Wrote Semantic_Market_Share.csv (14 rows)
+  Wrote Owned_Entities.csv (168 rows)
+  Wrote Contested_Entities.csv (0 rows)
+
+Generating 10CC-F: Authority Moat …
+  Wrote Authority_Moat_Report.csv (168 rows)
+  Wrote Moat_Leaderboard.csv (30 rows)
+  Wrote Moat_Growth_Tracker.csv (14 rows)
+
+Generating 10CC-G: Cluster Dominance Roadmaps …
+  Wrote Cluster_Dominance_Roadmaps.csv (14 rows)
+  Wrote Cluster_Gap_Closure.csv (0 rows)
+  Wrote Cluster_Acceleration_Report.csv (14 rows)
+
+Generating 10CC-H: AI Answer Preference …
+  Wrote AI_Answer_Preference.csv (168 rows)
+  Wrote AI_Extraction_Superiority.csv (30 rows)
+  Wrote AI_Citation_Preference.csv (30 rows)
+
+Generating 10CC-I: Competitor Displacement …
+  Loaded 70 competitor analysis rows
+  Loaded 14 displacement summary rows
+  Wrote Competitor_Displacement_Report.csv (14 rows)
+  Wrote Competitor_Gap_Map.csv (54 rows)
+  Wrote PetHub_Advantage_Map.csv (70 rows)
+
+======================================================================
+SUMMARY STATISTICS
+======================================================================
+Total posts scored: 168
+Errors during scoring: 0
+
+Citation Preference:  avg=93.5  min=81.7  max=96.7  >=90: 156
+Authority Moat:       avg=83.3  min=76.4  max=90.7  >=80: 149
+AI Answer Preference: avg=91.4  min=78.7  max=94.3  >=80: 167
+
+Clusters: 14
+Cluster                Posts  Avg Cit  Avg Moat  Avg AI
+-------------------------------------------------------
+Cat Supplies              23     94.1      84.7    91.3
+Cat Toys                  16     93.7      83.9    91.7
+Dog Beds                  15     93.5      82.6    92.7
+Dog Care                  12     93.7      83.0    92.3
+Dog Food                   5     92.3      84.7    89.9
+Dog Harnesses              7     92.8      81.0    89.7
+Dog Health                 8     92.8      84.7    91.9
+Dog Supplies               7     92.0      82.0    89.2
+Dog Toys                  14     94.8      84.5    93.2
+Indoor Cats                6     91.4      83.1    92.0
+Pet Care                   2     94.2      82.8    91.0
+Puppy Care                 2     96.7      83.6    94.3
+Training Supplies          6     95.8      85.5    94.0
+Uncategorized             45     93.1      82.1    90.4
+
+All 27 CSVs written to: /var/lib/freelancer/projects/40416335/phase10cc_data
+======================================================================
+Done.
