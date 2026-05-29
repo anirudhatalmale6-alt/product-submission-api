@@ -1,0 +1,19 @@
+metric,value
+total_posts_analyzed,168
+ready_tier_count,41
+near_ready_tier_count,38
+developing_tier_count,89
+not_applicable_tier_count,0
+blocked_tier_count,12
+average_overall_readiness,78.4
+average_commercial_intent,45.6
+max_readiness_score,95.1
+min_readiness_score,61.4
+total_clusters,14
+top_cluster,Cat Supplies (87.0)
+high_priority_opportunities,9
+medium_priority_opportunities,13
+top_5_ready_posts,Best Dog Beds UK (2026) – Complete Guide &#038; Ho (95.1); Best Cat ID Tags UK (2026) – Identification Guide (95.0); Best Cat Radiator Beds UK (2026) – Hook-On Warmth  (94.1); Best Cat Beds UK (2026) – Complete Guide (94.1); Best Cooling Dog Beds UK (2026) – Temperature Regu (94.1)
+blocked_clusters,Dog Harnesses; Dog Food
+analysis_date,2026-05-29
+phase,11P — Revenue Readiness Analysis ONLY

@@ -1,1 +1,20 @@
-query,cluster,gap_reason,recommended_action
+post_id,title,cluster,platform,gap_type,recommendation,priority
+5420,Dog Toy Cleaning Guide: How to Keep Toys Hygienic,Dog Toys,Perplexity,low_evidence,"Add research citations, external sources, data references (Perplexity weights evidence at 40%)",high
+696,Essential Cat Supplies for Cat Owners - Number 1 Must-Haves,Cat Supplies,Perplexity,evidence_weak_for_perplexity,Add more cited sources and research references; Perplexity heavily weights evidence,medium
+4321,Best Cat Litter UK (2026) – Types &#038; Comparison Guide,Cat Supplies,Perplexity,evidence_weak_for_perplexity,Add more cited sources and research references; Perplexity heavily weights evidence,medium
+4407,DIY Cat Toys: Safe Homemade Options Your Cat Will Love,Cat Toys,Perplexity,evidence_weak_for_perplexity,Add more cited sources and research references; Perplexity heavily weights evidence,medium
+5033,How to Choose the Right Cat Toy for Your Cat's Personality,Cat Toys,Perplexity,evidence_weak_for_perplexity,Add more cited sources and research references; Perplexity heavily weights evidence,medium
+4784,"Dog Bed Materials Explained: Foam, Memory Foam, and More",Dog Beds,Perplexity,evidence_weak_for_perplexity,Add more cited sources and research references; Perplexity heavily weights evidence,medium
+4785,How to Wash and Maintain Your Dog's Bed,Dog Beds,Perplexity,evidence_weak_for_perplexity,Add more cited sources and research references; Perplexity heavily weights evidence,medium
+4563,Dog Grooming Basics: A Complete Guide for Owners,Dog Care,Google AI Overviews,structure_weak_for_ai_overviews,Add FAQ schema and structured data blocks; AI Overviews extracts from these,medium
+4078,Best Dog Nail Clippers UK (2026) – Trimming & Grinding Guide,Dog Care,Perplexity,evidence_weak_for_perplexity,Add more cited sources and research references; Perplexity heavily weights evidence,medium
+4414,Harness vs Collar: Which Is Better for Your Dog?,Dog Harnesses,Perplexity,evidence_weak_for_perplexity,Add more cited sources and research references; Perplexity heavily weights evidence,medium
+7337,Puppy Vaccination Schedule UK: What to Expect and When,Dog Health,Perplexity,evidence_weak_for_perplexity,Add more cited sources and research references; Perplexity heavily weights evidence,medium
+7340,"Puppy Teething Guide: Stages, Signs, and Soothing Tips",Dog Health,Perplexity,evidence_weak_for_perplexity,Add more cited sources and research references; Perplexity heavily weights evidence,medium
+3957,Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers,Dog Toys,Perplexity,evidence_weak_for_perplexity,Add more cited sources and research references; Perplexity heavily weights evidence,medium
+5421,Puppy-Safe Dog Toys: What to Look For and What to Avoid,Dog Toys,Perplexity,evidence_weak_for_perplexity,Add more cited sources and research references; Perplexity heavily weights evidence,medium
+4563,Dog Grooming Basics: A Complete Guide for Owners,Dog Care,ChatGPT,general_improvement,Overall readiness 75/100 for ChatGPT; improve weakest dimension,low
+4563,Dog Grooming Basics: A Complete Guide for Owners,Dog Care,Perplexity,general_improvement,Overall readiness 73/100 for Perplexity; improve weakest dimension,low
+4563,Dog Grooming Basics: A Complete Guide for Owners,Dog Care,Bing Copilot,general_improvement,Overall readiness 74/100 for Bing Copilot; improve weakest dimension,low
+4568,Dog Dental Health: A Practical Care Guide,Dog Health,Perplexity,general_improvement,Overall readiness 73/100 for Perplexity; improve weakest dimension,low
+4791,How to Choose the Right Dog Training Treats,Training Supplies,Perplexity,general_improvement,Overall readiness 73/100 for Perplexity; improve weakest dimension,low

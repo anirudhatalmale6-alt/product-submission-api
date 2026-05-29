@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280, initial-scale=1">
+<title>Traffic Realization — PetHub Executive</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#080a0f;--card:#111621;--card-alt:#0d1118;--card-hover:#161d2e;
+--border:#1a2236;--border-hover:#2a3556;
+--text:#e2e8f0;--dim:#7a8ba8;--muted:#3d4f6a;
+--accent:#f97316;--accent-dim:#ea580c;--accent-deep:#c2410c;--accent-glow:rgba(249,115,22,.12);--accent-line:rgba(249,115,22,.05);
+--green:#10b981;--green-glow:rgba(16,185,129,.15);
+--amber:#f59e0b;--amber-glow:rgba(245,158,11,.12);
+--red:#ef4444;--red-glow:rgba(239,68,68,.12);
+--cyan:#06b6d4;--blue:#3b82f6;--violet:#8b5cf6;--grey:#475569;
+--radius:10px;
+}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;font-size:13px;line-height:1.5;overflow-x:hidden}
+.mono{font-family:'JetBrains Mono',monospace}
+
+body::before{content:'';position:fixed;inset:0;
+background:
+  radial-gradient(ellipse 80% 50% at 70% 0%,rgba(249,115,22,.04),transparent 55%),
+  radial-gradient(ellipse 50% 40% at 20% 100%,rgba(249,115,22,.03),transparent 50%),
+  repeating-linear-gradient(0deg,transparent,transparent 80px,var(--accent-line) 80px,var(--accent-line) 81px),
+  repeating-linear-gradient(90deg,transparent,transparent 80px,var(--accent-line) 80px,var(--accent-line) 81px);
+pointer-events:none;z-index:0}
+
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--muted);border-radius:3px}
+
+.header{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:12px 28px;background:linear-gradient(180deg,rgba(8,10,15,.97),rgba(8,10,15,.90));backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.header-l{display:flex;align-items:center;gap:14px}
+.logo{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--accent-deep));display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:#fff;box-shadow:0 0 28px rgba(249,115,22,.3);position:relative;overflow:hidden}
+.logo::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 30%,rgba(255,255,255,.18) 50%,transparent 70%);animation:sheen 5s ease-in-out infinite}
+@keyframes sheen{0%,100%{transform:translateX(-120%)}50%{transform:translateX(120%)}}
+.header h1{font-size:18px;font-weight:700;letter-spacing:-.03em}
+.header h1 span{color:var(--accent)}
+.tag{font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px 9px;border-radius:4px;letter-spacing:.08em;text-transform:uppercase}
+.tag-phase{color:var(--accent);background:var(--accent-glow);border:1px solid rgba(249,115,22,.2)}
+.header-r{display:flex;align-items:center;gap:12px}
+.header-time{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--dim)}
+.pulse{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pls 2.5s infinite}
+@keyframes pls{0%,100%{box-shadow:0 0 0 0 rgba(249,115,22,.5)}50%{box-shadow:0 0 12px 5px rgba(249,115,22,.08)}}
+
+.content{position:relative;z-index:1;padding:20px 28px 80px;max-width:1440px;margin:0 auto}
+
+.sec{margin-bottom:28px;animation:fadeIn .5s ease both}
+.sec:nth-child(n+2){animation-delay:calc((var(--i,0))*.05s)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.sec-head{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.sec-num{min-width:24px;height:24px;border-radius:6px;background:linear-gradient(135deg,var(--accent),var(--accent-deep));display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;color:#fff}
+.sec-title{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.sec-line{flex:1;height:1px;background:linear-gradient(90deg,rgba(249,115,22,.35),transparent 80%)}
+
+/* Executive KPI strip */
+.kpi-strip{display:grid;grid-template-columns:repeat(10,1fr);gap:6px}
+.kpi{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:12px 6px;text-align:center;transition:all .3s;cursor:default}
+.kpi:hover{border-color:rgba(249,115,22,.3);transform:translateY(-1px)}
+.kpi-val{font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:700;line-height:1.1}
+.kpi-val.pending{color:var(--muted);font-size:9px;font-weight:500;line-height:3}
+.kpi-label{font-size:7.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--dim);margin-top:4px}
+
+/* Cluster contribution */
+.contrib-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+.contrib-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 10px;transition:all .3s}
+.contrib-card:hover{border-color:rgba(249,115,22,.3)}
+.contrib-name{font-size:10px;font-weight:600;margin-bottom:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.contrib-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
+.contrib-dim{font-size:8px;color:var(--dim);text-transform:uppercase;letter-spacing:.04em}
+.contrib-val{font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:600}
+.contrib-bar{height:4px;background:rgba(26,34,54,.8);border-radius:2px;margin-top:2px;margin-bottom:6px;overflow:hidden}
+.contrib-fill{height:100%;border-radius:2px}
+
+/* Indexation summary */
+.idx-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.idx-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;text-align:center}
+.idx-big{font-family:'JetBrains Mono',monospace;font-size:36px;font-weight:700;line-height:1}
+.idx-label{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;margin-top:6px}
+.idx-sub{font-size:10px;color:var(--muted);margin-top:4px}
+
+/* Opportunity scoring table */
+.tbl-wrap{overflow-x:auto;border-radius:var(--radius);border:1px solid var(--border)}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{background:var(--card-alt);font-size:9px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);padding:10px 12px;text-align:left;border-bottom:1px solid var(--border)}
+td{padding:8px 12px;border-bottom:1px solid rgba(26,34,54,.5);transition:background .2s}
+tr:hover td{background:rgba(249,115,22,.03)}
+.badge{font-family:'JetBrains Mono',monospace;font-size:8px;padding:2px 7px;border-radius:3px;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+.b-ready{color:var(--green);background:var(--green-glow)}
+.b-near{color:var(--amber);background:var(--amber-glow)}
+.b-dev{color:var(--dim);background:rgba(71,85,105,.15)}
+.b-blocked{color:var(--red);background:var(--red-glow)}
+
+/* GSC banner */
+.gsc-banner{background:linear-gradient(135deg,rgba(249,115,22,.06),rgba(249,115,22,.02));border:1px dashed rgba(249,115,22,.3);border-radius:var(--radius);padding:20px 24px;display:flex;align-items:center;gap:16px;margin-bottom:16px}
+.gsc-banner .icon{font-size:24px;flex-shrink:0}
+.gsc-banner h3{font-size:13px;font-weight:600;color:var(--accent)}
+.gsc-banner p{font-size:10px;color:var(--dim);margin-top:2px}
+.gsc-pulse{width:10px;height:10px;border-radius:50%;background:var(--amber);margin-left:auto;flex-shrink:0;animation:gp 1.5s infinite}
+@keyframes gp{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* Citation mini cards */
+.cite-row{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.cite-mini{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:12px;text-align:center;transition:all .3s}
+.cite-mini:hover{border-color:rgba(249,115,22,.25)}
+.cite-mini .name{font-size:10px;font-weight:600;margin-bottom:6px}
+.cite-mini .tiers{display:flex;justify-content:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:9px}
+.t-c{color:var(--green)}.t-o{color:var(--amber)}.t-e{color:var(--muted)}
+
+/* Revenue readiness ring */
+.rev-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.rev-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;text-align:center}
+.rev-big{font-family:'JetBrains Mono',monospace;font-size:32px;font-weight:700;line-height:1}
+.rev-label{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;margin-top:6px}
+.rev-sub{font-size:10px;margin-top:4px}
+
+.footer{text-align:center;padding:20px 0;font-size:9px;color:var(--muted);letter-spacing:.06em}
+
+@media(max-width:1100px){
+.kpi-strip{grid-template-columns:repeat(5,1fr)}
+.contrib-grid{grid-template-columns:repeat(4,1fr)}
+.cite-row{grid-template-columns:repeat(3,1fr)}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-l">
+    <div class="logo">TR</div>
+    <h1>Traffic <span>Realization</span></h1>
+    <span class="tag tag-phase">Phase 11O &middot; Executive</span>
+  </div>
+  <div class="header-r">
+    <span class="tag tag-phase">Auto-refresh 120s</span>
+    <span class="header-time mono" id="clock"></span>
+    <div class="pulse"></div>
+  </div>
+</div>
+
+<div class="content">
+
+<!-- 1. Executive KPI Strip -->
+<div class="sec" style="--i:0">
+  <div class="sec-head"><div class="sec-num">1</div><div class="sec-title">Executive Growth KPIs</div><div class="sec-line"></div></div>
+  <div class="kpi-strip" id="kpi-strip"></div>
+</div>
+
+<!-- 2. GSC Visibility Status -->
+<div class="sec" style="--i:1">
+  <div class="sec-head"><div class="sec-num">2</div><div class="sec-title">Search Visibility</div><div class="sec-line"></div></div>
+  <div class="gsc-banner">
+    <div class="icon">&#9888;&#65039;</div>
+    <div><h3>GSC Authorization Pending</h3><p>Impression, click, CTR, average position, and crawl data will populate once Google Search Console OAuth tokens are active. All visibility metrics below show structural readiness only.</p></div>
+    <div class="gsc-pulse"></div>
+  </div>
+  <div class="idx-grid" id="idx-grid"></div>
+</div>
+
+<!-- 3. Cluster Contribution Matrix -->
+<div class="sec" style="--i:2">
+  <div class="sec-head"><div class="sec-num">3</div><div class="sec-title">Cluster Contribution</div><div class="sec-line"></div></div>
+  <div class="contrib-grid" id="contrib-grid"></div>
+</div>
+
+<!-- 4. AI Citation Overview -->
+<div class="sec" style="--i:3">
+  <div class="sec-head"><div class="sec-num">4</div><div class="sec-title">AI Citation Overview</div><div class="sec-line"></div></div>
+  <div class="cite-row" id="cite-row"></div>
+</div>
+
+<!-- 5. Opportunity Scoring -->
+<div class="sec" style="--i:4">
+  <div class="sec-head"><div class="sec-num">5</div><div class="sec-title">Opportunity Scoring</div><div class="sec-line"></div></div>
+  <div class="tbl-wrap">
+    <table><thead><tr><th>Cluster</th><th>Posts</th><th>Ownership</th><th>Citation</th><th>Moat</th><th>AI Ready</th><th>Revenue Ready</th><th>Opp Score</th></tr></thead>
+    <tbody id="opp-body"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 6. Revenue Readiness -->
+<div class="sec" style="--i:5">
+  <div class="sec-head"><div class="sec-num">6</div><div class="sec-title">Revenue Readiness (Analysis Only)</div><div class="sec-line"></div></div>
+  <div class="rev-grid" id="rev-grid"></div>
+</div>
+
+<!-- 7. High-Authority Low-Visibility Opportunities -->
+<div class="sec" style="--i:6">
+  <div class="sec-head"><div class="sec-num">7</div><div class="sec-title">High-Authority Low-Visibility Opportunities</div><div class="sec-line"></div></div>
+  <div class="gsc-banner" style="border-color:rgba(139,92,246,.3);background:linear-gradient(135deg,rgba(139,92,246,.06),rgba(139,92,246,.02))">
+    <div class="icon">&#128161;</div>
+    <div><h3 style="color:var(--violet)">Awaiting GSC Data — Highest ROI Analysis</h3><p>Once GSC is connected, this section will cross-reference authority scores (93.5 avg citation, 83.3 avg moat) with real impression data to identify pages with high authority but low search visibility. These represent the single highest ROI growth opportunities on the platform.</p></div>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">PETHUB TRAFFIC REALIZATION &middot; PHASE 11O &middot; EXECUTIVE DASHBOARD &middot; <span class="mono" id="foot-time"></span></div>
+
+<script>
+const C=[
+  {name:'Puppy Care',dom:97.0,moat:83.6,ai:94.3,cit:96.7,posts:2,rev:'NEAR-READY'},
+  {name:'Training',dom:96.5,moat:85.5,ai:94.0,cit:95.8,posts:6,rev:'NEAR-READY'},
+  {name:'Dog Toys',dom:95.2,moat:84.5,ai:93.2,cit:94.8,posts:14,rev:'READY'},
+  {name:'Cat Supplies',dom:94.0,moat:84.7,ai:91.3,cit:94.1,posts:23,rev:'READY'},
+  {name:'Pet Care',dom:94.0,moat:82.8,ai:91.0,cit:94.2,posts:2,rev:'DEVELOPING'},
+  {name:'Dog Beds',dom:93.9,moat:82.6,ai:92.7,cit:93.5,posts:15,rev:'READY'},
+  {name:'Dog Care',dom:93.6,moat:83.0,ai:92.3,cit:93.7,posts:12,rev:'READY'},
+  {name:'Cat Toys',dom:93.5,moat:83.9,ai:91.7,cit:93.7,posts:16,rev:'NEAR-READY'},
+  {name:'Uncat.',dom:92.8,moat:82.1,ai:90.4,cit:93.1,posts:45,rev:'DEVELOPING'},
+  {name:'Dog Harness',dom:92.5,moat:81.0,ai:89.7,cit:92.8,posts:7,rev:'BLOCKED'},
+  {name:'Dog Health',dom:92.4,moat:84.7,ai:91.9,cit:92.8,posts:8,rev:'DEVELOPING'},
+  {name:'Dog Food',dom:91.9,moat:84.7,ai:89.9,cit:92.3,posts:5,rev:'BLOCKED'},
+  {name:'Dog Supply',dom:91.8,moat:82.0,ai:89.2,cit:92.0,posts:7,rev:'NEAR-READY'},
+  {name:'Indoor Cats',dom:90.8,moat:83.1,ai:92.0,cit:91.4,posts:6,rev:'DEVELOPING'}
+];
+const totalPosts=C.reduce((a,c)=>a+c.posts,0);
+const avg=k=>(C.reduce((a,c)=>a+c[k],0)/C.length).toFixed(1);
+
+function renderKPIs(){
+  const items=[
+    {val:totalPosts,label:'Total Pages'},
+    {val:'14/14',label:'Clusters Owned'},
+    {val:avg('dom'),label:'Avg Dominance'},
+    {val:avg('cit'),label:'Citation Avg'},
+    {val:avg('moat'),label:'Moat Avg'},
+    {val:avg('ai'),label:'AI Ready Avg'},
+    {val:null,label:'Impressions'},
+    {val:null,label:'Clicks'},
+    {val:null,label:'Avg CTR'},
+    {val:null,label:'Avg Position'}
+  ];
+  document.getElementById('kpi-strip').innerHTML=items.map(i=>`<div class="kpi"><div class="kpi-val ${i.val===null?'pending':''} mono">${i.val===null?'GSC PENDING':i.val}</div><div class="kpi-label">${i.label}</div></div>`).join('');
+}
+
+function renderIndexation(){
+  const items=[
+    {val:'234',label:'Pages Inventoried',sub:'All discovered URLs',color:'var(--text)'},
+    {val:'195',label:'In Sitemap',sub:'Included in XML sitemap',color:'var(--green)'},
+    {val:'39',label:'Not In Sitemap',sub:'Missing from sitemap',color:'var(--amber)'},
+    {val:'---',label:'GSC Indexed',sub:'Awaiting GSC connection',color:'var(--muted)'}
+  ];
+  document.getElementById('idx-grid').innerHTML=items.map(i=>`<div class="idx-card"><div class="idx-big" style="color:${i.color}">${i.val}</div><div class="idx-label">${i.label}</div><div class="idx-sub">${i.sub}</div></div>`).join('');
+}
+
+function renderContrib(){
+  const top7=C.slice(0,7);
+  document.getElementById('contrib-grid').innerHTML=top7.map(c=>{
+    const dims=[
+      {d:'Ownership',v:c.dom,col:'var(--green)'},
+      {d:'Citations',v:c.cit,col:'var(--accent)'},
+      {d:'Moat',v:c.moat,col:'var(--violet)'},
+      {d:'AI Ready',v:c.ai,col:'var(--cyan)'},
+      {d:'Visibility',v:null}
+    ];
+    return`<div class="contrib-card"><div class="contrib-name">${c.name}</div>${dims.map(d=>`<div class="contrib-row"><span class="contrib-dim">${d.d}</span><span class="contrib-val mono" style="color:${d.v?d.col:'var(--muted)'}">${d.v?d.v.toFixed(1):'--'}</span></div><div class="contrib-bar"><div class="contrib-fill" style="width:${d.v||0}%;background:${d.col||'var(--muted)'}"></div></div>`).join('')}</div>`;
+  }).join('');
+}
+
+function renderCitations(){
+  const plats=[
+    {name:'ChatGPT',c:0,o:0,e:40,color:'#10b981'},
+    {name:'Perplexity',c:0,o:0,e:40,color:'#3b82f6'},
+    {name:'Gemini',c:0,o:0,e:40,color:'#f59e0b'},
+    {name:'AI Overviews',c:0,o:0,e:40,color:'#ef4444'},
+    {name:'Bing Copilot',c:0,o:0,e:40,color:'#06b6d4'}
+  ];
+  document.getElementById('cite-row').innerHTML=plats.map(p=>`<div class="cite-mini"><div class="name">${p.name}</div><div class="tiers"><span class="t-c">C:${p.c}</span><span class="t-o">O:${p.o}</span><span class="t-e">E:${p.e}</span></div></div>`).join('');
+}
+
+function renderOpp(){
+  document.getElementById('opp-body').innerHTML=C.map(c=>{
+    const opp=((c.dom+c.cit+c.moat+c.ai)/4).toFixed(1);
+    const rcls={'READY':'b-ready','NEAR-READY':'b-near','DEVELOPING':'b-dev','BLOCKED':'b-blocked'}[c.rev];
+    return`<tr><td style="font-weight:500">${c.name}</td><td class="mono">${c.posts}</td><td class="mono">${c.dom}</td><td class="mono">${c.cit}</td><td class="mono">${c.moat}</td><td class="mono">${c.ai}</td><td><span class="badge ${rcls}">${c.rev}</span></td><td class="mono" style="font-weight:700;color:var(--accent)">${opp}</td></tr>`;
+  }).join('');
+}
+
+function renderRevenue(){
+  const ready=C.filter(c=>c.rev==='READY').length;
+  const near=C.filter(c=>c.rev==='NEAR-READY').length;
+  const dev=C.filter(c=>c.rev==='DEVELOPING').length;
+  const blocked=C.filter(c=>c.rev==='BLOCKED').length;
+  const items=[
+    {val:ready,label:'Ready',sub:'Could monetize today',color:'var(--green)'},
+    {val:near,label:'Near-Ready',sub:'1 dimension below threshold',color:'var(--amber)'},
+    {val:dev,label:'Developing',sub:'Educational, growing commercial fit',color:'var(--dim)'},
+    {val:blocked,label:'Blocked',sub:'Dog Food + Dog Harness',color:'var(--red)'}
+  ];
+  document.getElementById('rev-grid').innerHTML=items.map(i=>`<div class="rev-card"><div class="rev-big" style="color:${i.color}">${i.val}</div><div class="rev-label">${i.label}</div><div class="rev-sub" style="color:var(--muted)">${i.sub}</div></div>`).join('');
+}
+
+function clock(){
+  const s=new Date().toISOString().replace('T',' ').substring(0,19)+' UTC';
+  document.getElementById('clock').textContent=s;
+  document.getElementById('foot-time').textContent=s;
+}
+
+function init(){
+  renderKPIs();renderIndexation();renderContrib();renderCitations();renderOpp();renderRevenue();
+  clock();setInterval(clock,1000);
+  setInterval(()=>{
+    ['/api/traffic/summary','/api/traffic/clusters','/api/traffic/citations','/api/traffic/revenue'].forEach(ep=>{
+      fetch(ep).catch(()=>{});
+    });
+  },120000);
+}
+document.addEventListener('DOMContentLoaded',init);
+</script>
+</body>
+</html>

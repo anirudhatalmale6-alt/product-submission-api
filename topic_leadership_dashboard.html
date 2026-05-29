@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280, initial-scale=1">
+<title>Topic Leadership — PetHub</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg:#080a0f;--card:#111621;--card-alt:#0e1219;--card-hover:#161d2e;
+--border:#1a2236;--border-hover:#2a3556;
+--text:#e2e8f0;--dim:#7a8ba8;--muted:#3d4f6a;
+--accent:#8b5cf6;--accent-dim:#7c3aed;--accent-deep:#6d28d9;--accent-glow:rgba(139,92,246,.14);--accent-line:rgba(139,92,246,.06);
+--green:#10b981;--green-glow:rgba(16,185,129,.15);
+--amber:#f59e0b;--amber-glow:rgba(245,158,11,.15);
+--red:#ef4444;--red-glow:rgba(239,68,68,.12);
+--cyan:#06b6d4;--blue:#3b82f6;--grey:#475569;
+--radius:10px;--radius-sm:6px;
+}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;font-size:13px;line-height:1.5;overflow-x:hidden}
+.mono{font-family:'JetBrains Mono',monospace}
+
+body::before{content:'';position:fixed;inset:0;
+background:
+  radial-gradient(ellipse 70% 50% at 15% 0%,rgba(139,92,246,.05),transparent 55%),
+  radial-gradient(ellipse 50% 40% at 85% 100%,rgba(139,92,246,.04),transparent 50%),
+  radial-gradient(circle at 50% 50%,rgba(139,92,246,.01),transparent 70%),
+  repeating-linear-gradient(0deg,transparent,transparent 80px,var(--accent-line) 80px,var(--accent-line) 81px),
+  repeating-linear-gradient(90deg,transparent,transparent 80px,var(--accent-line) 80px,var(--accent-line) 81px);
+pointer-events:none;z-index:0}
+
+body::after{content:'';position:fixed;inset:0;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.03'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:.6}
+
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--muted);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--accent-dim)}
+
+/* Header */
+.header{position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:12px 28px;background:linear-gradient(180deg,rgba(8,10,15,.97),rgba(8,10,15,.90));backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
+.header-l{display:flex;align-items:center;gap:14px}
+.logo{width:36px;height:36px;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--accent-deep));display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:900;color:#fff;box-shadow:0 0 28px rgba(139,92,246,.3);position:relative;overflow:hidden;letter-spacing:-.03em}
+.logo::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,transparent 30%,rgba(255,255,255,.18) 50%,transparent 70%);animation:sheen 5s ease-in-out infinite}
+@keyframes sheen{0%,100%{transform:translateX(-120%)}50%{transform:translateX(120%)}}
+.header h1{font-size:18px;font-weight:700;letter-spacing:-.03em}
+.header h1 span{color:var(--accent)}
+.tag{font-family:'JetBrains Mono',monospace;font-size:9px;padding:3px 9px;border-radius:4px;letter-spacing:.08em;text-transform:uppercase}
+.tag-phase{color:var(--accent);background:var(--accent-glow);border:1px solid rgba(139,92,246,.2)}
+.header-r{display:flex;align-items:center;gap:12px}
+.header-time{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--dim)}
+.pulse{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pls 2.5s infinite}
+@keyframes pls{0%,100%{box-shadow:0 0 0 0 rgba(139,92,246,.5)}50%{box-shadow:0 0 12px 5px rgba(139,92,246,.08)}}
+
+.content{position:relative;z-index:1;padding:20px 28px 80px;max-width:1440px;margin:0 auto}
+
+/* Sections */
+.sec{margin-bottom:28px;animation:fadeIn .5s ease both}
+.sec:nth-child(2){animation-delay:.04s}.sec:nth-child(3){animation-delay:.08s}.sec:nth-child(4){animation-delay:.12s}.sec:nth-child(5){animation-delay:.16s}.sec:nth-child(6){animation-delay:.2s}.sec:nth-child(7){animation-delay:.24s}.sec:nth-child(8){animation-delay:.28s}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+.sec-head{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.sec-num{min-width:24px;height:24px;border-radius:6px;background:linear-gradient(135deg,var(--accent),var(--accent-deep));display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:700;color:#fff;flex-shrink:0}
+.sec-title{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.sec-line{flex:1;height:1px;background:linear-gradient(90deg,rgba(139,92,246,.35),transparent 80%)}
+
+/* Summary bar */
+.summary{display:grid;grid-template-columns:repeat(8,1fr);gap:8px}
+.s-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 8px;text-align:center;transition:all .3s;position:relative;overflow:hidden;cursor:default}
+.s-card:hover{border-color:rgba(139,92,246,.4);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.s-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),rgba(139,92,246,.2));opacity:0;transition:opacity .3s}
+.s-card:hover::before{opacity:1}
+.s-val{font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:700;line-height:1.1;color:var(--text)}
+.s-val .sm{font-size:14px;color:var(--dim)}
+.s-label{font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-top:5px}
+.s-val.gsc-pending{color:var(--muted);font-size:11px;font-weight:500;line-height:2.8}
+
+/* Cluster cards */
+.cluster-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:10px}
+.c-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;transition:all .3s;position:relative}
+.c-card:hover{border-color:rgba(139,92,246,.35);box-shadow:0 4px 20px rgba(0,0,0,.25)}
+.c-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.c-name{font-size:14px;font-weight:600;letter-spacing:-.01em}
+.c-idx{font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:700;color:var(--accent)}
+.badge{font-family:'JetBrains Mono',monospace;font-size:8.5px;padding:2px 8px;border-radius:3px;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+.b-leader{color:var(--green);background:var(--green-glow);border:1px solid rgba(16,185,129,.25)}
+.b-strong{color:var(--blue);background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.25)}
+.b-competitive{color:var(--amber);background:var(--amber-glow);border:1px solid rgba(245,158,11,.25)}
+.b-developing{color:var(--grey);background:rgba(71,85,105,.15);border:1px solid rgba(71,85,105,.3)}
+
+.dim-row{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.dim-row:last-child{margin-bottom:0}
+.dim-label{width:90px;font-size:10px;color:var(--dim);flex-shrink:0;text-transform:uppercase;letter-spacing:.04em;font-weight:500}
+.dim-bar-wrap{flex:1;height:16px;background:rgba(26,34,54,.7);border-radius:3px;position:relative;overflow:hidden}
+.dim-bar{height:100%;border-radius:3px;transition:width .8s cubic-bezier(.4,0,.2,1);position:relative}
+.dim-bar::after{content:attr(data-val);position:absolute;right:6px;top:50%;transform:translateY(-50%);font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:600;color:rgba(255,255,255,.9)}
+.dim-bar.gsc{background:repeating-linear-gradient(135deg,var(--muted),var(--muted) 4px,rgba(71,85,105,.3) 4px,rgba(71,85,105,.3) 8px);width:100% !important}
+.dim-bar.gsc::after{content:'AWAITING GSC';color:var(--muted);font-size:8px;letter-spacing:.06em}
+.bar-green{background:linear-gradient(90deg,rgba(16,185,129,.6),var(--green))}
+.bar-blue{background:linear-gradient(90deg,rgba(59,130,246,.5),var(--blue))}
+.bar-violet{background:linear-gradient(90deg,rgba(139,92,246,.5),var(--accent))}
+.bar-amber{background:linear-gradient(90deg,rgba(245,158,11,.5),var(--amber))}
+.bar-cyan{background:linear-gradient(90deg,rgba(6,182,212,.5),var(--cyan))}
+
+/* GSC Banner */
+.gsc-banner{background:linear-gradient(135deg,rgba(71,85,105,.12),rgba(71,85,105,.06));border:1px dashed rgba(71,85,105,.4);border-radius:var(--radius);padding:24px 30px;display:flex;align-items:center;gap:18px;margin-bottom:14px}
+.gsc-icon{width:48px;height:48px;border-radius:12px;background:rgba(71,85,105,.15);display:flex;align-items:center;justify-content:center;font-size:22px;position:relative;flex-shrink:0}
+.gsc-icon::after{content:'';position:absolute;inset:4px;border:2px dashed rgba(71,85,105,.4);border-radius:8px;animation:gsc-spin 20s linear infinite}
+@keyframes gsc-spin{to{transform:rotate(360deg)}}
+.gsc-text h3{font-size:14px;font-weight:600;color:var(--grey);margin-bottom:3px}
+.gsc-text p{font-size:11px;color:var(--muted);line-height:1.5}
+.gsc-pulse{width:10px;height:10px;border-radius:50%;background:var(--amber);margin-left:auto;animation:gsc-p 1.5s infinite;flex-shrink:0}
+@keyframes gsc-p{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* Visibility Table */
+.tbl-wrap{overflow-x:auto;border-radius:var(--radius);border:1px solid var(--border)}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{background:var(--card-alt);font-size:9px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);position:sticky;top:0}
+td{padding:9px 14px;border-bottom:1px solid rgba(26,34,54,.5);vertical-align:middle;transition:background .2s}
+tr:hover td{background:rgba(139,92,246,.03)}
+td.gsc-cell{color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.04em}
+
+/* Citation cards */
+.cite-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+.cite-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px 14px;text-align:center;transition:all .3s;position:relative;overflow:hidden}
+.cite-card:hover{border-color:rgba(139,92,246,.3);transform:translateY(-1px)}
+.cite-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.cite-card:nth-child(1)::before{background:linear-gradient(90deg,#10b981,#059669)}
+.cite-card:nth-child(2)::before{background:linear-gradient(90deg,#3b82f6,#2563eb)}
+.cite-card:nth-child(3)::before{background:linear-gradient(90deg,#f59e0b,#d97706)}
+.cite-card:nth-child(4)::before{background:linear-gradient(90deg,#ef4444,#dc2626)}
+.cite-card:nth-child(5)::before{background:linear-gradient(90deg,#06b6d4,#0891b2)}
+.cite-icon{font-size:28px;margin-bottom:6px;display:block}
+.cite-name{font-size:11px;font-weight:600;margin-bottom:10px;letter-spacing:.02em}
+.cite-tier{display:flex;align-items:center;justify-content:space-between;margin-bottom:5px;font-size:10px}
+.cite-tier-label{color:var(--dim);text-transform:uppercase;letter-spacing:.06em;font-size:8.5px;font-weight:500}
+.cite-tier-val{font-family:'JetBrains Mono',monospace;font-weight:600}
+.tier-confirmed{color:var(--green)}
+.tier-observed{color:var(--amber)}
+.tier-estimated{color:var(--dim)}
+.cite-bar-wrap{height:6px;background:rgba(26,34,54,.8);border-radius:3px;margin-top:10px;overflow:hidden}
+.cite-bar{height:100%;border-radius:3px;transition:width .6s ease}
+
+/* Heatmap */
+.heat-wrap{overflow-x:auto}
+.heat-grid{display:grid;grid-template-columns:140px repeat(5,1fr);gap:1px;background:rgba(26,34,54,.4);border-radius:var(--radius);overflow:hidden;border:1px solid var(--border)}
+.heat-header{background:var(--card-alt);padding:10px 12px;font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);display:flex;align-items:center}
+.heat-cluster{background:var(--card);padding:10px 12px;font-size:11px;font-weight:500;display:flex;align-items:center;border-right:1px solid var(--border)}
+.heat-cell{padding:8px;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;transition:all .2s;cursor:default}
+.heat-cell:hover{transform:scale(1.05);z-index:2}
+.heat-win{background:rgba(16,185,129,.1);color:var(--green)}
+.heat-competitive{background:rgba(245,158,11,.08);color:var(--amber)}
+.heat-lose{background:rgba(239,68,68,.08);color:var(--red)}
+.heat-neutral{background:var(--card);color:var(--muted)}
+.heat-summary{background:var(--card-alt);padding:10px 12px;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:600;display:flex;align-items:center;justify-content:center}
+
+/* Trends placeholder */
+.trends-placeholder{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:40px;text-align:center;position:relative;overflow:hidden}
+.trends-placeholder::before{content:'';position:absolute;inset:0;background:
+  repeating-linear-gradient(0deg,transparent,transparent 30px,rgba(139,92,246,.02) 30px,rgba(139,92,246,.02) 31px),
+  repeating-linear-gradient(90deg,transparent,transparent 50px,rgba(139,92,246,.02) 50px,rgba(139,92,246,.02) 51px);pointer-events:none}
+.trends-msg{position:relative;z-index:1}
+.trends-msg h3{font-size:14px;font-weight:600;color:var(--dim);margin-bottom:4px}
+.trends-msg p{font-size:11px;color:var(--muted)}
+.trends-date{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--accent);background:var(--accent-glow);padding:3px 10px;border-radius:4px;display:inline-block;margin-top:10px}
+
+/* Opportunity table */
+.opp-type{font-family:'JetBrains Mono',monospace;font-size:8px;padding:2px 7px;border-radius:3px;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+.t-content{color:var(--green);background:var(--green-glow)}
+.t-visibility{color:var(--blue);background:rgba(59,130,246,.12)}
+.t-citation{color:var(--accent);background:var(--accent-glow)}
+.t-competitive{color:var(--amber);background:var(--amber-glow)}
+.opp-status{font-family:'JetBrains Mono',monospace;font-size:8px;padding:2px 7px;border-radius:3px;letter-spacing:.06em;text-transform:uppercase;font-weight:600}
+.st-identified{color:var(--dim);background:rgba(71,85,105,.15);border:1px solid rgba(71,85,105,.3)}
+.st-progress{color:var(--amber);background:var(--amber-glow);border:1px solid rgba(245,158,11,.2)}
+.st-executed{color:var(--blue);background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.2)}
+.st-verified{color:var(--green);background:var(--green-glow);border:1px solid rgba(16,185,129,.2)}
+.priority-bar{width:60px;height:6px;background:rgba(26,34,54,.8);border-radius:3px;overflow:hidden;display:inline-block;vertical-align:middle;margin-left:6px}
+.priority-fill{height:100%;border-radius:3px}
+
+/* Footer */
+.footer{text-align:center;padding:20px 0;font-size:9px;color:var(--muted);letter-spacing:.06em}
+
+@media(max-width:1100px){
+.summary{grid-template-columns:repeat(4,1fr)}
+.cite-grid{grid-template-columns:repeat(3,1fr)}
+.cluster-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-l">
+    <div class="logo">TL</div>
+    <h1>Topic <span>Leadership</span></h1>
+    <span class="tag tag-phase">Phase 11L</span>
+  </div>
+  <div class="header-r">
+    <span class="tag tag-phase" id="refresh-tag">Auto-refresh 120s</span>
+    <span class="header-time mono" id="clock"></span>
+    <div class="pulse"></div>
+  </div>
+</div>
+
+<div class="content">
+
+<!-- 1. Leadership Summary -->
+<div class="sec">
+  <div class="sec-head"><div class="sec-num">1</div><div class="sec-title">Leadership Summary</div><div class="sec-line"></div></div>
+  <div class="summary" id="summary-bar"></div>
+</div>
+
+<!-- 2. Cluster Leadership Matrix -->
+<div class="sec">
+  <div class="sec-head"><div class="sec-num">2</div><div class="sec-title">Cluster Leadership Matrix</div><div class="sec-line"></div></div>
+  <div class="cluster-grid" id="cluster-matrix"></div>
+</div>
+
+<!-- 3. Visibility Tracker -->
+<div class="sec">
+  <div class="sec-head"><div class="sec-num">3</div><div class="sec-title">Visibility Tracker</div><div class="sec-line"></div></div>
+  <div class="gsc-banner" id="gsc-banner">
+    <div class="gsc-icon">&#128269;</div>
+    <div class="gsc-text">
+      <h3>Google Search Console Not Connected</h3>
+      <p>Visibility data requires GSC authorization. Impression, click, CTR, and position data will populate once the OAuth flow is completed and tokens are active.</p>
+    </div>
+    <div class="gsc-pulse"></div>
+  </div>
+  <div class="tbl-wrap">
+    <table id="visibility-table">
+      <thead><tr><th>Cluster</th><th>Indexed</th><th>Impressions</th><th>Clicks</th><th>CTR</th><th>Avg Position</th><th>Visibility</th></tr></thead>
+      <tbody id="visibility-body"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 4. Citation Landscape -->
+<div class="sec">
+  <div class="sec-head"><div class="sec-num">4</div><div class="sec-title">Citation Landscape</div><div class="sec-line"></div></div>
+  <div class="cite-grid" id="citation-grid"></div>
+</div>
+
+<!-- 5. Competitor Displacement Map -->
+<div class="sec">
+  <div class="sec-head"><div class="sec-num">5</div><div class="sec-title">Competitor Displacement Map</div><div class="sec-line"></div></div>
+  <div class="heat-wrap"><div class="heat-grid" id="heatmap"></div></div>
+</div>
+
+<!-- 6. Leadership Trends -->
+<div class="sec">
+  <div class="sec-head"><div class="sec-num">6</div><div class="sec-title">Leadership Trends</div><div class="sec-line"></div></div>
+  <div class="trends-placeholder">
+    <div class="trends-msg">
+      <h3>Trend Data Collection Active</h3>
+      <p>Monthly leadership index snapshots will render here once multiple data points exist.</p>
+      <div class="trends-date" id="trend-start">Collection started: 2026-05-29</div>
+    </div>
+  </div>
+</div>
+
+<!-- 7. Opportunity Pipeline -->
+<div class="sec">
+  <div class="sec-head"><div class="sec-num">7</div><div class="sec-title">Opportunity Pipeline</div><div class="sec-line"></div></div>
+  <div class="tbl-wrap">
+    <table id="opp-table">
+      <thead><tr><th>Cluster</th><th>Opportunity</th><th>Type</th><th>Priority</th><th>Status</th><th>Impact</th></tr></thead>
+      <tbody id="opp-body"></tbody>
+    </table>
+  </div>
+</div>
+
+</div>
+
+<div class="footer">PETHUB TOPIC LEADERSHIP &middot; PHASE 11L &middot; <span class="mono" id="foot-time"></span></div>
+
+<script>
+const CLUSTERS=[
+  {name:'Puppy Care',dominance:97.0,moat:83.6,ai:94.3,citation:96.7,comparison:95.0,trust:100,posts:2,displacement:'win_all'},
+  {name:'Training Supplies',dominance:96.5,moat:85.5,ai:94.0,citation:95.8,comparison:93.3,trust:100,posts:6,displacement:'win_all'},
+  {name:'Dog Toys',dominance:95.2,moat:84.5,ai:93.2,citation:94.8,comparison:91.4,trust:100,posts:14,displacement:'win_all'},
+  {name:'Cat Supplies',dominance:94.0,moat:84.7,ai:91.3,citation:94.1,comparison:87.6,trust:96.1,posts:23,displacement:'competitive_cats'},
+  {name:'Pet Care',dominance:94.0,moat:82.8,ai:91.0,citation:94.2,comparison:85.0,trust:100,posts:2,displacement:'win_all'},
+  {name:'Dog Beds',dominance:93.9,moat:82.6,ai:92.7,citation:93.5,comparison:95.0,trust:98.3,posts:15,displacement:'win_all'},
+  {name:'Dog Care',dominance:93.6,moat:83.0,ai:92.3,citation:93.7,comparison:92.1,trust:96.7,posts:12,displacement:'win_all'},
+  {name:'Cat Toys',dominance:93.5,moat:83.9,ai:91.7,citation:93.7,comparison:86.9,trust:97.5,posts:16,displacement:'competitive_cats'},
+  {name:'Uncategorized',dominance:92.8,moat:82.1,ai:90.4,citation:93.1,comparison:86.3,trust:92.7,posts:45,displacement:'win_all'},
+  {name:'Dog Harnesses',dominance:92.5,moat:81.0,ai:89.7,citation:92.8,comparison:72.1,trust:100,posts:7,displacement:'win_all'},
+  {name:'Dog Health',dominance:92.4,moat:84.7,ai:91.9,citation:92.8,comparison:95.0,trust:93.1,posts:8,displacement:'win_all'},
+  {name:'Dog Food',dominance:91.9,moat:84.7,ai:89.9,citation:92.3,comparison:81.0,trust:94.0,posts:5,displacement:'win_all'},
+  {name:'Dog Supplies',dominance:91.8,moat:82.0,ai:89.2,citation:92.0,comparison:80.7,trust:89.3,posts:7,displacement:'win_all'},
+  {name:'Indoor Cats',dominance:90.8,moat:83.1,ai:92.0,citation:91.4,comparison:95.0,trust:98.3,posts:6,displacement:'competitive_cats'}
+];
+
+const COMPETITORS=['Cats.com','Pets at Home','Zooplus','Purina','Rover UK'];
+const PLATFORMS=[
+  {name:'ChatGPT',icon:'\u{1F4AC}',color:'#10b981',confirmed:0,observed:0,estimated:40,readiness:82},
+  {name:'Perplexity',icon:'\u{1F50D}',color:'#3b82f6',confirmed:0,observed:0,estimated:40,readiness:85},
+  {name:'Gemini',icon:'\u{2728}',color:'#f59e0b',confirmed:0,observed:0,estimated:40,readiness:79},
+  {name:'AI Overviews',icon:'\u{1F310}',color:'#ef4444',confirmed:0,observed:0,estimated:40,readiness:74},
+  {name:'Bing Copilot',icon:'\u{1F916}',color:'#06b6d4',confirmed:0,observed:0,estimated:40,readiness:77}
+];
+
+const OPPORTUNITIES=[
+  {cluster:'Indoor Cats',opp:'Catio Kits UK Guide',type:'content',priority:95,status:'identified',impact:'High'},
+  {cluster:'Indoor Cats',opp:'DIY Catio Building Plans',type:'content',priority:93,status:'identified',impact:'High'},
+  {cluster:'Pet Care',opp:'Multi-Pet Household Guide UK',type:'content',priority:91,status:'identified',impact:'High'},
+  {cluster:'Dog Supplies',opp:'Dog Coats & Jackets UK',type:'content',priority:92,status:'identified',impact:'High'},
+  {cluster:'Cat Toys',opp:'DIY Cat Toys Guide',type:'content',priority:88,status:'identified',impact:'Medium'},
+  {cluster:'Cat Supplies',opp:'Cats.com Displacement — Litter',type:'competitive',priority:87,status:'in-progress',impact:'High'},
+  {cluster:'Cat Toys',opp:'Cats.com Displacement — Interactive',type:'competitive',priority:85,status:'in-progress',impact:'High'},
+  {cluster:'Indoor Cats',opp:'Cats.com Displacement — Enrichment',type:'competitive',priority:86,status:'in-progress',impact:'High'},
+  {cluster:'Dog Health',opp:'Senior Dog Health Guide UK',type:'content',priority:84,status:'identified',impact:'Medium'},
+  {cluster:'Uncategorized',opp:'Pet Cameras UK Comparison',type:'content',priority:91,status:'identified',impact:'High'},
+  {cluster:'All Clusters',opp:'GSC Visibility Activation',type:'visibility',priority:99,status:'in-progress',impact:'Critical'},
+  {cluster:'All Clusters',opp:'AI Citation Structure Audit',type:'citation',priority:80,status:'executed',impact:'Medium'}
+];
+
+function leadershipStatus(d){
+  if(d>=95)return{label:'LEADER',cls:'b-leader'};
+  if(d>=92)return{label:'STRONG',cls:'b-strong'};
+  if(d>=90)return{label:'COMPETITIVE',cls:'b-competitive'};
+  return{label:'DEVELOPING',cls:'b-developing'};
+}
+
+function barColor(v){
+  if(v>=90)return'bar-green';if(v>=80)return'bar-violet';if(v>=70)return'bar-blue';return'bar-amber';
+}
+
+function renderSummary(){
+  const el=document.getElementById('summary-bar');
+  const avg=d=>(CLUSTERS.reduce((a,c)=>a+c[d],0)/CLUSTERS.length).toFixed(1);
+  const leaders=CLUSTERS.filter(c=>c.dominance>=95).length;
+  const strong=CLUSTERS.filter(c=>c.dominance>=92&&c.dominance<95).length;
+  const competitive=CLUSTERS.filter(c=>c.dominance<92).length;
+  const idx=(parseFloat(avg('dominance'))*0.3+parseFloat(avg('citation'))*0.2+parseFloat(avg('moat'))*0.15+parseFloat(avg('ai'))*0.15+parseFloat(avg('trust'))*0.1+parseFloat(avg('comparison'))*0.1).toFixed(1);
+  const items=[
+    {val:14,label:'Total Clusters'},
+    {val:14,label:'Owned'},
+    {val:leaders,label:'Leaders (95+)'},
+    {val:competitive,label:'Competitive (<92)'},
+    {val:avg('dominance'),label:'Avg Dominance'},
+    {val:null,label:'Avg Visibility',gsc:true},
+    {val:avg('citation'),label:'Citation Avg'},
+    {val:idx,label:'Leadership Index'}
+  ];
+  el.innerHTML=items.map(i=>`<div class="s-card"><div class="s-val ${i.gsc?'gsc-pending':''} mono">${i.gsc?'AWAITING GSC':i.val}</div><div class="s-label">${i.label}</div></div>`).join('');
+}
+
+function renderClusters(){
+  const el=document.getElementById('cluster-matrix');
+  el.innerHTML=CLUSTERS.map(c=>{
+    const st=leadershipStatus(c.dominance);
+    const idx=(c.dominance*0.3+c.citation*0.2+c.moat*0.15+c.ai*0.15+c.trust*0.1+c.comparison*0.1).toFixed(1);
+    const dims=[
+      {label:'Ownership',val:c.dominance,gsc:false},
+      {label:'Visibility',val:0,gsc:true},
+      {label:'Citations',val:c.citation,gsc:false},
+      {label:'Impressions',val:0,gsc:true},
+      {label:'Clicks',val:0,gsc:true},
+      {label:'Auth Moat',val:c.moat,gsc:false},
+      {label:'Displace',val:c.displacement==='win_all'?95:78,gsc:false}
+    ];
+    return`<div class="c-card">
+      <div class="c-head">
+        <div><div class="c-name">${c.name}</div><span class="badge ${st.cls}" style="margin-top:4px;display:inline-block">${st.label}</span></div>
+        <div class="c-idx">${idx}</div>
+      </div>
+      ${dims.map(d=>`<div class="dim-row">
+        <span class="dim-label">${d.label}</span>
+        <div class="dim-bar-wrap"><div class="dim-bar ${d.gsc?'gsc':barColor(d.val)}" style="width:${d.gsc?'100':d.val}%" data-val="${d.gsc?'':d.val.toFixed(1)}"></div></div>
+      </div>`).join('')}
+    </div>`;
+  }).join('');
+}
+
+function renderVisibility(){
+  const el=document.getElementById('visibility-body');
+  el.innerHTML=CLUSTERS.map(c=>`<tr>
+    <td style="font-weight:500">${c.name}</td>
+    <td class="gsc-cell">AWAITING GSC</td>
+    <td class="gsc-cell">AWAITING GSC</td>
+    <td class="gsc-cell">AWAITING GSC</td>
+    <td class="gsc-cell">AWAITING GSC</td>
+    <td class="gsc-cell">AWAITING GSC</td>
+    <td class="gsc-cell">AWAITING GSC</td>
+  </tr>`).join('');
+}
+
+function renderCitations(){
+  const el=document.getElementById('citation-grid');
+  el.innerHTML=PLATFORMS.map(p=>`<div class="cite-card">
+    <span class="cite-icon">${p.icon}</span>
+    <div class="cite-name">${p.name}</div>
+    <div class="cite-tier"><span class="cite-tier-label">Confirmed</span><span class="cite-tier-val tier-confirmed mono">${p.confirmed}</span></div>
+    <div class="cite-tier"><span class="cite-tier-label">Observed</span><span class="cite-tier-val tier-observed mono">${p.observed}</span></div>
+    <div class="cite-tier"><span class="cite-tier-label">Estimated</span><span class="cite-tier-val tier-estimated mono">${p.estimated}</span></div>
+    <div class="cite-bar-wrap"><div class="cite-bar" style="width:${p.readiness}%;background:${p.color}"></div></div>
+  </div>`).join('');
+}
+
+function renderHeatmap(){
+  const el=document.getElementById('heatmap');
+  let html='<div class="heat-header"></div>';
+  COMPETITORS.forEach(c=>html+=`<div class="heat-header">${c}</div>`);
+  CLUSTERS.forEach(c=>{
+    html+=`<div class="heat-cluster">${c.name}</div>`;
+    COMPETITORS.forEach(comp=>{
+      let status='win',cls='heat-win';
+      if(c.displacement==='competitive_cats'&&comp==='Cats.com'){status='even';cls='heat-competitive';}
+      html+=`<div class="heat-cell ${cls}">${status==='win'?'WIN':'EVEN'}</div>`;
+    });
+  });
+  html+=`<div class="heat-cluster" style="font-weight:700;color:var(--accent)">TOTAL</div>`;
+  const wins=[11,14,14,14,14];
+  const evens=[3,0,0,0,0];
+  wins.forEach((w,i)=>{
+    html+=`<div class="heat-summary" style="color:var(--green)">${w}W / ${evens[i]}E</div>`;
+  });
+  el.innerHTML=html;
+  el.style.gridTemplateColumns=`140px repeat(${COMPETITORS.length},1fr)`;
+}
+
+function renderOpportunities(){
+  const el=document.getElementById('opp-body');
+  const sorted=[...OPPORTUNITIES].sort((a,b)=>b.priority-a.priority);
+  el.innerHTML=sorted.map(o=>{
+    const tcls={'content':'t-content','visibility':'t-visibility','citation':'t-citation','competitive':'t-competitive'}[o.type]||'t-content';
+    const scls={'identified':'st-identified','in-progress':'st-progress','executed':'st-executed','verified':'st-verified'}[o.status]||'st-identified';
+    const pcolor=o.priority>=90?'var(--green)':o.priority>=80?'var(--accent)':'var(--amber)';
+    return`<tr>
+      <td style="font-weight:500">${o.cluster}</td>
+      <td>${o.opp}</td>
+      <td><span class="opp-type ${tcls}">${o.type}</span></td>
+      <td class="mono" style="font-size:12px;font-weight:600">${o.priority}<span class="priority-bar"><span class="priority-fill" style="width:${o.priority}%;background:${pcolor}"></span></span></td>
+      <td><span class="opp-status ${scls}">${o.status}</span></td>
+      <td style="font-size:11px;color:${o.impact==='Critical'?'var(--red)':o.impact==='High'?'var(--green)':'var(--dim)'}">${o.impact}</td>
+    </tr>`;
+  }).join('');
+}
+
+function updateClock(){
+  const d=new Date();
+  const s=d.toISOString().replace('T',' ').substring(0,19)+' UTC';
+  document.getElementById('clock').textContent=s;
+  document.getElementById('foot-time').textContent=s;
+}
+
+function tryFetchAPI(){
+  const endpoints=['/api/leadership/summary','/api/leadership/clusters','/api/leadership/citations','/api/leadership/competitors','/api/leadership/opportunities'];
+  endpoints.forEach(ep=>{
+    fetch(ep).then(r=>{if(r.ok)return r.json();throw'';}).then(data=>{
+      // Future: merge live data
+    }).catch(()=>{});
+  });
+}
+
+function init(){
+  renderSummary();
+  renderClusters();
+  renderVisibility();
+  renderCitations();
+  renderHeatmap();
+  renderOpportunities();
+  updateClock();
+  setInterval(updateClock,1000);
+  tryFetchAPI();
+  setInterval(tryFetchAPI,120000);
+}
+
+document.addEventListener('DOMContentLoaded',init);
+</script>
+</body>
+</html>

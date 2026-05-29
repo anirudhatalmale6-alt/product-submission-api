@@ -1,0 +1,13 @@
+cluster,gap_type,description,priority,estimated_effort,impact
+Cat Supplies,Content Volume,PetHub has 35 posts vs Cats.com estimated ~180 guides (145 gap),HIGH,30 new posts needed in next 90 days,HIGH
+Cat Supplies,Veterinary Authority,Cats.com has named veterinary advisors. PetHub has 0/35 posts with strong evidence. Need UK vet partnerships.,HIGH,Partner with 1-2 UK vets for review badges,HIGH
+Cat Supplies,Topic Coverage,Missing 2 topics Cats.com likely covers: best cat food brands review; kitten essentials checklist,MEDIUM,Create 2 targeted posts,HIGH
+Cat Supplies,Content Freshness,4/35 posts lack 2026 freshness markers or haven't been updated recently,MEDIUM,Update 4 posts with 2026 dates and current info,MEDIUM
+Cat Toys,Content Volume,PetHub has 16 posts vs Cats.com estimated ~95 guides (79 gap),HIGH,30 new posts needed in next 90 days,HIGH
+Cat Toys,Veterinary Authority,Cats.com has named veterinary advisors. PetHub has 1/16 posts with strong evidence. Need UK vet partnerships.,HIGH,Partner with 1-2 UK vets for review badges,HIGH
+Cat Toys,Topic Coverage,Missing 1 topics Cats.com likely covers: treat dispensing toys,MEDIUM,Create 1 targeted posts,HIGH
+Cat Toys,Content Freshness,1/16 posts lack 2026 freshness markers or haven't been updated recently,MEDIUM,Update 1 posts with 2026 dates and current info,MEDIUM
+Indoor Cats,Content Volume,PetHub has 7 posts vs Cats.com estimated ~120 guides (113 gap),HIGH,30 new posts needed in next 90 days,HIGH
+Indoor Cats,Veterinary Authority,Cats.com has named veterinary advisors. PetHub has 0/7 posts with strong evidence. Need UK vet partnerships.,HIGH,Partner with 1-2 UK vets for review badges,HIGH
+Indoor Cats,Topic Coverage,Missing 4 topics Cats.com likely covers: cat-proofing your home; indoor vs outdoor cats debate; catio building guide; transitioning outdoor cat indoors,MEDIUM,Create 4 targeted posts,HIGH
+Indoor Cats,Content Freshness,6/7 posts lack 2026 freshness markers or haven't been updated recently,MEDIUM,Update 6 posts with 2026 dates and current info,MEDIUM

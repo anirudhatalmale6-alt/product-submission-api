@@ -1,0 +1,35 @@
+cluster,opportunity_type,description,readiness_score,blockers,priority
+Cat Supplies,Affiliate Revenue,16 posts ready for affiliate monetization. Strong commercial intent with owned authority position.,87.0,None — awaiting activation approval,HIGH
+Training Supplies,Affiliate Revenue,3 posts ready for affiliate monetization. Strong commercial intent with owned authority position.,83.5,None — awaiting activation approval,HIGH
+Dog Toys,Affiliate Revenue,4 posts ready for affiliate monetization. Strong commercial intent with owned authority position.,82.5,None — awaiting activation approval,HIGH
+Dog Supplies,Affiliate Revenue,4 posts ready for affiliate monetization. Strong commercial intent with owned authority position.,81.6,None — awaiting activation approval,HIGH
+Dog Beds,Affiliate Revenue,4 posts ready for affiliate monetization. Strong commercial intent with owned authority position.,81.3,None — awaiting activation approval,HIGH
+Cat Toys,Affiliate Revenue,4 posts ready for affiliate monetization. Strong commercial intent with owned authority position.,81.2,None — awaiting activation approval,HIGH
+Dog Care,Affiliate Revenue,4 posts ready for affiliate monetization. Strong commercial intent with owned authority position.,79.4,None — awaiting activation approval,HIGH
+Puppy Care,Affiliate Revenue,1 posts ready for affiliate monetization. Strong commercial intent with owned authority position.,78.9,None — awaiting activation approval,HIGH
+Uncategorized,Affiliate Revenue,1 posts ready for affiliate monetization. Strong commercial intent with owned authority position.,70.2,None — awaiting activation approval,HIGH
+Cat Supplies,Near-Ready Upgrade,4 posts approaching readiness. Weakest: commercial_intent (73.5).,87.0,Improve commercial_intent (73.5) to cross threshold,MEDIUM
+Cat Supplies,Sponsored Content,Cluster has 16 ready posts — sufficient density for sponsored partnerships.,87.0,Requires brand partnership outreach,MEDIUM
+Training Supplies,Sponsored Content,Cluster has 3 ready posts — sufficient density for sponsored partnerships.,83.5,Requires brand partnership outreach,MEDIUM
+Dog Toys,Near-Ready Upgrade,7 posts approaching readiness. Weakest: commercial_intent (55.8).,82.5,Improve commercial_intent (55.8) to cross threshold,MEDIUM
+Dog Toys,Sponsored Content,Cluster has 4 ready posts — sufficient density for sponsored partnerships.,82.5,Requires brand partnership outreach,MEDIUM
+Dog Supplies,Near-Ready Upgrade,1 posts approaching readiness. Weakest: commercial_intent (60.8).,81.6,Improve commercial_intent (60.8) to cross threshold,MEDIUM
+Dog Supplies,Sponsored Content,Cluster has 4 ready posts — sufficient density for sponsored partnerships.,81.6,Requires brand partnership outreach,MEDIUM
+Dog Beds,Near-Ready Upgrade,4 posts approaching readiness. Weakest: commercial_intent (53.9).,81.3,Improve commercial_intent (53.9) to cross threshold,MEDIUM
+Dog Beds,Sponsored Content,Cluster has 4 ready posts — sufficient density for sponsored partnerships.,81.3,Requires brand partnership outreach,MEDIUM
+Cat Toys,Near-Ready Upgrade,7 posts approaching readiness. Weakest: commercial_intent (54.0).,81.2,Improve commercial_intent (54.0) to cross threshold,MEDIUM
+Cat Toys,Sponsored Content,Cluster has 4 ready posts — sufficient density for sponsored partnerships.,81.2,Requires brand partnership outreach,MEDIUM
+Dog Care,Sponsored Content,Cluster has 4 ready posts — sufficient density for sponsored partnerships.,79.4,Requires brand partnership outreach,MEDIUM
+Dog Health,Near-Ready Upgrade,3 posts approaching readiness. Weakest: commercial_intent (35.4).,75.8,Improve commercial_intent (35.4) to cross threshold,MEDIUM
+Cat Supplies,Display Advertising,23 posts with 87.0 avg readiness — viable for display ad placement.,87.0,Traffic volume threshold needed,LOW
+Training Supplies,Display Advertising,6 posts with 83.5 avg readiness — viable for display ad placement.,83.5,Traffic volume threshold needed,LOW
+Dog Toys,Display Advertising,14 posts with 82.5 avg readiness — viable for display ad placement.,82.5,Traffic volume threshold needed,LOW
+Dog Supplies,Display Advertising,7 posts with 81.6 avg readiness — viable for display ad placement.,81.6,Traffic volume threshold needed,LOW
+Dog Beds,Display Advertising,15 posts with 81.3 avg readiness — viable for display ad placement.,81.3,Traffic volume threshold needed,LOW
+Cat Toys,Display Advertising,16 posts with 81.2 avg readiness — viable for display ad placement.,81.2,Traffic volume threshold needed,LOW
+Dog Care,Display Advertising,12 posts with 79.4 avg readiness — viable for display ad placement.,79.4,Traffic volume threshold needed,LOW
+Dog Health,Display Advertising,8 posts with 75.8 avg readiness — viable for display ad placement.,75.8,Traffic volume threshold needed,LOW
+Indoor Cats,Display Advertising,6 posts with 70.3 avg readiness — viable for display ad placement.,70.3,Traffic volume threshold needed,LOW
+Uncategorized,Display Advertising,45 posts with 70.2 avg readiness — viable for display ad placement.,70.2,Traffic volume threshold needed,LOW
+Dog Food,BLOCKED,Commercial content blocked pending evidence build. 5 posts with avg readiness 84.9.,84.9,Evidence gap; authority evidence needed before commercial activation,HOLD
+Dog Harnesses,BLOCKED,Commercial content blocked pending evidence build. 7 posts with avg readiness 80.9.,80.9,Evidence gap; authority evidence needed before commercial activation,HOLD

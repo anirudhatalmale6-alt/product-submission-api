@@ -1,0 +1,6 @@
+platform,confirmed_citations,observed_citations,estimated_citations,readiness_score,top_opportunity_cluster
+ChatGPT,0,0,40,92.0,Dog Food
+Perplexity,0,0,40,87.0,Dog Food
+Gemini,0,0,40,93.5,Indoor Cats
+Google AI Overviews,0,0,40,95.0,Dog Beds
+Bing Copilot,0,0,40,92.4,Dog Beds
