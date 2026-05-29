@@ -1,0 +1,822 @@
+[21:30:15] ======================================================================
+[21:30:15] PetHub Online - Comparison Booster (Pass 2)
+[21:30:15] ======================================================================
+[21:30:15] Strategy: Add 'Compared:' tables with vs/comparison language to
+[21:30:15] posts that have generic tables but lack comparison scoring signals
+[21:30:15] 
+[21:30:15] STEP 1: Fetching all published posts...
+[21:30:15] Fetching posts page 1...
+[21:30:24]   Got 100 posts (total: 100)
+[21:30:24] Fetching posts page 2...
+[21:30:30]   Got 68 posts (total: 168)
+[21:30:30] Total posts fetched: 168
+[21:30:30] 
+[21:30:30] STEP 2: Assigning posts to CONTESTED clusters...
+[21:30:30]   Indoor Cats: 7 posts
+[21:30:30]   Dog Supplies: 53 posts
+[21:30:30]   Uncategorized: 45 posts
+[21:30:30]   Cat Toys: 15 posts
+[21:30:30]   Pet Care: 29 posts
+[21:30:30]   Cat Supplies: 5 posts
+[21:30:30]   Dog Health: 1 posts
+[21:30:30] 
+[21:30:30] STEP 3: Boosting comparison signals in all clusters...
+[21:30:30] 
+[21:30:30] ────────────────────────────────────────────────────────────
+[21:30:30] CLUSTER: Indoor Cats (7 posts, 6 templates)
+[21:30:30] ────────────────────────────────────────────────────────────
+[21:30:30]   Post 7346: Indoor Cat Diet and Nutrition: Feeding Guidelines for House 
+[21:30:30]     Current: tables=1, vs=4, procon=0, score=45.0
+[21:30:30]     Adding: Compared: Wet vs Dry Food for Indoor Cats
+[21:30:30]     Projected score: 45.0 -> 80.0
+[21:30:37]     SUCCESS - Updated post 7346
+[21:30:37]   Post 7345: Indoor Cat Behaviour: Understanding and Managing Common Issu
+[21:30:37]     Current: tables=1, vs=2, procon=0, score=35.0
+[21:30:37]     Adding: Compared: Scheduled Play Sessions vs Free Play for Indoor Cats
+[21:30:37]     Projected score: 35.0 -> 80.0
+[21:30:44]     SUCCESS - Updated post 7345
+[21:30:44]   Post 7344: Creating a Cat-Friendly Home: Environmental Enrichment for I
+[21:30:44]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:30:44]     Adding: Compared: Vertical vs Horizontal Enrichment for Indoor Cats
+[21:30:44]     Projected score: 30.0 -> 80.0
+[21:30:51]     SUCCESS - Updated post 7344
+[21:30:51]   Post 7343: Indoor Cat Safety: Common Household Hazards for Cats
+[21:30:51]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:30:51]     Adding: Compared: Scheduled Play Sessions vs Free Play for Indoor Cats
+[21:30:51]     Projected score: 30.0 -> 80.0
+[21:30:57]     SUCCESS - Updated post 7343
+[21:30:57]   Post 7342: Indoor Cat Exercise: Keeping House Cats Active and Healthy
+[21:30:57]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:30:57]     Adding: Compared: Scheduled Play Sessions vs Free Play for Indoor Cats
+[21:30:57]     Projected score: 30.0 -> 80.0
+[21:31:04]     SUCCESS - Updated post 7342
+[21:31:04]   Post 7167: Indoor Cat Terminology: A Complete Glossary for Cat Owners
+[21:31:04]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:31:04]     Adding: Compared: Vertical vs Horizontal Enrichment for Indoor Cats
+[21:31:04]     Projected score: 30.0 -> 80.0
+[21:31:12]     SUCCESS - Updated post 7167
+[21:31:12]   Post 4195: Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide
+[21:31:12]     Current: tables=1, vs=0, procon=0, score=25.0
+[21:31:12]     Adding: Compared: Scheduled Play Sessions vs Free Play for Indoor Cats
+[21:31:12]     Projected score: 25.0 -> 80.0
+[21:31:19]     SUCCESS - Updated post 4195
+[21:31:19] 
+[21:31:19] ────────────────────────────────────────────────────────────
+[21:31:19] CLUSTER: Dog Supplies (53 posts, 7 templates)
+[21:31:19] ────────────────────────────────────────────────────────────
+[21:31:19]   Post 7174: Dog Bed Terminology: Materials, Types, and Sizing Terms Expl
+[21:31:19]     Current: tables=4, vs=5, procon=0, score=70.0
+[21:31:19]     Adding: Compared: Daily Dental Brushing vs Dental Chews for Dogs
+[21:31:19]     Projected score: 70.0 -> 80.0
+[21:31:26]     SUCCESS - Updated post 7174
+[21:31:26]   Post 7170: Dog Health Terminology: Understanding Common Veterinary and 
+[21:31:27]     Current: tables=5, vs=5, procon=0, score=70.0
+[21:31:27]     Adding: Compared: Daily Dental Brushing vs Dental Chews for Dogs
+[21:31:27]     Projected score: 70.0 -> 80.0
+[21:31:34]     SUCCESS - Updated post 7170
+[21:31:34]   Post 7169: Puppy Care Glossary: Essential Terms for New Puppy Owners
+[21:31:34]     Current: tables=3, vs=2, procon=0, score=60.0
+[21:31:34]     Adding: Compared: Daily Dental Brushing vs Dental Chews for Dogs
+[21:31:34]     Projected score: 60.0 -> 80.0
+[21:31:41]     SUCCESS - Updated post 7169
+[21:31:41]   Post 5425: Dog Toys FAQ: Common Questions Answered
+[21:31:41]     Current: tables=3, vs=1, procon=0, score=55.0
+[21:31:41]     Adding: Compared: Rubber vs Nylon Dog Toys
+[21:31:41]     Projected score: 55.0 -> 80.0
+[21:31:48]     SUCCESS - Updated post 5425
+[21:31:48]   Post 5424: Aggressive Chewer Guide: Safe Toys for Power Chewers
+[21:31:48]     Current: tables=3, vs=1, procon=0, score=55.0
+[21:31:48]     Adding: Compared: Rubber vs Nylon Dog Toys
+[21:31:48]     Projected score: 55.0 -> 80.0
+[21:31:56]     SUCCESS - Updated post 5424
+[21:31:56]   Post 5423: Dog Toy Enrichment: Beyond Basic Fetch
+[21:31:56]     Current: tables=2, vs=4, procon=0, score=70.0
+[21:31:56]     Adding: Compared: Rubber vs Nylon Dog Toys
+[21:31:56]     Projected score: 70.0 -> 80.0
+[21:32:04]     SUCCESS - Updated post 5423
+[21:32:04]   Post 5422: Indoor vs Outdoor Dog Toys: Choosing the Right Type
+[21:32:04]     Current: tables=4, vs=3, procon=0, score=65.0
+[21:32:04]     Adding: Compared: Rubber vs Nylon Dog Toys
+[21:32:04]     Projected score: 65.0 -> 80.0
+[21:32:11]     SUCCESS - Updated post 5422
+[21:32:11]   Post 5421: Puppy-Safe Dog Toys: What to Look For and What to Avoid
+[21:32:11]     Current: tables=3, vs=2, procon=0, score=60.0
+[21:32:11]     Adding: Compared: Rubber vs Nylon Dog Toys
+[21:32:11]     Projected score: 60.0 -> 80.0
+[21:32:19]     SUCCESS - Updated post 5421
+[21:32:19]   Post 5420: Dog Toy Cleaning Guide: How to Keep Toys Hygienic
+[21:32:19]     Current: tables=2, vs=2, procon=0, score=60.0
+[21:32:19]     Adding: Compared: Rubber vs Nylon Dog Toys
+[21:32:19]     Projected score: 60.0 -> 80.0
+[21:32:26]     SUCCESS - Updated post 5420
+[21:32:26]   Post 5416: Dog Bed Types Explained: A Complete Glossary
+[21:32:26]     Current: tables=4, vs=5, procon=0, score=70.0
+[21:32:26]     Adding: Compared: Stainless Steel vs Ceramic Dog Bowls
+[21:32:26]     Projected score: 70.0 -> 80.0
+[21:32:33]     SUCCESS - Updated post 5416
+[21:32:33]   Post 4792: Puppy Socialisation: A Complete Timeline Guide
+[21:32:33]     Current: tables=4, vs=1, procon=0, score=55.0
+[21:32:33]     Adding: Compared: Positive Reinforcement vs Correction-Based Dog Training Tools
+[21:32:33]     Projected score: 55.0 -> 80.0
+[21:32:40]     SUCCESS - Updated post 4792
+[21:32:40]   Post 4791: How to Choose the Right Dog Training Treats
+[21:32:40]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:32:40]     Adding: Compared: Positive Reinforcement vs Correction-Based Dog Training Tools
+[21:32:40]     Projected score: 50.0 -> 80.0
+[21:32:47]     SUCCESS - Updated post 4791
+[21:32:47]   Post 4790: DIY Dog Toys: Safe Homemade Options
+[21:32:47]     Current: tables=2, vs=3, procon=0, score=65.0
+[21:32:47]     Adding: Compared: Rubber vs Nylon Dog Toys
+[21:32:47]     Projected score: 65.0 -> 80.0
+[21:32:54]     SUCCESS - Updated post 4790
+[21:32:54]   Post 4789: Best Types of Dog Toys for Different Play Styles
+[21:32:54]     Current: tables=3, vs=1, procon=0, score=55.0
+[21:32:54]     Adding: Compared: Rubber vs Nylon Dog Toys
+[21:32:54]     Projected score: 55.0 -> 80.0
+[21:33:01]     SUCCESS - Updated post 4789
+[21:33:01]   Post 4788: Mental Stimulation for Dogs: Beyond Physical Exercise
+[21:33:01]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:33:01]     Adding: Compared: Rubber vs Nylon Dog Toys
+[21:33:01]     Projected score: 30.0 -> 80.0
+[21:33:08]     SUCCESS - Updated post 4788
+[21:33:08]   Post 4787: Dog Toy Safety: What Every Owner Needs to Know
+[21:33:08]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:33:08]     Adding: Compared: Rubber vs Nylon Dog Toys
+[21:33:08]     Projected score: 30.0 -> 80.0
+[21:33:15]     SUCCESS - Updated post 4787
+[21:33:15]   Post 4786: Where to Place Your Dog's Bed: Location and Comfort Tips
+[21:33:15]     Current: tables=3, vs=2, procon=1, score=70.0
+[21:33:15]     Adding: Compared: Memory Foam vs Standard Polyester Dog Beds
+[21:33:15]     Projected score: 70.0 -> 90.0
+[21:33:22]     SUCCESS - Updated post 4786
+[21:33:22]   Post 4785: How to Wash and Maintain Your Dog's Bed
+[21:33:22]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:33:22]     Adding: Compared: Daily Dental Brushing vs Dental Chews for Dogs
+[21:33:22]     Projected score: 50.0 -> 80.0
+[21:33:30]     SUCCESS - Updated post 4785
+[21:33:30]   Post 4784: Dog Bed Materials Explained: Foam, Memory Foam, and More
+[21:33:30]     Current: tables=3, vs=5, procon=0, score=70.0
+[21:33:30]     Adding: Compared: Daily Dental Brushing vs Dental Chews for Dogs
+[21:33:30]     Projected score: 70.0 -> 80.0
+[21:33:37]     SUCCESS - Updated post 4784
+[21:33:37]   Post 4783: How to Choose the Right Dog Bed Size
+[21:33:37]     Current: tables=2, vs=2, procon=0, score=60.0
+[21:33:37]     Adding: Compared: Daily Dental Brushing vs Dental Chews for Dogs
+[21:33:37]     Projected score: 60.0 -> 80.0
+[21:33:45]     SUCCESS - Updated post 4783
+[21:33:45]   Post 4570: First-Time Dog Owner Essentials: What You Need to Know
+[21:33:45]     Current: tables=5, vs=0, procon=0, score=50.0
+[21:33:45]     Adding: Compared: Stainless Steel vs Ceramic Dog Bowls
+[21:33:45]     Projected score: 50.0 -> 80.0
+[21:33:52]     SUCCESS - Updated post 4570
+[21:33:52]   Post 4574: Pet Hydration Guide: How Much Water Does Your Pet Need?
+[21:33:52]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:33:52]     Adding: Compared: Stainless Steel vs Ceramic Dog Bowls
+[21:33:52]     Projected score: 30.0 -> 80.0
+[21:33:59]     SUCCESS - Updated post 4574
+[21:33:59]   Post 4571: Pet First Aid Basics: What Every Owner Should Know
+[21:33:59]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:33:59]     Adding: Compared: Daily Dental Brushing vs Dental Chews for Dogs
+[21:33:59]     Projected score: 30.0 -> 80.0
+[21:34:06]     SUCCESS - Updated post 4571
+[21:34:06]   Post 4568: Dog Dental Health: A Practical Care Guide
+[21:34:06]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:34:06]     Adding: Compared: Professional Grooming vs Home Grooming for Dogs
+[21:34:06]     Projected score: 50.0 -> 80.0
+[21:34:13]     SUCCESS - Updated post 4568
+[21:34:13]   Post 4566: Seasonal Dog Care: Keeping Your Dog Safe Year-Round
+[21:34:13]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:34:13]     Adding: Compared: Daily Dental Brushing vs Dental Chews for Dogs
+[21:34:13]     Projected score: 50.0 -> 80.0
+[21:34:19]     SUCCESS - Updated post 4566
+[21:34:19]   Post 4563: Dog Grooming Basics: A Complete Guide for Owners
+[21:34:19]     Current: tables=2, vs=2, procon=0, score=60.0
+[21:34:19]     Adding: Compared: Professional Grooming vs Home Grooming for Dogs
+[21:34:19]     Projected score: 60.0 -> 80.0
+[21:34:25]     SUCCESS - Updated post 4563
+[21:34:25]   Post 4167: Best Dog Water Bottles UK (2026) – Travel Hydration Guide
+[21:34:25]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:34:25]     Adding: Compared: Stainless Steel vs Ceramic Dog Bowls
+[21:34:25]     Projected score: 50.0 -> 80.0
+[21:34:32]     SUCCESS - Updated post 4167
+[21:34:32]   Post 4160: Best Elevated Dog Bowls UK (2026) – Raised Feeder Guide
+[21:34:32]     Current: tables=1, vs=2, procon=0, score=35.0
+[21:34:32]     Adding: Compared: Stainless Steel vs Ceramic Dog Bowls
+[21:34:32]     Projected score: 35.0 -> 80.0
+[21:34:39]     SUCCESS - Updated post 4160
+[21:34:39]   Post 4153: Best Slow Feeder Dog Bowls UK (2026) – Prevent Speed Eating
+[21:34:39]     Already has 'Compared:' heading - SKIP
+[21:34:39]   Post 4146: Best Dog Bowls and Feeding UK (2026) – Complete Guide
+[21:34:39]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:34:39]     Adding: Compared: Stainless Steel vs Ceramic Dog Bowls
+[21:34:39]     Projected score: 30.0 -> 80.0
+[21:34:45]     SUCCESS - Updated post 4146
+[21:34:45]   Post 4139: Best Dog Training Leads UK (2026) – Long Lines & Harnesses
+[21:34:45]     Current: tables=2, vs=3, procon=0, score=65.0
+[21:34:45]     Adding: Compared: Stainless Steel vs Ceramic Dog Bowls
+[21:34:45]     Projected score: 65.0 -> 80.0
+[21:34:53]     SUCCESS - Updated post 4139
+[21:34:53]   Post 4132: Best Puppy Training Guide UK (2026) – First Year Essentials
+[21:34:53]     Current: tables=4, vs=0, procon=0, score=50.0
+[21:34:53]     Adding: Compared: Positive Reinforcement vs Correction-Based Dog Training Tools
+[21:34:53]     Projected score: 50.0 -> 80.0
+[21:35:00]     SUCCESS - Updated post 4132
+[21:35:00]   Post 4125: Best Dog Training Treats UK (2026) – Reward Guide
+[21:35:00]     Current: tables=2, vs=1, procon=0, score=55.0
+[21:35:00]     Adding: Compared: Stainless Steel vs Ceramic Dog Bowls
+[21:35:00]     Projected score: 55.0 -> 80.0
+[21:35:08]     SUCCESS - Updated post 4125
+[21:35:08]   Post 4118: Best Dog Training and Behaviour UK (2026) – Complete Guide
+[21:35:08]     Current: tables=2, vs=1, procon=0, score=55.0
+[21:35:08]     Adding: Compared: Positive Reinforcement vs Correction-Based Dog Training Tools
+[21:35:08]     Projected score: 55.0 -> 80.0
+[21:35:15]     SUCCESS - Updated post 4118
+[21:35:15]   Post 4110: Best Dog Joint Supplements UK (2026) – Mobility Support Guid
+[21:35:15]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:35:15]     Adding: Compared: Daily Dental Brushing vs Dental Chews for Dogs
+[21:35:15]     Projected score: 50.0 -> 80.0
+[21:35:21]     SUCCESS - Updated post 4110
+[21:35:21]   Post 4103: Best Dog Flea Treatment UK (2026) – Prevention Guide
+[21:35:21]     Current: tables=2, vs=2, procon=0, score=60.0
+[21:35:21]     Adding: Compared: Daily Dental Brushing vs Dental Chews for Dogs
+[21:35:21]     Projected score: 60.0 -> 80.0
+[21:35:28]     SUCCESS - Updated post 4103
+[21:35:28]   Post 4096: Best Dog Dental Care UK (2026) – Teeth Cleaning Guide
+[21:35:28]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:35:28]     Adding: Compared: Professional Grooming vs Home Grooming for Dogs
+[21:35:28]     Projected score: 50.0 -> 80.0
+[21:35:36]     SUCCESS - Updated post 4096
+[21:35:36]   Post 4089: Best Dog Health and Care UK (2026) – Complete Guide
+[21:35:36]     Current: tables=3, vs=2, procon=0, score=60.0
+[21:35:36]     Adding: Compared: Daily Dental Brushing vs Dental Chews for Dogs
+[21:35:36]     Projected score: 60.0 -> 80.0
+[21:35:43]     SUCCESS - Updated post 4089
+[21:35:43]   Post 4078: Best Dog Nail Clippers UK (2026) – Trimming & Grinding Guide
+[21:35:43]     Current: tables=2, vs=2, procon=1, score=70.0
+[21:35:43]     Adding: Compared: Professional Grooming vs Home Grooming for Dogs
+[21:35:43]     Projected score: 70.0 -> 90.0
+[21:35:51]     SUCCESS - Updated post 4078
+[21:35:51]   Post 4071: Best Dog Shampoo UK (2026) – Ingredients & Safety Guide
+[21:35:51]     Current: tables=2, vs=2, procon=0, score=60.0
+[21:35:51]     Adding: Compared: Professional Grooming vs Home Grooming for Dogs
+[21:35:51]     Projected score: 60.0 -> 80.0
+[21:35:58]     SUCCESS - Updated post 4071
+[21:35:58]   Post 4064: Best Dog Brushes UK (2026) – Guide by Coat Type
+[21:35:58]     Current: tables=2, vs=1, procon=0, score=55.0
+[21:35:58]     Adding: Compared: Professional Grooming vs Home Grooming for Dogs
+[21:35:58]     Projected score: 55.0 -> 80.0
+[21:36:05]     SUCCESS - Updated post 4064
+[21:36:05]   Post 4057: Best Dog Grooming Supplies UK (2026) – Complete Guide
+[21:36:05]     Current: tables=3, vs=4, procon=0, score=70.0
+[21:36:05]     Adding: Compared: Professional Grooming vs Home Grooming for Dogs
+[21:36:05]     Projected score: 70.0 -> 80.0
+[21:36:12]     SUCCESS - Updated post 4057
+[21:36:12]   Post 4049: Best Puppy Collars UK (2026) – First Collar & Harness Guide
+[21:36:12]     Current: tables=3, vs=3, procon=0, score=65.0
+[21:36:12]     Adding: Compared: Positive Reinforcement vs Correction-Based Dog Training Tools
+[21:36:12]     Projected score: 65.0 -> 80.0
+[21:36:18]     SUCCESS - Updated post 4049
+[21:36:18]   Post 4042: Best Dog Leads UK (2026) – Walking & Training Lead Guide
+[21:36:18]     Current: tables=3, vs=2, procon=0, score=60.0
+[21:36:18]     Adding: Compared: Positive Reinforcement vs Correction-Based Dog Training Tools
+[21:36:18]     Projected score: 60.0 -> 80.0
+[21:36:25]     SUCCESS - Updated post 4042
+[21:36:25]   Post 4018: Best Puppy Beds UK (2026) – First Bed & Crate Training Guide
+[21:36:25]     Current: tables=4, vs=1, procon=0, score=55.0
+[21:36:25]     Adding: Compared: Memory Foam vs Standard Polyester Dog Beds
+[21:36:25]     Projected score: 55.0 -> 80.0
+[21:36:32]     SUCCESS - Updated post 4018
+[21:36:32]   Post 4011: Best Cooling Dog Beds UK (2026) – Temperature Regulation Gui
+[21:36:32]     Current: tables=3, vs=3, procon=0, score=65.0
+[21:36:32]     Adding: Compared: Stainless Steel vs Ceramic Dog Bowls
+[21:36:32]     Projected score: 65.0 -> 80.0
+[21:36:39]     SUCCESS - Updated post 4011
+[21:36:39]   Post 4004: Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide
+[21:36:39]     Current: tables=2, vs=1, procon=0, score=55.0
+[21:36:39]     Adding: Compared: Stainless Steel vs Ceramic Dog Bowls
+[21:36:39]     Projected score: 55.0 -> 80.0
+[21:36:46]     SUCCESS - Updated post 4004
+[21:36:46]   Post 3996: Best Dog Beds UK (2026) – Complete Guide & Honest Reviews
+[21:36:46]     Current: tables=5, vs=1, procon=0, score=55.0
+[21:36:46]     Adding: Compared: Daily Dental Brushing vs Dental Chews for Dogs
+[21:36:46]     Projected score: 55.0 -> 80.0
+[21:36:54]     SUCCESS - Updated post 3996
+[21:36:54]   Post 3960: Best Puppy Toys UK (2026) – Teething & First Toys Guide
+[21:36:54]     Current: tables=2, vs=1, procon=0, score=55.0
+[21:36:54]     Adding: Compared: Rubber vs Nylon Dog Toys
+[21:36:54]     Projected score: 55.0 -> 80.0
+[21:37:01]     SUCCESS - Updated post 3960
+[21:37:01]   Post 3959: Best Interactive Dog Toys UK (2026) – Puzzle & Enrichment Gu
+[21:37:01]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:37:01]     Adding: Compared: Rubber vs Nylon Dog Toys
+[21:37:01]     Projected score: 30.0 -> 80.0
+[21:37:07]     SUCCESS - Updated post 3959
+[21:37:07]   Post 3957: Best Indestructible Dog Toys UK (2026) – Tough Toys for Heav
+[21:37:07]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:37:07]     Adding: Compared: Rubber vs Nylon Dog Toys
+[21:37:07]     Projected score: 30.0 -> 80.0
+[21:37:15]     SUCCESS - Updated post 3957
+[21:37:15]   Post 3956: Best Dog Toys UK (2026) – Complete Guide & Honest Reviews
+[21:37:15]     Current: tables=1, vs=2, procon=0, score=35.0
+[21:37:15]     Adding: Compared: Rubber vs Nylon Dog Toys
+[21:37:15]     Projected score: 35.0 -> 80.0
+[21:37:23]     SUCCESS - Updated post 3956
+[21:37:23]   Post 3: Dog Toys UK (2026) – Essential Guide for Pet Owners
+[21:37:23]     Already has 'Compared:' heading - SKIP
+[21:37:23] 
+[21:37:23] ────────────────────────────────────────────────────────────
+[21:37:23] CLUSTER: Uncategorized (45 posts, 7 templates)
+[21:37:23] ────────────────────────────────────────────────────────────
+[21:37:23]   Post 8172: Our Research Standards
+[21:37:23]     Current: tables=1, vs=2, procon=0, score=35.0
+[21:37:23]     Adding: Compared: Interactive vs Self-Play Pet Toys
+[21:37:23]     Projected score: 35.0 -> 80.0
+[21:37:30]     SUCCESS - Updated post 8172
+[21:37:30]   Post 8171: Why PetHub Online Exists
+[21:37:30]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:37:30]     Adding: Compared: Food-Based vs Sensory Enrichment for Pets
+[21:37:30]     Projected score: 30.0 -> 80.0
+[21:37:38]     SUCCESS - Updated post 8171
+[21:37:38]   Post 6052: Low-Mobility Enrichment: Mental Stimulation for Dogs with Li
+[21:37:38]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:37:38]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:37:38]     Projected score: 50.0 -> 80.0
+[21:37:45]     SUCCESS - Updated post 6052
+[21:37:45]   Post 6050: Toy Overstimulation Recovery: Calming Down an Overexcited Do
+[21:37:45]     Current: tables=2, vs=1, procon=0, score=55.0
+[21:37:45]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:37:45]     Projected score: 55.0 -> 80.0
+[21:37:52]     SUCCESS - Updated post 6050
+[21:37:52]   Post 6049: Sensory Enrichment for Dogs: Engaging All Five Senses Throug
+[21:37:52]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:37:52]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:37:52]     Projected score: 50.0 -> 80.0
+[21:37:59]     SUCCESS - Updated post 6049
+[21:37:59]   Post 6048: Confidence-Building Play: Helping Shy and Fearful Dogs Throu
+[21:37:59]     Current: tables=2, vs=1, procon=0, score=55.0
+[21:37:59]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:37:59]     Projected score: 55.0 -> 80.0
+[21:38:06]     SUCCESS - Updated post 6048
+[21:38:06]   Post 6047: Play Recovery After Surgery: Gentle Enrichment for Healing D
+[21:38:06]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:38:06]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:38:06]     Projected score: 50.0 -> 80.0
+[21:38:14]     SUCCESS - Updated post 6047
+[21:38:14]   Post 6046: Dog Toy Hygiene Schedules: A Practical Cleaning Timetable
+[21:38:14]     Current: tables=3, vs=0, procon=0, score=50.0
+[21:38:14]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:38:14]     Projected score: 50.0 -> 80.0
+[21:38:20]     SUCCESS - Updated post 6046
+[21:38:20]   Post 6045: Safe Multi-Dog Toy Management: Preventing Resource Guarding
+[21:38:20]     Current: tables=3, vs=0, procon=0, score=50.0
+[21:38:20]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:38:20]     Projected score: 50.0 -> 80.0
+[21:38:28]     SUCCESS - Updated post 6045
+[21:38:28]   Post 6044: Rotating Puzzle Complexity: Progressive Challenge for Smart 
+[21:38:28]     Current: tables=2, vs=1, procon=0, score=55.0
+[21:38:28]     Adding: Compared: Active Play vs Calm Cognitive Play for Pets
+[21:38:28]     Projected score: 55.0 -> 80.0
+[21:38:35]     SUCCESS - Updated post 6044
+[21:38:35]   Post 6042: Enrichment by Breed Group: Tailoring Play to Your Dog's Inst
+[21:38:35]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:38:35]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:38:35]     Projected score: 50.0 -> 80.0
+[21:38:43]     SUCCESS - Updated post 6042
+[21:38:43]   Post 6039: Dog Toy Anxiety Reduction: Using Toys to Calm Nervous Dogs
+[21:38:43]     Current: tables=3, vs=0, procon=0, score=50.0
+[21:38:43]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:38:43]     Projected score: 50.0 -> 80.0
+[21:38:50]     SUCCESS - Updated post 6039
+[21:38:50]   Post 5950: Dog Toy Durability Guide: What Lasts and What Does Not
+[21:38:50]     Current: tables=2, vs=2, procon=0, score=60.0
+[21:38:50]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:38:50]     Projected score: 60.0 -> 80.0
+[21:38:57]     SUCCESS - Updated post 5950
+[21:38:57]   Post 5946: Dog Toy Materials Compared: Rubber, Rope, Plush, and Nylon
+[21:38:57]     Current: tables=2, vs=3, procon=0, score=65.0
+[21:38:57]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:38:57]     Projected score: 65.0 -> 80.0
+[21:39:04]     SUCCESS - Updated post 5946
+[21:39:04]   Post 5942: Cognitive Enrichment for Senior Dogs: Gentle Play for Ageing
+[21:39:04]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:39:04]     Adding: Compared: Active Play vs Calm Cognitive Play for Pets
+[21:39:04]     Projected score: 30.0 -> 80.0
+[21:39:11]     SUCCESS - Updated post 5942
+[21:39:11]   Post 5938: Enrichment Schedules for Dogs: Structuring Daily Play and Me
+[21:39:11]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:39:11]     Adding: Compared: Active Play vs Calm Cognitive Play for Pets
+[21:39:11]     Projected score: 50.0 -> 80.0
+[21:39:18]     SUCCESS - Updated post 5938
+[21:39:18]   Post 5935: Dog Toy Storage and Organisation: Keeping Toys Clean and Acc
+[21:39:18]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:39:18]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:39:18]     Projected score: 50.0 -> 80.0
+[21:39:25]     SUCCESS - Updated post 5935
+[21:39:25]   Post 5934: Crate and Play Enrichment: Keeping Dogs Happy in Confined Sp
+[21:39:25]     Current: tables=1, vs=0, procon=0, score=25.0
+[21:39:25]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:39:25]     Projected score: 25.0 -> 80.0
+[21:39:32]     SUCCESS - Updated post 5934
+[21:39:32]   Post 5933: Safe Tug Play with Dogs: Rules, Benefits, and Common Mistake
+[21:39:32]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:39:32]     Adding: Compared: Active Play vs Calm Cognitive Play for Pets
+[21:39:32]     Projected score: 30.0 -> 80.0
+[21:39:39]     SUCCESS - Updated post 5933
+[21:39:39]   Post 5932: Scent-Game Enrichment for Dogs: Using Smell to Engage Your D
+[21:39:39]     Current: tables=1, vs=2, procon=0, score=35.0
+[21:39:39]     Adding: Compared: Active Play vs Calm Cognitive Play for Pets
+[21:39:39]     Projected score: 35.0 -> 80.0
+[21:39:45]     SUCCESS - Updated post 5932
+[21:39:45]   Post 5931: Signs of Toy Overstimulation in Dogs: When Play Becomes Too 
+[21:39:45]     Current: tables=1, vs=0, procon=0, score=25.0
+[21:39:45]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:39:45]     Projected score: 25.0 -> 80.0
+[21:39:51]     SUCCESS - Updated post 5931
+[21:39:51]   Post 5930: Dog Toy Safety by Breed Size: Choosing the Right Size Toy
+[21:39:52]     Current: tables=1, vs=0, procon=0, score=25.0
+[21:39:52]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:39:52]     Projected score: 25.0 -> 80.0
+[21:39:59]     SUCCESS - Updated post 5930
+[21:39:59]   Post 5523: Dog Training Equipment Explained: Tools, Uses, and What to A
+[21:39:59]     Current: tables=2, vs=3, procon=0, score=65.0
+[21:39:59]     Adding: Compared: Active Play vs Calm Cognitive Play for Pets
+[21:39:59]     Projected score: 65.0 -> 80.0
+[21:40:07]     SUCCESS - Updated post 5523
+[21:40:07]   Post 5522: Orthopaedic Care for Dogs: Joint Health, Mobility, and Suppo
+[21:40:07]     Current: tables=1, vs=2, procon=0, score=35.0
+[21:40:07]     Adding: Compared: Active Play vs Calm Cognitive Play for Pets
+[21:40:07]     Projected score: 35.0 -> 80.0
+[21:40:15]     SUCCESS - Updated post 5522
+[21:40:15]   Post 5521: Pet Health Terminology: A Guide to Common Veterinary Terms
+[21:40:15]     Current: tables=1, vs=3, procon=0, score=40.0
+[21:40:15]     Adding: Compared: Interactive vs Self-Play Pet Toys
+[21:40:15]     Projected score: 40.0 -> 80.0
+[21:40:22]     SUCCESS - Updated post 5521
+[21:40:22]   Post 5520: Dog Health Basics: Common Conditions, Prevention, and When t
+[21:40:22]     Current: tables=1, vs=0, procon=0, score=25.0
+[21:40:22]     Adding: Compared: Active Play vs Calm Cognitive Play for Pets
+[21:40:22]     Projected score: 25.0 -> 80.0
+[21:40:31]     SUCCESS - Updated post 5520
+[21:40:31]   Post 5519: Indoor Cat Care: A Complete Guide to Keeping House Cats Happ
+[21:40:31]     Current: tables=1, vs=3, procon=0, score=40.0
+[21:40:31]     Adding: Compared: Active Play vs Calm Cognitive Play for Pets
+[21:40:31]     Projected score: 40.0 -> 80.0
+[21:40:37]     SUCCESS - Updated post 5519
+[21:40:37]   Post 5512: Dog Behaviour Explained: Understanding Your Dog's Body Langu
+[21:40:37]     Current: tables=2, vs=2, procon=0, score=60.0
+[21:40:37]     Adding: Compared: Active Play vs Calm Cognitive Play for Pets
+[21:40:37]     Projected score: 60.0 -> 80.0
+[21:40:44]     SUCCESS - Updated post 5512
+[21:40:44]   Post 5511: Pet Enrichment Explained: Types, Benefits, and Practical Ide
+[21:40:44]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:40:44]     Adding: Compared: Active Play vs Calm Cognitive Play for Pets
+[21:40:44]     Projected score: 30.0 -> 80.0
+[21:40:51]     SUCCESS - Updated post 5511
+[21:40:51]   Post 5510: Dog Bed Sizing Guide: How to Measure Your Dog and Choose the
+[21:40:51]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:40:51]     Adding: Compared: Active Play vs Calm Cognitive Play for Pets
+[21:40:51]     Projected score: 50.0 -> 80.0
+[21:40:59]     SUCCESS - Updated post 5510
+[21:40:59]   Post 5509: Pet Toy Safety: Understanding Materials, Hazards, and Standa
+[21:40:59]     Current: tables=3, vs=3, procon=0, score=65.0
+[21:40:59]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:40:59]     Projected score: 65.0 -> 80.0
+[21:41:07]     SUCCESS - Updated post 5509
+[21:41:07]   Post 5508: Puppy Development Stages: A Complete Guide from Birth to Mat
+[21:41:07]     Current: tables=1, vs=2, procon=0, score=35.0
+[21:41:07]     Adding: Compared: Active Play vs Calm Cognitive Play for Pets
+[21:41:07]     Projected score: 35.0 -> 80.0
+[21:41:13]     SUCCESS - Updated post 5508
+[21:41:13]   Post 5483: Dog Toy Lifespan: When to Replace Toys and How to Extend The
+[21:41:13]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:41:13]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:41:13]     Projected score: 50.0 -> 80.0
+[21:41:20]     SUCCESS - Updated post 5483
+[21:41:20]   Post 5476: Mental Stimulation Toys for Dogs: Puzzles, Games, and Brain 
+[21:41:20]     Current: tables=3, vs=2, procon=0, score=60.0
+[21:41:20]     Adding: Compared: Food-Based vs Sensory Enrichment for Pets
+[21:41:20]     Projected score: 60.0 -> 80.0
+[21:41:27]     SUCCESS - Updated post 5476
+[21:41:27]   Post 5473: Senior Dog Toys: Gentle Play Options for Older Dogs
+[21:41:27]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:41:27]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:41:27]     Projected score: 50.0 -> 80.0
+[21:41:34]     SUCCESS - Updated post 5473
+[21:41:34]   Post 5471: Dog Boredom Prevention: Signs, Solutions, and Enrichment Ide
+[21:41:34]     Current: tables=1, vs=2, procon=0, score=35.0
+[21:41:34]     Adding: Compared: Active Play vs Calm Cognitive Play for Pets
+[21:41:34]     Projected score: 35.0 -> 80.0
+[21:41:41]     SUCCESS - Updated post 5471
+[21:41:41]   Post 5469: Dog Toy Rotation: How to Keep Your Dog Interested and Engage
+[21:41:42]     Current: tables=2, vs=1, procon=0, score=55.0
+[21:41:42]     Adding: Compared: Interactive vs Self-Play Pet Toys
+[21:41:42]     Projected score: 55.0 -> 80.0
+[21:41:49]     SUCCESS - Updated post 5469
+[21:41:49]   Post 5467: Pet Feeding Guide: Understanding Portions, Schedules, and Me
+[21:41:49]     Current: tables=2, vs=2, procon=0, score=60.0
+[21:41:49]     Adding: Compared: Interactive vs Self-Play Pet Toys
+[21:41:49]     Projected score: 60.0 -> 80.0
+[21:41:56]     SUCCESS - Updated post 5467
+[21:41:56]   Post 5464: Pet Grooming Glossary: Understanding Grooming Terms and Tech
+[21:41:56]     Current: tables=1, vs=3, procon=0, score=40.0
+[21:41:56]     Adding: Compared: Interactive vs Self-Play Pet Toys
+[21:41:56]     Projected score: 40.0 -> 80.0
+[21:42:04]     SUCCESS - Updated post 5464
+[21:42:04]   Post 5462: Dog Training Terminology Explained: Key Concepts for New Own
+[21:42:04]     Current: tables=1, vs=0, procon=0, score=25.0
+[21:42:04]     Adding: Compared: Active Play vs Calm Cognitive Play for Pets
+[21:42:04]     Projected score: 25.0 -> 80.0
+[21:42:11]     SUCCESS - Updated post 5462
+[21:42:11]   Post 5460: Pet Nutrition Terminology: A Guide to Common Terms on Pet Fo
+[21:42:11]     Current: tables=2, vs=9, procon=0, score=70.0
+[21:42:11]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:42:11]     Projected score: 70.0 -> 80.0
+[21:42:17]     SUCCESS - Updated post 5460
+[21:42:17]   Post 5458: Cat Scratching Behaviour Explained: Why Cats Scratch and How
+[21:42:17]     Current: tables=3, vs=1, procon=0, score=55.0
+[21:42:17]     Adding: Compared: Natural vs Synthetic Pet Toy Materials
+[21:42:17]     Projected score: 55.0 -> 80.0
+[21:42:25]     SUCCESS - Updated post 5458
+[21:42:25]   Post 5415: Dog Play Styles Explained: Understanding How Your Dog Plays
+[21:42:25]     Current: tables=1, vs=4, procon=0, score=45.0
+[21:42:25]     Adding: Compared: Active Play vs Calm Cognitive Play for Pets
+[21:42:25]     Projected score: 45.0 -> 80.0
+[21:42:32]     SUCCESS - Updated post 5415
+[21:42:32]   Post 5414: Cat Toy Types Explained: A Complete Glossary
+[21:42:32]     Current: tables=1, vs=2, procon=0, score=35.0
+[21:42:32]     Adding: Compared: Active Play vs Calm Cognitive Play for Pets
+[21:42:32]     Projected score: 35.0 -> 80.0
+[21:42:38]     SUCCESS - Updated post 5414
+[21:42:38]   Post 5296: Best Indoor Cat Toys UK (2026): Complete Guide for House Cat
+[21:42:38]     Current: tables=1, vs=0, procon=0, score=25.0
+[21:42:38]     Adding: Compared: Active Play vs Calm Cognitive Play for Pets
+[21:42:38]     Projected score: 25.0 -> 80.0
+[21:42:46]     SUCCESS - Updated post 5296
+[21:42:46] 
+[21:42:46] ────────────────────────────────────────────────────────────
+[21:42:46] CLUSTER: Cat Toys (15 posts, 6 templates)
+[21:42:46] ────────────────────────────────────────────────────────────
+[21:42:46]   Post 7177: Cat Toy Terminology: Understanding Play Types and Toy Featur
+[21:42:46]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:42:46]     Adding: Compared: Toy Rotation Schedules — Weekly vs Monthly Cycling
+[21:42:46]     Projected score: 30.0 -> 80.0
+[21:42:53]     SUCCESS - Updated post 7177
+[21:42:53]   Post 5033: How to Choose the Right Cat Toy for Your Cat's Personality
+[21:42:53]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:42:53]     Adding: Compared: String-Based vs Solid Cat Toys — Safety Considerations
+[21:42:53]     Projected score: 30.0 -> 80.0
+[21:43:01]     SUCCESS - Updated post 5033
+[21:43:01]   Post 5036: Understanding Cat Play Behaviour: What Different Play Styles
+[21:43:01]     Current: tables=3, vs=1, procon=0, score=55.0
+[21:43:01]     Adding: Compared: Toy Rotation Schedules — Weekly vs Monthly Cycling
+[21:43:01]     Projected score: 55.0 -> 80.0
+[21:43:09]     SUCCESS - Updated post 5036
+[21:43:09]   Post 5032: Cat Toys FAQ: Common Questions Answered
+[21:43:09]     Current: tables=1, vs=0, procon=0, score=25.0
+[21:43:09]     Adding: Compared: String-Based vs Solid Cat Toys — Safety Considerations
+[21:43:09]     Projected score: 25.0 -> 80.0
+[21:43:16]     SUCCESS - Updated post 5032
+[21:43:16]   Post 5035: Cat Enrichment Beyond Toys: Creating a Stimulating Home
+[21:43:16]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:43:16]     Adding: Compared: Toy Rotation Schedules — Weekly vs Monthly Cycling
+[21:43:16]     Projected score: 50.0 -> 80.0
+[21:43:22]     SUCCESS - Updated post 5035
+[21:43:22]   Post 5034: Cat Toy Rotation: How to Keep Toys Fresh and Engaging
+[21:43:22]     Current: tables=1, vs=0, procon=0, score=25.0
+[21:43:22]     Adding: Compared: Toy Rotation Schedules — Weekly vs Monthly Cycling
+[21:43:22]     Projected score: 25.0 -> 80.0
+[21:43:30]     SUCCESS - Updated post 5034
+[21:43:30]   Post 4415: Cat Toy Safety Guide: What Every Owner Should Know
+[21:43:30]     Current: tables=2, vs=2, procon=0, score=60.0
+[21:43:30]     Adding: Compared: String-Based vs Solid Cat Toys — Safety Considerations
+[21:43:30]     Projected score: 60.0 -> 80.0
+[21:43:37]     SUCCESS - Updated post 4415
+[21:43:37]   Post 4406: Best Interactive Cat Toys for Indoor Cats: Engagement Guide
+[21:43:37]     Current: tables=2, vs=1, procon=0, score=55.0
+[21:43:37]     Adding: Compared: Toy Rotation Schedules — Weekly vs Monthly Cycling
+[21:43:37]     Projected score: 55.0 -> 80.0
+[21:43:44]     SUCCESS - Updated post 4406
+[21:43:44]   Post 4410: Cat Enrichment Activities Beyond Toys: Complete Guide
+[21:43:44]     Already has 'Compared:' heading - SKIP
+[21:43:44]   Post 4409: Kitten vs Adult Cat Toys: Age-Appropriate Play Guide
+[21:43:44]     Already has 'Compared:' heading - SKIP
+[21:43:44]   Post 4408: How Often Should You Replace Cat Toys? A Practical Guide
+[21:43:44]     Current: tables=1, vs=2, procon=0, score=35.0
+[21:43:44]     Adding: Compared: String-Based vs Solid Cat Toys — Safety Considerations
+[21:43:44]     Projected score: 35.0 -> 80.0
+[21:43:51]     SUCCESS - Updated post 4408
+[21:43:51]   Post 4407: DIY Cat Toys: Safe Homemade Options Your Cat Will Love
+[21:43:51]     Already has 'Compared:' heading - SKIP
+[21:43:51]   Post 4188: Best Catnip Toys UK (2026) – What Works and Why
+[21:43:51]     Current: tables=2, vs=1, procon=0, score=55.0
+[21:43:51]     Adding: Compared: Toy Rotation Schedules — Weekly vs Monthly Cycling
+[21:43:51]     Projected score: 55.0 -> 80.0
+[21:43:58]     SUCCESS - Updated post 4188
+[21:43:58]   Post 4181: Best Interactive Cat Toys UK (2026) – Wand & Puzzle Guide
+[21:43:58]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:43:58]     Adding: Compared: String-Based vs Solid Cat Toys — Safety Considerations
+[21:43:58]     Projected score: 30.0 -> 80.0
+[21:44:05]     SUCCESS - Updated post 4181
+[21:44:05]   Post 4174: Best Cat Toys UK (2026) – Complete Guide
+[21:44:05]     Current: tables=2, vs=3, procon=0, score=65.0
+[21:44:05]     Adding: Compared: String-Based vs Solid Cat Toys — Safety Considerations
+[21:44:05]     Projected score: 65.0 -> 80.0
+[21:44:13]     SUCCESS - Updated post 4174
+[21:44:13] 
+[21:44:13] ────────────────────────────────────────────────────────────
+[21:44:13] CLUSTER: Pet Care (29 posts, 5 templates)
+[21:44:13] ────────────────────────────────────────────────────────────
+[21:44:13]   Post 7341: First Week with a New Puppy: A Day-by-Day Guide
+[21:44:13]     Current: tables=4, vs=2, procon=0, score=60.0
+[21:44:13]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:44:13]     Projected score: 60.0 -> 80.0
+[21:44:21]     SUCCESS - Updated post 7341
+[21:44:21]   Post 7340: Puppy Teething Guide: Stages, Signs, and Soothing Tips
+[21:44:21]     Current: tables=3, vs=2, procon=0, score=60.0
+[21:44:21]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:44:21]     Projected score: 60.0 -> 80.0
+[21:44:28]     SUCCESS - Updated post 7340
+[21:44:28]   Post 7339: Puppy Sleep Guide: How Much Sleep Puppies Need by Age
+[21:44:28]     Current: tables=2, vs=3, procon=0, score=65.0
+[21:44:28]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:44:28]     Projected score: 65.0 -> 80.0
+[21:44:35]     SUCCESS - Updated post 7339
+[21:44:35]   Post 7338: Puppy-Proofing Your Home: A Room-by-Room Safety Guide
+[21:44:35]     Current: tables=2, vs=2, procon=0, score=60.0
+[21:44:35]     Adding: Compared: Summer vs Winter Pet Care Approaches
+[21:44:35]     Projected score: 60.0 -> 80.0
+[21:44:43]     SUCCESS - Updated post 7338
+[21:44:43]   Post 7336: Dog Bed Safety: Avoiding Hazards and Choosing Non-Toxic Mate
+[21:44:43]     Current: tables=2, vs=1, procon=0, score=55.0
+[21:44:43]     Adding: Compared: Summer vs Winter Pet Care Approaches
+[21:44:43]     Projected score: 55.0 -> 80.0
+[21:44:49]     SUCCESS - Updated post 7336
+[21:44:49]   Post 7335: Seasonal Dog Bedding: Adjusting Comfort Through the Year
+[21:44:49]     Current: tables=2, vs=1, procon=0, score=55.0
+[21:44:49]     Adding: Compared: Summer vs Winter Pet Care Approaches
+[21:44:49]     Projected score: 55.0 -> 80.0
+[21:44:56]     SUCCESS - Updated post 7335
+[21:44:56]   Post 7334: Puppy Bed Training: Helping Your Dog Love Their Bed
+[21:44:56]     Current: tables=2, vs=2, procon=0, score=60.0
+[21:44:56]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:44:56]     Projected score: 60.0 -> 80.0
+[21:45:03]     SUCCESS - Updated post 7334
+[21:45:03]   Post 7333: Dog Bed Placement Guide: Where to Put Your Dog’s Bed
+[21:45:03]     Current: tables=2, vs=1, procon=1, score=65.0
+[21:45:03]     Adding: Compared: Summer vs Winter Pet Care Approaches
+[21:45:03]     Projected score: 65.0 -> 90.0
+[21:45:10]     SUCCESS - Updated post 7333
+[21:45:10]   Post 7332: How to Wash and Dry a Dog Bed Safely
+[21:45:10]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:45:10]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:45:10]     Projected score: 50.0 -> 80.0
+[21:45:17]     SUCCESS - Updated post 7332
+[21:45:17]   Post 7175: Cat Supply Essentials Glossary: Understanding Cat Care Produ
+[21:45:17]     Current: tables=1, vs=5, procon=0, score=45.0
+[21:45:17]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:45:17]     Projected score: 45.0 -> 80.0
+[21:45:24]     SUCCESS - Updated post 7175
+[21:45:24]   Post 5419: Cat Care Basics: A Glossary for New Cat Owners
+[21:45:24]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:45:24]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:45:24]     Projected score: 30.0 -> 80.0
+[21:45:30]     SUCCESS - Updated post 5419
+[21:45:30]   Post 4573: Seasonal Pet Safety: Protecting Pets Through the Year
+[21:45:30]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:45:30]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:45:30]     Projected score: 30.0 -> 80.0
+[21:45:38]     SUCCESS - Updated post 4573
+[21:45:38]   Post 4576: Multi-Pet Household Tips: Living with Dogs and Cats Together
+[21:45:38]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:45:38]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:45:38]     Projected score: 30.0 -> 80.0
+[21:45:45]     SUCCESS - Updated post 4576
+[21:45:45]   Post 4335: Best Cat Litter Disposal UK (2026) – Waste Management Guide
+[21:45:45]     Current: tables=1, vs=2, procon=0, score=35.0
+[21:45:45]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:45:45]     Projected score: 35.0 -> 80.0
+[21:45:53]     SUCCESS - Updated post 4335
+[21:45:53]   Post 4328: Best Self-Cleaning Litter Trays UK (2026) – Automatic Option
+[21:45:53]     Already has 'Compared:' heading - SKIP
+[21:45:53]   Post 4321: Best Cat Litter UK (2026) – Types &#038; Comparison Guide
+[21:45:53]     Current: tables=1, vs=0, procon=0, score=25.0
+[21:45:53]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:45:53]     Projected score: 25.0 -> 80.0
+[21:45:59]     SUCCESS - Updated post 4321
+[21:45:59]   Post 4314: Best Cat Litter Trays UK (2026) – Complete Guide
+[21:45:59]     Current: tables=2, vs=2, procon=0, score=60.0
+[21:45:59]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:45:59]     Projected score: 60.0 -> 80.0
+[21:46:07]     SUCCESS - Updated post 4314
+[21:46:07]   Post 4307: Best Wall-Mounted Cat Scratchers UK (2026) – Space Saving
+[21:46:07]     Current: tables=1, vs=2, procon=0, score=35.0
+[21:46:07]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:46:07]     Projected score: 35.0 -> 80.0
+[21:46:14]     SUCCESS - Updated post 4307
+[21:46:14]   Post 4300: Best Cardboard Cat Scratchers UK (2026) – Budget Friendly
+[21:46:14]     Already has 'Compared:' heading - SKIP
+[21:46:14]   Post 4293: Best Cat Trees UK (2026) – Climbing & Scratching Towers
+[21:46:14]     Current: tables=1, vs=0, procon=0, score=25.0
+[21:46:14]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:46:14]     Projected score: 25.0 -> 80.0
+[21:46:21]     SUCCESS - Updated post 4293
+[21:46:21]   Post 4286: Best Cat Scratching Posts UK (2026) – Complete Guide
+[21:46:21]     Current: tables=2, vs=3, procon=0, score=65.0
+[21:46:21]     Adding: Compared: Sisal vs Cardboard Scratching Surfaces
+[21:46:21]     Projected score: 65.0 -> 80.0
+[21:46:28]     SUCCESS - Updated post 4286
+[21:46:28]   Post 4279: Best Cat Harnesses UK (2026) – Safe Walking Guide
+[21:46:28]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:46:28]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:46:28]     Projected score: 30.0 -> 80.0
+[21:46:35]     SUCCESS - Updated post 4279
+[21:46:35]   Post 4272: Best Cat ID Tags UK (2026) – Identification Guide
+[21:46:35]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:46:35]     Adding: Compared: Breakaway vs Standard Cat Collars
+[21:46:35]     Projected score: 50.0 -> 80.0
+[21:46:42]     SUCCESS - Updated post 4272
+[21:46:42]   Post 4265: Best Cat GPS Trackers UK (2026) – Location Tracking Guide
+[21:46:42]     Current: tables=1, vs=0, procon=0, score=25.0
+[21:46:42]     Adding: Compared: Breakaway vs Standard Cat Collars
+[21:46:42]     Projected score: 25.0 -> 80.0
+[21:46:49]     SUCCESS - Updated post 4265
+[21:46:49]   Post 4258: Best Cat Collars UK (2026) – Complete Safety Guide
+[21:46:49]     Current: tables=1, vs=1, procon=0, score=30.0
+[21:46:49]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:46:49]     Projected score: 30.0 -> 80.0
+[21:46:56]     SUCCESS - Updated post 4258
+[21:46:56]   Post 4251: Best Cat Shampoo UK (2026) – When & How to Bathe
+[21:46:56]     Current: tables=2, vs=2, procon=0, score=60.0
+[21:46:56]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:46:56]     Projected score: 60.0 -> 80.0
+[21:47:03]     SUCCESS - Updated post 4251
+[21:47:03]   Post 4244: Best Cat Nail Clippers UK (2026) – Safe Trimming Guide
+[21:47:03]     Current: tables=2, vs=1, procon=0, score=55.0
+[21:47:03]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:47:03]     Projected score: 55.0 -> 80.0
+[21:47:10]     SUCCESS - Updated post 4244
+[21:47:10]   Post 4237: Best Cat Brushes UK (2026) – Guide by Coat Type
+[21:47:10]     Current: tables=2, vs=2, procon=0, score=60.0
+[21:47:10]     Adding: Compared: Multi-Pet vs Single-Pet Household Management
+[21:47:10]     Projected score: 60.0 -> 80.0
+[21:47:17]     SUCCESS - Updated post 4237
+[21:47:17]   Post 4230: Best Cat Grooming Supplies UK (2026) – Complete Guide
+[21:47:17]     Already has 'Compared:' heading - SKIP
+[21:47:17] 
+[21:47:17] ────────────────────────────────────────────────────────────
+[21:47:17] CLUSTER: Cat Supplies (5 posts, 2 templates)
+[21:47:17] ────────────────────────────────────────────────────────────
+[21:47:17]   Post 4223: Best Cat Window Perches UK (2026) – Sunning & Bird Watching
+[21:47:17]     Current: tables=1, vs=0, procon=0, score=25.0
+[21:47:17]     Adding: Compared: Heated Cat Beds vs Self-Warming Cat Beds
+[21:47:17]     Projected score: 25.0 -> 80.0
+[21:47:24]     SUCCESS - Updated post 4223
+[21:47:24]   Post 4216: Best Cat Radiator Beds UK (2026) – Hook-On Warmth Guide
+[21:47:24]     Current: tables=2, vs=0, procon=0, score=50.0
+[21:47:24]     Adding: Compared: Heated Cat Beds vs Self-Warming Cat Beds
+[21:47:24]     Projected score: 50.0 -> 80.0
+[21:47:30]     SUCCESS - Updated post 4216
+[21:47:30]   Post 4209: Best Heated Cat Beds UK (2026) – Winter Warmth Guide
+[21:47:30]     Current: tables=1, vs=0, procon=0, score=25.0
+[21:47:30]     Adding: Compared: Heated Cat Beds vs Self-Warming Cat Beds
+[21:47:30]     Projected score: 25.0 -> 80.0
+[21:47:38]     SUCCESS - Updated post 4209
+[21:47:38]   Post 4202: Best Cat Beds UK (2026) – Complete Guide
+[21:47:38]     Current: tables=2, vs=3, procon=0, score=65.0
+[21:47:38]     Adding: Compared: Heated Cat Beds vs Self-Warming Cat Beds
+[21:47:38]     Projected score: 65.0 -> 80.0
+[21:47:44]     SUCCESS - Updated post 4202
+[21:47:44]   Post 696: Essential Cat Supplies for Cat Owners - Number 1 Must-Haves
+[21:47:44]     Current: tables=1, vs=3, procon=0, score=40.0
+[21:47:44]     Adding: Compared: Budget vs Premium Cat Supply Brands
+[21:47:44]     Projected score: 40.0 -> 80.0
+[21:47:50]     SUCCESS - Updated post 696
+[21:47:50] 
+[21:47:50] ────────────────────────────────────────────────────────────
+[21:47:50] CLUSTER: Dog Health (1 posts, 2 templates)
+[21:47:50] ────────────────────────────────────────────────────────────
+[21:47:50]   Post 7337: Puppy Vaccination Schedule UK: What to Expect and When
+[21:47:50]     Current: tables=4, vs=1, procon=0, score=55.0
+[21:47:50]     Adding: Compared: Core vs Non-Core Dog Vaccinations
+[21:47:50]     Projected score: 55.0 -> 80.0
+[21:47:57]     SUCCESS - Updated post 7337
+[21:47:57] 
+[21:47:57] STEP 4: Writing CSV report...
+[21:47:57]   CSV written to: /var/lib/freelancer/projects/40416335/phase11_data/comparison_booster_log.csv
+[21:47:57] 
+[21:47:57] ======================================================================
+[21:47:57] SUMMARY - Comparison Booster Pass 2
+[21:47:57] ======================================================================
+[21:47:57]   Indoor Cats           boosted=7  skipped=0  failed=0
+[21:47:57]   Dog Supplies          boosted=51  skipped=2  failed=0
+[21:47:57]   Uncategorized         boosted=45  skipped=0  failed=0
+[21:47:57]   Cat Toys              boosted=12  skipped=3  failed=0
+[21:47:57]   Pet Care              boosted=26  skipped=3  failed=0
+[21:47:57]   Cat Supplies          boosted=5  skipped=0  failed=0
+[21:47:57]   Dog Health            boosted=1  skipped=0  failed=0
+[21:47:57] ────────────────────────────────────────────────────────────
+[21:47:57]   TOTAL                 boosted=147  skipped=8  failed=0
+[21:47:57] 
+[21:47:57] CSV report: /var/lib/freelancer/projects/40416335/phase11_data/comparison_booster_log.csv
+[21:47:57] Booster complete at 2026-05-29 21:47:57
+[21:47:57] ======================================================================

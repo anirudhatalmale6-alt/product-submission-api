@@ -469,83 +469,102 @@ def is_blocked_by_robots(url, disallow_rules):
 
 
 # ---------------------------------------------------------------------------
-# 4. HEAD request checks (status, canonical, x-robots-tag)
+# 4. Page checks (status, canonical, x-robots-tag, structured data)
 # ---------------------------------------------------------------------------
-def check_page_status(url):
-    """Do a HEAD-like check on a URL using curl. Returns dict with findings."""
-    # Use GET with range to also check for canonical in HTML
+def check_page_full(url):
+    """
+    Single curl GET that captures status code, headers (via stderr dump),
+    and enough of the body to find canonical + structured data.
+    Returns dict with all findings.
+    """
+    # Strategy: use --write-out for status code, -D <file> for headers,
+    # and capture body on stdout for canonical/structured data parsing.
+    import tempfile
+    hdr_file = tempfile.mktemp(suffix=".hdr")
+
     cmd = [
-        "curl", "-s", "--compressed", "--max-time", str(CURL_TIMEOUT),
+        "curl", "-s", "--compressed",
+        "--max-time", str(CURL_TIMEOUT),
         "-L",
-        "-D", "-",
-        "-o", "/dev/null",
-        "-w", "\n%{http_code}\n%{redirect_url}",
-        url
+        "-D", hdr_file,
+        "-w", "\n__STATUS__%{http_code}__REDIR__%{redirect_url}",
+        url,
     ]
+
+    status_code = 0
+    x_robots = ""
+    canonical = ""
+    has_structured = False
+    redirect_url = ""
 
     try:
         result = subprocess.run(cmd, capture_output=True, text=True, timeout=CURL_TIMEOUT + 10)
-        raw = result.stdout.strip()
-        lines = raw.split("\n")
+        raw = result.stdout
 
-        status_code = 0
-        redirect_url = ""
-        if len(lines) >= 2:
+        # Parse --write-out trailer
+        m_status = re.search(r'__STATUS__(\d+)__REDIR__(.*)', raw)
+        if m_status:
+            status_code = int(m_status.group(1))
+            redirect_url = m_status.group(2).strip()
+            body = raw[:m_status.start()]
+        else:
+            body = raw
+
+        # Read dumped headers
+        header_text = ""
+        try:
+            with open(hdr_file, "r", errors="replace") as hf:
+                header_text = hf.read()
+        except FileNotFoundError:
+            pass
+        finally:
             try:
-                redirect_url = lines[-1].strip()
-                status_code = int(lines[-2].strip())
-            except (ValueError, IndexError):
-                pass
-        elif len(lines) == 1:
-            try:
-                status_code = int(lines[-1].strip())
-            except ValueError:
+                os.remove(hdr_file)
+            except OSError:
                 pass
 
-        # Parse headers for x-robots-tag
-        header_text = "\n".join(lines[:-2]) if len(lines) > 2 else ""
         headers = _parse_headers(header_text)
         x_robots = headers.get("x-robots-tag", "")
 
-        return {
-            "status_code": status_code,
-            "x_robots_tag": x_robots,
-            "redirect_url": redirect_url,
-        }
+        # Parse canonical from HTML <head>
+        # Only look in first ~20KB to stay in <head>
+        head_chunk = body[:20480]
+        match = re.search(
+            r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)["\']',
+            head_chunk, re.IGNORECASE
+        )
+        if not match:
+            match = re.search(
+                r'<link[^>]+href=["\']([^"\']+)["\'][^>]+rel=["\']canonical["\']',
+                head_chunk, re.IGNORECASE
+            )
+        if match:
+            canonical = match.group(1).strip()
+
+        # Check for JSON-LD structured data
+        has_structured = bool(re.search(
+            r'<script[^>]+type=["\']application/ld\+json["\']',
+            body[:51200], re.IGNORECASE
+        ))
 
     except Exception as e:
-        print(f"  [HEAD ERROR] {url}: {e}")
-        return {"status_code": 0, "x_robots_tag": "", "redirect_url": ""}
+        print(f"    [CHECK ERROR] {url}: {e}")
+        try:
+            os.remove(hdr_file)
+        except OSError:
+            pass
 
-
-def check_canonical(url):
-    """Fetch a small portion of the page to find canonical tag."""
-    cmd = [
-        "curl", "-s", "--compressed", "--max-time", str(CURL_TIMEOUT),
-        "-L",
-        "-r", "0-16384",  # first 16KB should contain <head>
-        url
-    ]
-    try:
-        result = subprocess.run(cmd, capture_output=True, text=True, timeout=CURL_TIMEOUT + 10)
-        body = result.stdout
-        # Look for <link rel="canonical" href="...">
-        match = re.search(r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)["\']', body, re.IGNORECASE)
-        if not match:
-            match = re.search(r'<link[^>]+href=["\']([^"\']+)["\'][^>]+rel=["\']canonical["\']', body, re.IGNORECASE)
-        if match:
-            return match.group(1).strip()
-
-        # Check for structured data (JSON-LD)
-        has_jsonld = bool(re.search(r'<script[^>]+type=["\']application/ld\+json["\']', body, re.IGNORECASE))
-
-        return f"__STRUCTURED_DATA__" if has_jsonld else ""
-    except Exception:
-        return ""
+    return {
+        "status_code": status_code,
+        "canonical": canonical,
+        "x_robots_tag": x_robots,
+        "has_structured_data": has_structured or bool(canonical),
+        "redirect_url": redirect_url,
+    }
 
 
 def run_head_checks(wp_items):
-    """Run HEAD + canonical checks on up to MAX_HEAD_CHECKS pages."""
+    """Run full page checks on up to MAX_HEAD_CHECKS pages."""
     print(f"\n[4/5] Running page status checks (max {MAX_HEAD_CHECKS})...")
 
     results = {}
@@ -558,23 +577,14 @@ def run_head_checks(wp_items):
         url = item["url"]
         print(f"  [{checked + 1}/{min(len(wp_items), MAX_HEAD_CHECKS)}] {url}")
 
-        head_info = check_page_status(url)
-        time.sleep(0.5)
+        info = check_page_full(url)
+        sc = info["status_code"]
+        can_tag = "yes" if info["canonical"] else "no"
+        print(f"    -> {sc}  canonical={can_tag}  structured={info['has_structured_data']}")
 
-        canonical = check_canonical(url)
-        has_structured = False
-        if canonical == "__STRUCTURED_DATA__":
-            has_structured = True
-            canonical = ""
-
-        results[url] = {
-            "status_code": head_info["status_code"],
-            "canonical": canonical,
-            "x_robots_tag": head_info["x_robots_tag"],
-            "has_structured_data": has_structured or bool(canonical),
-        }
-
+        results[url] = info
         checked += 1
+
         if checked < MAX_HEAD_CHECKS and checked < len(wp_items):
             time.sleep(HEAD_SLEEP)
 

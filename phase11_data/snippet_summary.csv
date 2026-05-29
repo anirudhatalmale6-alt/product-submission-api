@@ -1,0 +1,13 @@
+metric,value
+total_posts_analysed,168
+total_h2s_analysed,1475
+h2s_already_questions,240
+h2s_rewritten_to_questions,390
+snippet_answers_added,343
+faq_blocks_created,107
+posts_modified,156
+posts_updated_successfully,156
+target_queries_matched,13
+total_target_queries,15
+estimated_ctr_impact,+35% estimated snippet CTR lift
+timestamp,2026-05-29T23:05:45.429741+00:00

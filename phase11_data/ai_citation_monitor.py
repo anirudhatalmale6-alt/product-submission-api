@@ -624,10 +624,14 @@ def check_google_visibility(query_text):
 # ---------------------------------------------------------------------------
 # Gap analysis
 # ---------------------------------------------------------------------------
-def determine_gap(query_text, cluster, matched_post_id, flags, readiness_score):
+def determine_gap(query_text, cluster, matched_post_id, flags, readiness_score,
+                   depth_score, google_visible, word_count, uk_refs):
     """
     Determine the gap reason and recommended action for a query.
-    Returns (gap_reason, recommended_action) or (None, None) if no gap.
+    Returns (gap_reason, recommended_action) or (None, None) if no significant gap.
+
+    Now considers quality depth, Google visibility, and content richness
+    rather than just binary block presence.
     """
     if matched_post_id is None:
         return (
@@ -635,6 +639,7 @@ def determine_gap(query_text, cluster, matched_post_id, flags, readiness_score):
             f"Create a new pillar post targeting '{query_text}' in the {cluster} cluster"
         )
 
+    # Collect missing structural blocks
     missing_blocks = []
     if not flags["has_at_a_glance"]:
         missing_blocks.append("At a Glance summary")
@@ -649,21 +654,57 @@ def determine_gap(query_text, cluster, matched_post_id, flags, readiness_score):
     if not flags["has_glossary"]:
         missing_blocks.append("Glossary/terminology section")
 
-    if readiness_score >= 80:
-        return (None, None)  # No significant gap
-
-    if readiness_score < 40:
+    # ── Priority 1: Not visible on Google despite content readiness ──
+    if google_visible == "no" and readiness_score >= 80:
+        recommendations = []
+        if depth_score < 70:
+            recommendations.append("deepen FAQ/comparison/practical sections with richer detail")
+        if uk_refs < 4:
+            recommendations.append(f"add more UK authority citations (currently {uk_refs})")
+        if word_count < 3000:
+            recommendations.append(f"expand content depth (currently ~{word_count} words)")
+        recommendations.append("build backlinks and internal linking to boost domain authority")
         return (
-            "low_readiness",
-            f"Major enrichment needed: add {', '.join(missing_blocks[:3])} to boost AI extractability"
+            "google_visibility_gap",
+            "; ".join(recommendations)
         )
 
-    if missing_blocks:
+    # ── Priority 2: Low quality depth despite structural completeness ──
+    if readiness_score >= 80 and depth_score < 60:
+        weak_areas = []
+        if depth_score < 40:
+            weak_areas.append("most blocks are shallow")
+        if uk_refs < 3:
+            weak_areas.append("few UK authority references")
+        if word_count < 2000:
+            weak_areas.append("thin content")
+        return (
+            "shallow_content_depth",
+            f"Structure present but shallow (depth={depth_score}/100): " +
+            "; ".join(weak_areas) if weak_areas else
+            f"Enrich existing blocks with more data, examples, and citations"
+        )
+
+    # ── Priority 3: Missing structural blocks ──
+    if readiness_score < 80 and missing_blocks:
+        if readiness_score < 40:
+            return (
+                "low_readiness",
+                f"Major enrichment needed: add {', '.join(missing_blocks[:3])}"
+            )
         return (
             "missing_structured_blocks",
             f"Add missing blocks: {', '.join(missing_blocks[:3])}"
         )
 
+    # ── Priority 4: Moderate depth gap ──
+    if depth_score < 70:
+        return (
+            "depth_improvement_opportunity",
+            f"Content depth {depth_score}/100 – expand weakest sections with more examples and data"
+        )
+
+    # No significant gap
     return (None, None)
 
 
@@ -756,7 +797,8 @@ def main():
 
         # Gap analysis
         gap_reason, recommended_action = determine_gap(
-            query_text, cluster, post_id, flags, readiness
+            query_text, cluster, post_id, flags, readiness,
+            depth, google_visible, word_count, uk_refs
         )
 
         query_results.append({
@@ -766,6 +808,9 @@ def main():
             "post_id": post_id or "",
             "match_score": match_score,
             "readiness_score": readiness,
+            "quality_depth": depth,
+            "word_count": word_count,
+            "uk_authority_refs": uk_refs,
             "has_at_a_glance": flags["has_at_a_glance"],
             "has_faq": flags["has_faq"],
             "has_glossary": flags["has_glossary"],
@@ -787,7 +832,8 @@ def main():
     with open(queries_csv, "w", newline="", encoding="utf-8") as f:
         fieldnames = [
             "query", "cluster", "best_matching_post", "post_id",
-            "readiness_score", "has_at_a_glance", "has_faq", "has_glossary",
+            "readiness_score", "quality_depth", "word_count", "uk_authority_refs",
+            "has_at_a_glance", "has_faq", "has_glossary",
             "has_comparison", "has_practical_guide", "has_research_sources",
             "google_visible", "ai_answer_potential",
         ]
@@ -805,14 +851,18 @@ def main():
     # D2: ai_citation_readiness.csv (per-cluster aggregate)
     readiness_csv = os.path.join(OUTPUT_DIR, "ai_citation_readiness.csv")
     cluster_agg = defaultdict(lambda: {
-        "scores": [], "matched": 0, "google_visible": 0, "ai_ready": 0, "total": 0,
+        "scores": [], "depths": [], "matched": 0,
+        "google_visible": 0, "google_checked": 0, "ai_ready": 0, "total": 0,
     })
     for row in query_results:
         c = row["cluster"]
         cluster_agg[c]["total"] += 1
         cluster_agg[c]["scores"].append(row["readiness_score"])
+        cluster_agg[c]["depths"].append(row["quality_depth"])
         if row["post_id"]:
             cluster_agg[c]["matched"] += 1
+        if row["google_visible"] in ("yes", "no"):
+            cluster_agg[c]["google_checked"] += 1
         if row["google_visible"] == "yes":
             cluster_agg[c]["google_visible"] += 1
         if row["ai_answer_potential"] == "high" and row["readiness_score"] >= 60:
@@ -820,7 +870,7 @@ def main():
 
     with open(readiness_csv, "w", newline="", encoding="utf-8") as f:
         fieldnames = [
-            "cluster", "total_queries", "avg_readiness",
+            "cluster", "total_queries", "avg_readiness", "avg_quality_depth",
             "queries_with_matching_content", "google_visible_count",
             "ai_answer_ready_count",
         ]
@@ -832,6 +882,7 @@ def main():
                 "cluster": cluster,
                 "total_queries": agg["total"],
                 "avg_readiness": round(mean(agg["scores"]), 1) if agg["scores"] else 0,
+                "avg_quality_depth": round(mean(agg["depths"]), 1) if agg["depths"] else 0,
                 "queries_with_matching_content": agg["matched"],
                 "google_visible_count": agg["google_visible"],
                 "ai_answer_ready_count": agg["ai_ready"],
@@ -862,6 +913,7 @@ def main():
     total_queries = len(query_results)
     matched_queries = sum(1 for r in query_results if r["post_id"])
     avg_readiness = mean([r["readiness_score"] for r in query_results])
+    avg_depth = mean([r["quality_depth"] for r in query_results])
     google_checked = sum(1 for r in query_results if r["google_visible"] in ("yes", "no"))
     google_found = sum(1 for r in query_results if r["google_visible"] == "yes")
     ai_ready = sum(1 for r in query_results
@@ -870,26 +922,37 @@ def main():
 
     print(f"\n  Total test queries:                  {total_queries}")
     print(f"  Queries with matching content:       {matched_queries}/{total_queries}")
-    print(f"  Average readiness score:             {avg_readiness:.1f}/100")
+    print(f"  Average structure readiness:          {avg_readiness:.1f}/100")
+    print(f"  Average quality depth:               {avg_depth:.1f}/100")
     print(f"  Google visibility (checked/found):   {google_checked} checked, {google_found} found")
     print(f"  AI-answer ready (high + score>=60):  {ai_ready}/{total_queries}")
     print(f"  Queries with gaps:                   {gap_count}")
 
     print("\n  Per-cluster readiness:")
-    print(f"  {'Cluster':<22} {'Queries':>7} {'Avg Score':>10} {'Matched':>8} {'AI Ready':>9}")
-    print(f"  {'─' * 22} {'─' * 7} {'─' * 10} {'─' * 8} {'─' * 9}")
+    print(f"  {'Cluster':<22} {'Queries':>7} {'Structure':>10} {'Depth':>7} {'Matched':>8} {'AI Ready':>9}")
+    print(f"  {'─' * 22} {'─' * 7} {'─' * 10} {'─' * 7} {'─' * 8} {'─' * 9}")
     for cluster in sorted(cluster_agg.keys()):
         agg = cluster_agg[cluster]
-        avg = mean(agg["scores"]) if agg["scores"] else 0
-        print(f"  {cluster:<22} {agg['total']:>7} {avg:>9.1f} {agg['matched']:>8} {agg['ai_ready']:>9}")
+        avg_s = mean(agg["scores"]) if agg["scores"] else 0
+        avg_d = mean(agg["depths"]) if agg["depths"] else 0
+        print(f"  {cluster:<22} {agg['total']:>7} {avg_s:>9.1f} {avg_d:>6.1f} {agg['matched']:>8} {agg['ai_ready']:>9}")
+
+    # Google visibility breakdown
+    print("\n  Google visibility results (10 priority queries):")
+    for row in query_results:
+        if row["google_visible"] in ("yes", "no"):
+            vis = "FOUND" if row["google_visible"] == "yes" else "NOT FOUND"
+            print(f"    [{vis:>9}] \"{row['query']}\" → [{row['post_id']}] depth={row['quality_depth']}")
 
     print("\n  Top gaps to address:")
-    gaps = [(r["query"], r["cluster"], r["gap_reason"], r["readiness_score"])
+    gaps = [(r["query"], r["cluster"], r["gap_reason"], r["quality_depth"],
+             r["recommended_action"])
             for r in query_results if r["gap_reason"]]
-    # Sort by readiness (lowest first = most urgent)
+    # Sort by depth (lowest first = most urgent)
     gaps.sort(key=lambda x: x[3])
-    for query, cluster, reason, score in gaps[:10]:
-        print(f"    - [{score:>3}/100] \"{query}\" ({cluster}): {reason}")
+    for query, cluster, reason, depth_val, action in gaps[:15]:
+        print(f"    - [depth={depth_val:>2}] \"{query}\" ({cluster})")
+        print(f"      {reason}: {action[:100]}")
 
     print("\n" + "=" * 72)
     print("Phase 11 AI Citation Monitoring complete.")

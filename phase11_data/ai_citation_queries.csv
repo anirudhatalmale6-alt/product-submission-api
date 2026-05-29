@@ -1,31 +1,31 @@
-query,cluster,best_matching_post,post_id,readiness_score,has_at_a_glance,has_faq,has_glossary,has_comparison,has_practical_guide,has_research_sources,google_visible,ai_answer_potential
-best dog food UK,Dog Food,Best Dog Food UK (2026) - Complete Buying Guide,3836,100,yes,yes,yes,yes,yes,yes,no,high
-dry vs wet dog food,Dog Food,Dry vs Wet Dog Food UK - An Honest Comparison Guide,3838,100,yes,yes,yes,yes,yes,yes,not_checked,high
-dog food ingredients to avoid,Dog Food,Dog Food Glossary: Understanding Ingredients and Nutrition Labels,7172,100,yes,yes,yes,yes,yes,yes,not_checked,high
-best dog beds UK,Dog Beds,Best Dog Beds UK (2026) – Complete Guide & Honest Reviews,3996,100,yes,yes,yes,yes,yes,yes,no,high
-orthopedic dog beds,Dog Beds,Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide,4004,100,yes,yes,yes,yes,yes,yes,not_checked,medium
-dog bed sizing guide,Dog Beds,Dog Bed Sizing Guide: How to Measure Your Dog and Choose the Right Fit,5510,100,yes,yes,yes,yes,yes,yes,not_checked,high
-best cat scratching posts UK,Cat Supplies,Best Cat Scratching Posts UK (2026) – Complete Guide,4286,100,yes,yes,yes,yes,yes,yes,no,high
-cat GPS trackers UK,Cat Supplies,Best Cat GPS Trackers UK (2026) – Location Tracking Guide,4265,100,yes,yes,yes,yes,yes,yes,not_checked,medium
-best cat litter,Cat Supplies,Best Cat Litter Disposal UK (2026) – Waste Management Guide,4335,100,yes,yes,yes,yes,yes,yes,not_checked,high
-dog grooming guide UK,Dog Care,Best Dog Grooming Supplies UK (2026) – Complete Guide,4057,100,yes,yes,yes,yes,yes,yes,no,high
-how to trim dog nails,Dog Care,Best Dog Nail Clippers UK (2026) – Trimming & Grinding Guide,4078,100,yes,yes,yes,yes,yes,yes,not_checked,high
-puppy essentials checklist,Dog Care,Puppy Care Essentials: Key Terms Every New Owner Should Know,5417,100,yes,yes,yes,yes,yes,yes,not_checked,high
-dog vaccination schedule UK,Dog Health,Puppy Vaccination Schedule UK: What to Expect and When,7337,100,yes,yes,yes,yes,yes,yes,no,high
-puppy teething guide,Dog Health,"Puppy Teething Guide: Stages, Signs, and Soothing Tips",7340,100,yes,yes,yes,yes,yes,yes,not_checked,high
-dog joint supplements,Dog Health,Best Dog Joint Supplements UK (2026) – Mobility Support Guide,4110,100,yes,yes,yes,yes,yes,yes,not_checked,high
-indestructible dog toys UK,Dog Toys,Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers,3957,100,yes,yes,yes,yes,yes,yes,no,medium
-puzzle toys for dogs,Dog Toys,"Mental Stimulation Toys for Dogs: Puzzles, Games, and Brain Work",5476,100,yes,yes,yes,yes,yes,yes,not_checked,medium
-safe dog toy materials,Dog Toys,Puppy-Safe Dog Toys: What to Look For and What to Avoid,5421,100,yes,yes,yes,yes,yes,yes,not_checked,medium
-interactive cat toys,Cat Toys,Best Interactive Cat Toys for Indoor Cats: Engagement Guide,4406,100,yes,yes,yes,yes,yes,yes,no,medium
-cat toys for indoor cats,Cat Toys,Best Interactive Cat Toys for Indoor Cats: Engagement Guide,4406,100,yes,yes,yes,yes,yes,yes,not_checked,medium
-catnip toys safe,Cat Toys,DIY Cat Toys: Safe Homemade Options Your Cat Will Love,4407,100,yes,yes,yes,yes,yes,yes,not_checked,medium
-no-pull dog harness UK,Dog Harnesses,No-Pull Dog Harness Guide: How They Work and When to Use One,4412,100,yes,yes,yes,yes,yes,yes,no,medium
-harness vs collar for dogs,Dog Harnesses,Harness vs Collar: Which Is Better for Your Dog?,4414,100,yes,yes,yes,yes,yes,yes,not_checked,high
-dog harness fitting guide,Dog Harnesses,"Dog Harnesses: The Complete Guide to Types, Fitting, and Safety",4411,100,yes,yes,yes,yes,yes,yes,not_checked,high
-puppy training treats UK,Training Supplies,How to Choose the Right Dog Training Treats,4791,100,yes,yes,yes,yes,yes,yes,no,medium
-positive reinforcement dog training,Training Supplies,How to Choose the Right Dog Training Treats,4791,100,yes,yes,yes,yes,yes,yes,not_checked,medium
-dog lead types,Training Supplies,Best Dog Leads UK (2026) – Walking & Training Lead Guide,4042,100,yes,yes,yes,yes,yes,yes,not_checked,high
-pet enrichment ideas,General,"Pet Enrichment Explained: Types, Benefits, and Practical Ideas",5511,100,yes,yes,yes,yes,yes,yes,not_checked,medium
-indoor cat exercise,Indoor Cats,Indoor Cat Exercise: Keeping House Cats Active and Healthy,7342,100,yes,yes,yes,yes,yes,yes,no,medium
-senior dog care tips,General,Senior Dog Toys: Gentle Play Options for Older Dogs,5473,100,yes,yes,yes,yes,yes,yes,not_checked,high
+query,cluster,best_matching_post,post_id,readiness_score,quality_depth,word_count,uk_authority_refs,has_at_a_glance,has_faq,has_glossary,has_comparison,has_practical_guide,has_research_sources,google_visible,ai_answer_potential
+best dog food UK,Dog Food,Best Dog Food UK (2026) - Complete Buying Guide,3836,100,100,7526,6,yes,yes,yes,yes,yes,yes,no,high
+dry vs wet dog food,Dog Food,Dry vs Wet Dog Food UK - An Honest Comparison Guide,3838,100,70,5244,6,yes,yes,yes,yes,yes,yes,not_checked,high
+dog food ingredients to avoid,Dog Food,Dog Food Glossary: Understanding Ingredients and Nutrition Labels,7172,100,95,4998,6,yes,yes,yes,yes,yes,yes,not_checked,high
+best dog beds UK,Dog Beds,Best Dog Beds UK (2026) – Complete Guide & Honest Reviews,3996,100,75,4200,4,yes,yes,yes,yes,yes,yes,no,high
+orthopedic dog beds,Dog Beds,Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide,4004,100,89,3779,5,yes,yes,yes,yes,yes,yes,not_checked,medium
+dog bed sizing guide,Dog Beds,Dog Bed Sizing Guide: How to Measure Your Dog and Choose the Right Fit,5510,100,76,6369,7,yes,yes,yes,yes,yes,yes,not_checked,high
+best cat scratching posts UK,Cat Supplies,Best Cat Scratching Posts UK (2026) – Complete Guide,4286,100,79,3780,7,yes,yes,yes,yes,yes,yes,no,high
+cat GPS trackers UK,Cat Supplies,Best Cat GPS Trackers UK (2026) – Location Tracking Guide,4265,100,85,3177,9,yes,yes,yes,yes,yes,yes,not_checked,medium
+best cat litter,Cat Supplies,Best Cat Litter Disposal UK (2026) – Waste Management Guide,4335,100,84,3521,6,yes,yes,yes,yes,yes,yes,not_checked,high
+dog grooming guide UK,Dog Care,Best Dog Grooming Supplies UK (2026) – Complete Guide,4057,100,92,4209,5,yes,yes,yes,yes,yes,yes,no,high
+how to trim dog nails,Dog Care,Best Dog Nail Clippers UK (2026) – Trimming & Grinding Guide,4078,100,73,3497,5,yes,yes,yes,yes,yes,yes,not_checked,high
+puppy essentials checklist,Dog Care,Puppy Care Essentials: Key Terms Every New Owner Should Know,5417,100,89,5191,7,yes,yes,yes,yes,yes,yes,not_checked,high
+dog vaccination schedule UK,Dog Health,Puppy Vaccination Schedule UK: What to Expect and When,7337,100,94,3812,6,yes,yes,yes,yes,yes,yes,no,high
+puppy teething guide,Dog Health,"Puppy Teething Guide: Stages, Signs, and Soothing Tips",7340,100,97,3604,6,yes,yes,yes,yes,yes,yes,not_checked,high
+dog joint supplements,Dog Health,Best Dog Joint Supplements UK (2026) – Mobility Support Guide,4110,100,87,3731,7,yes,yes,yes,yes,yes,yes,not_checked,high
+indestructible dog toys UK,Dog Toys,Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers,3957,100,72,3776,6,yes,yes,yes,yes,yes,yes,no,medium
+puzzle toys for dogs,Dog Toys,"Mental Stimulation Toys for Dogs: Puzzles, Games, and Brain Work",5476,100,87,4815,6,yes,yes,yes,yes,yes,yes,not_checked,medium
+safe dog toy materials,Dog Toys,Puppy-Safe Dog Toys: What to Look For and What to Avoid,5421,100,77,3916,5,yes,yes,yes,yes,yes,yes,not_checked,medium
+interactive cat toys,Cat Toys,Best Interactive Cat Toys for Indoor Cats: Engagement Guide,4406,100,75,3446,8,yes,yes,yes,yes,yes,yes,no,medium
+cat toys for indoor cats,Cat Toys,Best Interactive Cat Toys for Indoor Cats: Engagement Guide,4406,100,75,3446,8,yes,yes,yes,yes,yes,yes,not_checked,medium
+catnip toys safe,Cat Toys,DIY Cat Toys: Safe Homemade Options Your Cat Will Love,4407,100,88,3393,8,yes,yes,yes,yes,yes,yes,not_checked,medium
+no-pull dog harness UK,Dog Harnesses,No-Pull Dog Harness Guide: How They Work and When to Use One,4412,100,97,3071,6,yes,yes,yes,yes,yes,yes,no,medium
+harness vs collar for dogs,Dog Harnesses,Harness vs Collar: Which Is Better for Your Dog?,4414,100,97,3517,6,yes,yes,yes,yes,yes,yes,not_checked,high
+dog harness fitting guide,Dog Harnesses,"Dog Harnesses: The Complete Guide to Types, Fitting, and Safety",4411,100,79,3697,6,yes,yes,yes,yes,yes,yes,not_checked,high
+puppy training treats UK,Training Supplies,How to Choose the Right Dog Training Treats,4791,100,81,3374,6,yes,yes,yes,yes,yes,yes,no,medium
+positive reinforcement dog training,Training Supplies,How to Choose the Right Dog Training Treats,4791,100,81,3374,6,yes,yes,yes,yes,yes,yes,not_checked,medium
+dog lead types,Training Supplies,Best Dog Leads UK (2026) – Walking & Training Lead Guide,4042,100,76,3475,4,yes,yes,yes,yes,yes,yes,not_checked,high
+pet enrichment ideas,General,"Pet Enrichment Explained: Types, Benefits, and Practical Ideas",5511,100,87,5537,8,yes,yes,yes,yes,yes,yes,not_checked,medium
+indoor cat exercise,Indoor Cats,Indoor Cat Exercise: Keeping House Cats Active and Healthy,7342,100,89,2481,7,yes,yes,yes,yes,yes,yes,no,medium
+senior dog care tips,General,Senior Dog Toys: Gentle Play Options for Older Dogs,5473,100,92,4759,6,yes,yes,yes,yes,yes,yes,not_checked,high
