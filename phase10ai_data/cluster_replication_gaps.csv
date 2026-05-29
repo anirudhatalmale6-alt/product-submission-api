@@ -1,0 +1,19 @@
+cluster,post_id,title,missing_faq_depth,missing_comparison_quality,missing_internal_links,missing_trust_signals,missing_practical_blocks,gap_score,recommendations
+Dog Food,5467,"Pet Feeding Guide: Understanding Portions, Schedules, and Methods",0,50,3,0,0,14,Add 3 internal links
+Dog Food,5460,Pet Nutrition Terminology: A Guide to Common Terms on Pet Food Labels,0,25,3,0,0,12,Add 3 internal links; Add warning signs section
+Dog Food,3839,Best Puppy Food UK (2026) – Growth-Stage Nutrition Guide,5,50,0,0,0,30,Add 7 FAQ questions
+Dog Beds,5522,"Orthopaedic Care for Dogs: Joint Health, Mobility, and Support",0,50,1,0,0,12,Add 1 internal links
+Dog Beds,5510,Dog Bed Sizing Guide: How to Measure Your Dog and Choose the Right Fit,0,25,0,0,0,6,Add warning signs section
+Dog Beds,4784,"Dog Bed Materials Explained: Foam, Memory Foam, and More",2,50,1,0,0,23,Add 4 FAQ questions; Add 1 internal links; Add warning signs section
+Puppy Care,5508,Puppy Development Stages: A Complete Guide from Birth to Maturity,0,25,1,0,1,16,Add 1 internal links; Add troubleshooting section; Add warning signs section
+Puppy Care,5417,Puppy Care Essentials: Key Terms Every New Owner Should Know,0,25,0,0,0,5,Meets reference pattern
+Puppy Care,3960,Best Puppy Toys UK (2026) – Teething & First Toys Guide,5,25,1,0,0,30,Add 7 FAQ questions; Add 1 internal links; Add warning signs section
+Cat Supplies,4335,Best Cat Litter Disposal UK (2026) – Waste Management Guide,3,25,4,0,0,25,Add 5 FAQ questions; Add 4 internal links; Add warning signs section
+Cat Supplies,4321,Best Cat Litter UK (2026) – Types & Comparison Guide,3,25,3,0,0,24,Add 5 FAQ questions; Add 3 internal links; Add warning signs section
+Cat Supplies,4314,Best Cat Litter Trays UK (2026) – Complete Guide,3,25,4,0,0,25,Add 5 FAQ questions; Add 4 internal links; Add warning signs section
+Dog Health,5520,"Dog Health Basics: Common Conditions, Prevention, and When to See a Vet",0,50,0,0,0,10,Meets reference pattern
+Dog Health,4568,Dog Dental Health: A Practical Care Guide,0,25,0,0,0,5,Meets reference pattern
+Dog Health,4110,Best Dog Joint Supplements UK (2026) – Mobility Support Guide,3,25,6,0,0,27,Add 5 FAQ questions; Add 6 internal links; Add warning signs section
+Dog Harnesses,5418,Dog Harness Types Explained: Finding the Right Fit,0,50,4,0,0,18,Add 4 internal links; Add warning signs section
+Dog Harnesses,4414,Harness vs Collar: Which Is Better for Your Dog?,5,25,0,0,0,28,Add 7 FAQ questions
+Dog Harnesses,4413,How to Measure Your Dog for a Harness: Step-by-Step Guide,2,25,0,0,1,22,Add 4 FAQ questions; Add warning signs section

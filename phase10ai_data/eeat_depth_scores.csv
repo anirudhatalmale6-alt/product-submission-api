@@ -1,0 +1,21 @@
+post_id,title,cluster,eeat_depth_score,has_about_this_guide,has_why_this_matters,has_what_we_considered,has_how_we_evaluated,has_what_pet_owners_know,has_when_advice_differ
+6052,Low-Mobility Enrichment: Mental Stimulation for Dogs with Limited Movement,Dog Toys,33,True,True,False,False,False,False
+6050,Toy Overstimulation Recovery: Calming Down an Overexcited Dog,Dog Toys,33,True,True,False,False,False,False
+5467,"Pet Feeding Guide: Understanding Portions, Schedules, and Methods",Dog Food,33,True,True,False,False,False,False
+5460,Pet Nutrition Terminology: A Guide to Common Terms on Pet Food Labels,Dog Food,33,True,True,False,False,False,False
+5522,"Orthopaedic Care for Dogs: Joint Health, Mobility, and Support",Dog Beds,16,True,False,False,False,False,False
+5510,Dog Bed Sizing Guide: How to Measure Your Dog and Choose the Right Fit,Dog Beds,16,True,False,False,False,False,False
+5508,Puppy Development Stages: A Complete Guide from Birth to Maturity,Puppy Care,50,True,True,True,False,False,False
+5417,Puppy Care Essentials: Key Terms Every New Owner Should Know,Puppy Care,33,True,True,False,False,False,False
+4335,Best Cat Litter Disposal UK (2026) – Waste Management Guide,Cat Supplies,50,True,True,True,False,False,False
+4321,Best Cat Litter UK (2026) – Types & Comparison Guide,Cat Supplies,50,True,True,True,False,False,False
+5520,"Dog Health Basics: Common Conditions, Prevention, and When to See a Vet",Dog Health,16,True,False,False,False,False,False
+4568,Dog Dental Health: A Practical Care Guide,Dog Health,33,True,True,False,False,False,False
+5418,Dog Harness Types Explained: Finding the Right Fit,Dog Harnesses,16,True,False,False,False,False,False
+4414,Harness vs Collar: Which Is Better for Your Dog?,Dog Harnesses,16,True,False,False,False,False,False
+5523,"Dog Training Equipment Explained: Tools, Uses, and What to Avoid",Dog Training,33,True,True,False,False,False,False
+5512,Dog Behaviour Explained: Understanding Your Dog’s Body Language and Actions,Dog Training,33,True,True,False,False,False,False
+5464,Pet Grooming Glossary: Understanding Grooming Terms and Techniques,Dog Grooming,0,False,False,False,False,False,False
+4563,Dog Grooming Basics: A Complete Guide for Owners,Dog Grooming,0,False,False,False,False,False,False
+5033,How to Choose the Right Cat Toy for Your Cat’s Personality,Cat Toys,33,True,True,False,False,False,False
+5032,Cat Toys FAQ: Common Questions Answered,Cat Toys,33,True,True,False,False,False,False
