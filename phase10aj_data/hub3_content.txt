@@ -1,0 +1,231 @@
+<p class="wp-block-paragraph">Welcome to our comprehensive Dog Supplies resource hub. Below you will find our complete collection of guides, reviews, and expert advice covering every aspect of dog ownership — from toys and beds to health, grooming, training, and nutrition. Each guide is thoroughly researched using UK veterinary sources and pet care organisations.</p>
+<hr class="wp-block-separator is-style-wide"/>
+<h2 class="wp-block-heading">What You Will Find Here</h2>
+<ul class="wp-block-list">
+<li><a href="#toys-and-enrichment">Toys &#038; Enrichment</a> (49 guides)</li>
+<li><a href="#training-and-behaviour">Training &#038; Behaviour</a> (12 guides)</li>
+<li><a href="#beds-and-comfort">Beds &#038; Comfort</a> (12 guides)</li>
+<li><a href="#grooming">Grooming</a> (10 guides)</li>
+<li><a href="#food-and-nutrition">Food &#038; Nutrition</a> (9 guides)</li>
+<li><a href="#collars,-harnesses-and-leads">Collars, Harnesses &#038; Leads</a> (9 guides)</li>
+<li><a href="#health-and-wellness">Health &#038; Wellness</a> (7 guides)</li>
+<li><a href="#puppy-care">Puppy Care</a> (4 guides)</li>
+<li><a href="#general-guides">General Guides</a> (3 guides)</li>
+<li><a href="#safety-and-general-care">Safety &#038; General Care</a> (3 guides)</li>
+<li><a href="#bowls-and-feeding">Bowls &#038; Feeding</a> (2 guides)</li>
+</ul>
+<hr class="wp-block-separator is-style-wide"/>
+<h2 class="wp-block-heading" id="toys-and-enrichment">Toys &#038; Enrichment</h2>
+<p class="wp-block-paragraph">Mental stimulation and physical play are essential for a happy, well-adjusted dog. Our toy and enrichment guides help you choose age-appropriate, safe options and build effective play routines.</p>
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-a7981ecd wp-block-group-is-layout-constrained" style="border-color:#c7d2fe;border-width:1px;border-radius:6px;background-color:#eef2ff;margin-top:20px;margin-bottom:24px;padding-top:16px;padding-right:20px;padding-bottom:16px;padding-left:20px">
+<h4 class="wp-block-heading">At a Glance</h4>
+<ul class="wp-block-list">
+<li>This hub page connects you to all dog toy guides, reviews, and enrichment resources on Pet Hub Online</li>
+<li>Dog toy selection should be based on safety, size-appropriateness, and your dog&#8217;s individual play style</li>
+<li>Regular cleaning, inspection, and rotation maximise toy value and safety</li>
+<li>Mental enrichment through toys is a recognised welfare need, not a luxury</li>
+<li>UK-specific guidance ensures relevance for British dog owners and available products</li>
+</ul>
+</div>
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-8b3ad44c wp-block-group-is-layout-constrained" style="border-color:#fde68a;border-width:1px;border-radius:6px;background-color:#fffbeb;margin-top:20px;margin-bottom:20px;padding-top:16px;padding-right:20px;padding-bottom:16px;padding-left:20px">
+<p class="wp-block-paragraph" style="font-size:14px"><strong>Why this matters:</strong> Navigating dog toy information can be overwhelming, with much of the online content coming from non-UK sources with different product availability and safety standards. This hub brings together UK-focused, evidence-based guidance on every aspect of dog toys — from safety and selection to enrichment and maintenance — in one accessible location.</p>
+</div>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/low-mobility-enrichment-dogs/">Low-Mobility Enrichment: Mental Stimulation for Dogs with Limited Movement</a></strong> — Ideas and strategies to keep your pet mentally engaged and physically active.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/toy-overstimulation-recovery-dogs/">Toy Overstimulation Recovery: Calming Down an Overexcited Dog</a></strong> — Ideas and strategies to keep your pet mentally engaged and physically active.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/sensory-enrichment-dogs/">Sensory Enrichment for Dogs: Engaging All Five Senses Through Play</a></strong> — Ideas and strategies to keep your pet mentally engaged and physically active.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/confidence-building-play-dogs/">Confidence-Building Play: Helping Shy and Fearful Dogs Through Toys</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/play-recovery-after-surgery-dogs/">Play Recovery After Surgery: Gentle Enrichment for Healing Dogs</a></strong> — Ideas and strategies to keep your pet mentally engaged and physically active.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-toy-hygiene-schedules/">Dog Toy Hygiene Schedules: A Practical Cleaning Timetable</a></strong> — Practical cleaning routines to maintain hygiene and extend product life.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/safe-multi-dog-toy-management/">Safe Multi-Dog Toy Management: Preventing Resource Guarding</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/rotating-puzzle-complexity-dogs/">Rotating Puzzle Complexity: Progressive Challenge for Smart Dogs</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/enrichment-by-breed-group/">Enrichment by Breed Group: Tailoring Play to Your Dog&#8217;s Instincts</a></strong> — Ideas and strategies to keep your pet mentally engaged and physically active.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-toy-anxiety-reduction/">Dog Toy Anxiety Reduction: Using Toys to Calm Nervous Dogs</a></strong> — Gentle approaches to help anxious pets feel more secure and comfortable.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-toy-durability-guide/">Dog Toy Durability Guide: What Lasts and What Does Not</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-toy-materials-compared/">Dog Toy Materials Compared: Rubber, Rope, Plush, and Nylon</a></strong> — A side-by-side comparison to help you make an informed choice.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/cognitive-enrichment-senior-dogs/">Cognitive Enrichment for Senior Dogs: Gentle Play for Ageing Minds</a></strong> — Specialist guidance for supporting older pets with changing needs.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/enrichment-schedules-dogs/">Enrichment Schedules for Dogs: Structuring Daily Play and Mental Work</a></strong> — Ideas and strategies to keep your pet mentally engaged and physically active.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-toy-storage-organisation/">Dog Toy Storage and Organisation: Keeping Toys Clean and Accessible</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/crate-play-enrichment-dogs/">Crate and Play Enrichment: Keeping Dogs Happy in Confined Spaces</a></strong> — Ideas and strategies to keep your pet mentally engaged and physically active.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/safe-tug-play-dogs/">Safe Tug Play with Dogs: Rules, Benefits, and Common Mistakes</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/scent-game-enrichment-dogs/">Scent-Game Enrichment for Dogs: Using Smell to Engage Your Dog</a></strong> — Ideas and strategies to keep your pet mentally engaged and physically active.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-toy-overstimulation-signs/">Signs of Toy Overstimulation in Dogs: When Play Becomes Too Much</a></strong> — Ideas and strategies to keep your pet mentally engaged and physically active.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-toy-safety-breed-size/">Dog Toy Safety by Breed Size: Choosing the Right Size Toy</a></strong> — Essential safety information to protect your pet from common hazards.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/pet-enrichment-guide/">Pet Enrichment Explained: Types, Benefits, and Practical Ideas</a></strong> — Ideas and strategies to keep your pet mentally engaged and physically active.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/pet-toy-safety-guide/">Pet Toy Safety: Understanding Materials, Hazards, and Standards</a></strong> — Essential safety information to protect your pet from common hazards.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-toy-lifespan-replacement/">Dog Toy Lifespan: When to Replace Toys and How to Extend Their Life</a></strong> — Step-by-step practical guidance with clear instructions and common mistakes to avoid.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/mental-stimulation-toys-dogs/">Mental Stimulation Toys for Dogs: Puzzles, Games, and Brain Work</a></strong> — Ideas and strategies to keep your pet mentally engaged and physically active.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/senior-dog-toys/">Senior Dog Toys: Gentle Play Options for Older Dogs</a></strong> — Specialist guidance for supporting older pets with changing needs.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-boredom-prevention/">Dog Boredom Prevention: Signs, Solutions, and Enrichment Ideas</a></strong> — Ideas and strategies to keep your pet mentally engaged and physically active.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-toy-rotation-guide/">Dog Toy Rotation: How to Keep Your Dog Interested and Engaged</a></strong> — Step-by-step practical guidance with clear instructions and common mistakes to avoid.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-toys-faq/">Dog Toys FAQ: Common Questions Answered</a></strong> — Answers to the most common questions, drawn from UK veterinary and pet care sources.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/aggressive-chewer-dog-toys/">Aggressive Chewer Guide: Safe Toys for Power Chewers</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-toy-enrichment-beyond-fetch/">Dog Toy Enrichment: Beyond Basic Fetch</a></strong> — Ideas and strategies to keep your pet mentally engaged and physically active.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/indoor-vs-outdoor-dog-toys/">Indoor vs Outdoor Dog Toys: Choosing the Right Type</a></strong> — A side-by-side comparison to help you make an informed choice.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/puppy-safe-dog-toys/">Puppy-Safe Dog Toys: What to Look For and What to Avoid</a></strong> — Age-appropriate advice for the crucial early stages of development.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-toy-cleaning-guide/">Dog Toy Cleaning Guide: How to Keep Toys Hygienic</a></strong> — Step-by-step practical guidance with clear instructions and common mistakes to avoid.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-play-styles-explained/">Dog Play Styles Explained: Understanding How Your Dog Plays</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/cat-toy-types-glossary/">Cat Toy Types Explained: A Complete Glossary</a></strong> — Key terms explained in plain language — a useful reference for new and experienced owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/understanding-cat-play-behaviour/">Understanding Cat Play Behaviour: What Different Play Styles Mean</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/cat-enrichment-beyond-toys/">Cat Enrichment Beyond Toys: Creating a Stimulating Home</a></strong> — Ideas and strategies to keep your pet mentally engaged and physically active.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/cat-toy-rotation-guide/">Cat Toy Rotation: How to Keep Toys Fresh and Engaging</a></strong> — Step-by-step practical guidance with clear instructions and common mistakes to avoid.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/diy-dog-toys-homemade/">DIY Dog Toys: Safe Homemade Options</a></strong> — Creative, budget-friendly options you can make at home using safe materials.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-toys-for-different-play-styles/">Best Types of Dog Toys for Different Play Styles</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/mental-stimulation-for-dogs/">Mental Stimulation for Dogs: Beyond Physical Exercise</a></strong> — Ideas and strategies to keep your pet mentally engaged and physically active.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-toy-safety-guide/">Dog Toy Safety: What Every Owner Needs to Know</a></strong> — Essential safety information to protect your pet from common hazards.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/cat-toy-safety-guide/">Cat Toy Safety Guide: What Every Owner Should Know</a></strong> — Essential safety information to protect your pet from common hazards.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/cat-enrichment-activities-beyond-toys/">Cat Enrichment Activities Beyond Toys: Complete Guide</a></strong> — A comprehensive overview covering all the key considerations for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-cat-toys-indoor-cats-uk/">Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-puppy-toys-uk/">Best Puppy Toys UK (2026) – Teething &#038; First Toys Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-interactive-dog-toys-uk/">Best Interactive Dog Toys UK (2026) – Puzzle &#038; Enrichment Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-indestructible-dog-toys-uk/">Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dog-toys-uk//">Best Dog Toys UK (2026) – Complete Guide &#038; Honest Reviews</a></strong> — A comprehensive overview covering all the key considerations for UK pet owners.</p>
+<p class="wp-block-paragraph"><em>Related reading: Compare <a href="https://pethubonline.com/low-mobility-enrichment-dogs/">Low-Mobility Enrichment: Mental Stimulation for Dogs with Limited Movement</a> with <a href="https://pethubonline.com/toy-overstimulation-recovery-dogs/">Toy Overstimulation Recovery: Calming Down an Overexcited Dog</a> for a more complete picture.</em></p>
+<hr class="wp-block-separator is-style-dots"/>
+<h2 class="wp-block-heading" id="training-and-behaviour">Training &#038; Behaviour</h2>
+<p class="wp-block-paragraph">Positive, consistent training builds a strong relationship and a well-mannered companion. These guides cover equipment, techniques, socialisation, and understanding canine body language.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-training-equipment-guide/">Dog Training Equipment Explained: Tools, Uses, and What to Avoid</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-behaviour-explained/">Dog Behaviour Explained: Understanding Your Dog&#8217;s Body Language and Actions</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-training-terminology-explained/">Dog Training Terminology Explained: Key Concepts for New Owners</a></strong> — Key terms explained in plain language — a useful reference for new and experienced owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/cat-scratching-behaviour-explained/">Cat Scratching Behaviour Explained: Why Cats Scratch and How to Help</a></strong> — Step-by-step practical guidance with clear instructions and common mistakes to avoid.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/puppy-socialisation-guide/">Puppy Socialisation: A Complete Timeline Guide</a></strong> — Age-appropriate advice for the crucial early stages of development.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/how-to-choose-dog-training-treats/">How to Choose the Right Dog Training Treats</a></strong> — Step-by-step practical guidance with clear instructions and common mistakes to avoid.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dog-training-leads-uk/">Best Dog Training Leads UK (2026) – Long Lines &#038; Harnesses</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-puppy-training-guide-uk/">Best Puppy Training Guide UK (2026) – First Year Essentials</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dog-training-treats-uk/">Best Dog Training Treats UK (2026) – Reward Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dog-training-behaviour-uk/">Best Dog Training and Behaviour UK (2026) – Complete Guide</a></strong> — A comprehensive overview covering all the key considerations for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dog-leads-uk/">Best Dog Leads UK (2026) – Walking &#038; Training Lead Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-no-pull-dog-harnesses-uk/">Best No-Pull Dog Harnesses UK (2026) – Training &#038; Comfort Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><em>Related reading: Compare <a href="https://pethubonline.com/dog-training-equipment-guide/">Dog Training Equipment Explained: Tools, Uses, and What to Avoid</a> with <a href="https://pethubonline.com/dog-behaviour-explained/">Dog Behaviour Explained: Understanding Your Dog&#8217;s Body Language and Actions</a> for a more complete picture.</em></p>
+<hr class="wp-block-separator is-style-dots"/>
+<h2 class="wp-block-heading" id="beds-and-comfort">Beds &#038; Comfort</h2>
+<p class="wp-block-paragraph">A quality bed supports your dog&#8217;s joints, regulates temperature, and provides a safe retreat. These guides cover sizing, materials, and specialist options for puppies, seniors, and dogs with mobility needs.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/orthopaedic-care-dogs/">Orthopaedic Care for Dogs: Joint Health, Mobility, and Support</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-bed-sizing-guide/">Dog Bed Sizing Guide: How to Measure Your Dog and Choose the Right Fit</a></strong> — Step-by-step practical guidance with clear instructions and common mistakes to avoid.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-bed-types-glossary/">Dog Bed Types Explained: A Complete Glossary</a></strong> — Key terms explained in plain language — a useful reference for new and experienced owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/where-to-place-dog-bed/">Where to Place Your Dog&#8217;s Bed: Location and Comfort Tips</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/how-to-wash-dog-bed/">How to Wash and Maintain Your Dog&#8217;s Bed</a></strong> — Step-by-step practical guidance with clear instructions and common mistakes to avoid.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-bed-materials-guide///////">Dog Bed Materials Explained: Foam, Memory Foam, and More</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/how-to-choose-dog-bed-size/">How to Choose the Right Dog Bed Size</a></strong> — Step-by-step practical guidance with clear instructions and common mistakes to avoid.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-cat-radiator-beds-uk/">Best Cat Radiator Beds UK (2026) – Hook-On Warmth Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-puppy-beds-uk/">Best Puppy Beds UK (2026) – First Bed &#038; Crate Training Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-cooling-dog-beds-uk/">Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-orthopaedic-dog-beds-uk/">Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dog-beds-uk/">Best Dog Beds UK (2026) – Complete Guide &#038; Honest Reviews</a></strong> — A comprehensive overview covering all the key considerations for UK pet owners.</p>
+<p class="wp-block-paragraph"><em>Related reading: Compare <a href="https://pethubonline.com/orthopaedic-care-dogs/">Orthopaedic Care for Dogs: Joint Health, Mobility, and Support</a> with <a href="https://pethubonline.com/dog-bed-sizing-guide/">Dog Bed Sizing Guide: How to Measure Your Dog and Choose the Right Fit</a> for a more complete picture.</em></p>
+<hr class="wp-block-separator is-style-dots"/>
+<h2 class="wp-block-heading" id="grooming">Grooming</h2>
+<p class="wp-block-paragraph">Regular grooming maintains coat health, prevents skin problems, and strengthens your bond. From brushes and shampoos to nail care, these guides cover grooming essentials for every breed.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/pet-grooming-glossary/">Pet Grooming Glossary: Understanding Grooming Terms and Techniques</a></strong> — Key terms explained in plain language — a useful reference for new and experienced owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-grooming-basics-guide/">Dog Grooming Basics: A Complete Guide for Owners</a></strong> — A comprehensive overview covering all the key considerations for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-cat-shampoo-uk/">Best Cat Shampoo UK (2026) – When &#038; How to Bathe</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-cat-nail-clippers-uk/">Best Cat Nail Clippers UK (2026) – Safe Trimming Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-cat-brushes-uk/">Best Cat Brushes UK (2026) – Guide by Coat Type</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-cat-grooming-supplies-uk/">Best Cat Grooming Supplies UK (2026) – Complete Guide</a></strong> — A comprehensive overview covering all the key considerations for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dog-nail-clippers-uk/">Best Dog Nail Clippers UK (2026) – Trimming &#038; Grinding Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dog-shampoo-uk/">Best Dog Shampoo UK (2026) – Ingredients &#038; Safety Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dog-brushes-uk/">Best Dog Brushes UK (2026) – Guide by Coat Type</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dog-grooming-supplies-uk/">Best Dog Grooming Supplies UK (2026) – Complete Guide</a></strong> — A comprehensive overview covering all the key considerations for UK pet owners.</p>
+<p class="wp-block-paragraph"><em>Related reading: Compare <a href="https://pethubonline.com/pet-grooming-glossary/">Pet Grooming Glossary: Understanding Grooming Terms and Techniques</a> with <a href="https://pethubonline.com/dog-grooming-basics-guide/">Dog Grooming Basics: A Complete Guide for Owners</a> for a more complete picture.</em></p>
+<hr class="wp-block-separator is-style-dots"/>
+<h2 class="wp-block-heading" id="food-and-nutrition">Food &#038; Nutrition</h2>
+<p class="wp-block-paragraph">Evidence-based feeding guides for cats, covering nutrition labels, portion sizes, and dietary needs across different life stages.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/pet-feeding-guide/">Pet Feeding Guide: Understanding Portions, Schedules, and Methods</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/pet-nutrition-terminology-guide/">Pet Nutrition Terminology: A Guide to Common Terms on Pet Food Labels</a></strong> — Key terms explained in plain language — a useful reference for new and experienced owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-elevated-dog-bowls-uk/">Best Elevated Dog Bowls UK (2026) – Raised Feeder Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-slow-feeder-dog-bowls-uk/">Best Slow Feeder Dog Bowls UK (2026) – Prevent Speed Eating</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dog-bowls-feeding-uk/">Best Dog Bowls and Feeding UK (2026) – Complete Guide</a></strong> — A comprehensive overview covering all the key considerations for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-puppy-food-uk/">Best Puppy Food UK (2026) &#8211; Growth-Stage Nutrition Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dry-vs-wet-dog-food-uk/">Dry vs Wet Dog Food UK &#8211; An Honest Comparison Guide</a></strong> — A side-by-side comparison to help you make an informed choice.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dry-dog-food-uk/">Best Dry Dog Food UK (2026) &#8211; Evidence-Based Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dog-food-uk/">Best Dog Food UK (2026) &#8211; Complete Buying Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><em>Related reading: Compare <a href="https://pethubonline.com/pet-feeding-guide/">Pet Feeding Guide: Understanding Portions, Schedules, and Methods</a> with <a href="https://pethubonline.com/pet-nutrition-terminology-guide/">Pet Nutrition Terminology: A Guide to Common Terms on Pet Food Labels</a> for a more complete picture.</em></p>
+<hr class="wp-block-separator is-style-dots"/>
+<h2 class="wp-block-heading" id="collars,-harnesses-and-leads">Collars, Harnesses &#038; Leads</h2>
+<p class="wp-block-paragraph">The right walking equipment keeps your dog safe and comfortable. These guides explain harness types, fitting techniques, and when to choose a harness over a collar.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-harness-types-glossary/">Dog Harness Types Explained: Finding the Right Fit</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/harness-vs-collar-which-is-better/">Harness vs Collar: Which Is Better for Your Dog?</a></strong> — A side-by-side comparison to help you make an informed choice.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/how-to-measure-dog-for-harness/">How to Measure Your Dog for a Harness: Step-by-Step Guide</a></strong> — Step-by-step practical guidance with clear instructions and common mistakes to avoid.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/no-pull-dog-harness-guide/">No-Pull Dog Harness Guide: How They Work and When to Use One</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-harnesses-complete-guide/">Dog Harnesses: The Complete Guide to Types, Fitting, and Safety</a></strong> — A comprehensive overview covering all the key considerations for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-cat-harnesses-uk/">Best Cat Harnesses UK (2026) – Safe Walking Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-cat-collars-uk/">Best Cat Collars UK (2026) – Complete Safety Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-puppy-collars-uk/">Best Puppy Collars UK (2026) – First Collar &#038; Harness Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dog-collars-and-harnesses-uk/">Best Dog Collars and Harnesses UK (2026) – Complete Guide</a></strong> — A comprehensive overview covering all the key considerations for UK pet owners.</p>
+<p class="wp-block-paragraph"><em>Related reading: Compare <a href="https://pethubonline.com/dog-harness-types-glossary/">Dog Harness Types Explained: Finding the Right Fit</a> with <a href="https://pethubonline.com/harness-vs-collar-which-is-better/">Harness vs Collar: Which Is Better for Your Dog?</a> for a more complete picture.</em></p>
+<hr class="wp-block-separator is-style-dots"/>
+<h2 class="wp-block-heading" id="health-and-wellness">Health &#038; Wellness</h2>
+<p class="wp-block-paragraph">Preventive health care keeps your dog comfortable and catches problems early. Our health guides cover dental care, joint support, flea prevention, and knowing when to consult your vet.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/pet-health-terminology-guide/">Pet Health Terminology: A Guide to Common Veterinary Terms</a></strong> — Key terms explained in plain language — a useful reference for new and experienced owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-health-basics-guide/">Dog Health Basics: Common Conditions, Prevention, and When to See a Vet</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/dog-dental-health-care-guide/">Dog Dental Health: A Practical Care Guide</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dog-joint-supplements-uk/">Best Dog Joint Supplements UK (2026) – Mobility Support Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dog-flea-treatment-uk/">Best Dog Flea Treatment UK (2026) – Prevention Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dog-dental-care-uk/">Best Dog Dental Care UK (2026) – Teeth Cleaning Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dog-health-care-uk/">Best Dog Health and Care UK (2026) – Complete Guide</a></strong> — A comprehensive overview covering all the key considerations for UK pet owners.</p>
+<p class="wp-block-paragraph"><em>Related reading: Compare <a href="https://pethubonline.com/pet-health-terminology-guide/">Pet Health Terminology: A Guide to Common Veterinary Terms</a> with <a href="https://pethubonline.com/dog-health-basics-guide/">Dog Health Basics: Common Conditions, Prevention, and When to See a Vet</a> for a more complete picture.</em></p>
+<hr class="wp-block-separator is-style-dots"/>
+<h2 class="wp-block-heading" id="puppy-care">Puppy Care</h2>
+<p class="wp-block-paragraph">The first year sets the foundation for lifelong health and behaviour. Our puppy guides cover development stages, first toys, socialisation timelines, and essential supplies.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/puppy-development-stages-guide/">Puppy Development Stages: A Complete Guide from Birth to Maturity</a></strong> — A comprehensive overview covering all the key considerations for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/puppy-care-essentials-glossary/">Puppy Care Essentials: Key Terms Every New Owner Should Know</a></strong> — Key terms explained in plain language — a useful reference for new and experienced owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/first-time-dog-owner-essentials/">First-Time Dog Owner Essentials: What You Need to Know</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/pet-first-aid-basics/">Pet First Aid Basics: What Every Owner Should Know</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><em>Related reading: Compare <a href="https://pethubonline.com/puppy-development-stages-guide/">Puppy Development Stages: A Complete Guide from Birth to Maturity</a> with <a href="https://pethubonline.com/puppy-care-essentials-glossary/">Puppy Care Essentials: Key Terms Every New Owner Should Know</a> for a more complete picture.</em></p>
+<hr class="wp-block-separator is-style-dots"/>
+<h2 class="wp-block-heading" id="general-guides">General Guides</h2>
+<p class="wp-block-paragraph">Comprehensive reference guides covering terminology, play styles, and cross-cutting topics for informed dog ownership.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/cat-care-basics-glossary/">Cat Care Basics: A Glossary for New Cat Owners</a></strong> — Key terms explained in plain language — a useful reference for new and experienced owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-cat-id-tags-uk/">Best Cat ID Tags UK (2026) – Identification Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-cat-gps-trackers-uk/">Best Cat GPS Trackers UK (2026) – Location Tracking Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<p class="wp-block-paragraph"><em>Related reading: Compare <a href="https://pethubonline.com/cat-care-basics-glossary/">Cat Care Basics: A Glossary for New Cat Owners</a> with <a href="https://pethubonline.com/best-cat-id-tags-uk/">Best Cat ID Tags UK (2026) – Identification Guide</a> for a more complete picture.</em></p>
+<hr class="wp-block-separator is-style-dots"/>
+<h2 class="wp-block-heading" id="safety-and-general-care">Safety &#038; General Care</h2>
+<p class="wp-block-paragraph">From seasonal hazards to first aid, these guides help you keep your dog safe year-round and manage multi-pet households with confidence.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/multi-pet-household-tips/">Multi-Pet Household Tips: Living with Dogs and Cats Together</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/seasonal-dog-care-guide/">Seasonal Dog Care: Keeping Your Dog Safe Year-Round</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/seasonal-pet-safety-guide/">Seasonal Pet Safety: Protecting Pets Through the Year</a></strong> — Essential safety information to protect your pet from common hazards.</p>
+<p class="wp-block-paragraph"><em>Related reading: Compare <a href="https://pethubonline.com/multi-pet-household-tips/">Multi-Pet Household Tips: Living with Dogs and Cats Together</a> with <a href="https://pethubonline.com/seasonal-dog-care-guide/">Seasonal Dog Care: Keeping Your Dog Safe Year-Round</a> for a more complete picture.</em></p>
+<hr class="wp-block-separator is-style-dots"/>
+<h2 class="wp-block-heading" id="bowls-and-feeding">Bowls &#038; Feeding</h2>
+<p class="wp-block-paragraph">The right bowl or feeder can improve digestion, slow fast eaters, and ensure proper hydration. These guides cover elevated bowls, slow feeders, and travel options.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/pet-hydration-guide/">Pet Hydration Guide: How Much Water Does Your Pet Need?</a></strong> — Practical, research-backed guidance for UK pet owners.</p>
+<p class="wp-block-paragraph"><strong><a href="https://pethubonline.com/best-dog-water-bottles-uk/">Best Dog Water Bottles UK (2026) – Travel Hydration Guide</a></strong> — Our evidence-based buying guide comparing top UK options with practical recommendations.</p>
+<hr class="wp-block-separator is-style-dots"/>
+<h2 class="wp-block-heading">Reference Glossaries</h2>
+<p class="wp-block-paragraph">New to pet ownership or want to understand specialist terminology? Our glossary guides explain key terms in plain language:</p>
+<ul class="wp-block-list">
+<li><a href="https://pethubonline.com/">Indoor Cat Terminology: A Complete Glossary for Cat Owners</a></li>
+<li><a href="https://pethubonline.com/">Puppy Care Glossary: Essential Terms for New Puppy Owners</a></li>
+<li><a href="https://pethubonline.com/">Dog Health Terminology: Understanding Common Veterinary and Care Terms</a></li>
+<li><a href="https://pethubonline.com/">Dog Food Glossary: Understanding Ingredients and Nutrition Labels</a></li>
+<li><a href="https://pethubonline.com/">Dog Bed Terminology: Materials, Types, and Sizing Terms Explained</a></li>
+<li><a href="https://pethubonline.com/">Cat Supply Essentials Glossary: Understanding Cat Care Products</a></li>
+<li><a href="https://pethubonline.com/">Cat Toy Terminology: Understanding Play Types and Toy Features</a></li>
+</ul>
+<h3 class="wp-block-heading">Troubleshooting Common Issues</h3>
+<p class="wp-block-paragraph"><strong>Not sure where to start with dog toys:</strong> Begin with our <a href="https://pethubonline.com/dog-toy-safety-what-every-owner-needs-to-know/">Dog Toy Safety Guide</a> for foundational knowledge, then explore specific topics based on your needs.</p>
+<p><strong>Looking for breed-specific toy advice:</strong> Check our <a href="https://pethubonline.com/dog-toy-safety-breed-size/">Dog Toy Safety by Breed Size</a> and <a href="https://pethubonline.com/enrichment-by-breed-group/">Enrichment by Breed Group</a> guides for tailored recommendations.</p>
+<p><strong>Want to save money on dog toys:</strong> Our <a href="https://pethubonline.com/diy-dog-toys-safe-homemade-options/">DIY Dog Toys</a> guide offers safe, budget-friendly alternatives to complement commercial products.</p>
+<p><strong>Concerned about your dog&#8217;s play behaviour:</strong> Browse our enrichment and behavioural guides for advice on common play-related issues.</p>
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-8b3ad44c wp-block-group-is-layout-constrained" style="border-color:#fecaca;border-width:1px;border-radius:6px;background-color:#fef2f2;margin-top:20px;margin-bottom:20px;padding-top:16px;padding-right:20px;padding-bottom:16px;padding-left:20px">
+<p class="wp-block-paragraph" style="font-size:14px"><strong>When to seek professional help:</strong> If you have specific concerns about your dog&#8217;s play behaviour, toy safety, or enrichment needs that are not addressed in our guides, consult your vet or a qualified animal behaviourist for personalised advice.</p>
+</div>
+<h2 class="wp-block-heading">Frequently Asked Questions</h2>
+<h3 class="wp-block-heading">How do I choose the right toy for my dog?</h3>
+<p class="wp-block-paragraph">Start with our <a href="https://pethubonline.com/best-dog-toys-uk//">Best Dog Toys UK guide</a> which covers selection by play style, size, and chewing strength. For puppies specifically, see our <a href="https://pethubonline.com/best-puppy-toys-uk/">Best Puppy Toys guide</a>.</p>
+<h3 class="wp-block-heading">What bed is best for a senior dog?</h3>
+<p class="wp-block-paragraph">Orthopaedic beds with memory foam provide the best joint support. Our <a href="https://pethubonline.com/best-orthopaedic-dog-beds-uk/">Orthopaedic Dog Beds guide</a> compares the top UK options, and our <a href="https://pethubonline.com/dog-bed-sizing-guide/">Dog Bed Sizing Guide</a> helps with correct measurements.</p>
+<h3 class="wp-block-heading">How often should I groom my dog?</h3>
+<p class="wp-block-paragraph">It depends on coat type — short-haired breeds need weekly brushing, while long-haired breeds may need daily attention. Our <a href="https://pethubonline.com/dog-grooming-basics/">Dog Grooming Basics guide</a> includes breed-specific schedules.</p>
+<h3 class="wp-block-heading">What food should I feed my puppy?</h3>
+<p class="wp-block-paragraph">Puppies need growth-stage specific nutrition. Our <a href="https://pethubonline.com/best-puppy-food-uk/">Best Puppy Food UK guide</a> covers evidence-based options, and our <a href="https://pethubonline.com/pet-feeding-guide/">Pet Feeding Guide</a> explains portions and schedules.</p>
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-280afed2 wp-block-group-is-layout-constrained" style="border-color:#bbf7d0;border-width:1px;border-radius:6px;background-color:#f0fdf4;margin-top:24px;margin-bottom:24px;padding-top:16px;padding-right:20px;padding-bottom:16px;padding-left:20px">
+<h4 class="wp-block-heading">Key Takeaways</h4>
+<ul class="wp-block-list">
+<li>Explore our comprehensive guides to build confidence in dog toy selection</li>
+<li>Safety is the foundation — start with our safety guides before choosing specific toys</li>
+<li>Mental enrichment through toys is essential for every dog&#8217;s wellbeing</li>
+<li>Bookmark this hub as your go-to reference for all dog toy questions</li>
+<li>Our content is regularly updated to reflect the latest UK veterinary and welfare guidance</li>
+</ul>
+</div>

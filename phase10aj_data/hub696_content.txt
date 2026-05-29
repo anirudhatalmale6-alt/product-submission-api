@@ -1,0 +1,45 @@
+<p class="wp-block-paragraph">Welcome to our comprehensive Cat Supplies resource hub. Below you will find our complete collection of guides, reviews, and expert advice for cat owners in the UK. From toys and beds to grooming, litter, and indoor enrichment, every guide is researched using trusted UK sources including the RSPCA, PDSA, and Cats Protection.</p>
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-a7981ecd wp-block-group-is-layout-constrained" style="border-color:#c7d2fe;border-width:1px;border-radius:6px;background-color:#eef2ff;margin-top:20px;margin-bottom:24px;padding-top:16px;padding-right:20px;padding-bottom:16px;padding-left:20px">
+<h4 class="wp-block-heading">At a Glance</h4>
+<ul class="wp-block-list">
+<li>Covers the core supplies every new cat owner in the UK needs from day one</li>
+<li>Includes feeding equipment, litter setup, scratching provision, and sleeping options</li>
+<li>Addresses microchipping requirements (compulsory in England from June 2024)</li>
+<li>Provides estimated startup costs for bringing a new cat home in the UK</li>
+<li>References Cats Protection and RSPCA guidance on essential cat welfare needs</li>
+</ul>
+</div>
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-8b3ad44c wp-block-group-is-layout-constrained" style="border-color:#fde68a;border-width:1px;border-radius:6px;background-color:#fffbeb;margin-top:20px;margin-bottom:20px;padding-top:16px;padding-right:20px;padding-bottom:16px;padding-left:20px">
+<p class="wp-block-paragraph" style="font-size:14px"><strong>Why this matters:</strong> Getting the right supplies before bringing a cat home reduces stress for both cat and owner during the settling-in period. Cats Protection recommends having all essential items in place at least 24 hours before the cat arrives.</p>
+</div>
+<h3 class="wp-block-heading">Troubleshooting Common Issues</h3>
+<p class="wp-block-paragraph"><strong>Overwhelmed by the number of products available:</strong> Focus on the five essentials first: food and water bowls, litter tray and litter, scratching post, carrier, and a safe sleeping area. Everything else can be added gradually as you learn your cat&#8217;s preferences.</p>
+<p><strong>New cat will not eat or drink:</strong> This is common in the first 24-48 hours due to stress. Place food and water in a quiet room and leave the cat undisturbed. If refusal continues beyond 48 hours, contact your vet — cats should not go without food for extended periods as they risk hepatic lipidosis.</p>
+<p><strong>Unsure whether to buy kitten-specific or adult products:</strong> Kittens need kitten-formulated food (higher protein and calorie content), smaller litter trays, and appropriately sized toys. Beds, carriers, and scratching posts can usually be adult-sized from the start.</p>
+<p><strong>Cat rejects the carrier:</strong> Leave the carrier open in a living area with bedding inside so the cat can explore it voluntarily. Feed treats near and inside the carrier. Making it a normal part of the environment reduces stress when vet visits are needed.</p>
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-8b3ad44c wp-block-group-is-layout-constrained" style="border-color:#fecaca;border-width:1px;border-radius:6px;background-color:#fef2f2;margin-top:20px;margin-bottom:20px;padding-top:16px;padding-right:20px;padding-bottom:16px;padding-left:20px">
+<p class="wp-block-paragraph" style="font-size:14px"><strong>When to seek professional help:</strong> If your new cat refuses food for more than 48 hours, shows signs of respiratory infection (sneezing, discharge), has diarrhoea lasting more than 24 hours, or seems excessively lethargic, contact your vet promptly. Cats Protection advises registering with a vet before bringing your cat home so that help is available immediately if needed.</p>
+</div>
+<h2 class="wp-block-heading">Frequently Asked Questions</h2>
+<h3 class="wp-block-heading">What toys do indoor cats need?</h3>
+<p class="wp-block-paragraph">Indoor cats benefit from a mix of interactive wand toys, puzzle feeders, and self-play options. Our <a href="https://pethubonline.com/best-indoor-cat-toys/">Best Indoor Cat Toys guide</a> covers the essential types for enrichment.</p>
+<h3 class="wp-block-heading">How do I stop my cat scratching furniture?</h3>
+<p class="wp-block-paragraph">Provide appropriate scratching surfaces near the furniture they target. Our <a href="https://pethubonline.com/best-cat-scratching-posts-uk/">Cat Scratching Posts guide</a> and <a href="https://pethubonline.com/cat-scratching-behaviour-explained/">Cat Scratching Behaviour guide</a> explain why cats scratch and how to redirect the behaviour.</p>
+<h3 class="wp-block-heading">What litter is best for odour control?</h3>
+<p class="wp-block-paragraph">Clumping clay and silica crystal litters generally offer the best odour control. Our <a href="https://pethubonline.com/best-cat-litter-uk/">Best Cat Litter UK guide</a> compares all types including eco-friendly options.</p>
+<h3 class="wp-block-heading">Do cats need a GPS tracker?</h3>
+<p class="wp-block-paragraph">For outdoor cats especially, a GPS tracker provides peace of mind. Our <a href="https://pethubonline.com/best-cat-gps-trackers-uk/">Cat GPS Trackers guide</a> reviews UK-available options and explains the technology.</p>
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-280afed2 wp-block-group-is-layout-constrained" style="border-color:#bbf7d0;border-width:1px;border-radius:6px;background-color:#f0fdf4;margin-top:24px;margin-bottom:24px;padding-top:16px;padding-right:20px;padding-bottom:16px;padding-left:20px">
+<h4 class="wp-block-heading">Key Takeaways</h4>
+<ul class="wp-block-list">
+<li>Have all essential supplies in place before bringing your new cat home to reduce settling-in stress</li>
+<li>The five non-negotiable items are: food and water bowls, litter tray and litter, scratching post, carrier, and bed</li>
+<li>Microchipping is compulsory for cats in England — budget for this if your cat is not yet chipped</li>
+<li>Register with a local vet before your cat arrives so that help is available immediately if needed</li>
+<li>Add enrichment items gradually — observe your cat&#8217;s preferences before investing heavily in accessories</li>
+</ul>
+</div>
+<div class="wp-block-group has-border-color has-background is-layout-constrained wp-container-core-group-is-layout-10c45653 wp-block-group-is-layout-constrained" style="border-color:#e2e8f0;border-width:1px;border-radius:8px;background-color:#f8fafb;margin-top:32px;margin-bottom:32px;padding-top:20px;padding-right:24px;padding-bottom:20px;padding-left:24px">
+<h4 class="wp-block-heading">Our Editorial Standards</h4>
+<p class="wp-block-paragraph" style="font-size:14px">All content on Pet Hub Online is created following our <a href="https://pethubonline.com/our-editorial-process/////////">editorial process</a>, supported by thorough <a href="https://pethubonline.com/how-we-research-pet-products/////////">research methodology</a>. We reference UK veterinary and welfare organisations including the <a href="https://www.rspca.org.uk/" rel="nofollow noopener" target="_blank">RSPCA</a>, <a href="https://www.pdsa.org.uk/" rel="nofollow noopener" target="_blank">PDSA</a>, <a href="https://www.cats.org.uk/" rel="nofollow noopener" target="_blank">Cats Protection</a>, and <a href="https://icatcare.org/" rel="nofollow noopener" target="_blank">International Cat Care</a>. We maintain transparency through our <a href="https://pethubonline.com/corrections-and-updates-policy/////////">corrections and updates policy</a>. Content is AI-assisted and editorially reviewed. For details on how we handle affiliate relationships, see our <a href="https://pethubonline.com/affiliate-disclosure/">affiliate disclosure</a>.</p>
+</div>
