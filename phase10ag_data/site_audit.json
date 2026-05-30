@@ -1,0 +1,4590 @@
+{
+  "audit_date": "2026-05-30",
+  "total_published": 168,
+  "total_drafts": 18,
+  "comparison_tables": {
+    "present": 168,
+    "missing": 0,
+    "missing_ids": [],
+    "missing_titles": []
+  },
+  "at_a_glance": {
+    "present": 165,
+    "missing": 3,
+    "missing_ids": [
+      8172,
+      8171,
+      7177
+    ],
+    "missing_titles": [
+      "Our Research Standards",
+      "Why PetHub Online Exists",
+      "Cat Toy Terminology: Understanding Play Types and Toy Features"
+    ]
+  },
+  "practical_guidance": {
+    "present": 166,
+    "missing": 2,
+    "missing_ids": [
+      5522,
+      4314
+    ],
+    "missing_titles": [
+      "Orthopaedic Care for Dogs: Joint Health, Mobility, and Support",
+      "Best Cat Litter Trays UK (2026) – Complete Guide"
+    ]
+  },
+  "uk_authority_refs": {
+    "with_refs": 168,
+    "zero_refs": 0,
+    "zero_ref_ids": [],
+    "zero_ref_titles": [],
+    "ref_counts": {
+      "8172": 7,
+      "8171": 6,
+      "7346": 5,
+      "7345": 5,
+      "7344": 5,
+      "7343": 5,
+      "7342": 5,
+      "7341": 6,
+      "7340": 5,
+      "7339": 5,
+      "7338": 5,
+      "7337": 5,
+      "7336": 5,
+      "7335": 5,
+      "7334": 3,
+      "7333": 5,
+      "7332": 5,
+      "7177": 5,
+      "7175": 5,
+      "7174": 5,
+      "7172": 6,
+      "7170": 6,
+      "7169": 5,
+      "7167": 5,
+      "6052": 5,
+      "6050": 5,
+      "6049": 5,
+      "6048": 5,
+      "6047": 5,
+      "6046": 5,
+      "6045": 5,
+      "6044": 6,
+      "6042": 5,
+      "6039": 5,
+      "5950": 5,
+      "5946": 5,
+      "5942": 5,
+      "5938": 5,
+      "5935": 5,
+      "5934": 5,
+      "5933": 5,
+      "5932": 5,
+      "5931": 5,
+      "5930": 5,
+      "5523": 6,
+      "5522": 6,
+      "5521": 5,
+      "5520": 5,
+      "5519": 6,
+      "5512": 5,
+      "5511": 6,
+      "5510": 6,
+      "5509": 8,
+      "5508": 6,
+      "5483": 5,
+      "5476": 5,
+      "5473": 5,
+      "5471": 5,
+      "5469": 5,
+      "5467": 5,
+      "5464": 5,
+      "5462": 6,
+      "5460": 7,
+      "5458": 6,
+      "5425": 5,
+      "5424": 5,
+      "5423": 5,
+      "5422": 5,
+      "5421": 5,
+      "5420": 5,
+      "5419": 5,
+      "5418": 5,
+      "5417": 6,
+      "5416": 5,
+      "5415": 6,
+      "5414": 6,
+      "5296": 6,
+      "5033": 5,
+      "5036": 6,
+      "5032": 5,
+      "5035": 5,
+      "5034": 5,
+      "4792": 5,
+      "4791": 5,
+      "4790": 5,
+      "4789": 5,
+      "4788": 5,
+      "4787": 5,
+      "4786": 6,
+      "4785": 5,
+      "4784": 5,
+      "4783": 5,
+      "4573": 6,
+      "4570": 5,
+      "4576": 6,
+      "4574": 6,
+      "4571": 5,
+      "4568": 5,
+      "4566": 6,
+      "4563": 5,
+      "4415": 5,
+      "4406": 5,
+      "4414": 5,
+      "4413": 5,
+      "4412": 5,
+      "4411": 5,
+      "4410": 5,
+      "4409": 5,
+      "4408": 5,
+      "4407": 5,
+      "4335": 5,
+      "4328": 5,
+      "4321": 5,
+      "4314": 6,
+      "4307": 5,
+      "4300": 5,
+      "4293": 5,
+      "4286": 4,
+      "4279": 4,
+      "4272": 6,
+      "4265": 6,
+      "4258": 5,
+      "4251": 5,
+      "4244": 4,
+      "4237": 4,
+      "4230": 5,
+      "4223": 5,
+      "4216": 5,
+      "4209": 5,
+      "4202": 5,
+      "4195": 5,
+      "4188": 5,
+      "4181": 5,
+      "4174": 5,
+      "4167": 6,
+      "4160": 6,
+      "4153": 6,
+      "4146": 5,
+      "4139": 5,
+      "4132": 5,
+      "4125": 5,
+      "4118": 5,
+      "4110": 5,
+      "4103": 6,
+      "4096": 5,
+      "4089": 5,
+      "4078": 5,
+      "4071": 5,
+      "4064": 5,
+      "4057": 5,
+      "4049": 5,
+      "4042": 5,
+      "4034": 5,
+      "4027": 6,
+      "4018": 5,
+      "4011": 5,
+      "4004": 5,
+      "3996": 5,
+      "3960": 5,
+      "3959": 5,
+      "3957": 5,
+      "3956": 6,
+      "3839": 6,
+      "3838": 6,
+      "3837": 6,
+      "3836": 6,
+      "696": 5,
+      "3": 5
+    }
+  },
+  "glossary": {
+    "present": 72,
+    "missing": 96,
+    "missing_ids": [
+      8172,
+      8171,
+      7341,
+      7340,
+      7339,
+      7338,
+      7337,
+      6052,
+      6050,
+      6049,
+      6048,
+      6047,
+      6046,
+      6045,
+      6044,
+      6042,
+      6039,
+      5950,
+      5946,
+      5942,
+      5938,
+      5935,
+      5934,
+      5933,
+      5932,
+      5931,
+      5930,
+      5511,
+      5508,
+      5483,
+      5476,
+      5425,
+      5423,
+      5422,
+      5421,
+      5420,
+      5296,
+      5036,
+      5034,
+      4791,
+      4790,
+      4789,
+      4788,
+      4787,
+      4786,
+      4785,
+      4573,
+      4576,
+      4571,
+      4566,
+      4563,
+      4415,
+      4406,
+      4414,
+      4413,
+      4410,
+      4409,
+      4408,
+      4407,
+      4335,
+      4328,
+      4321,
+      4314,
+      4307,
+      4300,
+      4293,
+      4286,
+      4279,
+      4258,
+      4237,
+      4230,
+      4209,
+      4202,
+      4195,
+      4188,
+      4153,
+      4139,
+      4132,
+      4125,
+      4118,
+      4110,
+      4103,
+      4096,
+      4089,
+      4078,
+      4071,
+      4064,
+      4057,
+      4049,
+      4042,
+      4034,
+      4027,
+      3960,
+      3959,
+      3957,
+      696
+    ],
+    "missing_titles": [
+      "Our Research Standards",
+      "Why PetHub Online Exists",
+      "First Week with a New Puppy: A Day-by-Day Guide",
+      "Puppy Teething Guide: Stages, Signs, and Soothing Tips",
+      "Puppy Sleep Guide: How Much Sleep Puppies Need by Age",
+      "Puppy-Proofing Your Home: A Room-by-Room Safety Guide",
+      "Puppy Vaccination Schedule UK: What to Expect and When",
+      "Low-Mobility Enrichment: Mental Stimulation for Dogs with Limited Movement",
+      "Toy Overstimulation Recovery: Calming Down an Overexcited Dog",
+      "Sensory Enrichment for Dogs: Engaging All Five Senses Through Play",
+      "Confidence-Building Play: Helping Shy and Fearful Dogs Through Toys",
+      "Play Recovery After Surgery: Gentle Enrichment for Healing Dogs",
+      "Dog Toy Hygiene Schedules: A Practical Cleaning Timetable",
+      "Safe Multi-Dog Toy Management: Preventing Resource Guarding",
+      "Rotating Puzzle Complexity: Progressive Challenge for Smart Dogs",
+      "Enrichment by Breed Group: Tailoring Play to Your Dog's Instincts",
+      "Dog Toy Anxiety Reduction: Using Toys to Calm Nervous Dogs",
+      "Dog Toy Durability Guide: What Lasts and What Does Not",
+      "Dog Toy Materials Compared: Rubber, Rope, Plush, and Nylon",
+      "Cognitive Enrichment for Senior Dogs: Gentle Play for Ageing Minds",
+      "Enrichment Schedules for Dogs: Structuring Daily Play and Mental Work",
+      "Dog Toy Storage and Organisation: Keeping Toys Clean and Accessible",
+      "Crate and Play Enrichment: Keeping Dogs Happy in Confined Spaces",
+      "Safe Tug Play with Dogs: Rules, Benefits, and Common Mistakes",
+      "Scent-Game Enrichment for Dogs: Using Smell to Engage Your Dog",
+      "Signs of Toy Overstimulation in Dogs: When Play Becomes Too Much",
+      "Dog Toy Safety by Breed Size: Choosing the Right Size Toy",
+      "Pet Enrichment Explained: Types, Benefits, and Practical Ideas",
+      "Puppy Development Stages: A Complete Guide from Birth to Maturity",
+      "Dog Toy Lifespan: When to Replace Toys and How to Extend Their Life",
+      "Mental Stimulation Toys for Dogs: Puzzles, Games, and Brain Work",
+      "Dog Toys FAQ: Common Questions Answered",
+      "Dog Toy Enrichment: Beyond Basic Fetch",
+      "Indoor vs Outdoor Dog Toys: Choosing the Right Type",
+      "Puppy-Safe Dog Toys: What to Look For and What to Avoid",
+      "Dog Toy Cleaning Guide: How to Keep Toys Hygienic",
+      "Best Indoor Cat Toys UK (2026): Complete Guide for House Cats",
+      "Understanding Cat Play Behaviour: What Different Play Styles Mean",
+      "Cat Toy Rotation: How to Keep Toys Fresh and Engaging",
+      "How to Choose the Right Dog Training Treats",
+      "DIY Dog Toys: Safe Homemade Options",
+      "Best Types of Dog Toys for Different Play Styles",
+      "Mental Stimulation for Dogs: Beyond Physical Exercise",
+      "Dog Toy Safety: What Every Owner Needs to Know",
+      "Where to Place Your Dog's Bed: Location and Comfort Tips",
+      "How to Wash and Maintain Your Dog's Bed",
+      "Seasonal Pet Safety: Protecting Pets Through the Year",
+      "Multi-Pet Household Tips: Living with Dogs and Cats Together",
+      "Pet First Aid Basics: What Every Owner Should Know",
+      "Seasonal Dog Care: Keeping Your Dog Safe Year-Round",
+      "Dog Grooming Basics: A Complete Guide for Owners",
+      "Cat Toy Safety Guide: What Every Owner Should Know",
+      "Best Interactive Cat Toys for Indoor Cats: Engagement Guide",
+      "Harness vs Collar: Which Is Better for Your Dog?",
+      "How to Measure Your Dog for a Harness: Step-by-Step Guide",
+      "Cat Enrichment Activities Beyond Toys: Complete Guide",
+      "Kitten vs Adult Cat Toys: Age-Appropriate Play Guide",
+      "How Often Should You Replace Cat Toys? A Practical Guide",
+      "DIY Cat Toys: Safe Homemade Options Your Cat Will Love",
+      "Best Cat Litter Disposal UK (2026) – Waste Management Guide",
+      "Best Self-Cleaning Litter Trays UK (2026) – Automatic Options",
+      "Best Cat Litter UK (2026) – Types &#038; Comparison Guide",
+      "Best Cat Litter Trays UK (2026) – Complete Guide",
+      "Best Wall-Mounted Cat Scratchers UK (2026) – Space Saving",
+      "Best Cardboard Cat Scratchers UK (2026) – Budget Friendly",
+      "Best Cat Trees UK (2026) – Climbing & Scratching Towers",
+      "Best Cat Scratching Posts UK (2026) – Complete Guide",
+      "Best Cat Harnesses UK (2026) – Safe Walking Guide",
+      "Best Cat Collars UK (2026) – Complete Safety Guide",
+      "Best Cat Brushes UK (2026) – Guide by Coat Type",
+      "Best Cat Grooming Supplies UK (2026) – Complete Guide",
+      "Best Heated Cat Beds UK (2026) – Winter Warmth Guide",
+      "Best Cat Beds UK (2026) – Complete Guide",
+      "Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide",
+      "Best Catnip Toys UK (2026) – What Works and Why",
+      "Best Slow Feeder Dog Bowls UK (2026) – Prevent Speed Eating",
+      "Best Dog Training Leads UK (2026) – Long Lines & Harnesses",
+      "Best Puppy Training Guide UK (2026) – First Year Essentials",
+      "Best Dog Training Treats UK (2026) – Reward Guide",
+      "Best Dog Training and Behaviour UK (2026) – Complete Guide",
+      "Best Dog Joint Supplements UK (2026) – Mobility Support Guide",
+      "Best Dog Flea Treatment UK (2026) – Prevention Guide",
+      "Best Dog Dental Care UK (2026) – Teeth Cleaning Guide",
+      "Best Dog Health and Care UK (2026) – Complete Guide",
+      "Best Dog Nail Clippers UK (2026) – Trimming & Grinding Guide",
+      "Best Dog Shampoo UK (2026) – Ingredients & Safety Guide",
+      "Best Dog Brushes UK (2026) – Guide by Coat Type",
+      "Best Dog Grooming Supplies UK (2026) – Complete Guide",
+      "Best Puppy Collars UK (2026) – First Collar & Harness Guide",
+      "Best Dog Leads UK (2026) – Walking & Training Lead Guide",
+      "Best No-Pull Dog Harnesses UK (2026) – Training & Comfort Guide",
+      "Best Dog Collars and Harnesses UK (2026) – Complete Guide",
+      "Best Puppy Toys UK (2026) – Teething & First Toys Guide",
+      "Best Interactive Dog Toys UK (2026) – Puzzle & Enrichment Guide",
+      "Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers",
+      "Essential Cat Supplies for Cat Owners - Number 1 Must-Haves"
+    ]
+  },
+  "quick_answer": {
+    "present": 168,
+    "missing": 0,
+    "missing_ids": [],
+    "missing_titles": []
+  },
+  "internal_links": {
+    "adequate": 168,
+    "low": 0,
+    "low_ids": [],
+    "low_titles": [],
+    "link_counts": {
+      "8172": 7,
+      "8171": 6,
+      "7346": 16,
+      "7345": 16,
+      "7344": 16,
+      "7343": 16,
+      "7342": 16,
+      "7341": 22,
+      "7340": 22,
+      "7339": 21,
+      "7338": 21,
+      "7337": 11,
+      "7336": 17,
+      "7335": 17,
+      "7334": 19,
+      "7333": 17,
+      "7332": 18,
+      "7177": 14,
+      "7175": 18,
+      "7174": 14,
+      "7172": 7,
+      "7170": 18,
+      "7169": 14,
+      "7167": 12,
+      "6052": 10,
+      "6050": 11,
+      "6049": 10,
+      "6048": 9,
+      "6047": 10,
+      "6046": 11,
+      "6045": 10,
+      "6044": 9,
+      "6042": 12,
+      "6039": 9,
+      "5950": 14,
+      "5946": 12,
+      "5942": 10,
+      "5938": 13,
+      "5935": 12,
+      "5934": 6,
+      "5933": 5,
+      "5932": 5,
+      "5931": 5,
+      "5930": 5,
+      "5523": 19,
+      "5522": 15,
+      "5521": 9,
+      "5520": 16,
+      "5519": 20,
+      "5512": 20,
+      "5511": 8,
+      "5510": 11,
+      "5509": 10,
+      "5508": 19,
+      "5483": 11,
+      "5476": 13,
+      "5473": 7,
+      "5471": 8,
+      "5469": 9,
+      "5467": 12,
+      "5464": 10,
+      "5462": 11,
+      "5460": 12,
+      "5458": 15,
+      "5425": 18,
+      "5424": 15,
+      "5423": 14,
+      "5422": 16,
+      "5421": 12,
+      "5420": 12,
+      "5419": 6,
+      "5418": 9,
+      "5417": 23,
+      "5416": 11,
+      "5415": 13,
+      "5414": 11,
+      "5296": 18,
+      "5033": 22,
+      "5036": 17,
+      "5032": 20,
+      "5035": 13,
+      "5034": 12,
+      "4792": 23,
+      "4791": 18,
+      "4790": 11,
+      "4789": 11,
+      "4788": 9,
+      "4787": 11,
+      "4786": 12,
+      "4785": 12,
+      "4784": 15,
+      "4783": 8,
+      "4573": 9,
+      "4570": 16,
+      "4576": 5,
+      "4574": 13,
+      "4571": 18,
+      "4568": 11,
+      "4566": 11,
+      "4563": 6,
+      "4415": 18,
+      "4406": 22,
+      "4414": 6,
+      "4413": 6,
+      "4412": 6,
+      "4411": 21,
+      "4410": 17,
+      "4409": 20,
+      "4408": 20,
+      "4407": 20,
+      "4335": 18,
+      "4328": 12,
+      "4321": 18,
+      "4314": 18,
+      "4307": 15,
+      "4300": 15,
+      "4293": 11,
+      "4286": 17,
+      "4279": 10,
+      "4272": 17,
+      "4265": 11,
+      "4258": 10,
+      "4251": 13,
+      "4244": 12,
+      "4237": 13,
+      "4230": 17,
+      "4223": 14,
+      "4216": 14,
+      "4209": 14,
+      "4202": 14,
+      "4195": 10,
+      "4188": 34,
+      "4181": 28,
+      "4174": 36,
+      "4167": 23,
+      "4160": 18,
+      "4153": 12,
+      "4146": 13,
+      "4139": 12,
+      "4132": 15,
+      "4125": 12,
+      "4118": 12,
+      "4110": 14,
+      "4103": 14,
+      "4096": 10,
+      "4089": 14,
+      "4078": 11,
+      "4071": 13,
+      "4064": 12,
+      "4057": 12,
+      "4049": 12,
+      "4042": 14,
+      "4034": 14,
+      "4027": 14,
+      "4018": 13,
+      "4011": 7,
+      "4004": 7,
+      "3996": 16,
+      "3960": 21,
+      "3959": 8,
+      "3957": 9,
+      "3956": 15,
+      "3839": 17,
+      "3838": 17,
+      "3837": 17,
+      "3836": 14,
+      "696": 10,
+      "3": 162
+    }
+  },
+  "draft_posts": [
+    {
+      "id": 12823,
+      "title": "Interactive Cat Toys UK: Best Types for Solo and Multi-Cat Play (2026)",
+      "slug": "interactive-cat-toys-uk-solo-multi-cat"
+    },
+    {
+      "id": 12820,
+      "title": "Dog Coats UK: Weather Protection Guide by Breed Size (2026)",
+      "slug": "dog-coats-uk-weather-protection-guide"
+    },
+    {
+      "id": 12817,
+      "title": "Dog Travel Accessories UK: Car Safety and Comfort Essentials (2026)",
+      "slug": "dog-travel-accessories-uk-car-safety"
+    },
+    {
+      "id": 12816,
+      "title": "Catios UK: Outdoor Cat Enclosures Guide and Comparison (2026)",
+      "slug": "catios-uk-outdoor-cat-enclosures"
+    },
+    {
+      "id": 12813,
+      "title": "Cat Puzzle Feeders UK: Best Options for Mental Stimulation (2026)",
+      "slug": "cat-puzzle-feeders-uk"
+    },
+    {
+      "id": 12767,
+      "title": "Interactive Cat Toys for Solo Play UK: Keep Cats Busy",
+      "slug": "interactive-cat-toys-solo-play-uk"
+    },
+    {
+      "id": 12766,
+      "title": "Cat Puzzle Feeders UK: Guide to Food Puzzles for Cats",
+      "slug": "cat-puzzle-feeders-uk-guide"
+    },
+    {
+      "id": 12765,
+      "title": "DIY Cat Toys from Household Items: Easy Projects",
+      "slug": "diy-cat-toys-household-items"
+    },
+    {
+      "id": 12764,
+      "title": "Dog Feeding Station Setup: Complete Guide for UK Owners",
+      "slug": "dog-feeding-station-setup-guide"
+    },
+    {
+      "id": 12763,
+      "title": "Dog Travel Accessories UK: Essential Gear for UK Trips",
+      "slug": "dog-travel-accessories-uk"
+    },
+    {
+      "id": 12762,
+      "title": "Dog Coats and Jackets UK: Choosing the Right One",
+      "slug": "dog-coats-jackets-uk-guide"
+    },
+    {
+      "id": 12761,
+      "title": "First-Time Pet Owner UK: Complete Beginner Guide",
+      "slug": "first-time-pet-owner-guide-uk"
+    },
+    {
+      "id": 12760,
+      "title": "Seasonal Pet Care Calendar UK: Monthly Guide for Pet Owners",
+      "slug": "seasonal-pet-care-calendar-uk"
+    },
+    {
+      "id": 12759,
+      "title": "Multi-Pet Household Management: UK Guide for Harmony",
+      "slug": "multi-pet-household-management-uk"
+    },
+    {
+      "id": 12758,
+      "title": "Indoor Cat Exercise: Daily Routines to Keep UK Cats Active",
+      "slug": "indoor-cat-exercise-routines-uk"
+    },
+    {
+      "id": 12757,
+      "title": "DIY Catio Plans: How to Build a Cat Enclosure in the UK",
+      "slug": "diy-catio-building-plans-uk"
+    },
+    {
+      "id": 12756,
+      "title": "Catio Kits UK: Complete Guide to Outdoor Cat Enclosures",
+      "slug": "catio-kits-uk-guide"
+    },
+    {
+      "id": 10028,
+      "title": "10 Best Waterproof Dog Coats for Wet Walks in 2026",
+      "slug": ""
+    }
+  ],
+  "all_posts": [
+    {
+      "id": 8172,
+      "title": "Our Research Standards",
+      "slug": "our-research-standards",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": false,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 7,
+          "authorities": [
+            "bva",
+            "defra",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 7
+      }
+    },
+    {
+      "id": 8171,
+      "title": "Why PetHub Online Exists",
+      "slug": "why-pethub-online-exists",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": false,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 6
+      }
+    },
+    {
+      "id": 7346,
+      "title": "Indoor Cat Diet and Nutrition: Feeding Guidelines for House Cats",
+      "slug": "indoor-cat-diet-nutrition-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 16
+      }
+    },
+    {
+      "id": 7345,
+      "title": "Indoor Cat Behaviour: Understanding and Managing Common Issues",
+      "slug": "indoor-cat-behaviour-common-issues",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 16
+      }
+    },
+    {
+      "id": 7344,
+      "title": "Creating a Cat-Friendly Home: Environmental Enrichment for Indoor Cats",
+      "slug": "cat-friendly-home-enrichment-indoor-cats",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 16
+      }
+    },
+    {
+      "id": 7343,
+      "title": "Indoor Cat Safety: Common Household Hazards for Cats",
+      "slug": "indoor-cat-safety-household-hazards",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 16
+      }
+    },
+    {
+      "id": 7342,
+      "title": "Indoor Cat Exercise: Keeping House Cats Active and Healthy",
+      "slug": "indoor-cat-exercise-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 16
+      }
+    },
+    {
+      "id": 7341,
+      "title": "First Week with a New Puppy: A Day-by-Day Guide",
+      "slug": "first-week-new-puppy-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "defra",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 22
+      }
+    },
+    {
+      "id": 7340,
+      "title": "Puppy Teething Guide: Stages, Signs, and Soothing Tips",
+      "slug": "puppy-teething-guide-stages-signs",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 22
+      }
+    },
+    {
+      "id": 7339,
+      "title": "Puppy Sleep Guide: How Much Sleep Puppies Need by Age",
+      "slug": "puppy-sleep-guide-by-age",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 21
+      }
+    },
+    {
+      "id": 7338,
+      "title": "Puppy-Proofing Your Home: A Room-by-Room Safety Guide",
+      "slug": "puppy-proofing-home-safety-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 21
+      }
+    },
+    {
+      "id": 7337,
+      "title": "Puppy Vaccination Schedule UK: What to Expect and When",
+      "slug": "puppy-vaccination-schedule-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "defra",
+            "pdsa",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 11
+      }
+    },
+    {
+      "id": 7336,
+      "title": "Dog Bed Safety: Avoiding Hazards and Choosing Non-Toxic Materials",
+      "slug": "dog-bed-safety-non-toxic-materials",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "gov.uk",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 17
+      }
+    },
+    {
+      "id": 7335,
+      "title": "Seasonal Dog Bedding: Adjusting Comfort Through the Year",
+      "slug": "seasonal-dog-bedding-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 17
+      }
+    },
+    {
+      "id": 7334,
+      "title": "Puppy Bed Training: Helping Your Dog Love Their Bed",
+      "slug": "puppy-bed-training-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 3,
+          "authorities": [
+            "blue_cross",
+            "rspca",
+            "kennel_club"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 19
+      }
+    },
+    {
+      "id": 7333,
+      "title": "Dog Bed Placement Guide: Where to Put Your Dog’s Bed",
+      "slug": "dog-bed-placement-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 17
+      }
+    },
+    {
+      "id": 7332,
+      "title": "How to Wash and Dry a Dog Bed Safely",
+      "slug": "how-to-wash-dog-bed-safely",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 18
+      }
+    },
+    {
+      "id": 7177,
+      "title": "Cat Toy Terminology: Understanding Play Types and Toy Features",
+      "slug": "cat-toy-terminology-understanding-play-types-and-toy-features",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": false,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 14
+      }
+    },
+    {
+      "id": 7175,
+      "title": "Cat Supply Essentials Glossary: Understanding Cat Care Products",
+      "slug": "cat-supply-essentials-glossary-understanding-cat-care-products",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 18
+      }
+    },
+    {
+      "id": 7174,
+      "title": "Dog Bed Terminology: Materials, Types, and Sizing Terms Explained",
+      "slug": "dog-bed-terminology-materials-types-and-sizing-terms-explained",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 14
+      }
+    },
+    {
+      "id": 7172,
+      "title": "Dog Food Glossary: Understanding Ingredients and Nutrition Labels",
+      "slug": "dog-food-glossary-understanding-ingredients-and-nutrition-labels",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "defra",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 7
+      }
+    },
+    {
+      "id": 7170,
+      "title": "Dog Health Terminology: Understanding Common Veterinary and Care Terms",
+      "slug": "dog-health-terminology-understanding-common-veterinary-and-care-terms",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "defra",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 18
+      }
+    },
+    {
+      "id": 7169,
+      "title": "Puppy Care Glossary: Essential Terms for New Puppy Owners",
+      "slug": "puppy-care-glossary-essential-terms-for-new-puppy-owners",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 14
+      }
+    },
+    {
+      "id": 7167,
+      "title": "Indoor Cat Terminology: A Complete Glossary for Cat Owners",
+      "slug": "indoor-cat-terminology-a-complete-glossary-for-cat-owners",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 6052,
+      "title": "Low-Mobility Enrichment: Mental Stimulation for Dogs with Limited Movement",
+      "slug": "low-mobility-enrichment-dogs",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 10
+      }
+    },
+    {
+      "id": 6050,
+      "title": "Toy Overstimulation Recovery: Calming Down an Overexcited Dog",
+      "slug": "toy-overstimulation-recovery-dogs",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 11
+      }
+    },
+    {
+      "id": 6049,
+      "title": "Sensory Enrichment for Dogs: Engaging All Five Senses Through Play",
+      "slug": "sensory-enrichment-dogs",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 10
+      }
+    },
+    {
+      "id": 6048,
+      "title": "Confidence-Building Play: Helping Shy and Fearful Dogs Through Toys",
+      "slug": "confidence-building-play-dogs",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 9
+      }
+    },
+    {
+      "id": 6047,
+      "title": "Play Recovery After Surgery: Gentle Enrichment for Healing Dogs",
+      "slug": "play-recovery-after-surgery-dogs",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 10
+      }
+    },
+    {
+      "id": 6046,
+      "title": "Dog Toy Hygiene Schedules: A Practical Cleaning Timetable",
+      "slug": "dog-toy-hygiene-schedules",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 11
+      }
+    },
+    {
+      "id": 6045,
+      "title": "Safe Multi-Dog Toy Management: Preventing Resource Guarding",
+      "slug": "safe-multi-dog-toy-management",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 10
+      }
+    },
+    {
+      "id": 6044,
+      "title": "Rotating Puzzle Complexity: Progressive Challenge for Smart Dogs",
+      "slug": "rotating-puzzle-complexity-dogs",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 9
+      }
+    },
+    {
+      "id": 6042,
+      "title": "Enrichment by Breed Group: Tailoring Play to Your Dog's Instincts",
+      "slug": "enrichment-by-breed-group",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 6039,
+      "title": "Dog Toy Anxiety Reduction: Using Toys to Calm Nervous Dogs",
+      "slug": "dog-toy-anxiety-reduction",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 9
+      }
+    },
+    {
+      "id": 5950,
+      "title": "Dog Toy Durability Guide: What Lasts and What Does Not",
+      "slug": "dog-toy-durability-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 14
+      }
+    },
+    {
+      "id": 5946,
+      "title": "Dog Toy Materials Compared: Rubber, Rope, Plush, and Nylon",
+      "slug": "dog-toy-materials-compared",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 5942,
+      "title": "Cognitive Enrichment for Senior Dogs: Gentle Play for Ageing Minds",
+      "slug": "cognitive-enrichment-senior-dogs",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 10
+      }
+    },
+    {
+      "id": 5938,
+      "title": "Enrichment Schedules for Dogs: Structuring Daily Play and Mental Work",
+      "slug": "enrichment-schedules-dogs",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 13
+      }
+    },
+    {
+      "id": 5935,
+      "title": "Dog Toy Storage and Organisation: Keeping Toys Clean and Accessible",
+      "slug": "dog-toy-storage-organisation",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 5934,
+      "title": "Crate and Play Enrichment: Keeping Dogs Happy in Confined Spaces",
+      "slug": "crate-play-enrichment-dogs",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 6
+      }
+    },
+    {
+      "id": 5933,
+      "title": "Safe Tug Play with Dogs: Rules, Benefits, and Common Mistakes",
+      "slug": "safe-tug-play-dogs",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 5
+      }
+    },
+    {
+      "id": 5932,
+      "title": "Scent-Game Enrichment for Dogs: Using Smell to Engage Your Dog",
+      "slug": "scent-game-enrichment-dogs",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 5
+      }
+    },
+    {
+      "id": 5931,
+      "title": "Signs of Toy Overstimulation in Dogs: When Play Becomes Too Much",
+      "slug": "dog-toy-overstimulation-signs",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 5
+      }
+    },
+    {
+      "id": 5930,
+      "title": "Dog Toy Safety by Breed Size: Choosing the Right Size Toy",
+      "slug": "dog-toy-safety-breed-size",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 5
+      }
+    },
+    {
+      "id": 5523,
+      "title": "Dog Training Equipment Explained: Tools, Uses, and What to Avoid",
+      "slug": "dog-training-equipment-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "defra",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 19
+      }
+    },
+    {
+      "id": 5522,
+      "title": "Orthopaedic Care for Dogs: Joint Health, Mobility, and Support",
+      "slug": "orthopaedic-care-dogs",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": false,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 15
+      }
+    },
+    {
+      "id": 5521,
+      "title": "Pet Health Terminology: A Guide to Common Veterinary Terms",
+      "slug": "pet-health-terminology-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 9
+      }
+    },
+    {
+      "id": 5520,
+      "title": "Dog Health Basics: Common Conditions, Prevention, and When to See a Vet",
+      "slug": "dog-health-basics-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 16
+      }
+    },
+    {
+      "id": 5519,
+      "title": "Indoor Cat Care: A Complete Guide to Keeping House Cats Happy and Healthy",
+      "slug": "indoor-cat-care-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 20
+      }
+    },
+    {
+      "id": 5512,
+      "title": "Dog Behaviour Explained: Understanding Your Dog's Body Language and Actions",
+      "slug": "dog-behaviour-explained",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 20
+      }
+    },
+    {
+      "id": 5511,
+      "title": "Pet Enrichment Explained: Types, Benefits, and Practical Ideas",
+      "slug": "pet-enrichment-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 8
+      }
+    },
+    {
+      "id": 5510,
+      "title": "Dog Bed Sizing Guide: How to Measure Your Dog and Choose the Right Fit",
+      "slug": "dog-bed-sizing-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 11
+      }
+    },
+    {
+      "id": 5509,
+      "title": "Pet Toy Safety: Understanding Materials, Hazards, and Standards",
+      "slug": "pet-toy-safety-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 8,
+          "authorities": [
+            "bva",
+            "cats_protection",
+            "defra",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "gov.uk",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 10
+      }
+    },
+    {
+      "id": 5508,
+      "title": "Puppy Development Stages: A Complete Guide from Birth to Maturity",
+      "slug": "puppy-development-stages-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 19
+      }
+    },
+    {
+      "id": 5483,
+      "title": "Dog Toy Lifespan: When to Replace Toys and How to Extend Their Life",
+      "slug": "dog-toy-lifespan-replacement",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 11
+      }
+    },
+    {
+      "id": 5476,
+      "title": "Mental Stimulation Toys for Dogs: Puzzles, Games, and Brain Work",
+      "slug": "mental-stimulation-toys-dogs",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 13
+      }
+    },
+    {
+      "id": 5473,
+      "title": "Senior Dog Toys: Gentle Play Options for Older Dogs",
+      "slug": "senior-dog-toys",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 7
+      }
+    },
+    {
+      "id": 5471,
+      "title": "Dog Boredom Prevention: Signs, Solutions, and Enrichment Ideas",
+      "slug": "dog-boredom-prevention",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 8
+      }
+    },
+    {
+      "id": 5469,
+      "title": "Dog Toy Rotation: How to Keep Your Dog Interested and Engaged",
+      "slug": "dog-toy-rotation-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 9
+      }
+    },
+    {
+      "id": 5467,
+      "title": "Pet Feeding Guide: Understanding Portions, Schedules, and Methods",
+      "slug": "pet-feeding-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 5464,
+      "title": "Pet Grooming Glossary: Understanding Grooming Terms and Techniques",
+      "slug": "pet-grooming-glossary",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 10
+      }
+    },
+    {
+      "id": 5462,
+      "title": "Dog Training Terminology Explained: Key Concepts for New Owners",
+      "slug": "dog-training-terminology-explained",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 11
+      }
+    },
+    {
+      "id": 5460,
+      "title": "Pet Nutrition Terminology: A Guide to Common Terms on Pet Food Labels",
+      "slug": "pet-nutrition-terminology-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 7,
+          "authorities": [
+            "bva",
+            "defra",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "gov.uk",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 5458,
+      "title": "Cat Scratching Behaviour Explained: Why Cats Scratch and How to Help",
+      "slug": "cat-scratching-behaviour-explained",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 15
+      }
+    },
+    {
+      "id": 5425,
+      "title": "Dog Toys FAQ: Common Questions Answered",
+      "slug": "dog-toys-faq",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 18
+      }
+    },
+    {
+      "id": 5424,
+      "title": "Aggressive Chewer Guide: Safe Toys for Power Chewers",
+      "slug": "aggressive-chewer-dog-toys",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 15
+      }
+    },
+    {
+      "id": 5423,
+      "title": "Dog Toy Enrichment: Beyond Basic Fetch",
+      "slug": "dog-toy-enrichment-beyond-fetch",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 14
+      }
+    },
+    {
+      "id": 5422,
+      "title": "Indoor vs Outdoor Dog Toys: Choosing the Right Type",
+      "slug": "indoor-vs-outdoor-dog-toys",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 16
+      }
+    },
+    {
+      "id": 5421,
+      "title": "Puppy-Safe Dog Toys: What to Look For and What to Avoid",
+      "slug": "puppy-safe-dog-toys",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 5420,
+      "title": "Dog Toy Cleaning Guide: How to Keep Toys Hygienic",
+      "slug": "dog-toy-cleaning-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 5419,
+      "title": "Cat Care Basics: A Glossary for New Cat Owners",
+      "slug": "cat-care-basics-glossary",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 6
+      }
+    },
+    {
+      "id": 5418,
+      "title": "Dog Harness Types Explained: Finding the Right Fit",
+      "slug": "dog-harness-types-glossary",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 9
+      }
+    },
+    {
+      "id": 5417,
+      "title": "Puppy Care Essentials: Key Terms Every New Owner Should Know",
+      "slug": "puppy-care-essentials-glossary",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "defra",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 23
+      }
+    },
+    {
+      "id": 5416,
+      "title": "Dog Bed Types Explained: A Complete Glossary",
+      "slug": "dog-bed-types-glossary",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 11
+      }
+    },
+    {
+      "id": 5415,
+      "title": "Dog Play Styles Explained: Understanding How Your Dog Plays",
+      "slug": "dog-play-styles-explained",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 13
+      }
+    },
+    {
+      "id": 5414,
+      "title": "Cat Toy Types Explained: A Complete Glossary",
+      "slug": "cat-toy-types-glossary",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 11
+      }
+    },
+    {
+      "id": 5296,
+      "title": "Best Indoor Cat Toys UK (2026): Complete Guide for House Cats",
+      "slug": "best-indoor-cat-toys",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 18
+      }
+    },
+    {
+      "id": 5033,
+      "title": "How to Choose the Right Cat Toy for Your Cat's Personality",
+      "slug": "how-to-choose-cat-toys-personality",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 22
+      }
+    },
+    {
+      "id": 5036,
+      "title": "Understanding Cat Play Behaviour: What Different Play Styles Mean",
+      "slug": "understanding-cat-play-behaviour",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 17
+      }
+    },
+    {
+      "id": 5032,
+      "title": "Cat Toys FAQ: Common Questions Answered",
+      "slug": "cat-toys-faq",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 20
+      }
+    },
+    {
+      "id": 5035,
+      "title": "Cat Enrichment Beyond Toys: Creating a Stimulating Home",
+      "slug": "cat-enrichment-beyond-toys",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 13
+      }
+    },
+    {
+      "id": 5034,
+      "title": "Cat Toy Rotation: How to Keep Toys Fresh and Engaging",
+      "slug": "cat-toy-rotation-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 4792,
+      "title": "Puppy Socialisation: A Complete Timeline Guide",
+      "slug": "puppy-socialisation-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 23
+      }
+    },
+    {
+      "id": 4791,
+      "title": "How to Choose the Right Dog Training Treats",
+      "slug": "how-to-choose-dog-training-treats",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 18
+      }
+    },
+    {
+      "id": 4790,
+      "title": "DIY Dog Toys: Safe Homemade Options",
+      "slug": "diy-dog-toys-homemade",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 11
+      }
+    },
+    {
+      "id": 4789,
+      "title": "Best Types of Dog Toys for Different Play Styles",
+      "slug": "dog-toys-for-different-play-styles",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 11
+      }
+    },
+    {
+      "id": 4788,
+      "title": "Mental Stimulation for Dogs: Beyond Physical Exercise",
+      "slug": "mental-stimulation-for-dogs",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 9
+      }
+    },
+    {
+      "id": 4787,
+      "title": "Dog Toy Safety: What Every Owner Needs to Know",
+      "slug": "dog-toy-safety-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 11
+      }
+    },
+    {
+      "id": 4786,
+      "title": "Where to Place Your Dog's Bed: Location and Comfort Tips",
+      "slug": "where-to-place-dog-bed",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 4785,
+      "title": "How to Wash and Maintain Your Dog's Bed",
+      "slug": "how-to-wash-dog-bed",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 4784,
+      "title": "Dog Bed Materials Explained: Foam, Memory Foam, and More",
+      "slug": "dog-bed-materials-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 15
+      }
+    },
+    {
+      "id": 4783,
+      "title": "How to Choose the Right Dog Bed Size",
+      "slug": "how-to-choose-dog-bed-size",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 8
+      }
+    },
+    {
+      "id": 4573,
+      "title": "Seasonal Pet Safety: Protecting Pets Through the Year",
+      "slug": "seasonal-pet-safety-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 9
+      }
+    },
+    {
+      "id": 4570,
+      "title": "First-Time Dog Owner Essentials: What You Need to Know",
+      "slug": "first-time-dog-owner-essentials",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 16
+      }
+    },
+    {
+      "id": 4576,
+      "title": "Multi-Pet Household Tips: Living with Dogs and Cats Together",
+      "slug": "multi-pet-household-tips",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 5
+      }
+    },
+    {
+      "id": 4574,
+      "title": "Pet Hydration Guide: How Much Water Does Your Pet Need?",
+      "slug": "pet-hydration-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 13
+      }
+    },
+    {
+      "id": 4571,
+      "title": "Pet First Aid Basics: What Every Owner Should Know",
+      "slug": "pet-first-aid-basics",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 18
+      }
+    },
+    {
+      "id": 4568,
+      "title": "Dog Dental Health: A Practical Care Guide",
+      "slug": "dog-dental-health-care-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 11
+      }
+    },
+    {
+      "id": 4566,
+      "title": "Seasonal Dog Care: Keeping Your Dog Safe Year-Round",
+      "slug": "seasonal-dog-care-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "defra",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 11
+      }
+    },
+    {
+      "id": 4563,
+      "title": "Dog Grooming Basics: A Complete Guide for Owners",
+      "slug": "dog-grooming-basics-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 6
+      }
+    },
+    {
+      "id": 4415,
+      "title": "Cat Toy Safety Guide: What Every Owner Should Know",
+      "slug": "cat-toy-safety-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 18
+      }
+    },
+    {
+      "id": 4406,
+      "title": "Best Interactive Cat Toys for Indoor Cats: Engagement Guide",
+      "slug": "best-interactive-cat-toys-indoor-cats",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 22
+      }
+    },
+    {
+      "id": 4414,
+      "title": "Harness vs Collar: Which Is Better for Your Dog?",
+      "slug": "harness-vs-collar-which-is-better",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 6
+      }
+    },
+    {
+      "id": 4413,
+      "title": "How to Measure Your Dog for a Harness: Step-by-Step Guide",
+      "slug": "how-to-measure-dog-for-harness",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 6
+      }
+    },
+    {
+      "id": 4412,
+      "title": "No-Pull Dog Harness Guide: How They Work and When to Use One",
+      "slug": "no-pull-dog-harness-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 6
+      }
+    },
+    {
+      "id": 4411,
+      "title": "Dog Harnesses: The Complete Guide to Types, Fitting, and Safety",
+      "slug": "dog-harnesses-complete-guide",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 21
+      }
+    },
+    {
+      "id": 4410,
+      "title": "Cat Enrichment Activities Beyond Toys: Complete Guide",
+      "slug": "cat-enrichment-activities-beyond-toys",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 17
+      }
+    },
+    {
+      "id": 4409,
+      "title": "Kitten vs Adult Cat Toys: Age-Appropriate Play Guide",
+      "slug": "kitten-vs-adult-cat-toys-age-appropriate",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 20
+      }
+    },
+    {
+      "id": 4408,
+      "title": "How Often Should You Replace Cat Toys? A Practical Guide",
+      "slug": "how-often-replace-cat-toys",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 20
+      }
+    },
+    {
+      "id": 4407,
+      "title": "DIY Cat Toys: Safe Homemade Options Your Cat Will Love",
+      "slug": "diy-cat-toys-safe-homemade-options",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 20
+      }
+    },
+    {
+      "id": 4335,
+      "title": "Best Cat Litter Disposal UK (2026) – Waste Management Guide",
+      "slug": "best-cat-litter-disposal-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 18
+      }
+    },
+    {
+      "id": 4328,
+      "title": "Best Self-Cleaning Litter Trays UK (2026) – Automatic Options",
+      "slug": "best-self-cleaning-litter-trays-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 4321,
+      "title": "Best Cat Litter UK (2026) – Types &#038; Comparison Guide",
+      "slug": "best-cat-litter-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 18
+      }
+    },
+    {
+      "id": 4314,
+      "title": "Best Cat Litter Trays UK (2026) – Complete Guide",
+      "slug": "best-cat-litter-trays-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": false,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 18
+      }
+    },
+    {
+      "id": 4307,
+      "title": "Best Wall-Mounted Cat Scratchers UK (2026) – Space Saving",
+      "slug": "best-wall-mounted-cat-scratchers-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 15
+      }
+    },
+    {
+      "id": 4300,
+      "title": "Best Cardboard Cat Scratchers UK (2026) – Budget Friendly",
+      "slug": "best-cardboard-cat-scratchers-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 15
+      }
+    },
+    {
+      "id": 4293,
+      "title": "Best Cat Trees UK (2026) – Climbing & Scratching Towers",
+      "slug": "best-cat-trees-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 11
+      }
+    },
+    {
+      "id": 4286,
+      "title": "Best Cat Scratching Posts UK (2026) – Complete Guide",
+      "slug": "best-cat-scratching-posts-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 4,
+          "authorities": [
+            "cats_protection",
+            "pdsa",
+            "blue_cross",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 17
+      }
+    },
+    {
+      "id": 4279,
+      "title": "Best Cat Harnesses UK (2026) – Safe Walking Guide",
+      "slug": "best-cat-harnesses-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 4,
+          "authorities": [
+            "cats_protection",
+            "pdsa",
+            "blue_cross",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 10
+      }
+    },
+    {
+      "id": 4272,
+      "title": "Best Cat ID Tags UK (2026) – Identification Guide",
+      "slug": "best-cat-id-tags-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 17
+      }
+    },
+    {
+      "id": 4265,
+      "title": "Best Cat GPS Trackers UK (2026) – Location Tracking Guide",
+      "slug": "best-cat-gps-trackers-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 11
+      }
+    },
+    {
+      "id": 4258,
+      "title": "Best Cat Collars UK (2026) – Complete Safety Guide",
+      "slug": "best-cat-collars-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 10
+      }
+    },
+    {
+      "id": 4251,
+      "title": "Best Cat Shampoo UK (2026) – When & How to Bathe",
+      "slug": "best-cat-shampoo-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 13
+      }
+    },
+    {
+      "id": 4244,
+      "title": "Best Cat Nail Clippers UK (2026) – Safe Trimming Guide",
+      "slug": "best-cat-nail-clippers-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 4,
+          "authorities": [
+            "cats_protection",
+            "pdsa",
+            "blue_cross",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 4237,
+      "title": "Best Cat Brushes UK (2026) – Guide by Coat Type",
+      "slug": "best-cat-brushes-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 4,
+          "authorities": [
+            "cats_protection",
+            "pdsa",
+            "blue_cross",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 13
+      }
+    },
+    {
+      "id": 4230,
+      "title": "Best Cat Grooming Supplies UK (2026) – Complete Guide",
+      "slug": "best-cat-grooming-supplies-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 17
+      }
+    },
+    {
+      "id": 4223,
+      "title": "Best Cat Window Perches UK (2026) – Sunning & Bird Watching",
+      "slug": "best-cat-window-perches-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 14
+      }
+    },
+    {
+      "id": 4216,
+      "title": "Best Cat Radiator Beds UK (2026) – Hook-On Warmth Guide",
+      "slug": "best-cat-radiator-beds-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 14
+      }
+    },
+    {
+      "id": 4209,
+      "title": "Best Heated Cat Beds UK (2026) – Winter Warmth Guide",
+      "slug": "best-heated-cat-beds-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 14
+      }
+    },
+    {
+      "id": 4202,
+      "title": "Best Cat Beds UK (2026) – Complete Guide",
+      "slug": "best-cat-beds-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 14
+      }
+    },
+    {
+      "id": 4195,
+      "title": "Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide",
+      "slug": "best-cat-toys-indoor-cats-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 10
+      }
+    },
+    {
+      "id": 4188,
+      "title": "Best Catnip Toys UK (2026) – What Works and Why",
+      "slug": "best-catnip-toys-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 34
+      }
+    },
+    {
+      "id": 4181,
+      "title": "Best Interactive Cat Toys UK (2026) – Wand & Puzzle Guide",
+      "slug": "best-interactive-cat-toys-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 28
+      }
+    },
+    {
+      "id": 4174,
+      "title": "Best Cat Toys UK (2026) – Complete Guide",
+      "slug": "best-cat-toys-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 36
+      }
+    },
+    {
+      "id": 4167,
+      "title": "Best Dog Water Bottles UK (2026) – Travel Hydration Guide",
+      "slug": "best-dog-water-bottles-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 23
+      }
+    },
+    {
+      "id": 4160,
+      "title": "Best Elevated Dog Bowls UK (2026) – Raised Feeder Guide",
+      "slug": "best-elevated-dog-bowls-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 18
+      }
+    },
+    {
+      "id": 4153,
+      "title": "Best Slow Feeder Dog Bowls UK (2026) – Prevent Speed Eating",
+      "slug": "best-slow-feeder-dog-bowls-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 4146,
+      "title": "Best Dog Bowls and Feeding UK (2026) – Complete Guide",
+      "slug": "best-dog-bowls-feeding-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 13
+      }
+    },
+    {
+      "id": 4139,
+      "title": "Best Dog Training Leads UK (2026) – Long Lines & Harnesses",
+      "slug": "best-dog-training-leads-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 4132,
+      "title": "Best Puppy Training Guide UK (2026) – First Year Essentials",
+      "slug": "best-puppy-training-guide-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 15
+      }
+    },
+    {
+      "id": 4125,
+      "title": "Best Dog Training Treats UK (2026) – Reward Guide",
+      "slug": "best-dog-training-treats-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 4118,
+      "title": "Best Dog Training and Behaviour UK (2026) – Complete Guide",
+      "slug": "best-dog-training-behaviour-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 4110,
+      "title": "Best Dog Joint Supplements UK (2026) – Mobility Support Guide",
+      "slug": "best-dog-joint-supplements-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 14
+      }
+    },
+    {
+      "id": 4103,
+      "title": "Best Dog Flea Treatment UK (2026) – Prevention Guide",
+      "slug": "best-dog-flea-treatment-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "defra",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 14
+      }
+    },
+    {
+      "id": 4096,
+      "title": "Best Dog Dental Care UK (2026) – Teeth Cleaning Guide",
+      "slug": "best-dog-dental-care-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 10
+      }
+    },
+    {
+      "id": 4089,
+      "title": "Best Dog Health and Care UK (2026) – Complete Guide",
+      "slug": "best-dog-health-care-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 14
+      }
+    },
+    {
+      "id": 4078,
+      "title": "Best Dog Nail Clippers UK (2026) – Trimming & Grinding Guide",
+      "slug": "best-dog-nail-clippers-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 11
+      }
+    },
+    {
+      "id": 4071,
+      "title": "Best Dog Shampoo UK (2026) – Ingredients & Safety Guide",
+      "slug": "best-dog-shampoo-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 13
+      }
+    },
+    {
+      "id": 4064,
+      "title": "Best Dog Brushes UK (2026) – Guide by Coat Type",
+      "slug": "best-dog-brushes-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 4057,
+      "title": "Best Dog Grooming Supplies UK (2026) – Complete Guide",
+      "slug": "best-dog-grooming-supplies-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 4049,
+      "title": "Best Puppy Collars UK (2026) – First Collar & Harness Guide",
+      "slug": "best-puppy-collars-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 12
+      }
+    },
+    {
+      "id": 4042,
+      "title": "Best Dog Leads UK (2026) – Walking & Training Lead Guide",
+      "slug": "best-dog-leads-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 14
+      }
+    },
+    {
+      "id": 4034,
+      "title": "Best No-Pull Dog Harnesses UK (2026) – Training & Comfort Guide",
+      "slug": "best-no-pull-dog-harnesses-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 14
+      }
+    },
+    {
+      "id": 4027,
+      "title": "Best Dog Collars and Harnesses UK (2026) – Complete Guide",
+      "slug": "best-dog-collars-and-harnesses-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "gov.uk",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 14
+      }
+    },
+    {
+      "id": 4018,
+      "title": "Best Puppy Beds UK (2026) – First Bed & Crate Training Guide",
+      "slug": "best-puppy-beds-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 13
+      }
+    },
+    {
+      "id": 4011,
+      "title": "Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide",
+      "slug": "best-cooling-dog-beds-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 7
+      }
+    },
+    {
+      "id": 4004,
+      "title": "Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide",
+      "slug": "best-orthopaedic-dog-beds-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 7
+      }
+    },
+    {
+      "id": 3996,
+      "title": "Best Dog Beds UK (2026) – Complete Guide & Honest Reviews",
+      "slug": "best-dog-beds-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 16
+      }
+    },
+    {
+      "id": 3960,
+      "title": "Best Puppy Toys UK (2026) – Teething & First Toys Guide",
+      "slug": "best-puppy-toys-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 21
+      }
+    },
+    {
+      "id": 3959,
+      "title": "Best Interactive Dog Toys UK (2026) – Puzzle & Enrichment Guide",
+      "slug": "best-interactive-dog-toys-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 8
+      }
+    },
+    {
+      "id": 3957,
+      "title": "Best Indestructible Dog Toys UK (2026) – Tough Toys for Heavy Chewers",
+      "slug": "best-indestructible-dog-toys-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 9
+      }
+    },
+    {
+      "id": 3956,
+      "title": "Best Dog Toys UK (2026) – Complete Guide & Honest Reviews",
+      "slug": "best-dog-toys-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "gov.uk",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 15
+      }
+    },
+    {
+      "id": 3839,
+      "title": "Best Puppy Food UK (2026) - Growth-Stage Nutrition Guide",
+      "slug": "best-puppy-food-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "defra",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 17
+      }
+    },
+    {
+      "id": 3838,
+      "title": "Dry vs Wet Dog Food UK - An Honest Comparison Guide",
+      "slug": "dry-vs-wet-dog-food-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "defra",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 17
+      }
+    },
+    {
+      "id": 3837,
+      "title": "Best Dry Dog Food UK (2026) - Evidence-Based Guide",
+      "slug": "best-dry-dog-food-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "defra",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 17
+      }
+    },
+    {
+      "id": 3836,
+      "title": "Best Dog Food UK (2026) - Complete Buying Guide",
+      "slug": "best-dog-food-uk",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 6,
+          "authorities": [
+            "bva",
+            "defra",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 14
+      }
+    },
+    {
+      "id": 696,
+      "title": "Essential Cat Supplies for Cat Owners - Number 1 Must-Haves",
+      "slug": "essential-cat-supplies-for-cat-owners",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "cats_protection",
+            "rspca"
+          ]
+        },
+        "glossary": false,
+        "quick_answer": true,
+        "internal_links": 10
+      }
+    },
+    {
+      "id": 3,
+      "title": "Dog Toys UK (2026) – Essential Guide for Pet Owners",
+      "slug": "top-dog-toys-every-pet-owner-needs-in-2026",
+      "checks": {
+        "comparison_table": true,
+        "at_a_glance": true,
+        "practical_guidance": true,
+        "uk_authority_refs": {
+          "count": 5,
+          "authorities": [
+            "bva",
+            "pdsa",
+            "blue_cross",
+            "kennel_club",
+            "rspca"
+          ]
+        },
+        "glossary": true,
+        "quick_answer": true,
+        "internal_links": 162
+      }
+    }
+  ]
+}
