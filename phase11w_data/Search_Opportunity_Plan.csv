@@ -1,0 +1,77 @@
+cluster,opportunity_type,topic,target_query,difficulty_estimate,priority,rationale
+Cat Toys,educational,Kitten toy guide UK,best cat toys for kittens uk 2026,low,1,Age-specific product guide missing; high commercial intent
+Cat Toys,educational,Senior cat toy guide,best cat toys for senior cats uk,low,1,Age-specific gap; growing elderly cat population
+Cat Toys,educational,Automated/electronic cat toys UK,automated cat toys uk 2026: self-playing options,low,1,Product category not covered; high buying intent
+Cat Toys,ai_answer,Cat toy quantity recommendation,how many toys does a cat need,low,1,Quantifiable answer AI models extract; very high search volume
+Cat Toys,ai_answer,Cat toy disinterest troubleshooting,why does my cat not play with toys,low,1,Problem-solution format ideal for AI; complements personality guide
+Cat Toys,ai_answer,Catnip safety for kittens,are catnip toys safe for kittens,low,1,Factual yes/no + explanation; top AI answer format
+Cat Toys,ai_answer,Daily cat playtime recommendation,how long should you play with a cat each day,low,1,Clear numerical answer AI models cite; high volume
+Dog Supplies,educational,Dog crate selection guide,best dog crates uk 2026 buying guide,medium,1,No crate content despite training leads/collars coverage; natural extension
+Dog Supplies,ai_answer,Dog harness measurement guide,how to measure a dog for a harness uk,low,1,Step-by-step measurement content perfect for AI extraction; high volume
+Dog Supplies,ai_answer,Dog crate sizing chart,what size dog crate do i need,low,1,Quantifiable answer with breed-size table; top snippet format
+Indoor Cats,educational,Indoor cat litter guide,indoor cat litter training guide uk,low,1,No comprehensive litter box guide for indoor-only cats; high search volume topic
+Indoor Cats,educational,Indoor cat cat tree guide,best cat trees for indoor cats uk 2026,low,1,Vertical space is critical for indoor cats; product-focused gap with buying intent
+Indoor Cats,educational,Indoor cat mental health guide,indoor cat mental health and wellbeing,low,1,Stress and anxiety in house cats is underserved; strong AI-citation potential
+Indoor Cats,educational,Indoor cat transition guide,how to transition outdoor cat to indoor uk,low,1,Common UK concern with rescue cats; high editorial value
+Indoor Cats,educational,Indoor cat catio guide,indoor cat window perch and catio guide uk,low,1,Catios are trending in UK; combines safety + enrichment topics
+Indoor Cats,educational,Indoor cat health risks guide,indoor cat health risks vs outdoor cats uk,low,1,Comparative health data creates unique reference content
+Indoor Cats,educational,Indoor cat breeds guide,indoor cat breed guide uk: best breeds for flats,low,1,Breed-specific indoor content has low competition and high intent
+Indoor Cats,educational,Indoor cat multi-cat guide,multi-cat indoor household management guide,low,1,Managing multiple indoor cats is distinct from general multi-pet content
+Indoor Cats,ai_answer,Indoor cat alone time limits,how long can an indoor cat be left alone,low,1,Direct factual answer AI models seek; currently no concise answer in cluster
+Indoor Cats,ai_answer,Indoor cat vaccination requirements UK,do indoor cats need vaccinations uk,low,1,UK-specific factual query with definitive answer; high AI-citation fit
+Indoor Cats,ai_answer,Indoor cat space requirements,how much space does an indoor cat need,low,1,Quantifiable answer (sq ft/metres) ideal for AI extraction
+Indoor Cats,ai_answer,Indoor vs outdoor cat lifespan comparison,indoor cat lifespan vs outdoor cat uk,low,1,Statistical comparison AI models frequently cite; unique data point
+Indoor Cats,ai_answer,Indoor cat door meowing behaviour,why does my indoor cat meow at the door,low,1,Behavioural query with structured answer format; high search volume
+Pet Care,educational,New pet owner essentials,new pet owner checklist uk 2026,medium,1,Foundational guide missing; high search volume and AI-citation potential
+Pet Care,educational,UK pet ownership costs,pet care cost calculator uk 2026,medium,1,Interactive/data-heavy content with UK pricing; unique value proposition
+Pet Care,educational,Cat vs dog decision guide,how to choose between a cat and a dog uk,medium,1,High-volume query with structured comparison format; ideal for AI
+Pet Care,educational,UK microchipping law guide,pet microchipping uk law 2024 explained,medium,1,Legal requirement content creates authority; high citation value
+Pet Care,educational,Pet obesity prevention,pet obesity uk statistics and prevention guide,medium,1,Data-rich content with UK statistics; high AI-citation potential
+Pet Care,ai_answer,Annual dog ownership cost UK,how much does it cost to own a dog per year uk 2026,medium,1,Quantifiable answer with UK data; top AI-cited query format
+Pet Care,ai_answer,Annual cat ownership cost UK,how much does it cost to own a cat per year uk 2026,medium,1,Companion to dog cost guide; definitive data-point content
+Pet Care,ai_answer,UK pet vaccination schedule,what vaccinations do pets need uk,medium,1,Factual reference content AI models prioritise
+Pet Care,uk_specific,UK pet population data,uk pet ownership statistics 2026,high,1,Statistical reference page AI models cite frequently; high authority
+Cat Toys,educational,Cat puzzle feeder guide UK,cat puzzle feeders uk 2026: best food puzzles,low,2,Distinct from toys; combines feeding + enrichment
+Cat Toys,educational,Cat laser toy safety guide UK,best cat laser toys uk: safety and recommendations,low,2,Safety-focused angle creates authority; addresses common concern
+Cat Toys,ai_answer,Bored cat toy recommendations,best type of toy for a bored cat,low,2,Decision-support content with structured options
+Cat Toys,uk_specific,UK cat toy safety standards,uk cat toy safety standards and regulations,medium,2,Regulatory reference content; high authority and citation value
+Cat Toys,uk_specific,UK cat toy retailers guide,where to buy cat toys uk: best shops online and in-store,medium,2,UK-specific retail landscape; combines value with local relevance
+Cat Toys,low_competition,Sensory toys for blind cats,cat toys for blind cats uk,low,2,Accessibility niche; extremely low competition
+Cat Toys,low_competition,Anxiety-relief cat toys,best cat toys for anxious cats uk,low,2,Growing awareness of feline anxiety; differentiating angle
+Dog Supplies,educational,Dog clothing and coats UK,dog coat and jacket guide uk 2026,medium,2,Seasonal product guide missing; high UK search volume in winter
+Dog Supplies,educational,Dog travel gear UK,dog travel accessories uk: car harness boot liner crate,medium,2,Multi-product travel guide; complements water bottle guide
+Dog Supplies,educational,Dog car seat protection UK,best dog car seat covers uk 2026,medium,2,Product guide gap; high commercial intent query
+Dog Supplies,ai_answer,Dog lead length selection,how to choose the right dog lead length,low,2,Decision-tree content AI models love; complements lead guide
+Dog Supplies,ai_answer,Dog toy material comparison,best material for dog toys: rubber vs rope vs nylon,low,2,Comparison format ideal for structured AI answers
+Dog Supplies,ai_answer,Dog toy replacement schedule,how often should i replace dog toys,low,2,Factual recommendation with clear timeframes; AI-friendly format
+Dog Supplies,uk_specific,British-made dog products guide,uk dog supply brands: british-made pet products,medium,2,Patriotic purchasing trend; unique angle with low competition
+Dog Supplies,uk_specific,UK dog supply price comparison,amazon uk vs pets at home dog supplies price comparison,medium,2,Price data creates citeable reference; high commercial intent
+Dog Supplies,low_competition,Dog supplies for apartment dogs,best dog supplies for flat living uk,low,2,Niche but growing UK urban dog ownership; low competition
+Dog Supplies,low_competition,Sustainable dog products UK,eco-friendly dog supplies uk 2026,low,2,Growing sustainability demand; differentiating angle
+Dog Supplies,low_competition,Budget dog supplies roundup,budget dog supplies uk under £20,low,2,Price-focused content; high intent and low competition
+Indoor Cats,uk_specific,UK cat law compliance,uk indoor cat regulations and microchipping law 2026,medium,2,Compulsory microchipping law (2024) + indoor cat implications; authoritative reference
+Indoor Cats,uk_specific,RSPCA indoor cat standards,rspca indoor cat welfare guidelines uk,medium,2,Citing official UK welfare body creates authority; few competitors cover this
+Indoor Cats,uk_specific,UK indoor cat insurance,indoor cat insurance uk comparison 2026,medium,2,UK-specific pricing and provider comparison; high commercial intent
+Indoor Cats,low_competition,Air purifiers for cat owners,best air purifier for homes with indoor cats uk,low,2,Niche crossover query; almost no competition in pet niche
+Indoor Cats,low_competition,Indoor cat weight reference chart,indoor cat weight chart by breed uk,low,2,Data-table format ideal for snippets; low competition
+Indoor Cats,low_competition,Indoor cat furniture protection,how to stop indoor cat scratching sofa uk,low,2,Specific problem-solution format; long-tail with intent
+Indoor Cats,low_competition,Weekly toy rotation plan,indoor cat toy rotation schedule weekly,low,2,Actionable schedule content; complementary to existing enrichment post
+Pet Care,educational,Senior pet care essentials,senior pet care guide uk: aging dogs and cats,medium,2,Growing demographic; age-specific advice with UK vet recommendations
+Pet Care,educational,Emergency pet care planning,pet emergency preparedness uk guide,medium,2,Underserved topic with strong editorial value
+Pet Care,educational,Pet adoption guide UK,adopting vs buying pets uk: what to consider,medium,2,Ethical/practical comparison content; strong editorial authority
+Pet Care,educational,UK pet travel guide,travelling with pets uk: car train and plane guide,medium,2,Comprehensive transport guide with UK-specific rules; low competition
+Pet Care,educational,Pet dental health,pet dental care guide uk: teeth cleaning for dogs and cats,medium,2,Cross-species dental care; underserved with high search intent
+Pet Care,ai_answer,UK vet visit frequency guide,how often should i take my pet to the vet uk,medium,2,Clear recommendation format ideal for AI answers
+Pet Care,ai_answer,Pet insurance value analysis UK,is pet insurance worth it uk 2026,medium,2,Decision-support content with UK market data
+Pet Care,uk_specific,UK dangerous dogs legislation,dangerous dogs act uk 2026 guide,high,2,Legal reference content; high citation value
+Pet Care,uk_specific,UK pet food standards,uk pet food regulations and labelling guide,high,2,Regulatory content with authority signals
+Pet Care,low_competition,New pet introduction guide,how to introduce a new pet to existing pets uk,low,2,Specific process content complementing multi-pet post
+Cat Toys,educational,DIY cat toy ideas,diy cat toys: safe homemade options uk,low,3,Budget-friendly content complements commercial guides
+Cat Toys,low_competition,Cat toy subscription boxes UK,best subscription cat toy boxes uk 2026,low,3,Recurring revenue angle; low competition niche
+Cat Toys,low_competition,Cat toy safety checklist,cat toy safety checklist printable uk,low,3,Downloadable/printable format; link-worthy resource
+Dog Supplies,educational,Eco-friendly dog waste bags UK,best dog poop bags uk 2026: eco-friendly options,medium,3,Environmental angle differentiator; low competition
+Dog Supplies,educational,Home agility equipment UK,dog agility equipment uk: home training setup guide,medium,3,Extends training category; niche with dedicated enthusiasts
+Dog Supplies,uk_specific,UK pet retailer comparison,pets at home vs independent pet shops uk comparison,medium,3,UK-specific retail landscape content; unique data
+Dog Supplies,low_competition,Accessible dog supplies guide,dog supplies for elderly owners uk,low,3,Underserved demographic; unique helpful content
+Pet Care,low_competition,UK pet subscription box reviews,best pet subscription boxes uk 2026,low,3,Commercial intent + low competition; product-comparison format
+Pet Care,low_competition,Pet-friendly workplace guide,pet-friendly office uk guide for employers,low,3,Niche but growing topic; unique angle

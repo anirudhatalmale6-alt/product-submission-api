@@ -1,0 +1,446 @@
+=====================================================================
+     GSC + GA4 ACTIVATION PACK  v2
+     pethubonline.com
+     For: Jason
+     Date: May 30, 2026
+=====================================================================
+
+Hi Jason,
+
+Thanks for your patience with the earlier connection attempts!
+Those authorization codes expired before I could use them (Google
+only gives a very short window). I have made this guide even
+clearer so we can get it right this time.
+
+The whole process takes about 2 minutes. You will be granting
+read-only access -- I will never be able to change anything on
+your site or in your Google account. I can only view search
+performance numbers and analytics data for pethubonline.com.
+
+There are two options below. Option A is the quick one (just
+paste a URL and send me a code). Option B is a no-time-pressure
+fallback if Option A does not work out.
+
+
+=====================================================================
+     BEFORE YOU BEGIN
+=====================================================================
+
+Make sure you:
+
+  -  Are signed into Google with the account that OWNS
+     pethubonline.com in Google Search Console.
+
+  -  Have a way to message me quickly (Freelancer chat is
+     perfect). Keep it open in another tab or on your phone.
+
+  -  Set aside 2 uninterrupted minutes. You will need to send
+     me a code within a few minutes of generating it.
+
+
+#################################################################
+#                                                               #
+#   IMPORTANT TIMING NOTE                                       #
+#                                                               #
+#   The code Google gives you expires in about 10 MINUTES.      #
+#   Last time the codes expired before I could use them.        #
+#                                                               #
+#   This time, please send the code to me right away --         #
+#   within 1-2 minutes of copying it. I will be standing by     #
+#   to process it immediately.                                  #
+#                                                               #
+#   If it expires again, no worries! We will just use the       #
+#   no-time-pressure Option B instead.                          #
+#                                                               #
+#################################################################
+
+
+=====================================================================
+     OPTION A  --  QUICK AUTHORIZATION CODE  (about 2 minutes)
+=====================================================================
+
+This is the fastest way. You paste a link, click a few buttons,
+copy a code, and send it to me. That is it.
+
+
+-----  STEP 1  --  Open the authorization link  -------------------
+
+Copy this ENTIRE link (it is very long -- make sure you get all
+of it from the very first "h" to the very last "t"):
+
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+
+https://accounts.google.com/o/oauth2/v2/auth?client_id=186781124335-p1elsceb29b6jh6meuobc527i16nionc.apps.googleusercontent.com&redirect_uri=http://localhost&response_type=code&scope=https://www.googleapis.com/auth/webmasters.readonly%20https://www.googleapis.com/auth/analytics.readonly&access_type=offline&prompt=consent
+
+.  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .
+
+Tip: Triple-click or click at the start, then Shift+click at the
+end to select the whole thing. Paste it into your browser's
+address bar and press Enter.
+
+
+-----  STEP 2  --  Choose your Google account  --------------------
+
+WHAT YOU WILL SEE:
+   A Google sign-in page asking "Choose an account" or showing
+   your Google profile picture. If you are already logged in,
+   it may skip straight to the consent screen.
+
+WHAT TO DO:
+   Select the Google account that owns pethubonline.com in
+   Google Search Console. If you only have one Google account,
+   just click on it.
+
+
+-----  STEP 3  --  The consent screen  ----------------------------
+
+WHAT YOU WILL SEE:
+   A screen from Google that says something like:
+
+      "[App name] wants to access your Google Account"
+
+   It will list two permissions:
+
+      (checkmark)  View your Search Console data
+                   (Search Console read-only)
+
+      (checkmark)  View your Google Analytics data
+                   (Analytics read-only)
+
+   There may be a note saying "This app isn't verified" with a
+   small "Advanced" link. This is normal for custom integrations.
+
+   IF YOU SEE "This app isn't verified":
+      1. Click "Advanced" (small text near the bottom)
+      2. Click "Go to [app name] (unsafe)" -- do not worry,
+         this is safe. Google shows this for any app that has
+         not gone through their review process, but we are only
+         requesting read-only access.
+
+WHAT TO DO:
+   Click "Allow" or "Continue" to grant the read-only access.
+   You may need to click "Allow" twice (once per permission).
+
+
+-----  STEP 4  --  The "broken" page (this is normal!)  -----------
+
+WHAT YOU WILL SEE:
+   Your browser will show an error page. It will say something
+   like:
+
+      "This site can't be reached"
+      "localhost refused to connect"
+      "ERR_CONNECTION_REFUSED"
+
+   *** THIS IS COMPLETELY NORMAL! ***
+
+   The page looks broken, but the important part is in the
+   ADDRESS BAR at the top of your browser, not on the page
+   itself. Do NOT close this tab.
+
+
+-----  STEP 5  --  Copy the code from the address bar  ------------
+
+WHAT YOU WILL SEE IN THE ADDRESS BAR:
+   A long URL that starts with http://localhost and contains
+   your authorization code. It looks like this:
+
+   http://localhost/?code=4/0AX4XPGzxxxxxxxxxxxxxxxxxxxxxx&scope=https...
+                         |                               |
+                         |<-------- COPY THIS PART ----->|
+                         |                               |
+                    starts after          stops BEFORE
+                    "code="               the "&" symbol
+
+   Here is a clearer breakdown:
+
+      http://localhost/?code=                    <-- do NOT copy this part
+      4/0AX4XPGzxxxxxxxxxxxxxxxxxxxxxx          <-- COPY THIS PART
+      &scope=https://www.googleapis...          <-- do NOT copy this part
+
+WHAT TO COPY:
+   Only the text between "code=" and the next "&" symbol.
+   It usually starts with "4/" and is about 40-80 characters.
+
+   Example (yours will look different):
+      4/0AX4XPGz2Bf3xHqKmT9Wd5sYz7R1P4nQvKj8bXcLmN0pQ
+
+HOW TO COPY IT:
+   1. Click in the address bar
+   2. Find "code=" in the URL
+   3. Select everything AFTER "code=" and BEFORE the "&"
+   4. Right-click and choose Copy (or press Ctrl+C)
+
+   Tip: You can also copy the ENTIRE address bar URL and send
+   it to me. I can extract the code myself. That is even easier!
+
+
+-----  STEP 6  --  Send it to me RIGHT AWAY  ----------------------
+
+#################################################################
+#                                                               #
+#   >>> SEND THE CODE (or the full URL) TO ME NOW <<<           #
+#                                                               #
+#   The clock is ticking! The code expires in ~10 minutes.      #
+#   Please paste it into our Freelancer chat immediately.       #
+#                                                               #
+#   I will be watching for your message and will process it     #
+#   within seconds.                                             #
+#                                                               #
+#################################################################
+
+You can send either:
+   (a) Just the code (the part after "code="), or
+   (b) The entire URL from the address bar -- I will extract
+       the code myself.
+
+Either way works perfectly!
+
+
+-----  DONE!  -----------------------------------------------------
+
+That is it for your part. Once I receive the code, everything
+else happens on my end automatically. You will not need to do
+this again -- the connection renews itself.
+
+
+=====================================================================
+     OPTION B  --  SERVICE ACCOUNT  (no time pressure at all)
+=====================================================================
+
+If Option A does not work (codes keep expiring, or you would
+rather not rush), this approach has ZERO time pressure. The
+credentials from a service account never expire.
+
+It takes a few more steps, but there is no rush at all. You can
+do it over the course of a day if you like.
+
+
+-----  STEP 1  --  Open Google Cloud Console  ---------------------
+
+   Go to: https://console.cloud.google.com/
+
+   Sign in with the Google account that owns pethubonline.com.
+
+   WHAT YOU WILL SEE:
+      The Google Cloud dashboard. It might look technical, but
+      you only need to do a few simple things here.
+
+
+-----  STEP 2  --  Create a project  ------------------------------
+
+   At the top of the page, you will see a project selector
+   (it might say "Select a project" or show an existing project
+   name).
+
+   1. Click on the project selector
+   2. Click "New Project" in the top right of the popup
+   3. Name it: PetHub Data Access
+   4. Click "Create"
+   5. Wait a moment, then make sure this new project is selected
+
+
+-----  STEP 3  --  Enable two APIs  -------------------------------
+
+   3a. In the search bar at the top, type:
+       Google Search Console API
+       Click on it in the results, then click "Enable"
+
+   3b. Go back to the search bar, type:
+       Google Analytics Data API
+       Click on it in the results, then click "Enable"
+
+
+-----  STEP 4  --  Create a service account  ----------------------
+
+   1. In the left menu, click "IAM & Admin"
+   2. Click "Service Accounts"
+   3. Click "+ Create Service Account" at the top
+   4. For the name, type: pethub-data-reader
+   5. Click "Create and Continue"
+   6. You will see "Grant this service account access to project"
+      -- just skip this by clicking "Continue"
+   7. You will see "Grant users access to this service account"
+      -- just skip this by clicking "Done"
+
+
+-----  STEP 5  --  Download the key file  -------------------------
+
+   1. You will see your new service account in the list.
+      Click on its email address (it looks like:
+      pethub-data-reader@pethub-data-access.iam.gserviceaccount.com)
+   2. Click the "Keys" tab at the top
+   3. Click "Add Key" then "Create new key"
+   4. Choose "JSON" and click "Create"
+   5. A .json file will automatically download to your computer.
+      Keep it safe -- this is the key file I need.
+
+
+-----  STEP 6  --  Send me the key file  --------------------------
+
+   Send me the downloaded .json file through Freelancer chat.
+   (Just drag and drop it into the chat, or use the attachment
+   button.)
+
+   There is NO time limit on this. Send it whenever you are ready.
+
+
+-----  STEP 7  --  Grant the service account access  --------------
+
+   After sending me the file, there are two more quick things:
+
+   7a.  ADD TO SEARCH CONSOLE:
+        Go to: https://search.google.com/search-console
+        Select pethubonline.com
+        Click Settings (gear icon) in the left menu
+        Click "Users and permissions"
+        Click "Add user"
+        Enter the service account email address:
+           pethub-data-reader@pethub-data-access.iam.gserviceaccount.com
+           (Use the exact email from Step 5 -- it is shown on
+           the service account page in Google Cloud Console)
+        Set permission to: Restricted
+        Click "Add"
+
+   7b.  ADD TO GOOGLE ANALYTICS:
+        Go to: https://analytics.google.com
+        Click the gear icon (Admin) at the bottom left
+        Under your property, click "Property Access Management"
+        Click the blue "+" button, then "Add users"
+        Enter the same service account email address
+        Set role to: Viewer
+        Uncheck "Notify new users by email" (service accounts
+           cannot receive email)
+        Click "Add"
+
+
+-----  DONE!  -----------------------------------------------------
+
+Once I have the .json key file and you have completed Step 7,
+everything is connected. No codes, no time limits, no expiration.
+
+
+=====================================================================
+     WHAT HAPPENS AFTER CONNECTION
+=====================================================================
+
+Once either Option A or Option B is complete, here is all the
+data that will start flowing into our pipeline for
+pethubonline.com:
+
+FROM GOOGLE SEARCH CONSOLE:
+
+   (1) Indexed Pages
+       How many of your pages Google has found and added to
+       its search index. This tells us if any pet product
+       pages are missing from Google.
+
+   (2) Impressions Per Query
+       How many times each search query (like "dog treats
+       online" or "best cat food") showed your site in
+       Google search results.
+
+   (3) Clicks Per Query
+       How many people actually clicked through to your site
+       from each search query. This shows which searches
+       bring you real visitors.
+
+   (4) Click-Through Rate (CTR) Per Page
+       The percentage of people who see your page in search
+       results and click on it. Low CTR means we can improve
+       your titles and descriptions to attract more clicks.
+
+   (5) Average Position Per Query
+       Where your site ranks on average for each search term.
+       Position 1-3 is the top of page one, 4-10 is the rest
+       of page one, 11+ is page two or beyond.
+
+   (6) Crawl Activity and Errors
+       How often Google's bots visit your site and whether
+       they encounter any errors (broken links, server
+       issues, etc.). We fix these so Google can access all
+       your pages smoothly.
+
+   (7) Mobile Usability Issues
+       Any problems Google detects when your site is viewed
+       on phones and tablets. Since most pet owners browse on
+       mobile, this is important for keeping visitors happy.
+
+   (8) Core Web Vitals
+       Google's speed and experience scores for your site.
+       These measure how fast your pages load, how quickly
+       they become interactive, and whether content shifts
+       around while loading. Good scores help your rankings.
+
+FROM GOOGLE ANALYTICS (GA4):
+
+   (9) Visitor Traffic
+       How many people visit your site, where they come from
+       (Google, social media, direct), and which pages they
+       view most.
+
+  (10) User Behavior
+       How long visitors stay, which products they look at,
+       and where they drop off. This helps us understand what
+       your customers are interested in.
+
+
+HOW THIS HELPS PETHUBONLINE.COM:
+
+   All of this data feeds into our SEO pipeline. It helps me:
+
+   -  Find which pet-related searches already bring you traffic
+      and double down on those
+
+   -  Discover new search terms pet owners use that your site
+      could rank for
+
+   -  Spot and fix any technical issues that hurt your rankings
+
+   -  Track your progress over time so you can see real results
+
+   You will NOT need to do anything else after this one-time
+   setup. The data flows automatically and the connection renews
+   itself forever.
+
+
+=====================================================================
+     QUICK REFERENCE  --  WHICH OPTION TO CHOOSE
+=====================================================================
+
+   OPTION A:  Paste a link, copy a code, send it fast
+              Best if you have 2 free minutes right now
+              and can message me immediately after
+
+   OPTION B:  Create a service account in Google Cloud
+              Best if you prefer no time pressure, or if
+              Option A codes keep expiring
+
+   Either option gives the exact same result: read-only data
+   access for pethubonline.com. Nothing on your site changes.
+
+
+=====================================================================
+     NEED HELP?
+=====================================================================
+
+   If anything looks different from what I described, or if you
+   get stuck at any step, just send me a screenshot and I will
+   walk you through it. There is no wrong answer here -- we will
+   get it sorted out together.
+
+   And remember: this is all read-only access. Your site, your
+   products, your settings -- nothing gets changed. I can only
+   look at the search and analytics numbers.
+
+
+=====================================================================
+     CONNECTION DETAILS (for reference)
+=====================================================================
+
+   GSC Site:       sc-domain:pethubonline.com
+   GA4 Property:   534511727
+   Access Level:   Read-only
+   Auto-renewal:   Yes (no repeat setup needed)
+
+=====================================================================
