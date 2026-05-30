@@ -1,0 +1,12 @@
+cluster,posts,avg_authority_density,avg_citation_confidence,quick_answer_pct,avg_snippet_readiness,avg_faq_density,avg_trust_depth,avg_source_quality,visibility_readiness_score,grade
+Cat Toys,5,76.7,44.4,100.0,19.3,11.5,66.7,18.0,52.8,C
+Dog Harnesses,4,75.0,76.5,25.0,0.0,23.9,66.7,86.2,51.2,C
+Dog Care,16,72.9,70.4,6.2,7.0,17.5,70.9,64.7,46.0,C
+Uncategorized,45,73.3,56.0,22.2,8.7,35.5,66.7,38.7,45.1,C
+Pet Care,2,66.7,55.0,0.0,38.8,33.9,66.7,37.5,44.6,C
+Dog Health,7,71.5,69.1,0.0,9.5,6.3,71.5,65.0,43.9,C
+Dog Supplies,29,71.3,53.4,20.7,17.2,14.1,66.7,36.6,43.0,C
+Dog Beds,15,82.2,55.6,6.7,6.0,8.9,68.9,40.3,41.9,C
+Indoor Cats,5,83.3,59.2,0.0,3.3,0.0,66.7,39.0,39.9,D
+Dog Food,5,83.3,44.8,0.0,6.6,14.8,73.4,26.0,39.5,D
+Cat Supplies,35,73.8,33.9,2.9,15.5,19.0,69.6,6.0,35.5,D

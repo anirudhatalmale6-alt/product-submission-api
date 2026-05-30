@@ -1,0 +1,144 @@
+=====================================================================
+   GSC + GA4 ACTIVATION PACK  --  pethubonline.com
+   For: Jason
+   Date: May 30, 2026
+=====================================================================
+
+Hi Jason,
+
+I need you to authorize a one-time Google connection so I can pull
+Search Console (GSC) and Google Analytics (GA4) data for pethubonline.com.
+This takes about 2 minutes. There is one critical timing requirement
+explained below.
+
+NOTE ON PREVIOUS ATTEMPTS: Earlier authorization codes expired before
+I could exchange them (Google codes only last about 10 minutes). This
+time, please send the code to me right away so I can use it before it
+expires.
+
+
+=====================================================================
+   OPTION A  --  AUTHORIZATION CODE  (Preferred, 2 minutes)
+=====================================================================
+
+STEP 1:  Copy this entire URL and paste it into your browser
+---------------------------------------------------------------
+
+https://accounts.google.com/o/oauth2/v2/auth?client_id=186781124335-p1elsceb29b6jh6meuobc527i16nionc.apps.googleusercontent.com&redirect_uri=http://localhost&response_type=code&scope=https://www.googleapis.com/auth/webmasters.readonly%20https://www.googleapis.com/auth/analytics.readonly&access_type=offline&prompt=consent
+
+---------------------------------------------------------------
+
+   Make sure you copy the FULL URL above (it is very long).
+   Use the Google account that owns pethubonline.com in GSC.
+
+
+STEP 2:  Google will ask you to sign in (if not already) and then
+         show a consent screen asking to grant read-only access to:
+           - Google Search Console (read-only)
+           - Google Analytics (read-only)
+
+         Click "Allow" or "Continue" to approve.
+
+
+STEP 3:  Your browser will redirect to a page that looks BROKEN.
+         You will see an error like "This site can't be reached" or
+         "localhost refused to connect."
+
+         THIS IS COMPLETELY NORMAL. Do not close the tab.
+
+
+STEP 4:  Look at the ADDRESS BAR of your browser. The URL will
+         look something like this:
+
+         http://localhost/?code=4/0AXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&scope=...
+
+         Copy EVERYTHING between "code=" and the "&" symbol.
+         That text is the authorization code.
+
+         Example of what to copy (yours will be different):
+         4/0AXEXXXXXXXXxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+STEP 5:  Send that code to me IMMEDIATELY.
+
+  *********************************************************************
+  *  CRITICAL:  The code expires in approximately 10 MINUTES.        *
+  *  Please send it to me as soon as you copy it. If more than       *
+  *  10 minutes pass, the code becomes unusable and we would need    *
+  *  to repeat these steps.                                          *
+  *********************************************************************
+
+
+WHAT HAPPENS NEXT:
+   Once I receive your code, I will exchange it for access tokens.
+   GSC and GA4 data will start flowing into our pipeline within
+   minutes. You will not need to do this again -- the connection
+   renews itself automatically.
+
+WHAT THIS GRANTS:
+   Read-only access to your GSC and GA4 data. I cannot modify your
+   site, change settings, or access anything beyond search performance
+   and analytics data.
+
+   GSC Site:     sc-domain:pethubonline.com
+   GA4 Property: 534511727
+
+
+=====================================================================
+   OPTION B  --  SERVICE ACCOUNT  (Fallback, if Option A fails again)
+=====================================================================
+
+If the authorization code expires again before I can use it, we have
+a backup approach using a Google Service Account. Here is how:
+
+1.  Go to https://console.cloud.google.com/
+    Sign in with the Google account that owns pethubonline.com.
+
+2.  Create a new project (or use an existing one).
+    Name it something like "PetHub Data Access".
+
+3.  Enable these two APIs in the project:
+      - Google Search Console API
+      - Google Analytics Data API
+
+4.  Go to "IAM & Admin" then "Service Accounts".
+    Click "Create Service Account".
+    Name it something like "pethub-data-reader".
+    Click "Create and Continue". Skip the optional role steps.
+    Click "Done".
+
+5.  Click on the new service account, go to the "Keys" tab.
+    Click "Add Key" then "Create New Key".
+    Choose JSON format. A .json file will download to your computer.
+
+6.  Send me that .json key file.
+
+7.  Grant the service account access to your properties:
+      a)  GSC: Go to https://search.google.com/search-console
+          Select pethubonline.com, go to Settings then Users and
+          Permissions. Add the service account email address
+          (it looks like: pethub-data-reader@yourproject.iam.gserviceaccount.com)
+          as a "Restricted" user.
+
+      b)  GA4: Go to https://analytics.google.com
+          Go to Admin, then Property Access Management for property 534511727.
+          Add the same service account email as a "Viewer".
+
+This approach avoids the code-expiration problem entirely because
+service account credentials do not expire.
+
+
+=====================================================================
+   SUMMARY
+=====================================================================
+
+   Preferred path:  Option A (paste the URL, send me the code fast)
+   Fallback path:   Option B (service account, no time pressure)
+
+   Either way, the result is the same: read-only GSC + GA4 data
+   flowing into our pipeline for pethubonline.com.
+
+   Let me know when you are ready and I will be standing by to
+   receive the code immediately.
+
+=====================================================================

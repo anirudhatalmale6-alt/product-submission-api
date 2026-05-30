@@ -1,0 +1,1374 @@
+[
+  {
+    "id": 8172,
+    "title": "Our Research Standards",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 8171,
+    "title": "Why PetHub Online Exists",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 7346,
+    "title": "Indoor Cat Diet and Nutrition: Feeding Guidelines for House Cats",
+    "categories": [
+      1413,
+      1397,
+      1391
+    ]
+  },
+  {
+    "id": 7345,
+    "title": "Indoor Cat Behaviour: Understanding and Managing Common Issues",
+    "categories": [
+      1413,
+      1397
+    ]
+  },
+  {
+    "id": 7344,
+    "title": "Creating a Cat-Friendly Home: Environmental Enrichment for Indoor Cats",
+    "categories": [
+      1413,
+      1397
+    ]
+  },
+  {
+    "id": 7343,
+    "title": "Indoor Cat Safety: Common Household Hazards for Cats",
+    "categories": [
+      1413,
+      1397,
+      1391
+    ]
+  },
+  {
+    "id": 7342,
+    "title": "Indoor Cat Exercise: Keeping House Cats Active and Healthy",
+    "categories": [
+      1487,
+      1413,
+      1397
+    ]
+  },
+  {
+    "id": 7341,
+    "title": "First Week with a New Puppy: A Day-by-Day Guide",
+    "categories": [
+      1489,
+      1397,
+      1442
+    ]
+  },
+  {
+    "id": 7340,
+    "title": "Puppy Teething Guide: Stages, Signs, and Soothing Tips",
+    "categories": [
+      1450,
+      1397,
+      1442
+    ]
+  },
+  {
+    "id": 7339,
+    "title": "Puppy Sleep Guide: How Much Sleep Puppies Need by Age",
+    "categories": [
+      1489,
+      1397,
+      1442
+    ]
+  },
+  {
+    "id": 7338,
+    "title": "Puppy-Proofing Your Home: A Room-by-Room Safety Guide",
+    "categories": [
+      1489,
+      1397,
+      1442
+    ]
+  },
+  {
+    "id": 7337,
+    "title": "Puppy Vaccination Schedule UK: What to Expect and When",
+    "categories": [
+      1450,
+      1391,
+      1442
+    ]
+  },
+  {
+    "id": 7336,
+    "title": "Dog Bed Safety: Avoiding Hazards and Choosing Non-Toxic Materials",
+    "categories": [
+      1401,
+      1450,
+      1397
+    ]
+  },
+  {
+    "id": 7335,
+    "title": "Seasonal Dog Bedding: Adjusting Comfort Through the Year",
+    "categories": [
+      1401,
+      1396,
+      1397
+    ]
+  },
+  {
+    "id": 7334,
+    "title": "Puppy Bed Training: Helping Your Dog Love Their Bed",
+    "categories": [
+      1401,
+      1397,
+      1442
+    ]
+  },
+  {
+    "id": 7333,
+    "title": "Dog Bed Placement Guide: Where to Put Your Dog\u2019s Bed",
+    "categories": [
+      1401,
+      1397
+    ]
+  },
+  {
+    "id": 7332,
+    "title": "How to Wash and Dry a Dog Bed Safely",
+    "categories": [
+      1401,
+      1397
+    ]
+  },
+  {
+    "id": 7177,
+    "title": "Cat Toy Terminology: Understanding Play Types and Toy Features",
+    "categories": [
+      1377,
+      1459,
+      1397
+    ]
+  },
+  {
+    "id": 7175,
+    "title": "Cat Supply Essentials Glossary: Understanding Cat Care Products",
+    "categories": [
+      1377,
+      1397
+    ]
+  },
+  {
+    "id": 7174,
+    "title": "Dog Bed Terminology: Materials, Types, and Sizing Terms Explained",
+    "categories": [
+      1401,
+      1376
+    ]
+  },
+  {
+    "id": 7172,
+    "title": "Dog Food Glossary: Understanding Ingredients and Nutrition Labels",
+    "categories": [
+      1467,
+      1376
+    ]
+  },
+  {
+    "id": 7170,
+    "title": "Dog Health Terminology: Understanding Common Veterinary and Care Terms",
+    "categories": [
+      1450,
+      1376,
+      1397
+    ]
+  },
+  {
+    "id": 7169,
+    "title": "Puppy Care Glossary: Essential Terms for New Puppy Owners",
+    "categories": [
+      1489,
+      1376,
+      1442
+    ]
+  },
+  {
+    "id": 7167,
+    "title": "Indoor Cat Terminology: A Complete Glossary for Cat Owners",
+    "categories": [
+      1377,
+      1413,
+      1397
+    ]
+  },
+  {
+    "id": 6052,
+    "title": "Low-Mobility Enrichment: Mental Stimulation for Dogs with Limited Movement",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 6050,
+    "title": "Toy Overstimulation Recovery: Calming Down an Overexcited Dog",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 6049,
+    "title": "Sensory Enrichment for Dogs: Engaging All Five Senses Through Play",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 6048,
+    "title": "Confidence-Building Play: Helping Shy and Fearful Dogs Through Toys",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 6047,
+    "title": "Play Recovery After Surgery: Gentle Enrichment for Healing Dogs",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 6046,
+    "title": "Dog Toy Hygiene Schedules: A Practical Cleaning Timetable",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 6045,
+    "title": "Safe Multi-Dog Toy Management: Preventing Resource Guarding",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 6044,
+    "title": "Rotating Puzzle Complexity: Progressive Challenge for Smart Dogs",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 6042,
+    "title": "Enrichment by Breed Group: Tailoring Play to Your Dog's Instincts",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 6039,
+    "title": "Dog Toy Anxiety Reduction: Using Toys to Calm Nervous Dogs",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5950,
+    "title": "Dog Toy Durability Guide: What Lasts and What Does Not",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5946,
+    "title": "Dog Toy Materials Compared: Rubber, Rope, Plush, and Nylon",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5942,
+    "title": "Cognitive Enrichment for Senior Dogs: Gentle Play for Ageing Minds",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5938,
+    "title": "Enrichment Schedules for Dogs: Structuring Daily Play and Mental Work",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5935,
+    "title": "Dog Toy Storage and Organisation: Keeping Toys Clean and Accessible",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5934,
+    "title": "Crate and Play Enrichment: Keeping Dogs Happy in Confined Spaces",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5933,
+    "title": "Safe Tug Play with Dogs: Rules, Benefits, and Common Mistakes",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5932,
+    "title": "Scent-Game Enrichment for Dogs: Using Smell to Engage Your Dog",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5931,
+    "title": "Signs of Toy Overstimulation in Dogs: When Play Becomes Too Much",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5930,
+    "title": "Dog Toy Safety by Breed Size: Choosing the Right Size Toy",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5523,
+    "title": "Dog Training Equipment Explained: Tools, Uses, and What to Avoid",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5522,
+    "title": "Orthopaedic Care for Dogs: Joint Health, Mobility, and Support",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5521,
+    "title": "Pet Health Terminology: A Guide to Common Veterinary Terms",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5520,
+    "title": "Dog Health Basics: Common Conditions, Prevention, and When to See a Vet",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5519,
+    "title": "Indoor Cat Care: A Complete Guide to Keeping House Cats Happy and Healthy",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5512,
+    "title": "Dog Behaviour Explained: Understanding Your Dog's Body Language and Actions",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5511,
+    "title": "Pet Enrichment Explained: Types, Benefits, and Practical Ideas",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5510,
+    "title": "Dog Bed Sizing Guide: How to Measure Your Dog and Choose the Right Fit",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5509,
+    "title": "Pet Toy Safety: Understanding Materials, Hazards, and Standards",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5508,
+    "title": "Puppy Development Stages: A Complete Guide from Birth to Maturity",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5483,
+    "title": "Dog Toy Lifespan: When to Replace Toys and How to Extend Their Life",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5476,
+    "title": "Mental Stimulation Toys for Dogs: Puzzles, Games, and Brain Work",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5473,
+    "title": "Senior Dog Toys: Gentle Play Options for Older Dogs",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5471,
+    "title": "Dog Boredom Prevention: Signs, Solutions, and Enrichment Ideas",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5469,
+    "title": "Dog Toy Rotation: How to Keep Your Dog Interested and Engaged",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5467,
+    "title": "Pet Feeding Guide: Understanding Portions, Schedules, and Methods",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5464,
+    "title": "Pet Grooming Glossary: Understanding Grooming Terms and Techniques",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5462,
+    "title": "Dog Training Terminology Explained: Key Concepts for New Owners",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5460,
+    "title": "Pet Nutrition Terminology: A Guide to Common Terms on Pet Food Labels",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5458,
+    "title": "Cat Scratching Behaviour Explained: Why Cats Scratch and How to Help",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5425,
+    "title": "Dog Toys FAQ: Common Questions Answered",
+    "categories": [
+      1376,
+      1441
+    ]
+  },
+  {
+    "id": 5424,
+    "title": "Aggressive Chewer Guide: Safe Toys for Power Chewers",
+    "categories": [
+      1376,
+      1441
+    ]
+  },
+  {
+    "id": 5423,
+    "title": "Dog Toy Enrichment: Beyond Basic Fetch",
+    "categories": [
+      1376,
+      1441
+    ]
+  },
+  {
+    "id": 5422,
+    "title": "Indoor vs Outdoor Dog Toys: Choosing the Right Type",
+    "categories": [
+      1376,
+      1441
+    ]
+  },
+  {
+    "id": 5421,
+    "title": "Puppy-Safe Dog Toys: What to Look For and What to Avoid",
+    "categories": [
+      1376,
+      1441
+    ]
+  },
+  {
+    "id": 5420,
+    "title": "Dog Toy Cleaning Guide: How to Keep Toys Hygienic",
+    "categories": [
+      1376,
+      1441
+    ]
+  },
+  {
+    "id": 5419,
+    "title": "Cat Care Basics: A Glossary for New Cat Owners",
+    "categories": [
+      1377,
+      1397
+    ]
+  },
+  {
+    "id": 5418,
+    "title": "Dog Harness Types Explained: Finding the Right Fit",
+    "categories": [
+      1422,
+      1376
+    ]
+  },
+  {
+    "id": 5417,
+    "title": "Puppy Care Essentials: Key Terms Every New Owner Should Know",
+    "categories": [
+      1489,
+      1442
+    ]
+  },
+  {
+    "id": 5416,
+    "title": "Dog Bed Types Explained: A Complete Glossary",
+    "categories": [
+      1401,
+      1376
+    ]
+  },
+  {
+    "id": 5415,
+    "title": "Dog Play Styles Explained: Understanding How Your Dog Plays",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5414,
+    "title": "Cat Toy Types Explained: A Complete Glossary",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5296,
+    "title": "Best Indoor Cat Toys UK (2026): Complete Guide for House Cats",
+    "categories": [
+      1
+    ]
+  },
+  {
+    "id": 5033,
+    "title": "How to Choose the Right Cat Toy for Your Cat's Personality",
+    "categories": [
+      1459
+    ]
+  },
+  {
+    "id": 5036,
+    "title": "Understanding Cat Play Behaviour: What Different Play Styles Mean",
+    "categories": [
+      1459
+    ]
+  },
+  {
+    "id": 5032,
+    "title": "Cat Toys FAQ: Common Questions Answered",
+    "categories": [
+      1459
+    ]
+  },
+  {
+    "id": 5035,
+    "title": "Cat Enrichment Beyond Toys: Creating a Stimulating Home",
+    "categories": [
+      1459
+    ]
+  },
+  {
+    "id": 5034,
+    "title": "Cat Toy Rotation: How to Keep Toys Fresh and Engaging",
+    "categories": [
+      1459
+    ]
+  },
+  {
+    "id": 4792,
+    "title": "Puppy Socialisation: A Complete Timeline Guide",
+    "categories": [
+      1376,
+      1442
+    ]
+  },
+  {
+    "id": 4791,
+    "title": "How to Choose the Right Dog Training Treats",
+    "categories": [
+      1376,
+      1474
+    ]
+  },
+  {
+    "id": 4790,
+    "title": "DIY Dog Toys: Safe Homemade Options",
+    "categories": [
+      1376,
+      1441
+    ]
+  },
+  {
+    "id": 4789,
+    "title": "Best Types of Dog Toys for Different Play Styles",
+    "categories": [
+      1376,
+      1441
+    ]
+  },
+  {
+    "id": 4788,
+    "title": "Mental Stimulation for Dogs: Beyond Physical Exercise",
+    "categories": [
+      1376,
+      1441
+    ]
+  },
+  {
+    "id": 4787,
+    "title": "Dog Toy Safety: What Every Owner Needs to Know",
+    "categories": [
+      1376,
+      1441
+    ]
+  },
+  {
+    "id": 4786,
+    "title": "Where to Place Your Dog's Bed: Location and Comfort Tips",
+    "categories": [
+      1401,
+      1376
+    ]
+  },
+  {
+    "id": 4785,
+    "title": "How to Wash and Maintain Your Dog's Bed",
+    "categories": [
+      1401,
+      1376
+    ]
+  },
+  {
+    "id": 4784,
+    "title": "Dog Bed Materials Explained: Foam, Memory Foam, and More",
+    "categories": [
+      1401,
+      1376
+    ]
+  },
+  {
+    "id": 4783,
+    "title": "How to Choose the Right Dog Bed Size",
+    "categories": [
+      1401,
+      1376
+    ]
+  },
+  {
+    "id": 4573,
+    "title": "Seasonal Pet Safety: Protecting Pets Through the Year",
+    "categories": [
+      1397
+    ]
+  },
+  {
+    "id": 4570,
+    "title": "First-Time Dog Owner Essentials: What You Need to Know",
+    "categories": [
+      1489,
+      1376,
+      1442
+    ]
+  },
+  {
+    "id": 4576,
+    "title": "Multi-Pet Household Tips: Living with Dogs and Cats Together",
+    "categories": [
+      1397
+    ]
+  },
+  {
+    "id": 4574,
+    "title": "Pet Hydration Guide: How Much Water Does Your Pet Need?",
+    "categories": [
+      1376,
+      1397
+    ]
+  },
+  {
+    "id": 4571,
+    "title": "Pet First Aid Basics: What Every Owner Should Know",
+    "categories": [
+      1376,
+      1397
+    ]
+  },
+  {
+    "id": 4568,
+    "title": "Dog Dental Health: A Practical Care Guide",
+    "categories": [
+      1489,
+      1450,
+      1376
+    ]
+  },
+  {
+    "id": 4566,
+    "title": "Seasonal Dog Care: Keeping Your Dog Safe Year-Round",
+    "categories": [
+      1489,
+      1376
+    ]
+  },
+  {
+    "id": 4563,
+    "title": "Dog Grooming Basics: A Complete Guide for Owners",
+    "categories": [
+      1489,
+      1376
+    ]
+  },
+  {
+    "id": 4415,
+    "title": "Cat Toy Safety Guide: What Every Owner Should Know",
+    "categories": [
+      1377,
+      1459,
+      1397
+    ]
+  },
+  {
+    "id": 4406,
+    "title": "Best Interactive Cat Toys for Indoor Cats: Engagement Guide",
+    "categories": [
+      1377,
+      1459
+    ]
+  },
+  {
+    "id": 4414,
+    "title": "Harness vs Collar: Which Is Better for Your Dog?",
+    "categories": [
+      1489,
+      1422,
+      1376
+    ]
+  },
+  {
+    "id": 4413,
+    "title": "How to Measure Your Dog for a Harness: Step-by-Step Guide",
+    "categories": [
+      1489,
+      1422,
+      1376
+    ]
+  },
+  {
+    "id": 4412,
+    "title": "No-Pull Dog Harness Guide: How They Work and When to Use One",
+    "categories": [
+      1422,
+      1376
+    ]
+  },
+  {
+    "id": 4411,
+    "title": "Dog Harnesses: The Complete Guide to Types, Fitting, and Safety",
+    "categories": [
+      1489,
+      1422,
+      1376
+    ]
+  },
+  {
+    "id": 4410,
+    "title": "Cat Enrichment Activities Beyond Toys: Complete Guide",
+    "categories": [
+      1377,
+      1459,
+      1397
+    ]
+  },
+  {
+    "id": 4409,
+    "title": "Kitten vs Adult Cat Toys: Age-Appropriate Play Guide",
+    "categories": [
+      1377,
+      1459,
+      1397
+    ]
+  },
+  {
+    "id": 4408,
+    "title": "How Often Should You Replace Cat Toys? A Practical Guide",
+    "categories": [
+      1377,
+      1459,
+      1397
+    ]
+  },
+  {
+    "id": 4407,
+    "title": "DIY Cat Toys: Safe Homemade Options Your Cat Will Love",
+    "categories": [
+      1377,
+      1459
+    ]
+  },
+  {
+    "id": 4335,
+    "title": "Best Cat Litter Disposal UK (2026) \u2013 Waste Management Guide",
+    "categories": [
+      1377,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4328,
+    "title": "Best Self-Cleaning Litter Trays UK (2026) \u2013 Automatic Options",
+    "categories": [
+      1377,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4321,
+    "title": "Best Cat Litter UK (2026) \u2013 Types &#038; Comparison Guide",
+    "categories": [
+      1377,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4314,
+    "title": "Best Cat Litter Trays UK (2026) \u2013 Complete Guide",
+    "categories": [
+      1377,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4307,
+    "title": "Best Wall-Mounted Cat Scratchers UK (2026) \u2013 Space Saving",
+    "categories": [
+      1377,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4300,
+    "title": "Best Cardboard Cat Scratchers UK (2026) \u2013 Budget Friendly",
+    "categories": [
+      1377,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4293,
+    "title": "Best Cat Trees UK (2026) \u2013 Climbing & Scratching Towers",
+    "categories": [
+      1377,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4286,
+    "title": "Best Cat Scratching Posts UK (2026) \u2013 Complete Guide",
+    "categories": [
+      1377,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4279,
+    "title": "Best Cat Harnesses UK (2026) \u2013 Safe Walking Guide",
+    "categories": [
+      1377,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4272,
+    "title": "Best Cat ID Tags UK (2026) \u2013 Identification Guide",
+    "categories": [
+      1377,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4265,
+    "title": "Best Cat GPS Trackers UK (2026) \u2013 Location Tracking Guide",
+    "categories": [
+      1377,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4258,
+    "title": "Best Cat Collars UK (2026) \u2013 Complete Safety Guide",
+    "categories": [
+      1377,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4251,
+    "title": "Best Cat Shampoo UK (2026) \u2013 When & How to Bathe",
+    "categories": [
+      1377,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4244,
+    "title": "Best Cat Nail Clippers UK (2026) \u2013 Safe Trimming Guide",
+    "categories": [
+      1377,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4237,
+    "title": "Best Cat Brushes UK (2026) \u2013 Guide by Coat Type",
+    "categories": [
+      1377,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4230,
+    "title": "Best Cat Grooming Supplies UK (2026) \u2013 Complete Guide",
+    "categories": [
+      1377,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4223,
+    "title": "Best Cat Window Perches UK (2026) \u2013 Sunning & Bird Watching",
+    "categories": [
+      1377,
+      1396,
+      1379
+    ]
+  },
+  {
+    "id": 4216,
+    "title": "Best Cat Radiator Beds UK (2026) \u2013 Hook-On Warmth Guide",
+    "categories": [
+      1377,
+      1396,
+      1379
+    ]
+  },
+  {
+    "id": 4209,
+    "title": "Best Heated Cat Beds UK (2026) \u2013 Winter Warmth Guide",
+    "categories": [
+      1377,
+      1396,
+      1379
+    ]
+  },
+  {
+    "id": 4202,
+    "title": "Best Cat Beds UK (2026) \u2013 Complete Guide",
+    "categories": [
+      1377,
+      1396,
+      1379
+    ]
+  },
+  {
+    "id": 4195,
+    "title": "Best Cat Toys for Indoor Cats UK (2026) \u2013 Enrichment Guide",
+    "categories": [
+      1377,
+      1459,
+      1413
+    ]
+  },
+  {
+    "id": 4188,
+    "title": "Best Catnip Toys UK (2026) \u2013 What Works and Why",
+    "categories": [
+      1377,
+      1459,
+      1379
+    ]
+  },
+  {
+    "id": 4181,
+    "title": "Best Interactive Cat Toys UK (2026) \u2013 Wand & Puzzle Guide",
+    "categories": [
+      1377,
+      1459,
+      1460
+    ]
+  },
+  {
+    "id": 4174,
+    "title": "Best Cat Toys UK (2026) \u2013 Complete Guide",
+    "categories": [
+      1377,
+      1459,
+      1379
+    ]
+  },
+  {
+    "id": 4167,
+    "title": "Best Dog Water Bottles UK (2026) \u2013 Travel Hydration Guide",
+    "categories": [
+      1376,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4160,
+    "title": "Best Elevated Dog Bowls UK (2026) \u2013 Raised Feeder Guide",
+    "categories": [
+      1376,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4153,
+    "title": "Best Slow Feeder Dog Bowls UK (2026) \u2013 Prevent Speed Eating",
+    "categories": [
+      1376,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4146,
+    "title": "Best Dog Bowls and Feeding UK (2026) \u2013 Complete Guide",
+    "categories": [
+      1376,
+      1397,
+      1379
+    ]
+  },
+  {
+    "id": 4139,
+    "title": "Best Dog Training Leads UK (2026) \u2013 Long Lines & Harnesses",
+    "categories": [
+      1376,
+      1379,
+      1474
+    ]
+  },
+  {
+    "id": 4132,
+    "title": "Best Puppy Training Guide UK (2026) \u2013 First Year Essentials",
+    "categories": [
+      1376,
+      1442,
+      1474
+    ]
+  },
+  {
+    "id": 4125,
+    "title": "Best Dog Training Treats UK (2026) \u2013 Reward Guide",
+    "categories": [
+      1380,
+      1376,
+      1474
+    ]
+  },
+  {
+    "id": 4118,
+    "title": "Best Dog Training and Behaviour UK (2026) \u2013 Complete Guide",
+    "categories": [
+      1380,
+      1376,
+      1474
+    ]
+  },
+  {
+    "id": 4110,
+    "title": "Best Dog Joint Supplements UK (2026) \u2013 Mobility Support Guide",
+    "categories": [
+      1450,
+      1376,
+      1455
+    ]
+  },
+  {
+    "id": 4103,
+    "title": "Best Dog Flea Treatment UK (2026) \u2013 Prevention Guide",
+    "categories": [
+      1450,
+      1376,
+      1391
+    ]
+  },
+  {
+    "id": 4096,
+    "title": "Best Dog Dental Care UK (2026) \u2013 Teeth Cleaning Guide",
+    "categories": [
+      1450,
+      1376,
+      1391
+    ]
+  },
+  {
+    "id": 4089,
+    "title": "Best Dog Health and Care UK (2026) \u2013 Complete Guide",
+    "categories": [
+      1450,
+      1376,
+      1391
+    ]
+  },
+  {
+    "id": 4078,
+    "title": "Best Dog Nail Clippers UK (2026) \u2013 Trimming & Grinding Guide",
+    "categories": [
+      1489,
+      1376,
+      1379
+    ]
+  },
+  {
+    "id": 4071,
+    "title": "Best Dog Shampoo UK (2026) \u2013 Ingredients & Safety Guide",
+    "categories": [
+      1489,
+      1376,
+      1379
+    ]
+  },
+  {
+    "id": 4064,
+    "title": "Best Dog Brushes UK (2026) \u2013 Guide by Coat Type",
+    "categories": [
+      1489,
+      1376,
+      1379
+    ]
+  },
+  {
+    "id": 4057,
+    "title": "Best Dog Grooming Supplies UK (2026) \u2013 Complete Guide",
+    "categories": [
+      1489,
+      1376,
+      1379
+    ]
+  },
+  {
+    "id": 4049,
+    "title": "Best Puppy Collars UK (2026) \u2013 First Collar & Harness Guide",
+    "categories": [
+      1376,
+      1379,
+      1442
+    ]
+  },
+  {
+    "id": 4042,
+    "title": "Best Dog Leads UK (2026) \u2013 Walking & Training Lead Guide",
+    "categories": [
+      1376,
+      1379,
+      1474
+    ]
+  },
+  {
+    "id": 4034,
+    "title": "Best No-Pull Dog Harnesses UK (2026) \u2013 Training & Comfort Guide",
+    "categories": [
+      1422,
+      1376,
+      1379
+    ]
+  },
+  {
+    "id": 4027,
+    "title": "Best Dog Collars and Harnesses UK (2026) \u2013 Complete Guide",
+    "categories": [
+      1422,
+      1376,
+      1379
+    ]
+  },
+  {
+    "id": 4018,
+    "title": "Best Puppy Beds UK (2026) \u2013 First Bed & Crate Training Guide",
+    "categories": [
+      1401,
+      1376,
+      1442
+    ]
+  },
+  {
+    "id": 4011,
+    "title": "Best Cooling Dog Beds UK (2026) \u2013 Temperature Regulation Guide",
+    "categories": [
+      1401,
+      1376,
+      1379
+    ]
+  },
+  {
+    "id": 4004,
+    "title": "Best Orthopaedic Dog Beds UK (2026) \u2013 Joint Support Guide",
+    "categories": [
+      1401,
+      1376,
+      1455
+    ]
+  },
+  {
+    "id": 3996,
+    "title": "Best Dog Beds UK (2026) \u2013 Complete Guide & Honest Reviews",
+    "categories": [
+      1401,
+      1376,
+      1379
+    ]
+  },
+  {
+    "id": 3960,
+    "title": "Best Puppy Toys UK (2026) \u2013 Teething & First Toys Guide",
+    "categories": [
+      1376,
+      1441,
+      1442
+    ]
+  },
+  {
+    "id": 3959,
+    "title": "Best Interactive Dog Toys UK (2026) \u2013 Puzzle & Enrichment Guide",
+    "categories": [
+      1376,
+      1441,
+      1460
+    ]
+  },
+  {
+    "id": 3957,
+    "title": "Best Indestructible Dog Toys UK (2026) \u2013 Tough Toys for Heavy Chewers",
+    "categories": [
+      1376,
+      1441,
+      1379
+    ]
+  },
+  {
+    "id": 3956,
+    "title": "Best Dog Toys UK (2026) \u2013 Complete Guide & Honest Reviews",
+    "categories": [
+      1376,
+      1441,
+      1379
+    ]
+  },
+  {
+    "id": 3839,
+    "title": "Best Puppy Food UK (2026) - Growth-Stage Nutrition Guide",
+    "categories": [
+      1467,
+      1376,
+      1442
+    ]
+  },
+  {
+    "id": 3838,
+    "title": "Dry vs Wet Dog Food UK - An Honest Comparison Guide",
+    "categories": [
+      1467,
+      1376,
+      1379
+    ]
+  },
+  {
+    "id": 3837,
+    "title": "Best Dry Dog Food UK (2026) - Evidence-Based Guide",
+    "categories": [
+      1467,
+      1376,
+      1379
+    ]
+  },
+  {
+    "id": 3836,
+    "title": "Best Dog Food UK (2026) - Complete Buying Guide",
+    "categories": [
+      1467,
+      1376,
+      1379
+    ]
+  },
+  {
+    "id": 696,
+    "title": "Essential Cat Supplies for Cat Owners - Number 1 Must-Haves",
+    "categories": [
+      1380,
+      1377
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Dog Toys UK (2026) \u2013 Essential Guide for Pet Owners",
+    "categories": [
+      1376,
+      1379
+    ]
+  }
+]

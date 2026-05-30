@@ -1,0 +1,12 @@
+cluster,posts,total_target_queries,total_supporting,total_faq,total_ai_answer,total_competitor,total_queries,avg_queries_per_post
+Cat Supplies,35,35,104,494,70,38,741,21.2
+Cat Toys,5,5,15,53,10,5,88,17.6
+Dog Beds,15,15,44,211,30,15,315,21.0
+Dog Care,16,16,43,200,32,14,305,19.1
+Dog Food,5,5,15,66,10,8,104,20.8
+Dog Harnesses,4,4,9,62,8,1,84,21.0
+Dog Health,7,7,21,94,14,9,145,20.7
+Dog Supplies,29,29,87,369,58,33,576,19.9
+Indoor Cats,5,5,15,67,10,8,105,21.0
+Pet Care,2,2,6,26,4,2,40,20.0
+Uncategorized,45,45,135,616,90,54,940,20.9
