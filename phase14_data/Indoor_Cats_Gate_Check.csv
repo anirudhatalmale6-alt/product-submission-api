@@ -1,0 +1,13 @@
+post_id,title,word_count,h2_count,h3_count,definition_block,direct_answer,lists,faq,sources,affiliate_links,images,internal_links,meta_description,gate_score,gate_pass
+14199,"Indoor Cat Health Monitoring",1618,10,21,0,0,1,1,1,1,0,1,0,8,FAIL
+14212,"Indoor Cat Mental Stimulation",1503,10,24,1,1,1,1,1,1,0,1,0,10,PASS
+14209,"Multi-Level Cat Environment",1761,10,21,0,0,1,1,1,1,0,1,0,8,FAIL
+14216,"Catio Planning Guide",1545,10,21,0,1,1,1,1,1,0,1,0,9,FAIL
+14194,"Cat Shelving Guide",1496,10,21,0,1,1,1,1,1,0,1,0,8,FAIL
+14204,"Indoor Cat Enrichment Calendar",1652,10,22,0,1,1,1,1,1,0,1,0,9,FAIL
+14201,"Indoor Cat Weight Management",2224,10,30,0,1,1,1,1,1,0,1,0,9,FAIL
+14190,"Indoor Cat Exercise Guide",1685,10,21,0,0,1,1,1,1,0,1,0,8,FAIL
+12756,"Catio Kits UK: Complete Guide to Outdoor Cat Enclosures",1648,15,8,1,0,1,1,1,0,0,1,0,8,FAIL
+12757,"DIY Catio Plans: How to Build a Cat Enclosure in the UK",1698,15,7,0,0,1,1,1,0,0,1,0,7,FAIL
+12758,"Indoor Cat Exercise: Daily Routines to Keep UK Cats Active",1700,13,8,0,0,1,1,1,0,0,1,0,7,FAIL
+12816,"Catios UK: Outdoor Cat Enclosures Guide and Comparison (2026)",2019,16,13,1,1,1,1,1,0,0,1,0,9,FAIL

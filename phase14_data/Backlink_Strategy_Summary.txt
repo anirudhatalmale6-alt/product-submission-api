@@ -1,0 +1,228 @@
+============================================================
+BACKLINK PRIORITY TIERS STRATEGY SUMMARY
+PetHub Online (pethubonline.com) - Phase 14
+============================================================
+Generated: 2026-05-31
+Total Targets: 50
+
+============================================================
+TARGETS BY TIER
+============================================================
+
+TIER 1 - Highest Authority: 13 targets
+  - 5 UK veterinary/welfare charities (PDSA, Blue Cross, RSPCA, Cats Protection, Dogs Trust)
+  - 2 UK veterinary professional bodies (BVA, RCVS)
+  - 1 UK government domain (gov.uk DEFRA)
+  - 3 UK pet publications (Petplan, Your Cat, Dogs Today)
+  - 1 Veterinary research platform (VetCompass)
+  - 1 Breed authority (The Kennel Club)
+
+TIER 2 - Medium Authority: 19 targets
+  - 4 University veterinary schools (RVC, Edinburgh, Cambridge, Nottingham, Bristol)
+  - 4 Animal rescue centres (Battersea, Woodgreen, Mayhew, Animal Trust)
+  - 2 Veterinary/industry associations (PFMA, BSAVA)
+  - 2 Assistance dog charities (Hearing Dogs, Guide Dogs)
+  - 3 Pet forums/communities (Dog Forums, Pet Forums, The Cat Site)
+  - 2 Pet blogs with authority (Katzenworld, Dogs Blog)
+  - 2 Other charities (Scottish SPCA, Paws Protect)
+
+TIER 3 - Relationship Building: 18 targets
+  - 5 Pet food manufacturers (Zooplus, Lily's Kitchen, Forthglade, Pooch & Mutt, Simpsons)
+  - 4 Pet event organisers (Crufts, London Dog Show, National Pet Show, Dog Festival)
+  - 2 Pet industry directories/bodies (Pet Industry, PetQuip)
+  - 4 Pet lifestyle/news bloggers (Kirsten & Co, Style Tails, Pretty Fluffy, Pet Buzz UK)
+  - 2 Pet podcasts (Companion Animal Podcast, Dogcast Radio)
+  - 1 Pet industry trade body (PetQuip)
+
+============================================================
+RECOMMENDED OUTREACH PRIORITY ORDER
+============================================================
+
+PHASE A - Weeks 1-4: Foundation Building (Tier 3)
+Start with Tier 3 targets. These have lower difficulty, faster response
+times, and build initial backlink momentum. Success here creates case
+studies and content assets useful for higher-tier pitches.
+
+Priority order within Tier 3:
+1. Pet event organisers (time-sensitive, tie to upcoming events)
+2. Pet podcasts (guest spots create multiple link opportunities)
+3. Pet lifestyle bloggers (product evaluation offers)
+4. Pet food manufacturers (collaborative content)
+5. Industry directories (straightforward submissions)
+
+PHASE B - Weeks 3-8: Authority Partnerships (Tier 2)
+Begin Tier 2 outreach once you have 5-8 Tier 3 links secured. University
+vet schools and rescue centres value established credibility.
+
+Priority order within Tier 2:
+1. Pet forums/communities (immediate engagement, organic)
+2. Animal rescue centres (partnership-friendly culture)
+3. Industry associations - PFMA data citations (cite first, then pitch)
+4. Assistance dog charities (alignment with training content)
+5. University vet schools (longest lead time, start early)
+6. Established blogs (build relationship before pitching)
+
+PHASE C - Weeks 6-16: Highest Authority (Tier 1)
+Approach Tier 1 only after demonstrating quality through Tier 2/3
+successes. These targets require polished pitches and proven content
+quality.
+
+Priority order within Tier 1:
+1. VetCompass / Petplan (data-citation approach, lower barrier)
+2. Your Cat Magazine / Dogs Today (editorial pitch, faster turnaround)
+3. Cats Protection / Dogs Trust (resource page approach)
+4. PDSA / Blue Cross (PAW Report citations, infographic offers)
+5. The Kennel Club (breed-specific content partnerships)
+6. BVA / RCVS (professional authority, highest bar)
+7. RSPCA (most selective, save for last)
+8. gov.uk (extremely difficult, opportunistic only)
+
+============================================================
+TEMPLATE OUTREACH ANGLES BY TIER
+============================================================
+
+--- TIER 1 OUTREACH TEMPLATES ---
+
+Angle A: Data Citation & Infographic Offer
+"We've cited your [specific report/data] in our comprehensive guide on
+[topic]. We've also created an infographic summarising [their data point]
+for pet owners - would you like us to send it over? Happy to credit
+and link back to your original research."
+
+Angle B: Guest Expert Contribution
+"I noticed your [section/blog] covers [topic]. We have original survey
+data from [X] UK pet owners on [specific topic] that might interest your
+readers. Would you be open to a guest contribution sharing these findings?"
+
+Angle C: Complementary Resource Creation
+"Your guide on [topic] is the definitive resource. We've created a
+companion piece covering [complementary angle] that we think your readers
+would find valuable. Would you consider linking to it as additional
+reading?"
+
+--- TIER 2 OUTREACH TEMPLATES ---
+
+Angle D: Research Summary Partnership
+"We're creating consumer-friendly summaries of veterinary research for
+UK pet owners. We'd love to feature your department's work on [specific
+study]. Would your public engagement team be interested in reviewing
+our summary for accuracy before publication?"
+
+Angle E: Community Resource Offering
+"We've created a comprehensive guide on [topic] that addresses the
+top questions we see pet owners asking. Would your [forum/advice section]
+find this useful as a pinned resource? Happy to tailor it to your
+community's needs."
+
+Angle F: Rescue Partnership Content
+"We'd love to create content supporting your adoption preparation
+process - specifically guides on [essential supplies/settling in/
+enrichment for rescue pets]. Would your content team be interested in
+collaborating?"
+
+--- TIER 3 OUTREACH TEMPLATES ---
+
+Angle G: Product Evaluation Offer
+"We run independent product testing on pet toys and accessories. We'd
+love to include your [product line] in our next evaluation series.
+No cost to you - we purchase everything independently. Would you be
+interested in seeing our testing methodology?"
+
+Angle H: Event Coverage Partnership
+"We'd love to provide expert coverage of [event name] for our
+readership of UK pet owners. Could we discuss a media/content
+partnership for this year's event?"
+
+Angle I: Podcast Guest Pitch
+"I'd love to discuss [specific topic] on your show. We have original
+data on [finding] from surveying UK pet owners that I think your
+listeners would find fascinating. I can provide a full outline of
+talking points."
+
+============================================================
+EXPECTED TIMELINE
+============================================================
+
+Month 1 (Weeks 1-4):
+- Send 15-18 Tier 3 outreach emails
+- Begin forum engagement (Tier 2 forums)
+- Expected secured links: 3-5 (Tier 3)
+
+Month 2 (Weeks 5-8):
+- Send 12-15 Tier 2 outreach emails
+- Follow up on Tier 3 non-responses
+- Expected secured links: 2-4 (Tier 3) + 2-3 (Tier 2)
+
+Month 3 (Weeks 9-12):
+- Send 8-10 Tier 1 outreach emails
+- Follow up on Tier 2 non-responses
+- Expected secured links: 2-3 (Tier 2) + 1-2 (Tier 1)
+
+Month 4 (Weeks 13-16):
+- Follow up on all tiers
+- Second-wave pitches with new angles
+- Expected secured links: 1-2 (Tier 1) + 2-3 (Tier 2)
+
+TOTAL EXPECTED AFTER 4 MONTHS: 15-25 high-quality backlinks
+Conservative estimate: 15 links (30% conversion rate)
+Optimistic estimate: 25 links (50% conversion on Tier 3, 30% on Tier 2, 15% on Tier 1)
+
+============================================================
+RISK NOTES - WHAT TO AVOID
+============================================================
+
+ABSOLUTELY PROHIBITED:
+1. No link purchasing or paid placement of any kind
+2. No Private Blog Networks (PBNs) or link farms
+3. No reciprocal link schemes ("I link to you, you link to me")
+4. No comment spam or forum signature links
+5. No fake personas or fabricated authority
+6. No press release link building services
+7. No directory submissions to low-quality or irrelevant directories
+8. No article spinning or duplicate content across sites
+9. No automated outreach tools that send bulk generic emails
+10. No claiming affiliations or credentials that don't exist
+
+QUALITY CONTROL REQUIREMENTS:
+- Every target domain must be manually verified as legitimate
+- All outreach must be personalised (reference specific content on their site)
+- Content offered must genuinely add value to the target's audience
+- Never misrepresent PetHub Online's expertise or credentials
+- Maintain a maximum of 3 follow-up emails per target (respect no-response)
+- Track all outreach in a spreadsheet to avoid duplicate contacts
+- Allow minimum 7 days between initial email and first follow-up
+
+GOOGLE PENALTY RISK FACTORS TO MONITOR:
+- Anchor text diversity: Never use exact-match anchors more than 10% of total
+- Link velocity: Don't acquire more than 8-10 links per month (looks unnatural)
+- Relevance signals: All links must come from pet/animal/health related content
+- NoFollow balance: A natural profile includes both dofollow and nofollow links
+- Geographic consistency: Maintain UK-focused profile (some international is fine)
+
+UK-SPECIFIC COMPLIANCE NOTES:
+- Comply with UK CAP Code for any claims made in outreach content
+- Don't make medical/veterinary claims without professional verification
+- Disclose any commercial relationships transparently (ASA guidelines)
+- Respect GDPR when collecting contact information for outreach
+- Follow UK anti-spam regulations (PECR) for cold outreach emails
+
+============================================================
+CONTENT ASSETS TO CREATE BEFORE OUTREACH
+============================================================
+
+Before beginning outreach, ensure these assets are ready:
+
+1. UK Pet Ownership Statistics Infographic (cites PDSA PAW Report + PFMA data)
+2. Dog Toy Safety Testing Methodology page (demonstrates expertise)
+3. Indoor Cat Enrichment Research Summary (cites veterinary research)
+4. Original survey data (even small sample: 100-200 UK pet owners)
+5. Breed-specific health cost analysis (uses insurance data)
+6. Seasonal pet safety guides (tie to events: fireworks, summer heat)
+7. Product testing transparency page (shows methodology, builds trust)
+
+These assets serve as the "give" in outreach - you're offering value,
+not just asking for a link.
+
+============================================================
+END OF STRATEGY SUMMARY
+============================================================

@@ -1,0 +1,61 @@
+PHASE 14G - SNIPPET & AI VISIBILITY AUDIT
+==========================================
+Generated: 2026-05-31
+Total Published Posts: 168
+
+SNIPPET READINESS (9 dimensions):
+Average Score: 91.9%
+
+Dimension Pass Rates:
+  Key Takeaways       :  43.5% [CRITICAL]
+  How-To              :  86.9% [GOOD]
+  Question H2         :  97.0% [STRONG]
+  Definition Block    : 100.0% [STRONG]
+  Numbered List       : 100.0% [STRONG]
+  Bullet List         : 100.0% [STRONG]
+  Table               : 100.0% [STRONG]
+  FAQ                 : 100.0% [STRONG]
+  Direct Answer       : 100.0% [STRONG]
+
+AI VISIBILITY (8 dimensions):
+Average Score: 83.3%
+
+Dimension Pass Rates:
+  Pros/Cons           :  31.5% [CRITICAL]
+  Conclusion          :  38.7% [CRITICAL]
+  Clear Topic H2      :  97.6% [STRONG]
+  Comparison          :  98.8% [STRONG]
+  Sources Section     : 100.0% [STRONG]
+  Definition Block    : 100.0% [STRONG]
+  FAQ                 : 100.0% [STRONG]
+  Direct Answer       : 100.0% [STRONG]
+
+POSTS BELOW 80% SNIPPET READINESS (20 posts):
+  ID  4563 | Snippet: 66.7% | AI: 62.5% | Dog Grooming Basics: A Complete Guide for Owners
+  ID  4414 | Snippet: 66.7% | AI: 62.5% | Harness vs Collar: Which Is Better for Your Dog?
+  ID  4413 | Snippet: 66.7% | AI: 62.5% | How to Measure Your Dog for a Harness: Step-by-Step Gui
+  ID  4412 | Snippet: 66.7% | AI: 62.5% | No-Pull Dog Harness Guide: How They Work and When to Us
+  ID  7341 | Snippet: 77.8% | AI: 75.0% | First Week with a New Puppy: A Day-by-Day Guide
+  ID  7340 | Snippet: 77.8% | AI: 75.0% | Puppy Teething Guide: Stages, Signs, and Soothing Tips
+  ID  7338 | Snippet: 77.8% | AI: 75.0% | Puppy-Proofing Your Home: A Room-by-Room Safety Guide
+  ID  7337 | Snippet: 77.8% | AI: 75.0% | Puppy Vaccination Schedule UK: What to Expect and When
+  ID  7335 | Snippet: 77.8% | AI: 75.0% | Seasonal Dog Bedding: Adjusting Comfort Through the Yea
+  ID  7332 | Snippet: 77.8% | AI: 75.0% | How to Wash and Dry a Dog Bed Safely
+  ID  7174 | Snippet: 77.8% | AI: 75.0% | Dog Bed Terminology: Materials, Types, and Sizing Terms
+  ID  7169 | Snippet: 77.8% | AI: 75.0% | Puppy Care Glossary: Essential Terms for New Puppy Owne
+  ID  5419 | Snippet: 77.8% | AI: 75.0% | Cat Care Basics: A Glossary for New Cat Owners
+  ID  5418 | Snippet: 77.8% | AI: 75.0% | Dog Harness Types Explained: Finding the Right Fit
+  ID  4570 | Snippet: 77.8% | AI: 75.0% | First-Time Dog Owner Essentials: What You Need to Know
+  ID  4574 | Snippet: 77.8% | AI: 75.0% | Pet Hydration Guide: How Much Water Does Your Pet Need?
+  ID   696 | Snippet: 77.8% | AI: 75.0% | Essential Cat Supplies for Cat Owners &#8211; Number 1 
+  ID  7334 | Snippet: 77.8% | AI: 87.5% | Puppy Bed Training: Helping Your Dog Love Their Bed
+  ID  7333 | Snippet: 77.8% | AI: 87.5% | Dog Bed Placement Guide: Where to Put Your Dog’s Bed
+  ID  4406 | Snippet: 77.8% | AI: 87.5% | Best Interactive Cat Toys for Indoor Cats: Engagement G
+
+PRIORITY ACTIONS FOR SNIPPET DOMINANCE:
+  - Key Takeaways: 43.5% (95 posts need attention)
+  - How-To: 86.9% (22 posts need attention)
+
+PRIORITY ACTIONS FOR AI VISIBILITY:
+  - Pros/Cons: 31.5% (115 posts need attention)
+  - Conclusion: 38.7% (103 posts need attention)

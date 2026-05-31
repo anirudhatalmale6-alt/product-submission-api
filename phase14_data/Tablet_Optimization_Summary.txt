@@ -1,0 +1,58 @@
+TABLET OPTIMIZATION AUDIT - PHASE 14I
+=====================================
+Generated: 2026-05-31
+Total Posts Audited: 168
+Average Tablet Score: 13.4/14 (95.9%)
+
+SCORE DISTRIBUTION:
+  12/14:   3 posts ###
+  13/14:  92 posts ############################################################################################
+  14/14:  73 posts #########################################################################
+
+DIMENSION PASS RATES (sorted lowest to highest):
+  Takeaways           :  43.5% [WEAK] #####################
+  TOC                 :  98.8% [STRONG] #################################################
+  Images (2+)         :  99.4% [STRONG] #################################################
+  Tables              : 100.0% [STRONG] ##################################################
+  CTAs                : 100.0% [STRONG] ##################################################
+  FAQ                 : 100.0% [STRONG] ##################################################
+  Glossary            : 100.0% [STRONG] ##################################################
+  Alt Quality         : 100.0% [STRONG] ##################################################
+  Lists (2+)          : 100.0% [STRONG] ##################################################
+  Structure           : 100.0% [STRONG] ##################################################
+  Affiliate           : 100.0% [STRONG] ##################################################
+  Sources             : 100.0% [STRONG] ##################################################
+  Word Count 1500+    : 100.0% [STRONG] ##################################################
+  Multi-CTA (2+)      : 100.0% [STRONG] ##################################################
+
+BOTTOM 15 POSTS BY TABLET SCORE:
+  ID  4414 | 12/14 (85.7%) | Harness vs Collar: Which Is Better for Your Dog?
+  ID  4413 | 12/14 (85.7%) | How to Measure Your Dog for a Harness: Step-by-Step Guide
+  ID  4412 | 12/14 (85.7%) | No-Pull Dog Harness Guide: How They Work and When to Use One
+  ID  7346 | 13/14 (92.9%) | Indoor Cat Diet and Nutrition: Feeding Guidelines for House 
+  ID  7345 | 13/14 (92.9%) | Indoor Cat Behaviour: Understanding and Managing Common Issu
+  ID  7344 | 13/14 (92.9%) | Creating a Cat-Friendly Home: Environmental Enrichment for I
+  ID  7343 | 13/14 (92.9%) | Indoor Cat Safety: Common Household Hazards for Cats
+  ID  7342 | 13/14 (92.9%) | Indoor Cat Exercise: Keeping House Cats Active and Healthy
+  ID  7341 | 13/14 (92.9%) | First Week with a New Puppy: A Day-by-Day Guide
+  ID  7340 | 13/14 (92.9%) | Puppy Teething Guide: Stages, Signs, and Soothing Tips
+  ID  7339 | 13/14 (92.9%) | Puppy Sleep Guide: How Much Sleep Puppies Need by Age
+  ID  7338 | 13/14 (92.9%) | Puppy-Proofing Your Home: A Room-by-Room Safety Guide
+  ID  7337 | 13/14 (92.9%) | Puppy Vaccination Schedule UK: What to Expect and When
+  ID  7336 | 13/14 (92.9%) | Dog Bed Safety: Avoiding Hazards and Choosing Non-Toxic Mate
+  ID  7335 | 13/14 (92.9%) | Seasonal Dog Bedding: Adjusting Comfort Through the Year
+
+TOP 10 POSTS BY TABLET SCORE:
+  ID  4011 | 14/14 (100.0%) | Best Cooling Dog Beds UK (2026) – Temperature Regulation Gui
+  ID  4004 | 14/14 (100.0%) | Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide
+  ID  3996 | 14/14 (100.0%) | Best Dog Beds UK (2026) – Complete Guide &#038; Honest Revie
+  ID  3960 | 14/14 (100.0%) | Best Puppy Toys UK (2026) – Teething &#038; First Toys Guide
+  ID  3959 | 14/14 (100.0%) | Best Interactive Dog Toys UK (2026) – Puzzle &#038; Enrichme
+  ID  3957 | 14/14 (100.0%) | Best Indestructible Dog Toys UK (2026) – Tough Toys for Heav
+  ID  3956 | 14/14 (100.0%) | Best Dog Toys UK (2026) – Complete Guide &#038; Honest Revie
+  ID  3839 | 14/14 (100.0%) | Best Puppy Food UK (2026) &#8211; Growth-Stage Nutrition Gui
+  ID  3837 | 14/14 (100.0%) | Best Dry Dog Food UK (2026) &#8211; Evidence-Based Guide
+  ID  3836 | 14/14 (100.0%) | Best Dog Food UK (2026) &#8211; Complete Buying Guide
+
+PRIORITY ACTIONS:
+  - Takeaways: 43.5% pass rate, 95 posts need attention

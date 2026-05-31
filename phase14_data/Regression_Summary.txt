@@ -1,0 +1,101 @@
+======================================================================
+PHASE 14J - AUTHORITY MAINTENANCE REGRESSION AUDIT
+PetHub Online (pethubonline.com)
+Date: 2026-05-31
+======================================================================
+
+--- OVERVIEW ---
+Total Posts Audited: 168
+Maximum Possible Score: 15 per post
+Average Score: 14.90 / 15 (99.4%)
+
+--- SCORE DISTRIBUTION ---
+  15/15: 152 posts  ########################################################################################################################################################
+  14/15:  16 posts  ################
+
+--- BOTTOM 10 POSTS (REGRESSION RISKS) ---
+   1. [14/15] First Week with a New Puppy: A Day-by-Day Guide
+      Slug: first-week-new-puppy-guide
+      Missing: Direct Answer
+
+   2. [14/15] Toy Overstimulation Recovery: Calming Down an Overexcited Do
+      Slug: toy-overstimulation-recovery-dogs
+      Missing: Definition Block
+
+   3. [14/15] Dog Toy Anxiety Reduction: Using Toys to Calm Nervous Dogs
+      Slug: dog-toy-anxiety-reduction
+      Missing: Definition Block
+
+   4. [14/15] Cognitive Enrichment for Senior Dogs: Gentle Play for Ageing
+      Slug: cognitive-enrichment-senior-dogs
+      Missing: Definition Block
+
+   5. [14/15] Signs of Toy Overstimulation in Dogs: When Play Becomes Too 
+      Slug: dog-toy-overstimulation-signs
+      Missing: Definition Block
+
+   6. [14/15] Orthopaedic Care for Dogs: Joint Health, Mobility, and Suppo
+      Slug: orthopaedic-care-dogs
+      Missing: Direct Answer
+
+   7. [14/15] Senior Dog Toys: Gentle Play Options for Older Dogs
+      Slug: senior-dog-toys
+      Missing: Direct Answer
+
+   8. [14/15] Pet Hydration Guide: How Much Water Does Your Pet Need?
+      Slug: pet-hydration-guide
+      Missing: Direct Answer
+
+   9. [14/15] Dog Dental Health: A Practical Care Guide
+      Slug: dog-dental-health-care-guide
+      Missing: Direct Answer
+
+  10. [14/15] No-Pull Dog Harness Guide: How They Work and When to Use One
+      Slug: no-pull-dog-harness-guide
+      Missing: Images >= 2
+
+--- DIMENSION PASS RATES ---
+Dimension                            Pass Rate     Status
+---------------------------------------------------------
+  5. Direct Answer                     93.5%    OK
+  4. Definition Block                  97.6%    OK
+  11. Images >= 2                      99.4%    OK
+  1. Word Count >= 1500               100.0%    OK
+  2. H2 Count >= 3                    100.0%    OK
+  3. H3 Count >= 2                    100.0%    OK
+  6. Numbered List (<ol>)             100.0%    OK
+  7. Bullet List (<ul>)               100.0%    OK
+  8. FAQ Section                      100.0%    OK
+  9. Sources/References               100.0%    OK
+  10. Affiliate Links                 100.0%    OK
+  12. Internal Links >= 2             100.0%    OK
+  13. Table                           100.0%    OK
+  14. Key Takeaways                   100.0%    OK
+  15. Author Box                      100.0%    OK
+
+--- 90% THRESHOLD COMPARISON ---
+  Dimensions ABOVE 90%: 15/15
+    [PASS] 1. Word Count >= 1500             100.0%
+    [PASS] 2. H2 Count >= 3                  100.0%
+    [PASS] 3. H3 Count >= 2                  100.0%
+    [PASS] 6. Numbered List (<ol>)           100.0%
+    [PASS] 7. Bullet List (<ul>)             100.0%
+    [PASS] 8. FAQ Section                    100.0%
+    [PASS] 9. Sources/References             100.0%
+    [PASS] 10. Affiliate Links               100.0%
+    [PASS] 12. Internal Links >= 2           100.0%
+    [PASS] 13. Table                         100.0%
+    [PASS] 14. Key Takeaways                 100.0%
+    [PASS] 15. Author Box                    100.0%
+    [PASS] 11. Images >= 2                   99.4%
+    [PASS] 4. Definition Block               97.6%
+    [PASS] 5. Direct Answer                  93.5%
+
+  Dimensions BELOW 90%: 0/15
+
+--- RECOMMENDATIONS ---
+  All dimensions meet the 90% threshold. No regressions detected.
+
+======================================================================
+END OF REPORT
+======================================================================

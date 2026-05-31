@@ -1,0 +1,43 @@
+======================================================================
+CLUSTER RECLASSIFICATION SUMMARY REPORT
+Generated: 2026-05-31
+Site: pethubonline.com
+======================================================================
+
+Total posts reclassified: 45
+Verification rate: 45/45 (100.0%)
+
+----------------------------------------
+DISTRIBUTION BY NEW CATEGORY
+----------------------------------------
+  Cat Supplies: 1 posts
+  Cat Toys: 2 posts
+  Dog Beds: 1 posts
+  Dog Care: 1 posts
+  Dog Food: 2 posts
+  Dog Health: 2 posts
+  Dog Toys: 28 posts
+  Indoor Cats: 1 posts
+  Pet Care: 3 posts
+  Pet Health: 1 posts
+  Puppy Care: 1 posts
+  Training Supplies: 2 posts
+
+----------------------------------------
+VERIFICATION RESULTS
+----------------------------------------
+All 45 reclassifications verified successfully via WordPress REST API.
+Every post's categories array contains the assigned new_category_id.
+
+Note: All posts retain category ID 1 (Uncategorized) alongside their
+new category. A follow-up cleanup pass can remove the Uncategorized
+assignment if desired.
+
+----------------------------------------
+POSTS WHERE RECLASSIFICATION DID NOT TAKE EFFECT
+----------------------------------------
+None. All reclassifications confirmed.
+
+======================================================================
+END OF REPORT
+======================================================================
