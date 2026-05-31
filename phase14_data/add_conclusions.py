@@ -1,14 +1,18 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3 -u
 """
 Add Conclusion/Final Verdict sections to PetHub Online WordPress posts that are missing them.
+Uses unbuffered output and rate limit retry logic.
 """
 
 import subprocess
 import json
 import re
 import time
-import os
+import sys
 import html
+
+# Force unbuffered stdout
+sys.stdout.reconfigure(line_buffering=True)
 
 WP_API = "https://pethubonline.com/wp-json/wp/v2"
 WP_USER = "jasonsarah2026"
@@ -35,21 +39,34 @@ def curl_get(url):
     )
     return json.loads(result.stdout)
 
-def curl_post_update(post_id, data):
-    """POST update via curl subprocess."""
+def curl_post_update(post_id, data, retries=3):
+    """POST update via curl subprocess with retry on 429."""
     json_data = json.dumps(data)
-    result = subprocess.run(
-        ['curl', '-s', '-X', 'POST', '-u', f'{WP_USER}:{WP_PASS}',
-         f'{WP_API}/posts/{post_id}',
-         '-H', 'Content-Type: application/json',
-         '-d', json_data],
-        capture_output=True, text=True, timeout=60
-    )
-    try:
-        resp = json.loads(result.stdout)
-        return resp
-    except json.JSONDecodeError:
-        return {"error": result.stdout[:500]}
+    for attempt in range(retries):
+        result = subprocess.run(
+            ['curl', '-s', '-X', 'POST', '-u', f'{WP_USER}:{WP_PASS}',
+             f'{WP_API}/posts/{post_id}',
+             '-H', 'Content-Type: application/json',
+             '-d', json_data],
+            capture_output=True, text=True, timeout=120
+        )
+        stdout = result.stdout
+        # Check for 429 rate limit
+        if '429' in stdout[:200] and 'Too Many Requests' in stdout[:500]:
+            wait_time = 15 * (attempt + 1)
+            print(f"    Rate limited (429), waiting {wait_time}s before retry {attempt+2}/{retries}...", flush=True)
+            time.sleep(wait_time)
+            continue
+        try:
+            resp = json.loads(stdout)
+            return resp
+        except json.JSONDecodeError:
+            if attempt < retries - 1:
+                print(f"    JSON decode error, retrying in 10s...", flush=True)
+                time.sleep(10)
+                continue
+            return {"error": stdout[:500]}
+    return {"error": "Max retries exceeded (429 rate limit)"}
 
 def fetch_all_posts():
     """Fetch all published posts with pagination."""
@@ -64,7 +81,7 @@ def fetch_all_posts():
         if len(posts) < 100:
             break
         page += 1
-        time.sleep(1)
+        time.sleep(2)
     return all_posts
 
 def strip_html(html_text):
@@ -77,11 +94,7 @@ def strip_html(html_text):
 def extract_key_points(content_html, title):
     """Extract key points from the article content for conclusion generation."""
     text = strip_html(content_html)
-
-    # Get headings to understand structure
     headings = re.findall(r'<h[23][^>]*>([^<]+)</h[23]>', content_html)
-
-    # Get the first paragraph for topic context
     first_paras = re.findall(r'<p[^>]*>([^<]+)</p>', content_html[:2000])
     intro_text = ' '.join(first_paras[:3]) if first_paras else text[:500]
 
@@ -103,19 +116,13 @@ def generate_conclusion(info):
     """Generate a factual 2-3 sentence conclusion based on the article content."""
     title = info['title']
     headings = info['headings']
-    intro = info['intro']
-    full_text = info['full_text']
-
-    # Clean title for use in conclusion
     title_clean = re.sub(r'^\d+\s+', '', title)
 
     if is_product_review(title):
-        # Product review / "Best X" post
         subject_match = re.search(r'(?:Best|Top)\s+(?:\d+\s+)?(.+?)(?:\s+(?:for|in|of|on|to)\s+(.+))?$', title, re.IGNORECASE)
         if subject_match:
             product_type = subject_match.group(1).strip()
             context = subject_match.group(2) if subject_match.group(2) else ""
-
             if context:
                 conclusion = (
                     f"Choosing the right {product_type.lower()} for {context.lower()} depends on your pet's specific needs, preferences, and your budget. "
@@ -135,9 +142,7 @@ def generate_conclusion(info):
                 f"Consider the key features highlighted above to find the perfect match for your situation."
             )
     else:
-        # Educational / guide post
         topic = title_clean
-
         if re.search(r'how to|guide|tips|ways to|steps', topic, re.IGNORECASE):
             topic_core = re.sub(r'^(how to|a guide to|guide to|tips for|tips on|ways to)\s+', '', topic, flags=re.IGNORECASE).strip()
             conclusion = (
@@ -146,7 +151,6 @@ def generate_conclusion(info):
                 f"When in doubt, always consult with your veterinarian for personalized advice."
             )
         elif re.search(r'^(can |do |is |are |should |will |does |why |what |when |where )', topic, re.IGNORECASE):
-            # Question-style posts
             conclusion = (
                 f"We hope this article has thoroughly addressed your question about whether {topic.lower().rstrip('?')}. "
                 f"Every pet is unique, so always observe your own animal's behavior and health when applying general advice. "
@@ -164,7 +168,7 @@ def generate_conclusion(info):
                 f"Early detection and proper care can make a significant difference in outcomes. "
                 f"Always seek professional veterinary guidance for diagnosis and treatment of any health concerns."
             )
-        elif re.search(r'train|behavior|bark|bite|aggress', topic, re.IGNORECASE):
+        elif re.search(r'train|behavior|behaviour|bark|bite|aggress', topic, re.IGNORECASE):
             conclusion = (
                 f"Understanding {topic.lower()} requires patience, consistency, and a willingness to see things from your pet's perspective. "
                 f"The approaches discussed above can help you build a stronger bond with your pet while addressing behavioral challenges. "
@@ -188,27 +192,21 @@ def generate_conclusion(info):
 def insert_conclusion(content, conclusion_text, is_review):
     """Insert conclusion section into the post content."""
     heading_type = "Final Verdict" if is_review else "Conclusion"
-
     conclusion_block = (
         f'\n\n<h2 class="wp-block-heading">{heading_type}</h2>\n'
         f'<p class="wp-block-paragraph">{conclusion_text}</p>\n\n'
     )
-
-    # Check for Sources/References section
     sources_match = SOURCES_REGEX.search(content)
     if sources_match:
-        # Insert before the Sources/References heading
         insert_pos = sources_match.start()
         new_content = content[:insert_pos].rstrip() + conclusion_block + content[insert_pos:]
     else:
-        # Insert at the end
         new_content = content.rstrip() + conclusion_block
-
     return new_content
 
 def log(msg, log_lines):
     """Log a message."""
-    print(msg)
+    print(msg, flush=True)
     log_lines.append(msg)
 
 def main():
@@ -216,20 +214,19 @@ def main():
     log(f"=== PetHub Online Conclusion Addition - {time.strftime('%Y-%m-%d %H:%M:%S')} ===", log_lines)
     log("", log_lines)
 
-    # Step 1: Fetch all posts
+    # Fetch all posts
     log("Fetching all published posts...", log_lines)
     posts = fetch_all_posts()
     log(f"Total published posts fetched: {len(posts)}", log_lines)
     log("", log_lines)
 
-    # Step 2: Filter posts missing conclusions
+    # Filter posts missing conclusions
     posts_needing_conclusion = []
     posts_with_conclusion = []
 
     for post in posts:
         content = post['content']['rendered']
         title = post['title']['rendered']
-
         if CONCLUSION_REGEX.search(content):
             posts_with_conclusion.append(post)
         else:
@@ -239,9 +236,10 @@ def main():
     log(f"Posts needing conclusion: {len(posts_needing_conclusion)}", log_lines)
     log("", log_lines)
 
-    # Step 3: Process posts in batches of 10
+    # Process posts in batches of 10
     updated_count = 0
     failed_count = 0
+    failed_posts = []
     batch_size = 10
 
     for i in range(0, len(posts_needing_conclusion), batch_size):
@@ -253,23 +251,17 @@ def main():
             post_id = post['id']
             title = post['title']['rendered']
             content = post['content']['rendered']
-
-            # Determine post type
             title_text = strip_html(title)
             review = is_product_review(title_text)
             post_type = "Product Review" if review else "Educational/Guide"
 
-            # Extract info and generate conclusion
             info = extract_key_points(content, title)
             conclusion_text = generate_conclusion(info)
-
-            # Insert conclusion
             new_content = insert_conclusion(content, conclusion_text, review)
 
             # Wait before updating
             time.sleep(5)
 
-            # Update post
             update_data = {"content": new_content}
             result = curl_post_update(post_id, update_data)
 
@@ -278,10 +270,13 @@ def main():
                 log(f"  [OK] Post {post_id}: \"{title_text[:60]}\" - Added {heading_type} ({post_type})", log_lines)
                 updated_count += 1
             else:
-                error_msg = result.get('message', result.get('error', 'Unknown error'))
+                error_msg = result.get('message', result.get('error', 'Unknown error'))[:200]
                 log(f"  [FAIL] Post {post_id}: \"{title_text[:60]}\" - Error: {error_msg}", log_lines)
                 failed_count += 1
+                failed_posts.append(post_id)
 
+        # Extra pause between batches to avoid rate limits
+        time.sleep(5)
         log("", log_lines)
 
     # Summary
@@ -289,6 +284,8 @@ def main():
     log(f"Total posts processed: {len(posts_needing_conclusion)}", log_lines)
     log(f"Successfully updated: {updated_count}", log_lines)
     log(f"Failed: {failed_count}", log_lines)
+    if failed_posts:
+        log(f"Failed post IDs: {failed_posts}", log_lines)
     log(f"Already had conclusion: {len(posts_with_conclusion)}", log_lines)
     log(f"Completion time: {time.strftime('%Y-%m-%d %H:%M:%S')}", log_lines)
 
@@ -296,7 +293,7 @@ def main():
     with open(LOG_FILE, 'w') as f:
         f.write('\n'.join(log_lines))
 
-    print(f"\nLog saved to {LOG_FILE}")
+    log(f"\nLog saved to {LOG_FILE}", [])
 
 if __name__ == '__main__':
     main()
