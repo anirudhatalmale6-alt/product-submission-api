@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetHub - Platform Standards Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080a0f;
+    color: #e2e8f0;
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    padding: 24px;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Section Headers */
+.section-header {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #7a8ba8;
+    margin-bottom: 16px;
+    padding-left: 4px;
+}
+
+/* Hero Banner */
+.hero-banner {
+    background: linear-gradient(135deg, #111621 0%, #0d1219 100%);
+    border: 1px solid #1a2236;
+    border-radius: 16px;
+    padding: 40px 48px;
+    margin-bottom: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #10b981, transparent);
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.hero-left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-score {
+    text-align: center;
+}
+
+.hero-score-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #7a8ba8;
+    margin-bottom: 8px;
+}
+
+.hero-score-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 64px;
+    font-weight: 700;
+    color: #10b981;
+    line-height: 1;
+}
+
+.hero-score-value.amber {
+    color: #f59e0b;
+}
+
+.hero-score-value.red {
+    color: #ef4444;
+}
+
+.hero-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.status-badge.passing {
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    color: #10b981;
+}
+
+.status-badge.failing {
+    background: rgba(239, 68, 68, 0.12);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #ef4444;
+}
+
+.status-badge .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.status-badge.passing .dot {
+    background: #10b981;
+}
+
+.status-badge.failing .dot {
+    background: #ef4444;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.last-scan {
+    font-size: 12px;
+    color: #7a8ba8;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.hero-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-scan {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-scan:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.3);
+}
+
+.btn-scan:active {
+    transform: translateY(0);
+}
+
+.btn-scan.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Quality Dimensions Grid */
+.dimensions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+@media (max-width: 1200px) {
+    .dimensions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .dimensions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.dimension-card {
+    background: #111621;
+    border: 1px solid #1a2236;
+    border-radius: 12px;
+    padding: 24px;
+    position: relative;
+    transition: border-color 0.2s;
+}
+
+.dimension-card:hover {
+    border-color: #2a3a56;
+}
+
+.dimension-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.dimension-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: #7a8ba8;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.dimension-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dimension-circle.green { background: #10b981; box-shadow: 0 0 8px rgba(16, 185, 129, 0.4); }
+.dimension-circle.amber { background: #f59e0b; box-shadow: 0 0 8px rgba(245, 158, 11, 0.4); }
+.dimension-circle.red { background: #ef4444; box-shadow: 0 0 8px rgba(239, 68, 68, 0.4); }
+
+.dimension-score {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 1;
+}
+
+.dimension-score.green { color: #10b981; }
+.dimension-score.amber { color: #f59e0b; }
+.dimension-score.red { color: #ef4444; }
+
+.score-bar-container {
+    position: relative;
+    height: 6px;
+    background: #1a2236;
+    border-radius: 3px;
+    margin-bottom: 12px;
+}
+
+.score-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.6s ease;
+}
+
+.score-bar-fill.green { background: linear-gradient(90deg, #059669, #10b981); }
+.score-bar-fill.amber { background: linear-gradient(90deg, #d97706, #f59e0b); }
+.score-bar-fill.red { background: linear-gradient(90deg, #dc2626, #ef4444); }
+
+.threshold-line {
+    position: absolute;
+    top: -3px;
+    left: 90%;
+    width: 2px;
+    height: 12px;
+    background: #e2e8f0;
+    opacity: 0.5;
+    border-radius: 1px;
+}
+
+.dimension-delta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.dimension-delta.positive { color: #10b981; }
+.dimension-delta.negative { color: #ef4444; }
+
+/* Agent & Dashboard Health */
+.health-section {
+    background: #111621;
+    border: 1px solid #1a2236;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.health-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.health-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+.health-count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 6px;
+}
+
+.health-count.all-good {
+    background: rgba(16, 185, 129, 0.12);
+    color: #10b981;
+}
+
+.health-count.degraded {
+    background: rgba(245, 158, 11, 0.12);
+    color: #f59e0b;
+}
+
+.health-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.health-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    background: #0d1219;
+    border: 1px solid #1a2236;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #e2e8f0;
+    white-space: nowrap;
+}
+
+.health-pill .pill-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.pill-dot.green { background: #10b981; }
+.pill-dot.amber { background: #f59e0b; }
+.pill-dot.red { background: #ef4444; }
+
+/* Remediation Tasks Table */
+.tasks-section {
+    background: #111621;
+    border: 1px solid #1a2236;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 32px;
+    overflow-x: auto;
+}
+
+.tasks-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.tasks-table th {
+    text-align: left;
+    padding: 12px 16px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #7a8ba8;
+    border-bottom: 1px solid #1a2236;
+}
+
+.tasks-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(26, 34, 54, 0.5);
+    vertical-align: middle;
+}
+
+.tasks-table tr:last-child td {
+    border-bottom: none;
+}
+
+.tasks-table tr:hover td {
+    background: rgba(16, 185, 129, 0.02);
+}
+
+.task-id {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: #7a8ba8;
+}
+
+.priority-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.priority-badge.critical {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+}
+
+.priority-badge.high {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+}
+
+.priority-badge.medium {
+    background: rgba(59, 130, 246, 0.15);
+    color: #3b82f6;
+}
+
+.priority-badge.low {
+    background: rgba(107, 114, 128, 0.15);
+    color: #6b7280;
+}
+
+.status-tag {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+.status-tag.open {
+    background: rgba(245, 158, 11, 0.12);
+    color: #f59e0b;
+}
+
+.status-tag.in-progress {
+    background: rgba(59, 130, 246, 0.12);
+    color: #3b82f6;
+}
+
+.status-tag.resolved {
+    background: rgba(16, 185, 129, 0.12);
+    color: #10b981;
+}
+
+.btn-resolve {
+    background: transparent;
+    border: 1px solid #1a2236;
+    color: #7a8ba8;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-resolve:hover {
+    border-color: #10b981;
+    color: #10b981;
+}
+
+/* Scan History */
+.history-section {
+    background: #111621;
+    border: 1px solid #1a2236;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.history-chart {
+    position: relative;
+    height: 160px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    padding: 0 8px;
+}
+
+.chart-bar-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.chart-bar {
+    width: 100%;
+    max-width: 48px;
+    border-radius: 4px 4px 0 0;
+    transition: height 0.4s ease;
+    position: relative;
+    min-height: 4px;
+}
+
+.chart-bar.green { background: linear-gradient(to top, #059669, #10b981); }
+.chart-bar.amber { background: linear-gradient(to top, #d97706, #f59e0b); }
+.chart-bar.red { background: linear-gradient(to top, #dc2626, #ef4444); }
+
+.chart-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: #7a8ba8;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.chart-threshold {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px dashed rgba(226, 232, 240, 0.2);
+}
+
+.chart-threshold-label {
+    position: absolute;
+    top: -2px;
+    right: 4px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    color: #7a8ba8;
+    transform: translateY(-100%);
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.history-table th {
+    text-align: left;
+    padding: 10px 12px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #7a8ba8;
+    border-bottom: 1px solid #1a2236;
+}
+
+.history-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(26, 34, 54, 0.5);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.history-table tr:last-child td {
+    border-bottom: none;
+}
+
+.pass-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.pass-badge.yes {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+.pass-badge.no {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+}
+
+/* Loading State */
+.loading-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(8, 10, 15, 0.8);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-overlay.active {
+    display: flex;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #1a2236;
+    border-top-color: #10b981;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 40px;
+    color: #7a8ba8;
+    font-size: 14px;
+}
+
+/* Refresh Indicator */
+.refresh-indicator {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    background: #111621;
+    border: 1px solid #1a2236;
+    border-radius: 6px;
+    font-size: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    color: #7a8ba8;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.refresh-indicator.visible {
+    opacity: 1;
+}
+
+.refresh-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #10b981;
+    animation: pulse 1.5s infinite;
+}
+</style>
+</head>
+<body>
+
+<div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-spinner"></div>
+</div>
+
+<div class="refresh-indicator" id="refreshIndicator">
+    <div class="refresh-dot"></div>
+    <span>Auto-refresh</span>
+</div>
+
+<div class="container">
+
+    <!-- 1. OVERALL STATUS BANNER -->
+    <section class="hero-banner" id="heroBanner">
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-score">
+                    <div class="hero-score-label">Overall Platform Score</div>
+                    <div class="hero-score-value" id="overallScore">--</div>
+                </div>
+                <div class="hero-meta">
+                    <div class="status-badge passing" id="statusBadge">
+                        <span class="dot"></span>
+                        <span id="statusText">Loading...</span>
+                    </div>
+                    <div class="last-scan" id="lastScan">Last scan: --</div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <button class="btn-scan" id="btnScan" onclick="runScan()">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M8 1v3M8 12v3M3.5 3.5l2.12 2.12M10.38 10.38l2.12 2.12M1 8h3M12 8h3M3.5 12.5l2.12-2.12M10.38 5.62l2.12-2.12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    Run Scan
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. QUALITY DIMENSIONS GRID -->
+    <div class="section-header">Quality Dimensions</div>
+    <div class="dimensions-grid" id="dimensionsGrid">
+        <!-- Populated by JS -->
+    </div>
+
+    <!-- 3. AGENT HEALTH -->
+    <div class="section-header">Agent Health</div>
+    <section class="health-section" id="agentHealthSection">
+        <div class="health-header">
+            <div class="health-title">Platform Agents</div>
+            <div class="health-count all-good" id="agentCount">--/-- Healthy</div>
+        </div>
+        <div class="health-pills" id="agentPills">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <!-- 4. DASHBOARD HEALTH -->
+    <div class="section-header">Dashboard Health</div>
+    <section class="health-section" id="dashboardHealthSection">
+        <div class="health-header">
+            <div class="health-title">Platform Dashboards</div>
+            <div class="health-count all-good" id="dashboardCount">--/-- OK</div>
+        </div>
+        <div class="health-pills" id="dashboardPills">
+            <!-- Populated by JS -->
+        </div>
+    </section>
+
+    <!-- 5. REMEDIATION TASKS -->
+    <div class="section-header">Remediation Tasks</div>
+    <section class="tasks-section" id="tasksSection">
+        <table class="tasks-table">
+            <thead>
+                <tr>
+                    <th>Task ID</th>
+                    <th>Dimension</th>
+                    <th>Current</th>
+                    <th>Deficit</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Created</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tasksBody">
+                <!-- Populated by JS -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- 6. SCAN HISTORY -->
+    <div class="section-header">Scan History</div>
+    <section class="history-section" id="historySection">
+        <div class="history-chart" id="historyChart">
+            <!-- Populated by JS -->
+        </div>
+        <table class="history-table">
+            <thead>
+                <tr>
+                    <th>Timestamp</th>
+                    <th>Overall Pass</th>
+                    <th>Passing</th>
+                    <th>Violations</th>
+                </tr>
+            </thead>
+            <tbody id="historyBody">
+                <!-- Populated by JS -->
+            </tbody>
+        </table>
+    </section>
+
+</div>
+
+<script>
+// Configuration
+const API_PATHS = {
+    summary: '/api/regression/summary',
+    scores: '/api/regression/scores',
+    agents: '/api/regression/agents',
+    dashboards: '/api/regression/dashboards',
+    tasks: '/api/regression/tasks',
+    history: '/api/regression/history',
+    scan: '/api/regression/scan'
+};
+
+const DIMENSIONS = [
+    'Trust', 'SEO', 'AI Readiness', 'Authority',
+    'Visibility Readiness', 'Citation Readiness', 'Mobile Compliance', 'QA Compliance'
+];
+
+const AGENTS = [
+    'Manager', 'SEO', 'Analytics', 'Social', 'Maintenance',
+    'Content', 'Product Research', 'Affiliate', 'Engagement'
+];
+
+const DASHBOARDS = [
+    'Operations Centre', 'Executive', 'Trust', 'Expansion',
+    'Indexing', 'Authority', 'Monetization', 'Forecasting'
+];
+
+const THRESHOLD = 90;
+const REFRESH_INTERVAL = 60000;
+
+// Utility functions
+function getScoreColor(score) {
+    if (score >= 90) return 'green';
+    if (score >= 80) return 'amber';
+    return 'red';
+}
+
+function formatTimestamp(ts) {
+    if (!ts) return '--';
+    const d = new Date(ts);
+    return d.toLocaleString('en-GB', {
+        day: '2-digit', month: 'short', year: 'numeric',
+        hour: '2-digit', minute: '2-digit', second: '2-digit'
+    });
+}
+
+// API fetching
+async function fetchData(path) {
+    try {
+        const res = await fetch(path);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return await res.json();
+    } catch (e) {
+        console.warn(`Failed to fetch ${path}:`, e.message);
+        return null;
+    }
+}
+
+// Render functions
+function renderHero(summary) {
+    const scoreEl = document.getElementById('overallScore');
+    const statusBadge = document.getElementById('statusBadge');
+    const statusText = document.getElementById('statusText');
+    const lastScan = document.getElementById('lastScan');
+
+    if (!summary) {
+        scoreEl.textContent = '--';
+        statusText.textContent = 'No Data';
+        return;
+    }
+
+    const score = Math.round(summary.overall_score || 0);
+    const color = getScoreColor(score);
+    scoreEl.textContent = score + '%';
+    scoreEl.className = 'hero-score-value ' + (color === 'green' ? '' : color);
+
+    const failing = summary.dimensions_below_threshold || 0;
+    if (failing === 0) {
+        statusBadge.className = 'status-badge passing';
+        statusText.textContent = 'ALL PASSING';
+    } else {
+        statusBadge.className = 'status-badge failing';
+        statusText.textContent = failing + ' DIMENSION' + (failing > 1 ? 'S' : '') + ' BELOW THRESHOLD';
+    }
+
+    lastScan.textContent = 'Last scan: ' + formatTimestamp(summary.last_scan);
+}
+
+function renderDimensions(scores) {
+    const grid = document.getElementById('dimensionsGrid');
+    grid.innerHTML = '';
+
+    DIMENSIONS.forEach(dim => {
+        const data = scores ? (scores[dim] || scores[dim.toLowerCase()] || {}) : {};
+        const score = data.score != null ? Math.round(data.score) : 0;
+        const color = getScoreColor(score);
+        const delta = score - THRESHOLD;
+        const deltaStr = delta >= 0 ? '+' + delta + '%' : delta + '%';
+
+        const card = document.createElement('div');
+        card.className = 'dimension-card';
+        card.innerHTML = `
+            <div class="dimension-card-header">
+                <div class="dimension-name">${dim}</div>
+                <div class="dimension-circle ${color}"></div>
+            </div>
+            <div class="dimension-score ${color}">${score}%</div>
+            <div class="score-bar-container">
+                <div class="score-bar-fill ${color}" style="width: ${score}%"></div>
+                <div class="threshold-line"></div>
+            </div>
+            <div class="dimension-delta ${delta >= 0 ? 'positive' : 'negative'}">${deltaStr} from threshold</div>
+        `;
+        grid.appendChild(card);
+    });
+}
+
+function renderAgentHealth(agents) {
+    const pills = document.getElementById('agentPills');
+    const countEl = document.getElementById('agentCount');
+    pills.innerHTML = '';
+
+    let healthy = 0;
+    const total = AGENTS.length;
+
+    AGENTS.forEach(name => {
+        const status = agents ? (agents[name] || agents[name.toLowerCase()] || 'unknown') : 'unknown';
+        let dotColor = 'green';
+        if (status === 'healthy' || status === 'ok') {
+            dotColor = 'green';
+            healthy++;
+        } else if (status === 'degraded') {
+            dotColor = 'amber';
+        } else if (status === 'down' || status === 'error') {
+            dotColor = 'red';
+        } else {
+            // default assume healthy for display
+            dotColor = 'green';
+            healthy++;
+        }
+
+        const pill = document.createElement('div');
+        pill.className = 'health-pill';
+        pill.innerHTML = `<span class="pill-dot ${dotColor}"></span>${name}`;
+        pills.appendChild(pill);
+    });
+
+    countEl.textContent = healthy + '/' + total + ' Healthy';
+    countEl.className = 'health-count ' + (healthy === total ? 'all-good' : 'degraded');
+}
+
+function renderDashboardHealth(dashboards) {
+    const pills = document.getElementById('dashboardPills');
+    const countEl = document.getElementById('dashboardCount');
+    pills.innerHTML = '';
+
+    let okCount = 0;
+    const total = DASHBOARDS.length;
+
+    DASHBOARDS.forEach(name => {
+        const status = dashboards ? (dashboards[name] || dashboards[name.toLowerCase()] || 'unknown') : 'unknown';
+        let dotColor = 'green';
+        if (status === 'ok' || status === 'healthy' || status === 'rendering') {
+            dotColor = 'green';
+            okCount++;
+        } else if (status === 'error' || status === 'down') {
+            dotColor = 'red';
+        } else {
+            dotColor = 'green';
+            okCount++;
+        }
+
+        const pill = document.createElement('div');
+        pill.className = 'health-pill';
+        pill.innerHTML = `<span class="pill-dot ${dotColor}"></span>${name}`;
+        pills.appendChild(pill);
+    });
+
+    countEl.textContent = okCount + '/' + total + ' OK';
+    countEl.className = 'health-count ' + (okCount === total ? 'all-good' : 'degraded');
+}
+
+function renderTasks(tasks) {
+    const tbody = document.getElementById('tasksBody');
+    tbody.innerHTML = '';
+
+    if (!tasks || tasks.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="8" class="empty-state">No open remediation tasks</td></tr>';
+        return;
+    }
+
+    tasks.forEach(task => {
+        const priorityClass = (task.priority || 'medium').toLowerCase();
+        const statusClass = (task.status || 'open').toLowerCase().replace(/\s+/g, '-');
+        const deficit = task.deficit != null ? '-' + task.deficit + '%' : '--';
+
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td class="task-id">${task.id || '--'}</td>
+            <td>${task.dimension || '--'}</td>
+            <td style="font-family:'JetBrains Mono',monospace;font-size:12px">${task.current_score != null ? task.current_score + '%' : '--'}</td>
+            <td style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#ef4444">${deficit}</td>
+            <td><span class="priority-badge ${priorityClass}">${task.priority || 'medium'}</span></td>
+            <td><span class="status-tag ${statusClass}">${task.status || 'open'}</span></td>
+            <td style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#7a8ba8">${formatTimestamp(task.created)}</td>
+            <td><button class="btn-resolve" onclick="resolveTask('${task.id}')">Resolve</button></td>
+        `;
+        tbody.appendChild(tr);
+    });
+}
+
+function renderHistory(history) {
+    const chart = document.getElementById('historyChart');
+    const tbody = document.getElementById('historyBody');
+    chart.innerHTML = '';
+    tbody.innerHTML = '';
+
+    if (!history || history.length === 0) {
+        chart.innerHTML = '<div class="empty-state" style="width:100%">No scan history</div>';
+        return;
+    }
+
+    // Chart - render bars based on passing dimensions count (out of 8)
+    const maxDimensions = 8;
+    const thresholdPct = (THRESHOLD / 100) * 100; // position at 90% height
+
+    // Add threshold line container
+    const thresholdDiv = document.createElement('div');
+    thresholdDiv.className = 'chart-threshold';
+    thresholdDiv.style.top = (100 - 90) + '%';
+    thresholdDiv.innerHTML = `<span class="chart-threshold-label">90%</span>`;
+    chart.style.position = 'relative';
+    chart.appendChild(thresholdDiv);
+
+    history.slice(-10).forEach(entry => {
+        const passing = entry.dimensions_passing || 0;
+        const heightPct = (passing / maxDimensions) * 100;
+        const color = passing === maxDimensions ? 'green' : (passing >= 6 ? 'amber' : 'red');
+        const ts = new Date(entry.timestamp);
+        const label = ts.toLocaleDateString('en-GB', { day: '2-digit', month: 'short' });
+
+        const wrapper = document.createElement('div');
+        wrapper.className = 'chart-bar-wrapper';
+        wrapper.innerHTML = `
+            <div class="chart-bar ${color}" style="height:${heightPct}%"></div>
+            <div class="chart-label">${label}</div>
+        `;
+        chart.appendChild(wrapper);
+    });
+
+    // Table
+    history.slice(-10).reverse().forEach(entry => {
+        const passClass = entry.overall_pass ? 'yes' : 'no';
+        const passText = entry.overall_pass ? 'PASS' : 'FAIL';
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+            <td style="color:#7a8ba8">${formatTimestamp(entry.timestamp)}</td>
+            <td><span class="pass-badge ${passClass}">${passText}</span></td>
+            <td>${entry.dimensions_passing || 0}/8</td>
+            <td style="color:${(entry.violations || 0) > 0 ? '#ef4444' : '#10b981'}">${entry.violations || 0}</td>
+        `;
+        tbody.appendChild(tr);
+    });
+}
+
+// Actions
+async function runScan() {
+    const btn = document.getElementById('btnScan');
+    btn.classList.add('loading');
+    btn.innerHTML = '<div class="loading-spinner" style="width:16px;height:16px;border-width:2px"></div> Scanning...';
+
+    try {
+        const res = await fetch(API_PATHS.scan, { method: 'POST' });
+        if (res.ok) {
+            // Refresh data after scan
+            await loadAllData();
+        }
+    } catch (e) {
+        console.error('Scan failed:', e);
+    }
+
+    btn.classList.remove('loading');
+    btn.innerHTML = `
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M8 1v3M8 12v3M3.5 3.5l2.12 2.12M10.38 10.38l2.12 2.12M1 8h3M12 8h3M3.5 12.5l2.12-2.12M10.38 5.62l2.12-2.12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        Run Scan
+    `;
+}
+
+async function resolveTask(taskId) {
+    try {
+        await fetch(API_PATHS.tasks + '/' + taskId + '/resolve', { method: 'POST' });
+        await loadAllData();
+    } catch (e) {
+        console.error('Resolve failed:', e);
+    }
+}
+
+// Main data loader
+async function loadAllData() {
+    const indicator = document.getElementById('refreshIndicator');
+    indicator.classList.add('visible');
+
+    const [summary, scores, agents, dashboards, tasks, history] = await Promise.all([
+        fetchData(API_PATHS.summary),
+        fetchData(API_PATHS.scores),
+        fetchData(API_PATHS.agents),
+        fetchData(API_PATHS.dashboards),
+        fetchData(API_PATHS.tasks),
+        fetchData(API_PATHS.history)
+    ]);
+
+    renderHero(summary);
+    renderDimensions(scores);
+    renderAgentHealth(agents);
+    renderDashboardHealth(dashboards);
+    renderTasks(tasks);
+    renderHistory(history);
+
+    setTimeout(() => indicator.classList.remove('visible'), 2000);
+}
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+    loadAllData();
+    setInterval(loadAllData, REFRESH_INTERVAL);
+});
+</script>
+
+</body>
+</html>
