@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280, initial-scale=1">
+<title>PetHub AI Citation Monitor &mdash; Phase 16B</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#080a0f;--card:#111621;--border:#1a2236;
+  --text:#e2e8f0;--dim:#7a8ba8;--muted:#4a5568;
+  --accent:#8b5cf6;--accent-dim:#7c3aed;--accent-glow:rgba(139,92,246,0.15);
+  --green:#10b981;--red:#ef4444;--amber:#f59e0b;--blue:#3b82f6;--cyan:#06b6d4;--violet:#8b5cf6;
+  --card-hover:#151d2e;--radius:10px;
+}
+html{font-size:14px;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;line-height:1.5;min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background:
+  radial-gradient(ellipse 80% 60% at 50% -10%,rgba(139,92,246,0.05),transparent 70%),
+  radial-gradient(ellipse 50% 40% at 80% 100%,rgba(124,58,237,0.04),transparent);
+  pointer-events:none;z-index:0}
+body::after{content:'';position:fixed;inset:0;background:
+  linear-gradient(rgba(26,34,54,0.03) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(26,34,54,0.03) 1px,transparent 1px);
+  background-size:40px 40px;pointer-events:none;z-index:0}
+
+.shell{position:relative;z-index:1;max-width:1440px;margin:0 auto;padding:20px 24px 60px}
+
+/* Header */
+.hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.hdr-left{display:flex;align-items:center;gap:14px}
+.hdr-icon{width:44px;height:44px;border-radius:11px;background:linear-gradient(135deg,var(--accent),#a78bfa);display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 0 24px rgba(139,92,246,0.35)}
+.hdr h1{font-size:1.4rem;font-weight:700;letter-spacing:-0.02em}
+.hdr h1 span{color:var(--accent);font-weight:800}
+.hdr-right{display:flex;align-items:center;gap:12px}
+.scan-time{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--dim)}
+.phase-badge{font-family:'JetBrains Mono',monospace;font-size:.7rem;font-weight:600;background:rgba(139,92,246,0.15);color:var(--accent);padding:4px 12px;border-radius:6px;border:1px solid rgba(139,92,246,0.3)}
+
+/* Section styling */
+.sec{margin-bottom:32px}
+.sec-title{display:flex;align-items:center;gap:10px;margin-bottom:16px;font-size:1.05rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);text-shadow:0 0 20px rgba(139,92,246,0.3)}
+.sec-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--accent-dim),transparent)}
+.sec-num{font-family:'JetBrains Mono',monospace;font-size:.7rem;background:var(--accent);color:#fff;padding:2px 8px;border-radius:4px;font-weight:600}
+
+/* Cards */
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;transition:border-color .25s,box-shadow .25s}
+.card:hover{border-color:rgba(139,92,246,0.3);box-shadow:0 0 20px var(--accent-glow)}
+.card-title{font-size:.85rem;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.card-dim{color:var(--dim);font-size:.78rem}
+.mono{font-family:'JetBrains Mono',monospace}
+
+/* Grids */
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.grid-6{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+
+/* Badges */
+.badge{display:inline-block;font-size:.68rem;font-weight:600;padding:2px 9px;border-radius:5px;text-transform:uppercase;letter-spacing:.04em}
+.badge-green{background:rgba(16,185,129,0.15);color:var(--green)}
+.badge-red{background:rgba(239,68,68,0.15);color:var(--red)}
+.badge-amber{background:rgba(245,158,11,0.15);color:var(--amber)}
+.badge-blue{background:rgba(59,130,246,0.15);color:var(--blue)}
+.badge-gray{background:rgba(122,139,168,0.15);color:var(--dim)}
+.badge-violet{background:rgba(139,92,246,0.15);color:var(--violet)}
+.badge-cyan{background:rgba(6,182,212,0.15);color:var(--cyan)}
+
+/* Progress bars */
+.bar-track{height:6px;border-radius:3px;background:var(--border);overflow:hidden;margin:4px 0}
+.bar-fill{height:100%;border-radius:3px;transition:width .6s ease}
+.bar-green{background:linear-gradient(90deg,#059669,#10b981)}
+.bar-amber{background:linear-gradient(90deg,#d97706,#f59e0b)}
+.bar-red{background:linear-gradient(90deg,#dc2626,#ef4444)}
+.bar-violet{background:linear-gradient(90deg,#7c3aed,#8b5cf6)}
+.bar-blue{background:linear-gradient(90deg,#2563eb,#3b82f6)}
+.bar-cyan{background:linear-gradient(90deg,#0891b2,#06b6d4)}
+
+/* Stats bar */
+.stats-bar{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:8px}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px 16px;text-align:center;position:relative;overflow:hidden}
+.stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:var(--radius) var(--radius) 0 0}
+.stat-card.purple::before{background:linear-gradient(90deg,var(--accent),#a78bfa)}
+.stat-card.blue::before{background:linear-gradient(90deg,#2563eb,#3b82f6)}
+.stat-card.cyan::before{background:linear-gradient(90deg,#0891b2,#06b6d4)}
+.stat-card.green::before{background:linear-gradient(90deg,#059669,#10b981)}
+.stat-card.amber::before{background:linear-gradient(90deg,#d97706,#f59e0b)}
+.stat-icon{font-size:1.4rem;margin-bottom:6px}
+.stat-value{font-family:'JetBrains Mono',monospace;font-size:1.6rem;font-weight:800;margin-bottom:2px}
+.stat-label{font-size:.72rem;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;font-weight:500}
+
+/* Platform cards */
+.platform-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;position:relative;overflow:hidden;transition:all .25s}
+.platform-card:hover{border-color:rgba(139,92,246,0.3);box-shadow:0 0 24px var(--accent-glow);transform:translateY(-2px)}
+.platform-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:12px}
+.platform-icon.google{background:rgba(59,130,246,0.12);border:1px solid rgba(59,130,246,0.25)}
+.platform-icon.chatgpt{background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.25)}
+.platform-icon.perplexity{background:rgba(139,92,246,0.12);border:1px solid rgba(139,92,246,0.25)}
+.platform-icon.bing{background:rgba(6,182,212,0.12);border:1px solid rgba(6,182,212,0.25)}
+.platform-name{font-size:.95rem;font-weight:700;margin-bottom:4px}
+.platform-status{font-size:.72rem;font-weight:500;margin-bottom:14px}
+.platform-metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.platform-metric{padding:10px;background:rgba(8,10,15,0.5);border-radius:8px;text-align:center}
+.platform-metric-val{font-family:'JetBrains Mono',monospace;font-size:1.2rem;font-weight:700}
+.platform-metric-label{font-size:.65rem;color:var(--dim);text-transform:uppercase;letter-spacing:.04em;margin-top:2px}
+
+/* Table */
+.tbl-wrap{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.tbl{width:100%;border-collapse:collapse}
+.tbl thead{background:rgba(8,10,15,0.6)}
+.tbl th{padding:12px 16px;text-align:left;font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--dim);border-bottom:1px solid var(--border)}
+.tbl td{padding:11px 16px;font-size:.82rem;border-bottom:1px solid rgba(26,34,54,0.5)}
+.tbl tbody tr{transition:background .15s}
+.tbl tbody tr:hover{background:rgba(139,92,246,0.04)}
+.tbl tbody tr:last-child td{border-bottom:none}
+
+/* Circular gauge */
+.circ-gauge{position:relative;width:100px;height:100px;margin:0 auto}
+.circ-gauge svg{width:100%;height:100%;transform:rotate(-90deg)}
+.circ-gauge .cg-val{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.circ-gauge .cg-num{font-family:'JetBrains Mono',monospace;font-size:1.5rem;font-weight:800}
+.circ-gauge .cg-label{font-size:.6rem;color:var(--dim);text-transform:uppercase;letter-spacing:.06em}
+
+/* Readiness card */
+.readiness-hero{background:linear-gradient(135deg,var(--card) 0%,rgba(139,92,246,0.04) 50%,var(--card) 100%);border:1px solid rgba(139,92,246,0.2);border-radius:14px;padding:28px;position:relative;overflow:hidden}
+.readiness-hero::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,0.06),transparent 70%);pointer-events:none}
+.readiness-layout{display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:start}
+.readiness-gauge-area{display:flex;flex-direction:column;align-items:center;gap:8px;padding-top:8px}
+.readiness-bars{flex:1}
+.readiness-row{margin-bottom:14px}
+.readiness-row-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
+.readiness-row-label{font-size:.82rem;font-weight:600}
+.readiness-row-value{font-family:'JetBrains Mono',monospace;font-size:.78rem;color:var(--dim)}
+
+/* Signal cards */
+.signal-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;text-align:center;transition:all .25s}
+.signal-card:hover{border-color:rgba(139,92,246,0.3);box-shadow:0 0 20px var(--accent-glow);transform:translateY(-2px)}
+.signal-icon{font-size:1.6rem;margin-bottom:8px}
+.signal-count{font-family:'JetBrains Mono',monospace;font-size:1.8rem;font-weight:800;margin-bottom:2px}
+.signal-label{font-size:.78rem;font-weight:600;margin-bottom:4px}
+.signal-pct{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--dim)}
+.signal-bar{margin-top:8px}
+
+/* Chart placeholder */
+.chart-placeholder{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:40px;text-align:center;position:relative;overflow:hidden;min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.chart-placeholder::before{content:'';position:absolute;inset:20px;border:1px dashed rgba(139,92,246,0.15);border-radius:8px;pointer-events:none}
+.chart-grid{position:absolute;inset:20px;display:flex;flex-direction:column;justify-content:space-between;pointer-events:none}
+.chart-grid-line{height:1px;background:rgba(26,34,54,0.4);position:relative}
+.chart-grid-line::before{content:attr(data-val);position:absolute;left:-4px;top:-8px;font-family:'JetBrains Mono',monospace;font-size:.6rem;color:var(--muted)}
+.chart-placeholder-icon{font-size:2.4rem;margin-bottom:12px;opacity:.5}
+.chart-placeholder-text{font-size:.9rem;font-weight:600;color:var(--dim);margin-bottom:4px}
+.chart-placeholder-sub{font-size:.75rem;color:var(--muted)}
+.chart-baseline-dots{display:flex;align-items:flex-end;gap:6px;margin-top:16px;height:60px}
+.chart-dot{width:18px;border-radius:3px 3px 0 0;background:linear-gradient(180deg,rgba(139,92,246,0.3),rgba(139,92,246,0.08));border:1px solid rgba(139,92,246,0.2);border-bottom:none;transition:height .3s}
+
+/* Recommendation cards */
+.rec-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;position:relative;overflow:hidden;transition:all .25s}
+.rec-card:hover{border-color:rgba(139,92,246,0.3);box-shadow:0 0 20px var(--accent-glow);transform:translateY(-2px)}
+.rec-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.rec-card.critical::before{background:linear-gradient(90deg,#dc2626,#ef4444)}
+.rec-card.high::before{background:linear-gradient(90deg,#d97706,#f59e0b)}
+.rec-card.medium::before{background:linear-gradient(90deg,#7c3aed,#8b5cf6)}
+.rec-card.low::before{background:linear-gradient(90deg,#059669,#10b981)}
+.rec-icon{font-size:1.5rem;margin-bottom:10px}
+.rec-title{font-size:.9rem;font-weight:700;margin-bottom:6px}
+.rec-desc{font-size:.78rem;color:var(--dim);line-height:1.5;margin-bottom:12px}
+.rec-impact{display:flex;align-items:center;gap:6px;margin-bottom:10px}
+.rec-impact-label{font-size:.68rem;color:var(--dim);text-transform:uppercase;letter-spacing:.04em}
+.rec-impact-bar{flex:1;height:4px;border-radius:2px;background:var(--border);overflow:hidden}
+.rec-impact-fill{height:100%;border-radius:2px}
+.rec-meta{display:flex;gap:8px;flex-wrap:wrap}
+
+/* Status dot */
+.status-dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:4px}
+.status-dot.planned{background:var(--amber);box-shadow:0 0 8px rgba(245,158,11,0.4)}
+.status-dot.active{background:var(--green);box-shadow:0 0 8px rgba(16,185,129,0.4);animation:dot-pulse 2s ease-in-out infinite}
+.status-dot.baseline{background:var(--violet);box-shadow:0 0 8px rgba(139,92,246,0.4)}
+@keyframes dot-pulse{0%,100%{opacity:1}50%{opacity:.4}}
+
+/* Action button */
+.action-btn{font-family:'JetBrains Mono',monospace;font-size:.65rem;font-weight:500;padding:4px 10px;border-radius:4px;border:1px solid rgba(139,92,246,0.3);background:rgba(139,92,246,0.08);color:var(--accent);cursor:pointer;transition:all .2s}
+.action-btn:hover{background:rgba(139,92,246,0.2);box-shadow:0 0 12px rgba(139,92,246,0.2)}
+
+/* Footer */
+.footer{text-align:center;padding:24px 0;border-top:1px solid var(--border);margin-top:16px}
+.footer-text{font-size:.72rem;color:var(--muted);font-family:'JetBrains Mono',monospace}
+</style>
+</head>
+<body>
+
+<div class="shell">
+
+<!-- HEADER -->
+<div class="hdr">
+  <div class="hdr-left">
+    <div class="hdr-icon">&#x1F9E0;</div>
+    <div>
+      <h1>PetHub <span>AI Citation Monitor</span></h1>
+      <div style="font-size:.78rem;color:var(--dim);margin-top:2px">Tracking content visibility across AI search platforms</div>
+    </div>
+  </div>
+  <div class="hdr-right">
+    <span class="phase-badge">PHASE 16B</span>
+    <span class="scan-time" id="scanTime"></span>
+  </div>
+</div>
+
+<!-- S1: CITATION OVERVIEW -->
+<div class="sec">
+  <div class="sec-title"><span class="sec-num">01</span> Citation Overview</div>
+  <div class="stats-bar" id="statsBar"></div>
+</div>
+
+<!-- S2: AI PLATFORM STATUS -->
+<div class="sec">
+  <div class="sec-title"><span class="sec-num">02</span> AI Platform Status</div>
+  <div class="grid-4" id="platformGrid"></div>
+</div>
+
+<!-- S3: TARGET QUERY TRACKER -->
+<div class="sec">
+  <div class="sec-title"><span class="sec-num">03</span> Target Query Tracker</div>
+  <div class="tbl-wrap">
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th style="width:4%">#</th>
+          <th style="width:32%">Query</th>
+          <th style="width:16%">Category</th>
+          <th style="width:12%">Priority</th>
+          <th style="width:18%">Citation Status</th>
+          <th style="width:18%">Actions</th>
+        </tr>
+      </thead>
+      <tbody id="queryTableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- S4: ANSWER READINESS ASSESSMENT -->
+<div class="sec">
+  <div class="sec-title"><span class="sec-num">04</span> Answer Readiness Assessment</div>
+  <div class="readiness-hero" id="readinessSection"></div>
+</div>
+
+<!-- S5: CONTENT SIGNAL ANALYSIS -->
+<div class="sec">
+  <div class="sec-title"><span class="sec-num">05</span> Content Signal Analysis</div>
+  <div class="grid-6" id="signalGrid"></div>
+</div>
+
+<!-- S6: CITATION GROWTH TRACKING -->
+<div class="sec">
+  <div class="sec-title"><span class="sec-num">06</span> Citation Growth Tracking</div>
+  <div class="chart-placeholder">
+    <div class="chart-grid">
+      <div class="chart-grid-line" data-val=""></div>
+      <div class="chart-grid-line" data-val=""></div>
+      <div class="chart-grid-line" data-val=""></div>
+      <div class="chart-grid-line" data-val=""></div>
+      <div class="chart-grid-line" data-val=""></div>
+    </div>
+    <div class="chart-placeholder-icon">&#x1F4C8;</div>
+    <div class="chart-placeholder-text">Citation Growth Data Will Populate Here</div>
+    <div class="chart-placeholder-sub">Monitoring baseline established &mdash; first data points will appear after initial scans complete</div>
+    <div class="chart-baseline-dots">
+      <div class="chart-dot" style="height:8px"></div>
+      <div class="chart-dot" style="height:12px"></div>
+      <div class="chart-dot" style="height:6px"></div>
+      <div class="chart-dot" style="height:10px"></div>
+      <div class="chart-dot" style="height:14px"></div>
+      <div class="chart-dot" style="height:8px"></div>
+      <div class="chart-dot" style="height:16px"></div>
+      <div class="chart-dot" style="height:10px"></div>
+      <div class="chart-dot" style="height:12px"></div>
+      <div class="chart-dot" style="height:8px"></div>
+      <div class="chart-dot" style="height:18px"></div>
+      <div class="chart-dot" style="height:14px"></div>
+    </div>
+  </div>
+</div>
+
+<!-- S7: RECOMMENDATIONS -->
+<div class="sec">
+  <div class="sec-title"><span class="sec-num">07</span> Priority Recommendations</div>
+  <div class="grid-4" id="recGrid"></div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <div class="footer-text">PetHub AI Citation Monitor v16B &bull; Baseline Scan &bull; Phase 16B Intelligence Layer</div>
+</div>
+
+</div>
+
+<script>
+window.CITATION_DATA = {
+  last_scan: "2026-05-31T23:00:00Z",
+  scan_status: "baseline",
+  total_queries_monitored: 0,
+  total_citations_found: 0,
+  ai_platforms: [
+    {name: "Google AI Overviews", status: "monitoring_planned", citations: 0, queries_checked: 0},
+    {name: "ChatGPT/SearchGPT", status: "monitoring_planned", citations: 0, queries_checked: 0},
+    {name: "Perplexity", status: "monitoring_planned", citations: 0, queries_checked: 0},
+    {name: "Bing Copilot", status: "monitoring_planned", citations: 0, queries_checked: 0}
+  ],
+  target_queries: [
+    {query: "best cat toys UK", category: "Cat Supplies", priority: "high", citation_status: "unchecked"},
+    {query: "best dog beds UK", category: "Dog Supplies", priority: "high", citation_status: "unchecked"},
+    {query: "puppy training tips", category: "Dog Care", priority: "high", citation_status: "unchecked"},
+    {query: "indoor cat enrichment", category: "Cat Care", priority: "high", citation_status: "unchecked"},
+    {query: "best dog food UK", category: "Dog Food", priority: "high", citation_status: "unchecked"},
+    {query: "cat nutrition guide", category: "Cat Care", priority: "medium", citation_status: "unchecked"},
+    {query: "dog harness guide", category: "Dog Supplies", priority: "medium", citation_status: "unchecked"},
+    {query: "pet insurance UK", category: "Pet Insurance", priority: "low", citation_status: "unchecked"},
+    {query: "best cat collars UK", category: "Cat Supplies", priority: "medium", citation_status: "unchecked"},
+    {query: "dog grooming basics", category: "Dog Care", priority: "medium", citation_status: "unchecked"},
+    {query: "puppy checklist UK", category: "Dog Care", priority: "medium", citation_status: "unchecked"},
+    {query: "indoor cat care guide", category: "Cat Care", priority: "medium", citation_status: "unchecked"},
+    {query: "best dog toys UK", category: "Dog Supplies", priority: "high", citation_status: "unchecked"},
+    {query: "cat litter guide UK", category: "Cat Supplies", priority: "medium", citation_status: "unchecked"},
+    {query: "senior dog care", category: "Dog Care", priority: "medium", citation_status: "unchecked"}
+  ],
+  answer_readiness: {
+    total_pages: 263,
+    optimized_for_ai: 0,
+    has_structured_data: 0,
+    has_faq_schema: 0,
+    has_clear_answers: 0,
+    readiness_score: 0
+  },
+  content_signals: {
+    pages_with_direct_answers: 0,
+    pages_with_definitions: 0,
+    pages_with_lists: 263,
+    pages_with_tables: 156,
+    pages_with_faq: 228,
+    pages_with_how_to: 0
+  }
+};
+
+const D = window.CITATION_DATA;
+
+// Helpers
+function pct(val, total) { return total > 0 ? Math.round((val / total) * 100) : 0; }
+function formatDate(iso) {
+  const d = new Date(iso);
+  return d.toLocaleDateString('en-GB', {day:'2-digit',month:'short',year:'numeric'}) + ' ' + d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});
+}
+
+function statusBadge(status) {
+  const map = {
+    'baseline': ['BASELINE', 'badge-violet'],
+    'monitoring_planned': ['PLANNED', 'badge-amber'],
+    'active': ['ACTIVE', 'badge-green'],
+    'paused': ['PAUSED', 'badge-gray']
+  };
+  const [label, cls] = map[status] || ['UNKNOWN', 'badge-gray'];
+  return `<span class="badge ${cls}">${label}</span>`;
+}
+
+function priorityBadge(p) {
+  const map = {high: 'badge-red', medium: 'badge-amber', low: 'badge-gray'};
+  return `<span class="badge ${map[p] || 'badge-gray'}">${p.toUpperCase()}</span>`;
+}
+
+function citationBadge(s) {
+  const map = {
+    cited: ['CITED', 'badge-green'],
+    not_cited: ['NOT CITED', 'badge-red'],
+    unchecked: ['UNCHECKED', 'badge-gray'],
+    partial: ['PARTIAL', 'badge-amber']
+  };
+  const [label, cls] = map[s] || ['UNKNOWN', 'badge-gray'];
+  return `<span class="badge ${cls}">${label}</span>`;
+}
+
+function categoryBadge(cat) {
+  const colorMap = {
+    'Cat Supplies': 'badge-violet',
+    'Dog Supplies': 'badge-blue',
+    'Cat Care': 'badge-cyan',
+    'Dog Care': 'badge-green',
+    'Dog Food': 'badge-amber',
+    'Pet Insurance': 'badge-gray'
+  };
+  return `<span class="badge ${colorMap[cat] || 'badge-gray'}">${cat}</span>`;
+}
+
+function circGauge(value, max, color, label) {
+  const pctVal = max > 0 ? (value / max) * 100 : 0;
+  const r = 40, c = 2 * Math.PI * r;
+  const offset = c - (pctVal / 100) * c;
+  return `<div class="circ-gauge">
+    <svg viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="${r}" fill="none" stroke="var(--border)" stroke-width="8"/>
+      <circle cx="50" cy="50" r="${r}" fill="none" stroke="${color}" stroke-width="8" stroke-linecap="round"
+        stroke-dasharray="${c}" stroke-dashoffset="${offset}" style="filter:drop-shadow(0 0 6px ${color})"/>
+    </svg>
+    <div class="cg-val">
+      <div class="cg-num" style="color:${color}">${pctVal}%</div>
+      <div class="cg-label">${label}</div>
+    </div>
+  </div>`;
+}
+
+// S1: Stats bar
+document.getElementById('scanTime').textContent = formatDate(D.last_scan);
+
+document.getElementById('statsBar').innerHTML = `
+  <div class="stat-card purple">
+    <div class="stat-icon">&#x1F50D;</div>
+    <div class="stat-value">${D.total_queries_monitored}</div>
+    <div class="stat-label">Queries Monitored</div>
+  </div>
+  <div class="stat-card blue">
+    <div class="stat-icon">&#x1F4CC;</div>
+    <div class="stat-value">${D.total_citations_found}</div>
+    <div class="stat-label">Citations Found</div>
+  </div>
+  <div class="stat-card cyan">
+    <div class="stat-icon">&#x1F916;</div>
+    <div class="stat-value">${D.ai_platforms.length}</div>
+    <div class="stat-label">AI Platforms Tracked</div>
+  </div>
+  <div class="stat-card green">
+    <div class="stat-icon">&#x2705;</div>
+    <div class="stat-value">${D.answer_readiness.readiness_score}%</div>
+    <div class="stat-label">Answer Readiness</div>
+  </div>
+  <div class="stat-card amber">
+    <div class="stat-icon">&#x26A1;</div>
+    <div class="stat-value">${statusBadge(D.scan_status)}</div>
+    <div class="stat-label">Scan Status</div>
+  </div>
+`;
+
+// S2: Platform cards
+const platformMeta = [
+  {icon: '&#x1F310;', cls: 'google', color: '#3b82f6', accent: 'rgba(59,130,246,'},
+  {icon: '&#x1F4AC;', cls: 'chatgpt', color: '#10b981', accent: 'rgba(16,185,129,'},
+  {icon: '&#x2728;', cls: 'perplexity', color: '#8b5cf6', accent: 'rgba(139,92,246,'},
+  {icon: '&#x1F50E;', cls: 'bing', color: '#06b6d4', accent: 'rgba(6,182,212,'}
+];
+
+document.getElementById('platformGrid').innerHTML = D.ai_platforms.map((p, i) => {
+  const m = platformMeta[i];
+  const dotCls = p.status === 'monitoring_planned' ? 'planned' : p.status === 'active' ? 'active' : 'baseline';
+  return `<div class="platform-card">
+    <div class="platform-icon ${m.cls}">${m.icon}</div>
+    <div class="platform-name">${p.name}</div>
+    <div class="platform-status"><span class="status-dot ${dotCls}"></span> ${statusBadge(p.status)}</div>
+    <div class="platform-metrics">
+      <div class="platform-metric">
+        <div class="platform-metric-val" style="color:${m.color}">${p.citations}</div>
+        <div class="platform-metric-label">Citations</div>
+      </div>
+      <div class="platform-metric">
+        <div class="platform-metric-val" style="color:${m.color}">${p.queries_checked}</div>
+        <div class="platform-metric-label">Queries Checked</div>
+      </div>
+    </div>
+  </div>`;
+}).join('');
+
+// S3: Query tracker table
+document.getElementById('queryTableBody').innerHTML = D.target_queries.map((q, i) => `
+  <tr>
+    <td class="mono" style="color:var(--muted);font-size:.75rem">${String(i + 1).padStart(2, '0')}</td>
+    <td style="font-weight:600">${q.query}</td>
+    <td>${categoryBadge(q.category)}</td>
+    <td>${priorityBadge(q.priority)}</td>
+    <td>${citationBadge(q.citation_status)}</td>
+    <td><button class="action-btn" onclick="alert('Scan will be available after monitoring activation')">CHECK NOW</button></td>
+  </tr>
+`).join('');
+
+// S4: Answer readiness
+const ar = D.answer_readiness;
+const readinessMetrics = [
+  {label: 'Optimized for AI', val: ar.optimized_for_ai, max: ar.total_pages, color: 'bar-violet'},
+  {label: 'Structured Data', val: ar.has_structured_data, max: ar.total_pages, color: 'bar-blue'},
+  {label: 'FAQ Schema', val: ar.has_faq_schema, max: ar.total_pages, color: 'bar-cyan'},
+  {label: 'Clear Answer Formatting', val: ar.has_clear_answers, max: ar.total_pages, color: 'bar-green'}
+];
+
+document.getElementById('readinessSection').innerHTML = `
+  <div class="readiness-layout">
+    <div class="readiness-gauge-area">
+      ${circGauge(ar.readiness_score, 100, '#8b5cf6', 'READINESS')}
+      <div style="text-align:center;margin-top:8px">
+        <div class="mono" style="font-size:.75rem;color:var(--dim)">${ar.total_pages} pages total</div>
+        <div style="font-size:.78rem;color:var(--dim);margin-top:4px">Content baseline established</div>
+      </div>
+    </div>
+    <div class="readiness-bars">
+      <div style="font-size:.9rem;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px">
+        &#x1F3AF; AI-Readiness Breakdown
+        <span class="badge badge-violet">BASELINE</span>
+      </div>
+      ${readinessMetrics.map(m => {
+        const p = pct(m.val, m.max);
+        return `<div class="readiness-row">
+          <div class="readiness-row-header">
+            <span class="readiness-row-label">${m.label}</span>
+            <span class="readiness-row-value">${m.val} / ${m.max} (${p}%)</span>
+          </div>
+          <div class="bar-track"><div class="bar-fill ${m.color}" style="width:${Math.max(p, 1)}%"></div></div>
+        </div>`;
+      }).join('')}
+      <div style="margin-top:16px;padding:12px 14px;background:rgba(139,92,246,0.06);border:1px solid rgba(139,92,246,0.15);border-radius:8px;font-size:.78rem;color:var(--dim)">
+        <strong style="color:var(--accent)">Baseline Note:</strong> Answer readiness metrics will populate as pages are audited for AI-optimized content structure, schema markup, and direct-answer formatting.
+      </div>
+    </div>
+  </div>
+`;
+
+// S5: Content signals
+const cs = D.content_signals;
+const signals = [
+  {icon: '&#x1F4A1;', label: 'Direct Answers', val: cs.pages_with_direct_answers, color: '#8b5cf6', barCls: 'bar-violet'},
+  {icon: '&#x1F4D6;', label: 'Definitions', val: cs.pages_with_definitions, color: '#3b82f6', barCls: 'bar-blue'},
+  {icon: '&#x1F4CB;', label: 'Lists', val: cs.pages_with_lists, color: '#10b981', barCls: 'bar-green'},
+  {icon: '&#x1F5C2;', label: 'Tables', val: cs.pages_with_tables, color: '#06b6d4', barCls: 'bar-cyan'},
+  {icon: '&#x2753;', label: 'FAQ Sections', val: cs.pages_with_faq, color: '#f59e0b', barCls: 'bar-amber'},
+  {icon: '&#x1F6E0;', label: 'How-To Content', val: cs.pages_with_how_to, color: '#ef4444', barCls: 'bar-red'}
+];
+
+document.getElementById('signalGrid').innerHTML = signals.map(s => {
+  const p = pct(s.val, ar.total_pages);
+  return `<div class="signal-card">
+    <div class="signal-icon">${s.icon}</div>
+    <div class="signal-count" style="color:${s.color}">${s.val}</div>
+    <div class="signal-label">${s.label}</div>
+    <div class="signal-pct">${p}% of ${ar.total_pages} pages</div>
+    <div class="signal-bar">
+      <div class="bar-track"><div class="bar-fill ${s.barCls}" style="width:${Math.max(p, 1)}%"></div></div>
+    </div>
+  </div>`;
+}).join('');
+
+// S7: Recommendations
+const recs = [
+  {
+    icon: '&#x1F4DD;',
+    title: 'Add Structured FAQ Schema',
+    desc: '228 pages have FAQ content but 0 have FAQ schema markup. Adding FAQPage schema will signal AI systems to extract and cite your Q&A pairs directly.',
+    priority: 'critical',
+    impact: 95,
+    effort: 'Medium',
+    category: 'Schema'
+  },
+  {
+    icon: '&#x1F3AF;',
+    title: 'Create Direct-Answer Paragraphs',
+    desc: '0 pages have optimized direct-answer blocks. Add concise 40-60 word answer paragraphs at the top of each article to increase AI citation probability.',
+    priority: 'critical',
+    impact: 90,
+    effort: 'High',
+    category: 'Content'
+  },
+  {
+    icon: '&#x2B50;',
+    title: 'Optimize for Featured Snippets',
+    desc: 'Structure content with clear headings, numbered lists, and definition-style openings. Pages already have lists (263) and tables (156) which is a strong foundation.',
+    priority: 'high',
+    impact: 80,
+    effort: 'Medium',
+    category: 'SEO'
+  },
+  {
+    icon: '&#x1F4DA;',
+    title: 'Build Definition Blocks for Key Terms',
+    desc: '0 pages have definition blocks. Add "What is..." definition paragraphs for key pet care terms to become the authoritative source AI models reference.',
+    priority: 'high',
+    impact: 75,
+    effort: 'Medium',
+    category: 'Content'
+  }
+];
+
+const impactColors = {critical: '#ef4444', high: '#f59e0b', medium: '#8b5cf6', low: '#10b981'};
+
+document.getElementById('recGrid').innerHTML = recs.map(r => {
+  const ic = impactColors[r.priority];
+  return `<div class="rec-card ${r.priority}">
+    <div class="rec-icon">${r.icon}</div>
+    <div class="rec-title">${r.title}</div>
+    <div class="rec-desc">${r.desc}</div>
+    <div class="rec-impact">
+      <span class="rec-impact-label">Impact</span>
+      <div class="rec-impact-bar">
+        <div class="rec-impact-fill" style="width:${r.impact}%;background:${ic}"></div>
+      </div>
+      <span class="mono" style="font-size:.7rem;color:${ic}">${r.impact}%</span>
+    </div>
+    <div class="rec-meta">
+      <span class="badge ${r.priority === 'critical' ? 'badge-red' : r.priority === 'high' ? 'badge-amber' : 'badge-violet'}">${r.priority.toUpperCase()}</span>
+      <span class="badge badge-gray">${r.effort} Effort</span>
+      <span class="badge badge-blue">${r.category}</span>
+    </div>
+  </div>`;
+}).join('');
+</script>
+</body>
+</html>

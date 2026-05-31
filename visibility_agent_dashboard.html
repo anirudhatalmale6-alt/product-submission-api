@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetHub Visibility Agent Status — Phase 16H</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#080a0f;--card:#111621;--border:#1a2236;--text:#e2e8f0;--dim:#7a8ba8;
+  --accent:#06b6d4;--accent-dim:rgba(6,182,212,.12);--accent-glow:rgba(6,182,212,.25);
+  --green:#22c55e;--red:#ef4444;--yellow:#eab308;--orange:#f59e0b;
+}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;min-height:100vh;padding:0}
+.container{max-width:1400px;margin:0 auto;padding:32px 24px 60px}
+
+/* Header */
+.header{margin-bottom:40px;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.header h1{font-size:36px;font-weight:800;background:linear-gradient(135deg,var(--accent),#67e8f9);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.5px}
+.header .phase{font-size:14px;color:var(--dim);font-family:'JetBrains Mono',monospace}
+.agent-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.3);
+  padding:8px 16px;border-radius:24px;font-size:13px;font-weight:600;color:var(--green);
+}
+.agent-badge .pulse{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(34,197,94,.5)}50%{box-shadow:0 0 0 8px rgba(34,197,94,0)}}
+
+/* Section */
+.section{margin-bottom:36px}
+.section-title{font-size:20px;font-weight:700;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.section-title .dot{width:10px;height:10px;border-radius:50%;background:var(--accent)}
+
+/* Grid */
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+@media(max-width:1100px){.grid-4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.grid-2,.grid-4,.grid-5{grid-template-columns:1fr}}
+
+/* Card */
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;transition:border-color .2s,box-shadow .2s}
+.card:hover{border-color:rgba(6,182,212,.3);box-shadow:0 0 20px rgba(6,182,212,.06)}
+.card-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1.2px;color:var(--dim);margin-bottom:14px}
+
+/* Gauge */
+.gauge-wrap{display:flex;justify-content:center;padding:20px 0 10px}
+.gauge{position:relative;width:240px;height:240px}
+.gauge svg{width:100%;height:100%;transform:rotate(-90deg)}
+.gauge circle{fill:none;stroke-linecap:round}
+.gauge .track{stroke:var(--border);stroke-width:12}
+.gauge .fill{stroke:var(--accent);stroke-width:12;transition:stroke-dashoffset 1.5s ease}
+.gauge .score-text{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+  text-align:center;
+}
+.gauge .score-num{font-size:56px;font-weight:800;color:var(--text);line-height:1}
+.gauge .score-max{font-size:16px;color:var(--dim);margin-top:4px;font-family:'JetBrains Mono',monospace}
+.gauge .score-label{font-size:13px;color:var(--accent);margin-top:8px;font-weight:600}
+
+/* Factor Cards */
+.factor-card{position:relative;overflow:hidden}
+.factor-card .f-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.factor-card .f-name{font-size:15px;font-weight:600}
+.factor-card .f-score{font-size:14px;font-weight:700;font-family:'JetBrains Mono',monospace}
+.factor-card .f-detail{font-size:12px;color:var(--dim);line-height:1.5;margin-bottom:14px;min-height:36px}
+.factor-card .f-bar{height:6px;border-radius:3px;background:var(--border);overflow:hidden}
+.factor-card .f-bar-fill{height:100%;border-radius:3px;transition:width 1.2s ease}
+.status-good .f-score{color:var(--green)}
+.status-good .f-bar-fill{background:linear-gradient(90deg,var(--green),#4ade80)}
+.status-warning .f-score{color:var(--yellow)}
+.status-warning .f-bar-fill{background:linear-gradient(90deg,var(--yellow),var(--orange))}
+.status-critical .f-score{color:var(--red)}
+.status-critical .f-bar-fill{background:linear-gradient(90deg,var(--red),#f87171)}
+
+/* Status badge */
+.s-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:12px;text-transform:uppercase;letter-spacing:.5px}
+.s-badge.good{background:rgba(34,197,94,.12);color:var(--green)}
+.s-badge.warning{background:rgba(234,179,8,.12);color:var(--yellow)}
+.s-badge.critical{background:rgba(239,68,68,.12);color:var(--red)}
+
+/* Stats */
+.stat-card{text-align:center;padding:20px 16px}
+.stat-val{font-size:28px;font-weight:800;color:var(--text)}
+.stat-label{font-size:12px;color:var(--dim);margin-top:4px}
+.stat-unit{font-size:14px;color:var(--accent);font-family:'JetBrains Mono',monospace}
+
+/* Actions */
+.action-item{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid var(--border)}
+.action-item:last-child{border-bottom:none}
+.action-num{width:28px;height:28px;border-radius:50%;border:2px solid var(--accent);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--accent);flex-shrink:0}
+.action-text{font-size:14px;line-height:1.5;padding-top:3px}
+
+/* Forecast */
+.forecast-row{display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--border)}
+.forecast-row:last-child{border-bottom:none}
+.forecast-label{width:120px;font-size:13px;font-weight:600;color:var(--dim);font-family:'JetBrains Mono',monospace;flex-shrink:0}
+.forecast-bar-wrap{flex:1;height:8px;border-radius:4px;background:var(--border);overflow:hidden}
+.forecast-bar-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--accent),#67e8f9);transition:width 1.2s ease}
+.forecast-val{width:50px;text-align:right;font-size:14px;font-weight:700;color:var(--text);font-family:'JetBrains Mono',monospace}
+</style>
+</head>
+<body>
+<script>
+window.VISIBILITY_DATA = {
+  agent_status: "active",
+  visibility_score: 12,
+  max_score: 100,
+  factors: [
+    {name: "Google Indexing", score: 85, max: 100, status: "good", detail: "213/213 pages indexed by HubX, sitemap accessible"},
+    {name: "Sitemap Health", score: 70, max: 100, status: "warning", detail: "325 sitemap URLs, 91 posts may be missing from sitemaps"},
+    {name: "Search Rankings", score: 0, max: 100, status: "critical", detail: "No ranking data yet - GSC/GA4 not ingesting"},
+    {name: "Social Visibility", score: 15, max: 100, status: "warning", detail: "2/7 platforms connected, 43 social posts sent"},
+    {name: "Backlink Authority", score: 0, max: 100, status: "critical", detail: "No backlinks acquired yet, DA ~5"},
+    {name: "AI Search Presence", score: 0, max: 100, status: "critical", detail: "No AI citation monitoring active yet"},
+    {name: "Content Freshness", score: 90, max: 100, status: "good", detail: "263 posts published, content velocity high"},
+    {name: "Technical SEO", score: 84, max: 100, status: "good", detail: "SEO score 84/100 across 298 audited pages"}
+  ],
+  site_stats: {total_pages: 213, published_posts: 263, avg_seo_score: 84, avg_word_count: 4382, avg_response_time: 1528},
+  priority_actions: [
+    "Fix GSC/GA4 data ingestion to get real traffic data",
+    "Connect remaining 5 social platforms",
+    "Begin backlink acquisition campaign",
+    "Start AI citation monitoring",
+    "Fix 91 posts missing from sitemaps"
+  ]
+};
+</script>
+
+<div class="container">
+  <!-- Header -->
+  <div class="header">
+    <div>
+      <h1>Visibility Agent Status</h1>
+      <div class="phase">Phase 16H &bull; PetHub Online &bull; Generated 2026-05-31</div>
+    </div>
+    <div class="agent-badge"><span class="pulse"></span>Agent Active</div>
+  </div>
+
+  <!-- Visibility Score Gauge -->
+  <div class="section">
+    <div class="section-title"><span class="dot"></span>Overall Visibility Score</div>
+    <div class="card">
+      <div class="gauge-wrap">
+        <div class="gauge">
+          <svg viewBox="0 0 240 240">
+            <circle class="track" cx="120" cy="120" r="100"></circle>
+            <circle class="fill" cx="120" cy="120" r="100"
+              stroke-dasharray="628.32"
+              stroke-dashoffset="628.32"
+              id="gauge-fill"></circle>
+          </svg>
+          <div class="score-text">
+            <div class="score-num" id="score-num">0</div>
+            <div class="score-max">/ 100</div>
+            <div class="score-label">VISIBILITY</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Factor Breakdown -->
+  <div class="section">
+    <div class="section-title"><span class="dot"></span>Factor Breakdown</div>
+    <div class="grid-4" id="factors"></div>
+  </div>
+
+  <!-- Site Statistics -->
+  <div class="section">
+    <div class="section-title"><span class="dot"></span>Site Statistics</div>
+    <div class="grid-5" id="stats"></div>
+  </div>
+
+  <!-- Priority Actions -->
+  <div class="section">
+    <div class="section-title"><span class="dot"></span>Priority Actions</div>
+    <div class="card" id="actions"></div>
+  </div>
+
+  <!-- Visibility Growth Forecast -->
+  <div class="section">
+    <div class="section-title"><span class="dot"></span>Visibility Growth Forecast</div>
+    <div class="card" id="forecast"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const D = window.VISIBILITY_DATA;
+
+  // Gauge animation
+  const circumference = 2 * Math.PI * 100;
+  const pct = D.visibility_score / D.max_score;
+  const offset = circumference - (pct * circumference);
+  setTimeout(() => {
+    document.getElementById('gauge-fill').style.strokeDashoffset = offset;
+    document.getElementById('score-num').textContent = D.visibility_score;
+  }, 300);
+
+  // Factor cards
+  const fContainer = document.getElementById('factors');
+  D.factors.forEach(f => {
+    const pctF = Math.round((f.score / f.max) * 100);
+    fContainer.innerHTML += `
+      <div class="card factor-card status-${f.status}">
+        <div class="f-header">
+          <div class="f-name">${f.name}</div>
+          <span class="s-badge ${f.status}">${f.status}</span>
+        </div>
+        <div class="f-detail">${f.detail}</div>
+        <div class="f-header" style="margin-bottom:6px">
+          <div class="f-score">${f.score} / ${f.max}</div>
+        </div>
+        <div class="f-bar"><div class="f-bar-fill" style="width:${pctF}%"></div></div>
+      </div>`;
+  });
+
+  // Stats
+  const stats = [
+    {val: D.site_stats.total_pages, label:'Indexed Pages', unit:'pages'},
+    {val: D.site_stats.published_posts, label:'Published Posts', unit:'posts'},
+    {val: D.site_stats.avg_seo_score, label:'Avg SEO Score', unit:'/100'},
+    {val: D.site_stats.avg_word_count.toLocaleString(), label:'Avg Word Count', unit:'words'},
+    {val: (D.site_stats.avg_response_time / 1000).toFixed(1) + 's', label:'Avg Response Time', unit:'TTFB'}
+  ];
+  const sContainer = document.getElementById('stats');
+  stats.forEach(s => {
+    sContainer.innerHTML += `
+      <div class="card stat-card">
+        <div class="stat-val">${s.val}</div>
+        <div class="stat-unit">${s.unit}</div>
+        <div class="stat-label">${s.label}</div>
+      </div>`;
+  });
+
+  // Priority Actions
+  const aContainer = document.getElementById('actions');
+  D.priority_actions.forEach((a, i) => {
+    aContainer.innerHTML += `
+      <div class="action-item">
+        <div class="action-num">${i + 1}</div>
+        <div class="action-text">${a}</div>
+      </div>`;
+  });
+
+  // Forecast
+  const forecast = [
+    {label:'Current', score: D.visibility_score},
+    {label:'30 days', score: 22},
+    {label:'60 days', score: 35},
+    {label:'90 days', score: 48},
+    {label:'6 months', score: 65},
+    {label:'12 months', score: 82}
+  ];
+  const fcEl = document.getElementById('forecast');
+  fcEl.innerHTML = '<div class="card-title">Projected Visibility Score Growth</div>';
+  forecast.forEach(f => {
+    fcEl.innerHTML += `
+      <div class="forecast-row">
+        <div class="forecast-label">${f.label}</div>
+        <div class="forecast-bar-wrap"><div class="forecast-bar-fill" style="width:${f.score}%"></div></div>
+        <div class="forecast-val">${f.score}</div>
+      </div>`;
+  });
+})();
+</script>
+</body>
+</html>

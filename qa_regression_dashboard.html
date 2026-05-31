@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetHub QA Regression Engine - Phase 16J</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #080a0f;
+    --card: #111621;
+    --border: #1a2236;
+    --text: #e2e8f0;
+    --dim: #7a8ba8;
+    --accent: #22c55e;
+    --accent-dim: rgba(34, 197, 94, 0.12);
+    --accent-glow: rgba(34, 197, 94, 0.25);
+    --red: #ef4444;
+    --red-dim: rgba(239, 68, 68, 0.12);
+    --yellow: #eab308;
+    --yellow-dim: rgba(234, 179, 8, 0.12);
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 32px 24px 64px;
+  }
+
+  .container { max-width: 1280px; margin: 0 auto; }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .header-left { display: flex; align-items: center; gap: 16px; }
+  .logo-mark {
+    width: 44px; height: 44px;
+    background: var(--accent-dim);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px; font-weight: 700; color: var(--accent);
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .header h1 {
+    font-size: 22px; font-weight: 600;
+    background: linear-gradient(135deg, var(--text), var(--accent));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .header-sub { font-size: 13px; color: var(--dim); font-weight: 400; }
+  .header-right { display: flex; align-items: center; gap: 12px; }
+  .status-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 6px 14px; border-radius: 20px;
+    font-size: 12px; font-weight: 500;
+    font-family: 'JetBrains Mono', monospace;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .status-active {
+    background: var(--accent-dim); color: var(--accent);
+    border: 1px solid rgba(34,197,94,0.3);
+  }
+  .status-active::before {
+    content: ''; width: 7px; height: 7px; border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 8px var(--accent);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+  .timestamp {
+    font-size: 12px; color: var(--dim);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Stats Bar */
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .stat-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .stat-card:hover { border-color: rgba(34,197,94,0.3); }
+  .stat-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0.5;
+  }
+  .stat-label {
+    font-size: 12px; color: var(--dim); text-transform: uppercase;
+    letter-spacing: 0.8px; font-weight: 500; margin-bottom: 8px;
+  }
+  .stat-value {
+    font-size: 32px; font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text);
+    line-height: 1.1;
+  }
+  .stat-value.accent { color: var(--accent); }
+  .stat-value.warn { color: var(--yellow); }
+  .stat-value.danger { color: var(--red); }
+  .stat-detail {
+    font-size: 12px; color: var(--dim); margin-top: 6px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Section */
+  .section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+    margin-bottom: 24px;
+  }
+  .section-header {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-bottom: 24px; flex-wrap: wrap; gap: 12px;
+  }
+  .section-title {
+    font-size: 16px; font-weight: 600; color: var(--text);
+    display: flex; align-items: center; gap: 10px;
+  }
+  .section-title .icon {
+    width: 28px; height: 28px; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 14px;
+  }
+  .icon-green { background: var(--accent-dim); color: var(--accent); }
+  .icon-yellow { background: var(--yellow-dim); color: var(--yellow); }
+  .icon-red { background: var(--red-dim); color: var(--red); }
+  .section-badge {
+    font-size: 11px; padding: 4px 10px; border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--accent-dim); color: var(--accent);
+    border: 1px solid rgba(34,197,94,0.2);
+  }
+
+  /* Table */
+  .table-wrap { overflow-x: auto; }
+  table {
+    width: 100%; border-collapse: collapse;
+    font-size: 13px;
+  }
+  thead th {
+    text-align: left; padding: 12px 16px;
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px;
+    color: var(--dim); font-weight: 500;
+    border-bottom: 1px solid var(--border);
+    background: rgba(26,34,54,0.4);
+    white-space: nowrap;
+  }
+  tbody td {
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(26,34,54,0.5);
+    white-space: nowrap;
+  }
+  tbody tr:hover { background: rgba(34,197,94,0.03); }
+  tbody tr:last-child td { border-bottom: none; }
+  .mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+  }
+  .trend-stable { color: var(--accent); }
+  .trend-up { color: var(--accent); }
+  .trend-down { color: var(--red); }
+
+  .pass-bar-wrap {
+    display: flex; align-items: center; gap: 10px;
+    min-width: 180px;
+  }
+  .pass-bar {
+    flex: 1; height: 6px; border-radius: 3px;
+    background: rgba(26,34,54,0.8);
+    overflow: hidden;
+  }
+  .pass-bar-fill {
+    height: 100%; border-radius: 3px;
+    transition: width 0.6s ease;
+  }
+  .fill-high { background: var(--accent); }
+  .fill-mid { background: var(--yellow); }
+  .fill-low { background: var(--red); }
+  .pass-pct {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px; min-width: 40px; text-align: right;
+  }
+
+  .fail-count {
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: 3px 10px; border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+  }
+  .fail-high { background: var(--red-dim); color: var(--red); }
+  .fail-mid { background: var(--yellow-dim); color: var(--yellow); }
+  .fail-low { background: var(--accent-dim); color: var(--accent); }
+
+  /* Alert Feed */
+  .alert-empty {
+    display: flex; flex-direction: column; align-items: center;
+    justify-content: center; padding: 48px 24px;
+    color: var(--dim); text-align: center;
+  }
+  .alert-empty-icon {
+    width: 56px; height: 56px; border-radius: 50%;
+    background: var(--accent-dim); border: 1px solid rgba(34,197,94,0.2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 24px; margin-bottom: 16px; color: var(--accent);
+  }
+  .alert-empty h3 { font-size: 15px; font-weight: 500; margin-bottom: 6px; color: var(--text); }
+  .alert-empty p { font-size: 13px; max-width: 360px; }
+
+  /* Chart Placeholder */
+  .chart-placeholder {
+    height: 200px; border-radius: 8px;
+    border: 1px dashed var(--border);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    color: var(--dim); gap: 8px;
+  }
+  .chart-placeholder .chart-icon { font-size: 28px; opacity: 0.4; }
+  .chart-placeholder p { font-size: 13px; }
+
+  /* Auto-Remediation */
+  .remediation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+  }
+  .remediation-item {
+    background: rgba(26,34,54,0.3);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    text-align: center;
+  }
+  .remediation-item .ri-label {
+    font-size: 11px; color: var(--dim); text-transform: uppercase;
+    letter-spacing: 0.6px; margin-bottom: 8px;
+  }
+  .remediation-item .ri-value {
+    font-size: 22px; font-weight: 600;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Threshold Compliance */
+  .threshold-wrap {
+    display: flex; flex-direction: column; gap: 20px;
+  }
+  .threshold-visual {
+    display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+  }
+  .threshold-ring-wrap {
+    position: relative; width: 140px; height: 140px; flex-shrink: 0;
+  }
+  .threshold-ring-wrap svg { transform: rotate(-90deg); }
+  .ring-bg { stroke: rgba(26,34,54,0.8); }
+  .ring-fill { transition: stroke-dashoffset 1s ease; }
+  .threshold-pct {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 26px; font-weight: 700;
+  }
+  .threshold-details { flex: 1; min-width: 240px; }
+  .threshold-row {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(26,34,54,0.5);
+    font-size: 13px;
+  }
+  .threshold-row:last-child { border-bottom: none; }
+  .threshold-row .label { color: var(--dim); }
+  .threshold-row .value { font-family: 'JetBrains Mono', monospace; font-weight: 500; }
+
+  /* Two-column layout */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  @media (max-width: 768px) {
+    .two-col { grid-template-columns: 1fr; }
+    .header { flex-direction: column; align-items: flex-start; }
+    .stats-bar { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 480px) {
+    .stats-bar { grid-template-columns: 1fr; }
+    body { padding: 20px 14px 48px; }
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center; padding-top: 32px;
+    font-size: 12px; color: var(--dim);
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .footer a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+
+<script>
+window.QA_DATA = {
+  last_run: "2026-05-31T23:00:00Z",
+  engine_status: "active",
+  total_posts_monitored: 263,
+  regression_checks: [
+    {check: "TOC Present", current_pass: 87, previous_pass: 87, trend: "stable", posts_failing: 176},
+    {check: "Author Box", current_pass: 248, previous_pass: 248, trend: "stable", posts_failing: 15},
+    {check: "Images >= 4", current_pass: 161, previous_pass: 161, trend: "stable", posts_failing: 102},
+    {check: "Internal Links >= 3", current_pass: 231, previous_pass: 231, trend: "stable", posts_failing: 32},
+    {check: "FAQ Section", current_pass: 228, previous_pass: 228, trend: "stable", posts_failing: 35},
+    {check: "Key Terms", current_pass: 211, previous_pass: 211, trend: "stable", posts_failing: 52},
+    {check: "Sources/References", current_pass: 252, previous_pass: 252, trend: "stable", posts_failing: 11},
+    {check: "Affiliate Disclosure", current_pass: 241, previous_pass: 241, trend: "stable", posts_failing: 22},
+    {check: "CTA Present", current_pass: 21, previous_pass: 21, trend: "stable", posts_failing: 242},
+    {check: "Recommended Products", current_pass: 236, previous_pass: 236, trend: "stable", posts_failing: 27}
+  ],
+  regression_alerts: [],
+  quality_score_history: [
+    {date: "2026-05-31", avg_score: 62, posts_checked: 263}
+  ],
+  new_posts_since_last_check: 0,
+  modified_posts_since_last_check: 0,
+  auto_remediation: {
+    enabled: false,
+    mode: "report_only",
+    fixes_proposed: 0,
+    fixes_applied: 0
+  },
+  threshold: 90,
+  posts_above_threshold: 12,
+  posts_below_threshold: 251
+};
+</script>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <div class="logo-mark">QA</div>
+      <div>
+        <h1>QA Regression Engine</h1>
+        <span class="header-sub">PetHub Phase 16J &mdash; Content Quality Monitoring</span>
+      </div>
+    </div>
+    <div class="header-right">
+      <span class="status-badge status-active" id="engineStatus">Active</span>
+      <span class="timestamp" id="lastRun"></span>
+    </div>
+  </div>
+
+  <!-- Stats Bar -->
+  <div class="stats-bar" id="statsBar"></div>
+
+  <!-- Regression Check Matrix -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-title">
+        <span class="icon icon-green">&#9745;</span>
+        Regression Check Matrix
+      </div>
+      <span class="section-badge" id="checkCount"></span>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Quality Check</th>
+            <th>Pass Rate</th>
+            <th>Current</th>
+            <th>Previous</th>
+            <th>Trend</th>
+            <th>Failing</th>
+          </tr>
+        </thead>
+        <tbody id="checkMatrix"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Two Column: Alerts + Chart -->
+  <div class="two-col">
+
+    <!-- Alert Feed -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-title">
+          <span class="icon icon-red">&#9888;</span>
+          Regression Alerts
+        </div>
+      </div>
+      <div id="alertFeed"></div>
+    </div>
+
+    <!-- Quality Score History -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-title">
+          <span class="icon icon-green">&#9783;</span>
+          Quality Score History
+        </div>
+      </div>
+      <div id="scoreChart"></div>
+    </div>
+
+  </div>
+
+  <!-- Two Column: Auto-Remediation + Threshold -->
+  <div class="two-col">
+
+    <!-- Auto-Remediation Status -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-title">
+          <span class="icon icon-yellow">&#9881;</span>
+          Auto-Remediation Status
+        </div>
+      </div>
+      <div class="remediation-grid" id="remediationGrid"></div>
+    </div>
+
+    <!-- Threshold Compliance -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-title">
+          <span class="icon icon-green">&#9673;</span>
+          Threshold Compliance
+        </div>
+        <span class="section-badge" id="thresholdBadge"></span>
+      </div>
+      <div class="threshold-wrap" id="thresholdWrap"></div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    PetHub AI Platform &mdash; QA Regression Engine v16J &mdash; <a href="#">pethubonline.com</a>
+  </div>
+
+</div>
+
+<script>
+(function() {
+  const D = window.QA_DATA;
+  const total = D.total_posts_monitored;
+
+  // Last run
+  const dt = new Date(D.last_run);
+  document.getElementById('lastRun').textContent =
+    'Last run: ' + dt.toISOString().replace('T', ' ').substring(0, 19) + ' UTC';
+
+  // Stats bar
+  const avgScore = D.quality_score_history.length
+    ? D.quality_score_history[D.quality_score_history.length - 1].avg_score : 0;
+  const regressionCount = D.regression_alerts.length;
+  const stats = [
+    { label: 'Posts Monitored', value: total, cls: '', detail: `${D.new_posts_since_last_check} new, ${D.modified_posts_since_last_check} modified` },
+    { label: 'Average Quality Score', value: avgScore + '%', cls: avgScore >= 80 ? 'accent' : avgScore >= 60 ? 'warn' : 'danger', detail: `Target: ${D.threshold}%` },
+    { label: 'Regressions Detected', value: regressionCount, cls: regressionCount === 0 ? 'accent' : 'danger', detail: regressionCount === 0 ? 'No regressions' : regressionCount + ' active' },
+    { label: 'Quality Threshold', value: D.threshold + '%', cls: '', detail: `${D.posts_above_threshold} above / ${D.posts_below_threshold} below` }
+  ];
+  const statsBar = document.getElementById('statsBar');
+  stats.forEach(s => {
+    const card = document.createElement('div');
+    card.className = 'stat-card';
+    card.innerHTML = `
+      <div class="stat-label">${s.label}</div>
+      <div class="stat-value ${s.cls}">${s.value}</div>
+      <div class="stat-detail">${s.detail}</div>
+    `;
+    statsBar.appendChild(card);
+  });
+
+  // Check matrix
+  document.getElementById('checkCount').textContent = D.regression_checks.length + ' checks';
+  const tbody = document.getElementById('checkMatrix');
+  D.regression_checks.forEach(c => {
+    const pct = total > 0 ? Math.round((c.current_pass / total) * 100) : 0;
+    const fillCls = pct >= 80 ? 'fill-high' : pct >= 50 ? 'fill-mid' : 'fill-low';
+    const pctCls = pct >= 80 ? 'trend-stable' : pct >= 50 ? '' : 'trend-down';
+    const failCls = c.posts_failing <= 20 ? 'fail-low' : c.posts_failing <= 60 ? 'fail-mid' : 'fail-high';
+    const trendArrow = c.trend === 'up' ? '&#9650;' : c.trend === 'down' ? '&#9660;' : '&#9644;';
+    const trendCls = c.trend === 'up' ? 'trend-up' : c.trend === 'down' ? 'trend-down' : 'trend-stable';
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td style="font-weight:500;">${c.check}</td>
+      <td>
+        <div class="pass-bar-wrap">
+          <div class="pass-bar"><div class="pass-bar-fill ${fillCls}" style="width:${pct}%"></div></div>
+          <span class="pass-pct ${pctCls}">${pct}%</span>
+        </div>
+      </td>
+      <td class="mono">${c.current_pass} / ${total}</td>
+      <td class="mono">${c.previous_pass} / ${total}</td>
+      <td class="mono ${trendCls}">${trendArrow} ${c.trend}</td>
+      <td><span class="fail-count ${failCls}">${c.posts_failing}</span></td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  // Alert feed
+  const alertFeed = document.getElementById('alertFeed');
+  if (D.regression_alerts.length === 0) {
+    alertFeed.innerHTML = `
+      <div class="alert-empty">
+        <div class="alert-empty-icon">&#10003;</div>
+        <h3>No Regressions Detected</h3>
+        <p>All monitored quality checks are stable. Alerts will appear here when a check's pass rate drops between runs.</p>
+      </div>
+    `;
+  }
+
+  // Chart placeholder
+  const chartWrap = document.getElementById('scoreChart');
+  const histEntry = D.quality_score_history[0];
+  chartWrap.innerHTML = `
+    <div class="chart-placeholder">
+      <div class="chart-icon">&#9783;</div>
+      <p>Quality score trend chart will populate after multiple data points</p>
+      <p class="mono" style="font-size:12px; color:var(--accent);">Latest: ${histEntry.date} &mdash; ${histEntry.avg_score}% avg (${histEntry.posts_checked} posts)</p>
+    </div>
+  `;
+
+  // Auto-Remediation
+  const remGrid = document.getElementById('remediationGrid');
+  const remItems = [
+    { label: 'Status', value: D.auto_remediation.enabled ? 'Enabled' : 'Disabled', color: D.auto_remediation.enabled ? 'var(--accent)' : 'var(--dim)' },
+    { label: 'Mode', value: D.auto_remediation.mode.replace('_', ' '), color: 'var(--yellow)' },
+    { label: 'Fixes Proposed', value: D.auto_remediation.fixes_proposed, color: 'var(--text)' },
+    { label: 'Fixes Applied', value: D.auto_remediation.fixes_applied, color: 'var(--text)' }
+  ];
+  remItems.forEach(r => {
+    const div = document.createElement('div');
+    div.className = 'remediation-item';
+    div.innerHTML = `
+      <div class="ri-label">${r.label}</div>
+      <div class="ri-value" style="color:${r.color}">${r.value}</div>
+    `;
+    remGrid.appendChild(div);
+  });
+
+  // Threshold Compliance
+  const threshWrap = document.getElementById('thresholdWrap');
+  const compliancePct = total > 0 ? Math.round((D.posts_above_threshold / total) * 100) : 0;
+  const circumference = 2 * Math.PI * 54;
+  const offset = circumference - (compliancePct / 100) * circumference;
+  const ringColor = compliancePct >= 80 ? 'var(--accent)' : compliancePct >= 50 ? 'var(--yellow)' : 'var(--red)';
+  const pctColor = compliancePct >= 80 ? 'var(--accent)' : compliancePct >= 50 ? 'var(--yellow)' : 'var(--red)';
+  document.getElementById('thresholdBadge').textContent = 'Target: ' + D.threshold + '%';
+
+  threshWrap.innerHTML = `
+    <div class="threshold-visual">
+      <div class="threshold-ring-wrap">
+        <svg width="140" height="140" viewBox="0 0 140 140">
+          <circle class="ring-bg" cx="70" cy="70" r="54" fill="none" stroke-width="10"/>
+          <circle class="ring-fill" cx="70" cy="70" r="54" fill="none"
+            stroke="${ringColor}" stroke-width="10" stroke-linecap="round"
+            stroke-dasharray="${circumference}"
+            stroke-dashoffset="${offset}"/>
+        </svg>
+        <div class="threshold-pct" style="color:${pctColor}">${compliancePct}%</div>
+      </div>
+      <div class="threshold-details">
+        <div class="threshold-row">
+          <span class="label">Posts Above ${D.threshold}% Threshold</span>
+          <span class="value" style="color:var(--accent)">${D.posts_above_threshold}</span>
+        </div>
+        <div class="threshold-row">
+          <span class="label">Posts Below ${D.threshold}% Threshold</span>
+          <span class="value" style="color:var(--red)">${D.posts_below_threshold}</span>
+        </div>
+        <div class="threshold-row">
+          <span class="label">Compliance Rate</span>
+          <span class="value" style="color:${pctColor}">${compliancePct}%</span>
+        </div>
+        <div class="threshold-row">
+          <span class="label">Gap to Full Compliance</span>
+          <span class="value">${D.posts_below_threshold} posts need improvement</span>
+        </div>
+      </div>
+    </div>
+  `;
+
+})();
+</script>
+
+</body>
+</html>

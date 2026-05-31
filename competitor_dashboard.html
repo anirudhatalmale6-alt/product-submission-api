@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetHub - Competitor Displacement Report (Phase 16F)</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #080a0f;
+  --card: #111621;
+  --border: #1a2236;
+  --text: #e2e8f0;
+  --dim: #7a8ba8;
+  --accent: #ef4444;
+  --accent-dim: rgba(239, 68, 68, 0.12);
+  --accent-glow: rgba(239, 68, 68, 0.3);
+  --teal: #14b8a6;
+  --teal-dim: rgba(20, 184, 166, 0.15);
+  --warning: #f59e0b;
+  --success: #22c55e;
+  --pethub: #3b82f6;
+  --pethub-dim: rgba(59, 130, 246, 0.15);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--accent), #fca5a5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dashboard-header .subtitle {
+  color: var(--dim);
+  font-size: 0.95rem;
+  margin-top: 0.4rem;
+  font-weight: 400;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.badge-danger { background: var(--accent-dim); color: #f87171; border: 1px solid var(--accent-glow); }
+.badge-warning { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+.badge-success { background: rgba(34, 197, 94, 0.15); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.3); }
+.badge-info { background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
+.badge-teal { background: var(--teal-dim); color: var(--teal); border: 1px solid rgba(20, 184, 166, 0.3); }
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.stat-card:hover { border-color: var(--accent-glow); }
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+
+.stat-card .label {
+  font-size: 0.78rem;
+  color: var(--dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card .value {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.stat-card .meta {
+  font-size: 0.78rem;
+  color: var(--dim);
+  margin-top: 0.5rem;
+}
+
+/* Sections */
+.section { margin-bottom: 2rem; }
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.section-title .icon {
+  width: 28px; height: 28px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--accent-dim);
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+/* Competitor Cards */
+.competitor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+.comp-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: border-color 0.3s;
+}
+
+.comp-card:hover { border-color: var(--accent-glow); }
+
+.comp-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.comp-card-header .comp-name {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.comp-card-header .comp-domain {
+  font-size: 0.8rem;
+  color: var(--dim);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.comp-da {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 56px;
+}
+
+.comp-da .da-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.comp-da .da-label {
+  font-size: 0.65rem;
+  color: var(--dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.2rem;
+}
+
+.comp-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.comp-stat {
+  text-align: center;
+  padding: 0.6rem;
+  background: rgba(239, 68, 68, 0.04);
+  border-radius: 8px;
+}
+
+.comp-stat .cs-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.comp-stat .cs-label {
+  font-size: 0.68rem;
+  color: var(--dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.15rem;
+}
+
+.comp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.6rem;
+}
+
+.comp-tags .tag-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--dim);
+  margin-right: 0.35rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.tag-strength { background: rgba(34, 197, 94, 0.1); color: #4ade80; }
+.tag-weakness { background: rgba(239, 68, 68, 0.08); color: #f87171; }
+
+/* PetHub vs Competitors */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-table thead th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--dim);
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.comparison-table tbody td {
+  padding: 0.85rem 1rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.comparison-table tbody tr:last-child td { border-bottom: none; }
+.comparison-table tbody tr:hover { background: rgba(239, 68, 68, 0.03); }
+
+.comparison-table tbody tr.pethub-row {
+  background: var(--pethub-dim);
+  border-left: 3px solid var(--pethub);
+}
+
+.comparison-table tbody tr.pethub-row:hover { background: rgba(59, 130, 246, 0.12); }
+
+.mono { font-family: 'JetBrains Mono', monospace; }
+
+/* DA Bar */
+.da-bar-container {
+  width: 100%;
+  max-width: 120px;
+  height: 6px;
+  background: rgba(239, 68, 68, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+}
+
+.da-bar-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.6s ease;
+}
+
+/* Displacement Table */
+.displacement-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.displacement-table thead th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--dim);
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.displacement-table tbody td {
+  padding: 0.85rem 1rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.displacement-table tbody tr:last-child td { border-bottom: none; }
+.displacement-table tbody tr:hover { background: rgba(239, 68, 68, 0.03); }
+
+/* Gap Analysis */
+.gap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.gap-card {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(239, 68, 68, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+.gap-card .gap-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.gap-card .gap-label {
+  font-size: 0.82rem;
+  color: var(--dim);
+  margin-top: 0.5rem;
+}
+
+/* Venn Diagram */
+.venn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  height: 220px;
+}
+
+.venn-circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.venn-pethub {
+  background: rgba(59, 130, 246, 0.15);
+  border: 2px solid rgba(59, 130, 246, 0.4);
+  left: calc(50% - 130px);
+}
+
+.venn-competitors {
+  background: rgba(239, 68, 68, 0.12);
+  border: 2px solid rgba(239, 68, 68, 0.35);
+  left: calc(50% - 50px);
+}
+
+.venn-overlap {
+  position: absolute;
+  left: calc(50% - 30px);
+  text-align: center;
+  z-index: 2;
+}
+
+.venn-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.venn-label {
+  font-size: 0.7rem;
+  color: var(--dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Recommendations */
+.rec-list { list-style: none; }
+
+.rec-list li {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  font-size: 0.92rem;
+}
+
+.rec-list li:last-child { border-bottom: none; }
+
+.rec-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px; height: 26px; min-width: 26px;
+  border-radius: 8px;
+  background: var(--accent-dim);
+  color: var(--accent);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .competitor-grid { grid-template-columns: 1fr; }
+  .gap-grid { grid-template-columns: 1fr; }
+  body { padding: 1rem; }
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--dim);
+}
+
+.footer span { color: var(--accent); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<script>
+window.COMPETITOR_DATA = {
+  competitors: [
+    {name: "Cats.com", domain: "cats.com", da: 72, traffic_est: "2.1M", content_count: 1500, strengths: ["High DA","Large content library","Brand recognition"], weaknesses: ["US-focused","No UK pricing"], overlap_queries: 45},
+    {name: "Pets at Home", domain: "petsathome.com", da: 68, traffic_est: "1.8M", content_count: 800, strengths: ["Retail authority","UK market leader","Product reviews"], weaknesses: ["Commercial bias","Less educational"], overlap_queries: 62},
+    {name: "PDSA", domain: "pdsa.org.uk", da: 74, traffic_est: "950K", content_count: 600, strengths: ["Charity trust","Vet authority","UK-specific"], weaknesses: ["No product reviews","Limited buying guides"], overlap_queries: 38},
+    {name: "Blue Cross", domain: "bluecross.org.uk", da: 70, traffic_est: "720K", content_count: 450, strengths: ["Charity trust","Adoption authority"], weaknesses: ["No commercial content","Narrow scope"], overlap_queries: 25},
+    {name: "Battersea", domain: "battersea.org.uk", da: 66, traffic_est: "580K", content_count: 300, strengths: ["Strong brand","Adoption focus"], weaknesses: ["Very narrow scope","No product content"], overlap_queries: 15}
+  ],
+  pethub: {
+    domain: "pethubonline.com", da: 5, traffic_est: "0", content_count: 263,
+    strengths: ["Comprehensive guides","UK-specific pricing","AI-optimized content","Fast content velocity"],
+    weaknesses: ["New domain","No backlinks","No traffic yet","Low DA"]
+  },
+  displacement_opportunities: [
+    {query: "best cat toys UK 2026", current_winner: "Pets at Home", pethub_position: "not_ranking", difficulty: "medium", content_ready: true},
+    {query: "puppy training guide UK", current_winner: "PDSA", pethub_position: "not_ranking", difficulty: "hard", content_ready: true},
+    {query: "best dog beds UK", current_winner: "Pets at Home", pethub_position: "not_ranking", difficulty: "medium", content_ready: true},
+    {query: "indoor cat enrichment ideas", current_winner: "Cats.com", pethub_position: "not_ranking", difficulty: "medium", content_ready: true},
+    {query: "best dog food UK 2026", current_winner: "Pets at Home", pethub_position: "not_ranking", difficulty: "hard", content_ready: false}
+  ],
+  content_gap_analysis: {
+    pethub_unique_topics: 85,
+    competitor_gaps_found: 42,
+    overlap_topics: 120
+  }
+};
+</script>
+
+<div class="dashboard-header">
+  <h1>Competitor Displacement Report</h1>
+  <div class="subtitle">PetHub Online &mdash; Phase 16F &middot; Competitive Intelligence &amp; Displacement Strategy</div>
+</div>
+
+<div id="app"></div>
+
+<div class="footer">
+  PetHub Online &mdash; <span>Phase 16F</span> &middot; Competitor Displacement Report &middot; Generated <span id="gen-date"></span>
+</div>
+
+<script>
+(function() {
+  const D = window.COMPETITOR_DATA;
+  const app = document.getElementById('app');
+
+  const avgDA = Math.round(D.competitors.reduce((s, c) => s + c.da, 0) / D.competitors.length);
+  const totalCompContent = D.competitors.reduce((s, c) => s + c.content_count, 0);
+  const totalOverlap = D.competitors.reduce((s, c) => s + c.overlap_queries, 0);
+
+  function daColor(da) {
+    if (da >= 70) return '#ef4444';
+    if (da >= 50) return '#f59e0b';
+    if (da >= 20) return '#14b8a6';
+    return '#3b82f6';
+  }
+
+  // Overview Stats
+  let html = `
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="label">Competitors Tracked</div>
+      <div class="value">${D.competitors.length}</div>
+      <div class="meta">Major UK pet market players</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Avg Competitor DA</div>
+      <div class="value">${avgDA}</div>
+      <div class="meta">PetHub DA: ${D.pethub.da}</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">PetHub Content</div>
+      <div class="value">${D.pethub.content_count}</div>
+      <div class="meta">Articles published</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Overlap Queries</div>
+      <div class="value">${totalOverlap}</div>
+      <div class="meta">Queries where competitors rank</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Displacement Targets</div>
+      <div class="value">${D.displacement_opportunities.length}</div>
+      <div class="meta">${D.displacement_opportunities.filter(d => d.content_ready).length} content ready</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Content Gaps Found</div>
+      <div class="value">${D.content_gap_analysis.competitor_gaps_found}</div>
+      <div class="meta">Topics competitors miss</div>
+    </div>
+  </div>`;
+
+  // Competitor Cards
+  html += `
+  <div class="section">
+    <div class="section-title">
+      <div class="icon">&#9876;</div>
+      Competitive Landscape
+    </div>
+    <div class="competitor-grid">`;
+
+  D.competitors.forEach(c => {
+    html += `
+      <div class="comp-card">
+        <div class="comp-card-header">
+          <div>
+            <div class="comp-name">${c.name}</div>
+            <div class="comp-domain">${c.domain}</div>
+          </div>
+          <div class="comp-da">
+            <div class="da-value" style="color:${daColor(c.da)}">${c.da}</div>
+            <div class="da-label">DA</div>
+          </div>
+        </div>
+        <div class="comp-stats">
+          <div class="comp-stat">
+            <div class="cs-value">${c.traffic_est}</div>
+            <div class="cs-label">Traffic</div>
+          </div>
+          <div class="comp-stat">
+            <div class="cs-value">${c.content_count.toLocaleString()}</div>
+            <div class="cs-label">Content</div>
+          </div>
+          <div class="comp-stat">
+            <div class="cs-value">${c.overlap_queries}</div>
+            <div class="cs-label">Overlap</div>
+          </div>
+        </div>
+        <div class="comp-tags">
+          <span class="tag-label">Strengths:</span>
+          ${c.strengths.map(s => `<span class="tag tag-strength">${s}</span>`).join('')}
+        </div>
+        <div class="comp-tags">
+          <span class="tag-label">Gaps:</span>
+          ${c.weaknesses.map(w => `<span class="tag tag-weakness">${w}</span>`).join('')}
+        </div>
+      </div>`;
+  });
+
+  html += `</div></div>`;
+
+  // PetHub vs Competitors Comparison Table
+  html += `
+  <div class="section">
+    <div class="section-title">
+      <div class="icon">&#128202;</div>
+      PetHub vs Competitors
+    </div>
+    <div class="card" style="overflow-x:auto;">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th>Site</th>
+            <th>Domain Authority</th>
+            <th>DA Relative</th>
+            <th>Est. Traffic</th>
+            <th>Content Count</th>
+            <th>Overlap Queries</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="pethub-row">
+            <td style="font-weight:600;">
+              PetHub Online
+              <span class="badge badge-info" style="margin-left:0.4rem;">YOU</span>
+            </td>
+            <td class="mono" style="color:var(--pethub);font-weight:600;">${D.pethub.da}</td>
+            <td>
+              <span class="mono" style="color:var(--pethub)">${D.pethub.da}</span>
+              <div class="da-bar-container">
+                <div class="da-bar-fill" style="width:${D.pethub.da}%;background:var(--pethub);"></div>
+              </div>
+            </td>
+            <td class="mono">${D.pethub.traffic_est}</td>
+            <td class="mono">${D.pethub.content_count}</td>
+            <td class="mono">&mdash;</td>
+          </tr>`;
+
+  D.competitors.forEach(c => {
+    html += `
+          <tr>
+            <td>
+              <span style="font-weight:500;">${c.name}</span>
+              <span style="font-size:0.78rem;color:var(--dim);margin-left:0.3rem;">${c.domain}</span>
+            </td>
+            <td class="mono" style="color:${daColor(c.da)};font-weight:600;">${c.da}</td>
+            <td>
+              <span class="mono" style="color:${daColor(c.da)}">${c.da}</span>
+              <div class="da-bar-container">
+                <div class="da-bar-fill" style="width:${c.da}%;background:${daColor(c.da)};"></div>
+              </div>
+            </td>
+            <td class="mono">${c.traffic_est}</td>
+            <td class="mono">${c.content_count.toLocaleString()}</td>
+            <td class="mono">${c.overlap_queries}</td>
+          </tr>`;
+  });
+
+  html += `</tbody></table></div></div>`;
+
+  // Displacement Opportunities
+  html += `
+  <div class="section">
+    <div class="section-title">
+      <div class="icon">&#127919;</div>
+      Displacement Opportunities
+    </div>
+    <div class="card" style="overflow-x:auto;">
+      <table class="displacement-table">
+        <thead>
+          <tr>
+            <th>Target Query</th>
+            <th>Current Winner</th>
+            <th>PetHub Position</th>
+            <th>Difficulty</th>
+            <th>Content Ready</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>`;
+
+  D.displacement_opportunities.forEach(d => {
+    const diffClass = d.difficulty === 'hard' ? 'badge-danger' : d.difficulty === 'medium' ? 'badge-warning' : 'badge-success';
+    const posLabel = d.pethub_position === 'not_ranking' ? 'Not Ranking' : d.pethub_position;
+    const posClass = d.pethub_position === 'not_ranking' ? 'badge-danger' : 'badge-success';
+    const readyClass = d.content_ready ? 'badge-success' : 'badge-warning';
+    const readyLabel = d.content_ready ? 'Ready' : 'Needed';
+    const actionLabel = d.content_ready ? 'Build Backlinks' : 'Create Content';
+    html += `
+          <tr>
+            <td style="font-weight:500;">${d.query}</td>
+            <td class="mono" style="font-size:0.85rem;">${d.current_winner}</td>
+            <td><span class="badge ${posClass}">${posLabel}</span></td>
+            <td><span class="badge ${diffClass}">${d.difficulty}</span></td>
+            <td><span class="badge ${readyClass}">${readyLabel}</span></td>
+            <td style="font-size:0.82rem;color:var(--dim);">${actionLabel}</td>
+          </tr>`;
+  });
+
+  html += `</tbody></table></div></div>`;
+
+  // Content Gap Analysis
+  const gap = D.content_gap_analysis;
+  html += `
+  <div class="section">
+    <div class="section-title">
+      <div class="icon">&#128200;</div>
+      Content Gap Analysis
+    </div>
+    <div class="gap-grid">
+      <div class="gap-card">
+        <div class="gap-value" style="color:var(--pethub);">${gap.pethub_unique_topics}</div>
+        <div class="gap-label">PetHub Unique Topics</div>
+        <div style="font-size:0.75rem;color:var(--dim);margin-top:0.3rem;">Topics only PetHub covers</div>
+      </div>
+      <div class="gap-card">
+        <div class="gap-value" style="color:var(--accent);">${gap.competitor_gaps_found}</div>
+        <div class="gap-label">Competitor Gaps Found</div>
+        <div style="font-size:0.75rem;color:var(--dim);margin-top:0.3rem;">Topics competitors miss entirely</div>
+      </div>
+      <div class="gap-card">
+        <div class="gap-value" style="color:var(--warning);">${gap.overlap_topics}</div>
+        <div class="gap-label">Overlap Topics</div>
+        <div style="font-size:0.75rem;color:var(--dim);margin-top:0.3rem;">Direct competition areas</div>
+      </div>
+    </div>
+  </div>`;
+
+  // Visual Content Gap Venn
+  html += `
+  <div class="section">
+    <div class="card">
+      <div style="text-align:center;margin-bottom:0.5rem;font-weight:500;font-size:0.95rem;">Content Territory Map</div>
+      <div class="venn-container">
+        <div class="venn-circle venn-pethub">
+          <div class="venn-value" style="color:var(--pethub);margin-left:-30px;">${gap.pethub_unique_topics}</div>
+          <div class="venn-label" style="margin-left:-30px;">PetHub Only</div>
+        </div>
+        <div class="venn-circle venn-competitors">
+          <div class="venn-value" style="color:var(--accent);margin-left:30px;">${gap.competitor_gaps_found}</div>
+          <div class="venn-label" style="margin-left:30px;">Their Gaps</div>
+        </div>
+        <div class="venn-overlap">
+          <div class="venn-value" style="color:var(--warning);">${gap.overlap_topics}</div>
+          <div class="venn-label">Overlap</div>
+        </div>
+      </div>
+    </div>
+  </div>`;
+
+  // Strategic Recommendations
+  html += `
+  <div class="section">
+    <div class="section-title">
+      <div class="icon">&#128640;</div>
+      Strategic Recommendations
+    </div>
+    <div class="card">
+      <ul class="rec-list">
+        <li>
+          <div class="rec-number">1</div>
+          <div><strong>Target Pets at Home overlap queries first</strong> &mdash; With 62 overlapping queries, Pets at Home is the primary displacement target. Their commercial bias creates an opportunity: PetHub's educational, unbiased guides can win "best X UK" queries where users want independent advice, not store listings.</div>
+        </li>
+        <li>
+          <div class="rec-number">2</div>
+          <div><strong>Exploit charity site content gaps</strong> &mdash; PDSA, Blue Cross, and Battersea have high DA but zero product/buying content. PetHub's comprehensive buying guides (263 articles) fill a gap these charity sites will never fill, creating a unique lane in the UK pet market.</div>
+        </li>
+        <li>
+          <div class="rec-number">3</div>
+          <div><strong>Leverage UK-specific pricing advantage over Cats.com</strong> &mdash; Cats.com (DA 72) is US-focused with no UK pricing. PetHub's UK-specific price comparisons and GBP content create a strong displacement angle for all "UK" suffixed queries. Target their 45 overlap queries with UK-localized versions.</div>
+        </li>
+        <li>
+          <div class="rec-number">4</div>
+          <div><strong>Build DA through backlink acquisition (Phase 16E)</strong> &mdash; The DA gap (PetHub: 5 vs avg competitor: ${avgDA}) is the single biggest barrier to ranking. Prioritize backlink building from pet directories, forums, and guest posts. Target DA 15+ within 6 months.</div>
+        </li>
+        <li>
+          <div class="rec-number">5</div>
+          <div><strong>Create remaining displacement content</strong> &mdash; "Best dog food UK 2026" is a high-value displacement target but content is not yet ready. Prioritize creating this guide with full UK pricing, nutritional analysis, and vet-backed recommendations.</div>
+        </li>
+        <li>
+          <div class="rec-number">6</div>
+          <div><strong>Maintain content velocity advantage</strong> &mdash; At 263 articles, PetHub already rivals Battersea (300) and approaches Blue Cross (450). Sustaining AI-optimized content production will close the content count gap with larger competitors within 3-6 months.</div>
+        </li>
+      </ul>
+    </div>
+  </div>`;
+
+  app.innerHTML = html;
+  document.getElementById('gen-date').textContent = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1280, initial-scale=1">
+<title>PetHub - Social Distribution Engine (Phase 16D)</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#080a0f;--card:#111621;--border:#1a2236;
+  --text:#e2e8f0;--dim:#7a8ba8;--muted:#4a5568;
+  --accent:#ec4899;--accent-dim:#db2777;--accent-glow:rgba(236,72,153,0.15);
+  --green:#10b981;--red:#ef4444;--amber:#f59e0b;--blue:#3b82f6;--cyan:#06b6d4;--violet:#8b5cf6;
+  --card-hover:#151d2e;--radius:10px;
+}
+html{font-size:14px;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;line-height:1.5;min-height:100vh;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background:radial-gradient(ellipse 80% 60% at 50% -10%,rgba(236,72,153,0.05),transparent 70%),radial-gradient(ellipse 50% 40% at 80% 100%,rgba(219,39,119,0.03),transparent);pointer-events:none;z-index:0}
+
+.shell{position:relative;z-index:1;max-width:1440px;margin:0 auto;padding:20px 24px 60px}
+
+/* Header */
+.hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.hdr-left{display:flex;align-items:center;gap:14px}
+.hdr-icon{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#f472b6);display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 0 24px rgba(236,72,153,0.35)}
+.hdr h1{font-size:1.4rem;font-weight:700;letter-spacing:-0.02em}
+.hdr h1 span{color:var(--accent);font-weight:800}
+.hdr-right{display:flex;align-items:center;gap:12px}
+.refresh-time{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--dim)}
+.live-dot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:blink 2s ease-in-out infinite;margin-right:6px}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.phase-badge{font-family:'JetBrains Mono',monospace;font-size:.7rem;background:rgba(236,72,153,0.15);color:var(--accent);padding:4px 12px;border-radius:6px;border:1px solid rgba(236,72,153,0.3);font-weight:600}
+
+/* Sections */
+.sec{margin-bottom:36px}
+.sec-title{display:flex;align-items:center;gap:10px;margin-bottom:16px;font-size:1.05rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
+.sec-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--accent-dim),transparent)}
+.sec-num{font-family:'JetBrains Mono',monospace;font-size:.7rem;background:var(--accent);color:#fff;padding:2px 8px;border-radius:4px;font-weight:600}
+
+/* Cards */
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;transition:border-color .25s,box-shadow .25s}
+.card:hover{border-color:rgba(236,72,153,0.3);box-shadow:0 0 20px var(--accent-glow)}
+.card-title{font-size:.85rem;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.card-dim{color:var(--dim);font-size:.78rem}
+
+/* Grids */
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.grid-6{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.grid-7{display:grid;grid-template-columns:repeat(7,1fr);gap:12px}
+
+/* Badges */
+.badge{display:inline-block;font-size:.68rem;font-weight:600;padding:2px 9px;border-radius:5px;text-transform:uppercase;letter-spacing:.04em}
+.badge-green{background:rgba(16,185,129,0.15);color:var(--green)}
+.badge-red{background:rgba(239,68,68,0.15);color:var(--red)}
+.badge-amber{background:rgba(245,158,11,0.15);color:var(--amber)}
+.badge-blue{background:rgba(59,130,246,0.15);color:var(--blue)}
+.badge-gray{background:rgba(122,139,168,0.15);color:var(--dim)}
+.badge-violet{background:rgba(139,92,246,0.15);color:var(--violet)}
+.badge-cyan{background:rgba(6,182,212,0.15);color:var(--cyan)}
+.badge-pink{background:rgba(236,72,153,0.15);color:var(--accent)}
+
+/* Stats bar */
+.stats-bar{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:8px}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;text-align:center;transition:all .25s}
+.stat-card:hover{border-color:rgba(236,72,153,0.3);box-shadow:0 0 16px var(--accent-glow)}
+.stat-card .stat-val{font-family:'JetBrains Mono',monospace;font-size:1.6rem;font-weight:800;color:var(--accent);line-height:1.2}
+.stat-card .stat-val.green{color:var(--green)}
+.stat-card .stat-val.amber{color:var(--amber)}
+.stat-card .stat-val.red{color:var(--red)}
+.stat-card .stat-label{font-size:.72rem;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;margin-top:4px}
+.stat-card .stat-sub{font-size:.7rem;color:var(--muted);margin-top:2px;font-family:'JetBrains Mono',monospace}
+
+/* Platform cards */
+.platform-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;position:relative;overflow:hidden;transition:all .3s}
+.platform-card:hover{border-color:rgba(236,72,153,0.3);box-shadow:0 0 20px var(--accent-glow);transform:translateY(-2px)}
+.platform-card.connected{border-left:3px solid var(--green)}
+.platform-card.setup-needed{border-left:3px solid var(--amber)}
+.platform-icon{font-size:2rem;margin-bottom:10px}
+.platform-name{font-size:.95rem;font-weight:700;margin-bottom:6px}
+.platform-handle{font-size:.75rem;color:var(--dim);font-family:'JetBrains Mono',monospace;margin-bottom:8px}
+.platform-stats{display:flex;flex-direction:column;gap:6px;margin-top:10px}
+.platform-stat{display:flex;justify-content:space-between;align-items:center;font-size:.78rem}
+.platform-stat .label{color:var(--dim)}
+.platform-stat .value{font-family:'JetBrains Mono',monospace;font-weight:600}
+
+/* Automation cards */
+.auto-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;transition:all .25s}
+.auto-card:hover{border-color:rgba(236,72,153,0.3);box-shadow:0 0 16px var(--accent-glow)}
+.auto-card .auto-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+.auto-card .auto-name{font-size:.95rem;font-weight:700;display:flex;align-items:center;gap:8px}
+.auto-card .auto-desc{font-size:.8rem;color:var(--dim);margin-bottom:8px;line-height:1.5}
+.auto-card .auto-config{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--muted);background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:6px;border:1px solid var(--border)}
+
+/* Schedule timeline */
+.timeline{display:flex;align-items:stretch;gap:0;position:relative;height:120px;margin:20px 0}
+.timeline::before{content:'';position:absolute;top:50%;left:0;right:0;height:2px;background:var(--border);transform:translateY(-50%)}
+.time-slot{flex:1;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;z-index:1}
+.time-dot{width:16px;height:16px;border-radius:50%;background:var(--accent);border:3px solid var(--bg);box-shadow:0 0 12px rgba(236,72,153,0.4);position:relative;z-index:2}
+.time-dot.next{width:22px;height:22px;animation:pulse-dot 2s ease-in-out infinite;box-shadow:0 0 20px rgba(236,72,153,0.6)}
+@keyframes pulse-dot{0%,100%{box-shadow:0 0 12px rgba(236,72,153,0.4)}50%{box-shadow:0 0 28px rgba(236,72,153,0.8)}}
+.time-label{font-family:'JetBrains Mono',monospace;font-size:.8rem;font-weight:600;color:var(--text)}
+.time-period{font-size:.72rem;color:var(--dim);text-transform:uppercase;letter-spacing:.06em}
+.time-slot.next-slot .time-label{color:var(--accent);font-weight:700}
+.time-connector{position:absolute;top:50%;height:2px;background:linear-gradient(90deg,var(--accent),rgba(236,72,153,0.3));z-index:1}
+
+/* Agent status card */
+.agent-card{background:linear-gradient(135deg,var(--card) 0%,rgba(236,72,153,0.04) 50%,var(--card) 100%);border:1px solid rgba(236,72,153,0.2);border-radius:14px;padding:24px;position:relative;overflow:hidden}
+.agent-card::before{content:'';position:absolute;top:-50px;right:-50px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(236,72,153,0.06),transparent 70%);pointer-events:none}
+.agent-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.agent-metric{text-align:center;padding:12px;background:rgba(255,255,255,0.02);border-radius:8px;border:1px solid var(--border)}
+.agent-metric .metric-val{font-family:'JetBrains Mono',monospace;font-size:1.3rem;font-weight:700;color:var(--accent)}
+.agent-metric .metric-label{font-size:.72rem;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;margin-top:4px}
+.agent-error{border:1px solid rgba(239,68,68,0.3)!important;background:rgba(239,68,68,0.04)!important}
+.agent-error .metric-val{color:var(--red)!important}
+
+/* Checklist */
+.checklist{display:flex;flex-direction:column;gap:12px}
+.check-platform{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;transition:all .25s}
+.check-platform:hover{border-color:rgba(245,158,11,0.3)}
+.check-header{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.check-icon{font-size:1.3rem}
+.check-name{font-size:.9rem;font-weight:700}
+.check-steps{display:flex;flex-direction:column;gap:6px;padding-left:8px}
+.check-step{display:flex;align-items:center;gap:8px;font-size:.78rem;color:var(--dim)}
+.check-step::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--amber);flex-shrink:0}
+
+/* Growth readiness */
+.readiness-card{background:linear-gradient(135deg,var(--card) 0%,rgba(236,72,153,0.05) 50%,var(--card) 100%);border:1px solid rgba(236,72,153,0.2);border-radius:14px;padding:28px;position:relative;overflow:hidden}
+.readiness-card::before{content:'';position:absolute;top:-40px;left:-40px;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle,rgba(236,72,153,0.06),transparent 70%);pointer-events:none}
+.readiness-grid{display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:start}
+.score-ring{width:160px;height:160px;position:relative;margin:0 auto}
+.score-ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.score-ring .ring-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.score-ring .ring-num{font-family:'JetBrains Mono',monospace;font-size:2.4rem;font-weight:800;color:var(--accent)}
+.score-ring .ring-label{font-size:.7rem;color:var(--dim);text-transform:uppercase;letter-spacing:.08em}
+.recommendations{display:flex;flex-direction:column;gap:10px}
+.rec-item{display:flex;align-items:flex-start;gap:10px;padding:10px 14px;background:rgba(255,255,255,0.02);border-radius:8px;border:1px solid var(--border)}
+.rec-icon{font-size:1rem;flex-shrink:0;margin-top:2px}
+.rec-text{font-size:.82rem;line-height:1.5}
+.rec-text strong{color:var(--text);font-weight:600}
+.rec-text span{color:var(--dim)}
+.rec-priority{font-family:'JetBrains Mono',monospace;font-size:.65rem;padding:2px 8px;border-radius:4px;flex-shrink:0;margin-top:2px}
+.rec-priority.high{background:rgba(239,68,68,0.15);color:var(--red)}
+.rec-priority.medium{background:rgba(245,158,11,0.15);color:var(--amber)}
+.rec-priority.low{background:rgba(59,130,246,0.15);color:var(--blue)}
+
+/* Loading / error states */
+.loading-pulse{animation:pulse 1.5s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.error-msg{font-size:.75rem;color:var(--red);font-family:'JetBrains Mono',monospace;padding:6px 10px;background:rgba(239,68,68,0.08);border-radius:6px;border:1px solid rgba(239,68,68,0.2)}
+
+/* Responsive */
+@media(max-width:1100px){
+  .stats-bar{grid-template-columns:repeat(3,1fr)}
+  .grid-7{grid-template-columns:repeat(4,1fr)}
+  .agent-grid{grid-template-columns:repeat(3,1fr)}
+  .readiness-grid{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .stats-bar{grid-template-columns:repeat(2,1fr)}
+  .grid-7{grid-template-columns:repeat(2,1fr)}
+  .grid-3{grid-template-columns:1fr}
+  .agent-grid{grid-template-columns:repeat(2,1fr)}
+  .timeline{flex-direction:column;height:auto}
+  .timeline::before{top:0;bottom:0;left:50%;width:2px;height:100%;transform:translateX(-50%)}
+}
+</style>
+</head>
+<body>
+
+<div class="shell">
+
+  <!-- Header -->
+  <div class="hdr">
+    <div class="hdr-left">
+      <div class="hdr-icon">&#128225;</div>
+      <div>
+        <h1>Social Distribution <span>Engine</span></h1>
+        <div style="font-size:.78rem;color:var(--dim);margin-top:2px">PetHub Operations Centre &mdash; Social Readiness &amp; Platform Status</div>
+      </div>
+    </div>
+    <div class="hdr-right">
+      <span class="phase-badge">PHASE 16D</span>
+      <span class="live-dot"></span>
+      <span class="refresh-time" id="refreshTime">--:--:--</span>
+    </div>
+  </div>
+
+  <!-- Section 1: Social Overview -->
+  <div class="sec">
+    <div class="sec-title"><span class="sec-num">01</span> Social Overview</div>
+    <div class="stats-bar" id="overviewStats">
+      <div class="stat-card">
+        <div class="stat-val" id="connectedPlatforms">2/7</div>
+        <div class="stat-label">Connected Platforms</div>
+        <div class="stat-sub">Facebook + Instagram</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="totalSocialPosts">43</div>
+        <div class="stat-label">Total Social Posts</div>
+        <div class="stat-sub">28 FB + 15 IG</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val green" id="contentPool">263</div>
+        <div class="stat-label">Content Pool Size</div>
+        <div class="stat-sub">Eligible for reshare</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val green" id="autoPostStatus">ON</div>
+        <div class="stat-label">Auto-Post Status</div>
+        <div class="stat-sub">Jetpack + Revive active</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="nextScheduled">--:--</div>
+        <div class="stat-label">Next Scheduled Post</div>
+        <div class="stat-sub" id="nextScheduledSub">Loading...</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val red" id="agentErrors">50</div>
+        <div class="stat-label">Agent Errors</div>
+        <div class="stat-sub">Needs attention</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: Platform Status -->
+  <div class="sec">
+    <div class="sec-title"><span class="sec-num">02</span> Platform Status</div>
+    <div class="grid-7" id="platformGrid"></div>
+  </div>
+
+  <!-- Section 3: Automation Stack -->
+  <div class="sec">
+    <div class="sec-title"><span class="sec-num">03</span> Automation Stack</div>
+    <div class="grid-3" id="automationGrid"></div>
+  </div>
+
+  <!-- Section 4: Posting Schedule -->
+  <div class="sec">
+    <div class="sec-title"><span class="sec-num">04</span> Posting Schedule</div>
+    <div class="card" style="padding:24px">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
+        <div class="card-title" style="margin:0">&#128197; Daily Posting Slots (UK Time)</div>
+        <span class="badge badge-pink">3 SLOTS / DAY</span>
+      </div>
+      <div class="timeline" id="scheduleTimeline">
+        <div class="time-slot" id="slot-morning">
+          <div class="time-period">Morning</div>
+          <div class="time-dot"></div>
+          <div class="time-label">09:00</div>
+          <div class="card-dim">Engagement push</div>
+        </div>
+        <div class="time-slot" id="slot-afternoon">
+          <div class="time-period">Afternoon</div>
+          <div class="time-dot"></div>
+          <div class="time-label">13:00</div>
+          <div class="card-dim">Peak traffic slot</div>
+        </div>
+        <div class="time-slot" id="slot-evening">
+          <div class="time-period">Evening</div>
+          <div class="time-dot"></div>
+          <div class="time-label">18:00</div>
+          <div class="card-dim">Community wind-down</div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:8px">
+        <span class="badge badge-pink" id="nextSlotBadge">Next: calculating...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 5: Social Agent Status -->
+  <div class="sec">
+    <div class="sec-title"><span class="sec-num">05</span> Social Agent Status</div>
+    <div class="agent-card">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:18px">
+        <div class="card-title" style="margin:0;font-size:1rem">&#129302; Social Agent <span class="badge badge-green" id="agentStatusBadge">Checking...</span></div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--dim)">Port 8103</div>
+      </div>
+      <div class="agent-grid" id="agentMetrics">
+        <div class="agent-metric">
+          <div class="metric-val loading-pulse" id="agentUptime">--</div>
+          <div class="metric-label">Status</div>
+        </div>
+        <div class="agent-metric">
+          <div class="metric-val loading-pulse" id="agentTotalPosts">--</div>
+          <div class="metric-label">Total Posts</div>
+        </div>
+        <div class="agent-metric">
+          <div class="metric-val loading-pulse" id="agentLastPost">--</div>
+          <div class="metric-label">Last Post</div>
+        </div>
+        <div class="agent-metric">
+          <div class="metric-val loading-pulse" id="agentNextScheduled">--</div>
+          <div class="metric-label">Next Scheduled</div>
+        </div>
+        <div class="agent-metric" id="agentErrorMetric">
+          <div class="metric-val loading-pulse" id="agentErrorCount">--</div>
+          <div class="metric-label">Recent Errors</div>
+        </div>
+      </div>
+      <div id="agentError" style="margin-top:12px;display:none"></div>
+    </div>
+  </div>
+
+  <!-- Section 6: Platform Setup Checklist -->
+  <div class="sec">
+    <div class="sec-title"><span class="sec-num">06</span> Platform Setup Checklist</div>
+    <div class="grid-2" id="checklistGrid"></div>
+  </div>
+
+  <!-- Section 7: Growth Readiness Assessment -->
+  <div class="sec">
+    <div class="sec-title"><span class="sec-num">07</span> Growth Readiness Assessment</div>
+    <div class="readiness-card">
+      <div class="readiness-grid">
+        <div>
+          <div class="score-ring">
+            <svg viewBox="0 0 140 140">
+              <circle cx="70" cy="70" r="58" fill="none" stroke="var(--border)" stroke-width="8"/>
+              <circle cx="70" cy="70" r="58" fill="none" stroke="var(--accent)" stroke-width="8"
+                      stroke-dasharray="364.42" stroke-dashoffset="218.65" stroke-linecap="round"
+                      id="scoreArc"/>
+            </svg>
+            <div class="ring-center">
+              <div class="ring-num" id="readinessScore">40</div>
+              <div class="ring-label">Readiness</div>
+            </div>
+          </div>
+          <div style="text-align:center;margin-top:12px">
+            <span class="badge badge-amber">EARLY STAGE</span>
+          </div>
+        </div>
+        <div class="recommendations" id="recommendations"></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ============================================================
+// Static Data
+// ============================================================
+window.SOCIAL_DATA = {
+  platforms: {
+    facebook: {status: "connected", page: "Pet Hub Online", followers: 1, likes: 1, talking_about: 303, posts_sent: 28, auto_post: true},
+    instagram: {status: "connected", username: "pethubonline1", followers: 1, media_count: 186, posts_sent: 15, auto_post: true},
+    twitter: {status: "setup_needed", handle: "", followers: 0, auto_post: false},
+    pinterest: {status: "setup_needed", handle: "", followers: 0, auto_post: false},
+    linkedin: {status: "setup_needed", handle: "", followers: 0, auto_post: false},
+    tiktok: {status: "setup_needed", handle: "", followers: 0, auto_post: false},
+    youtube: {status: "setup_needed", handle: "", followers: 0, auto_post: false}
+  },
+  automation: {
+    jetpack_social: {status: "active", description: "Auto-shares new posts to connected platforms"},
+    jetpack_sharing: {status: "active", description: "Share buttons on all posts"},
+    revive_old_posts: {status: "active", description: "Reshares existing 263 posts on schedule", schedule: "Every 4 hours", posts_eligible: 263}
+  },
+  posting_schedule: {
+    morning: "09:00 UK",
+    afternoon: "13:00 UK",
+    evening: "18:00 UK"
+  },
+  content_pool: 263,
+  social_agent_errors: 50
+};
+
+// ============================================================
+// Platform icons and metadata
+// ============================================================
+const PLATFORM_META = {
+  facebook:  {icon: "📘", color: "#1877F2", label: "Facebook"},
+  instagram: {icon: "📷", color: "#E4405F", label: "Instagram"},
+  twitter:   {icon: "🐦", color: "#1DA1F2", label: "Twitter / X"},
+  pinterest: {icon: "📌", color: "#E60023", label: "Pinterest"},
+  linkedin:  {icon: "💼", color: "#0A66C2", label: "LinkedIn"},
+  tiktok:    {icon: "🎵", color: "#000000", label: "TikTok"},
+  youtube:   {icon: "▶️",  color: "#FF0000", label: "YouTube"}
+};
+
+const SETUP_STEPS = {
+  twitter: [
+    "Create Twitter/X developer account",
+    "Create app and generate API keys (OAuth 2.0)",
+    "Connect via Jetpack Social or custom integration",
+    "Configure auto-post settings",
+    "Test first automated tweet"
+  ],
+  pinterest: [
+    "Create Pinterest business account",
+    "Apply for Pinterest API access",
+    "Set up rich pins for product posts",
+    "Connect via Jetpack Social or Tailwind",
+    "Create pin boards for pet categories"
+  ],
+  linkedin: [
+    "Create LinkedIn company page for PetHub",
+    "Request LinkedIn API access (Marketing API)",
+    "Connect via Jetpack Social",
+    "Configure B2B content strategy",
+    "Enable auto-sharing for authority posts"
+  ],
+  tiktok: [
+    "Create TikTok business account",
+    "Apply for TikTok Content Posting API",
+    "Prepare short-form video content templates",
+    "Set up product tagging (TikTok Shop if applicable)",
+    "Configure cross-posting from Instagram Reels"
+  ],
+  youtube: [
+    "Create YouTube channel for PetHub Online",
+    "Enable YouTube Data API v3",
+    "Prepare video content templates (pet guides, reviews)",
+    "Set up YouTube Shorts auto-publish pipeline",
+    "Configure community posts for engagement"
+  ]
+};
+
+// ============================================================
+// Render functions
+// ============================================================
+function renderPlatforms() {
+  const grid = document.getElementById('platformGrid');
+  grid.innerHTML = '';
+  const platforms = window.SOCIAL_DATA.platforms;
+
+  for (const [key, p] of Object.entries(platforms)) {
+    const meta = PLATFORM_META[key];
+    const isConnected = p.status === 'connected';
+    const card = document.createElement('div');
+    card.className = `platform-card ${isConnected ? 'connected' : 'setup-needed'}`;
+
+    let statsHtml = '';
+    if (isConnected) {
+      if (key === 'facebook') {
+        statsHtml = `
+          <div class="platform-stats">
+            <div class="platform-stat"><span class="label">Followers</span><span class="value">${p.followers.toLocaleString()}</span></div>
+            <div class="platform-stat"><span class="label">Likes</span><span class="value">${p.likes.toLocaleString()}</span></div>
+            <div class="platform-stat"><span class="label">Talking About</span><span class="value">${p.talking_about.toLocaleString()}</span></div>
+            <div class="platform-stat"><span class="label">Posts Sent</span><span class="value">${p.posts_sent}</span></div>
+          </div>`;
+      } else if (key === 'instagram') {
+        statsHtml = `
+          <div class="platform-stats">
+            <div class="platform-stat"><span class="label">Followers</span><span class="value">${p.followers.toLocaleString()}</span></div>
+            <div class="platform-stat"><span class="label">Media Count</span><span class="value">${p.media_count.toLocaleString()}</span></div>
+            <div class="platform-stat"><span class="label">Posts Sent</span><span class="value">${p.posts_sent}</span></div>
+          </div>`;
+      }
+    } else {
+      statsHtml = `
+        <div class="platform-stats">
+          <div class="platform-stat"><span class="label">Followers</span><span class="value" style="color:var(--muted)">0</span></div>
+          <div class="platform-stat"><span class="label">Posts Sent</span><span class="value" style="color:var(--muted)">0</span></div>
+        </div>`;
+    }
+
+    card.innerHTML = `
+      <div class="platform-icon">${meta.icon}</div>
+      <div class="platform-name">${meta.label}</div>
+      <div class="platform-handle">${isConnected ? (p.page || '@' + p.username) : 'Not connected'}</div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:4px">
+        <span class="badge ${isConnected ? 'badge-green' : 'badge-amber'}">${isConnected ? 'Connected' : 'Setup Needed'}</span>
+        ${p.auto_post ? '<span class="badge badge-pink">Auto-Post</span>' : ''}
+      </div>
+      ${statsHtml}
+    `;
+    grid.appendChild(card);
+  }
+}
+
+function renderAutomation() {
+  const grid = document.getElementById('automationGrid');
+  grid.innerHTML = '';
+  const auto = window.SOCIAL_DATA.automation;
+
+  const icons = {
+    jetpack_social: "⚡",
+    jetpack_sharing: "🔗",
+    revive_old_posts: "♻️"
+  };
+  const names = {
+    jetpack_social: "Jetpack Social",
+    jetpack_sharing: "Jetpack Sharing",
+    revive_old_posts: "Revive Old Posts"
+  };
+
+  for (const [key, a] of Object.entries(auto)) {
+    const card = document.createElement('div');
+    card.className = 'auto-card';
+
+    let configHtml = '';
+    if (key === 'revive_old_posts') {
+      configHtml = `
+        <div class="auto-config">
+          Schedule: ${a.schedule}<br>
+          Posts eligible: ${a.posts_eligible}
+        </div>`;
+    }
+
+    card.innerHTML = `
+      <div class="auto-header">
+        <div class="auto-name">${icons[key]} ${names[key]}</div>
+        <span class="badge badge-green">${a.status.toUpperCase()}</span>
+      </div>
+      <div class="auto-desc">${a.description}</div>
+      ${configHtml}
+    `;
+    grid.appendChild(card);
+  }
+}
+
+function renderScheduleHighlight() {
+  const now = new Date();
+  // Convert to UK time (approximate: use Europe/London)
+  const ukStr = now.toLocaleString('en-GB', {timeZone: 'Europe/London', hour: '2-digit', minute: '2-digit', hour12: false});
+  const [hh, mm] = ukStr.split(':').map(Number);
+  const ukMinutes = hh * 60 + mm;
+
+  const slots = [
+    {id: 'slot-morning',   time: 9 * 60,  label: '09:00 UK'},
+    {id: 'slot-afternoon', time: 13 * 60, label: '13:00 UK'},
+    {id: 'slot-evening',   time: 18 * 60, label: '18:00 UK'}
+  ];
+
+  let nextSlot = null;
+  for (const s of slots) {
+    if (ukMinutes < s.time) {
+      nextSlot = s;
+      break;
+    }
+  }
+  if (!nextSlot) nextSlot = slots[0]; // wrap to next day morning
+
+  // Highlight next slot
+  for (const s of slots) {
+    const el = document.getElementById(s.id);
+    const dot = el.querySelector('.time-dot');
+    if (s.id === nextSlot.id) {
+      el.classList.add('next-slot');
+      dot.classList.add('next');
+    } else {
+      el.classList.remove('next-slot');
+      dot.classList.remove('next');
+    }
+  }
+
+  document.getElementById('nextSlotBadge').textContent = `Next post slot: ${nextSlot.label}`;
+  document.getElementById('nextScheduled').textContent = nextSlot.label.replace(' UK', '');
+  document.getElementById('nextScheduledSub').textContent = `UK time (${nextSlot.id.replace('slot-', '')})`;
+}
+
+function renderChecklist() {
+  const grid = document.getElementById('checklistGrid');
+  grid.innerHTML = '';
+
+  for (const [key, steps] of Object.entries(SETUP_STEPS)) {
+    const meta = PLATFORM_META[key];
+    const card = document.createElement('div');
+    card.className = 'check-platform';
+    card.innerHTML = `
+      <div class="check-header">
+        <span class="check-icon">${meta.icon}</span>
+        <span class="check-name">${meta.label}</span>
+        <span class="badge badge-amber">PENDING</span>
+      </div>
+      <div class="check-steps">
+        ${steps.map(s => `<div class="check-step">${s}</div>`).join('')}
+      </div>
+    `;
+    grid.appendChild(card);
+  }
+}
+
+function renderRecommendations() {
+  const container = document.getElementById('recommendations');
+  const recs = [
+    {icon: "🔗", priority: "high", title: "Connect remaining 5 platforms",
+     desc: "Twitter, Pinterest, LinkedIn, TikTok, and YouTube are not yet connected. Each platform expands distribution reach and diversifies traffic sources."},
+    {icon: "⚠️", priority: "high", title: "Reduce agent errors from 50",
+     desc: "The social agent has accumulated 50 errors. Investigate and resolve to ensure reliable automated posting and prevent missed schedules."},
+    {icon: "📈", priority: "medium", title: "Build follower base on connected platforms",
+     desc: "Facebook and Instagram both have 1 follower. Run targeted campaigns, cross-promote from website, and engage community to grow audience."},
+    {icon: "📹", priority: "medium", title: "Prepare video content pipeline",
+     desc: "TikTok and YouTube require video content. Create short-form pet care guides, product reviews, and behind-the-scenes content templates."},
+    {icon: "🎯", priority: "low", title: "Optimize posting schedule with analytics",
+     desc: "Once follower base grows, use platform analytics to refine the 3x daily posting schedule based on actual engagement data."},
+    {icon: "🛡️", priority: "low", title: "Implement social monitoring",
+     desc: "Set up brand mention tracking and sentiment analysis across connected platforms to manage reputation proactively."}
+  ];
+
+  container.innerHTML = recs.map(r => `
+    <div class="rec-item">
+      <span class="rec-icon">${r.icon}</span>
+      <div class="rec-text">
+        <strong>${r.title}</strong><br>
+        <span>${r.desc}</span>
+      </div>
+      <span class="rec-priority ${r.priority}">${r.priority.toUpperCase()}</span>
+    </div>
+  `).join('');
+}
+
+function computeReadinessScore() {
+  const d = window.SOCIAL_DATA;
+  let score = 0;
+
+  // Connected platforms: 2/7 = ~29% of 30 pts = 8.6
+  const connected = Object.values(d.platforms).filter(p => p.status === 'connected').length;
+  score += (connected / 7) * 30;
+
+  // Automation: 3/3 active = 20 pts
+  const activeAuto = Object.values(d.automation).filter(a => a.status === 'active').length;
+  score += (activeAuto / 3) * 20;
+
+  // Content pool: 263 posts = max 15 pts (cap at 200)
+  score += Math.min(d.content_pool / 200, 1) * 15;
+
+  // Posts sent: 43 total, cap at 100 for 15 pts
+  const totalPosts = Object.values(d.platforms).reduce((s, p) => s + (p.posts_sent || 0), 0);
+  score += Math.min(totalPosts / 100, 1) * 15;
+
+  // Error penalty: -1 per 10 errors, max -10
+  score -= Math.min(d.social_agent_errors / 10, 10);
+
+  // Follower penalty: low followers = -5
+  const totalFollowers = Object.values(d.platforms).reduce((s, p) => s + (p.followers || 0), 0);
+  if (totalFollowers < 100) score -= 5;
+
+  score = Math.max(0, Math.min(100, Math.round(score)));
+  return score;
+}
+
+function renderReadinessScore() {
+  const score = computeReadinessScore();
+  document.getElementById('readinessScore').textContent = score;
+
+  // Update arc: circumference = 2 * PI * 58 = 364.42
+  const circumference = 364.42;
+  const offset = circumference - (circumference * score / 100);
+  document.getElementById('scoreArc').setAttribute('stroke-dashoffset', offset.toFixed(2));
+
+  // Update stage badge
+  const stageEl = document.querySelector('.readiness-card .badge');
+  if (score >= 80) {
+    stageEl.textContent = 'PRODUCTION READY';
+    stageEl.className = 'badge badge-green';
+  } else if (score >= 50) {
+    stageEl.textContent = 'GROWING';
+    stageEl.className = 'badge badge-blue';
+  } else {
+    stageEl.textContent = 'EARLY STAGE';
+    stageEl.className = 'badge badge-amber';
+  }
+}
+
+// ============================================================
+// Live data fetch from social agent
+// ============================================================
+async function fetchAgentStatus() {
+  const badge = document.getElementById('agentStatusBadge');
+  const errorBox = document.getElementById('agentError');
+
+  try {
+    const hostname = window.location.hostname;
+    const resp = await fetch(`http://${hostname}:8103/api/status`, {signal: AbortSignal.timeout(5000)});
+
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
+
+    badge.textContent = 'ONLINE';
+    badge.className = 'badge badge-green';
+
+    // Populate metrics
+    const upEl = document.getElementById('agentUptime');
+    upEl.textContent = 'RUNNING';
+    upEl.classList.remove('loading-pulse');
+
+    const postsEl = document.getElementById('agentTotalPosts');
+    postsEl.textContent = data.total_posts != null ? data.total_posts : '--';
+    postsEl.classList.remove('loading-pulse');
+
+    const lastEl = document.getElementById('agentLastPost');
+    if (data.last_post_time) {
+      const d = new Date(data.last_post_time);
+      lastEl.textContent = d.toLocaleString('en-GB', {month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit'});
+    } else {
+      lastEl.textContent = 'None';
+    }
+    lastEl.classList.remove('loading-pulse');
+
+    const nextEl = document.getElementById('agentNextScheduled');
+    if (data.next_scheduled) {
+      const d = new Date(data.next_scheduled);
+      nextEl.textContent = d.toLocaleString('en-GB', {hour: '2-digit', minute: '2-digit'});
+    } else {
+      nextEl.textContent = '--';
+    }
+    nextEl.classList.remove('loading-pulse');
+
+    const errEl = document.getElementById('agentErrorCount');
+    const errMetric = document.getElementById('agentErrorMetric');
+    const errCount = data.recent_errors != null ? data.recent_errors : 0;
+    errEl.textContent = errCount;
+    errEl.classList.remove('loading-pulse');
+    if (errCount > 0) {
+      errMetric.classList.add('agent-error');
+    } else {
+      errMetric.classList.remove('agent-error');
+    }
+
+    // Update overview stats from live data
+    if (data.total_posts != null) {
+      document.getElementById('totalSocialPosts').textContent = data.total_posts;
+      const fbP = data.total_posts_fb || 0;
+      const igP = data.total_posts_ig || 0;
+      document.querySelector('#totalSocialPosts + .stat-label + .stat-sub').textContent = `${fbP} FB + ${igP} IG`;
+    }
+
+    // Update FB/IG live stats if available
+    if (data.fb_stats) {
+      const fb = window.SOCIAL_DATA.platforms.facebook;
+      if (data.fb_stats.followers != null) fb.followers = data.fb_stats.followers;
+      if (data.fb_stats.likes != null) fb.likes = data.fb_stats.likes;
+      if (data.fb_stats.talking_about != null) fb.talking_about = data.fb_stats.talking_about;
+      renderPlatforms();
+    }
+    if (data.ig_stats) {
+      const ig = window.SOCIAL_DATA.platforms.instagram;
+      if (data.ig_stats.followers != null) ig.followers = data.ig_stats.followers;
+      if (data.ig_stats.media_count != null) ig.media_count = data.ig_stats.media_count;
+      renderPlatforms();
+    }
+
+    errorBox.style.display = 'none';
+
+  } catch (err) {
+    badge.textContent = 'OFFLINE';
+    badge.className = 'badge badge-red';
+
+    // Use static fallback data
+    const upEl = document.getElementById('agentUptime');
+    upEl.textContent = 'OFFLINE';
+    upEl.style.color = 'var(--red)';
+    upEl.classList.remove('loading-pulse');
+
+    const postsEl = document.getElementById('agentTotalPosts');
+    postsEl.textContent = window.SOCIAL_DATA.platforms.facebook.posts_sent + window.SOCIAL_DATA.platforms.instagram.posts_sent;
+    postsEl.classList.remove('loading-pulse');
+
+    const lastEl = document.getElementById('agentLastPost');
+    lastEl.textContent = '--';
+    lastEl.classList.remove('loading-pulse');
+
+    const nextEl = document.getElementById('agentNextScheduled');
+    nextEl.textContent = '--';
+    nextEl.classList.remove('loading-pulse');
+
+    const errEl = document.getElementById('agentErrorCount');
+    const errMetric = document.getElementById('agentErrorMetric');
+    errEl.textContent = window.SOCIAL_DATA.social_agent_errors;
+    errEl.classList.remove('loading-pulse');
+    errMetric.classList.add('agent-error');
+
+    errorBox.style.display = 'block';
+    errorBox.innerHTML = `<div class="error-msg">Agent unreachable at ${window.location.hostname}:8103 &mdash; ${err.message}. Showing static data.</div>`;
+  }
+}
+
+// ============================================================
+// Update timestamp
+// ============================================================
+function updateTimestamp() {
+  const now = new Date();
+  document.getElementById('refreshTime').textContent =
+    now.toLocaleString('en-GB', {hour: '2-digit', minute: '2-digit', second: '2-digit'}) + ' UTC' +
+    (now.getTimezoneOffset() <= 0 ? '+' : '-') + Math.abs(now.getTimezoneOffset() / 60);
+}
+
+// ============================================================
+// Init
+// ============================================================
+function init() {
+  renderPlatforms();
+  renderAutomation();
+  renderScheduleHighlight();
+  renderChecklist();
+  renderRecommendations();
+  renderReadinessScore();
+  updateTimestamp();
+  fetchAgentStatus();
+}
+
+init();
+
+// Auto-refresh every 60 seconds
+setInterval(() => {
+  fetchAgentStatus();
+  renderScheduleHighlight();
+  updateTimestamp();
+}, 60000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetHub - Backlink Acquisition Dashboard (Phase 16E)</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #080a0f;
+  --card: #111621;
+  --border: #1a2236;
+  --text: #e2e8f0;
+  --dim: #7a8ba8;
+  --accent: #14b8a6;
+  --accent-dim: rgba(20, 184, 166, 0.15);
+  --accent-glow: rgba(20, 184, 166, 0.3);
+  --danger: #ef4444;
+  --warning: #f59e0b;
+  --success: #22c55e;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, var(--accent), #5eead4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dashboard-header .subtitle {
+  color: var(--dim);
+  font-size: 0.95rem;
+  margin-top: 0.4rem;
+  font-weight: 400;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.badge-high { background: rgba(239, 68, 68, 0.15); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
+.badge-medium { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+.badge-low { background: rgba(34, 197, 94, 0.15); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.3); }
+.badge-accent { background: var(--accent-dim); color: var(--accent); border: 1px solid var(--accent-glow); }
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.stat-card:hover {
+  border-color: var(--accent-glow);
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+}
+
+.stat-card .label {
+  font-size: 0.8rem;
+  color: var(--dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card .value {
+  font-size: 2.2rem;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.stat-card .meta {
+  font-size: 0.78rem;
+  color: var(--dim);
+  margin-top: 0.5rem;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.section-title .icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent-dim);
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+/* Card Container */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+/* Pipeline Items */
+.pipeline-item {
+  display: grid;
+  grid-template-columns: 1fr auto auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.pipeline-item:last-child { border-bottom: none; }
+
+.pipeline-type {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.pipeline-count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--dim);
+  min-width: 70px;
+  text-align: right;
+}
+
+.progress-bar-container {
+  width: 100%;
+  min-width: 180px;
+  height: 8px;
+  background: rgba(20, 184, 166, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent), #5eead4);
+  border-radius: 999px;
+  transition: width 0.6s ease;
+  min-width: 2px;
+}
+
+.progress-pct {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--accent);
+  min-width: 42px;
+  text-align: right;
+}
+
+/* Table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table thead th {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--dim);
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.data-table tbody td {
+  padding: 0.85rem 1rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.data-table tbody tr:last-child td { border-bottom: none; }
+
+.data-table tbody tr:hover { background: rgba(20, 184, 166, 0.04); }
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Tier Cards */
+.tier-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.tier-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.tier-card .tier-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.tier-card .tier-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.tier-card .tier-desc {
+  font-size: 0.82rem;
+  color: var(--dim);
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.tier-card .tier-progress {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tier-card .tier-numbers {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.tier-card .tier-numbers .of {
+  color: var(--dim);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+/* Monthly Target */
+.monthly-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.monthly-item {
+  background: rgba(20, 184, 166, 0.05);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.monthly-item .month-label {
+  font-size: 0.78rem;
+  color: var(--dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.monthly-item .month-target {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.monthly-item .month-type {
+  font-size: 0.78rem;
+  color: var(--dim);
+  margin-top: 0.2rem;
+}
+
+/* Recommendations */
+.rec-list {
+  list-style: none;
+}
+
+.rec-list li {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  font-size: 0.92rem;
+}
+
+.rec-list li:last-child { border-bottom: none; }
+
+.rec-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  border-radius: 8px;
+  background: var(--accent-dim);
+  color: var(--accent);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.effort-tag {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.effort-low { background: rgba(34, 197, 94, 0.1); color: #4ade80; }
+.effort-medium { background: rgba(245, 158, 11, 0.1); color: #fbbf24; }
+.effort-high { background: rgba(239, 68, 68, 0.1); color: #f87171; }
+
+/* Two column grid */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+@media (max-width: 800px) {
+  .two-col { grid-template-columns: 1fr; }
+  .pipeline-item { grid-template-columns: 1fr; gap: 0.5rem; }
+  body { padding: 1rem; }
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.8rem;
+  color: var(--dim);
+}
+
+.footer span { color: var(--accent); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<script>
+window.BACKLINK_DATA = {
+  total_backlinks: 0,
+  referring_domains: 0,
+  domain_authority: 0,
+  backlink_status: "baseline",
+  acquisition_targets: [
+    {type: "Pet directories", target_count: 15, acquired: 0, priority: "high", effort: "low"},
+    {type: "UK pet forums", target_count: 10, acquired: 0, priority: "high", effort: "medium"},
+    {type: "Guest post opportunities", target_count: 8, acquired: 0, priority: "medium", effort: "high"},
+    {type: "Resource page links", target_count: 12, acquired: 0, priority: "medium", effort: "medium"},
+    {type: "Broken link reclamation", target_count: 20, acquired: 0, priority: "high", effort: "low"},
+    {type: "HARO/journalist queries", target_count: 5, acquired: 0, priority: "low", effort: "high"},
+    {type: "Social profile links", target_count: 7, acquired: 2, priority: "high", effort: "low"}
+  ],
+  priority_pages: [
+    {page: "Best Cat Toys UK", backlinks: 0, target: 5, category: "Cat Supplies"},
+    {page: "Best Dog Beds UK", backlinks: 0, target: 5, category: "Dog Supplies"},
+    {page: "Puppy Training Guide", backlinks: 0, target: 3, category: "Dog Care"},
+    {page: "Indoor Cat Care", backlinks: 0, target: 3, category: "Cat Care"},
+    {page: "Dog Food Guide", backlinks: 0, target: 5, category: "Dog Food"},
+    {page: "About Jason Parr", backlinks: 0, target: 2, category: "Trust"},
+    {page: "How We Evaluate", backlinks: 0, target: 2, category: "Trust"}
+  ],
+  link_quality_tiers: {
+    tier1_editorial: {count: 0, target: 10, desc: "High-authority editorial links from pet/lifestyle sites"},
+    tier2_niche: {count: 0, target: 25, desc: "Niche pet directories, forums, resource pages"},
+    tier3_social: {count: 2, target: 7, desc: "Social profiles and community links"},
+    tier4_citation: {count: 0, target: 15, desc: "Business citations, local directories"}
+  }
+};
+</script>
+
+<div class="dashboard-header">
+  <h1>Backlink Acquisition Dashboard</h1>
+  <div class="subtitle">PetHub Online &mdash; Phase 16E &middot; Authority &amp; Link Building Intelligence</div>
+</div>
+
+<div id="app"></div>
+
+<div class="footer">
+  PetHub Online &mdash; <span>Phase 16E</span> &middot; Backlink Acquisition Dashboard &middot; Generated <span id="gen-date"></span>
+</div>
+
+<script>
+(function() {
+  const D = window.BACKLINK_DATA;
+  const app = document.getElementById('app');
+
+  const totalTarget = D.acquisition_targets.reduce((s, t) => s + t.target_count, 0);
+  const totalAcquired = D.acquisition_targets.reduce((s, t) => s + t.acquired, 0);
+  const totalPageTarget = D.priority_pages.reduce((s, p) => s + p.target, 0);
+  const totalPageLinks = D.priority_pages.reduce((s, p) => s + p.backlinks, 0);
+
+  function pct(a, b) { return b === 0 ? 0 : Math.round((a / b) * 100); }
+
+  function statusColor(status) {
+    const map = { baseline: '#f59e0b', building: '#14b8a6', growing: '#22c55e', strong: '#22c55e' };
+    return map[status] || '#7a8ba8';
+  }
+
+  // Overview Stats
+  let html = `
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="label">Total Backlinks</div>
+      <div class="value">${D.total_backlinks}</div>
+      <div class="meta">Target: ${totalTarget} links</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Referring Domains</div>
+      <div class="value">${D.referring_domains}</div>
+      <div class="meta">Unique linking domains</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Domain Authority</div>
+      <div class="value">${D.domain_authority}</div>
+      <div class="meta">Target: 15+ (6-month goal)</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Pipeline Progress</div>
+      <div class="value">${pct(totalAcquired, totalTarget)}%</div>
+      <div class="meta">${totalAcquired} of ${totalTarget} acquired</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Status</div>
+      <div class="value" style="font-size:1.3rem; color:${statusColor(D.backlink_status)}">${D.backlink_status.toUpperCase()}</div>
+      <div class="meta">Current acquisition phase</div>
+    </div>
+  </div>`;
+
+  // Acquisition Pipeline
+  html += `
+  <div class="section">
+    <div class="section-title">
+      <div class="icon">&#128279;</div>
+      Acquisition Pipeline
+    </div>
+    <div class="card">`;
+
+  D.acquisition_targets.forEach(t => {
+    const p = pct(t.acquired, t.target_count);
+    html += `
+      <div class="pipeline-item">
+        <div class="pipeline-type">${t.type}</div>
+        <div style="display:flex;gap:0.5rem;align-items:center;">
+          <span class="badge badge-${t.priority}">${t.priority}</span>
+          <span class="effort-tag effort-${t.effort}">${t.effort} effort</span>
+        </div>
+        <div class="pipeline-count">${t.acquired} / ${t.target_count}</div>
+        <div class="progress-bar-container">
+          <div class="progress-bar-fill" style="width:${Math.max(p, 1)}%"></div>
+        </div>
+        <div class="progress-pct">${p}%</div>
+      </div>`;
+  });
+
+  html += `</div></div>`;
+
+  // Priority Pages Table
+  html += `
+  <div class="section">
+    <div class="section-title">
+      <div class="icon">&#128196;</div>
+      Priority Pages &mdash; Backlink Targets
+    </div>
+    <div class="card" style="overflow-x:auto;">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Page</th>
+            <th>Category</th>
+            <th>Current Links</th>
+            <th>Target</th>
+            <th>Progress</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>`;
+
+  D.priority_pages.forEach(p => {
+    const perc = pct(p.backlinks, p.target);
+    const statusLabel = p.backlinks >= p.target ? 'Complete' : p.backlinks > 0 ? 'In Progress' : 'Not Started';
+    const statusClass = p.backlinks >= p.target ? 'badge-low' : p.backlinks > 0 ? 'badge-medium' : 'badge-high';
+    html += `
+          <tr>
+            <td style="font-weight:500;">${p.page}</td>
+            <td><span class="badge badge-accent">${p.category}</span></td>
+            <td class="mono">${p.backlinks}</td>
+            <td class="mono">${p.target}</td>
+            <td>
+              <div style="display:flex;align-items:center;gap:0.5rem;">
+                <div class="progress-bar-container" style="width:100px;">
+                  <div class="progress-bar-fill" style="width:${Math.max(perc, 2)}%"></div>
+                </div>
+                <span class="mono" style="font-size:0.8rem;color:var(--accent);">${perc}%</span>
+              </div>
+            </td>
+            <td><span class="badge ${statusClass}">${statusLabel}</span></td>
+          </tr>`;
+  });
+
+  html += `</tbody></table></div></div>`;
+
+  // Link Quality Tiers
+  const tiers = [
+    { key: 'tier1_editorial', label: 'Tier 1', name: 'Editorial Links' },
+    { key: 'tier2_niche', label: 'Tier 2', name: 'Niche Links' },
+    { key: 'tier3_social', label: 'Tier 3', name: 'Social Links' },
+    { key: 'tier4_citation', label: 'Tier 4', name: 'Citation Links' }
+  ];
+
+  html += `
+  <div class="section">
+    <div class="section-title">
+      <div class="icon">&#127942;</div>
+      Link Quality Tiers
+    </div>
+    <div class="tier-grid">`;
+
+  tiers.forEach(tier => {
+    const td = D.link_quality_tiers[tier.key];
+    const p = pct(td.count, td.target);
+    html += `
+      <div class="tier-card">
+        <div class="tier-label">${tier.label}</div>
+        <div class="tier-name">${tier.name}</div>
+        <div class="tier-desc">${td.desc}</div>
+        <div class="tier-progress">
+          <div class="tier-numbers">${td.count} <span class="of">/ ${td.target}</span></div>
+          <div class="progress-bar-container" style="flex:1;">
+            <div class="progress-bar-fill" style="width:${Math.max(p, 2)}%"></div>
+          </div>
+          <span class="mono" style="font-size:0.85rem;color:var(--accent);">${p}%</span>
+        </div>
+      </div>`;
+  });
+
+  html += `</div></div>`;
+
+  // Monthly Target Tracker
+  html += `
+  <div class="section">
+    <div class="section-title">
+      <div class="icon">&#128197;</div>
+      Monthly Link Targets
+    </div>
+    <div class="monthly-grid">
+      <div class="monthly-item">
+        <div class="month-label">Month 1</div>
+        <div class="month-target">15</div>
+        <div class="month-type">Directories + Social Profiles</div>
+      </div>
+      <div class="monthly-item">
+        <div class="month-label">Month 2</div>
+        <div class="month-target">12</div>
+        <div class="month-type">Forums + Resource Pages</div>
+      </div>
+      <div class="monthly-item">
+        <div class="month-label">Month 3</div>
+        <div class="month-target">10</div>
+        <div class="month-type">Broken Link + Citations</div>
+      </div>
+      <div class="monthly-item">
+        <div class="month-label">Month 4</div>
+        <div class="month-target">8</div>
+        <div class="month-type">Guest Posts + HARO</div>
+      </div>
+      <div class="monthly-item">
+        <div class="month-label">Month 5</div>
+        <div class="month-target">15</div>
+        <div class="month-type">Mixed + Outreach</div>
+      </div>
+      <div class="monthly-item">
+        <div class="month-label">Month 6</div>
+        <div class="month-target">17</div>
+        <div class="month-type">Scaling All Channels</div>
+      </div>
+    </div>
+  </div>`;
+
+  // Recommendations
+  html += `
+  <div class="section">
+    <div class="section-title">
+      <div class="icon">&#128161;</div>
+      Recommendations
+    </div>
+    <div class="card">
+      <ul class="rec-list">
+        <li>
+          <div class="rec-number">1</div>
+          <div><strong>Start with pet directories and social profiles</strong> &mdash; These are the lowest effort, highest priority targets. Submit PetHub to all major UK pet directories (Yell, FreeIndex, PetBusinessWorld) and complete all social media profiles (Facebook, Instagram, Pinterest, X, YouTube) with backlinks. <span class="effort-tag effort-low">low effort</span></div>
+        </li>
+        <li>
+          <div class="rec-number">2</div>
+          <div><strong>Run broken link reclamation campaigns</strong> &mdash; Use Ahrefs/SEMrush to find broken links on competitor pages pointing to now-dead pet content. Reach out to site owners offering PetHub content as a replacement. Target 20 opportunities. <span class="effort-tag effort-low">low effort</span></div>
+        </li>
+        <li>
+          <div class="rec-number">3</div>
+          <div><strong>Engage in UK pet forums</strong> &mdash; Join PetForums.co.uk, ThePetForum, MoneySavingExpert pet sections. Provide genuine value and link to relevant PetHub guides where appropriate. Build 10 quality forum backlinks. <span class="effort-tag effort-medium">medium effort</span></div>
+        </li>
+        <li>
+          <div class="rec-number">4</div>
+          <div><strong>Target resource page placements</strong> &mdash; Identify UK pet blogs and veterinary sites with resource/links pages. Pitch PetHub's comprehensive guides for inclusion. Focus on "best pet resources UK" and similar pages. <span class="effort-tag effort-medium">medium effort</span></div>
+        </li>
+        <li>
+          <div class="rec-number">5</div>
+          <div><strong>Build guest post pipeline</strong> &mdash; Identify 8 UK pet and lifestyle blogs accepting guest posts. Create high-quality, unique content with natural backlinks to PetHub's priority pages. <span class="effort-tag effort-high">high effort</span></div>
+        </li>
+        <li>
+          <div class="rec-number">6</div>
+          <div><strong>Monitor with HARO / Connectively</strong> &mdash; Sign up for journalist query services and respond to pet-related queries as Jason Parr / PetHub. Low volume but high-authority editorial links when successful. <span class="effort-tag effort-high">high effort</span></div>
+        </li>
+      </ul>
+    </div>
+  </div>`;
+
+  app.innerHTML = html;
+  document.getElementById('gen-date').textContent = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+})();
+</script>
+
+</body>
+</html>

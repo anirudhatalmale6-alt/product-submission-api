@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetHub Revenue Opportunity Engine — Phase 16G</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#080a0f;--card:#111621;--border:#1a2236;--text:#e2e8f0;--dim:#7a8ba8;
+  --accent:#f59e0b;--accent-dim:rgba(245,158,11,.12);--accent-glow:rgba(245,158,11,.25);
+  --green:#22c55e;--red:#ef4444;--yellow:#eab308;--blue:#3b82f6;--purple:#a855f7;
+}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;min-height:100vh;padding:0}
+.container{max-width:1400px;margin:0 auto;padding:32px 24px 60px}
+
+/* Mode Banner */
+.mode-banner{
+  background:linear-gradient(135deg,rgba(245,158,11,.08),rgba(239,68,68,.08));
+  border:2px solid var(--accent);
+  border-radius:16px;padding:20px 28px;margin-bottom:32px;
+  display:flex;align-items:center;gap:16px;
+  animation:pulse-border 3s ease-in-out infinite;
+}
+@keyframes pulse-border{0%,100%{border-color:var(--accent)}50%{border-color:var(--red)}}
+.mode-banner .icon{font-size:32px;flex-shrink:0}
+.mode-banner .label{font-size:22px;font-weight:700;color:var(--accent);letter-spacing:1px}
+.mode-banner .sub{font-size:14px;color:var(--dim);margin-top:4px}
+
+/* Header */
+.header{margin-bottom:40px}
+.header h1{font-size:36px;font-weight:800;background:linear-gradient(135deg,var(--accent),#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.5px}
+.header .phase{font-size:14px;color:var(--dim);margin-top:6px;font-family:'JetBrains Mono',monospace}
+
+/* Grid */
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+@media(max-width:1100px){.grid-3,.grid-5{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.grid-2,.grid-3,.grid-5{grid-template-columns:1fr}}
+
+/* Cards */
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;transition:border-color .2s,box-shadow .2s}
+.card:hover{border-color:rgba(245,158,11,.3);box-shadow:0 0 20px rgba(245,158,11,.06)}
+.card-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1.2px;color:var(--dim);margin-bottom:14px}
+.card-value{font-size:32px;font-weight:800;color:var(--text)}
+.card-sub{font-size:13px;color:var(--dim);margin-top:6px}
+
+/* Section */
+.section{margin-bottom:36px}
+.section-title{font-size:20px;font-weight:700;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.section-title .dot{width:10px;height:10px;border-radius:50%;background:var(--accent)}
+
+/* Channel Cards */
+.channel-card{position:relative;overflow:hidden}
+.channel-card .ch-header{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:16px}
+.channel-card .ch-name{font-size:16px;font-weight:700}
+.channel-card .ch-badge{
+  font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px;
+  font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.5px;
+}
+.badge-ready{background:rgba(34,197,94,.15);color:var(--green);border:1px solid rgba(34,197,94,.3)}
+.badge-not_ready{background:rgba(239,68,68,.15);color:var(--red);border:1px solid rgba(239,68,68,.3)}
+.badge-foundation_only{background:rgba(245,158,11,.15);color:var(--accent);border:1px solid rgba(245,158,11,.3)}
+.channel-card .ch-status{font-size:13px;color:var(--dim);margin-bottom:12px;font-family:'JetBrains Mono',monospace}
+.channel-card .ch-details{font-size:13px;color:var(--dim);line-height:1.7}
+.channel-card .ch-details span{color:var(--text);font-weight:500}
+.channel-card .req-list{list-style:none;margin-top:10px}
+.channel-card .req-list li{font-size:12px;color:var(--dim);padding:4px 0;padding-left:18px;position:relative}
+.channel-card .req-list li::before{content:'';position:absolute;left:0;top:10px;width:8px;height:8px;border-radius:50%;border:2px solid var(--red);background:transparent}
+
+/* Revenue Tiers */
+.tier-card{text-align:center;padding:28px 20px}
+.tier-card .tier-sessions{font-size:14px;color:var(--accent);font-weight:600;font-family:'JetBrains Mono',monospace;margin-bottom:8px}
+.tier-card .tier-revenue{font-size:28px;font-weight:800;color:var(--text);margin-bottom:6px}
+.tier-card .tier-label{font-size:12px;color:var(--dim)}
+.tier-card .tier-bar{height:6px;border-radius:3px;background:var(--border);margin-top:14px;overflow:hidden}
+.tier-card .tier-bar-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--accent),#fbbf24)}
+
+/* Revenue Pages Table */
+.rev-table{width:100%;border-collapse:collapse}
+.rev-table th{text-align:left;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--dim);padding:12px 16px;border-bottom:1px solid var(--border)}
+.rev-table td{padding:14px 16px;border-bottom:1px solid var(--border);font-size:14px}
+.rev-table tr:last-child td{border-bottom:none}
+.rev-table tr:hover td{background:rgba(245,158,11,.03)}
+.pot-high{color:var(--green);font-weight:600}
+.pot-medium{color:var(--yellow);font-weight:600}
+.pot-low{color:var(--dim);font-weight:600}
+
+/* Infra Status */
+.infra-item{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid var(--border)}
+.infra-item:last-child{border-bottom:none}
+.infra-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+.infra-dot.green{background:var(--green);box-shadow:0 0 8px rgba(34,197,94,.4)}
+.infra-dot.yellow{background:var(--yellow);box-shadow:0 0 8px rgba(234,179,8,.4)}
+.infra-dot.red{background:var(--red);box-shadow:0 0 8px rgba(239,68,68,.4)}
+.infra-label{font-size:14px;font-weight:500;flex:1}
+.infra-value{font-size:13px;color:var(--dim);font-family:'JetBrains Mono',monospace}
+
+/* Milestones */
+.milestone{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--border)}
+.milestone:last-child{border-bottom:none}
+.ms-num{width:36px;height:36px;border-radius:50%;background:var(--accent-dim);border:2px solid var(--accent);display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:var(--accent);flex-shrink:0}
+.ms-content .ms-title{font-size:15px;font-weight:600;margin-bottom:4px}
+.ms-content .ms-desc{font-size:13px;color:var(--dim);line-height:1.5}
+
+/* Traffic Blocker Banner */
+.blocker-banner{
+  background:linear-gradient(135deg,rgba(245,158,11,.06),rgba(245,158,11,.02));
+  border:1px solid rgba(245,158,11,.3);border-radius:12px;
+  padding:20px 24px;margin-top:36px;text-align:center;
+}
+.blocker-banner .bb-text{font-size:16px;font-weight:600;color:var(--accent)}
+.blocker-banner .bb-sub{font-size:13px;color:var(--dim);margin-top:6px}
+</style>
+</head>
+<body>
+<script>
+window.REVENUE_DATA = {
+  mode: "ANALYSIS ONLY",
+  total_posts: 263,
+  monetization_channels: [
+    {channel: "Amazon Associates UK", status: "active", tag: "pethubonline-21", posts_with_links: 198, affiliate_links: 1339, estimated_monthly: "TBD - awaiting traffic", readiness: "ready"},
+    {channel: "Display Advertising", status: "not_active", provider: "None", readiness_score: 15, requirements: ["Min 10K monthly sessions","Apply to Mediavine/AdSense","Traffic verification"], readiness: "not_ready"},
+    {channel: "Sponsored Content", status: "not_active", readiness_score: 5, requirements: ["Establish traffic baseline","Build media kit","Reach out to brands"], readiness: "not_ready"},
+    {channel: "Email Marketing", status: "foundation", provider: "MailerLite", subscribers: 0, readiness: "foundation_only"},
+    {channel: "Digital Products", status: "foundation", products: ["First-Year Checklist PDF","Seasonal Care Calendar PDF"], downloads: 0, readiness: "foundation_only"}
+  ],
+  revenue_potential: {
+    phase: "pre_revenue",
+    estimated_monthly_at_10k_sessions: "$200-500",
+    estimated_monthly_at_50k_sessions: "$1,000-3,000",
+    estimated_monthly_at_100k_sessions: "$3,000-8,000",
+    primary_driver: "Affiliate commissions (Amazon Associates UK)"
+  },
+  top_revenue_pages: [
+    {page: "Best Cat Toys UK", affiliate_links: 12, product_count: 15, revenue_potential: "high"},
+    {page: "Best Dog Beds UK", affiliate_links: 10, product_count: 12, revenue_potential: "high"},
+    {page: "Best Cat Collars UK", affiliate_links: 8, product_count: 10, revenue_potential: "high"},
+    {page: "Best Dog Harnesses UK", affiliate_links: 8, product_count: 10, revenue_potential: "medium"},
+    {page: "Best Cat Food UK", affiliate_links: 6, product_count: 8, revenue_potential: "high"}
+  ],
+  traffic_requirement: "Traffic is the ONLY blocker. Content and affiliate infrastructure are ready."
+};
+</script>
+
+<div class="container">
+  <!-- Mode Banner -->
+  <div class="mode-banner">
+    <div class="icon">&#9888;</div>
+    <div>
+      <div class="label">ANALYSIS ONLY &mdash; NO ACTIVATION</div>
+      <div class="sub">Revenue readiness assessment without making any monetization changes. This dashboard evaluates opportunity only.</div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Revenue Opportunity Engine</h1>
+    <div class="phase">Phase 16G &bull; PetHub Online &bull; Generated 2026-05-31</div>
+  </div>
+
+  <!-- Channel Overview -->
+  <div class="section">
+    <div class="section-title"><span class="dot"></span>Channel Overview</div>
+    <div class="grid-3" id="channels"></div>
+  </div>
+
+  <!-- Revenue Potential -->
+  <div class="section">
+    <div class="section-title"><span class="dot"></span>Revenue Potential at Different Traffic Levels</div>
+    <div class="grid-3" id="tiers"></div>
+  </div>
+
+  <!-- Top Revenue Pages -->
+  <div class="section">
+    <div class="section-title"><span class="dot"></span>Top Revenue Pages</div>
+    <div class="card" style="padding:0;overflow:hidden">
+      <table class="rev-table" id="rev-pages">
+        <thead><tr><th>Page</th><th>Affiliate Links</th><th>Products</th><th>Potential</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Affiliate Infrastructure -->
+  <div class="section">
+    <div class="section-title"><span class="dot"></span>Affiliate Infrastructure Status</div>
+    <div class="grid-2">
+      <div class="card" id="infra-status"></div>
+      <div class="card">
+        <div class="card-title">Coverage Overview</div>
+        <div style="display:flex;gap:24px;flex-wrap:wrap;margin-top:8px">
+          <div>
+            <div class="card-value" id="posts-with-links">0</div>
+            <div class="card-sub">Posts with affiliate links</div>
+          </div>
+          <div>
+            <div class="card-value" id="total-links">0</div>
+            <div class="card-sub">Total affiliate links</div>
+          </div>
+          <div>
+            <div class="card-value" id="coverage-pct">0%</div>
+            <div class="card-sub">Content coverage</div>
+          </div>
+        </div>
+        <div style="height:8px;border-radius:4px;background:var(--border);margin-top:20px;overflow:hidden">
+          <div id="coverage-bar" style="height:100%;border-radius:4px;background:linear-gradient(90deg,var(--accent),#fbbf24);width:0%;transition:width 1s ease"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Growth Milestones -->
+  <div class="section">
+    <div class="section-title"><span class="dot"></span>Growth Milestones to Revenue</div>
+    <div class="card" id="milestones"></div>
+  </div>
+
+  <!-- Blocker Banner -->
+  <div class="blocker-banner">
+    <div class="bb-text" id="blocker-text"></div>
+    <div class="bb-sub">Primary revenue driver: Affiliate commissions (Amazon Associates UK)</div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const D = window.REVENUE_DATA;
+
+  // Channel cards
+  const chContainer = document.getElementById('channels');
+  D.monetization_channels.forEach(ch => {
+    const statusLabels = {active:'Active',not_active:'Not Active',foundation:'Foundation'};
+    let details = '';
+    if(ch.tag) details += `<div>Tag: <span>${ch.tag}</span></div>`;
+    if(ch.posts_with_links) details += `<div>Posts with links: <span>${ch.posts_with_links}</span></div>`;
+    if(ch.affiliate_links) details += `<div>Total links: <span>${ch.affiliate_links.toLocaleString()}</span></div>`;
+    if(ch.estimated_monthly) details += `<div>Est. monthly: <span>${ch.estimated_monthly}</span></div>`;
+    if(ch.provider) details += `<div>Provider: <span>${ch.provider}</span></div>`;
+    if(ch.readiness_score !== undefined) details += `<div>Readiness: <span>${ch.readiness_score}%</span></div>`;
+    if(ch.subscribers !== undefined) details += `<div>Subscribers: <span>${ch.subscribers}</span></div>`;
+    if(ch.products) details += `<div>Products: <span>${ch.products.length}</span></div>`;
+    if(ch.downloads !== undefined) details += `<div>Downloads: <span>${ch.downloads}</span></div>`;
+
+    let reqs = '';
+    if(ch.requirements){
+      reqs = '<ul class="req-list">' + ch.requirements.map(r => `<li>${r}</li>`).join('') + '</ul>';
+    }
+    if(ch.products){
+      reqs += '<div style="margin-top:10px;font-size:12px;color:var(--dim)">';
+      ch.products.forEach(p => { reqs += `<div style="padding:2px 0">&#8226; ${p}</div>`; });
+      reqs += '</div>';
+    }
+
+    chContainer.innerHTML += `
+      <div class="card channel-card">
+        <div class="ch-header">
+          <div class="ch-name">${ch.channel}</div>
+          <div class="ch-badge badge-${ch.readiness}">${ch.readiness.replace(/_/g,' ')}</div>
+        </div>
+        <div class="ch-status">Status: ${statusLabels[ch.status] || ch.status}</div>
+        <div class="ch-details">${details}</div>
+        ${reqs}
+      </div>`;
+  });
+
+  // Revenue Tiers
+  const tiers = [
+    {sessions:'10K Sessions/mo', revenue: D.revenue_potential.estimated_monthly_at_10k_sessions, pct:15, label:'Early Growth'},
+    {sessions:'50K Sessions/mo', revenue: D.revenue_potential.estimated_monthly_at_50k_sessions, pct:50, label:'Growth Phase'},
+    {sessions:'100K Sessions/mo', revenue: D.revenue_potential.estimated_monthly_at_100k_sessions, pct:100, label:'Maturity'}
+  ];
+  const tierContainer = document.getElementById('tiers');
+  tiers.forEach(t => {
+    tierContainer.innerHTML += `
+      <div class="card tier-card">
+        <div class="tier-sessions">${t.sessions}</div>
+        <div class="tier-revenue">${t.revenue}</div>
+        <div class="tier-label">${t.label}</div>
+        <div class="tier-bar"><div class="tier-bar-fill" style="width:${t.pct}%"></div></div>
+      </div>`;
+  });
+
+  // Revenue Pages Table
+  const tbody = document.querySelector('#rev-pages tbody');
+  D.top_revenue_pages.forEach(p => {
+    tbody.innerHTML += `
+      <tr>
+        <td style="font-weight:500">${p.page}</td>
+        <td><span style="font-family:'JetBrains Mono',monospace;color:var(--accent)">${p.affiliate_links}</span></td>
+        <td><span style="font-family:'JetBrains Mono',monospace">${p.product_count}</span></td>
+        <td><span class="pot-${p.revenue_potential}">${p.revenue_potential.toUpperCase()}</span></td>
+      </tr>`;
+  });
+
+  // Affiliate Infra
+  const amazon = D.monetization_channels[0];
+  const infraEl = document.getElementById('infra-status');
+  const infraItems = [
+    {label:'Amazon Associates Tag', value: amazon.tag, color:'green'},
+    {label:'Total Published Posts', value: D.total_posts, color:'green'},
+    {label:'Posts with Links', value: amazon.posts_with_links, color:'green'},
+    {label:'Total Affiliate Links', value: amazon.affiliate_links.toLocaleString(), color:'green'},
+    {label:'Display Ads', value:'Not Active', color:'red'},
+    {label:'Email List', value:'0 subscribers', color:'yellow'},
+    {label:'Digital Products', value:'2 PDFs (0 downloads)', color:'yellow'}
+  ];
+  infraEl.innerHTML = '<div class="card-title">Infrastructure Checklist</div>';
+  infraItems.forEach(i => {
+    infraEl.innerHTML += `
+      <div class="infra-item">
+        <div class="infra-dot ${i.color}"></div>
+        <div class="infra-label">${i.label}</div>
+        <div class="infra-value">${i.value}</div>
+      </div>`;
+  });
+
+  // Coverage
+  document.getElementById('posts-with-links').textContent = amazon.posts_with_links;
+  document.getElementById('total-links').textContent = amazon.affiliate_links.toLocaleString();
+  const pct = Math.round((amazon.posts_with_links / D.total_posts) * 100);
+  document.getElementById('coverage-pct').textContent = pct + '%';
+  setTimeout(() => { document.getElementById('coverage-bar').style.width = pct + '%'; }, 200);
+
+  // Milestones
+  const milestones = [
+    {num:1, title:'Fix GSC/GA4 Data Ingestion', desc:'Get real traffic data flowing to understand current visitor volume and behaviour.'},
+    {num:2, title:'Reach 1K Monthly Sessions', desc:'First measurable traffic milestone. Validate content-to-traffic conversion.'},
+    {num:3, title:'Reach 10K Monthly Sessions', desc:'Threshold for premium ad networks (Mediavine). Display ads become viable.'},
+    {num:4, title:'First Affiliate Commission', desc:'Validate the Amazon Associates revenue model with real conversions.'},
+    {num:5, title:'Reach 50K Monthly Sessions', desc:'Scale affiliate revenue to $1K-3K/mo range. Consider sponsored content.'},
+    {num:6, title:'Diversify Revenue Streams', desc:'Activate email marketing, digital products, and display advertising simultaneously.'}
+  ];
+  const msEl = document.getElementById('milestones');
+  milestones.forEach(m => {
+    msEl.innerHTML += `
+      <div class="milestone">
+        <div class="ms-num">${m.num}</div>
+        <div class="ms-content">
+          <div class="ms-title">${m.title}</div>
+          <div class="ms-desc">${m.desc}</div>
+        </div>
+      </div>`;
+  });
+
+  // Blocker
+  document.getElementById('blocker-text').textContent = D.traffic_requirement;
+})();
+</script>
+</body>
+</html>

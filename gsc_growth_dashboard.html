@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetHub - GSC Growth Intelligence (Phase 16A)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#080a0f;--card:#111621;--border:#1a2236;
+  --text:#e2e8f0;--dim:#7a8ba8;--accent:#10b981;
+  --red:#ef4444;--amber:#f59e0b;--blue:#6366f1;
+  --cyan:#06b6d4;--purple:#a855f7;
+}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;padding:0;overflow-x:hidden;min-height:100vh}
+.mono{font-family:'JetBrains Mono',monospace}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:#2a3656}
+
+/* Container */
+.container{max-width:1440px;margin:0 auto;padding:24px 28px 60px}
+
+/* Header */
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+.header-left{display:flex;align-items:center;gap:14px}
+.header-icon{width:44px;height:44px;background:linear-gradient(135deg,var(--accent),#059669);border-radius:11px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:20px;color:#fff}
+.header h1{font-size:21px;font-weight:600;letter-spacing:-0.3px}
+.header h1 span{color:var(--accent)}
+.header-sub{font-size:12px;color:var(--dim);margin-top:2px}
+.header-right{display:flex;align-items:center;gap:16px;font-size:12px;color:var(--dim)}
+.live-dot{width:8px;height:8px;background:var(--accent);border-radius:50%;animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(16,185,129,.4)}50%{opacity:.7;box-shadow:0 0 0 6px rgba(16,185,129,0)}}
+.refresh-timer{display:flex;align-items:center;gap:6px;font-family:'JetBrains Mono',monospace;font-size:11px}
+
+/* Section labels */
+.section-label{font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);margin:32px 0 16px;display:flex;align-items:center;gap:10px}
+.section-label::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--accent) 0%,transparent 80%)}
+.section-num{width:22px;height:22px;background:var(--accent);color:#000;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:700}
+
+/* Summary bar */
+.summary-bar{display:grid;grid-template-columns:repeat(7,1fr);gap:12px;margin-bottom:8px}
+@media(max-width:1100px){.summary-bar{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:700px){.summary-bar{grid-template-columns:repeat(2,1fr)}}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 14px;text-align:center;transition:border-color .3s,transform .2s}
+.stat-card:hover{border-color:rgba(16,185,129,.3);transform:translateY(-1px)}
+.stat-num{font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:600;color:var(--text);line-height:1.1}
+.stat-num.small{font-size:20px}
+.stat-label{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-top:6px}
+.stat-sub{font-size:10px;color:var(--dim);margin-top:3px;font-family:'JetBrains Mono',monospace}
+
+/* Badges */
+.badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;font-family:'JetBrains Mono',monospace;letter-spacing:0.3px;white-space:nowrap}
+.badge-green{background:rgba(16,185,129,.15);color:var(--accent);border:1px solid rgba(16,185,129,.3)}
+.badge-amber{background:rgba(245,158,11,.15);color:var(--amber);border:1px solid rgba(245,158,11,.3)}
+.badge-red{background:rgba(239,68,68,.15);color:var(--red);border:1px solid rgba(239,68,68,.3)}
+.badge-blue{background:rgba(99,102,241,.15);color:var(--blue);border:1px solid rgba(99,102,241,.3)}
+.badge-cyan{background:rgba(6,182,212,.15);color:var(--cyan);border:1px solid rgba(6,182,212,.3)}
+.badge-grey{background:rgba(122,139,168,.12);color:var(--dim);border:1px solid rgba(122,139,168,.25)}
+.badge-purple{background:rgba(168,85,247,.15);color:var(--purple);border:1px solid rgba(168,85,247,.3)}
+
+/* Cards */
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px;transition:border-color .3s}
+.card:hover{border-color:rgba(16,185,129,.2)}
+.card h3{font-size:14px;font-weight:600;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between}
+.card h3 .badge{font-size:10px}
+
+/* Two-col grid */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:800px){.two-col{grid-template-columns:1fr}}
+
+/* Three-col grid */
+.three-col{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:14px}
+
+/* Content type breakdown */
+.ct-row{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(26,34,54,.4);font-size:13px}
+.ct-row:last-child{border-bottom:none}
+.ct-label{color:var(--dim);font-size:12px;width:140px;flex-shrink:0}
+.ct-val{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:500;min-width:60px;text-align:right}
+.ct-bar-wrap{flex:1;margin:0 12px;max-width:140px}
+.ct-bar{height:6px;background:rgba(26,34,54,.8);border-radius:3px;overflow:hidden}
+.ct-bar-fill{height:100%;border-radius:3px;transition:width .6s ease}
+
+/* Opportunity cards */
+.opp-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px;transition:border-color .3s}
+.opp-card:hover{border-color:rgba(16,185,129,.25)}
+.opp-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:12px}
+.opp-query{font-size:15px;font-weight:600;flex:1;margin-right:12px}
+.opp-score-wrap{margin:10px 0}
+.opp-score-bar{height:8px;background:rgba(26,34,54,.8);border-radius:4px;overflow:hidden}
+.opp-score-fill{height:100%;border-radius:4px;transition:width .6s ease}
+.opp-score-label{display:flex;justify-content:space-between;font-size:11px;color:var(--dim);margin-top:4px}
+.opp-pages{margin:10px 0;padding:10px 12px;background:rgba(26,34,54,.4);border-radius:6px;font-size:12px}
+.opp-pages .page-item{display:flex;justify-content:space-between;padding:3px 0;color:var(--dim)}
+.opp-pages .page-item span:first-child{color:var(--text);max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.opp-recs{margin-top:10px;padding-left:16px;font-size:12px;color:var(--dim);line-height:1.8}
+.opp-recs li{margin-bottom:2px}
+.opp-recs li::marker{color:var(--accent)}
+.opp-meta{display:flex;gap:16px;margin-top:10px;font-size:11px;color:var(--dim);font-family:'JetBrains Mono',monospace}
+
+/* Tables */
+.table-wrap{overflow-x:auto;border-radius:10px;border:1px solid var(--border)}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{padding:10px 12px;text-align:left;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.8px;color:var(--dim);border-bottom:1px solid var(--border);white-space:nowrap;background:var(--card)}
+td{padding:10px 12px;border-bottom:1px solid rgba(26,34,54,.4);vertical-align:middle;background:var(--card)}
+tr:hover td{background:rgba(16,185,129,.03)}
+.truncate{max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.change-neg{color:var(--red)}
+.change-pos{color:var(--accent)}
+
+/* Indexing status */
+.idx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px}
+.idx-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px;text-align:center}
+.idx-icon{font-size:28px;margin-bottom:6px}
+.idx-num{font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:600}
+.idx-label{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+
+/* Readiness checklist */
+.checklist{list-style:none}
+.checklist li{display:flex;align-items:center;gap:12px;padding:12px 16px;border-bottom:1px solid rgba(26,34,54,.4);font-size:14px;transition:background .2s}
+.checklist li:last-child{border-bottom:none}
+.checklist li:hover{background:rgba(16,185,129,.03)}
+.check-icon{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;flex-shrink:0}
+.check-pass{background:rgba(16,185,129,.15);color:var(--accent);border:1px solid rgba(16,185,129,.3)}
+.check-fail{background:rgba(239,68,68,.15);color:var(--red);border:1px solid rgba(239,68,68,.3)}
+.check-warn{background:rgba(245,158,11,.15);color:var(--amber);border:1px solid rgba(245,158,11,.3)}
+.check-text{flex:1}
+.check-text .label{font-weight:500}
+.check-text .desc{font-size:12px;color:var(--dim);margin-top:2px}
+
+/* Loading */
+.loading-overlay{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;color:var(--dim)}
+.spinner{width:32px;height:32px;border:3px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;margin-bottom:12px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.skeleton{background:linear-gradient(90deg,var(--border) 25%,rgba(26,34,54,.6) 50%,var(--border) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;border-radius:6px;height:20px;margin:6px 0}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+/* Error state */
+.error-banner{background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.3);border-radius:8px;padding:14px 18px;margin:12px 0;display:flex;align-items:center;gap:10px;font-size:13px;color:var(--red)}
+.error-banner .retry-btn{margin-left:auto;padding:5px 14px;border-radius:6px;border:1px solid rgba(239,68,68,.4);background:transparent;color:var(--red);cursor:pointer;font-family:'Outfit',sans-serif;font-size:12px;font-weight:500;transition:all .2s}
+.error-banner .retry-btn:hover{background:rgba(239,68,68,.15)}
+
+/* Data source badge */
+.data-source{display:inline-flex;align-items:center;gap:6px;padding:4px 12px;border-radius:6px;font-size:11px;font-family:'JetBrains Mono',monospace;background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2);color:var(--accent)}
+.data-source::before{content:'';width:6px;height:6px;background:var(--accent);border-radius:50%}
+
+/* Fade in */
+.fade-in{opacity:0;transform:translateY(8px);animation:fadeIn .4s ease forwards}
+@keyframes fadeIn{to{opacity:1;transform:translateY(0)}}
+
+/* Issues list */
+.issue-list{list-style:none;font-size:12px;color:var(--dim)}
+.issue-list li{padding:3px 0;display:flex;align-items:center;gap:6px}
+.issue-list li::before{content:'\26A0';font-size:10px;color:var(--amber)}
+</style>
+</head>
+<body>
+
+<div class="container" id="app">
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <div class="header-icon">G</div>
+      <div>
+        <h1>GSC <span>Growth Intelligence</span></h1>
+        <div class="header-sub">Phase 16A &mdash; Search Console Analytics &amp; Opportunity Engine</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="data-source" id="dataSource">Analytics Agent</div>
+      <div class="refresh-timer">
+        <div class="live-dot"></div>
+        <span id="refreshTimer">60s</span>
+      </div>
+      <span id="lastUpdate" style="font-size:11px"></span>
+    </div>
+  </div>
+
+  <!-- Section 1: Search Performance Overview -->
+  <div class="section-label"><span class="section-num">1</span> Search Performance Overview</div>
+  <div id="perfSection">
+    <div class="loading-overlay"><div class="spinner"></div><span>Loading performance data...</span></div>
+  </div>
+
+  <!-- Section 2: Content Type Breakdown -->
+  <div class="section-label"><span class="section-num">2</span> Content Type Breakdown</div>
+  <div id="contentTypeSection">
+    <div class="loading-overlay"><div class="spinner"></div><span>Loading content types...</span></div>
+  </div>
+
+  <!-- Section 3: Search Opportunities -->
+  <div class="section-label"><span class="section-num">3</span> Search Opportunities</div>
+  <div id="oppsSection">
+    <div class="loading-overlay"><div class="spinner"></div><span>Loading opportunities...</span></div>
+  </div>
+
+  <!-- Section 4: Performance Drops -->
+  <div class="section-label"><span class="section-num">4</span> Performance Drops</div>
+  <div id="dropsSection">
+    <div class="loading-overlay"><div class="spinner"></div><span>Loading performance drops...</span></div>
+  </div>
+
+  <!-- Section 5: Landing Pages (Top 20) -->
+  <div class="section-label"><span class="section-num">5</span> Landing Pages (Top 20)</div>
+  <div id="landingSection">
+    <div class="loading-overlay"><div class="spinner"></div><span>Loading landing pages...</span></div>
+  </div>
+
+  <!-- Section 6: Indexing Status -->
+  <div class="section-label"><span class="section-num">6</span> Indexing Status</div>
+  <div id="indexingSection">
+    <div class="loading-overlay"><div class="spinner"></div><span>Loading indexing status...</span></div>
+  </div>
+
+  <!-- Section 7: GSC Readiness Status -->
+  <div class="section-label"><span class="section-num">7</span> GSC Readiness Status</div>
+  <div id="readinessSection">
+    <div class="loading-overlay"><div class="spinner"></div><span>Checking readiness...</span></div>
+  </div>
+</div>
+
+<script>
+// ── Configuration ──
+const BASE_URL = window.location.protocol + '//' + window.location.hostname + ':8102';
+const REFRESH_INTERVAL = 60;
+let countdown = REFRESH_INTERVAL;
+let refreshInterval;
+
+// ── Helpers ──
+function fmt(n) {
+  if (n === null || n === undefined) return '—';
+  if (typeof n === 'number') return n.toLocaleString();
+  return String(n);
+}
+
+function pct(n) {
+  if (n === null || n === undefined) return '—';
+  return parseFloat(n).toFixed(1) + '%';
+}
+
+function truncate(s, len) {
+  if (!s) return '—';
+  return s.length > len ? s.substring(0, len) + '...' : s;
+}
+
+function severityBadge(sev) {
+  const s = (sev || '').toLowerCase();
+  if (s === 'critical') return '<span class="badge badge-red">CRITICAL</span>';
+  if (s === 'warning') return '<span class="badge badge-amber">WARNING</span>';
+  if (s === 'info') return '<span class="badge badge-blue">INFO</span>';
+  return '<span class="badge badge-grey">' + (sev || 'UNKNOWN').toUpperCase() + '</span>';
+}
+
+function priorityBadge(pri) {
+  const p = (pri || '').toLowerCase();
+  if (p === 'high') return '<span class="badge badge-red">HIGH</span>';
+  if (p === 'medium') return '<span class="badge badge-amber">MEDIUM</span>';
+  if (p === 'low') return '<span class="badge badge-green">LOW</span>';
+  return '<span class="badge badge-grey">' + (pri || '—').toUpperCase() + '</span>';
+}
+
+function gradeBadge(g) {
+  if (!g) return '<span class="badge badge-grey">—</span>';
+  const gl = g.toUpperCase();
+  if (gl === 'A' || gl === 'A+') return '<span class="badge badge-green">' + gl + '</span>';
+  if (gl === 'B' || gl === 'B+') return '<span class="badge badge-cyan">' + gl + '</span>';
+  if (gl === 'C' || gl === 'C+') return '<span class="badge badge-amber">' + gl + '</span>';
+  return '<span class="badge badge-red">' + gl + '</span>';
+}
+
+function contentTypeBadge(t) {
+  if (!t) return '<span class="badge badge-grey">—</span>';
+  const tl = t.toLowerCase();
+  if (tl === 'post') return '<span class="badge badge-purple">POST</span>';
+  if (tl === 'page') return '<span class="badge badge-blue">PAGE</span>';
+  if (tl === 'product') return '<span class="badge badge-cyan">PRODUCT</span>';
+  return '<span class="badge badge-grey">' + t.toUpperCase() + '</span>';
+}
+
+function responseTimeColor(ms) {
+  if (ms === null || ms === undefined) return 'var(--dim)';
+  if (ms < 1000) return 'var(--accent)';
+  if (ms <= 2000) return 'var(--amber)';
+  return 'var(--red)';
+}
+
+function scoreColor(score) {
+  if (score >= 70) return 'var(--accent)';
+  if (score >= 40) return 'var(--amber)';
+  return 'var(--red)';
+}
+
+function errorHTML(msg, sectionId) {
+  return `<div class="error-banner">
+    <svg width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 8v4m0 4h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    <span>${msg}</span>
+    <button class="retry-btn" onclick="loadAll()">Retry</button>
+  </div>`;
+}
+
+async function fetchJSON(endpoint) {
+  const url = BASE_URL + endpoint;
+  const res = await fetch(url, { headers: { 'Accept': 'application/json' } });
+  if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+  return res.json();
+}
+
+// ── Section 1: Search Performance Overview ──
+async function loadPerformance() {
+  const el = document.getElementById('perfSection');
+  try {
+    const [perf, idx] = await Promise.all([
+      fetchJSON('/api/search/performance'),
+      fetchJSON('/api/search/indexing-issues')
+    ]);
+    el.innerHTML = `<div class="summary-bar fade-in">
+      <div class="stat-card">
+        <div class="stat-num">${fmt(perf.total_pages || idx.total_pages)}</div>
+        <div class="stat-label">Total Pages</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">${fmt(perf.total_organic_clicks)}</div>
+        <div class="stat-label">Organic Clicks</div>
+        <div class="stat-sub">${perf.period_days || 28}d window</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num small">${fmt(perf.total_estimated_impressions)}</div>
+        <div class="stat-label">Impressions</div>
+        <div class="stat-sub">estimated</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">${pct(perf.estimated_ctr_pct)}</div>
+        <div class="stat-label">CTR</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">${fmt(perf.total_search_terms)}</div>
+        <div class="stat-label">Search Terms</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">${fmt(idx.indexed)}</div>
+        <div class="stat-label">Indexed Pages</div>
+        <div class="stat-sub">${idx.total_pages ? Math.round((idx.indexed / idx.total_pages) * 100) + '%' : '—'}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">${fmt(idx.sitemap_url_count)}</div>
+        <div class="stat-label">Sitemap URLs</div>
+        <div class="stat-sub">${idx.sitemap_accessible ? 'accessible' : 'not accessible'}</div>
+      </div>
+    </div>`;
+  } catch (e) {
+    el.innerHTML = errorHTML('Performance data unavailable: ' + e.message, 'perfSection');
+  }
+}
+
+// ── Section 2: Content Type Breakdown ──
+async function loadContentTypes() {
+  const el = document.getElementById('contentTypeSection');
+  try {
+    const data = await fetchJSON('/api/search/content-performance');
+    const types = data.content_types || [];
+
+    // Find max values for bar scaling
+    const maxCount = Math.max(...types.map(t => t.count || 0), 1);
+    const maxViews = Math.max(...types.map(t => t.total_views || 0), 1);
+
+    let cards = '';
+    types.forEach((ct, i) => {
+      const colors = ['var(--accent)', 'var(--blue)', 'var(--cyan)', 'var(--purple)', 'var(--amber)'];
+      const color = colors[i % colors.length];
+      const indexedPct = ct.count > 0 ? Math.round(((ct.indexed_count || 0) / ct.count) * 100) : 0;
+      const countPct = Math.round((ct.count / maxCount) * 100);
+      const viewsPct = Math.round(((ct.total_views || 0) / maxViews) * 100);
+
+      cards += `<div class="card fade-in" style="animation-delay:${i * 0.08}s">
+        <h3>
+          ${contentTypeBadge(ct.type)}
+          <span class="mono" style="font-size:20px;font-weight:600">${fmt(ct.count)}</span>
+        </h3>
+        <div class="ct-row">
+          <span class="ct-label">Total Views</span>
+          <div class="ct-bar-wrap"><div class="ct-bar"><div class="ct-bar-fill" style="width:${viewsPct}%;background:${color}"></div></div></div>
+          <span class="ct-val">${fmt(ct.total_views)}</span>
+        </div>
+        <div class="ct-row">
+          <span class="ct-label">Avg Views/Page</span>
+          <span class="ct-val">${fmt(ct.avg_views_per_page)}</span>
+        </div>
+        <div class="ct-row">
+          <span class="ct-label">Avg Word Count</span>
+          <span class="ct-val">${fmt(ct.avg_word_count)}</span>
+        </div>
+        <div class="ct-row">
+          <span class="ct-label">Avg Response Time</span>
+          <span class="ct-val" style="color:${responseTimeColor(ct.avg_response_time_ms)}">${ct.avg_response_time_ms ? ct.avg_response_time_ms + 'ms' : '—'}</span>
+        </div>
+        <div class="ct-row">
+          <span class="ct-label">Indexed</span>
+          <div class="ct-bar-wrap"><div class="ct-bar"><div class="ct-bar-fill" style="width:${indexedPct}%;background:${indexedPct >= 90 ? 'var(--accent)' : indexedPct >= 50 ? 'var(--amber)' : 'var(--red)'}"></div></div></div>
+          <span class="ct-val">${indexedPct}%</span>
+        </div>
+        <div class="ct-row">
+          <span class="ct-label">Pages w/ Issues</span>
+          <span class="ct-val" style="color:${(ct.pages_with_issues || 0) > 0 ? 'var(--amber)' : 'var(--accent)'}">${fmt(ct.pages_with_issues || 0)}</span>
+        </div>
+      </div>`;
+    });
+
+    if (types.length === 0) {
+      cards = '<div class="card"><div style="text-align:center;padding:20px;color:var(--dim)">No content type data available</div></div>';
+    }
+
+    el.innerHTML = `<div class="two-col fade-in">${cards}</div>`;
+  } catch (e) {
+    el.innerHTML = errorHTML('Content type data unavailable: ' + e.message, 'contentTypeSection');
+  }
+}
+
+// ── Section 3: Search Opportunities ──
+async function loadOpportunities() {
+  const el = document.getElementById('oppsSection');
+  try {
+    const data = await fetchJSON('/api/search/opportunities');
+    const opps = data.opportunities || [];
+
+    // Summary strip
+    let summaryHTML = `<div class="summary-bar fade-in" style="grid-template-columns:repeat(4,1fr);margin-bottom:14px">
+      <div class="stat-card"><div class="stat-num">${fmt(data.total_opportunities)}</div><div class="stat-label">Total Opportunities</div></div>
+      <div class="stat-card"><div class="stat-num" style="color:var(--red)">${fmt(data.high_priority)}</div><div class="stat-label">High Priority</div></div>
+      <div class="stat-card"><div class="stat-num" style="color:var(--amber)">${fmt(data.medium_priority)}</div><div class="stat-label">Medium Priority</div></div>
+      <div class="stat-card"><div class="stat-num" style="color:var(--accent)">${fmt(data.low_priority)}</div><div class="stat-label">Low Priority</div></div>
+    </div>`;
+
+    let cardsHTML = '';
+    opps.forEach((opp, i) => {
+      const score = opp.opportunity_score || 0;
+      const pages = opp.matching_pages || [];
+      const recs = opp.recommendations || [];
+      const priority = score >= 70 ? 'high' : score >= 40 ? 'medium' : 'low';
+
+      let pagesHTML = '';
+      if (pages.length > 0) {
+        pagesHTML = '<div class="opp-pages"><div style="font-size:11px;color:var(--dim);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.5px">Matching Pages</div>';
+        pages.forEach(p => {
+          const title = typeof p === 'string' ? p : (p.title || p.url || '—');
+          const wc = typeof p === 'object' && p.word_count ? p.word_count + ' words' : '';
+          pagesHTML += `<div class="page-item"><span title="${title}">${truncate(title, 50)}</span><span class="mono" style="font-size:11px">${wc}</span></div>`;
+        });
+        pagesHTML += '</div>';
+      }
+
+      let recsHTML = '';
+      if (recs.length > 0) {
+        recsHTML = '<ul class="opp-recs">';
+        recs.forEach(r => { recsHTML += `<li>${r}</li>`; });
+        recsHTML += '</ul>';
+      }
+
+      cardsHTML += `<div class="opp-card fade-in" style="animation-delay:${i * 0.06}s">
+        <div class="opp-header">
+          <span class="opp-query">${opp.query || '—'}</span>
+          ${priorityBadge(priority)}
+        </div>
+        <div class="opp-score-wrap">
+          <div class="opp-score-bar"><div class="opp-score-fill" style="width:${score}%;background:${scoreColor(score)}"></div></div>
+          <div class="opp-score-label"><span>Opportunity Score</span><span class="mono">${score}/100</span></div>
+        </div>
+        <div class="opp-meta">
+          <span>Clicks: ${fmt(opp.clicks)}</span>
+          <span>Impressions: ${fmt(opp.estimated_impressions)}</span>
+          <span>CTR: ${pct(opp.estimated_ctr_pct)}</span>
+        </div>
+        ${pagesHTML}
+        ${recsHTML}
+      </div>`;
+    });
+
+    if (opps.length === 0) {
+      cardsHTML = '<div class="card"><div style="text-align:center;padding:20px;color:var(--dim)">No search opportunities found yet</div></div>';
+    }
+
+    el.innerHTML = summaryHTML + `<div class="three-col">${cardsHTML}</div>`;
+  } catch (e) {
+    el.innerHTML = errorHTML('Opportunities data unavailable: ' + e.message, 'oppsSection');
+  }
+}
+
+// ── Section 4: Performance Drops ──
+async function loadDrops() {
+  const el = document.getElementById('dropsSection');
+  try {
+    const data = await fetchJSON('/api/search/drops');
+    const drops = data.drops || [];
+
+    // Sort by severity: critical > warning > info
+    const sevOrder = { critical: 0, warning: 1, info: 2 };
+    drops.sort((a, b) => (sevOrder[(a.severity || 'info').toLowerCase()] || 9) - (sevOrder[(b.severity || 'info').toLowerCase()] || 9));
+
+    // Summary strip
+    let summaryHTML = `<div class="summary-bar fade-in" style="grid-template-columns:repeat(4,1fr);margin-bottom:14px">
+      <div class="stat-card"><div class="stat-num">${fmt(data.total_drops)}</div><div class="stat-label">Total Drops</div><div class="stat-sub">${data.period_days || 28}d window</div></div>
+      <div class="stat-card"><div class="stat-num" style="color:var(--red)">${fmt(data.critical_drops)}</div><div class="stat-label">Critical</div></div>
+      <div class="stat-card"><div class="stat-num" style="color:var(--amber)">${fmt(data.warning_drops)}</div><div class="stat-label">Warning</div></div>
+      <div class="stat-card"><div class="stat-num" style="color:var(--blue)">${fmt(data.info_drops)}</div><div class="stat-label">Info</div></div>
+    </div>`;
+
+    if (drops.length === 0) {
+      el.innerHTML = summaryHTML + '<div class="card fade-in"><div style="text-align:center;padding:20px;color:var(--accent)">No performance drops detected</div></div>';
+      return;
+    }
+
+    let rowsHTML = '';
+    drops.forEach((d, i) => {
+      const changePct = d.change_pct || 0;
+      const changeClass = changePct < 0 ? 'change-neg' : 'change-pos';
+      const dropType = (d.type || '—').replace(/_/g, ' ');
+      const pageTitle = d.page || d.url || '—';
+
+      rowsHTML += `<tr class="fade-in" style="animation-delay:${i * 0.03}s">
+        <td><span class="truncate" title="${pageTitle}">${truncate(pageTitle, 40)}</span></td>
+        <td><span class="badge badge-cyan">${dropType.toUpperCase()}</span></td>
+        <td style="font-family:'JetBrains Mono',monospace">${d.metric || '—'}</td>
+        <td class="mono">${fmt(d.previous_value)}</td>
+        <td class="mono">${fmt(d.current_value)}</td>
+        <td class="mono ${changeClass}">${changePct > 0 ? '+' : ''}${parseFloat(changePct).toFixed(1)}%</td>
+        <td>${severityBadge(d.severity)}</td>
+      </tr>`;
+    });
+
+    el.innerHTML = summaryHTML + `<div class="table-wrap fade-in">
+      <table>
+        <thead><tr>
+          <th>Page</th><th>Type</th><th>Metric</th><th>Previous</th><th>Current</th><th>Change</th><th>Severity</th>
+        </tr></thead>
+        <tbody>${rowsHTML}</tbody>
+      </table>
+    </div>`;
+  } catch (e) {
+    el.innerHTML = errorHTML('Performance drops data unavailable: ' + e.message, 'dropsSection');
+  }
+}
+
+// ── Section 5: Landing Pages (Top 20) ──
+async function loadLandingPages() {
+  const el = document.getElementById('landingSection');
+  try {
+    const data = await fetchJSON('/api/search/landing-pages');
+    const pages = (data.pages || []).slice(0, 20);
+
+    // Summary strip
+    let summaryHTML = `<div class="summary-bar fade-in" style="grid-template-columns:repeat(3,1fr);margin-bottom:14px">
+      <div class="stat-card"><div class="stat-num">${fmt(data.total_landing_pages)}</div><div class="stat-label">Landing Pages</div></div>
+      <div class="stat-card"><div class="stat-num">${fmt(data.total_views)}</div><div class="stat-label">Total Views</div></div>
+      <div class="stat-card"><div class="stat-num" style="color:${responseTimeColor(data.avg_response_time_ms)}">${data.avg_response_time_ms ? data.avg_response_time_ms + 'ms' : '—'}</div><div class="stat-label">Avg Response</div></div>
+    </div>`;
+
+    if (pages.length === 0) {
+      el.innerHTML = summaryHTML + '<div class="card fade-in"><div style="text-align:center;padding:20px;color:var(--dim)">No landing page data available</div></div>';
+      return;
+    }
+
+    let rowsHTML = '';
+    pages.forEach((p, i) => {
+      const rt = p.response_time_ms;
+      const rtColor = responseTimeColor(rt);
+      const issues = p.issues || [];
+      const issueCount = issues.length;
+      const title = p.title || p.url || '—';
+      const displayUrl = p.url || '#';
+
+      rowsHTML += `<tr class="fade-in" style="animation-delay:${i * 0.03}s">
+        <td><a href="${displayUrl}" target="_blank" title="${title}"><span class="truncate">${truncate(title, 45)}</span></a></td>
+        <td class="mono">${fmt(p.word_count)}</td>
+        <td class="mono" style="color:${rtColor}">${rt ? rt + 'ms' : '—'}</td>
+        <td class="mono">${p.page_size_display || '—'}</td>
+        <td>${gradeBadge(p.grade)}</td>
+        <td>${contentTypeBadge(p.content_type)}</td>
+        <td>${issueCount > 0 ? '<span class="badge badge-amber">' + issueCount + '</span>' : '<span class="badge badge-green">0</span>'}</td>
+      </tr>`;
+    });
+
+    el.innerHTML = summaryHTML + `<div class="table-wrap fade-in">
+      <table>
+        <thead><tr>
+          <th>Title</th><th>Words</th><th>Response</th><th>Size</th><th>Grade</th><th>Type</th><th>Issues</th>
+        </tr></thead>
+        <tbody>${rowsHTML}</tbody>
+      </table>
+    </div>`;
+  } catch (e) {
+    el.innerHTML = errorHTML('Landing page data unavailable: ' + e.message, 'landingSection');
+  }
+}
+
+// ── Section 6: Indexing Status ──
+async function loadIndexing() {
+  const el = document.getElementById('indexingSection');
+  try {
+    const data = await fetchJSON('/api/search/indexing-issues');
+    const issues = data.issues || [];
+    const sitemapOk = data.sitemap_accessible;
+
+    el.innerHTML = `<div class="idx-grid fade-in">
+      <div class="idx-card">
+        <div class="idx-icon" style="color:var(--accent)">&#x1F4C4;</div>
+        <div class="idx-num">${fmt(data.total_pages)}</div>
+        <div class="idx-label">Total Pages</div>
+      </div>
+      <div class="idx-card">
+        <div class="idx-icon" style="color:var(--accent)">&#x2705;</div>
+        <div class="idx-num" style="color:var(--accent)">${fmt(data.indexed)}</div>
+        <div class="idx-label">Indexed</div>
+      </div>
+      <div class="idx-card">
+        <div class="idx-icon" style="color:var(--red)">&#x274C;</div>
+        <div class="idx-num" style="color:${(data.not_indexed || 0) > 0 ? 'var(--red)' : 'var(--accent)'}">${fmt(data.not_indexed)}</div>
+        <div class="idx-label">Not Indexed</div>
+      </div>
+      <div class="idx-card">
+        <div class="idx-icon">${sitemapOk ? '<span style="color:var(--accent)">&#x2705;</span>' : '<span style="color:var(--red)">&#x1F6A8;</span>'}</div>
+        <div class="idx-num" style="color:${sitemapOk ? 'var(--accent)' : 'var(--red)'}">${sitemapOk ? 'YES' : 'NO'}</div>
+        <div class="idx-label">Sitemap Accessible</div>
+      </div>
+      <div class="idx-card">
+        <div class="idx-icon" style="color:var(--cyan)">&#x1F517;</div>
+        <div class="idx-num">${fmt(data.sitemap_url_count)}</div>
+        <div class="idx-label">Sitemap URLs</div>
+      </div>
+      <div class="idx-card">
+        <div class="idx-icon" style="color:${(data.total_issues || 0) > 0 ? 'var(--amber)' : 'var(--accent)'}">&#x26A0;</div>
+        <div class="idx-num" style="color:${(data.total_issues || 0) > 0 ? 'var(--amber)' : 'var(--accent)'}">${fmt(data.total_issues)}</div>
+        <div class="idx-label">Issues Found</div>
+      </div>
+    </div>
+    ${issues.length > 0 ? `<div class="card fade-in" style="margin-top:14px">
+      <h3>Indexing Issues</h3>
+      <ul class="issue-list">${issues.map(iss => {
+        const issText = typeof iss === 'string' ? iss : (iss.description || iss.message || iss.type || JSON.stringify(iss));
+        return `<li>${issText}</li>`;
+      }).join('')}</ul>
+    </div>` : ''}`;
+  } catch (e) {
+    el.innerHTML = errorHTML('Indexing data unavailable: ' + e.message, 'indexingSection');
+  }
+}
+
+// ── Section 7: GSC Readiness Status ──
+async function loadReadiness() {
+  const el = document.getElementById('readinessSection');
+  try {
+    const [perf, idx] = await Promise.all([
+      fetchJSON('/api/search/performance').catch(() => null),
+      fetchJSON('/api/search/indexing-issues').catch(() => null)
+    ]);
+
+    // Derive statuses
+    const hasPerf = perf !== null;
+    const hasIdx = idx !== null;
+    const hasClicks = hasPerf && (perf.total_organic_clicks || 0) > 0;
+    const hasImpressions = hasPerf && (perf.total_estimated_impressions || 0) > 0;
+    const sitemapOk = hasIdx && idx.sitemap_accessible;
+    const indexed = hasIdx && (idx.indexed || 0) > 0;
+    const trafficAvailable = hasClicks || hasImpressions;
+
+    // GA4/GSC are connected in the platform but traffic reads zero
+    const ga4Connected = hasPerf;
+    const gscConnected = hasPerf;
+
+    const checks = [
+      {
+        label: 'GA4 Connected',
+        desc: ga4Connected ? 'Google Analytics 4 property is connected to the platform' : 'GA4 integration not detected — connect GA4 property in platform settings',
+        status: ga4Connected ? 'pass' : 'fail'
+      },
+      {
+        label: 'GSC Connected',
+        desc: gscConnected ? 'Google Search Console property is connected to the platform' : 'GSC integration not detected — connect GSC property in platform settings',
+        status: gscConnected ? 'pass' : 'fail'
+      },
+      {
+        label: 'Traffic Data Available',
+        desc: trafficAvailable
+          ? `${fmt(perf.total_organic_clicks)} organic clicks and ${fmt(perf.total_estimated_impressions)} estimated impressions in the last ${perf.period_days || 28} days`
+          : 'Traffic data reads zero — GSC/GA4 shows connected but no click/impression data is flowing yet. Verify property ownership and wait 48-72h for data propagation.',
+        status: trafficAvailable ? 'pass' : (gscConnected ? 'warn' : 'fail')
+      },
+      {
+        label: 'Sitemap Indexed',
+        desc: sitemapOk
+          ? `Sitemap is accessible with ${fmt(idx.sitemap_url_count)} URLs`
+          : 'Sitemap not detected or inaccessible — submit sitemap via GSC and verify robots.txt allows access',
+        status: sitemapOk ? 'pass' : 'fail'
+      },
+      {
+        label: 'Pages Indexed',
+        desc: indexed
+          ? `${fmt(idx.indexed)} of ${fmt(idx.total_pages)} pages are indexed (${idx.total_pages ? Math.round((idx.indexed / idx.total_pages) * 100) : 0}%)`
+          : 'No indexed pages detected — ensure pages are crawlable and not blocked by robots.txt or noindex directives',
+        status: indexed ? 'pass' : 'fail'
+      },
+      {
+        label: 'Search Terms Detected',
+        desc: hasPerf && (perf.total_search_terms || 0) > 0
+          ? `${fmt(perf.total_search_terms)} unique search terms driving traffic`
+          : 'No search terms detected — this will populate once GSC data flows through',
+        status: hasPerf && (perf.total_search_terms || 0) > 0 ? 'pass' : 'warn'
+      }
+    ];
+
+    const passCount = checks.filter(c => c.status === 'pass').length;
+    const totalChecks = checks.length;
+
+    let checklistHTML = '<ul class="checklist">';
+    checks.forEach((c, i) => {
+      const iconClass = c.status === 'pass' ? 'check-pass' : c.status === 'warn' ? 'check-warn' : 'check-fail';
+      const icon = c.status === 'pass' ? '&#x2713;' : c.status === 'warn' ? '!' : '&#x2717;';
+      checklistHTML += `<li class="fade-in" style="animation-delay:${i * 0.06}s">
+        <div class="check-icon ${iconClass}">${icon}</div>
+        <div class="check-text">
+          <div class="label">${c.label}</div>
+          <div class="desc">${c.desc}</div>
+        </div>
+        <span class="badge ${c.status === 'pass' ? 'badge-green' : c.status === 'warn' ? 'badge-amber' : 'badge-red'}">${c.status.toUpperCase()}</span>
+      </li>`;
+    });
+    checklistHTML += '</ul>';
+
+    const overallColor = passCount === totalChecks ? 'var(--accent)' : passCount >= 4 ? 'var(--amber)' : 'var(--red)';
+    const overallLabel = passCount === totalChecks ? 'FULLY READY' : passCount >= 4 ? 'PARTIALLY READY' : 'SETUP NEEDED';
+
+    el.innerHTML = `<div class="card fade-in">
+      <h3>
+        <span>GSC Integration Readiness</span>
+        <span class="badge" style="background:${passCount === totalChecks ? 'rgba(16,185,129,.15)' : passCount >= 4 ? 'rgba(245,158,11,.15)' : 'rgba(239,68,68,.15)'};color:${overallColor};border:1px solid ${overallColor}40;font-size:12px">${passCount}/${totalChecks} &mdash; ${overallLabel}</span>
+      </h3>
+      ${checklistHTML}
+      <div style="margin-top:16px;padding:14px 16px;background:rgba(26,34,54,.3);border-radius:8px;font-size:12px;color:var(--dim);line-height:1.7">
+        <strong style="color:var(--text)">Current State:</strong> GSC and GA4 show as connected in the platform, but traffic data currently reads zero.
+        This typically means the property verification is pending or data has not yet propagated (allow 48-72 hours after initial connection).
+        If data remains at zero after 72 hours, verify the correct property is selected and that the site is receiving organic search traffic.
+      </div>
+    </div>`;
+  } catch (e) {
+    el.innerHTML = errorHTML('Readiness check failed: ' + e.message, 'readinessSection');
+  }
+}
+
+// ── Load All ──
+async function loadAll() {
+  document.getElementById('lastUpdate').textContent = 'Updated: ' + new Date().toLocaleTimeString();
+  countdown = REFRESH_INTERVAL;
+
+  // Fire all section loads in parallel
+  await Promise.allSettled([
+    loadPerformance(),
+    loadContentTypes(),
+    loadOpportunities(),
+    loadDrops(),
+    loadLandingPages(),
+    loadIndexing(),
+    loadReadiness()
+  ]);
+}
+
+// ── Countdown Timer ──
+function startCountdown() {
+  if (refreshInterval) clearInterval(refreshInterval);
+  refreshInterval = setInterval(() => {
+    countdown--;
+    const timerEl = document.getElementById('refreshTimer');
+    if (timerEl) timerEl.textContent = countdown + 's';
+    if (countdown <= 0) {
+      countdown = REFRESH_INTERVAL;
+      loadAll();
+    }
+  }, 1000);
+}
+
+// ── Init ──
+document.addEventListener('DOMContentLoaded', () => {
+  loadAll();
+  startCountdown();
+});
+</script>
+</body>
+</html>

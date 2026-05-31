@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetHub Authority Agent Status — Phase 16I</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#080a0f;--card:#111621;--border:#1a2236;--text:#e2e8f0;--dim:#7a8ba8;
+  --accent:#a855f7;--accent-dim:rgba(168,85,247,.12);--accent-glow:rgba(168,85,247,.25);
+  --green:#22c55e;--red:#ef4444;--yellow:#eab308;--orange:#f59e0b;--cyan:#06b6d4;
+}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;min-height:100vh;padding:0}
+.container{max-width:1400px;margin:0 auto;padding:32px 24px 60px}
+
+/* Header */
+.header{margin-bottom:40px;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.header h1{font-size:36px;font-weight:800;background:linear-gradient(135deg,var(--accent),#c084fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.5px}
+.header .phase{font-size:14px;color:var(--dim);font-family:'JetBrains Mono',monospace}
+.agent-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.3);
+  padding:8px 16px;border-radius:24px;font-size:13px;font-weight:600;color:var(--green);
+}
+.agent-badge .pulse{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(34,197,94,.5)}50%{box-shadow:0 0 0 8px rgba(34,197,94,0)}}
+
+/* Section */
+.section{margin-bottom:36px}
+.section-title{font-size:20px;font-weight:700;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.section-title .dot{width:10px;height:10px;border-radius:50%;background:var(--accent)}
+
+/* Grid */
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:20px}
+@media(max-width:1100px){.grid-3,.grid-5{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.grid-2,.grid-3,.grid-5{grid-template-columns:1fr}}
+
+/* Card */
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:24px;transition:border-color .2s,box-shadow .2s}
+.card:hover{border-color:rgba(168,85,247,.3);box-shadow:0 0 20px rgba(168,85,247,.06)}
+.card-title{font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1.2px;color:var(--dim);margin-bottom:14px}
+
+/* Gauge */
+.gauge-wrap{display:flex;justify-content:center;padding:20px 0 10px}
+.gauge{position:relative;width:240px;height:240px}
+.gauge svg{width:100%;height:100%;transform:rotate(-90deg)}
+.gauge circle{fill:none;stroke-linecap:round}
+.gauge .track{stroke:var(--border);stroke-width:12}
+.gauge .fill{stroke:var(--accent);stroke-width:12;transition:stroke-dashoffset 1.5s ease}
+.gauge .score-text{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;
+}
+.gauge .score-num{font-size:56px;font-weight:800;color:var(--text);line-height:1}
+.gauge .score-max{font-size:16px;color:var(--dim);margin-top:4px;font-family:'JetBrains Mono',monospace}
+.gauge .score-label{font-size:13px;color:var(--accent);margin-top:8px;font-weight:600}
+
+/* Trust Signal Cards */
+.ts-card{position:relative;overflow:hidden}
+.ts-card .ts-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.ts-card .ts-name{font-size:15px;font-weight:600}
+.ts-card .ts-detail{font-size:12px;color:var(--dim);line-height:1.5;margin-bottom:12px;min-height:36px}
+.ts-card .ts-score-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.ts-card .ts-score-val{font-size:14px;font-weight:700;font-family:'JetBrains Mono',monospace}
+.ts-card .ts-bar{height:6px;border-radius:3px;background:var(--border);overflow:hidden}
+.ts-card .ts-bar-fill{height:100%;border-radius:3px;transition:width 1.2s ease}
+
+/* Status badges */
+.s-badge{font-size:10px;font-weight:700;padding:3px 8px;border-radius:12px;text-transform:uppercase;letter-spacing:.5px;white-space:nowrap}
+.s-badge.established,.s-badge.published,.s-badge.strong,.s-badge.active{background:rgba(34,197,94,.12);color:var(--green)}
+.s-badge.partial,.s-badge.foundation{background:rgba(234,179,8,.12);color:var(--yellow)}
+.s-badge.not_active,.s-badge.critical,.s-badge.minimal{background:rgba(239,68,68,.12);color:var(--red)}
+
+/* Color classes for bars */
+.bar-green{background:linear-gradient(90deg,var(--green),#4ade80)}
+.bar-yellow{background:linear-gradient(90deg,var(--yellow),var(--orange))}
+.bar-red{background:linear-gradient(90deg,var(--red),#f87171)}
+
+/* Trust Pages Table */
+.tp-table{width:100%;border-collapse:collapse}
+.tp-table th{text-align:left;font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--dim);padding:12px 16px;border-bottom:1px solid var(--border)}
+.tp-table td{padding:12px 16px;border-bottom:1px solid var(--border);font-size:14px}
+.tp-table tr:last-child td{border-bottom:none}
+.tp-table tr:hover td{background:rgba(168,85,247,.03)}
+.tp-status{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:500}
+.tp-status .dot{width:8px;height:8px;border-radius:50%;background:var(--green)}
+.tp-url{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--dim)}
+
+/* Red Lines */
+.redlines-box{
+  background:linear-gradient(135deg,rgba(239,68,68,.06),rgba(239,68,68,.02));
+  border:2px solid rgba(239,68,68,.4);border-radius:16px;padding:28px;
+}
+.redlines-title{font-size:18px;font-weight:800;color:var(--red);margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.redlines-title .icon{font-size:24px}
+.redline-item{display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid rgba(239,68,68,.15)}
+.redline-item:last-child{border-bottom:none}
+.redline-icon{color:var(--red);font-size:16px;flex-shrink:0;margin-top:1px;font-weight:700}
+.redline-text{font-size:14px;font-weight:500;line-height:1.5}
+
+/* Actions */
+.action-item{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid var(--border)}
+.action-item:last-child{border-bottom:none}
+.action-num{width:28px;height:28px;border-radius:50%;border:2px solid var(--accent);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--accent);flex-shrink:0}
+.action-text{font-size:14px;line-height:1.5;padding-top:3px}
+
+/* E-E-A-T */
+.eeat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+@media(max-width:900px){.eeat-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:500px){.eeat-grid{grid-template-columns:1fr}}
+.eeat-card{text-align:center;padding:24px 16px}
+.eeat-letter{font-size:40px;font-weight:800;color:var(--accent);margin-bottom:4px}
+.eeat-label{font-size:14px;font-weight:600;margin-bottom:8px}
+.eeat-desc{font-size:12px;color:var(--dim);line-height:1.5}
+.eeat-score{font-size:16px;font-weight:700;margin-top:10px;font-family:'JetBrains Mono',monospace}
+</style>
+</head>
+<body>
+<script>
+window.AUTHORITY_DATA = {
+  agent_status: "active",
+  authority_score: 28,
+  max_score: 100,
+  trust_signals: [
+    {signal: "Author Identity", status: "established", detail: "Jason Parr - Founder, About page published with author links site-wide", score: 80},
+    {signal: "Editorial Policy", status: "published", detail: "Editorial policy, fact-checking, methodology pages live", score: 90},
+    {signal: "Content Depth", status: "strong", detail: "263 posts, avg 4,382 words, comprehensive guides", score: 85},
+    {signal: "Source Citations", status: "partial", detail: "Sources section added to most posts, needs real external links", score: 45},
+    {signal: "Expert Review", status: "not_active", detail: "No named expert reviewers yet - DO NOT fake credentials", score: 0},
+    {signal: "Domain Authority", status: "critical", detail: "DA ~5, new domain, no backlinks", score: 5},
+    {signal: "Social Proof", status: "minimal", detail: "1 follower each on FB/IG, no engagement", score: 5},
+    {signal: "User Trust Indicators", status: "foundation", detail: "Affiliate disclosure, privacy policy, contact page present", score: 70},
+    {signal: "Content Freshness", status: "active", detail: "Regular publishing, seasonal content updated", score: 75},
+    {signal: "E-E-A-T Compliance", status: "partial", detail: "Experience shown through guides, expertise via depth, no external validation yet", score: 35}
+  ],
+  trust_pages: [
+    {title: "About Jason Parr", status: "published", url: "/about-jason/"},
+    {title: "How We Evaluate Products", status: "published", url: "/how-we-evaluate-products/"},
+    {title: "Editorial Policy", status: "published", url: "/editorial-policy/"},
+    {title: "Fact-Checking Policy", status: "published", url: "/fact-checking-policy/"},
+    {title: "Affiliate Disclosure", status: "published", url: "/affiliate-disclosure/"},
+    {title: "Privacy Policy", status: "published", url: "/privacy-policy/"},
+    {title: "Contact Page", status: "published", url: "/contact-pet-hub-online/"}
+  ],
+  red_lines: [
+    "Do NOT create fake authority",
+    "Do NOT invent fake authors, experts, reviewers, veterinarians, or credentials",
+    "No 'we tested' wording unless real testing evidence exists",
+    "No 'vet-backed' claims unless named verified expert source exists",
+    "No fake credentials. No fake experts. Only genuine trust signals."
+  ],
+  priority_actions: [
+    "Build genuine backlinks to increase DA",
+    "Seek real expert contributors (not fake)",
+    "Add real external source links to citations",
+    "Build social proof through genuine engagement",
+    "Apply for relevant industry certifications/memberships"
+  ]
+};
+</script>
+
+<div class="container">
+  <!-- Header -->
+  <div class="header">
+    <div>
+      <h1>Authority Agent Status</h1>
+      <div class="phase">Phase 16I &bull; PetHub Online &bull; Generated 2026-05-31</div>
+    </div>
+    <div class="agent-badge"><span class="pulse"></span>Agent Active</div>
+  </div>
+
+  <!-- Authority Score Gauge -->
+  <div class="section">
+    <div class="section-title"><span class="dot"></span>Overall Authority Score</div>
+    <div class="card">
+      <div class="gauge-wrap">
+        <div class="gauge">
+          <svg viewBox="0 0 240 240">
+            <circle class="track" cx="120" cy="120" r="100"></circle>
+            <circle class="fill" cx="120" cy="120" r="100"
+              stroke-dasharray="628.32"
+              stroke-dashoffset="628.32"
+              id="gauge-fill"></circle>
+          </svg>
+          <div class="score-text">
+            <div class="score-num" id="score-num">0</div>
+            <div class="score-max">/ 100</div>
+            <div class="score-label">AUTHORITY</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trust Signal Breakdown -->
+  <div class="section">
+    <div class="section-title"><span class="dot"></span>Trust Signal Breakdown</div>
+    <div class="grid-3" id="trust-signals"></div>
+  </div>
+
+  <!-- Trust Pages -->
+  <div class="section">
+    <div class="section-title"><span class="dot"></span>Trust Pages Status</div>
+    <div class="card" style="padding:0;overflow:hidden">
+      <table class="tp-table" id="trust-pages">
+        <thead><tr><th>Page</th><th>Status</th><th>URL</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Red Lines -->
+  <div class="section">
+    <div class="section-title"><span class="dot" style="background:var(--red)"></span>Red Lines &mdash; Non-Negotiable Rules</div>
+    <div class="redlines-box" id="redlines"></div>
+  </div>
+
+  <!-- E-E-A-T Assessment -->
+  <div class="section">
+    <div class="section-title"><span class="dot"></span>E-E-A-T Assessment</div>
+    <div class="eeat-grid" id="eeat"></div>
+  </div>
+
+  <!-- Priority Actions -->
+  <div class="section">
+    <div class="section-title"><span class="dot"></span>Priority Actions</div>
+    <div class="card" id="actions"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const D = window.AUTHORITY_DATA;
+
+  // Gauge
+  const circumference = 2 * Math.PI * 100;
+  const pct = D.authority_score / D.max_score;
+  const offset = circumference - (pct * circumference);
+  setTimeout(() => {
+    document.getElementById('gauge-fill').style.strokeDashoffset = offset;
+    document.getElementById('score-num').textContent = D.authority_score;
+  }, 300);
+
+  // Trust signal cards
+  const tsContainer = document.getElementById('trust-signals');
+  D.trust_signals.forEach(ts => {
+    let barClass = 'bar-green';
+    if (ts.score < 50) barClass = 'bar-yellow';
+    if (ts.score < 20) barClass = 'bar-red';
+
+    let scoreColor = 'var(--green)';
+    if (ts.score < 50) scoreColor = 'var(--yellow)';
+    if (ts.score < 20) scoreColor = 'var(--red)';
+
+    tsContainer.innerHTML += `
+      <div class="card ts-card">
+        <div class="ts-header">
+          <div class="ts-name">${ts.signal}</div>
+          <span class="s-badge ${ts.status}">${ts.status.replace(/_/g,' ')}</span>
+        </div>
+        <div class="ts-detail">${ts.detail}</div>
+        <div class="ts-score-row">
+          <div class="ts-score-val" style="color:${scoreColor}">${ts.score} / 100</div>
+        </div>
+        <div class="ts-bar"><div class="ts-bar-fill ${barClass}" style="width:${ts.score}%"></div></div>
+      </div>`;
+  });
+
+  // Trust pages table
+  const tpBody = document.querySelector('#trust-pages tbody');
+  D.trust_pages.forEach(tp => {
+    tpBody.innerHTML += `
+      <tr>
+        <td style="font-weight:500">${tp.title}</td>
+        <td><span class="tp-status"><span class="dot"></span>${tp.status}</span></td>
+        <td><span class="tp-url">${tp.url}</span></td>
+      </tr>`;
+  });
+
+  // Red lines
+  const rlEl = document.getElementById('redlines');
+  rlEl.innerHTML = '<div class="redlines-title"><span class="icon">&#9940;</span> ABSOLUTE RED LINES</div>';
+  D.red_lines.forEach(rl => {
+    rlEl.innerHTML += `
+      <div class="redline-item">
+        <div class="redline-icon">&#10005;</div>
+        <div class="redline-text">${rl}</div>
+      </div>`;
+  });
+
+  // E-E-A-T
+  const eeatData = [
+    {letter:'E', label:'Experience', desc:'Demonstrated through comprehensive guides and practical advice', score: 60, color:'var(--green)'},
+    {letter:'E', label:'Expertise', desc:'Content depth strong (4,382 avg words) but no verified expert contributors', score: 40, color:'var(--yellow)'},
+    {letter:'A', label:'Authoritativeness', desc:'DA ~5, no backlinks, minimal social proof. Biggest gap.', score: 10, color:'var(--red)'},
+    {letter:'T', label:'Trustworthiness', desc:'Trust pages published, disclosures present, no fake claims', score: 65, color:'var(--green)'}
+  ];
+  const eeatEl = document.getElementById('eeat');
+  eeatData.forEach(e => {
+    eeatEl.innerHTML += `
+      <div class="card eeat-card">
+        <div class="eeat-letter">${e.letter}</div>
+        <div class="eeat-label">${e.label}</div>
+        <div class="eeat-desc">${e.desc}</div>
+        <div class="eeat-score" style="color:${e.color}">${e.score}/100</div>
+      </div>`;
+  });
+
+  // Priority actions
+  const aEl = document.getElementById('actions');
+  D.priority_actions.forEach((a, i) => {
+    aEl.innerHTML += `
+      <div class="action-item">
+        <div class="action-num">${i + 1}</div>
+        <div class="action-text">${a}</div>
+      </div>`;
+  });
+})();
+</script>
+</body>
+</html>
