@@ -1,0 +1,7 @@
+asset_name,description,revenue_model,development_effort,timeline,dependency,priority,growth_potential,risk_level
+PetHub Newsletter,Weekly curated pet care digest + product picks,Affiliate + Sponsored,Medium,Q3 2026,MailerLite API connected,1 - Highest,High - direct audience ownership,Low
+PetHub Deals,Deal aggregation page for UK pet products,Affiliate commission,Low,Q3 2026,Amazon API + affiliate links active,2 - High,High - high commercial intent traffic,Low
+PetHub Reviews,Dedicated product review vertical with structured ratings,Affiliate + Display ads,High,Q4 2026,Product testing framework,3 - Medium,High - high authority and trust signal,Medium
+PetHub Community,Forum or Q&A section for pet owners,Engagement + Ad revenue,High,Q1 2027,Moderation system needed,4 - Medium,Medium - retention and loyalty driver,High
+PetHub YouTube,Video reviews and care guides,YouTube Partner + Affiliate,Very High,Q1 2027,Video production capability,5 - Lower,Very High - massive reach potential,High
+PetHub Data & Research,Original research reports and pet industry data,Authority + Lead gen,Medium,Q4 2026,GSC + analytics data foundation,3 - Medium,High - unique authority asset,Low
