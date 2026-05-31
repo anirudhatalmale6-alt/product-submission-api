@@ -120,7 +120,7 @@ def count_external_links(html_content):
 
 def has_sources_section(html_content):
     """Check for Sources or References heading."""
-    pattern = r'<h[2-4][^>]*>\s*(Sources|References|Citations|Bibliography|Works Cited)\s*</h[2-4]>'
+    pattern = r'<h[2-4][^>]*>[^<]*(Sources|References|Citations|Bibliography|Works Cited)[^<]*</h[2-4]>'
     return bool(re.search(pattern, html_content or '', re.IGNORECASE))
 
 
