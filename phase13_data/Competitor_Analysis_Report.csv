@@ -1,0 +1,56 @@
+competitor,domain,cluster,relevance,threat_level,competitor_da,competitor_volume,pethub_advantage,recommended_response
+Cats.com,cats.com,Cat Supplies,high,high,65,high,UK-specific expertise,Prioritize content expansion; build internal link moat; add unique data/research
+Cats.com,cats.com,Cat Toys,high,high,65,high,UK-specific expertise,Prioritize content expansion; build internal link moat; add unique data/research
+Cats.com,cats.com,Indoor Cats,high,high,65,high,UK-specific expertise,Prioritize content expansion; build internal link moat; add unique data/research
+Cats.com,cats.com,Dog Supplies,none,low,65,high,"UK-specific expertise; Cat-only competitor, no dog content",Monitor; maintain current quality; no urgent action needed
+Cats.com,cats.com,Dog Beds,none,low,65,high,"UK-specific expertise; Cat-only competitor, no dog content",Monitor; maintain current quality; no urgent action needed
+Cats.com,cats.com,Dog Food,none,low,65,high,"UK-specific expertise; Cat-only competitor, no dog content",Monitor; maintain current quality; no urgent action needed
+Cats.com,cats.com,Dog Harnesses,none,low,65,high,"UK-specific expertise; Cat-only competitor, no dog content",Monitor; maintain current quality; no urgent action needed
+Cats.com,cats.com,Dog Care,none,low,65,high,"UK-specific expertise; Cat-only competitor, no dog content",Monitor; maintain current quality; no urgent action needed
+Cats.com,cats.com,Dog Health,none,low,65,high,"UK-specific expertise; Cat-only competitor, no dog content",Monitor; maintain current quality; no urgent action needed
+Cats.com,cats.com,Pet Care,none,low,65,high,UK-specific expertise,Monitor; maintain current quality; no urgent action needed
+Cats.com,cats.com,Buying Guides,none,low,65,high,UK-specific expertise,Monitor; maintain current quality; no urgent action needed
+Pets at Home,petsathome.com,Cat Supplies,medium,medium,72,high,UK-specific expertise; Editorial independence,Maintain content quality; focus on UK-specific value; strengthen citations
+Pets at Home,petsathome.com,Cat Toys,medium,medium,72,high,UK-specific expertise; Editorial independence,Maintain content quality; focus on UK-specific value; strengthen citations
+Pets at Home,petsathome.com,Indoor Cats,medium,medium,72,high,UK-specific expertise; Editorial independence,Maintain content quality; focus on UK-specific value; strengthen citations
+Pets at Home,petsathome.com,Dog Supplies,medium,medium,72,high,UK-specific expertise; Editorial independence,Maintain content quality; focus on UK-specific value; strengthen citations
+Pets at Home,petsathome.com,Dog Beds,medium,medium,72,high,UK-specific expertise; Editorial independence,Maintain content quality; focus on UK-specific value; strengthen citations
+Pets at Home,petsathome.com,Dog Food,medium,medium,72,high,UK-specific expertise; Editorial independence,Maintain content quality; focus on UK-specific value; strengthen citations
+Pets at Home,petsathome.com,Dog Harnesses,medium,medium,72,high,UK-specific expertise; Editorial independence,Maintain content quality; focus on UK-specific value; strengthen citations
+Pets at Home,petsathome.com,Dog Care,medium,medium,72,high,UK-specific expertise; Editorial independence,Maintain content quality; focus on UK-specific value; strengthen citations
+Pets at Home,petsathome.com,Dog Health,medium,medium,72,high,UK-specific expertise; Editorial independence,Maintain content quality; focus on UK-specific value; strengthen citations
+Pets at Home,petsathome.com,Pet Care,medium,medium,72,high,UK-specific expertise; Editorial independence,Maintain content quality; focus on UK-specific value; strengthen citations
+Pets at Home,petsathome.com,Buying Guides,medium,medium,72,high,UK-specific expertise; Editorial independence,Maintain content quality; focus on UK-specific value; strengthen citations
+Zooplus,zooplus.co.uk,Cat Supplies,medium,medium,60,medium,UK-specific expertise,Maintain content quality; focus on UK-specific value; strengthen citations
+Zooplus,zooplus.co.uk,Cat Toys,medium,medium,60,medium,UK-specific expertise,Maintain content quality; focus on UK-specific value; strengthen citations
+Zooplus,zooplus.co.uk,Indoor Cats,low,low,60,medium,UK-specific expertise,Monitor; maintain current quality; no urgent action needed
+Zooplus,zooplus.co.uk,Dog Supplies,medium,medium,60,medium,UK-specific expertise,Maintain content quality; focus on UK-specific value; strengthen citations
+Zooplus,zooplus.co.uk,Dog Beds,medium,medium,60,medium,UK-specific expertise,Maintain content quality; focus on UK-specific value; strengthen citations
+Zooplus,zooplus.co.uk,Dog Food,low,low,60,medium,UK-specific expertise,Monitor; maintain current quality; no urgent action needed
+Zooplus,zooplus.co.uk,Dog Harnesses,low,low,60,medium,UK-specific expertise,Monitor; maintain current quality; no urgent action needed
+Zooplus,zooplus.co.uk,Dog Care,low,low,60,medium,UK-specific expertise,Monitor; maintain current quality; no urgent action needed
+Zooplus,zooplus.co.uk,Dog Health,low,low,60,medium,UK-specific expertise,Monitor; maintain current quality; no urgent action needed
+Zooplus,zooplus.co.uk,Pet Care,low,low,60,medium,UK-specific expertise,Monitor; maintain current quality; no urgent action needed
+Zooplus,zooplus.co.uk,Buying Guides,low,low,60,medium,UK-specific expertise,Monitor; maintain current quality; no urgent action needed
+Purina,purina.co.uk,Cat Supplies,low,low,68,medium,UK-specific expertise; Independent (not brand-biased),Monitor; maintain current quality; no urgent action needed
+Purina,purina.co.uk,Cat Toys,low,low,68,medium,UK-specific expertise; Independent (not brand-biased),Monitor; maintain current quality; no urgent action needed
+Purina,purina.co.uk,Indoor Cats,low,low,68,medium,UK-specific expertise; Independent (not brand-biased),Monitor; maintain current quality; no urgent action needed
+Purina,purina.co.uk,Dog Supplies,low,low,68,medium,UK-specific expertise; Independent (not brand-biased),Monitor; maintain current quality; no urgent action needed
+Purina,purina.co.uk,Dog Beds,low,low,68,medium,UK-specific expertise; Independent (not brand-biased),Monitor; maintain current quality; no urgent action needed
+Purina,purina.co.uk,Dog Food,high,high,68,medium,UK-specific expertise; Independent (not brand-biased),Prioritize content expansion; build internal link moat; add unique data/research
+Purina,purina.co.uk,Dog Harnesses,low,low,68,medium,UK-specific expertise; Independent (not brand-biased),Monitor; maintain current quality; no urgent action needed
+Purina,purina.co.uk,Dog Care,high,high,68,medium,UK-specific expertise; Independent (not brand-biased),Prioritize content expansion; build internal link moat; add unique data/research
+Purina,purina.co.uk,Dog Health,high,high,68,medium,UK-specific expertise; Independent (not brand-biased),Prioritize content expansion; build internal link moat; add unique data/research
+Purina,purina.co.uk,Pet Care,high,high,68,medium,UK-specific expertise; Independent (not brand-biased),Prioritize content expansion; build internal link moat; add unique data/research
+Purina,purina.co.uk,Buying Guides,low,low,68,medium,UK-specific expertise; Independent (not brand-biased),Monitor; maintain current quality; no urgent action needed
+Rover,rover.com,Cat Supplies,low,low,70,medium,UK-specific expertise; Product expertise (not just services),Monitor; maintain current quality; no urgent action needed
+Rover,rover.com,Cat Toys,low,low,70,medium,UK-specific expertise; Product expertise (not just services),Monitor; maintain current quality; no urgent action needed
+Rover,rover.com,Indoor Cats,low,low,70,medium,UK-specific expertise; Product expertise (not just services),Monitor; maintain current quality; no urgent action needed
+Rover,rover.com,Dog Supplies,medium,medium,70,medium,UK-specific expertise; Product expertise (not just services),Maintain content quality; focus on UK-specific value; strengthen citations
+Rover,rover.com,Dog Beds,medium,medium,70,medium,UK-specific expertise; Product expertise (not just services),Maintain content quality; focus on UK-specific value; strengthen citations
+Rover,rover.com,Dog Food,medium,medium,70,medium,UK-specific expertise; Product expertise (not just services),Maintain content quality; focus on UK-specific value; strengthen citations
+Rover,rover.com,Dog Harnesses,medium,medium,70,medium,UK-specific expertise; Product expertise (not just services),Maintain content quality; focus on UK-specific value; strengthen citations
+Rover,rover.com,Dog Care,medium,medium,70,medium,UK-specific expertise; Product expertise (not just services),Maintain content quality; focus on UK-specific value; strengthen citations
+Rover,rover.com,Dog Health,medium,medium,70,medium,UK-specific expertise; Product expertise (not just services),Maintain content quality; focus on UK-specific value; strengthen citations
+Rover,rover.com,Pet Care,low,low,70,medium,UK-specific expertise; Product expertise (not just services),Monitor; maintain current quality; no urgent action needed
+Rover,rover.com,Buying Guides,low,low,70,medium,UK-specific expertise; Product expertise (not just services),Monitor; maintain current quality; no urgent action needed

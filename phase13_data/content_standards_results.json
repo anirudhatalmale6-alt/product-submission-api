@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-05-31T11:26:02.733039",
+  "published": {
+    "total": 168,
+    "passing": 166,
+    "average_score": 91.6
+  },
+  "drafts": {
+    "total": 0,
+    "ready": 0,
+    "average_score": 0.0
+  },
+  "gate_pass_rates": {
+    "word_count": 100.0,
+    "heading_structure": 88.1,
+    "internal_links": 99.4,
+    "external_citations": 100.0,
+    "sources_section": 100.0,
+    "faq_section": 100.0,
+    "trust_lint": 99.4,
+    "no_fake_authority": 100.0,
+    "evidence_check": 100.0,
+    "meta_seo": 0.0,
+    "image_compliance": 99.4,
+    "snippet_readiness": 100.0
+  }
+}

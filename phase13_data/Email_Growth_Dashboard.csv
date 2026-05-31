@@ -1,0 +1,7 @@
+metric,value,status,action_needed
+Newsletter Pages,3,active,
+Signup Form Coverage,0.0%,needs_work,Add signup CTAs to 168 posts
+Lead Magnets,6,active,
+Email Plugins,0,missing,Install email marketing plugin (MailerLite/ConvertKit recommended)
+Posts with Email CTA,0,tracking,Target: 80%+ posts should have email CTA
+Conversion Tracking,Not configured,missing,Set up GA4 event tracking for form submissions
