@@ -1,0 +1,42 @@
+DOG HEALTH DOMINANCE ROADMAP
+============================
+Generated: 2026-05-31
+
+CURRENT STATE:
+- Dog Health (category 1450): 32 posts (11 published, 21 draft)
+- Pet Health (category 1391): 14 posts (7 published)
+
+EXPANSION PLAN: 15 new articles
+- Educational: 12 articles (evidence-based guides)
+- Commercial: 3 articles (product reviews with affiliate links)
+- High priority: 7 articles
+- Medium priority: 8 articles
+
+COVERAGE GAPS IDENTIFIED:
+1. Allergies and skin conditions (high search volume, no coverage)
+2. Dental care (high commercial intent, no coverage)
+3. Senior dog health (growing segment, no coverage)
+4. Vaccination schedule (high informational demand, no coverage)
+5. Parasite prevention (seasonal relevance, no coverage)
+6. Supplements (high commercial value, no coverage)
+
+INTERNAL LINKING STRATEGY:
+- Each new post links to Dog Health hub page
+- Cross-link with existing Puppy Care, Dog Beds, and Dog Food clusters
+- FAQ sections target featured snippet opportunities
+- Definition blocks for AI search visibility
+
+PUBLICATION SEQUENCE:
+Phase 1 (Week 1-2): High priority educational - Allergies, Dental, Senior, Vaccination, Parasite
+Phase 2 (Week 2-3): High priority commercial - Supplements, Dental Chews
+Phase 3 (Week 3-4): Medium priority educational - Joint, Digestive, Skin, Eye, Ear
+Phase 4 (Week 4-5): Medium priority remaining - First Aid, Weight, Mental Health
+
+All content follows existing quality gates:
+- Minimum 1500 words (target 2000-2500)
+- Definition block, direct answer, FAQ, Key Takeaways
+- Sources/References section with UK veterinary citations
+- No fake credentials or invented expert claims
+- Amazon UK affiliate links (tag: pethubonline-21)
+- 4-6 Pexels images per post
+- Rank Math meta descriptions
