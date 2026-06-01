@@ -1,0 +1,250 @@
+{
+  "report": "Visibility Action Plan",
+  "site": "pethubonline.com",
+  "generated": "2026-06-01T21:53:17.499076Z",
+  "context": {
+    "total_posts": 460,
+    "categories": [
+      "Dog Supplies",
+      "Cat Supplies",
+      "Fish Supplies",
+      "Pet Care",
+      "Puppy Care",
+      "Dog Beds",
+      "Indoor Cats",
+      "Cat Toys",
+      "Dog Health"
+    ],
+    "current_seo_assets": {
+      "faq_schema": "450+ posts with FAQPage JSON-LD",
+      "featured_images": "100% (460/460)",
+      "internal_links": "200 new links added, 3 orphans remaining",
+      "affiliate_links": "99.8% coverage (Amazon Associates UK)",
+      "cta_coverage": "100%"
+    }
+  },
+  "page_2_3_opportunity_strategy": {
+    "description": "Posts ranking on pages 2-3 are the fastest path to traffic growth. These pages are already indexed and have some authority but need a push to page 1.",
+    "tactics": [
+      {
+        "name": "Title Tag Optimization",
+        "action": "Review and optimize title tags for top 50 pages by impressions. Include primary keyword early, add power words, keep under 60 chars.",
+        "impact": "High",
+        "effort": "Low",
+        "timeline": "1-2 days"
+      },
+      {
+        "name": "Meta Description CTR Improvement",
+        "action": "Rewrite meta descriptions for page 2-3 content. Include call-to-action, unique value prop, and year (2026). Target 150-160 chars.",
+        "impact": "Medium",
+        "effort": "Low",
+        "timeline": "1-2 days"
+      },
+      {
+        "name": "Internal Link Boost",
+        "action": "Identify top 20 highest-authority pages. Add contextual links from these to page 2-3 content to transfer authority.",
+        "impact": "High",
+        "effort": "Medium",
+        "timeline": "2-3 days"
+      },
+      {
+        "name": "Content Expansion",
+        "action": "For thin page 2-3 content (under 1500 words), expand with additional sections, FAQs, and supporting data. Target 2000-3000 words.",
+        "impact": "High",
+        "effort": "Medium",
+        "timeline": "3-5 days"
+      }
+    ]
+  },
+  "high_impression_low_ctr_strategy": {
+    "description": "Posts with high impressions but low CTR have visibility but fail to attract clicks. CTR optimization can significantly increase traffic without ranking changes.",
+    "tactics": [
+      {
+        "name": "Title Tag Patterns",
+        "patterns": [
+          "Numbers: '10 Best...' consistently outperforms 'Best...'",
+          "Year: Adding '(2026)' or 'in 2026' signals freshness",
+          "Brackets: '[Guide]', '[Updated]' improve CTR 5-15%",
+          "Questions: 'What is...?' matches search intent for informational queries"
+        ]
+      },
+      {
+        "name": "Featured Snippet Optimization",
+        "action": "Structure content with clear H2/H3 headers, definition paragraphs (40-60 words), numbered lists, and comparison tables. FAQ schema already deployed.",
+        "target_formats": [
+          "Paragraph snippets (definitions)",
+          "List snippets (how-to, best-of)",
+          "Table snippets (comparisons)"
+        ]
+      },
+      {
+        "name": "Rich Result Eligibility",
+        "current": "FAQPage schema deployed on 450+ posts",
+        "additional": "Consider HowTo schema for guide/tutorial posts, Breadcrumb schema for navigation"
+      }
+    ]
+  },
+  "quick_wins": [
+    {
+      "action": "Update date-modified on all 460 posts",
+      "impact": "Medium - freshness signal to Google",
+      "effort": "Automated",
+      "timeline": "Immediate"
+    },
+    {
+      "action": "Fix 72 alt text issues on existing images",
+      "impact": "Medium - image search visibility + accessibility",
+      "effort": "Low",
+      "timeline": "1 day"
+    },
+    {
+      "action": "Add comparison tables to 67 posts missing them",
+      "impact": "Medium - table snippet eligibility + user engagement",
+      "effort": "Medium",
+      "timeline": "2-3 days"
+    },
+    {
+      "action": "Submit XML sitemap to Google Search Console",
+      "impact": "High - ensure all 460 pages are discovered",
+      "effort": "Minimal",
+      "timeline": "Immediate"
+    },
+    {
+      "action": "Submit to 15 UK business directories",
+      "impact": "High - backlink profile + brand citations",
+      "effort": "Medium (manual submission)",
+      "timeline": "1-2 hours, results in 2-4 weeks"
+    }
+  ],
+  "long_term_strategy": {
+    "topical_authority_building": {
+      "current_clusters": 9,
+      "strong_clusters": [
+        "Dog Supplies",
+        "Cat Supplies",
+        "Pet Care"
+      ],
+      "growing_clusters": [
+        "Fish Supplies (50 posts - pause and measure)",
+        "Indoor Cats",
+        "Puppy Care"
+      ],
+      "strategy": "Deepen existing clusters before expanding to new topics. Aim for 50+ posts per cluster for dominance."
+    },
+    "content_gap_analysis": {
+      "approach": "Use GSC query data to identify queries where PetHub appears but doesn't have dedicated content",
+      "priority_gaps": [
+        "Dog grooming supplies",
+        "Pet travel accessories",
+        "Small pet supplies (hamsters, rabbits)",
+        "Pet tech/wearables"
+      ]
+    },
+    "backlink_acquisition": {
+      "phase_1": "15 UK business directories (pipeline ready)",
+      "phase_2": "Guest posts on pet industry blogs",
+      "phase_3": "Resource page link building (pet owner guides)",
+      "phase_4": "Digital PR (pet industry data/surveys)"
+    },
+    "eeat_signals": {
+      "current": "About Jason page live, author attribution on all posts",
+      "next": "Build out author expertise page, add credentials/experience, link to social profiles"
+    }
+  },
+  "priority_actions_ranked": [
+    {
+      "rank": 1,
+      "action": "Submit to top 5 high-DA directories (Yelp, Foursquare, Yell, 192, Bark)",
+      "impact": "High",
+      "effort": "Low",
+      "timeline": "This week"
+    },
+    {
+      "rank": 2,
+      "action": "Optimize title tags on top 50 pages by impressions",
+      "impact": "High",
+      "effort": "Low",
+      "timeline": "1-2 days"
+    },
+    {
+      "rank": 3,
+      "action": "Internal link boost from top-authority pages to page 2-3 content",
+      "impact": "High",
+      "effort": "Medium",
+      "timeline": "2-3 days"
+    },
+    {
+      "rank": 4,
+      "action": "Expand thin content on page 2-3 rankings",
+      "impact": "High",
+      "effort": "Medium",
+      "timeline": "3-5 days"
+    },
+    {
+      "rank": 5,
+      "action": "Submit remaining 10 directories (Tier 2-4)",
+      "impact": "Medium",
+      "effort": "Low",
+      "timeline": "Week 2"
+    },
+    {
+      "rank": 6,
+      "action": "Fix 72 image alt text issues",
+      "impact": "Medium",
+      "effort": "Low",
+      "timeline": "1 day"
+    },
+    {
+      "rank": 7,
+      "action": "Add comparison tables to 67 posts",
+      "impact": "Medium",
+      "effort": "Medium",
+      "timeline": "2-3 days"
+    },
+    {
+      "rank": 8,
+      "action": "Meta description rewrite for top 100 pages",
+      "impact": "Medium",
+      "effort": "Low",
+      "timeline": "2-3 days"
+    },
+    {
+      "rank": 9,
+      "action": "Content freshness pass (update dates, add 2026 references)",
+      "impact": "Medium",
+      "effort": "Low",
+      "timeline": "1 day"
+    },
+    {
+      "rank": 10,
+      "action": "Begin guest post outreach to pet industry blogs",
+      "impact": "High",
+      "effort": "High",
+      "timeline": "Month 2-3"
+    }
+  ],
+  "kpi_targets": {
+    "30_day": {
+      "impressions": "+15-25% (FAQ schema + freshness + new links)",
+      "clicks": "+10-15%",
+      "ctr": "+0.3-0.5% average",
+      "average_position": "-0.5 to -1.5 improvement",
+      "indexed_pages": "460/460 target"
+    },
+    "60_day": {
+      "impressions": "+30-50%",
+      "clicks": "+20-35%",
+      "ctr": "+0.5-1.0%",
+      "average_position": "-1.0 to -3.0 improvement",
+      "new_page_1_rankings": "15-30 queries"
+    },
+    "90_day": {
+      "impressions": "+50-100%",
+      "clicks": "+40-60%",
+      "ctr": "+1.0-1.5%",
+      "backlinks_acquired": "10-15 directory links live",
+      "rich_results": "50+ pages showing FAQ rich snippets"
+    }
+  },
+  "status": "READY FOR EXECUTION - Ranked priority actions with estimated timelines"
+}

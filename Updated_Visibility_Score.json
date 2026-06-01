@@ -1,0 +1,65 @@
+{
+  "report": "Updated Visibility Score",
+  "site": "pethubonline.com",
+  "generated": "2026-06-01T21:51:58.574282Z",
+  "visibility_score": {
+    "overall": 78.5,
+    "components": {
+      "content_volume": {
+        "score": 92,
+        "weight": "20%",
+        "details": "460 published posts across 6+ categories"
+      },
+      "content_quality": {
+        "score": 89.4,
+        "weight": "25%",
+        "details": "Authority score: CTA, FAQ, affiliate, tables, images"
+      },
+      "internal_linking": {
+        "score": 85,
+        "weight": "20%",
+        "details": "102/105 orphans fixed, 200 new links, strong link graph"
+      },
+      "structured_data": {
+        "score": 90,
+        "weight": "15%",
+        "details": "FAQPage schema on 450+ posts, rich snippet eligibility"
+      },
+      "backlink_profile": {
+        "score": 20,
+        "weight": "10%",
+        "details": "0 directory submissions yet, 15 identified, pipeline ready"
+      },
+      "technical_seo": {
+        "score": 75,
+        "weight": "10%",
+        "details": "Good but opportunities in image alt text and missing tables"
+      }
+    }
+  },
+  "scoring_methodology": "Weighted composite of 6 factors. Content and quality weighted highest (45%), followed by internal linking and structured data (35%), with external signals (backlinks) and technical SEO (20%) rounding out the score.",
+  "improvement_drivers": [
+    {
+      "action": "Complete backlink submissions (15 directories)",
+      "estimated_impact": "+5-8 points",
+      "timeline": "2-4 weeks"
+    },
+    {
+      "action": "Fix remaining 72 alt text issues",
+      "estimated_impact": "+1-2 points",
+      "timeline": "1 day"
+    },
+    {
+      "action": "Add comparison tables to 67 posts",
+      "estimated_impact": "+1-2 points",
+      "timeline": "2-3 days"
+    },
+    {
+      "action": "GSC-driven content optimization",
+      "estimated_impact": "+3-5 points",
+      "timeline": "30-60 days"
+    }
+  ],
+  "visibility_trajectory": "Upward. With 460 posts, full FAQ schema, fixed orphans, and 100% featured images, the site is well-positioned for organic visibility growth. Backlink acquisition is the single biggest lever remaining.",
+  "status": "Visibility Score: 78.5/100 - Primary gap: external backlinks"
+}

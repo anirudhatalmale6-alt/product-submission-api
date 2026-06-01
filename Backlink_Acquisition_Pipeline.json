@@ -1,0 +1,166 @@
+{
+  "report": "Backlink Acquisition Pipeline",
+  "site": "pethubonline.com",
+  "generated": "2026-06-01T21:51:58.573188Z",
+  "summary": {
+    "total_directories_identified": 15,
+    "total_da_potential": 819,
+    "dofollow_opportunities": 7,
+    "nofollow_opportunities": 8,
+    "estimated_authority_boost": "Significant - 7 dofollow links from DA 25-60 directories",
+    "pet_niche_directories": 4,
+    "general_business_directories": 11
+  },
+  "submission_priority_tiers": {
+    "tier_1_critical": {
+      "description": "Highest DA directories - submit first for maximum authority gain",
+      "directories": [
+        {
+          "name": "Yelp UK",
+          "da": 94,
+          "link_type": "nofollow",
+          "url": "https://biz.yelp.co.uk/signup_business",
+          "reason": "Highest DA, strong trust signal"
+        },
+        {
+          "name": "Foursquare",
+          "da": 92,
+          "link_type": "nofollow",
+          "url": "https://foursquare.com/add-place",
+          "reason": "Very high DA, location-based"
+        },
+        {
+          "name": "Yell.com",
+          "da": 72,
+          "link_type": "nofollow",
+          "url": "https://www.yell.com/free-listing/",
+          "reason": "UK primary business directory"
+        },
+        {
+          "name": "192.com",
+          "da": 68,
+          "link_type": "nofollow",
+          "url": "https://www.192.com/add-listing/",
+          "reason": "Strong UK presence"
+        }
+      ],
+      "combined_da": 326,
+      "estimated_time": "30-45 minutes"
+    },
+    "tier_2_dofollow_priority": {
+      "description": "Dofollow link directories - direct authority transfer",
+      "directories": [
+        {
+          "name": "FreeIndex",
+          "da": 60,
+          "link_type": "dofollow",
+          "url": "https://www.freeindex.co.uk/addcompany.htm"
+        },
+        {
+          "name": "Cylex UK",
+          "da": 50,
+          "link_type": "dofollow",
+          "url": "https://www.cylex-uk.co.uk/add-company.html"
+        },
+        {
+          "name": "Hotfrog UK",
+          "da": 48,
+          "link_type": "dofollow",
+          "url": "https://www.hotfrog.co.uk/AddYourBusiness.aspx"
+        }
+      ],
+      "combined_da": 158,
+      "estimated_time": "20-30 minutes"
+    },
+    "tier_3_niche_relevance": {
+      "description": "Pet industry directories - highest topical relevance",
+      "directories": [
+        {
+          "name": "VetClick",
+          "da": 35,
+          "link_type": "dofollow",
+          "url": "https://www.vetclick.com/register"
+        },
+        {
+          "name": "PetProfessional.co.uk",
+          "da": 30,
+          "link_type": "dofollow",
+          "url": "https://www.petprofessional.co.uk/register"
+        },
+        {
+          "name": "PetDirectory.co.uk",
+          "da": 28,
+          "link_type": "dofollow",
+          "url": "https://www.petdirectory.co.uk/submit"
+        },
+        {
+          "name": "UKPDA",
+          "da": 25,
+          "link_type": "dofollow",
+          "url": "https://www.ukpda.co.uk/join"
+        }
+      ],
+      "combined_da": 118,
+      "estimated_time": "20-30 minutes"
+    },
+    "tier_4_supplementary": {
+      "description": "Additional general directories for citation diversity",
+      "directories": [
+        {
+          "name": "Bark.com",
+          "da": 65,
+          "link_type": "nofollow",
+          "url": "https://www.bark.com/en/gb/pro/"
+        },
+        {
+          "name": "Thomson Local",
+          "da": 55,
+          "link_type": "nofollow",
+          "url": "https://www.thomsonlocal.com/add-your-business/"
+        },
+        {
+          "name": "Brownbook",
+          "da": 52,
+          "link_type": "nofollow",
+          "url": "https://www.brownbook.net/add-listing/"
+        },
+        {
+          "name": "Scoot",
+          "da": 45,
+          "link_type": "nofollow",
+          "url": "https://www.scoot.co.uk/add-listing/"
+        }
+      ],
+      "combined_da": 217,
+      "estimated_time": "20-30 minutes"
+    }
+  },
+  "business_details_for_submission": {
+    "business_name": "PetHub Online",
+    "website": "https://pethubonline.com",
+    "description_short": "UK pet supplies reviews, guides, and educational resources for dog, cat, and fish owners.",
+    "description_long": "PetHub Online is a comprehensive UK pet resource providing expert reviews, buying guides, and educational content for dog, cat, and fish owners. We cover everything from nutrition and health to equipment and care guides, helping pet owners make informed decisions for their companions.",
+    "category_primary": "Pet Supplies",
+    "category_secondary": "Pet Services / Pet Education",
+    "location": "United Kingdom",
+    "keywords": "pet supplies UK, dog supplies, cat supplies, fish supplies, pet care guides, pet product reviews"
+  },
+  "submission_checklist": [
+    "Visit the submission URL for each directory",
+    "Create an account (email + password) where required",
+    "Enter business name: PetHub Online",
+    "Enter website URL: https://pethubonline.com",
+    "Use the descriptions provided above",
+    "Select Pet Supplies or closest category",
+    "Submit and record the submission date",
+    "Monitor email for approval notifications",
+    "Verify listing once approved and check link type"
+  ],
+  "expected_timeline": {
+    "submission": "1-2 hours total for all 15 directories",
+    "approval_general": "1-7 days for general directories",
+    "approval_niche": "3-14 days for niche pet directories",
+    "full_pipeline": "All listings should be live within 2-3 weeks"
+  },
+  "status": "READY FOR EXECUTION - Manual submission required by site owner"
+}

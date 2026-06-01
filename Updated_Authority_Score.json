@@ -1,0 +1,59 @@
+{
+  "report": "Updated Authority Score",
+  "site": "pethubonline.com",
+  "generated": "2026-06-01T21:51:58.573474Z",
+  "previous_score": 89.4,
+  "current_score": 96.7,
+  "improvement": 7.3,
+  "breakdown": {
+    "cta_coverage": {
+      "score": 100.0,
+      "weight": "25%",
+      "weighted": 25.0,
+      "change": "unchanged"
+    },
+    "faq_coverage": {
+      "score": 98.7,
+      "weight": "15%",
+      "weighted": 14.8,
+      "change": "unchanged (FAQ schema added for rich snippets)"
+    },
+    "affiliate_coverage": {
+      "score": 99.8,
+      "weight": "25%",
+      "weighted": 24.95,
+      "change": "unchanged"
+    },
+    "table_coverage": {
+      "score": 85.4,
+      "weight": "10%",
+      "weighted": 8.54,
+      "change": "unchanged"
+    },
+    "featured_images": {
+      "score": 100.0,
+      "weight": "15%",
+      "weighted": 15.0,
+      "change": "51.3 -> 100.0 (+48.7)"
+    },
+    "alt_text": {
+      "score": 84.3,
+      "weight": "10%",
+      "weighted": 8.43,
+      "change": "unchanged"
+    }
+  },
+  "improvements_made": [
+    "Featured images: 51.3% -> 100% (224 images added via Pexels API)",
+    "Orphan links: 105 orphans -> 3 remaining (200 internal links added)",
+    "FAQ schema: 0 -> 450+ posts with FAQPage JSON-LD structured data",
+    "Internal link graph: 200 new category-relevant internal links"
+  ],
+  "remaining_opportunities": [
+    "Alt text optimization: 72 images with suboptimal alt text (84.3%)",
+    "Table coverage: 67 posts missing comparison tables (85.4%)",
+    "3 remaining orphan posts need manual review",
+    "Backlink acquisition: 15 directories identified, 0 submitted"
+  ],
+  "status": "Authority Score: 89.4 -> 96.7 (+7.3 points)"
+}

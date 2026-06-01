@@ -1,0 +1,13 @@
+{
+  "total_posts": 460,
+  "total_orphans_found": 105,
+  "orphans_fixed": 102,
+  "links_added": 200,
+  "errors": 8,
+  "remaining_orphans": 3,
+  "orphan_ids": [
+    19045,
+    19035,
+    10028
+  ]
+}

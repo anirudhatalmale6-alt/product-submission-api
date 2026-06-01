@@ -1,0 +1,733 @@
+{
+  "report_title": "Fish Supplies Performance Report",
+  "category_id": 1577,
+  "category_name": "Fish Supplies",
+  "generated_at": "2026-06-01T21:51:22Z",
+  "total_posts": 50,
+  "date_range": {
+    "earliest_post": "2026-06-01T16:26:23",
+    "latest_post": "2026-06-01T22:02:42",
+    "span_days": 0
+  },
+  "posts_per_month": {
+    "2026-06": 50
+  },
+  "cluster_coverage": {
+    "Aquarium Equipment": {
+      "post_count": 41,
+      "post_titles": [
+        "Goldfish Care Guide UK: Tank Size, Feeding, and Common Problems",
+        "Fish Tank Moving Guide: Safely Relocating Your Aquarium",
+        "Aquarium Stand Guide UK: DIY and Shop-Bought Options",
+        "Aquarium Salt Guide: When and How to Use Salt in Freshwater Tanks",
+        "Cold Water Fish Guide UK: Species That Don’t Need a Heater",
+        "Nano Tank Guide UK: Small Aquarium Setup and Stocking Ideas",
+        "Aquarium pH Guide: Understanding and Adjusting pH Levels",
+        "Floating Plants Guide: Benefits and Best Species for UK Tanks",
+        "Aquarium Glass vs Acrylic: Which is Better for UK Fishkeepers",
+        "Aquarium Substrate Guide: Gravel, Sand, and Soil Options UK",
+        "Aquarium Noise Solutions: Reducing Pump and Filter Noise",
+        "CO2 Systems for Planted Tanks: UK Carbon Dioxide Injection Guide",
+        "Aquarium Emergency Guide: Power Outages, Leaks, and Tank Crashes",
+        "Aquascaping Styles Explained: Nature, Dutch, and Biotope Tanks",
+        "Fish Tank Automation: Timers, Auto-Feeders, and Smart Monitoring",
+        "Beginner Aquarium Plants Guide: Low-Maintenance UK Species",
+        "Fishless Cycling Guide: Cycle Your Tank Without Fish",
+        "Aquarium Fish Lifespan Guide: How Long Common Species Live",
+        "Tetra Species Guide: Neon, Cardinal, and More for UK Tanks",
+        "Fish Stress Indicators: Recognising and Reducing Aquarium Stress",
+        "Pleco Care Guide UK: Types, Size, and Tank Requirements",
+        "Fish Quarantine Guide: Setting Up a Hospital Tank",
+        "Corydoras Catfish Guide: Bottom Dwellers for UK Community Tanks",
+        "Guppy Care Guide UK: Breeding, Colours, and Tank Setup",
+        "Fish Tank Safety Guide: Electrical, Child, and Pet Safety for UK Aquariums",
+        "Aquarium Budget Planner: Costs Breakdown for UK Fishkeepers",
+        "Community Fish Guide: Compatible Species Combinations for UK Aquariums",
+        "Aquarium Water Changes: How Often and How Much to Change",
+        "Fish Tank Decoration Guide: Safe Decorations and Aquarium Layouts",
+        "Aquarium Algae Control: Preventing and Managing Algae in Your Fish Tank",
+        "Fish Health Monitoring: Signs of Healthy vs Sick Fish in Your Aquarium",
+        "Fish Tank Cycling Explained: The Nitrogen Cycle for Beginners",
+        "Aquarium Lighting Guide: Light Types, Schedules, and Plant Needs",
+        "Aquarium Heater Guide: Choosing and Using Heaters for UK Fish Tanks",
+        "Fish Tank Equipment Checklist: Everything You Need to Start an Aquarium",
+        "Aquarium Water Testing Guide: Parameters and Kits for UK Fishkeepers",
+        "Fish Feeding Schedule Guide: How Much and How Often to Feed Aquarium Fish",
+        "Aquarium Filtration Explained: Types of Filters and How They Work",
+        "Fish Tank Cleaning Guide: Step-by-Step Process for UK Fishkeepers",
+        "Aquarium Maintenance Schedule: Weekly and Monthly Tasks for UK Fishkeepers",
+        "Fish Tank Setup Guide UK: Complete Beginner’s Guide to Starting an Aquarium"
+      ]
+    },
+    "Fish Food & Nutrition": {
+      "post_count": 6,
+      "post_titles": [
+        "Goldfish Care Guide UK: Tank Size, Feeding, and Common Problems",
+        "Betta Fish Care Guide UK: Housing, Feeding, and Health",
+        "Fish Tank Automation: Timers, Auto-Feeders, and Smart Monitoring",
+        "Aquarium Fish Lifespan Guide: How Long Common Species Live",
+        "Shrimp Keeping Guide UK: Cherry Shrimp and Amano Care",
+        "Fish Feeding Schedule Guide: How Much and How Often to Feed Aquarium Fish"
+      ]
+    },
+    "Water Quality & Chemistry": {
+      "post_count": 9,
+      "post_titles": [
+        "Aquarium Salt Guide: When and How to Use Salt in Freshwater Tanks",
+        "Cold Water Fish Guide UK: Species That Don’t Need a Heater",
+        "Hard vs Soft Water for Fish: UK Regional Water Guide",
+        "Aquarium pH Guide: Understanding and Adjusting pH Levels",
+        "Fishless Cycling Guide: Cycle Your Tank Without Fish",
+        "Aquarium Water Changes: How Often and How Much to Change",
+        "Fish Tank Cycling Explained: The Nitrogen Cycle for Beginners",
+        "Aquarium Water Testing Guide: Parameters and Kits for UK Fishkeepers",
+        "Freshwater vs Tropical Fish: A UK Beginner’s Comparison Guide"
+      ]
+    },
+    "Fish Species & Care": {
+      "post_count": 39,
+      "post_titles": [
+        "Breeding Fish at Home: Beginner-Friendly Species for UK Fishkeepers",
+        "Goldfish Care Guide UK: Tank Size, Feeding, and Common Problems",
+        "Fish Tank Moving Guide: Safely Relocating Your Aquarium",
+        "Betta Fish Care Guide UK: Housing, Feeding, and Health",
+        "Aquarium Salt Guide: When and How to Use Salt in Freshwater Tanks",
+        "Cold Water Fish Guide UK: Species That Don’t Need a Heater",
+        "Hard vs Soft Water for Fish: UK Regional Water Guide",
+        "Floating Plants Guide: Benefits and Best Species for UK Tanks",
+        "Aquarium Glass vs Acrylic: Which is Better for UK Fishkeepers",
+        "Fish Tank Automation: Timers, Auto-Feeders, and Smart Monitoring",
+        "Beginner Aquarium Plants Guide: Low-Maintenance UK Species",
+        "Fishless Cycling Guide: Cycle Your Tank Without Fish",
+        "Aquarium Fish Lifespan Guide: How Long Common Species Live",
+        "Tetra Species Guide: Neon, Cardinal, and More for UK Tanks",
+        "Fish Stress Indicators: Recognising and Reducing Aquarium Stress",
+        "Pleco Care Guide UK: Types, Size, and Tank Requirements",
+        "Fish Medication Guide: UK-Available Treatments and Dosing",
+        "Shrimp Keeping Guide UK: Cherry Shrimp and Amano Care",
+        "Fish Quarantine Guide: Setting Up a Hospital Tank",
+        "Corydoras Catfish Guide: Bottom Dwellers for UK Community Tanks",
+        "Common Fish Diseases UK: Ich, Fin Rot, and Velvet Treatment Guide",
+        "Guppy Care Guide UK: Breeding, Colours, and Tank Setup",
+        "Fish Tank Safety Guide: Electrical, Child, and Pet Safety for UK Aquariums",
+        "Aquarium Budget Planner: Costs Breakdown for UK Fishkeepers",
+        "Community Fish Guide: Compatible Species Combinations for UK Aquariums",
+        "Fish Tank Decoration Guide: Safe Decorations and Aquarium Layouts",
+        "Aquarium Algae Control: Preventing and Managing Algae in Your Fish Tank",
+        "Fish Health Monitoring: Signs of Healthy vs Sick Fish in Your Aquarium",
+        "Fish Tank Cycling Explained: The Nitrogen Cycle for Beginners",
+        "Aquarium Heater Guide: Choosing and Using Heaters for UK Fish Tanks",
+        "Fish Tank Equipment Checklist: Everything You Need to Start an Aquarium",
+        "Common Fishkeeping Mistakes: Errors UK Beginners Make and How to Avoid Them",
+        "Aquarium Water Testing Guide: Parameters and Kits for UK Fishkeepers",
+        "Fish Feeding Schedule Guide: How Much and How Often to Feed Aquarium Fish",
+        "Beginner Fish Species Guide: Best Fish for New UK Fishkeepers",
+        "Fish Tank Cleaning Guide: Step-by-Step Process for UK Fishkeepers",
+        "Aquarium Maintenance Schedule: Weekly and Monthly Tasks for UK Fishkeepers",
+        "Freshwater vs Tropical Fish: A UK Beginner’s Comparison Guide",
+        "Fish Tank Setup Guide UK: Complete Beginner’s Guide to Starting an Aquarium"
+      ]
+    },
+    "Decoration & Substrate": {
+      "post_count": 6,
+      "post_titles": [
+        "Floating Plants Guide: Benefits and Best Species for UK Tanks",
+        "Aquarium Substrate Guide: Gravel, Sand, and Soil Options UK",
+        "CO2 Systems for Planted Tanks: UK Carbon Dioxide Injection Guide",
+        "Beginner Aquarium Plants Guide: Low-Maintenance UK Species",
+        "Fish Tank Decoration Guide: Safe Decorations and Aquarium Layouts",
+        "Aquarium Lighting Guide: Light Types, Schedules, and Plant Needs"
+      ]
+    },
+    "Maintenance & Cleaning": {
+      "post_count": 5,
+      "post_titles": [
+        "Aquarium Substrate Guide: Gravel, Sand, and Soil Options UK",
+        "Beginner Aquarium Plants Guide: Low-Maintenance UK Species",
+        "Aquarium Algae Control: Preventing and Managing Algae in Your Fish Tank",
+        "Fish Tank Cleaning Guide: Step-by-Step Process for UK Fishkeepers",
+        "Aquarium Maintenance Schedule: Weekly and Monthly Tasks for UK Fishkeepers"
+      ]
+    },
+    "Accessories & Gadgets": {
+      "post_count": 1,
+      "post_titles": [
+        "Fish Tank Automation: Timers, Auto-Feeders, and Smart Monitoring"
+      ]
+    }
+  },
+  "top_keywords": [
+    {
+      "keyword": "fish",
+      "frequency": 28
+    },
+    {
+      "keyword": "aquarium",
+      "frequency": 25
+    },
+    {
+      "keyword": "tank",
+      "frequency": 16
+    },
+    {
+      "keyword": "species",
+      "frequency": 8
+    },
+    {
+      "keyword": "fishkeepers",
+      "frequency": 7
+    },
+    {
+      "keyword": "tanks",
+      "frequency": 7
+    },
+    {
+      "keyword": "beginner",
+      "frequency": 5
+    },
+    {
+      "keyword": "care",
+      "frequency": 5
+    },
+    {
+      "keyword": "water",
+      "frequency": 5
+    },
+    {
+      "keyword": "common",
+      "frequency": 4
+    },
+    {
+      "keyword": "feeding",
+      "frequency": 3
+    },
+    {
+      "keyword": "setup",
+      "frequency": 3
+    },
+    {
+      "keyword": "explained",
+      "frequency": 3
+    },
+    {
+      "keyword": "types",
+      "frequency": 3
+    },
+    {
+      "keyword": "breeding",
+      "frequency": 2
+    },
+    {
+      "keyword": "size",
+      "frequency": 2
+    },
+    {
+      "keyword": "health",
+      "frequency": 2
+    },
+    {
+      "keyword": "options",
+      "frequency": 2
+    },
+    {
+      "keyword": "salt",
+      "frequency": 2
+    },
+    {
+      "keyword": "freshwater",
+      "frequency": 2
+    },
+    {
+      "keyword": "heater",
+      "frequency": 2
+    },
+    {
+      "keyword": "plants",
+      "frequency": 2
+    },
+    {
+      "keyword": "noise",
+      "frequency": 2
+    },
+    {
+      "keyword": "reducing",
+      "frequency": 2
+    },
+    {
+      "keyword": "monitoring",
+      "frequency": 2
+    },
+    {
+      "keyword": "maintenance",
+      "frequency": 2
+    },
+    {
+      "keyword": "cycling",
+      "frequency": 2
+    },
+    {
+      "keyword": "cycle",
+      "frequency": 2
+    },
+    {
+      "keyword": "stress",
+      "frequency": 2
+    },
+    {
+      "keyword": "shrimp",
+      "frequency": 2
+    }
+  ],
+  "posts": [
+    {
+      "id": 20198,
+      "title": "Breeding Fish at Home: Beginner-Friendly Species for UK Fishkeepers",
+      "date_published": "2026-06-01T22:02:42",
+      "url": "https://pethubonline.com/breeding-fish-at-home-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20192,
+      "title": "Goldfish Care Guide UK: Tank Size, Feeding, and Common Problems",
+      "date_published": "2026-06-01T22:02:29",
+      "url": "https://pethubonline.com/goldfish-care-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20186,
+      "title": "Fish Tank Moving Guide: Safely Relocating Your Aquarium",
+      "date_published": "2026-06-01T22:02:19",
+      "url": "https://pethubonline.com/fish-tank-moving-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20180,
+      "title": "Betta Fish Care Guide UK: Housing, Feeding, and Health",
+      "date_published": "2026-06-01T22:02:08",
+      "url": "https://pethubonline.com/betta-fish-care-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20172,
+      "title": "Aquarium Stand Guide UK: DIY and Shop-Bought Options",
+      "date_published": "2026-06-01T22:01:54",
+      "url": "https://pethubonline.com/aquarium-stand-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20169,
+      "title": "Aquarium Salt Guide: When and How to Use Salt in Freshwater Tanks",
+      "date_published": "2026-06-01T22:01:50",
+      "url": "https://pethubonline.com/aquarium-salt-guide-freshwater-tanks/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20159,
+      "title": "Cold Water Fish Guide UK: Species That Don’t Need a Heater",
+      "date_published": "2026-06-01T22:01:31",
+      "url": "https://pethubonline.com/cold-water-fish-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20158,
+      "title": "Hard vs Soft Water for Fish: UK Regional Water Guide",
+      "date_published": "2026-06-01T22:01:30",
+      "url": "https://pethubonline.com/hard-soft-water-fish-uk-guide/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20146,
+      "title": "Nano Tank Guide UK: Small Aquarium Setup and Stocking Ideas",
+      "date_published": "2026-06-01T22:01:09",
+      "url": "https://pethubonline.com/nano-tank-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20145,
+      "title": "Aquarium pH Guide: Understanding and Adjusting pH Levels",
+      "date_published": "2026-06-01T22:01:08",
+      "url": "https://pethubonline.com/aquarium-ph-guide-adjusting-levels/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20133,
+      "title": "Floating Plants Guide: Benefits and Best Species for UK Tanks",
+      "date_published": "2026-06-01T22:00:48",
+      "url": "https://pethubonline.com/floating-plants-guide-uk-tanks/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20132,
+      "title": "Aquarium Glass vs Acrylic: Which is Better for UK Fishkeepers",
+      "date_published": "2026-06-01T22:00:47",
+      "url": "https://pethubonline.com/aquarium-glass-vs-acrylic-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20120,
+      "title": "Aquarium Substrate Guide: Gravel, Sand, and Soil Options UK",
+      "date_published": "2026-06-01T22:00:25",
+      "url": "https://pethubonline.com/aquarium-substrate-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20117,
+      "title": "Aquarium Noise Solutions: Reducing Pump and Filter Noise",
+      "date_published": "2026-06-01T22:00:22",
+      "url": "https://pethubonline.com/aquarium-noise-solutions-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20106,
+      "title": "CO2 Systems for Planted Tanks: UK Carbon Dioxide Injection Guide",
+      "date_published": "2026-06-01T22:00:04",
+      "url": "https://pethubonline.com/co2-systems-planted-tanks-uk-guide/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20103,
+      "title": "Aquarium Emergency Guide: Power Outages, Leaks, and Tank Crashes",
+      "date_published": "2026-06-01T21:59:59",
+      "url": "https://pethubonline.com/aquarium-emergency-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20093,
+      "title": "Aquascaping Styles Explained: Nature, Dutch, and Biotope Tanks",
+      "date_published": "2026-06-01T21:59:42",
+      "url": "https://pethubonline.com/aquascaping-styles-explained-guide/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20090,
+      "title": "Fish Tank Automation: Timers, Auto-Feeders, and Smart Monitoring",
+      "date_published": "2026-06-01T21:59:36",
+      "url": "https://pethubonline.com/fish-tank-automation-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20080,
+      "title": "Beginner Aquarium Plants Guide: Low-Maintenance UK Species",
+      "date_published": "2026-06-01T21:59:20",
+      "url": "https://pethubonline.com/beginner-aquarium-plants-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20075,
+      "title": "Fishless Cycling Guide: Cycle Your Tank Without Fish",
+      "date_published": "2026-06-01T21:59:13",
+      "url": "https://pethubonline.com/fishless-cycling-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20066,
+      "title": "Aquarium Fish Lifespan Guide: How Long Common Species Live",
+      "date_published": "2026-06-01T21:58:58",
+      "url": "https://pethubonline.com/aquarium-fish-lifespan-guide/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20063,
+      "title": "Tetra Species Guide: Neon, Cardinal, and More for UK Tanks",
+      "date_published": "2026-06-01T21:58:53",
+      "url": "https://pethubonline.com/tetra-species-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20054,
+      "title": "Fish Stress Indicators: Recognising and Reducing Aquarium Stress",
+      "date_published": "2026-06-01T21:58:38",
+      "url": "https://pethubonline.com/fish-stress-indicators-aquarium-guide/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20049,
+      "title": "Pleco Care Guide UK: Types, Size, and Tank Requirements",
+      "date_published": "2026-06-01T21:58:29",
+      "url": "https://pethubonline.com/pleco-care-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20041,
+      "title": "Fish Medication Guide: UK-Available Treatments and Dosing",
+      "date_published": "2026-06-01T21:58:15",
+      "url": "https://pethubonline.com/fish-medication-guide-uk-treatments/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20034,
+      "title": "Shrimp Keeping Guide UK: Cherry Shrimp and Amano Care",
+      "date_published": "2026-06-01T21:58:05",
+      "url": "https://pethubonline.com/shrimp-keeping-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20028,
+      "title": "Fish Quarantine Guide: Setting Up a Hospital Tank",
+      "date_published": "2026-06-01T21:57:55",
+      "url": "https://pethubonline.com/fish-quarantine-hospital-tank-guide/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20019,
+      "title": "Corydoras Catfish Guide: Bottom Dwellers for UK Community Tanks",
+      "date_published": "2026-06-01T21:57:41",
+      "url": "https://pethubonline.com/corydoras-catfish-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20015,
+      "title": "Common Fish Diseases UK: Ich, Fin Rot, and Velvet Treatment Guide",
+      "date_published": "2026-06-01T21:57:33",
+      "url": "https://pethubonline.com/common-fish-diseases-uk-treatment-guide/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 20006,
+      "title": "Guppy Care Guide UK: Breeding, Colours, and Tank Setup",
+      "date_published": "2026-06-01T21:57:19",
+      "url": "https://pethubonline.com/guppy-care-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19234,
+      "title": "Fish Tank Safety Guide: Electrical, Child, and Pet Safety for UK Aquariums",
+      "date_published": "2026-06-01T16:36:13",
+      "url": "https://pethubonline.com/fish-tank-safety-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19229,
+      "title": "Aquarium Budget Planner: Costs Breakdown for UK Fishkeepers",
+      "date_published": "2026-06-01T16:35:42",
+      "url": "https://pethubonline.com/aquarium-budget-planner-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19224,
+      "title": "Community Fish Guide: Compatible Species Combinations for UK Aquariums",
+      "date_published": "2026-06-01T16:35:09",
+      "url": "https://pethubonline.com/community-fish-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19219,
+      "title": "Aquarium Water Changes: How Often and How Much to Change",
+      "date_published": "2026-06-01T16:34:37",
+      "url": "https://pethubonline.com/aquarium-water-changes-guide/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19214,
+      "title": "Fish Tank Decoration Guide: Safe Decorations and Aquarium Layouts",
+      "date_published": "2026-06-01T16:34:06",
+      "url": "https://pethubonline.com/fish-tank-decoration-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19209,
+      "title": "Aquarium Algae Control: Preventing and Managing Algae in Your Fish Tank",
+      "date_published": "2026-06-01T16:33:36",
+      "url": "https://pethubonline.com/aquarium-algae-control-guide/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19205,
+      "title": "Fish Health Monitoring: Signs of Healthy vs Sick Fish in Your Aquarium",
+      "date_published": "2026-06-01T16:33:06",
+      "url": "https://pethubonline.com/fish-health-monitoring-guide/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19201,
+      "title": "Fish Tank Cycling Explained: The Nitrogen Cycle for Beginners",
+      "date_published": "2026-06-01T16:32:37",
+      "url": "https://pethubonline.com/fish-tank-cycling-explained/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19196,
+      "title": "Aquarium Lighting Guide: Light Types, Schedules, and Plant Needs",
+      "date_published": "2026-06-01T16:32:06",
+      "url": "https://pethubonline.com/aquarium-lighting-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19191,
+      "title": "Aquarium Heater Guide: Choosing and Using Heaters for UK Fish Tanks",
+      "date_published": "2026-06-01T16:31:34",
+      "url": "https://pethubonline.com/aquarium-heater-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19186,
+      "title": "Fish Tank Equipment Checklist: Everything You Need to Start an Aquarium",
+      "date_published": "2026-06-01T16:31:02",
+      "url": "https://pethubonline.com/fish-tank-equipment-checklist-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19181,
+      "title": "Common Fishkeeping Mistakes: Errors UK Beginners Make and How to Avoid Them",
+      "date_published": "2026-06-01T16:30:32",
+      "url": "https://pethubonline.com/common-fishkeeping-mistakes-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19176,
+      "title": "Aquarium Water Testing Guide: Parameters and Kits for UK Fishkeepers",
+      "date_published": "2026-06-01T16:30:01",
+      "url": "https://pethubonline.com/aquarium-water-testing-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19171,
+      "title": "Fish Feeding Schedule Guide: How Much and How Often to Feed Aquarium Fish",
+      "date_published": "2026-06-01T16:29:30",
+      "url": "https://pethubonline.com/fish-feeding-schedule-guide/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19167,
+      "title": "Beginner Fish Species Guide: Best Fish for New UK Fishkeepers",
+      "date_published": "2026-06-01T16:28:59",
+      "url": "https://pethubonline.com/beginner-fish-species-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19162,
+      "title": "Aquarium Filtration Explained: Types of Filters and How They Work",
+      "date_published": "2026-06-01T16:28:28",
+      "url": "https://pethubonline.com/aquarium-filtration-explained/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19157,
+      "title": "Fish Tank Cleaning Guide: Step-by-Step Process for UK Fishkeepers",
+      "date_published": "2026-06-01T16:27:56",
+      "url": "https://pethubonline.com/fish-tank-cleaning-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19152,
+      "title": "Aquarium Maintenance Schedule: Weekly and Monthly Tasks for UK Fishkeepers",
+      "date_published": "2026-06-01T16:27:25",
+      "url": "https://pethubonline.com/aquarium-maintenance-schedule-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19147,
+      "title": "Freshwater vs Tropical Fish: A UK Beginner’s Comparison Guide",
+      "date_published": "2026-06-01T16:26:54",
+      "url": "https://pethubonline.com/freshwater-vs-tropical-fish-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    },
+    {
+      "id": 19142,
+      "title": "Fish Tank Setup Guide UK: Complete Beginner’s Guide to Starting an Aquarium",
+      "date_published": "2026-06-01T16:26:23",
+      "url": "https://pethubonline.com/fish-tank-setup-guide-uk/",
+      "categories": [
+        "Fish Supplies"
+      ]
+    }
+  ]
+}
