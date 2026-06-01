@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetHub Social Health Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#080a0f;--card:#111621;--border:#1a2236;--text:#e2e8f0;--dim:#7a8ba8;
+  --accent:#ec4899;--accent-dim:rgba(236,72,153,.12);--accent-glow:rgba(236,72,153,.25);
+  --green:#22c55e;--red:#ef4444;--yellow:#eab308;--orange:#f59e0b;--cyan:#06b6d4;--purple:#a855f7;
+  --fb:#1877f2;--ig:#e1306c;--pin:#e60023;--li:#0a66c2;--tt:#010101;
+}
+body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;min-height:100vh;padding:0;overflow-x:hidden}
+
+/* Noise overlay */
+body::before{
+  content:'';position:fixed;top:0;left:0;width:100%;height:100%;
+  background:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events:none;z-index:9999;opacity:.4;
+}
+
+.container{max-width:1440px;margin:0 auto;padding:28px 24px 60px}
+
+/* Header */
+.header{margin-bottom:36px;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px}
+.header h1{font-size:34px;font-weight:800;background:linear-gradient(135deg,var(--accent),#f472b6,#fb7185);-webkit-background-clip:text;-webkit-text-fill-color:transparent;letter-spacing:-.5px;line-height:1.2}
+.header-right{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.header .ts{font-size:12px;color:var(--dim);font-family:'JetBrains Mono',monospace}
+.refresh-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--accent-dim);border:1px solid rgba(236,72,153,.3);
+  padding:7px 14px;border-radius:20px;font-size:12px;font-weight:600;color:var(--accent);
+}
+.refresh-badge .pulse{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(236,72,153,.5)}50%{box-shadow:0 0 0 8px rgba(236,72,153,0)}}
+
+/* Section */
+.section{margin-bottom:32px}
+.section-title{font-size:18px;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.section-title .dot{width:9px;height:9px;border-radius:50%;background:var(--accent)}
+
+/* Grids */
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.grid-6{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+@media(max-width:1200px){.grid-5,.grid-6{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:900px){.grid-3,.grid-5,.grid-6{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.grid-2,.grid-3,.grid-5,.grid-6{grid-template-columns:1fr}}
+
+/* Card */
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:22px;transition:border-color .25s,box-shadow .25s,transform .25s}
+.card:hover{border-color:rgba(236,72,153,.25);box-shadow:0 0 24px rgba(236,72,153,.06);transform:translateY(-1px)}
+.card-title{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1.3px;color:var(--dim);margin-bottom:12px}
+
+/* Summary stat */
+.stat-value{font-size:32px;font-weight:800;font-family:'JetBrains Mono',monospace;line-height:1;margin-bottom:4px}
+.stat-label{font-size:12px;color:var(--dim);font-weight:500}
+.stat-change{font-size:11px;font-weight:600;margin-top:6px;display:inline-flex;align-items:center;gap:4px}
+.stat-change.up{color:var(--green)}
+.stat-change.down{color:var(--red)}
+.stat-change.neutral{color:var(--yellow)}
+
+/* Platform cards */
+.platform-card{position:relative;overflow:hidden}
+.platform-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:14px 14px 0 0;
+}
+.platform-card.facebook::before{background:var(--fb)}
+.platform-card.instagram::before{background:linear-gradient(90deg,#833ab4,#e1306c,#f77737)}
+.platform-card.pinterest::before{background:var(--pin)}
+.platform-card.linkedin::before{background:var(--li)}
+.platform-card.tiktok::before{background:linear-gradient(90deg,#25f4ee,#fe2c55)}
+
+.p-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.p-name{font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px}
+.p-icon{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#fff}
+.p-icon.fb{background:var(--fb)}
+.p-icon.ig{background:linear-gradient(135deg,#833ab4,#e1306c,#f77737)}
+.p-icon.pin{background:var(--pin)}
+.p-icon.li{background:var(--li)}
+.p-icon.tt{background:linear-gradient(135deg,#25f4ee,#fe2c55)}
+
+.conn-badge{font-size:10px;font-weight:700;padding:3px 10px;border-radius:12px;text-transform:uppercase;letter-spacing:.5px}
+.conn-badge.connected{background:rgba(34,197,94,.12);color:var(--green)}
+.conn-badge.disconnected{background:rgba(239,68,68,.12);color:var(--red)}
+.conn-badge.setup_needed{background:rgba(234,179,8,.12);color:var(--yellow)}
+
+.p-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px}
+.p-stat-val{font-size:18px;font-weight:700;font-family:'JetBrains Mono',monospace}
+.p-stat-lbl{font-size:11px;color:var(--dim);margin-top:2px}
+.p-last-post{font-size:11px;color:var(--dim);margin-top:14px;padding-top:12px;border-top:1px solid var(--border);font-family:'JetBrains Mono',monospace}
+
+/* Calendar */
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+@media(max-width:900px){.cal-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:500px){.cal-grid{grid-template-columns:1fr}}
+.cal-day{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px;min-height:100px}
+.cal-day-head{font-size:11px;font-weight:700;text-transform:uppercase;color:var(--dim);letter-spacing:1px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center}
+.cal-day-date{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent)}
+.cal-item{font-size:11px;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid;line-height:1.4}
+.cal-item:last-child{margin-bottom:0}
+.cal-item.fb{background:rgba(24,119,242,.08);border-color:var(--fb);color:#93bbfc}
+.cal-item.ig{background:rgba(225,48,108,.08);border-color:var(--ig);color:#f48cba}
+.cal-item.pin{background:rgba(230,0,35,.08);border-color:var(--pin);color:#f48c8c}
+.cal-item.li{background:rgba(10,102,194,.08);border-color:var(--li);color:#7fb8f0}
+.cal-item.tt{background:rgba(37,244,238,.06);border-color:#25f4ee;color:#7ff0ec}
+.cal-status{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-top:3px;display:inline-block;opacity:.7}
+
+/* Tables */
+.tbl{width:100%;border-collapse:collapse}
+.tbl th{text-align:left;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--dim);padding:10px 14px;border-bottom:1px solid var(--border)}
+.tbl td{padding:10px 14px;border-bottom:1px solid var(--border);font-size:13px}
+.tbl tr:last-child td{border-bottom:none}
+.tbl tr:hover td{background:rgba(236,72,153,.03)}
+.tbl .mono{font-family:'JetBrains Mono',monospace;font-size:12px}
+.tbl .right{text-align:right}
+
+/* Type badge */
+.type-badge{font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;text-transform:uppercase;letter-spacing:.4px}
+.type-badge.image{background:rgba(6,182,212,.12);color:var(--cyan)}
+.type-badge.video{background:rgba(168,85,247,.12);color:var(--purple)}
+.type-badge.carousel{background:rgba(236,72,153,.12);color:var(--accent)}
+.type-badge.story{background:rgba(234,179,8,.12);color:var(--yellow)}
+.type-badge.text{background:rgba(122,139,168,.15);color:var(--dim)}
+.type-badge.reel{background:rgba(37,244,238,.12);color:#25f4ee}
+
+/* Charts */
+.chart-container{position:relative;width:100%;height:300px}
+.chart-container canvas{width:100%!important;height:100%!important}
+
+/* Donut chart */
+.donut-wrap{display:flex;align-items:center;gap:40px;flex-wrap:wrap;justify-content:center}
+.donut-canvas-wrap{position:relative;width:260px;height:260px;flex-shrink:0}
+.donut-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center}
+.donut-center .big{font-size:28px;font-weight:800;font-family:'JetBrains Mono',monospace}
+.donut-center .sub{font-size:11px;color:var(--dim);margin-top:2px}
+.donut-legend{display:flex;flex-direction:column;gap:10px}
+.donut-legend-item{display:flex;align-items:center;gap:10px;font-size:13px}
+.donut-legend-item .swatch{width:12px;height:12px;border-radius:3px;flex-shrink:0}
+.donut-legend-item .pct{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--dim);min-width:38px}
+
+/* Hashtag bar */
+.ht-bar{height:4px;border-radius:2px;background:var(--border);overflow:hidden;margin-top:4px}
+.ht-bar-fill{height:100%;border-radius:2px;background:linear-gradient(90deg,var(--accent),#f472b6)}
+
+/* Action items */
+.action-item{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid var(--border)}
+.action-item:last-child{border-bottom:none}
+.action-num{
+  width:28px;height:28px;border-radius:50%;border:2px solid var(--accent);
+  display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;
+  color:var(--accent);flex-shrink:0;font-family:'JetBrains Mono',monospace;
+}
+.action-text{font-size:14px;line-height:1.6;padding-top:3px}
+.action-text strong{color:var(--accent);font-weight:600}
+.action-priority{font-size:10px;font-weight:700;padding:2px 8px;border-radius:10px;text-transform:uppercase;letter-spacing:.4px;margin-left:8px}
+.action-priority.high{background:rgba(239,68,68,.12);color:var(--red)}
+.action-priority.medium{background:rgba(234,179,8,.12);color:var(--yellow)}
+.action-priority.low{background:rgba(34,197,94,.12);color:var(--green)}
+
+/* Platform mini-badge */
+.plat-mini{font-size:10px;font-weight:700;padding:2px 7px;border-radius:8px;letter-spacing:.3px}
+.plat-mini.fb{background:rgba(24,119,242,.15);color:var(--fb)}
+.plat-mini.ig{background:rgba(225,48,108,.15);color:var(--ig)}
+.plat-mini.pin{background:rgba(230,0,35,.15);color:var(--pin)}
+.plat-mini.li{background:rgba(10,102,194,.15);color:var(--li)}
+.plat-mini.tt{background:rgba(37,244,238,.12);color:#25f4ee}
+
+/* Scrollable table wrapper */
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+/* Fade-in animation */
+.fade-in{opacity:0;transform:translateY(12px);animation:fadeUp .5s ease forwards}
+@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
+.d1{animation-delay:.05s}.d2{animation-delay:.1s}.d3{animation-delay:.15s}
+.d4{animation-delay:.2s}.d5{animation-delay:.25s}.d6{animation-delay:.3s}
+.d7{animation-delay:.35s}.d8{animation-delay:.4s}.d9{animation-delay:.45s}
+
+/* Traffic conversion highlight */
+.conv-val{color:var(--green);font-weight:600}
+
+/* Responsive table font */
+@media(max-width:700px){
+  .tbl td,.tbl th{font-size:11px;padding:8px 10px}
+  .stat-value{font-size:24px}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header fade-in">
+    <div>
+      <h1>Social Health Dashboard</h1>
+      <div class="ts" id="lastUpdate">pethubonline.com &mdash; Updated just now</div>
+    </div>
+    <div class="header-right">
+      <div class="refresh-badge"><span class="pulse"></span> Auto-refresh 60s</div>
+    </div>
+  </div>
+
+  <!-- 1. SOCIAL SUMMARY BAR -->
+  <div class="section fade-in d1">
+    <div class="section-title"><span class="dot"></span> Social Summary</div>
+    <div class="grid-6" id="summaryBar"></div>
+  </div>
+
+  <!-- 2. PLATFORM CARDS -->
+  <div class="section fade-in d2">
+    <div class="section-title"><span class="dot"></span> Platform Breakdown</div>
+    <div class="grid-3" id="platformCards"></div>
+  </div>
+
+  <!-- 3. CONTENT CALENDAR -->
+  <div class="section fade-in d3">
+    <div class="section-title"><span class="dot"></span> Content Calendar &mdash; This Week</div>
+    <div class="cal-grid" id="calGrid"></div>
+  </div>
+
+  <!-- 4. TOP PERFORMING POSTS -->
+  <div class="section fade-in d4">
+    <div class="section-title"><span class="dot"></span> Top Performing Posts</div>
+    <div class="card">
+      <div class="tbl-wrap">
+        <table class="tbl" id="topPostsTable">
+          <thead>
+            <tr>
+              <th>Platform</th>
+              <th>Post Title / Excerpt</th>
+              <th>Date</th>
+              <th class="right">Reach</th>
+              <th class="right">Impressions</th>
+              <th class="right">Engagement</th>
+              <th class="right">Clicks</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody id="topPostsBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. ENGAGEMENT TREND + 6. CONTENT MIX -->
+  <div class="section fade-in d5">
+    <div class="grid-2">
+      <div>
+        <div class="section-title"><span class="dot"></span> Engagement Trend (8 Weeks)</div>
+        <div class="card">
+          <div class="chart-container">
+            <canvas id="engagementChart"></canvas>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="section-title"><span class="dot"></span> Content Mix Analysis</div>
+        <div class="card">
+          <div class="donut-wrap">
+            <div class="donut-canvas-wrap">
+              <canvas id="donutChart"></canvas>
+              <div class="donut-center">
+                <div class="big">6</div>
+                <div class="sub">Content Types</div>
+              </div>
+            </div>
+            <div class="donut-legend" id="donutLegend"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. HASHTAG PERFORMANCE -->
+  <div class="section fade-in d6">
+    <div class="section-title"><span class="dot"></span> Hashtag Performance</div>
+    <div class="card">
+      <div class="tbl-wrap">
+        <table class="tbl" id="hashtagTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Hashtag</th>
+              <th>Platform</th>
+              <th class="right">Uses</th>
+              <th class="right">Avg Reach</th>
+              <th class="right">Avg Engagement</th>
+              <th>Performance</th>
+            </tr>
+          </thead>
+          <tbody id="hashtagBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. SOCIAL-TO-WEBSITE TRAFFIC -->
+  <div class="section fade-in d7">
+    <div class="section-title"><span class="dot"></span> Social-to-Website Traffic</div>
+    <div class="card">
+      <div class="tbl-wrap">
+        <table class="tbl" id="trafficTable">
+          <thead>
+            <tr>
+              <th>Platform</th>
+              <th class="right">Referral Visits</th>
+              <th class="right">Bounce Rate</th>
+              <th class="right">Avg Session</th>
+              <th class="right">Conversions</th>
+              <th class="right">Revenue</th>
+            </tr>
+          </thead>
+          <tbody id="trafficBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 9. ACTION ITEMS -->
+  <div class="section fade-in d8">
+    <div class="section-title"><span class="dot"></span> Action Items &amp; Priorities</div>
+    <div class="card" id="actionItems"></div>
+  </div>
+
+</div>
+
+<script>
+// ============================================================
+// DATA
+// ============================================================
+const SUMMARY = [
+  { label: 'Total Followers', value: '4,218', change: '+312', dir: 'up', period: '30d' },
+  { label: 'Posts This Week', value: '8', change: '+3', dir: 'up', period: 'vs last wk' },
+  { label: 'Engagement Rate', value: '3.7%', change: '+0.4%', dir: 'up', period: '7d avg' },
+  { label: 'Reach This Week', value: '18.2K', change: '+2.1K', dir: 'up', period: 'vs last wk' },
+  { label: 'New Followers (7d)', value: '89', change: '+12', dir: 'up', period: 'vs prior 7d' },
+  { label: 'Active Platforms', value: '3/5', change: null, dir: 'neutral', period: '2 need setup' },
+];
+
+const PLATFORMS = [
+  {
+    name: 'Facebook', key: 'fb', cls: 'facebook', icon: 'f',
+    status: 'disconnected',
+    stats: [
+      { label: 'Followers', val: '1,847' },
+      { label: 'Page Likes', val: '1,692' },
+      { label: 'Post Reach', val: '6,420' },
+      { label: 'Engagement', val: '2.8%' },
+    ],
+    lastPost: '2026-05-22',
+  },
+  {
+    name: 'Instagram', key: 'ig', cls: 'instagram', icon: 'IG',
+    status: 'connected',
+    stats: [
+      { label: 'Followers', val: '1,563' },
+      { label: 'Posts', val: '142' },
+      { label: 'Engagement', val: '4.6%' },
+      { label: 'Story Views', val: '389' },
+    ],
+    lastPost: '2026-05-31',
+  },
+  {
+    name: 'Pinterest', key: 'pin', cls: 'pinterest', icon: 'P',
+    status: 'setup_needed',
+    stats: [
+      { label: 'Followers', val: '284' },
+      { label: 'Monthly Views', val: '12.4K' },
+      { label: 'Pins', val: '67' },
+      { label: 'Boards', val: '8' },
+    ],
+    lastPost: '2026-05-10',
+  },
+  {
+    name: 'LinkedIn', key: 'li', cls: 'linkedin', icon: 'in',
+    status: 'connected',
+    stats: [
+      { label: 'Followers', val: '326' },
+      { label: 'Impressions', val: '2,180' },
+      { label: 'Engagement', val: '3.1%' },
+      { label: 'Post Clicks', val: '94' },
+    ],
+    lastPost: '2026-05-28',
+  },
+  {
+    name: 'TikTok', key: 'tt', cls: 'tiktok', icon: 'TT',
+    status: 'connected',
+    stats: [
+      { label: 'Followers', val: '198' },
+      { label: 'Views', val: '34.7K' },
+      { label: 'Likes', val: '2,841' },
+      { label: 'Engagement', val: '5.2%' },
+    ],
+    lastPost: '2026-05-30',
+  },
+];
+
+const CALENDAR = [
+  { day: 'Mon', date: '02 Jun', items: [
+    { plat: 'ig', type: 'Carousel', topic: 'Top 5 Summer Pet Treats', time: '10:00', status: 'scheduled' },
+    { plat: 'fb', type: 'Image', topic: 'New Arrivals Banner', time: '14:00', status: 'draft' },
+  ]},
+  { day: 'Tue', date: '03 Jun', items: [
+    { plat: 'tt', type: 'Video', topic: 'Dog vs. Puzzle Feeder', time: '12:00', status: 'scheduled' },
+  ]},
+  { day: 'Wed', date: '04 Jun', items: [
+    { plat: 'ig', type: 'Story', topic: 'Behind the scenes: packing orders', time: '09:00', status: 'scheduled' },
+    { plat: 'li', type: 'Image', topic: 'Pet Industry UK Stats Q2', time: '11:00', status: 'draft' },
+  ]},
+  { day: 'Thu', date: '05 Jun', items: [
+    { plat: 'ig', type: 'Reel', topic: 'Cat Harness Review (30s)', time: '13:00', status: 'scheduled' },
+    { plat: 'pin', type: 'Image', topic: '10 DIY Cat Toys - infographic', time: '15:00', status: 'draft' },
+  ]},
+  { day: 'Fri', date: '06 Jun', items: [
+    { plat: 'fb', type: 'Image', topic: 'Friday Flash Sale Graphic', time: '10:00', status: 'scheduled' },
+    { plat: 'tt', type: 'Video', topic: 'Unboxing: Premium Dog Bed', time: '17:00', status: 'scheduled' },
+  ]},
+  { day: 'Sat', date: '07 Jun', items: [
+    { plat: 'ig', type: 'Image', topic: 'Customer Pet Spotlight', time: '11:00', status: 'draft' },
+  ]},
+  { day: 'Sun', date: '08 Jun', items: [
+    { plat: 'ig', type: 'Story', topic: 'Weekend Poll: Dogs vs Cats', time: '10:00', status: 'scheduled' },
+  ]},
+];
+
+const TOP_POSTS = [
+  { plat: 'ig', platCls: 'ig', title: 'Meet our rescue pup ambassador, Biscuit!', date: '2026-05-28', reach: '4,210', impressions: '5,890', engagement: '7.2%', clicks: 312, type: 'carousel' },
+  { plat: 'tt', platCls: 'tt', title: 'Golden Retriever tries freeze-dried treats', date: '2026-05-26', reach: '18,400', impressions: '22,100', engagement: '6.8%', clicks: 487, type: 'video' },
+  { plat: 'ig', platCls: 'ig', title: 'Summer essentials flat lay with prices', date: '2026-05-24', reach: '3,180', impressions: '4,420', engagement: '5.1%', clicks: 198, type: 'image' },
+  { plat: 'fb', platCls: 'fb', title: 'Win a pet pamper hamper! (Competition)', date: '2026-05-22', reach: '6,840', impressions: '8,120', engagement: '4.9%', clicks: 421, type: 'image' },
+  { plat: 'li', platCls: 'li', title: 'UK pet ownership up 14% since 2023', date: '2026-05-20', reach: '1,420', impressions: '2,180', engagement: '3.4%', clicks: 67, type: 'text' },
+  { plat: 'tt', platCls: 'tt', title: 'Cat reacts to automatic laser toy', date: '2026-05-18', reach: '12,600', impressions: '16,300', engagement: '5.9%', clicks: 340, type: 'video' },
+  { plat: 'ig', platCls: 'ig', title: 'Step-by-step: fitting a dog harness', date: '2026-05-16', reach: '2,940', impressions: '3,810', engagement: '4.3%', clicks: 156, type: 'reel' },
+  { plat: 'pin', platCls: 'pin', title: '15 pet-safe house plants infographic', date: '2026-05-14', reach: '8,920', impressions: '11,400', engagement: '2.1%', clicks: 612, type: 'image' },
+];
+
+const ENGAGEMENT_DATA = {
+  weeks: ['W14', 'W15', 'W16', 'W17', 'W18', 'W19', 'W20', 'W21'],
+  series: {
+    Instagram:  [3.2, 3.5, 3.8, 4.1, 3.9, 4.4, 4.2, 4.6],
+    TikTok:     [4.0, 4.8, 5.1, 4.6, 5.3, 4.9, 5.0, 5.2],
+    Facebook:   [2.1, 2.3, 2.5, 2.4, 2.6, 2.7, 2.9, 2.8],
+    LinkedIn:   [2.8, 2.6, 2.9, 3.0, 2.7, 3.2, 3.0, 3.1],
+    Pinterest:  [1.4, 1.6, 1.5, 1.8, 1.7, 1.9, 2.0, 2.1],
+  },
+  colors: {
+    Instagram: '#e1306c',
+    TikTok: '#25f4ee',
+    Facebook: '#1877f2',
+    LinkedIn: '#0a66c2',
+    Pinterest: '#e60023',
+  }
+};
+
+const CONTENT_MIX = [
+  { label: 'Educational', pct: 40, color: '#ec4899' },
+  { label: 'Product Reviews', pct: 15, color: '#a855f7' },
+  { label: 'Behind-the-scenes', pct: 10, color: '#06b6d4' },
+  { label: 'User-generated', pct: 5, color: '#22c55e' },
+  { label: 'Promotional', pct: 15, color: '#eab308' },
+  { label: 'Seasonal / Trending', pct: 15, color: '#f59e0b' },
+];
+
+const HASHTAGS = [
+  { tag: '#PetHubOnline', plat: 'All', uses: 142, reach: '3,420', eng: '4.1%', score: 92 },
+  { tag: '#UKPets', plat: 'Instagram', uses: 87, reach: '5,180', eng: '3.8%', score: 88 },
+  { tag: '#DogLoversUK', plat: 'Instagram', uses: 64, reach: '6,240', eng: '4.5%', score: 86 },
+  { tag: '#CatLoversUK', plat: 'Instagram', uses: 58, reach: '5,890', eng: '4.2%', score: 84 },
+  { tag: '#PetCare', plat: 'All', uses: 96, reach: '4,310', eng: '3.6%', score: 82 },
+  { tag: '#PetSuppliesUK', plat: 'Facebook', uses: 51, reach: '3,870', eng: '3.2%', score: 79 },
+  { tag: '#HealthyPets', plat: 'Pinterest', uses: 42, reach: '8,120', eng: '2.1%', score: 77 },
+  { tag: '#DogWalkUK', plat: 'TikTok', uses: 38, reach: '12,400', eng: '5.1%', score: 75 },
+  { tag: '#PuppyLove', plat: 'Instagram', uses: 45, reach: '7,620', eng: '5.8%', score: 74 },
+  { tag: '#PetTreats', plat: 'TikTok', uses: 34, reach: '9,800', eng: '4.9%', score: 72 },
+  { tag: '#PetParent', plat: 'Facebook', uses: 39, reach: '3,210', eng: '3.0%', score: 68 },
+  { tag: '#CatLife', plat: 'Instagram', uses: 31, reach: '4,580', eng: '3.9%', score: 66 },
+  { tag: '#PetPhotography', plat: 'Pinterest', uses: 28, reach: '6,940', eng: '1.8%', score: 63 },
+  { tag: '#FurBaby', plat: 'TikTok', uses: 26, reach: '11,200', eng: '4.4%', score: 61 },
+  { tag: '#ShopSmallUK', plat: 'All', uses: 22, reach: '2,890', eng: '2.6%', score: 58 },
+];
+
+const TRAFFIC = [
+  { plat: 'Instagram', platCls: 'ig', visits: '1,247', bounce: '38%', session: '2m 48s', conv: 34, revenue: '£1,260' },
+  { plat: 'Facebook', platCls: 'fb', visits: '986', bounce: '44%', session: '2m 12s', conv: 22, revenue: '£840' },
+  { plat: 'Pinterest', platCls: 'pin', visits: '612', bounce: '31%', session: '3m 06s', conv: 18, revenue: '£720' },
+  { plat: 'TikTok', platCls: 'tt', visits: '487', bounce: '52%', session: '1m 34s', conv: 8, revenue: '£310' },
+  { plat: 'LinkedIn', platCls: 'li', visits: '142', bounce: '46%', session: '1m 52s', conv: 3, revenue: '£95' },
+];
+
+const ACTIONS = [
+  { text: '<strong>Reconnect Facebook API</strong> — Page token expired 10 days ago. Engagement tracking and scheduled posting are offline.', priority: 'high' },
+  { text: '<strong>Complete Pinterest setup</strong> — Claim website, enable Rich Pins, and connect to scheduling tool for automated pinning.', priority: 'high' },
+  { text: '<strong>Build 2-week content calendar</strong> — Only 8 posts scheduled for this week. Target 14 posts/week across platforms.', priority: 'high' },
+  { text: '<strong>Create TikTok content batch</strong> — Film 5 short pet product videos this week. TikTok has the highest engagement rate (5.2%).', priority: 'medium' },
+  { text: '<strong>Launch UGC campaign</strong> — User-generated content is only 5% of the mix. Start #MyPetHub photo contest to boost.', priority: 'medium' },
+  { text: '<strong>Optimise posting times</strong> — Analyse when followers are most active. Current schedule may miss peak engagement windows.', priority: 'medium' },
+  { text: '<strong>Set up Instagram Shopping tags</strong> — Link product catalogue to posts and stories for direct purchase flow.', priority: 'medium' },
+  { text: '<strong>Create Pinterest boards for top categories</strong> — Dog food, cat toys, grooming, and seasonal collections need dedicated boards.', priority: 'low' },
+  { text: '<strong>Draft LinkedIn thought-leadership series</strong> — Monthly UK pet industry insights to build B2B credibility.', priority: 'low' },
+  { text: '<strong>Review hashtag strategy monthly</strong> — Retire low-performing tags, test 3 new ones per platform each month.', priority: 'low' },
+];
+
+// ============================================================
+// RENDERERS
+// ============================================================
+
+// 1. Summary bar
+function renderSummary() {
+  const el = document.getElementById('summaryBar');
+  el.innerHTML = SUMMARY.map(s => `
+    <div class="card">
+      <div class="card-title">${s.label}</div>
+      <div class="stat-value">${s.value}</div>
+      ${s.change ? `<div class="stat-change ${s.dir}">
+        ${s.dir === 'up' ? '&#9650;' : s.dir === 'down' ? '&#9660;' : '&#9679;'} ${s.change}
+        <span style="color:var(--dim);font-weight:400;margin-left:4px">${s.period}</span>
+      </div>` : `<div class="stat-change neutral">&#9679; ${s.period}</div>`}
+    </div>
+  `).join('');
+}
+
+// 2. Platform cards
+function renderPlatforms() {
+  const el = document.getElementById('platformCards');
+  el.innerHTML = PLATFORMS.map(p => `
+    <div class="card platform-card ${p.cls}">
+      <div class="p-header">
+        <div class="p-name">
+          <span class="p-icon ${p.key}">${p.icon}</span>
+          ${p.name}
+        </div>
+        <span class="conn-badge ${p.status}">${p.status.replace('_', ' ')}</span>
+      </div>
+      <div class="p-stats">
+        ${p.stats.map(s => `
+          <div>
+            <div class="p-stat-val">${s.val}</div>
+            <div class="p-stat-lbl">${s.label}</div>
+          </div>
+        `).join('')}
+      </div>
+      <div class="p-last-post">Last post: ${p.lastPost}</div>
+    </div>
+  `).join('');
+}
+
+// 3. Calendar
+function renderCalendar() {
+  const el = document.getElementById('calGrid');
+  el.innerHTML = CALENDAR.map(d => `
+    <div class="cal-day">
+      <div class="cal-day-head">
+        <span>${d.day}</span>
+        <span class="cal-day-date">${d.date}</span>
+      </div>
+      ${d.items.map(i => `
+        <div class="cal-item ${i.plat}">
+          <strong>${i.type}</strong> &middot; ${i.time}<br>
+          ${i.topic}
+          <div class="cal-status">${i.status}</div>
+        </div>
+      `).join('')}
+    </div>
+  `).join('');
+}
+
+// 4. Top posts
+function renderTopPosts() {
+  const el = document.getElementById('topPostsBody');
+  el.innerHTML = TOP_POSTS.map(p => `
+    <tr>
+      <td><span class="plat-mini ${p.platCls}">${p.plat.toUpperCase()}</span></td>
+      <td>${p.title}</td>
+      <td class="mono">${p.date}</td>
+      <td class="mono right">${p.reach}</td>
+      <td class="mono right">${p.impressions}</td>
+      <td class="mono right" style="color:var(--accent);font-weight:600">${p.engagement}</td>
+      <td class="mono right">${p.clicks}</td>
+      <td><span class="type-badge ${p.type}">${p.type}</span></td>
+    </tr>
+  `).join('');
+}
+
+// 5. Engagement chart (pure canvas)
+function renderEngagementChart() {
+  const canvas = document.getElementById('engagementChart');
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.parentElement.getBoundingClientRect();
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+  ctx.scale(dpr, dpr);
+  const W = rect.width, H = rect.height;
+
+  const pad = { top: 30, right: 24, bottom: 50, left: 48 };
+  const chartW = W - pad.left - pad.right;
+  const chartH = H - pad.top - pad.bottom;
+  const weeks = ENGAGEMENT_DATA.weeks;
+  const series = ENGAGEMENT_DATA.series;
+  const colors = ENGAGEMENT_DATA.colors;
+
+  // Y axis range
+  const minY = 0, maxY = 7;
+  const yStep = 1;
+
+  function xPos(i) { return pad.left + (i / (weeks.length - 1)) * chartW; }
+  function yPos(v) { return pad.top + chartH - ((v - minY) / (maxY - minY)) * chartH; }
+
+  // Grid lines
+  ctx.strokeStyle = 'rgba(26,34,54,0.6)';
+  ctx.lineWidth = 1;
+  for (let y = minY; y <= maxY; y += yStep) {
+    ctx.beginPath();
+    ctx.moveTo(pad.left, yPos(y));
+    ctx.lineTo(W - pad.right, yPos(y));
+    ctx.stroke();
+  }
+
+  // Y labels
+  ctx.fillStyle = '#7a8ba8';
+  ctx.font = '11px "JetBrains Mono", monospace';
+  ctx.textAlign = 'right';
+  ctx.textBaseline = 'middle';
+  for (let y = minY; y <= maxY; y += yStep) {
+    ctx.fillText(y + '%', pad.left - 10, yPos(y));
+  }
+
+  // X labels
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'top';
+  weeks.forEach((w, i) => {
+    ctx.fillText(w, xPos(i), pad.top + chartH + 12);
+  });
+
+  // Lines
+  Object.keys(series).forEach(name => {
+    const data = series[name];
+    const color = colors[name];
+
+    // Glow
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 3;
+    ctx.shadowColor = color;
+    ctx.shadowBlur = 8;
+    ctx.beginPath();
+    data.forEach((v, i) => {
+      if (i === 0) ctx.moveTo(xPos(i), yPos(v));
+      else ctx.lineTo(xPos(i), yPos(v));
+    });
+    ctx.stroke();
+    ctx.shadowBlur = 0;
+
+    // Dots
+    data.forEach((v, i) => {
+      ctx.beginPath();
+      ctx.arc(xPos(i), yPos(v), 3.5, 0, Math.PI * 2);
+      ctx.fillStyle = color;
+      ctx.fill();
+      ctx.strokeStyle = '#111621';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+    });
+  });
+
+  // Legend
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'middle';
+  let lx = pad.left;
+  const ly = H - 8;
+  Object.keys(series).forEach(name => {
+    const color = colors[name];
+    ctx.fillStyle = color;
+    ctx.fillRect(lx, ly - 5, 14, 10);
+    ctx.fillStyle = '#7a8ba8';
+    ctx.font = '11px "Outfit", sans-serif';
+    ctx.fillText(name, lx + 18, ly);
+    lx += ctx.measureText(name).width + 36;
+  });
+}
+
+// 6. Donut chart (pure canvas)
+function renderDonutChart() {
+  const canvas = document.getElementById('donutChart');
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const size = 260;
+  canvas.width = size * dpr;
+  canvas.height = size * dpr;
+  ctx.scale(dpr, dpr);
+
+  const cx = size / 2, cy = size / 2;
+  const outerR = 115, innerR = 72;
+  let startAngle = -Math.PI / 2;
+
+  CONTENT_MIX.forEach(item => {
+    const sliceAngle = (item.pct / 100) * Math.PI * 2;
+    const endAngle = startAngle + sliceAngle;
+
+    ctx.beginPath();
+    ctx.arc(cx, cy, outerR, startAngle, endAngle);
+    ctx.arc(cx, cy, innerR, endAngle, startAngle, true);
+    ctx.closePath();
+    ctx.fillStyle = item.color;
+    ctx.fill();
+
+    // Gap between segments
+    ctx.beginPath();
+    ctx.arc(cx, cy, outerR, endAngle - 0.01, endAngle + 0.01);
+    ctx.arc(cx, cy, innerR, endAngle + 0.01, endAngle - 0.01, true);
+    ctx.closePath();
+    ctx.fillStyle = '#111621';
+    ctx.fill();
+
+    startAngle = endAngle;
+  });
+
+  // Legend
+  const legend = document.getElementById('donutLegend');
+  legend.innerHTML = CONTENT_MIX.map(item => `
+    <div class="donut-legend-item">
+      <span class="swatch" style="background:${item.color}"></span>
+      <span class="pct">${item.pct}%</span>
+      <span>${item.label}</span>
+    </div>
+  `).join('');
+}
+
+// 7. Hashtags
+function renderHashtags() {
+  const el = document.getElementById('hashtagBody');
+  el.innerHTML = HASHTAGS.map((h, i) => {
+    const platMap = { 'All': '', 'Instagram': 'ig', 'Facebook': 'fb', 'Pinterest': 'pin', 'TikTok': 'tt', 'LinkedIn': 'li' };
+    const cls = platMap[h.plat] || '';
+    return `
+      <tr>
+        <td class="mono" style="color:var(--dim)">${i + 1}</td>
+        <td style="font-weight:600;color:var(--accent)">${h.tag}</td>
+        <td>${cls ? `<span class="plat-mini ${cls}">${h.plat}</span>` : '<span style="color:var(--dim);font-size:11px">All</span>'}</td>
+        <td class="mono right">${h.uses}</td>
+        <td class="mono right">${h.reach}</td>
+        <td class="mono right">${h.eng}</td>
+        <td>
+          <div style="display:flex;align-items:center;gap:8px">
+            <div class="ht-bar" style="width:80px"><div class="ht-bar-fill" style="width:${h.score}%"></div></div>
+            <span class="mono" style="font-size:11px;color:var(--dim)">${h.score}</span>
+          </div>
+        </td>
+      </tr>
+    `;
+  }).join('');
+}
+
+// 8. Traffic
+function renderTraffic() {
+  const el = document.getElementById('trafficBody');
+  el.innerHTML = TRAFFIC.map(t => `
+    <tr>
+      <td><span class="plat-mini ${t.platCls}">${t.plat}</span></td>
+      <td class="mono right">${t.visits}</td>
+      <td class="mono right">${t.bounce}</td>
+      <td class="mono right">${t.session}</td>
+      <td class="mono right conv-val">${t.conv}</td>
+      <td class="mono right" style="color:var(--green);font-weight:600">${t.revenue}</td>
+    </tr>
+  `).join('');
+}
+
+// 9. Actions
+function renderActions() {
+  const el = document.getElementById('actionItems');
+  el.innerHTML = ACTIONS.map((a, i) => `
+    <div class="action-item">
+      <div class="action-num">${i + 1}</div>
+      <div class="action-text">
+        ${a.text}
+        <span class="action-priority ${a.priority}">${a.priority}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+// ============================================================
+// INIT + AUTO-REFRESH
+// ============================================================
+function renderAll() {
+  renderSummary();
+  renderPlatforms();
+  renderCalendar();
+  renderTopPosts();
+  renderEngagementChart();
+  renderDonutChart();
+  renderHashtags();
+  renderTraffic();
+  renderActions();
+  document.getElementById('lastUpdate').textContent =
+    'pethubonline.com — Updated ' + new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+}
+
+renderAll();
+
+// Redraw charts on resize
+let resizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    renderEngagementChart();
+    renderDonutChart();
+  }, 200);
+});
+
+// Auto-refresh every 60 seconds
+setInterval(renderAll, 60000);
+</script>
+</body>
+</html>
