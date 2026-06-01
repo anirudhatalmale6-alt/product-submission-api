@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Directory Acquisition — PetHub Operations</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #080a0f;
+  --surface: #111621;
+  --surface-2: #161d2d;
+  --border: #1a2236;
+  --border-hover: #243048;
+  --text: #e2e8f0;
+  --dim: #7a8ba8;
+  --muted: #4a5872;
+  --accent: #10b981;
+  --accent-dim: rgba(16,185,129,.12);
+  --accent-glow: rgba(16,185,129,.25);
+  --blue: #3b82f6;
+  --amber: #f59e0b;
+  --red: #ef4444;
+  --cyan: #06b6d4;
+  --grey: #64748b;
+  --radius: 10px;
+  --mono: 'JetBrains Mono', monospace;
+  --sans: 'Outfit', sans-serif;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Subtle grid texture */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(16,185,129,.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16,185,129,.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.container {
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 20px 24px 60px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Header ── */
+.dash-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 12px 0 20px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+.dash-header h1 {
+  font-family: var(--mono);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+.dash-header h1 span { color: var(--dim); font-weight: 400; }
+.header-right {
+  display: flex; align-items: center; gap: 12px;
+}
+.pulse-dot {
+  width: 7px; height: 7px;
+  background: var(--accent);
+  border-radius: 50%;
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%,100% { box-shadow: 0 0 0 0 var(--accent-glow); }
+  50% { box-shadow: 0 0 0 6px transparent; }
+}
+.header-time {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* ── Section labels ── */
+.section-label {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 32px 0 14px;
+  display: flex; align-items: center; gap: 10px;
+}
+.section-label::before {
+  content: '';
+  width: 3px; height: 14px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+.section-label .count {
+  font-family: var(--mono);
+  font-size: 10px;
+  background: var(--accent-dim);
+  color: var(--accent);
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+/* ── Summary Bar ── */
+.summary-bar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+  animation: fadeUp .5s ease-out;
+}
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 16px;
+  transition: border-color .2s, transform .15s;
+  position: relative;
+  overflow: hidden;
+}
+.stat-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-1px);
+}
+.stat-card.highlight {
+  border-color: rgba(16,185,129,.3);
+  background: linear-gradient(135deg, var(--surface), rgba(16,185,129,.04));
+}
+.stat-card .label {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  margin-bottom: 8px;
+}
+.stat-card .value {
+  font-family: var(--mono);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text);
+}
+.stat-card .value.green { color: var(--accent); }
+.stat-card .value.blue { color: var(--blue); }
+.stat-card .value.amber { color: var(--amber); }
+.stat-card .value.red { color: var(--red); }
+.stat-card .value.cyan { color: var(--cyan); }
+.stat-card .sub {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 6px;
+  font-family: var(--mono);
+}
+.stat-card .bar-track {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--border);
+}
+.stat-card .bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 0 2px 0 0;
+  transition: width .8s ease-out;
+}
+
+/* ── Table ── */
+.table-wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  animation: fadeUp .6s ease-out;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+thead th {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-2);
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  transition: color .15s;
+}
+thead th:hover { color: var(--accent); }
+thead th .sort-arrow { font-size: 9px; margin-left: 4px; opacity: .4; }
+thead th.sorted .sort-arrow { opacity: 1; color: var(--accent); }
+tbody tr {
+  border-bottom: 1px solid rgba(26,34,54,.5);
+  transition: background .15s;
+}
+tbody tr:hover { background: rgba(16,185,129,.03); }
+tbody td {
+  padding: 12px 16px;
+  font-size: 13px;
+  vertical-align: middle;
+}
+.dir-name {
+  font-weight: 600;
+  color: var(--text);
+}
+.dir-url {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--dim);
+}
+.dir-url a { color: var(--dim); text-decoration: none; }
+.dir-url a:hover { color: var(--accent); }
+
+/* Badges */
+.badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.badge.not-started { background: rgba(100,116,139,.15); color: var(--grey); border: 1px solid rgba(100,116,139,.2); }
+.badge.submitted { background: rgba(59,130,246,.12); color: var(--blue); border: 1px solid rgba(59,130,246,.2); }
+.badge.pending { background: rgba(245,158,11,.12); color: var(--amber); border: 1px solid rgba(245,158,11,.2); }
+.badge.approved { background: rgba(16,185,129,.12); color: var(--accent); border: 1px solid rgba(16,185,129,.2); }
+.badge.rejected { background: rgba(239,68,68,.12); color: var(--red); border: 1px solid rgba(239,68,68,.2); }
+.badge.live { background: rgba(6,182,212,.12); color: var(--cyan); border: 1px solid rgba(6,182,212,.2); }
+.badge.dofollow { background: rgba(16,185,129,.1); color: var(--accent); }
+.badge.nofollow { background: rgba(100,116,139,.1); color: var(--grey); }
+.badge.unknown { background: rgba(100,116,139,.08); color: var(--muted); }
+
+/* DA bar */
+.da-cell {
+  display: flex; align-items: center; gap: 8px;
+}
+.da-num {
+  font-family: var(--mono);
+  font-weight: 600;
+  font-size: 13px;
+  min-width: 28px;
+}
+.da-bar {
+  flex: 1;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  max-width: 80px;
+}
+.da-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width .5s ease-out;
+}
+
+/* ── Timeline ── */
+.timeline-container {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  animation: fadeUp .7s ease-out;
+}
+.timeline-track {
+  position: relative;
+  padding: 16px 0 8px 32px;
+}
+.timeline-track::before {
+  content: '';
+  position: absolute;
+  left: 11px; top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent), var(--border));
+  border-radius: 1px;
+}
+.tl-item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+.tl-item::before {
+  content: '';
+  position: absolute;
+  left: -25px; top: 5px;
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: var(--bg);
+}
+.tl-item.pending::before { border-color: var(--amber); }
+.tl-item.future::before { border-color: var(--muted); border-style: dashed; }
+.tl-date {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+  margin-bottom: 3px;
+}
+.tl-item.pending .tl-date { color: var(--amber); }
+.tl-item.future .tl-date { color: var(--muted); }
+.tl-text {
+  font-size: 13px;
+  color: var(--text);
+}
+.tl-sub {
+  font-size: 11px;
+  color: var(--dim);
+  margin-top: 2px;
+}
+
+/* ── Metrics Grid ── */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  animation: fadeUp .75s ease-out;
+}
+.metric-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  text-align: center;
+  transition: border-color .2s;
+}
+.metric-card:hover { border-color: var(--border-hover); }
+.metric-icon {
+  font-size: 22px;
+  margin-bottom: 10px;
+  opacity: .7;
+}
+.metric-value {
+  font-family: var(--mono);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+.metric-label {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  margin-top: 8px;
+}
+.metric-sub {
+  font-size: 11px;
+  color: var(--dim);
+  margin-top: 4px;
+}
+
+/* ── Pipeline ── */
+.pipeline-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  animation: fadeUp .8s ease-out;
+}
+.pipeline-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  transition: border-color .2s;
+}
+.pipeline-card:hover { border-color: var(--border-hover); }
+.pipe-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 10px;
+}
+.pipe-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+.pipe-da {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--dim);
+}
+.pipe-row {
+  display: flex; gap: 8px; align-items: center;
+  margin-bottom: 6px;
+}
+.pipe-label {
+  font-size: 11px;
+  color: var(--muted);
+  min-width: 70px;
+}
+.pipe-value {
+  font-size: 12px;
+  color: var(--dim);
+}
+
+/* ── Controls ── */
+.controls-bar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  animation: fadeUp .85s ease-out;
+}
+.btn {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  cursor: pointer;
+  transition: all .2s;
+  letter-spacing: .3px;
+}
+.btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-dim);
+}
+.btn.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #080a0f;
+}
+.btn.primary:hover {
+  background: #0ea572;
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+.refresh-info {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* ── Animations ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .summary-bar { grid-template-columns: repeat(3, 1fr); }
+  .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+  .pipeline-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .summary-bar { grid-template-columns: repeat(2, 1fr); }
+  .stat-card .value { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="dash-header">
+    <h1>Directory Acquisition <span>/ PetHub Operations</span></h1>
+    <div class="header-right">
+      <div class="pulse-dot"></div>
+      <span class="header-time" id="clockEl"></span>
+    </div>
+  </div>
+
+  <!-- Summary Bar -->
+  <div class="section-label">Acquisition Summary</div>
+  <div class="summary-bar" id="summaryBar"></div>
+
+  <!-- Directory Table -->
+  <div class="section-label">Directory Status <span class="count" id="dirCount"></span></div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th data-sort="name">Directory <span class="sort-arrow">&#9650;</span></th>
+          <th data-sort="category">Category <span class="sort-arrow">&#9650;</span></th>
+          <th data-sort="da" class="sorted">DA <span class="sort-arrow">&#9660;</span></th>
+          <th data-sort="status">Status <span class="sort-arrow">&#9650;</span></th>
+          <th data-sort="linkType">Link Type <span class="sort-arrow">&#9650;</span></th>
+          <th data-sort="submitted">Submitted <span class="sort-arrow">&#9650;</span></th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody id="dirTableBody"></tbody>
+    </table>
+  </div>
+
+  <!-- Link Quality Metrics -->
+  <div class="section-label">Link Quality Metrics</div>
+  <div class="metrics-grid" id="metricsGrid"></div>
+
+  <!-- Timeline -->
+  <div class="section-label">Submission Timeline</div>
+  <div class="timeline-container" id="timelineContainer"></div>
+
+  <!-- Outreach Pipeline -->
+  <div class="section-label">Outreach Pipeline <span class="count" id="pipeCount"></span></div>
+  <div class="pipeline-grid" id="pipelineGrid"></div>
+
+  <!-- Controls -->
+  <div class="section-label">Controls</div>
+  <div class="controls-bar">
+    <button class="btn primary" onclick="location.reload()">Refresh Dashboard</button>
+    <button class="btn" onclick="exportCSV()">Export CSV</button>
+    <span class="refresh-info">Auto-refresh: 60s &middot; Last: <span id="lastRefresh"></span></span>
+  </div>
+
+</div>
+
+<script>
+// ── Data ──
+const directories = [
+  { name:'Yelp UK', url:'yelp.co.uk', category:'General', da:94, status:'not_started', linkType:'nofollow', submitted:null, approved:null, notes:'Highest DA - priority submission' },
+  { name:'Yell.com', url:'yell.com', category:'General', da:72, status:'not_started', linkType:'nofollow', submitted:null, approved:null, notes:'Major UK business directory' },
+  { name:'Bark.com', url:'bark.com', category:'Services', da:65, status:'not_started', linkType:'dofollow', submitted:null, approved:null, notes:'Service provider directory' },
+  { name:'FreeIndex', url:'freeindex.co.uk', category:'General', da:60, status:'not_started', linkType:'dofollow', submitted:null, approved:null, notes:'Free UK business listing' },
+  { name:'Thomson Local', url:'thomsonlocal.com', category:'General', da:55, status:'not_started', linkType:'nofollow', submitted:null, approved:null, notes:'Established UK directory' },
+  { name:'Cylex UK', url:'cylex-uk.co.uk', category:'General', da:50, status:'not_started', linkType:'dofollow', submitted:null, approved:null, notes:'International directory - UK branch' },
+  { name:'Hotfrog UK', url:'hotfrog.co.uk', category:'General', da:48, status:'not_started', linkType:'dofollow', submitted:null, approved:null, notes:'Business finder platform' },
+  { name:'Scoot', url:'scoot.co.uk', category:'General', da:45, status:'not_started', linkType:'nofollow', submitted:null, approved:null, notes:'UK search directory' },
+  { name:'VetClick', url:'vetclick.com', category:'Pet Industry', da:35, status:'not_started', linkType:'dofollow', submitted:null, approved:null, notes:'Veterinary and pet industry directory' },
+  { name:'PetProfessional.co.uk', url:'petprofessional.co.uk', category:'Pet Industry', da:30, status:'not_started', linkType:'dofollow', submitted:null, approved:null, notes:'Pet trade directory - high relevance' },
+  { name:'PetDirectory.co.uk', url:'petdirectory.co.uk', category:'Pet Industry', da:28, status:'not_started', linkType:'dofollow', submitted:null, approved:null, notes:'Niche pet directory - high relevance' },
+  { name:'UKPDA', url:'ukpda.co.uk', category:'Pet Industry', da:25, status:'not_started', linkType:'dofollow', submitted:null, approved:null, notes:'UK Pet Directory Association' },
+];
+
+const outreach = [
+  { name:'Cats.com', da:78, contactStatus:'Research', response:'—', linkStatus:'Not started', type:'Guest Post' },
+  { name:'Your Dog Magazine', da:52, contactStatus:'Research', response:'—', linkStatus:'Not started', type:'Content Partnership' },
+  { name:'Battersea Blog', da:70, contactStatus:'Research', response:'—', linkStatus:'Not started', type:'Resource Link' },
+  { name:'PDSA Insights', da:75, contactStatus:'Research', response:'—', linkStatus:'Not started', type:'Resource Link' },
+  { name:'PetForums.co.uk', da:45, contactStatus:'Research', response:'—', linkStatus:'Not started', type:'Community Link' },
+  { name:'The Kennel Club Blog', da:68, contactStatus:'Research', response:'—', linkStatus:'Not started', type:'Guest Post' },
+];
+
+const timeline = [
+  { date:'1 Jun 2026', text:'Directory Acquisition Dashboard launched', sub:'12 UK directories identified and prioritised', cls:'' },
+  { date:'1-3 Jun 2026', text:'Phase 1: High-DA submissions (Yelp, Yell, Bark, FreeIndex)', sub:'Priority: DA 60+ directories', cls:'pending' },
+  { date:'4-7 Jun 2026', text:'Phase 2: Mid-DA submissions (Thomson, Cylex, Hotfrog, Scoot)', sub:'Complete general directory coverage', cls:'future' },
+  { date:'8-10 Jun 2026', text:'Phase 3: Pet niche directories (VetClick, PetProfessional, PetDirectory, UKPDA)', sub:'High-relevance niche links', cls:'future' },
+  { date:'11-14 Jun 2026', text:'Phase 4: Outreach campaign begins', sub:'Guest posts and content partnerships', cls:'future' },
+  { date:'15 Jun 2026', text:'First acquisition report — expected 6-8 live links', sub:'Review and optimise strategy', cls:'future' },
+];
+
+// ── Render Functions ──
+
+function renderSummary() {
+  const total = directories.length;
+  const submitted = directories.filter(d => d.status !== 'not_started').length;
+  const approved = directories.filter(d => d.status === 'approved' || d.status === 'live').length;
+  const pending = directories.filter(d => d.status === 'submitted' || d.status === 'pending').length;
+  const rejected = directories.filter(d => d.status === 'rejected').length;
+  const live = directories.filter(d => d.status === 'live').length;
+
+  const cards = [
+    { label:'Total Directories', value:total, cls:'', pct:100 },
+    { label:'Submitted', value:submitted, cls:'blue', pct:(submitted/total*100) },
+    { label:'Approved', value:approved, cls:'green', pct:(approved/total*100) },
+    { label:'Pending Review', value:pending, cls:'amber', pct:(pending/total*100) },
+    { label:'Rejected', value:rejected, cls:'red', pct:(rejected/total*100) },
+    { label:'Live Links', value:live, cls:'cyan', pct:(live/total*100), highlight:true },
+  ];
+
+  document.getElementById('summaryBar').innerHTML = cards.map(c => `
+    <div class="stat-card${c.highlight ? ' highlight' : ''}">
+      <div class="label">${c.label}</div>
+      <div class="value ${c.cls}">${c.value}</div>
+      <div class="sub">${Math.round(c.pct)}% of target</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${c.pct}%"></div></div>
+    </div>
+  `).join('');
+}
+
+let sortCol = 'da', sortAsc = false;
+
+function renderTable() {
+  const sorted = [...directories].sort((a, b) => {
+    let va = a[sortCol], vb = b[sortCol];
+    if (typeof va === 'string') va = va.toLowerCase();
+    if (typeof vb === 'string') vb = vb.toLowerCase();
+    if (va === null) return 1;
+    if (vb === null) return -1;
+    if (va < vb) return sortAsc ? -1 : 1;
+    if (va > vb) return sortAsc ? 1 : -1;
+    return 0;
+  });
+
+  document.getElementById('dirCount').textContent = directories.length;
+  document.getElementById('dirTableBody').innerHTML = sorted.map(d => {
+    const statusCls = d.status === 'not_started' ? 'not-started' :
+                      d.status === 'pending' ? 'pending' :
+                      d.status === 'pending_review' ? 'pending' : d.status;
+    const statusLabel = d.status.replace(/_/g, ' ');
+    const daColor = d.da >= 70 ? 'var(--accent)' : d.da >= 50 ? 'var(--blue)' : d.da >= 30 ? 'var(--amber)' : 'var(--dim)';
+    const linkCls = d.linkType === 'dofollow' ? 'dofollow' : d.linkType === 'nofollow' ? 'nofollow' : 'unknown';
+    return `
+      <tr>
+        <td>
+          <div class="dir-name">${d.name}</div>
+          <div class="dir-url"><a href="https://${d.url}" target="_blank" rel="noopener">${d.url}</a></div>
+        </td>
+        <td><span style="font-size:12px;color:var(--dim)">${d.category}</span></td>
+        <td>
+          <div class="da-cell">
+            <span class="da-num" style="color:${daColor}">${d.da}</span>
+            <div class="da-bar"><div class="da-bar-fill" style="width:${d.da}%;background:${daColor}"></div></div>
+          </div>
+        </td>
+        <td><span class="badge ${statusCls}">${statusLabel}</span></td>
+        <td><span class="badge ${linkCls}">${d.linkType || '—'}</span></td>
+        <td><span style="font-family:var(--mono);font-size:11px;color:var(--dim)">${d.submitted || '—'}</span></td>
+        <td><span style="font-size:12px;color:var(--dim)">${d.notes || ''}</span></td>
+      </tr>`;
+  }).join('');
+}
+
+function renderMetrics() {
+  const liveLinks = directories.filter(d => d.status === 'live');
+  const approvedLinks = directories.filter(d => d.status === 'approved' || d.status === 'live');
+  const totalDA = approvedLinks.reduce((s, d) => s + d.da, 0);
+  const avgDA = approvedLinks.length ? Math.round(totalDA / approvedLinks.length) : 0;
+  const dofollow = approvedLinks.filter(d => d.linkType === 'dofollow').length;
+  const nofollow = approvedLinks.filter(d => d.linkType === 'nofollow').length;
+  const totalTarget = directories.reduce((s, d) => s + d.da, 0);
+
+  const cards = [
+    { icon:'&#9733;', value: totalDA, label:'Total DA Acquired', sub:`Target: ${totalTarget} from ${directories.length} dirs` },
+    { icon:'&#8709;', value: avgDA || '—', label:'Average DA', sub: approvedLinks.length ? `From ${approvedLinks.length} live links` : 'No live links yet' },
+    { icon:'&#8644;', value: dofollow || nofollow ? `${dofollow}:${nofollow}` : '—', label:'Dofollow : Nofollow', sub: `${directories.filter(d=>d.linkType==='dofollow').length} dofollow targets` },
+    { icon:'&#8599;', value: liveLinks.length * 5 || '—', label:'Est. Monthly Referrals', sub:'Based on DA-weighted estimates' },
+  ];
+
+  document.getElementById('metricsGrid').innerHTML = cards.map(c => `
+    <div class="metric-card">
+      <div class="metric-icon">${c.icon}</div>
+      <div class="metric-value">${c.value}</div>
+      <div class="metric-label">${c.label}</div>
+      <div class="metric-sub">${c.sub}</div>
+    </div>
+  `).join('');
+}
+
+function renderTimeline() {
+  document.getElementById('timelineContainer').innerHTML = `
+    <div class="timeline-track">
+      ${timeline.map(t => `
+        <div class="tl-item ${t.cls}">
+          <div class="tl-date">${t.date}</div>
+          <div class="tl-text">${t.text}</div>
+          <div class="tl-sub">${t.sub}</div>
+        </div>
+      `).join('')}
+    </div>`;
+}
+
+function renderPipeline() {
+  document.getElementById('pipeCount').textContent = outreach.length;
+  document.getElementById('pipelineGrid').innerHTML = outreach.map(o => `
+    <div class="pipeline-card">
+      <div class="pipe-header">
+        <span class="pipe-name">${o.name}</span>
+        <span class="pipe-da">DA ${o.da}</span>
+      </div>
+      <div class="pipe-row"><span class="pipe-label">Type</span><span class="badge not-started">${o.type}</span></div>
+      <div class="pipe-row"><span class="pipe-label">Contact</span><span class="pipe-value">${o.contactStatus}</span></div>
+      <div class="pipe-row"><span class="pipe-label">Response</span><span class="pipe-value">${o.response}</span></div>
+      <div class="pipe-row"><span class="pipe-label">Link</span><span class="badge not-started">${o.linkStatus}</span></div>
+    </div>
+  `).join('');
+}
+
+// ── Sorting ──
+document.querySelectorAll('thead th[data-sort]').forEach(th => {
+  th.addEventListener('click', () => {
+    const col = th.dataset.sort;
+    if (sortCol === col) sortAsc = !sortAsc;
+    else { sortCol = col; sortAsc = col === 'name'; }
+    document.querySelectorAll('thead th').forEach(t => t.classList.remove('sorted'));
+    th.classList.add('sorted');
+    th.querySelector('.sort-arrow').innerHTML = sortAsc ? '&#9650;' : '&#9660;';
+    renderTable();
+  });
+});
+
+// ── CSV Export ──
+function exportCSV() {
+  const rows = [['Directory','URL','Category','DA','Status','Link Type','Submitted','Notes']];
+  directories.forEach(d => rows.push([d.name, d.url, d.category, d.da, d.status, d.linkType, d.submitted||'', d.notes||'']));
+  const csv = rows.map(r => r.map(c => `"${c}"`).join(',')).join('\n');
+  const blob = new Blob([csv], { type:'text/csv' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'directory_acquisition.csv';
+  a.click();
+}
+
+// ── Clock ──
+function updateClock() {
+  const now = new Date();
+  document.getElementById('clockEl').textContent = now.toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit', second:'2-digit' });
+  document.getElementById('lastRefresh').textContent = now.toLocaleTimeString('en-GB', { hour:'2-digit', minute:'2-digit' });
+}
+
+// ── Init ──
+function init() {
+  renderSummary();
+  renderTable();
+  renderMetrics();
+  renderTimeline();
+  renderPipeline();
+  updateClock();
+}
+
+init();
+setInterval(updateClock, 1000);
+setInterval(() => location.reload(), 60000);
+</script>
+
+</body>
+</html>

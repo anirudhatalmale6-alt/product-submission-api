@@ -1,0 +1,367 @@
+PETHUB ONLINE - ENTERPRISE AUDIT REPORT
+========================================
+Date: 2026-06-01
+Auditor: Anirudha Talmale
+Scope: Read-only enterprise audit per Jason's Codex-Level audit plan
+Site: https://pethubonline.com
+Server: 167.99.198.145 (DigitalOcean, London)
+WordPress Hosting: WordPress.com (Automattic managed)
+
+========================================
+EXECUTIVE SUMMARY
+========================================
+
+Total findings: 28
+- Critical: 3
+- High: 7
+- Medium: 9
+- Low: 4
+- Informational (positive): 5
+
+The platform is fundamentally healthy with strong content architecture, proper affiliate compliance, and good security basics. The three critical issues are server resource exhaustion, slow dynamic page response times, and REST API user enumeration. All are fixable within 7 days.
+
+
+========================================
+SECTION 1: CRITICAL FINDINGS
+========================================
+
+[C-01] SERVER RESOURCE EXHAUSTION
+Classification: Confirmed Issue
+Affected: 167.99.198.145 (agent/dashboard server)
+Evidence:
+  - Load average: 4.90, 4.36, 4.40 on a SINGLE CPU
+  - Memory: 1.5GB used / 1.9GB total (79%)
+  - Swap: 601MB used / 2.0GB (30%)
+  - 9 Python agent processes running simultaneously
+Impact: Server instability, potential crashes, degraded dashboard performance, agent job failures under load
+Likely cause: Too many agent processes for a 1-CPU / 1.9GB droplet
+Recommended fix:
+  1. IMMEDIATE: Reduce concurrent agent processes from 9 to 4-5
+  2. 7-DAY: Upgrade droplet to 2 CPU / 4GB ($24/mo vs current ~$12/mo)
+  3. 30-DAY: Move to process manager (PM2/supervisor) with memory limits per process
+Priority: Critical - affects all backend operations
+
+[C-02] SLOW DYNAMIC PAGE RESPONSE (TTFB >2s)
+Classification: Confirmed Issue
+Affected: All WordPress post and category pages
+Evidence:
+  - Homepage TTFB: 63ms (cached by Batcache - GOOD)
+  - Post page TTFB: 2.20s (POOR)
+  - Category page TTFB: 1.97s (POOR)
+  - Google recommends TTFB under 800ms
+Impact: Poor Core Web Vitals (LCP), lower search rankings, higher bounce rate
+Likely cause: WordPress.com managed hosting cache misses on dynamic pages; 26 script tags on homepage adding weight; Jetpack + multiple plugins adding server-side processing time
+Recommended fix:
+  1. IMMEDIATE: Audit and reduce active plugins (15 is moderate but check for conflicts)
+  2. 7-DAY: Enable full-page caching for posts/categories (check Jetpack Boost settings)
+  3. 7-DAY: Reduce script tags - defer non-critical JS, combine where possible via Page Optimize plugin settings
+  4. 30-DAY: Consider WP Super Cache or LiteSpeed if hosting supports it
+Priority: Critical - directly impacts SEO rankings and user experience
+
+[C-03] REST API USER ENUMERATION
+Classification: Confirmed Issue
+Affected: https://pethubonline.com/wp-json/wp/v2/users
+Evidence: Public endpoint returns admin username "jasonsarah2026" without authentication
+Impact: Attacker can identify admin usernames for brute-force login attempts
+Likely cause: Default WordPress REST API behaviour - user endpoints are public
+Recommended fix:
+  1. IMMEDIATE: Add code to functions.php or WPCode to block unauthenticated /wp/v2/users requests
+  2. Code: add_filter('rest_authentication_errors', function($result) { if (!is_user_logged_in() && strpos($_SERVER['REQUEST_URI'], '/wp/v2/users') !== false) return new WP_Error('rest_forbidden', 'Access denied', array('status' => 403)); return $result; });
+Priority: Critical - security risk
+
+
+========================================
+SECTION 2: HIGH FINDINGS
+========================================
+
+[H-01] DMARC POLICY SET TO "NONE"
+Classification: Confirmed Issue
+Affected: Email deliverability for pethubonline.com
+Evidence: DNS TXT record: "v=DMARC1;p=none;"
+Impact: Emails from pethubonline.com are not protected from spoofing. Inbox providers may treat legitimate emails with lower trust.
+Recommended fix:
+  1. 7-DAY: Change DMARC policy to p=quarantine (monitor first)
+  2. 30-DAY: Move to p=reject after confirming all legitimate senders are in SPF/DKIM
+Priority: High
+
+[H-02] 6 DUPLICATE POST TITLES
+Classification: Confirmed Issue
+Affected: 6 post pairs with identical titles
+Evidence:
+  - "New Cat Owner Setup Guide" (2 copies)
+  - "Puppy Vaccination Timeline UK" (2 copies)
+  - "Puppy Feeding Schedule by Age" (2 copies)
+  - "Puppy Exercise Requirements Guide" (2 copies)
+  - "Crate Training Schedule UK" (2 copies)
+Impact: Keyword cannibalization, confusing search results, wasted crawl budget
+Recommended fix:
+  1. IMMEDIATE: Identify which copy is better, redirect the weaker one (301) to the stronger
+  2. Or merge content and redirect
+Priority: High - SEO impact
+
+[H-03] 28 EMPTY CATEGORIES
+Classification: Confirmed Issue
+Affected: 28 WordPress categories with 0 posts
+Evidence: Categories including Aquarium Decor, Aquariums & Tanks, Arthritis Care, Eco-Friendly Products, Filtration & Pumps, Grain-Free, Harnesses, Health & Wellbeing, etc.
+Impact: Thin/empty index pages, wasted crawl budget, poor user experience if linked
+Recommended fix:
+  1. 7-DAY: Set empty categories to noindex OR delete unused ones
+  2. Alternatively, use them for planned content expansion
+Priority: High
+
+[H-04] NO CHILD THEME IN USE
+Classification: Probable Issue
+Affected: Active theme is Astra v4.13.1 (parent theme directly)
+Evidence: No child theme detected. Only Astra (active), Assembler, and Twenty Twenty-Two listed.
+Impact: Any custom CSS/functions added to Astra will be overwritten on theme updates
+Recommended fix:
+  1. 7-DAY: Create an Astra child theme and move customizations there
+Priority: High
+
+[H-05] INACTIVE PLUGIN: MAILPOET
+Classification: Informational
+Affected: MailPoet v5.28.0 (inactive)
+Evidence: Plugin installed but not active. MailerLite is the active email platform.
+Impact: Security risk from unpatched inactive plugins; storage waste
+Recommended fix:
+  1. IMMEDIATE: Delete MailPoet if not needed (MailerLite is active)
+Priority: High
+
+[H-06] EXPOSED README.HTML AND LICENSE.TXT
+Classification: Confirmed Issue
+Affected: /readme.html and /license.txt return HTTP 200
+Evidence: These files disclose WordPress version and platform information
+Impact: Information disclosure aids targeted attacks
+Recommended fix:
+  1. IMMEDIATE: Block access via .htaccess or Complianz security settings
+  2. Or delete files (they'll return on WP updates on self-hosted, but managed hosting may differ)
+Priority: High
+
+[H-07] 1 POST IN TRASH
+Classification: Informational
+Affected: 1 trashed post
+Evidence: WP REST API reports 1 post in trash status
+Impact: Minor - should be permanently deleted or restored
+Recommended fix: Review and permanently delete
+Priority: High (cleanup)
+
+
+========================================
+SECTION 3: MEDIUM FINDINGS
+========================================
+
+[M-01] SSL CERTIFICATE EXPIRES IN 51 DAYS
+Classification: Needs Verification
+Affected: SSL cert for tls.automattic.com (Let's Encrypt E7)
+Evidence: notAfter=Jul 22 08:56:20 2026 GMT
+Impact: If not auto-renewed, site goes insecure
+Note: WordPress.com managed hosting typically auto-renews. Verify auto-renewal is configured.
+Priority: Medium
+
+[M-02] SERVER HAS 2 ADMIN ACCOUNTS
+Classification: Needs Verification
+Affected: WordPress user list
+Evidence:
+  - jasonsarah2026 (administrator) - registered 2026-04-23
+  - topdogwindowcleaning8c50b0de1d (administrator) - registered 2026-05-25
+Impact: Both have full admin access. Second account may be for a third party or old business.
+Recommended fix:
+  1. Verify if both admin accounts are needed
+  2. Consider downgrading second account to Editor role if it doesn't need full admin
+  3. Enable 2FA on both accounts
+Priority: Medium
+
+[M-03] 155 TAGS - POTENTIAL TAXONOMIC BLOAT
+Classification: Probable Issue
+Affected: Tag archive pages
+Evidence: 155 tags across 396 posts. Many may be sparsely used.
+Impact: Thin tag archive pages, wasted crawl budget
+Recommended fix: Audit tag usage. Remove/noindex tags with fewer than 3 posts.
+Priority: Medium
+
+[M-04] AGENT SERVER PORTS EXPOSED ON 0.0.0.0
+Classification: Probable Issue
+Affected: Ports 8100-8108 listening on all interfaces
+Evidence: ss -tlnp shows 9 Python processes on 0.0.0.0:8100-8108
+Note: UFW firewall is blocking external access (DENY rules seen for 8100-8102). Other ports (8103-8108) should also have explicit DENY rules.
+Recommended fix:
+  1. IMMEDIATE: Add UFW DENY rules for ports 8103-8108
+  2. Better: Bind agent processes to 127.0.0.1 instead of 0.0.0.0
+Priority: Medium
+
+[M-05] NO MISSING SECURITY HEADERS
+Classification: Confirmed Issue
+Affected: All pages
+Evidence: Missing headers: Content-Security-Policy, X-Content-Type-Options, X-Frame-Options, Permissions-Policy, Referrer-Policy
+Impact: Reduced browser-level security protections
+Note: WordPress.com managed hosting limits header customization. Some can be added via WPCode.
+Recommended fix: Add via WPCode where possible: X-Content-Type-Options: nosniff, Referrer-Policy: strict-origin-when-cross-origin
+Priority: Medium
+
+[M-06] HOMEPAGE 331KB HTML SIZE
+Classification: Probable Issue
+Affected: Homepage
+Evidence: 331,173 bytes of HTML (before compression). 26 script tags.
+Impact: Potential render delay, increased bandwidth
+Recommended fix: Audit Page Optimize plugin settings, defer non-critical scripts, lazy load below-fold content
+Priority: Medium
+
+[M-07] NO X-ROBOTS-TAG ON ATTACHMENT PAGES
+Classification: Needs Verification
+Affected: WordPress media attachment pages
+Evidence: Not verified but common issue - attachment pages can create thin content in index
+Recommended fix: Verify Rank Math is redirecting attachment pages to parent post (default setting)
+Priority: Medium
+
+[M-08] 9 DRAFT PAGES
+Classification: Informational
+Affected: 9 pages in draft status
+Evidence: WP REST API reports 9 draft pages
+Impact: None (drafts are not indexed). But review for abandoned content.
+Recommended fix: Review and publish, trash, or update as needed
+Priority: Medium
+
+[M-09] CRON SCHEDULE FOR CONTENT PUBLISHING
+Classification: Informational
+Affected: Server cron
+Evidence: scheduled_post.py runs twice daily (9 AM, 6 PM)
+Impact: Positive - automated publishing. Verify it's still needed/working correctly.
+Priority: Medium
+
+
+========================================
+SECTION 4: LOW FINDINGS
+========================================
+
+[L-01] AFFILIATE NOFOLLOW ATTRIBUTE CHECK
+Classification: Needs Verification
+Affected: Amazon affiliate links across all posts
+Evidence: Automated check flagged "nofollow_ok=False" but this may be a detection issue. The rel="nofollow sponsored" attribute may be on the <a> tag rather than within 200 chars before the URL string.
+Recommended fix: Manual verification of 5-10 posts to confirm rel attributes are correct on affiliate links
+Priority: Low
+
+[L-02] MULTIPLE INACTIVE THEMES
+Classification: Informational
+Affected: Assembler v0.0.119, Twenty Twenty-Two v2.1
+Evidence: Two inactive themes installed alongside active Astra
+Impact: Minor security surface increase
+Recommended fix: Delete inactive themes if not needed for fallback
+Priority: Low
+
+[L-03] SERVER SSH ON DEFAULT PORT 22
+Classification: Informational
+Affected: SSH access
+Evidence: sshd listening on port 22 on all interfaces
+Impact: Standard target for automated brute-force attempts
+Recommended fix: Consider moving SSH to non-standard port (e.g., 2222) or restricting to IP whitelist
+Priority: Low
+
+[L-04] BACKUP VERIFICATION NEEDED
+Classification: Needs Verification
+Affected: backup.sh cron at 3 AM daily, UpdraftPlus plugin active
+Evidence: Backup cron exists. UpdraftPlus is active. But restore has not been tested.
+Recommended fix:
+  1. Verify backup destinations (local only vs offsite?)
+  2. Test restore from backup to staging
+  3. Confirm UpdraftPlus sends backups to offsite storage (Google Drive, S3, etc.)
+Priority: Low
+
+
+========================================
+SECTION 5: POSITIVE FINDINGS (GOOD)
+========================================
+
+[G-01] CONTENT QUALITY EXCELLENT
+- 50/50 posts checked pass all structural checks (TOC, Author Box, FAQ, Trust Footer)
+- All posts have 4+ images
+- Amazon affiliate tags (pethubonline-21) present on all sampled posts
+- 396 published posts, 0 drafts, 0 pending - clean content pipeline
+
+[G-02] SECURITY BASICS SOLID
+- HSTS enabled (max-age=31536000)
+- XML-RPC returns 405 (blocked/restricted)
+- wp-login.php redirects (302) - login page not directly exposed
+- UFW firewall active with agent ports blocked
+- SPF record present and correct
+- Let's Encrypt SSL active
+
+[G-03] INFRASTRUCTURE WELL-ORGANIZED
+- Nginx reverse proxy active
+- Redis active for caching
+- PostgreSQL active for agent data
+- Brotli compression enabled
+- Jetpack CDN serving images via exactdn.com
+- EWWW Image Optimizer active for compression
+- Complianz GDPR/consent plugin active
+
+[G-04] SEO FUNDAMENTALS STRONG
+- Rank Math SEO active with metadata rendering correctly in HTML
+- Sitemap index working (4 child sitemaps)
+- robots.txt clean and standard
+- Internal linking present across all sampled posts
+- Structured data (LD+JSON) present on posts
+
+[G-05] AFFILIATE COMPLIANCE
+- Amazon Associates UK tag consistently applied
+- Affiliate disclosure present on all content posts
+- MailerLite email integration active
+- Revive Social (Tweet Old Post) active for social syndication
+
+
+========================================
+SECTION 6: FIX ROADMAP
+========================================
+
+IMMEDIATE (Today):
+1. Block REST API user enumeration [C-03]
+2. Delete MailPoet inactive plugin [H-05]
+3. Delete trashed post [H-07]
+4. Add UFW DENY rules for ports 8103-8108 [M-04]
+
+7-DAY FIXES:
+1. Upgrade server to 2 CPU / 4GB RAM [C-01]
+2. Improve post page TTFB - audit plugins, enable caching [C-02]
+3. Fix 6 duplicate titles (merge/redirect) [H-02]
+4. Set empty categories to noindex or delete [H-03]
+5. Create Astra child theme [H-04]
+6. Block readme.html and license.txt [H-06]
+7. Upgrade DMARC to p=quarantine [H-01]
+
+30-DAY IMPROVEMENTS:
+1. Reduce agent processes or implement resource limits [C-01]
+2. Audit and clean 155 tags [M-03]
+3. Add security headers where possible [M-05]
+4. Verify backup restore process [L-04]
+5. Review 9 draft pages [M-08]
+6. Verify affiliate link rel attributes [L-01]
+7. Delete unused inactive themes [L-02]
+8. Verify SSL auto-renewal [M-01]
+9. Review second admin account permissions [M-02]
+
+LONG-TERM SCALING:
+1. Consider dedicated hosting for WP if traffic exceeds 10K/day
+2. Implement CDN edge caching for dynamic pages
+3. Add uptime monitoring (UptimeRobot or similar)
+4. Implement automated affiliate link checking
+5. Set up Core Web Vitals monitoring dashboard
+6. Configure DMARC to p=reject after validation period
+
+
+========================================
+CREDENTIAL CLEANUP CHECKLIST
+========================================
+
+1. [ ] Rotate WordPress admin password (jasonsarah2026)
+2. [ ] Review second admin account (topdogwindowcleaning) - downgrade to Editor?
+3. [ ] Enable 2FA on all WordPress admin accounts
+4. [ ] Rotate SSH password for server (currently shared in project communications)
+5. [ ] Rotate Pexels API key (exposed in scripts)
+6. [ ] Review OpenAI API key access scope
+7. [ ] Rotate MailerLite API key
+8. [ ] Create dedicated API-only WP user for automated publishing (instead of using admin account)
+9. [ ] Remove application passwords no longer in use
+
+
+========================================
+END OF AUDIT REPORT
+========================================
