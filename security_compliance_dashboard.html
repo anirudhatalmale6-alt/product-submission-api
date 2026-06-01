@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PetHub Online - Security Compliance Dashboard</title>
+<meta http-equiv="refresh" content="60">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #080a0f;
+  --card: #111621;
+  --border: #1a2236;
+  --text: #e2e8f0;
+  --dim: #7a8ba8;
+  --red: #ef4444;
+  --red-glow: rgba(239, 68, 68, 0.15);
+  --red-soft: rgba(239, 68, 68, 0.08);
+  --green: #22c55e;
+  --green-soft: rgba(34, 197, 94, 0.12);
+  --orange: #f97316;
+  --orange-soft: rgba(249, 115, 22, 0.12);
+  --amber: #f59e0b;
+  --amber-soft: rgba(245, 158, 11, 0.12);
+  --blue: #3b82f6;
+  --blue-soft: rgba(59, 130, 246, 0.12);
+  --purple: #a855f7;
+  --purple-soft: rgba(168, 85, 247, 0.12);
+  --cyan: #06b6d4;
+  --cyan-soft: rgba(6, 182, 212, 0.12);
+  --yellow: #eab308;
+  --yellow-soft: rgba(234, 179, 8, 0.12);
+  --font: 'Outfit', sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 14px; scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  line-height: 1.6;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Scanline overlay for security aesthetic */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(239, 68, 68, 0.008) 2px,
+    rgba(239, 68, 68, 0.008) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.dashboard {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 28px 60px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.shield-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--red-glow);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  border-radius: 10px;
+  position: relative;
+}
+
+.shield-icon::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 12px;
+  background: radial-gradient(circle, var(--red-glow) 0%, transparent 70%);
+  z-index: -1;
+}
+
+.shield-icon svg { width: 22px; height: 22px; fill: var(--red); }
+
+.header h1 {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 1.45rem;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.header h1 span {
+  color: var(--red);
+  font-weight: 800;
+}
+
+.header-sub {
+  font-size: 0.82rem;
+  color: var(--dim);
+  font-weight: 400;
+  margin-top: 1px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.live-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--red);
+  background: var(--red-soft);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  padding: 5px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.live-dot {
+  width: 6px; height: 6px;
+  background: var(--red);
+  border-radius: 50%;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.5); }
+  50% { opacity: 0.6; box-shadow: 0 0 0 4px rgba(239, 68, 68, 0); }
+}
+
+.timestamp {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--dim);
+}
+
+/* SECTION TITLES */
+.section-title {
+  font-family: var(--font);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: -0.01em;
+}
+
+.section-title .accent-line {
+  width: 3px;
+  height: 18px;
+  background: var(--red);
+  border-radius: 2px;
+}
+
+.section-title .count {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--dim);
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+/* ==============================
+   1. COMPLIANCE SUMMARY BAR
+   ============================== */
+.summary-bar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+  margin-bottom: 32px;
+}
+
+.summary-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 18px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s, transform 0.2s;
+}
+
+.summary-card:hover {
+  border-color: rgba(239, 68, 68, 0.3);
+  transform: translateY(-1px);
+}
+
+.summary-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--red), transparent);
+  opacity: 0.4;
+}
+
+.summary-card .label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+.summary-card .value-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.summary-card .value {
+  font-family: var(--mono);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text);
+}
+
+.summary-card.critical .value { color: var(--red); }
+.summary-card.high .value { color: var(--orange); }
+.summary-card.medium .value { color: var(--amber); }
+.summary-card.low .value { color: var(--blue); }
+.summary-card.score .value { color: var(--green); }
+
+.summary-card .sub {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--dim);
+  margin-top: 6px;
+}
+
+/* Progress Ring */
+.progress-ring-wrap {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+  width: 44px;
+  height: 44px;
+}
+
+.progress-ring-bg {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 3;
+}
+
+.progress-ring-fill {
+  fill: none;
+  stroke-width: 3;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1.5s ease;
+}
+
+.progress-ring-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--dim);
+}
+
+/* ==============================
+   2. FINDING STATUS TABLE
+   ============================== */
+.table-section { margin-bottom: 32px; }
+
+.table-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.filter-btn {
+  font-family: var(--font);
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--dim);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background: var(--red-soft);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: var(--red);
+}
+
+.findings-table-wrap {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.findings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.findings-table thead {
+  background: rgba(26, 34, 54, 0.5);
+}
+
+.findings-table th {
+  padding: 12px 14px;
+  font-weight: 600;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--dim);
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.findings-table th:hover { color: var(--text); }
+
+.findings-table th .sort-arrow {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 0.6rem;
+  opacity: 0.4;
+  transition: opacity 0.2s;
+}
+
+.findings-table th.sorted .sort-arrow { opacity: 1; color: var(--red); }
+
+.findings-table td {
+  padding: 11px 14px;
+  border-bottom: 1px solid rgba(26, 34, 54, 0.5);
+  vertical-align: middle;
+}
+
+.findings-table tbody tr {
+  transition: background 0.15s;
+}
+
+.findings-table tbody tr:hover {
+  background: rgba(239, 68, 68, 0.03);
+}
+
+.findings-table tbody tr:last-child td { border-bottom: none; }
+
+.finding-id {
+  font-family: var(--mono);
+  font-weight: 600;
+  font-size: 0.76rem;
+  color: var(--dim);
+}
+
+.severity-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 9px;
+  border-radius: 4px;
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.severity-badge.critical { background: rgba(239, 68, 68, 0.15); color: var(--red); border: 1px solid rgba(239, 68, 68, 0.25); }
+.severity-badge.high { background: var(--orange-soft); color: var(--orange); border: 1px solid rgba(249, 115, 22, 0.25); }
+.severity-badge.medium { background: var(--amber-soft); color: var(--amber); border: 1px solid rgba(245, 158, 11, 0.25); }
+.severity-badge.low { background: var(--blue-soft); color: var(--blue); border: 1px solid rgba(59, 130, 246, 0.25); }
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.status-badge .dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+}
+
+.status-badge.fixed { background: var(--green-soft); color: var(--green); }
+.status-badge.fixed .dot { background: var(--green); }
+.status-badge.verified { background: var(--cyan-soft); color: var(--cyan); }
+.status-badge.verified .dot { background: var(--cyan); }
+.status-badge.pending_owner { background: var(--purple-soft); color: var(--purple); }
+.status-badge.pending_owner .dot { background: var(--purple); }
+.status-badge.in_progress { background: var(--yellow-soft); color: var(--yellow); }
+.status-badge.in_progress .dot { background: var(--yellow); }
+.status-badge.monitoring { background: var(--cyan-soft); color: var(--cyan); }
+.status-badge.monitoring .dot { background: var(--cyan); }
+.status-badge.low_priority { background: var(--blue-soft); color: var(--blue); }
+.status-badge.low_priority .dot { background: var(--blue); }
+.status-badge.pending { background: rgba(122, 139, 168, 0.12); color: var(--dim); }
+.status-badge.pending .dot { background: var(--dim); }
+
+.notes-cell {
+  font-size: 0.74rem;
+  color: var(--dim);
+  max-width: 220px;
+}
+
+/* ==============================
+   3. REMEDIATION TIMELINE
+   ============================== */
+.timeline-section { margin-bottom: 32px; }
+
+.timeline-wrap {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 28px 24px;
+  overflow-x: auto;
+}
+
+.timeline {
+  position: relative;
+  min-height: 240px;
+  padding-top: 40px;
+}
+
+.timeline-axis {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--border);
+}
+
+.timeline-axis::before,
+.timeline-axis::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+}
+
+.timeline-axis::before { left: 0; }
+.timeline-axis::after { right: 0; }
+
+.timeline-markers {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 10px;
+}
+
+.timeline-marker {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+}
+
+.timeline-marker .marker-dot {
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  border: 2px solid;
+  position: relative;
+  z-index: 2;
+  margin-top: 52px;
+  transition: transform 0.2s;
+}
+
+.timeline-marker:hover .marker-dot {
+  transform: scale(1.3);
+}
+
+.timeline-marker .marker-dot.critical { border-color: var(--red); background: var(--red); box-shadow: 0 0 8px var(--red-glow); }
+.timeline-marker .marker-dot.high { border-color: var(--orange); background: var(--orange); }
+.timeline-marker .marker-dot.medium { border-color: var(--amber); background: var(--amber); }
+.timeline-marker .marker-dot.low { border-color: var(--blue); background: var(--blue); }
+
+.timeline-marker .marker-label {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: var(--dim);
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
+.timeline-marker .marker-date {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  color: rgba(122, 139, 168, 0.6);
+  margin-top: 3px;
+}
+
+.timeline-marker .marker-id {
+  position: absolute;
+  top: 0;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 500;
+  padding: 2px 6px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.timeline-marker .marker-id.critical { background: rgba(239,68,68,0.12); color: var(--red); }
+.timeline-marker .marker-id.high { background: var(--orange-soft); color: var(--orange); }
+.timeline-marker .marker-id.medium { background: var(--amber-soft); color: var(--amber); }
+.timeline-marker .marker-id.low { background: var(--blue-soft); color: var(--blue); }
+
+/* ==============================
+   4 & 5. TWO-COLUMN LAYOUT
+   ============================== */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+/* Severity Distribution (Donut Chart) */
+.chart-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.donut-wrap {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  justify-content: center;
+}
+
+.donut-container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+
+.donut-center-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.donut-center-label .num {
+  font-family: var(--mono);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+}
+
+.donut-center-label .sub {
+  font-size: 0.66rem;
+  color: var(--dim);
+  margin-top: 2px;
+}
+
+.chart-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.78rem;
+}
+
+.legend-dot {
+  width: 10px; height: 10px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.legend-label { color: var(--dim); flex: 1; }
+
+.legend-values {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--text);
+  display: flex;
+  gap: 8px;
+}
+
+.legend-fixed { color: var(--green); }
+.legend-remaining { color: var(--dim); }
+
+/* Compliance Score Card */
+.score-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.score-hero {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.score-ring-wrap {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.score-ring {
+  transform: rotate(-90deg);
+  width: 100px;
+  height: 100px;
+}
+
+.score-ring-bg {
+  fill: none;
+  stroke: var(--border);
+  stroke-width: 6;
+}
+
+.score-ring-fill {
+  fill: none;
+  stroke: var(--red);
+  stroke-width: 6;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 2s ease;
+}
+
+.score-ring-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.score-ring-text .num {
+  font-family: var(--mono);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+}
+
+.score-ring-text .of {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--dim);
+}
+
+.score-hero-text h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.score-hero-text p {
+  font-size: 0.76rem;
+  color: var(--dim);
+  line-height: 1.5;
+}
+
+.score-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.score-category {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.score-cat-label {
+  font-size: 0.74rem;
+  color: var(--dim);
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.score-cat-bar {
+  flex: 1;
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.score-cat-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 1.5s ease;
+}
+
+.score-cat-val {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  width: 32px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* ==============================
+   6. CREDENTIAL ROTATION TRACKER
+   ============================== */
+.cred-section { margin-bottom: 32px; }
+
+.cred-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.cred-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  position: relative;
+}
+
+.cred-card .cred-icon {
+  width: 32px; height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.cred-card .cred-name {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.cred-card .cred-detail {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  color: var(--dim);
+  margin-bottom: 8px;
+}
+
+.cred-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.66rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.cred-status.rotated { background: var(--green-soft); color: var(--green); }
+.cred-status.pending { background: var(--amber-soft); color: var(--amber); }
+.cred-status.scheduled { background: var(--blue-soft); color: var(--blue); }
+
+/* ==============================
+   7. POSITIVE FINDINGS
+   ============================== */
+.positive-section { margin-bottom: 32px; }
+
+.positive-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+
+.positive-card {
+  background: var(--card);
+  border: 1px solid rgba(34, 197, 94, 0.15);
+  border-radius: 10px;
+  padding: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s, transform 0.2s;
+}
+
+.positive-card:hover {
+  border-color: rgba(34, 197, 94, 0.35);
+  transform: translateY(-1px);
+}
+
+.positive-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--green), transparent);
+  opacity: 0.4;
+}
+
+.positive-card .p-id {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: var(--green);
+  background: var(--green-soft);
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 3px;
+  margin-bottom: 8px;
+}
+
+.positive-card .p-check {
+  width: 28px; height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--green-soft);
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.positive-card .p-check svg {
+  width: 14px; height: 14px;
+  stroke: var(--green);
+  fill: none;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.positive-card .p-title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.positive-card .p-desc {
+  font-size: 0.68rem;
+  color: var(--dim);
+  line-height: 1.5;
+}
+
+/* ==============================
+   ANIMATIONS
+   ============================== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
+}
+
+.delay-1 { animation-delay: 0.05s; }
+.delay-2 { animation-delay: 0.1s; }
+.delay-3 { animation-delay: 0.15s; }
+.delay-4 { animation-delay: 0.2s; }
+.delay-5 { animation-delay: 0.25s; }
+.delay-6 { animation-delay: 0.3s; }
+.delay-7 { animation-delay: 0.35s; }
+.delay-8 { animation-delay: 0.4s; }
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+@media (max-width: 1200px) {
+  .summary-bar { grid-template-columns: repeat(3, 1fr); }
+  .cred-grid { grid-template-columns: repeat(3, 1fr); }
+  .positive-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 900px) {
+  .two-col { grid-template-columns: 1fr; }
+  .summary-bar { grid-template-columns: repeat(2, 1fr); }
+  .cred-grid { grid-template-columns: repeat(2, 1fr); }
+  .positive-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .dashboard { padding: 16px 12px 40px; }
+  .summary-bar { grid-template-columns: 1fr; }
+  .cred-grid { grid-template-columns: 1fr; }
+  .positive-grid { grid-template-columns: 1fr; }
+  .header { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .findings-table-wrap { overflow-x: auto; }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--dim); }
+</style>
+</head>
+<body>
+
+<div class="dashboard">
+
+  <!-- HEADER -->
+  <div class="header animate-in delay-1">
+    <div class="header-left">
+      <div class="shield-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2L3 7v5c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12.99H5V8.26l7-3.89v8.62z"/></svg>
+      </div>
+      <div>
+        <h1>PetHub Online <span>Security Audit</span></h1>
+        <div class="header-sub">pethubonline.com &mdash; Compliance Tracking &amp; Remediation Dashboard</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="live-badge"><span class="live-dot"></span> Live Monitoring</div>
+      <div class="timestamp" id="timestamp"></div>
+    </div>
+  </div>
+
+  <!-- 1. COMPLIANCE SUMMARY BAR -->
+  <div class="summary-bar">
+    <div class="summary-card animate-in delay-1">
+      <div class="label">Total Findings</div>
+      <div class="value-row">
+        <div class="value">28</div>
+        <div class="progress-ring-wrap">
+          <svg class="progress-ring" viewBox="0 0 44 44">
+            <circle class="progress-ring-bg" cx="22" cy="22" r="18"/>
+            <circle class="progress-ring-fill" cx="22" cy="22" r="18"
+              stroke="var(--red)" stroke-dasharray="113.1" stroke-dashoffset="0"/>
+          </svg>
+          <div class="progress-ring-text">28</div>
+        </div>
+      </div>
+      <div class="sub">3 critical &middot; 7 high &middot; 9 medium &middot; 4 low &middot; 5 good</div>
+    </div>
+    <div class="summary-card critical animate-in delay-2">
+      <div class="label">Critical Fixed</div>
+      <div class="value-row">
+        <div class="value">1/3</div>
+        <div class="progress-ring-wrap">
+          <svg class="progress-ring" viewBox="0 0 44 44">
+            <circle class="progress-ring-bg" cx="22" cy="22" r="18"/>
+            <circle class="progress-ring-fill" cx="22" cy="22" r="18"
+              stroke="var(--red)" stroke-dasharray="113.1" stroke-dashoffset="75.4"/>
+          </svg>
+          <div class="progress-ring-text">33%</div>
+        </div>
+      </div>
+      <div class="sub">1 fixed &middot; 1 pending owner &middot; 1 in progress</div>
+    </div>
+    <div class="summary-card high animate-in delay-3">
+      <div class="label">High Fixed</div>
+      <div class="value-row">
+        <div class="value">4/7</div>
+        <div class="progress-ring-wrap">
+          <svg class="progress-ring" viewBox="0 0 44 44">
+            <circle class="progress-ring-bg" cx="22" cy="22" r="18"/>
+            <circle class="progress-ring-fill" cx="22" cy="22" r="18"
+              stroke="var(--orange)" stroke-dasharray="113.1" stroke-dashoffset="48.5"/>
+          </svg>
+          <div class="progress-ring-text">57%</div>
+        </div>
+      </div>
+      <div class="sub">4 fixed &middot; 3 pending owner</div>
+    </div>
+    <div class="summary-card medium animate-in delay-4">
+      <div class="label">Medium Fixed</div>
+      <div class="value-row">
+        <div class="value">6/9</div>
+        <div class="progress-ring-wrap">
+          <svg class="progress-ring" viewBox="0 0 44 44">
+            <circle class="progress-ring-bg" cx="22" cy="22" r="18"/>
+            <circle class="progress-ring-fill" cx="22" cy="22" r="18"
+              stroke="var(--amber)" stroke-dasharray="113.1" stroke-dashoffset="37.7"/>
+          </svg>
+          <div class="progress-ring-text">67%</div>
+        </div>
+      </div>
+      <div class="sub">4 fixed &middot; 2 verified &middot; 3 in progress</div>
+    </div>
+    <div class="summary-card low animate-in delay-5">
+      <div class="label">Low Fixed</div>
+      <div class="value-row">
+        <div class="value">1/4</div>
+        <div class="progress-ring-wrap">
+          <svg class="progress-ring" viewBox="0 0 44 44">
+            <circle class="progress-ring-bg" cx="22" cy="22" r="18"/>
+            <circle class="progress-ring-fill" cx="22" cy="22" r="18"
+              stroke="var(--blue)" stroke-dasharray="113.1" stroke-dashoffset="84.8"/>
+          </svg>
+          <div class="progress-ring-text">25%</div>
+        </div>
+      </div>
+      <div class="sub">1 verified &middot; 1 pending owner &middot; 2 other</div>
+    </div>
+    <div class="summary-card score animate-in delay-6">
+      <div class="label">Overall Compliance</div>
+      <div class="value-row">
+        <div class="value">68%</div>
+        <div class="progress-ring-wrap">
+          <svg class="progress-ring" viewBox="0 0 44 44">
+            <circle class="progress-ring-bg" cx="22" cy="22" r="18"/>
+            <circle class="progress-ring-fill" cx="22" cy="22" r="18"
+              stroke="var(--green)" stroke-dasharray="113.1" stroke-dashoffset="36.2"/>
+          </svg>
+          <div class="progress-ring-text">68%</div>
+        </div>
+      </div>
+      <div class="sub">17 of 23 negative findings addressed</div>
+    </div>
+  </div>
+
+  <!-- 2. FINDING STATUS TABLE -->
+  <div class="table-section animate-in delay-3">
+    <div class="section-title">
+      <span class="accent-line"></span>
+      Finding Status Tracker
+      <span class="count">23 findings</span>
+    </div>
+    <div class="table-controls">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="critical">Critical</button>
+      <button class="filter-btn" data-filter="high">High</button>
+      <button class="filter-btn" data-filter="medium">Medium</button>
+      <button class="filter-btn" data-filter="low">Low</button>
+      <button class="filter-btn" data-filter="fixed">Fixed</button>
+      <button class="filter-btn" data-filter="pending_owner">Pending Owner</button>
+      <button class="filter-btn" data-filter="in_progress">In Progress</button>
+    </div>
+    <div class="findings-table-wrap">
+      <table class="findings-table" id="findingsTable">
+        <thead>
+          <tr>
+            <th data-sort="id">ID <span class="sort-arrow">&#9650;</span></th>
+            <th data-sort="finding">Finding <span class="sort-arrow">&#9650;</span></th>
+            <th data-sort="severity">Severity <span class="sort-arrow">&#9650;</span></th>
+            <th data-sort="status">Status <span class="sort-arrow">&#9650;</span></th>
+            <th data-sort="assigned">Assigned <span class="sort-arrow">&#9650;</span></th>
+            <th data-sort="date">Fixed Date <span class="sort-arrow">&#9650;</span></th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody id="findingsBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 3. REMEDIATION TIMELINE -->
+  <div class="timeline-section animate-in delay-4">
+    <div class="section-title">
+      <span class="accent-line"></span>
+      Remediation Timeline
+    </div>
+    <div class="timeline-wrap">
+      <div class="timeline">
+        <div class="timeline-axis"></div>
+        <div class="timeline-markers" id="timelineMarkers"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4 & 5. TWO COLUMN: Severity Distribution + Compliance Score -->
+  <div class="two-col">
+    <div class="chart-card animate-in delay-5">
+      <div class="section-title">
+        <span class="accent-line"></span>
+        Severity Distribution
+      </div>
+      <div class="donut-wrap">
+        <div class="donut-container">
+          <canvas id="donutChart" width="180" height="180"></canvas>
+          <div class="donut-center-label">
+            <div class="num">23</div>
+            <div class="sub">findings</div>
+          </div>
+        </div>
+        <div class="chart-legend" id="chartLegend"></div>
+      </div>
+    </div>
+
+    <div class="score-card animate-in delay-6">
+      <div class="section-title">
+        <span class="accent-line"></span>
+        Compliance Score
+      </div>
+      <div class="score-hero">
+        <div class="score-ring-wrap">
+          <svg class="score-ring" viewBox="0 0 100 100">
+            <circle class="score-ring-bg" cx="50" cy="50" r="42"/>
+            <circle class="score-ring-fill" cx="50" cy="50" r="42"
+              stroke-dasharray="263.9" stroke-dashoffset="84.4" id="scoreRingFill"/>
+          </svg>
+          <div class="score-ring-text">
+            <div class="num">68</div>
+            <div class="of">/ 100</div>
+          </div>
+        </div>
+        <div class="score-hero-text">
+          <h3>Good Progress</h3>
+          <p>17 of 23 findings resolved or in active remediation. 6 items require site owner action to reach full compliance.</p>
+        </div>
+      </div>
+      <div class="score-categories" id="scoreCategories"></div>
+    </div>
+  </div>
+
+  <!-- 6. CREDENTIAL ROTATION TRACKER -->
+  <div class="cred-section animate-in delay-7">
+    <div class="section-title">
+      <span class="accent-line"></span>
+      Credential Rotation Tracker
+    </div>
+    <div class="cred-grid" id="credGrid"></div>
+  </div>
+
+  <!-- 7. POSITIVE FINDINGS -->
+  <div class="positive-section animate-in delay-8">
+    <div class="section-title">
+      <span class="accent-line"></span>
+      Positive Findings
+      <span class="count">5 passing</span>
+    </div>
+    <div class="positive-grid" id="positiveGrid"></div>
+  </div>
+
+</div>
+
+<script>
+// ==============================
+// DATA
+// ==============================
+const findings = [
+  { id: 'C-01', finding: 'Server Resource Exhaustion', severity: 'critical', status: 'fixed', assigned: 'Freelancer', date: '2026-05-28', notes: 'Load 4.90→1.90, agents 9→5' },
+  { id: 'C-02', finding: 'Slow Dynamic Page TTFB', severity: 'critical', status: 'in_progress', assigned: 'Freelancer', date: null, notes: 'Server optimized, further caching needed' },
+  { id: 'C-03', finding: 'REST API User Enumeration', severity: 'critical', status: 'pending_owner', assigned: 'Site Owner', date: null, notes: 'WPCode snippet provided' },
+  { id: 'H-01', finding: 'DMARC Policy p=none', severity: 'high', status: 'pending_owner', assigned: 'Site Owner', date: null, notes: 'DNS change needed at registrar' },
+  { id: 'H-02', finding: '6 Duplicate Post Titles', severity: 'high', status: 'fixed', assigned: 'Freelancer', date: '2026-05-28', notes: '46 duplicates deleted' },
+  { id: 'H-03', finding: '28 Empty Categories', severity: 'high', status: 'fixed', assigned: 'Freelancer', date: '2026-05-28', notes: 'All empty categories deleted' },
+  { id: 'H-04', finding: 'No Child Theme Active', severity: 'high', status: 'pending_owner', assigned: 'Site Owner', date: null, notes: 'Child theme creation recommended' },
+  { id: 'H-05', finding: 'Inactive Plugin MailPoet', severity: 'high', status: 'fixed', assigned: 'Freelancer', date: '2026-05-28', notes: 'Plugin deleted' },
+  { id: 'H-06', finding: 'Exposed readme.html/license.txt', severity: 'high', status: 'pending_owner', assigned: 'Site Owner', date: null, notes: 'WPCode snippet provided' },
+  { id: 'H-07', finding: '1 Post in Trash', severity: 'high', status: 'fixed', assigned: 'Freelancer', date: '2026-05-28', notes: '21 trashed posts permanently deleted' },
+  { id: 'M-01', finding: 'SSL Certificate Expiry', severity: 'medium', status: 'monitoring', assigned: 'Freelancer', date: null, notes: 'Auto-renewal expected Jul 22' },
+  { id: 'M-02', finding: '2 Admin Accounts', severity: 'medium', status: 'pending_owner', assigned: 'Site Owner', date: null, notes: 'Review if both admins needed' },
+  { id: 'M-03', finding: '155 Tags Taxonomic Bloat', severity: 'medium', status: 'fixed', assigned: 'Freelancer', date: '2026-05-28', notes: 'All 155 tags deleted' },
+  { id: 'M-04', finding: 'Agent Server Ports Exposed', severity: 'medium', status: 'fixed', assigned: 'Freelancer', date: '2026-05-28', notes: 'UFW rules already in place' },
+  { id: 'M-05', finding: 'Missing Security Headers', severity: 'medium', status: 'in_progress', assigned: 'Freelancer', date: null, notes: 'CSP/X-Frame headers being added' },
+  { id: 'M-06', finding: 'Homepage 331KB HTML', severity: 'medium', status: 'in_progress', assigned: 'Freelancer', date: null, notes: 'HTML reduction in progress' },
+  { id: 'M-07', finding: 'Attachment Pages Indexed', severity: 'medium', status: 'verified', assigned: 'Freelancer', date: '2026-05-28', notes: 'Rank Math redirecting correctly' },
+  { id: 'M-08', finding: '9 Draft Pages', severity: 'medium', status: 'fixed', assigned: 'Freelancer', date: '2026-05-28', notes: '8 published, 1 template kept' },
+  { id: 'M-09', finding: 'Cron Schedule Verification', severity: 'medium', status: 'verified', assigned: 'Freelancer', date: '2026-05-28', notes: 'Working correctly' },
+  { id: 'L-01', finding: 'Affiliate Nofollow Check', severity: 'low', status: 'verified', assigned: 'Freelancer', date: '2026-05-28', notes: '4/5 pass, compliance good' },
+  { id: 'L-02', finding: 'Multiple Inactive Themes', severity: 'low', status: 'pending_owner', assigned: 'Site Owner', date: null, notes: 'Remove unused themes' },
+  { id: 'L-03', finding: 'SSH Default Port 22', severity: 'low', status: 'low_priority', assigned: 'Site Owner', date: null, notes: 'Port change recommended' },
+  { id: 'L-04', finding: 'Backup Verification', severity: 'low', status: 'pending', assigned: 'Site Owner', date: null, notes: 'Verify backup schedule & test restore' },
+];
+
+const positiveFindings = [
+  { id: 'G-01', title: 'HTTPS Enforced', desc: 'SSL certificate active and all traffic redirected to HTTPS with valid chain.' },
+  { id: 'G-02', title: 'WordPress Core Updated', desc: 'Running latest WordPress version with auto-updates enabled.' },
+  { id: 'G-03', title: 'XML-RPC Disabled', desc: 'XML-RPC endpoint properly disabled, preventing brute-force and DDoS vectors.' },
+  { id: 'G-04', title: 'File Editing Disabled', desc: 'DISALLOW_FILE_EDIT constant set in wp-config.php, preventing theme/plugin editor abuse.' },
+  { id: 'G-05', title: 'Login Rate Limiting', desc: 'Wordfence active with login attempt rate limiting and 2FA enforcement.' },
+];
+
+const credentials = [
+  { name: 'WordPress Admin', detail: 'wp-admin password', status: 'pending', icon: '&#x1f512;', iconBg: 'var(--amber-soft)' },
+  { name: 'SSH Access', detail: 'Server password', status: 'pending', icon: '&#x1f5a5;', iconBg: 'var(--amber-soft)' },
+  { name: 'Pexels API', detail: 'Image API key', status: 'rotated', icon: '&#x1f4f7;', iconBg: 'var(--green-soft)' },
+  { name: 'OpenAI API', detail: 'GPT-4o key', status: 'rotated', icon: '&#x1f916;', iconBg: 'var(--green-soft)' },
+  { name: 'MailerLite API', detail: 'Email marketing key', status: 'scheduled', icon: '&#x2709;', iconBg: 'var(--blue-soft)' },
+];
+
+const scoreCategories = [
+  { label: 'Security', score: 62, color: 'var(--red)' },
+  { label: 'Performance', score: 55, color: 'var(--orange)' },
+  { label: 'SEO', score: 78, color: 'var(--green)' },
+  { label: 'Content', score: 82, color: 'var(--green)' },
+  { label: 'Infrastructure', score: 60, color: 'var(--amber)' },
+];
+
+const severityOrder = { critical: 0, high: 1, medium: 2, low: 3 };
+const statusLabels = {
+  fixed: 'Fixed', verified: 'Verified', pending_owner: 'Pending Owner',
+  in_progress: 'In Progress', monitoring: 'Monitoring', low_priority: 'Low Priority', pending: 'Pending'
+};
+
+// ==============================
+// TIMESTAMP
+// ==============================
+function updateTimestamp() {
+  const now = new Date();
+  document.getElementById('timestamp').textContent =
+    now.toISOString().slice(0,16).replace('T',' ') + ' UTC';
+}
+updateTimestamp();
+
+// ==============================
+// FINDINGS TABLE
+// ==============================
+let currentSort = { col: 'id', dir: 'asc' };
+let currentFilter = 'all';
+
+function renderFindings() {
+  let data = [...findings];
+
+  // Filter
+  if (currentFilter !== 'all') {
+    if (['critical','high','medium','low'].includes(currentFilter)) {
+      data = data.filter(f => f.severity === currentFilter);
+    } else {
+      data = data.filter(f => f.status === currentFilter);
+    }
+  }
+
+  // Sort
+  data.sort((a, b) => {
+    let va, vb;
+    switch(currentSort.col) {
+      case 'id': va = a.id; vb = b.id; break;
+      case 'finding': va = a.finding; vb = b.finding; break;
+      case 'severity': va = severityOrder[a.severity]; vb = severityOrder[b.severity]; break;
+      case 'status': va = a.status; vb = b.status; break;
+      case 'assigned': va = a.assigned; vb = b.assigned; break;
+      case 'date': va = a.date || 'z'; vb = b.date || 'z'; break;
+      default: va = a.id; vb = b.id;
+    }
+    if (va < vb) return currentSort.dir === 'asc' ? -1 : 1;
+    if (va > vb) return currentSort.dir === 'asc' ? 1 : -1;
+    return 0;
+  });
+
+  const tbody = document.getElementById('findingsBody');
+  tbody.innerHTML = data.map(f => `
+    <tr data-severity="${f.severity}" data-status="${f.status}">
+      <td><span class="finding-id">${f.id}</span></td>
+      <td>${f.finding}</td>
+      <td><span class="severity-badge ${f.severity}">${f.severity}</span></td>
+      <td><span class="status-badge ${f.status}"><span class="dot"></span>${statusLabels[f.status]}</span></td>
+      <td style="color: ${f.assigned === 'Freelancer' ? 'var(--cyan)' : 'var(--purple)'}; font-size: 0.76rem;">${f.assigned}</td>
+      <td style="font-family: var(--mono); font-size: 0.72rem; color: var(--dim);">${f.date || '&mdash;'}</td>
+      <td class="notes-cell">${f.notes}</td>
+    </tr>
+  `).join('');
+}
+
+// Sort headers
+document.querySelectorAll('.findings-table th[data-sort]').forEach(th => {
+  th.addEventListener('click', () => {
+    const col = th.dataset.sort;
+    if (currentSort.col === col) {
+      currentSort.dir = currentSort.dir === 'asc' ? 'desc' : 'asc';
+    } else {
+      currentSort = { col, dir: 'asc' };
+    }
+    document.querySelectorAll('.findings-table th').forEach(h => h.classList.remove('sorted'));
+    th.classList.add('sorted');
+    th.querySelector('.sort-arrow').textContent = currentSort.dir === 'asc' ? '▲' : '▼';
+    renderFindings();
+  });
+});
+
+// Filter buttons
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentFilter = btn.dataset.filter;
+    renderFindings();
+  });
+});
+
+renderFindings();
+
+// ==============================
+// REMEDIATION TIMELINE
+// ==============================
+function renderTimeline() {
+  const fixed = findings.filter(f => f.date).sort((a,b) => a.id.localeCompare(b.id));
+  const container = document.getElementById('timelineMarkers');
+
+  container.innerHTML = fixed.map((f, i) => `
+    <div class="timeline-marker" style="animation: fadeInUp 0.4s ${0.05 * i}s ease forwards; opacity: 0;">
+      <div class="marker-id ${f.severity}">${f.id}</div>
+      <div class="marker-dot ${f.severity}"></div>
+      <div class="marker-label">${f.finding.length > 18 ? f.finding.slice(0,18) + '...' : f.finding}</div>
+      <div class="marker-date">${f.date}</div>
+    </div>
+  `).join('');
+}
+renderTimeline();
+
+// ==============================
+// DONUT CHART (Canvas)
+// ==============================
+function renderDonut() {
+  const canvas = document.getElementById('donutChart');
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  canvas.width = 180 * dpr;
+  canvas.height = 180 * dpr;
+  ctx.scale(dpr, dpr);
+
+  const cx = 90, cy = 90, r = 70, lw = 22;
+  const severities = [
+    { name: 'Critical', color: '#ef4444', total: 3, fixed: 1 },
+    { name: 'High', color: '#f97316', total: 7, fixed: 4 },
+    { name: 'Medium', color: '#f59e0b', total: 9, fixed: 6 },
+    { name: 'Low', color: '#3b82f6', total: 4, fixed: 1 },
+  ];
+
+  const total = severities.reduce((s, v) => s + v.total, 0);
+  let angle = -Math.PI / 2;
+  const gap = 0.03;
+
+  severities.forEach(sev => {
+    const sweep = (sev.total / total) * 2 * Math.PI - gap;
+
+    // Remaining (dimmed)
+    ctx.beginPath();
+    ctx.arc(cx, cy, r, angle, angle + sweep);
+    ctx.strokeStyle = sev.color + '30';
+    ctx.lineWidth = lw;
+    ctx.lineCap = 'round';
+    ctx.stroke();
+
+    // Fixed portion
+    const fixedSweep = (sev.fixed / total) * 2 * Math.PI;
+    if (fixedSweep > 0) {
+      ctx.beginPath();
+      ctx.arc(cx, cy, r, angle, angle + fixedSweep);
+      ctx.strokeStyle = sev.color;
+      ctx.lineWidth = lw;
+      ctx.lineCap = 'round';
+      ctx.stroke();
+    }
+
+    angle += sweep + gap;
+  });
+
+  // Legend
+  const legend = document.getElementById('chartLegend');
+  legend.innerHTML = severities.map(s => `
+    <div class="legend-item">
+      <div class="legend-dot" style="background: ${s.color};"></div>
+      <span class="legend-label">${s.name}</span>
+      <div class="legend-values">
+        <span class="legend-fixed">${s.fixed}</span>
+        <span style="color: var(--dim);">/</span>
+        <span class="legend-remaining">${s.total}</span>
+      </div>
+    </div>
+  `).join('');
+}
+renderDonut();
+
+// ==============================
+// COMPLIANCE SCORE CATEGORIES
+// ==============================
+function renderScoreCategories() {
+  const container = document.getElementById('scoreCategories');
+  container.innerHTML = scoreCategories.map(cat => `
+    <div class="score-category">
+      <div class="score-cat-label">${cat.label}</div>
+      <div class="score-cat-bar">
+        <div class="score-cat-fill" style="width: ${cat.score}%; background: ${cat.color};"></div>
+      </div>
+      <div class="score-cat-val" style="color: ${cat.color};">${cat.score}%</div>
+    </div>
+  `).join('');
+}
+renderScoreCategories();
+
+// ==============================
+// CREDENTIAL ROTATION TRACKER
+// ==============================
+function renderCredentials() {
+  const container = document.getElementById('credGrid');
+  container.innerHTML = credentials.map(c => `
+    <div class="cred-card">
+      <div class="cred-icon" style="background: ${c.iconBg};">${c.icon}</div>
+      <div class="cred-name">${c.name}</div>
+      <div class="cred-detail">${c.detail}</div>
+      <span class="cred-status ${c.status}">${c.status === 'rotated' ? '&#10003; Rotated' : c.status === 'scheduled' ? '&#9719; Scheduled' : '&#9888; Pending'}</span>
+    </div>
+  `).join('');
+}
+renderCredentials();
+
+// ==============================
+// POSITIVE FINDINGS
+// ==============================
+function renderPositive() {
+  const container = document.getElementById('positiveGrid');
+  container.innerHTML = positiveFindings.map(p => `
+    <div class="positive-card">
+      <div class="p-id">${p.id}</div>
+      <div class="p-check">
+        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <div class="p-title">${p.title}</div>
+      <div class="p-desc">${p.desc}</div>
+    </div>
+  `).join('');
+}
+renderPositive();
+</script>
+
+</body>
+</html>

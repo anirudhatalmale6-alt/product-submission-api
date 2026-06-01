@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Visibility Acceleration Dashboard - PetHub Online</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --bg:#080a0f;--card:#111621;--border:#1a2236;
+    --text:#e2e8f0;--dim:#7a8ba8;--muted:#4a5568;
+    --accent:#8b5cf6;--accent-dim:rgba(139,92,246,0.15);--accent-glow:rgba(139,92,246,0.25);
+    --green:#22c55e;--green-dim:rgba(34,197,94,0.15);
+    --red:#ef4444;--red-dim:rgba(239,68,68,0.15);
+    --amber:#f59e0b;--amber-dim:rgba(245,158,11,0.15);
+    --blue:#3b82f6;--blue-dim:rgba(59,130,246,0.15);
+    --cyan:#06b6d4;
+    --radius:10px;--radius-sm:6px;
+  }
+  html{font-size:14px;scroll-behavior:smooth}
+  body{
+    background:var(--bg);color:var(--text);
+    font-family:'Outfit',sans-serif;line-height:1.5;
+    min-height:100vh;overflow-x:hidden;
+    padding:20px 24px 60px;
+  }
+  /* Subtle grid noise overlay */
+  body::before{
+    content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+    background:
+      radial-gradient(ellipse 800px 600px at 15% 10%, rgba(139,92,246,0.04) 0%, transparent 70%),
+      radial-gradient(ellipse 600px 400px at 85% 90%, rgba(59,130,246,0.03) 0%, transparent 70%);
+  }
+  body>*{position:relative;z-index:1}
+
+  /* Typography */
+  h1{font-size:1.6rem;font-weight:700;letter-spacing:-0.02em;color:var(--text)}
+  h2{font-size:1.15rem;font-weight:600;letter-spacing:-0.01em;color:var(--text);margin-bottom:14px}
+  h3{font-size:0.95rem;font-weight:600;color:var(--text)}
+  .mono{font-family:'JetBrains Mono',monospace}
+  .dim{color:var(--dim)}
+  .muted{color:var(--muted)}
+  .accent{color:var(--accent)}
+  .green{color:var(--green)}
+  .red{color:var(--red)}
+  .amber{color:var(--amber)}
+  .blue{color:var(--blue)}
+
+  /* Section header */
+  .section-header{
+    display:flex;align-items:center;gap:10px;margin-bottom:16px;
+  }
+  .section-header .icon{
+    width:32px;height:32px;border-radius:var(--radius-sm);
+    display:flex;align-items:center;justify-content:center;font-size:1rem;
+    background:var(--accent-dim);color:var(--accent);flex-shrink:0;
+  }
+  .section-header h2{margin-bottom:0}
+  .section-header .tag{
+    margin-left:auto;font-size:0.7rem;font-weight:600;text-transform:uppercase;
+    letter-spacing:0.08em;padding:3px 10px;border-radius:20px;
+    background:var(--accent-dim);color:var(--accent);
+  }
+
+  /* Cards */
+  .card{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    padding:20px;margin-bottom:20px;
+    transition:border-color 0.3s;
+  }
+  .card:hover{border-color:rgba(139,92,246,0.2)}
+
+  /* Stat grid */
+  .stat-bar{
+    display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-bottom:24px;
+  }
+  .stat-card{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    padding:16px 18px;text-align:center;position:relative;overflow:hidden;
+    transition:all 0.3s;
+  }
+  .stat-card::before{
+    content:'';position:absolute;top:0;left:0;right:0;height:2px;
+    background:linear-gradient(90deg,transparent,var(--accent),transparent);
+    opacity:0;transition:opacity 0.3s;
+  }
+  .stat-card:hover::before{opacity:1}
+  .stat-card:hover{border-color:rgba(139,92,246,0.3);transform:translateY(-1px)}
+  .stat-card .label{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--dim);margin-bottom:8px;font-weight:500}
+  .stat-card .value{font-family:'JetBrains Mono',monospace;font-size:1.75rem;font-weight:700;color:var(--text);line-height:1}
+  .stat-card .sub{font-size:0.7rem;color:var(--dim);margin-top:6px}
+
+  /* Tables */
+  .table-wrap{overflow-x:auto;margin:0 -2px}
+  table{width:100%;border-collapse:collapse;font-size:0.82rem}
+  thead th{
+    text-align:left;padding:10px 12px;font-weight:600;font-size:0.7rem;
+    text-transform:uppercase;letter-spacing:0.08em;color:var(--dim);
+    border-bottom:1px solid var(--border);white-space:nowrap;
+    position:sticky;top:0;background:var(--card);z-index:2;
+  }
+  tbody tr{border-bottom:1px solid rgba(26,34,54,0.5);transition:background 0.2s}
+  tbody tr:hover{background:rgba(139,92,246,0.03)}
+  tbody tr:last-child{border-bottom:none}
+  td{padding:10px 12px;white-space:nowrap}
+  td.query{white-space:normal;max-width:280px;font-weight:500}
+  td.url{white-space:normal;max-width:240px;font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:var(--dim)}
+  .num{text-align:right;font-family:'JetBrains Mono',monospace;font-weight:500}
+
+  /* Badges & pills */
+  .pill{
+    display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:20px;
+    font-size:0.7rem;font-weight:600;
+  }
+  .pill-green{background:var(--green-dim);color:var(--green)}
+  .pill-red{background:var(--red-dim);color:var(--red)}
+  .pill-amber{background:var(--amber-dim);color:var(--amber)}
+  .pill-blue{background:var(--blue-dim);color:var(--blue)}
+  .pill-accent{background:var(--accent-dim);color:var(--accent)}
+
+  .score-bar{
+    width:80px;height:6px;background:rgba(255,255,255,0.06);border-radius:3px;
+    display:inline-block;vertical-align:middle;margin-left:8px;position:relative;
+  }
+  .score-bar .fill{position:absolute;left:0;top:0;height:100%;border-radius:3px;transition:width 0.6s ease}
+
+  /* Cluster cards grid */
+  .cluster-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+  .cluster-card{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    padding:16px;transition:all 0.3s;position:relative;overflow:hidden;
+  }
+  .cluster-card::after{
+    content:'';position:absolute;top:0;left:0;width:3px;height:100%;
+    background:var(--accent);opacity:0;transition:opacity 0.3s;
+  }
+  .cluster-card:hover{border-color:rgba(139,92,246,0.3)}
+  .cluster-card:hover::after{opacity:1}
+  .cluster-card .cluster-name{font-weight:600;font-size:0.9rem;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+  .cluster-card .cluster-name .emoji{font-size:1.1rem}
+  .cluster-stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .cluster-stat .cs-label{font-size:0.65rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--dim)}
+  .cluster-stat .cs-val{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:0.95rem}
+  .visibility-score{
+    margin-top:12px;padding-top:12px;border-top:1px solid var(--border);
+    display:flex;align-items:center;justify-content:space-between;
+  }
+  .visibility-score .vs-label{font-size:0.75rem;color:var(--dim);font-weight:500}
+  .visibility-score .vs-num{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.3rem}
+
+  /* Chart area */
+  .chart-container{position:relative;height:280px;margin-top:10px}
+  canvas{width:100%!important;height:100%!important}
+
+  /* Action priorities */
+  .action-list{display:flex;flex-direction:column;gap:10px}
+  .action-item{
+    display:flex;align-items:flex-start;gap:14px;padding:14px 16px;
+    background:rgba(139,92,246,0.03);border:1px solid var(--border);
+    border-radius:var(--radius-sm);transition:all 0.3s;
+  }
+  .action-item:hover{border-color:rgba(139,92,246,0.25);background:rgba(139,92,246,0.05)}
+  .action-rank{
+    width:28px;height:28px;border-radius:50%;
+    background:var(--accent-dim);color:var(--accent);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'JetBrains Mono',monospace;font-weight:700;font-size:0.8rem;flex-shrink:0;
+  }
+  .action-body{flex:1;min-width:0}
+  .action-title{font-weight:600;font-size:0.88rem;margin-bottom:3px}
+  .action-desc{font-size:0.78rem;color:var(--dim);line-height:1.5}
+  .action-impact{
+    flex-shrink:0;text-align:right;
+  }
+  .action-impact .ai-label{font-size:0.65rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--dim)}
+  .action-impact .ai-val{font-family:'JetBrains Mono',monospace;font-weight:700;font-size:1.1rem;color:var(--accent)}
+
+  /* Check / X icons */
+  .check{color:var(--green)}
+  .cross{color:var(--red)}
+
+  /* Responsive */
+  @media(max-width:1100px){.stat-bar{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:700px){
+    .stat-bar{grid-template-columns:repeat(2,1fr)}
+    .cluster-grid{grid-template-columns:1fr}
+    body{padding:14px 12px 40px}
+  }
+
+  /* Scroll reveal animation */
+  .reveal{opacity:0;transform:translateY(12px);transition:opacity 0.5s ease,transform 0.5s ease}
+  .reveal.visible{opacity:1;transform:translateY(0)}
+
+  /* Pulse dot for live indicator */
+  .live-dot{
+    width:7px;height:7px;border-radius:50%;background:var(--green);
+    display:inline-block;margin-right:6px;
+    animation:pulse 2s infinite;
+  }
+  @keyframes pulse{
+    0%,100%{box-shadow:0 0 0 0 rgba(34,197,94,0.4)}
+    50%{box-shadow:0 0 0 6px rgba(34,197,94,0)}
+  }
+
+  /* Refresh bar */
+  .refresh-bar{
+    position:fixed;bottom:0;left:0;right:0;height:2px;z-index:100;
+    background:rgba(139,92,246,0.1);
+  }
+  .refresh-bar .progress{
+    height:100%;width:0;background:linear-gradient(90deg,var(--accent),#a78bfa);
+    transition:width 1s linear;
+  }
+
+  /* Arrow indicators */
+  .arrow-up{color:var(--green)}
+  .arrow-down{color:var(--red)}
+  .arrow-flat{color:var(--dim)}
+</style>
+</head>
+<body>
+
+<!-- Refresh progress bar -->
+<div class="refresh-bar"><div class="progress" id="refreshProgress"></div></div>
+
+<!-- Header -->
+<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:22px" class="reveal">
+  <div>
+    <h1 style="display:flex;align-items:center;gap:10px">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>
+      Visibility Acceleration
+    </h1>
+    <div style="font-size:0.78rem;color:var(--dim);margin-top:4px">
+      <span class="live-dot"></span>pethubonline.com &middot; SEO Visibility Tracking &middot; Last 28 days
+    </div>
+  </div>
+  <div style="text-align:right">
+    <div class="mono" style="font-size:0.75rem;color:var(--dim)" id="lastUpdate"></div>
+    <div style="font-size:0.68rem;color:var(--muted);margin-top:2px">Auto-refresh 60s</div>
+  </div>
+</div>
+
+<!-- 1. VISIBILITY SUMMARY BAR -->
+<div class="stat-bar reveal">
+  <div class="stat-card">
+    <div class="label">Total Impressions</div>
+    <div class="value accent" id="statImpressions">12,400</div>
+    <div class="sub">+18.2% vs prior 28d</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Total Clicks</div>
+    <div class="value" id="statClicks">340</div>
+    <div class="sub">+24.1% vs prior 28d</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Average CTR</div>
+    <div class="value" id="statCTR">2.7%</div>
+    <div class="sub">Industry avg: 3.1%</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Average Position</div>
+    <div class="value" id="statPosition">28.4</div>
+    <div class="sub">Improved from 34.1</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Indexed Pages</div>
+    <div class="value" id="statIndexed">430</div>
+    <div class="sub">+12 this week</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Pages in Top 10</div>
+    <div class="value green" id="statTop10">12</div>
+    <div class="sub">+3 vs prior 28d</div>
+  </div>
+</div>
+
+<!-- 2. HIGH IMPRESSION / LOW CTR OPPORTUNITIES -->
+<div class="card reveal">
+  <div class="section-header">
+    <div class="icon">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/></svg>
+    </div>
+    <h2>High Impression / Low CTR Opportunities</h2>
+    <span class="tag">Quick Wins</span>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Query</th>
+          <th class="num">Impressions</th>
+          <th class="num">Clicks</th>
+          <th class="num">CTR</th>
+          <th class="num">Position</th>
+          <th>Page URL</th>
+          <th class="num">Opp. Score</th>
+        </tr>
+      </thead>
+      <tbody id="hiLoTable"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 3. PAGE 2 OPPORTUNITIES -->
+<div class="card reveal">
+  <div class="section-header">
+    <div class="icon" style="background:var(--amber-dim);color:var(--amber)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+    </div>
+    <h2>Page 2 Opportunities (Positions 11-20)</h2>
+    <span class="tag" style="background:var(--amber-dim);color:var(--amber)">Push to Page 1</span>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Page URL</th>
+          <th class="num">Query Count</th>
+          <th class="num">Best Position</th>
+          <th class="num">Impressions</th>
+          <th class="num">Potential Traffic Uplift</th>
+        </tr>
+      </thead>
+      <tbody id="page2Table"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 4. PAGE 3 OPPORTUNITIES -->
+<div class="card reveal">
+  <div class="section-header">
+    <div class="icon" style="background:var(--blue-dim);color:var(--blue)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+    </div>
+    <h2>Page 3 Opportunities (Positions 21-30)</h2>
+    <span class="tag" style="background:var(--blue-dim);color:var(--blue)">Longer-term</span>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Page URL</th>
+          <th class="num">Query Count</th>
+          <th class="num">Best Position</th>
+          <th class="num">Impressions</th>
+          <th class="num">Potential Traffic Uplift</th>
+        </tr>
+      </thead>
+      <tbody id="page3Table"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 5. RISING QUERIES -->
+<div class="card reveal">
+  <div class="section-header">
+    <div class="icon" style="background:var(--green-dim);color:var(--green)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+    </div>
+    <h2>Rising Queries</h2>
+    <span class="tag" style="background:var(--green-dim);color:var(--green)">Momentum</span>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Query</th>
+          <th class="num">Current Pos.</th>
+          <th class="num">Previous Pos.</th>
+          <th class="num">Change</th>
+          <th>Impressions Trend</th>
+        </tr>
+      </thead>
+      <tbody id="risingTable"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 6. SNIPPET OPPORTUNITIES -->
+<div class="card reveal">
+  <div class="section-header">
+    <div class="icon" style="background:rgba(6,182,212,0.15);color:var(--cyan)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+    </div>
+    <h2>Snippet Opportunities</h2>
+    <span class="tag" style="background:rgba(6,182,212,0.15);color:var(--cyan)">Rich Results</span>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Query</th>
+          <th class="num">Position</th>
+          <th>FAQ Schema</th>
+          <th>How-To Schema</th>
+          <th>Snippet Type</th>
+          <th>Action Required</th>
+        </tr>
+      </thead>
+      <tbody id="snippetTable"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- 7. CLUSTER VISIBILITY SCORES -->
+<div class="reveal" style="margin-bottom:20px">
+  <div class="section-header">
+    <div class="icon">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+    </div>
+    <h2>Cluster Visibility Scores</h2>
+    <span class="tag">Topical Authority</span>
+  </div>
+  <div class="cluster-grid" id="clusterGrid"></div>
+</div>
+
+<!-- 8. VISIBILITY TREND CHART -->
+<div class="card reveal">
+  <div class="section-header">
+    <div class="icon">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+    </div>
+    <h2>Visibility Trend (12 Weeks)</h2>
+    <span class="tag">Growth Trajectory</span>
+  </div>
+  <div class="chart-container">
+    <canvas id="trendChart"></canvas>
+  </div>
+</div>
+
+<!-- 9. ACTION PRIORITIES -->
+<div class="card reveal">
+  <div class="section-header">
+    <div class="icon" style="background:var(--accent-dim);color:var(--accent)">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+    </div>
+    <h2>Action Priorities</h2>
+    <span class="tag">Highest Impact First</span>
+  </div>
+  <div class="action-list" id="actionList"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+// ─── DATA ──────────────────────────────────────────────
+
+const hiLoData = [
+  {query:"best puppy food uk",impr:2400,clicks:12,ctr:0.5,pos:8.2,url:"/guides/best-puppy-food-uk",opp:94},
+  {query:"dog bed for large breed uk",impr:1200,clicks:8,ctr:0.7,pos:12.3,url:"/products/large-dog-beds",opp:91},
+  {query:"cat scratching post tall",impr:980,clicks:6,ctr:0.6,pos:9.7,url:"/products/cat-scratching-posts",opp:89},
+  {query:"grain free dog food uk",impr:1650,clicks:18,ctr:1.1,pos:11.4,url:"/guides/grain-free-dog-food",opp:87},
+  {query:"indoor cat toys uk",impr:1800,clicks:45,ctr:2.5,pos:6.1,url:"/products/indoor-cat-toys",opp:82},
+  {query:"best flea treatment for dogs uk",impr:2100,clicks:28,ctr:1.3,pos:14.6,url:"/guides/flea-treatment-dogs",opp:80},
+  {query:"rabbit hutch outdoor uk",impr:890,clicks:5,ctr:0.6,pos:15.2,url:"/products/rabbit-hutches",opp:78},
+  {query:"waterproof dog coat uk",impr:760,clicks:9,ctr:1.2,pos:10.8,url:"/products/waterproof-dog-coats",opp:76},
+  {query:"puppy training pads uk",impr:1100,clicks:14,ctr:1.3,pos:13.1,url:"/products/puppy-training-pads",opp:74},
+  {query:"automatic cat feeder uk",impr:680,clicks:4,ctr:0.6,pos:16.4,url:"/products/automatic-cat-feeders",opp:72},
+  {query:"best dog harness no pull uk",impr:950,clicks:11,ctr:1.2,pos:9.3,url:"/guides/best-dog-harnesses",opp:70},
+  {query:"senior cat food uk",impr:540,clicks:3,ctr:0.6,pos:18.7,url:"/products/senior-cat-food",opp:68},
+  {query:"fish tank starter kit uk",impr:620,clicks:7,ctr:1.1,pos:11.9,url:"/products/fish-tank-kits",opp:65},
+  {query:"dog dental chews uk",impr:480,clicks:5,ctr:1.0,pos:14.2,url:"/products/dog-dental-chews",opp:63},
+  {query:"hamster cage large uk",impr:410,clicks:3,ctr:0.7,pos:17.5,url:"/products/hamster-cages",opp:60},
+];
+
+const page2Data = [
+  {url:"/guides/best-puppy-food-uk",queries:8,bestPos:11.2,impr:3200,uplift:"+180 clicks/mo"},
+  {url:"/guides/flea-treatment-dogs",queries:6,bestPos:12.8,impr:2600,uplift:"+140 clicks/mo"},
+  {url:"/products/large-dog-beds",queries:5,bestPos:12.3,impr:1800,uplift:"+95 clicks/mo"},
+  {url:"/guides/grain-free-dog-food",queries:7,bestPos:11.4,impr:2200,uplift:"+120 clicks/mo"},
+  {url:"/products/puppy-training-pads",queries:4,bestPos:13.1,impr:1400,uplift:"+75 clicks/mo"},
+  {url:"/products/rabbit-hutches",queries:3,bestPos:15.2,impr:1100,uplift:"+60 clicks/mo"},
+  {url:"/products/automatic-cat-feeders",queries:4,bestPos:16.4,impr:980,uplift:"+50 clicks/mo"},
+  {url:"/guides/best-dog-harnesses",queries:5,bestPos:14.8,impr:1350,uplift:"+70 clicks/mo"},
+  {url:"/products/fish-tank-kits",queries:3,bestPos:11.9,impr:860,uplift:"+45 clicks/mo"},
+  {url:"/products/dog-dental-chews",queries:3,bestPos:14.2,impr:720,uplift:"+35 clicks/mo"},
+];
+
+const page3Data = [
+  {url:"/products/senior-cat-food",queries:5,bestPos:21.4,impr:890,uplift:"+25 clicks/mo"},
+  {url:"/products/hamster-cages",queries:3,bestPos:22.7,impr:650,uplift:"+18 clicks/mo"},
+  {url:"/guides/reptile-heating-uk",queries:4,bestPos:24.1,impr:540,uplift:"+15 clicks/mo"},
+  {url:"/products/bird-seed-mix-uk",queries:2,bestPos:26.3,impr:420,uplift:"+12 clicks/mo"},
+  {url:"/guides/kitten-care-checklist",queries:6,bestPos:23.8,impr:780,uplift:"+22 clicks/mo"},
+  {url:"/products/guinea-pig-runs",queries:2,bestPos:28.1,impr:340,uplift:"+8 clicks/mo"},
+  {url:"/guides/goldfish-tank-setup",queries:3,bestPos:25.5,impr:460,uplift:"+13 clicks/mo"},
+  {url:"/products/dog-cooling-mats",queries:4,bestPos:22.9,impr:710,uplift:"+20 clicks/mo"},
+  {url:"/guides/cat-litter-comparison",queries:5,bestPos:24.6,impr:580,uplift:"+16 clicks/mo"},
+  {url:"/products/horse-grooming-kits",queries:2,bestPos:27.2,impr:310,uplift:"+7 clicks/mo"},
+];
+
+const risingData = [
+  {query:"best puppy food uk 2026",curPos:8.2,prevPos:14.6,change:6.4,trend:"up"},
+  {query:"indoor cat enrichment toys",curPos:11.3,prevPos:18.9,change:7.6,trend:"up"},
+  {query:"eco friendly dog toys uk",curPos:15.7,prevPos:28.4,change:12.7,trend:"up"},
+  {query:"raw dog food delivery uk",curPos:19.4,prevPos:26.1,change:6.7,trend:"up"},
+  {query:"cat anxiety calming products",curPos:13.8,prevPos:22.3,change:8.5,trend:"up"},
+  {query:"waterproof dog bed uk",curPos:9.6,prevPos:13.2,change:3.6,trend:"up"},
+  {query:"sustainable pet products uk",curPos:16.2,prevPos:31.7,change:15.5,trend:"up"},
+  {query:"puppy socialisation tips",curPos:12.1,prevPos:17.8,change:5.7,trend:"up"},
+  {query:"senior dog joint supplements uk",curPos:18.3,prevPos:24.9,change:6.6,trend:"up"},
+  {query:"hypoallergenic cat food uk",curPos:14.5,prevPos:19.7,change:5.2,trend:"up"},
+];
+
+const snippetData = [
+  {query:"how to train a puppy not to bite",pos:7.4,faq:false,howto:false,type:"How-To",action:"Add HowTo schema + step-by-step format"},
+  {query:"best flea treatment for dogs uk",pos:14.6,faq:false,howto:false,type:"Listicle",action:"Add FAQ schema with top 5 questions"},
+  {query:"how often should you walk a dog",pos:9.1,faq:true,howto:false,type:"Paragraph",action:"Optimise first paragraph for snippet"},
+  {query:"what to feed a kitten",pos:6.8,faq:false,howto:false,type:"Table",action:"Add comparison table + FAQ schema"},
+  {query:"how to set up a fish tank",pos:11.9,faq:false,howto:false,type:"How-To",action:"Add HowTo schema with images"},
+  {query:"why is my cat sneezing",pos:8.5,faq:false,howto:false,type:"FAQ",action:"Add FAQ schema with 5+ Q&As"},
+  {query:"how to clip dog nails safely",pos:10.2,faq:false,howto:false,type:"Video",action:"Embed how-to video + VideoObject schema"},
+  {query:"best dog food for allergies uk",pos:13.7,faq:true,howto:false,type:"Listicle",action:"Improve existing FAQ, add comparison table"},
+  {query:"how to litter train a kitten",pos:7.9,faq:false,howto:false,type:"How-To",action:"Add HowTo schema + numbered steps"},
+  {query:"rabbit diet guide uk",pos:12.4,faq:false,howto:false,type:"Table",action:"Add nutrition table + FAQ schema"},
+];
+
+const clusterData = [
+  {name:"Dog Nutrition",emoji:"🥫",impr:4200,clicks:98,ctr:2.3,avgPos:14.2,indexed:62,score:72},
+  {name:"Cat Care",emoji:"🐱",impr:3100,clicks:74,ctr:2.4,avgPos:16.8,indexed:48,score:65},
+  {name:"Dog Accessories",emoji:"🦺",impr:2800,clicks:56,ctr:2.0,avgPos:18.3,indexed:55,score:58},
+  {name:"Small Pets",emoji:"🐹",impr:1400,clicks:22,ctr:1.6,avgPos:24.1,indexed:28,score:38},
+  {name:"Fish & Aquatics",emoji:"🐠",impr:980,clicks:14,ctr:1.4,avgPos:22.6,indexed:22,score:32},
+  {name:"Reptile Care",emoji:"🦎",impr:540,clicks:6,ctr:1.1,avgPos:28.4,indexed:14,score:22},
+  {name:"Bird Supplies",emoji:"🦜",impr:420,clicks:5,ctr:1.2,avgPos:26.3,indexed:12,score:20},
+  {name:"Pet Health",emoji:"🏥",impr:3600,clicks:82,ctr:2.3,avgPos:15.9,indexed:44,score:68},
+  {name:"Horse & Equine",emoji:"🐴",impr:310,clicks:3,ctr:1.0,avgPos:27.2,indexed:10,score:16},
+  {name:"Puppy Training",emoji:"🎓",impr:2200,clicks:48,ctr:2.2,avgPos:13.6,indexed:34,score:62},
+];
+
+const actionData = [
+  {title:"Optimise title tags for top 5 high-impression queries",desc:"'best puppy food uk' has 2,400 impressions but 0.5% CTR at position 8.2. Rewrite title to include year, power words, and clear benefit. Apply same pattern to top 5.",impact:94},
+  {title:"Add HowTo + FAQ schema to 10 guide pages",desc:"10 queries qualify for rich snippets but lack structured data. Adding schema could increase CTR by 20-30% and capture featured snippets.",impact:91},
+  {title:"Push 'grain free dog food uk' from position 11.4 to top 10",desc:"Page is within striking distance. Add 500 words of expert content, improve internal linking from 3 supporting articles, and build 2 relevant backlinks.",impact:88},
+  {title:"Create comparison tables for product category pages",desc:"Product pages lack comparison content that Google favours for table snippets. Adding tables to top 8 product pages could capture 4-6 new snippet positions.",impact:85},
+  {title:"Internal link audit for Dog Nutrition cluster",desc:"Highest-traffic cluster (4,200 impressions) but orphan pages detected. Create hub page and add contextual links from 12 supporting articles.",impact:82},
+  {title:"Optimise meta descriptions for page 2 content",desc:"10 pages sitting on page 2 have generic meta descriptions. Rewriting with CTR-optimised copy could improve click-through by 15-25%.",impact:79},
+  {title:"Publish 5 new articles for Cat Care cluster",desc:"Cat Care cluster has 48 indexed pages but gaps in 'kitten care', 'senior cat health', and 'cat behaviour'. Fill gaps to strengthen topical authority.",impact:76},
+  {title:"Add product review schema to all product pages",desc:"55 product pages lack Review/AggregateRating schema. Adding ratings stars in SERPs typically increases CTR by 10-20%.",impact:73},
+  {title:"Consolidate thin content in Small Pets cluster",desc:"28 pages indexed but many under 500 words. Merge 8 thin pages into 3 comprehensive guides to concentrate authority and improve rankings.",impact:70},
+  {title:"Implement breadcrumb schema site-wide",desc:"Breadcrumb markup improves SERP appearance and helps Google understand site hierarchy. Quick win across all 430 indexed pages.",impact:67},
+];
+
+// ─── RENDER FUNCTIONS ──────────────────────────────────
+
+function renderHiLoTable() {
+  const tbody = document.getElementById('hiLoTable');
+  tbody.innerHTML = hiLoData.map((d,i) => {
+    const ctrClass = d.ctr < 1.0 ? 'red' : d.ctr < 2.0 ? 'amber' : 'green';
+    const oppColor = d.opp >= 85 ? '#8b5cf6' : d.opp >= 70 ? '#f59e0b' : '#3b82f6';
+    return `<tr>
+      <td class="num dim">${i+1}</td>
+      <td class="query">${d.query}</td>
+      <td class="num">${d.impr.toLocaleString()}</td>
+      <td class="num">${d.clicks}</td>
+      <td class="num ${ctrClass}">${d.ctr.toFixed(1)}%</td>
+      <td class="num">${d.pos.toFixed(1)}</td>
+      <td class="url">${d.url}</td>
+      <td class="num" style="color:${oppColor};font-weight:700">${d.opp}<span class="score-bar"><span class="fill" style="width:${d.opp}%;background:${oppColor}"></span></span></td>
+    </tr>`;
+  }).join('');
+}
+
+function renderPageTable(data, id) {
+  const tbody = document.getElementById(id);
+  tbody.innerHTML = data.map((d,i) => `<tr>
+    <td class="num dim">${i+1}</td>
+    <td class="url">${d.url}</td>
+    <td class="num">${d.queries}</td>
+    <td class="num">${d.bestPos.toFixed(1)}</td>
+    <td class="num">${d.impr.toLocaleString()}</td>
+    <td class="num green" style="font-weight:600">${d.uplift}</td>
+  </tr>`).join('');
+}
+
+function renderRisingTable() {
+  const tbody = document.getElementById('risingTable');
+  tbody.innerHTML = risingData.map((d,i) => {
+    const arrow = d.trend === 'up' ? '<span class="arrow-up" style="font-weight:700">&#9650;</span>' : '<span class="arrow-down" style="font-weight:700">&#9660;</span>';
+    return `<tr>
+      <td class="num dim">${i+1}</td>
+      <td class="query">${d.query}</td>
+      <td class="num">${d.curPos.toFixed(1)}</td>
+      <td class="num dim">${d.prevPos.toFixed(1)}</td>
+      <td class="num green" style="font-weight:700">+${d.change.toFixed(1)}</td>
+      <td>${arrow} <span style="font-size:0.78rem;color:var(--green);font-weight:500">Rising</span></td>
+    </tr>`;
+  }).join('');
+}
+
+function renderSnippetTable() {
+  const tbody = document.getElementById('snippetTable');
+  tbody.innerHTML = snippetData.map((d,i) => {
+    const faqIcon = d.faq ? '<span class="check">&#10003;</span>' : '<span class="cross">&#10007;</span>';
+    const howtoIcon = d.howto ? '<span class="check">&#10003;</span>' : '<span class="cross">&#10007;</span>';
+    const typeColors = {'How-To':'pill-accent','Listicle':'pill-amber','Paragraph':'pill-blue','Table':'pill-green','FAQ':'pill-accent','Video':'pill-blue'};
+    return `<tr>
+      <td class="num dim">${i+1}</td>
+      <td class="query">${d.query}</td>
+      <td class="num">${d.pos.toFixed(1)}</td>
+      <td style="text-align:center">${faqIcon}</td>
+      <td style="text-align:center">${howtoIcon}</td>
+      <td><span class="pill ${typeColors[d.type]||'pill-accent'}">${d.type}</span></td>
+      <td style="font-size:0.78rem;white-space:normal;max-width:260px;color:var(--dim)">${d.action}</td>
+    </tr>`;
+  }).join('');
+}
+
+function renderClusters() {
+  const grid = document.getElementById('clusterGrid');
+  grid.innerHTML = clusterData.map(d => {
+    const scoreColor = d.score >= 60 ? 'var(--green)' : d.score >= 35 ? 'var(--amber)' : 'var(--red)';
+    return `<div class="cluster-card">
+      <div class="cluster-name"><span class="emoji">${d.emoji}</span> ${d.name}</div>
+      <div class="cluster-stats">
+        <div class="cluster-stat"><div class="cs-label">Impressions</div><div class="cs-val">${d.impr.toLocaleString()}</div></div>
+        <div class="cluster-stat"><div class="cs-label">Clicks</div><div class="cs-val">${d.clicks}</div></div>
+        <div class="cluster-stat"><div class="cs-label">CTR</div><div class="cs-val">${d.ctr.toFixed(1)}%</div></div>
+        <div class="cluster-stat"><div class="cs-label">Avg Position</div><div class="cs-val">${d.avgPos.toFixed(1)}</div></div>
+        <div class="cluster-stat"><div class="cs-label">Indexed</div><div class="cs-val">${d.indexed}</div></div>
+        <div class="cluster-stat"><div class="cs-label">Score</div><div class="cs-val" style="color:${scoreColor}">${d.score}/100</div></div>
+      </div>
+      <div class="visibility-score">
+        <span class="vs-label">Visibility Score</span>
+        <span class="vs-num" style="color:${scoreColor}">${d.score}</span>
+      </div>
+      <div style="margin-top:8px">
+        <div class="score-bar" style="width:100%;height:4px">
+          <span class="fill" style="width:${d.score}%;background:${scoreColor}"></span>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderActions() {
+  const list = document.getElementById('actionList');
+  list.innerHTML = actionData.map((d,i) => `<div class="action-item">
+    <div class="action-rank">${i+1}</div>
+    <div class="action-body">
+      <div class="action-title">${d.title}</div>
+      <div class="action-desc">${d.desc}</div>
+    </div>
+    <div class="action-impact">
+      <div class="ai-label">Impact</div>
+      <div class="ai-val">${d.impact}</div>
+    </div>
+  </div>`).join('');
+}
+
+// ─── CHART ─────────────────────────────────────────────
+
+function renderChart() {
+  const ctx = document.getElementById('trendChart');
+  if (!ctx) return;
+  const weeks = ['W1','W2','W3','W4','W5','W6','W7','W8','W9','W10','W11','W12'];
+  const impressions = [1800,2400,3100,3800,4600,5400,6200,7100,8200,9400,10800,12400];
+  const clicks = [28,42,58,78,102,130,158,190,228,265,302,340];
+
+  new Chart(ctx, {
+    type:'line',
+    data:{
+      labels:weeks,
+      datasets:[
+        {
+          label:'Impressions',
+          data:impressions,
+          borderColor:'#8b5cf6',
+          backgroundColor:'rgba(139,92,246,0.08)',
+          borderWidth:2.5,
+          pointBackgroundColor:'#8b5cf6',
+          pointBorderColor:'#111621',
+          pointBorderWidth:2,
+          pointRadius:4,
+          pointHoverRadius:6,
+          fill:true,
+          tension:0.35,
+          yAxisID:'y',
+        },
+        {
+          label:'Clicks',
+          data:clicks,
+          borderColor:'#22c55e',
+          backgroundColor:'rgba(34,197,94,0.06)',
+          borderWidth:2.5,
+          pointBackgroundColor:'#22c55e',
+          pointBorderColor:'#111621',
+          pointBorderWidth:2,
+          pointRadius:4,
+          pointHoverRadius:6,
+          fill:true,
+          tension:0.35,
+          yAxisID:'y1',
+        }
+      ]
+    },
+    options:{
+      responsive:true,
+      maintainAspectRatio:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{
+        legend:{
+          position:'top',
+          align:'end',
+          labels:{
+            usePointStyle:true,
+            pointStyle:'circle',
+            padding:20,
+            color:'#7a8ba8',
+            font:{family:'Outfit',size:12,weight:'500'}
+          }
+        },
+        tooltip:{
+          backgroundColor:'#1a2236',
+          titleColor:'#e2e8f0',
+          bodyColor:'#e2e8f0',
+          borderColor:'#2a3a56',
+          borderWidth:1,
+          cornerRadius:8,
+          padding:12,
+          titleFont:{family:'Outfit',size:13,weight:'600'},
+          bodyFont:{family:'JetBrains Mono',size:12},
+          callbacks:{
+            label:function(ctx){
+              return ctx.dataset.label + ': ' + ctx.parsed.y.toLocaleString();
+            }
+          }
+        }
+      },
+      scales:{
+        x:{
+          grid:{color:'rgba(26,34,54,0.5)',drawBorder:false},
+          ticks:{color:'#7a8ba8',font:{family:'JetBrains Mono',size:11}},
+          border:{display:false}
+        },
+        y:{
+          position:'left',
+          grid:{color:'rgba(26,34,54,0.5)',drawBorder:false},
+          ticks:{
+            color:'#8b5cf6',
+            font:{family:'JetBrains Mono',size:11},
+            callback:v=>v>=1000?(v/1000).toFixed(1)+'K':v
+          },
+          border:{display:false},
+          title:{display:true,text:'Impressions',color:'#8b5cf6',font:{family:'Outfit',size:12,weight:'500'}}
+        },
+        y1:{
+          position:'right',
+          grid:{drawOnChartArea:false},
+          ticks:{
+            color:'#22c55e',
+            font:{family:'JetBrains Mono',size:11}
+          },
+          border:{display:false},
+          title:{display:true,text:'Clicks',color:'#22c55e',font:{family:'Outfit',size:12,weight:'500'}}
+        }
+      }
+    }
+  });
+}
+
+// ─── SCROLL REVEAL ─────────────────────────────────────
+
+function initReveal() {
+  const els = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry,i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 60);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.08});
+  els.forEach(el => observer.observe(el));
+}
+
+// ─── TIMESTAMP & REFRESH ───────────────────────────────
+
+function updateTimestamp() {
+  const now = new Date();
+  document.getElementById('lastUpdate').textContent = now.toLocaleString('en-GB',{
+    day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'
+  });
+}
+
+let refreshElapsed = 0;
+function startRefreshTimer() {
+  const bar = document.getElementById('refreshProgress');
+  setInterval(() => {
+    refreshElapsed++;
+    bar.style.width = ((refreshElapsed / 60) * 100) + '%';
+    if (refreshElapsed >= 60) {
+      refreshElapsed = 0;
+      bar.style.width = '0%';
+      location.reload();
+    }
+  }, 1000);
+}
+
+// ─── INIT ──────────────────────────────────────────────
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderHiLoTable();
+  renderPageTable(page2Data, 'page2Table');
+  renderPageTable(page3Data, 'page3Table');
+  renderRisingTable();
+  renderSnippetTable();
+  renderClusters();
+  renderActions();
+  renderChart();
+  initReveal();
+  updateTimestamp();
+  startRefreshTimer();
+});
+</script>
+</body>
+</html>

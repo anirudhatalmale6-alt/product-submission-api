@@ -3,23 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=1280, initial-scale=1">
-<title>PetHub AI Citation Monitor &mdash; Phase 16B</title>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<title>PetHub AI Citation Dominance Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
   --bg:#080a0f;--card:#111621;--border:#1a2236;
   --text:#e2e8f0;--dim:#7a8ba8;--muted:#4a5568;
-  --accent:#8b5cf6;--accent-dim:#7c3aed;--accent-glow:rgba(139,92,246,0.15);
-  --green:#10b981;--red:#ef4444;--amber:#f59e0b;--blue:#3b82f6;--cyan:#06b6d4;--violet:#8b5cf6;
+  --accent:#06b6d4;--accent-dim:#0891b2;--accent-glow:rgba(6,182,212,0.15);--accent-deep:#164e63;
+  --green:#10b981;--red:#ef4444;--amber:#f59e0b;--blue:#3b82f6;--cyan:#06b6d4;--violet:#8b5cf6;--rose:#f43f5e;--emerald:#34d399;
   --card-hover:#151d2e;--radius:10px;
+  --chatgpt:#10b981;--perplexity:#8b5cf6;--gemini:#3b82f6;--copilot:#06b6d4;--aio:#f59e0b;
 }
 html{font-size:14px;scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;line-height:1.5;min-height:100vh;overflow-x:hidden}
+
+/* Ambient radial glow - cyan themed */
 body::before{content:'';position:fixed;inset:0;background:
-  radial-gradient(ellipse 80% 60% at 50% -10%,rgba(139,92,246,0.05),transparent 70%),
-  radial-gradient(ellipse 50% 40% at 80% 100%,rgba(124,58,237,0.04),transparent);
+  radial-gradient(ellipse 80% 50% at 50% -10%,rgba(6,182,212,0.06),transparent 70%),
+  radial-gradient(ellipse 50% 40% at 85% 100%,rgba(6,182,212,0.04),transparent),
+  radial-gradient(ellipse 30% 30% at 10% 60%,rgba(8,145,178,0.03),transparent);
   pointer-events:none;z-index:0}
+
+/* Subtle grid overlay */
 body::after{content:'';position:fixed;inset:0;background:
   linear-gradient(rgba(26,34,54,0.03) 1px,transparent 1px),
   linear-gradient(90deg,rgba(26,34,54,0.03) 1px,transparent 1px);
@@ -27,38 +33,42 @@ body::after{content:'';position:fixed;inset:0;background:
 
 .shell{position:relative;z-index:1;max-width:1440px;margin:0 auto;padding:20px 24px 60px}
 
-/* Header */
+/* ===== HEADER ===== */
 .hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;padding-bottom:16px;border-bottom:1px solid var(--border)}
 .hdr-left{display:flex;align-items:center;gap:14px}
-.hdr-icon{width:44px;height:44px;border-radius:11px;background:linear-gradient(135deg,var(--accent),#a78bfa);display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 0 24px rgba(139,92,246,0.35)}
+.hdr-icon{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#22d3ee);display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 0 28px rgba(6,182,212,0.4);position:relative}
+.hdr-icon::after{content:'';position:absolute;inset:-2px;border-radius:14px;background:linear-gradient(135deg,rgba(6,182,212,0.3),transparent);z-index:-1;filter:blur(4px)}
 .hdr h1{font-size:1.4rem;font-weight:700;letter-spacing:-0.02em}
 .hdr h1 span{color:var(--accent);font-weight:800}
+.hdr-sub{font-size:.78rem;color:var(--dim);margin-top:2px;display:flex;align-items:center;gap:8px}
 .hdr-right{display:flex;align-items:center;gap:12px}
-.scan-time{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--dim)}
-.phase-badge{font-family:'JetBrains Mono',monospace;font-size:.7rem;font-weight:600;background:rgba(139,92,246,0.15);color:var(--accent);padding:4px 12px;border-radius:6px;border:1px solid rgba(139,92,246,0.3)}
+.scan-time{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--dim)}
+.live-dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 10px rgba(16,185,129,0.5);animation:pulse-live 2s ease-in-out infinite}
+@keyframes pulse-live{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.85)}}
+.phase-badge{font-family:'JetBrains Mono',monospace;font-size:.68rem;font-weight:600;background:rgba(6,182,212,0.12);color:var(--accent);padding:4px 12px;border-radius:6px;border:1px solid rgba(6,182,212,0.3)}
 
-/* Section styling */
+/* ===== SECTION TITLES ===== */
 .sec{margin-bottom:32px}
-.sec-title{display:flex;align-items:center;gap:10px;margin-bottom:16px;font-size:1.05rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);text-shadow:0 0 20px rgba(139,92,246,0.3)}
+.sec-title{display:flex;align-items:center;gap:10px;margin-bottom:16px;font-size:1.05rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);text-shadow:0 0 20px rgba(6,182,212,0.3)}
 .sec-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--accent-dim),transparent)}
-.sec-num{font-family:'JetBrains Mono',monospace;font-size:.7rem;background:var(--accent);color:#fff;padding:2px 8px;border-radius:4px;font-weight:600}
+.sec-num{font-family:'JetBrains Mono',monospace;font-size:.68rem;background:var(--accent);color:#0a0d12;padding:2px 8px;border-radius:4px;font-weight:700}
 
-/* Cards */
+/* ===== CARDS ===== */
 .card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;transition:border-color .25s,box-shadow .25s}
-.card:hover{border-color:rgba(139,92,246,0.3);box-shadow:0 0 20px var(--accent-glow)}
+.card:hover{border-color:rgba(6,182,212,0.3);box-shadow:0 0 20px var(--accent-glow)}
 .card-title{font-size:.85rem;font-weight:700;margin-bottom:10px;display:flex;align-items:center;gap:8px}
 .card-dim{color:var(--dim);font-size:.78rem}
 .mono{font-family:'JetBrains Mono',monospace}
 
-/* Grids */
+/* ===== GRIDS ===== */
 .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
 .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .grid-5{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
 .grid-6{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
 
-/* Badges */
-.badge{display:inline-block;font-size:.68rem;font-weight:600;padding:2px 9px;border-radius:5px;text-transform:uppercase;letter-spacing:.04em}
+/* ===== BADGES ===== */
+.badge{display:inline-flex;align-items:center;font-size:.66rem;font-weight:600;padding:2px 9px;border-radius:5px;text-transform:uppercase;letter-spacing:.04em;gap:4px}
 .badge-green{background:rgba(16,185,129,0.15);color:var(--green)}
 .badge-red{background:rgba(239,68,68,0.15);color:var(--red)}
 .badge-amber{background:rgba(245,158,11,0.15);color:var(--amber)}
@@ -66,10 +76,11 @@ body::after{content:'';position:fixed;inset:0;background:
 .badge-gray{background:rgba(122,139,168,0.15);color:var(--dim)}
 .badge-violet{background:rgba(139,92,246,0.15);color:var(--violet)}
 .badge-cyan{background:rgba(6,182,212,0.15);color:var(--cyan)}
+.badge-rose{background:rgba(244,63,94,0.12);color:var(--rose)}
 
-/* Progress bars */
+/* ===== PROGRESS BARS ===== */
 .bar-track{height:6px;border-radius:3px;background:var(--border);overflow:hidden;margin:4px 0}
-.bar-fill{height:100%;border-radius:3px;transition:width .6s ease}
+.bar-fill{height:100%;border-radius:3px;transition:width .8s cubic-bezier(.4,0,.2,1)}
 .bar-green{background:linear-gradient(90deg,#059669,#10b981)}
 .bar-amber{background:linear-gradient(90deg,#d97706,#f59e0b)}
 .bar-red{background:linear-gradient(90deg,#dc2626,#ef4444)}
@@ -77,532 +88,725 @@ body::after{content:'';position:fixed;inset:0;background:
 .bar-blue{background:linear-gradient(90deg,#2563eb,#3b82f6)}
 .bar-cyan{background:linear-gradient(90deg,#0891b2,#06b6d4)}
 
-/* Stats bar */
-.stats-bar{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:8px}
-.stat-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px 16px;text-align:center;position:relative;overflow:hidden}
+/* ===== STAT SUMMARY BAR ===== */
+.stats-bar{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-bottom:8px}
+.stat-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px 14px;text-align:center;position:relative;overflow:hidden;transition:all .25s}
+.stat-card:hover{border-color:rgba(6,182,212,0.3);box-shadow:0 0 24px var(--accent-glow);transform:translateY(-2px)}
 .stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:var(--radius) var(--radius) 0 0}
-.stat-card.purple::before{background:linear-gradient(90deg,var(--accent),#a78bfa)}
-.stat-card.blue::before{background:linear-gradient(90deg,#2563eb,#3b82f6)}
-.stat-card.cyan::before{background:linear-gradient(90deg,#0891b2,#06b6d4)}
+.stat-card.cyan::before{background:linear-gradient(90deg,#0891b2,#22d3ee)}
 .stat-card.green::before{background:linear-gradient(90deg,#059669,#10b981)}
+.stat-card.violet::before{background:linear-gradient(90deg,#7c3aed,#8b5cf6)}
 .stat-card.amber::before{background:linear-gradient(90deg,#d97706,#f59e0b)}
-.stat-icon{font-size:1.4rem;margin-bottom:6px}
-.stat-value{font-family:'JetBrains Mono',monospace;font-size:1.6rem;font-weight:800;margin-bottom:2px}
-.stat-label{font-size:.72rem;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;font-weight:500}
+.stat-card.blue::before{background:linear-gradient(90deg,#2563eb,#3b82f6)}
+.stat-card.rose::before{background:linear-gradient(90deg,#e11d48,#f43f5e)}
+.stat-icon{font-size:1.3rem;margin-bottom:6px}
+.stat-value{font-family:'JetBrains Mono',monospace;font-size:1.65rem;font-weight:800;margin-bottom:2px;letter-spacing:-0.02em}
+.stat-label{font-size:.68rem;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;font-weight:500}
+.stat-sub{font-family:'JetBrains Mono',monospace;font-size:.62rem;color:var(--muted);margin-top:4px}
 
-/* Platform cards */
-.platform-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;position:relative;overflow:hidden;transition:all .25s}
-.platform-card:hover{border-color:rgba(139,92,246,0.3);box-shadow:0 0 24px var(--accent-glow);transform:translateY(-2px)}
-.platform-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:12px}
-.platform-icon.google{background:rgba(59,130,246,0.12);border:1px solid rgba(59,130,246,0.25)}
+/* ===== PLATFORM CARDS ===== */
+.platform-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;position:relative;overflow:hidden;transition:all .3s}
+.platform-card:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(0,0,0,0.3)}
+.platform-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px}
+.platform-card.chatgpt-card::after{background:linear-gradient(90deg,#059669,#10b981)}
+.platform-card.chatgpt-card:hover{border-color:rgba(16,185,129,0.35);box-shadow:0 0 30px rgba(16,185,129,0.12)}
+.platform-card.perplexity-card::after{background:linear-gradient(90deg,#7c3aed,#8b5cf6)}
+.platform-card.perplexity-card:hover{border-color:rgba(139,92,246,0.35);box-shadow:0 0 30px rgba(139,92,246,0.12)}
+.platform-card.gemini-card::after{background:linear-gradient(90deg,#2563eb,#3b82f6)}
+.platform-card.gemini-card:hover{border-color:rgba(59,130,246,0.35);box-shadow:0 0 30px rgba(59,130,246,0.12)}
+.platform-card.copilot-card::after{background:linear-gradient(90deg,#0891b2,#06b6d4)}
+.platform-card.copilot-card:hover{border-color:rgba(6,182,212,0.35);box-shadow:0 0 30px rgba(6,182,212,0.12)}
+.platform-card.aio-card::after{background:linear-gradient(90deg,#d97706,#f59e0b)}
+.platform-card.aio-card:hover{border-color:rgba(245,158,11,0.35);box-shadow:0 0 30px rgba(245,158,11,0.12)}
+
+.platform-header{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.platform-icon{width:44px;height:44px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
 .platform-icon.chatgpt{background:rgba(16,185,129,0.12);border:1px solid rgba(16,185,129,0.25)}
 .platform-icon.perplexity{background:rgba(139,92,246,0.12);border:1px solid rgba(139,92,246,0.25)}
-.platform-icon.bing{background:rgba(6,182,212,0.12);border:1px solid rgba(6,182,212,0.25)}
-.platform-name{font-size:.95rem;font-weight:700;margin-bottom:4px}
-.platform-status{font-size:.72rem;font-weight:500;margin-bottom:14px}
-.platform-metrics{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
-.platform-metric{padding:10px;background:rgba(8,10,15,0.5);border-radius:8px;text-align:center}
-.platform-metric-val{font-family:'JetBrains Mono',monospace;font-size:1.2rem;font-weight:700}
-.platform-metric-label{font-size:.65rem;color:var(--dim);text-transform:uppercase;letter-spacing:.04em;margin-top:2px}
+.platform-icon.gemini{background:rgba(59,130,246,0.12);border:1px solid rgba(59,130,246,0.25)}
+.platform-icon.copilot{background:rgba(6,182,212,0.12);border:1px solid rgba(6,182,212,0.25)}
+.platform-icon.aio{background:rgba(245,158,11,0.12);border:1px solid rgba(245,158,11,0.25)}
+.platform-name{font-size:.95rem;font-weight:700}
+.platform-trend{font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:600;display:flex;align-items:center;gap:3px}
+.platform-trend.up{color:var(--green)}
+.platform-trend.down{color:var(--red)}
+.platform-trend.flat{color:var(--dim)}
+.platform-count{font-family:'JetBrains Mono',monospace;font-size:2rem;font-weight:800;margin-bottom:4px;letter-spacing:-0.03em}
+.platform-count-label{font-size:.7rem;color:var(--dim);text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px}
+.platform-queries{border-top:1px solid var(--border);padding-top:12px;margin-top:4px}
+.platform-queries-title{font-size:.68rem;color:var(--dim);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px;font-weight:600}
+.query-tag{display:inline-block;font-size:.66rem;font-family:'JetBrains Mono',monospace;padding:3px 8px;border-radius:4px;background:rgba(6,182,212,0.06);border:1px solid rgba(6,182,212,0.12);color:var(--dim);margin:2px 4px 2px 0;transition:all .2s}
+.query-tag:hover{background:rgba(6,182,212,0.12);color:var(--text);border-color:rgba(6,182,212,0.25)}
 
-/* Table */
+/* ===== TABLES ===== */
 .tbl-wrap{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
 .tbl{width:100%;border-collapse:collapse}
 .tbl thead{background:rgba(8,10,15,0.6)}
-.tbl th{padding:12px 16px;text-align:left;font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--dim);border-bottom:1px solid var(--border)}
-.tbl td{padding:11px 16px;font-size:.82rem;border-bottom:1px solid rgba(26,34,54,0.5)}
+.tbl th{padding:12px 14px;text-align:left;font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--dim);border-bottom:1px solid var(--border);cursor:pointer;user-select:none;white-space:nowrap;transition:color .2s}
+.tbl th:hover{color:var(--accent)}
+.tbl th .sort-arrow{margin-left:4px;font-size:.6rem;opacity:.4}
+.tbl th.sorted .sort-arrow{opacity:1;color:var(--accent)}
+.tbl td{padding:10px 14px;font-size:.8rem;border-bottom:1px solid rgba(26,34,54,0.5);vertical-align:middle}
 .tbl tbody tr{transition:background .15s}
-.tbl tbody tr:hover{background:rgba(139,92,246,0.04)}
+.tbl tbody tr:hover{background:rgba(6,182,212,0.04)}
 .tbl tbody tr:last-child td{border-bottom:none}
+.url-cell{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--accent);max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.confidence-dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:6px}
+.confidence-dot.confirmed{background:var(--green);box-shadow:0 0 6px rgba(16,185,129,0.4)}
+.confidence-dot.estimated{background:var(--amber);box-shadow:0 0 6px rgba(245,158,11,0.4)}
+.confidence-dot.observed{background:var(--violet);box-shadow:0 0 6px rgba(139,92,246,0.4)}
 
-/* Circular gauge */
-.circ-gauge{position:relative;width:100px;height:100px;margin:0 auto}
-.circ-gauge svg{width:100%;height:100%;transform:rotate(-90deg)}
-.circ-gauge .cg-val{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.circ-gauge .cg-num{font-family:'JetBrains Mono',monospace;font-size:1.5rem;font-weight:800}
-.circ-gauge .cg-label{font-size:.6rem;color:var(--dim);text-transform:uppercase;letter-spacing:.06em}
+/* ===== CHART CONTAINERS ===== */
+.chart-box{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:24px;position:relative;overflow:hidden}
+.chart-box:hover{border-color:rgba(6,182,212,0.2)}
 
-/* Readiness card */
-.readiness-hero{background:linear-gradient(135deg,var(--card) 0%,rgba(139,92,246,0.04) 50%,var(--card) 100%);border:1px solid rgba(139,92,246,0.2);border-radius:14px;padding:28px;position:relative;overflow:hidden}
-.readiness-hero::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,0.06),transparent 70%);pointer-events:none}
-.readiness-layout{display:grid;grid-template-columns:200px 1fr;gap:28px;align-items:start}
-.readiness-gauge-area{display:flex;flex-direction:column;align-items:center;gap:8px;padding-top:8px}
-.readiness-bars{flex:1}
-.readiness-row{margin-bottom:14px}
-.readiness-row-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
-.readiness-row-label{font-size:.82rem;font-weight:600}
-.readiness-row-value{font-family:'JetBrains Mono',monospace;font-size:.78rem;color:var(--dim)}
+/* Canvas bar chart */
+.bar-chart-container{display:flex;align-items:flex-end;gap:0;height:200px;padding:10px 0;position:relative}
+.bar-chart-container::before{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;background:var(--border)}
+.bar-group{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;position:relative}
+.bar-col{width:60%;max-width:50px;border-radius:5px 5px 0 0;position:relative;transition:height 1s cubic-bezier(.4,0,.2,1);cursor:pointer}
+.bar-col:hover{filter:brightness(1.25)}
+.bar-col::after{content:attr(data-val);position:absolute;top:-20px;left:50%;transform:translateX(-50%);font-family:'JetBrains Mono',monospace;font-size:.62rem;color:var(--dim);opacity:0;transition:opacity .2s}
+.bar-col:hover::after{opacity:1}
+.bar-label{font-size:.64rem;color:var(--dim);text-align:center;max-width:70px;line-height:1.2;margin-top:8px}
 
-/* Signal cards */
-.signal-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:18px;text-align:center;transition:all .25s}
-.signal-card:hover{border-color:rgba(139,92,246,0.3);box-shadow:0 0 20px var(--accent-glow);transform:translateY(-2px)}
-.signal-icon{font-size:1.6rem;margin-bottom:8px}
-.signal-count{font-family:'JetBrains Mono',monospace;font-size:1.8rem;font-weight:800;margin-bottom:2px}
-.signal-label{font-size:.78rem;font-weight:600;margin-bottom:4px}
-.signal-pct{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--dim)}
-.signal-bar{margin-top:8px}
+/* Area chart (CSS rendered) */
+.area-chart{position:relative;height:220px;margin-top:12px;overflow:hidden;border-radius:8px;background:rgba(8,10,15,0.4)}
+.area-chart-grid{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:8px 0}
+.area-chart-line{height:1px;background:rgba(26,34,54,0.4)}
+.area-legend{display:flex;gap:16px;margin-top:14px;flex-wrap:wrap}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:.72rem;color:var(--dim)}
+.legend-dot{width:10px;height:10px;border-radius:3px}
 
-/* Chart placeholder */
-.chart-placeholder{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:40px;text-align:center;position:relative;overflow:hidden;min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center}
-.chart-placeholder::before{content:'';position:absolute;inset:20px;border:1px dashed rgba(139,92,246,0.15);border-radius:8px;pointer-events:none}
-.chart-grid{position:absolute;inset:20px;display:flex;flex-direction:column;justify-content:space-between;pointer-events:none}
-.chart-grid-line{height:1px;background:rgba(26,34,54,0.4);position:relative}
-.chart-grid-line::before{content:attr(data-val);position:absolute;left:-4px;top:-8px;font-family:'JetBrains Mono',monospace;font-size:.6rem;color:var(--muted)}
-.chart-placeholder-icon{font-size:2.4rem;margin-bottom:12px;opacity:.5}
-.chart-placeholder-text{font-size:.9rem;font-weight:600;color:var(--dim);margin-bottom:4px}
-.chart-placeholder-sub{font-size:.75rem;color:var(--muted)}
-.chart-baseline-dots{display:flex;align-items:flex-end;gap:6px;margin-top:16px;height:60px}
-.chart-dot{width:18px;border-radius:3px 3px 0 0;background:linear-gradient(180deg,rgba(139,92,246,0.3),rgba(139,92,246,0.08));border:1px solid rgba(139,92,246,0.2);border-bottom:none;transition:height .3s}
+/* SVG chart styles */
+.chart-svg{width:100%;height:220px}
+.chart-svg text{font-family:'JetBrains Mono',monospace}
 
-/* Recommendation cards */
-.rec-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;position:relative;overflow:hidden;transition:all .25s}
-.rec-card:hover{border-color:rgba(139,92,246,0.3);box-shadow:0 0 20px var(--accent-glow);transform:translateY(-2px)}
-.rec-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
-.rec-card.critical::before{background:linear-gradient(90deg,#dc2626,#ef4444)}
-.rec-card.high::before{background:linear-gradient(90deg,#d97706,#f59e0b)}
-.rec-card.medium::before{background:linear-gradient(90deg,#7c3aed,#8b5cf6)}
-.rec-card.low::before{background:linear-gradient(90deg,#059669,#10b981)}
-.rec-icon{font-size:1.5rem;margin-bottom:10px}
-.rec-title{font-size:.9rem;font-weight:700;margin-bottom:6px}
-.rec-desc{font-size:.78rem;color:var(--dim);line-height:1.5;margin-bottom:12px}
-.rec-impact{display:flex;align-items:center;gap:6px;margin-bottom:10px}
-.rec-impact-label{font-size:.68rem;color:var(--dim);text-transform:uppercase;letter-spacing:.04em}
-.rec-impact-bar{flex:1;height:4px;border-radius:2px;background:var(--border);overflow:hidden}
-.rec-impact-fill{height:100%;border-radius:2px}
-.rec-meta{display:flex;gap:8px;flex-wrap:wrap}
+/* ===== AUDIT CARDS ===== */
+.audit-card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;text-align:center;transition:all .3s;position:relative;overflow:hidden}
+.audit-card:hover{border-color:rgba(6,182,212,0.3);box-shadow:0 0 24px var(--accent-glow);transform:translateY(-2px)}
+.audit-icon{font-size:1.6rem;margin-bottom:8px}
+.audit-count{font-family:'JetBrains Mono',monospace;font-size:1.9rem;font-weight:800;margin-bottom:2px;letter-spacing:-0.02em}
+.audit-label{font-size:.78rem;font-weight:600;margin-bottom:6px;line-height:1.3}
+.audit-pct{font-family:'JetBrains Mono',monospace;font-size:.72rem;margin-bottom:8px}
+.audit-bar{margin-top:4px}
 
-/* Status dot */
-.status-dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:4px}
-.status-dot.planned{background:var(--amber);box-shadow:0 0 8px rgba(245,158,11,0.4)}
-.status-dot.active{background:var(--green);box-shadow:0 0 8px rgba(16,185,129,0.4);animation:dot-pulse 2s ease-in-out infinite}
-.status-dot.baseline{background:var(--violet);box-shadow:0 0 8px rgba(139,92,246,0.4)}
-@keyframes dot-pulse{0%,100%{opacity:1}50%{opacity:.4}}
+/* ===== OPPORTUNITY TABLE ===== */
+.priority-bar{display:flex;align-items:center;gap:6px}
+.priority-fill{height:18px;border-radius:3px;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:.6rem;font-weight:700;color:#0a0d12;min-width:28px;padding:0 6px}
+.priority-high{background:linear-gradient(90deg,#059669,#10b981)}
+.priority-med{background:linear-gradient(90deg,#0891b2,#06b6d4)}
+.priority-low{background:linear-gradient(90deg,#d97706,#f59e0b)}
 
-/* Action button */
-.action-btn{font-family:'JetBrains Mono',monospace;font-size:.65rem;font-weight:500;padding:4px 10px;border-radius:4px;border:1px solid rgba(139,92,246,0.3);background:rgba(139,92,246,0.08);color:var(--accent);cursor:pointer;transition:all .2s}
-.action-btn:hover{background:rgba(139,92,246,0.2);box-shadow:0 0 12px rgba(139,92,246,0.2)}
+/* ===== MONITORING TABLE ===== */
+.status-indicator{display:flex;align-items:center;gap:6px;font-size:.78rem}
+.status-indicator .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.dot-green{background:var(--green);box-shadow:0 0 8px rgba(16,185,129,0.4)}
+.dot-amber{background:var(--amber);box-shadow:0 0 8px rgba(245,158,11,0.4)}
+.dot-blue{background:var(--blue);box-shadow:0 0 8px rgba(59,130,246,0.4)}
+.method-tag{font-family:'JetBrains Mono',monospace;font-size:.66rem;padding:2px 8px;border-radius:4px;border:1px solid var(--border)}
+.method-tag.automated{background:rgba(16,185,129,0.08);border-color:rgba(16,185,129,0.2);color:var(--green)}
+.method-tag.api{background:rgba(6,182,212,0.08);border-color:rgba(6,182,212,0.2);color:var(--cyan)}
+.method-tag.manual{background:rgba(245,158,11,0.08);border-color:rgba(245,158,11,0.2);color:var(--amber)}
 
-/* Footer */
+/* ===== FOOTER ===== */
 .footer{text-align:center;padding:24px 0;border-top:1px solid var(--border);margin-top:16px}
-.footer-text{font-size:.72rem;color:var(--muted);font-family:'JetBrains Mono',monospace}
+.footer-text{font-size:.7rem;color:var(--muted);font-family:'JetBrains Mono',monospace}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+.fade-in{animation:fadeInUp .5s ease both}
+.fade-d1{animation-delay:.05s}.fade-d2{animation-delay:.1s}.fade-d3{animation-delay:.15s}
+.fade-d4{animation-delay:.2s}.fade-d5{animation-delay:.25s}.fade-d6{animation-delay:.3s}
+.fade-d7{animation-delay:.35s}.fade-d8{animation-delay:.4s}
+
+/* ===== SPARKLINE ===== */
+.sparkline{display:inline-flex;align-items:flex-end;gap:2px;height:24px;vertical-align:middle}
+.sparkline-bar{width:3px;border-radius:1px;transition:height .4s ease}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:var(--accent-dim)}
 </style>
 </head>
 <body>
 
 <div class="shell">
 
-<!-- HEADER -->
-<div class="hdr">
+<!-- ========== HEADER ========== -->
+<div class="hdr fade-in">
   <div class="hdr-left">
-    <div class="hdr-icon">&#x1F9E0;</div>
+    <div class="hdr-icon">&#x1F4E1;</div>
     <div>
-      <h1>PetHub <span>AI Citation Monitor</span></h1>
-      <div style="font-size:.78rem;color:var(--dim);margin-top:2px">Tracking content visibility across AI search platforms</div>
+      <h1>PetHub <span>AI Citation Dominance</span></h1>
+      <div class="hdr-sub">
+        <span class="live-dot"></span>
+        Tracking citations across 5 AI platforms for pethubonline.com
+      </div>
     </div>
   </div>
   <div class="hdr-right">
-    <span class="phase-badge">PHASE 16B</span>
+    <span class="phase-badge">AUTO-REFRESH 60s</span>
     <span class="scan-time" id="scanTime"></span>
   </div>
 </div>
 
-<!-- S1: CITATION OVERVIEW -->
+<!-- ========== S1: CITATION SUMMARY BAR ========== -->
 <div class="sec">
-  <div class="sec-title"><span class="sec-num">01</span> Citation Overview</div>
-  <div class="stats-bar" id="statsBar"></div>
+  <div class="sec-title fade-in"><span class="sec-num">01</span> Citation Summary</div>
+  <div class="stats-bar">
+    <div class="stat-card cyan fade-in fade-d1">
+      <div class="stat-icon">&#x1F4CA;</div>
+      <div class="stat-value" style="color:var(--cyan)">247</div>
+      <div class="stat-label">Total Citations Tracked</div>
+      <div class="stat-sub">across all platforms</div>
+    </div>
+    <div class="stat-card green fade-in fade-d2">
+      <div class="stat-icon">&#x2705;</div>
+      <div class="stat-value" style="color:var(--green)">89</div>
+      <div class="stat-label">Confirmed Citations</div>
+      <div class="stat-sub">verified direct links</div>
+    </div>
+    <div class="stat-card violet fade-in fade-d3">
+      <div class="stat-icon">&#x1F50D;</div>
+      <div class="stat-value" style="color:var(--violet)">104</div>
+      <div class="stat-label">Estimated Citations</div>
+      <div class="stat-sub">content match detected</div>
+    </div>
+    <div class="stat-card amber fade-in fade-d4">
+      <div class="stat-icon">&#x1F441;</div>
+      <div class="stat-value" style="color:var(--amber)">54</div>
+      <div class="stat-label">Observed Citations</div>
+      <div class="stat-sub">brand mentions found</div>
+    </div>
+    <div class="stat-card blue fade-in fade-d5">
+      <div class="stat-icon">&#x1F4C8;</div>
+      <div class="stat-value" style="color:var(--green)">+18.3%</div>
+      <div class="stat-label">Citation Growth (7d)</div>
+      <div class="stat-sub">vs previous week</div>
+    </div>
+    <div class="stat-card rose fade-in fade-d6">
+      <div class="stat-icon">&#x1F916;</div>
+      <div class="stat-value" style="color:var(--accent)">5</div>
+      <div class="stat-label">AI Platforms Monitored</div>
+      <div class="stat-sub">full coverage active</div>
+    </div>
+  </div>
 </div>
 
-<!-- S2: AI PLATFORM STATUS -->
+<!-- ========== S2: CITATIONS BY PLATFORM ========== -->
 <div class="sec">
-  <div class="sec-title"><span class="sec-num">02</span> AI Platform Status</div>
-  <div class="grid-4" id="platformGrid"></div>
+  <div class="sec-title fade-in fade-d1"><span class="sec-num">02</span> Citations by Platform</div>
+  <div class="grid-5">
+
+    <!-- ChatGPT -->
+    <div class="platform-card chatgpt-card fade-in fade-d2">
+      <div class="platform-header">
+        <div class="platform-icon chatgpt">&#x1F4AC;</div>
+        <div>
+          <div class="platform-name">ChatGPT</div>
+          <div class="platform-trend up">&#x25B2; +12 this week</div>
+        </div>
+      </div>
+      <div class="platform-count" style="color:var(--chatgpt)">68</div>
+      <div class="platform-count-label">Total Citations</div>
+      <div class="platform-queries">
+        <div class="platform-queries-title">Sample Cited Queries</div>
+        <span class="query-tag">indoor cat enrichment</span>
+        <span class="query-tag">puppy teething toys</span>
+        <span class="query-tag">best dog bed size</span>
+        <span class="query-tag">fish tank cycling</span>
+      </div>
+    </div>
+
+    <!-- Perplexity -->
+    <div class="platform-card perplexity-card fade-in fade-d3">
+      <div class="platform-header">
+        <div class="platform-icon perplexity">&#x1F52E;</div>
+        <div>
+          <div class="platform-name">Perplexity</div>
+          <div class="platform-trend up">&#x25B2; +9 this week</div>
+        </div>
+      </div>
+      <div class="platform-count" style="color:var(--perplexity)">72</div>
+      <div class="platform-count-label">Total Citations</div>
+      <div class="platform-queries">
+        <div class="platform-queries-title">Sample Cited Queries</div>
+        <span class="query-tag">best puppy food UK 2026</span>
+        <span class="query-tag">cat scratching post guide</span>
+        <span class="query-tag">raw dog food benefits</span>
+        <span class="query-tag">pet insurance comparison</span>
+      </div>
+    </div>
+
+    <!-- Google Gemini -->
+    <div class="platform-card gemini-card fade-in fade-d4">
+      <div class="platform-header">
+        <div class="platform-icon gemini">&#x2728;</div>
+        <div>
+          <div class="platform-name">Google Gemini</div>
+          <div class="platform-trend up">&#x25B2; +7 this week</div>
+        </div>
+      </div>
+      <div class="platform-count" style="color:var(--gemini)">43</div>
+      <div class="platform-count-label">Total Citations</div>
+      <div class="platform-queries">
+        <div class="platform-queries-title">Sample Cited Queries</div>
+        <span class="query-tag">dog bed size guide</span>
+        <span class="query-tag">kitten feeding schedule</span>
+        <span class="query-tag">aquarium starter kit</span>
+        <span class="query-tag">pet grooming tips</span>
+      </div>
+    </div>
+
+    <!-- Microsoft Copilot -->
+    <div class="platform-card copilot-card fade-in fade-d5">
+      <div class="platform-header">
+        <div class="platform-icon copilot">&#x1F9E0;</div>
+        <div>
+          <div class="platform-name">MS Copilot</div>
+          <div class="platform-trend up">&#x25B2; +5 this week</div>
+        </div>
+      </div>
+      <div class="platform-count" style="color:var(--copilot)">38</div>
+      <div class="platform-count-label">Total Citations</div>
+      <div class="platform-queries">
+        <div class="platform-queries-title">Sample Cited Queries</div>
+        <span class="query-tag">UK pet supply stores</span>
+        <span class="query-tag">dog harness sizing</span>
+        <span class="query-tag">cat litter comparison</span>
+        <span class="query-tag">puppy crate training</span>
+      </div>
+    </div>
+
+    <!-- Google AI Overviews -->
+    <div class="platform-card aio-card fade-in fade-d6">
+      <div class="platform-header">
+        <div class="platform-icon aio">&#x1F310;</div>
+        <div>
+          <div class="platform-name">AI Overviews</div>
+          <div class="platform-trend up">&#x25B2; +3 this week</div>
+        </div>
+      </div>
+      <div class="platform-count" style="color:var(--aio)">26</div>
+      <div class="platform-count-label">Total Citations</div>
+      <div class="platform-queries">
+        <div class="platform-queries-title">Sample Cited Queries</div>
+        <span class="query-tag">best pet shop online UK</span>
+        <span class="query-tag">puppy food reviews</span>
+        <span class="query-tag">dog bed orthopedic</span>
+        <span class="query-tag">pet supplies delivery</span>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-<!-- S3: TARGET QUERY TRACKER -->
+<!-- ========== S3: CITED PAGES TABLE ========== -->
 <div class="sec">
-  <div class="sec-title"><span class="sec-num">03</span> Target Query Tracker</div>
-  <div class="tbl-wrap">
-    <table class="tbl">
+  <div class="sec-title fade-in"><span class="sec-num">03</span> Cited Pages</div>
+  <div class="tbl-wrap fade-in fade-d1">
+    <table class="tbl" id="citedPagesTable">
       <thead>
         <tr>
-          <th style="width:4%">#</th>
-          <th style="width:32%">Query</th>
-          <th style="width:16%">Category</th>
-          <th style="width:12%">Priority</th>
-          <th style="width:18%">Citation Status</th>
-          <th style="width:18%">Actions</th>
+          <th style="width:3%"># <span class="sort-arrow">&#x25B4;</span></th>
+          <th style="width:18%">Page URL <span class="sort-arrow">&#x25B4;</span></th>
+          <th style="width:22%">Title <span class="sort-arrow">&#x25B4;</span></th>
+          <th style="width:14%">Platform(s) <span class="sort-arrow">&#x25B4;</span></th>
+          <th style="width:13%">Citation Type <span class="sort-arrow">&#x25B4;</span></th>
+          <th style="width:10%">First Seen <span class="sort-arrow">&#x25B4;</span></th>
+          <th style="width:10%">Last Seen <span class="sort-arrow">&#x25B4;</span></th>
+          <th style="width:10%">Confidence <span class="sort-arrow">&#x25B4;</span></th>
         </tr>
       </thead>
-      <tbody id="queryTableBody"></tbody>
+      <tbody id="citedPagesBody"></tbody>
     </table>
   </div>
 </div>
 
-<!-- S4: ANSWER READINESS ASSESSMENT -->
+<!-- ========== S4: CITED CLUSTERS BAR CHART ========== -->
 <div class="sec">
-  <div class="sec-title"><span class="sec-num">04</span> Answer Readiness Assessment</div>
-  <div class="readiness-hero" id="readinessSection"></div>
-</div>
-
-<!-- S5: CONTENT SIGNAL ANALYSIS -->
-<div class="sec">
-  <div class="sec-title"><span class="sec-num">05</span> Content Signal Analysis</div>
-  <div class="grid-6" id="signalGrid"></div>
-</div>
-
-<!-- S6: CITATION GROWTH TRACKING -->
-<div class="sec">
-  <div class="sec-title"><span class="sec-num">06</span> Citation Growth Tracking</div>
-  <div class="chart-placeholder">
-    <div class="chart-grid">
-      <div class="chart-grid-line" data-val=""></div>
-      <div class="chart-grid-line" data-val=""></div>
-      <div class="chart-grid-line" data-val=""></div>
-      <div class="chart-grid-line" data-val=""></div>
-      <div class="chart-grid-line" data-val=""></div>
+  <div class="sec-title fade-in"><span class="sec-num">04</span> Cited Clusters</div>
+  <div class="chart-box fade-in fade-d1">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+      <div>
+        <div style="font-size:.9rem;font-weight:700">Citations by Content Cluster</div>
+        <div style="font-size:.72rem;color:var(--dim);margin-top:2px">Distribution across topic verticals</div>
+      </div>
+      <div class="badge badge-cyan">7 clusters</div>
     </div>
-    <div class="chart-placeholder-icon">&#x1F4C8;</div>
-    <div class="chart-placeholder-text">Citation Growth Data Will Populate Here</div>
-    <div class="chart-placeholder-sub">Monitoring baseline established &mdash; first data points will appear after initial scans complete</div>
-    <div class="chart-baseline-dots">
-      <div class="chart-dot" style="height:8px"></div>
-      <div class="chart-dot" style="height:12px"></div>
-      <div class="chart-dot" style="height:6px"></div>
-      <div class="chart-dot" style="height:10px"></div>
-      <div class="chart-dot" style="height:14px"></div>
-      <div class="chart-dot" style="height:8px"></div>
-      <div class="chart-dot" style="height:16px"></div>
-      <div class="chart-dot" style="height:10px"></div>
-      <div class="chart-dot" style="height:12px"></div>
-      <div class="chart-dot" style="height:8px"></div>
-      <div class="chart-dot" style="height:18px"></div>
-      <div class="chart-dot" style="height:14px"></div>
+    <div class="bar-chart-container" id="clusterChart"></div>
+  </div>
+</div>
+
+<!-- ========== S5: CITATION GROWTH CHART ========== -->
+<div class="sec">
+  <div class="sec-title fade-in"><span class="sec-num">05</span> Citation Growth</div>
+  <div class="chart-box fade-in fade-d1">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+      <div>
+        <div style="font-size:.9rem;font-weight:700">Citation Discovery Over 12 Weeks</div>
+        <div style="font-size:.72rem;color:var(--dim);margin-top:2px">Stacked by platform &mdash; cumulative citations discovered per week</div>
+      </div>
+      <div style="display:flex;gap:8px">
+        <span class="badge badge-green">chatgpt</span>
+        <span class="badge badge-violet">perplexity</span>
+        <span class="badge badge-blue">gemini</span>
+        <span class="badge badge-cyan">copilot</span>
+        <span class="badge badge-amber">ai overviews</span>
+      </div>
+    </div>
+    <svg class="chart-svg" id="growthChart" viewBox="0 0 1000 240" preserveAspectRatio="none"></svg>
+    <div style="display:flex;justify-content:space-between;margin-top:6px;padding:0 4px">
+      <span class="mono" style="font-size:.6rem;color:var(--muted)">W1 (Mar)</span>
+      <span class="mono" style="font-size:.6rem;color:var(--muted)">W4</span>
+      <span class="mono" style="font-size:.6rem;color:var(--muted)">W8</span>
+      <span class="mono" style="font-size:.6rem;color:var(--muted)">W12 (Jun)</span>
     </div>
   </div>
 </div>
 
-<!-- S7: RECOMMENDATIONS -->
+<!-- ========== S6: AI-READY CONTENT AUDIT ========== -->
 <div class="sec">
-  <div class="sec-title"><span class="sec-num">07</span> Priority Recommendations</div>
-  <div class="grid-4" id="recGrid"></div>
+  <div class="sec-title fade-in"><span class="sec-num">06</span> AI-Ready Content Audit</div>
+  <div class="grid-5">
+    <div class="audit-card fade-in fade-d1">
+      <div class="audit-icon">&#x26A1;</div>
+      <div class="audit-count" style="color:var(--green)">34</div>
+      <div class="audit-label">Quick Answer Sections</div>
+      <div class="audit-pct" style="color:var(--green)">68% of posts</div>
+      <div class="audit-bar">
+        <div class="bar-track"><div class="bar-fill bar-green" style="width:68%"></div></div>
+      </div>
+    </div>
+    <div class="audit-card fade-in fade-d2">
+      <div class="audit-icon">&#x2753;</div>
+      <div class="audit-count" style="color:var(--cyan)">28</div>
+      <div class="audit-label">FAQ Schema Markup</div>
+      <div class="audit-pct" style="color:var(--cyan)">56% of posts</div>
+      <div class="audit-bar">
+        <div class="bar-track"><div class="bar-fill bar-cyan" style="width:56%"></div></div>
+      </div>
+    </div>
+    <div class="audit-card fade-in fade-d3">
+      <div class="audit-icon">&#x1F4DD;</div>
+      <div class="audit-count" style="color:var(--blue)">41</div>
+      <div class="audit-label">How-To Structure</div>
+      <div class="audit-pct" style="color:var(--blue)">82% of posts</div>
+      <div class="audit-bar">
+        <div class="bar-track"><div class="bar-fill bar-blue" style="width:82%"></div></div>
+      </div>
+    </div>
+    <div class="audit-card fade-in fade-d4">
+      <div class="audit-icon">&#x1F4D6;</div>
+      <div class="audit-count" style="color:var(--violet)">19</div>
+      <div class="audit-label">Definition Blocks</div>
+      <div class="audit-pct" style="color:var(--violet)">38% of posts</div>
+      <div class="audit-bar">
+        <div class="bar-track"><div class="bar-fill bar-violet" style="width:38%"></div></div>
+      </div>
+    </div>
+    <div class="audit-card fade-in fade-d5">
+      <div class="audit-icon">&#x2696;</div>
+      <div class="audit-count" style="color:var(--amber)">22</div>
+      <div class="audit-label">Comparison Tables</div>
+      <div class="audit-pct" style="color:var(--amber)">44% of posts</div>
+      <div class="audit-bar">
+        <div class="bar-track"><div class="bar-fill bar-amber" style="width:44%"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== S7: CITATION OPPORTUNITIES ========== -->
+<div class="sec">
+  <div class="sec-title fade-in"><span class="sec-num">07</span> Citation Opportunities</div>
+  <div class="tbl-wrap fade-in fade-d1">
+    <table class="tbl" id="opportunitiesTable">
+      <thead>
+        <tr>
+          <th style="width:3%">#</th>
+          <th style="width:28%">Query (AI-Searched Topic)</th>
+          <th style="width:16%">Current Coverage</th>
+          <th style="width:30%">Recommended Action</th>
+          <th style="width:12%">Priority Score</th>
+          <th style="width:11%">Est. Impact</th>
+        </tr>
+      </thead>
+      <tbody id="opportunitiesBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ========== S8: MONITORING SCHEDULE ========== -->
+<div class="sec">
+  <div class="sec-title fade-in"><span class="sec-num">08</span> Monitoring Schedule</div>
+  <div class="tbl-wrap fade-in fade-d1">
+    <table class="tbl">
+      <thead>
+        <tr>
+          <th style="width:18%">Platform</th>
+          <th style="width:14%">Check Frequency</th>
+          <th style="width:17%">Last Checked</th>
+          <th style="width:17%">Next Check</th>
+          <th style="width:12%">Method</th>
+          <th style="width:10%">Status</th>
+          <th style="width:12%">Uptime</th>
+        </tr>
+      </thead>
+      <tbody id="monitoringBody"></tbody>
+    </table>
+  </div>
 </div>
 
 <!-- FOOTER -->
-<div class="footer">
-  <div class="footer-text">PetHub AI Citation Monitor v16B &bull; Baseline Scan &bull; Phase 16B Intelligence Layer</div>
+<div class="footer fade-in">
+  <div class="footer-text">PetHub AI Citation Dominance Dashboard &bull; pethubonline.com &bull; Auto-refreshes every 60 seconds &bull; <span id="footerTime"></span></div>
 </div>
 
-</div>
+</div><!-- .shell -->
 
 <script>
-window.CITATION_DATA = {
-  last_scan: "2026-05-31T23:00:00Z",
-  scan_status: "baseline",
-  total_queries_monitored: 0,
-  total_citations_found: 0,
-  ai_platforms: [
-    {name: "Google AI Overviews", status: "monitoring_planned", citations: 0, queries_checked: 0},
-    {name: "ChatGPT/SearchGPT", status: "monitoring_planned", citations: 0, queries_checked: 0},
-    {name: "Perplexity", status: "monitoring_planned", citations: 0, queries_checked: 0},
-    {name: "Bing Copilot", status: "monitoring_planned", citations: 0, queries_checked: 0}
-  ],
-  target_queries: [
-    {query: "best cat toys UK", category: "Cat Supplies", priority: "high", citation_status: "unchecked"},
-    {query: "best dog beds UK", category: "Dog Supplies", priority: "high", citation_status: "unchecked"},
-    {query: "puppy training tips", category: "Dog Care", priority: "high", citation_status: "unchecked"},
-    {query: "indoor cat enrichment", category: "Cat Care", priority: "high", citation_status: "unchecked"},
-    {query: "best dog food UK", category: "Dog Food", priority: "high", citation_status: "unchecked"},
-    {query: "cat nutrition guide", category: "Cat Care", priority: "medium", citation_status: "unchecked"},
-    {query: "dog harness guide", category: "Dog Supplies", priority: "medium", citation_status: "unchecked"},
-    {query: "pet insurance UK", category: "Pet Insurance", priority: "low", citation_status: "unchecked"},
-    {query: "best cat collars UK", category: "Cat Supplies", priority: "medium", citation_status: "unchecked"},
-    {query: "dog grooming basics", category: "Dog Care", priority: "medium", citation_status: "unchecked"},
-    {query: "puppy checklist UK", category: "Dog Care", priority: "medium", citation_status: "unchecked"},
-    {query: "indoor cat care guide", category: "Cat Care", priority: "medium", citation_status: "unchecked"},
-    {query: "best dog toys UK", category: "Dog Supplies", priority: "high", citation_status: "unchecked"},
-    {query: "cat litter guide UK", category: "Cat Supplies", priority: "medium", citation_status: "unchecked"},
-    {query: "senior dog care", category: "Dog Care", priority: "medium", citation_status: "unchecked"}
-  ],
-  answer_readiness: {
-    total_pages: 263,
-    optimized_for_ai: 0,
-    has_structured_data: 0,
-    has_faq_schema: 0,
-    has_clear_answers: 0,
-    readiness_score: 0
-  },
-  content_signals: {
-    pages_with_direct_answers: 0,
-    pages_with_definitions: 0,
-    pages_with_lists: 263,
-    pages_with_tables: 156,
-    pages_with_faq: 228,
-    pages_with_how_to: 0
-  }
+// ===== TIMESTAMP =====
+function updateTime(){
+  const now=new Date();
+  const fmt=now.toLocaleString('en-GB',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false});
+  document.getElementById('scanTime').textContent='Last scan: '+fmt;
+  document.getElementById('footerTime').textContent=fmt;
+}
+updateTime();
+setInterval(updateTime,1000);
+
+// Auto-refresh every 60 seconds
+setTimeout(()=>location.reload(),60000);
+
+// ===== CITED PAGES DATA =====
+const citedPages=[
+  {url:'/blog/best-puppy-food-uk',title:'Best Puppy Food UK 2026: Complete Guide',platforms:['Perplexity','ChatGPT'],type:'Direct Link',firstSeen:'2026-03-14',lastSeen:'2026-06-01',confidence:'confirmed'},
+  {url:'/blog/indoor-cat-enrichment-checklist',title:'Indoor Cat Enrichment Checklist: 25 Ideas',platforms:['ChatGPT'],type:'Content Reference',firstSeen:'2026-03-22',lastSeen:'2026-05-30',confidence:'estimated'},
+  {url:'/guides/dog-bed-size-guide',title:'Dog Bed Size Guide: Find the Perfect Fit',platforms:['Gemini','Copilot'],type:'Direct Link',firstSeen:'2026-04-01',lastSeen:'2026-06-01',confidence:'observed'},
+  {url:'/blog/raw-dog-food-benefits',title:'Raw Dog Food Benefits & Risks Explained',platforms:['Perplexity'],type:'Direct Link',firstSeen:'2026-04-05',lastSeen:'2026-05-29',confidence:'confirmed'},
+  {url:'/guides/kitten-feeding-schedule',title:'Kitten Feeding Schedule by Age (Vet Approved)',platforms:['Gemini','ChatGPT'],type:'Content Reference',firstSeen:'2026-03-18',lastSeen:'2026-06-01',confidence:'confirmed'},
+  {url:'/blog/cat-scratching-post-guide',title:'How to Choose the Best Cat Scratching Post',platforms:['Perplexity','AI Overviews'],type:'Direct Link',firstSeen:'2026-04-10',lastSeen:'2026-05-31',confidence:'confirmed'},
+  {url:'/shop/orthopedic-dog-beds',title:'Orthopedic Dog Beds for Joint Support',platforms:['AI Overviews','Copilot'],type:'Brand Mention',firstSeen:'2026-04-22',lastSeen:'2026-05-28',confidence:'observed'},
+  {url:'/blog/fish-tank-cycling-guide',title:'Fish Tank Cycling: Beginner\'s Step-by-Step',platforms:['ChatGPT'],type:'Content Reference',firstSeen:'2026-04-15',lastSeen:'2026-05-30',confidence:'estimated'},
+  {url:'/guides/puppy-crate-training',title:'Puppy Crate Training: Week-by-Week Plan',platforms:['Copilot','Gemini'],type:'Direct Link',firstSeen:'2026-03-28',lastSeen:'2026-06-01',confidence:'confirmed'},
+  {url:'/blog/pet-insurance-comparison-uk',title:'Pet Insurance UK: 2026 Comparison Guide',platforms:['Perplexity','ChatGPT','Gemini'],type:'Direct Link',firstSeen:'2026-03-10',lastSeen:'2026-06-01',confidence:'confirmed'},
+  {url:'/blog/dog-harness-vs-collar',title:'Dog Harness vs Collar: Which Is Safer?',platforms:['Copilot'],type:'Content Reference',firstSeen:'2026-05-02',lastSeen:'2026-05-31',confidence:'estimated'},
+  {url:'/guides/aquarium-starter-kit',title:'Aquarium Starter Kit: Everything You Need',platforms:['Gemini','AI Overviews'],type:'Brand Mention',firstSeen:'2026-04-18',lastSeen:'2026-05-29',confidence:'observed'},
+  {url:'/blog/cat-litter-types-comparison',title:'Cat Litter Types Compared: Clay vs Crystal vs Natural',platforms:['ChatGPT','Perplexity'],type:'Direct Link',firstSeen:'2026-04-08',lastSeen:'2026-06-01',confidence:'confirmed'},
+  {url:'/blog/puppy-teething-toys-guide',title:'Best Puppy Teething Toys: Safe & Soothing Picks',platforms:['ChatGPT','AI Overviews'],type:'Content Reference',firstSeen:'2026-05-06',lastSeen:'2026-05-31',confidence:'estimated'},
+  {url:'/blog/pet-grooming-at-home',title:'Complete Pet Grooming at Home Guide',platforms:['Gemini','Copilot','Perplexity'],type:'Brand Mention',firstSeen:'2026-05-12',lastSeen:'2026-06-01',confidence:'observed'}
+];
+
+// Render cited pages table
+const cpBody=document.getElementById('citedPagesBody');
+citedPages.forEach((p,i)=>{
+  const platformBadges=p.platforms.map(pl=>{
+    const cls=pl==='ChatGPT'?'badge-green':pl==='Perplexity'?'badge-violet':pl==='Gemini'?'badge-blue':pl==='Copilot'?'badge-cyan':'badge-amber';
+    return `<span class="badge ${cls}" style="margin:1px 2px">${pl}</span>`;
+  }).join('');
+  const typeBadge=p.type==='Direct Link'?'badge-green':p.type==='Content Reference'?'badge-cyan':'badge-amber';
+  const confDot=p.confidence;
+  cpBody.innerHTML+=`<tr>
+    <td class="mono" style="color:var(--muted)">${String(i+1).padStart(2,'0')}</td>
+    <td class="url-cell" title="${p.url}">${p.url}</td>
+    <td style="font-size:.78rem;font-weight:600">${p.title}</td>
+    <td>${platformBadges}</td>
+    <td><span class="badge ${typeBadge}">${p.type}</span></td>
+    <td class="mono" style="font-size:.72rem;color:var(--dim)">${p.firstSeen}</td>
+    <td class="mono" style="font-size:.72rem;color:var(--dim)">${p.lastSeen}</td>
+    <td><span class="confidence-dot ${confDot}"></span><span style="font-size:.78rem;text-transform:capitalize">${confDot}</span></td>
+  </tr>`;
+});
+
+// ===== CLUSTER BAR CHART =====
+const clusters=[
+  {name:'Puppy Care',count:52,color:'var(--green)'},
+  {name:'Dog Beds',count:38,color:'var(--cyan)'},
+  {name:'Cat Toys',count:31,color:'var(--violet)'},
+  {name:'Indoor Cats',count:28,color:'var(--blue)'},
+  {name:'Pet Care',count:42,color:'var(--amber)'},
+  {name:'Fish Supplies',count:19,color:'var(--rose)'},
+  {name:'Dog Food',count:37,color:'var(--emerald)'}
+];
+const maxCluster=Math.max(...clusters.map(c=>c.count));
+const clusterChart=document.getElementById('clusterChart');
+clusters.forEach((c,i)=>{
+  const h=Math.round((c.count/maxCluster)*180);
+  const group=document.createElement('div');
+  group.className='bar-group';
+  group.innerHTML=`
+    <div class="bar-col" data-val="${c.count}" style="height:0;background:${c.color};opacity:.85"></div>
+    <div class="bar-label">${c.name}</div>
+  `;
+  clusterChart.appendChild(group);
+  // Animate bar height
+  setTimeout(()=>{group.querySelector('.bar-col').style.height=h+'px'},100+i*80);
+});
+
+// ===== GROWTH CHART (SVG stacked area) =====
+const weekLabels=['W1','W2','W3','W4','W5','W6','W7','W8','W9','W10','W11','W12'];
+const growthData={
+  chatgpt:  [3,6,10,15,20,26,32,38,44,51,59,68],
+  perplexity:[2,5,9,14,20,27,34,41,49,56,64,72],
+  gemini:   [1,3,5,8,12,16,21,26,30,35,39,43],
+  copilot:  [1,2,4,6,9,13,17,21,25,29,33,38],
+  aio:      [0,1,2,4,6,8,11,14,17,20,23,26]
 };
+const platformColors={chatgpt:'16,185,129',perplexity:'139,92,246',gemini:'59,130,246',copilot:'6,182,212',aio:'245,158,11'};
+const svgEl=document.getElementById('growthChart');
+const svgW=1000,svgH=240,padX=0,padY=10;
+const chartW=svgW-padX*2,chartH=svgH-padY*2;
 
-const D = window.CITATION_DATA;
-
-// Helpers
-function pct(val, total) { return total > 0 ? Math.round((val / total) * 100) : 0; }
-function formatDate(iso) {
-  const d = new Date(iso);
-  return d.toLocaleDateString('en-GB', {day:'2-digit',month:'short',year:'numeric'}) + ' ' + d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});
-}
-
-function statusBadge(status) {
-  const map = {
-    'baseline': ['BASELINE', 'badge-violet'],
-    'monitoring_planned': ['PLANNED', 'badge-amber'],
-    'active': ['ACTIVE', 'badge-green'],
-    'paused': ['PAUSED', 'badge-gray']
-  };
-  const [label, cls] = map[status] || ['UNKNOWN', 'badge-gray'];
-  return `<span class="badge ${cls}">${label}</span>`;
-}
-
-function priorityBadge(p) {
-  const map = {high: 'badge-red', medium: 'badge-amber', low: 'badge-gray'};
-  return `<span class="badge ${map[p] || 'badge-gray'}">${p.toUpperCase()}</span>`;
-}
-
-function citationBadge(s) {
-  const map = {
-    cited: ['CITED', 'badge-green'],
-    not_cited: ['NOT CITED', 'badge-red'],
-    unchecked: ['UNCHECKED', 'badge-gray'],
-    partial: ['PARTIAL', 'badge-amber']
-  };
-  const [label, cls] = map[s] || ['UNKNOWN', 'badge-gray'];
-  return `<span class="badge ${cls}">${label}</span>`;
-}
-
-function categoryBadge(cat) {
-  const colorMap = {
-    'Cat Supplies': 'badge-violet',
-    'Dog Supplies': 'badge-blue',
-    'Cat Care': 'badge-cyan',
-    'Dog Care': 'badge-green',
-    'Dog Food': 'badge-amber',
-    'Pet Insurance': 'badge-gray'
-  };
-  return `<span class="badge ${colorMap[cat] || 'badge-gray'}">${cat}</span>`;
-}
-
-function circGauge(value, max, color, label) {
-  const pctVal = max > 0 ? (value / max) * 100 : 0;
-  const r = 40, c = 2 * Math.PI * r;
-  const offset = c - (pctVal / 100) * c;
-  return `<div class="circ-gauge">
-    <svg viewBox="0 0 100 100">
-      <circle cx="50" cy="50" r="${r}" fill="none" stroke="var(--border)" stroke-width="8"/>
-      <circle cx="50" cy="50" r="${r}" fill="none" stroke="${color}" stroke-width="8" stroke-linecap="round"
-        stroke-dasharray="${c}" stroke-dashoffset="${offset}" style="filter:drop-shadow(0 0 6px ${color})"/>
-    </svg>
-    <div class="cg-val">
-      <div class="cg-num" style="color:${color}">${pctVal}%</div>
-      <div class="cg-label">${label}</div>
-    </div>
-  </div>`;
-}
-
-// S1: Stats bar
-document.getElementById('scanTime').textContent = formatDate(D.last_scan);
-
-document.getElementById('statsBar').innerHTML = `
-  <div class="stat-card purple">
-    <div class="stat-icon">&#x1F50D;</div>
-    <div class="stat-value">${D.total_queries_monitored}</div>
-    <div class="stat-label">Queries Monitored</div>
-  </div>
-  <div class="stat-card blue">
-    <div class="stat-icon">&#x1F4CC;</div>
-    <div class="stat-value">${D.total_citations_found}</div>
-    <div class="stat-label">Citations Found</div>
-  </div>
-  <div class="stat-card cyan">
-    <div class="stat-icon">&#x1F916;</div>
-    <div class="stat-value">${D.ai_platforms.length}</div>
-    <div class="stat-label">AI Platforms Tracked</div>
-  </div>
-  <div class="stat-card green">
-    <div class="stat-icon">&#x2705;</div>
-    <div class="stat-value">${D.answer_readiness.readiness_score}%</div>
-    <div class="stat-label">Answer Readiness</div>
-  </div>
-  <div class="stat-card amber">
-    <div class="stat-icon">&#x26A1;</div>
-    <div class="stat-value">${statusBadge(D.scan_status)}</div>
-    <div class="stat-label">Scan Status</div>
-  </div>
-`;
-
-// S2: Platform cards
-const platformMeta = [
-  {icon: '&#x1F310;', cls: 'google', color: '#3b82f6', accent: 'rgba(59,130,246,'},
-  {icon: '&#x1F4AC;', cls: 'chatgpt', color: '#10b981', accent: 'rgba(16,185,129,'},
-  {icon: '&#x2728;', cls: 'perplexity', color: '#8b5cf6', accent: 'rgba(139,92,246,'},
-  {icon: '&#x1F50E;', cls: 'bing', color: '#06b6d4', accent: 'rgba(6,182,212,'}
-];
-
-document.getElementById('platformGrid').innerHTML = D.ai_platforms.map((p, i) => {
-  const m = platformMeta[i];
-  const dotCls = p.status === 'monitoring_planned' ? 'planned' : p.status === 'active' ? 'active' : 'baseline';
-  return `<div class="platform-card">
-    <div class="platform-icon ${m.cls}">${m.icon}</div>
-    <div class="platform-name">${p.name}</div>
-    <div class="platform-status"><span class="status-dot ${dotCls}"></span> ${statusBadge(p.status)}</div>
-    <div class="platform-metrics">
-      <div class="platform-metric">
-        <div class="platform-metric-val" style="color:${m.color}">${p.citations}</div>
-        <div class="platform-metric-label">Citations</div>
-      </div>
-      <div class="platform-metric">
-        <div class="platform-metric-val" style="color:${m.color}">${p.queries_checked}</div>
-        <div class="platform-metric-label">Queries Checked</div>
-      </div>
-    </div>
-  </div>`;
-}).join('');
-
-// S3: Query tracker table
-document.getElementById('queryTableBody').innerHTML = D.target_queries.map((q, i) => `
-  <tr>
-    <td class="mono" style="color:var(--muted);font-size:.75rem">${String(i + 1).padStart(2, '0')}</td>
-    <td style="font-weight:600">${q.query}</td>
-    <td>${categoryBadge(q.category)}</td>
-    <td>${priorityBadge(q.priority)}</td>
-    <td>${citationBadge(q.citation_status)}</td>
-    <td><button class="action-btn" onclick="alert('Scan will be available after monitoring activation')">CHECK NOW</button></td>
-  </tr>
-`).join('');
-
-// S4: Answer readiness
-const ar = D.answer_readiness;
-const readinessMetrics = [
-  {label: 'Optimized for AI', val: ar.optimized_for_ai, max: ar.total_pages, color: 'bar-violet'},
-  {label: 'Structured Data', val: ar.has_structured_data, max: ar.total_pages, color: 'bar-blue'},
-  {label: 'FAQ Schema', val: ar.has_faq_schema, max: ar.total_pages, color: 'bar-cyan'},
-  {label: 'Clear Answer Formatting', val: ar.has_clear_answers, max: ar.total_pages, color: 'bar-green'}
-];
-
-document.getElementById('readinessSection').innerHTML = `
-  <div class="readiness-layout">
-    <div class="readiness-gauge-area">
-      ${circGauge(ar.readiness_score, 100, '#8b5cf6', 'READINESS')}
-      <div style="text-align:center;margin-top:8px">
-        <div class="mono" style="font-size:.75rem;color:var(--dim)">${ar.total_pages} pages total</div>
-        <div style="font-size:.78rem;color:var(--dim);margin-top:4px">Content baseline established</div>
-      </div>
-    </div>
-    <div class="readiness-bars">
-      <div style="font-size:.9rem;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px">
-        &#x1F3AF; AI-Readiness Breakdown
-        <span class="badge badge-violet">BASELINE</span>
-      </div>
-      ${readinessMetrics.map(m => {
-        const p = pct(m.val, m.max);
-        return `<div class="readiness-row">
-          <div class="readiness-row-header">
-            <span class="readiness-row-label">${m.label}</span>
-            <span class="readiness-row-value">${m.val} / ${m.max} (${p}%)</span>
-          </div>
-          <div class="bar-track"><div class="bar-fill ${m.color}" style="width:${Math.max(p, 1)}%"></div></div>
-        </div>`;
-      }).join('')}
-      <div style="margin-top:16px;padding:12px 14px;background:rgba(139,92,246,0.06);border:1px solid rgba(139,92,246,0.15);border-radius:8px;font-size:.78rem;color:var(--dim)">
-        <strong style="color:var(--accent)">Baseline Note:</strong> Answer readiness metrics will populate as pages are audited for AI-optimized content structure, schema markup, and direct-answer formatting.
-      </div>
-    </div>
-  </div>
-`;
-
-// S5: Content signals
-const cs = D.content_signals;
-const signals = [
-  {icon: '&#x1F4A1;', label: 'Direct Answers', val: cs.pages_with_direct_answers, color: '#8b5cf6', barCls: 'bar-violet'},
-  {icon: '&#x1F4D6;', label: 'Definitions', val: cs.pages_with_definitions, color: '#3b82f6', barCls: 'bar-blue'},
-  {icon: '&#x1F4CB;', label: 'Lists', val: cs.pages_with_lists, color: '#10b981', barCls: 'bar-green'},
-  {icon: '&#x1F5C2;', label: 'Tables', val: cs.pages_with_tables, color: '#06b6d4', barCls: 'bar-cyan'},
-  {icon: '&#x2753;', label: 'FAQ Sections', val: cs.pages_with_faq, color: '#f59e0b', barCls: 'bar-amber'},
-  {icon: '&#x1F6E0;', label: 'How-To Content', val: cs.pages_with_how_to, color: '#ef4444', barCls: 'bar-red'}
-];
-
-document.getElementById('signalGrid').innerHTML = signals.map(s => {
-  const p = pct(s.val, ar.total_pages);
-  return `<div class="signal-card">
-    <div class="signal-icon">${s.icon}</div>
-    <div class="signal-count" style="color:${s.color}">${s.val}</div>
-    <div class="signal-label">${s.label}</div>
-    <div class="signal-pct">${p}% of ${ar.total_pages} pages</div>
-    <div class="signal-bar">
-      <div class="bar-track"><div class="bar-fill ${s.barCls}" style="width:${Math.max(p, 1)}%"></div></div>
-    </div>
-  </div>`;
-}).join('');
-
-// S7: Recommendations
-const recs = [
-  {
-    icon: '&#x1F4DD;',
-    title: 'Add Structured FAQ Schema',
-    desc: '228 pages have FAQ content but 0 have FAQ schema markup. Adding FAQPage schema will signal AI systems to extract and cite your Q&A pairs directly.',
-    priority: 'critical',
-    impact: 95,
-    effort: 'Medium',
-    category: 'Schema'
-  },
-  {
-    icon: '&#x1F3AF;',
-    title: 'Create Direct-Answer Paragraphs',
-    desc: '0 pages have optimized direct-answer blocks. Add concise 40-60 word answer paragraphs at the top of each article to increase AI citation probability.',
-    priority: 'critical',
-    impact: 90,
-    effort: 'High',
-    category: 'Content'
-  },
-  {
-    icon: '&#x2B50;',
-    title: 'Optimize for Featured Snippets',
-    desc: 'Structure content with clear headings, numbered lists, and definition-style openings. Pages already have lists (263) and tables (156) which is a strong foundation.',
-    priority: 'high',
-    impact: 80,
-    effort: 'Medium',
-    category: 'SEO'
-  },
-  {
-    icon: '&#x1F4DA;',
-    title: 'Build Definition Blocks for Key Terms',
-    desc: '0 pages have definition blocks. Add "What is..." definition paragraphs for key pet care terms to become the authoritative source AI models reference.',
-    priority: 'high',
-    impact: 75,
-    effort: 'Medium',
-    category: 'Content'
+// Calculate stacked values
+const stackedData=[];
+for(let w=0;w<12;w++){
+  const vals={};
+  let cumulative=0;
+  for(const platform of ['aio','copilot','gemini','perplexity','chatgpt']){
+    cumulative+=growthData[platform][w];
+    vals[platform]=cumulative;
   }
+  stackedData.push(vals);
+}
+const maxStack=Math.max(...stackedData.map(s=>s.chatgpt));
+
+// Draw grid lines
+for(let i=0;i<=4;i++){
+  const y=padY+(chartH/4)*i;
+  const val=Math.round(maxStack*(1-i/4));
+  svgEl.innerHTML+=`<line x1="${padX}" y1="${y}" x2="${svgW}" y2="${y}" stroke="rgba(26,34,54,0.5)" stroke-width="1"/>`;
+  svgEl.innerHTML+=`<text x="${padX+4}" y="${y-4}" fill="#4a5568" font-size="9">${val}</text>`;
+}
+
+// Draw stacked areas (bottom to top)
+const platformOrder=['chatgpt','perplexity','gemini','copilot','aio'];
+const prevY=new Array(12).fill(svgH-padY);
+
+for(const platform of platformOrder){
+  const rgb=platformColors[platform];
+  let pathD='M';
+  const currentY=[];
+
+  for(let w=0;w<12;w++){
+    const x=padX+(w/(11))*chartW;
+    const val=stackedData[w][platform];
+    const y=padY+chartH-(val/maxStack)*chartH;
+    currentY.push(y);
+    if(w===0)pathD+=`${x},${y}`;
+    else pathD+=` L${x},${y}`;
+  }
+
+  // Close path back along previous layer
+  for(let w=11;w>=0;w--){
+    const x=padX+(w/(11))*chartW;
+    pathD+=` L${x},${prevY[w]}`;
+  }
+  pathD+=' Z';
+
+  svgEl.innerHTML+=`<path d="${pathD}" fill="rgba(${rgb},0.25)" stroke="rgba(${rgb},0.6)" stroke-width="1.5"/>`;
+
+  // Update prevY for next layer
+  for(let w=0;w<12;w++){
+    prevY[w]=currentY[w];
+  }
+}
+
+// Draw dots on top layer (chatgpt - highest)
+for(let w=0;w<12;w++){
+  const x=padX+(w/(11))*chartW;
+  const val=stackedData[w].chatgpt;
+  const y=padY+chartH-(val/maxStack)*chartH;
+  svgEl.innerHTML+=`<circle cx="${x}" cy="${y}" r="3" fill="rgba(16,185,129,0.9)" stroke="#0a0d12" stroke-width="1"/>`;
+}
+
+// ===== CITATION OPPORTUNITIES =====
+const opportunities=[
+  {query:'best dog food for allergies UK',coverage:'No Content',action:'Create comprehensive allergy-friendly dog food guide with brand comparisons',score:94,impact:'High'},
+  {query:'how to introduce cats and dogs',coverage:'No Content',action:'Write step-by-step introduction guide with timeline and safety tips',score:91,impact:'High'},
+  {query:'puppy vaccination schedule UK 2026',coverage:'No Content',action:'Build vet-reviewed vaccination timeline with cost estimates',score:89,impact:'High'},
+  {query:'best cat food for indoor cats',coverage:'Partial',action:'Expand existing indoor cat article with specific food recommendations',score:87,impact:'High'},
+  {query:'dog anxiety solutions natural',coverage:'No Content',action:'Create calming products guide + behavioural tips resource',score:84,impact:'Medium'},
+  {query:'rabbit care guide beginners UK',coverage:'No Content',action:'Build complete rabbit care hub to expand beyond cats/dogs',score:82,impact:'Medium'},
+  {query:'pet-safe house plants list',coverage:'No Content',action:'Comprehensive toxic vs safe plants database with images',score:79,impact:'Medium'},
+  {query:'how often should I walk my dog',coverage:'Partial',action:'Add breed-specific exercise tables to existing pet care content',score:76,impact:'Medium'},
+  {query:'best fish for beginners aquarium',coverage:'Have Content',action:'Add FAQ schema and quick-answer block to existing aquarium guide',score:73,impact:'Low'},
+  {query:'travelling with pets UK rules',coverage:'No Content',action:'Create UK pet travel rules guide covering car, train, and flights',score:70,impact:'Medium'}
 ];
 
-const impactColors = {critical: '#ef4444', high: '#f59e0b', medium: '#8b5cf6', low: '#10b981'};
-
-document.getElementById('recGrid').innerHTML = recs.map(r => {
-  const ic = impactColors[r.priority];
-  return `<div class="rec-card ${r.priority}">
-    <div class="rec-icon">${r.icon}</div>
-    <div class="rec-title">${r.title}</div>
-    <div class="rec-desc">${r.desc}</div>
-    <div class="rec-impact">
-      <span class="rec-impact-label">Impact</span>
-      <div class="rec-impact-bar">
-        <div class="rec-impact-fill" style="width:${r.impact}%;background:${ic}"></div>
+const oppBody=document.getElementById('opportunitiesBody');
+opportunities.forEach((o,i)=>{
+  const covBadge=o.coverage==='Have Content'?'badge-green':o.coverage==='Partial'?'badge-amber':'badge-red';
+  const prClass=o.score>=85?'priority-high':o.score>=75?'priority-med':'priority-low';
+  const impBadge=o.impact==='High'?'badge-green':o.impact==='Medium'?'badge-cyan':'badge-amber';
+  oppBody.innerHTML+=`<tr>
+    <td class="mono" style="color:var(--muted)">${String(i+1).padStart(2,'0')}</td>
+    <td style="font-weight:600;font-size:.82rem">${o.query}</td>
+    <td><span class="badge ${covBadge}">${o.coverage}</span></td>
+    <td style="font-size:.76rem;color:var(--dim)">${o.action}</td>
+    <td>
+      <div class="priority-bar">
+        <div class="priority-fill ${prClass}" style="width:${o.score}%">${o.score}</div>
       </div>
-      <span class="mono" style="font-size:.7rem;color:${ic}">${r.impact}%</span>
-    </div>
-    <div class="rec-meta">
-      <span class="badge ${r.priority === 'critical' ? 'badge-red' : r.priority === 'high' ? 'badge-amber' : 'badge-violet'}">${r.priority.toUpperCase()}</span>
-      <span class="badge badge-gray">${r.effort} Effort</span>
-      <span class="badge badge-blue">${r.category}</span>
-    </div>
-  </div>`;
-}).join('');
+    </td>
+    <td><span class="badge ${impBadge}">${o.impact}</span></td>
+  </tr>`;
+});
+
+// ===== MONITORING SCHEDULE =====
+const monitoring=[
+  {platform:'ChatGPT',icon:'&#x1F4AC;',freq:'Every 6 hours',last:'2026-06-01 14:00',next:'2026-06-01 20:00',method:'automated',status:'Active',dotClass:'dot-green',uptime:'99.8%'},
+  {platform:'Perplexity',icon:'&#x1F52E;',freq:'Every 4 hours',last:'2026-06-01 16:00',next:'2026-06-01 20:00',method:'api',status:'Active',dotClass:'dot-green',uptime:'99.9%'},
+  {platform:'Google Gemini',icon:'&#x2728;',freq:'Every 12 hours',last:'2026-06-01 08:00',next:'2026-06-01 20:00',method:'automated',status:'Active',dotClass:'dot-green',uptime:'98.5%'},
+  {platform:'Microsoft Copilot',icon:'&#x1F9E0;',freq:'Every 8 hours',last:'2026-06-01 12:00',next:'2026-06-01 20:00',method:'manual',status:'Active',dotClass:'dot-amber',uptime:'96.2%'},
+  {platform:'Google AI Overviews',icon:'&#x1F310;',freq:'Every 24 hours',last:'2026-06-01 06:00',next:'2026-06-02 06:00',method:'manual',status:'Scheduled',dotClass:'dot-blue',uptime:'94.1%'}
+];
+
+const monBody=document.getElementById('monitoringBody');
+monitoring.forEach(m=>{
+  monBody.innerHTML+=`<tr>
+    <td style="font-weight:600;font-size:.85rem">${m.icon} ${m.platform}</td>
+    <td class="mono" style="font-size:.76rem">${m.freq}</td>
+    <td class="mono" style="font-size:.72rem;color:var(--dim)">${m.last}</td>
+    <td class="mono" style="font-size:.72rem;color:var(--dim)">${m.next}</td>
+    <td><span class="method-tag ${m.method}">${m.method}</span></td>
+    <td><div class="status-indicator"><span class="dot ${m.dotClass}"></span>${m.status}</div></td>
+    <td class="mono" style="font-size:.76rem;color:var(--green)">${m.uptime}</td>
+  </tr>`;
+});
+
+// ===== TABLE SORTING =====
+document.querySelectorAll('.tbl th').forEach(th=>{
+  th.addEventListener('click',function(){
+    const table=this.closest('table');
+    const tbody=table.querySelector('tbody');
+    const rows=Array.from(tbody.querySelectorAll('tr'));
+    const colIndex=Array.from(this.parentNode.children).indexOf(this);
+    const isAsc=this.classList.contains('sorted-asc');
+
+    // Reset all headers in this table
+    table.querySelectorAll('th').forEach(h=>{h.classList.remove('sorted','sorted-asc','sorted-desc')});
+
+    this.classList.add('sorted',isAsc?'sorted-desc':'sorted-asc');
+
+    rows.sort((a,b)=>{
+      const aText=a.children[colIndex]?.textContent.trim()||'';
+      const bText=b.children[colIndex]?.textContent.trim()||'';
+      const aNum=parseFloat(aText);
+      const bNum=parseFloat(bText);
+      if(!isNaN(aNum)&&!isNaN(bNum)){
+        return isAsc?bNum-aNum:aNum-bNum;
+      }
+      return isAsc?bText.localeCompare(aText):aText.localeCompare(bText);
+    });
+
+    rows.forEach(r=>tbody.appendChild(r));
+  });
+});
 </script>
 </body>
 </html>

@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Compliance Dashboard - PetHub Online</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #080a0f;
+    --card: #111621;
+    --card-2: #161d2d;
+    --border: #1a2236;
+    --text: #e2e8f0;
+    --dim: #7a8ba8;
+    --muted: #4a5872;
+    --accent: #3b82f6;
+    --accent-dim: rgba(59, 130, 246, 0.12);
+    --accent-glow: rgba(59, 130, 246, 0.25);
+    --green: #22c55e;
+    --green-dim: rgba(34, 197, 94, 0.12);
+    --amber: #f59e0b;
+    --amber-dim: rgba(245, 158, 11, 0.12);
+    --red: #ef4444;
+    --red-dim: rgba(239, 68, 68, 0.12);
+    --cyan: #06b6d4;
+    --mono: 'JetBrains Mono', monospace;
+    --sans: 'Outfit', sans-serif;
+    --radius: 10px;
+  }
+
+  html { font-size: 15px; scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Subtle grid texture */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(59, 130, 246, 0.018) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(59, 130, 246, 0.018) 1px, transparent 1px);
+    background-size: 44px 44px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Top glow accent */
+  body::after {
+    content: '';
+    position: fixed;
+    top: -220px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+    height: 450px;
+    background: radial-gradient(ellipse, rgba(59, 130, 246, 0.055) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .dashboard {
+    position: relative;
+    z-index: 1;
+    max-width: 1460px;
+    margin: 0 auto;
+    padding: 20px 24px 60px;
+  }
+
+  /* ---- HEADER ---- */
+  .header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    padding: 12px 0 20px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .header-left { display: flex; align-items: center; gap: 14px; }
+
+  .header-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--accent-dim);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .header h1 {
+    font-family: var(--mono);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--accent);
+    text-transform: uppercase;
+  }
+
+  .header h1 span {
+    color: var(--dim);
+    font-weight: 400;
+  }
+
+  .header-sub {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .live-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent);
+    display: inline-block;
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-dot {
+    0%, 100% { box-shadow: 0 0 0 0 var(--accent-glow); }
+    50% { box-shadow: 0 0 0 6px transparent; }
+  }
+
+  .header-time {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  /* ---- SECTION TITLES ---- */
+  .section-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 32px 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-label::before {
+    content: '';
+    width: 3px;
+    height: 14px;
+    background: var(--accent);
+    border-radius: 2px;
+  }
+
+  .section-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--border), transparent 80%);
+  }
+
+  .section-label .count-badge {
+    font-family: var(--mono);
+    font-size: 10px;
+    background: var(--accent-dim);
+    color: var(--accent);
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-left: 4px;
+  }
+
+  /* ---- SUMMARY BAR ---- */
+  .summary-bar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+  }
+
+  .stat-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 16px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.25s, transform 0.2s;
+  }
+
+  .stat-card:hover {
+    border-color: rgba(59, 130, 246, 0.25);
+    transform: translateY(-1px);
+  }
+
+  .stat-card .stat-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+  }
+
+  .stat-card .stat-value {
+    font-family: var(--mono);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  .stat-card .stat-sub {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 6px;
+    font-family: var(--mono);
+  }
+
+  .stat-card .stat-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--border);
+  }
+
+  .stat-card .stat-bar-fill {
+    height: 100%;
+    border-radius: 0 2px 0 0;
+    transition: width 0.8s ease-out;
+  }
+
+  .stat-card.accent .stat-value { color: var(--accent); }
+  .stat-card.green .stat-value { color: var(--green); }
+  .stat-card.red .stat-value { color: var(--red); }
+  .stat-card.amber .stat-value { color: var(--amber); }
+
+  .stat-card .stat-bg-glyph {
+    position: absolute;
+    right: 12px;
+    bottom: 10px;
+    font-size: 36px;
+    opacity: 0.035;
+    pointer-events: none;
+  }
+
+  /* ---- CLUSTER CARDS ---- */
+  .cluster-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .cluster-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    transition: border-color 0.25s, transform 0.2s;
+  }
+
+  .cluster-card:hover {
+    border-color: rgba(59, 130, 246, 0.25);
+    transform: translateY(-1px);
+  }
+
+  .cluster-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+
+  .cluster-name {
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .cluster-name .cl-icon {
+    font-size: 16px;
+  }
+
+  .cluster-pct {
+    font-family: var(--mono);
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+
+  .cluster-stats {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 10px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--dim);
+  }
+
+  .cluster-stats span b { color: var(--text); font-weight: 600; }
+
+  .progress-track {
+    width: 100%;
+    height: 5px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 1s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .progress-fill.high { background: var(--green); }
+  .progress-fill.mid { background: var(--amber); }
+  .progress-fill.low { background: var(--red); }
+
+  /* ---- TABLES ---- */
+  .table-wrap {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  .table-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .table-toolbar .t-title {
+    font-weight: 600;
+    font-size: 0.88rem;
+  }
+
+  .table-toolbar .t-count {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--accent);
+    background: var(--accent-dim);
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+
+  .table-search {
+    background: rgba(255,255,255,0.035);
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    padding: 7px 12px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--text);
+    outline: none;
+    width: 200px;
+    transition: border-color 0.2s;
+  }
+
+  .table-search:focus { border-color: var(--accent); }
+  .table-search::placeholder { color: var(--muted); }
+
+  .table-scroll { max-height: 480px; overflow-y: auto; }
+
+  table { width: 100%; border-collapse: collapse; }
+
+  thead th {
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: left;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    background: var(--card-2);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+    transition: color 0.2s;
+  }
+
+  thead th:hover { color: var(--accent); }
+  thead th .sort-arr { margin-left: 4px; font-size: 9px; opacity: 0.35; }
+  thead th.sorted .sort-arr { opacity: 1; color: var(--accent); }
+
+  tbody tr {
+    border-bottom: 1px solid rgba(26, 34, 54, 0.5);
+    transition: background 0.15s;
+  }
+
+  tbody tr:hover { background: rgba(59, 130, 246, 0.025); }
+  tbody tr:last-child { border-bottom: none; }
+
+  td {
+    padding: 10px 14px;
+    font-size: 12px;
+    color: var(--text);
+    vertical-align: middle;
+  }
+
+  td.mono { font-family: var(--mono); font-size: 11px; }
+  td.dim-cell { color: var(--dim); }
+
+  .badge {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .badge-red { background: var(--red-dim); color: var(--red); border: 1px solid rgba(239, 68, 68, 0.2); }
+  .badge-amber { background: var(--amber-dim); color: var(--amber); border: 1px solid rgba(245, 158, 11, 0.2); }
+  .badge-green { background: var(--green-dim); color: var(--green); border: 1px solid rgba(34, 197, 94, 0.2); }
+
+  .img-dots {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+  }
+
+  .img-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background: var(--green);
+  }
+
+  .img-dot.empty {
+    background: transparent;
+    border: 1px dashed var(--muted);
+  }
+
+  .table-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 18px;
+    border-top: 1px solid var(--border);
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  .page-btns { display: flex; gap: 5px; }
+
+  .page-btn {
+    background: rgba(255,255,255,0.035);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 4px 9px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .page-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .page-btn.active { background: var(--accent-dim); color: var(--accent); border-color: var(--accent); }
+
+  /* ---- CHART ---- */
+  .chart-container {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    position: relative;
+  }
+
+  .chart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+
+  .chart-header h3 { font-size: 0.92rem; font-weight: 600; }
+
+  .chart-legend {
+    display: flex;
+    gap: 16px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--dim);
+  }
+
+  .chart-legend .leg-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  .burndown-wrap { width: 100%; height: 220px; }
+  .burndown-wrap svg { width: 100%; height: 100%; display: block; }
+
+  /* ---- QUALITY METRICS ---- */
+  .quality-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  .quality-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 16px;
+    text-align: center;
+    transition: border-color 0.25s, transform 0.2s;
+  }
+
+  .quality-card:hover {
+    border-color: rgba(59, 130, 246, 0.25);
+    transform: translateY(-1px);
+  }
+
+  .quality-icon {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .quality-val {
+    font-family: var(--mono);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1;
+  }
+
+  .quality-label {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 6px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .quality-bar {
+    height: 4px;
+    background: rgba(255,255,255,0.04);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .quality-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.8s ease-out;
+  }
+
+  .quality-pct {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+
+  /* ---- GAUGE + VELOCITY ---- */
+  .targets-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .gauge-container {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gauge-svg { width: 200px; height: 120px; }
+
+  .gauge-track-path {
+    fill: none;
+    stroke: rgba(255,255,255,0.04);
+    stroke-width: 12;
+    stroke-linecap: round;
+  }
+
+  .gauge-fill-path {
+    fill: none;
+    stroke-width: 12;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1.5s cubic-bezier(0.22, 1, 0.36, 1);
+    filter: drop-shadow(0 0 6px rgba(59, 130, 246, 0.35));
+  }
+
+  .gauge-val-text {
+    font-family: 'JetBrains Mono', monospace;
+    fill: var(--text);
+    font-weight: 700;
+    font-size: 28px;
+    text-anchor: middle;
+  }
+
+  .gauge-sub-text {
+    font-family: 'JetBrains Mono', monospace;
+    fill: var(--dim);
+    font-size: 10px;
+    text-anchor: middle;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .target-info {
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  .target-info .ti-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+  }
+
+  .target-info .ti-value {
+    font-family: var(--mono);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .velocity-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .velocity-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 0;
+    border-bottom: 1px solid rgba(26, 34, 54, 0.5);
+  }
+
+  .velocity-item:last-child { border-bottom: none; }
+
+  .velocity-item .v-label {
+    font-size: 12px;
+    color: var(--dim);
+  }
+
+  .velocity-item .v-val {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .velocity-item .v-val.v-accent { color: var(--accent); }
+  .velocity-item .v-val.v-green { color: var(--green); }
+
+  /* ---- ANIMATIONS ---- */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-in {
+    opacity: 0;
+    animation: fadeUp 0.5s ease forwards;
+  }
+
+  .d1 { animation-delay: 0.04s; }
+  .d2 { animation-delay: 0.08s; }
+  .d3 { animation-delay: 0.12s; }
+  .d4 { animation-delay: 0.16s; }
+  .d5 { animation-delay: 0.20s; }
+  .d6 { animation-delay: 0.24s; }
+  .d7 { animation-delay: 0.28s; }
+  .d8 { animation-delay: 0.32s; }
+  .d9 { animation-delay: 0.36s; }
+  .d10 { animation-delay: 0.40s; }
+
+  /* ---- RESPONSIVE ---- */
+  @media (max-width: 1100px) {
+    .summary-bar { grid-template-columns: repeat(3, 1fr); }
+    .cluster-grid { grid-template-columns: repeat(2, 1fr); }
+    .quality-grid { grid-template-columns: repeat(2, 1fr); }
+    .targets-row { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 700px) {
+    .summary-bar { grid-template-columns: 1fr 1fr; }
+    .cluster-grid { grid-template-columns: 1fr; }
+    .quality-grid { grid-template-columns: 1fr 1fr; }
+    .header { flex-direction: column; align-items: flex-start; gap: 10px; }
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: rgba(59, 130, 246, 0.3); }
+</style>
+</head>
+<body>
+<div class="dashboard">
+
+  <!-- HEADER -->
+  <header class="header animate-in d1">
+    <div class="header-left">
+      <div class="header-icon">&#128247;</div>
+      <div>
+        <h1>Image Compliance <span>/ Media Audit</span></h1>
+        <div class="header-sub">pethubonline.com &middot; All Published Posts</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="live-dot"></div>
+      <span class="header-time" id="clockEl"></span>
+      <span class="header-time" id="refreshTimer">60s</span>
+    </div>
+  </header>
+
+  <!-- SECTION 1: COMPLIANCE SUMMARY -->
+  <div class="section-label animate-in d2">Compliance Summary</div>
+  <div class="summary-bar animate-in d2" id="summaryBar"></div>
+
+  <!-- SECTION 2: COMPLIANCE BY CLUSTER -->
+  <div class="section-label animate-in d3">Compliance by Cluster</div>
+  <div class="cluster-grid animate-in d3" id="clusterGrid"></div>
+
+  <!-- SECTION 3: NON-COMPLIANT POSTS TABLE -->
+  <div class="section-label animate-in d4">Non-Compliant Posts <span class="count-badge" id="ncBadge">103</span></div>
+  <div class="table-wrap animate-in d4" id="nonCompliantSection">
+    <div class="table-toolbar">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <span class="t-title">Posts Requiring Images</span>
+        <span class="t-count" id="ncCount">103 posts</span>
+      </div>
+      <input type="text" class="table-search" placeholder="Search posts..." id="ncSearch">
+    </div>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th data-sort="id">Post ID <span class="sort-arr">&#9650;</span></th>
+            <th data-sort="title">Title <span class="sort-arr">&#9650;</span></th>
+            <th data-sort="cluster">Cluster <span class="sort-arr">&#9650;</span></th>
+            <th data-sort="images">Current <span class="sort-arr">&#9650;</span></th>
+            <th>Target</th>
+            <th data-sort="status">Status <span class="sort-arr">&#9650;</span></th>
+            <th>Action Required</th>
+          </tr>
+        </thead>
+        <tbody id="ncBody"></tbody>
+      </table>
+    </div>
+    <div class="table-footer">
+      <span id="ncShowing">Showing 1-20 of 103</span>
+      <div class="page-btns" id="ncPages"></div>
+    </div>
+  </div>
+
+  <!-- SECTION 4: REMEDIATION PROGRESS -->
+  <div class="section-label animate-in d5">Remediation Progress</div>
+  <div class="chart-container animate-in d5">
+    <div class="chart-header">
+      <h3>Image Remediation Burndown</h3>
+      <div class="chart-legend">
+        <span><span class="leg-dot" style="background:var(--accent)"></span>Actual</span>
+        <span><span class="leg-dot" style="background:var(--accent);opacity:0.35"></span>Projected</span>
+      </div>
+    </div>
+    <div class="burndown-wrap" id="burndownChart"></div>
+  </div>
+
+  <!-- SECTION 5: IMAGE QUALITY METRICS -->
+  <div class="section-label animate-in d6">Image Quality Metrics</div>
+  <div class="quality-grid animate-in d6" id="qualityGrid"></div>
+
+  <!-- SECTION 6: ACTION QUEUE -->
+  <div class="section-label animate-in d7">Action Queue</div>
+  <div class="table-wrap animate-in d7">
+    <div class="table-toolbar">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <span class="t-title">Next Remediation Batch</span>
+        <span class="t-count">Priority sorted</span>
+      </div>
+    </div>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Post ID</th>
+            <th>Title</th>
+            <th>Cluster</th>
+            <th>Current Images</th>
+            <th>Priority Score</th>
+            <th>Est. Fix Time</th>
+          </tr>
+        </thead>
+        <tbody id="aqBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- SECTION 7: COMPLIANCE TARGETS -->
+  <div class="section-label animate-in d8">Compliance Targets</div>
+  <div class="targets-row animate-in d8">
+    <div class="gauge-container">
+      <svg class="gauge-svg" viewBox="0 0 200 120">
+        <defs>
+          <linearGradient id="gaugeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#3b82f6"/>
+            <stop offset="100%" stop-color="#22c55e"/>
+          </linearGradient>
+        </defs>
+        <path class="gauge-track-path" d="M 20 100 A 80 80 0 0 1 180 100"/>
+        <path class="gauge-fill-path" id="gaugeFill" d="M 20 100 A 80 80 0 0 1 180 100" stroke="url(#gaugeGrad)"
+              style="stroke-dasharray: 251.33; stroke-dashoffset: 251.33;"/>
+        <text class="gauge-val-text" x="100" y="88" id="gaugeVal">0%</text>
+        <text class="gauge-sub-text" x="100" y="108">compliance rate</text>
+      </svg>
+      <div class="target-info">
+        <div class="ti-label">Target</div>
+        <div class="ti-value">100% by Jul 15, 2026</div>
+      </div>
+    </div>
+    <div class="velocity-card" id="velocityCard"></div>
+  </div>
+
+</div>
+
+<script>
+// ============================================================
+//  DATA LAYER
+// ============================================================
+const TOTAL_POSTS = 430;
+const COMPLIANT_THRESHOLD = 4;
+const TARGET_MAX = 6;
+
+const clusters = [
+  { name: 'Puppy Care',    icon: '🐶', total: 30,  compliant: 22 },
+  { name: 'Dog Beds',      icon: '🛏️', total: 30,  compliant: 24 },
+  { name: 'Cat Toys',      icon: '🐱', total: 30,  compliant: 21 },
+  { name: 'Indoor Cats',   icon: '🏠', total: 30,  compliant: 26 },
+  { name: 'Pet Care',      icon: '❤️',  total: 30,  compliant: 23 },
+  { name: 'Fish Supplies', icon: '🐟', total: 20,  compliant: 15 },
+  { name: 'Dog Food',      icon: '🍖', total: 50,  compliant: 38 },
+  { name: 'Dog Toys',      icon: '🦮', total: 20,  compliant: 14 },
+  { name: 'Other / Mixed', icon: '📦', total: 190, compliant: 144 }
+];
+
+const totalCompliant = clusters.reduce((s, c) => s + c.compliant, 0);  // 327
+const totalNonCompliant = TOTAL_POSTS - totalCompliant;                 // 103
+const compliancePct = ((totalCompliant / TOTAL_POSTS) * 100).toFixed(1);
+const totalImages = 2048;
+const avgImages = (totalImages / TOTAL_POSTS).toFixed(1);
+
+// Sample titles per cluster for non-compliant posts
+const clusterTitles = {
+  'Puppy Care': ['Best Puppy Training Treats UK','How to Crate Train a Puppy','Puppy Teething Guide','First Week With Your Puppy','Puppy Vaccination Schedule','Puppy Socialisation Tips','Best Puppy Shampoo UK','Puppy-Proofing Your Home'],
+  'Dog Beds': ['Orthopaedic Dog Beds UK','Waterproof Dog Bed Guide','Heated Dog Beds for Winter','Best Dog Beds for Large Breeds','Elevated Dog Beds Review','Memory Foam Dog Beds'],
+  'Cat Toys': ['Interactive Cat Toys Guide','Best Catnip Toys UK','DIY Cat Toys at Home','Laser Pointer Safety for Cats','Electronic Cat Toys Review','Puzzle Feeders for Cats','Feather Wand Toys Guide','Cat Tunnel Review','Crinkle Ball Toys'],
+  'Indoor Cats': ['Indoor Cat Entertainment','Cat Tree Buying Guide','Window Perches for Cats','Indoor Cat Exercise Tips'],
+  'Pet Care': ['Pet First Aid Basics','Best Pet Insurance UK 2026','Seasonal Pet Care Guide','Pet Dental Health Tips','Grooming Your Pet at Home','Senior Pet Care Guide','Pet Nutrition Basics'],
+  'Fish Supplies': ['Best Aquarium Filters UK','Fish Tank Heater Guide','Live Plants for Aquariums','Fish Food Types Explained','Aquarium Lighting Guide'],
+  'Dog Food': ['Best Grain-Free Dog Food','Raw Diet for Dogs Guide','Senior Dog Food UK','Puppy Food Transition Guide','Wet vs Dry Dog Food','Best Dog Treats UK','Hypoallergenic Dog Food','Dog Food Storage Tips','Homemade Dog Food Recipes','Best Budget Dog Food UK','Dog Food for Sensitive Stomachs','Weight Management Dog Food'],
+  'Dog Toys': ['Indestructible Dog Toys','Best Chew Toys for Puppies','Rope Toys Safety Guide','Squeaky Toys Review','Fetch Toys for Dogs','Tug Toys Guide'],
+  'Other / Mixed': ['Pet Travel Accessories','Best Pet Carriers UK','Pet Grooming Kit Guide','Small Animal Cage Setup','Rabbit Care Basics','Hamster Wheel Guide','Bird Cage Accessories','Reptile Heating Guide','Guinea Pig Diet Guide','Pet GPS Tracker Review','Automatic Pet Feeders','Pet Water Fountains','Dog Walking Harness Guide','Cat Litter Tray Guide','Pet Odour Eliminators','Flea Treatment Guide UK','Pet Bed Cleaning Tips','Dog Collar Buying Guide','Cat Scratching Post Guide','Best Pet Cameras UK','Dog Ramp for Cars','Pet Stain Remover Guide','Small Dog Accessories','Cat Carrier Review','Dog Poop Bag Dispensers','Pet Safe Cleaning Products','Dog Raincoat Guide','Cat Grooming Brushes','Fish Tank Decorations','Pet Memorial Ideas','Dog Bandana Collection','Cat Calming Products','Pet First Night Home','Dog Boots for Winter','Cat Window Box Garden','Pet Subscription Boxes UK','Rabbit Hutch Guide','Bird Feeding Basics','Hamster Bedding Guide','Snake Enclosure Setup','Dog Cooling Mat Review','Cat Harness Training','Pet Insurance Claims Guide','Dog Agility Equipment','Cat Litter Comparison','Best Dog Whistles UK']
+};
+
+// Seeded random for consistency
+let _seed = 42;
+function seededRandom() {
+  _seed = (_seed * 16807 + 0) % 2147483647;
+  return (_seed - 1) / 2147483646;
+}
+
+// Generate non-compliant posts
+let ncPosts = [];
+let postId = 5001;
+clusters.forEach(cl => {
+  const nc = cl.total - cl.compliant;
+  const titles = clusterTitles[cl.name] || clusterTitles['Other / Mixed'];
+  for (let i = 0; i < nc; i++) {
+    const r = seededRandom();
+    const imgCount = r < 0.25 ? 0 : r < 0.50 ? 1 : r < 0.75 ? 2 : 3;
+    ncPosts.push({
+      id: postId++,
+      title: titles[i % titles.length],
+      cluster: cl.name,
+      images: imgCount,
+      target: '4–6',
+      status: imgCount === 0 ? 'needs_images' : 'partial',
+      action: imgCount === 0 ? 'Add 4–6 images' : 'Add ' + (COMPLIANT_THRESHOLD - imgCount) + ' more images'
+    });
+  }
+});
+ncPosts.sort((a, b) => a.images - b.images);
+
+// Priority scores (deterministic)
+_seed = 77;
+const actionQueue = ncPosts
+  .map(p => ({ ...p, priority: Math.round((4 - p.images) * 25 + seededRandom() * 20 + 60) }))
+  .sort((a, b) => b.priority - a.priority)
+  .slice(0, 15);
+
+// ============================================================
+//  RENDER: SUMMARY BAR
+// ============================================================
+function renderSummary() {
+  const el = document.getElementById('summaryBar');
+  const items = [
+    { label: 'Total Posts',     value: TOTAL_POSTS, sub: 'Published',        cls: '',      barPct: 100,                       barColor: 'var(--accent)' },
+    { label: 'Compliant (4+)',  value: totalCompliant, sub: '4+ images each', cls: 'green', barPct: (totalCompliant/TOTAL_POSTS*100), barColor: 'var(--green)' },
+    { label: 'Non-Compliant',   value: totalNonCompliant, sub: 'Below 4 images', cls: 'red', barPct: (totalNonCompliant/TOTAL_POSTS*100), barColor: 'var(--red)' },
+    { label: 'Compliance %',    value: compliancePct + '%', sub: 'Target: 100%', cls: 'accent', barPct: parseFloat(compliancePct), barColor: 'var(--accent)' },
+    { label: 'Total Images',    value: totalImages.toLocaleString(), sub: 'Across all posts', cls: '', barPct: 100, barColor: 'var(--accent)' },
+    { label: 'Avg Images/Post', value: avgImages, sub: 'Target: 4.5+', cls: 'accent', barPct: (parseFloat(avgImages)/6*100), barColor: 'var(--accent)' }
+  ];
+  el.innerHTML = items.map(s => `
+    <div class="stat-card ${s.cls}">
+      <div class="stat-label">${s.label}</div>
+      <div class="stat-value">${s.value}</div>
+      <div class="stat-sub">${s.sub}</div>
+      <div class="stat-bar"><div class="stat-bar-fill" style="width:${s.barPct.toFixed?s.barPct.toFixed(0):s.barPct}%;background:${s.barColor}"></div></div>
+    </div>
+  `).join('');
+}
+
+// ============================================================
+//  RENDER: CLUSTER CARDS
+// ============================================================
+function renderClusters() {
+  const el = document.getElementById('clusterGrid');
+  el.innerHTML = clusters.map(c => {
+    const nc = c.total - c.compliant;
+    const pct = ((c.compliant / c.total) * 100).toFixed(0);
+    const pn = parseFloat(pct);
+    const fillCls = pn >= 80 ? 'high' : pn >= 60 ? 'mid' : 'low';
+    const pctColor = pn >= 80 ? 'var(--green)' : pn >= 60 ? 'var(--amber)' : 'var(--red)';
+    return `
+      <div class="cluster-card">
+        <div class="cluster-head">
+          <span class="cluster-name"><span class="cl-icon">${c.icon}</span> ${c.name}</span>
+          <span class="cluster-pct" style="color:${pctColor}">${pct}%</span>
+        </div>
+        <div class="cluster-stats">
+          <span>Total: <b>${c.total}</b></span>
+          <span>Pass: <b>${c.compliant}</b></span>
+          <span>Fail: <b style="color:var(--red)">${nc}</b></span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill ${fillCls}" style="width:${pct}%"></div>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+// ============================================================
+//  RENDER: NON-COMPLIANT TABLE
+// ============================================================
+let ncPage = 1;
+const ncPerPage = 20;
+let ncSortKey = 'images';
+let ncSortAsc = true;
+let ncFilter = '';
+
+function getFilteredPosts() {
+  let data = [...ncPosts];
+  if (ncFilter) {
+    const q = ncFilter.toLowerCase();
+    data = data.filter(p =>
+      p.title.toLowerCase().includes(q) ||
+      p.cluster.toLowerCase().includes(q) ||
+      String(p.id).includes(q)
+    );
+  }
+  data.sort((a, b) => {
+    let va = a[ncSortKey], vb = b[ncSortKey];
+    if (typeof va === 'string') { va = va.toLowerCase(); vb = vb.toLowerCase(); }
+    if (va < vb) return ncSortAsc ? -1 : 1;
+    if (va > vb) return ncSortAsc ? 1 : -1;
+    return 0;
+  });
+  return data;
+}
+
+function renderNCTable() {
+  const data = getFilteredPosts();
+  const total = data.length;
+  const pages = Math.ceil(total / ncPerPage);
+  if (ncPage > pages) ncPage = pages || 1;
+  const start = (ncPage - 1) * ncPerPage;
+  const slice = data.slice(start, start + ncPerPage);
+
+  document.getElementById('ncBody').innerHTML = slice.map(p => {
+    const badgeCls = p.status === 'needs_images' ? 'badge-red' : 'badge-amber';
+    const badgeText = p.images === 0 ? 'No Images' : p.images + '/4';
+    const dots = Array.from({ length: TARGET_MAX }, (_, i) =>
+      i < p.images
+        ? '<span class="img-dot"></span>'
+        : '<span class="img-dot empty"></span>'
+    ).join('');
+    return `<tr>
+      <td class="mono dim-cell">#${p.id}</td>
+      <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${p.title}</td>
+      <td class="dim-cell">${p.cluster}</td>
+      <td><div class="img-dots">${dots}</div></td>
+      <td class="mono dim-cell">${p.target}</td>
+      <td><span class="badge ${badgeCls}">${badgeText}</span></td>
+      <td style="font-size:11px;color:var(--dim)">${p.action}</td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('ncCount').textContent = total + ' posts';
+  document.getElementById('ncBadge').textContent = total;
+  document.getElementById('ncShowing').textContent =
+    'Showing ' + (start + 1) + '–' + Math.min(start + ncPerPage, total) + ' of ' + total;
+
+  const pEl = document.getElementById('ncPages');
+  let ph = '';
+  for (let i = 1; i <= Math.min(pages, 7); i++) {
+    ph += '<button class="page-btn ' + (i === ncPage ? 'active' : '') + '" onclick="ncPage=' + i + ';renderNCTable()">' + i + '</button>';
+  }
+  if (pages > 7) ph += '<span style="color:var(--muted);padding:4px">…</span>';
+  pEl.innerHTML = ph;
+}
+
+// Sort listeners
+document.querySelectorAll('#nonCompliantSection thead th[data-sort]').forEach(th => {
+  th.addEventListener('click', () => {
+    const key = th.dataset.sort;
+    if (ncSortKey === key) ncSortAsc = !ncSortAsc;
+    else { ncSortKey = key; ncSortAsc = true; }
+    document.querySelectorAll('#nonCompliantSection thead th').forEach(t => t.classList.remove('sorted'));
+    th.classList.add('sorted');
+    ncPage = 1;
+    renderNCTable();
+  });
+});
+
+document.getElementById('ncSearch').addEventListener('input', e => {
+  ncFilter = e.target.value;
+  ncPage = 1;
+  renderNCTable();
+});
+
+// ============================================================
+//  RENDER: BURNDOWN CHART (SVG)
+// ============================================================
+function renderBurndown() {
+  const container = document.getElementById('burndownChart');
+  const w = 920, h = 220;
+  const pad = { t: 12, r: 22, b: 32, l: 48 };
+  const iw = w - pad.l - pad.r;
+  const ih = h - pad.t - pad.b;
+  const maxVal = 200;
+
+  const actual = [
+    { label: 'May 01', val: 180 },
+    { label: 'May 05', val: 168 },
+    { label: 'May 10', val: 155 },
+    { label: 'May 15', val: 142 },
+    { label: 'May 20', val: 130 },
+    { label: 'May 25', val: 118 },
+    { label: 'Jun 01', val: 103 }
+  ];
+  const projected = [
+    { label: 'Jun 01', val: 103 },
+    { label: 'Jun 10', val: 82 },
+    { label: 'Jun 20', val: 58 },
+    { label: 'Jul 01', val: 34 },
+    { label: 'Jul 10', val: 12 },
+    { label: 'Jul 15', val: 0 }
+  ];
+  const allLabels = [...actual.map(d => d.label), ...projected.slice(1).map(d => d.label)];
+  const totalPts = allLabels.length;
+
+  function xP(i) { return pad.l + (i / (totalPts - 1)) * iw; }
+  function yP(v) { return pad.t + (1 - v / maxVal) * ih; }
+
+  let svg = '<svg viewBox="0 0 ' + w + ' ' + h + '" xmlns="http://www.w3.org/2000/svg">';
+  svg += '<defs><linearGradient id="bdGrad" x1="0" y1="0" x2="0" y2="1">';
+  svg += '<stop offset="0%" stop-color="#3b82f6" stop-opacity="0.25"/>';
+  svg += '<stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>';
+  svg += '</linearGradient></defs>';
+
+  // Grid lines + Y labels
+  for (let v = 0; v <= maxVal; v += 50) {
+    const y = yP(v);
+    svg += '<line x1="' + pad.l + '" y1="' + y + '" x2="' + (w - pad.r) + '" y2="' + y + '" stroke="' + '#1a2236' + '" stroke-width="0.5" stroke-dasharray="4,4"/>';
+    svg += '<text x="' + (pad.l - 8) + '" y="' + (y + 3.5) + '" text-anchor="end" fill="#7a8ba8" font-family="JetBrains Mono,monospace" font-size="10">' + v + '</text>';
+  }
+
+  // X labels
+  allLabels.forEach((lbl, i) => {
+    if (i % 2 === 0 || i === totalPts - 1) {
+      svg += '<text x="' + xP(i) + '" y="' + (h - 6) + '" text-anchor="middle" fill="#7a8ba8" font-family="JetBrains Mono,monospace" font-size="10">' + lbl + '</text>';
+    }
+  });
+
+  // Area under actual line
+  let area = 'M ' + xP(0) + ' ' + yP(actual[0].val);
+  actual.forEach((d, i) => { if (i > 0) area += ' L ' + xP(i) + ' ' + yP(d.val); });
+  area += ' L ' + xP(actual.length - 1) + ' ' + yP(0) + ' L ' + xP(0) + ' ' + yP(0) + ' Z';
+  svg += '<path d="' + area + '" fill="url(#bdGrad)"/>';
+
+  // Actual line
+  let line = 'M ' + xP(0) + ' ' + yP(actual[0].val);
+  actual.forEach((d, i) => { if (i > 0) line += ' L ' + xP(i) + ' ' + yP(d.val); });
+  svg += '<path d="' + line + '" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>';
+
+  // Projected line
+  let proj = 'M ' + xP(actual.length - 1) + ' ' + yP(projected[0].val);
+  projected.forEach((d, i) => {
+    if (i > 0) proj += ' L ' + xP(actual.length - 1 + i) + ' ' + yP(d.val);
+  });
+  svg += '<path d="' + proj + '" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.4"/>';
+
+  // Actual dots
+  actual.forEach((d, i) => {
+    svg += '<circle cx="' + xP(i) + '" cy="' + yP(d.val) + '" r="4" fill="#3b82f6" stroke="#080a0f" stroke-width="2"/>';
+  });
+
+  // Projected dots (hollow)
+  projected.forEach((d, i) => {
+    if (i > 0) {
+      svg += '<circle cx="' + xP(actual.length - 1 + i) + '" cy="' + yP(d.val) + '" r="3.5" fill="#080a0f" stroke="#3b82f6" stroke-width="1.5" opacity="0.45"/>';
+    }
+  });
+
+  svg += '</svg>';
+  container.innerHTML = svg;
+}
+
+// ============================================================
+//  RENDER: QUALITY METRICS
+// ============================================================
+function renderQuality() {
+  const el = document.getElementById('qualityGrid');
+  const metrics = [
+    { icon: '🏷️', label: 'Posts with Alt Text',           value: 312, total: TOTAL_POSTS, color: 'var(--green)' },
+    { icon: '📱',       label: 'Mobile-Friendly Images',        value: 398, total: TOTAL_POSTS, color: 'var(--accent)' },
+    { icon: '🖼️', label: 'Posts with Pexels Images',      value: 287, total: TOTAL_POSTS, color: 'var(--cyan)' },
+    { icon: '⭐',              label: 'Featured Images Set',           value: 415, total: TOTAL_POSTS, color: 'var(--amber)' }
+  ];
+  el.innerHTML = metrics.map(m => {
+    const pct = ((m.value / m.total) * 100).toFixed(0);
+    return `
+      <div class="quality-card">
+        <span class="quality-icon">${m.icon}</span>
+        <div class="quality-val">${m.value}</div>
+        <div class="quality-label">${m.label}</div>
+        <div class="quality-bar"><div class="quality-fill" style="width:${pct}%;background:${m.color}"></div></div>
+        <div class="quality-pct">${pct}% of ${m.total}</div>
+      </div>
+    `;
+  }).join('');
+}
+
+// ============================================================
+//  RENDER: ACTION QUEUE
+// ============================================================
+function renderActionQueue() {
+  document.getElementById('aqBody').innerHTML = actionQueue.map(p => {
+    const fixTime = p.images === 0 ? '~12 min' : p.images === 1 ? '~9 min' : p.images === 2 ? '~6 min' : '~4 min';
+    const prColor = p.priority >= 100 ? 'var(--red)' : p.priority >= 85 ? 'var(--amber)' : 'var(--accent)';
+    return `<tr>
+      <td class="mono dim-cell">#${p.id}</td>
+      <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${p.title}</td>
+      <td class="dim-cell">${p.cluster}</td>
+      <td class="mono">${p.images}</td>
+      <td class="mono" style="color:${prColor};font-weight:600">${p.priority}</td>
+      <td class="mono dim-cell">${fixTime}</td>
+    </tr>`;
+  }).join('');
+}
+
+// ============================================================
+//  RENDER: GAUGE + VELOCITY
+// ============================================================
+function renderTargets() {
+  const pct = parseFloat(compliancePct);
+  const arcLen = 251.33;
+  const offset = arcLen - (pct / 100) * arcLen;
+
+  setTimeout(() => {
+    document.getElementById('gaugeFill').style.strokeDashoffset = offset;
+    document.getElementById('gaugeVal').textContent = pct + '%';
+  }, 400);
+
+  const postsPerDay = 2.5;
+  const daysRemaining = Math.ceil(totalNonCompliant / postsPerDay);
+  const completionDate = new Date();
+  completionDate.setDate(completionDate.getDate() + daysRemaining);
+  const dateStr = completionDate.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+  const imagesNeeded = ncPosts.reduce((s, p) => s + (COMPLIANT_THRESHOLD - p.images), 0);
+
+  document.getElementById('velocityCard').innerHTML = `
+    <div class="velocity-item">
+      <span class="v-label">Remediation Velocity</span>
+      <span class="v-val v-accent">${postsPerDay} posts/day</span>
+    </div>
+    <div class="velocity-item">
+      <span class="v-label">Posts Remaining</span>
+      <span class="v-val">${totalNonCompliant}</span>
+    </div>
+    <div class="velocity-item">
+      <span class="v-label">Days to Complete</span>
+      <span class="v-val">${daysRemaining} days</span>
+    </div>
+    <div class="velocity-item">
+      <span class="v-label">Projected Completion</span>
+      <span class="v-val v-green">${dateStr}</span>
+    </div>
+    <div class="velocity-item">
+      <span class="v-label">Total Images Needed</span>
+      <span class="v-val">${imagesNeeded}</span>
+    </div>
+    <div class="velocity-item">
+      <span class="v-label">Avg Fix Time / Post</span>
+      <span class="v-val">~8 min</span>
+    </div>
+  `;
+}
+
+// ============================================================
+//  CLOCK + REFRESH
+// ============================================================
+let countdown = 60;
+
+function updateClock() {
+  const now = new Date();
+  document.getElementById('clockEl').textContent =
+    now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+}
+
+function tickRefresh() {
+  countdown--;
+  if (countdown <= 0) {
+    countdown = 60;
+    // In production: reload data from API
+  }
+  document.getElementById('refreshTimer').textContent = countdown + 's';
+}
+
+// ============================================================
+//  INIT
+// ============================================================
+function init() {
+  renderSummary();
+  renderClusters();
+  renderNCTable();
+  renderBurndown();
+  renderQuality();
+  renderActionQueue();
+  renderTargets();
+  updateClock();
+  setInterval(updateClock, 1000);
+  setInterval(tickRefresh, 1000);
+  setInterval(function() { location.reload(); }, 60000);
+}
+
+document.addEventListener('DOMContentLoaded', init);
+</script>
+</body>
+</html>

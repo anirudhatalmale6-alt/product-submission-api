@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email Growth Engine - PetHub Online</title>
+<meta http-equiv="refresh" content="60">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ===== RESET & BASE ===== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #080a0f;
+  --bg-card: #111621;
+  --bg-card-hover: #151c2a;
+  --border: #1a2236;
+  --border-light: #243050;
+  --text: #e2e8f0;
+  --text-dim: #7a8ba8;
+  --text-muted: #4a5b78;
+  --emerald: #10b981;
+  --emerald-dim: #10b98133;
+  --emerald-glow: #10b98122;
+  --emerald-bright: #34d399;
+  --emerald-dark: #065f46;
+  --red: #ef4444;
+  --red-dim: #ef444433;
+  --amber: #f59e0b;
+  --amber-dim: #f59e0b33;
+  --blue: #3b82f6;
+  --blue-dim: #3b82f633;
+  --purple: #8b5cf6;
+  --purple-dim: #8b5cf633;
+  --cyan: #06b6d4;
+  --cyan-dim: #06b6d433;
+  --rose: #f43f5e;
+  --rose-dim: #f43f5e33;
+  --radius: 10px;
+  --radius-sm: 6px;
+  --shadow: 0 2px 12px rgba(0,0,0,0.3);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.4);
+}
+
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+/* ===== BACKGROUND ATMOSPHERE ===== */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background:
+    radial-gradient(ellipse 800px 600px at 15% 10%, #10b98108 0%, transparent 70%),
+    radial-gradient(ellipse 600px 400px at 85% 80%, #10b98105 0%, transparent 70%),
+    radial-gradient(ellipse 400px 300px at 50% 50%, #1a223608 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ===== LAYOUT ===== */
+.dashboard {
+  position: relative;
+  z-index: 1;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 24px 28px 48px;
+}
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.header-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--emerald), var(--emerald-dark));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 0 20px var(--emerald-dim);
+}
+
+.header h1 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.header h1 span {
+  color: var(--emerald);
+}
+
+.header-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+.pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--emerald);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 var(--emerald-dim); }
+  50% { opacity: 0.7; box-shadow: 0 0 0 6px transparent; }
+}
+
+.last-updated {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ===== SECTION TITLES ===== */
+.section-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+
+.section-title::before {
+  content: '';
+  width: 3px;
+  height: 18px;
+  background: var(--emerald);
+  border-radius: 2px;
+}
+
+.section-title h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.section-title .section-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-left: 4px;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.card:hover {
+  border-color: var(--border-light);
+  background: var(--bg-card-hover);
+}
+
+/* ===== 1. GROWTH SUMMARY BAR ===== */
+.growth-bar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+  margin-bottom: 8px;
+}
+
+.stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 16px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s;
+}
+
+.stat-card:hover {
+  border-color: var(--emerald-dim);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.08);
+}
+
+.stat-card .stat-label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+
+.stat-card .stat-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.stat-card .stat-value.emerald { color: var(--emerald); }
+
+.stat-card .stat-change {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.72rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.stat-change.up {
+  color: var(--emerald);
+  background: var(--emerald-dim);
+}
+
+.stat-change.down {
+  color: var(--red);
+  background: var(--red-dim);
+}
+
+.stat-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--emerald), transparent);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+.stat-card:hover::after { opacity: 1; }
+
+/* ===== TABLES ===== */
+.table-wrap {
+  overflow-x: auto;
+  border-radius: var(--radius);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+thead th {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  background: #0d111a;
+  white-space: nowrap;
+}
+
+tbody td {
+  padding: 11px 14px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  white-space: nowrap;
+}
+
+tbody tr {
+  transition: background 0.15s;
+}
+
+tbody tr:hover {
+  background: #151c2a;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+}
+
+.badge {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.badge-popup { background: var(--purple-dim); color: var(--purple); }
+.badge-inline { background: var(--blue-dim); color: var(--blue); }
+.badge-exit { background: var(--amber-dim); color: var(--amber); }
+.badge-sticky { background: var(--cyan-dim); color: var(--cyan); }
+
+.rate-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rate-bar-track {
+  flex: 1;
+  height: 4px;
+  background: var(--border);
+  border-radius: 2px;
+  max-width: 80px;
+}
+
+.rate-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  background: var(--emerald);
+  transition: width 0.6s ease;
+}
+
+/* ===== 3. LEAD MAGNET CARDS ===== */
+.magnet-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.magnet-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s;
+}
+
+.magnet-card:hover {
+  border-color: var(--border-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.magnet-card .magnet-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.magnet-card .magnet-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.magnet-card .magnet-type {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.magnet-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.magnet-stat-label {
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.magnet-stat-value {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-top: 2px;
+}
+
+.magnet-trend {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  font-size: 0.75rem;
+}
+
+.trend-up { color: var(--emerald); }
+.trend-down { color: var(--red); }
+.trend-flat { color: var(--text-muted); }
+
+/* ===== 4. WELCOME FUNNEL ===== */
+.funnel-container {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  padding: 24px 0;
+}
+
+.funnel-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 0 8px;
+}
+
+.funnel-bar-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.funnel-bar {
+  border-radius: 8px 8px 4px 4px;
+  width: 100%;
+  transition: height 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  position: relative;
+  min-height: 40px;
+}
+
+.funnel-bar-label {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+.funnel-step-name {
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.funnel-step-desc {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  margin-bottom: 10px;
+  max-width: 140px;
+}
+
+.funnel-metrics {
+  display: flex;
+  gap: 12px;
+  font-size: 0.72rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.funnel-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.funnel-metric-label {
+  color: var(--text-muted);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: 'Outfit', sans-serif;
+}
+
+.funnel-metric-value {
+  color: var(--emerald);
+  font-weight: 600;
+}
+
+.funnel-arrow {
+  position: absolute;
+  right: -12px;
+  top: 40%;
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  z-index: 2;
+}
+
+/* ===== 6. PIE CHART ===== */
+.chart-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.pie-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 10px 0;
+}
+
+.pie-svg {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+.pie-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pie-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.82rem;
+}
+
+.pie-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.pie-legend-pct {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 600;
+  color: var(--text-dim);
+  min-width: 40px;
+}
+
+/* ===== 7. LINE CHART ===== */
+.line-chart-container {
+  padding: 10px 0;
+}
+
+.line-chart-svg {
+  width: 100%;
+  height: 260px;
+}
+
+.chart-grid-line {
+  stroke: var(--border);
+  stroke-width: 0.5;
+}
+
+.chart-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  fill: var(--text-muted);
+}
+
+.chart-line {
+  fill: none;
+  stroke: var(--emerald);
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.chart-area {
+  fill: url(#emeraldGradient);
+}
+
+.chart-dot {
+  fill: var(--emerald);
+  stroke: var(--bg-card);
+  stroke-width: 2.5;
+  transition: r 0.15s;
+  cursor: pointer;
+}
+
+.chart-dot:hover {
+  r: 6;
+}
+
+.milestone-marker {
+  fill: var(--amber);
+  stroke: var(--bg-card);
+  stroke-width: 2;
+}
+
+.milestone-label {
+  font-family: 'Outfit', sans-serif;
+  font-size: 9px;
+  fill: var(--amber);
+  font-weight: 600;
+}
+
+/* ===== 8. CALENDAR ===== */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.cal-header {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding: 8px 4px;
+}
+
+.cal-day {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  background: transparent;
+  border: 1px solid transparent;
+  gap: 3px;
+  transition: all 0.15s;
+  position: relative;
+  min-height: 48px;
+}
+
+.cal-day.today {
+  border-color: var(--emerald);
+  background: var(--emerald-dim);
+  color: var(--emerald);
+  font-weight: 700;
+}
+
+.cal-day.other-month {
+  color: var(--text-muted);
+  opacity: 0.4;
+}
+
+.cal-day.has-event::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+}
+
+.cal-day.event-newsletter::after { background: var(--emerald); }
+.cal-day.event-sequence::after { background: var(--blue); }
+.cal-day.event-campaign::after { background: var(--purple); }
+
+.cal-legend {
+  display: flex;
+  gap: 18px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.cal-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+}
+
+.cal-legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+/* ===== 9. ATTRIBUTION TABLE ===== */
+.score-bar {
+  width: 60px;
+  height: 6px;
+  background: var(--border);
+  border-radius: 3px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.score-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-in {
+  animation: fadeInUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  opacity: 0;
+}
+
+.delay-1 { animation-delay: 0.05s; }
+.delay-2 { animation-delay: 0.1s; }
+.delay-3 { animation-delay: 0.15s; }
+.delay-4 { animation-delay: 0.2s; }
+.delay-5 { animation-delay: 0.25s; }
+.delay-6 { animation-delay: 0.3s; }
+.delay-7 { animation-delay: 0.35s; }
+.delay-8 { animation-delay: 0.4s; }
+.delay-9 { animation-delay: 0.45s; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1200px) {
+  .growth-bar { grid-template-columns: repeat(3, 1fr); }
+  .magnet-grid { grid-template-columns: repeat(2, 1fr); }
+  .chart-row { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .growth-bar { grid-template-columns: repeat(2, 1fr); }
+  .magnet-grid { grid-template-columns: 1fr; }
+  .funnel-container { flex-direction: column; gap: 12px; }
+  .funnel-arrow { display: none; }
+  .header { flex-direction: column; gap: 12px; align-items: flex-start; }
+  .dashboard { padding: 16px; }
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-light); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="dashboard">
+
+  <!-- HEADER -->
+  <header class="header animate-in">
+    <div class="header-left">
+      <div class="header-icon">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </div>
+      <div>
+        <h1>Email <span>Growth Engine</span></h1>
+        <div class="last-updated">PetHub Online &middot; MailerLite Integration</div>
+      </div>
+    </div>
+    <div class="header-meta">
+      <div class="header-badge"><div class="pulse-dot"></div> Live Sync</div>
+      <div class="last-updated" id="lastUpdated"></div>
+    </div>
+  </header>
+
+  <!-- 1. GROWTH SUMMARY BAR -->
+  <div class="growth-bar">
+    <div class="stat-card animate-in delay-1">
+      <div class="stat-label">Total Subscribers</div>
+      <div class="stat-value mono">247</div>
+      <div class="stat-change up">+247 all time</div>
+    </div>
+    <div class="stat-card animate-in delay-2">
+      <div class="stat-label">New This Week</div>
+      <div class="stat-value mono emerald">34</div>
+      <div class="stat-change up">&#9650; +12 vs last week</div>
+    </div>
+    <div class="stat-card animate-in delay-3">
+      <div class="stat-label">New This Month</div>
+      <div class="stat-value mono emerald">118</div>
+      <div class="stat-change up">&#9650; +62% MoM</div>
+    </div>
+    <div class="stat-card animate-in delay-4">
+      <div class="stat-label">Growth Rate</div>
+      <div class="stat-value mono emerald">14.7%</div>
+      <div class="stat-change up">&#9650; weekly avg</div>
+    </div>
+    <div class="stat-card animate-in delay-5">
+      <div class="stat-label">Active Subscribers</div>
+      <div class="stat-value mono">231</div>
+      <div class="stat-change up">93.5% active</div>
+    </div>
+    <div class="stat-card animate-in delay-6">
+      <div class="stat-label">Unsubscribe Rate</div>
+      <div class="stat-value mono" style="color: var(--amber);">0.8%</div>
+      <div class="stat-change up">&#9660; -0.3% improving</div>
+    </div>
+  </div>
+
+  <!-- 2. SUBSCRIBER SOURCE TRACKING -->
+  <div class="section-title animate-in delay-3">
+    <h2>Subscriber Source Tracking <span class="section-sub">Which pages convert visitors into subscribers</span></h2>
+  </div>
+  <div class="card animate-in delay-4">
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Source Page</th>
+            <th>Subscribers</th>
+            <th>Conversion Rate</th>
+            <th>Lead Magnet Used</th>
+            <th>Form Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="color:var(--emerald);font-weight:600;">/ (Homepage)</td>
+            <td class="mono">62</td>
+            <td>
+              <div class="rate-bar">
+                <span class="mono">3.8%</span>
+                <div class="rate-bar-track"><div class="rate-bar-fill" style="width:38%"></div></div>
+              </div>
+            </td>
+            <td>Puppy Starter Checklist</td>
+            <td><span class="badge badge-popup">Popup</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--emerald);font-weight:600;">/best-puppy-food-uk</td>
+            <td class="mono">48</td>
+            <td>
+              <div class="rate-bar">
+                <span class="mono">7.2%</span>
+                <div class="rate-bar-track"><div class="rate-bar-fill" style="width:72%"></div></div>
+              </div>
+            </td>
+            <td>Puppy Starter Checklist</td>
+            <td><span class="badge badge-inline">Inline</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--emerald);font-weight:600;">/indoor-cat-enrichment-checklist</td>
+            <td class="mono">41</td>
+            <td>
+              <div class="rate-bar">
+                <span class="mono">8.5%</span>
+                <div class="rate-bar-track"><div class="rate-bar-fill" style="width:85%"></div></div>
+              </div>
+            </td>
+            <td>Indoor Cat Care Checklist</td>
+            <td><span class="badge badge-inline">Inline</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--emerald);font-weight:600;">/dog-bed-size-guide</td>
+            <td class="mono">29</td>
+            <td>
+              <div class="rate-bar">
+                <span class="mono">5.1%</span>
+                <div class="rate-bar-track"><div class="rate-bar-fill" style="width:51%"></div></div>
+              </div>
+            </td>
+            <td>Seasonal Pet Care Calendar</td>
+            <td><span class="badge badge-exit">Exit-Intent</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--emerald);font-weight:600;">/new-cat-owner-setup-guide</td>
+            <td class="mono">26</td>
+            <td>
+              <div class="rate-bar">
+                <span class="mono">6.4%</span>
+                <div class="rate-bar-track"><div class="rate-bar-fill" style="width:64%"></div></div>
+              </div>
+            </td>
+            <td>Indoor Cat Care Checklist</td>
+            <td><span class="badge badge-inline">Inline</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--emerald);font-weight:600;">/best-fish-tank-filter-uk</td>
+            <td class="mono">18</td>
+            <td>
+              <div class="rate-bar">
+                <span class="mono">4.2%</span>
+                <div class="rate-bar-track"><div class="rate-bar-fill" style="width:42%"></div></div>
+              </div>
+            </td>
+            <td>Pet Emergency Contact Card</td>
+            <td><span class="badge badge-popup">Popup</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--emerald);font-weight:600;">/seasonal-pet-care-tips</td>
+            <td class="mono">14</td>
+            <td>
+              <div class="rate-bar">
+                <span class="mono">5.9%</span>
+                <div class="rate-bar-track"><div class="rate-bar-fill" style="width:59%"></div></div>
+              </div>
+            </td>
+            <td>Seasonal Pet Care Calendar</td>
+            <td><span class="badge badge-sticky">Sticky</span></td>
+          </tr>
+          <tr>
+            <td style="color:var(--emerald);font-weight:600;">/organic-dog-treats</td>
+            <td class="mono">9</td>
+            <td>
+              <div class="rate-bar">
+                <span class="mono">2.3%</span>
+                <div class="rate-bar-track"><div class="rate-bar-fill" style="width:23%"></div></div>
+              </div>
+            </td>
+            <td>Puppy Starter Checklist</td>
+            <td><span class="badge badge-exit">Exit-Intent</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 3. LEAD MAGNET PERFORMANCE -->
+  <div class="section-title animate-in delay-3">
+    <h2>Lead Magnet Performance <span class="section-sub">Download-to-subscriber conversion tracking</span></h2>
+  </div>
+  <div class="magnet-grid">
+    <div class="magnet-card animate-in delay-4">
+      <div class="magnet-icon" style="background: var(--emerald-dim);">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--emerald)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      </div>
+      <div class="magnet-title">Puppy Starter Checklist</div>
+      <div class="magnet-type">PDF Guide &middot; 12 pages</div>
+      <div class="magnet-stats">
+        <div>
+          <div class="magnet-stat-label">Downloads</div>
+          <div class="magnet-stat-value">119</div>
+        </div>
+        <div>
+          <div class="magnet-stat-label">Capture Rate</div>
+          <div class="magnet-stat-value" style="color:var(--emerald)">68%</div>
+        </div>
+      </div>
+      <div class="magnet-trend trend-up">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        +23% this week &middot; Top performer
+      </div>
+    </div>
+    <div class="magnet-card animate-in delay-5">
+      <div class="magnet-icon" style="background: var(--blue-dim);">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      </div>
+      <div class="magnet-title">Indoor Cat Care Checklist</div>
+      <div class="magnet-type">PDF Guide &middot; 8 pages</div>
+      <div class="magnet-stats">
+        <div>
+          <div class="magnet-stat-label">Downloads</div>
+          <div class="magnet-stat-value">87</div>
+        </div>
+        <div>
+          <div class="magnet-stat-label">Capture Rate</div>
+          <div class="magnet-stat-value" style="color:var(--emerald)">72%</div>
+        </div>
+      </div>
+      <div class="magnet-trend trend-up">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        +18% this week &middot; Highest capture rate
+      </div>
+    </div>
+    <div class="magnet-card animate-in delay-6">
+      <div class="magnet-icon" style="background: var(--amber-dim);">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--amber)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+      </div>
+      <div class="magnet-title">Seasonal Pet Care Calendar</div>
+      <div class="magnet-type">PDF Calendar &middot; 14 pages</div>
+      <div class="magnet-stats">
+        <div>
+          <div class="magnet-stat-label">Downloads</div>
+          <div class="magnet-stat-value">54</div>
+        </div>
+        <div>
+          <div class="magnet-stat-label">Capture Rate</div>
+          <div class="magnet-stat-value" style="color:var(--emerald)">61%</div>
+        </div>
+      </div>
+      <div class="magnet-trend trend-up">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        +9% this week &middot; Seasonal interest rising
+      </div>
+    </div>
+    <div class="magnet-card animate-in delay-7">
+      <div class="magnet-icon" style="background: var(--rose-dim);">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--rose)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </div>
+      <div class="magnet-title">Pet Emergency Contact Card</div>
+      <div class="magnet-type">Printable Card &middot; 2 pages</div>
+      <div class="magnet-stats">
+        <div>
+          <div class="magnet-stat-label">Downloads</div>
+          <div class="magnet-stat-value">33</div>
+        </div>
+        <div>
+          <div class="magnet-stat-label">Capture Rate</div>
+          <div class="magnet-stat-value" style="color:var(--emerald)">58%</div>
+        </div>
+      </div>
+      <div class="magnet-trend trend-flat">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        Steady &middot; Newly launched
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. WELCOME SEQUENCE FUNNEL -->
+  <div class="section-title animate-in delay-3">
+    <h2>Welcome Sequence Funnel <span class="section-sub">5-email automated onboarding sequence</span></h2>
+  </div>
+  <div class="card animate-in delay-4">
+    <div class="funnel-container" id="funnelContainer">
+      <!-- Funnel steps rendered by JS -->
+    </div>
+  </div>
+
+  <!-- 5. NEWSLETTER PERFORMANCE + 6. SEGMENTATION / 7. GROWTH CHART -->
+  <div class="section-title animate-in delay-3">
+    <h2>Newsletter Performance <span class="section-sub">Last 8 campaigns sent via MailerLite</span></h2>
+  </div>
+  <div class="card animate-in delay-4">
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Subject Line</th>
+            <th>Recipients</th>
+            <th>Open Rate</th>
+            <th>Click Rate</th>
+            <th>Unsubs</th>
+          </tr>
+        </thead>
+        <tbody id="newsletterTableBody">
+          <!-- Rendered by JS -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 6 + 7: SEGMENTATION PIE + GROWTH LINE CHART -->
+  <div class="chart-row">
+    <div>
+      <div class="section-title animate-in delay-3">
+        <h2>Subscriber Segmentation <span class="section-sub">By pet ownership type</span></h2>
+      </div>
+      <div class="card animate-in delay-4">
+        <div class="pie-container">
+          <svg class="pie-svg" viewBox="-1 -1 2 2" id="pieChart"></svg>
+          <div class="pie-legend" id="pieLegend"></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="section-title animate-in delay-3">
+        <h2>Subscriber Growth <span class="section-sub">12-week trajectory with milestones</span></h2>
+      </div>
+      <div class="card animate-in delay-4">
+        <div class="line-chart-container">
+          <svg class="line-chart-svg" id="lineChart" preserveAspectRatio="none"></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. EMAIL CAMPAIGN CALENDAR -->
+  <div class="section-title animate-in delay-3">
+    <h2>Email Campaign Calendar <span class="section-sub">June 2026 &middot; Scheduled sends &amp; active sequences</span></h2>
+  </div>
+  <div class="card animate-in delay-4">
+    <div class="calendar-grid" id="calendarGrid">
+      <!-- Rendered by JS -->
+    </div>
+    <div class="cal-legend">
+      <div class="cal-legend-item"><div class="cal-legend-dot" style="background:var(--emerald);"></div> Newsletter</div>
+      <div class="cal-legend-item"><div class="cal-legend-dot" style="background:var(--blue);"></div> Automated Sequence</div>
+      <div class="cal-legend-item"><div class="cal-legend-dot" style="background:var(--purple);"></div> Campaign</div>
+    </div>
+  </div>
+
+  <!-- 9. ATTRIBUTION TRACKING -->
+  <div class="section-title animate-in delay-3">
+    <h2>Attribution Tracking <span class="section-sub">Recent subscriber acquisition details</span></h2>
+  </div>
+  <div class="card animate-in delay-4">
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Subscriber ID</th>
+            <th>Source URL</th>
+            <th>Lead Magnet</th>
+            <th>Signup Date</th>
+            <th>Segment</th>
+            <th>Engagement Score</th>
+          </tr>
+        </thead>
+        <tbody id="attributionTableBody">
+          <!-- Rendered by JS -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// ===== TIMESTAMP =====
+document.getElementById('lastUpdated').textContent = 'Updated ' + new Date().toLocaleString('en-GB', {
+  day: '2-digit', month: 'short', year: 'numeric',
+  hour: '2-digit', minute: '2-digit', second: '2-digit'
+});
+
+// ===== 4. WELCOME SEQUENCE FUNNEL =====
+(function() {
+  const steps = [
+    { name: 'Email 1', desc: 'Welcome + Brand Story', open: 78, click: 32, color: '#10b981', pct: 100 },
+    { name: 'Email 2', desc: 'Best Content Roundup', open: 65, click: 28, color: '#34d399', pct: 83 },
+    { name: 'Email 3', desc: 'Lead Magnet Delivery', open: 58, click: 41, color: '#059669', pct: 74 },
+    { name: 'Email 4', desc: 'Engagement Survey', open: 49, click: 22, color: '#047857', pct: 63 },
+    { name: 'Email 5', desc: 'First Purchase CTA', open: 44, click: 18, color: '#065f46', pct: 56 },
+  ];
+  const container = document.getElementById('funnelContainer');
+  steps.forEach((s, i) => {
+    const step = document.createElement('div');
+    step.className = 'funnel-step';
+    const barH = Math.max(50, s.pct * 1.6);
+    step.innerHTML = `
+      <div class="funnel-bar-wrap">
+        <div class="funnel-bar" style="height:${barH}px;background:${s.color};">
+          <span class="funnel-bar-label">${s.pct}%</span>
+        </div>
+      </div>
+      <div class="funnel-step-name">${s.name}</div>
+      <div class="funnel-step-desc">${s.desc}</div>
+      <div class="funnel-metrics">
+        <div class="funnel-metric">
+          <span class="funnel-metric-label">Open</span>
+          <span class="funnel-metric-value">${s.open}%</span>
+        </div>
+        <div class="funnel-metric">
+          <span class="funnel-metric-label">Click</span>
+          <span class="funnel-metric-value">${s.click}%</span>
+        </div>
+      </div>
+      ${i < steps.length - 1 ? '<span class="funnel-arrow">→</span>' : ''}
+    `;
+    container.appendChild(step);
+  });
+})();
+
+// ===== 5. NEWSLETTER PERFORMANCE =====
+(function() {
+  const newsletters = [
+    { date: '28 May 2026', subject: 'Summer Pet Care: Keep Them Cool & Happy', recipients: 198, open: 42.1, click: 8.3, unsubs: 1 },
+    { date: '21 May 2026', subject: '5 Signs Your Puppy Needs a Diet Change', recipients: 184, open: 45.6, click: 9.1, unsubs: 0 },
+    { date: '14 May 2026', subject: 'Indoor Cat Enrichment: 7 Easy DIY Ideas', recipients: 171, open: 48.2, click: 11.4, unsubs: 1 },
+    { date: '07 May 2026', subject: 'Seasonal Pet Care Calendar (Free Download)', recipients: 156, open: 51.3, click: 14.2, unsubs: 0 },
+    { date: '30 Apr 2026', subject: 'New: Emergency Contact Card for Pet Owners', recipients: 138, open: 44.7, click: 10.8, unsubs: 2 },
+    { date: '23 Apr 2026', subject: 'Dog Bed Buying Guide: Size Matters!', recipients: 121, open: 39.5, click: 7.6, unsubs: 1 },
+    { date: '16 Apr 2026', subject: 'Welcome to PetHub Online Newsletter', recipients: 89, open: 56.2, click: 15.3, unsubs: 0 },
+    { date: '09 Apr 2026', subject: 'Best Puppy Food UK: Our Top 10 Picks', recipients: 62, open: 52.8, click: 12.9, unsubs: 0 },
+  ];
+  const tbody = document.getElementById('newsletterTableBody');
+  newsletters.forEach(n => {
+    const openColor = n.open >= 50 ? 'var(--emerald)' : n.open >= 40 ? 'var(--text)' : 'var(--amber)';
+    const clickColor = n.click >= 12 ? 'var(--emerald)' : n.click >= 8 ? 'var(--text)' : 'var(--amber)';
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td class="mono" style="color:var(--text-dim);font-size:0.78rem;">${n.date}</td>
+      <td style="max-width:280px;overflow:hidden;text-overflow:ellipsis;font-weight:500;">${n.subject}</td>
+      <td class="mono">${n.recipients.toLocaleString()}</td>
+      <td>
+        <div class="rate-bar">
+          <span class="mono" style="color:${openColor}">${n.open}%</span>
+          <div class="rate-bar-track"><div class="rate-bar-fill" style="width:${n.open}%;background:${openColor}"></div></div>
+        </div>
+      </td>
+      <td>
+        <div class="rate-bar">
+          <span class="mono" style="color:${clickColor}">${n.click}%</span>
+          <div class="rate-bar-track"><div class="rate-bar-fill" style="width:${Math.min(n.click * 5, 100)}%;background:${clickColor}"></div></div>
+        </div>
+      </td>
+      <td class="mono" style="color:${n.unsubs > 0 ? 'var(--amber)' : 'var(--text-muted)'}">${n.unsubs}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+})();
+
+// ===== 6. PIE CHART =====
+(function() {
+  const segments = [
+    { label: 'Dog Owners', pct: 34, color: '#10b981' },
+    { label: 'Cat Owners', pct: 24, color: '#3b82f6' },
+    { label: 'Puppy Owners', pct: 18, color: '#34d399' },
+    { label: 'Multi-Pet Owners', pct: 11, color: '#8b5cf6' },
+    { label: 'Fish Keepers', pct: 7, color: '#06b6d4' },
+    { label: 'General Pet Care', pct: 6, color: '#f59e0b' },
+  ];
+
+  const svg = document.getElementById('pieChart');
+  const legend = document.getElementById('pieLegend');
+  let cumulative = 0;
+
+  segments.forEach((seg, i) => {
+    const startAngle = cumulative * 2 * Math.PI;
+    cumulative += seg.pct / 100;
+    const endAngle = cumulative * 2 * Math.PI;
+
+    const x1 = Math.cos(startAngle - Math.PI / 2);
+    const y1 = Math.sin(startAngle - Math.PI / 2);
+    const x2 = Math.cos(endAngle - Math.PI / 2);
+    const y2 = Math.sin(endAngle - Math.PI / 2);
+    const largeArc = seg.pct > 50 ? 1 : 0;
+
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    const d = `M 0 0 L ${x1} ${y1} A 1 1 0 ${largeArc} 1 ${x2} ${y2} Z`;
+    path.setAttribute('d', d);
+    path.setAttribute('fill', seg.color);
+    path.setAttribute('stroke', '#080a0f');
+    path.setAttribute('stroke-width', '0.02');
+    path.style.transition = 'opacity 0.2s';
+    path.style.cursor = 'pointer';
+    path.addEventListener('mouseenter', () => { path.style.opacity = '0.8'; });
+    path.addEventListener('mouseleave', () => { path.style.opacity = '1'; });
+    svg.appendChild(path);
+
+    const item = document.createElement('div');
+    item.className = 'pie-legend-item';
+    item.innerHTML = `
+      <div class="pie-legend-dot" style="background:${seg.color};"></div>
+      <span class="pie-legend-pct">${seg.pct}%</span>
+      <span>${seg.label}</span>
+    `;
+    legend.appendChild(item);
+  });
+})();
+
+// ===== 7. LINE CHART =====
+(function() {
+  const data = [8, 15, 26, 38, 54, 72, 91, 118, 142, 172, 210, 247];
+  const weeks = ['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8', 'W9', 'W10', 'W11', 'W12'];
+  const milestones = [
+    { week: 3, label: 'First lead magnet' },
+    { week: 5, label: '50 subs!' },
+    { week: 8, label: '100 subs!' },
+    { week: 11, label: '200 subs!' },
+  ];
+
+  const svg = document.getElementById('lineChart');
+  const rect = svg.getBoundingClientRect();
+  const W = 700, H = 240;
+  const padL = 48, padR = 20, padT = 24, padB = 36;
+  const chartW = W - padL - padR;
+  const chartH = H - padT - padB;
+  const maxVal = 280;
+
+  svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+
+  // Defs
+  const defs = document.createElementNS('http://www.w3.org/2000/svg', 'defs');
+  const grad = document.createElementNS('http://www.w3.org/2000/svg', 'linearGradient');
+  grad.id = 'emeraldGradient';
+  grad.setAttribute('x1', '0'); grad.setAttribute('y1', '0');
+  grad.setAttribute('x2', '0'); grad.setAttribute('y2', '1');
+  const s1 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+  s1.setAttribute('offset', '0%'); s1.setAttribute('stop-color', '#10b981'); s1.setAttribute('stop-opacity', '0.25');
+  const s2 = document.createElementNS('http://www.w3.org/2000/svg', 'stop');
+  s2.setAttribute('offset', '100%'); s2.setAttribute('stop-color', '#10b981'); s2.setAttribute('stop-opacity', '0');
+  grad.appendChild(s1); grad.appendChild(s2);
+  defs.appendChild(grad);
+  svg.appendChild(defs);
+
+  // Grid lines
+  for (let i = 0; i <= 4; i++) {
+    const y = padT + (chartH / 4) * i;
+    const val = Math.round(maxVal - (maxVal / 4) * i);
+    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+    line.setAttribute('x1', padL); line.setAttribute('x2', W - padR);
+    line.setAttribute('y1', y); line.setAttribute('y2', y);
+    line.setAttribute('class', 'chart-grid-line');
+    svg.appendChild(line);
+
+    const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    label.setAttribute('x', padL - 8); label.setAttribute('y', y + 3);
+    label.setAttribute('text-anchor', 'end');
+    label.setAttribute('class', 'chart-label');
+    label.textContent = val;
+    svg.appendChild(label);
+  }
+
+  // X labels
+  data.forEach((v, i) => {
+    const x = padL + (chartW / (data.length - 1)) * i;
+    const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+    label.setAttribute('x', x); label.setAttribute('y', H - 8);
+    label.setAttribute('text-anchor', 'middle');
+    label.setAttribute('class', 'chart-label');
+    label.textContent = weeks[i];
+    svg.appendChild(label);
+  });
+
+  // Points
+  const points = data.map((v, i) => {
+    const x = padL + (chartW / (data.length - 1)) * i;
+    const y = padT + chartH - (v / maxVal) * chartH;
+    return { x, y };
+  });
+
+  // Area
+  const areaPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  let areaD = `M ${points[0].x} ${padT + chartH}`;
+  points.forEach(p => { areaD += ` L ${p.x} ${p.y}`; });
+  areaD += ` L ${points[points.length - 1].x} ${padT + chartH} Z`;
+  areaPath.setAttribute('d', areaD);
+  areaPath.setAttribute('class', 'chart-area');
+  svg.appendChild(areaPath);
+
+  // Line
+  const linePath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  let lineD = `M ${points[0].x} ${points[0].y}`;
+  points.slice(1).forEach(p => { lineD += ` L ${p.x} ${p.y}`; });
+  linePath.setAttribute('d', lineD);
+  linePath.setAttribute('class', 'chart-line');
+  svg.appendChild(linePath);
+
+  // Dots
+  points.forEach((p, i) => {
+    const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+    circle.setAttribute('cx', p.x); circle.setAttribute('cy', p.y);
+    circle.setAttribute('r', 4);
+    circle.setAttribute('class', 'chart-dot');
+    svg.appendChild(circle);
+  });
+
+  // Milestones
+  milestones.forEach(m => {
+    const idx = m.week - 1;
+    if (idx < points.length) {
+      const p = points[idx];
+      const diamond = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+      diamond.setAttribute('x', p.x - 5); diamond.setAttribute('y', p.y - 18);
+      diamond.setAttribute('width', 10); diamond.setAttribute('height', 10);
+      diamond.setAttribute('rx', 2);
+      diamond.setAttribute('transform', `rotate(45, ${p.x}, ${p.y - 13})`);
+      diamond.setAttribute('class', 'milestone-marker');
+      svg.appendChild(diamond);
+
+      const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      label.setAttribute('x', p.x); label.setAttribute('y', p.y - 28);
+      label.setAttribute('text-anchor', 'middle');
+      label.setAttribute('class', 'milestone-label');
+      label.textContent = m.label;
+      svg.appendChild(label);
+    }
+  });
+})();
+
+// ===== 8. CALENDAR =====
+(function() {
+  const grid = document.getElementById('calendarGrid');
+  const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  days.forEach(d => {
+    const el = document.createElement('div');
+    el.className = 'cal-header';
+    el.textContent = d;
+    grid.appendChild(el);
+  });
+
+  // June 2026 starts on Monday
+  const events = {
+    1: 'newsletter', 3: 'sequence', 5: 'campaign',
+    8: 'newsletter', 10: 'sequence', 12: 'campaign',
+    15: 'newsletter', 17: 'sequence', 19: 'sequence',
+    22: 'newsletter', 24: 'sequence', 26: 'campaign',
+    29: 'newsletter',
+  };
+
+  // June 2026: starts on Monday (day 1)
+  // Fill previous month days (May ends on Sunday, May 31 is Sunday)
+  // Actually June 1, 2026 is a Monday
+  for (let d = 1; d <= 30; d++) {
+    const el = document.createElement('div');
+    el.className = 'cal-day';
+    if (d === 1) {
+      el.classList.add('today');
+    }
+    if (events[d]) {
+      el.classList.add('has-event', 'event-' + events[d]);
+    }
+    el.innerHTML = `<span>${d}</span>`;
+    grid.appendChild(el);
+  }
+  // Fill remaining cells for complete row (30 days starting Monday = 4 weeks + 2 days, so 30 cells + we need 5 rows of 7 = 35)
+  for (let d = 1; d <= 5; d++) {
+    const el = document.createElement('div');
+    el.className = 'cal-day other-month';
+    el.innerHTML = `<span>${d}</span>`;
+    grid.appendChild(el);
+  }
+})();
+
+// ===== 9. ATTRIBUTION TABLE =====
+(function() {
+  const sources = [
+    '/best-puppy-food-uk', '/ (Homepage)', '/indoor-cat-enrichment-checklist',
+    '/dog-bed-size-guide', '/new-cat-owner-setup-guide', '/best-fish-tank-filter-uk',
+    '/seasonal-pet-care-tips', '/organic-dog-treats', '/ (Homepage)', '/best-puppy-food-uk',
+    '/indoor-cat-enrichment-checklist', '/dog-bed-size-guide'
+  ];
+  const magnets = [
+    'Puppy Starter Checklist', 'Puppy Starter Checklist', 'Indoor Cat Care Checklist',
+    'Seasonal Pet Care Calendar', 'Indoor Cat Care Checklist', 'Pet Emergency Contact Card',
+    'Seasonal Pet Care Calendar', 'Puppy Starter Checklist', 'Pet Emergency Contact Card',
+    'Puppy Starter Checklist', 'Indoor Cat Care Checklist', 'Seasonal Pet Care Calendar'
+  ];
+  const segments = ['Puppy Owners', 'Dog Owners', 'Cat Owners', 'Dog Owners', 'Cat Owners',
+    'Fish Keepers', 'Multi-Pet Owners', 'Dog Owners', 'General Pet Care', 'Puppy Owners',
+    'Cat Owners', 'Dog Owners'];
+  const dates = [
+    '01 Jun 2026', '31 May 2026', '30 May 2026', '29 May 2026', '28 May 2026',
+    '28 May 2026', '27 May 2026', '26 May 2026', '25 May 2026', '24 May 2026',
+    '23 May 2026', '22 May 2026'
+  ];
+  const scores = [92, 87, 78, 85, 64, 71, 56, 43, 81, 69, 73, 58];
+
+  const tbody = document.getElementById('attributionTableBody');
+  for (let i = 0; i < 12; i++) {
+    const id = 'PH-' + String(247 - i).padStart(4, '0');
+    const score = scores[i];
+    const scoreColor = score >= 80 ? 'var(--emerald)' : score >= 60 ? 'var(--amber)' : 'var(--red)';
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td class="mono" style="color:var(--text-dim);font-size:0.78rem;">${id}</td>
+      <td style="color:var(--emerald);font-weight:500;font-size:0.82rem;">${sources[i]}</td>
+      <td style="font-size:0.82rem;">${magnets[i]}</td>
+      <td class="mono" style="color:var(--text-dim);font-size:0.78rem;">${dates[i]}</td>
+      <td><span class="badge" style="background:${getSegColor(segments[i])}20;color:${getSegColor(segments[i])}">${segments[i]}</span></td>
+      <td>
+        <span class="score-bar"><span class="score-fill" style="width:${score}%;background:${scoreColor}"></span></span>
+        <span class="mono" style="color:${scoreColor};font-size:0.82rem;">${score}</span>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  }
+
+  function getSegColor(seg) {
+    const map = {
+      'Dog Owners': '#10b981',
+      'Cat Owners': '#3b82f6',
+      'Puppy Owners': '#34d399',
+      'Multi-Pet Owners': '#8b5cf6',
+      'Fish Keepers': '#06b6d4',
+      'General Pet Care': '#f59e0b',
+    };
+    return map[seg] || '#7a8ba8';
+  }
+})();
+</script>
+</body>
+</html>
