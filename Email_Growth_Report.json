@@ -1,0 +1,127 @@
+{
+  "report": "Email Growth Report",
+  "site": "pethubonline.com",
+  "generated": "2026-06-01T22:05:52.422695Z",
+  "platform": "MailerLite",
+  "current_status": {
+    "api_connected": true,
+    "subscriber_groups_created": true,
+    "groups": [
+      "Dog Owners",
+      "Cat Owners",
+      "Fish Keepers",
+      "General Pet Care"
+    ],
+    "forms_deployed": true,
+    "current_subscribers": 0,
+    "note": "Infrastructure ready. Acquisition sequences needed."
+  },
+  "deployment_plan": {
+    "welcome_sequence": {
+      "status": "PLANNED",
+      "emails": 5,
+      "schedule": "Day 0, Day 1, Day 3, Day 5, Day 7",
+      "content": [
+        "Email 1: Welcome + what to expect + best starter guide for their pet type",
+        "Email 2: Top 5 most-read articles this month",
+        "Email 3: Seasonal care tips for their pet type",
+        "Email 4: Product comparison spotlight (relevant to segment)",
+        "Email 5: Community invite + newsletter preview"
+      ],
+      "trigger": "New subscriber signup"
+    },
+    "subscriber_segmentation": {
+      "status": "PLANNED",
+      "segments": [
+        {
+          "name": "Dog Owners",
+          "content_pool": "Dog Supplies, Dog Beds, Puppy Care, Dog Health"
+        },
+        {
+          "name": "Cat Owners",
+          "content_pool": "Cat Supplies, Cat Toys, Indoor Cats"
+        },
+        {
+          "name": "Fish Keepers",
+          "content_pool": "Fish Supplies"
+        },
+        {
+          "name": "General Pet Care",
+          "content_pool": "All categories"
+        }
+      ],
+      "method": "Self-selection on signup form + behavioral (click tracking)"
+    },
+    "weekly_digest": {
+      "status": "PLANNED",
+      "frequency": "Weekly (Friday morning)",
+      "content": [
+        "3 featured articles from their pet segment",
+        "1 seasonal tip",
+        "1 product spotlight",
+        "Community question of the week"
+      ]
+    },
+    "lead_magnet_journey": {
+      "status": "PLANNED",
+      "magnets": [
+        {
+          "name": "Pet Emergency Guide UK",
+          "format": "PDF",
+          "pages": 12,
+          "trigger": "Download"
+        },
+        {
+          "name": "Seasonal Pet Care Calendar 2026",
+          "format": "PDF",
+          "pages": 4,
+          "trigger": "Download"
+        },
+        {
+          "name": "New Pet Owner Checklist",
+          "format": "PDF",
+          "pages": 6,
+          "trigger": "Download"
+        }
+      ],
+      "follow_up": "3-email nurture sequence after download"
+    },
+    "re_engagement_sequence": {
+      "status": "PLANNED",
+      "trigger": "30 days inactive (no opens)",
+      "emails": 3,
+      "content": [
+        "Email 1: We miss you + top content they missed",
+        "Email 2: Exclusive content preview",
+        "Email 3: Final check-in + unsubscribe option"
+      ]
+    }
+  },
+  "attribution_tracking": {
+    "utm_parameters": "All email links tagged with utm_source=mailerlite&utm_medium=email&utm_campaign={campaign_name}",
+    "ga4_integration": "Track email-sourced traffic in GA4",
+    "conversion_events": [
+      "page_view",
+      "affiliate_click",
+      "form_submission"
+    ]
+  },
+  "kpi_targets": {
+    "30_day": {
+      "subscribers": 100,
+      "open_rate": "25%",
+      "click_rate": "3%"
+    },
+    "60_day": {
+      "subscribers": 500,
+      "open_rate": "28%",
+      "click_rate": "4%"
+    },
+    "90_day": {
+      "subscribers": 1000,
+      "open_rate": "30%",
+      "click_rate": "5%"
+    }
+  },
+  "status": "INFRASTRUCTURE READY - Automation sequences need deployment"
+}

@@ -1,0 +1,96 @@
+{
+  "report": "Authority Transfer Map",
+  "site": "pethubonline.com",
+  "generated": "2026-06-01T22:05:52.421932Z",
+  "methodology": "Identify top authority pages (high internal link count, strong content signals, oldest published dates) and map authority transfer paths to page 2 rankings, money pages, and emerging clusters.",
+  "top_25_authority_pages": {
+    "identification_criteria": [
+      "Highest inbound internal link count",
+      "Category hub/pillar pages",
+      "Oldest published content (earliest indexation)",
+      "Highest word count / content depth",
+      "Pages with FAQ schema + comparison tables + affiliate links"
+    ],
+    "estimated_authority_hubs": [
+      "Category pages: Dog Supplies, Cat Supplies, Fish Supplies, Pet Care",
+      "Hub pages: Puppy Care, Dog Beds, Indoor Cats, Cat Toys, Dog Health",
+      "Trust pages: About Jason, Methodology, Review Process",
+      "Top-performing guides in each cluster (longest content, most internal links)"
+    ]
+  },
+  "transfer_targets": {
+    "page_2_rankings": {
+      "strategy": "Add contextual links from top 25 authority pages to posts ranking positions 11-20",
+      "method": "Identify GSC page 2 queries, match to target posts, inject 2-3 internal links from authority pages",
+      "expected_impact": "1-3 position improvement per target page",
+      "priority": "HIGHEST - fastest ROI"
+    },
+    "money_pages": {
+      "strategy": "Boost affiliate-heavy comparison/review posts with authority links",
+      "targets": "Best-of posts with affiliate links but lower rankings",
+      "method": "Link from educational hub pages to commercial comparison posts",
+      "expected_impact": "Revenue-ready pages move into ranking positions"
+    },
+    "fish_supplies_cluster": {
+      "strategy": "Transfer authority from established clusters (Dog/Cat) to newer Fish Supplies",
+      "method": "Cross-category relevant links where pet care overlap exists",
+      "current_state": "50 posts, new cluster, needs authority injection",
+      "expected_impact": "Accelerated indexation and ranking for fish content"
+    },
+    "category_pages": {
+      "strategy": "Strengthen category archive pages as authority hubs",
+      "method": "Ensure every spoke post links back to category hub, add schema",
+      "expected_impact": "Category pages rank for head terms"
+    }
+  },
+  "authority_corridors": [
+    {
+      "from": "Dog Supplies Hub",
+      "to": "Individual dog product reviews",
+      "type": "hub-to-spoke"
+    },
+    {
+      "from": "Cat Supplies Hub",
+      "to": "Individual cat product reviews",
+      "type": "hub-to-spoke"
+    },
+    {
+      "from": "Educational guides",
+      "to": "Commercial comparison posts",
+      "type": "edu-to-commercial"
+    },
+    {
+      "from": "Trust pages (About, Methodology)",
+      "to": "All cluster hubs",
+      "type": "trust-to-hub"
+    },
+    {
+      "from": "Established clusters (Dog/Cat)",
+      "to": "Emerging clusters (Fish/Health)",
+      "type": "cross-cluster"
+    }
+  ],
+  "implementation_plan": [
+    {
+      "phase": 1,
+      "action": "Map top 25 authority pages by inbound link count",
+      "timeline": "Requires GSC data"
+    },
+    {
+      "phase": 2,
+      "action": "Identify page 2 targets from GSC position data",
+      "timeline": "Requires GSC data"
+    },
+    {
+      "phase": 3,
+      "action": "Create authority transfer links (3-5 per target)",
+      "timeline": "1-2 days after data"
+    },
+    {
+      "phase": 4,
+      "action": "Monitor position changes over 2-4 weeks",
+      "timeline": "Ongoing"
+    }
+  ],
+  "status": "FRAMEWORK READY - Requires GSC position data for targeted execution"
+}

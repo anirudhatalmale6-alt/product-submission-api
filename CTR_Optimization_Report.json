@@ -1,0 +1,104 @@
+{
+  "report": "CTR Optimization Report",
+  "site": "pethubonline.com",
+  "generated": "2026-06-01T22:05:52.422952Z",
+  "objective": "Increase organic CTR by 20-30% across all ranking content",
+  "current_ctr_assets": {
+    "faq_schema": "450/460 posts (97.8%) - rich snippet eligible",
+    "featured_images": "460/460 (100%) - og:image for social/SERP",
+    "meta_descriptions": "All posts have meta descriptions via Rank Math",
+    "title_tags": "All posts have optimized title tags"
+  },
+  "audit_framework": {
+    "title_tag_patterns": {
+      "high_ctr_patterns": [
+        "Number-led: '10 Best X for Y in 2026'",
+        "Question-led: 'What is the Best X for Y?'",
+        "How-to: 'How to Choose the Best X: Complete Guide'",
+        "Comparison: 'X vs Y: Which is Best for Z?'",
+        "Review: 'X Review 2026: Is It Worth It?'"
+      ],
+      "low_ctr_patterns_to_fix": [
+        "Generic: 'X Guide' -> Add specificity",
+        "Too long: Over 60 chars -> Truncate with intent",
+        "Missing year: Add '2026' or '[Updated]'",
+        "Missing numbers: Add quantifiers where applicable",
+        "Missing location: Add 'UK' for local intent queries"
+      ]
+    },
+    "meta_description_framework": {
+      "structure": "Primary keyword + value proposition + CTA in 150-160 chars",
+      "elements": [
+        "Include primary keyword in first 50 chars",
+        "Add unique value: 'Expert tested', 'UK prices', 'Size guide included'",
+        "End with CTA: 'Find the perfect X today', 'Compare now', 'Read our guide'",
+        "Include numbers: prices, quantities, ratings where relevant"
+      ]
+    },
+    "serp_feature_opportunities": {
+      "faq_rich_results": {
+        "coverage": "97.8% (450/460 posts)",
+        "expected_appearance_rate": "10-25% of eligible pages",
+        "ctr_boost": "+20-30% when FAQ accordion appears"
+      },
+      "featured_snippets": {
+        "strategy": "Structure answer paragraphs (40-60 words) directly under H2/H3 headers",
+        "target_formats": [
+          "Definition paragraphs",
+          "Numbered lists",
+          "Comparison tables"
+        ],
+        "posts_to_optimize": "All 'What is' and 'How to' content"
+      },
+      "image_results": {
+        "current_state": "100% featured images, needs alt text optimization on 72 images",
+        "action": "Optimize alt text with descriptive, keyword-rich descriptions"
+      }
+    }
+  },
+  "implementation_priority": [
+    {
+      "rank": 1,
+      "action": "Audit top 100 posts by impressions, rewrite titles using high-CTR patterns",
+      "impact": "High",
+      "timeline": "2-3 days"
+    },
+    {
+      "rank": 2,
+      "action": "Rewrite meta descriptions for top 100 posts",
+      "impact": "Medium-High",
+      "timeline": "2-3 days"
+    },
+    {
+      "rank": 3,
+      "action": "Add [Updated 2026] or year to titles missing it",
+      "impact": "Medium",
+      "timeline": "1 day"
+    },
+    {
+      "rank": 4,
+      "action": "Fix 72 alt text issues for image search CTR",
+      "impact": "Medium",
+      "timeline": "1 day"
+    },
+    {
+      "rank": 5,
+      "action": "Structure featured snippet answers in top 50 posts",
+      "impact": "High",
+      "timeline": "3-5 days"
+    },
+    {
+      "rank": 6,
+      "action": "Add UK-specific qualifiers to locally relevant content",
+      "impact": "Medium",
+      "timeline": "1 day"
+    }
+  ],
+  "expected_results": {
+    "ctr_improvement": "+20-30% average across optimized pages",
+    "click_increase": "If impressions stay constant, +20-30% more clicks",
+    "timeline_to_see_results": "2-4 weeks after implementation",
+    "compounding_effect": "Higher CTR signals relevance to Google, which improves rankings, which increases impressions"
+  },
+  "status": "FRAMEWORK READY - Can execute title/meta optimization immediately, GSC data enables targeted prioritization"
+}

@@ -1,0 +1,168 @@
+{
+  "report": "Competitor Displacement Report",
+  "site": "pethubonline.com",
+  "generated": "2026-06-01T22:05:52.422527Z",
+  "competitors": [
+    {
+      "name": "Pets at Home",
+      "domain": "petsathome.com",
+      "type": "Major retailer",
+      "estimated_da": 65,
+      "strengths": [
+        "Brand recognition",
+        "Product range",
+        "Physical stores",
+        "Google Shopping"
+      ],
+      "weaknesses": [
+        "Generic content",
+        "Less educational depth",
+        "Commercial focus"
+      ],
+      "overlap_areas": [
+        "Product reviews",
+        "Buying guides",
+        "Pet care basics"
+      ],
+      "displacement_strategy": "Out-educate with deeper, more specific content. Target long-tail queries they don't cover."
+    },
+    {
+      "name": "Cats.com",
+      "domain": "cats.com",
+      "type": "Content publisher",
+      "estimated_da": 55,
+      "strengths": [
+        "Cat-focused authority",
+        "Content depth",
+        "Domain name"
+      ],
+      "weaknesses": [
+        "Cat-only (no dogs/fish)",
+        "US-focused"
+      ],
+      "overlap_areas": [
+        "Cat supplies",
+        "Cat care",
+        "Indoor cats"
+      ],
+      "displacement_strategy": "UK-specific content advantage. Broader pet coverage. FAQ schema gives SERP advantage."
+    },
+    {
+      "name": "Zooplus",
+      "domain": "zooplus.co.uk",
+      "type": "Online retailer",
+      "estimated_da": 60,
+      "strengths": [
+        "Product range",
+        "Price competitiveness",
+        "EU presence"
+      ],
+      "weaknesses": [
+        "Thin content",
+        "Product-focused not educational",
+        "Less UK-specific"
+      ],
+      "overlap_areas": [
+        "Product comparisons",
+        "Best-of lists"
+      ],
+      "displacement_strategy": "Educational content depth. UK-specific guides. Trust signals (About Jason, methodology)."
+    },
+    {
+      "name": "Purina",
+      "domain": "purina.co.uk",
+      "type": "Brand publisher",
+      "estimated_da": 70,
+      "strengths": [
+        "Brand authority",
+        "Veterinary partnerships",
+        "Budget"
+      ],
+      "weaknesses": [
+        "Brand-biased content",
+        "Limited product scope",
+        "Corporate tone"
+      ],
+      "overlap_areas": [
+        "Pet nutrition",
+        "Pet care guides",
+        "Pet health"
+      ],
+      "displacement_strategy": "Independent, unbiased reviews. Broader product coverage. More authentic tone."
+    },
+    {
+      "name": "Rover",
+      "domain": "rover.com",
+      "type": "Pet services platform",
+      "estimated_da": 75,
+      "strengths": [
+        "High DA",
+        "Service platform",
+        "User reviews"
+      ],
+      "weaknesses": [
+        "Service-focused not product",
+        "US-primary"
+      ],
+      "overlap_areas": [
+        "Pet care guides",
+        "Dog walking",
+        "Pet sitting"
+      ],
+      "displacement_strategy": "Product and equipment focus differentiates. UK-specific content. Educational depth."
+    }
+  ],
+  "competitive_advantages": {
+    "pethub_strengths": [
+      "460 published posts (high content volume)",
+      "97.8% FAQ schema coverage (SERP advantage)",
+      "100% featured image compliance",
+      "96.7 authority score",
+      "Multi-pet coverage (dogs, cats, fish)",
+      "UK-specific content and pricing",
+      "Independent, unbiased reviews",
+      "Strong internal link structure (97.1% connected)"
+    ],
+    "unique_differentiators": [
+      "FAQ rich snippet eligibility across 450 posts",
+      "Comprehensive cluster coverage (9 categories)",
+      "Educational + commercial content balance",
+      "Transparent methodology and author attribution"
+    ]
+  },
+  "displacement_priorities": [
+    {
+      "cluster": "Fish Supplies",
+      "competition_level": "Low",
+      "opportunity": "HIGH - few competitors have deep fish content"
+    },
+    {
+      "cluster": "Indoor Cats",
+      "competition_level": "Medium",
+      "opportunity": "HIGH - growing niche, Cats.com is main competitor"
+    },
+    {
+      "cluster": "Dog Beds",
+      "competition_level": "Medium",
+      "opportunity": "MEDIUM - commercial queries, compete on depth"
+    },
+    {
+      "cluster": "Puppy Care",
+      "competition_level": "Medium",
+      "opportunity": "HIGH - emotional buyer intent, education-heavy"
+    },
+    {
+      "cluster": "Dog Health",
+      "competition_level": "High",
+      "opportunity": "MEDIUM - requires trust signals, vet references"
+    }
+  ],
+  "monthly_tracking_plan": [
+    "Ranking overlap analysis via GSC query data",
+    "Citation share comparison across AI platforms",
+    "Content gap identification vs top 5 competitors",
+    "Backlink gap analysis",
+    "SERP feature ownership (FAQ snippets, featured snippets)"
+  ],
+  "status": "BASELINE ESTABLISHED - Monthly tracking recommended"
+}

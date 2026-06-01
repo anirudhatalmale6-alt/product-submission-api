@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="60">
+<title>Backlink Command Centre - PetHub Online</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#080a0f;--card:#111621;--border:#1a2236;
+  --text:#e2e8f0;--dim:#7a8ba8;--accent:#10b981;
+  --not-started:#4a5568;--submitted:#3b82f6;--pending:#f59e0b;
+  --approved:#10b981;--live:#06b6d4;--rejected:#ef4444;
+  --dofollow:#10b981;--nofollow:#64748b;
+}
+html{font-size:14px;-webkit-font-smoothing:antialiased}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:'Outfit',sans-serif;padding:20px 24px;
+  min-height:100vh;line-height:1.5;
+}
+.mono{font-family:'JetBrains Mono',monospace}
+
+/* Header */
+.header{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--border);
+}
+.header h1{font-size:1.15rem;font-weight:700;letter-spacing:0.5px;color:var(--text)}
+.header h1 span{color:var(--accent)}
+.header-meta{display:flex;align-items:center;gap:16px}
+.header-meta .pulse{
+  width:8px;height:8px;border-radius:50%;background:var(--accent);
+  animation:pulse 2s ease-in-out infinite;
+}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.3}}
+.header-meta .refresh-label{font-size:0.75rem;color:var(--dim)}
+.header-meta .domain{
+  font-family:'JetBrains Mono',monospace;font-size:0.8rem;
+  color:var(--accent);background:rgba(16,185,129,0.08);
+  padding:4px 10px;border-radius:4px;border:1px solid rgba(16,185,129,0.15);
+}
+
+/* Velocity Bar */
+.velocity-bar{
+  display:grid;grid-template-columns:repeat(8,1fr);gap:12px;margin-bottom:24px;
+}
+.vel-card{
+  background:var(--card);border:1px solid var(--border);border-radius:8px;
+  padding:14px 16px;position:relative;overflow:hidden;
+}
+.vel-card::after{
+  content:'';position:absolute;bottom:0;left:0;right:0;height:2px;
+  background:var(--accent);opacity:0.3;
+}
+.vel-card.active::after{opacity:1}
+.vel-label{font-size:0.7rem;color:var(--dim);text-transform:uppercase;letter-spacing:0.8px;margin-bottom:6px}
+.vel-value{font-family:'JetBrains Mono',monospace;font-size:1.5rem;font-weight:700;color:var(--text);line-height:1}
+.vel-value .vel-total{font-size:0.85rem;color:var(--dim);font-weight:400}
+.vel-value.green{color:var(--accent)}
+
+/* Section titles */
+.section-title{
+  font-size:0.8rem;font-weight:600;color:var(--dim);
+  text-transform:uppercase;letter-spacing:1.2px;
+  margin:28px 0 14px;display:flex;align-items:center;gap:10px;
+}
+.section-title::after{content:'';flex:1;height:1px;background:var(--border)}
+
+/* Directory Table */
+.table-wrap{
+  background:var(--card);border:1px solid var(--border);border-radius:8px;
+  overflow:hidden;margin-bottom:24px;
+}
+table{width:100%;border-collapse:collapse}
+thead{background:rgba(26,34,54,0.6)}
+th{
+  font-size:0.68rem;font-weight:600;color:var(--dim);
+  text-transform:uppercase;letter-spacing:0.8px;
+  padding:12px 14px;text-align:left;border-bottom:1px solid var(--border);
+  cursor:pointer;user-select:none;white-space:nowrap;
+}
+th:hover{color:var(--text)}
+th .sort-arrow{font-size:0.6rem;margin-left:4px;opacity:0.4}
+th.sorted .sort-arrow{opacity:1;color:var(--accent)}
+td{
+  padding:10px 14px;border-bottom:1px solid rgba(26,34,54,0.5);
+  font-size:0.82rem;white-space:nowrap;
+}
+tr:last-child td{border-bottom:none}
+tr:hover{background:rgba(16,185,129,0.03)}
+.priority-num{
+  font-family:'JetBrains Mono',monospace;font-weight:600;
+  color:var(--dim);font-size:0.75rem;
+}
+.da-value{
+  font-family:'JetBrains Mono',monospace;font-weight:700;
+  font-size:0.85rem;
+}
+.da-high{color:#f59e0b}
+.da-mid{color:var(--accent)}
+.da-low{color:var(--dim)}
+
+/* Badges */
+.badge{
+  display:inline-block;padding:3px 10px;border-radius:4px;
+  font-size:0.68rem;font-weight:600;text-transform:uppercase;
+  letter-spacing:0.5px;
+}
+.badge-dofollow{background:rgba(16,185,129,0.12);color:#34d399;border:1px solid rgba(16,185,129,0.2)}
+.badge-nofollow{background:rgba(100,116,139,0.12);color:#94a3b8;border:1px solid rgba(100,116,139,0.2)}
+.badge-not_started{background:rgba(74,85,104,0.15);color:#718096;border:1px solid rgba(74,85,104,0.25)}
+.badge-submitted{background:rgba(59,130,246,0.12);color:#60a5fa;border:1px solid rgba(59,130,246,0.2)}
+.badge-pending{background:rgba(245,158,11,0.12);color:#fbbf24;border:1px solid rgba(245,158,11,0.2)}
+.badge-approved{background:rgba(16,185,129,0.12);color:#34d399;border:1px solid rgba(16,185,129,0.2)}
+.badge-live{background:rgba(6,182,212,0.12);color:#22d3ee;border:1px solid rgba(6,182,212,0.2)}
+.badge-rejected{background:rgba(239,68,68,0.12);color:#f87171;border:1px solid rgba(239,68,68,0.2)}
+
+.notes-cell{color:var(--dim);font-size:0.75rem;max-width:180px;overflow:hidden;text-overflow:ellipsis}
+.date-cell{font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:var(--dim)}
+
+/* Bottom Grid */
+.bottom-grid{
+  display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:16px;margin-bottom:24px;
+}
+
+/* Velocity Chart */
+.chart-card{
+  background:var(--card);border:1px solid var(--border);border-radius:8px;
+  padding:20px;
+}
+.chart-card h3{font-size:0.75rem;font-weight:600;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:16px}
+.velocity-chart{
+  width:100%;height:180px;position:relative;
+  border-left:1px solid var(--border);border-bottom:1px solid var(--border);
+}
+.chart-empty{
+  display:flex;align-items:center;justify-content:center;
+  height:100%;color:var(--dim);font-size:0.8rem;
+  font-family:'JetBrains Mono',monospace;
+}
+.chart-y-labels{
+  position:absolute;left:-30px;top:0;bottom:0;
+  display:flex;flex-direction:column;justify-content:space-between;
+}
+.chart-y-label{font-family:'JetBrains Mono',monospace;font-size:0.6rem;color:var(--dim)}
+.chart-x-labels{
+  display:flex;justify-content:space-between;margin-top:6px;padding-left:4px;
+}
+.chart-x-label{font-family:'JetBrains Mono',monospace;font-size:0.6rem;color:var(--dim)}
+.chart-gridline{
+  position:absolute;left:0;right:0;height:1px;
+  background:var(--border);opacity:0.5;
+}
+
+/* DA Distribution */
+.da-dist-card{
+  background:var(--card);border:1px solid var(--border);border-radius:8px;padding:20px;
+}
+.da-dist-card h3{font-size:0.75rem;font-weight:600;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:16px}
+.da-bar-group{display:flex;flex-direction:column;gap:12px}
+.da-bar-row{display:flex;align-items:center;gap:10px}
+.da-bar-label{
+  font-family:'JetBrains Mono',monospace;font-size:0.7rem;
+  color:var(--dim);width:52px;text-align:right;flex-shrink:0;
+}
+.da-bar-track{flex:1;height:24px;background:rgba(26,34,54,0.5);border-radius:4px;overflow:hidden;position:relative}
+.da-bar-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:8px;transition:width 0.8s ease}
+.da-bar-count{
+  font-family:'JetBrains Mono',monospace;font-size:0.7rem;
+  font-weight:600;color:var(--text);
+}
+
+/* Link Type Ratio */
+.ratio-card{
+  background:var(--card);border:1px solid var(--border);border-radius:8px;padding:20px;
+}
+.ratio-card h3{font-size:0.75rem;font-weight:600;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:16px}
+.ratio-ring{
+  width:120px;height:120px;border-radius:50%;
+  margin:0 auto 16px;position:relative;
+}
+.ratio-ring-inner{
+  position:absolute;inset:20px;border-radius:50%;background:var(--card);
+  display:flex;align-items:center;justify-content:center;flex-direction:column;
+}
+.ratio-ring-total{font-family:'JetBrains Mono',monospace;font-size:1.1rem;font-weight:700;color:var(--text)}
+.ratio-ring-label{font-size:0.6rem;color:var(--dim);text-transform:uppercase}
+.ratio-legend{display:flex;flex-direction:column;gap:8px}
+.ratio-legend-item{display:flex;align-items:center;gap:8px;font-size:0.78rem}
+.ratio-dot{width:8px;height:8px;border-radius:2px;flex-shrink:0}
+.ratio-count{font-family:'JetBrains Mono',monospace;font-weight:600;margin-left:auto}
+
+/* KPI Targets */
+.kpi-card{
+  background:var(--card);border:1px solid var(--border);border-radius:8px;padding:20px;
+}
+.kpi-card h3{font-size:0.75rem;font-weight:600;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-bottom:16px}
+.kpi-target{
+  padding:12px;border:1px solid var(--border);border-radius:6px;
+  margin-bottom:10px;position:relative;overflow:hidden;
+}
+.kpi-target:last-child{margin-bottom:0}
+.kpi-target::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+}
+.kpi-target.t30::before{background:var(--accent)}
+.kpi-target.t60::before{background:#3b82f6}
+.kpi-target.t90::before{background:#8b5cf6}
+.kpi-days{
+  font-family:'JetBrains Mono',monospace;font-size:0.7rem;
+  font-weight:600;color:var(--dim);text-transform:uppercase;
+  letter-spacing:0.5px;margin-bottom:4px;
+}
+.kpi-goal{font-size:0.82rem;color:var(--text);font-weight:500}
+.kpi-progress{
+  margin-top:8px;height:4px;background:rgba(26,34,54,0.8);
+  border-radius:2px;overflow:hidden;
+}
+.kpi-progress-fill{height:100%;border-radius:2px;transition:width 0.8s ease}
+.kpi-progress-label{
+  font-family:'JetBrains Mono',monospace;font-size:0.65rem;
+  color:var(--dim);margin-top:4px;text-align:right;
+}
+
+/* Footer */
+.footer{
+  text-align:center;padding:16px 0;
+  font-size:0.68rem;color:var(--dim);
+  border-top:1px solid var(--border);margin-top:8px;
+}
+.footer span{color:var(--accent)}
+
+/* Responsive */
+@media(max-width:1200px){
+  .velocity-bar{grid-template-columns:repeat(4,1fr)}
+  .bottom-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .velocity-bar{grid-template-columns:repeat(2,1fr)}
+  .bottom-grid{grid-template-columns:1fr}
+  .table-wrap{overflow-x:auto}
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>BACKLINK <span>COMMAND CENTRE</span></h1>
+  <div class="header-meta">
+    <div class="domain">pethubonline.com</div>
+    <div class="pulse"></div>
+    <span class="refresh-label">Auto-refresh 60s</span>
+  </div>
+</div>
+
+<!-- Velocity Bar -->
+<div class="section-title">Backlink Velocity</div>
+<div class="velocity-bar" id="velocityBar"></div>
+
+<!-- Directory Status Table -->
+<div class="section-title">Directory Status</div>
+<div class="table-wrap">
+  <table id="directoryTable">
+    <thead>
+      <tr>
+        <th data-col="priority">#<span class="sort-arrow">&#9650;</span></th>
+        <th data-col="name">Directory<span class="sort-arrow">&#9650;</span></th>
+        <th data-col="da">DA<span class="sort-arrow">&#9650;</span></th>
+        <th data-col="linkType">Link Type<span class="sort-arrow">&#9650;</span></th>
+        <th data-col="status">Status<span class="sort-arrow">&#9650;</span></th>
+        <th data-col="submitted">Submitted<span class="sort-arrow">&#9650;</span></th>
+        <th data-col="approved">Approved<span class="sort-arrow">&#9650;</span></th>
+        <th data-col="notes">Notes<span class="sort-arrow">&#9650;</span></th>
+      </tr>
+    </thead>
+    <tbody id="directoryBody"></tbody>
+  </table>
+</div>
+
+<!-- Bottom Grid -->
+<div class="bottom-grid">
+  <!-- Velocity Chart -->
+  <div class="chart-card">
+    <h3>Velocity Timeline (Cumulative Links)</h3>
+    <div style="position:relative;padding-left:36px">
+      <div class="chart-y-labels">
+        <span class="chart-y-label">15</span>
+        <span class="chart-y-label">10</span>
+        <span class="chart-y-label">5</span>
+        <span class="chart-y-label">0</span>
+      </div>
+      <div class="velocity-chart">
+        <div class="chart-gridline" style="top:0%"></div>
+        <div class="chart-gridline" style="top:33%"></div>
+        <div class="chart-gridline" style="top:66%"></div>
+        <div class="chart-empty">Awaiting first submission &mdash; 0 data points</div>
+      </div>
+      <div class="chart-x-labels">
+        <span class="chart-x-label">Week 1</span>
+        <span class="chart-x-label">Week 2</span>
+        <span class="chart-x-label">Week 3</span>
+        <span class="chart-x-label">Week 4</span>
+        <span class="chart-x-label">Week 5</span>
+        <span class="chart-x-label">Week 6</span>
+        <span class="chart-x-label">Week 7</span>
+        <span class="chart-x-label">Week 8</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- DA Distribution -->
+  <div class="da-dist-card">
+    <h3>DA Distribution</h3>
+    <div class="da-bar-group" id="daDistBars"></div>
+  </div>
+
+  <!-- Link Type Ratio -->
+  <div class="ratio-card">
+    <h3>Link Type Ratio</h3>
+    <div class="ratio-ring" id="ratioRing"></div>
+    <div class="ratio-legend">
+      <div class="ratio-legend-item">
+        <div class="ratio-dot" style="background:var(--dofollow)"></div>
+        <span>Dofollow</span>
+        <span class="ratio-count mono">7</span>
+      </div>
+      <div class="ratio-legend-item">
+        <div class="ratio-dot" style="background:var(--nofollow)"></div>
+        <span>Nofollow</span>
+        <span class="ratio-count mono">8</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- KPI Targets -->
+  <div class="kpi-card">
+    <h3>KPI Targets</h3>
+    <div class="kpi-target t30">
+      <div class="kpi-days">30-Day Target</div>
+      <div class="kpi-goal">10-12 live citations</div>
+      <div class="kpi-progress"><div class="kpi-progress-fill" style="width:0%;background:var(--accent)"></div></div>
+      <div class="kpi-progress-label">0 / 10</div>
+    </div>
+    <div class="kpi-target t60">
+      <div class="kpi-days">60-Day Target</div>
+      <div class="kpi-goal">All 15 directories live</div>
+      <div class="kpi-progress"><div class="kpi-progress-fill" style="width:0%;background:#3b82f6"></div></div>
+      <div class="kpi-progress-label">0 / 15</div>
+    </div>
+    <div class="kpi-target t90">
+      <div class="kpi-days">90-Day Target</div>
+      <div class="kpi-goal">25+ total (incl. guest posts)</div>
+      <div class="kpi-progress"><div class="kpi-progress-fill" style="width:0%;background:#8b5cf6"></div></div>
+      <div class="kpi-progress-label">0 / 25</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  Backlink Command Centre &middot; <span>PetHub Online</span> &middot; Last render: <span class="mono" id="renderTime"></span>
+</div>
+
+<script>
+// ============================================================
+// DATA
+// ============================================================
+const directories = [
+  { priority:1,  name:"Yelp UK",         da:94, linkType:"nofollow", status:"not_started", submitted:null, approved:null, notes:"High-authority UK business directory" },
+  { priority:2,  name:"Foursquare",       da:92, linkType:"nofollow", status:"not_started", submitted:null, approved:null, notes:"Location-based social platform" },
+  { priority:3,  name:"Yell.com",         da:72, linkType:"nofollow", status:"not_started", submitted:null, approved:null, notes:"UK Yellow Pages online" },
+  { priority:4,  name:"192.com",          da:68, linkType:"nofollow", status:"not_started", submitted:null, approved:null, notes:"UK people/business search" },
+  { priority:5,  name:"Bark.com",         da:65, linkType:"nofollow", status:"not_started", submitted:null, approved:null, notes:"Service marketplace" },
+  { priority:6,  name:"FreeIndex",        da:60, linkType:"dofollow", status:"not_started", submitted:null, approved:null, notes:"Free UK business directory" },
+  { priority:7,  name:"Thomson Local",    da:55, linkType:"nofollow", status:"not_started", submitted:null, approved:null, notes:"Local business listings" },
+  { priority:8,  name:"Brownbook",        da:52, linkType:"nofollow", status:"not_started", submitted:null, approved:null, notes:"Global business directory" },
+  { priority:9,  name:"Cylex UK",         da:50, linkType:"dofollow", status:"not_started", submitted:null, approved:null, notes:"Business directory with reviews" },
+  { priority:10, name:"Hotfrog UK",       da:48, linkType:"dofollow", status:"not_started", submitted:null, approved:null, notes:"SME directory" },
+  { priority:11, name:"Scoot",            da:45, linkType:"nofollow", status:"not_started", submitted:null, approved:null, notes:"UK business search engine" },
+  { priority:12, name:"VetClick",         da:35, linkType:"dofollow", status:"not_started", submitted:null, approved:null, notes:"Veterinary services directory" },
+  { priority:13, name:"PetProfessional",  da:30, linkType:"dofollow", status:"not_started", submitted:null, approved:null, notes:"Pet industry directory" },
+  { priority:14, name:"PetDirectory",     da:28, linkType:"dofollow", status:"not_started", submitted:null, approved:null, notes:"UK pet services directory" },
+  { priority:15, name:"UKPDA",            da:25, linkType:"dofollow", status:"not_started", submitted:null, approved:null, notes:"UK Pet Directory Association" }
+];
+
+const daRanges = [
+  { label:"90+",      min:90, max:100, color:"#f59e0b" },
+  { label:"60-89",    min:60, max:89,  color:"#10b981" },
+  { label:"40-59",    min:40, max:59,  color:"#3b82f6" },
+  { label:"Under 40", min:0,  max:39,  color:"#8b5cf6" }
+];
+
+// ============================================================
+// COMPUTED STATS
+// ============================================================
+function computeStats() {
+  const total = directories.length;
+  const submitted = directories.filter(d => d.status === "submitted" || d.status === "pending" || d.status === "approved" || d.status === "live").length;
+  const approved = directories.filter(d => d.status === "approved" || d.status === "live").length;
+  const live = directories.filter(d => d.status === "live").length;
+  const dofollowTotal = directories.filter(d => d.linkType === "dofollow").length;
+  const dofollowLive = directories.filter(d => d.linkType === "dofollow" && d.status === "live").length;
+  const nofollowTotal = directories.filter(d => d.linkType === "nofollow").length;
+  const nofollowLive = directories.filter(d => d.linkType === "nofollow" && d.status === "live").length;
+  const totalDA = directories.reduce((s, d) => s + d.da, 0);
+  const acquiredDA = directories.filter(d => d.status === "live").reduce((s, d) => s + d.da, 0);
+  return { total, submitted, approved, live, dofollowTotal, dofollowLive, nofollowTotal, nofollowLive, totalDA, acquiredDA };
+}
+
+// ============================================================
+// RENDER: VELOCITY BAR
+// ============================================================
+function renderVelocityBar() {
+  const s = computeStats();
+  const cards = [
+    { label:"Total Directories", value:s.total, suffix:"" },
+    { label:"Submitted", value:s.submitted, suffix:"" },
+    { label:"Approved", value:s.approved, suffix:"" },
+    { label:"Live", value:s.live, suffix:"", active:s.live > 0 },
+    { label:"Dofollow", value:s.dofollowLive, suffix:`<span class="vel-total">/ ${s.dofollowTotal}</span>` },
+    { label:"Nofollow", value:s.nofollowLive, suffix:`<span class="vel-total">/ ${s.nofollowTotal}</span>` },
+    { label:"Total DA Acquired", value:s.acquiredDA, suffix:`<span class="vel-total">/ ${s.totalDA}</span>` },
+    { label:"Velocity", value:"0", suffix:`<span class="vel-total"> links/wk</span>`, green:true }
+  ];
+  const container = document.getElementById("velocityBar");
+  container.innerHTML = cards.map(c => `
+    <div class="vel-card${c.active ? ' active' : ''}">
+      <div class="vel-label">${c.label}</div>
+      <div class="vel-value mono${c.green ? ' green' : ''}">${c.value} ${c.suffix || ''}</div>
+    </div>
+  `).join("");
+}
+
+// ============================================================
+// RENDER: DIRECTORY TABLE
+// ============================================================
+let sortCol = "priority";
+let sortAsc = true;
+
+function daClass(da) {
+  if (da >= 80) return "da-high";
+  if (da >= 50) return "da-mid";
+  return "da-low";
+}
+
+function renderTable() {
+  const sorted = [...directories].sort((a, b) => {
+    let va = a[sortCol], vb = b[sortCol];
+    if (typeof va === "string") va = va.toLowerCase();
+    if (typeof vb === "string") vb = vb.toLowerCase();
+    if (va === null) va = "";
+    if (vb === null) vb = "";
+    if (va < vb) return sortAsc ? -1 : 1;
+    if (va > vb) return sortAsc ? 1 : -1;
+    return 0;
+  });
+
+  const tbody = document.getElementById("directoryBody");
+  tbody.innerHTML = sorted.map(d => `
+    <tr>
+      <td class="priority-num">${String(d.priority).padStart(2, '0')}</td>
+      <td style="font-weight:500">${d.name}</td>
+      <td class="da-value ${daClass(d.da)}">${d.da}</td>
+      <td><span class="badge badge-${d.linkType}">${d.linkType}</span></td>
+      <td><span class="badge badge-${d.status}">${d.status.replace('_', ' ')}</span></td>
+      <td class="date-cell">${d.submitted || '&mdash;'}</td>
+      <td class="date-cell">${d.approved || '&mdash;'}</td>
+      <td class="notes-cell" title="${d.notes}">${d.notes}</td>
+    </tr>
+  `).join("");
+
+  // Update sort indicators
+  document.querySelectorAll("#directoryTable th").forEach(th => {
+    th.classList.toggle("sorted", th.dataset.col === sortCol);
+    const arrow = th.querySelector(".sort-arrow");
+    if (th.dataset.col === sortCol) {
+      arrow.innerHTML = sortAsc ? "&#9650;" : "&#9660;";
+    } else {
+      arrow.innerHTML = "&#9650;";
+    }
+  });
+}
+
+document.getElementById("directoryTable").addEventListener("click", function(e) {
+  const th = e.target.closest("th");
+  if (!th || !th.dataset.col) return;
+  if (sortCol === th.dataset.col) {
+    sortAsc = !sortAsc;
+  } else {
+    sortCol = th.dataset.col;
+    sortAsc = true;
+  }
+  renderTable();
+});
+
+// ============================================================
+// RENDER: DA DISTRIBUTION
+// ============================================================
+function renderDADist() {
+  const container = document.getElementById("daDistBars");
+  const maxCount = 5;
+  container.innerHTML = daRanges.map(r => {
+    const count = directories.filter(d => d.da >= r.min && d.da <= r.max).length;
+    const pct = (count / maxCount) * 100;
+    return `
+      <div class="da-bar-row">
+        <div class="da-bar-label">${r.label}</div>
+        <div class="da-bar-track">
+          <div class="da-bar-fill" style="width:${pct}%;background:${r.color}">
+            <span class="da-bar-count">${count}</span>
+          </div>
+        </div>
+      </div>
+    `;
+  }).join("");
+}
+
+// ============================================================
+// RENDER: RATIO RING
+// ============================================================
+function renderRatioRing() {
+  const dofollow = 7;
+  const nofollow = 8;
+  const total = dofollow + nofollow;
+  const doPct = (dofollow / total) * 100;
+  const noPct = (nofollow / total) * 100;
+  // CSS conic gradient
+  const ring = document.getElementById("ratioRing");
+  ring.style.background = `conic-gradient(
+    var(--dofollow) 0% ${doPct}%,
+    var(--nofollow) ${doPct}% 100%
+  )`;
+  ring.innerHTML = `
+    <div class="ratio-ring-inner">
+      <div class="ratio-ring-total">${total}</div>
+      <div class="ratio-ring-label">Total</div>
+    </div>
+  `;
+}
+
+// ============================================================
+// RENDER TIMESTAMP
+// ============================================================
+function renderTimestamp() {
+  const now = new Date();
+  const pad = n => String(n).padStart(2, '0');
+  document.getElementById("renderTime").textContent =
+    `${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())} UTC`;
+}
+
+// ============================================================
+// INIT
+// ============================================================
+renderVelocityBar();
+renderTable();
+renderDADist();
+renderRatioRing();
+renderTimestamp();
+</script>
+</body>
+</html>

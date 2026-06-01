@@ -1,0 +1,184 @@
+{
+  "report": "Authority ReScore Report",
+  "site": "pethubonline.com",
+  "generated": "2026-06-01T22:03:05.222247Z",
+  "headline": "Authority Score: 89.4 -> 96.7 (+7.3 points)",
+  "pre_remediation": {
+    "authority_score": 89.4,
+    "date": "2026-06-01T21:10:00Z",
+    "gaps": [
+      "Featured images at 51.3%",
+      "105 orphan posts",
+      "0 FAQ schema",
+      "0 backlinks"
+    ]
+  },
+  "post_remediation": {
+    "authority_score": 96.7,
+    "date": "2026-06-01T22:03:05.222256Z",
+    "improvements": [
+      "Featured images: 51.3% -> 100% (+48.7 points)",
+      "Orphan posts: 105 -> 3 (97.1% fixed, 200 links added)",
+      "FAQ schema: 0 -> 450 posts (97.8% coverage)",
+      "Internal links: +200 new category-relevant links"
+    ]
+  },
+  "score_breakdown": {
+    "cta_coverage": {
+      "score": 100.0,
+      "weight": "25%",
+      "weighted": 25.0,
+      "status": "MAXIMUM",
+      "change": "unchanged"
+    },
+    "faq_coverage": {
+      "score": 98.7,
+      "weight": "15%",
+      "weighted": 14.8,
+      "status": "NEAR-MAX",
+      "change": "unchanged (schema adds rich snippet eligibility)"
+    },
+    "affiliate_coverage": {
+      "score": 99.8,
+      "weight": "25%",
+      "weighted": 24.95,
+      "status": "NEAR-MAX",
+      "change": "unchanged"
+    },
+    "table_coverage": {
+      "score": 85.4,
+      "weight": "10%",
+      "weighted": 8.54,
+      "status": "GOOD",
+      "change": "unchanged - 67 posts still missing tables"
+    },
+    "featured_images": {
+      "score": 100.0,
+      "weight": "15%",
+      "weighted": 15.0,
+      "status": "MAXIMUM",
+      "change": "51.3 -> 100.0 (+48.7) - BIGGEST GAIN"
+    },
+    "alt_text": {
+      "score": 84.3,
+      "weight": "10%",
+      "weighted": 8.43,
+      "status": "GOOD",
+      "change": "unchanged - 72 images need alt text fixes"
+    }
+  },
+  "visibility_score": {
+    "overall": 82.5,
+    "previous": 78.5,
+    "improvement": "+4.0 points",
+    "components": {
+      "content_volume": {
+        "score": 92,
+        "weight": "20%"
+      },
+      "content_quality": {
+        "score": 96.7,
+        "weight": "25%"
+      },
+      "internal_linking": {
+        "score": 88,
+        "weight": "20%",
+        "note": "Up from 85 - orphan fix + 200 new links"
+      },
+      "structured_data": {
+        "score": 98,
+        "weight": "15%",
+        "note": "Up from 90 - 450/460 FAQ schema deployed"
+      },
+      "backlink_profile": {
+        "score": 20,
+        "weight": "10%",
+        "note": "Unchanged - 0 submissions yet"
+      },
+      "technical_seo": {
+        "score": 75,
+        "weight": "10%"
+      }
+    }
+  },
+  "cluster_scores": {
+    "dog_supplies": {
+      "authority": 97,
+      "content_count": 85,
+      "status": "DOMINANT"
+    },
+    "cat_supplies": {
+      "authority": 96,
+      "content_count": 72,
+      "status": "DOMINANT"
+    },
+    "pet_care": {
+      "authority": 95,
+      "content_count": 68,
+      "status": "DOMINANT"
+    },
+    "puppy_care": {
+      "authority": 94,
+      "content_count": 55,
+      "status": "STRONG"
+    },
+    "dog_beds": {
+      "authority": 93,
+      "content_count": 48,
+      "status": "STRONG"
+    },
+    "indoor_cats": {
+      "authority": 92,
+      "content_count": 42,
+      "status": "STRONG"
+    },
+    "cat_toys": {
+      "authority": 91,
+      "content_count": 40,
+      "status": "STRONG"
+    },
+    "fish_supplies": {
+      "authority": 88,
+      "content_count": 50,
+      "status": "GROWING - PAUSED FOR MEASUREMENT"
+    },
+    "dog_health": {
+      "authority": 85,
+      "content_count": 25,
+      "status": "EMERGING"
+    }
+  },
+  "next_authority_levers": [
+    {
+      "action": "Fix 72 alt text issues",
+      "expected_gain": "+1.6 points",
+      "effort": "Low"
+    },
+    {
+      "action": "Add comparison tables to 67 posts",
+      "expected_gain": "+1.5 points",
+      "effort": "Medium"
+    },
+    {
+      "action": "Retry 4 FAQ schema errors",
+      "expected_gain": "+0.1 points",
+      "effort": "Minimal"
+    },
+    {
+      "action": "Fix 3 remaining orphan posts",
+      "expected_gain": "+0.1 points",
+      "effort": "Low"
+    },
+    {
+      "action": "Submit 15 directory backlinks",
+      "expected_gain": "+5-8 visibility points",
+      "effort": "Manual (owner)"
+    }
+  ],
+  "theoretical_maximum": {
+    "if_all_gaps_fixed": 100.0,
+    "remaining_gap": 3.3,
+    "primary_blockers": "Table coverage (85.4%) and alt text (84.3%)"
+  },
+  "status": "Authority: 96.7/100 | Visibility: 82.5/100 | Phase transition: Remediation -> Optimization"
+}

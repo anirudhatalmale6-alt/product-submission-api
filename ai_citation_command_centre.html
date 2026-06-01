@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Citation Command Centre - PetHub Online</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #080a0f;
+    --card-bg: #111621;
+    --border: #1a2236;
+    --text: #e2e8f0;
+    --dim: #7a8ba8;
+    --accent: #8b5cf6;
+    --accent-dim: rgba(139, 92, 246, 0.15);
+    --accent-glow: rgba(139, 92, 246, 0.3);
+    --green: #22c55e;
+    --green-dim: rgba(34, 197, 94, 0.15);
+    --red: #ef4444;
+    --red-dim: rgba(239, 68, 68, 0.15);
+    --yellow: #eab308;
+    --yellow-dim: rgba(234, 179, 8, 0.15);
+    --blue: #3b82f6;
+    --blue-dim: rgba(59, 130, 246, 0.15);
+    --cyan: #06b6d4;
+  }
+
+  body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding: 24px;
+    min-height: 100vh;
+  }
+
+  .mono { font-family: 'JetBrains Mono', monospace; }
+
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .header-icon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--accent), #a78bfa);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    box-shadow: 0 0 24px var(--accent-glow);
+  }
+
+  .header h1 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #fff, var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .header-sub {
+    font-size: 13px;
+    color: var(--dim);
+    font-weight: 400;
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .live-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--accent-dim);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .live-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; box-shadow: 0 0 0 0 var(--accent-glow); }
+    50% { opacity: 0.6; box-shadow: 0 0 0 6px transparent; }
+  }
+
+  .refresh-info {
+    font-size: 11px;
+    color: var(--dim);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* Section titles */
+  .section-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--dim);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, var(--border), transparent);
+  }
+
+  .section-title .icon {
+    color: var(--accent);
+  }
+
+  /* Cards */
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .card:hover {
+    border-color: rgba(139, 92, 246, 0.3);
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.05);
+  }
+
+  /* 1. Citation Metrics Bar */
+  .metrics-bar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .metric-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .metric-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0.6;
+  }
+
+  .metric-card.highlight::before {
+    background: linear-gradient(90deg, transparent, var(--green), transparent);
+  }
+
+  .metric-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+
+  .metric-value.green { color: var(--green); }
+  .metric-value.dim-val { color: var(--dim); }
+
+  .metric-label {
+    font-size: 11px;
+    color: var(--dim);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  /* 2. Platform Tracking */
+  .platform-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .platform-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+  }
+
+  .platform-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .platform-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .platform-logo.chatgpt { background: rgba(16, 163, 127, 0.15); color: #10a37f; }
+  .platform-logo.claude { background: var(--accent-dim); color: var(--accent); }
+  .platform-logo.gemini { background: rgba(66, 133, 244, 0.15); color: #4285f4; }
+  .platform-logo.perplexity { background: rgba(6, 182, 212, 0.15); color: var(--cyan); }
+
+  .platform-name {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .platform-org {
+    font-size: 11px;
+    color: var(--dim);
+  }
+
+  .platform-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .platform-stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .platform-stat-label {
+    font-size: 12px;
+    color: var(--dim);
+  }
+
+  .platform-stat-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 4px 10px;
+    border-radius: 6px;
+  }
+
+  .status-monitoring {
+    background: var(--yellow-dim);
+    color: var(--yellow);
+    border: 1px solid rgba(234, 179, 8, 0.2);
+  }
+
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: currentColor;
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+
+  /* 3. Cluster Citation Map */
+  .cluster-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .cluster-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cluster-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cluster-name {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .cluster-count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--accent);
+    background: var(--accent-dim);
+    padding: 2px 8px;
+    border-radius: 6px;
+  }
+
+  .cluster-bar-track {
+    height: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .cluster-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(90deg, var(--accent), #a78bfa);
+    transition: width 1s ease;
+  }
+
+  .cluster-status {
+    font-size: 11px;
+    color: var(--dim);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .cluster-status .pending-icon {
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--yellow);
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    flex-shrink: 0;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+
+  /* 4. Citation Readiness */
+  .readiness-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+  }
+
+  .readiness-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .readiness-card.green { border-color: rgba(34, 197, 94, 0.2); }
+  .readiness-card.red { border-color: rgba(239, 68, 68, 0.2); }
+
+  .readiness-card.green::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--green);
+  }
+
+  .readiness-card.red::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--red);
+  }
+
+  .readiness-icon {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .readiness-label {
+    font-size: 11px;
+    color: var(--dim);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+  }
+
+  .readiness-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .readiness-value.green { color: var(--green); }
+  .readiness-value.red { color: var(--red); }
+
+  .readiness-sub {
+    font-size: 10px;
+    color: var(--dim);
+    margin-top: 4px;
+  }
+
+  /* 5 & 6 & 7 bottom row */
+  .bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+  }
+
+  /* 5. Citation Growth Timeline */
+  .chart-area {
+    height: 200px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 12px;
+  }
+
+  .chart-grid {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px 0;
+  }
+
+  .chart-grid-line {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.04);
+    position: relative;
+  }
+
+  .chart-grid-label {
+    position: absolute;
+    left: 8px;
+    top: -8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    color: var(--dim);
+    opacity: 0.6;
+  }
+
+  .chart-baseline {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: repeating-linear-gradient(
+      90deg,
+      var(--accent) 0,
+      var(--accent) 4px,
+      transparent 4px,
+      transparent 8px
+    );
+    opacity: 0.4;
+  }
+
+  .chart-baseline-label {
+    position: absolute;
+    bottom: 46px;
+    right: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    color: var(--accent);
+    opacity: 0.6;
+  }
+
+  .chart-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .chart-placeholder-icon {
+    font-size: 28px;
+    opacity: 0.3;
+  }
+
+  .chart-placeholder-text {
+    font-size: 12px;
+    color: var(--dim);
+    text-align: center;
+    max-width: 200px;
+  }
+
+  .chart-x-axis {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px 0;
+  }
+
+  .chart-x-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    color: var(--dim);
+    opacity: 0.5;
+  }
+
+  /* 6. Competitive Analysis Table */
+  .comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+  }
+
+  .comp-table th {
+    text-align: left;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--dim);
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .comp-table td {
+    font-size: 13px;
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  }
+
+  .comp-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .comp-name {
+    font-weight: 600;
+  }
+
+  .comp-unknown {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--dim);
+    font-style: italic;
+  }
+
+  .comp-tbd {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--dim);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 2px 8px;
+    border-radius: 4px;
+  }
+
+  /* 7. KPI Targets */
+  .kpi-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .kpi-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+  }
+
+  .kpi-day-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent);
+    background: var(--accent-dim);
+    padding: 4px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .kpi-text {
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  .kpi-progress {
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+    margin-top: 8px;
+    overflow: hidden;
+  }
+
+  .kpi-progress-fill {
+    height: 100%;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--accent), #a78bfa);
+  }
+
+  /* Responsive */
+  @media (max-width: 1400px) {
+    .metrics-bar { grid-template-columns: repeat(4, 1fr); }
+    .readiness-grid { grid-template-columns: repeat(4, 1fr); }
+  }
+
+  @media (max-width: 1100px) {
+    .platform-grid { grid-template-columns: repeat(2, 1fr); }
+    .cluster-grid { grid-template-columns: repeat(2, 1fr); }
+    .bottom-grid { grid-template-columns: 1fr; }
+    .metrics-bar { grid-template-columns: repeat(3, 1fr); }
+    .readiness-grid { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  @media (max-width: 700px) {
+    body { padding: 12px; }
+    .metrics-bar { grid-template-columns: repeat(2, 1fr); }
+    .platform-grid { grid-template-columns: 1fr; }
+    .cluster-grid { grid-template-columns: 1fr; }
+    .readiness-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  /* Glow effects */
+  .glow-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    opacity: 0.2;
+    margin: 32px 0;
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-left">
+    <div class="header-icon">&#x2727;</div>
+    <div>
+      <h1>AI Citation Command Centre</h1>
+      <div class="header-sub">pethubonline.com &mdash; AI Platform Citation Intelligence</div>
+    </div>
+  </div>
+  <div class="header-right">
+    <div class="live-badge">
+      <span class="live-dot"></span>
+      Monitoring
+    </div>
+    <div class="refresh-info" id="refreshTimer">Next refresh: 60s</div>
+  </div>
+</div>
+
+<!-- 1. CITATION METRICS BAR -->
+<div class="section-title"><span class="icon">&#x25C8;</span> Citation Metrics</div>
+<div class="metrics-bar">
+  <div class="metric-card">
+    <div class="metric-value dim-val">0</div>
+    <div class="metric-label">Total Citations Detected</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-value dim-val">0%</div>
+    <div class="metric-label">Citation Share</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-value dim-val">0/wk</div>
+    <div class="metric-label">Citation Velocity</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-value dim-val">0/4</div>
+    <div class="metric-label">AI Platforms Citing</div>
+  </div>
+  <div class="metric-card">
+    <div class="metric-value dim-val">0/4</div>
+    <div class="metric-label">Priority Clusters Cited</div>
+  </div>
+  <div class="metric-card highlight">
+    <div class="metric-value green">97.8%</div>
+    <div class="metric-label">Schema Coverage</div>
+  </div>
+  <div class="metric-card highlight">
+    <div class="metric-value green">450</div>
+    <div class="metric-label">FAQ Rich Results Eligible</div>
+  </div>
+</div>
+
+<!-- 2. PLATFORM TRACKING -->
+<div class="section-title"><span class="icon">&#x2B22;</span> Platform Tracking</div>
+<div class="platform-grid">
+
+  <!-- ChatGPT -->
+  <div class="platform-card">
+    <div class="platform-header">
+      <div class="platform-logo chatgpt">G</div>
+      <div>
+        <div class="platform-name">ChatGPT</div>
+        <div class="platform-org">OpenAI</div>
+      </div>
+    </div>
+    <div class="platform-stats">
+      <div class="platform-stat">
+        <span class="platform-stat-label">Citations Detected</span>
+        <span class="platform-stat-value mono" style="color: var(--dim);">0</span>
+      </div>
+      <div class="platform-stat">
+        <span class="platform-stat-label">Last Checked</span>
+        <span class="platform-stat-value mono" style="color: var(--dim); font-size: 11px;" id="lastChecked1">--</span>
+      </div>
+      <div class="platform-stat">
+        <span class="platform-stat-label">Status</span>
+        <span class="status-badge status-monitoring"><span class="status-dot"></span> Monitoring</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Claude -->
+  <div class="platform-card">
+    <div class="platform-header">
+      <div class="platform-logo claude">C</div>
+      <div>
+        <div class="platform-name">Claude</div>
+        <div class="platform-org">Anthropic</div>
+      </div>
+    </div>
+    <div class="platform-stats">
+      <div class="platform-stat">
+        <span class="platform-stat-label">Citations Detected</span>
+        <span class="platform-stat-value mono" style="color: var(--dim);">0</span>
+      </div>
+      <div class="platform-stat">
+        <span class="platform-stat-label">Last Checked</span>
+        <span class="platform-stat-value mono" style="color: var(--dim); font-size: 11px;" id="lastChecked2">--</span>
+      </div>
+      <div class="platform-stat">
+        <span class="platform-stat-label">Status</span>
+        <span class="status-badge status-monitoring"><span class="status-dot"></span> Monitoring</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gemini -->
+  <div class="platform-card">
+    <div class="platform-header">
+      <div class="platform-logo gemini">G</div>
+      <div>
+        <div class="platform-name">Google Gemini</div>
+        <div class="platform-org">SGE / AI Overviews</div>
+      </div>
+    </div>
+    <div class="platform-stats">
+      <div class="platform-stat">
+        <span class="platform-stat-label">Citations Detected</span>
+        <span class="platform-stat-value mono" style="color: var(--dim);">0</span>
+      </div>
+      <div class="platform-stat">
+        <span class="platform-stat-label">Last Checked</span>
+        <span class="platform-stat-value mono" style="color: var(--dim); font-size: 11px;" id="lastChecked3">--</span>
+      </div>
+      <div class="platform-stat">
+        <span class="platform-stat-label">Status</span>
+        <span class="status-badge status-monitoring"><span class="status-dot"></span> Monitoring</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Perplexity -->
+  <div class="platform-card">
+    <div class="platform-header">
+      <div class="platform-logo perplexity">P</div>
+      <div>
+        <div class="platform-name">Perplexity</div>
+        <div class="platform-org">Perplexity AI</div>
+      </div>
+    </div>
+    <div class="platform-stats">
+      <div class="platform-stat">
+        <span class="platform-stat-label">Citations Detected</span>
+        <span class="platform-stat-value mono" style="color: var(--dim);">0</span>
+      </div>
+      <div class="platform-stat">
+        <span class="platform-stat-label">Last Checked</span>
+        <span class="platform-stat-value mono" style="color: var(--dim); font-size: 11px;" id="lastChecked4">--</span>
+      </div>
+      <div class="platform-stat">
+        <span class="platform-stat-label">Status</span>
+        <span class="status-badge status-monitoring"><span class="status-dot"></span> Monitoring</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 3. CLUSTER CITATION MAP -->
+<div class="section-title"><span class="icon">&#x25A3;</span> Cluster Citation Map</div>
+<div class="cluster-grid" id="clusterGrid"></div>
+
+<!-- 4. CITATION READINESS FACTORS -->
+<div class="section-title"><span class="icon">&#x2713;</span> Citation Readiness Factors</div>
+<div class="readiness-grid">
+  <div class="readiness-card green">
+    <div class="readiness-icon">&#x2B22;</div>
+    <div class="readiness-label">FAQ Schema</div>
+    <div class="readiness-value green">450/460</div>
+    <div class="readiness-sub">97.8% coverage</div>
+  </div>
+  <div class="readiness-card green">
+    <div class="readiness-icon">&#x29C9;</div>
+    <div class="readiness-label">Structured Data</div>
+    <div class="readiness-value green">Complete</div>
+    <div class="readiness-sub">All schemas valid</div>
+  </div>
+  <div class="readiness-card green">
+    <div class="readiness-icon">&#x2726;</div>
+    <div class="readiness-label">E-E-A-T Signals</div>
+    <div class="readiness-value green">Strong</div>
+    <div class="readiness-sub">Author + trust</div>
+  </div>
+  <div class="readiness-card green">
+    <div class="readiness-icon">&#x2630;</div>
+    <div class="readiness-label">Content Depth</div>
+    <div class="readiness-value green">460</div>
+    <div class="readiness-sub">Published posts</div>
+  </div>
+  <div class="readiness-card green">
+    <div class="readiness-icon">&#x27F3;</div>
+    <div class="readiness-label">Freshness</div>
+    <div class="readiness-value green">Today</div>
+    <div class="readiness-sub">Last updated</div>
+  </div>
+  <div class="readiness-card green">
+    <div class="readiness-icon">&#x26D1;</div>
+    <div class="readiness-label">Internal Linking</div>
+    <div class="readiness-value green">97.1%</div>
+    <div class="readiness-sub">Pages connected</div>
+  </div>
+  <div class="readiness-card red">
+    <div class="readiness-icon">&#x26A0;</div>
+    <div class="readiness-label">Backlinks</div>
+    <div class="readiness-value red">0/15</div>
+    <div class="readiness-sub">Pending acquisition</div>
+  </div>
+</div>
+
+<!-- 5, 6, 7 Bottom Grid -->
+<div class="glow-line"></div>
+
+<div class="bottom-grid">
+
+  <!-- 5. Citation Growth Timeline -->
+  <div class="card">
+    <div class="section-title" style="margin-bottom: 4px;"><span class="icon">&#x2197;</span> Citation Growth Timeline</div>
+    <div class="chart-area">
+      <div class="chart-grid">
+        <div class="chart-grid-line"><span class="chart-grid-label">50</span></div>
+        <div class="chart-grid-line"><span class="chart-grid-label">40</span></div>
+        <div class="chart-grid-line"><span class="chart-grid-label">30</span></div>
+        <div class="chart-grid-line"><span class="chart-grid-label">20</span></div>
+        <div class="chart-grid-line"><span class="chart-grid-label">10</span></div>
+        <div class="chart-grid-line"><span class="chart-grid-label">0</span></div>
+      </div>
+      <div class="chart-baseline"></div>
+      <div class="chart-baseline-label">Baseline &uarr;</div>
+      <div class="chart-placeholder">
+        <div class="chart-placeholder-icon">&#x2727;</div>
+        <div class="chart-placeholder-text">Citation data will populate as AI platforms begin citing pethubonline.com</div>
+      </div>
+    </div>
+    <div class="chart-x-axis">
+      <span class="chart-x-label">Week 1</span>
+      <span class="chart-x-label">Week 4</span>
+      <span class="chart-x-label">Week 8</span>
+      <span class="chart-x-label">Week 12</span>
+    </div>
+  </div>
+
+  <!-- 6. Competitive Citation Analysis -->
+  <div class="card">
+    <div class="section-title" style="margin-bottom: 4px;"><span class="icon">&#x2694;</span> Competitive Citation Analysis</div>
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th>Competitor</th>
+          <th>Est. Citations</th>
+          <th>Citation Share</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="comp-name">Pets at Home</td>
+          <td class="comp-unknown">Unknown</td>
+          <td><span class="comp-tbd">TBD</span></td>
+        </tr>
+        <tr>
+          <td class="comp-name">Cats.com</td>
+          <td class="comp-unknown">Unknown</td>
+          <td><span class="comp-tbd">TBD</span></td>
+        </tr>
+        <tr>
+          <td class="comp-name">Zooplus</td>
+          <td class="comp-unknown">Unknown</td>
+          <td><span class="comp-tbd">TBD</span></td>
+        </tr>
+        <tr>
+          <td class="comp-name">Purina</td>
+          <td class="comp-unknown">Unknown</td>
+          <td><span class="comp-tbd">TBD</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="margin-top: 14px; padding: 10px; background: rgba(139, 92, 246, 0.06); border-radius: 8px; border: 1px solid rgba(139, 92, 246, 0.1);">
+      <div style="font-size: 11px; color: var(--dim);">Competitive data will be gathered as citation measurement tools are established. Manual spot checks via AI platform queries planned for baseline period.</div>
+    </div>
+  </div>
+
+  <!-- 7. KPI Targets -->
+  <div class="card">
+    <div class="section-title" style="margin-bottom: 4px;"><span class="icon">&#x25CE;</span> KPI Targets</div>
+    <div class="kpi-list">
+      <div class="kpi-item">
+        <span class="kpi-day-badge">30 days</span>
+        <div>
+          <div class="kpi-text">Baseline citation measurement established</div>
+          <div class="kpi-progress"><div class="kpi-progress-fill" style="width: 8%;"></div></div>
+        </div>
+      </div>
+      <div class="kpi-item">
+        <span class="kpi-day-badge">60 days</span>
+        <div>
+          <div class="kpi-text">Citations detected from 2+ AI platforms</div>
+          <div class="kpi-progress"><div class="kpi-progress-fill" style="width: 0%;"></div></div>
+        </div>
+      </div>
+      <div class="kpi-item">
+        <span class="kpi-day-badge">90 days</span>
+        <div>
+          <div class="kpi-text">Citation share growth measurable</div>
+          <div class="kpi-progress"><div class="kpi-progress-fill" style="width: 0%;"></div></div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 16px; padding: 10px 12px; background: rgba(34, 197, 94, 0.06); border-radius: 8px; border: 1px solid rgba(34, 197, 94, 0.1); font-size: 11px; color: var(--dim);">
+      <strong style="color: var(--green);">Foundation Ready</strong> &mdash; 460 posts, 97.8% schema coverage, and strong E-E-A-T signals position PetHub for AI citation acquisition.
+    </div>
+  </div>
+</div>
+
+<script>
+  // Cluster data
+  const clusters = [
+    { name: 'Dog Beds', posts: 48, icon: '\u{1F6CF}' },
+    { name: 'Puppy Care', posts: 55, icon: '\u{1F43E}' },
+    { name: 'Dog Health', posts: 25, icon: '\u{1FA7A}' },
+    { name: 'Fish Supplies', posts: 50, icon: '\u{1F41F}' },
+    { name: 'Cat Supplies', posts: 72, icon: '\u{1F431}' },
+    { name: 'Indoor Cats', posts: 42, icon: '\u{1F3E0}' },
+    { name: 'Cat Toys', posts: 40, icon: '\u{1F3BE}' },
+    { name: 'Pet Care', posts: 68, icon: '\u{2764}' },
+    { name: 'Dog Supplies', posts: 85, icon: '\u{1F436}' },
+  ];
+
+  const maxPosts = Math.max(...clusters.map(c => c.posts));
+
+  const clusterGrid = document.getElementById('clusterGrid');
+  clusters.forEach(c => {
+    const pct = Math.round((c.posts / maxPosts) * 100);
+    const card = document.createElement('div');
+    card.className = 'cluster-card';
+    card.innerHTML = `
+      <div class="cluster-top">
+        <span class="cluster-name">${c.icon} ${c.name}</span>
+        <span class="cluster-count">${c.posts} posts</span>
+      </div>
+      <div class="cluster-bar-track">
+        <div class="cluster-bar-fill" style="width: ${pct}%;"></div>
+      </div>
+      <div class="cluster-status">
+        <span class="pending-icon"></span>
+        Citations: pending measurement
+      </div>
+    `;
+    clusterGrid.appendChild(card);
+  });
+
+  // Update timestamps
+  function updateTimestamps() {
+    const now = new Date();
+    const timeStr = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+    const dateStr = now.toLocaleDateString('en-GB', { day: '2-digit', month: 'short' });
+    const stamp = `${dateStr} ${timeStr}`;
+    for (let i = 1; i <= 4; i++) {
+      const el = document.getElementById('lastChecked' + i);
+      if (el) el.textContent = stamp;
+    }
+  }
+  updateTimestamps();
+
+  // Refresh countdown
+  let countdown = 60;
+  const refreshEl = document.getElementById('refreshTimer');
+
+  setInterval(() => {
+    countdown--;
+    if (countdown <= 0) {
+      countdown = 60;
+      updateTimestamps();
+    }
+    refreshEl.textContent = `Next refresh: ${countdown}s`;
+  }, 1000);
+
+  // Auto-refresh the page every 60s
+  setTimeout(() => { location.reload(); }, 60000);
+</script>
+
+</body>
+</html>

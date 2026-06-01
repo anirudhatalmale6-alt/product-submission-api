@@ -1,0 +1,22 @@
+Fetching all published posts...
+Total posts: 460
+Progress: 50/460 | Schema added: 50 | No FAQ: 0 | Has schema: 0 | No pairs: 0 | Errors: 0
+Progress: 100/460 | Schema added: 99 | No FAQ: 0 | Has schema: 0 | No pairs: 0 | Errors: 1
+Progress: 150/460 | Schema added: 148 | No FAQ: 0 | Has schema: 0 | No pairs: 0 | Errors: 2
+Progress: 200/460 | Schema added: 196 | No FAQ: 0 | Has schema: 0 | No pairs: 0 | Errors: 4
+Progress: 250/460 | Schema added: 243 | No FAQ: 3 | Has schema: 0 | No pairs: 0 | Errors: 4
+Progress: 300/460 | Schema added: 290 | No FAQ: 6 | Has schema: 0 | No pairs: 0 | Errors: 4
+Progress: 350/460 | Schema added: 340 | No FAQ: 6 | Has schema: 0 | No pairs: 0 | Errors: 4
+Progress: 400/460 | Schema added: 390 | No FAQ: 6 | Has schema: 0 | No pairs: 0 | Errors: 4
+Progress: 450/460 | Schema added: 440 | No FAQ: 6 | Has schema: 0 | No pairs: 0 | Errors: 4
+
+============================================================
+FAQ SCHEMA INJECTION COMPLETE
+============================================================
+Total posts: 460
+Schema added: 450
+Skipped (no FAQ section): 6
+Skipped (already has schema): 0
+Skipped (no extractable pairs): 0
+Errors: 4
+Results saved to faq_schema_results.json

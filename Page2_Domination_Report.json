@@ -1,0 +1,74 @@
+{
+  "report": "Page 2 Domination Report",
+  "site": "pethubonline.com",
+  "generated": "2026-06-01T22:05:52.422838Z",
+  "objective": "Move page 2 rankings (positions 11-20) to page 1 (positions 1-10)",
+  "methodology": {
+    "data_source": "Requires Google Search Console position data",
+    "identification": "Filter queries where avg position is 11-20 and impressions > 10",
+    "prioritization": "Rank by: impressions (highest first), then by how close to position 10"
+  },
+  "optimization_playbook": {
+    "for_each_page_2_target": [
+      {
+        "step": 1,
+        "action": "Title Tag Optimization",
+        "details": "Ensure primary keyword is in first 30 chars. Add power words. Include year (2026). Keep under 60 chars.",
+        "example": "Before: 'Dog Bed Buying Guide' -> After: '10 Best Dog Beds UK 2026: Expert Tested Guide'"
+      },
+      {
+        "step": 2,
+        "action": "Meta Description Rewrite",
+        "details": "Include primary keyword, value proposition, and CTA. Target 150-160 chars.",
+        "example": "Before: 'Read our guide on dog beds.' -> After: 'Compare the 10 best dog beds tested for UK dogs in 2026. Size guides, material ratings, and prices from 15 GBP. Find the perfect bed today.'"
+      },
+      {
+        "step": 3,
+        "action": "FAQ Section Expansion",
+        "details": "Add 3-5 additional FAQ questions targeting related 'People Also Ask' queries",
+        "impact": "Increases content relevance and FAQ rich snippet eligibility"
+      },
+      {
+        "step": 4,
+        "action": "Internal Link Boost",
+        "details": "Add 3-5 internal links from top authority pages to the target page",
+        "impact": "Transfers PageRank from established content"
+      },
+      {
+        "step": 5,
+        "action": "Content Depth Expansion",
+        "details": "If under 2000 words, expand with additional sections, data, comparisons",
+        "impact": "More comprehensive content tends to rank higher"
+      },
+      {
+        "step": 6,
+        "action": "Featured Snippet Optimization",
+        "details": "Structure a 40-60 word paragraph definition, numbered list, or comparison table",
+        "impact": "Can jump directly to position 0 (featured snippet)"
+      }
+    ]
+  },
+  "estimated_opportunity": {
+    "assumption": "With 460 posts, estimated 70-115 may be ranking on page 2-3",
+    "if_10_percent_promoted": "7-12 additional page 1 rankings",
+    "traffic_impact": "Each page 1 promotion typically increases clicks 3-5x vs page 2",
+    "estimated_additional_clicks": "200-500 additional monthly clicks from 10 successful promotions"
+  },
+  "ctr_optimization_targets": {
+    "current_avg_ctr_assumption": "2-3% (typical for new site)",
+    "target_ctr": "4-6% (with FAQ snippets + optimized titles)",
+    "improvement_tactics": [
+      "FAQ rich snippets (already deployed on 450 posts)",
+      "Number-led titles ('10 Best...' format)",
+      "Year inclusion (2026)",
+      "Power words (Expert, Tested, Guide, UK)",
+      "Bracket formatting [Updated 2026]"
+    ]
+  },
+  "execution_requirements": {
+    "needed": "Google Search Console query + page data (positions, impressions, clicks, CTR)",
+    "alternative": "If GSC API not available, can use sitemap submission verification + manual query checks",
+    "timeline": "Once GSC data available: 2-3 days for full optimization pass on top 50 targets"
+  },
+  "status": "PLAYBOOK READY - Requires GSC position data for targeted execution"
+}

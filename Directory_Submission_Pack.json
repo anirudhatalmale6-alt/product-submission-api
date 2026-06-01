@@ -1,0 +1,233 @@
+{
+  "report": "Directory Submission Pack",
+  "site": "pethubonline.com",
+  "generated": "2026-06-01T22:03:05.222508Z",
+  "business_details": {
+    "business_name": "PetHub Online",
+    "website": "https://pethubonline.com",
+    "tagline": "Expert Pet Supplies Reviews & Guides for UK Pet Owners",
+    "short_description": "UK pet supplies reviews, guides, and educational resources for dog, cat, and fish owners. Expert buying advice and product comparisons.",
+    "long_description": "PetHub Online is a comprehensive UK pet resource providing expert reviews, buying guides, and educational content across 460+ articles. We cover dog supplies, cat supplies, fish supplies, pet care, puppy care, and more. Our content helps UK pet owners make informed decisions with detailed product comparisons, safety guides, and care advice. All content is independently researched with genuine product analysis.",
+    "primary_category": "Pet Supplies",
+    "secondary_categories": [
+      "Pet Services",
+      "Pet Education",
+      "Pet Products",
+      "Pet Care"
+    ],
+    "location": "United Kingdom",
+    "service_area": "National (UK-wide, online)",
+    "year_established": "2026",
+    "keywords": [
+      "pet supplies UK",
+      "dog supplies reviews",
+      "cat supplies guide",
+      "fish supplies UK",
+      "pet product reviews",
+      "pet care guides",
+      "best pet products UK",
+      "pet buying guides"
+    ],
+    "social_profiles": {
+      "facebook": "https://www.facebook.com/pethubonline",
+      "instagram": "https://www.instagram.com/pethubonline"
+    }
+  },
+  "logo_requirements": {
+    "note": "Most directories accept square logos (min 200x200px). Some accept rectangular/banner format.",
+    "recommendation": "Prepare a square logo (500x500px minimum) and a rectangular banner version if available.",
+    "formats": "PNG or JPG, under 2MB"
+  },
+  "submission_order": [
+    {
+      "priority": 1,
+      "name": "Yelp UK",
+      "da": 94,
+      "link_type": "nofollow",
+      "url": "https://biz.yelp.co.uk/signup_business",
+      "category_to_select": "Pet Stores / Pet Services",
+      "account_needed": true,
+      "time_estimate": "10 minutes",
+      "approval_time": "1-3 days",
+      "notes": "Highest DA. Strong trust signal. Select 'Online Business' if location-based options appear."
+    },
+    {
+      "priority": 2,
+      "name": "Foursquare",
+      "da": 92,
+      "link_type": "nofollow",
+      "url": "https://foursquare.com/add-place",
+      "category_to_select": "Pet Store / Pet Service",
+      "account_needed": true,
+      "time_estimate": "5 minutes",
+      "approval_time": "1-5 days",
+      "notes": "Very high DA. Quick submission process."
+    },
+    {
+      "priority": 3,
+      "name": "Yell.com",
+      "da": 72,
+      "link_type": "nofollow",
+      "url": "https://www.yell.com/free-listing/",
+      "category_to_select": "Pet Shops / Pet Supplies",
+      "account_needed": true,
+      "time_estimate": "10 minutes",
+      "approval_time": "3-7 days",
+      "notes": "UK primary directory. Free listing tier is sufficient."
+    },
+    {
+      "priority": 4,
+      "name": "192.com",
+      "da": 68,
+      "link_type": "nofollow",
+      "url": "https://www.192.com/add-listing/",
+      "category_to_select": "Retail / Pet Supplies",
+      "account_needed": true,
+      "time_estimate": "5 minutes",
+      "approval_time": "3-7 days",
+      "notes": "Strong UK presence."
+    },
+    {
+      "priority": 5,
+      "name": "Bark.com",
+      "da": 65,
+      "link_type": "nofollow",
+      "url": "https://www.bark.com/en/gb/pro/",
+      "category_to_select": "Pet Services",
+      "account_needed": true,
+      "time_estimate": "10 minutes",
+      "approval_time": "1-3 days",
+      "notes": "Service provider directory."
+    },
+    {
+      "priority": 6,
+      "name": "FreeIndex",
+      "da": 60,
+      "link_type": "dofollow",
+      "url": "https://www.freeindex.co.uk/addcompany.htm",
+      "category_to_select": "Pet Supplies",
+      "account_needed": true,
+      "time_estimate": "10 minutes",
+      "approval_time": "1-3 days",
+      "notes": "DOFOLLOW link. High priority for direct authority transfer."
+    },
+    {
+      "priority": 7,
+      "name": "Thomson Local",
+      "da": 55,
+      "link_type": "nofollow",
+      "url": "https://www.thomsonlocal.com/add-your-business/",
+      "category_to_select": "Pet Shops / Pet Supplies",
+      "account_needed": true,
+      "time_estimate": "10 minutes",
+      "approval_time": "3-7 days",
+      "notes": "UK local directory."
+    },
+    {
+      "priority": 8,
+      "name": "Brownbook",
+      "da": 52,
+      "link_type": "nofollow",
+      "url": "https://www.brownbook.net/add-listing/",
+      "category_to_select": "Shopping / Pet Supplies",
+      "account_needed": true,
+      "time_estimate": "5 minutes",
+      "approval_time": "1-3 days",
+      "notes": "Global directory."
+    },
+    {
+      "priority": 9,
+      "name": "Cylex UK",
+      "da": 50,
+      "link_type": "dofollow",
+      "url": "https://www.cylex-uk.co.uk/add-company.html",
+      "category_to_select": "Pet Supplies / Pet Shops",
+      "account_needed": true,
+      "time_estimate": "10 minutes",
+      "approval_time": "1-5 days",
+      "notes": "DOFOLLOW link."
+    },
+    {
+      "priority": 10,
+      "name": "Hotfrog UK",
+      "da": 48,
+      "link_type": "dofollow",
+      "url": "https://www.hotfrog.co.uk/AddYourBusiness.aspx",
+      "category_to_select": "Pet Supplies",
+      "account_needed": true,
+      "time_estimate": "10 minutes",
+      "approval_time": "1-5 days",
+      "notes": "DOFOLLOW link."
+    },
+    {
+      "priority": 11,
+      "name": "Scoot",
+      "da": 45,
+      "link_type": "nofollow",
+      "url": "https://www.scoot.co.uk/add-listing/",
+      "category_to_select": "Pet Supplies",
+      "account_needed": true,
+      "time_estimate": "5 minutes",
+      "approval_time": "3-7 days",
+      "notes": "UK business directory."
+    },
+    {
+      "priority": 12,
+      "name": "VetClick",
+      "da": 35,
+      "link_type": "dofollow",
+      "url": "https://www.vetclick.com/register",
+      "category_to_select": "Pet Industry / Pet Supplies",
+      "account_needed": true,
+      "time_estimate": "10 minutes",
+      "approval_time": "5-14 days",
+      "notes": "DOFOLLOW. Pet industry niche - highest topical relevance."
+    },
+    {
+      "priority": 13,
+      "name": "PetProfessional.co.uk",
+      "da": 30,
+      "link_type": "dofollow",
+      "url": "https://www.petprofessional.co.uk/register",
+      "category_to_select": "Pet Retail / Pet Education",
+      "account_needed": true,
+      "time_estimate": "10 minutes",
+      "approval_time": "5-14 days",
+      "notes": "DOFOLLOW. Pet industry niche."
+    },
+    {
+      "priority": 14,
+      "name": "PetDirectory.co.uk",
+      "da": 28,
+      "link_type": "dofollow",
+      "url": "https://www.petdirectory.co.uk/submit",
+      "category_to_select": "Pet Supplies / Pet Resources",
+      "account_needed": true,
+      "time_estimate": "10 minutes",
+      "approval_time": "5-14 days",
+      "notes": "DOFOLLOW. Pet niche directory."
+    },
+    {
+      "priority": 15,
+      "name": "UKPDA",
+      "da": 25,
+      "link_type": "dofollow",
+      "url": "https://www.ukpda.co.uk/join",
+      "category_to_select": "Pet Industry Member",
+      "account_needed": true,
+      "time_estimate": "10 minutes",
+      "approval_time": "7-14 days",
+      "notes": "DOFOLLOW. UK Pet Directory Association - may require membership."
+    }
+  ],
+  "total_estimated_time": "2-2.5 hours",
+  "expected_results": {
+    "total_citations": 15,
+    "dofollow_links": 7,
+    "nofollow_links": 8,
+    "total_da_potential": 819,
+    "expected_live_within_30_days": "10-12 directories",
+    "expected_live_within_60_days": "All 15"
+  },
+  "status": "READY FOR EXECUTION - All details prepared"
+}
