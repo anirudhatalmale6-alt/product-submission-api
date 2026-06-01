@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revenue Readiness Dashboard - PetHub Online</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --bg:#080a0f;--card:#111621;--border:#1a2236;
+    --text:#e2e8f0;--dim:#7a8ba8;--gold:#eab308;
+    --gold-dim:rgba(234,179,8,0.15);--gold-glow:rgba(234,179,8,0.08);
+    --green:#22c55e;--green-dim:rgba(34,197,94,0.15);
+    --amber:#f59e0b;--amber-dim:rgba(245,158,11,0.15);
+    --red:#ef4444;--red-dim:rgba(239,68,68,0.15);
+    --grey:#6b7280;--grey-dim:rgba(107,114,128,0.15);
+    --blue:#3b82f6;--blue-dim:rgba(59,130,246,0.12);
+    --radius:10px;--radius-sm:6px;
+    --font-body:'Outfit',sans-serif;--font-mono:'JetBrains Mono',monospace;
+  }
+  html{font-size:15px;scroll-behavior:smooth}
+  body{
+    background:var(--bg);color:var(--text);font-family:var(--font-body);
+    line-height:1.6;min-height:100vh;overflow-x:hidden;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(234,179,8,0.04) 0%, transparent 70%),
+      radial-gradient(ellipse 60% 40% at 80% 100%, rgba(234,179,8,0.02) 0%, transparent 60%);
+  }
+  .container{max-width:1440px;margin:0 auto;padding:24px 28px 60px}
+
+  /* Refresh indicator */
+  .refresh-bar{
+    position:fixed;top:0;left:0;width:100%;height:2px;z-index:999;
+    background:linear-gradient(90deg,transparent,var(--gold),transparent);
+    opacity:0;transition:opacity 0.3s;
+  }
+  .refresh-bar.active{opacity:1;animation:refreshSlide 1s ease-in-out}
+  @keyframes refreshSlide{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+
+  /* Header */
+  .dash-header{
+    display:flex;align-items:center;justify-content:space-between;
+    margin-bottom:32px;padding-bottom:20px;
+    border-bottom:1px solid var(--border);
+  }
+  .dash-header h1{
+    font-family:var(--font-body);font-weight:800;font-size:1.6rem;
+    letter-spacing:-0.02em;
+    background:linear-gradient(135deg,var(--gold),#fbbf24,var(--gold));
+    -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    background-clip:text;
+  }
+  .dash-header .subtitle{font-size:0.8rem;color:var(--dim);margin-top:2px;font-weight:400}
+  .dash-header .meta{text-align:right;font-size:0.75rem;color:var(--dim);font-family:var(--font-mono)}
+  .dash-header .meta .live-dot{
+    display:inline-block;width:6px;height:6px;border-radius:50%;
+    background:var(--green);margin-right:6px;
+    animation:pulse-dot 2s ease-in-out infinite;
+  }
+  @keyframes pulse-dot{0%,100%{opacity:1}50%{opacity:0.3}}
+
+  /* Section headers */
+  .section{margin-bottom:36px}
+  .section-label{
+    display:flex;align-items:center;gap:10px;margin-bottom:16px;
+    font-size:0.7rem;font-weight:700;letter-spacing:0.12em;
+    text-transform:uppercase;color:var(--gold);font-family:var(--font-mono);
+  }
+  .section-label::after{
+    content:'';flex:1;height:1px;
+    background:linear-gradient(90deg,var(--border),transparent);
+  }
+  .section-label .sec-num{
+    background:var(--gold-dim);padding:2px 8px;border-radius:4px;
+    font-size:0.65rem;color:var(--gold);
+  }
+
+  /* Summary bar */
+  .summary-bar{
+    display:grid;grid-template-columns:repeat(6,1fr);gap:12px;
+  }
+  .stat-card{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    padding:18px 16px;position:relative;overflow:hidden;
+    transition:border-color 0.3s,transform 0.2s;
+  }
+  .stat-card:hover{border-color:rgba(234,179,8,0.3);transform:translateY(-1px)}
+  .stat-card::before{
+    content:'';position:absolute;top:0;left:0;right:0;height:2px;
+    background:linear-gradient(90deg,var(--gold),transparent);opacity:0.6;
+  }
+  .stat-card .label{
+    font-size:0.68rem;color:var(--dim);text-transform:uppercase;
+    letter-spacing:0.08em;font-weight:600;margin-bottom:8px;
+  }
+  .stat-card .value{
+    font-family:var(--font-mono);font-size:1.65rem;font-weight:700;
+    color:var(--text);line-height:1;
+  }
+  .stat-card .value .unit{font-size:0.75rem;color:var(--dim);font-weight:400;margin-left:2px}
+  .stat-card .change{
+    font-size:0.7rem;margin-top:6px;font-family:var(--font-mono);
+  }
+  .stat-card .change.up{color:var(--green)}
+  .stat-card .change.down{color:var(--red)}
+  .stat-card .change.neutral{color:var(--dim)}
+
+  /* Cards grid */
+  .cards-grid{display:grid;gap:14px}
+  .cards-grid.cols-4{grid-template-columns:repeat(4,1fr)}
+  .cards-grid.cols-3{grid-template-columns:repeat(3,1fr)}
+  .cards-grid.cols-7{grid-template-columns:repeat(7,1fr)}
+
+  .cluster-card{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    padding:18px;transition:border-color 0.3s,transform 0.2s;position:relative;
+  }
+  .cluster-card:hover{border-color:rgba(234,179,8,0.25);transform:translateY(-1px)}
+  .cluster-card .cluster-name{
+    font-weight:700;font-size:0.95rem;margin-bottom:12px;
+    display:flex;align-items:center;gap:8px;
+  }
+  .cluster-card .cluster-name .icon{font-size:1.1rem}
+  .cluster-card .cluster-stats{display:flex;flex-direction:column;gap:8px}
+  .cluster-stat{display:flex;justify-content:space-between;align-items:center}
+  .cluster-stat .cs-label{font-size:0.75rem;color:var(--dim)}
+  .cluster-stat .cs-value{font-family:var(--font-mono);font-size:0.85rem;font-weight:600}
+  .coverage-bar{
+    margin-top:10px;height:6px;background:var(--border);border-radius:3px;overflow:hidden;
+  }
+  .coverage-bar .fill{
+    height:100%;border-radius:3px;
+    background:linear-gradient(90deg,var(--gold),#fbbf24);
+    transition:width 0.8s ease;
+  }
+  .cluster-tags{display:flex;flex-wrap:wrap;gap:4px;margin-top:10px}
+  .cluster-tags .tag{
+    font-size:0.6rem;padding:2px 7px;border-radius:3px;
+    background:var(--gold-dim);color:var(--gold);font-family:var(--font-mono);
+    font-weight:500;letter-spacing:0.02em;
+  }
+
+  /* Tables */
+  .table-wrap{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    overflow:hidden;
+  }
+  table{width:100%;border-collapse:collapse}
+  thead{background:rgba(234,179,8,0.05)}
+  th{
+    font-size:0.68rem;text-transform:uppercase;letter-spacing:0.1em;
+    font-weight:700;color:var(--gold);padding:12px 16px;text-align:left;
+    font-family:var(--font-mono);border-bottom:1px solid var(--border);
+    white-space:nowrap;
+  }
+  td{
+    padding:12px 16px;font-size:0.82rem;border-bottom:1px solid rgba(26,34,54,0.5);
+    vertical-align:middle;
+  }
+  tr:last-child td{border-bottom:none}
+  tr:hover td{background:rgba(234,179,8,0.02)}
+  .mono{font-family:var(--font-mono);font-weight:500}
+
+  /* Badges */
+  .badge{
+    display:inline-flex;align-items:center;padding:3px 10px;border-radius:4px;
+    font-size:0.68rem;font-weight:600;font-family:var(--font-mono);
+    text-transform:uppercase;letter-spacing:0.06em;
+  }
+  .badge.active{background:var(--green-dim);color:var(--green)}
+  .badge.broken{background:var(--red-dim);color:var(--red)}
+  .badge.planned{background:var(--blue-dim);color:var(--blue)}
+  .badge.not-started{background:var(--grey-dim);color:var(--grey)}
+  .badge.gold{background:var(--gold-dim);color:var(--gold)}
+
+  /* Priority score */
+  .priority-score{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:32px;height:32px;border-radius:50%;font-family:var(--font-mono);
+    font-weight:700;font-size:0.8rem;
+  }
+  .priority-score.high{background:var(--gold-dim);color:var(--gold);border:1px solid rgba(234,179,8,0.3)}
+  .priority-score.medium{background:var(--amber-dim);color:var(--amber);border:1px solid rgba(245,158,11,0.3)}
+  .priority-score.low{background:var(--grey-dim);color:var(--grey);border:1px solid rgba(107,114,128,0.3)}
+
+  /* Heat map */
+  .heatmap-grid{
+    display:grid;grid-template-columns:140px repeat(7,1fr);gap:2px;
+  }
+  .heatmap-header{
+    font-size:0.62rem;text-transform:uppercase;letter-spacing:0.08em;
+    color:var(--dim);padding:8px 6px;text-align:center;font-weight:700;
+    font-family:var(--font-mono);
+  }
+  .heatmap-header.row-label{text-align:right;padding-right:12px}
+  .heatmap-cell{
+    border-radius:4px;padding:6px 4px;text-align:center;
+    font-family:var(--font-mono);font-size:0.7rem;font-weight:600;
+    transition:transform 0.15s;cursor:default;min-height:36px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .heatmap-cell:hover{transform:scale(1.05);z-index:2}
+  .heatmap-cell.full{background:var(--green-dim);color:var(--green)}
+  .heatmap-cell.partial{background:var(--amber-dim);color:var(--amber)}
+  .heatmap-cell.none{background:var(--red-dim);color:var(--red)}
+  .heatmap-cell.na{background:var(--grey-dim);color:var(--grey)}
+  .heatmap-legend{
+    display:flex;gap:20px;margin-top:12px;justify-content:center;
+  }
+  .heatmap-legend .leg-item{
+    display:flex;align-items:center;gap:6px;font-size:0.72rem;color:var(--dim);
+  }
+  .heatmap-legend .leg-swatch{width:14px;height:14px;border-radius:3px}
+
+  /* Funnel */
+  .funnel-container{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    padding:32px 40px;
+  }
+  .funnel-steps{
+    display:flex;align-items:center;justify-content:center;gap:0;
+    position:relative;
+  }
+  .funnel-step{
+    display:flex;flex-direction:column;align-items:center;position:relative;
+    flex:1;max-width:200px;
+  }
+  .funnel-bar{
+    width:100%;position:relative;display:flex;justify-content:center;
+    margin-bottom:12px;
+  }
+  .funnel-block{
+    height:64px;border-radius:6px;display:flex;align-items:center;justify-content:center;
+    font-family:var(--font-mono);font-size:1.2rem;font-weight:700;color:var(--bg);
+    transition:transform 0.2s;position:relative;
+    background:linear-gradient(135deg,var(--gold),#fbbf24);
+  }
+  .funnel-block:hover{transform:scale(1.03)}
+  .funnel-step:nth-child(1) .funnel-block{width:100%;opacity:1}
+  .funnel-step:nth-child(2) .funnel-block{width:82%;opacity:0.9}
+  .funnel-step:nth-child(3) .funnel-block{width:60%;opacity:0.8}
+  .funnel-step:nth-child(4) .funnel-block{width:38%;opacity:0.7}
+  .funnel-step:nth-child(5) .funnel-block{width:22%;opacity:0.65}
+  .funnel-label{
+    font-size:0.75rem;color:var(--dim);text-align:center;margin-top:4px;
+    font-weight:500;
+  }
+  .funnel-rate{
+    font-family:var(--font-mono);font-size:0.65rem;color:var(--gold);
+    margin-top:6px;background:var(--gold-dim);padding:2px 8px;border-radius:3px;
+  }
+  .funnel-arrow{
+    color:var(--border);font-size:1.2rem;margin:0 -6px;margin-top:-30px;
+    z-index:2;
+  }
+
+  /* Chart area */
+  .chart-container{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    padding:28px;position:relative;
+  }
+  .chart-canvas-wrap{position:relative;height:320px;margin-top:16px}
+  canvas{width:100%!important;height:100%!important}
+
+  /* Ad network cards */
+  .network-card{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    padding:22px;position:relative;overflow:hidden;
+  }
+  .network-card .net-name{font-weight:700;font-size:1rem;margin-bottom:4px}
+  .network-card .net-req{font-size:0.75rem;color:var(--dim);margin-bottom:16px}
+  .progress-track{
+    height:8px;background:var(--border);border-radius:4px;overflow:hidden;
+    margin-bottom:8px;
+  }
+  .progress-fill{height:100%;border-radius:4px;transition:width 1s ease}
+  .progress-fill.eligible{background:linear-gradient(90deg,var(--green),#4ade80)}
+  .progress-fill.inprogress{background:linear-gradient(90deg,var(--gold),#fbbf24)}
+  .progress-fill.far{background:linear-gradient(90deg,var(--red),#f87171)}
+  .net-metrics{display:flex;justify-content:space-between;margin-top:4px}
+  .net-metrics span{font-size:0.72rem;font-family:var(--font-mono)}
+  .net-metrics .current{color:var(--text)}
+  .net-metrics .required{color:var(--dim)}
+  .net-badge{
+    position:absolute;top:14px;right:14px;padding:3px 10px;border-radius:4px;
+    font-size:0.65rem;font-weight:700;font-family:var(--font-mono);
+    text-transform:uppercase;letter-spacing:0.06em;
+  }
+  .net-badge.elig{background:var(--green-dim);color:var(--green)}
+  .net-badge.near{background:var(--amber-dim);color:var(--amber)}
+  .net-badge.not-elig{background:var(--red-dim);color:var(--red)}
+
+  /* Action priorities */
+  .action-list{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    overflow:hidden;
+  }
+  .action-item{
+    display:grid;grid-template-columns:40px 1fr 140px 120px 100px;
+    align-items:center;padding:14px 18px;
+    border-bottom:1px solid rgba(26,34,54,0.5);
+    transition:background 0.2s;
+  }
+  .action-item:last-child{border-bottom:none}
+  .action-item:hover{background:rgba(234,179,8,0.02)}
+  .action-rank{
+    font-family:var(--font-mono);font-weight:800;font-size:1.1rem;
+    color:var(--gold);
+  }
+  .action-desc{padding-right:16px}
+  .action-desc .action-title{font-weight:600;font-size:0.88rem}
+  .action-desc .action-detail{font-size:0.72rem;color:var(--dim);margin-top:2px}
+  .action-impact{
+    font-family:var(--font-mono);font-size:0.82rem;font-weight:600;color:var(--green);
+  }
+  .action-timeline{
+    font-size:0.75rem;color:var(--dim);font-family:var(--font-mono);
+  }
+  .action-effort{font-size:0.72rem}
+  .action-effort .effort-bar{
+    display:flex;gap:2px;margin-top:4px;
+  }
+  .action-effort .effort-pip{
+    width:14px;height:4px;border-radius:2px;background:var(--border);
+  }
+  .action-effort .effort-pip.filled{background:var(--gold)}
+
+  /* Responsive */
+  @media(max-width:1200px){
+    .summary-bar{grid-template-columns:repeat(3,1fr)}
+    .cards-grid.cols-4{grid-template-columns:repeat(2,1fr)}
+    .cards-grid.cols-7{grid-template-columns:repeat(4,1fr)}
+    .heatmap-grid{font-size:0.6rem}
+  }
+  @media(max-width:768px){
+    .container{padding:16px}
+    .summary-bar{grid-template-columns:repeat(2,1fr)}
+    .cards-grid.cols-4,.cards-grid.cols-3{grid-template-columns:1fr}
+    .cards-grid.cols-7{grid-template-columns:repeat(3,1fr)}
+    .funnel-steps{flex-direction:column;gap:8px}
+    .funnel-arrow{transform:rotate(90deg)}
+    .action-item{grid-template-columns:32px 1fr;gap:8px}
+    .action-impact,.action-timeline,.action-effort{display:none}
+    .heatmap-grid{grid-template-columns:80px repeat(7,1fr)}
+  }
+
+  /* Animations */
+  .fade-in{opacity:0;transform:translateY(12px);animation:fadeUp 0.5s ease forwards}
+  @keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
+  .section:nth-child(2){animation-delay:0.05s}
+  .section:nth-child(3){animation-delay:0.1s}
+  .section:nth-child(4){animation-delay:0.15s}
+  .section:nth-child(5){animation-delay:0.2s}
+  .section:nth-child(6){animation-delay:0.25s}
+  .section:nth-child(7){animation-delay:0.3s}
+  .section:nth-child(8){animation-delay:0.35s}
+  .section:nth-child(9){animation-delay:0.4s}
+  .section:nth-child(10){animation-delay:0.45s}
+  .stagger-1{animation-delay:0.06s}.stagger-2{animation-delay:0.12s}
+  .stagger-3{animation-delay:0.18s}.stagger-4{animation-delay:0.24s}
+  .stagger-5{animation-delay:0.30s}.stagger-6{animation-delay:0.36s}
+
+  /* Tooltip */
+  [data-tip]{position:relative}
+  [data-tip]:hover::after{
+    content:attr(data-tip);position:absolute;bottom:calc(100% + 6px);left:50%;
+    transform:translateX(-50%);background:#1a2236;color:var(--text);
+    padding:5px 10px;border-radius:4px;font-size:0.68rem;white-space:nowrap;
+    z-index:100;border:1px solid var(--border);font-family:var(--font-mono);
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar{width:6px;height:6px}
+  ::-webkit-scrollbar-track{background:var(--bg)}
+  ::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+  ::-webkit-scrollbar-thumb:hover{background:#2a3a56}
+</style>
+</head>
+<body>
+
+<div class="refresh-bar" id="refreshBar"></div>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="dash-header fade-in">
+    <div>
+      <h1>Revenue Readiness Dashboard</h1>
+      <div class="subtitle">PetHub Online &middot; pethubonline.com &middot; Analysis Only</div>
+    </div>
+    <div class="meta">
+      <div><span class="live-dot"></span>Auto-refresh 60s</div>
+      <div id="lastUpdate"></div>
+      <div style="margin-top:4px;color:var(--gold)">pethubonline-21</div>
+    </div>
+  </header>
+
+  <!-- 1. REVENUE READINESS SUMMARY BAR -->
+  <div class="section fade-in">
+    <div class="section-label"><span class="sec-num">01</span> Revenue Readiness Summary</div>
+    <div class="summary-bar" id="summaryBar"></div>
+  </div>
+
+  <!-- 2. AFFILIATE COVERAGE MAP -->
+  <div class="section fade-in">
+    <div class="section-label"><span class="sec-num">02</span> Affiliate Coverage Map</div>
+    <div class="cards-grid cols-4" id="clusterGrid"></div>
+  </div>
+
+  <!-- 3. AMAZON ASSOCIATES TRACKING -->
+  <div class="section fade-in">
+    <div class="section-label"><span class="sec-num">03</span> Amazon Associates Tracking <span style="font-weight:400;color:var(--dim);font-size:0.6rem;margin-left:8px">Tag: pethubonline-21</span></div>
+    <div class="table-wrap">
+      <table id="amazonTable">
+        <thead><tr>
+          <th>Product Category</th><th>Links Placed</th><th>Est. Clicks/mo</th>
+          <th>Conv. Rate</th><th>Est. Commission</th><th>Link Health</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 4. MONETISATION OPPORTUNITIES -->
+  <div class="section fade-in">
+    <div class="section-label"><span class="sec-num">04</span> Monetisation Opportunities</div>
+    <div class="table-wrap">
+      <table id="monetTable">
+        <thead><tr>
+          <th>Opportunity</th><th>Type</th><th>Est. Monthly Rev</th>
+          <th>Effort</th><th>Priority</th><th>Status</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 5. CONTENT MONETISATION HEAT MAP -->
+  <div class="section fade-in">
+    <div class="section-label"><span class="sec-num">05</span> Content Monetisation Heat Map</div>
+    <div class="table-wrap" style="padding:20px">
+      <div class="heatmap-grid" id="heatmapGrid"></div>
+      <div class="heatmap-legend">
+        <div class="leg-item"><div class="leg-swatch" style="background:var(--green-dim)"></div>Fully Monetised</div>
+        <div class="leg-item"><div class="leg-swatch" style="background:var(--amber-dim)"></div>Partially</div>
+        <div class="leg-item"><div class="leg-swatch" style="background:var(--red-dim)"></div>Not Monetised</div>
+        <div class="leg-item"><div class="leg-swatch" style="background:var(--grey-dim)"></div>N/A</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. CONVERSION FUNNEL -->
+  <div class="section fade-in">
+    <div class="section-label"><span class="sec-num">06</span> Conversion Funnel</div>
+    <div class="funnel-container">
+      <div class="funnel-steps" id="funnelSteps"></div>
+    </div>
+  </div>
+
+  <!-- 7. REVENUE PROJECTION CHART -->
+  <div class="section fade-in">
+    <div class="section-label"><span class="sec-num">07</span> Revenue Projection &mdash; 12 Month Outlook</div>
+    <div class="chart-container">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <div style="font-size:0.78rem;color:var(--dim)">Based on traffic growth trajectory &amp; affiliate conversion rates</div>
+        <div style="display:flex;gap:16px">
+          <div style="display:flex;align-items:center;gap:6px;font-size:0.7rem;color:var(--dim)">
+            <span style="width:12px;height:3px;background:var(--gold);border-radius:2px;display:inline-block"></span>Projected Revenue
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;font-size:0.7rem;color:var(--dim)">
+            <span style="width:12px;height:3px;background:var(--green);border-radius:2px;display:inline-block"></span>Conservative
+          </div>
+        </div>
+      </div>
+      <div class="chart-canvas-wrap">
+        <canvas id="projectionChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- 8. AD NETWORK ELIGIBILITY -->
+  <div class="section fade-in">
+    <div class="section-label"><span class="sec-num">08</span> Ad Network Eligibility</div>
+    <div class="cards-grid cols-3" id="adNetworkGrid"></div>
+  </div>
+
+  <!-- 9. ACTION PRIORITIES -->
+  <div class="section fade-in">
+    <div class="section-label"><span class="sec-num">09</span> Action Priorities &mdash; Highest Impact First</div>
+    <div class="action-list" id="actionList"></div>
+  </div>
+
+</div>
+
+<script>
+// === DATA ===
+const summaryData = [
+  { label: 'Affiliate-Ready Posts', value: '47', unit: '', change: '+6 this week', dir: 'up' },
+  { label: 'Amazon Links Active', value: '134', unit: '', change: '12 new placed', dir: 'up' },
+  { label: 'Est. Monthly Potential', value: '£842', unit: '', change: 'at current traffic', dir: 'neutral' },
+  { label: 'Click-Through Rate', value: '2.8', unit: '%', change: '+0.3pp vs last mo', dir: 'up' },
+  { label: 'Posts with CTAs', value: '39', unit: '/62', change: '62.9% coverage', dir: 'neutral' },
+  { label: 'Revenue Streams ID\'d', value: '5', unit: '', change: '2 active, 3 planned', dir: 'neutral' },
+];
+
+const clusterData = [
+  { name:'Puppy Care', icon:'🐶', total:12, withLinks:9, topCats:['Puppy Food','Training Aids','Crates'], estClicks:340 },
+  { name:'Dog Beds', icon:'🛏️', total:8, withLinks:7, topCats:['Ortho Beds','Blankets','Crate Mats'], estClicks:280 },
+  { name:'Cat Toys', icon:'🐱', total:9, withLinks:5, topCats:['Interactive','Scratchers','Catnip'], estClicks:195 },
+  { name:'Indoor Cats', icon:'🏠', total:7, withLinks:4, topCats:['Cat Trees','Litter Boxes','Feeders'], estClicks:160 },
+  { name:'Pet Care', icon:'💊', total:10, withLinks:8, topCats:['Supplements','Grooming','First Aid'], estClicks:310 },
+  { name:'Fish Supplies', icon:'🐟', total:6, withLinks:3, topCats:['Tanks','Filters','Fish Food'], estClicks:85 },
+  { name:'Dog Food', icon:'🦴', total:10, withLinks:8, topCats:['Dry Food','Wet Food','Treats'], estClicks:420 },
+];
+
+const amazonData = [
+  { cat:'Dog Food & Treats', links:28, clicks:420, conv:'3.2%', commission:'£89', health:'active' },
+  { cat:'Puppy Supplies', links:22, clicks:340, conv:'2.8%', commission:'£67', health:'active' },
+  { cat:'Pet Health & Grooming', links:20, clicks:310, conv:'3.5%', commission:'£76', health:'active' },
+  { cat:'Dog Beds & Furniture', links:18, clicks:280, conv:'4.1%', commission:'£95', health:'active' },
+  { cat:'Cat Toys & Accessories', links:16, clicks:195, conv:'2.4%', commission:'£33', health:'active' },
+  { cat:'Indoor Cat Products', links:14, clicks:160, conv:'2.6%', commission:'£29', health:'broken', note:'2 links' },
+  { cat:'Fish & Aquarium', links:10, clicks:85, conv:'2.1%', commission:'£12', health:'active' },
+  { cat:'General Pet Accessories', links:6, clicks:45, conv:'1.9%', commission:'£6', health:'broken', note:'1 link' },
+];
+
+const monetData = [
+  { opp:'Amazon Associates UK Expansion', type:'Affiliate', rev:'£407', effort:2, priority:9, status:'active' },
+  { opp:'Display Ads (Mediavine)', type:'Display', rev:'£300-500', effort:1, priority:8, status:'planned' },
+  { opp:'Digital Products (PDF Guides)', type:'Digital Product', rev:'£150-250', effort:3, priority:7, status:'planned' },
+  { opp:'Sponsored Content Posts', type:'Sponsored', rev:'£200-400', effort:3, priority:6, status:'not_started' },
+  { opp:'Email List Monetisation', type:'Affiliate', rev:'£80-150', effort:2, priority:5, status:'not_started' },
+  { opp:'Display Ads (AdThrive)', type:'Display', rev:'£500-800', effort:1, priority:4, status:'not_started' },
+  { opp:'Ezoic Integration', type:'Display', rev:'£120-200', effort:1, priority:7, status:'planned' },
+];
+
+// Heatmap: rows = monetisation types, cols = clusters
+const heatmapRows = ['Amazon Affiliate', 'Internal Links', 'CTA Buttons', 'Product Tables', 'Email Captures'];
+const heatmapCols = ['Puppy Care','Dog Beds','Cat Toys','Indoor Cats','Pet Care','Fish Supply','Dog Food'];
+const heatmapData = [
+  ['full','full','partial','partial','full','partial','full'],
+  ['full','full','full','partial','full','none','full'],
+  ['full','partial','partial','none','full','none','full'],
+  ['partial','full','none','none','partial','none','full'],
+  ['partial','partial','none','none','partial','none','partial'],
+];
+
+const funnelData = [
+  { label:'Site Visitors', value:'18,400/mo', rate:null },
+  { label:'Product Page Views', value:'4,800/mo', rate:'26.1%' },
+  { label:'Affiliate Clicks', value:'1,835/mo', rate:'38.2%' },
+  { label:'Est. Purchases', value:'55/mo', rate:'3.0%' },
+  { label:'Est. Revenue', value:'£407/mo', rate:'£7.40 avg' },
+];
+
+const adNetworks = [
+  { name:'Ezoic', req:'No minimum sessions', current:18400, required:0, pct:100, status:'elig', badge:'Eligible Now' },
+  { name:'Mediavine', req:'50,000 sessions/month required', current:18400, required:50000, pct:36.8, status:'near', badge:'36.8% There' },
+  { name:'AdThrive', req:'100,000 pageviews/month required', current:24500, required:100000, pct:24.5, status:'not-elig', badge:'24.5% There' },
+];
+
+const actionPriorities = [
+  { rank:1, title:'Fill affiliate gaps in Cat Toys & Indoor Cats clusters', detail:'22 posts missing Amazon links across 2 high-traffic clusters', impact:'+£85/mo', timeline:'1-2 weeks', effort:2 },
+  { rank:2, title:'Fix 3 broken Amazon affiliate links', detail:'2 Indoor Cat + 1 General Accessories links returning 404', impact:'+£35/mo', timeline:'1 day', effort:1 },
+  { rank:3, title:'Apply for Ezoic display ads', detail:'Already eligible, no minimum traffic requirement', impact:'+£120-200/mo', timeline:'2-3 weeks', effort:1 },
+  { rank:4, title:'Add product comparison tables to Dog Food posts', detail:'8 high-traffic posts lacking structured product recommendations', impact:'+£95/mo', timeline:'2-3 weeks', effort:3 },
+  { rank:5, title:'Create 3 PDF lead magnets for email capture', detail:'Puppy care checklist, dog food guide, cat toy buyer\'s guide', impact:'+£80/mo', timeline:'3-4 weeks', effort:3 },
+  { rank:6, title:'Add CTAs to all monetisable posts', detail:'23 posts missing clear call-to-action buttons/sections', impact:'+£60/mo', timeline:'1-2 weeks', effort:2 },
+  { rank:7, title:'Build email welcome sequence with affiliate offers', detail:'Automated 5-email series with curated product recommendations', impact:'+£50/mo', timeline:'2-3 weeks', effort:3 },
+  { rank:8, title:'Grow traffic to 50K sessions for Mediavine eligibility', detail:'Current trajectory: 8-10 months at 12% MoM growth rate', impact:'+£300-500/mo', timeline:'8-10 months', effort:4 },
+];
+
+// Revenue projection data (12 months)
+const projMonths = ['Jul','Aug','Sep','Oct','Nov','Dec','Jan','Feb','Mar','Apr','May','Jun'];
+const projRevenue = [407, 480, 560, 650, 740, 890, 820, 780, 850, 960, 1080, 1220];
+const projConservative = [407, 440, 475, 510, 550, 620, 580, 560, 600, 650, 710, 780];
+
+// === RENDERERS ===
+
+function renderSummary() {
+  const el = document.getElementById('summaryBar');
+  el.innerHTML = summaryData.map((s, i) => `
+    <div class="stat-card fade-in stagger-${i+1}">
+      <div class="label">${s.label}</div>
+      <div class="value">${s.value}<span class="unit">${s.unit}</span></div>
+      <div class="change ${s.dir}">${s.change}</div>
+    </div>
+  `).join('');
+}
+
+function renderClusters() {
+  const el = document.getElementById('clusterGrid');
+  el.innerHTML = clusterData.map(c => {
+    const pct = Math.round((c.withLinks / c.total) * 100);
+    return `
+    <div class="cluster-card">
+      <div class="cluster-name"><span class="icon">${c.icon}</span>${c.name}</div>
+      <div class="cluster-stats">
+        <div class="cluster-stat"><span class="cs-label">Total Posts</span><span class="cs-value">${c.total}</span></div>
+        <div class="cluster-stat"><span class="cs-label">With Affiliates</span><span class="cs-value">${c.withLinks}</span></div>
+        <div class="cluster-stat"><span class="cs-label">Coverage</span><span class="cs-value" style="color:${pct>=80?'var(--green)':pct>=50?'var(--gold)':'var(--red)'}">${pct}%</span></div>
+        <div class="cluster-stat"><span class="cs-label">Est. Clicks/mo</span><span class="cs-value mono">${c.estClicks.toLocaleString()}</span></div>
+      </div>
+      <div class="coverage-bar"><div class="fill" style="width:${pct}%"></div></div>
+      <div class="cluster-tags">${c.topCats.map(t => `<span class="tag">${t}</span>`).join('')}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderAmazonTable() {
+  const tbody = document.querySelector('#amazonTable tbody');
+  tbody.innerHTML = amazonData.map(r => `
+    <tr>
+      <td style="font-weight:600">${r.cat}</td>
+      <td class="mono">${r.links}</td>
+      <td class="mono">${r.clicks.toLocaleString()}</td>
+      <td class="mono">${r.conv}</td>
+      <td class="mono" style="color:var(--green)">${r.commission}</td>
+      <td>
+        <span class="badge ${r.health}">${r.health === 'active' ? 'Active' : 'Broken'}</span>
+        ${r.note ? `<span style="font-size:0.65rem;color:var(--red);margin-left:6px">(${r.note})</span>` : ''}
+      </td>
+    </tr>
+  `).join('');
+}
+
+function renderMonetTable() {
+  const tbody = document.querySelector('#monetTable tbody');
+  const statusMap = { active: 'Active', planned: 'Planned', not_started: 'Not Started' };
+  const statusClass = { active: 'active', planned: 'planned', not_started: 'not-started' };
+  tbody.innerHTML = monetData.map(r => `
+    <tr>
+      <td style="font-weight:600">${r.opp}</td>
+      <td><span class="badge gold">${r.type}</span></td>
+      <td class="mono" style="color:var(--green)">${r.rev}</td>
+      <td>
+        <div style="display:flex;gap:2px">
+          ${Array.from({length:5}, (_,i) => `<div style="width:12px;height:4px;border-radius:2px;background:${i<r.effort?'var(--gold)':'var(--border)'}"></div>`).join('')}
+        </div>
+      </td>
+      <td><span class="priority-score ${r.priority>=8?'high':r.priority>=5?'medium':'low'}">${r.priority}</span></td>
+      <td><span class="badge ${statusClass[r.status]}">${statusMap[r.status]}</span></td>
+    </tr>
+  `).join('');
+}
+
+function renderHeatmap() {
+  const el = document.getElementById('heatmapGrid');
+  let html = '<div class="heatmap-header row-label"></div>';
+  heatmapCols.forEach(c => { html += `<div class="heatmap-header">${c}</div>`; });
+
+  heatmapRows.forEach((row, ri) => {
+    html += `<div class="heatmap-header row-label">${row}</div>`;
+    heatmapData[ri].forEach((cell, ci) => {
+      const labels = { full: 'Full', partial: 'Partial', none: 'None', na: 'N/A' };
+      html += `<div class="heatmap-cell ${cell}" data-tip="${row} - ${heatmapCols[ci]}">${labels[cell]}</div>`;
+    });
+  });
+  el.innerHTML = html;
+}
+
+function renderFunnel() {
+  const el = document.getElementById('funnelSteps');
+  let html = '';
+  funnelData.forEach((step, i) => {
+    if (i > 0) html += '<div class="funnel-arrow">&#9654;</div>';
+    html += `
+      <div class="funnel-step">
+        <div class="funnel-bar">
+          <div class="funnel-block">${step.value}</div>
+        </div>
+        <div class="funnel-label">${step.label}</div>
+        ${step.rate ? `<div class="funnel-rate">${step.rate}</div>` : ''}
+      </div>`;
+  });
+  el.innerHTML = html;
+}
+
+function renderProjectionChart() {
+  const canvas = document.getElementById('projectionChart');
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.parentElement.getBoundingClientRect();
+
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+  canvas.style.width = rect.width + 'px';
+  canvas.style.height = rect.height + 'px';
+  ctx.scale(dpr, dpr);
+
+  const W = rect.width;
+  const H = rect.height;
+  const pad = { top: 20, right: 30, bottom: 40, left: 60 };
+  const cw = W - pad.left - pad.right;
+  const ch = H - pad.top - pad.bottom;
+
+  const maxVal = Math.max(...projRevenue) * 1.15;
+  const minVal = 0;
+
+  function x(i) { return pad.left + (i / (projMonths.length - 1)) * cw; }
+  function y(v) { return pad.top + ch - ((v - minVal) / (maxVal - minVal)) * ch; }
+
+  // Grid lines
+  ctx.strokeStyle = '#1a2236';
+  ctx.lineWidth = 1;
+  const gridSteps = 5;
+  for (let i = 0; i <= gridSteps; i++) {
+    const val = minVal + ((maxVal - minVal) / gridSteps) * i;
+    const yy = y(val);
+    ctx.beginPath();
+    ctx.moveTo(pad.left, yy);
+    ctx.lineTo(W - pad.right, yy);
+    ctx.stroke();
+
+    ctx.fillStyle = '#7a8ba8';
+    ctx.font = '11px "JetBrains Mono"';
+    ctx.textAlign = 'right';
+    ctx.fillText('£' + Math.round(val), pad.left - 8, yy + 4);
+  }
+
+  // X axis labels
+  ctx.textAlign = 'center';
+  ctx.fillStyle = '#7a8ba8';
+  ctx.font = '11px "JetBrains Mono"';
+  projMonths.forEach((m, i) => {
+    ctx.fillText(m, x(i), H - pad.bottom + 24);
+  });
+
+  // Area fill for projected
+  ctx.beginPath();
+  ctx.moveTo(x(0), y(projRevenue[0]));
+  projRevenue.forEach((v, i) => ctx.lineTo(x(i), y(v)));
+  ctx.lineTo(x(projRevenue.length - 1), y(0));
+  ctx.lineTo(x(0), y(0));
+  ctx.closePath();
+  const grad = ctx.createLinearGradient(0, pad.top, 0, H - pad.bottom);
+  grad.addColorStop(0, 'rgba(234,179,8,0.15)');
+  grad.addColorStop(1, 'rgba(234,179,8,0)');
+  ctx.fillStyle = grad;
+  ctx.fill();
+
+  // Projected line
+  ctx.beginPath();
+  ctx.strokeStyle = '#eab308';
+  ctx.lineWidth = 2.5;
+  ctx.lineJoin = 'round';
+  projRevenue.forEach((v, i) => {
+    if (i === 0) ctx.moveTo(x(i), y(v));
+    else ctx.lineTo(x(i), y(v));
+  });
+  ctx.stroke();
+
+  // Conservative line
+  ctx.beginPath();
+  ctx.strokeStyle = '#22c55e';
+  ctx.lineWidth = 1.5;
+  ctx.setLineDash([6, 4]);
+  projConservative.forEach((v, i) => {
+    if (i === 0) ctx.moveTo(x(i), y(v));
+    else ctx.lineTo(x(i), y(v));
+  });
+  ctx.stroke();
+  ctx.setLineDash([]);
+
+  // Data points for projected
+  projRevenue.forEach((v, i) => {
+    ctx.beginPath();
+    ctx.arc(x(i), y(v), 4, 0, Math.PI * 2);
+    ctx.fillStyle = '#eab308';
+    ctx.fill();
+    ctx.beginPath();
+    ctx.arc(x(i), y(v), 2, 0, Math.PI * 2);
+    ctx.fillStyle = '#080a0f';
+    ctx.fill();
+  });
+
+  // End labels
+  const lastIdx = projRevenue.length - 1;
+  ctx.font = 'bold 12px "JetBrains Mono"';
+  ctx.fillStyle = '#eab308';
+  ctx.textAlign = 'left';
+  ctx.fillText('£' + projRevenue[lastIdx], x(lastIdx) + 8, y(projRevenue[lastIdx]) + 4);
+  ctx.fillStyle = '#22c55e';
+  ctx.fillText('£' + projConservative[lastIdx], x(lastIdx) + 8, y(projConservative[lastIdx]) + 4);
+}
+
+function renderAdNetworks() {
+  const el = document.getElementById('adNetworkGrid');
+  el.innerHTML = adNetworks.map(n => {
+    const fillClass = n.pct >= 100 ? 'eligible' : n.pct >= 30 ? 'inprogress' : 'far';
+    return `
+    <div class="network-card">
+      <span class="net-badge ${n.status}">${n.badge}</span>
+      <div class="net-name">${n.name}</div>
+      <div class="net-req">${n.req}</div>
+      <div class="progress-track">
+        <div class="progress-fill ${fillClass}" style="width:${Math.min(n.pct, 100)}%"></div>
+      </div>
+      <div class="net-metrics">
+        <span class="current">${n.current.toLocaleString()} current</span>
+        <span class="required">${n.required > 0 ? n.required.toLocaleString() + ' required' : 'No minimum'}</span>
+      </div>
+      ${n.name === 'Mediavine' ? `<div style="margin-top:10px;font-size:0.7rem;color:var(--dim);font-family:var(--font-mono)">Est. eligible: ${estimateEligMonth(18400, 50000, 0.12)}</div>` : ''}
+      ${n.name === 'AdThrive' ? `<div style="margin-top:10px;font-size:0.7rem;color:var(--dim);font-family:var(--font-mono)">Est. eligible: ${estimateEligMonth(24500, 100000, 0.12)}</div>` : ''}
+    </div>`;
+  }).join('');
+}
+
+function estimateEligMonth(current, target, growthRate) {
+  if (current >= target) return 'Now';
+  let months = 0;
+  let val = current;
+  while (val < target && months < 36) {
+    val *= (1 + growthRate);
+    months++;
+  }
+  const d = new Date();
+  d.setMonth(d.getMonth() + months);
+  return d.toLocaleDateString('en-GB', { month: 'short', year: 'numeric' }) + ` (~${months}mo)`;
+}
+
+function renderActions() {
+  const el = document.getElementById('actionList');
+  el.innerHTML = actionPriorities.map(a => `
+    <div class="action-item">
+      <div class="action-rank">#${a.rank}</div>
+      <div class="action-desc">
+        <div class="action-title">${a.title}</div>
+        <div class="action-detail">${a.detail}</div>
+      </div>
+      <div class="action-impact">${a.impact}</div>
+      <div class="action-timeline">${a.timeline}</div>
+      <div class="action-effort">
+        <div style="font-size:0.65rem;color:var(--dim);margin-bottom:2px">Effort</div>
+        <div class="effort-bar">
+          ${Array.from({length:5}, (_,i) => `<div class="effort-pip ${i<a.effort?'filled':''}"></div>`).join('')}
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function updateTimestamp() {
+  document.getElementById('lastUpdate').textContent =
+    new Date().toLocaleString('en-GB', { day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit', second:'2-digit' });
+}
+
+// === INIT ===
+function init() {
+  updateTimestamp();
+  renderSummary();
+  renderClusters();
+  renderAmazonTable();
+  renderMonetTable();
+  renderHeatmap();
+  renderFunnel();
+  renderProjectionChart();
+  renderAdNetworks();
+  renderActions();
+}
+
+init();
+
+// Auto-refresh
+setInterval(() => {
+  const bar = document.getElementById('refreshBar');
+  bar.classList.add('active');
+  setTimeout(() => bar.classList.remove('active'), 1200);
+  updateTimestamp();
+}, 60000);
+
+// Resize chart
+window.addEventListener('resize', () => {
+  clearTimeout(window._resizeTimer);
+  window._resizeTimer = setTimeout(renderProjectionChart, 200);
+});
+</script>
+</body>
+</html>
