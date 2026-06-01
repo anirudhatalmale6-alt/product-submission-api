@@ -1,0 +1,15 @@
+{
+  "audit": "Phase 19 CTA Coverage",
+  "date": "2026-06-01T21:10:10.911657Z",
+  "total_posts": 460,
+  "posts_with_cta": 460,
+  "posts_without_cta": 0,
+  "cta_rate_pct": 100.0,
+  "cta_by_type": {
+    "internal_link": 460,
+    "affiliate": 459,
+    "newsletter": 193,
+    "category_browse": 1
+  },
+  "posts_missing_cta": []
+}

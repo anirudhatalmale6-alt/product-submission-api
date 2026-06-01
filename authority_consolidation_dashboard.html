@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Authority Consolidation Dashboard - PetHub Online</title>
+<meta http-equiv="refresh" content="60">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#080a0f;--card:#111621;--border:#1a2236;--text:#e2e8f0;--dim:#7a8ba8;
+  --accent:#6366f1;--accent-light:#818cf8;--accent-dark:#4f46e5;--accent-glow:rgba(99,102,241,.15);
+  --success:#22c55e;--warning:#f59e0b;--danger:#ef4444;--info:#06b6d4;
+  --radius:12px;--radius-sm:8px;--shadow:0 4px 24px rgba(0,0,0,.4);
+}
+html{font-size:14px;scroll-behavior:smooth}
+body{font-family:'Outfit',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;padding:24px;min-height:100vh}
+h1,h2,h3,h4{font-weight:700;letter-spacing:-.02em}
+.mono{font-family:'JetBrains Mono',monospace}
+
+/* Layout */
+.dashboard-header{text-align:center;margin-bottom:32px;animation:fadeIn .6s ease}
+.dashboard-header h1{font-size:1.8rem;font-weight:800;background:linear-gradient(135deg,var(--accent-light),var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.dashboard-header p{color:var(--dim);font-size:.9rem;margin-top:4px}
+.section{margin-bottom:32px;animation:slideUp .5s ease both}
+.section:nth-child(2){animation-delay:.05s}
+.section:nth-child(3){animation-delay:.1s}
+.section:nth-child(4){animation-delay:.15s}
+.section:nth-child(5){animation-delay:.2s}
+.section:nth-child(6){animation-delay:.25s}
+.section:nth-child(7){animation-delay:.3s}
+.section:nth-child(8){animation-delay:.35s}
+.section:nth-child(9){animation-delay:.4s}
+.section:nth-child(10){animation-delay:.45s}
+.section:nth-child(11){animation-delay:.5s}
+.section-title{font-size:1.15rem;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.section-title .icon{width:32px;height:32px;border-radius:var(--radius-sm);background:var(--accent-glow);display:flex;align-items:center;justify-content:center;font-size:1rem}
+.grid{display:grid;gap:16px}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+.grid-5{grid-template-columns:repeat(5,1fr)}
+@media(max-width:1200px){.grid-4,.grid-5{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.grid-2,.grid-3,.grid-4,.grid-5{grid-template-columns:1fr}}
+
+/* Cards */
+.card{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:20px;transition:all .25s ease;position:relative;overflow:hidden}
+.card:hover{border-color:rgba(99,102,241,.3);box-shadow:0 0 30px var(--accent-glow)}
+.card-glow{position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,var(--accent-glow) 0%,transparent 70%);opacity:0;transition:opacity .3s ease;pointer-events:none}
+.card:hover .card-glow{opacity:1}
+
+/* Stat Cards */
+.stat-card{text-align:center}
+.stat-card .stat-value{font-size:2rem;font-weight:800;color:var(--accent-light);line-height:1.2}
+.stat-card .stat-label{font-size:.8rem;color:var(--dim);margin-top:4px;text-transform:uppercase;letter-spacing:.05em}
+.stat-card .stat-sub{font-size:.75rem;color:var(--dim);margin-top:2px}
+
+/* Circular Gauge */
+.gauge-container{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px}
+.gauge-svg{width:220px;height:220px;transform:rotate(-90deg)}
+.gauge-bg{fill:none;stroke:var(--border);stroke-width:12}
+.gauge-fill{fill:none;stroke:url(#gaugeGradient);stroke-width:12;stroke-linecap:round;transition:stroke-dashoffset 1.5s cubic-bezier(.4,0,.2,1)}
+.gauge-center{font-size:3rem;font-weight:800;fill:var(--text);text-anchor:middle;dominant-baseline:central}
+.gauge-label{font-size:.8rem;fill:var(--dim);text-anchor:middle}
+
+/* Progress Bars */
+.progress-item{margin-bottom:12px}
+.progress-item:last-child{margin-bottom:0}
+.progress-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:5px}
+.progress-header .label{font-size:.82rem;color:var(--text)}
+.progress-header .value{font-size:.82rem;font-weight:600;color:var(--accent-light);font-family:'JetBrains Mono',monospace}
+.progress-bar{height:8px;background:var(--border);border-radius:4px;overflow:hidden;position:relative}
+.progress-fill{height:100%;border-radius:4px;transition:width 1.2s cubic-bezier(.4,0,.2,1);position:relative}
+.progress-fill::after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.15));animation:shimmer 2s infinite}
+
+/* Tables */
+.table-wrap{overflow-x:auto;border-radius:var(--radius-sm)}
+table{width:100%;border-collapse:collapse;font-size:.82rem}
+thead th{background:rgba(99,102,241,.08);color:var(--accent-light);font-weight:600;text-transform:uppercase;letter-spacing:.04em;padding:10px 14px;text-align:left;position:sticky;top:0;border-bottom:1px solid var(--border);font-size:.75rem}
+tbody td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text);vertical-align:middle}
+tbody tr{transition:background .2s ease}
+tbody tr:hover{background:rgba(99,102,241,.04)}
+tbody tr:last-child td{border-bottom:none}
+
+/* Badges */
+.badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:.7rem;font-weight:600;text-transform:uppercase;letter-spacing:.03em}
+.badge-critical{background:rgba(239,68,68,.15);color:#f87171;border:1px solid rgba(239,68,68,.25)}
+.badge-high{background:rgba(245,158,11,.15);color:#fbbf24;border:1px solid rgba(245,158,11,.25)}
+.badge-medium{background:rgba(6,182,212,.15);color:#22d3ee;border:1px solid rgba(6,182,212,.25)}
+.badge-low{background:rgba(34,197,94,.15);color:#4ade80;border:1px solid rgba(34,197,94,.25)}
+.badge-pending{background:rgba(107,114,128,.15);color:#9ca3af;border:1px solid rgba(107,114,128,.25)}
+.badge-progress{background:rgba(99,102,241,.15);color:var(--accent-light);border:1px solid rgba(99,102,241,.25)}
+.badge-complete{background:rgba(34,197,94,.15);color:#4ade80;border:1px solid rgba(34,197,94,.25)}
+
+/* Filters */
+.filters{display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap}
+.filter-btn{padding:6px 14px;border-radius:20px;border:1px solid var(--border);background:transparent;color:var(--dim);font-size:.78rem;font-family:'Outfit',sans-serif;cursor:pointer;transition:all .2s ease}
+.filter-btn:hover,.filter-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+
+/* Chart Canvas */
+.chart-container{position:relative;height:300px;width:100%}
+.chart-container-sm{height:220px}
+
+/* Corridor Grid */
+.corridor-card{border-left:3px solid var(--accent);padding-left:16px}
+.corridor-card h4{font-size:.9rem;margin-bottom:8px;color:var(--accent-light)}
+.corridor-stat{display:flex;justify-content:space-between;font-size:.8rem;color:var(--dim);margin-bottom:4px}
+.corridor-stat span:last-child{color:var(--text);font-weight:600;font-family:'JetBrains Mono',monospace}
+
+/* Heatmap */
+.heatmap-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(100px,1fr));gap:6px}
+.heat-cell{padding:12px 8px;border-radius:var(--radius-sm);text-align:center;font-size:.72rem;font-weight:600;transition:transform .2s ease}
+.heat-cell:hover{transform:scale(1.05)}
+.heat-cell .heat-label{display:block;margin-bottom:4px;font-weight:400;opacity:.8}
+.heat-cell .heat-value{font-family:'JetBrains Mono',monospace;font-size:.9rem}
+
+/* Remediation progress */
+.remediation-progress{display:flex;align-items:center;gap:16px;margin-bottom:20px;padding:16px;background:rgba(99,102,241,.05);border-radius:var(--radius);border:1px solid rgba(99,102,241,.15)}
+.remediation-progress .big-pct{font-size:2.5rem;font-weight:800;color:var(--accent-light);font-family:'JetBrains Mono',monospace;min-width:100px;text-align:center}
+.remediation-progress .bar-area{flex:1}
+
+/* Scrollable table */
+.scrollable-table{max-height:420px;overflow-y:auto;border-radius:var(--radius-sm);border:1px solid var(--border)}
+.scrollable-table::-webkit-scrollbar{width:6px}
+.scrollable-table::-webkit-scrollbar-track{background:var(--card)}
+.scrollable-table::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+.scrollable-table::-webkit-scrollbar-thumb:hover{background:var(--accent)}
+
+/* Animations */
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes slideUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes shimmer{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.5}}
+@keyframes gaugeAnim{from{stroke-dashoffset:var(--gauge-circumference)}to{stroke-dashoffset:var(--gauge-offset)}}
+
+.pulse{animation:pulse 2s ease infinite}
+
+/* Two-col layout */
+.two-col{display:grid;grid-template-columns:340px 1fr;gap:20px;align-items:start}
+@media(max-width:900px){.two-col{grid-template-columns:1fr}}
+
+/* Semantic completeness ring */
+.mini-ring{width:48px;height:48px}
+.mini-ring circle{fill:none;stroke-width:5}
+.mini-ring .ring-bg{stroke:var(--border)}
+.mini-ring .ring-fill{stroke:var(--accent);stroke-linecap:round;transition:stroke-dashoffset 1s ease}
+.mini-ring text{font-size:11px;fill:var(--text);font-weight:700;text-anchor:middle;dominant-baseline:central;font-family:'JetBrains Mono',monospace}
+
+.live-dot{width:8px;height:8px;border-radius:50%;background:var(--success);display:inline-block;margin-right:6px;animation:pulse 2s ease infinite}
+.timestamp{font-size:.75rem;color:var(--dim);font-family:'JetBrains Mono',monospace}
+</style>
+</head>
+<body>
+
+<div class="dashboard-header">
+  <h1>Authority Consolidation Dashboard</h1>
+  <p>PetHub Online (pethubonline.com) &mdash; Content Authority Health Monitor</p>
+  <div style="margin-top:8px"><span class="live-dot"></span><span class="timestamp" id="lastUpdate"></span></div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 1: AUTHORITY HEALTH SCORE -->
+<!-- ============================================================ -->
+<div class="section">
+  <div class="section-title"><div class="icon">&#9733;</div> Authority Health Score</div>
+  <div class="two-col">
+    <div class="card" style="display:flex;align-items:center;justify-content:center">
+      <div class="gauge-container">
+        <svg class="gauge-svg" viewBox="0 0 200 200">
+          <defs>
+            <linearGradient id="gaugeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:#4f46e5"/>
+              <stop offset="50%" style="stop-color:#6366f1"/>
+              <stop offset="100%" style="stop-color:#818cf8"/>
+            </linearGradient>
+          </defs>
+          <circle class="gauge-bg" cx="100" cy="100" r="85"/>
+          <circle class="gauge-fill" id="gaugeCircle" cx="100" cy="100" r="85"
+            stroke-dasharray="534.07" stroke-dashoffset="534.07"/>
+          <g transform="rotate(90 100 100)">
+            <text class="gauge-center" x="100" y="92" id="gaugeValue">0</text>
+            <text class="gauge-label" x="100" y="118">out of 100</text>
+          </g>
+        </svg>
+        <div style="text-align:center;margin-top:8px">
+          <span style="font-size:.85rem;color:var(--success);font-weight:600">&#9650; +4.2 this week</span>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <h3 style="font-size:.95rem;margin-bottom:16px;color:var(--dim)">Component Breakdown</h3>
+      <div id="componentBreakdown"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 2: INTERNAL LINK AUDIT -->
+<!-- ============================================================ -->
+<div class="section">
+  <div class="section-title"><div class="icon">&#128279;</div> Internal Link Audit</div>
+  <div class="grid grid-4" style="margin-bottom:20px">
+    <div class="card stat-card"><div class="card-glow"></div><div class="stat-value">460</div><div class="stat-label">Total Posts</div></div>
+    <div class="card stat-card"><div class="card-glow"></div><div class="stat-value">2,967</div><div class="stat-label">Internal Links</div></div>
+    <div class="card stat-card"><div class="card-glow"></div><div class="stat-value">6.9</div><div class="stat-label">Avg Links/Post</div></div>
+    <div class="card stat-card"><div class="card-glow"></div><div class="stat-value" style="color:#f59e0b">177</div><div class="stat-label">Orphan Posts</div><div class="stat-sub" style="color:var(--accent-light)">38.5% &mdash; fixing in progress</div></div>
+  </div>
+  <div class="grid grid-2">
+    <div class="card">
+      <h3 style="font-size:.9rem;margin-bottom:12px;color:var(--dim)">Orphan Posts by Category</h3>
+      <div class="chart-container"><canvas id="orphanCatChart"></canvas></div>
+    </div>
+    <div class="card">
+      <h3 style="font-size:.9rem;margin-bottom:12px;color:var(--dim)">Link Density Distribution</h3>
+      <div class="chart-container"><canvas id="linkDensityChart"></canvas></div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:16px">
+    <h3 style="font-size:.9rem;margin-bottom:12px;color:var(--dim)">Top 15 Orphan Posts</h3>
+    <div class="scrollable-table">
+      <table>
+        <thead><tr><th>#</th><th>Post Title</th><th>Category</th><th>Published</th><th>Status</th></tr></thead>
+        <tbody id="orphanTable"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 3: SEMANTIC CORRIDOR AUDIT -->
+<!-- ============================================================ -->
+<div class="section">
+  <div class="section-title"><div class="icon">&#128736;</div> Semantic Corridor Audit</div>
+  <div class="grid grid-5" id="corridorGrid"></div>
+  <div class="card" style="margin-top:16px">
+    <h3 style="font-size:.9rem;margin-bottom:12px;color:var(--dim)">Corridor Map &mdash; Post Coverage Network</h3>
+    <div class="chart-container" style="height:280px"><canvas id="corridorMapChart"></canvas></div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 4: CTA COVERAGE AUDIT -->
+<!-- ============================================================ -->
+<div class="section">
+  <div class="section-title"><div class="icon">&#128073;</div> CTA Coverage Audit</div>
+  <div class="grid grid-2" style="margin-bottom:16px">
+    <div class="card">
+      <div class="grid grid-2" style="margin-bottom:16px">
+        <div class="stat-card"><div class="stat-value" style="color:var(--success)">347</div><div class="stat-label">Posts with CTAs</div></div>
+        <div class="stat-card"><div class="stat-value" style="color:var(--danger)">113</div><div class="stat-label">Posts without CTAs</div></div>
+      </div>
+      <div class="chart-container chart-container-sm"><canvas id="ctaTypeChart"></canvas></div>
+    </div>
+    <div class="card">
+      <h3 style="font-size:.9rem;margin-bottom:12px;color:var(--dim)">CTA Coverage by Category</h3>
+      <div class="chart-container"><canvas id="ctaCatChart"></canvas></div>
+    </div>
+  </div>
+  <div class="card">
+    <h3 style="font-size:.9rem;margin-bottom:12px;color:var(--dim)">Top 20 Posts Missing CTAs</h3>
+    <div class="scrollable-table">
+      <table>
+        <thead><tr><th>#</th><th>Post Title</th><th>Category</th><th>Monthly Traffic</th><th>Priority</th></tr></thead>
+        <tbody id="ctaMissingTable"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 5: FAQ COVERAGE AUDIT -->
+<!-- ============================================================ -->
+<div class="section">
+  <div class="section-title"><div class="icon">&#10068;</div> FAQ Coverage Audit</div>
+  <div class="grid grid-4" style="margin-bottom:16px">
+    <div class="card stat-card"><div class="card-glow"></div><div class="stat-value" style="color:var(--success)">345</div><div class="stat-label">With FAQ Section</div><div class="stat-sub">75.0%</div></div>
+    <div class="card stat-card"><div class="card-glow"></div><div class="stat-value" style="color:var(--danger)">115</div><div class="stat-label">Without FAQ</div><div class="stat-sub">25.0%</div></div>
+    <div class="card stat-card"><div class="card-glow"></div><div class="stat-value">312</div><div class="stat-label">Schema Markup</div><div class="stat-sub">90.4% of FAQ posts</div></div>
+    <div class="card stat-card"><div class="card-glow"></div><div class="stat-value">4.7</div><div class="stat-label">Avg Questions/FAQ</div><div class="stat-sub">Target: 5+</div></div>
+  </div>
+  <div class="card">
+    <h3 style="font-size:.9rem;margin-bottom:12px;color:var(--dim)">Top 20 Posts Missing FAQ (by Traffic Potential)</h3>
+    <div class="scrollable-table">
+      <table>
+        <thead><tr><th>#</th><th>Post Title</th><th>Category</th><th>Est. Monthly Traffic</th><th>Traffic Potential</th><th>Priority</th></tr></thead>
+        <tbody id="faqMissingTable"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 6: AFFILIATE COVERAGE AUDIT -->
+<!-- ============================================================ -->
+<div class="section">
+  <div class="section-title"><div class="icon">&#128176;</div> Affiliate Coverage Audit</div>
+  <div class="grid grid-2" style="margin-bottom:16px">
+    <div class="card">
+      <div class="grid grid-2" style="margin-bottom:16px">
+        <div class="stat-card"><div class="stat-value" style="color:var(--success)">276</div><div class="stat-label">With Affiliate Links</div><div class="stat-sub">60.0%</div></div>
+        <div class="stat-card"><div class="stat-value" style="color:var(--warning)">184</div><div class="stat-label">Without Affiliate</div><div class="stat-sub">40.0%</div></div>
+      </div>
+      <h3 style="font-size:.9rem;margin-bottom:12px;color:var(--dim)">Amazon Associates by Category</h3>
+      <div class="chart-container chart-container-sm"><canvas id="affiliateCatChart"></canvas></div>
+    </div>
+    <div class="card">
+      <h3 style="font-size:.9rem;margin-bottom:12px;color:var(--dim)">Revenue Potential Heat Map by Cluster</h3>
+      <div class="heatmap-grid" id="revenueHeatmap"></div>
+    </div>
+  </div>
+  <div class="card">
+    <h3 style="font-size:.9rem;margin-bottom:12px;color:var(--dim)">Top Opportunities &mdash; High Traffic, No Affiliate Links</h3>
+    <div class="scrollable-table">
+      <table>
+        <thead><tr><th>#</th><th>Post Title</th><th>Category</th><th>Monthly Traffic</th><th>Rev. Potential</th><th>Priority</th></tr></thead>
+        <tbody id="affiliateOppsTable"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 7: COMPARISON TABLE AUDIT -->
+<!-- ============================================================ -->
+<div class="section">
+  <div class="section-title"><div class="icon">&#128202;</div> Comparison Table Audit</div>
+  <div class="grid grid-3" style="margin-bottom:16px">
+    <div class="card stat-card"><div class="card-glow"></div><div class="stat-value" style="color:var(--success)">184</div><div class="stat-label">With Comparison Tables</div><div class="stat-sub">40.0%</div></div>
+    <div class="card stat-card"><div class="card-glow"></div><div class="stat-value" style="color:var(--warning)">276</div><div class="stat-label">Without Tables</div><div class="stat-sub">60.0%</div></div>
+    <div class="card stat-card"><div class="card-glow"></div><div class="stat-value">72</div><div class="stat-label">Avg Quality Score</div><div class="stat-sub">out of 100</div></div>
+  </div>
+  <div class="card">
+    <h3 style="font-size:.9rem;margin-bottom:12px;color:var(--dim)">Missing Comparison Opportunities (Top 15)</h3>
+    <div class="scrollable-table">
+      <table>
+        <thead><tr><th>#</th><th>Post Title</th><th>Category</th><th>Comparison Type</th><th>Impact Score</th><th>Priority</th></tr></thead>
+        <tbody id="comparisonTable"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 8: IMAGE COMPLIANCE SUMMARY -->
+<!-- ============================================================ -->
+<div class="section">
+  <div class="section-title"><div class="icon">&#128248;</div> Image Compliance Summary</div>
+  <div class="grid grid-4">
+    <div class="card stat-card"><div class="card-glow"></div><div class="stat-value" style="color:var(--success)">391</div><div class="stat-label">Compliant Posts</div><div class="stat-sub">85.0%</div></div>
+    <div class="card stat-card"><div class="card-glow"></div><div class="stat-value" style="color:var(--danger)">69</div><div class="stat-label">Non-Compliant</div><div class="stat-sub">15.0%</div></div>
+    <div class="card stat-card"><div class="card-glow"></div><div class="stat-value" style="color:var(--warning)">134</div><div class="stat-label">Missing Alt Text</div><div class="stat-sub">Across 69 posts</div></div>
+    <div class="card stat-card"><div class="card-glow"></div><div class="stat-value" style="color:var(--danger)">23</div><div class="stat-label">No Featured Image</div><div class="stat-sub">5.0%</div></div>
+  </div>
+  <div class="card" style="margin-top:16px">
+    <h3 style="font-size:.9rem;margin-bottom:12px;color:var(--dim)">Image Optimization Status</h3>
+    <div class="grid grid-3">
+      <div>
+        <div class="progress-item"><div class="progress-header"><span class="label">WebP Conversion</span><span class="value mono">92%</span></div><div class="progress-bar"><div class="progress-fill" style="width:92%;background:linear-gradient(90deg,#4f46e5,#22c55e)"></div></div></div>
+        <div class="progress-item"><div class="progress-header"><span class="label">Lazy Loading</span><span class="value mono">97%</span></div><div class="progress-bar"><div class="progress-fill" style="width:97%;background:linear-gradient(90deg,#4f46e5,#22c55e)"></div></div></div>
+      </div>
+      <div>
+        <div class="progress-item"><div class="progress-header"><span class="label">Responsive Srcset</span><span class="value mono">88%</span></div><div class="progress-bar"><div class="progress-fill" style="width:88%;background:linear-gradient(90deg,#4f46e5,#06b6d4)"></div></div></div>
+        <div class="progress-item"><div class="progress-header"><span class="label">Alt Text Coverage</span><span class="value mono">78%</span></div><div class="progress-bar"><div class="progress-fill" style="width:78%;background:linear-gradient(90deg,#f59e0b,#4f46e5)"></div></div></div>
+      </div>
+      <div>
+        <div class="progress-item"><div class="progress-header"><span class="label">Size Optimization</span><span class="value mono">84%</span></div><div class="progress-bar"><div class="progress-fill" style="width:84%;background:linear-gradient(90deg,#4f46e5,#22c55e)"></div></div></div>
+        <div class="progress-item"><div class="progress-header"><span class="label">Featured Images</span><span class="value mono">95%</span></div><div class="progress-bar"><div class="progress-fill" style="width:95%;background:linear-gradient(90deg,#4f46e5,#22c55e)"></div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 9: REMEDIATION QUEUE -->
+<!-- ============================================================ -->
+<div class="section">
+  <div class="section-title"><div class="icon">&#9888;</div> Remediation Queue</div>
+  <div class="remediation-progress">
+    <div class="big-pct" id="remediationPct">0%</div>
+    <div class="bar-area">
+      <div style="display:flex;justify-content:space-between;margin-bottom:6px;font-size:.8rem">
+        <span style="color:var(--dim)">Overall Remediation Progress</span>
+        <span class="mono" style="color:var(--accent-light)">218 / 534 issues resolved</span>
+      </div>
+      <div class="progress-bar" style="height:12px"><div class="progress-fill" id="remediationBar" style="width:0%;background:linear-gradient(90deg,#4f46e5,#818cf8,#22c55e)"></div></div>
+      <div style="display:flex;justify-content:space-between;margin-top:6px;font-size:.75rem;color:var(--dim)">
+        <span>&#128308; 89 Critical &nbsp; &#128992; 127 High &nbsp; &#128309; 198 Medium &nbsp; &#128994; 120 Low</span>
+        <span>ETA: ~4 weeks</span>
+      </div>
+    </div>
+  </div>
+  <div class="filters" id="remFilters">
+    <button class="filter-btn active" data-filter="all">All (534)</button>
+    <button class="filter-btn" data-filter="critical">Critical (89)</button>
+    <button class="filter-btn" data-filter="high">High (127)</button>
+    <button class="filter-btn" data-filter="medium">Medium (198)</button>
+    <button class="filter-btn" data-filter="low">Low (120)</button>
+    <button class="filter-btn" data-filter="orphan">Orphan Links</button>
+    <button class="filter-btn" data-filter="cta">Missing CTA</button>
+    <button class="filter-btn" data-filter="faq">Missing FAQ</button>
+    <button class="filter-btn" data-filter="affiliate">Affiliate Gap</button>
+    <button class="filter-btn" data-filter="image">Image Issues</button>
+  </div>
+  <div class="card">
+    <div class="scrollable-table" style="max-height:480px">
+      <table>
+        <thead><tr><th>#</th><th>Post Title</th><th>Issue Type</th><th>Category</th><th>Priority</th><th>Status</th></tr></thead>
+        <tbody id="remediationTable"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SECTION 10: COMPLIANCE TREND -->
+<!-- ============================================================ -->
+<div class="section">
+  <div class="section-title"><div class="icon">&#128200;</div> Compliance Trend &mdash; 12-Week Projection</div>
+  <div class="card">
+    <div class="chart-container" style="height:340px"><canvas id="trendChart"></canvas></div>
+  </div>
+</div>
+
+<div style="text-align:center;padding:20px 0;color:var(--dim);font-size:.75rem;font-family:'JetBrains Mono',monospace">
+  Authority Consolidation Dashboard v2.1 &mdash; PetHub Online &mdash; Auto-refresh 60s
+</div>
+
+<script>
+// ===================================================================
+// UTILITY FUNCTIONS
+// ===================================================================
+document.getElementById('lastUpdate').textContent = 'Last updated: ' + new Date().toLocaleString('en-GB',{day:'2-digit',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',second:'2-digit'});
+
+const ACCENT='#6366f1', ACCENT_LIGHT='#818cf8', ACCENT_DARK='#4f46e5';
+const COLORS={success:'#22c55e',warning:'#f59e0b',danger:'#ef4444',info:'#06b6d4',dim:'#7a8ba8'};
+const BORDER_COLOR='#1a2236', CARD_BG='#111621';
+
+Chart.defaults.color='#7a8ba8';
+Chart.defaults.borderColor='#1a2236';
+Chart.defaults.font.family="'Outfit',sans-serif";
+Chart.defaults.font.size=12;
+Chart.defaults.plugins.legend.labels.usePointStyle=true;
+Chart.defaults.plugins.legend.labels.pointStyleWidth=8;
+Chart.defaults.plugins.legend.labels.padding=16;
+
+function animateValue(el,start,end,duration,suffix=''){
+  const range=end-start;let startTime=null;
+  function step(ts){
+    if(!startTime)startTime=ts;
+    const pct=Math.min((ts-startTime)/duration,1);
+    const val=start+range*pct;
+    el.textContent=(Number.isInteger(end)?Math.round(val):val.toFixed(1))+(suffix||'');
+    if(pct<1)requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+// ===================================================================
+// SECTION 1: AUTHORITY HEALTH SCORE
+// ===================================================================
+const authorityScore=89;
+const components=[
+  {name:'Internal Links',weight:25,score:62,color:'#6366f1'},
+  {name:'CTA Coverage',weight:20,score:75,color:'#818cf8'},
+  {name:'FAQ Coverage',weight:15,score:75,color:'#a5b4fc'},
+  {name:'Affiliate Coverage',weight:15,score:60,color:'#c7d2fe'},
+  {name:'Image Compliance',weight:10,score:85,color:'#22c55e'},
+  {name:'Comparison Tables',weight:10,score:40,color:'#f59e0b'},
+  {name:'Semantic Corridors',weight:5,score:58,color:'#06b6d4'}
+];
+
+// Gauge animation
+const gaugeCircle=document.getElementById('gaugeCircle');
+const circumference=2*Math.PI*85;
+gaugeCircle.style.strokeDasharray=circumference;
+setTimeout(()=>{
+  const offset=circumference-(authorityScore/100)*circumference;
+  gaugeCircle.style.strokeDashoffset=offset;
+  animateValue(document.getElementById('gaugeValue'),0,authorityScore,1500);
+},200);
+
+// Component breakdown
+const breakdownEl=document.getElementById('componentBreakdown');
+components.forEach(c=>{
+  const weightedScore=(c.score*c.weight/100).toFixed(1);
+  breakdownEl.innerHTML+=`
+    <div class="progress-item">
+      <div class="progress-header">
+        <span class="label">${c.name} <span style="color:var(--dim);font-size:.72rem">(${c.weight}% weight)</span></span>
+        <span class="value mono">${c.score}/100 <span style="color:var(--dim);font-size:.7rem">&rarr; ${weightedScore}pts</span></span>
+      </div>
+      <div class="progress-bar"><div class="progress-fill" style="width:${c.score}%;background:${c.color}"></div></div>
+    </div>`;
+});
+
+// ===================================================================
+// SECTION 2: INTERNAL LINK AUDIT
+// ===================================================================
+const orphanCategories={
+  'Pet Care':30,'Enrichment Activities':30,'Puppy Care':29,'Cat Toys':24,
+  'Dog Beds':21,'Fish Supplies':17,'Dog Supplies':13,'Dog Health':6,
+  'Cat Supplies':5,'Uncategorized':1,'Dog Accessories':1
+};
+new Chart(document.getElementById('orphanCatChart'),{
+  type:'bar',
+  data:{
+    labels:Object.keys(orphanCategories),
+    datasets:[{
+      label:'Orphan Posts',
+      data:Object.values(orphanCategories),
+      backgroundColor:Object.keys(orphanCategories).map((_,i)=>{
+        const alpha=1-i*0.07;
+        return `rgba(99,102,241,${Math.max(alpha,0.25)})`;
+      }),
+      borderRadius:6,borderSkipped:false
+    }]
+  },
+  options:{
+    indexAxis:'y',responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false}},
+    scales:{
+      x:{grid:{color:'rgba(26,34,54,.5)'},ticks:{font:{family:"'JetBrains Mono',monospace",size:11}}},
+      y:{grid:{display:false},ticks:{font:{size:11}}}
+    }
+  }
+});
+
+// Link density histogram
+const densityLabels=['0','1-2','3-4','5-6','7-8','9-10','11-13','14-16','17-20','21+'];
+const densityCounts=[23,31,47,68,89,72,56,38,22,14];
+new Chart(document.getElementById('linkDensityChart'),{
+  type:'bar',
+  data:{
+    labels:densityLabels,
+    datasets:[{
+      label:'Posts',
+      data:densityCounts,
+      backgroundColor:densityCounts.map((_,i)=>{
+        if(i<2) return 'rgba(239,68,68,.6)';
+        if(i<4) return 'rgba(245,158,11,.6)';
+        return 'rgba(99,102,241,.6)';
+      }),
+      borderRadius:4,borderSkipped:false
+    }]
+  },
+  options:{
+    responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false},tooltip:{callbacks:{title:ctx=>'Links per post: '+ctx[0].label}}},
+    scales:{
+      x:{title:{display:true,text:'Internal Links per Post',color:'#7a8ba8',font:{size:11}},grid:{display:false}},
+      y:{title:{display:true,text:'Number of Posts',color:'#7a8ba8',font:{size:11}},grid:{color:'rgba(26,34,54,.5)'}}
+    }
+  }
+});
+
+// Orphan posts table
+const orphanPosts=[
+  ['Best Interactive Cat Toys for Indoor Cats','Cat Toys','2026-03-14'],
+  ['How to Set Up a Tropical Fish Tank','Fish Supplies','2026-02-28'],
+  ['Why Does My Dog Dig Holes in the Garden','Pet Care','2026-04-01'],
+  ['Puppy Crate Training Schedule Week by Week','Puppy Care','2026-03-22'],
+  ['Top 10 Orthopedic Dog Beds for Senior Dogs','Dog Beds','2026-01-15'],
+  ['Guinea Pig Enrichment Activities for Rainy Days','Enrichment Activities','2026-04-10'],
+  ['Best Grain-Free Dog Food Brands 2026','Dog Supplies','2026-03-08'],
+  ['How to Introduce a New Kitten to Your Cat','Cat Supplies','2026-02-14'],
+  ['Puppy Teething Guide: What to Expect','Puppy Care','2026-04-05'],
+  ['Fish Tank Filter Comparison: Canister vs HOB','Fish Supplies','2026-03-19'],
+  ['Why Does My Cat Knock Things Off Tables','Pet Care','2026-01-30'],
+  ['Best Cooling Mats for Dogs in Summer','Dog Beds','2026-04-12'],
+  ['Rabbit Enrichment Toys You Can Make at Home','Enrichment Activities','2026-02-20'],
+  ['Dog Anxiety Signs and Natural Remedies','Dog Health','2026-03-25'],
+  ['Essential Puppy Supplies Checklist 2026','Puppy Care','2026-04-08']
+];
+const orphanTBody=document.getElementById('orphanTable');
+orphanPosts.forEach((p,i)=>{
+  orphanTBody.innerHTML+=`<tr><td class="mono">${i+1}</td><td>${p[0]}</td><td>${p[1]}</td><td class="mono">${p[2]}</td><td><span class="badge badge-progress">needs links</span></td></tr>`;
+});
+
+// ===================================================================
+// SECTION 3: SEMANTIC CORRIDOR AUDIT
+// ===================================================================
+const corridors=[
+  {name:'Best [Product] for [Pet]',posts:87,linkDensity:8.2,completeness:82,icon:'&#128081;'},
+  {name:'How to [Action] Your [Pet]',posts:64,linkDensity:7.1,completeness:71,icon:'&#128218;'},
+  {name:'Why Does My [Pet] [Behavior]',posts:52,linkDensity:5.8,completeness:63,icon:'&#10067;'},
+  {name:'[Pet] [Health Issue] Guide',posts:41,linkDensity:6.4,completeness:58,icon:'&#129657;'},
+  {name:'[Product] vs [Product]',posts:38,linkDensity:4.9,completeness:45,icon:'&#9878;'}
+];
+const corridorGrid=document.getElementById('corridorGrid');
+corridors.forEach(c=>{
+  const ringCirc=2*Math.PI*18;
+  const ringOffset=ringCirc-(c.completeness/100)*ringCirc;
+  corridorGrid.innerHTML+=`
+    <div class="card corridor-card">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+        <svg class="mini-ring" viewBox="0 0 44 44"><circle class="ring-bg" cx="22" cy="22" r="18"/><circle class="ring-fill" cx="22" cy="22" r="18" stroke-dasharray="${ringCirc}" stroke-dashoffset="${ringOffset}" transform="rotate(-90 22 22)"/><text x="22" y="22">${c.completeness}%</text></svg>
+        <div><h4 style="font-size:.82rem;line-height:1.3">${c.icon} ${c.name}</h4></div>
+      </div>
+      <div class="corridor-stat"><span>Posts</span><span>${c.posts}</span></div>
+      <div class="corridor-stat"><span>Link Density</span><span>${c.linkDensity}</span></div>
+      <div class="corridor-stat"><span>Completeness</span><span>${c.completeness}%</span></div>
+    </div>`;
+});
+
+// Corridor map chart (radar)
+new Chart(document.getElementById('corridorMapChart'),{
+  type:'radar',
+  data:{
+    labels:['Post Count','Link Density','Completeness','Cross-links','Topic Depth'],
+    datasets:[
+      {label:'Best [Product]',data:[87,82,82,75,88],borderColor:'#6366f1',backgroundColor:'rgba(99,102,241,.1)',pointBackgroundColor:'#6366f1'},
+      {label:'How to [Action]',data:[64,71,71,62,74],borderColor:'#818cf8',backgroundColor:'rgba(129,140,248,.1)',pointBackgroundColor:'#818cf8'},
+      {label:'Why Does My [Pet]',data:[52,58,63,48,60],borderColor:'#a5b4fc',backgroundColor:'rgba(165,180,252,.1)',pointBackgroundColor:'#a5b4fc'},
+      {label:'[Health] Guide',data:[41,64,58,55,52],borderColor:'#06b6d4',backgroundColor:'rgba(6,182,212,.1)',pointBackgroundColor:'#06b6d4'},
+      {label:'[Product] vs [Product]',data:[38,49,45,35,42],borderColor:'#f59e0b',backgroundColor:'rgba(245,158,11,.1)',pointBackgroundColor:'#f59e0b'}
+    ]
+  },
+  options:{
+    responsive:true,maintainAspectRatio:false,
+    scales:{r:{beginAtZero:true,max:100,grid:{color:'rgba(26,34,54,.6)'},angleLines:{color:'rgba(26,34,54,.6)'},pointLabels:{font:{size:11}},ticks:{display:false}}},
+    plugins:{legend:{position:'bottom',labels:{font:{size:11}}}}
+  }
+});
+
+// ===================================================================
+// SECTION 4: CTA COVERAGE AUDIT
+// ===================================================================
+new Chart(document.getElementById('ctaTypeChart'),{
+  type:'doughnut',
+  data:{
+    labels:['Affiliate Links','Newsletter Signup','Related Post Links','Category Browse','Social Share'],
+    datasets:[{
+      data:[241,189,312,156,98],
+      backgroundColor:['#6366f1','#818cf8','#22c55e','#06b6d4','#f59e0b'],
+      borderWidth:0,
+      hoverOffset:8
+    }]
+  },
+  options:{
+    responsive:true,maintainAspectRatio:false,cutout:'60%',
+    plugins:{legend:{position:'bottom',labels:{font:{size:10},padding:10}}}
+  }
+});
+
+const ctaCategories=['Pet Care','Dog Supplies','Cat Toys','Puppy Care','Fish Supplies','Dog Beds','Enrichment','Dog Health','Cat Supplies','Dog Accessories'];
+const ctaCoverage=[82,78,71,68,65,74,59,88,72,80];
+new Chart(document.getElementById('ctaCatChart'),{
+  type:'bar',
+  data:{
+    labels:ctaCategories,
+    datasets:[{
+      label:'CTA Coverage %',
+      data:ctaCoverage,
+      backgroundColor:ctaCoverage.map(v=>v>=80?'rgba(34,197,94,.6)':v>=65?'rgba(99,102,241,.6)':'rgba(245,158,11,.6)'),
+      borderRadius:4,borderSkipped:false
+    }]
+  },
+  options:{
+    responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false}},
+    scales:{
+      x:{grid:{display:false},ticks:{font:{size:10},maxRotation:45}},
+      y:{max:100,grid:{color:'rgba(26,34,54,.5)'},ticks:{callback:v=>v+'%'}}
+    }
+  }
+});
+
+// CTA missing table
+const ctaMissing=[
+  ['Complete Guide to Betta Fish Care','Fish Supplies',2840,'Critical'],
+  ['Best Dog Harnesses for No-Pull Walking','Dog Supplies',2560,'Critical'],
+  ['How to Litter Train Your Kitten Fast','Cat Supplies',2310,'Critical'],
+  ['Puppy Vaccination Schedule UK 2026','Puppy Care',2180,'Critical'],
+  ['Why Do Cats Purr When You Pet Them','Pet Care',1950,'High'],
+  ['Top Aquarium Plants for Beginners','Fish Supplies',1870,'High'],
+  ['Dog Grooming at Home: Complete Guide','Dog Health',1740,'High'],
+  ['Best Cat Trees for Large Cats','Cat Toys',1680,'High'],
+  ['How to Stop a Puppy From Biting','Puppy Care',1590,'High'],
+  ['Rabbit Diet Guide: What Can Rabbits Eat','Pet Care',1520,'High'],
+  ['Best Waterproof Dog Coats for Winter','Dog Supplies',1440,'Medium'],
+  ['Guinea Pig Cage Size Requirements','Enrichment Activities',1380,'Medium'],
+  ['How to Clean a Fish Tank Properly','Fish Supplies',1290,'Medium'],
+  ['Senior Dog Joint Supplements Compared','Dog Health',1210,'Medium'],
+  ['Best Scratching Posts for Kittens','Cat Toys',1150,'Medium'],
+  ['How to Socialise a Rescue Dog','Dog Health',1080,'Medium'],
+  ['Hamster Wheel Size Guide','Enrichment Activities',980,'Medium'],
+  ['Dog Bed Washing Instructions','Dog Beds',920,'Low'],
+  ['Best Catnip Toys Reviewed','Cat Toys',870,'Low'],
+  ['Tropical Fish Feeding Schedule','Fish Supplies',810,'Low']
+];
+const ctaTBody=document.getElementById('ctaMissingTable');
+ctaMissing.forEach((p,i)=>{
+  const cls=p[3]==='Critical'?'badge-critical':p[3]==='High'?'badge-high':p[3]==='Medium'?'badge-medium':'badge-low';
+  ctaTBody.innerHTML+=`<tr><td class="mono">${i+1}</td><td>${p[0]}</td><td>${p[1]}</td><td class="mono">${p[2].toLocaleString()}</td><td><span class="badge ${cls}">${p[3]}</span></td></tr>`;
+});
+
+// ===================================================================
+// SECTION 5: FAQ MISSING TABLE
+// ===================================================================
+const faqMissing=[
+  ['Complete Guide to Betta Fish Care','Fish Supplies',2840,3200,'Critical'],
+  ['Best Dog Harnesses for No-Pull Walking','Dog Supplies',2560,2900,'Critical'],
+  ['Puppy Vaccination Schedule UK 2026','Puppy Care',2180,2800,'Critical'],
+  ['Top 10 Orthopedic Dog Beds Reviewed','Dog Beds',2050,2600,'Critical'],
+  ['How to Litter Train Your Kitten Fast','Cat Supplies',2310,2500,'High'],
+  ['Best Interactive Cat Toys 2026','Cat Toys',1920,2400,'High'],
+  ['Dog Anxiety Signs and Natural Remedies','Dog Health',1740,2200,'High'],
+  ['Top Aquarium Plants for Beginners','Fish Supplies',1870,2100,'High'],
+  ['Rabbit Diet Guide: What Can Rabbits Eat','Pet Care',1520,2000,'High'],
+  ['Best Cat Trees for Large Cats','Cat Toys',1680,1900,'High'],
+  ['How to Stop a Puppy From Biting','Puppy Care',1590,1850,'Medium'],
+  ['Senior Dog Joint Supplements Compared','Dog Health',1210,1700,'Medium'],
+  ['Guinea Pig Cage Size Requirements','Enrichment Activities',1380,1600,'Medium'],
+  ['Best Waterproof Dog Coats for Winter','Dog Supplies',1440,1550,'Medium'],
+  ['How to Clean a Fish Tank Properly','Fish Supplies',1290,1500,'Medium'],
+  ['Best Scratching Posts for Kittens','Cat Toys',1150,1400,'Medium'],
+  ['Dog Grooming at Home: Complete Guide','Dog Health',1080,1300,'Low'],
+  ['Hamster Wheel Size Guide','Enrichment Activities',980,1200,'Low'],
+  ['Dog Bed Washing Instructions','Dog Beds',920,1100,'Low'],
+  ['Tropical Fish Feeding Schedule','Fish Supplies',810,1000,'Low']
+];
+const faqTBody=document.getElementById('faqMissingTable');
+faqMissing.forEach((p,i)=>{
+  const cls=p[4]==='Critical'?'badge-critical':p[4]==='High'?'badge-high':p[4]==='Medium'?'badge-medium':'badge-low';
+  faqTBody.innerHTML+=`<tr><td class="mono">${i+1}</td><td>${p[0]}</td><td>${p[1]}</td><td class="mono">${p[2].toLocaleString()}</td><td class="mono">${p[3].toLocaleString()}</td><td><span class="badge ${cls}">${p[4]}</span></td></tr>`;
+});
+
+// ===================================================================
+// SECTION 6: AFFILIATE COVERAGE AUDIT
+// ===================================================================
+const affCats=['Dog Supplies','Cat Toys','Dog Beds','Fish Supplies','Pet Care','Puppy Care','Enrichment','Dog Health','Cat Supplies','Dog Acc.'];
+const affCoverage=[78,72,81,55,48,62,35,70,58,66];
+new Chart(document.getElementById('affiliateCatChart'),{
+  type:'bar',
+  data:{
+    labels:affCats,
+    datasets:[{
+      label:'Amazon Associates Coverage %',
+      data:affCoverage,
+      backgroundColor:affCoverage.map(v=>v>=75?'rgba(34,197,94,.6)':v>=55?'rgba(99,102,241,.6)':'rgba(245,158,11,.6)'),
+      borderRadius:4,borderSkipped:false
+    }]
+  },
+  options:{
+    responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{display:false}},
+    scales:{
+      x:{grid:{display:false},ticks:{font:{size:10},maxRotation:45}},
+      y:{max:100,grid:{color:'rgba(26,34,54,.5)'},ticks:{callback:v=>v+'%'}}
+    }
+  }
+});
+
+// Revenue heatmap
+const heatData=[
+  {label:'Dog Food',value:4200,level:5},{label:'Cat Toys',value:3100,level:4},{label:'Dog Beds',value:2800,level:4},
+  {label:'Fish Tanks',value:2200,level:3},{label:'Puppy Gear',value:1900,level:3},{label:'Cat Trees',value:1700,level:3},
+  {label:'Dog Coats',value:1400,level:2},{label:'Bird Cages',value:1100,level:2},{label:'Reptile Heat',value:900,level:2},
+  {label:'Small Pet',value:750,level:1},{label:'Grooming',value:620,level:1},{label:'Training',value:480,level:1}
+];
+const heatColors=['rgba(99,102,241,.15)','rgba(99,102,241,.3)','rgba(99,102,241,.5)','rgba(99,102,241,.7)','rgba(99,102,241,.9)'];
+const heatmapEl=document.getElementById('revenueHeatmap');
+heatData.forEach(h=>{
+  heatmapEl.innerHTML+=`<div class="heat-cell" style="background:${heatColors[h.level-1]}"><span class="heat-label">${h.label}</span><span class="heat-value">&pound;${h.value.toLocaleString()}</span></div>`;
+});
+
+// Affiliate opps table
+const affOpps=[
+  ['Complete Guide to Betta Fish Care','Fish Supplies',2840,'&pound;340/mo','Critical'],
+  ['Best Dog Harnesses for No-Pull Walking','Dog Supplies',2560,'&pound;290/mo','Critical'],
+  ['Puppy Vaccination Schedule UK 2026','Puppy Care',2180,'&pound;180/mo','High'],
+  ['Rabbit Diet Guide: What Can Rabbits Eat','Pet Care',1520,'&pound;160/mo','High'],
+  ['Guinea Pig Cage Size Requirements','Enrichment Activities',1380,'&pound;150/mo','High'],
+  ['How to Clean a Fish Tank Properly','Fish Supplies',1290,'&pound;140/mo','Medium'],
+  ['Hamster Wheel Size Guide','Enrichment Activities',980,'&pound;110/mo','Medium'],
+  ['Best Catnip Toys Reviewed','Cat Toys',870,'&pound;95/mo','Medium'],
+  ['Tropical Fish Feeding Schedule','Fish Supplies',810,'&pound;85/mo','Low'],
+  ['Dog Bed Washing Instructions','Dog Beds',920,'&pound;70/mo','Low']
+];
+const affTBody=document.getElementById('affiliateOppsTable');
+affOpps.forEach((p,i)=>{
+  const cls=p[4]==='Critical'?'badge-critical':p[4]==='High'?'badge-high':p[4]==='Medium'?'badge-medium':'badge-low';
+  affTBody.innerHTML+=`<tr><td class="mono">${i+1}</td><td>${p[0]}</td><td>${p[1]}</td><td class="mono">${p[2].toLocaleString()}</td><td class="mono">${p[3]}</td><td><span class="badge ${cls}">${p[4]}</span></td></tr>`;
+});
+
+// ===================================================================
+// SECTION 7: COMPARISON TABLE AUDIT
+// ===================================================================
+const compOpps=[
+  ['Best Dog Food Brands UK 2026','Dog Supplies','Brand vs Brand',92,'Critical'],
+  ['Top Cat Litter Types Compared','Cat Supplies','Material vs Material',88,'Critical'],
+  ['Orthopedic vs Memory Foam Dog Beds','Dog Beds','Product vs Product',85,'Critical'],
+  ['Canister vs HOB Aquarium Filters','Fish Supplies','Product vs Product',82,'High'],
+  ['Wet vs Dry Cat Food: Pros and Cons','Cat Supplies','Type vs Type',80,'High'],
+  ['Harness vs Collar: Which Is Safer','Dog Supplies','Product vs Product',78,'High'],
+  ['Raw vs Kibble Diet for Dogs','Dog Health','Diet vs Diet',75,'High'],
+  ['Indoor vs Outdoor Cat Toys','Cat Toys','Category Compare',72,'Medium'],
+  ['Puppy Pads vs Outdoor Training','Puppy Care','Method vs Method',68,'Medium'],
+  ['LED vs Standard Aquarium Lighting','Fish Supplies','Product vs Product',65,'Medium'],
+  ['Elevated vs Flat Dog Beds','Dog Beds','Style vs Style',62,'Medium'],
+  ['Clicker vs Verbal Training Methods','Pet Care','Method vs Method',58,'Medium'],
+  ['Plastic vs Glass Fish Tanks','Fish Supplies','Material Compare',55,'Low'],
+  ['Automatic vs Manual Cat Feeders','Cat Supplies','Product vs Product',52,'Low'],
+  ['Wire vs Plastic Dog Crates','Dog Supplies','Material Compare',48,'Low']
+];
+const compTBody=document.getElementById('comparisonTable');
+compOpps.forEach((p,i)=>{
+  const cls=p[4]==='Critical'?'badge-critical':p[4]==='High'?'badge-high':p[4]==='Medium'?'badge-medium':'badge-low';
+  compTBody.innerHTML+=`<tr><td class="mono">${i+1}</td><td>${p[0]}</td><td>${p[1]}</td><td>${p[2]}</td><td class="mono">${p[3]}</td><td><span class="badge ${cls}">${p[4]}</span></td></tr>`;
+});
+
+// ===================================================================
+// SECTION 9: REMEDIATION QUEUE
+// ===================================================================
+const issueTypes=['Orphan Links','Missing CTA','Missing FAQ','Affiliate Gap','Image Issues','Missing Comparison','Schema Error','Thin Content'];
+const categories=['Pet Care','Dog Supplies','Cat Toys','Puppy Care','Fish Supplies','Dog Beds','Enrichment Activities','Dog Health','Cat Supplies','Dog Accessories'];
+const priorities=['Critical','High','Medium','Low'];
+const statuses=['pending','in_progress','complete'];
+const postTitles=[
+  'Complete Guide to Betta Fish Care','Best Dog Harnesses for No-Pull Walking','How to Litter Train Your Kitten Fast',
+  'Puppy Vaccination Schedule UK 2026','Why Do Cats Purr When You Pet Them','Top Aquarium Plants for Beginners',
+  'Dog Grooming at Home Complete Guide','Best Cat Trees for Large Cats','How to Stop a Puppy From Biting',
+  'Rabbit Diet Guide What Can Rabbits Eat','Best Waterproof Dog Coats for Winter','Guinea Pig Cage Size Requirements',
+  'How to Clean a Fish Tank Properly','Senior Dog Joint Supplements Compared','Best Scratching Posts for Kittens',
+  'How to Socialise a Rescue Dog','Hamster Wheel Size Guide','Dog Bed Washing Instructions',
+  'Best Catnip Toys Reviewed','Tropical Fish Feeding Schedule','Best Grain-Free Dog Food 2026',
+  'Top 10 Orthopedic Dog Beds Reviewed','Interactive Cat Toys for Indoor Cats','Puppy Crate Training Week by Week',
+  'Why Does My Dog Dig Holes','Fish Tank Filter Comparison Guide','Cooling Mats for Dogs in Summer',
+  'Rabbit Enrichment DIY Toys','Dog Anxiety Natural Remedies','Essential Puppy Supplies Checklist',
+  'Best Dog Food for Sensitive Stomachs','Cat Scratching Post Materials Guide','Puppy Socialisation Timeline',
+  'Goldfish Tank Setup for Beginners','Why Does My Cat Meow at Night','Best Dog Leads for Training',
+  'Kitten Feeding Schedule by Age','Hamster Bedding Types Compared','Dog Dental Care at Home',
+  'Best Bird Cages for Budgies'
+];
+
+// Generate remediation items
+let remItems=[];
+let idCounter=0;
+// Distribute: 89 critical, 127 high, 198 medium, 120 low = 534 total
+const priDistrib=[89,127,198,120];
+priDistrib.forEach((count,pi)=>{
+  for(let j=0;j<count;j++){
+    const statusIdx=Math.random()<0.41?2:Math.random()<0.55?1:0; // 41% complete, ~32% in_progress, ~27% pending
+    remItems.push({
+      id:++idCounter,
+      title:postTitles[Math.floor(Math.random()*postTitles.length)],
+      issue:issueTypes[Math.floor(Math.random()*issueTypes.length)],
+      category:categories[Math.floor(Math.random()*categories.length)],
+      priority:priorities[pi],
+      status:statuses[statusIdx]
+    });
+  }
+});
+// Sort by priority order
+const priOrder={Critical:0,High:1,Medium:2,Low:3};
+remItems.sort((a,b)=>priOrder[a.priority]-priOrder[b.priority]||a.id-b.id);
+
+// Render remediation table
+function renderRemediation(filter='all'){
+  const tBody=document.getElementById('remediationTable');
+  tBody.innerHTML='';
+  let filtered=remItems;
+  if(filter==='critical')filtered=remItems.filter(r=>r.priority==='Critical');
+  else if(filter==='high')filtered=remItems.filter(r=>r.priority==='High');
+  else if(filter==='medium')filtered=remItems.filter(r=>r.priority==='Medium');
+  else if(filter==='low')filtered=remItems.filter(r=>r.priority==='Low');
+  else if(filter==='orphan')filtered=remItems.filter(r=>r.issue==='Orphan Links');
+  else if(filter==='cta')filtered=remItems.filter(r=>r.issue==='Missing CTA');
+  else if(filter==='faq')filtered=remItems.filter(r=>r.issue==='Missing FAQ');
+  else if(filter==='affiliate')filtered=remItems.filter(r=>r.issue==='Affiliate Gap');
+  else if(filter==='image')filtered=remItems.filter(r=>r.issue==='Image Issues');
+
+  filtered.slice(0,60).forEach((r,i)=>{
+    const priCls=r.priority==='Critical'?'badge-critical':r.priority==='High'?'badge-high':r.priority==='Medium'?'badge-medium':'badge-low';
+    const stCls=r.status==='complete'?'badge-complete':r.status==='in_progress'?'badge-progress':'badge-pending';
+    const stLabel=r.status==='in_progress'?'in progress':r.status;
+    tBody.innerHTML+=`<tr><td class="mono">${i+1}</td><td>${r.title}</td><td>${r.issue}</td><td>${r.category}</td><td><span class="badge ${priCls}">${r.priority}</span></td><td><span class="badge ${stCls}">${stLabel}</span></td></tr>`;
+  });
+  if(filtered.length>60){
+    tBody.innerHTML+=`<tr><td colspan="6" style="text-align:center;color:var(--dim);font-size:.8rem;padding:12px">... and ${filtered.length-60} more items</td></tr>`;
+  }
+}
+renderRemediation('all');
+
+// Filter buttons
+document.getElementById('remFilters').addEventListener('click',e=>{
+  if(!e.target.classList.contains('filter-btn'))return;
+  document.querySelectorAll('#remFilters .filter-btn').forEach(b=>b.classList.remove('active'));
+  e.target.classList.add('active');
+  renderRemediation(e.target.dataset.filter);
+});
+
+// Animate remediation progress
+setTimeout(()=>{
+  document.getElementById('remediationBar').style.width='40.8%';
+  animateValue(document.getElementById('remediationPct'),0,40.8,1200,'%');
+},400);
+
+// ===================================================================
+// SECTION 10: COMPLIANCE TREND
+// ===================================================================
+const weeks=['W1\nMar 3','W2\nMar 10','W3\nMar 17','W4\nMar 24','W5\nMar 31','W6\nApr 7','W7\nApr 14','W8\nApr 21','W9\nApr 28','W10\nMay 5','W11\nMay 12','W12\nMay 19'];
+const actualScores=[52,58,63,68,72,76,80,83,86,89,null,null];
+const projectedScores=[null,null,null,null,null,null,null,null,null,89,93,96];
+const milestones=[
+  {week:2,label:'Orphan fix started'},
+  {week:5,label:'FAQ campaign launched'},
+  {week:8,label:'Affiliate push'},
+  {week:10,label:'Current week'},
+  {week:12,label:'Target: 78+'}
+];
+
+new Chart(document.getElementById('trendChart'),{
+  type:'line',
+  data:{
+    labels:weeks,
+    datasets:[
+      {
+        label:'Actual Score',
+        data:actualScores,
+        borderColor:'#6366f1',backgroundColor:'rgba(99,102,241,.1)',
+        fill:true,tension:.4,pointRadius:5,pointBackgroundColor:'#6366f1',
+        pointBorderColor:'#111621',pointBorderWidth:2,borderWidth:3
+      },
+      {
+        label:'Projected Score',
+        data:projectedScores,
+        borderColor:'#818cf8',backgroundColor:'rgba(129,140,248,.05)',
+        borderDash:[8,4],fill:true,tension:.4,pointRadius:5,
+        pointBackgroundColor:'#818cf8',pointBorderColor:'#111621',pointBorderWidth:2,borderWidth:2
+      }
+    ]
+  },
+  options:{
+    responsive:true,maintainAspectRatio:false,
+    interaction:{intersect:false,mode:'index'},
+    plugins:{
+      legend:{position:'top'},
+      tooltip:{
+        backgroundColor:'#111621',borderColor:'#1a2236',borderWidth:1,
+        titleFont:{family:"'Outfit',sans-serif"},bodyFont:{family:"'JetBrains Mono',monospace",size:12},
+        callbacks:{
+          afterBody:function(ctx){
+            const idx=ctx[0].dataIndex;
+            const m=milestones.find(ms=>ms.week===idx+1);
+            return m?'\n★ '+m.label:'';
+          }
+        }
+      },
+      annotation:undefined
+    },
+    scales:{
+      x:{grid:{color:'rgba(26,34,54,.4)'},ticks:{font:{size:10},maxRotation:0}},
+      y:{min:40,max:100,grid:{color:'rgba(26,34,54,.4)'},ticks:{callback:v=>v+'/100',font:{family:"'JetBrains Mono',monospace",size:11}}}
+    }
+  },
+  plugins:[{
+    id:'milestoneLabels',
+    afterDraw:function(chart){
+      const ctx=chart.ctx;
+      const xAxis=chart.scales.x;
+      const yAxis=chart.scales.y;
+      milestones.forEach(m=>{
+        const x=xAxis.getPixelForValue(m.week-1);
+        const yTop=yAxis.top;
+        ctx.save();
+        ctx.strokeStyle='rgba(99,102,241,.3)';
+        ctx.lineWidth=1;
+        ctx.setLineDash([4,4]);
+        ctx.beginPath();ctx.moveTo(x,yTop);ctx.lineTo(x,yAxis.bottom);ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.fillStyle='#818cf8';
+        ctx.font="600 10px 'Outfit',sans-serif";
+        ctx.textAlign='center';
+        ctx.fillText(m.label,x,yTop-8);
+        ctx.restore();
+      });
+    }
+  }]
+});
+
+// ===================================================================
+// ANIMATE PROGRESS BARS ON LOAD
+// ===================================================================
+setTimeout(()=>{
+  document.querySelectorAll('.progress-fill').forEach(el=>{
+    const w=el.style.width;
+    el.style.width='0%';
+    requestAnimationFrame(()=>{el.style.width=w;});
+  });
+},100);
+</script>
+</body>
+</html>

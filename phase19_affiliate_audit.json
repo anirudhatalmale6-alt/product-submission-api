@@ -1,0 +1,174 @@
+{
+  "audit": "Phase 19 Affiliate Coverage",
+  "date": "2026-06-01T21:10:10.911989Z",
+  "total_posts": 460,
+  "posts_with_affiliates": 459,
+  "posts_without_affiliates": 1,
+  "affiliate_rate_pct": 99.8,
+  "by_category": {
+    "Fish Supplies": {
+      "total_posts": 50,
+      "posts_with_affiliates": 50,
+      "total_affiliate_links": 200,
+      "coverage_pct": 100.0
+    },
+    "Pet Care": {
+      "total_posts": 90,
+      "posts_with_affiliates": 90,
+      "total_affiliate_links": 522,
+      "coverage_pct": 100.0
+    },
+    "Enrichment Activities": {
+      "total_posts": 30,
+      "posts_with_affiliates": 30,
+      "total_affiliate_links": 120,
+      "coverage_pct": 100.0
+    },
+    "Cat Toys": {
+      "total_posts": 48,
+      "posts_with_affiliates": 48,
+      "total_affiliate_links": 264,
+      "coverage_pct": 100.0
+    },
+    "Puppy Care": {
+      "total_posts": 56,
+      "posts_with_affiliates": 55,
+      "total_affiliate_links": 285,
+      "coverage_pct": 98.2
+    },
+    "Dog Beds": {
+      "total_posts": 55,
+      "posts_with_affiliates": 55,
+      "total_affiliate_links": 280,
+      "coverage_pct": 100.0
+    },
+    "Uncategorized": {
+      "total_posts": 13,
+      "posts_with_affiliates": 13,
+      "total_affiliate_links": 52,
+      "coverage_pct": 100.0
+    },
+    "Orthopaedic Supplies": {
+      "total_posts": 1,
+      "posts_with_affiliates": 1,
+      "total_affiliate_links": 5,
+      "coverage_pct": 100.0
+    },
+    "Pet Health": {
+      "total_posts": 8,
+      "posts_with_affiliates": 8,
+      "total_affiliate_links": 54,
+      "coverage_pct": 100.0
+    },
+    "Dog Accessories": {
+      "total_posts": 1,
+      "posts_with_affiliates": 1,
+      "total_affiliate_links": 5,
+      "coverage_pct": 100.0
+    },
+    "Dog Clothing": {
+      "total_posts": 1,
+      "posts_with_affiliates": 1,
+      "total_affiliate_links": 5,
+      "coverage_pct": 100.0
+    },
+    "Indoor Cats": {
+      "total_posts": 19,
+      "posts_with_affiliates": 19,
+      "total_affiliate_links": 129,
+      "coverage_pct": 100.0
+    },
+    "Dog Supplies": {
+      "total_posts": 79,
+      "posts_with_affiliates": 79,
+      "total_affiliate_links": 527,
+      "coverage_pct": 100.0
+    },
+    "Cat Supplies": {
+      "total_posts": 47,
+      "posts_with_affiliates": 47,
+      "total_affiliate_links": 316,
+      "coverage_pct": 100.0
+    },
+    "Dog Health": {
+      "total_posts": 25,
+      "posts_with_affiliates": 25,
+      "total_affiliate_links": 140,
+      "coverage_pct": 100.0
+    },
+    "Health &amp; Wellness": {
+      "total_posts": 1,
+      "posts_with_affiliates": 1,
+      "total_affiliate_links": 7,
+      "coverage_pct": 100.0
+    },
+    "Dog Care": {
+      "total_posts": 17,
+      "posts_with_affiliates": 17,
+      "total_affiliate_links": 112,
+      "coverage_pct": 100.0
+    },
+    "Pet Beds": {
+      "total_posts": 5,
+      "posts_with_affiliates": 5,
+      "total_affiliate_links": 35,
+      "coverage_pct": 100.0
+    },
+    "Dog Food": {
+      "total_posts": 7,
+      "posts_with_affiliates": 7,
+      "total_affiliate_links": 49,
+      "coverage_pct": 100.0
+    },
+    "Dog Toys": {
+      "total_posts": 42,
+      "posts_with_affiliates": 42,
+      "total_affiliate_links": 298,
+      "coverage_pct": 100.0
+    },
+    "Training Supplies": {
+      "total_posts": 8,
+      "posts_with_affiliates": 8,
+      "total_affiliate_links": 56,
+      "coverage_pct": 100.0
+    },
+    "Dog Harnesses": {
+      "total_posts": 7,
+      "posts_with_affiliates": 7,
+      "total_affiliate_links": 43,
+      "coverage_pct": 100.0
+    },
+    "Product Reviews": {
+      "total_posts": 43,
+      "posts_with_affiliates": 43,
+      "total_affiliate_links": 301,
+      "coverage_pct": 100.0
+    },
+    "Interactive Toys": {
+      "total_posts": 2,
+      "posts_with_affiliates": 2,
+      "total_affiliate_links": 16,
+      "coverage_pct": 100.0
+    },
+    "Buying Guides": {
+      "total_posts": 3,
+      "posts_with_affiliates": 3,
+      "total_affiliate_links": 20,
+      "coverage_pct": 100.0
+    },
+    "Orthopaedic Care": {
+      "total_posts": 2,
+      "posts_with_affiliates": 2,
+      "total_affiliate_links": 14,
+      "coverage_pct": 100.0
+    }
+  },
+  "top_opportunities": [
+    {
+      "id": 14041,
+      "title": "Crate Training Schedule UK",
+      "link": "https://pethubonline.com/crate-training-schedule-uk-3/",
+      "category": "Puppy Care"
+    }
+  ]
+}

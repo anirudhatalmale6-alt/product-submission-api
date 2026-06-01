@@ -1,0 +1,1791 @@
+{
+  "audit": "Phase 19 Image Compliance",
+  "date": "2026-06-01T21:10:10.912244Z",
+  "total_posts": 460,
+  "posts_with_featured_image": 236,
+  "missing_featured_image": 224,
+  "featured_rate_pct": 51.3,
+  "posts_with_alt_text_issues": 72,
+  "posts_with_low_image_count": 0,
+  "missing_featured": [
+    {
+      "id": 20169,
+      "title": "Aquarium Salt Guide: When and How to Use Salt in Freshwater Tanks",
+      "link": "https://pethubonline.com/aquarium-salt-guide-freshwater-tanks/",
+      "category": "Fish Supplies"
+    },
+    {
+      "id": 19627,
+      "title": "Pet Nutrition Label Reading Guide: Understanding Pet Food Labels",
+      "link": "https://pethubonline.com/pet-nutrition-label-reading-guide-3/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19626,
+      "title": "Pet Garden Safety Guide UK: Toxic Plants and Garden Hazards",
+      "link": "https://pethubonline.com/pet-garden-safety-guide-uk-3/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19625,
+      "title": "Pet Parasite Prevention Calendar UK: Flea, Tick, and Worm Schedules",
+      "link": "https://pethubonline.com/pet-parasite-prevention-calendar-uk-3/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19624,
+      "title": "Pet Exercise Requirements by Age: Activity Needs Across Life Stages",
+      "link": "https://pethubonline.com/pet-exercise-requirements-by-age-3/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19622,
+      "title": "Pet Vaccination Side Effects UK: What to Expect After Jabs",
+      "link": "https://pethubonline.com/pet-vaccination-side-effects-uk-2/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19621,
+      "title": "Pet Digestive Health Guide: Gut Health, Probiotics, and Diet",
+      "link": "https://pethubonline.com/pet-digestive-health-guide-3/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19620,
+      "title": "Pet Joint Health Guide: Supplements and Exercise for Healthy Joints",
+      "link": "https://pethubonline.com/pet-joint-health-guide-3/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19619,
+      "title": "Pet Coat and Skin Health Guide: Nutrition for a Healthy Coat",
+      "link": "https://pethubonline.com/pet-coat-skin-health-guide-3/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19618,
+      "title": "Pet Bonding Activities Guide: Strengthening the Pet-Owner Bond",
+      "link": "https://pethubonline.com/pet-bonding-activities-guide-3/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19617,
+      "title": "Pet Socialisation Timeline UK: Critical Socialisation Periods",
+      "link": "https://pethubonline.com/pet-socialisation-timeline-uk-2/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19616,
+      "title": "Pet Hydration Guide: Water Intake Needs for Dogs and Cats",
+      "link": "https://pethubonline.com/pet-hydration-guide-4/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19613,
+      "title": "Pet Senior Health Checklist: Age-Related Health Monitoring",
+      "link": "https://pethubonline.com/pet-senior-health-checklist-3/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19611,
+      "title": "Pet First Night Home Guide UK: Settling a New Pet",
+      "link": "https://pethubonline.com/pet-first-night-home-guide-uk-3/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19608,
+      "title": "Pet Grooming Schedule UK: Breed-Specific Grooming Timelines",
+      "link": "https://pethubonline.com/pet-grooming-schedule-uk-3/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19602,
+      "title": "Pet Anxiety Solutions Guide: Separation Anxiety and Stress Relief",
+      "link": "https://pethubonline.com/pet-anxiety-solutions-guide-3/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19598,
+      "title": "Pet Weight Management Plan: Healthy Weight for Dogs and Cats",
+      "link": "https://pethubonline.com/pet-weight-management-plan-3/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19593,
+      "title": "Pet Allergy Management Guide: Identifying and Managing Pet Allergies",
+      "link": "https://pethubonline.com/pet-allergy-management-guide-3/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19590,
+      "title": "Pet Dental Care Routine: Teeth Cleaning for Dogs and Cats",
+      "link": "https://pethubonline.com/pet-dental-care-routine-3/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19588,
+      "title": "Pet Insurance Claim Process UK: How to File and Track Your Claim",
+      "link": "https://pethubonline.com/pet-insurance-claim-process-uk-4/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19585,
+      "title": "Pet Microchip Registration Guide UK: Everything You Need to Know",
+      "link": "https://pethubonline.com/pet-microchip-registration-guide-uk-4/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 19283,
+      "title": "Puppy Confidence Building: Raising a Confident, Resilient Puppy",
+      "link": "https://pethubonline.com/puppy-confidence-building-uk/",
+      "category": "Puppy Care"
+    },
+    {
+      "id": 19205,
+      "title": "Fish Health Monitoring: Signs of Healthy vs Sick Fish in Your Aquarium",
+      "link": "https://pethubonline.com/fish-health-monitoring-guide/",
+      "category": "Fish Supplies"
+    },
+    {
+      "id": 19171,
+      "title": "Fish Feeding Schedule Guide: How Much and How Often to Feed Aquarium Fish",
+      "link": "https://pethubonline.com/fish-feeding-schedule-guide/",
+      "category": "Fish Supplies"
+    },
+    {
+      "id": 19082,
+      "title": "Small Dog Bed Guide: Best Beds for Small and Toy Breeds",
+      "link": "https://pethubonline.com/small-dog-bed-guide/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 19058,
+      "title": "Waterproof Dog Beds Explained: When and Why Waterproof Matters",
+      "link": "https://pethubonline.com/waterproof-dog-beds-explained/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 18989,
+      "title": "Indoor Cat Behaviour Problems: Solving Common House Cat Issues",
+      "link": "https://pethubonline.com/indoor-cat-behaviour-problems/",
+      "category": "Enrichment Activities"
+    },
+    {
+      "id": 18867,
+      "title": "Pet Health Record Template UK: Track Vaccinations, Treatments and Vet Visits",
+      "link": "https://pethubonline.com/pet-health-record-template-uk/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 18837,
+      "title": "Senior Dog Sleeping Patterns: Changes, Concerns, and Comfort Solutions",
+      "link": "https://pethubonline.com/senior-dog-sleeping-patterns/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 18797,
+      "title": "Puppy Behaviour Development Timeline UK: What to Expect Month by Month",
+      "link": "https://pethubonline.com/puppy-behaviour-development-timeline-uk/",
+      "category": "Puppy Care"
+    },
+    {
+      "id": 18791,
+      "title": "Puppy Grooming Schedule UK: When to Start and How Often",
+      "link": "https://pethubonline.com/puppy-grooming-schedule-uk/",
+      "category": "Puppy Care"
+    },
+    {
+      "id": 18785,
+      "title": "Puppy First Vet Visit UK: What to Expect and How to Prepare",
+      "link": "https://pethubonline.com/puppy-first-vet-visit-uk/",
+      "category": "Puppy Care"
+    },
+    {
+      "id": 18779,
+      "title": "Puppy Walking Schedule UK: How Far and How Often by Age",
+      "link": "https://pethubonline.com/puppy-walking-schedule-uk/",
+      "category": "Puppy Care"
+    },
+    {
+      "id": 18773,
+      "title": "Puppy Growth Chart UK: Expected Weight by Breed Size and Age",
+      "link": "https://pethubonline.com/puppy-growth-chart-uk/",
+      "category": "Puppy Care"
+    },
+    {
+      "id": 18767,
+      "title": "Puppy Feeding Mistakes UK: 12 Common Errors New Owners Make",
+      "link": "https://pethubonline.com/puppy-feeding-mistakes-uk/",
+      "category": "Puppy Care"
+    },
+    {
+      "id": 18761,
+      "title": "Puppy Separation Anxiety UK: Prevention, Signs, and Solutions",
+      "link": "https://pethubonline.com/puppy-separation-anxiety-uk/",
+      "category": "Puppy Care"
+    },
+    {
+      "id": 18755,
+      "title": "Puppy Crate Training Problems UK: Solutions for Every Common Issue",
+      "link": "https://pethubonline.com/puppy-crate-training-problems-uk/",
+      "category": "Puppy Care"
+    },
+    {
+      "id": 18749,
+      "title": "Puppy Socialisation Mistakes UK: 10 Errors That Can Cause Lasting Damage",
+      "link": "https://pethubonline.com/puppy-socialisation-mistakes-uk/",
+      "category": "Puppy Care"
+    },
+    {
+      "id": 18743,
+      "title": "Puppy Vaccination Side Effects UK: What to Expect and When to Worry",
+      "link": "https://pethubonline.com/puppy-vaccination-side-effects-uk/",
+      "category": "Puppy Care"
+    },
+    {
+      "id": 18714,
+      "title": "UK Pet Emergency Guide &#8211; Free Download",
+      "link": "https://pethubonline.com/pet-emergency-guide/",
+      "category": "Uncategorized"
+    },
+    {
+      "id": 18712,
+      "title": "Indoor Cat Enrichment Checklist &#8211; Free Download",
+      "link": "https://pethubonline.com/indoor-cat-enrichment-checklist/",
+      "category": "Uncategorized"
+    },
+    {
+      "id": 18711,
+      "title": "New Puppy Starter Checklist &#8211; Free Download",
+      "link": "https://pethubonline.com/puppy-starter-checklist/",
+      "category": "Uncategorized"
+    },
+    {
+      "id": 12760,
+      "title": "Seasonal Pet Care Calendar UK: Monthly Guide for Pet Owners",
+      "link": "https://pethubonline.com/seasonal-pet-care-calendar-uk/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 12758,
+      "title": "Indoor Cat Exercise: Daily Routines to Keep UK Cats Active",
+      "link": "https://pethubonline.com/indoor-cat-exercise-routines-uk/",
+      "category": "Indoor Cats"
+    },
+    {
+      "id": 12817,
+      "title": "Dog Travel Accessories UK: Car Safety and Comfort Essentials (2026)",
+      "link": "https://pethubonline.com/dog-travel-accessories-uk-car-safety/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 12764,
+      "title": "Dog Feeding Station Setup: Complete Guide for UK Owners",
+      "link": "https://pethubonline.com/dog-feeding-station-setup-guide/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 12762,
+      "title": "Dog Coats and Jackets UK: Choosing the Right One",
+      "link": "https://pethubonline.com/dog-coats-jackets-uk-guide/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 12761,
+      "title": "First-Time Pet Owner UK: Complete Beginner Guide",
+      "link": "https://pethubonline.com/first-time-pet-owner-guide-uk/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 12759,
+      "title": "Multi-Pet Household Management: UK Guide for Harmony",
+      "link": "https://pethubonline.com/multi-pet-household-management-uk/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 12767,
+      "title": "Interactive Cat Toys for Solo Play UK: Keep Cats Busy",
+      "link": "https://pethubonline.com/interactive-cat-toys-solo-play-uk/",
+      "category": "Cat Toys"
+    },
+    {
+      "id": 12766,
+      "title": "Cat Puzzle Feeders UK: Guide to Food Puzzles for Cats",
+      "link": "https://pethubonline.com/cat-puzzle-feeders-uk-guide/",
+      "category": "Cat Toys"
+    },
+    {
+      "id": 12765,
+      "title": "DIY Cat Toys from Household Items: Easy Projects",
+      "link": "https://pethubonline.com/diy-cat-toys-household-items/",
+      "category": "Cat Toys"
+    },
+    {
+      "id": 12757,
+      "title": "DIY Catio Plans: How to Build a Cat Enclosure in the UK",
+      "link": "https://pethubonline.com/diy-catio-building-plans-uk/",
+      "category": "Indoor Cats"
+    },
+    {
+      "id": 12756,
+      "title": "Catio Kits UK: Complete Guide to Outdoor Cat Enclosures",
+      "link": "https://pethubonline.com/catio-kits-uk-guide/",
+      "category": "Indoor Cats"
+    },
+    {
+      "id": 14257,
+      "title": "Senior Pet Care Guide",
+      "link": "https://pethubonline.com/senior-pet-care-guide-3/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 14218,
+      "title": "Seasonal Pet Safety Calendar",
+      "link": "https://pethubonline.com/seasonal-pet-safety-calendar/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 14219,
+      "title": "Pet Travel Preparation Guide",
+      "link": "https://pethubonline.com/pet-travel-preparation-guide/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 14249,
+      "title": "Pet First Aid Checklist",
+      "link": "https://pethubonline.com/pet-first-aid-checklist/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 14230,
+      "title": "Pet Behaviour Tracking",
+      "link": "https://pethubonline.com/pet-behaviour-tracking/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 13937,
+      "title": "Puppy Vaccination Timeline UK",
+      "link": "https://pethubonline.com/puppy-vaccination-timeline-uk-2/",
+      "category": "Puppy Care"
+    },
+    {
+      "id": 13943,
+      "title": "Puppy Feeding Schedule by Age",
+      "link": "https://pethubonline.com/puppy-feeding-schedule-by-age-2/",
+      "category": "Puppy Care"
+    },
+    {
+      "id": 13947,
+      "title": "Puppy Exercise Requirements Guide",
+      "link": "https://pethubonline.com/puppy-exercise-requirements-guide-2/",
+      "category": "Puppy Care"
+    },
+    {
+      "id": 14041,
+      "title": "Crate Training Schedule UK",
+      "link": "https://pethubonline.com/crate-training-schedule-uk-3/",
+      "category": "Puppy Care"
+    },
+    {
+      "id": 14607,
+      "title": "Dog Equipment Lifespan",
+      "link": "https://pethubonline.com/dog-equipment-lifespan/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 14112,
+      "title": "Puppy Behaviour Warning Signs",
+      "link": "https://pethubonline.com/puppy-behaviour-warning-signs-2/",
+      "category": "Puppy Care"
+    },
+    {
+      "id": 14481,
+      "title": "Cat Indoor Environment Guide",
+      "link": "https://pethubonline.com/cat-indoor-environment-guide/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 14190,
+      "title": "Indoor Cat Exercise Guide",
+      "link": "https://pethubonline.com/indoor-cat-exercise-guide-2/",
+      "category": "Indoor Cats"
+    },
+    {
+      "id": 14170,
+      "title": "Cat Toy Safety by Age",
+      "link": "https://pethubonline.com/cat-toy-safety-by-age/",
+      "category": "Cat Toys"
+    },
+    {
+      "id": 14171,
+      "title": "Senior Cat Play Guide",
+      "link": "https://pethubonline.com/senior-cat-play-guide/",
+      "category": "Cat Toys"
+    },
+    {
+      "id": 14177,
+      "title": "Signs Your Cat Needs More Enrichment",
+      "link": "https://pethubonline.com/signs-your-cat-needs-more-enrichment/",
+      "category": "Cat Toys"
+    },
+    {
+      "id": 14181,
+      "title": "Cat Enrichment Schedule",
+      "link": "https://pethubonline.com/cat-enrichment-schedule-4/",
+      "category": "Cat Toys"
+    },
+    {
+      "id": 14182,
+      "title": "Cat Toy Cleaning Guide",
+      "link": "https://pethubonline.com/cat-toy-cleaning-guide/",
+      "category": "Cat Toys"
+    },
+    {
+      "id": 14186,
+      "title": "Cat Play Session Timing",
+      "link": "https://pethubonline.com/cat-play-session-timing/",
+      "category": "Cat Toys"
+    },
+    {
+      "id": 14189,
+      "title": "Catnip Use Guide",
+      "link": "https://pethubonline.com/catnip-use-guide-2/",
+      "category": "Cat Toys"
+    },
+    {
+      "id": 14487,
+      "title": "Cat Grooming Routine",
+      "link": "https://pethubonline.com/cat-grooming-routine/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 14498,
+      "title": "Cat Hygiene Guide",
+      "link": "https://pethubonline.com/cat-hygiene-guide/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 14568,
+      "title": "Cat Water Fountain Guide",
+      "link": "https://pethubonline.com/cat-water-fountain-guide-3/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 14569,
+      "title": "Cat Carrier Guide",
+      "link": "https://pethubonline.com/cat-carrier-guide-3/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 14572,
+      "title": "Cat Travel Preparation",
+      "link": "https://pethubonline.com/cat-travel-preparation-3/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 14587,
+      "title": "Cat Wellness Monitoring",
+      "link": "https://pethubonline.com/cat-wellness-monitoring-2/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 14591,
+      "title": "Cat Supply Storage Guide",
+      "link": "https://pethubonline.com/cat-supply-storage-guide-3/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 14593,
+      "title": "Cat Household Hazards Guide",
+      "link": "https://pethubonline.com/cat-household-hazards-guide/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 14595,
+      "title": "Cat Behaviour Environment Guide",
+      "link": "https://pethubonline.com/cat-behaviour-environment-guide/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 14596,
+      "title": "New Cat Owner Setup Guide",
+      "link": "https://pethubonline.com/new-cat-owner-setup-guide-2/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 14597,
+      "title": "Dog Travel Equipment",
+      "link": "https://pethubonline.com/dog-travel-equipment/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 14599,
+      "title": "Dog Walking Kit",
+      "link": "https://pethubonline.com/dog-walking-kit/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 14600,
+      "title": "Dog Feeding Equipment",
+      "link": "https://pethubonline.com/dog-feeding-equipment/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 14603,
+      "title": "Dog Seasonal Equipment",
+      "link": "https://pethubonline.com/dog-seasonal-equipment/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 14604,
+      "title": "Dog Outdoor Essentials",
+      "link": "https://pethubonline.com/dog-outdoor-essentials/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 14605,
+      "title": "Dog Emergency Supplies",
+      "link": "https://pethubonline.com/dog-emergency-supplies/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 14613,
+      "title": "Dog Household Setup",
+      "link": "https://pethubonline.com/dog-household-setup-3/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 14615,
+      "title": "Dog Car Safety",
+      "link": "https://pethubonline.com/dog-car-safety-2/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 14616,
+      "title": "Dog Equipment Cleaning",
+      "link": "https://pethubonline.com/dog-equipment-cleaning-2/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 14620,
+      "title": "Dog Ownership Checklist",
+      "link": "https://pethubonline.com/dog-ownership-checklist-5/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 14232,
+      "title": "Pet Home Safety Audit",
+      "link": "https://pethubonline.com/pet-home-safety-audit/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 14156,
+      "title": "Dog Bed Cleaning Schedule",
+      "link": "https://pethubonline.com/dog-bed-cleaning-schedule/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 14163,
+      "title": "Dog Bed Placement Guide",
+      "link": "https://pethubonline.com/dog-bed-placement-guide-2/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 14121,
+      "title": "Dog Bed Temperature Guide",
+      "link": "https://pethubonline.com/dog-bed-temperature-guide/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 14136,
+      "title": "Orthopaedic Support Explained",
+      "link": "https://pethubonline.com/orthopaedic-support-explained/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 14422,
+      "title": "Dog Ear Care Guide",
+      "link": "https://pethubonline.com/dog-ear-care-guide/",
+      "category": "Dog Health"
+    },
+    {
+      "id": 14114,
+      "title": "Dog Bed Materials Guide",
+      "link": "https://pethubonline.com/dog-bed-materials-guide-2/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 14130,
+      "title": "Puppy Bed Transition Guide",
+      "link": "https://pethubonline.com/puppy-bed-transition-guide/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 14134,
+      "title": "Multi-Dog Household Bed Setup",
+      "link": "https://pethubonline.com/multi-dog-household-bed-setup/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 14141,
+      "title": "Elevated Beds vs Floor Beds",
+      "link": "https://pethubonline.com/elevated-beds-vs-floor-beds/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 14417,
+      "title": "Dog Digestive Health Guide",
+      "link": "https://pethubonline.com/dog-digestive-health-guide/",
+      "category": "Dog Health"
+    },
+    {
+      "id": 14389,
+      "title": "Senior Dog Health Monitoring",
+      "link": "https://pethubonline.com/senior-dog-health-monitoring-2/",
+      "category": "Dog Health"
+    },
+    {
+      "id": 14360,
+      "title": "Understanding Veterinary Health Checks",
+      "link": "https://pethubonline.com/understanding-veterinary-health-checks/",
+      "category": "Dog Health"
+    },
+    {
+      "id": 14356,
+      "title": "Dog Recovery After Illness",
+      "link": "https://pethubonline.com/dog-recovery-after-illness/",
+      "category": "Dog Health"
+    },
+    {
+      "id": 14350,
+      "title": "Dog Medication Safety Guide",
+      "link": "https://pethubonline.com/dog-medication-safety-guide/",
+      "category": "Dog Health"
+    },
+    {
+      "id": 14343,
+      "title": "Seasonal Dog Health Risks",
+      "link": "https://pethubonline.com/seasonal-dog-health-risks/",
+      "category": "Dog Health"
+    },
+    {
+      "id": 14331,
+      "title": "Dog Health Check Routine",
+      "link": "https://pethubonline.com/dog-health-check-routine/",
+      "category": "Dog Health"
+    },
+    {
+      "id": 14318,
+      "title": "Dog Dental Health Schedule",
+      "link": "https://pethubonline.com/dog-dental-health-schedule/",
+      "category": "Dog Health"
+    },
+    {
+      "id": 14301,
+      "title": "Dog Skin and Coat Health Guide",
+      "link": "https://pethubonline.com/dog-skin-and-coat-health-guide/",
+      "category": "Dog Health"
+    },
+    {
+      "id": 14293,
+      "title": "Dog Weight Management Guide",
+      "link": "https://pethubonline.com/dog-weight-management-guide/",
+      "category": "Dog Health"
+    },
+    {
+      "id": 8172,
+      "title": "Our Research Standards",
+      "link": "https://pethubonline.com/our-research-standards/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 8171,
+      "title": "Why PetHub Online Exists",
+      "link": "https://pethubonline.com/why-pethub-online-exists/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 7346,
+      "title": "Indoor Cat Diet and Nutrition: Feeding Guidelines for House Cats",
+      "link": "https://pethubonline.com/indoor-cat-diet-nutrition-guide/",
+      "category": "Indoor Cats"
+    },
+    {
+      "id": 7345,
+      "title": "Indoor Cat Behaviour: Understanding and Managing Common Issues",
+      "link": "https://pethubonline.com/indoor-cat-behaviour-common-issues/",
+      "category": "Indoor Cats"
+    },
+    {
+      "id": 7344,
+      "title": "Creating a Cat-Friendly Home: Environmental Enrichment for Indoor Cats",
+      "link": "https://pethubonline.com/cat-friendly-home-enrichment-indoor-cats/",
+      "category": "Indoor Cats"
+    },
+    {
+      "id": 7343,
+      "title": "Indoor Cat Safety: Common Household Hazards for Cats",
+      "link": "https://pethubonline.com/indoor-cat-safety-household-hazards/",
+      "category": "Indoor Cats"
+    },
+    {
+      "id": 7342,
+      "title": "Indoor Cat Exercise: Keeping House Cats Active and Healthy",
+      "link": "https://pethubonline.com/indoor-cat-exercise-guide/",
+      "category": "Health &amp; Wellness"
+    },
+    {
+      "id": 7341,
+      "title": "First Week with a New Puppy: A Day-by-Day Guide",
+      "link": "https://pethubonline.com/first-week-new-puppy-guide/",
+      "category": "Dog Care"
+    },
+    {
+      "id": 7340,
+      "title": "Puppy Teething Guide: Stages, Signs, and Soothing Tips",
+      "link": "https://pethubonline.com/puppy-teething-guide-stages-signs/",
+      "category": "Dog Health"
+    },
+    {
+      "id": 7339,
+      "title": "Puppy Sleep Guide: How Much Sleep Puppies Need by Age",
+      "link": "https://pethubonline.com/puppy-sleep-guide-by-age/",
+      "category": "Dog Care"
+    },
+    {
+      "id": 7338,
+      "title": "Puppy-Proofing Your Home: A Room-by-Room Safety Guide",
+      "link": "https://pethubonline.com/puppy-proofing-home-safety-guide/",
+      "category": "Dog Care"
+    },
+    {
+      "id": 7337,
+      "title": "Puppy Vaccination Schedule UK: What to Expect and When",
+      "link": "https://pethubonline.com/puppy-vaccination-schedule-uk/",
+      "category": "Dog Health"
+    },
+    {
+      "id": 7336,
+      "title": "Dog Bed Safety: Avoiding Hazards and Choosing Non-Toxic Materials",
+      "link": "https://pethubonline.com/dog-bed-safety-non-toxic-materials/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 7335,
+      "title": "Seasonal Dog Bedding: Adjusting Comfort Through the Year",
+      "link": "https://pethubonline.com/seasonal-dog-bedding-guide/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 7334,
+      "title": "Puppy Bed Training: Helping Your Dog Love Their Bed",
+      "link": "https://pethubonline.com/puppy-bed-training-guide/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 7333,
+      "title": "Dog Bed Placement Guide: Where to Put Your Dog’s Bed",
+      "link": "https://pethubonline.com/dog-bed-placement-guide/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 7332,
+      "title": "How to Wash and Dry a Dog Bed Safely",
+      "link": "https://pethubonline.com/how-to-wash-dog-bed-safely/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 7177,
+      "title": "Cat Toy Terminology: Understanding Play Types and Toy Features",
+      "link": "https://pethubonline.com/cat-toy-terminology-understanding-play-types-and-toy-features/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 7175,
+      "title": "Cat Supply Essentials Glossary: Understanding Cat Care Products",
+      "link": "https://pethubonline.com/cat-supply-essentials-glossary-understanding-cat-care-products/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 7174,
+      "title": "Dog Bed Terminology: Materials, Types, and Sizing Terms Explained",
+      "link": "https://pethubonline.com/dog-bed-terminology-materials-types-and-sizing-terms-explained/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 7172,
+      "title": "Dog Food Glossary: Understanding Ingredients and Nutrition Labels",
+      "link": "https://pethubonline.com/dog-food-glossary-understanding-ingredients-and-nutrition-labels/",
+      "category": "Dog Food"
+    },
+    {
+      "id": 7170,
+      "title": "Dog Health Terminology: Understanding Common Veterinary and Care Terms",
+      "link": "https://pethubonline.com/dog-health-terminology-understanding-common-veterinary-and-care-terms/",
+      "category": "Dog Health"
+    },
+    {
+      "id": 7169,
+      "title": "Puppy Care Glossary: Essential Terms for New Puppy Owners",
+      "link": "https://pethubonline.com/puppy-care-glossary-essential-terms-for-new-puppy-owners/",
+      "category": "Dog Care"
+    },
+    {
+      "id": 7167,
+      "title": "Indoor Cat Terminology: A Complete Glossary for Cat Owners",
+      "link": "https://pethubonline.com/indoor-cat-terminology-a-complete-glossary-for-cat-owners/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 6052,
+      "title": "Low-Mobility Enrichment: Mental Stimulation for Dogs with Limited Movement",
+      "link": "https://pethubonline.com/low-mobility-enrichment-dogs/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 6050,
+      "title": "Toy Overstimulation Recovery: Calming Down an Overexcited Dog",
+      "link": "https://pethubonline.com/toy-overstimulation-recovery-dogs/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 6049,
+      "title": "Sensory Enrichment for Dogs: Engaging All Five Senses Through Play",
+      "link": "https://pethubonline.com/sensory-enrichment-dogs/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 6048,
+      "title": "Confidence-Building Play: Helping Shy and Fearful Dogs Through Toys",
+      "link": "https://pethubonline.com/confidence-building-play-dogs/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 6047,
+      "title": "Play Recovery After Surgery: Gentle Enrichment for Healing Dogs",
+      "link": "https://pethubonline.com/play-recovery-after-surgery-dogs/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 6046,
+      "title": "Dog Toy Hygiene Schedules: A Practical Cleaning Timetable",
+      "link": "https://pethubonline.com/dog-toy-hygiene-schedules/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 6045,
+      "title": "Safe Multi-Dog Toy Management: Preventing Resource Guarding",
+      "link": "https://pethubonline.com/safe-multi-dog-toy-management/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 6044,
+      "title": "Rotating Puzzle Complexity: Progressive Challenge for Smart Dogs",
+      "link": "https://pethubonline.com/rotating-puzzle-complexity-dogs/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 6042,
+      "title": "Enrichment by Breed Group: Tailoring Play to Your Dog&#8217;s Instincts",
+      "link": "https://pethubonline.com/enrichment-by-breed-group/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 6039,
+      "title": "Dog Toy Anxiety Reduction: Using Toys to Calm Nervous Dogs",
+      "link": "https://pethubonline.com/dog-toy-anxiety-reduction/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5950,
+      "title": "Dog Toy Durability Guide: What Lasts and What Does Not",
+      "link": "https://pethubonline.com/dog-toy-durability-guide/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5946,
+      "title": "Dog Toy Materials Compared: Rubber, Rope, Plush, and Nylon",
+      "link": "https://pethubonline.com/dog-toy-materials-compared/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5942,
+      "title": "Cognitive Enrichment for Senior Dogs: Gentle Play for Ageing Minds",
+      "link": "https://pethubonline.com/cognitive-enrichment-senior-dogs/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5938,
+      "title": "Enrichment Schedules for Dogs: Structuring Daily Play and Mental Work",
+      "link": "https://pethubonline.com/enrichment-schedules-dogs/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5935,
+      "title": "Dog Toy Storage and Organisation: Keeping Toys Clean and Accessible",
+      "link": "https://pethubonline.com/dog-toy-storage-organisation/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5934,
+      "title": "Crate and Play Enrichment: Keeping Dogs Happy in Confined Spaces",
+      "link": "https://pethubonline.com/crate-play-enrichment-dogs/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5933,
+      "title": "Safe Tug Play with Dogs: Rules, Benefits, and Common Mistakes",
+      "link": "https://pethubonline.com/safe-tug-play-dogs/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5932,
+      "title": "Scent-Game Enrichment for Dogs: Using Smell to Engage Your Dog",
+      "link": "https://pethubonline.com/scent-game-enrichment-dogs/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5931,
+      "title": "Signs of Toy Overstimulation in Dogs: When Play Becomes Too Much",
+      "link": "https://pethubonline.com/dog-toy-overstimulation-signs/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5930,
+      "title": "Dog Toy Safety by Breed Size: Choosing the Right Size Toy",
+      "link": "https://pethubonline.com/dog-toy-safety-breed-size/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5523,
+      "title": "Dog Training Equipment Explained: Tools, Uses, and What to Avoid",
+      "link": "https://pethubonline.com/dog-training-equipment-guide/",
+      "category": "Training Supplies"
+    },
+    {
+      "id": 5522,
+      "title": "Orthopaedic Care for Dogs: Joint Health, Mobility, and Support",
+      "link": "https://pethubonline.com/orthopaedic-care-dogs/",
+      "category": "Dog Health"
+    },
+    {
+      "id": 5521,
+      "title": "Pet Health Terminology: A Guide to Common Veterinary Terms",
+      "link": "https://pethubonline.com/pet-health-terminology-guide/",
+      "category": "Pet Health"
+    },
+    {
+      "id": 5520,
+      "title": "Dog Health Basics: Common Conditions, Prevention, and When to See a Vet",
+      "link": "https://pethubonline.com/dog-health-basics-guide/",
+      "category": "Dog Health"
+    },
+    {
+      "id": 5519,
+      "title": "Indoor Cat Care: A Complete Guide to Keeping House Cats Happy and Healthy",
+      "link": "https://pethubonline.com/indoor-cat-care-guide/",
+      "category": "Indoor Cats"
+    },
+    {
+      "id": 5512,
+      "title": "Dog Behaviour Explained: Understanding Your Dog&#8217;s Body Language and Actions",
+      "link": "https://pethubonline.com/dog-behaviour-explained/",
+      "category": "Dog Care"
+    },
+    {
+      "id": 5511,
+      "title": "Pet Enrichment Explained: Types, Benefits, and Practical Ideas",
+      "link": "https://pethubonline.com/pet-enrichment-guide/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5510,
+      "title": "Dog Bed Sizing Guide: How to Measure Your Dog and Choose the Right Fit",
+      "link": "https://pethubonline.com/dog-bed-sizing-guide/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 5509,
+      "title": "Pet Toy Safety: Understanding Materials, Hazards, and Standards",
+      "link": "https://pethubonline.com/pet-toy-safety-guide/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5508,
+      "title": "Puppy Development Stages: A Complete Guide from Birth to Maturity",
+      "link": "https://pethubonline.com/puppy-development-stages-guide/",
+      "category": "Puppy Care"
+    },
+    {
+      "id": 5483,
+      "title": "Dog Toy Lifespan: When to Replace Toys and How to Extend Their Life",
+      "link": "https://pethubonline.com/dog-toy-lifespan-replacement/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5476,
+      "title": "Mental Stimulation Toys for Dogs: Puzzles, Games, and Brain Work",
+      "link": "https://pethubonline.com/mental-stimulation-toys-dogs/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5473,
+      "title": "Senior Dog Toys: Gentle Play Options for Older Dogs",
+      "link": "https://pethubonline.com/senior-dog-toys/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5471,
+      "title": "Dog Boredom Prevention: Signs, Solutions, and Enrichment Ideas",
+      "link": "https://pethubonline.com/dog-boredom-prevention/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5469,
+      "title": "Dog Toy Rotation: How to Keep Your Dog Interested and Engaged",
+      "link": "https://pethubonline.com/dog-toy-rotation-guide/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5467,
+      "title": "Pet Feeding Guide: Understanding Portions, Schedules, and Methods",
+      "link": "https://pethubonline.com/pet-feeding-guide/",
+      "category": "Dog Food"
+    },
+    {
+      "id": 5464,
+      "title": "Pet Grooming Glossary: Understanding Grooming Terms and Techniques",
+      "link": "https://pethubonline.com/pet-grooming-glossary/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 5462,
+      "title": "Dog Training Terminology Explained: Key Concepts for New Owners",
+      "link": "https://pethubonline.com/dog-training-terminology-explained/",
+      "category": "Training Supplies"
+    },
+    {
+      "id": 5460,
+      "title": "Pet Nutrition Terminology: A Guide to Common Terms on Pet Food Labels",
+      "link": "https://pethubonline.com/pet-nutrition-terminology-guide/",
+      "category": "Dog Food"
+    },
+    {
+      "id": 5458,
+      "title": "Cat Scratching Behaviour Explained: Why Cats Scratch and How to Help",
+      "link": "https://pethubonline.com/cat-scratching-behaviour-explained/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 5425,
+      "title": "Dog Toys FAQ: Common Questions Answered",
+      "link": "https://pethubonline.com/dog-toys-faq/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 5424,
+      "title": "Aggressive Chewer Guide: Safe Toys for Power Chewers",
+      "link": "https://pethubonline.com/aggressive-chewer-dog-toys/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 5423,
+      "title": "Dog Toy Enrichment: Beyond Basic Fetch",
+      "link": "https://pethubonline.com/dog-toy-enrichment-beyond-fetch/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 5422,
+      "title": "Indoor vs Outdoor Dog Toys: Choosing the Right Type",
+      "link": "https://pethubonline.com/indoor-vs-outdoor-dog-toys/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 5421,
+      "title": "Puppy-Safe Dog Toys: What to Look For and What to Avoid",
+      "link": "https://pethubonline.com/puppy-safe-dog-toys/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 5420,
+      "title": "Dog Toy Cleaning Guide: How to Keep Toys Hygienic",
+      "link": "https://pethubonline.com/dog-toy-cleaning-guide/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 5419,
+      "title": "Cat Care Basics: A Glossary for New Cat Owners",
+      "link": "https://pethubonline.com/cat-care-basics-glossary/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 5418,
+      "title": "Dog Harness Types Explained: Finding the Right Fit",
+      "link": "https://pethubonline.com/dog-harness-types-glossary/",
+      "category": "Dog Harnesses"
+    },
+    {
+      "id": 5417,
+      "title": "Puppy Care Essentials: Key Terms Every New Owner Should Know",
+      "link": "https://pethubonline.com/puppy-care-essentials-glossary/",
+      "category": "Dog Care"
+    },
+    {
+      "id": 5416,
+      "title": "Dog Bed Types Explained: A Complete Glossary",
+      "link": "https://pethubonline.com/dog-bed-types-glossary/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 5415,
+      "title": "Dog Play Styles Explained: Understanding How Your Dog Plays",
+      "link": "https://pethubonline.com/dog-play-styles-explained/",
+      "category": "Dog Toys"
+    },
+    {
+      "id": 5414,
+      "title": "Cat Toy Types Explained: A Complete Glossary",
+      "link": "https://pethubonline.com/cat-toy-types-glossary/",
+      "category": "Cat Toys"
+    },
+    {
+      "id": 5296,
+      "title": "Best Indoor Cat Toys UK (2026): Complete Guide for House Cats",
+      "link": "https://pethubonline.com/best-indoor-cat-toys/",
+      "category": "Cat Toys"
+    },
+    {
+      "id": 5033,
+      "title": "How to Choose the Right Cat Toy for Your Cat&#8217;s Personality",
+      "link": "https://pethubonline.com/how-to-choose-cat-toys-personality/",
+      "category": "Cat Toys"
+    },
+    {
+      "id": 5036,
+      "title": "Understanding Cat Play Behaviour: What Different Play Styles Mean",
+      "link": "https://pethubonline.com/understanding-cat-play-behaviour/",
+      "category": "Cat Toys"
+    },
+    {
+      "id": 5032,
+      "title": "Cat Toys FAQ: Common Questions Answered",
+      "link": "https://pethubonline.com/cat-toys-faq/",
+      "category": "Cat Toys"
+    },
+    {
+      "id": 5035,
+      "title": "Cat Enrichment Beyond Toys: Creating a Stimulating Home",
+      "link": "https://pethubonline.com/cat-enrichment-beyond-toys/",
+      "category": "Cat Toys"
+    },
+    {
+      "id": 5034,
+      "title": "Cat Toy Rotation: How to Keep Toys Fresh and Engaging",
+      "link": "https://pethubonline.com/cat-toy-rotation-guide/",
+      "category": "Cat Toys"
+    },
+    {
+      "id": 4792,
+      "title": "Puppy Socialisation: A Complete Timeline Guide",
+      "link": "https://pethubonline.com/puppy-socialisation-guide/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 4791,
+      "title": "How to Choose the Right Dog Training Treats",
+      "link": "https://pethubonline.com/how-to-choose-dog-training-treats/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 4790,
+      "title": "DIY Dog Toys: Safe Homemade Options",
+      "link": "https://pethubonline.com/diy-dog-toys-homemade/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 4789,
+      "title": "Best Types of Dog Toys for Different Play Styles",
+      "link": "https://pethubonline.com/dog-toys-for-different-play-styles/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 4788,
+      "title": "Mental Stimulation for Dogs: Beyond Physical Exercise",
+      "link": "https://pethubonline.com/mental-stimulation-for-dogs/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 4787,
+      "title": "Dog Toy Safety: What Every Owner Needs to Know",
+      "link": "https://pethubonline.com/dog-toy-safety-guide/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 4786,
+      "title": "Where to Place Your Dog&#8217;s Bed: Location and Comfort Tips",
+      "link": "https://pethubonline.com/where-to-place-dog-bed/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 4785,
+      "title": "How to Wash and Maintain Your Dog&#8217;s Bed",
+      "link": "https://pethubonline.com/how-to-wash-dog-bed/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 4784,
+      "title": "Dog Bed Materials Explained: Foam, Memory Foam, and More",
+      "link": "https://pethubonline.com/dog-bed-materials-guide/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 4783,
+      "title": "How to Choose the Right Dog Bed Size",
+      "link": "https://pethubonline.com/how-to-choose-dog-bed-size/",
+      "category": "Dog Beds"
+    },
+    {
+      "id": 4573,
+      "title": "Seasonal Pet Safety: Protecting Pets Through the Year",
+      "link": "https://pethubonline.com/seasonal-pet-safety-guide/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 4570,
+      "title": "First-Time Dog Owner Essentials: What You Need to Know",
+      "link": "https://pethubonline.com/first-time-dog-owner-essentials/",
+      "category": "Dog Care"
+    },
+    {
+      "id": 4576,
+      "title": "Multi-Pet Household Tips: Living with Dogs and Cats Together",
+      "link": "https://pethubonline.com/multi-pet-household-tips/",
+      "category": "Pet Care"
+    },
+    {
+      "id": 4574,
+      "title": "Pet Hydration Guide: How Much Water Does Your Pet Need?",
+      "link": "https://pethubonline.com/pet-hydration-guide/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 4571,
+      "title": "Pet First Aid Basics: What Every Owner Should Know",
+      "link": "https://pethubonline.com/pet-first-aid-basics/",
+      "category": "Dog Supplies"
+    },
+    {
+      "id": 4568,
+      "title": "Dog Dental Health: A Practical Care Guide",
+      "link": "https://pethubonline.com/dog-dental-health-care-guide/",
+      "category": "Dog Care"
+    },
+    {
+      "id": 4566,
+      "title": "Seasonal Dog Care: Keeping Your Dog Safe Year-Round",
+      "link": "https://pethubonline.com/seasonal-dog-care-guide/",
+      "category": "Dog Care"
+    },
+    {
+      "id": 4563,
+      "title": "Dog Grooming Basics: A Complete Guide for Owners",
+      "link": "https://pethubonline.com/dog-grooming-basics-guide/",
+      "category": "Dog Care"
+    },
+    {
+      "id": 4415,
+      "title": "Cat Toy Safety Guide: What Every Owner Should Know",
+      "link": "https://pethubonline.com/cat-toy-safety-guide/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 4406,
+      "title": "Best Interactive Cat Toys for Indoor Cats: Engagement Guide",
+      "link": "https://pethubonline.com/best-interactive-cat-toys-indoor-cats/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 4414,
+      "title": "Harness vs Collar: Which Is Better for Your Dog?",
+      "link": "https://pethubonline.com/harness-vs-collar-which-is-better/",
+      "category": "Dog Care"
+    },
+    {
+      "id": 4413,
+      "title": "How to Measure Your Dog for a Harness: Step-by-Step Guide",
+      "link": "https://pethubonline.com/how-to-measure-dog-for-harness/",
+      "category": "Dog Care"
+    },
+    {
+      "id": 4412,
+      "title": "No-Pull Dog Harness Guide: How They Work and When to Use One",
+      "link": "https://pethubonline.com/no-pull-dog-harness-guide/",
+      "category": "Dog Harnesses"
+    },
+    {
+      "id": 4411,
+      "title": "Dog Harnesses: The Complete Guide to Types, Fitting, and Safety",
+      "link": "https://pethubonline.com/dog-harnesses-complete-guide/",
+      "category": "Dog Care"
+    },
+    {
+      "id": 4410,
+      "title": "Cat Enrichment Activities Beyond Toys: Complete Guide",
+      "link": "https://pethubonline.com/cat-enrichment-activities-beyond-toys/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 4409,
+      "title": "Kitten vs Adult Cat Toys: Age-Appropriate Play Guide",
+      "link": "https://pethubonline.com/kitten-vs-adult-cat-toys-age-appropriate/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 4408,
+      "title": "How Often Should You Replace Cat Toys? A Practical Guide",
+      "link": "https://pethubonline.com/how-often-replace-cat-toys/",
+      "category": "Cat Supplies"
+    },
+    {
+      "id": 4407,
+      "title": "DIY Cat Toys: Safe Homemade Options Your Cat Will Love",
+      "link": "https://pethubonline.com/diy-cat-toys-safe-homemade-options/",
+      "category": "Cat Supplies"
+    }
+  ],
+  "low_image_count": [],
+  "alt_text_issues": [
+    {
+      "id": 12758,
+      "title": "Indoor Cat Exercise: Daily Routines to Keep UK Cats Active",
+      "link": "https://pethubonline.com/indoor-cat-exercise-routines-uk/",
+      "missing_alt": 1
+    },
+    {
+      "id": 12757,
+      "title": "DIY Catio Plans: How to Build a Cat Enclosure in the UK",
+      "link": "https://pethubonline.com/diy-catio-building-plans-uk/",
+      "missing_alt": 1
+    },
+    {
+      "id": 12756,
+      "title": "Catio Kits UK: Complete Guide to Outdoor Cat Enclosures",
+      "link": "https://pethubonline.com/catio-kits-uk-guide/",
+      "missing_alt": 1
+    },
+    {
+      "id": 14190,
+      "title": "Indoor Cat Exercise Guide",
+      "link": "https://pethubonline.com/indoor-cat-exercise-guide-2/",
+      "missing_alt": 2
+    },
+    {
+      "id": 14182,
+      "title": "Cat Toy Cleaning Guide",
+      "link": "https://pethubonline.com/cat-toy-cleaning-guide/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14186,
+      "title": "Cat Play Session Timing",
+      "link": "https://pethubonline.com/cat-play-session-timing/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14189,
+      "title": "Catnip Use Guide",
+      "link": "https://pethubonline.com/catnip-use-guide-2/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14487,
+      "title": "Cat Grooming Routine",
+      "link": "https://pethubonline.com/cat-grooming-routine/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14498,
+      "title": "Cat Hygiene Guide",
+      "link": "https://pethubonline.com/cat-hygiene-guide/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14568,
+      "title": "Cat Water Fountain Guide",
+      "link": "https://pethubonline.com/cat-water-fountain-guide-3/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14569,
+      "title": "Cat Carrier Guide",
+      "link": "https://pethubonline.com/cat-carrier-guide-3/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14572,
+      "title": "Cat Travel Preparation",
+      "link": "https://pethubonline.com/cat-travel-preparation-3/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14587,
+      "title": "Cat Wellness Monitoring",
+      "link": "https://pethubonline.com/cat-wellness-monitoring-2/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14591,
+      "title": "Cat Supply Storage Guide",
+      "link": "https://pethubonline.com/cat-supply-storage-guide-3/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14593,
+      "title": "Cat Household Hazards Guide",
+      "link": "https://pethubonline.com/cat-household-hazards-guide/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14595,
+      "title": "Cat Behaviour Environment Guide",
+      "link": "https://pethubonline.com/cat-behaviour-environment-guide/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14596,
+      "title": "New Cat Owner Setup Guide",
+      "link": "https://pethubonline.com/new-cat-owner-setup-guide-2/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14597,
+      "title": "Dog Travel Equipment",
+      "link": "https://pethubonline.com/dog-travel-equipment/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14599,
+      "title": "Dog Walking Kit",
+      "link": "https://pethubonline.com/dog-walking-kit/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14600,
+      "title": "Dog Feeding Equipment",
+      "link": "https://pethubonline.com/dog-feeding-equipment/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14603,
+      "title": "Dog Seasonal Equipment",
+      "link": "https://pethubonline.com/dog-seasonal-equipment/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14604,
+      "title": "Dog Outdoor Essentials",
+      "link": "https://pethubonline.com/dog-outdoor-essentials/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14605,
+      "title": "Dog Emergency Supplies",
+      "link": "https://pethubonline.com/dog-emergency-supplies/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14613,
+      "title": "Dog Household Setup",
+      "link": "https://pethubonline.com/dog-household-setup-3/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14615,
+      "title": "Dog Car Safety",
+      "link": "https://pethubonline.com/dog-car-safety-2/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14616,
+      "title": "Dog Equipment Cleaning",
+      "link": "https://pethubonline.com/dog-equipment-cleaning-2/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14620,
+      "title": "Dog Ownership Checklist",
+      "link": "https://pethubonline.com/dog-ownership-checklist-5/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14232,
+      "title": "Pet Home Safety Audit",
+      "link": "https://pethubonline.com/pet-home-safety-audit/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14156,
+      "title": "Dog Bed Cleaning Schedule",
+      "link": "https://pethubonline.com/dog-bed-cleaning-schedule/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14163,
+      "title": "Dog Bed Placement Guide",
+      "link": "https://pethubonline.com/dog-bed-placement-guide-2/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14121,
+      "title": "Dog Bed Temperature Guide",
+      "link": "https://pethubonline.com/dog-bed-temperature-guide/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14136,
+      "title": "Orthopaedic Support Explained",
+      "link": "https://pethubonline.com/orthopaedic-support-explained/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14422,
+      "title": "Dog Ear Care Guide",
+      "link": "https://pethubonline.com/dog-ear-care-guide/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14114,
+      "title": "Dog Bed Materials Guide",
+      "link": "https://pethubonline.com/dog-bed-materials-guide-2/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14130,
+      "title": "Puppy Bed Transition Guide",
+      "link": "https://pethubonline.com/puppy-bed-transition-guide/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14134,
+      "title": "Multi-Dog Household Bed Setup",
+      "link": "https://pethubonline.com/multi-dog-household-bed-setup/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14141,
+      "title": "Elevated Beds vs Floor Beds",
+      "link": "https://pethubonline.com/elevated-beds-vs-floor-beds/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14417,
+      "title": "Dog Digestive Health Guide",
+      "link": "https://pethubonline.com/dog-digestive-health-guide/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14389,
+      "title": "Senior Dog Health Monitoring",
+      "link": "https://pethubonline.com/senior-dog-health-monitoring-2/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14360,
+      "title": "Understanding Veterinary Health Checks",
+      "link": "https://pethubonline.com/understanding-veterinary-health-checks/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14356,
+      "title": "Dog Recovery After Illness",
+      "link": "https://pethubonline.com/dog-recovery-after-illness/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14350,
+      "title": "Dog Medication Safety Guide",
+      "link": "https://pethubonline.com/dog-medication-safety-guide/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14343,
+      "title": "Seasonal Dog Health Risks",
+      "link": "https://pethubonline.com/seasonal-dog-health-risks/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14331,
+      "title": "Dog Health Check Routine",
+      "link": "https://pethubonline.com/dog-health-check-routine/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14318,
+      "title": "Dog Dental Health Schedule",
+      "link": "https://pethubonline.com/dog-dental-health-schedule/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14301,
+      "title": "Dog Skin and Coat Health Guide",
+      "link": "https://pethubonline.com/dog-skin-and-coat-health-guide/",
+      "missing_alt": 3
+    },
+    {
+      "id": 14293,
+      "title": "Dog Weight Management Guide",
+      "link": "https://pethubonline.com/dog-weight-management-guide/",
+      "missing_alt": 3
+    },
+    {
+      "id": 13962,
+      "title": "Puppy Toilet Training Guide",
+      "link": "https://pethubonline.com/puppy-toilet-training-guide/",
+      "missing_alt": 1
+    },
+    {
+      "id": 14201,
+      "title": "Indoor Cat Weight Management",
+      "link": "https://pethubonline.com/indoor-cat-weight-management/",
+      "missing_alt": 2
+    },
+    {
+      "id": 14204,
+      "title": "Indoor Cat Enrichment Calendar",
+      "link": "https://pethubonline.com/indoor-cat-enrichment-calendar-2/",
+      "missing_alt": 2
+    },
+    {
+      "id": 14194,
+      "title": "Cat Shelving Guide",
+      "link": "https://pethubonline.com/cat-shelving-guide/",
+      "missing_alt": 2
+    },
+    {
+      "id": 14216,
+      "title": "Catio Planning Guide",
+      "link": "https://pethubonline.com/catio-planning-guide-4/",
+      "missing_alt": 2
+    },
+    {
+      "id": 14209,
+      "title": "Multi-Level Cat Environment",
+      "link": "https://pethubonline.com/multi-level-cat-environment-2/",
+      "missing_alt": 2
+    },
+    {
+      "id": 14212,
+      "title": "Indoor Cat Mental Stimulation",
+      "link": "https://pethubonline.com/indoor-cat-mental-stimulation-2/",
+      "missing_alt": 2
+    },
+    {
+      "id": 14199,
+      "title": "Indoor Cat Health Monitoring",
+      "link": "https://pethubonline.com/indoor-cat-health-monitoring/",
+      "missing_alt": 2
+    },
+    {
+      "id": 4412,
+      "title": "No-Pull Dog Harness Guide: How They Work and When to Use One",
+      "link": "https://pethubonline.com/no-pull-dog-harness-guide/",
+      "missing_alt": 3
+    },
+    {
+      "id": 4237,
+      "title": "Best Cat Brushes UK (2026) – Guide by Coat Type",
+      "link": "https://pethubonline.com/best-cat-brushes-uk/",
+      "missing_alt": 1
+    },
+    {
+      "id": 4230,
+      "title": "Best Cat Grooming Supplies UK (2026) – Complete Guide",
+      "link": "https://pethubonline.com/best-cat-grooming-supplies-uk/",
+      "missing_alt": 1
+    },
+    {
+      "id": 4223,
+      "title": "Best Cat Window Perches UK (2026) – Sunning &#038; Bird Watching",
+      "link": "https://pethubonline.com/best-cat-window-perches-uk/",
+      "missing_alt": 1
+    },
+    {
+      "id": 4216,
+      "title": "Best Cat Radiator Beds UK (2026) – Hook-On Warmth Guide",
+      "link": "https://pethubonline.com/best-cat-radiator-beds-uk/",
+      "missing_alt": 1
+    },
+    {
+      "id": 4209,
+      "title": "Best Heated Cat Beds UK (2026) – Winter Warmth Guide",
+      "link": "https://pethubonline.com/best-heated-cat-beds-uk/",
+      "missing_alt": 1
+    },
+    {
+      "id": 4202,
+      "title": "Best Cat Beds UK (2026) – Complete Guide",
+      "link": "https://pethubonline.com/best-cat-beds-uk/",
+      "missing_alt": 1
+    },
+    {
+      "id": 4195,
+      "title": "Best Cat Toys for Indoor Cats UK (2026) – Enrichment Guide",
+      "link": "https://pethubonline.com/best-cat-toys-indoor-cats-uk/",
+      "missing_alt": 1
+    },
+    {
+      "id": 4034,
+      "title": "Best No-Pull Dog Harnesses UK (2026) – Training &#038; Comfort Guide",
+      "link": "https://pethubonline.com/best-no-pull-dog-harnesses-uk/",
+      "missing_alt": 1
+    },
+    {
+      "id": 4027,
+      "title": "Best Dog Collars and Harnesses UK (2026) – Complete Guide",
+      "link": "https://pethubonline.com/best-dog-collars-and-harnesses-uk/",
+      "missing_alt": 1
+    },
+    {
+      "id": 4018,
+      "title": "Best Puppy Beds UK (2026) – First Bed &#038; Crate Training Guide",
+      "link": "https://pethubonline.com/best-puppy-beds-uk/",
+      "missing_alt": 1
+    },
+    {
+      "id": 4011,
+      "title": "Best Cooling Dog Beds UK (2026) – Temperature Regulation Guide",
+      "link": "https://pethubonline.com/best-cooling-dog-beds-uk/",
+      "missing_alt": 1
+    },
+    {
+      "id": 4004,
+      "title": "Best Orthopaedic Dog Beds UK (2026) – Joint Support Guide",
+      "link": "https://pethubonline.com/best-orthopaedic-dog-beds-uk/",
+      "missing_alt": 1
+    },
+    {
+      "id": 3996,
+      "title": "Best Dog Beds UK (2026) – Complete Guide &#038; Honest Reviews",
+      "link": "https://pethubonline.com/best-dog-beds-uk/",
+      "missing_alt": 1
+    },
+    {
+      "id": 3960,
+      "title": "Best Puppy Toys UK (2026) – Teething &#038; First Toys Guide",
+      "link": "https://pethubonline.com/best-puppy-toys-uk/",
+      "missing_alt": 1
+    },
+    {
+      "id": 3959,
+      "title": "Best Interactive Dog Toys UK (2026) – Puzzle &#038; Enrichment Guide",
+      "link": "https://pethubonline.com/best-interactive-dog-toys-uk/",
+      "missing_alt": 1
+    },
+    {
+      "id": 696,
+      "title": "Essential Cat Supplies for Cat Owners &#8211; Number 1 Must-Haves",
+      "link": "https://pethubonline.com/essential-cat-supplies-for-cat-owners/",
+      "missing_alt": 1
+    }
+  ]
+}

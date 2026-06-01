@@ -1,0 +1,300 @@
+{
+  "audit": "Phase 19 Authority Audit Summary",
+  "date": "2026-06-01T21:10:10.912802Z",
+  "site": "pethubonline.com",
+  "total_posts_audited": 460,
+  "authority_score": 89.4,
+  "breakdown": {
+    "cta_coverage": {
+      "score": 100.0,
+      "weight": "25%",
+      "present": 460,
+      "missing": 0,
+      "by_type": {
+        "internal_link": 460,
+        "affiliate": 459,
+        "newsletter": 193,
+        "category_browse": 1
+      }
+    },
+    "faq_coverage": {
+      "score": 98.7,
+      "weight": "15%",
+      "present": 454,
+      "missing": 6,
+      "with_schema": 0,
+      "avg_questions": 9.6
+    },
+    "affiliate_coverage": {
+      "score": 99.8,
+      "weight": "25%",
+      "present": 459,
+      "missing": 1
+    },
+    "table_coverage": {
+      "score": 85.4,
+      "weight": "10%",
+      "present": 393,
+      "missing": 67
+    },
+    "image_compliance": {
+      "featured_score": 51.3,
+      "alt_text_score": 84.3,
+      "weight": "25% (15% featured + 10% alt)",
+      "featured_present": 236,
+      "featured_missing": 224,
+      "alt_issues": 72,
+      "low_image_count": 0
+    }
+  },
+  "top_20_priority_fixes": [
+    {
+      "id": 18714,
+      "title": "UK Pet Emergency Guide &#8211; Free Download",
+      "link": "https://pethubonline.com/pet-emergency-guide/",
+      "category": "Uncategorized",
+      "missing_elements": [
+        "FAQ",
+        "ComparisonTable",
+        "FeaturedImage"
+      ],
+      "deficiency_score": 5
+    },
+    {
+      "id": 18712,
+      "title": "Indoor Cat Enrichment Checklist &#8211; Free Download",
+      "link": "https://pethubonline.com/indoor-cat-enrichment-checklist/",
+      "category": "Uncategorized",
+      "missing_elements": [
+        "FAQ",
+        "ComparisonTable",
+        "FeaturedImage"
+      ],
+      "deficiency_score": 5
+    },
+    {
+      "id": 18711,
+      "title": "New Puppy Starter Checklist &#8211; Free Download",
+      "link": "https://pethubonline.com/puppy-starter-checklist/",
+      "category": "Uncategorized",
+      "missing_elements": [
+        "FAQ",
+        "ComparisonTable",
+        "FeaturedImage"
+      ],
+      "deficiency_score": 5
+    },
+    {
+      "id": 14041,
+      "title": "Crate Training Schedule UK",
+      "link": "https://pethubonline.com/crate-training-schedule-uk-3/",
+      "category": "Puppy Care",
+      "missing_elements": [
+        "Affiliates",
+        "FeaturedImage"
+      ],
+      "deficiency_score": 5
+    },
+    {
+      "id": 12758,
+      "title": "Indoor Cat Exercise: Daily Routines to Keep UK Cats Active",
+      "link": "https://pethubonline.com/indoor-cat-exercise-routines-uk/",
+      "category": "Indoor Cats",
+      "missing_elements": [
+        "ComparisonTable",
+        "FeaturedImage",
+        "AltText"
+      ],
+      "deficiency_score": 4
+    },
+    {
+      "id": 12757,
+      "title": "DIY Catio Plans: How to Build a Cat Enclosure in the UK",
+      "link": "https://pethubonline.com/diy-catio-building-plans-uk/",
+      "category": "Indoor Cats",
+      "missing_elements": [
+        "ComparisonTable",
+        "FeaturedImage",
+        "AltText"
+      ],
+      "deficiency_score": 4
+    },
+    {
+      "id": 12756,
+      "title": "Catio Kits UK: Complete Guide to Outdoor Cat Enclosures",
+      "link": "https://pethubonline.com/catio-kits-uk-guide/",
+      "category": "Indoor Cats",
+      "missing_elements": [
+        "ComparisonTable",
+        "FeaturedImage",
+        "AltText"
+      ],
+      "deficiency_score": 4
+    },
+    {
+      "id": 14190,
+      "title": "Indoor Cat Exercise Guide",
+      "link": "https://pethubonline.com/indoor-cat-exercise-guide-2/",
+      "category": "Indoor Cats",
+      "missing_elements": [
+        "ComparisonTable",
+        "FeaturedImage",
+        "AltText"
+      ],
+      "deficiency_score": 4
+    },
+    {
+      "id": 14182,
+      "title": "Cat Toy Cleaning Guide",
+      "link": "https://pethubonline.com/cat-toy-cleaning-guide/",
+      "category": "Cat Toys",
+      "missing_elements": [
+        "ComparisonTable",
+        "FeaturedImage",
+        "AltText"
+      ],
+      "deficiency_score": 4
+    },
+    {
+      "id": 14186,
+      "title": "Cat Play Session Timing",
+      "link": "https://pethubonline.com/cat-play-session-timing/",
+      "category": "Cat Toys",
+      "missing_elements": [
+        "ComparisonTable",
+        "FeaturedImage",
+        "AltText"
+      ],
+      "deficiency_score": 4
+    },
+    {
+      "id": 14189,
+      "title": "Catnip Use Guide",
+      "link": "https://pethubonline.com/catnip-use-guide-2/",
+      "category": "Cat Toys",
+      "missing_elements": [
+        "ComparisonTable",
+        "FeaturedImage",
+        "AltText"
+      ],
+      "deficiency_score": 4
+    },
+    {
+      "id": 14498,
+      "title": "Cat Hygiene Guide",
+      "link": "https://pethubonline.com/cat-hygiene-guide/",
+      "category": "Cat Supplies",
+      "missing_elements": [
+        "ComparisonTable",
+        "FeaturedImage",
+        "AltText"
+      ],
+      "deficiency_score": 4
+    },
+    {
+      "id": 14568,
+      "title": "Cat Water Fountain Guide",
+      "link": "https://pethubonline.com/cat-water-fountain-guide-3/",
+      "category": "Cat Supplies",
+      "missing_elements": [
+        "ComparisonTable",
+        "FeaturedImage",
+        "AltText"
+      ],
+      "deficiency_score": 4
+    },
+    {
+      "id": 14572,
+      "title": "Cat Travel Preparation",
+      "link": "https://pethubonline.com/cat-travel-preparation-3/",
+      "category": "Cat Supplies",
+      "missing_elements": [
+        "ComparisonTable",
+        "FeaturedImage",
+        "AltText"
+      ],
+      "deficiency_score": 4
+    },
+    {
+      "id": 14587,
+      "title": "Cat Wellness Monitoring",
+      "link": "https://pethubonline.com/cat-wellness-monitoring-2/",
+      "category": "Cat Supplies",
+      "missing_elements": [
+        "ComparisonTable",
+        "FeaturedImage",
+        "AltText"
+      ],
+      "deficiency_score": 4
+    },
+    {
+      "id": 14591,
+      "title": "Cat Supply Storage Guide",
+      "link": "https://pethubonline.com/cat-supply-storage-guide-3/",
+      "category": "Cat Supplies",
+      "missing_elements": [
+        "ComparisonTable",
+        "FeaturedImage",
+        "AltText"
+      ],
+      "deficiency_score": 4
+    },
+    {
+      "id": 14593,
+      "title": "Cat Household Hazards Guide",
+      "link": "https://pethubonline.com/cat-household-hazards-guide/",
+      "category": "Cat Supplies",
+      "missing_elements": [
+        "ComparisonTable",
+        "FeaturedImage",
+        "AltText"
+      ],
+      "deficiency_score": 4
+    },
+    {
+      "id": 14595,
+      "title": "Cat Behaviour Environment Guide",
+      "link": "https://pethubonline.com/cat-behaviour-environment-guide/",
+      "category": "Cat Supplies",
+      "missing_elements": [
+        "ComparisonTable",
+        "FeaturedImage",
+        "AltText"
+      ],
+      "deficiency_score": 4
+    },
+    {
+      "id": 14596,
+      "title": "New Cat Owner Setup Guide",
+      "link": "https://pethubonline.com/new-cat-owner-setup-guide-2/",
+      "category": "Cat Supplies",
+      "missing_elements": [
+        "ComparisonTable",
+        "FeaturedImage",
+        "AltText"
+      ],
+      "deficiency_score": 4
+    },
+    {
+      "id": 14597,
+      "title": "Dog Travel Equipment",
+      "link": "https://pethubonline.com/dog-travel-equipment/",
+      "category": "Dog Supplies",
+      "missing_elements": [
+        "ComparisonTable",
+        "FeaturedImage",
+        "AltText"
+      ],
+      "deficiency_score": 4
+    }
+  ],
+  "recommendations": [
+    "CTA gap: 0 posts lack any call-to-action — add affiliate links or internal links",
+    "FAQ gap: 6 posts lack FAQ sections — add FAQPage schema for rich snippets",
+    "Affiliate gap: 1 posts have no Amazon links — prioritize product review categories",
+    "Table gap: 67 posts lack comparison tables — add for product comparison posts",
+    "Image gap: 224 posts missing featured image, 72 posts have alt text issues"
+  ],
+  "audit_duration_seconds": 20.4,
+  "errors": 0
+}
