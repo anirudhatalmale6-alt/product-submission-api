@@ -361,18 +361,22 @@ border:1px solid var(--border);transition:all 0.3s;
 
 <script>
 const CLUSTERS = [
+  {name:"Dog Supplies",posts:104,target:40,authority:92,trend:"+5",weekAdd:3,monthAdd:15,topics:["equipment","feeding","walking","safety","grooming","accessories"]},
+  {name:"Pet Care",posts:90,target:40,authority:88,trend:"+4",weekAdd:4,monthAdd:20,topics:["grooming","travel","seasonal","wellness","nutrition","hygiene"]},
   {name:"Dog Health",posts:75,target:40,authority:89,trend:"+25",weekAdd:25,monthAdd:50,topics:["symptoms","prevention","senior care","mobility","diabetes","heart","allergies","dental"]},
-  {name:"Dog Supplies",posts:45,target:40,authority:78,trend:"+2",weekAdd:2,monthAdd:12,topics:["equipment","feeding","walking","safety"]},
-  {name:"Cat Supplies",posts:42,target:40,authority:75,trend:"+1",weekAdd:1,monthAdd:8,topics:["carriers","feeding","hygiene","safety"]},
-  {name:"Cat Toys",posts:38,target:40,authority:71,trend:"+3",weekAdd:3,monthAdd:15,topics:["interactive","puzzle","enrichment","DIY"]},
-  {name:"Indoor Cats",posts:35,target:40,authority:68,trend:"+2",weekAdd:2,monthAdd:10,topics:["enrichment","health","furniture","behavior"]},
-  {name:"Puppy Care",posts:32,target:40,authority:65,trend:"+2",weekAdd:2,monthAdd:12,topics:["training","nutrition","socialization","health"]},
-  {name:"Dog Beds",posts:30,target:40,authority:62,trend:"+1",weekAdd:1,monthAdd:8,topics:["orthopaedic","size guide","cleaning","materials"]},
-  {name:"Pet Care",posts:28,target:40,authority:58,trend:"+2",weekAdd:2,monthAdd:10,topics:["grooming","travel","seasonal","wellness"]},
-  {name:"Fish Supplies",posts:22,target:40,authority:45,trend:"+4",weekAdd:4,monthAdd:18,topics:["tanks","filters","feeding","species"]},
-  {name:"Dog Harnesses",posts:18,target:40,authority:42,trend:"+1",weekAdd:1,monthAdd:6,topics:["no-pull","size fitting","walking","car safety"]},
-  {name:"Dog Food",posts:15,target:40,authority:38,trend:"+0",weekAdd:0,monthAdd:0,topics:["raw diet","allergies","senior","puppy nutrition"]},
-  {name:"Pet Health",posts:12,target:40,authority:35,trend:"+1",weekAdd:1,monthAdd:5,topics:["preventive","first aid","insurance","wellness"]},
+  {name:"Cat Supplies",posts:72,target:40,authority:85,trend:"+3",weekAdd:2,monthAdd:12,topics:["carriers","feeding","hygiene","safety","litter","scratching"]},
+  {name:"Puppy Care",posts:56,target:40,authority:80,trend:"+2",weekAdd:2,monthAdd:12,topics:["training","nutrition","socialization","health","teething","vaccines"]},
+  {name:"Dog Beds",posts:55,target:40,authority:79,trend:"+2",weekAdd:1,monthAdd:10,topics:["orthopaedic","size guide","cleaning","materials","cooling","heated"]},
+  {name:"Fish Supplies",posts:50,target:40,authority:75,trend:"+4",weekAdd:4,monthAdd:18,topics:["tanks","filters","feeding","species","plants","maintenance"]},
+  {name:"Cat Toys",posts:48,target:40,authority:76,trend:"+3",weekAdd:3,monthAdd:15,topics:["interactive","puzzle","enrichment","DIY","laser","feather"]},
+  {name:"Dog Toys",posts:42,target:40,authority:73,trend:"+2",weekAdd:2,monthAdd:10,topics:["chew","fetch","puzzle","durable","rope","squeaky"]},
+  {name:"Enrichment Activities",posts:42,target:40,authority:72,trend:"+12",weekAdd:12,monthAdd:12,topics:["puzzle feeders","scent work","agility","brain games","lick mats","foraging"]},
+  {name:"Indoor Cats",posts:40,target:40,authority:68,trend:"+21",weekAdd:21,monthAdd:21,topics:["enrichment","health","furniture","behavior","exercise","safety","catios","nutrition"]},
+  {name:"Dog Care",posts:17,target:40,authority:42,trend:"+1",weekAdd:1,monthAdd:5,topics:["grooming","bathing","nail trimming","coat care"]},
+  {name:"Pet Health",posts:8,target:40,authority:30,trend:"+1",weekAdd:1,monthAdd:4,topics:["preventive","first aid","insurance","wellness"]},
+  {name:"Training Supplies",posts:8,target:40,authority:28,trend:"+1",weekAdd:1,monthAdd:4,topics:["clickers","treats","leads","harnesses"]},
+  {name:"Dog Harnesses",posts:7,target:40,authority:25,trend:"+1",weekAdd:1,monthAdd:3,topics:["no-pull","size fitting","walking","car safety"]},
+  {name:"Dog Food",posts:7,target:40,authority:24,trend:"+0",weekAdd:0,monthAdd:0,topics:["raw diet","allergies","senior","puppy nutrition"]},
 ];
 
 function getStatus(posts){return posts>=40?"owned":posts>=20?"contested":"emerging"}
