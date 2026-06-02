@@ -1,0 +1,125 @@
+{
+  "phase": "Phase 23 - Enrichment Activities Cluster Expansion",
+  "target_count": 12,
+  "category_id": 1443,
+  "started_at": "2026-06-02T13:43:52.944337Z",
+  "posts": [
+    {
+      "number": 1,
+      "title": "Best DIY Puzzle Feeders for Dogs: Easy Home Projects",
+      "slug": "best-diy-puzzle-feeders-for-dogs",
+      "post_id": 21709,
+      "url": "https://pethubonline.com/best-diy-puzzle-feeders-for-dogs/",
+      "status": "PUBLISHED",
+      "featured_media_id": 21707
+    },
+    {
+      "number": 2,
+      "title": "Scent Work Games for Dogs: Beginner to Advanced",
+      "slug": "scent-work-games-for-dogs",
+      "post_id": 21714,
+      "url": "https://pethubonline.com/scent-work-games-for-dogs/",
+      "status": "PUBLISHED",
+      "featured_media_id": 21712
+    },
+    {
+      "number": 3,
+      "title": "Indoor Agility Course Ideas for Dogs and Cats",
+      "slug": "indoor-agility-course-ideas-dogs-cats",
+      "post_id": 21719,
+      "url": "https://pethubonline.com/indoor-agility-course-ideas-dogs-cats/",
+      "status": "PUBLISHED",
+      "featured_media_id": 21718
+    },
+    {
+      "number": 4,
+      "title": "How to Use Snuffle Mats for Mental Stimulation",
+      "slug": "how-to-use-snuffle-mats-mental-stimulation",
+      "post_id": 21724,
+      "url": "https://pethubonline.com/how-to-use-snuffle-mats-mental-stimulation/",
+      "status": "PUBLISHED",
+      "featured_media_id": 21723
+    },
+    {
+      "number": 5,
+      "title": "Brain Games That Keep Your Dog Entertained for Hours",
+      "slug": "brain-games-keep-dog-entertained-hours",
+      "post_id": 21728,
+      "url": "https://pethubonline.com/brain-games-keep-dog-entertained-hours/",
+      "status": "PUBLISHED",
+      "featured_media_id": 21726
+    },
+    {
+      "number": 6,
+      "title": "Enrichment Ideas for Senior Pets: Gentle Activities",
+      "slug": "enrichment-ideas-senior-pets-gentle-activities",
+      "post_id": 21737,
+      "url": "https://pethubonline.com/enrichment-ideas-senior-pets-gentle-activities/",
+      "status": "PUBLISHED",
+      "featured_media_id": 21731
+    },
+    {
+      "number": 7,
+      "title": "How to Create a Sensory Garden for Your Dog",
+      "slug": "how-to-create-sensory-garden-for-dog",
+      "post_id": 21744,
+      "url": "https://pethubonline.com/how-to-create-sensory-garden-for-dog/",
+      "status": "PUBLISHED",
+      "featured_media_id": 21742
+    },
+    {
+      "number": 8,
+      "title": "Best Lick Mats for Dogs: Benefits and How to Use Them",
+      "slug": "best-lick-mats-for-dogs-benefits-how-to-use",
+      "post_id": 21749,
+      "url": "https://pethubonline.com/best-lick-mats-for-dogs-benefits-how-to-use/",
+      "status": "PUBLISHED",
+      "featured_media_id": 21747
+    },
+    {
+      "number": 9,
+      "title": "Hide and Seek Games for Dogs: Training Through Play",
+      "slug": "hide-and-seek-games-for-dogs-training-through-play",
+      "post_id": 21755,
+      "url": "https://pethubonline.com/hide-and-seek-games-for-dogs-training-through-play/",
+      "status": "PUBLISHED",
+      "featured_media_id": 21753
+    },
+    {
+      "number": 10,
+      "title": "How to Build a Cat Obstacle Course at Home",
+      "slug": "how-to-build-cat-obstacle-course-at-home",
+      "post_id": 21758,
+      "url": "https://pethubonline.com/how-to-build-cat-obstacle-course-at-home/",
+      "status": "PUBLISHED",
+      "featured_media_id": 21757
+    },
+    {
+      "number": 11,
+      "title": "Water Play Activities for Dogs in Summer",
+      "slug": "water-play-activities-for-dogs-summer",
+      "post_id": 21762,
+      "url": "https://pethubonline.com/water-play-activities-for-dogs-summer/",
+      "status": "PUBLISHED",
+      "featured_media_id": 21760
+    },
+    {
+      "number": 12,
+      "title": "Foraging Toys for Cats: Mimicking Natural Hunting",
+      "slug": "foraging-toys-for-cats-mimicking-natural-hunting",
+      "post_id": 21768,
+      "url": "https://pethubonline.com/foraging-toys-for-cats-mimicking-natural-hunting/",
+      "status": "PUBLISHED",
+      "featured_media_id": 21765
+    }
+  ],
+  "errors": [],
+  "total_published": 12,
+  "completed_at": "2026-06-02T13:48:13.584162Z",
+  "summary": {
+    "total_attempted": 12,
+    "total_published": 12,
+    "total_failed": 0,
+    "total_errors": 0
+  }
+}

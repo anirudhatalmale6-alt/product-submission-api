@@ -1,0 +1,610 @@
+{
+  "phase": "22C",
+  "timestamp": "2026-06-02T13:34:58.979389",
+  "posts_updated": 120,
+  "posts_skipped": 0,
+  "posts_already_linked": 0,
+  "errors": 0,
+  "transfers": [
+    {
+      "source_id": 21130,
+      "source_title": "Dog Storage Solutions: Organising Supplies at Home",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21129,
+      "source_title": "Dog Equipment Cleaning Calendar: Maintenance and Hygiene",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21128,
+      "source_title": "Dog Car Safety Equipment: Secure Travel Solutions UK",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21127,
+      "source_title": "Dog Seasonal Equipment Planner: What You Need Each Season",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21126,
+      "source_title": "Dog Equipment Lifespan Tracker: Getting the Most from Your Gear",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21125,
+      "source_title": "Dog Emergency Equipment Guide: Preparing for the Unexpected",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21124,
+      "source_title": "Dog New Owner Essentials: First-Time Buyer Checklist UK",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21123,
+      "source_title": "Dog Household Setup Guide: Preparing Your Home for a Dog",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21122,
+      "source_title": "Dog Equipment by Breed Size: Small, Medium, and Large Dog Gear",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21121,
+      "source_title": "Dog Budget Equipment Guide: Quality Gear Without Overspending",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21120,
+      "source_title": "Dog Travel Crate Selection: Size and Material Guide",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21119,
+      "source_title": "Dog Summer Safety Gear: Keeping Cool in Warm Weather",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21118,
+      "source_title": "Dog Winter Equipment Guide: Cold Weather Gear for UK Dogs",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21117,
+      "source_title": "Dog Rainy Day Equipment: Staying Dry on UK Walks",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21116,
+      "source_title": "Dog Beach Essentials: Sun Safety and Water Gear",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21115,
+      "source_title": "Dog Camping Equipment: Complete Guide for UK Campsites",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21114,
+      "source_title": "Dog Outdoor Adventure Kit: Gear for Hiking and Exploring UK",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21113,
+      "source_title": "Dog Safety Equipment Guide: High-Visibility and Protective Gear",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21112,
+      "source_title": "Dog Equipment Replacement Schedule: When to Replace Key Items",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 21111,
+      "source_title": "Dog Walking Accessories Guide: Essential Gear Beyond the Lead",
+      "source_cluster": "Dog Supplies"
+    },
+    {
+      "source_id": 19627,
+      "source_title": "Pet Nutrition Label Reading Guide: Understanding Pet Food Labels",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19626,
+      "source_title": "Pet Garden Safety Guide UK: Toxic Plants and Garden Hazards",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19625,
+      "source_title": "Pet Parasite Prevention Calendar UK: Flea, Tick, and Worm Schedules",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19624,
+      "source_title": "Pet Exercise Requirements by Age: Activity Needs Across Life Stages",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19622,
+      "source_title": "Pet Vaccination Side Effects UK: What to Expect After Jabs",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19621,
+      "source_title": "Pet Digestive Health Guide: Gut Health, Probiotics, and Diet",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19620,
+      "source_title": "Pet Joint Health Guide: Supplements and Exercise for Healthy Joints",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19619,
+      "source_title": "Pet Coat and Skin Health Guide: Nutrition for a Healthy Coat",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19618,
+      "source_title": "Pet Bonding Activities Guide: Strengthening the Pet-Owner Bond",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19617,
+      "source_title": "Pet Socialisation Timeline UK: Critical Socialisation Periods",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19616,
+      "source_title": "Pet Hydration Guide: Water Intake Needs for Dogs and Cats",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19613,
+      "source_title": "Pet Senior Health Checklist: Age-Related Health Monitoring",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19611,
+      "source_title": "Pet First Night Home Guide UK: Settling a New Pet",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19608,
+      "source_title": "Pet Grooming Schedule UK: Breed-Specific Grooming Timelines",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19602,
+      "source_title": "Pet Anxiety Solutions Guide: Separation Anxiety and Stress Relief",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19598,
+      "source_title": "Pet Weight Management Plan: Healthy Weight for Dogs and Cats",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19593,
+      "source_title": "Pet Allergy Management Guide: Identifying and Managing Pet Allergies",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19590,
+      "source_title": "Pet Dental Care Routine: Teeth Cleaning for Dogs and Cats",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19588,
+      "source_title": "Pet Insurance Claim Process UK: How to File and Track Your Claim",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 19585,
+      "source_title": "Pet Microchip Registration Guide UK: Everything You Need to Know",
+      "source_cluster": "Pet Care"
+    },
+    {
+      "source_id": 21592,
+      "source_title": "How to Create a Wellness Plan for Your Dog",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21589,
+      "source_title": "Understanding Food Sensitivities vs Food Allergies in Dogs",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21587,
+      "source_title": "How to Keep Senior Dogs Active and Comfortable",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21584,
+      "source_title": "Dog Breathing Problems: When to Worry",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21581,
+      "source_title": "How to Care for a Dog with Arthritis in Winter",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21578,
+      "source_title": "Understanding Canine Cancer: Early Detection Guide",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21575,
+      "source_title": "How to Prevent and Treat Urinary Tract Infections in Dogs",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21572,
+      "source_title": "Common Digestive Issues in Dogs and Natural Remedies",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21569,
+      "source_title": "How to Help Your Dog Recover from Surgery",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21566,
+      "source_title": "Understanding Thyroid Problems in Dogs",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21563,
+      "source_title": "How to Recognise and Treat Hot Spots on Dogs",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21560,
+      "source_title": "Complete Guide to Dog Dental Care at Home",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21557,
+      "source_title": "How to Manage Separation Anxiety in Dogs",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21554,
+      "source_title": "Understanding Canine Cognitive Dysfunction in Senior Dogs",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21551,
+      "source_title": "How to Support Your Dog\u2019s Immune System Naturally",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21548,
+      "source_title": "Dog Ear Infections: Causes, Treatment, and Prevention",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21545,
+      "source_title": "How to Care for a Dog with Epilepsy",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21542,
+      "source_title": "Understanding Hip Dysplasia in Dogs: Prevention and Care",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21539,
+      "source_title": "How to Protect Your Dog from Seasonal Allergies",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21536,
+      "source_title": "Common Dog Eye Problems and When to See a Vet",
+      "source_cluster": "Dog Health"
+    },
+    {
+      "source_id": 21155,
+      "source_title": "Cat Equipment Cleaning Guide: Hygiene and Maintenance",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21154,
+      "source_title": "Cat Household Setup Planner: Complete Home Preparation Guide",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21153,
+      "source_title": "Cat Senior Equipment Guide: Comfort and Accessibility",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21152,
+      "source_title": "Cat Equipment by Age: Kitten, Adult, and Senior Needs",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21151,
+      "source_title": "Cat Emergency Supply Kit: Preparing for the Unexpected",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21150,
+      "source_title": "Cat Supply Organisation Guide: Tidy Home with Cats",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21149,
+      "source_title": "Cat Feeding Equipment Guide: Bowls, Puzzles, and Slow Feeders",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21148,
+      "source_title": "Cat Carrier Training Guide: Stress-Free Travel Preparation",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21147,
+      "source_title": "Cat Safety Equipment Guide: Collars, Tags, and Microchips",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21146,
+      "source_title": "Cat Indoor Environment Planner: Creating the Perfect Space",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21145,
+      "source_title": "Cat Grooming Equipment Guide: Brushes, Clippers, and Tools",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21144,
+      "source_title": "Cat Water Intake Monitoring: Signs of Dehydration",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21143,
+      "source_title": "Cat Storage Solutions: Organising Supplies in Small Spaces",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21142,
+      "source_title": "Cat Shelving Planning: Vertical Space and Climbing Solutions",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21141,
+      "source_title": "Cat Window Perch Guide: Best Options for Bird Watching",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21140,
+      "source_title": "Cat Equipment Lifespan Guide: When to Replace Key Items",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21139,
+      "source_title": "Cat Budget Planner: Quality Cat Care Without Overspending",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21138,
+      "source_title": "Cat Seasonal Supplies Guide: What Your Cat Needs Each Season",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21137,
+      "source_title": "Cat New Owner Checklist: Essential Supplies for First-Time Owners",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 21136,
+      "source_title": "Cat Travel Equipment: Everything for Vet Trips and Holidays",
+      "source_cluster": "Cat Supplies"
+    },
+    {
+      "source_id": 19333,
+      "source_title": "Puppy Health Red Flags: Warning Signs That Need Vet Attention",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19328,
+      "source_title": "Puppy Grooming by Coat Type: Grooming Needs by Coat Type",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19323,
+      "source_title": "Puppy Travel Preparation: Preparing Puppies for Car and Train Travel",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19318,
+      "source_title": "Puppy Home Safety Audit: Room-by-Room Safety Check",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19313,
+      "source_title": "Puppy First Year Costs: Total Cost Breakdown for Owning a Puppy in the UK",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19308,
+      "source_title": "Puppy Growth Stages by Breed: Growth Milestones by Breed Size",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19303,
+      "source_title": "Puppy Weight Monitoring: Tracking Healthy Weight Gain",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19298,
+      "source_title": "Puppy Feeding Transition Guide: Moving from Puppy to Adult Food",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19293,
+      "source_title": "Puppy Sleep Regression Guide: Dealing with Sleep Problems",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19288,
+      "source_title": "Puppy Separation Training Plan: A Structured Guide to Alone Time",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19283,
+      "source_title": "Puppy Confidence Building: Raising a Confident, Resilient Puppy",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19279,
+      "source_title": "Puppy Body Language Guide: Reading Your Puppy\u2019s Signals",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19274,
+      "source_title": "Puppy Socialisation Locations: Best Places to Socialise Your Puppy in the UK",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19269,
+      "source_title": "Puppy Lead Training: Lead Walking Basics for Your New Puppy",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19264,
+      "source_title": "Puppy Recall Training: Teaching Your Puppy Reliable Recall",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19259,
+      "source_title": "Puppy Obedience Foundations: Basic Training for Your New Puppy",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19254,
+      "source_title": "Puppy Dental Care Guide UK: Teeth Cleaning and Dental Health",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19249,
+      "source_title": "Puppy Flea Prevention Guide: Best Flea Treatments for Puppies UK",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19244,
+      "source_title": "Puppy Worming Schedule UK: When and How to Worm Your Puppy",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19239,
+      "source_title": "Puppy Vaccination Cost UK: What Vaccinations Cost and Where to Get Them",
+      "source_cluster": "Puppy Care"
+    },
+    {
+      "source_id": 19137,
+      "source_title": "Dog Bed Maintenance Calendar: Monthly and Quarterly Care Schedule",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19132,
+      "source_title": "Multi-Dog Sleeping Layouts: Arranging Beds in Multi-Dog Homes",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19127,
+      "source_title": "Senior Dog Bed Safety: Safe Bed Choices for Older Dogs",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19122,
+      "source_title": "Puppy Bed Safety: Safe Bed Choices for Puppies",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19117,
+      "source_title": "Dog Bed Storage Guide: Storing and Rotating Dog Beds",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19112,
+      "source_title": "Washable Dog Beds: Machine-Washable Bed Guide",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19107,
+      "source_title": "Outdoor Dog Beds: Weather-Resistant Beds for Outside Use",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19102,
+      "source_title": "Crate Bed Selection: Choosing the Right Bed for Dog Crates",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19097,
+      "source_title": "Travel Dog Beds: Portable Beds for Dogs on the Move",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19092,
+      "source_title": "Dog Bed Replacement Costs: Budgeting for Bed Replacement",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19087,
+      "source_title": "Orthopaedic Bed Myths: Common Misconceptions About Dog Ortho Beds",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19082,
+      "source_title": "Small Dog Bed Guide: Best Beds for Small and Toy Breeds",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19078,
+      "source_title": "Large Breed Bed Planning: Dog Beds for Giant and Large Breeds",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19073,
+      "source_title": "Memory Foam Density Guide for Dog Beds: Understanding Foam Ratings",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19068,
+      "source_title": "Heated Dog Bed Guide: Keeping Your Dog Warm in Cold Weather",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19063,
+      "source_title": "Cooling Dog Bed Science: How Cooling Beds Work for Dogs",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19058,
+      "source_title": "Waterproof Dog Beds Explained: When and Why Waterproof Matters",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19055,
+      "source_title": "Dog Bed Materials by Breed: Best Fabrics and Fillings for Different Breeds",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19050,
+      "source_title": "Dog Bed Thickness Guide: How Thick Should a Dog Bed Be?",
+      "source_cluster": "Dog Beds"
+    },
+    {
+      "source_id": 19045,
+      "source_title": "Best Bed Shapes for Dog Sleeping Styles: Matching Bed to Sleep Position",
+      "source_cluster": "Dog Beds"
+    }
+  ]
+}
