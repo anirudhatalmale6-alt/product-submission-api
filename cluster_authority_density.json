@@ -1,0 +1,169 @@
+{
+  "total_posts": 535,
+  "clusters": {
+    "Dog Supplies": {
+      "id": 1376,
+      "count": 104,
+      "pct": 19.4,
+      "status": "OWNED"
+    },
+    "Pet Care": {
+      "id": 1397,
+      "count": 90,
+      "pct": 16.8,
+      "status": "OWNED"
+    },
+    "Cat Supplies": {
+      "id": 1377,
+      "count": 72,
+      "pct": 13.5,
+      "status": "OWNED"
+    },
+    "Puppy Care": {
+      "id": 1442,
+      "count": 56,
+      "pct": 10.5,
+      "status": "OWNED"
+    },
+    "Dog Beds": {
+      "id": 1401,
+      "count": 55,
+      "pct": 10.3,
+      "status": "OWNED"
+    },
+    "Dog Health": {
+      "id": 1450,
+      "count": 50,
+      "pct": 9.3,
+      "status": "OWNED"
+    },
+    "Fish Supplies": {
+      "id": 1577,
+      "count": 50,
+      "pct": 9.3,
+      "status": "OWNED"
+    },
+    "Cat Toys": {
+      "id": 1459,
+      "count": 48,
+      "pct": 9.0,
+      "status": "OWNED"
+    },
+    "Product Reviews": {
+      "id": 1379,
+      "count": 43,
+      "pct": 8.0,
+      "status": "OWNED"
+    },
+    "Dog Toys": {
+      "id": 1441,
+      "count": 42,
+      "pct": 7.9,
+      "status": "OWNED"
+    },
+    "Enrichment Activities": {
+      "id": 1443,
+      "count": 30,
+      "pct": 5.6,
+      "status": "STRONG"
+    },
+    "Indoor Cats": {
+      "id": 1413,
+      "count": 19,
+      "pct": 3.6,
+      "status": "GROWING"
+    },
+    "Dog Care": {
+      "id": 1489,
+      "count": 17,
+      "pct": 3.2,
+      "status": "GROWING"
+    },
+    "Uncategorized": {
+      "id": 1,
+      "count": 13,
+      "pct": 2.4,
+      "status": "GROWING"
+    },
+    "Pet Health": {
+      "id": 1391,
+      "count": 8,
+      "pct": 1.5,
+      "status": "EMERGING"
+    },
+    "Training Supplies": {
+      "id": 1474,
+      "count": 8,
+      "pct": 1.5,
+      "status": "EMERGING"
+    },
+    "Dog Food": {
+      "id": 1467,
+      "count": 7,
+      "pct": 1.3,
+      "status": "EMERGING"
+    },
+    "Dog Harnesses": {
+      "id": 1422,
+      "count": 7,
+      "pct": 1.3,
+      "status": "EMERGING"
+    },
+    "Pet Beds": {
+      "id": 1396,
+      "count": 5,
+      "pct": 0.9,
+      "status": "EMERGING"
+    },
+    "Buying Guides": {
+      "id": 1380,
+      "count": 3,
+      "pct": 0.6,
+      "status": "EMERGING"
+    },
+    "Interactive Toys": {
+      "id": 1460,
+      "count": 2,
+      "pct": 0.4,
+      "status": "EMERGING"
+    },
+    "Orthopaedic Care": {
+      "id": 1455,
+      "count": 2,
+      "pct": 0.4,
+      "status": "EMERGING"
+    },
+    "Dog Accessories": {
+      "id": 1510,
+      "count": 1,
+      "pct": 0.2,
+      "status": "EMERGING"
+    },
+    "Dog Clothing": {
+      "id": 1511,
+      "count": 1,
+      "pct": 0.2,
+      "status": "EMERGING"
+    },
+    "Health &amp; Wellness": {
+      "id": 1487,
+      "count": 1,
+      "pct": 0.2,
+      "status": "EMERGING"
+    },
+    "Orthopaedic Supplies": {
+      "id": 1505,
+      "count": 1,
+      "pct": 0.2,
+      "status": "EMERGING"
+    }
+  },
+  "metrics": {
+    "faq_schema": "532/535 (99.4%)",
+    "affiliate_links": "535/535 (100%)",
+    "featured_images": "535/535 (100%)",
+    "affiliate_disclosure": "535/535 (100%)",
+    "orphan_posts": "66 (fix in progress)",
+    "internal_link_graph": "469/535 connected (87.7%)"
+  }
+}
