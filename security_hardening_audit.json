@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-06-02T09:00:46.167111",
+  "report": "Security Hardening Audit - Phase 21Y",
+  "checks_performed": 6,
+  "details": {
+    "user_enumeration": {
+      "status": "EXPOSED",
+      "current": "wp-json/wp/v2/users returns 200 with user data",
+      "recommendation": "Install or configure security plugin to block user enumeration. Add snippet to functions.php: add_filter(\"rest_endpoints\", function($endpoints) { unset($endpoints[\"/wp/v2/users\"]); return $endpoints; });",
+      "priority": "HIGH"
+    },
+    "readme_license": {
+      "status": "EXPOSED",
+      "current": "readme.html and license.txt return 200",
+      "recommendation": "Delete or restrict access to readme.html and license.txt via hosting .htaccess or security plugin",
+      "priority": "MEDIUM"
+    },
+    "security_headers": {
+      "status": "PARTIAL",
+      "current": "Only HSTS set. Missing: X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy, CSP",
+      "recommendation": "Add security headers via wp-config.php or security plugin. HSTS is already configured which is good.",
+      "priority": "MEDIUM"
+    },
+    "ssl": {
+      "status": "ACTIVE",
+      "not_before": "2026-04-23",
+      "not_after": "2026-07-22",
+      "days_remaining": 50,
+      "auto_renew": "Assumed via hosting provider (Let's Encrypt)",
+      "priority": "OK"
+    },
+    "email_auth": {
+      "spf": "CONFIGURED - v=spf1 include:_spf.wpcloud.com include:spf.titan.email ~all",
+      "dmarc": "WEAK - v=DMARC1;p=none (should be p=quarantine or p=reject)",
+      "dkim": "Not verified (requires DNS access)",
+      "recommendation": "Strengthen DMARC policy from p=none to p=quarantine after monitoring period",
+      "priority": "LOW"
+    },
+    "wordpress_config": {
+      "site_name": "Pet Hub Online",
+      "url": "https://pethubonline.com",
+      "hsts": "ENABLED (max-age=31536000)",
+      "google_verification": "CONFIGURED",
+      "priority": "OK"
+    }
+  },
+  "summary": {
+    "critical": 0,
+    "high": 1,
+    "medium": 2,
+    "low": 1,
+    "ok": 2,
+    "overall": "Site is reasonably secure. HSTS and SPF are properly configured. User enumeration exposure is the highest priority fix. SSL is valid for 50+ days."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "total_posts": 535,
+  "has_affiliate_links": 534,
+  "missing_affiliate_links": [
+    {
+      "id": 14041,
+      "title": "Crate Training Schedule UK"
+    }
+  ],
+  "has_disclosure": 535,
+  "missing_disclosure": [],
+  "broken_links": [],
+  "wrong_rel_attrs": [],
+  "tag_correct": 2777,
+  "tag_wrong": []
+}

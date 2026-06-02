@@ -1,0 +1,56 @@
+{
+  "total": 535,
+  "has_schema": 525,
+  "missing": [
+    {
+      "id": 19402,
+      "title": "Interactive Wand Play Guide: Technique, Safety, and Session ",
+      "has_faq_content": true
+    },
+    {
+      "id": 19055,
+      "title": "Dog Bed Materials by Breed: Best Fabrics and Fillings for Di",
+      "has_faq_content": true
+    },
+    {
+      "id": 18973,
+      "title": "Multi-Cat Play Management: Keeping Peace and Fun with Multip",
+      "has_faq_content": true
+    },
+    {
+      "id": 18955,
+      "title": "Indoor Cat Window Safety: Guards, Catios, and Safety Measure",
+      "has_faq_content": true
+    },
+    {
+      "id": 18714,
+      "title": "UK Pet Emergency Guide &#8211; Free Download",
+      "has_faq_content": false
+    },
+    {
+      "id": 18712,
+      "title": "Indoor Cat Enrichment Checklist &#8211; Free Download",
+      "has_faq_content": false
+    },
+    {
+      "id": 18711,
+      "title": "New Puppy Starter Checklist &#8211; Free Download",
+      "has_faq_content": false
+    },
+    {
+      "id": 14074,
+      "title": "Puppy Socialisation Checklist",
+      "has_faq_content": true
+    },
+    {
+      "id": 14048,
+      "title": "Puppy Biting and Teething Guide",
+      "has_faq_content": true
+    },
+    {
+      "id": 13969,
+      "title": "Puppy Sleep Requirements",
+      "has_faq_content": true
+    }
+  ]
+}
