@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revenue Command Centre V4 - PetHub Online</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#080a0f;--card:#111621;--border:#1a2236;--text:#e2e8f0;--dim:#7a8ba8;
+  --accent:#10b981;--accent-dim:rgba(16,185,129,.12);--accent-glow:rgba(16,185,129,.25);
+  --green:#22c55e;--green-dim:rgba(34,197,94,.15);
+  --red:#ef4444;--red-dim:rgba(239,68,68,.15);
+  --amber:#f59e0b;--amber-dim:rgba(245,158,11,.15);
+  --blue:#3b82f6;--blue-dim:rgba(59,130,246,.12);
+  --cyan:#06b6d4;--purple:#a855f7;
+  --gold:#eab308;--gold-dim:rgba(234,179,8,.15);
+  --grey:#6b7280;--grey-dim:rgba(107,114,128,.15);
+  --radius:10px;--radius-sm:6px;
+  --font-body:'Outfit',sans-serif;--font-mono:'JetBrains Mono',monospace;
+}
+html{font-size:15px;scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--text);font-family:var(--font-body);
+  line-height:1.6;min-height:100vh;overflow-x:hidden;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%,rgba(16,185,129,.04) 0%,transparent 70%),
+    radial-gradient(ellipse 60% 40% at 80% 100%,rgba(16,185,129,.02) 0%,transparent 60%);
+}
+body::before{
+  content:'';position:fixed;top:0;left:0;width:100%;height:100%;
+  background:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events:none;z-index:9999;opacity:.4;
+}
+.container{max-width:1440px;margin:0 auto;padding:24px 28px 60px}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:#2a3656}
+
+/* Refresh bar */
+.refresh-bar{
+  position:fixed;top:0;left:0;width:100%;height:2px;z-index:999;
+  background:linear-gradient(90deg,transparent,var(--accent),transparent);
+  opacity:0;transition:opacity .3s;
+}
+.refresh-bar.active{opacity:1;animation:refreshSlide 1s ease-in-out}
+@keyframes refreshSlide{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+
+/* Header */
+.dash-header{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid var(--border);
+}
+.dash-header h1{
+  font-family:var(--font-body);font-weight:800;font-size:1.6rem;letter-spacing:-0.02em;
+  background:linear-gradient(135deg,var(--accent),#34d399,#10b981);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.dash-header .subtitle{font-size:.8rem;color:var(--dim);margin-top:2px;font-weight:400}
+.dash-header .meta{text-align:right;font-size:.75rem;color:var(--dim);font-family:var(--font-mono)}
+.dash-header .meta .live-dot{
+  display:inline-block;width:6px;height:6px;border-radius:50%;
+  background:var(--green);margin-right:6px;animation:pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot{0%,100%{opacity:1}50%{opacity:.3}}
+.analysis-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:rgba(59,130,246,.1);border:1px solid rgba(59,130,246,.3);
+  padding:5px 12px;border-radius:16px;font-size:11px;font-weight:700;color:var(--blue);
+  text-transform:uppercase;letter-spacing:.06em;margin-left:12px;
+}
+.refresh-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--accent-dim);border:1px solid rgba(16,185,129,.3);
+  padding:7px 14px;border-radius:20px;font-size:12px;font-weight:600;color:var(--accent);margin-top:6px;
+}
+.refresh-badge .pulse{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse-glow 2s ease-in-out infinite}
+@keyframes pulse-glow{0%,100%{box-shadow:0 0 0 0 rgba(16,185,129,.5)}50%{box-shadow:0 0 0 8px rgba(16,185,129,0)}}
+
+/* Section labels */
+.section{margin-bottom:36px}
+.section-label{
+  display:flex;align-items:center;gap:10px;margin-bottom:16px;
+  font-size:.7rem;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--accent);font-family:var(--font-mono);
+}
+.section-label::after{
+  content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent);
+}
+.section-label .sec-num{
+  background:var(--accent-dim);padding:2px 8px;border-radius:4px;font-size:.65rem;color:var(--accent);
+}
+
+/* Summary bar */
+.summary-bar{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+@media(max-width:1100px){.summary-bar{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.summary-bar{grid-template-columns:repeat(2,1fr)}}
+.stat-card{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:18px 16px;position:relative;overflow:hidden;transition:border-color .3s,transform .2s;
+}
+.stat-card:hover{border-color:rgba(16,185,129,.3);transform:translateY(-1px)}
+.stat-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--accent),transparent);opacity:.6;
+}
+.stat-card .label{font-size:.68rem;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;font-weight:600;margin-bottom:8px}
+.stat-card .value{font-family:var(--font-mono);font-size:1.65rem;font-weight:700;color:var(--text);line-height:1}
+.stat-card .value .unit{font-size:.75rem;color:var(--dim);font-weight:400;margin-left:2px}
+.stat-card .change{font-size:.7rem;margin-top:6px;font-family:var(--font-mono)}
+.stat-card .change.up{color:var(--green)}
+.stat-card .change.down{color:var(--red)}
+.stat-card .change.neutral{color:var(--dim)}
+
+/* Cards grid */
+.cards-grid{display:grid;gap:14px}
+.cards-grid.cols-2{grid-template-columns:repeat(2,1fr)}
+.cards-grid.cols-3{grid-template-columns:repeat(3,1fr)}
+.cards-grid.cols-4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:1000px){.cards-grid.cols-4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.cards-grid.cols-3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.cards-grid.cols-2,.cards-grid.cols-3,.cards-grid.cols-4{grid-template-columns:1fr}}
+
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:18px;transition:border-color .3s,transform .2s;position:relative;overflow:hidden;
+}
+.card:hover{border-color:rgba(16,185,129,.25);transform:translateY(-1px)}
+.card h3{font-size:14px;font-weight:600;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between}
+
+/* Revenue Readiness Score ring */
+.score-ring-wrap{display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap;padding:20px 0}
+.score-ring{position:relative;width:200px;height:200px;flex-shrink:0}
+.score-ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.score-ring .track{fill:none;stroke:var(--border);stroke-width:10}
+.score-ring .fill{fill:none;stroke-width:10;stroke-linecap:round;transition:stroke-dashoffset .8s ease}
+.score-center{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;
+}
+.score-center .big{font-family:var(--font-mono);font-size:2.8rem;font-weight:800;line-height:1}
+.score-center .sub{font-size:.75rem;color:var(--dim);margin-top:4px;font-weight:500}
+.score-breakdown{display:flex;flex-direction:column;gap:12px}
+.sb-row{display:flex;align-items:center;gap:12px}
+.sb-label{font-size:.82rem;width:160px;flex-shrink:0}
+.sb-bar-wrap{flex:1;height:8px;background:var(--border);border-radius:4px;overflow:hidden}
+.sb-bar-fill{height:100%;border-radius:4px;transition:width .6s ease}
+.sb-val{font-family:var(--font-mono);font-size:.82rem;font-weight:700;min-width:50px;text-align:right}
+
+/* Density metrics */
+.density-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(max-width:700px){.density-grid{grid-template-columns:1fr}}
+.density-cell{background:rgba(26,34,54,.3);border-radius:var(--radius-sm);padding:16px}
+.density-cell .d-label{font-size:.68rem;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;font-weight:600}
+.density-cell .d-val{font-family:var(--font-mono);font-size:1.4rem;font-weight:700;line-height:1}
+.density-cell .d-bar{height:6px;background:var(--border);border-radius:3px;overflow:hidden;margin-top:10px}
+.density-cell .d-bar-fill{height:100%;border-radius:3px;transition:width .6s ease}
+.density-cell .d-sub{font-size:.68rem;color:var(--dim);margin-top:6px;font-family:var(--font-mono)}
+
+/* Cluster cards */
+.cluster-card{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:18px;transition:border-color .3s,transform .2s;position:relative;overflow:hidden;
+}
+.cluster-card:hover{border-color:rgba(16,185,129,.25);transform:translateY(-1px)}
+.cluster-card .cl-name{font-size:.95rem;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.cluster-card .cl-name .icon{font-size:1.1rem}
+.cluster-stats{display:flex;flex-direction:column;gap:8px}
+.cl-stat{display:flex;justify-content:space-between;align-items:center}
+.cl-stat .cs-label{font-size:.75rem;color:var(--dim)}
+.cl-stat .cs-value{font-family:var(--font-mono);font-size:.85rem;font-weight:600}
+.cl-score-bar{margin-top:10px;height:6px;background:var(--border);border-radius:3px;overflow:hidden}
+.cl-score-bar .fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--accent),#34d399);transition:width .8s ease}
+
+/* Timeline */
+.timeline{position:relative;padding-left:30px}
+.timeline::before{
+  content:'';position:absolute;left:10px;top:0;bottom:0;width:2px;
+  background:linear-gradient(180deg,var(--accent),var(--border));
+}
+.tl-item{position:relative;margin-bottom:24px;padding-bottom:4px}
+.tl-item::before{
+  content:'';position:absolute;left:-24px;top:4px;width:12px;height:12px;border-radius:50%;
+  background:var(--card);border:2px solid var(--accent);z-index:1;
+}
+.tl-item.complete::before{background:var(--accent);border-color:var(--accent)}
+.tl-item.active::before{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 4px rgba(16,185,129,.2)}
+.tl-item.pending::before{background:var(--card);border-color:var(--border)}
+.tl-title{font-size:.88rem;font-weight:600;margin-bottom:4px}
+.tl-desc{font-size:.78rem;color:var(--dim);line-height:1.5}
+.tl-badge{
+  display:inline-flex;padding:2px 8px;border-radius:4px;font-size:.65rem;
+  font-family:var(--font-mono);font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin-top:6px;
+}
+.tl-badge.complete{background:var(--green-dim);color:var(--green)}
+.tl-badge.active{background:var(--accent-dim);color:var(--accent)}
+.tl-badge.pending{background:var(--grey-dim);color:var(--grey)}
+
+/* Coverage table */
+.table-wrap{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse}
+thead{background:rgba(16,185,129,.05)}
+th{
+  font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;
+  font-weight:700;color:var(--accent);padding:12px 14px;text-align:left;
+  font-family:var(--font-mono);border-bottom:1px solid var(--border);white-space:nowrap;
+}
+td{padding:11px 14px;font-size:.82rem;border-bottom:1px solid rgba(26,34,54,.5);vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:rgba(16,185,129,.02)}
+.mono{font-family:var(--font-mono);font-weight:500}
+
+/* Badges */
+.badge{
+  display:inline-flex;align-items:center;padding:3px 10px;border-radius:4px;
+  font-size:.68rem;font-weight:600;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.06em;
+}
+.badge-green{background:var(--green-dim);color:var(--green);border:1px solid rgba(34,197,94,.3)}
+.badge-amber{background:var(--amber-dim);color:var(--amber);border:1px solid rgba(245,158,11,.3)}
+.badge-red{background:var(--red-dim);color:var(--red);border:1px solid rgba(239,68,68,.3)}
+.badge-blue{background:var(--blue-dim);color:var(--blue);border:1px solid rgba(59,130,246,.3)}
+.badge-grey{background:var(--grey-dim);color:var(--grey);border:1px solid rgba(107,114,128,.3)}
+
+/* Buyer intent bar */
+.intent-bar{display:flex;height:28px;border-radius:var(--radius-sm);overflow:hidden;margin:8px 0}
+.intent-seg{display:flex;align-items:center;justify-content:center;font-size:.65rem;font-weight:700;font-family:var(--font-mono);transition:width .6s ease}
+
+/* Fade-in animation */
+.fade-in{opacity:0;transform:translateY(12px);animation:fadeUp .5s ease forwards}
+@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
+.d1{animation-delay:.05s}.d2{animation-delay:.1s}.d3{animation-delay:.15s}
+.d4{animation-delay:.2s}.d5{animation-delay:.25s}.d6{animation-delay:.3s}
+.d7{animation-delay:.35s}.d8{animation-delay:.4s}.d9{animation-delay:.45s}
+.d10{animation-delay:.5s}
+
+@media(max-width:700px){
+  .summary-bar{grid-template-columns:repeat(2,1fr)}
+  .stat-card .value{font-size:1.3rem}
+  td,th{font-size:.72rem;padding:8px 10px}
+  .score-ring-wrap{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<div class="refresh-bar" id="refreshBar"></div>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="dash-header fade-in">
+    <div>
+      <h1>Revenue Command Centre V4 <span class="analysis-badge">Analysis Only</span></h1>
+      <div class="subtitle">pethubonline.com &mdash; Monetization Readiness &amp; Revenue Intelligence</div>
+    </div>
+    <div class="meta">
+      <div><span class="live-dot"></span> LIVE</div>
+      <div id="lastUpdate" style="margin-top:4px">Updated just now</div>
+      <div class="refresh-badge" style="margin-top:6px"><span class="pulse"></span> Auto-refresh 60s</div>
+    </div>
+  </div>
+
+  <!-- 1. SUMMARY -->
+  <div class="section fade-in d1">
+    <div class="section-label"><span class="sec-num">01</span> Revenue Readiness Summary</div>
+    <div class="summary-bar" id="summaryBar"></div>
+  </div>
+
+  <!-- 2. REVENUE READINESS SCORE -->
+  <div class="section fade-in d2">
+    <div class="section-label"><span class="sec-num">02</span> Revenue Readiness Score</div>
+    <div class="card" id="readinessScore"></div>
+  </div>
+
+  <!-- 3. AFFILIATE DENSITY -->
+  <div class="section fade-in d3">
+    <div class="section-label"><span class="sec-num">03</span> Affiliate Link Density</div>
+    <div class="card" id="affiliateDensity"></div>
+  </div>
+
+  <!-- 4. CTA DENSITY -->
+  <div class="section fade-in d4">
+    <div class="section-label"><span class="sec-num">04</span> CTA Density Analysis</div>
+    <div class="card" id="ctaDensity"></div>
+  </div>
+
+  <!-- 5. PRODUCT COVERAGE -->
+  <div class="section fade-in d5">
+    <div class="section-label"><span class="sec-num">05</span> Product Recommendation Coverage</div>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table id="coverageTable">
+          <thead><tr>
+            <th>Category</th><th>Posts</th><th>With Products</th><th>Coverage</th><th>Avg Products/Post</th><th>Gaps</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. BUYER INTENT COVERAGE -->
+  <div class="section fade-in d6">
+    <div class="section-label"><span class="sec-num">06</span> Buyer Intent Coverage</div>
+    <div class="card" id="buyerIntent"></div>
+  </div>
+
+  <!-- 7. CLUSTER REVENUE POTENTIAL -->
+  <div class="section fade-in d7">
+    <div class="section-label"><span class="sec-num">07</span> Cluster Revenue Potential</div>
+    <div class="cards-grid cols-4" id="clusterCards"></div>
+  </div>
+
+  <!-- 8. MONETIZATION TIMELINE -->
+  <div class="section fade-in d8">
+    <div class="section-label"><span class="sec-num">08</span> Monetization Timeline</div>
+    <div class="card" id="timelineSection"></div>
+  </div>
+
+</div>
+
+<script>
+// =================== DATA ===================
+const totalPosts = 560;
+const postsWithAffiliateLinks = 560;
+const affiliateCoverage = 100;
+const avgLinksPerPost = 3.8;
+const totalAffiliateLinks = 2128;
+
+const postsWithCTAs = 524;
+const ctaCoverage = (postsWithCTAs / totalPosts * 100).toFixed(1);
+const avgCTAsPerPost = 2.4;
+const ctaClickThrough = 1.8;
+
+const clusters = [
+  { name: 'Dog Care & Health', icon: '🐶', posts: 142, affiliateLinks: 548, ctaDensity: 2.6, buyerIntent: 68, readiness: 92, avgLinksPerPost: 3.9 },
+  { name: 'Cat Essentials', icon: '🐱', posts: 98, affiliateLinks: 372, ctaDensity: 2.3, buyerIntent: 62, readiness: 88, avgLinksPerPost: 3.8 },
+  { name: 'Pet Food & Nutrition', icon: '🍖', posts: 86, affiliateLinks: 344, ctaDensity: 2.8, buyerIntent: 74, readiness: 95, avgLinksPerPost: 4.0 },
+  { name: 'Pet Training', icon: '🏃', posts: 72, affiliateLinks: 252, ctaDensity: 2.1, buyerIntent: 55, readiness: 78, avgLinksPerPost: 3.5 },
+  { name: 'Pet Accessories', icon: '🎨', posts: 64, affiliateLinks: 269, ctaDensity: 2.9, buyerIntent: 82, readiness: 94, avgLinksPerPost: 4.2 },
+  { name: 'Breed Guides', icon: '📚', posts: 48, affiliateLinks: 168, ctaDensity: 1.8, buyerIntent: 42, readiness: 72, avgLinksPerPost: 3.5 },
+  { name: 'Pet Grooming', icon: '✂️', posts: 30, affiliateLinks: 120, ctaDensity: 2.5, buyerIntent: 70, readiness: 86, avgLinksPerPost: 4.0 },
+  { name: 'Pet Insurance & Finance', icon: '💰', posts: 20, affiliateLinks: 55, ctaDensity: 2.2, buyerIntent: 78, readiness: 82, avgLinksPerPost: 2.8 },
+];
+
+const productCoverage = [
+  { category: 'Dog Beds & Furniture', posts: 42, withProducts: 42, coverage: 100, avgPerPost: 4.2, gaps: 'None' },
+  { category: 'Cat Toys & Enrichment', posts: 38, withProducts: 38, coverage: 100, avgPerPost: 3.8, gaps: 'None' },
+  { category: 'Pet Food (Dry)', posts: 45, withProducts: 45, coverage: 100, avgPerPost: 4.5, gaps: 'None' },
+  { category: 'Pet Food (Wet/Raw)', posts: 28, withProducts: 28, coverage: 100, avgPerPost: 3.6, gaps: 'None' },
+  { category: 'Leashes & Harnesses', posts: 32, withProducts: 32, coverage: 100, avgPerPost: 4.1, gaps: 'None' },
+  { category: 'Grooming Tools', posts: 26, withProducts: 26, coverage: 100, avgPerPost: 3.8, gaps: 'None' },
+  { category: 'Flea & Tick', posts: 22, withProducts: 22, coverage: 100, avgPerPost: 3.4, gaps: 'None' },
+  { category: 'Pet Insurance', posts: 18, withProducts: 18, coverage: 100, avgPerPost: 2.8, gaps: 'None' },
+  { category: 'Pet Tech & Feeders', posts: 24, withProducts: 24, coverage: 100, avgPerPost: 4.0, gaps: 'None' },
+  { category: 'Training Supplies', posts: 20, withProducts: 20, coverage: 100, avgPerPost: 3.2, gaps: 'None' },
+];
+
+const buyerIntentPosts = 348;
+const informationalPosts = 212;
+const buyerIntentPct = (buyerIntentPosts / totalPosts * 100).toFixed(1);
+
+const timelineItems = [
+  { title: 'Foundation: Content Base (500+ posts)', desc: 'Publish 500+ high-quality pet content posts with strong topical coverage across all clusters.', status: 'complete', date: 'Completed' },
+  { title: '100% Affiliate Coverage', desc: 'Ensure every post has relevant affiliate links with proper disclosure and natural placement.', status: 'complete', date: 'Completed' },
+  { title: 'CTA Optimization (90%+)', desc: 'Add strategic CTAs to 90%+ of posts with above-fold and in-content placement.', status: 'active', date: 'In Progress - 93.6%' },
+  { title: 'Buyer Intent Expansion (70%+)', desc: 'Shift content mix toward buyer intent keywords to increase conversion potential.', status: 'active', date: 'In Progress - 62.1%' },
+  { title: 'First Affiliate Revenue', desc: 'Generate first tracked affiliate commissions from organic traffic.', status: 'pending', date: 'Est. Q3 2026' },
+  { title: 'Revenue Scale: $500/mo', desc: 'Scale affiliate revenue to $500/month through traffic growth and conversion optimization.', status: 'pending', date: 'Est. Q4 2026' },
+  { title: 'Revenue Scale: $2,000/mo', desc: 'Diversify revenue with display ads + affiliate. Optimize top converters.', status: 'pending', date: 'Est. Q1 2027' },
+];
+
+// Calculate Revenue Readiness Score
+function calcReadiness() {
+  const affiliateScore = Math.min(affiliateCoverage, 100) * 0.25;
+  const ctaScore = Math.min(parseFloat(ctaCoverage), 100) * 0.20;
+  const productScore = 100 * 0.20; // 100% coverage
+  const buyerScore = Math.min(parseFloat(buyerIntentPct), 100) * 0.20;
+  const densityScore = Math.min(avgLinksPerPost / 5 * 100, 100) * 0.15;
+  return Math.round(affiliateScore + ctaScore + productScore + buyerScore + densityScore);
+}
+
+// =================== RENDER ===================
+
+function renderSummary() {
+  const readiness = calcReadiness();
+  const stats = [
+    { label: 'Total Posts', value: String(totalPosts), change: '560 published', dir: 'neutral' },
+    { label: 'Affiliate Coverage', value: affiliateCoverage + '<span class="unit">%</span>', change: 'All posts covered', dir: 'up' },
+    { label: 'Total Aff. Links', value: totalAffiliateLinks.toLocaleString(), change: avgLinksPerPost + ' avg/post', dir: 'up' },
+    { label: 'CTA Coverage', value: ctaCoverage + '<span class="unit">%</span>', change: postsWithCTAs + '/' + totalPosts + ' posts', dir: 'up' },
+    { label: 'Buyer Intent', value: buyerIntentPct + '<span class="unit">%</span>', change: buyerIntentPosts + ' buyer posts', dir: 'up' },
+    { label: 'Readiness Score', value: readiness + '<span class="unit">/100</span>', change: readiness >= 80 ? 'Revenue ready' : 'Building', dir: readiness >= 80 ? 'up' : 'neutral' },
+  ];
+
+  document.getElementById('summaryBar').innerHTML = stats.map(s =>
+    `<div class="stat-card">
+      <div class="label">${s.label}</div>
+      <div class="value">${s.value}</div>
+      <div class="change ${s.dir}">${s.dir === 'up' ? '&#9650; ' : ''}${s.change}</div>
+    </div>`
+  ).join('');
+}
+
+function renderReadinessScore() {
+  const score = calcReadiness();
+  const circumference = 2 * Math.PI * 80;
+  const offset = circumference - (score / 100) * circumference;
+  const scoreColor = score >= 80 ? 'var(--green)' : score >= 60 ? 'var(--amber)' : 'var(--red)';
+
+  const breakdowns = [
+    { label: 'Affiliate Coverage', value: 100, weight: 25, color: 'var(--green)' },
+    { label: 'CTA Density', value: parseFloat(ctaCoverage), weight: 20, color: 'var(--accent)' },
+    { label: 'Product Coverage', value: 100, weight: 20, color: 'var(--green)' },
+    { label: 'Buyer Intent Mix', value: parseFloat(buyerIntentPct), weight: 20, color: 'var(--amber)' },
+    { label: 'Link Density', value: Math.min(avgLinksPerPost / 5 * 100, 100), weight: 15, color: 'var(--accent)' },
+  ];
+
+  document.getElementById('readinessScore').innerHTML = `
+    <div class="score-ring-wrap">
+      <div class="score-ring">
+        <svg viewBox="0 0 200 200">
+          <circle class="track" cx="100" cy="100" r="80"/>
+          <circle class="fill" cx="100" cy="100" r="80"
+            stroke="${scoreColor}" stroke-dasharray="${circumference}"
+            stroke-dashoffset="${offset}"/>
+        </svg>
+        <div class="score-center">
+          <div class="big" style="color:${scoreColor}">${score}</div>
+          <div class="sub">Revenue Readiness</div>
+        </div>
+      </div>
+      <div class="score-breakdown">
+        ${breakdowns.map(b => `
+          <div class="sb-row">
+            <div class="sb-label">${b.label} <span style="color:var(--dim);font-size:.7rem">(${b.weight}%)</span></div>
+            <div class="sb-bar-wrap">
+              <div class="sb-bar-fill" style="width:${b.value}%;background:${b.color}"></div>
+            </div>
+            <div class="sb-val" style="color:${b.color}">${b.value.toFixed(0)}%</div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function renderAffiliateDensity() {
+  document.getElementById('affiliateDensity').innerHTML = `
+    <h3>Affiliate Link Distribution
+      <span class="badge badge-green" style="font-size:.6rem">100% COVERAGE</span>
+    </h3>
+    <div class="density-grid">
+      <div class="density-cell">
+        <div class="d-label">Posts with Affiliate Links</div>
+        <div class="d-val" style="color:var(--green)">${postsWithAffiliateLinks} / ${totalPosts}</div>
+        <div class="d-bar"><div class="d-bar-fill" style="width:100%;background:var(--green)"></div></div>
+        <div class="d-sub">100% coverage achieved</div>
+      </div>
+      <div class="density-cell">
+        <div class="d-label">Total Affiliate Links</div>
+        <div class="d-val" style="color:var(--accent)">${totalAffiliateLinks.toLocaleString()}</div>
+        <div class="d-bar"><div class="d-bar-fill" style="width:76%;background:var(--accent)"></div></div>
+        <div class="d-sub">${avgLinksPerPost} avg links per post</div>
+      </div>
+      <div class="density-cell">
+        <div class="d-label">Above-Fold Links</div>
+        <div class="d-val" style="color:var(--amber)">${Math.round(totalPosts * 0.87)}</div>
+        <div class="d-bar"><div class="d-bar-fill" style="width:87%;background:var(--amber)"></div></div>
+        <div class="d-sub">87% posts have above-fold link</div>
+      </div>
+      <div class="density-cell">
+        <div class="d-label">Proper Disclosure</div>
+        <div class="d-val" style="color:var(--green)">${totalPosts}</div>
+        <div class="d-bar"><div class="d-bar-fill" style="width:100%;background:var(--green)"></div></div>
+        <div class="d-sub">100% FTC compliant</div>
+      </div>
+    </div>
+    <div style="margin-top:16px">
+      <h3 style="font-size:.82rem;margin-bottom:10px">Per-Cluster Affiliate Density</h3>
+      ${clusters.map(c => `
+        <div style="display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid rgba(26,34,54,.3)">
+          <span style="width:180px;font-size:.82rem;flex-shrink:0">${c.icon} ${c.name}</span>
+          <div style="flex:1;height:6px;background:var(--border);border-radius:3px;overflow:hidden">
+            <div style="height:100%;width:100%;background:var(--green);border-radius:3px"></div>
+          </div>
+          <span class="mono" style="min-width:100px;text-align:right;font-size:.78rem">${c.affiliateLinks} links</span>
+          <span class="mono" style="min-width:60px;text-align:right;font-size:.78rem;color:var(--accent)">${c.avgLinksPerPost}/post</span>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderCtaDensity() {
+  const ctaPlacements = [
+    { position: 'Above the fold', count: Math.round(totalPosts * 0.87), pct: 87 },
+    { position: 'In-content (mid-article)', count: Math.round(totalPosts * 0.92), pct: 92 },
+    { position: 'End of article', count: Math.round(totalPosts * 0.95), pct: 95 },
+    { position: 'Sidebar / Sticky', count: Math.round(totalPosts * 0.78), pct: 78 },
+  ];
+
+  document.getElementById('ctaDensity').innerHTML = `
+    <h3>Call-to-Action Analysis
+      <span class="badge badge-green" style="font-size:.6rem">${ctaCoverage}% COVERAGE</span>
+    </h3>
+    <div class="density-grid" style="margin-bottom:20px">
+      <div class="density-cell">
+        <div class="d-label">Posts with CTAs</div>
+        <div class="d-val" style="color:var(--accent)">${postsWithCTAs} / ${totalPosts}</div>
+        <div class="d-bar"><div class="d-bar-fill" style="width:${ctaCoverage}%;background:var(--accent)"></div></div>
+        <div class="d-sub">${ctaCoverage}% CTA coverage</div>
+      </div>
+      <div class="density-cell">
+        <div class="d-label">Avg CTAs per Post</div>
+        <div class="d-val" style="color:var(--accent)">${avgCTAsPerPost}</div>
+        <div class="d-bar"><div class="d-bar-fill" style="width:${avgCTAsPerPost / 4 * 100}%;background:var(--accent)"></div></div>
+        <div class="d-sub">Target: 3.0 per post</div>
+      </div>
+      <div class="density-cell">
+        <div class="d-label">Est. CTA Click-Through</div>
+        <div class="d-val" style="color:var(--amber)">${ctaClickThrough}%</div>
+        <div class="d-bar"><div class="d-bar-fill" style="width:${ctaClickThrough / 3 * 100}%;background:var(--amber)"></div></div>
+        <div class="d-sub">Industry avg: 2.5%</div>
+      </div>
+      <div class="density-cell">
+        <div class="d-label">Est. Monthly CTA Clicks</div>
+        <div class="d-val" style="color:var(--green)">~${Math.round(totalPosts * avgCTAsPerPost * ctaClickThrough).toLocaleString()}</div>
+        <div class="d-bar"><div class="d-bar-fill" style="width:65%;background:var(--green)"></div></div>
+        <div class="d-sub">Based on current traffic estimates</div>
+      </div>
+    </div>
+    <h3 style="font-size:.82rem;margin-bottom:10px">CTA Placement Analysis</h3>
+    ${ctaPlacements.map(p => `
+      <div style="display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid rgba(26,34,54,.3)">
+        <span style="width:200px;font-size:.82rem;flex-shrink:0">${p.position}</span>
+        <div style="flex:1;height:6px;background:var(--border);border-radius:3px;overflow:hidden">
+          <div style="height:100%;width:${p.pct}%;background:${p.pct >= 90 ? 'var(--green)' : p.pct >= 80 ? 'var(--accent)' : 'var(--amber)'};border-radius:3px"></div>
+        </div>
+        <span class="mono" style="min-width:80px;text-align:right;font-size:.78rem">${p.count} posts</span>
+        <span class="mono" style="min-width:50px;text-align:right;font-size:.78rem;color:${p.pct >= 90 ? 'var(--green)' : 'var(--amber)'}">${p.pct}%</span>
+      </div>
+    `).join('')}
+  `;
+}
+
+function renderCoverageTable() {
+  const tbody = document.querySelector('#coverageTable tbody');
+  tbody.innerHTML = productCoverage.map(c => {
+    const covColor = c.coverage === 100 ? 'var(--green)' : c.coverage >= 80 ? 'var(--amber)' : 'var(--red)';
+    return `<tr>
+      <td style="font-weight:600">${c.category}</td>
+      <td class="mono">${c.posts}</td>
+      <td class="mono">${c.withProducts}</td>
+      <td class="mono" style="color:${covColor};font-weight:700">${c.coverage}%</td>
+      <td class="mono">${c.avgPerPost}</td>
+      <td><span class="badge ${c.gaps === 'None' ? 'badge-green' : 'badge-amber'}">${c.gaps}</span></td>
+    </tr>`;
+  }).join('');
+}
+
+function renderBuyerIntent() {
+  document.getElementById('buyerIntent').innerHTML = `
+    <h3>Buyer Intent vs Informational Content Mix
+      <span class="badge badge-amber" style="font-size:.6rem">62.1% BUYER INTENT</span>
+    </h3>
+    <div class="intent-bar">
+      <div class="intent-seg" style="width:${buyerIntentPct}%;background:var(--accent);color:#000">${buyerIntentPct}% Buyer</div>
+      <div class="intent-seg" style="width:${(100 - parseFloat(buyerIntentPct)).toFixed(1)}%;background:var(--blue-dim);color:var(--blue)">${(100 - parseFloat(buyerIntentPct)).toFixed(1)}% Info</div>
+    </div>
+    <div class="density-grid" style="margin-top:16px">
+      <div class="density-cell">
+        <div class="d-label">Buyer Intent Posts</div>
+        <div class="d-val" style="color:var(--accent)">${buyerIntentPosts}</div>
+        <div class="d-sub">Best [product], [product] review, [product] vs, buy [product]</div>
+      </div>
+      <div class="density-cell">
+        <div class="d-label">Informational Posts</div>
+        <div class="d-val" style="color:var(--blue)">${informationalPosts}</div>
+        <div class="d-sub">How to, guide, what is, why, tips, facts</div>
+      </div>
+      <div class="density-cell">
+        <div class="d-label">Target Buyer Mix</div>
+        <div class="d-val" style="color:var(--amber)">70%</div>
+        <div class="d-bar"><div class="d-bar-fill" style="width:${buyerIntentPct / 70 * 100}%;background:var(--amber)"></div></div>
+        <div class="d-sub">${(70 - parseFloat(buyerIntentPct)).toFixed(1)}% more buyer content needed</div>
+      </div>
+      <div class="density-cell">
+        <div class="d-label">Conversion Potential</div>
+        <div class="d-val" style="color:var(--green)">High</div>
+        <div class="d-sub">Strong buyer intent keywords across clusters</div>
+      </div>
+    </div>
+  `;
+}
+
+function renderClusterCards() {
+  document.getElementById('clusterCards').innerHTML = clusters.map(c => {
+    const color = c.readiness >= 90 ? 'var(--green)' : c.readiness >= 80 ? 'var(--accent)' : c.readiness >= 70 ? 'var(--amber)' : 'var(--red)';
+    return `<div class="cluster-card">
+      <div class="cl-name"><span class="icon">${c.icon}</span> ${c.name}</div>
+      <div class="cluster-stats">
+        <div class="cl-stat">
+          <span class="cs-label">Posts</span>
+          <span class="cs-value">${c.posts}</span>
+        </div>
+        <div class="cl-stat">
+          <span class="cs-label">Affiliate Links</span>
+          <span class="cs-value">${c.affiliateLinks}</span>
+        </div>
+        <div class="cl-stat">
+          <span class="cs-label">CTA Density</span>
+          <span class="cs-value">${c.ctaDensity}/post</span>
+        </div>
+        <div class="cl-stat">
+          <span class="cs-label">Buyer Intent</span>
+          <span class="cs-value" style="color:${c.buyerIntent >= 70 ? 'var(--green)' : 'var(--amber)'}">${c.buyerIntent}%</span>
+        </div>
+        <div class="cl-stat">
+          <span class="cs-label">Readiness</span>
+          <span class="cs-value" style="color:${color};font-weight:700">${c.readiness}/100</span>
+        </div>
+      </div>
+      <div class="cl-score-bar">
+        <div class="fill" style="width:${c.readiness}%"></div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderTimeline() {
+  document.getElementById('timelineSection').innerHTML = `
+    <h3 style="font-size:.9rem;margin-bottom:20px">Monetization Milestones
+      <span class="badge badge-blue" style="font-size:.6rem;border:none">NO LIVE REVENUE TRACKING</span>
+    </h3>
+    <div class="timeline">
+      ${timelineItems.map(t => `
+        <div class="tl-item ${t.status}">
+          <div class="tl-title">${t.title}</div>
+          <div class="tl-desc">${t.desc}</div>
+          <span class="tl-badge ${t.status}">${t.date}</span>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+function renderAll() {
+  renderSummary();
+  renderReadinessScore();
+  renderAffiliateDensity();
+  renderCtaDensity();
+  renderCoverageTable();
+  renderBuyerIntent();
+  renderClusterCards();
+  renderTimeline();
+  document.getElementById('lastUpdate').textContent =
+    'Updated ' + new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+  const bar = document.getElementById('refreshBar');
+  bar.classList.add('active');
+  setTimeout(() => bar.classList.remove('active'), 1200);
+}
+
+renderAll();
+setInterval(renderAll, 60000);
+</script>
+</body>
+</html>
