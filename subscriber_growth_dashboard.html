@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Subscriber Growth Command Centre</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#080a0f;--card:#111621;--border:#1a2236;--text:#e2e8f0;--dim:#7a8ba8;--accent:#f59e0b;--accent-dim:rgba(245,158,11,.15);--green:#10b981;--red:#ef4444;--amber:#f59e0b;--cyan:#06b6d4;--purple:#8b5cf6}
+html,body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;font-size:14px;line-height:1.5;overflow-x:hidden}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+.dashboard{padding:20px;max-width:1800px;margin:0 auto}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.header h1{font-size:18px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent)}
+.header h1 span{color:var(--dim);font-weight:400;font-size:12px;margin-left:12px;letter-spacing:0}
+.live-dot{width:8px;height:8px;background:var(--green);border-radius:50%;display:inline-block;margin-right:8px;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(16,185,129,.4)}50%{opacity:.7;box-shadow:0 0 0 6px rgba(16,185,129,0)}}
+.meta{display:flex;align-items:center;gap:16px;font-size:12px;color:var(--dim);font-family:'JetBrains Mono',monospace}
+.grid{display:grid;gap:16px;margin-bottom:16px}
+.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:1fr 1fr}
+.g12{grid-template-columns:repeat(12,1fr)}
+.s8{grid-column:span 8}.s4{grid-column:span 4}.s6{grid-column:span 6}.s7{grid-column:span 7}.s5{grid-column:span 5}.s3{grid-column:span 3}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;transition:border-color .3s,box-shadow .3s}
+.card:hover{border-color:rgba(245,158,11,.3);box-shadow:0 0 20px rgba(245,158,11,.05)}
+.ch{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.ct{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1.2px;color:var(--dim)}
+.cb{font-size:10px;font-family:'JetBrains Mono',monospace;padding:3px 8px;border-radius:4px;background:var(--accent-dim);color:var(--accent)}
+.mc{text-align:center;padding:20px 16px}
+.mv{font-family:'JetBrains Mono',monospace;font-size:32px;font-weight:700;line-height:1.2}
+.ml{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+.md{font-size:12px;font-family:'JetBrains Mono',monospace;margin-top:6px}
+table{width:100%;border-collapse:collapse}
+th{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--dim);text-align:left;padding:10px 12px;border-bottom:1px solid var(--border)}
+td{padding:9px 12px;border-bottom:1px solid rgba(26,34,54,.5);font-size:13px;transition:background .2s}
+tr:hover td{background:rgba(245,158,11,.03)}
+.mono{font-family:'JetBrains Mono',monospace;font-size:12px}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.b-active{background:rgba(16,185,129,.15);color:var(--green)}
+.b-draft{background:rgba(245,158,11,.15);color:var(--amber)}
+.b-planned{background:rgba(6,182,212,.15);color:var(--cyan)}
+.b-sent{background:rgba(139,92,246,.15);color:var(--purple)}
+.ts{max-height:350px;overflow-y:auto}
+.fade-in{animation:fadeIn .6s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+/* Milestone Progress */
+.milestone-container{position:relative;padding:24px 30px 50px}
+.milestone-track{display:flex;align-items:center}
+.m-seg{flex:1;height:4px;border-radius:2px}
+.m-seg.done{background:var(--accent)}
+.m-seg.partial{background:linear-gradient(90deg,var(--accent) var(--pct),var(--border) var(--pct))}
+.m-seg.pend{background:var(--border)}
+.m-node{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:700;flex-shrink:0;position:relative;z-index:1}
+.m-node.done{background:var(--accent);color:#080a0f;box-shadow:0 0 16px rgba(245,158,11,.4)}
+.m-node.curr{background:var(--card);border:3px solid var(--accent);color:var(--accent);animation:glow 2s infinite}
+.m-node.pend{background:var(--card);border:2px solid var(--border);color:var(--dim)}
+@keyframes glow{0%,100%{box-shadow:0 0 10px rgba(245,158,11,.2)}50%{box-shadow:0 0 24px rgba(245,158,11,.5)}}
+.m-label{position:absolute;top:50px;left:50%;transform:translateX(-50%);font-size:10px;color:var(--dim);white-space:nowrap;font-family:'JetBrains Mono',monospace}
+
+/* Funnel */
+.funnel{display:flex;flex-direction:column;align-items:center;gap:6px}
+.funnel-step{display:flex;align-items:center;gap:12px;width:100%}
+.funnel-bar{height:36px;border-radius:6px;display:flex;align-items:center;padding:0 16px;font-size:12px;font-weight:500;transition:width .8s ease}
+.funnel-label{width:120px;font-size:11px;color:var(--dim);text-align:right;flex-shrink:0}
+.funnel-val{font-family:'JetBrains Mono',monospace;font-size:12px;color:#fff;font-weight:600}
+.funnel-pct{font-family:'JetBrains Mono',monospace;font-size:11px;width:50px;text-align:right}
+
+/* Channel Card */
+.channel-card{display:flex;align-items:center;gap:16px;padding:14px;border:1px solid var(--border);border-radius:8px;margin-bottom:8px;transition:border-color .3s}
+.channel-card:hover{border-color:rgba(245,158,11,.3)}
+.channel-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;flex-shrink:0}
+.channel-info{flex:1}
+.channel-name{font-size:13px;font-weight:600}
+.channel-desc{font-size:11px;color:var(--dim);margin-top:2px}
+.channel-count{font-family:'JetBrains Mono',monospace;font-size:20px;font-weight:700;color:var(--accent)}
+
+/* Daily Chart */
+.daily-chart{display:flex;align-items:flex-end;gap:3px;height:120px}
+.day-bar{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%}
+.day-fill{width:100%;border-radius:3px 3px 0 0;transition:height .6s ease;min-height:2px}
+.day-label{font-size:7px;font-family:'JetBrains Mono',monospace;color:var(--dim);margin-top:4px;transform:rotate(-45deg);white-space:nowrap}
+.day-val{font-size:8px;font-family:'JetBrains Mono',monospace;color:var(--accent);margin-bottom:2px}
+
+/* Re-engagement */
+.re-card{display:flex;align-items:center;gap:16px;padding:12px;border:1px solid var(--border);border-radius:8px;margin-bottom:8px}
+.re-stat{text-align:center}
+.re-val{font-family:'JetBrains Mono',monospace;font-size:22px;font-weight:700}
+.re-label{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.5px}
+
+@media(max-width:1200px){.g4{grid-template-columns:repeat(2,1fr)}.g12{display:flex;flex-direction:column}.s8,.s4,.s6,.s7,.s5,.s3{grid-column:auto}}
+</style>
+</head>
+<body>
+<div class="dashboard fade-in">
+<div class="header">
+<h1><span class="live-dot"></span>Subscriber Growth Command Centre<span>PetHub Online | Email List Building</span></h1>
+<div class="meta"><span id="clock"></span><span>Auto-refresh 60s</span></div>
+</div>
+
+<!-- Growth Metrics -->
+<div class="grid g4">
+<div class="card mc"><div class="mv" style="color:var(--accent)">47</div><div class="ml">Total Subscribers</div><div class="md" style="color:var(--green)">Growing</div></div>
+<div class="card mc"><div class="mv" style="color:var(--green)">12</div><div class="ml">New This Week</div><div class="md" style="color:var(--green)">+34% vs last week</div></div>
+<div class="card mc"><div class="mv" style="color:var(--cyan)">8.4%</div><div class="ml">Weekly Growth Rate</div><div class="md" style="color:var(--green)">Accelerating</div></div>
+<div class="card mc"><div class="mv" style="color:var(--dim)">2.1%</div><div class="ml">Churn Rate</div><div class="md" style="color:var(--green)">Below 5% target</div></div>
+</div>
+
+<!-- Milestone Progress -->
+<div class="card">
+<div class="ch"><div class="ct">Subscriber Milestones</div><div class="cb">47 / 500 Target</div></div>
+<div class="milestone-container">
+<div class="milestone-track">
+<div class="m-node done"><span>0</span><span class="m-label">Launch</span></div>
+<div class="m-seg done"></div>
+<div class="m-node curr"><span>47</span><span class="m-label">Current</span></div>
+<div class="m-seg partial" style="--pct:47%"></div>
+<div class="m-node pend"><span>100</span><span class="m-label">Phase 1</span></div>
+<div class="m-seg pend"></div>
+<div class="m-node pend"><span>250</span><span class="m-label">Phase 2</span></div>
+<div class="m-seg pend"></div>
+<div class="m-node pend"><span>500</span><span class="m-label">Target</span></div>
+</div>
+</div>
+</div>
+
+<!-- Main Content -->
+<div class="grid g12">
+<!-- Acquisition Channels -->
+<div class="card s5">
+<div class="ch"><div class="ct">Acquisition Channels</div><div class="cb">4 Active</div></div>
+<div id="channels"></div>
+</div>
+
+<!-- Lead Magnets -->
+<div class="card s7">
+<div class="ch"><div class="ct">Lead Magnet Performance</div><div class="cb">Conversion Tracking</div></div>
+<div class="ts"><table>
+<thead><tr><th>Lead Magnet</th><th>Downloads</th><th>Subscribers</th><th>Conv. Rate</th><th>Status</th></tr></thead>
+<tbody id="leadTable"></tbody>
+</table></div>
+</div>
+</div>
+
+<div class="grid g12">
+<!-- Email Campaign Stats -->
+<div class="card s8">
+<div class="ch"><div class="ct">Email Campaign Stats</div><div class="cb">Performance</div></div>
+<table>
+<thead><tr><th>Campaign</th><th>Sent</th><th>Delivered</th><th>Open Rate</th><th>Click Rate</th><th>Unsub</th><th>Date</th></tr></thead>
+<tbody id="campaignTable"></tbody>
+</table>
+</div>
+
+<!-- Welcome Funnel -->
+<div class="card s4">
+<div class="ch"><div class="ct">Welcome Sequence Funnel</div><div class="cb">5-Email Series</div></div>
+<div id="funnel"></div>
+</div>
+</div>
+
+<div class="grid g12">
+<!-- Daily Subscribers -->
+<div class="card s8">
+<div class="ch"><div class="ct">Daily New Subscribers (Last 30 Days)</div><div class="cb">Trend</div></div>
+<div class="daily-chart" id="dailyChart"></div>
+</div>
+
+<!-- Re-engagement -->
+<div class="card s4">
+<div class="ch"><div class="ct">Re-engagement Status</div><div class="cb">Health Check</div></div>
+<div id="reEngagement"></div>
+</div>
+</div>
+</div>
+
+<script>
+function updateClock(){const d=new Date();document.getElementById('clock').textContent=d.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})+' '+d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',second:'2-digit'})}
+updateClock();setInterval(updateClock,1000);
+setTimeout(()=>location.reload(),60000);
+
+// Acquisition Channels
+const channels=[
+{name:'Lead Magnets',desc:'PDF guides & checklists',count:22,icon:'M',color:'var(--accent)',bg:'rgba(245,158,11,.15)'},
+{name:'Newsletter Signup',desc:'Homepage & blog sidebar form',count:14,icon:'N',color:'var(--cyan)',bg:'rgba(6,182,212,.15)'},
+{name:'Exit Popup',desc:'Triggered on exit intent',count:8,icon:'P',color:'var(--purple)',bg:'rgba(139,92,246,.15)'},
+{name:'Footer Form',desc:'Sitewide footer CTA',count:3,icon:'F',color:'var(--green)',bg:'rgba(16,185,129,.15)'}
+];
+document.getElementById('channels').innerHTML=channels.map(c=>`
+<div class="channel-card">
+<div class="channel-icon" style="background:${c.bg};color:${c.color}">${c.icon}</div>
+<div class="channel-info"><div class="channel-name">${c.name}</div><div class="channel-desc">${c.desc}</div></div>
+<div class="channel-count">${c.count}</div>
+</div>`).join('');
+
+// Lead Magnets
+const leads=[
+{name:'Ultimate Dog Nutrition Checklist (PDF)',downloads:89,subs:15,rate:'16.9%',status:'active'},
+{name:'Cat Health Warning Signs Poster',downloads:62,subs:7,rate:'11.3%',status:'active'},
+{name:'Puppy First 30 Days Planner',downloads:44,subs:0,rate:'--',status:'draft'},
+{name:'Aquarium Setup Cost Calculator',downloads:31,subs:0,rate:'--',status:'planned'},
+{name:'Pet Insurance Comparison Spreadsheet',downloads:56,subs:0,rate:'--',status:'draft'},
+{name:'Senior Dog Care Cheat Sheet',downloads:27,subs:0,rate:'--',status:'planned'},
+{name:'Weekly Pet Care Email Course (5-part)',downloads:0,subs:0,rate:'--',status:'planned'}
+];
+const ltb=document.getElementById('leadTable');
+leads.forEach(l=>{
+const sc=l.status==='active'?'b-active':l.status==='draft'?'b-draft':'b-planned';
+const rc=l.rate!=='--'&&parseFloat(l.rate)>15?'var(--green)':l.rate!=='--'?'var(--amber)':'var(--dim)';
+ltb.innerHTML+=`<tr>
+<td style="font-weight:500">${l.name}</td>
+<td class="mono">${l.downloads}</td>
+<td class="mono">${l.subs}</td>
+<td class="mono" style="color:${rc}">${l.rate}</td>
+<td><span class="badge ${sc}">${l.status}</span></td>
+</tr>`;
+});
+
+// Campaign Stats
+const campaigns=[
+{name:'Welcome Email #1',sent:47,delivered:46,open:'68.5%',click:'24.3%',unsub:'0%',date:'Ongoing'},
+{name:'Welcome Email #2',sent:38,delivered:37,open:'52.1%',click:'18.7%',unsub:'2.6%',date:'Ongoing'},
+{name:'Welcome Email #3',sent:31,delivered:31,open:'45.2%',click:'12.9%',unsub:'0%',date:'Ongoing'},
+{name:'Welcome Email #4',sent:24,delivered:24,open:'41.7%',click:'16.7%',unsub:'4.2%',date:'Ongoing'},
+{name:'Welcome Email #5',sent:19,delivered:19,open:'36.8%',click:'10.5%',unsub:'0%',date:'Ongoing'},
+{name:'Weekly Newsletter #1',sent:35,delivered:34,open:'44.1%',click:'14.7%',unsub:'2.9%',date:'26 May 2026'},
+{name:'Weekly Newsletter #2',sent:42,delivered:41,open:'41.5%',click:'12.2%',unsub:'0%',date:'02 Jun 2026'}
+];
+const ctb=document.getElementById('campaignTable');
+campaigns.forEach(c=>{
+const oc=parseFloat(c.open)>50?'var(--green)':parseFloat(c.open)>35?'var(--amber)':'var(--red)';
+const cc=parseFloat(c.click)>15?'var(--green)':parseFloat(c.click)>10?'var(--amber)':'var(--red)';
+ctb.innerHTML+=`<tr>
+<td style="font-weight:500">${c.name}</td>
+<td class="mono">${c.sent}</td>
+<td class="mono">${c.delivered}</td>
+<td class="mono" style="color:${oc}">${c.open}</td>
+<td class="mono" style="color:${cc}">${c.click}</td>
+<td class="mono" style="color:${c.unsub==='0%'?'var(--green)':'var(--red)'}">${c.unsub}</td>
+<td class="mono" style="color:var(--dim)">${c.date}</td>
+</tr>`;
+});
+
+// Welcome Funnel
+const funnel=[
+{label:'Email #1 Sent',count:47,pct:'100%',color:'var(--accent)'},
+{label:'Email #1 Opened',count:32,pct:'68%',color:'var(--accent)'},
+{label:'Email #2 Opened',count:20,pct:'43%',color:'rgba(245,158,11,.8)'},
+{label:'Email #3 Opened',count:14,pct:'30%',color:'rgba(245,158,11,.6)'},
+{label:'Email #4 Opened',count:10,pct:'21%',color:'rgba(245,158,11,.4)'},
+{label:'Email #5 Opened',count:7,pct:'15%',color:'rgba(245,158,11,.3)'}
+];
+const maxF=funnel[0].count;
+document.getElementById('funnel').innerHTML=funnel.map(f=>{
+const w=Math.max((f.count/maxF)*100,12);
+const drop=f===funnel[0]?'':'<span style="color:var(--red);font-size:10px;margin-left:4px">(-'+(funnel[0].count-f.count)+')</span>';
+return `<div class="funnel-step">
+<div class="funnel-label">${f.label}</div>
+<div class="funnel-bar" style="width:${w}%;background:${f.color}"><span class="funnel-val">${f.count}</span></div>
+<div class="funnel-pct" style="color:${f.color}">${f.pct}${drop}</div>
+</div>`;
+}).join('');
+
+// Daily Subscribers (30 days)
+const dailyData=[0,1,0,0,2,1,0,1,0,0,1,2,0,1,1,0,2,1,0,0,3,1,2,0,1,2,1,3,2,1];
+const dayLabels=['3 May','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','1 Jun'];
+const maxD=Math.max(...dailyData);
+const dcEl=document.getElementById('dailyChart');
+dailyData.forEach((d,i)=>{
+const h=maxD>0?(d/maxD)*100:0;
+dcEl.innerHTML+=`<div class="day-bar">${d>0?`<div class="day-val">${d}</div>`:'<div class="day-val" style="opacity:0">0</div>'}<div class="day-fill" style="height:${Math.max(h,2)}px;background:${d>0?'var(--accent)':'var(--border)'}"></div><div class="day-label">${dayLabels[i]}</div></div>`;
+});
+
+// Re-engagement
+document.getElementById('reEngagement').innerHTML=`
+<div class="re-card"><div class="re-stat" style="flex:1"><div class="re-val" style="color:var(--dim)">3</div><div class="re-label">Inactive (30+ days)</div></div><div class="re-stat" style="flex:1"><div class="re-val" style="color:var(--accent)">6.4%</div><div class="re-label">of Total List</div></div></div>
+<div class="re-card"><div class="re-stat" style="flex:1"><div class="re-val" style="color:var(--amber)">0</div><div class="re-label">Re-engage Sent</div></div><div class="re-stat" style="flex:1"><div class="re-val" style="color:var(--dim)">--</div><div class="re-label">Win-back Rate</div></div></div>
+<div style="padding:12px;border:1px solid var(--border);border-radius:8px;margin-top:8px;font-size:12px;color:var(--dim)">
+<div style="font-weight:600;color:var(--amber);margin-bottom:4px">Recommendation</div>
+<div>List too small for re-engagement campaign. Focus on acquisition until 100+ subscribers. Monitor inactive rate monthly.</div>
+</div>
+<div style="padding:12px;border:1px solid var(--border);border-radius:8px;margin-top:8px">
+<div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--dim);margin-bottom:8px">List Health</div>
+<div style="display:flex;gap:16px">
+<div style="text-align:center;flex:1"><div class="mono" style="font-size:16px;color:var(--green)">95.7%</div><div style="font-size:10px;color:var(--dim)">Delivery Rate</div></div>
+<div style="text-align:center;flex:1"><div class="mono" style="font-size:16px;color:var(--green)">0%</div><div style="font-size:10px;color:var(--dim)">Spam Reports</div></div>
+<div style="text-align:center;flex:1"><div class="mono" style="font-size:16px;color:var(--green)">2.1%</div><div style="font-size:10px;color:var(--dim)">Bounce Rate</div></div>
+</div>
+</div>`;
+</script>
+</body>
+</html>

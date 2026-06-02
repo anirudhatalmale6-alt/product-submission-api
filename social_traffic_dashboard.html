@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Social Traffic Command Centre - PetHub Online</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#080a0f;--card:#111621;--border:#1a2236;--text:#e2e8f0;--dim:#7a8ba8;
+  --accent:#ec4899;--accent-dim:rgba(236,72,153,.12);--accent-glow:rgba(236,72,153,.25);
+  --green:#22c55e;--green-dim:rgba(34,197,94,.15);
+  --red:#ef4444;--red-dim:rgba(239,68,68,.15);
+  --amber:#f59e0b;--amber-dim:rgba(245,158,11,.15);
+  --blue:#3b82f6;--blue-dim:rgba(59,130,246,.12);
+  --cyan:#06b6d4;--purple:#a855f7;
+  --grey:#6b7280;--grey-dim:rgba(107,114,128,.15);
+  --fb:#1877f2;--ig:#e1306c;--pin:#e60023;
+  --radius:10px;--radius-sm:6px;
+  --font-body:'Outfit',sans-serif;--font-mono:'JetBrains Mono',monospace;
+}
+html{font-size:15px;scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--text);font-family:var(--font-body);
+  line-height:1.6;min-height:100vh;overflow-x:hidden;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%,rgba(236,72,153,.04) 0%,transparent 70%),
+    radial-gradient(ellipse 60% 40% at 80% 100%,rgba(236,72,153,.02) 0%,transparent 60%);
+}
+body::before{
+  content:'';position:fixed;top:0;left:0;width:100%;height:100%;
+  background:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events:none;z-index:9999;opacity:.4;
+}
+.container{max-width:1440px;margin:0 auto;padding:24px 28px 60px}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:#2a3656}
+
+/* Refresh bar */
+.refresh-bar{
+  position:fixed;top:0;left:0;width:100%;height:2px;z-index:999;
+  background:linear-gradient(90deg,transparent,var(--accent),transparent);
+  opacity:0;transition:opacity .3s;
+}
+.refresh-bar.active{opacity:1;animation:refreshSlide 1s ease-in-out}
+@keyframes refreshSlide{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+
+/* Header */
+.dash-header{
+  display:flex;align-items:center;justify-content:space-between;
+  margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid var(--border);
+}
+.dash-header h1{
+  font-family:var(--font-body);font-weight:800;font-size:1.6rem;
+  letter-spacing:-0.02em;
+  background:linear-gradient(135deg,var(--accent),#f472b6,#fb7185);
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.dash-header .subtitle{font-size:.8rem;color:var(--dim);margin-top:2px;font-weight:400}
+.dash-header .meta{text-align:right;font-size:.75rem;color:var(--dim);font-family:var(--font-mono)}
+.dash-header .meta .live-dot{
+  display:inline-block;width:6px;height:6px;border-radius:50%;
+  background:var(--green);margin-right:6px;animation:pulse-dot 2s ease-in-out infinite;
+}
+@keyframes pulse-dot{0%,100%{opacity:1}50%{opacity:.3}}
+.refresh-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--accent-dim);border:1px solid rgba(236,72,153,.3);
+  padding:7px 14px;border-radius:20px;font-size:12px;font-weight:600;color:var(--accent);margin-top:6px;
+}
+.refresh-badge .pulse{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:pulse-glow 2s ease-in-out infinite}
+@keyframes pulse-glow{0%,100%{box-shadow:0 0 0 0 rgba(236,72,153,.5)}50%{box-shadow:0 0 0 8px rgba(236,72,153,0)}}
+
+/* Section labels */
+.section{margin-bottom:36px}
+.section-label{
+  display:flex;align-items:center;gap:10px;margin-bottom:16px;
+  font-size:.7rem;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--accent);font-family:var(--font-mono);
+}
+.section-label::after{
+  content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent);
+}
+.section-label .sec-num{
+  background:var(--accent-dim);padding:2px 8px;border-radius:4px;font-size:.65rem;color:var(--accent);
+}
+
+/* Summary bar */
+.summary-bar{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+@media(max-width:1100px){.summary-bar{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.summary-bar{grid-template-columns:repeat(2,1fr)}}
+.stat-card{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:18px 16px;position:relative;overflow:hidden;transition:border-color .3s,transform .2s;
+}
+.stat-card:hover{border-color:rgba(236,72,153,.3);transform:translateY(-1px)}
+.stat-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,var(--accent),transparent);opacity:.6;
+}
+.stat-card .label{font-size:.68rem;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;font-weight:600;margin-bottom:8px}
+.stat-card .value{font-family:var(--font-mono);font-size:1.65rem;font-weight:700;color:var(--text);line-height:1}
+.stat-card .value .unit{font-size:.75rem;color:var(--dim);font-weight:400;margin-left:2px}
+.stat-card .change{font-size:.7rem;margin-top:6px;font-family:var(--font-mono)}
+.stat-card .change.up{color:var(--green)}
+.stat-card .change.down{color:var(--red)}
+.stat-card .change.neutral{color:var(--dim)}
+
+/* Cards grid */
+.cards-grid{display:grid;gap:14px}
+.cards-grid.cols-2{grid-template-columns:repeat(2,1fr)}
+.cards-grid.cols-3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.cards-grid.cols-3{grid-template-columns:1fr}}
+@media(max-width:600px){.cards-grid.cols-2,.cards-grid.cols-3{grid-template-columns:1fr}}
+
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:18px;transition:border-color .3s,transform .2s;position:relative;overflow:hidden;
+}
+.card:hover{border-color:rgba(236,72,153,.25);transform:translateY(-1px)}
+.card h3{font-size:14px;font-weight:600;margin-bottom:12px;display:flex;align-items:center;justify-content:space-between}
+
+/* Platform cards */
+.platform-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:var(--radius) var(--radius) 0 0}
+.platform-card.facebook::before{background:var(--fb)}
+.platform-card.instagram::before{background:linear-gradient(90deg,#833ab4,#e1306c,#f77737)}
+.platform-card.pinterest::before{background:var(--pin)}
+
+.p-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.p-name{font-size:16px;font-weight:700;display:flex;align-items:center;gap:8px}
+.p-icon{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#fff}
+.p-icon.fb{background:var(--fb)}
+.p-icon.ig{background:linear-gradient(135deg,#833ab4,#e1306c,#f77737)}
+.p-icon.pin{background:var(--pin)}
+.conn-badge{font-size:10px;font-weight:700;padding:3px 10px;border-radius:12px;text-transform:uppercase;letter-spacing:.5px}
+.conn-badge.active{background:rgba(34,197,94,.12);color:var(--green)}
+.conn-badge.setup{background:rgba(245,158,11,.12);color:var(--amber)}
+
+.p-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px;margin-bottom:14px}
+.p-stat-val{font-size:18px;font-weight:700;font-family:var(--font-mono)}
+.p-stat-lbl{font-size:11px;color:var(--dim);margin-top:2px}
+
+.p-velocity{padding-top:12px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.p-velocity .vl{font-size:.72rem;color:var(--dim)}
+.p-velocity .vv{font-family:var(--font-mono);font-size:.82rem;font-weight:600}
+
+/* Tables */
+.table-wrap{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse}
+thead{background:rgba(236,72,153,.05)}
+th{
+  font-size:.68rem;text-transform:uppercase;letter-spacing:.1em;
+  font-weight:700;color:var(--accent);padding:12px 14px;text-align:left;
+  font-family:var(--font-mono);border-bottom:1px solid var(--border);white-space:nowrap;
+}
+td{padding:11px 14px;font-size:.82rem;border-bottom:1px solid rgba(26,34,54,.5);vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:rgba(236,72,153,.02)}
+.mono{font-family:var(--font-mono);font-weight:500}
+
+/* Badges */
+.badge{
+  display:inline-flex;align-items:center;padding:3px 10px;border-radius:4px;
+  font-size:.68rem;font-weight:600;font-family:var(--font-mono);text-transform:uppercase;letter-spacing:.06em;
+}
+.badge-fb{background:rgba(24,119,242,.15);color:var(--fb);border:1px solid rgba(24,119,242,.3)}
+.badge-ig{background:rgba(225,48,108,.15);color:var(--ig);border:1px solid rgba(225,48,108,.3)}
+.badge-pin{background:rgba(230,0,35,.15);color:var(--pin);border:1px solid rgba(230,0,35,.3)}
+.badge-green{background:var(--green-dim);color:var(--green);border:1px solid rgba(34,197,94,.3)}
+.badge-amber{background:var(--amber-dim);color:var(--amber);border:1px solid rgba(245,158,11,.3)}
+.badge-dim{background:var(--grey-dim);color:var(--grey);border:1px solid rgba(107,114,128,.3)}
+
+/* Calendar */
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+@media(max-width:900px){.cal-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:500px){.cal-grid{grid-template-columns:1fr}}
+.cal-day{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px;min-height:110px}
+.cal-day-head{font-size:11px;font-weight:700;text-transform:uppercase;color:var(--dim);letter-spacing:1px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center}
+.cal-day-date{font-family:var(--font-mono);font-size:12px;color:var(--accent)}
+.cal-item{font-size:11px;padding:6px 8px;border-radius:6px;margin-bottom:6px;border-left:3px solid;line-height:1.4}
+.cal-item:last-child{margin-bottom:0}
+.cal-item.fb{background:rgba(24,119,242,.08);border-color:var(--fb);color:#93bbfc}
+.cal-item.ig{background:rgba(225,48,108,.08);border-color:var(--ig);color:#f48cba}
+.cal-item.pin{background:rgba(230,0,35,.08);border-color:var(--pin);color:#f48c8c}
+.cal-status{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-top:3px;display:inline-block;opacity:.7}
+
+/* Engagement grid */
+.eng-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media(max-width:800px){.eng-grid{grid-template-columns:repeat(2,1fr)}}
+.eng-cell{background:rgba(26,34,54,.3);border-radius:var(--radius-sm);padding:14px;text-align:center}
+.eng-cell .label{font-size:.65rem;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+.eng-cell .val{font-family:var(--font-mono);font-size:1.2rem;font-weight:700}
+
+/* Velocity tracker */
+.vel-row{display:flex;align-items:center;gap:14px;padding:10px 0;border-bottom:1px solid rgba(26,34,54,.4)}
+.vel-row:last-child{border-bottom:none}
+.vel-platform{width:100px;font-size:.82rem;font-weight:600;flex-shrink:0}
+.vel-bar-wrap{flex:1;height:8px;background:var(--border);border-radius:4px;overflow:hidden;position:relative}
+.vel-bar-actual{height:100%;border-radius:4px;transition:width .6s ease}
+.vel-bar-target{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--text);border-radius:1px;z-index:2}
+.vel-nums{font-family:var(--font-mono);font-size:.75rem;min-width:80px;text-align:right;font-weight:600}
+
+/* Truncate */
+.truncate{max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block}
+
+/* Fade-in animation */
+.fade-in{opacity:0;transform:translateY(12px);animation:fadeUp .5s ease forwards}
+@keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
+.d1{animation-delay:.05s}.d2{animation-delay:.1s}.d3{animation-delay:.15s}
+.d4{animation-delay:.2s}.d5{animation-delay:.25s}.d6{animation-delay:.3s}
+.d7{animation-delay:.35s}.d8{animation-delay:.4s}.d9{animation-delay:.45s}
+</style>
+</head>
+<body>
+
+<div class="refresh-bar" id="refreshBar"></div>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="dash-header fade-in">
+    <div>
+      <h1>Social Traffic Command Centre</h1>
+      <div class="subtitle">pethubonline.com &mdash; Multi-Channel Social Intelligence</div>
+    </div>
+    <div class="meta">
+      <div><span class="live-dot"></span> LIVE</div>
+      <div id="lastUpdate" style="margin-top:4px">Updated just now</div>
+      <div class="refresh-badge" style="margin-top:6px"><span class="pulse"></span> Auto-refresh 60s</div>
+    </div>
+  </div>
+
+  <!-- 1. SUMMARY -->
+  <div class="section fade-in d1">
+    <div class="section-label"><span class="sec-num">01</span> Social Overview</div>
+    <div class="summary-bar" id="summaryBar"></div>
+  </div>
+
+  <!-- 2. CHANNEL CARDS -->
+  <div class="section fade-in d2">
+    <div class="section-label"><span class="sec-num">02</span> Channel Breakdown</div>
+    <div class="cards-grid cols-3" id="channelCards"></div>
+  </div>
+
+  <!-- 3. REFERRAL TRAFFIC TABLE -->
+  <div class="section fade-in d3">
+    <div class="section-label"><span class="sec-num">03</span> Referral Traffic</div>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table id="referralTable">
+          <thead><tr>
+            <th>Source</th><th>Sessions</th><th>Bounce Rate</th><th>Pages/Session</th><th>Avg Duration</th><th>Conv Rate</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. CONTENT CALENDAR -->
+  <div class="section fade-in d4">
+    <div class="section-label"><span class="sec-num">04</span> Content Calendar (This Week)</div>
+    <div class="cal-grid" id="calendarGrid"></div>
+  </div>
+
+  <!-- 5. TOP PERFORMING POSTS -->
+  <div class="section fade-in d5">
+    <div class="section-label"><span class="sec-num">05</span> Top Performing Social Posts</div>
+    <div class="table-wrap">
+      <div class="table-scroll">
+        <table id="postsTable">
+          <thead><tr>
+            <th>#</th><th>Post Title</th><th>Platform</th><th>Clicks</th><th>Engagement</th><th>Date</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. POSTING VELOCITY -->
+  <div class="section fade-in d6">
+    <div class="section-label"><span class="sec-num">06</span> Posting Velocity Tracker</div>
+    <div class="card" id="velocitySection"></div>
+  </div>
+
+  <!-- 7. ENGAGEMENT METRICS -->
+  <div class="section fade-in d7">
+    <div class="section-label"><span class="sec-num">07</span> Engagement Metrics by Platform</div>
+    <div class="cards-grid cols-3" id="engagementCards"></div>
+  </div>
+
+</div>
+
+<script>
+// =================== DATA ===================
+const channels = [
+  {
+    name: 'Facebook', cls: 'facebook', icon: 'fb', iconLabel: 'f',
+    followers: 342, referralClicks: 89, engagementRate: 2.1, postsPerWeek: 4, targetPosts: 5,
+    status: 'active',
+    stats: { likes: 187, shares: 34, comments: 52, saves: 12 },
+    lastPost: '2 hours ago'
+  },
+  {
+    name: 'Instagram', cls: 'instagram', icon: 'ig', iconLabel: 'IG',
+    followers: 518, referralClicks: 62, engagementRate: 3.4, postsPerWeek: 5, targetPosts: 7,
+    status: 'active',
+    stats: { likes: 412, shares: 28, comments: 67, saves: 89 },
+    lastPost: '6 hours ago'
+  },
+  {
+    name: 'Pinterest', cls: 'pinterest', icon: 'pin', iconLabel: 'P',
+    followers: 1240, referralClicks: 156, engagementRate: 1.8, postsPerWeek: 8, targetPosts: 10,
+    status: 'active',
+    stats: { likes: 623, shares: 198, comments: 14, saves: 342 },
+    lastPost: '1 day ago'
+  }
+];
+
+const referralData = [
+  { source: 'Pinterest', sessions: 312, bounceRate: 42.3, pagesPerSession: 2.8, avgDuration: '2:14', convRate: 0.8 },
+  { source: 'Facebook', sessions: 178, bounceRate: 56.7, pagesPerSession: 2.1, avgDuration: '1:42', convRate: 0.5 },
+  { source: 'Instagram', sessions: 124, bounceRate: 48.9, pagesPerSession: 2.4, avgDuration: '1:58', convRate: 0.6 },
+  { source: 'Direct Social Links', sessions: 67, bounceRate: 38.2, pagesPerSession: 3.1, avgDuration: '2:36', convRate: 1.2 },
+  { source: 'Linktree', sessions: 43, bounceRate: 44.1, pagesPerSession: 2.6, avgDuration: '2:08', convRate: 0.9 },
+];
+
+const calendarData = [
+  { day: 'MON', date: 'Jun 2', items: [
+    { platform: 'fb', text: 'Dog Bed Buying Guide share', status: 'published' },
+    { platform: 'ig', text: 'Puppy tips carousel', status: 'published' }
+  ]},
+  { day: 'TUE', date: 'Jun 3', items: [
+    { platform: 'pin', text: '5 Dog Bed pins', status: 'scheduled' },
+    { platform: 'fb', text: 'Cat toy video post', status: 'scheduled' }
+  ]},
+  { day: 'WED', date: 'Jun 4', items: [
+    { platform: 'ig', text: 'Reel: Pet grooming tips', status: 'scheduled' },
+    { platform: 'pin', text: 'Cat care infographic', status: 'scheduled' }
+  ]},
+  { day: 'THU', date: 'Jun 5', items: [
+    { platform: 'fb', text: 'Grain-free food article', status: 'draft' },
+    { platform: 'ig', text: 'Story: Product spotlight', status: 'draft' }
+  ]},
+  { day: 'FRI', date: 'Jun 6', items: [
+    { platform: 'pin', text: 'Pet insurance tips pins', status: 'draft' },
+    { platform: 'fb', text: 'Weekend pet care tips', status: 'draft' }
+  ]},
+  { day: 'SAT', date: 'Jun 7', items: [
+    { platform: 'ig', text: 'User-generated content', status: 'planned' },
+    { platform: 'pin', text: 'Puppy care board update', status: 'planned' }
+  ]},
+  { day: 'SUN', date: 'Jun 8', items: [
+    { platform: 'fb', text: 'Weekly pet poll', status: 'planned' },
+    { platform: 'ig', text: 'Sunday pet photo contest', status: 'planned' }
+  ]},
+];
+
+const topPosts = [
+  { title: '10 Best Dog Beds Your Pup Will Love', platform: 'Pinterest', clicks: 67, engagement: '4.2%', date: 'May 28' },
+  { title: 'Puppy First Week Home: Complete Guide', platform: 'Instagram', clicks: 43, engagement: '5.8%', date: 'May 30' },
+  { title: 'Why Grain-Free Food Might Be Wrong', platform: 'Facebook', clicks: 38, engagement: '3.1%', date: 'May 27' },
+  { title: 'Cat vs Dog: Which Pet Is Right?', platform: 'Facebook', clicks: 34, engagement: '4.5%', date: 'May 29' },
+  { title: 'DIY Dog Treats in Under 10 Minutes', platform: 'Pinterest', clicks: 31, engagement: '3.8%', date: 'May 31' },
+  { title: 'Indoor Cat Exercise Ideas', platform: 'Instagram', clicks: 28, engagement: '6.2%', date: 'Jun 1' },
+  { title: 'Best Flea Treatment Comparison Chart', platform: 'Pinterest', clicks: 26, engagement: '2.9%', date: 'May 26' },
+  { title: 'Labrador vs Golden Retriever', platform: 'Facebook', clicks: 22, engagement: '3.7%', date: 'May 25' },
+  { title: 'Cat Scratching Solutions That Work', platform: 'Instagram', clicks: 19, engagement: '4.1%', date: 'Jun 1' },
+  { title: 'Pet Insurance: Is It Worth It?', platform: 'Pinterest', clicks: 17, engagement: '2.4%', date: 'May 24' },
+];
+
+// =================== RENDER ===================
+
+function renderSummary() {
+  const totalFollowers = channels.reduce((s, c) => s + c.followers, 0);
+  const totalClicks = channels.reduce((s, c) => s + c.referralClicks, 0);
+  const totalSessions = referralData.reduce((s, r) => s + r.sessions, 0);
+  const avgEngagement = (channels.reduce((s, c) => s + c.engagementRate, 0) / channels.length).toFixed(1);
+  const totalPostsWeek = channels.reduce((s, c) => s + c.postsPerWeek, 0);
+
+  const stats = [
+    { label: 'Total Followers', value: totalFollowers.toLocaleString(), change: '+48 this week', dir: 'up' },
+    { label: 'Referral Clicks', value: String(totalClicks), change: '+23% vs last week', dir: 'up' },
+    { label: 'Social Sessions', value: String(totalSessions), change: 'Building momentum', dir: 'neutral' },
+    { label: 'Avg Engagement', value: avgEngagement + '<span class="unit">%</span>', change: 'Above industry avg', dir: 'up' },
+    { label: 'Posts / Week', value: String(totalPostsWeek), change: `Target: ${channels.reduce((s, c) => s + c.targetPosts, 0)}/wk`, dir: 'neutral' },
+  ];
+
+  document.getElementById('summaryBar').innerHTML = stats.map(s =>
+    `<div class="stat-card">
+      <div class="label">${s.label}</div>
+      <div class="value">${s.value}</div>
+      <div class="change ${s.dir}">${s.dir === 'up' ? '&#9650; ' : ''}${s.change}</div>
+    </div>`
+  ).join('');
+}
+
+function renderChannelCards() {
+  document.getElementById('channelCards').innerHTML = channels.map(c => `
+    <div class="card platform-card ${c.cls}">
+      <div class="p-header">
+        <div class="p-name">
+          <span class="p-icon ${c.icon}">${c.iconLabel}</span>
+          ${c.name}
+        </div>
+        <span class="conn-badge ${c.status}">${c.status}</span>
+      </div>
+      <div class="p-stats">
+        <div>
+          <div class="p-stat-val">${c.followers.toLocaleString()}</div>
+          <div class="p-stat-lbl">Followers</div>
+        </div>
+        <div>
+          <div class="p-stat-val">${c.referralClicks}</div>
+          <div class="p-stat-lbl">Referral Clicks</div>
+        </div>
+        <div>
+          <div class="p-stat-val">${c.engagementRate}%</div>
+          <div class="p-stat-lbl">Engagement Rate</div>
+        </div>
+        <div>
+          <div class="p-stat-val">${c.postsPerWeek}/${c.targetPosts}</div>
+          <div class="p-stat-lbl">Posts / Target</div>
+        </div>
+      </div>
+      <div class="p-velocity">
+        <span class="vl">Last Post</span>
+        <span class="vv" style="color:var(--dim)">${c.lastPost}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderReferralTable() {
+  const tbody = document.querySelector('#referralTable tbody');
+  const srcBadge = s => {
+    if (s.includes('Pinterest')) return 'badge-pin';
+    if (s.includes('Facebook')) return 'badge-fb';
+    if (s.includes('Instagram')) return 'badge-ig';
+    return 'badge-dim';
+  };
+  tbody.innerHTML = referralData.map(r => {
+    const brColor = r.bounceRate < 45 ? 'var(--green)' : r.bounceRate < 55 ? 'var(--amber)' : 'var(--red)';
+    return `<tr>
+      <td><span class="badge ${srcBadge(r.source)}">${r.source}</span></td>
+      <td class="mono">${r.sessions.toLocaleString()}</td>
+      <td class="mono" style="color:${brColor}">${r.bounceRate}%</td>
+      <td class="mono">${r.pagesPerSession}</td>
+      <td class="mono">${r.avgDuration}</td>
+      <td class="mono" style="color:var(--green);font-weight:600">${r.convRate}%</td>
+    </tr>`;
+  }).join('');
+}
+
+function renderCalendar() {
+  document.getElementById('calendarGrid').innerHTML = calendarData.map(d => `
+    <div class="cal-day">
+      <div class="cal-day-head">
+        <span>${d.day}</span>
+        <span class="cal-day-date">${d.date}</span>
+      </div>
+      ${d.items.map(item => `
+        <div class="cal-item ${item.platform}">
+          ${item.text}
+          <div class="cal-status">${item.status}</div>
+        </div>
+      `).join('')}
+    </div>
+  `).join('');
+}
+
+function renderTopPosts() {
+  const tbody = document.querySelector('#postsTable tbody');
+  const platBadge = p => {
+    if (p === 'Pinterest') return 'badge-pin';
+    if (p === 'Facebook') return 'badge-fb';
+    if (p === 'Instagram') return 'badge-ig';
+    return 'badge-dim';
+  };
+  tbody.innerHTML = topPosts.map((p, i) => `
+    <tr>
+      <td class="mono" style="color:var(--dim)">${String(i + 1).padStart(2, '0')}</td>
+      <td><span class="truncate">${p.title}</span></td>
+      <td><span class="badge ${platBadge(p.platform)}">${p.platform}</span></td>
+      <td class="mono" style="font-weight:600">${p.clicks}</td>
+      <td class="mono" style="color:var(--green)">${p.engagement}</td>
+      <td class="mono" style="color:var(--dim)">${p.date}</td>
+    </tr>
+  `).join('');
+}
+
+function renderVelocity() {
+  document.getElementById('velocitySection').innerHTML = `
+    <h3 style="font-size:.9rem;font-weight:600;margin-bottom:16px">Weekly Posting Velocity
+      <span class="badge badge-amber" style="font-size:.6rem;border:none">BUILDING MOMENTUM</span>
+    </h3>
+    ${channels.map(c => {
+      const pct = (c.postsPerWeek / c.targetPosts) * 100;
+      const color = pct >= 80 ? 'var(--green)' : pct >= 50 ? 'var(--amber)' : 'var(--red)';
+      return `<div class="vel-row">
+        <div class="vel-platform">${c.name}</div>
+        <div class="vel-bar-wrap">
+          <div class="vel-bar-actual" style="width:${pct}%;background:${color}"></div>
+          <div class="vel-bar-target" style="left:100%"></div>
+        </div>
+        <div class="vel-nums" style="color:${color}">${c.postsPerWeek} / ${c.targetPosts}</div>
+      </div>`;
+    }).join('')}
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px">
+      <div style="background:rgba(236,72,153,.06);border-radius:var(--radius-sm);padding:14px;text-align:center">
+        <div style="font-size:.65rem;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">Total Posts / Week</div>
+        <div style="font-family:var(--font-mono);font-size:1.4rem;font-weight:700;color:var(--accent)">${channels.reduce((s, c) => s + c.postsPerWeek, 0)}</div>
+      </div>
+      <div style="background:rgba(236,72,153,.06);border-radius:var(--radius-sm);padding:14px;text-align:center">
+        <div style="font-size:.65rem;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">Target Posts / Week</div>
+        <div style="font-family:var(--font-mono);font-size:1.4rem;font-weight:700;color:var(--text)">${channels.reduce((s, c) => s + c.targetPosts, 0)}</div>
+      </div>
+      <div style="background:rgba(236,72,153,.06);border-radius:var(--radius-sm);padding:14px;text-align:center">
+        <div style="font-size:.65rem;color:var(--dim);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px">Velocity Score</div>
+        <div style="font-family:var(--font-mono);font-size:1.4rem;font-weight:700;color:var(--amber)">${Math.round(channels.reduce((s, c) => s + c.postsPerWeek, 0) / channels.reduce((s, c) => s + c.targetPosts, 0) * 100)}%</div>
+      </div>
+    </div>
+  `;
+}
+
+function renderEngagement() {
+  document.getElementById('engagementCards').innerHTML = channels.map(c => {
+    const platColors = { Facebook: 'var(--fb)', Instagram: 'var(--ig)', Pinterest: 'var(--pin)' };
+    const color = platColors[c.name] || 'var(--accent)';
+    return `<div class="card">
+      <h3 style="color:${color}">${c.name} Engagement</h3>
+      <div class="eng-grid">
+        <div class="eng-cell">
+          <div class="label">Likes</div>
+          <div class="val" style="color:${color}">${c.stats.likes}</div>
+        </div>
+        <div class="eng-cell">
+          <div class="label">Shares</div>
+          <div class="val" style="color:${color}">${c.stats.shares}</div>
+        </div>
+        <div class="eng-cell">
+          <div class="label">Comments</div>
+          <div class="val" style="color:${color}">${c.stats.comments}</div>
+        </div>
+        <div class="eng-cell">
+          <div class="label">Saves</div>
+          <div class="val" style="color:${color}">${c.stats.saves}</div>
+        </div>
+      </div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:.75rem">
+        <span style="color:var(--dim)">Total Interactions</span>
+        <span class="mono" style="font-weight:700;color:${color}">${c.stats.likes + c.stats.shares + c.stats.comments + c.stats.saves}</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:.75rem;margin-top:6px">
+        <span style="color:var(--dim)">Engagement Rate</span>
+        <span class="mono" style="font-weight:700;color:var(--green)">${c.engagementRate}%</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderAll() {
+  renderSummary();
+  renderChannelCards();
+  renderReferralTable();
+  renderCalendar();
+  renderTopPosts();
+  renderVelocity();
+  renderEngagement();
+  document.getElementById('lastUpdate').textContent =
+    'Updated ' + new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+  const bar = document.getElementById('refreshBar');
+  bar.classList.add('active');
+  setTimeout(() => bar.classList.remove('active'), 1200);
+}
+
+renderAll();
+setInterval(renderAll, 60000);
+</script>
+</body>
+</html>

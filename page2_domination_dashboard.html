@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page 2 Domination Command Centre</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#080a0f;--card:#111621;--border:#1a2236;--text:#e2e8f0;--dim:#7a8ba8;--accent:#ef4444;--accent-dim:rgba(239,68,68,.15);--green:#10b981;--red:#ef4444;--amber:#f59e0b;--cyan:#06b6d4;--purple:#8b5cf6}
+html,body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;font-size:14px;line-height:1.5;overflow-x:hidden}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+.dashboard{padding:20px;max-width:1800px;margin:0 auto}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.header h1{font-size:18px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent)}
+.header h1 span{color:var(--dim);font-weight:400;font-size:12px;margin-left:12px;letter-spacing:0}
+.live-dot{width:8px;height:8px;background:var(--red);border-radius:50%;display:inline-block;margin-right:8px;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(239,68,68,.4)}50%{opacity:.7;box-shadow:0 0 0 6px rgba(239,68,68,0)}}
+.meta{display:flex;align-items:center;gap:16px;font-size:12px;color:var(--dim);font-family:'JetBrains Mono',monospace}
+.grid{display:grid;gap:16px;margin-bottom:16px}
+.g4{grid-template-columns:repeat(4,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:1fr 1fr}
+.g12{grid-template-columns:repeat(12,1fr)}
+.s8{grid-column:span 8}.s4{grid-column:span 4}.s6{grid-column:span 6}.s5{grid-column:span 5}.s7{grid-column:span 7}.s3{grid-column:span 3}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;transition:border-color .3s,box-shadow .3s}
+.card:hover{border-color:rgba(239,68,68,.3);box-shadow:0 0 20px rgba(239,68,68,.05)}
+.ch{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.ct{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1.2px;color:var(--dim)}
+.cb{font-size:10px;font-family:'JetBrains Mono',monospace;padding:3px 8px;border-radius:4px;background:var(--accent-dim);color:var(--accent)}
+.mc{text-align:center;padding:24px 16px}
+.mv{font-family:'JetBrains Mono',monospace;font-size:36px;font-weight:700;line-height:1.2}
+.ml{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+.md{font-size:12px;font-family:'JetBrains Mono',monospace;margin-top:6px}
+table{width:100%;border-collapse:collapse}
+th{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--dim);text-align:left;padding:10px 12px;border-bottom:1px solid var(--border);position:sticky;top:0;background:var(--card);z-index:1}
+td{padding:9px 12px;border-bottom:1px solid rgba(26,34,54,.5);font-size:13px;transition:background .2s}
+tr:hover td{background:rgba(239,68,68,.03)}
+.mono{font-family:'JetBrains Mono',monospace;font-size:12px}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.b-done{background:rgba(16,185,129,.15);color:var(--green)}
+.b-progress{background:rgba(245,158,11,.15);color:var(--amber)}
+.b-todo{background:rgba(239,68,68,.15);color:var(--red)}
+.b-won{background:rgba(16,185,129,.2);color:var(--green);border:1px solid rgba(16,185,129,.3)}
+.ts{max-height:440px;overflow-y:auto}
+.ts-sm{max-height:300px;overflow-y:auto}
+.trunc{max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fade-in{animation:fadeIn .6s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+.pos-badge{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:6px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700}
+.pos-11,.pos-12{background:rgba(239,68,68,.2);color:var(--red)}
+.pos-13,.pos-14{background:rgba(245,158,11,.2);color:var(--amber)}
+.pos-15,.pos-16,.pos-17{background:rgba(139,92,246,.15);color:var(--purple)}
+.pos-18,.pos-19,.pos-20{background:rgba(122,139,168,.15);color:var(--dim)}
+
+.delta-up{color:var(--green)}
+.delta-down{color:var(--red)}
+.delta-flat{color:var(--dim)}
+
+.check-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:4px}
+.check-item{width:100%;height:22px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:600}
+.check-done{background:rgba(16,185,129,.2);color:var(--green)}
+.check-todo{background:rgba(239,68,68,.1);color:var(--red)}
+
+.movement-chart{display:flex;align-items:center;gap:4px;height:80px}
+.week-col{display:flex;flex-direction:column;align-items:center;flex:1;height:100%;justify-content:center;position:relative}
+.week-dot{width:8px;height:8px;border-radius:50%;background:var(--accent);position:absolute}
+.week-line{height:2px;background:var(--accent);position:absolute;transform-origin:left center}
+
+.priority-item{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(26,34,54,.3)}
+.priority-rank{width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;background:var(--accent-dim);color:var(--accent);flex-shrink:0}
+.priority-info{flex:1}
+.priority-title{font-size:13px;font-weight:500}
+.priority-meta{font-size:11px;color:var(--dim);margin-top:2px;font-family:'JetBrains Mono',monospace}
+
+.qw-card{padding:12px;border:1px solid rgba(239,68,68,.2);border-radius:8px;margin-bottom:8px;background:rgba(239,68,68,.03)}
+.qw-title{font-size:13px;font-weight:600}
+.qw-meta{font-size:11px;color:var(--dim);margin-top:4px;font-family:'JetBrains Mono',monospace}
+.qw-action{font-size:12px;color:var(--accent);margin-top:4px}
+
+@media(max-width:1200px){.g4{grid-template-columns:repeat(2,1fr)}.g12{display:flex;flex-direction:column}.s8,.s4,.s6,.s5,.s7,.s3{grid-column:auto}}
+</style>
+</head>
+<body>
+<div class="dashboard fade-in">
+<div class="header">
+<h1><span class="live-dot"></span>Page 2 Domination Command Centre<span>PetHub Online | Positions 11-20 Targets</span></h1>
+<div class="meta"><span id="clock"></span><span>Auto-refresh 60s</span></div>
+</div>
+
+<!-- Win Counter & Metrics -->
+<div class="grid g4">
+<div class="card mc" style="border-color:rgba(16,185,129,.3)">
+<div class="mv" style="color:var(--green)">3</div>
+<div class="ml">Pages Won (Moved to P1)</div>
+<div class="md" style="color:var(--green)">Target: 15 by Q3</div>
+</div>
+<div class="card mc">
+<div class="mv" style="color:var(--accent)">15</div>
+<div class="ml">Active Page 2 Targets</div>
+<div class="md" style="color:var(--amber)">3 at positions 11-12</div>
+</div>
+<div class="card mc">
+<div class="mv" style="color:var(--cyan)">+2.4</div>
+<div class="ml">Avg Position Improvement</div>
+<div class="md" style="color:var(--green)">This month</div>
+</div>
+<div class="card mc">
+<div class="mv" style="color:var(--amber)">42,800</div>
+<div class="ml">Total Monthly Impressions</div>
+<div class="md" style="color:var(--green)">+18% vs last month</div>
+</div>
+</div>
+
+<!-- Main Table -->
+<div class="card">
+<div class="ch"><div class="ct">Page 2 Targets: All Pages Ranking 11-20</div><div class="cb">15 Targets Active</div></div>
+<div class="ts"><table>
+<thead><tr><th>Title</th><th>Pos</th><th>Prev</th><th>Delta</th><th>Impressions</th><th>Clicks</th><th>CTR</th><th>Optimization</th><th>Status</th></tr></thead>
+<tbody id="targetsTable"></tbody>
+</table></div>
+</div>
+
+<!-- Before/After + Quick Wins -->
+<div class="grid g12">
+<div class="card s8">
+<div class="ch"><div class="ct">Before vs After Optimization Tracker</div><div class="cb">3 Completed</div></div>
+<div class="ts-sm"><table>
+<thead><tr><th>Page</th><th>Before Pos</th><th>After Pos</th><th>Before CTR</th><th>After CTR</th><th>Impressions Lift</th><th>Outcome</th></tr></thead>
+<tbody id="beforeAfterTable"></tbody>
+</table></div>
+</div>
+<div class="card s4">
+<div class="ch"><div class="ct">Quick Wins (Position 11-12)</div><div class="cb">Minimal Push Needed</div></div>
+<div id="quickWins"></div>
+</div>
+</div>
+
+<!-- Priority Queue + Movement Chart -->
+<div class="grid g12">
+<div class="card s5">
+<div class="ch"><div class="ct">Priority Queue (by Impressions)</div><div class="cb">Next to Optimize</div></div>
+<div class="ts-sm" id="priorityQueue"></div>
+</div>
+<div class="card s7">
+<div class="ch"><div class="ct">Weekly Position Movement (Last 8 Weeks)</div><div class="cb">Trend Analysis</div></div>
+<div id="movementChart"></div>
+</div>
+</div>
+</div>
+
+<script>
+function updateClock(){const d=new Date();document.getElementById('clock').textContent=d.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})+' '+d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',second:'2-digit'})}
+updateClock();setInterval(updateClock,1000);
+setTimeout(()=>location.reload(),60000);
+
+const targets=[
+{title:'Best Dog Food for Sensitive Stomachs UK',pos:11,prev:13,imp:6200,clicks:142,ctr:'2.3%',checks:[1,1,1,0,1,0],status:'progress'},
+{title:'How to Stop a Cat from Scratching Furniture',pos:11,prev:14,imp:5800,clicks:128,ctr:'2.2%',checks:[1,1,0,1,0,0],status:'progress'},
+{title:'Goldfish Tank Size Guide: How Big Is Enough?',pos:12,prev:12,imp:4900,clicks:98,ctr:'2.0%',checks:[1,0,1,0,1,0],status:'progress'},
+{title:'Best Flea Treatment for Dogs UK 2026',pos:13,prev:15,imp:5400,clicks:89,ctr:'1.6%',checks:[1,1,0,0,0,0],status:'progress'},
+{title:'How Much Exercise Does a Labrador Need?',pos:13,prev:13,imp:4200,clicks:71,ctr:'1.7%',checks:[0,1,0,0,1,0],status:'todo'},
+{title:'Cat Vaccination Schedule UK: Complete Guide',pos:14,prev:16,imp:3800,clicks:54,ctr:'1.4%',checks:[1,0,0,0,0,0],status:'todo'},
+{title:'Best Dog Shampoo for Itchy Skin',pos:14,prev:14,imp:3600,clicks:50,ctr:'1.4%',checks:[0,0,1,0,0,0],status:'todo'},
+{title:'Indoor Rabbit Housing: Best Setups 2026',pos:15,prev:17,imp:2900,clicks:38,ctr:'1.3%',checks:[0,0,0,0,0,0],status:'todo'},
+{title:'How to Set Up a Reptile Vivarium',pos:16,prev:18,imp:2400,clicks:29,ctr:'1.2%',checks:[0,0,0,0,0,0],status:'todo'},
+{title:'Best Wet Cat Food UK: Top 10 Reviewed',pos:16,prev:15,imp:3100,clicks:40,ctr:'1.3%',checks:[1,0,0,0,0,0],status:'todo'},
+{title:'Dog Crate Training: Size Guide & Tips',pos:17,prev:19,imp:2200,clicks:24,ctr:'1.1%',checks:[0,0,0,0,0,0],status:'todo'},
+{title:'Bearded Dragon Diet: What Can They Eat?',pos:18,prev:18,imp:1900,clicks:19,ctr:'1.0%',checks:[0,0,0,0,0,0],status:'todo'},
+{title:'Best Hamster Wheel: Silent Options Reviewed',pos:18,prev:20,imp:1600,clicks:14,ctr:'0.9%',checks:[0,0,0,0,0,0],status:'todo'},
+{title:'Cockapoo Grooming Guide: Coat Types & Cuts',pos:19,prev:19,imp:1400,clicks:11,ctr:'0.8%',checks:[0,0,0,0,0,0],status:'todo'},
+{title:'Best Bird Seed Mix UK: Budgie & Finch',pos:20,prev:20,imp:1200,clicks:8,ctr:'0.7%',checks:[0,0,0,0,0,0],status:'todo'}
+];
+
+const checkLabels=['Title','Meta','FAQ','Auth','Links','Snippet'];
+const ttb=document.getElementById('targetsTable');
+targets.forEach(t=>{
+const delta=t.prev-t.pos;
+const dc=delta>0?'delta-up':delta<0?'delta-down':'delta-flat';
+const ds=delta>0?'+'+delta:delta<0?delta.toString():'--';
+const sc=t.status==='progress'?'b-progress':'b-todo';
+const posClass='pos-'+t.pos;
+const checkHTML=t.checks.map((c,i)=>`<div class="check-item ${c?'check-done':'check-todo'}" title="${checkLabels[i]}">${c?'OK':'--'}</div>`).join('');
+ttb.innerHTML+=`<tr>
+<td><div class="trunc" title="${t.title}" style="font-weight:500">${t.title}</div></td>
+<td><div class="pos-badge ${posClass}">${t.pos}</div></td>
+<td class="mono" style="color:var(--dim)">${t.prev}</td>
+<td class="mono ${dc}" style="font-weight:600">${ds}</td>
+<td class="mono">${t.imp.toLocaleString()}</td>
+<td class="mono">${t.clicks}</td>
+<td class="mono">${t.ctr}</td>
+<td><div class="check-grid">${checkHTML}</div></td>
+<td><span class="badge ${sc}">${t.status==='progress'?'In Progress':'To Do'}</span></td>
+</tr>`;
+});
+
+// Before/After
+const beforeAfter=[
+{page:'Best Dog Walking Routes Near Me',bPos:14,aPos:8,bCtr:'1.2%',aCtr:'4.8%',impLift:'+62%',outcome:'won'},
+{page:'How to Clean a Fish Tank Properly',bPos:16,aPos:7,bCtr:'0.9%',aCtr:'5.2%',impLift:'+84%',outcome:'won'},
+{page:'Cheapest Pet Insurance for Young Dogs',bPos:12,aPos:9,bCtr:'1.8%',aCtr:'3.9%',impLift:'+41%',outcome:'won'},
+{page:'Best Dog Food for Sensitive Stomachs UK',bPos:13,aPos:11,bCtr:'1.4%',aCtr:'2.3%',impLift:'+28%',outcome:'improving'},
+{page:'How to Stop a Cat from Scratching',bPos:14,aPos:11,bCtr:'1.1%',aCtr:'2.2%',impLift:'+35%',outcome:'improving'}
+];
+const batb=document.getElementById('beforeAfterTable');
+beforeAfter.forEach(b=>{
+const oc=b.outcome==='won'?'b-won':'b-progress';
+batb.innerHTML+=`<tr>
+<td style="font-weight:500">${b.page}</td>
+<td class="mono" style="color:var(--red)">#${b.bPos}</td>
+<td class="mono" style="color:${b.aPos<=10?'var(--green)':'var(--amber)'}">#${b.aPos}</td>
+<td class="mono" style="color:var(--dim)">${b.bCtr}</td>
+<td class="mono" style="color:var(--green)">${b.aCtr}</td>
+<td class="mono" style="color:var(--green)">${b.impLift}</td>
+<td><span class="badge ${oc}">${b.outcome}</span></td>
+</tr>`;
+});
+
+// Quick Wins
+const quickWins=[
+{title:'Best Dog Food for Sensitive Stomachs UK',pos:11,imp:6200,action:'Add 3 more internal links + expand FAQ section with 2 new questions'},
+{title:'How to Stop a Cat from Scratching Furniture',pos:11,imp:5800,action:'Transfer authority from Cat Health guide + add video schema'},
+{title:'Goldfish Tank Size Guide',pos:12,imp:4900,action:'Optimize title tag + add comparison table + enhance snippet'}
+];
+document.getElementById('quickWins').innerHTML=quickWins.map(q=>`
+<div class="qw-card">
+<div class="qw-title">${q.title}</div>
+<div class="qw-meta">Position #${q.pos} | ${q.imp.toLocaleString()} impressions/mo</div>
+<div class="qw-action">${q.action}</div>
+</div>`).join('');
+
+// Priority Queue (sorted by impressions)
+const sorted=[...targets].sort((a,b)=>b.imp-a.imp);
+document.getElementById('priorityQueue').innerHTML=sorted.map((t,i)=>`
+<div class="priority-item">
+<div class="priority-rank">${i+1}</div>
+<div class="priority-info">
+<div class="priority-title">${t.title}</div>
+<div class="priority-meta">#${t.pos} | ${t.imp.toLocaleString()} imp | ${t.ctr} CTR | ${t.checks.filter(c=>c).length}/6 optimized</div>
+</div>
+</div>`).join('');
+
+// Movement Chart (CSS-based position tracking for top 5 targets)
+const movementData=[
+{title:'Dog Food Sensitive',weeks:[16,15,14,14,13,13,12,11],color:'var(--red)'},
+{title:'Cat Scratching',weeks:[18,17,16,15,15,14,12,11],color:'var(--amber)'},
+{title:'Goldfish Tank',weeks:[14,14,13,13,13,12,12,12],color:'var(--cyan)'},
+{title:'Flea Treatment',weeks:[19,18,17,16,16,15,14,13],color:'var(--green)'},
+{title:'Labrador Exercise',weeks:[15,14,14,14,13,13,13,13],color:'var(--purple)'}
+];
+const weekHeaders=['W22','W23','W24','W25','W26','W27','W28','W29'];
+
+let chartHTML='<div style="overflow-x:auto"><table style="min-width:600px"><thead><tr><th style="width:140px">Page</th>';
+weekHeaders.forEach(w=>{chartHTML+=`<th style="text-align:center">${w}</th>`});
+chartHTML+='</tr></thead><tbody>';
+
+movementData.forEach(m=>{
+chartHTML+=`<tr><td style="font-size:12px;color:${m.color};font-weight:500">${m.title}</td>`;
+m.weeks.forEach((w,i)=>{
+const prev=i>0?m.weeks[i-1]:w;
+const delta=prev-w;
+const dc=delta>0?'var(--green)':delta<0?'var(--red)':'var(--dim)';
+const bg=w<=10?'rgba(16,185,129,.15)':w<=12?'rgba(239,68,68,.15)':w<=15?'rgba(245,158,11,.08)':'transparent';
+chartHTML+=`<td class="mono" style="text-align:center;background:${bg}"><span style="color:${dc};font-weight:600">#${w}</span>`;
+if(delta!==0){chartHTML+=`<span style="font-size:9px;color:${dc};margin-left:2px">${delta>0?'+'+delta:delta}</span>`}
+chartHTML+='</td>';
+});
+chartHTML+='</tr>';
+});
+chartHTML+='</tbody></table></div>';
+chartHTML+='<div style="display:flex;gap:16px;margin-top:12px;font-size:10px;color:var(--dim)">';
+chartHTML+='<span style="display:flex;align-items:center;gap:4px"><span style="width:8px;height:8px;border-radius:2px;background:rgba(16,185,129,.15)"></span>Page 1</span>';
+chartHTML+='<span style="display:flex;align-items:center;gap:4px"><span style="width:8px;height:8px;border-radius:2px;background:rgba(239,68,68,.15)"></span>Position 11-12</span>';
+chartHTML+='<span style="display:flex;align-items:center;gap:4px"><span style="width:8px;height:8px;border-radius:2px;background:rgba(245,158,11,.08)"></span>Position 13-15</span>';
+chartHTML+='</div>';
+document.getElementById('movementChart').innerHTML=chartHTML;
+</script>
+</body>
+</html>

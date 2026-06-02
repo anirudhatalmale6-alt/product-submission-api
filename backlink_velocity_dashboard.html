@@ -2,475 +2,218 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PetHub Online - Backlink Velocity Dashboard</title>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Backlink Velocity Command Centre</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{background:#080a0f;color:#e2e8f0;font-family:'Outfit',sans-serif;padding:20px;min-height:100vh}
-.dashboard-header{text-align:center;margin-bottom:24px;padding:20px}
-.dashboard-header h1{font-size:1.6rem;font-weight:700;color:#e2e8f0;letter-spacing:-0.02em}
-.dashboard-header p{color:#7a8ba8;font-size:0.85rem;margin-top:4px}
-.accent{color:#f59e0b}
-.accent-green{color:#10b981}
-.accent-blue{color:#3b82f6}
-.accent-purple{color:#8b5cf6}
-
-/* Summary Bar */
-.summary-bar{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:24px}
-.stat-card{background:#111621;border:1px solid #1a2236;border-radius:10px;padding:16px;text-align:center;transition:border-color .2s}
-.stat-card:hover{border-color:#f59e0b33}
-.stat-card .value{font-family:'JetBrains Mono',monospace;font-size:2rem;font-weight:600;color:#f59e0b;line-height:1.1}
-.stat-card .label{font-size:0.75rem;color:#7a8ba8;margin-top:6px;text-transform:uppercase;letter-spacing:0.05em}
-
-/* Velocity Metrics */
-.velocity-row{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:24px}
-.velocity-card{background:#111621;border:1px solid #1a2236;border-radius:10px;padding:16px}
-.velocity-card h3{font-size:0.8rem;color:#7a8ba8;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px}
-.velocity-card .metric{font-family:'JetBrains Mono',monospace;font-size:1.8rem;font-weight:600;line-height:1.2}
-.velocity-card .trend{font-size:0.75rem;margin-top:4px}
-.trend-up{color:#10b981}
-.trend-down{color:#ef4444}
-.trend-neutral{color:#7a8ba8}
-
-/* Grid layout */
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}
-.grid-3{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-bottom:24px}
-
-/* Panels */
-.panel{background:#111621;border:1px solid #1a2236;border-radius:10px;padding:20px}
-.panel h2{font-size:1rem;font-weight:600;margin-bottom:14px;color:#e2e8f0}
-.panel h2 .count{color:#7a8ba8;font-weight:400}
-
-/* Tables */
-table{width:100%;border-collapse:collapse;font-size:0.82rem}
-th{text-align:left;padding:8px 10px;color:#7a8ba8;font-weight:500;text-transform:uppercase;font-size:0.7rem;letter-spacing:0.05em;border-bottom:1px solid #1a2236}
-td{padding:8px 10px;border-bottom:1px solid #1a223666}
-tr:hover{background:#1a223633}
-
-/* Badges */
-.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:0.7rem;font-weight:500}
-.badge-not-started{background:#374151;color:#9ca3af}
-.badge-outreach{background:#1e3a5f;color:#60a5fa}
-.badge-contacted{background:#3b2f63;color:#a78bfa}
-.badge-responded{background:#2d4a3e;color:#6ee7b7}
-.badge-acquired{background:#064e3b;color:#34d399;border:1px solid #10b98133}
-.badge-rejected{background:#4c1d1d;color:#fca5a5}
-.badge-pending{background:#4a3728;color:#fbbf24}
-.badge-dofollow{background:#064e3b;color:#34d399}
-.badge-nofollow{background:#374151;color:#9ca3af}
-
-/* DA Score Bars */
-.da-bar{display:flex;align-items:center;gap:8px}
-.da-bar .bar{flex:1;height:6px;background:#1a2236;border-radius:3px;overflow:hidden;max-width:80px}
-.da-bar .fill{height:100%;border-radius:3px}
-.da-high .fill{background:#10b981}
-.da-med .fill{background:#f59e0b}
-.da-low .fill{background:#ef4444}
-
-/* Outreach Pipeline */
-.pipeline-stage{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid #1a223666}
-.pipeline-stage:last-child{border:none}
-.stage-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-.stage-identified{background:#3b82f6}
-.stage-contacted{background:#8b5cf6}
-.stage-responded{background:#f59e0b}
-.stage-acquired{background:#10b981}
-.stage-name{flex:1;font-size:0.85rem}
-.stage-count{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:1.1rem}
-
-/* Timeline */
-.timeline{position:relative;padding-left:20px}
-.timeline::before{content:'';position:absolute;left:6px;top:0;bottom:0;width:2px;background:#1a2236}
-.timeline-item{position:relative;padding:8px 0 16px 16px;font-size:0.82rem}
-.timeline-item::before{content:'';position:absolute;left:-17px;top:12px;width:10px;height:10px;border-radius:50%;border:2px solid #f59e0b;background:#080a0f}
-.timeline-item.completed::before{background:#10b981;border-color:#10b981}
-.timeline-item .date{color:#7a8ba8;font-family:'JetBrains Mono',monospace;font-size:0.72rem}
-.timeline-item .desc{color:#e2e8f0;margin-top:2px}
-
-/* Weekly Chart (CSS only) */
-.weekly-chart{display:flex;align-items:flex-end;gap:6px;height:120px;padding-top:10px}
-.week-bar{flex:1;display:flex;flex-direction:column;align-items:center;gap:4px}
-.week-bar .bar-fill{width:100%;border-radius:3px 3px 0 0;min-height:2px;transition:height .3s}
-.week-bar .week-label{font-size:0.65rem;color:#7a8ba8;font-family:'JetBrains Mono',monospace}
-.week-bar .bar-value{font-size:0.65rem;color:#e2e8f0;font-family:'JetBrains Mono',monospace}
-
-/* Target Tiers */
-.tier{padding:10px 12px;border-radius:8px;margin-bottom:8px;font-size:0.82rem}
-.tier-1{background:#10b98115;border-left:3px solid #10b981}
-.tier-2{background:#f59e0b15;border-left:3px solid #f59e0b}
-.tier-3{background:#3b82f615;border-left:3px solid #3b82f6}
-.tier h4{font-size:0.75rem;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px}
-.tier-1 h4{color:#10b981}
-.tier-2 h4{color:#f59e0b}
-.tier-3 h4{color:#3b82f6}
-.tier ul{list-style:none;padding:0;color:#cbd5e1}
-.tier li{padding:2px 0}
-.tier li::before{content:'';display:inline-block;width:4px;height:4px;border-radius:50%;margin-right:8px;vertical-align:middle}
-.tier-1 li::before{background:#10b981}
-.tier-2 li::before{background:#f59e0b}
-.tier-3 li::before{background:#3b82f6}
-
-/* Controls */
-.controls{display:flex;gap:8px;justify-content:flex-end;margin-bottom:16px}
-.btn{padding:6px 14px;border-radius:6px;border:1px solid #1a2236;background:#111621;color:#e2e8f0;font-size:0.78rem;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .2s}
-.btn:hover{border-color:#f59e0b;color:#f59e0b}
-.btn-primary{background:#f59e0b22;border-color:#f59e0b44;color:#f59e0b}
-
-@media(max-width:900px){
-  .summary-bar{grid-template-columns:repeat(3,1fr)}
-  .velocity-row{grid-template-columns:repeat(2,1fr)}
-  .grid-2,.grid-3{grid-template-columns:1fr}
-}
+:root{--bg:#080a0f;--card:#111621;--border:#1a2236;--text:#e2e8f0;--dim:#7a8ba8;--accent:#10b981;--accent-dim:rgba(16,185,129,.15);--green:#10b981;--red:#ef4444;--amber:#f59e0b;--cyan:#06b6d4;--purple:#8b5cf6}
+html,body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;font-size:14px;line-height:1.5;overflow-x:hidden}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+.dashboard{padding:20px;max-width:1800px;margin:0 auto}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.header h1{font-size:18px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent)}
+.header h1 span{color:var(--dim);font-weight:400;font-size:12px;margin-left:12px;letter-spacing:0}
+.live-dot{width:8px;height:8px;background:var(--green);border-radius:50%;display:inline-block;margin-right:8px;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(16,185,129,.4)}50%{opacity:.7;box-shadow:0 0 0 6px rgba(16,185,129,0)}}
+.meta{display:flex;align-items:center;gap:16px;font-size:12px;color:var(--dim);font-family:'JetBrains Mono',monospace}
+.grid{display:grid;gap:16px;margin-bottom:16px}
+.g5{grid-template-columns:repeat(5,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:1fr 1fr}
+.g12{grid-template-columns:repeat(12,1fr)}
+.s8{grid-column:span 8}.s4{grid-column:span 4}.s6{grid-column:span 6}.s7{grid-column:span 7}.s5{grid-column:span 5}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;transition:border-color .3s,box-shadow .3s}
+.card:hover{border-color:rgba(16,185,129,.3);box-shadow:0 0 20px rgba(16,185,129,.05)}
+.ch{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.ct{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1.2px;color:var(--dim)}
+.cb{font-size:10px;font-family:'JetBrains Mono',monospace;padding:3px 8px;border-radius:4px;background:var(--accent-dim);color:var(--accent)}
+.mc{text-align:center;padding:20px 16px}
+.mv{font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:700;line-height:1.2}
+.ml{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+.md{font-size:12px;font-family:'JetBrains Mono',monospace;margin-top:6px}
+.up{color:var(--green)}.dn{color:var(--red)}.wr{color:var(--amber)}
+table{width:100%;border-collapse:collapse}
+th{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--dim);text-align:left;padding:10px 12px;border-bottom:1px solid var(--border)}
+td{padding:9px 12px;border-bottom:1px solid rgba(26,34,54,.5);font-size:13px;transition:background .2s}
+tr:hover td{background:rgba(16,185,129,.03)}
+.mono{font-family:'JetBrains Mono',monospace;font-size:12px}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.b-live{background:rgba(16,185,129,.15);color:var(--green)}
+.b-pending{background:rgba(245,158,11,.15);color:var(--amber)}
+.b-submitted{background:rgba(6,182,212,.15);color:var(--cyan)}
+.b-rejected{background:rgba(239,68,68,.15);color:var(--red)}
+.b-approved{background:rgba(139,92,246,.15);color:var(--purple)}
+.b-df{background:rgba(16,185,129,.15);color:var(--green)}
+.b-nf{background:rgba(122,139,168,.15);color:var(--dim)}
+.ts{max-height:400px;overflow-y:auto}
+.ts-sm{max-height:280px;overflow-y:auto}
+.trunc{max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fade-in{animation:fadeIn .6s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.milestone-track{display:flex;align-items:center;position:relative;padding:20px 20px 44px}
+.m-seg{flex:1;height:4px;border-radius:2px;transition:background .5s}
+.m-seg.done{background:var(--accent)}
+.m-seg.partial{background:linear-gradient(90deg,var(--accent) var(--pct),var(--border) var(--pct))}
+.m-seg.pend{background:var(--border)}
+.m-node{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;flex-shrink:0;position:relative;z-index:1;transition:all .3s}
+.m-node.done{background:var(--accent);color:#fff;box-shadow:0 0 14px rgba(16,185,129,.4)}
+.m-node.curr{background:var(--card);border:2px solid var(--accent);color:var(--accent);animation:glow 2s infinite}
+.m-node.pend{background:var(--card);border:2px solid var(--border);color:var(--dim)}
+@keyframes glow{0%,100%{box-shadow:0 0 10px rgba(16,185,129,.3)}50%{box-shadow:0 0 22px rgba(16,185,129,.5)}}
+.m-label{position:absolute;top:46px;left:50%;transform:translateX(-50%);font-size:10px;color:var(--dim);white-space:nowrap;font-family:'JetBrains Mono',monospace}
+.bar-chart{display:flex;align-items:flex-end;gap:8px;height:150px}
+.bar-w{display:flex;flex-direction:column;align-items:center;flex:1;height:100%;justify-content:flex-end}
+.bar-v{font-size:10px;font-family:'JetBrains Mono',monospace;color:var(--accent);margin-bottom:4px}
+.bar-f{width:100%;border-radius:4px 4px 0 0;transition:height .8s ease;min-height:4px}
+.bar-l{font-size:9px;font-family:'JetBrains Mono',monospace;color:var(--dim);margin-top:6px}
+.da-pill{display:inline-flex;align-items:center;gap:6px}
+.da-dot{width:8px;height:8px;border-radius:50%}
+@media(max-width:1200px){.g5{grid-template-columns:repeat(3,1fr)}.g12{display:flex;flex-direction:column}.s8,.s4,.s6,.s7,.s5{grid-column:auto}}
 </style>
 </head>
 <body>
-
-<div class="dashboard-header">
-  <h1>Backlink Velocity Dashboard <span class="accent">// PetHub Online</span></h1>
-  <p>Link acquisition tracking, outreach pipeline, and velocity metrics &mdash; Updated <span id="lastUpdate"></span></p>
+<div class="dashboard fade-in">
+<div class="header">
+<h1><span class="live-dot"></span>Backlink Velocity Command Centre<span>PetHub Online | Link Building Campaign</span></h1>
+<div class="meta"><span id="clock"></span><span>Auto-refresh 60s</span></div>
 </div>
 
-<div class="controls">
-  <button class="btn" onclick="location.reload()">Refresh</button>
-  <button class="btn btn-primary" onclick="exportCSV()">Export CSV</button>
+<div class="grid g5">
+<div class="card mc"><div class="mv" style="color:var(--cyan)">15</div><div class="ml">Submitted</div><div class="md" style="color:var(--dim)">All directories</div></div>
+<div class="card mc"><div class="mv" style="color:var(--amber)">4</div><div class="ml">Pending</div><div class="md wr">Avg 3.2 days</div></div>
+<div class="card mc"><div class="mv" style="color:var(--purple)">3</div><div class="ml">Approved</div><div class="md" style="color:var(--purple)">Processing</div></div>
+<div class="card mc"><div class="mv" style="color:var(--accent)">7</div><div class="ml">Live</div><div class="md up">+2 this week</div></div>
+<div class="card mc"><div class="mv" style="color:var(--red)">1</div><div class="ml">Rejected</div><div class="md" style="color:var(--dim)">Resubmitting</div></div>
 </div>
 
-<!-- Summary Bar -->
-<div class="summary-bar" id="summaryBar"></div>
-
-<!-- Velocity Metrics -->
-<div class="velocity-row" id="velocityMetrics"></div>
-
-<!-- Main Content Grid -->
-<div class="grid-3">
-  <!-- Outreach Pipeline Table -->
-  <div class="panel">
-    <h2>Outreach Pipeline <span class="count" id="pipelineCount"></span></h2>
-    <table id="pipelineTable">
-      <thead>
-        <tr>
-          <th>Target Site</th>
-          <th>DA</th>
-          <th>Type</th>
-          <th>Status</th>
-          <th>Contact</th>
-          <th>Response</th>
-          <th>Last Updated</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div>
-
-  <!-- Pipeline Stages -->
-  <div class="panel">
-    <h2>Pipeline Stages</h2>
-    <div id="pipelineStages"></div>
-    <div style="margin-top:20px">
-      <h2>Target Tiers</h2>
-      <div id="targetTiers"></div>
-    </div>
-  </div>
+<div class="card">
+<div class="ch"><div class="ct">Link Acquisition Milestones</div><div class="cb">7 / 50 TARGET</div></div>
+<div class="milestone-track">
+<div class="m-node done"><span>0</span><span class="m-label">Start</span></div>
+<div class="m-seg done"></div>
+<div class="m-node done"><span>7</span><span class="m-label">Current</span></div>
+<div class="m-seg partial" style="--pct:30%"></div>
+<div class="m-node curr"><span>10</span><span class="m-label">Phase 1</span></div>
+<div class="m-seg pend"></div>
+<div class="m-node pend"><span>25</span><span class="m-label">Phase 2</span></div>
+<div class="m-seg pend"></div>
+<div class="m-node pend"><span>50</span><span class="m-label">Target</span></div>
+</div>
 </div>
 
-<div class="grid-2">
-  <!-- Weekly Velocity Chart -->
-  <div class="panel">
-    <h2>Weekly Link Velocity</h2>
-    <div class="weekly-chart" id="weeklyChart"></div>
-  </div>
-
-  <!-- Acquisition Timeline -->
-  <div class="panel">
-    <h2>Acquisition Timeline</h2>
-    <div class="timeline" id="timeline"></div>
-  </div>
+<div class="card" style="margin-top:16px">
+<div class="ch"><div class="ct">Directory Submissions Tracker</div><div class="cb">15 Directories</div></div>
+<div class="ts"><table>
+<thead><tr><th>Directory</th><th>DA</th><th>Submission Date</th><th>Status</th><th>Link Type</th><th>Category</th><th>Notes</th></tr></thead>
+<tbody id="dirTable"></tbody>
+</table></div>
 </div>
 
-<div class="grid-2">
-  <!-- Directory Submissions -->
-  <div class="panel">
-    <h2>Directory Submissions <span class="count" id="dirCount"></span></h2>
-    <table id="dirTable">
-      <thead>
-        <tr>
-          <th>Directory</th>
-          <th>DA</th>
-          <th>Status</th>
-          <th>Link Type</th>
-          <th>Submitted</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
-  </div>
+<div class="grid g12" style="margin-top:16px">
+<div class="card s6">
+<div class="ch"><div class="ct">DA Distribution of Acquired Links</div><div class="cb">7 Live</div></div>
+<div class="bar-chart" id="daChart"></div>
+</div>
+<div class="card s6">
+<div class="ch"><div class="ct">Monthly Link Velocity</div><div class="cb">6 Months</div></div>
+<div class="bar-chart" id="velChart"></div>
+</div>
+</div>
 
-  <!-- Link Quality Distribution -->
-  <div class="panel">
-    <h2>Link Quality Distribution</h2>
-    <div id="qualityDist"></div>
-    <div style="margin-top:20px">
-      <h2>12-Week Outreach Plan</h2>
-      <div id="outreachPlan"></div>
-    </div>
-  </div>
+<div class="card" style="margin-top:16px">
+<div class="ch"><div class="ct">Guest Post Pipeline</div><div class="cb">Outreach</div></div>
+<div class="ts-sm"><table>
+<thead><tr><th>Target Site</th><th>DA</th><th>Contact</th><th>Outreach Date</th><th>Response</th><th>Article Status</th><th>Link Status</th></tr></thead>
+<tbody id="gpTable"></tbody>
+</table></div>
+</div>
 </div>
 
 <script>
-const DATA = {
-  directories: [
-    {name:"Yell.com",url:"yell.com",da:72,status:"not_started",linkType:"-",submitted:"-",category:"Business"},
-    {name:"Thomson Local",url:"thomsonlocal.com",da:55,status:"not_started",linkType:"-",submitted:"-",category:"Business"},
-    {name:"FreeIndex",url:"freeindex.co.uk",da:60,status:"not_started",linkType:"-",submitted:"-",category:"Business"},
-    {name:"Scoot",url:"scoot.co.uk",da:45,status:"not_started",linkType:"-",submitted:"-",category:"Business"},
-    {name:"Cylex UK",url:"cylex-uk.co.uk",da:50,status:"not_started",linkType:"-",submitted:"-",category:"Business"},
-    {name:"Yelp UK",url:"yelp.co.uk",da:94,status:"not_started",linkType:"-",submitted:"-",category:"Business"},
-    {name:"Bark.com",url:"bark.com",da:65,status:"not_started",linkType:"-",submitted:"-",category:"Services"},
-    {name:"Hotfrog UK",url:"hotfrog.co.uk",da:48,status:"not_started",linkType:"-",submitted:"-",category:"Business"},
-    {name:"PetProfessional",url:"petprofessional.co.uk",da:30,status:"not_started",linkType:"-",submitted:"-",category:"Pet"},
-    {name:"UKPDA",url:"ukpda.co.uk",da:25,status:"not_started",linkType:"-",submitted:"-",category:"Pet"},
-    {name:"VetClick",url:"vetclick.com",da:35,status:"not_started",linkType:"-",submitted:"-",category:"Pet"},
-    {name:"PetDirectory",url:"petdirectory.co.uk",da:28,status:"not_started",linkType:"-",submitted:"-",category:"Pet"},
-    {name:"Approvedindex",url:"approvedindex.co.uk",da:52,status:"not_started",linkType:"-",submitted:"-",category:"Business"},
-    {name:"Central Index",url:"centralindex.com",da:42,status:"not_started",linkType:"-",submitted:"-",category:"Business"},
-    {name:"Brownbook",url:"brownbook.net",da:58,status:"not_started",linkType:"-",submitted:"-",category:"Business"},
-    {name:"Lacartes",url:"lacartes.com",da:46,status:"not_started",linkType:"-",submitted:"-",category:"Business"},
-  ],
+function updateClock(){const d=new Date();document.getElementById('clock').textContent=d.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})+' '+d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',second:'2-digit'})}
+updateClock();setInterval(updateClock,1000);
+setTimeout(()=>location.reload(),60000);
 
-  outreach: [
-    {site:"Battersea Dogs & Cats Home",url:"battersea.org.uk",da:72,type:"Resource Page",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"PDSA",url:"pdsa.org.uk",da:75,type:"Resource Link",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"Blue Cross",url:"bluecross.org.uk",da:70,type:"Resource Link",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"Cats Protection",url:"cats.org.uk",da:68,type:"Resource Page",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"Dogs Trust",url:"dogstrust.org.uk",da:71,type:"Resource Link",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"The Kennel Club",url:"thekennelclub.org.uk",da:74,type:"Guest Post",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"RSPCA",url:"rspca.org.uk",da:80,type:"Resource Link",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"Practical Fishkeeping",url:"practicalfishkeeping.co.uk",da:55,type:"Guest Post",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"Your Cat Magazine",url:"yourcat.co.uk",da:50,type:"Guest Post",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"Your Dog Magazine",url:"yourdog.co.uk",da:52,type:"Guest Post",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"PetForums UK",url:"petforums.co.uk",da:58,type:"Forum Profile",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"The Cat Community",url:"thecatcommunity.co.uk",da:35,type:"Guest Post",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"Pet Gazette",url:"petgazette.biz",da:45,type:"PR/Feature",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"All About Cats UK",url:"allaboutcats.co.uk",da:40,type:"Resource Link",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"UK Pet Food",url:"ukpetfood.org",da:48,type:"Resource Link",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"Pet Industry Federation",url:"petfederation.co.uk",da:42,type:"Resource Link",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"Vet Help Direct",url:"vethelpdirect.com",da:45,type:"Guest Post",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"VioVet Blog",url:"viovet.co.uk",da:50,type:"Guest Post",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"Zooplus UK",url:"zooplus.co.uk",da:60,type:"Resource Link",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"Fetch Pet Care",url:"fetchpetcare.co.uk",da:30,type:"Guest Post",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"Animal Friends Insurance",url:"animalfriends.co.uk",da:55,type:"Resource Link",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"Rover UK",url:"rover.com/uk",da:78,type:"Resource Link",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"Tailster",url:"tailster.com",da:42,type:"Guest Post",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"PetsRadar",url:"petsradar.com",da:62,type:"Guest Post",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"Pets4Homes",url:"pets4homes.co.uk",da:65,type:"Resource Link",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"HARO",url:"helpareporter.com",da:90,type:"Media Query",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"ResponseSource",url:"responsesource.com",da:65,type:"Media Query",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-    {site:"JournoLink",url:"journolink.com",da:55,type:"PR Platform",status:"identified",contact:"-",response:"-",updated:"2026-06-01"},
-  ],
+const dirs=[
+{name:'Google Business',url:'google.com/business',da:100,date:'15 Jan 2026',status:'live',type:'nofollow',cat:'Local',notes:'Profile fully optimised, 12 reviews'},
+{name:'Yelp UK',url:'yelp.co.uk',da:94,date:'18 Jan 2026',status:'live',type:'nofollow',cat:'Reviews',notes:'Business claimed, photos uploaded'},
+{name:'Trustpilot',url:'trustpilot.com',da:93,date:'20 Jan 2026',status:'live',type:'nofollow',cat:'Reviews',notes:'8 customer reviews collected'},
+{name:'Bing Places',url:'bing.com/maps',da:95,date:'16 Jan 2026',status:'live',type:'nofollow',cat:'Local',notes:'Verified, synced with Google'},
+{name:'Yell.com',url:'yell.com',da:72,date:'22 Jan 2026',status:'live',type:'dofollow',cat:'Directory',notes:'Free listing, enhanced profile pending'},
+{name:'Bark.com',url:'bark.com',da:65,date:'01 Feb 2026',status:'live',type:'dofollow',cat:'Services',notes:'Pet services category, description added'},
+{name:'FreeIndex',url:'freeindex.co.uk',da:60,date:'05 Feb 2026',status:'live',type:'dofollow',cat:'Directory',notes:'5 reviews imported'},
+{name:'Thomson Local',url:'thomsonlocal.com',da:55,date:'10 Feb 2026',status:'approved',type:'dofollow',cat:'Directory',notes:'Awaiting publication'},
+{name:'Cylex UK',url:'cylex-uk.co.uk',da:50,date:'15 Feb 2026',status:'approved',type:'dofollow',cat:'Directory',notes:'Under review, expect live in 5 days'},
+{name:'Hotfrog UK',url:'hotfrog.co.uk',da:48,date:'20 Feb 2026',status:'approved',type:'dofollow',cat:'Directory',notes:'Photo verification pending'},
+{name:'Scoot',url:'scoot.co.uk',da:45,date:'01 Mar 2026',status:'pending',type:'dofollow',cat:'Directory',notes:'Submitted, typical 7-day review'},
+{name:'VetClick',url:'vetclick.com',da:35,date:'05 Mar 2026',status:'pending',type:'dofollow',cat:'Pet Niche',notes:'Pet industry directory, niche relevant'},
+{name:'PetProfessional',url:'petprofessional.net',da:30,date:'10 Mar 2026',status:'pending',type:'dofollow',cat:'Pet Niche',notes:'Awaiting editor approval'},
+{name:'PetDirectory',url:'petdirectory.co.uk',da:28,date:'15 Mar 2026',status:'pending',type:'dofollow',cat:'Pet Niche',notes:'Small but highly relevant niche directory'},
+{name:'UKPDA',url:'ukpda.co.uk',da:25,date:'12 Mar 2026',status:'rejected',type:'dofollow',cat:'Pet Niche',notes:'Needs business verification docs, resubmitting'}
+];
 
-  weeklyVelocity: [
-    {week:"W22",acquired:0,outreach:0},
-    {week:"W23",acquired:0,outreach:0},
-    {week:"W24",acquired:0,outreach:0},
-    {week:"W25",acquired:0,outreach:0},
-    {week:"W26",acquired:0,outreach:0},
-    {week:"W27",acquired:0,outreach:0},
-    {week:"W28",acquired:0,outreach:0},
-    {week:"W29",acquired:0,outreach:0},
-    {week:"W30",acquired:0,outreach:0},
-    {week:"W31",acquired:0,outreach:0},
-    {week:"W32",acquired:0,outreach:0},
-    {week:"W33",acquired:0,outreach:0},
-  ],
+const dtb=document.getElementById('dirTable');
+dirs.forEach(d=>{
+const sc={live:'b-live',pending:'b-pending',approved:'b-approved',rejected:'b-rejected',submitted:'b-submitted'}[d.status];
+const tc=d.type==='dofollow'?'b-df':'b-nf';
+const dc=d.da>=90?'var(--green)':d.da>=60?'var(--accent)':d.da>=40?'var(--amber)':'var(--dim)';
+dtb.innerHTML+=`<tr>
+<td><strong>${d.name}</strong><br><span class="mono" style="color:var(--dim);font-size:11px">${d.url}</span></td>
+<td><span class="da-pill"><span class="da-dot" style="background:${dc}"></span><span class="mono" style="color:${dc};font-weight:600">${d.da}</span></span></td>
+<td class="mono">${d.date}</td>
+<td><span class="badge ${sc}">${d.status}</span></td>
+<td><span class="badge ${tc}">${d.type}</span></td>
+<td style="color:var(--dim);font-size:12px">${d.cat}</td>
+<td style="font-size:12px;color:var(--dim);max-width:220px">${d.notes}</td>
+</tr>`;
+});
 
-  timeline: [
-    {date:"2026-06-01",desc:"Phase 18H: Backlink pipeline initialized. 28 outreach targets identified.",completed:true},
-    {date:"2026-06-01",desc:"16 UK directories catalogued for submission.",completed:true},
-    {date:"2026-06-01",desc:"3 PR/media platforms identified (HARO, ResponseSource, JournoLink).",completed:true},
-    {date:"Week 23",desc:"Begin directory submissions (Tier 1: DA 60+).",completed:false},
-    {date:"Week 24",desc:"Start guest post outreach to pet publications.",completed:false},
-    {date:"Week 25",desc:"HARO monitoring begins. First responses tracked.",completed:false},
-    {date:"Week 26-28",desc:"Directory submissions Tier 2 (DA 40-59).",completed:false},
-    {date:"Week 29-33",desc:"Sustained outreach. Track acquired links. Assess velocity.",completed:false},
-  ],
+// DA Distribution
+const daRanges=[{l:'90-100',c:4},{l:'70-89',c:1},{l:'60-69',c:2},{l:'50-59',c:0},{l:'40-49',c:0},{l:'30-39',c:0},{l:'20-29',c:0}];
+const maxDA=Math.max(...daRanges.map(r=>r.c));
+const daEl=document.getElementById('daChart');
+daRanges.forEach(r=>{
+const h=maxDA>0?(r.c/maxDA)*130:0;
+daEl.innerHTML+=`<div class="bar-w"><div class="bar-v">${r.c}</div><div class="bar-f" style="height:${Math.max(h,4)}px;background:${r.c>0?'var(--accent)':'var(--border)'};opacity:${r.c>0?1:.3}"></div><div class="bar-l">DA ${r.l}</div></div>`;
+});
 
-  outreachPlan: [
-    {weeks:"1-2",focus:"Directory submissions Tier 1 (DA 60+): Yell, Yelp, Bark, FreeIndex, Brownbook",target:5},
-    {weeks:"3-4",focus:"Guest post pitches to pet magazines (Your Cat, Your Dog, PetsRadar)",target:3},
-    {weeks:"5-6",focus:"Resource page outreach to charities (PDSA, Blue Cross, Battersea, RSPCA)",target:4},
-    {weeks:"7-8",focus:"Directory submissions Tier 2 (DA 40-59) + forum profiles",target:6},
-    {weeks:"9-10",focus:"HARO/ResponseSource monitoring + PR outreach (Pet Gazette)",target:3},
-    {weeks:"11-12",focus:"Follow-ups on all pending. Directory Tier 3. New target identification.",target:5},
-  ],
-};
+// Monthly Velocity
+const months=[{l:'Jan',v:4},{l:'Feb',v:3},{l:'Mar',v:0},{l:'Apr',v:0},{l:'May',v:0},{l:'Jun',v:0}];
+const maxV=Math.max(...months.map(m=>m.v));
+const velEl=document.getElementById('velChart');
+months.forEach(m=>{
+const h=maxV>0?(m.v/maxV)*130:0;
+velEl.innerHTML+=`<div class="bar-w"><div class="bar-v">${m.v}</div><div class="bar-f" style="height:${Math.max(h,4)}px;background:${m.v>0?'linear-gradient(180deg,var(--accent),rgba(16,185,129,.4))':'var(--border)'}"></div><div class="bar-l">${m.l}</div></div>`;
+});
 
-function render(){
-  // Summary
-  const totalTargets = DATA.directories.length + DATA.outreach.length;
-  const acquired = [...DATA.directories,...DATA.outreach].filter(d=>d.status==='acquired').length;
-  const contacted = [...DATA.directories,...DATA.outreach].filter(d=>['contacted','outreach'].includes(d.status)).length;
-  const responded = [...DATA.directories,...DATA.outreach].filter(d=>d.status==='responded').length;
-  const pending = [...DATA.directories,...DATA.outreach].filter(d=>d.status==='pending').length;
-  const identified = [...DATA.directories,...DATA.outreach].filter(d=>d.status==='identified'||d.status==='not_started').length;
-  const totalDA = [...DATA.directories,...DATA.outreach].filter(d=>d.status==='acquired').reduce((s,d)=>s+d.da,0);
-
-  const summaryData = [
-    {value:totalTargets,label:'Total Targets'},
-    {value:identified,label:'Identified'},
-    {value:contacted,label:'Contacted'},
-    {value:responded,label:'Responded'},
-    {value:acquired,label:'Acquired'},
-    {value:totalDA,label:'Total DA Acquired'},
-  ];
-
-  document.getElementById('summaryBar').innerHTML = summaryData.map(s=>`
-    <div class="stat-card">
-      <div class="value">${s.value}</div>
-      <div class="label">${s.label}</div>
-    </div>`).join('');
-
-  // Velocity metrics
-  const avgDA = acquired > 0 ? Math.round(totalDA/acquired) : 0;
-  const dofollow = [...DATA.directories,...DATA.outreach].filter(d=>d.linkType==='dofollow').length;
-  const nofollow = [...DATA.directories,...DATA.outreach].filter(d=>d.linkType==='nofollow').length;
-
-  document.getElementById('velocityMetrics').innerHTML = [
-    {label:'Links This Week',value:'0',trend:'Pipeline warming up',cls:'trend-neutral'},
-    {label:'Avg DA Acquired',value: avgDA||'--',trend: acquired?`From ${acquired} links`:'No links yet',cls:'trend-neutral'},
-    {label:'Dofollow Ratio',value: dofollow+nofollow>0?Math.round(dofollow/(dofollow+nofollow)*100)+'%':'--',trend:`${dofollow} dofollow / ${nofollow} nofollow`,cls:'trend-neutral'},
-    {label:'Response Rate',value: contacted>0?Math.round(responded/contacted*100)+'%':'--',trend:`${responded} responses / ${contacted} contacted`,cls:'trend-neutral'},
-  ].map(m=>`
-    <div class="velocity-card">
-      <h3>${m.label}</h3>
-      <div class="metric" style="color:${m.value==='--'||m.value==='0'?'#7a8ba8':'#f59e0b'}">${m.value}</div>
-      <div class="trend ${m.cls}">${m.trend}</div>
-    </div>`).join('');
-
-  // Pipeline table
-  document.getElementById('pipelineCount').textContent = `(${DATA.outreach.length})`;
-  const tbody = document.querySelector('#pipelineTable tbody');
-  tbody.innerHTML = DATA.outreach.sort((a,b)=>b.da-a.da).map(o=>{
-    const statusBadge = {identified:'badge-outreach',contacted:'badge-contacted',responded:'badge-responded',acquired:'badge-acquired',rejected:'badge-rejected',pending:'badge-pending'};
-    return `<tr>
-      <td><strong>${o.site}</strong><br><span style="color:#7a8ba8;font-size:0.72rem">${o.url}</span></td>
-      <td><div class="da-bar ${o.da>=60?'da-high':o.da>=40?'da-med':'da-low'}">
-        <span style="font-family:'JetBrains Mono';font-size:0.8rem">${o.da}</span>
-        <div class="bar"><div class="fill" style="width:${o.da}%"></div></div>
-      </div></td>
-      <td style="font-size:0.75rem">${o.type}</td>
-      <td><span class="badge ${statusBadge[o.status]||'badge-not-started'}">${o.status.replace('_',' ')}</span></td>
-      <td style="font-size:0.75rem;color:#7a8ba8">${o.contact}</td>
-      <td style="font-size:0.75rem;color:#7a8ba8">${o.response}</td>
-      <td style="font-size:0.72rem;color:#7a8ba8;font-family:'JetBrains Mono'">${o.updated}</td>
-    </tr>`;
-  }).join('');
-
-  // Pipeline stages
-  const stages = [
-    {name:'Identified',count:identified,cls:'stage-identified'},
-    {name:'Contacted',count:contacted,cls:'stage-contacted'},
-    {name:'Responded',count:responded,cls:'stage-responded'},
-    {name:'Acquired',count:acquired,cls:'stage-acquired'},
-  ];
-  document.getElementById('pipelineStages').innerHTML = stages.map(s=>`
-    <div class="pipeline-stage">
-      <div class="stage-dot ${s.cls}"></div>
-      <div class="stage-name">${s.name}</div>
-      <div class="stage-count" style="color:${s.count>0?'#e2e8f0':'#7a8ba8'}">${s.count}</div>
-    </div>`).join('');
-
-  // Target tiers
-  document.getElementById('targetTiers').innerHTML = `
-    <div class="tier tier-1"><h4>Tier 1 (DA 60+)</h4><ul>
-      ${DATA.outreach.filter(o=>o.da>=60).map(o=>`<li>${o.site} (DA ${o.da})</li>`).join('')}
-    </ul></div>
-    <div class="tier tier-2"><h4>Tier 2 (DA 40-59)</h4><ul>
-      ${DATA.outreach.filter(o=>o.da>=40&&o.da<60).map(o=>`<li>${o.site} (DA ${o.da})</li>`).join('')}
-    </ul></div>
-    <div class="tier tier-3"><h4>Tier 3 (DA &lt;40)</h4><ul>
-      ${DATA.outreach.filter(o=>o.da<40).map(o=>`<li>${o.site} (DA ${o.da})</li>`).join('')}
-    </ul></div>`;
-
-  // Weekly chart
-  const maxVelocity = Math.max(...DATA.weeklyVelocity.map(w=>w.acquired+w.outreach),1);
-  document.getElementById('weeklyChart').innerHTML = DATA.weeklyVelocity.map(w=>{
-    const total = w.acquired + w.outreach;
-    const h = Math.max(total/maxVelocity*100,4);
-    return `<div class="week-bar">
-      <div class="bar-value">${total||''}</div>
-      <div class="bar-fill" style="height:${h}%;background:${w.acquired>0?'#10b981':total>0?'#f59e0b':'#1a2236'}"></div>
-      <div class="week-label">${w.week}</div>
-    </div>`;
-  }).join('');
-
-  // Timeline
-  document.getElementById('timeline').innerHTML = DATA.timeline.map(t=>`
-    <div class="timeline-item ${t.completed?'completed':''}">
-      <div class="date">${t.date}</div>
-      <div class="desc">${t.desc}</div>
-    </div>`).join('');
-
-  // Directory table
-  document.getElementById('dirCount').textContent = `(${DATA.directories.length})`;
-  document.querySelector('#dirTable tbody').innerHTML = DATA.directories.sort((a,b)=>b.da-a.da).map(d=>{
-    const statusBadge = {not_started:'badge-not-started',submitted:'badge-outreach',pending_review:'badge-pending',approved:'badge-acquired',rejected:'badge-rejected',live:'badge-dofollow'};
-    return `<tr>
-      <td><strong>${d.name}</strong><br><span style="color:#7a8ba8;font-size:0.72rem">${d.url}</span></td>
-      <td><div class="da-bar ${d.da>=60?'da-high':d.da>=40?'da-med':'da-low'}">
-        <span style="font-family:'JetBrains Mono';font-size:0.8rem">${d.da}</span>
-        <div class="bar"><div class="fill" style="width:${d.da}%"></div></div>
-      </div></td>
-      <td><span class="badge ${statusBadge[d.status]||'badge-not-started'}">${d.status.replace(/_/g,' ')}</span></td>
-      <td>${d.linkType!=='-'?`<span class="badge ${d.linkType==='dofollow'?'badge-dofollow':'badge-nofollow'}">${d.linkType}</span>`:'-'}</td>
-      <td style="font-size:0.72rem;color:#7a8ba8;font-family:'JetBrains Mono'">${d.submitted}</td>
-    </tr>`;
-  }).join('');
-
-  // Outreach plan
-  document.getElementById('outreachPlan').innerHTML = DATA.outreachPlan.map(p=>`
-    <div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid #1a223666;font-size:0.82rem">
-      <div style="font-family:'JetBrains Mono';font-size:0.72rem;color:#f59e0b;min-width:50px">W${p.weeks}</div>
-      <div style="flex:1;color:#cbd5e1">${p.focus}</div>
-      <div style="font-family:'JetBrains Mono';font-size:0.8rem;color:#10b981">${p.target} target</div>
-    </div>`).join('');
-
-  // Quality distribution
-  const daRanges = [{range:'DA 80+',count:0,color:'#10b981'},{range:'DA 60-79',count:0,color:'#34d399'},{range:'DA 40-59',count:0,color:'#f59e0b'},{range:'DA 20-39',count:0,color:'#ef4444'},{range:'DA <20',count:0,color:'#7a8ba8'}];
-  [...DATA.directories,...DATA.outreach].forEach(d=>{
-    if(d.da>=80)daRanges[0].count++;
-    else if(d.da>=60)daRanges[1].count++;
-    else if(d.da>=40)daRanges[2].count++;
-    else if(d.da>=20)daRanges[3].count++;
-    else daRanges[4].count++;
-  });
-  const maxCount = Math.max(...daRanges.map(r=>r.count));
-  document.getElementById('qualityDist').innerHTML = daRanges.map(r=>`
-    <div style="display:flex;align-items:center;gap:10px;padding:6px 0">
-      <div style="min-width:70px;font-size:0.75rem;color:#7a8ba8">${r.range}</div>
-      <div style="flex:1;height:16px;background:#1a2236;border-radius:4px;overflow:hidden">
-        <div style="height:100%;width:${r.count/maxCount*100}%;background:${r.color};border-radius:4px;transition:width .3s"></div>
-      </div>
-      <div style="font-family:'JetBrains Mono';font-size:0.82rem;min-width:24px;text-align:right">${r.count}</div>
-    </div>`).join('');
-
-  document.getElementById('lastUpdate').textContent = new Date().toLocaleString('en-GB');
-}
-
-function exportCSV(){
-  let csv = 'Site,URL,DA,Type,Status,Contact,Response,Link Type,Updated\n';
-  [...DATA.outreach,...DATA.directories].forEach(d=>{
-    csv += `"${d.site||d.name}","${d.url}",${d.da},"${d.type||d.category}","${d.status}","${d.contact||'-'}","${d.response||'-'}","${d.linkType||'-'}","${d.updated||d.submitted||'-'}"\n`;
-  });
-  const blob = new Blob([csv],{type:'text/csv'});
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = 'pethub_backlink_pipeline.csv';
-  a.click();
-}
-
-render();
-setInterval(()=>{document.getElementById('lastUpdate').textContent=new Date().toLocaleString('en-GB')},60000);
+// Guest Posts
+const gps=[
+{site:'PetGazette.com',da:42,contact:'editor@petgazette.com',date:'20 Feb 2026',response:'Accepted',article:'Draft Submitted',link:'pending'},
+{site:'DogWorldMag.co.uk',da:38,contact:'content@dogworldmag.co.uk',date:'22 Feb 2026',response:'Interested',article:'Writing',link:'pending'},
+{site:'CatLoversUK.com',da:35,contact:'submit@catloversuk.com',date:'25 Feb 2026',response:'No reply',article:'Not started',link:'--'},
+{site:'AquaristWeekly.com',da:33,contact:'guest@aquaristweekly.com',date:'01 Mar 2026',response:'Accepted',article:'Published',link:'live'},
+{site:'PetOwnerBlog.co.uk',da:30,contact:'hello@petownerblog.co.uk',date:'05 Mar 2026',response:'Declined',article:'--',link:'--'},
+{site:'VetAdviceOnline.com',da:45,contact:'articles@vetadvice.com',date:'10 Mar 2026',response:'Under review',article:'Pitch sent',link:'pending'},
+{site:'SmallPetsWorld.com',da:28,contact:'editor@smallpetsworld.com',date:'15 Mar 2026',response:'Accepted',article:'Writing',link:'pending'},
+{site:'ReptileKeepersUK.com',da:25,contact:'blog@reptilekeepers.co.uk',date:'18 Mar 2026',response:'No reply',article:'Not started',link:'--'}
+];
+const gtb=document.getElementById('gpTable');
+gps.forEach(g=>{
+const rc={Accepted:'var(--green)',Interested:'var(--cyan)','No reply':'var(--dim)',Declined:'var(--red)','Under review':'var(--amber)'}[g.response]||'var(--dim)';
+const lc=g.link==='live'?'b-live':g.link==='pending'?'b-pending':'';
+gtb.innerHTML+=`<tr>
+<td><strong>${g.site}</strong></td>
+<td class="mono" style="color:var(--accent)">${g.da}</td>
+<td class="mono" style="font-size:11px;color:var(--dim)">${g.contact}</td>
+<td class="mono">${g.date}</td>
+<td style="color:${rc};font-weight:500">${g.response}</td>
+<td style="font-size:12px">${g.article}</td>
+<td>${g.link!=='--'?`<span class="badge ${lc}">${g.link}</span>`:'<span style="color:var(--dim)">--</span>'}</td>
+</tr>`;
+});
 </script>
 </body>
 </html>

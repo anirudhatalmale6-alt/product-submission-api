@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Authority Transfer Command Centre</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#080a0f;--card:#111621;--border:#1a2236;--text:#e2e8f0;--dim:#7a8ba8;--accent:#8b5cf6;--accent-dim:rgba(139,92,246,.15);--accent-glow:rgba(139,92,246,.3);--green:#10b981;--red:#ef4444;--amber:#f59e0b;--cyan:#06b6d4}
+html,body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;font-size:14px;line-height:1.5;overflow-x:hidden}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+::-webkit-scrollbar-thumb:hover{background:#2a3a56}
+.dashboard{padding:20px;max-width:1800px;margin:0 auto}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.header h1{font-size:18px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent)}
+.header h1 span{color:var(--dim);font-weight:400;font-size:12px;margin-left:12px;letter-spacing:0}
+.live-dot{width:8px;height:8px;background:var(--green);border-radius:50%;display:inline-block;margin-right:8px;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(16,185,129,.4)}50%{opacity:.7;box-shadow:0 0 0 6px rgba(16,185,129,0)}}
+.meta{display:flex;align-items:center;gap:16px;font-size:12px;color:var(--dim);font-family:'JetBrains Mono',monospace}
+.grid{display:grid;gap:16px;margin-bottom:16px}
+.grid-5{grid-template-columns:repeat(5,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:1fr 1fr}
+.grid-12{grid-template-columns:repeat(12,1fr)}
+.span-7{grid-column:span 7}
+.span-5{grid-column:span 5}
+.span-8{grid-column:span 8}
+.span-4{grid-column:span 4}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;transition:border-color .3s,box-shadow .3s}
+.card:hover{border-color:rgba(139,92,246,.3);box-shadow:0 0 20px rgba(139,92,246,.05)}
+.card-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.card-title{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1.2px;color:var(--dim)}
+.card-badge{font-size:10px;font-family:'JetBrains Mono',monospace;padding:3px 8px;border-radius:4px;background:var(--accent-dim);color:var(--accent)}
+.metric-card{text-align:center;padding:20px 16px}
+.metric-value{font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:700;color:var(--text);line-height:1.2}
+.metric-value.accent{color:var(--accent)}
+.metric-label{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+.metric-delta{font-size:12px;font-family:'JetBrains Mono',monospace;margin-top:6px}
+.metric-delta.up{color:var(--green)}
+.metric-delta.down{color:var(--red)}
+table{width:100%;border-collapse:collapse}
+th{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--dim);text-align:left;padding:10px 12px;border-bottom:1px solid var(--border)}
+td{padding:9px 12px;border-bottom:1px solid rgba(26,34,54,.5);font-size:13px;transition:background .2s}
+tr:hover td{background:rgba(139,92,246,.03)}
+.mono{font-family:'JetBrains Mono',monospace;font-size:12px}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.badge-live{background:rgba(16,185,129,.15);color:var(--green)}
+.badge-pending{background:rgba(245,158,11,.15);color:var(--amber)}
+.badge-planned{background:rgba(139,92,246,.15);color:var(--accent)}
+.badge-high{background:rgba(239,68,68,.15);color:var(--red)}
+.badge-medium{background:rgba(245,158,11,.15);color:var(--amber)}
+.authority-bar{height:6px;border-radius:3px;background:var(--border);overflow:hidden;min-width:60px}
+.authority-bar-fill{height:100%;border-radius:3px;background:linear-gradient(90deg,var(--accent),#a78bfa);transition:width .8s ease}
+.table-scroll{max-height:420px;overflow-y:auto}
+.table-scroll-sm{max-height:280px;overflow-y:auto}
+.cluster-bar-chart{display:flex;flex-direction:column;gap:8px}
+.cluster-row{display:flex;align-items:center;gap:12px}
+.cluster-label{width:140px;font-size:12px;color:var(--dim);text-align:right;flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cluster-bar-bg{flex:1;height:24px;background:var(--border);border-radius:4px;overflow:hidden;position:relative}
+.cluster-bar-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--accent),#a78bfa);transition:width 1s ease;display:flex;align-items:center;justify-content:flex-end;padding-right:8px}
+.cluster-bar-val{font-family:'JetBrains Mono',monospace;font-size:11px;color:#fff;font-weight:600}
+.matrix-cell{width:22px;height:22px;border-radius:3px;display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-family:'JetBrains Mono',monospace;margin:1px;transition:transform .2s}
+.matrix-cell:hover{transform:scale(1.3)}
+.matrix-cell.active{background:var(--accent);color:#fff}
+.matrix-cell.inactive{background:var(--border);color:transparent}
+.matrix-header{font-size:9px;color:var(--dim);writing-mode:vertical-rl;text-orientation:mixed;transform:rotate(180deg);height:80px;display:flex;align-items:center}
+.matrix-label{font-size:10px;color:var(--dim);width:120px;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex-shrink:0}
+.matrix-row{display:flex;align-items:center;gap:4px;margin-bottom:2px}
+.matrix-headers{display:flex;gap:4px;margin-left:124px;margin-bottom:4px}
+.truncate{max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fade-in{animation:fadeIn .6s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:1200px){.grid-5{grid-template-columns:repeat(3,1fr)}.grid-12{display:flex;flex-direction:column}.span-7,.span-5,.span-8,.span-4{grid-column:auto}}
+</style>
+</head>
+<body>
+<div class="dashboard fade-in">
+<div class="header">
+<h1><span class="live-dot"></span>Authority Transfer Command Centre<span>PetHub Online | 535 Posts | 10 Clusters</span></h1>
+<div class="meta">
+<span id="clock"></span>
+<span>Auto-refresh 60s</span>
+</div>
+</div>
+
+<!-- Impact Metrics -->
+<div class="grid grid-5" style="margin-bottom:20px">
+<div class="card metric-card">
+<div class="metric-value accent">847</div>
+<div class="metric-label">Authority Points Transferred</div>
+<div class="metric-delta up">+127 this week</div>
+</div>
+<div class="card metric-card">
+<div class="metric-value">38</div>
+<div class="metric-label">Pages Boosted</div>
+<div class="metric-delta up">+6 this week</div>
+</div>
+<div class="card metric-card">
+<div class="metric-value" style="color:var(--green)">14</div>
+<div class="metric-label">Moved to Page 1</div>
+<div class="metric-delta up">+3 this month</div>
+</div>
+<div class="card metric-card">
+<div class="metric-value mono">+4.2</div>
+<div class="metric-label">Avg Position Change</div>
+<div class="metric-delta up">Improving</div>
+</div>
+<div class="card metric-card">
+<div class="metric-value mono">72%</div>
+<div class="metric-label">Transfer Efficiency</div>
+<div class="metric-delta up">+5% vs last month</div>
+</div>
+</div>
+
+<!-- Main Content -->
+<div class="grid grid-12">
+<!-- Top 50 Authority Pages -->
+<div class="card span-7">
+<div class="card-header">
+<div class="card-title">Top 50 Authority Pages</div>
+<div class="card-badge">50 pages</div>
+</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>#</th><th>Page Title</th><th>Authority</th><th>Inbound</th><th>Outbound</th></tr></thead>
+<tbody id="authorityTable"></tbody>
+</table>
+</div>
+</div>
+
+<!-- Transfer Targets -->
+<div class="card span-5">
+<div class="card-header">
+<div class="card-title">Transfer Targets</div>
+<div class="card-badge">Needs Authority</div>
+</div>
+<div class="table-scroll">
+<table>
+<thead><tr><th>Target Page</th><th>Position</th><th>Gap</th><th>Priority</th></tr></thead>
+<tbody id="targetsTable"></tbody>
+</table>
+</div>
+</div>
+</div>
+
+<!-- Transfer Matrix + Actions -->
+<div class="grid grid-12" style="margin-top:16px">
+<div class="card span-8">
+<div class="card-header">
+<div class="card-title">Authority Transfer Matrix</div>
+<div class="card-badge">Source → Target</div>
+</div>
+<div style="overflow-x:auto" id="matrixContainer"></div>
+</div>
+<div class="card span-4">
+<div class="card-header">
+<div class="card-title">Cluster Authority Scores</div>
+<div class="card-badge">10 Clusters</div>
+</div>
+<div class="cluster-bar-chart" id="clusterChart"></div>
+</div>
+</div>
+
+<!-- Transfer Actions Log -->
+<div class="card" style="margin-top:16px">
+<div class="card-header">
+<div class="card-title">Transfer Actions Log</div>
+<div class="card-badge">Recent Activity</div>
+</div>
+<div class="table-scroll-sm">
+<table>
+<thead><tr><th>Source Page</th><th>Target Page</th><th>Anchor Text</th><th>Date</th><th>Status</th><th>Impact</th></tr></thead>
+<tbody id="actionsTable"></tbody>
+</table>
+</div>
+</div>
+</div>
+
+<script>
+// Clock
+function updateClock(){const d=new Date();document.getElementById('clock').textContent=d.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})+' '+d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',second:'2-digit'})}
+updateClock();setInterval(updateClock,1000);
+
+// Auto-refresh
+setTimeout(()=>location.reload(),60000);
+
+// Authority Pages Data
+const authorityPages=[
+{title:'Complete Guide to Dog Nutrition & Diet Plans',score:94,inbound:47,outbound:12},
+{title:'Cat Health: 25 Warning Signs Every Owner Must Know',score:91,inbound:43,outbound:9},
+{title:'Best Dog Breeds for Families with Children',score:89,inbound:41,outbound:14},
+{title:'How to Set Up a Freshwater Aquarium (Step-by-Step)',score:87,inbound:38,outbound:11},
+{title:'Ultimate Puppy Training Guide: First 30 Days',score:86,inbound:36,outbound:13},
+{title:'Senior Dog Care: Everything You Need to Know',score:84,inbound:35,outbound:10},
+{title:'Cat vs Dog: Which Pet Is Right for You?',score:83,inbound:34,outbound:15},
+{title:'Reptile Care 101: Beginner\'s Complete Guide',score:81,inbound:32,outbound:8},
+{title:'Raw Dog Food Diet: Benefits, Risks & Recipes',score:80,inbound:31,outbound:12},
+{title:'Indoor Cat Enrichment: 20 Ideas to Keep Cats Happy',score:79,inbound:30,outbound:11},
+{title:'Best Pet Insurance UK: 2026 Comparison Guide',score:78,inbound:29,outbound:16},
+{title:'How to Introduce a New Kitten to Your Home',score:77,inbound:28,outbound:9},
+{title:'Dog Anxiety: Causes, Symptoms & Treatments',score:76,inbound:27,outbound:10},
+{title:'Tropical Fish Species Guide: 50 Popular Varieties',score:75,inbound:26,outbound:14},
+{title:'Hamster Care Guide: Housing, Diet & Health',score:74,inbound:25,outbound:8},
+{title:'Why Is My Dog Not Eating? 12 Common Reasons',score:73,inbound:24,outbound:11},
+{title:'Best Cat Food Brands UK: Vet-Approved Picks',score:72,inbound:24,outbound:13},
+{title:'Dog Walking Tips: How Far, How Often, How Long',score:71,inbound:23,outbound:9},
+{title:'Rabbit Care Guide: From Housing to Health',score:70,inbound:22,outbound:10},
+{title:'How to Groom Your Dog at Home Like a Pro',score:69,inbound:21,outbound:12},
+{title:'Bird Keeping for Beginners: Budgies & Cockatiels',score:68,inbound:21,outbound:7},
+{title:'Flea & Tick Prevention: Complete Pet Owner Guide',score:67,inbound:20,outbound:11},
+{title:'Best Dog Toys for Heavy Chewers (Tested)',score:66,inbound:19,outbound:14},
+{title:'Cat Litter Types Compared: Which Is Best?',score:65,inbound:19,outbound:10},
+{title:'Pond Fish Care: Koi & Goldfish Guide',score:64,inbound:18,outbound:9},
+{title:'How to Travel with Your Dog: Complete Guide',score:63,inbound:17,outbound:12},
+{title:'Guinea Pig Care: Diet, Housing & Companionship',score:62,inbound:17,outbound:8},
+{title:'Puppy Vaccination Schedule UK: What You Need',score:61,inbound:16,outbound:10},
+{title:'Best Dog Beds 2026: Orthopaedic & Comfort Picks',score:60,inbound:16,outbound:13},
+{title:'Understanding Cat Body Language: A Visual Guide',score:59,inbound:15,outbound:9},
+{title:'Horse Care Basics for First-Time Owners',score:58,inbound:15,outbound:7},
+{title:'How to Choose the Right Dog Harness',score:57,inbound:14,outbound:11},
+{title:'Aquarium Water Chemistry: pH, Ammonia & More',score:56,inbound:14,outbound:8},
+{title:'Best Wet Dog Food UK: Top 15 Brands Reviewed',score:55,inbound:13,outbound:12},
+{title:'Cat Scratching Solutions: Posts, Pads & Training',score:54,inbound:13,outbound:10},
+{title:'Tortoise Care Guide: Species, Diet & Habitat',score:53,inbound:12,outbound:7},
+{title:'Dog Dental Care: Brushing, Chews & Vet Visits',score:52,inbound:12,outbound:9},
+{title:'How to Build a Cat Catio (Outdoor Enclosure)',score:51,inbound:11,outbound:8},
+{title:'Small Pet Comparison: Hamsters vs Gerbils vs Mice',score:50,inbound:11,outbound:10},
+{title:'Best Puppy Food UK: Growth & Development Guide',score:49,inbound:10,outbound:11},
+{title:'Saltwater Aquarium Setup: Marine Fish Guide',score:48,inbound:10,outbound:9},
+{title:'Dog Coat Types & Grooming Requirements',score:47,inbound:9,outbound:8},
+{title:'How to Stop a Dog from Pulling on Lead',score:46,inbound:9,outbound:10},
+{title:'Pet-Safe Plants: Indoor & Outdoor Guide',score:45,inbound:8,outbound:7},
+{title:'Ferret Care 101: Diet, Housing & Playtime',score:44,inbound:8,outbound:6},
+{title:'Best Cat Trees & Climbing Frames UK',score:43,inbound:7,outbound:9},
+{title:'Chicken Keeping for Beginners: Coop & Care',score:42,inbound:7,outbound:8},
+{title:'Dog Joint Supplements: Glucosamine & More',score:41,inbound:6,outbound:7},
+{title:'How to Clip Your Dog\'s Nails Safely',score:40,inbound:6,outbound:5},
+{title:'Pet Adoption Guide: Rescue vs Breeder',score:39,inbound:5,outbound:11}
+];
+
+const tbody1=document.getElementById('authorityTable');
+authorityPages.forEach((p,i)=>{
+const pct=p.score;
+tbody1.innerHTML+=`<tr>
+<td class="mono" style="color:var(--dim)">${i+1}</td>
+<td><div class="truncate" title="${p.title}">${p.title}</div></td>
+<td><div style="display:flex;align-items:center;gap:8px"><span class="mono" style="color:var(--accent)">${p.score}</span><div class="authority-bar" style="width:60px"><div class="authority-bar-fill" style="width:${pct}%"></div></div></div></td>
+<td class="mono">${p.inbound}</td>
+<td class="mono">${p.outbound}</td>
+</tr>`;
+});
+
+// Transfer Targets
+const targets=[
+{page:'Fish Supplies: Best Aquarium Equipment UK',pos:14,gap:32,priority:'high'},
+{page:'Dog Health: Common Illnesses & When to See a Vet',pos:12,gap:28,priority:'high'},
+{page:'Best Cat Food for Indoor Cats',pos:16,gap:35,priority:'high'},
+{page:'Dog Grooming Supplies: Complete Kit List',pos:13,gap:25,priority:'high'},
+{page:'Reptile Heating & Lighting Guide',pos:18,gap:40,priority:'medium'},
+{page:'Pet Insurance: Is It Worth It?',pos:11,gap:20,priority:'high'},
+{page:'Category: Dog Health & Wellness',pos:15,gap:38,priority:'medium'},
+{page:'Category: Fish & Aquarium',pos:19,gap:42,priority:'medium'},
+{page:'Small Animal Cages: Best Picks 2026',pos:17,gap:36,priority:'medium'},
+{page:'Dog Leads & Collars Buying Guide',pos:12,gap:22,priority:'high'},
+{page:'Category: Cat Nutrition',pos:20,gap:45,priority:'medium'},
+{page:'Bird Cage Setup: Size & Accessories Guide',pos:16,gap:34,priority:'medium'},
+{page:'Commercial: Pet Food Delivery Services UK',pos:14,gap:30,priority:'high'},
+{page:'Category: Puppy Training',pos:13,gap:26,priority:'high'},
+{page:'Horse Supplements: Joint & Digestive Health',pos:18,gap:39,priority:'medium'},
+{page:'Commercial: Pet Grooming Services Near Me',pos:11,gap:18,priority:'high'},
+{page:'Rabbit Hutch Buying Guide: Indoor & Outdoor',pos:15,gap:33,priority:'medium'},
+{page:'Category: Senior Pet Care',pos:17,gap:37,priority:'medium'},
+{page:'Commercial: Best Pet Cameras & Monitors',pos:12,gap:21,priority:'high'},
+{page:'Exotic Pets UK: Legal Species & Care',pos:19,gap:41,priority:'medium'}
+];
+
+const tbody2=document.getElementById('targetsTable');
+targets.forEach(t=>{
+const pc=t.priority==='high'?'badge-high':'badge-medium';
+tbody2.innerHTML+=`<tr>
+<td><div class="truncate" style="max-width:200px" title="${t.page}">${t.page}</div></td>
+<td class="mono">#${t.pos}</td>
+<td class="mono" style="color:var(--red)">${t.gap}</td>
+<td><span class="badge ${pc}">${t.priority}</span></td>
+</tr>`;
+});
+
+// Transfer Matrix
+const matrixSources=['Dog Nutrition Guide','Cat Health Signs','Family Dog Breeds','Aquarium Setup','Puppy Training','Senior Dog Care','Cat vs Dog','Reptile Care 101','Raw Dog Food','Indoor Cat Fun'];
+const matrixTargets=['Fish Supplies','Dog Health','Cat Food Indoor','Grooming Supplies','Reptile Heating','Pet Insurance','Dog Leads','Pet Food Delivery','Pet Cameras','Puppy Training Cat.'];
+const matrixData=[
+[0,1,0,1,0,1,1,0,0,1],
+[0,1,1,0,0,1,0,0,0,0],
+[1,0,0,1,0,0,1,1,1,1],
+[1,0,0,0,1,0,0,0,0,0],
+[0,1,0,1,0,0,1,0,0,1],
+[0,1,0,0,0,1,0,0,1,0],
+[1,1,1,0,0,1,0,1,0,1],
+[1,0,0,0,1,0,0,0,0,0],
+[0,1,1,0,0,0,0,1,0,0],
+[0,0,1,0,0,0,0,0,1,0]
+];
+
+let matrixHTML='<div class="matrix-headers">';
+matrixTargets.forEach(t=>{matrixHTML+=`<div class="matrix-header" title="${t}">${t}</div>`});
+matrixHTML+='</div>';
+matrixSources.forEach((s,i)=>{
+matrixHTML+=`<div class="matrix-row"><div class="matrix-label" title="${s}">${s}</div>`;
+matrixData[i].forEach(v=>{
+matrixHTML+=`<div class="matrix-cell ${v?'active':'inactive'}">${v?'&#10003;':''}</div>`;
+});
+matrixHTML+='</div>';
+});
+document.getElementById('matrixContainer').innerHTML=matrixHTML;
+
+// Cluster Authority Scores
+const clusters=[
+{name:'Dog Nutrition',score:87},
+{name:'Cat Health',score:82},
+{name:'Aquarium & Fish',score:68},
+{name:'Puppy Training',score:79},
+{name:'Senior Pet Care',score:71},
+{name:'Reptile Care',score:55},
+{name:'Small Animals',score:52},
+{name:'Pet Insurance',score:73},
+{name:'Bird Keeping',score:48},
+{name:'Horse Care',score:44}
+];
+const clusterEl=document.getElementById('clusterChart');
+clusters.sort((a,b)=>b.score-a.score).forEach(c=>{
+clusterEl.innerHTML+=`<div class="cluster-row">
+<div class="cluster-label">${c.name}</div>
+<div class="cluster-bar-bg"><div class="cluster-bar-fill" style="width:${c.score}%"><span class="cluster-bar-val">${c.score}</span></div></div>
+</div>`;
+});
+
+// Actions Log
+const actions=[
+{source:'Complete Guide to Dog Nutrition',target:'Dog Health: Common Illnesses',anchor:'dog health problems',date:'02 Jun 2026',status:'live',impact:'+3.1'},
+{source:'Cat Health: 25 Warning Signs',target:'Best Cat Food for Indoor Cats',anchor:'indoor cat diet',date:'02 Jun 2026',status:'live',impact:'+2.7'},
+{source:'Best Dog Breeds for Families',target:'Dog Leads & Collars Guide',anchor:'choosing the right lead',date:'01 Jun 2026',status:'live',impact:'+1.9'},
+{source:'Cat vs Dog: Which Pet',target:'Pet Insurance: Is It Worth It?',anchor:'pet insurance comparison',date:'01 Jun 2026',status:'live',impact:'+2.3'},
+{source:'Puppy Training Guide',target:'Category: Puppy Training',anchor:'puppy training resources',date:'31 May 2026',status:'live',impact:'+4.1'},
+{source:'Freshwater Aquarium Guide',target:'Fish Supplies: Best Equipment',anchor:'aquarium equipment list',date:'31 May 2026',status:'live',impact:'+2.8'},
+{source:'Senior Dog Care',target:'Dog Joint Supplements',anchor:'joint health for older dogs',date:'30 May 2026',status:'live',impact:'+1.5'},
+{source:'Reptile Care 101',target:'Reptile Heating & Lighting',anchor:'heating setup guide',date:'30 May 2026',status:'pending',impact:'--'},
+{source:'Raw Dog Food Diet',target:'Pet Food Delivery Services',anchor:'raw food delivery UK',date:'29 May 2026',status:'live',impact:'+2.1'},
+{source:'Indoor Cat Enrichment',target:'Best Cat Trees UK',anchor:'climbing frames for cats',date:'29 May 2026',status:'live',impact:'+1.8'},
+{source:'Best Pet Insurance UK',target:'Commercial: Pet Cameras',anchor:'monitor your pet',date:'28 May 2026',status:'pending',impact:'--'},
+{source:'Dog Anxiety Guide',target:'Dog Health: Common Illnesses',anchor:'stress-related health issues',date:'28 May 2026',status:'live',impact:'+1.4'},
+{source:'Tropical Fish Species',target:'Category: Fish & Aquarium',anchor:'explore all fish guides',date:'27 May 2026',status:'live',impact:'+3.6'},
+{source:'Hamster Care Guide',target:'Small Animal Cages',anchor:'best hamster cages',date:'27 May 2026',status:'planned',impact:'--'},
+{source:'Bird Keeping Beginners',target:'Bird Cage Setup Guide',anchor:'setting up your bird cage',date:'26 May 2026',status:'live',impact:'+2.0'}
+];
+
+const tbody3=document.getElementById('actionsTable');
+actions.forEach(a=>{
+const sc=a.status==='live'?'badge-live':a.status==='pending'?'badge-pending':'badge-planned';
+const ic=a.impact==='--'?'var(--dim)':'var(--green)';
+tbody3.innerHTML+=`<tr>
+<td><div class="truncate" style="max-width:200px">${a.source}</div></td>
+<td><div class="truncate" style="max-width:200px">${a.target}</div></td>
+<td style="color:var(--accent);font-size:12px">${a.anchor}</td>
+<td class="mono">${a.date}</td>
+<td><span class="badge ${sc}">${a.status}</span></td>
+<td class="mono" style="color:${ic}">${a.impact}</td>
+</tr>`;
+});
+</script>
+</body>
+</html>

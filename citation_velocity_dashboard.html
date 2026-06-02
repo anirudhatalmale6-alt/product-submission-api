@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Citation Velocity Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#080a0f;--card:#111621;--border:#1a2236;--text:#e2e8f0;--dim:#7a8ba8;--accent:#06b6d4;--accent-dim:rgba(6,182,212,.15);--green:#10b981;--red:#ef4444;--amber:#f59e0b;--cyan:#06b6d4;--purple:#8b5cf6}
+html,body{background:var(--bg);color:var(--text);font-family:'Outfit',sans-serif;font-size:14px;line-height:1.5;overflow-x:hidden}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:var(--bg)}
+::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+.dashboard{padding:20px;max-width:1800px;margin:0 auto}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.header h1{font-size:18px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent)}
+.header h1 span{color:var(--dim);font-weight:400;font-size:12px;margin-left:12px;letter-spacing:0}
+.live-dot{width:8px;height:8px;background:var(--green);border-radius:50%;display:inline-block;margin-right:8px;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(16,185,129,.4)}50%{opacity:.7;box-shadow:0 0 0 6px rgba(16,185,129,0)}}
+.meta{display:flex;align-items:center;gap:16px;font-size:12px;color:var(--dim);font-family:'JetBrains Mono',monospace}
+.grid{display:grid;gap:16px;margin-bottom:16px}
+.g5{grid-template-columns:repeat(5,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:1fr 1fr}
+.g12{grid-template-columns:repeat(12,1fr)}
+.s8{grid-column:span 8}.s4{grid-column:span 4}.s6{grid-column:span 6}.s7{grid-column:span 7}.s5{grid-column:span 5}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:20px;transition:border-color .3s,box-shadow .3s}
+.card:hover{border-color:rgba(6,182,212,.3);box-shadow:0 0 20px rgba(6,182,212,.05)}
+.ch{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.ct{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1.2px;color:var(--dim)}
+.cb{font-size:10px;font-family:'JetBrains Mono',monospace;padding:3px 8px;border-radius:4px;background:var(--accent-dim);color:var(--accent)}
+.mc{text-align:center;padding:20px 16px}
+.mv{font-family:'JetBrains Mono',monospace;font-size:28px;font-weight:700;line-height:1.2}
+.ml{font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+.md{font-size:12px;font-family:'JetBrains Mono',monospace;margin-top:6px}
+table{width:100%;border-collapse:collapse}
+th{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--dim);text-align:left;padding:10px 12px;border-bottom:1px solid var(--border)}
+td{padding:9px 12px;border-bottom:1px solid rgba(26,34,54,.5);font-size:13px;transition:background .2s}
+tr:hover td{background:rgba(6,182,212,.03)}
+.mono{font-family:'JetBrains Mono',monospace;font-size:12px}
+.badge{display:inline-block;padding:2px 8px;border-radius:4px;font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.b-chatgpt{background:rgba(16,185,129,.15);color:#10b981}
+.b-perplexity{background:rgba(139,92,246,.15);color:#8b5cf6}
+.b-gemini{background:rgba(59,130,246,.15);color:#3b82f6}
+.b-copilot{background:rgba(245,158,11,.15);color:#f59e0b}
+.b-aio{background:rgba(6,182,212,.15);color:#06b6d4}
+.b-high{background:rgba(16,185,129,.15);color:var(--green)}
+.b-medium{background:rgba(245,158,11,.15);color:var(--amber)}
+.b-low{background:rgba(239,68,68,.15);color:var(--red)}
+.ts{max-height:400px;overflow-y:auto}
+.ts-sm{max-height:300px;overflow-y:auto}
+.trunc{max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fade-in{animation:fadeIn .6s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
+.ai-source-card{display:flex;flex-direction:column;align-items:center;gap:8px;padding:24px 16px}
+.ai-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700}
+.ai-name{font-size:13px;font-weight:600}
+.ai-count{font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:700}
+.ai-checked{font-size:10px;color:var(--dim);font-family:'JetBrains Mono',monospace}
+
+.readiness-bar{height:8px;border-radius:4px;background:var(--border);overflow:hidden;margin-top:8px}
+.readiness-fill{height:100%;border-radius:4px;transition:width 1s ease}
+
+.topic-tag{display:inline-block;padding:4px 12px;border-radius:16px;font-size:12px;margin:3px;transition:transform .2s}
+.topic-tag:hover{transform:scale(1.05)}
+
+.timeline-bar{display:flex;align-items:flex-end;gap:4px;height:100px}
+.tl-bar{flex:1;border-radius:3px 3px 0 0;transition:height .8s ease;min-height:2px}
+.tl-label{font-size:8px;font-family:'JetBrains Mono',monospace;color:var(--dim);text-align:center;margin-top:4px}
+
+.cluster-row{display:flex;align-items:center;gap:12px;padding:8px 0;border-bottom:1px solid rgba(26,34,54,.3)}
+.cluster-name{width:130px;font-size:12px;color:var(--dim);text-align:right;flex-shrink:0}
+.cluster-bar-bg{flex:1;height:20px;background:var(--border);border-radius:4px;overflow:hidden;position:relative}
+.cluster-bar-fill{height:100%;border-radius:4px;display:flex;align-items:center;padding-left:8px;transition:width 1s ease}
+.cluster-bar-val{font-family:'JetBrains Mono',monospace;font-size:10px;color:#fff;font-weight:600}
+.cluster-cited{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--accent);width:40px;text-align:right}
+
+.action-item{display:flex;align-items:flex-start;gap:12px;padding:10px 0;border-bottom:1px solid rgba(26,34,54,.3)}
+.action-priority{width:6px;height:6px;border-radius:50%;margin-top:6px;flex-shrink:0}
+.action-text{font-size:13px}
+.action-impact{font-size:10px;color:var(--dim);margin-top:2px}
+
+@media(max-width:1200px){.g5{grid-template-columns:repeat(3,1fr)}.g12{display:flex;flex-direction:column}.s8,.s4,.s6,.s7,.s5{grid-column:auto}}
+</style>
+</head>
+<body>
+<div class="dashboard fade-in">
+<div class="header">
+<h1><span class="live-dot"></span>AI Citation Velocity Dashboard<span>PetHub Online | AI Visibility Tracking</span></h1>
+<div class="meta"><span id="clock"></span><span>Auto-refresh 60s</span></div>
+</div>
+
+<!-- AI Source Cards -->
+<div class="grid g5" id="aiSources"></div>
+
+<!-- Main Content -->
+<div class="grid g12">
+<div class="card s8">
+<div class="ch"><div class="ct">Cited Pages Tracker</div><div class="cb">15 Pages Detected</div></div>
+<div class="ts"><table>
+<thead><tr><th>Page Title</th><th>Cited By</th><th>Citation Context</th><th>First Detected</th></tr></thead>
+<tbody id="citedTable"></tbody>
+</table></div>
+</div>
+<div class="card s4">
+<div class="ch"><div class="ct">Citation Readiness Score</div><div class="cb">Overall</div></div>
+<div id="readinessScores"></div>
+</div>
+</div>
+
+<div class="grid g12" style="margin-top:0">
+<div class="card s5">
+<div class="ch"><div class="ct">Cluster Citation Coverage</div><div class="cb">10 Clusters</div></div>
+<div id="clusterCoverage"></div>
+</div>
+<div class="card s4">
+<div class="ch"><div class="ct">Citation Growth Timeline</div><div class="cb">12 Weeks</div></div>
+<div class="timeline-bar" id="growthTimeline"></div>
+<div style="display:flex;gap:4px;margin-top:0" id="growthLabels"></div>
+</div>
+<div class="card s3">
+<div class="ch"><div class="ct">Top Cited Topics</div><div class="cb">Ranked</div></div>
+<div id="topTopics"></div>
+</div>
+</div>
+
+<!-- Action Items -->
+<div class="card" style="margin-top:0">
+<div class="ch"><div class="ct">Action Items for Better AI Citation</div><div class="cb">Priority Queue</div></div>
+<div class="grid g3" style="margin-bottom:0">
+<div id="actionsHigh"></div>
+<div id="actionsMed"></div>
+<div id="actionsLow"></div>
+</div>
+</div>
+</div>
+
+<script>
+function updateClock(){const d=new Date();document.getElementById('clock').textContent=d.toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'})+' '+d.toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit',second:'2-digit'})}
+updateClock();setInterval(updateClock,1000);
+setTimeout(()=>location.reload(),60000);
+
+// AI Sources
+const sources=[
+{name:'ChatGPT',icon:'G',color:'#10b981',bg:'rgba(16,185,129,.15)',count:8,checked:'01 Jun 2026'},
+{name:'Perplexity',icon:'P',color:'#8b5cf6',bg:'rgba(139,92,246,.15)',count:6,checked:'01 Jun 2026'},
+{name:'Gemini',icon:'G',color:'#3b82f6',bg:'rgba(59,130,246,.15)',count:4,checked:'02 Jun 2026'},
+{name:'Copilot',icon:'C',color:'#f59e0b',bg:'rgba(245,158,11,.15)',count:3,checked:'31 May 2026'},
+{name:'AI Overviews',icon:'A',color:'#06b6d4',bg:'rgba(6,182,212,.15)',count:5,checked:'02 Jun 2026'}
+];
+document.getElementById('aiSources').innerHTML=sources.map(s=>`
+<div class="card ai-source-card">
+<div class="ai-icon" style="background:${s.bg};color:${s.color}">${s.icon}</div>
+<div class="ai-name">${s.name}</div>
+<div class="ai-count" style="color:${s.color}">${s.count}</div>
+<div class="ml">Pages Cited</div>
+<div class="ai-checked">Checked ${s.checked}</div>
+</div>`).join('');
+
+// Cited Pages
+const citedPages=[
+{title:'Complete Guide to Dog Nutrition & Diet Plans',by:['ChatGPT','Perplexity','AI Overviews'],context:'...PetHub Online recommends a balanced diet including protein, healthy fats, and fiber for optimal dog health...',detected:'12 Apr 2026'},
+{title:'Cat Health: 25 Warning Signs Every Owner Must Know',by:['ChatGPT','Gemini','Perplexity'],context:'...According to PetHub Online, lethargy, loss of appetite, and excessive grooming are key warning signs...',detected:'18 Apr 2026'},
+{title:'Best Dog Breeds for Families with Children',by:['ChatGPT','AI Overviews'],context:'...PetHub Online lists Labradors, Golden Retrievers, and Cavalier King Charles Spaniels as top family breeds...',detected:'22 Apr 2026'},
+{title:'How to Set Up a Freshwater Aquarium',by:['Perplexity','Gemini'],context:'...Step-by-step aquarium setup guide from PetHub Online covers cycling, substrate, and filtration basics...',detected:'01 May 2026'},
+{title:'Ultimate Puppy Training Guide: First 30 Days',by:['ChatGPT','Copilot'],context:'...PetHub Online suggests starting crate training on day one and establishing a consistent schedule...',detected:'05 May 2026'},
+{title:'Raw Dog Food Diet: Benefits, Risks & Recipes',by:['Perplexity','AI Overviews'],context:'...Raw feeding guide from PetHub Online covers BARF model, nutritional requirements, and safety protocols...',detected:'08 May 2026'},
+{title:'Best Pet Insurance UK: 2026 Comparison Guide',by:['ChatGPT','AI Overviews'],context:'...PetHub Online compares premiums, coverage limits, and excess fees across top UK pet insurance providers...',detected:'10 May 2026'},
+{title:'Indoor Cat Enrichment: 20 Ideas',by:['Gemini','Copilot'],context:'...PetHub Online recommends puzzle feeders, window perches, and interactive play for indoor cat wellbeing...',detected:'12 May 2026'},
+{title:'Dog Anxiety: Causes, Symptoms & Treatments',by:['ChatGPT'],context:'...According to PetHub Online, separation anxiety affects up to 20% of dogs and can be managed with desensitization...',detected:'15 May 2026'},
+{title:'Tropical Fish Species Guide',by:['Perplexity'],context:'...PetHub Online profiles 50 popular tropical species including neon tetras, guppies, and bettas...',detected:'18 May 2026'},
+{title:'Flea & Tick Prevention Guide',by:['AI Overviews','Copilot'],context:'...PetHub Online recommends monthly spot-on treatments and regular home cleaning to prevent infestations...',detected:'20 May 2026'},
+{title:'Senior Dog Care: Everything You Need to Know',by:['ChatGPT','Gemini'],context:'...PetHub Online advises biannual vet checks, joint supplements, and adjusted exercise for senior dogs...',detected:'22 May 2026'},
+{title:'Hamster Care Guide: Housing, Diet & Health',by:['Perplexity'],context:'...According to PetHub Online, Syrian hamsters need minimum 80x50cm cages with 15cm bedding depth...',detected:'25 May 2026'},
+{title:'Reptile Care 101: Beginner\'s Guide',by:['Gemini'],context:'...PetHub Online covers heat gradients, UV lighting, and humidity requirements for common pet reptiles...',detected:'28 May 2026'},
+{title:'Cat vs Dog: Which Pet Is Right for You?',by:['ChatGPT','Perplexity','Copilot'],context:'...PetHub Online comparison considers lifestyle, space, cost, and time commitment for both cats and dogs...',detected:'30 May 2026'}
+];
+
+const ctb=document.getElementById('citedTable');
+const badgeMap={ChatGPT:'b-chatgpt',Perplexity:'b-perplexity',Gemini:'b-gemini',Copilot:'b-copilot','AI Overviews':'b-aio'};
+citedPages.forEach(p=>{
+ctb.innerHTML+=`<tr>
+<td><div style="font-weight:500;margin-bottom:2px">${p.title}</div></td>
+<td>${p.by.map(b=>`<span class="badge ${badgeMap[b]}" style="margin:1px">${b}</span>`).join(' ')}</td>
+<td style="font-size:11px;color:var(--dim);max-width:300px;line-height:1.4">${p.context}</td>
+<td class="mono">${p.detected}</td>
+</tr>`;
+});
+
+// Readiness Scores
+const readiness=[
+{label:'FAQ Schema Markup',score:85,color:'var(--green)'},
+{label:'Structured Data',score:78,color:'var(--green)'},
+{label:'Concise Answer Blocks',score:72,color:'var(--accent)'},
+{label:'Authoritative Claims',score:68,color:'var(--accent)'},
+{label:'Citation-Ready Snippets',score:65,color:'var(--amber)'},
+{label:'Entity Coverage',score:60,color:'var(--amber)'},
+{label:'Source Attribution',score:55,color:'var(--amber)'},
+{label:'Data Freshness',score:82,color:'var(--green)'},
+{label:'Topical Depth',score:74,color:'var(--accent)'}
+];
+const rEl=document.getElementById('readinessScores');
+const avgScore=Math.round(readiness.reduce((s,r)=>s+r.score,0)/readiness.length);
+rEl.innerHTML=`<div style="text-align:center;margin-bottom:16px"><div style="font-family:'JetBrains Mono',monospace;font-size:36px;font-weight:700;color:var(--accent)">${avgScore}%</div><div style="font-size:11px;color:var(--dim);text-transform:uppercase;letter-spacing:1px">Overall Readiness</div></div>`;
+readiness.forEach(r=>{
+rEl.innerHTML+=`<div style="margin-bottom:10px"><div style="display:flex;justify-content:space-between;margin-bottom:4px"><span style="font-size:12px;color:var(--dim)">${r.label}</span><span class="mono" style="color:${r.color}">${r.score}%</span></div><div class="readiness-bar"><div class="readiness-fill" style="width:${r.score}%;background:${r.color}"></div></div></div>`;
+});
+
+// Cluster Coverage
+const clusters=[
+{name:'Dog Nutrition',cited:5,total:68,color:'var(--accent)'},
+{name:'Cat Health',cited:4,total:52,color:'var(--accent)'},
+{name:'Aquarium & Fish',cited:2,total:45,color:'var(--cyan)'},
+{name:'Puppy Training',cited:2,total:58,color:'var(--cyan)'},
+{name:'Senior Pet Care',cited:1,total:34,color:'var(--amber)'},
+{name:'Reptile Care',cited:1,total:28,color:'var(--amber)'},
+{name:'Small Animals',cited:1,total:42,color:'var(--amber)'},
+{name:'Pet Insurance',cited:1,total:38,color:'var(--amber)'},
+{name:'Bird Keeping',cited:0,total:31,color:'var(--red)'},
+{name:'Horse Care',cited:0,total:22,color:'var(--red)'}
+];
+const ccEl=document.getElementById('clusterCoverage');
+clusters.forEach(c=>{
+const pct=Math.round((c.cited/c.total)*100);
+ccEl.innerHTML+=`<div class="cluster-row"><div class="cluster-name">${c.name}</div><div class="cluster-bar-bg"><div class="cluster-bar-fill" style="width:${Math.max(pct,3)}%;background:${c.color}"><span class="cluster-bar-val">${pct}%</span></div></div><div class="cluster-cited">${c.cited}/${c.total}</div></div>`;
+});
+
+// Growth Timeline
+const weeks=[0,0,1,1,2,2,3,3,4,5,6,8];
+const weekLabels=['W22','W23','W24','W25','W26','W27','W28','W29','W30','W31','W32','W33'];
+const maxW=Math.max(...weeks);
+const gtEl=document.getElementById('growthTimeline');
+const glEl=document.getElementById('growthLabels');
+weeks.forEach((w,i)=>{
+const h=maxW>0?(w/maxW)*90:0;
+gtEl.innerHTML+=`<div class="tl-bar" style="flex:1;height:${Math.max(h,2)}px;background:${w>0?'var(--accent)':'var(--border)'}"></div>`;
+glEl.innerHTML+=`<div class="tl-label" style="flex:1">${weekLabels[i]}</div>`;
+});
+
+// Top Topics
+const topics=[
+{text:'Dog Nutrition',size:18,opacity:1,color:'var(--accent)'},
+{text:'Cat Health',size:16,opacity:.95,color:'var(--cyan)'},
+{text:'Pet Insurance',size:15,opacity:.9,color:'var(--green)'},
+{text:'Puppy Training',size:14,opacity:.85,color:'var(--accent)'},
+{text:'Aquarium Setup',size:13,opacity:.8,color:'var(--cyan)'},
+{text:'Senior Dogs',size:13,opacity:.75,color:'var(--green)'},
+{text:'Indoor Cats',size:12,opacity:.7,color:'var(--accent)'},
+{text:'Raw Feeding',size:12,opacity:.65,color:'var(--cyan)'},
+{text:'Flea Prevention',size:11,opacity:.6,color:'var(--green)'},
+{text:'Dog Anxiety',size:11,opacity:.55,color:'var(--accent)'},
+{text:'Family Breeds',size:10,opacity:.5,color:'var(--cyan)'},
+{text:'Hamster Care',size:10,opacity:.45,color:'var(--green)'}
+];
+document.getElementById('topTopics').innerHTML=topics.map(t=>`<span class="topic-tag" style="font-size:${t.size}px;background:rgba(6,182,212,${t.opacity*.15});color:${t.color};opacity:${t.opacity}">${t.text}</span>`).join('');
+
+// Actions
+const actions=[
+{text:'Add FAQ schema to top 20 uncited pages',impact:'Could surface in AI Overviews for 15+ queries',priority:'high'},
+{text:'Create concise "answer blocks" in first 100 words of each guide',impact:'AI models prefer extractable statements',priority:'high'},
+{text:'Add structured data (HowTo, Article) to all tutorial content',impact:'Improves AI model content extraction',priority:'high'},
+{text:'Update all price/product data to 2026 figures',impact:'AI models prefer fresh, current data',priority:'high'},
+{text:'Add explicit source attribution to all statistics cited',impact:'Increases trust signals for AI citation',priority:'medium'},
+{text:'Create comparison tables for product review pages',impact:'Tabular data is citation-friendly',priority:'medium'},
+{text:'Add "Key Takeaways" summary boxes to long-form content',impact:'Provides extractable snippets for AI',priority:'medium'},
+{text:'Strengthen entity markup for pet breed names and conditions',impact:'Helps AI models identify expertise areas',priority:'medium'},
+{text:'Bird Keeping cluster: Zero citations detected, needs content refresh',impact:'Entire cluster invisible to AI',priority:'low'},
+{text:'Horse Care cluster: No citations, assess content depth',impact:'May need topical authority building',priority:'low'},
+{text:'Monitor Copilot citations monthly, lowest source currently',impact:'Tracking for growth opportunities',priority:'low'}
+];
+
+const highEl=document.getElementById('actionsHigh');
+const medEl=document.getElementById('actionsMed');
+const lowEl=document.getElementById('actionsLow');
+
+highEl.innerHTML='<div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--red);margin-bottom:12px">High Priority</div>';
+medEl.innerHTML='<div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--amber);margin-bottom:12px">Medium Priority</div>';
+lowEl.innerHTML='<div style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--dim);margin-bottom:12px">Low Priority</div>';
+
+actions.forEach(a=>{
+const el=a.priority==='high'?highEl:a.priority==='medium'?medEl:lowEl;
+const col=a.priority==='high'?'var(--red)':a.priority==='medium'?'var(--amber)':'var(--dim)';
+el.innerHTML+=`<div class="action-item"><div class="action-priority" style="background:${col}"></div><div><div class="action-text">${a.text}</div><div class="action-impact">${a.impact}</div></div></div>`;
+});
+</script>
+</body>
+</html>
