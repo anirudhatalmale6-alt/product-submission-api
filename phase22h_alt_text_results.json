@@ -1,0 +1,163 @@
+{
+  "phase": "22H",
+  "timestamp_start": "2026-06-02T12:57:09.386498",
+  "timestamp_end": "2026-06-02T13:20:50.310140",
+  "duration_seconds": 1420.9,
+  "total_scanned": 3093,
+  "already_have_alt_text": 2453,
+  "missing_alt_text_found": 640,
+  "fixed_count": 640,
+  "error_count": 0,
+  "success_rate_percent": 100.0,
+  "second_pass_found": 18,
+  "second_pass_fixed": 18,
+  "third_pass_found": 7,
+  "third_pass_fixed": 7,
+  "total_fixed_all_passes": 665,
+  "final_total_media": 3118,
+  "final_missing_count": 0,
+  "final_coverage_percent": 100.0,
+  "errors": [],
+  "samples": [
+    {
+      "id": 19606,
+      "title": "pet_grooming_schedule_uk_4-2",
+      "filename": "pet_grooming_schedule_uk_4-2.jpeg",
+      "alt_text_generated": "Pet_grooming_schedule_uk_4-2",
+      "post_title": null
+    },
+    {
+      "id": 19605,
+      "title": "pet_exercise_requirements_by_age_2",
+      "filename": "pet_exercise_requirements_by_age_2.jpeg",
+      "alt_text_generated": "Pet_exercise_requirements_by_age_2",
+      "post_title": null
+    },
+    {
+      "id": 19601,
+      "title": "pet_anxiety_solutions_guide_3-2",
+      "filename": "pet_anxiety_solutions_guide_3-2.jpeg",
+      "alt_text_generated": "Pet_anxiety_solutions_guide_3-2",
+      "post_title": null
+    },
+    {
+      "id": 19596,
+      "title": "pet_weight_management_plan_2-2",
+      "filename": "pet_weight_management_plan_2-2.jpeg",
+      "alt_text_generated": "Pet_weight_management_plan_2-2",
+      "post_title": null
+    },
+    {
+      "id": 19584,
+      "title": "pet_microchip_registration_guide_uk_2-3",
+      "filename": "pet_microchip_registration_guide_uk_2-3.",
+      "alt_text_generated": "Pet_microchip_registration_guide_uk_2-3",
+      "post_title": null
+    },
+    {
+      "id": 19576,
+      "title": "pet_grooming_schedule_uk_4-1",
+      "filename": "pet_grooming_schedule_uk_4-1.jpeg",
+      "alt_text_generated": "Pet_grooming_schedule_uk_4-1",
+      "post_title": null
+    },
+    {
+      "id": 19572,
+      "title": "pet_anxiety_solutions_guide_3-1",
+      "filename": "pet_anxiety_solutions_guide_3-1.jpeg",
+      "alt_text_generated": "Pet_anxiety_solutions_guide_3-1",
+      "post_title": null
+    },
+    {
+      "id": 19570,
+      "title": "pet_microchip_registration_guide_uk_2-2",
+      "filename": "pet_microchip_registration_guide_uk_2-2.",
+      "alt_text_generated": "Pet_microchip_registration_guide_uk_2-2",
+      "post_title": null
+    },
+    {
+      "id": 19567,
+      "title": "pet_weight_management_plan_2-1",
+      "filename": "pet_weight_management_plan_2-1.jpeg",
+      "alt_text_generated": "Pet_weight_management_plan_2-1",
+      "post_title": null
+    },
+    {
+      "id": 19565,
+      "title": "pet_grooming_schedule_uk_4",
+      "filename": "pet_grooming_schedule_uk_4.jpeg",
+      "alt_text_generated": "Pet_grooming_schedule_uk_4",
+      "post_title": null
+    },
+    {
+      "id": 19561,
+      "title": "pet_anxiety_solutions_guide_3",
+      "filename": "pet_anxiety_solutions_guide_3.jpeg",
+      "alt_text_generated": "Pet_anxiety_solutions_guide_3",
+      "post_title": null
+    },
+    {
+      "id": 19558,
+      "title": "pet_weight_management_plan_2",
+      "filename": "pet_weight_management_plan_2.jpeg",
+      "alt_text_generated": "Pet_weight_management_plan_2",
+      "post_title": null
+    },
+    {
+      "id": 19555,
+      "title": "pet_microchip_registration_guide_uk_2-1",
+      "filename": "pet_microchip_registration_guide_uk_2-1.",
+      "alt_text_generated": "Pet_microchip_registration_guide_uk_2-1",
+      "post_title": null
+    },
+    {
+      "id": 19552,
+      "title": "indoor_cat_night_activity_guide_4",
+      "filename": "indoor_cat_night_activity_guide_4.jpeg",
+      "alt_text_generated": "Indoor_cat_night_activity_guide_4",
+      "post_title": null
+    },
+    {
+      "id": 19551,
+      "title": "indoor_cat_night_activity_guide_3",
+      "filename": "indoor_cat_night_activity_guide_3.jpeg",
+      "alt_text_generated": "Indoor_cat_night_activity_guide_3",
+      "post_title": null
+    },
+    {
+      "id": 19549,
+      "title": "indoor_cat_night_activity_guide_2",
+      "filename": "indoor_cat_night_activity_guide_2.jpeg",
+      "alt_text_generated": "Indoor_cat_night_activity_guide_2",
+      "post_title": null
+    },
+    {
+      "id": 19548,
+      "title": "indoor_cat_night_activity_guide_1",
+      "filename": "indoor_cat_night_activity_guide_1.jpeg",
+      "alt_text_generated": "Indoor_cat_night_activity_guide_1",
+      "post_title": null
+    },
+    {
+      "id": 19545,
+      "title": "indoor_cat_grooming_routine_guide_4",
+      "filename": "indoor_cat_grooming_routine_guide_4.jpeg",
+      "alt_text_generated": "Indoor_cat_grooming_routine_guide_4",
+      "post_title": null
+    },
+    {
+      "id": 19544,
+      "title": "pet_microchip_registration_guide_uk_2",
+      "filename": "pet_microchip_registration_guide_uk_2.jp",
+      "alt_text_generated": "Pet_microchip_registration_guide_uk_2",
+      "post_title": null
+    },
+    {
+      "id": 19543,
+      "title": "indoor_cat_grooming_routine_guide_3",
+      "filename": "indoor_cat_grooming_routine_guide_3.jpeg",
+      "alt_text_generated": "Indoor_cat_grooming_routine_guide_3",
+      "post_title": null
+    }
+  ]
+}

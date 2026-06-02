@@ -1,0 +1,236 @@
+{
+  "phase": "22D",
+  "category": "Dog Health",
+  "category_id": 1450,
+  "total_topics": 25,
+  "published": 25,
+  "failed": 0,
+  "timestamp": "2026-06-02T13:27:08.167232",
+  "posts": [
+    {
+      "index": 1,
+      "title": "How to Recognise Early Signs of Pain in Dogs",
+      "slug": "early-signs-of-pain-in-dogs",
+      "post_id": 21521,
+      "url": "https://pethubonline.com/early-signs-of-pain-in-dogs/",
+      "media_id": 21522,
+      "status": "published"
+    },
+    {
+      "index": 2,
+      "title": "Complete Guide to Dog Vaccination Schedules in the UK",
+      "slug": "dog-vaccination-schedule-uk",
+      "post_id": 21524,
+      "url": "https://pethubonline.com/dog-vaccination-schedule-uk/",
+      "media_id": 21525,
+      "status": "published"
+    },
+    {
+      "index": 3,
+      "title": "How to Monitor Your Dog's Weight at Home",
+      "slug": "monitor-dog-weight-at-home",
+      "post_id": 21527,
+      "url": "https://pethubonline.com/monitor-dog-weight-at-home/",
+      "media_id": 21528,
+      "status": "published"
+    },
+    {
+      "index": 4,
+      "title": "Understanding Canine Diabetes: Symptoms and Management",
+      "slug": "canine-diabetes-symptoms-management",
+      "post_id": 21530,
+      "url": "https://pethubonline.com/canine-diabetes-symptoms-management/",
+      "media_id": 21531,
+      "status": "published"
+    },
+    {
+      "index": 5,
+      "title": "How to Keep Your Dog's Heart Healthy",
+      "slug": "keep-dog-heart-healthy",
+      "post_id": 21533,
+      "url": "https://pethubonline.com/keep-dog-heart-healthy/",
+      "media_id": 21534,
+      "status": "published"
+    },
+    {
+      "index": 6,
+      "title": "Common Dog Eye Problems and When to See a Vet",
+      "slug": "dog-eye-problems-when-to-see-vet",
+      "post_id": 21536,
+      "url": "https://pethubonline.com/dog-eye-problems-when-to-see-vet/",
+      "media_id": 21537,
+      "status": "published"
+    },
+    {
+      "index": 7,
+      "title": "How to Protect Your Dog from Seasonal Allergies",
+      "slug": "protect-dog-seasonal-allergies",
+      "post_id": 21539,
+      "url": "https://pethubonline.com/protect-dog-seasonal-allergies/",
+      "media_id": 21540,
+      "status": "published"
+    },
+    {
+      "index": 8,
+      "title": "Understanding Hip Dysplasia in Dogs: Prevention and Care",
+      "slug": "hip-dysplasia-dogs-prevention-care",
+      "post_id": 21542,
+      "url": "https://pethubonline.com/hip-dysplasia-dogs-prevention-care/",
+      "media_id": 21543,
+      "status": "published"
+    },
+    {
+      "index": 9,
+      "title": "How to Care for a Dog with Epilepsy",
+      "slug": "care-for-dog-with-epilepsy",
+      "post_id": 21545,
+      "url": "https://pethubonline.com/care-for-dog-with-epilepsy/",
+      "media_id": 21546,
+      "status": "published"
+    },
+    {
+      "index": 10,
+      "title": "Dog Ear Infections: Causes, Treatment, and Prevention",
+      "slug": "dog-ear-infections-causes-treatment-prevention",
+      "post_id": 21548,
+      "url": "https://pethubonline.com/dog-ear-infections-causes-treatment-prevention/",
+      "media_id": 21549,
+      "status": "published"
+    },
+    {
+      "index": 11,
+      "title": "How to Support Your Dog's Immune System Naturally",
+      "slug": "support-dog-immune-system-naturally",
+      "post_id": 21551,
+      "url": "https://pethubonline.com/support-dog-immune-system-naturally/",
+      "media_id": 21552,
+      "status": "published"
+    },
+    {
+      "index": 12,
+      "title": "Understanding Canine Cognitive Dysfunction in Senior Dogs",
+      "slug": "canine-cognitive-dysfunction-senior-dogs",
+      "post_id": 21554,
+      "url": "https://pethubonline.com/canine-cognitive-dysfunction-senior-dogs/",
+      "media_id": 21555,
+      "status": "published"
+    },
+    {
+      "index": 13,
+      "title": "How to Manage Separation Anxiety in Dogs",
+      "slug": "manage-separation-anxiety-dogs",
+      "post_id": 21557,
+      "url": "https://pethubonline.com/manage-separation-anxiety-dogs/",
+      "media_id": 21558,
+      "status": "published"
+    },
+    {
+      "index": 14,
+      "title": "Complete Guide to Dog Dental Care at Home",
+      "slug": "dog-dental-care-at-home-guide",
+      "post_id": 21560,
+      "url": "https://pethubonline.com/dog-dental-care-at-home-guide/",
+      "media_id": 21561,
+      "status": "published"
+    },
+    {
+      "index": 15,
+      "title": "How to Recognise and Treat Hot Spots on Dogs",
+      "slug": "recognise-treat-hot-spots-dogs",
+      "post_id": 21563,
+      "url": "https://pethubonline.com/recognise-treat-hot-spots-dogs/",
+      "media_id": 21564,
+      "status": "published"
+    },
+    {
+      "index": 16,
+      "title": "Understanding Thyroid Problems in Dogs",
+      "slug": "thyroid-problems-in-dogs",
+      "post_id": 21566,
+      "url": "https://pethubonline.com/thyroid-problems-in-dogs/",
+      "media_id": 21567,
+      "status": "published"
+    },
+    {
+      "index": 17,
+      "title": "How to Help Your Dog Recover from Surgery",
+      "slug": "help-dog-recover-from-surgery",
+      "post_id": 21569,
+      "url": "https://pethubonline.com/help-dog-recover-from-surgery/",
+      "media_id": 21570,
+      "status": "published"
+    },
+    {
+      "index": 18,
+      "title": "Common Digestive Issues in Dogs and Natural Remedies",
+      "slug": "common-digestive-issues-dogs-natural-remedies",
+      "post_id": 21572,
+      "url": "https://pethubonline.com/common-digestive-issues-dogs-natural-remedies/",
+      "media_id": 21573,
+      "status": "published"
+    },
+    {
+      "index": 19,
+      "title": "How to Prevent and Treat Urinary Tract Infections in Dogs",
+      "slug": "prevent-treat-urinary-tract-infections-dogs",
+      "post_id": 21575,
+      "url": "https://pethubonline.com/prevent-treat-urinary-tract-infections-dogs/",
+      "media_id": 21576,
+      "status": "published"
+    },
+    {
+      "index": 20,
+      "title": "Understanding Canine Cancer: Early Detection Guide",
+      "slug": "canine-cancer-early-detection-guide",
+      "post_id": 21578,
+      "url": "https://pethubonline.com/canine-cancer-early-detection-guide/",
+      "media_id": 21579,
+      "status": "published"
+    },
+    {
+      "index": 21,
+      "title": "How to Care for a Dog with Arthritis in Winter",
+      "slug": "care-dog-arthritis-winter",
+      "post_id": 21581,
+      "url": "https://pethubonline.com/care-dog-arthritis-winter/",
+      "media_id": 21582,
+      "status": "published"
+    },
+    {
+      "index": 22,
+      "title": "Dog Breathing Problems: When to Worry",
+      "slug": "dog-breathing-problems-when-to-worry",
+      "post_id": 21584,
+      "url": "https://pethubonline.com/dog-breathing-problems-when-to-worry/",
+      "media_id": 21585,
+      "status": "published"
+    },
+    {
+      "index": 23,
+      "title": "How to Keep Senior Dogs Active and Comfortable",
+      "slug": "keep-senior-dogs-active-comfortable",
+      "post_id": 21587,
+      "url": "https://pethubonline.com/keep-senior-dogs-active-comfortable/",
+      "media_id": 21619,
+      "status": "published"
+    },
+    {
+      "index": 24,
+      "title": "Understanding Food Sensitivities vs Food Allergies in Dogs",
+      "slug": "food-sensitivities-vs-food-allergies-dogs",
+      "post_id": 21589,
+      "url": "https://pethubonline.com/food-sensitivities-vs-food-allergies-dogs/",
+      "media_id": 21590,
+      "status": "published"
+    },
+    {
+      "index": 25,
+      "title": "How to Create a Wellness Plan for Your Dog",
+      "slug": "create-wellness-plan-for-dog",
+      "post_id": 21592,
+      "url": "https://pethubonline.com/create-wellness-plan-for-dog/",
+      "media_id": 21593,
+      "status": "published"
+    }
+  ]
+}
