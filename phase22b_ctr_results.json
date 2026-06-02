@@ -1,10 +1,111 @@
 {
   "phase": "22B",
-  "timestamp": "2026-06-02T13:56:29.109970",
-  "total_posts": 0,
+  "timestamp": "2026-06-02T13:45:47.158866",
+  "total_posts": 400,
   "already_good": 0,
-  "missing_or_short": 0,
-  "updated": 0,
+  "missing_or_short": 400,
+  "updated": 400,
   "errors": 0,
-  "samples": []
+  "samples": [
+    {
+      "id": 21724,
+      "title": "How to Use Snuffle Mats for Mental Stimulation",
+      "meta": "A snuffle mat is a fabric mat, typically made from fleece strips tied to a rubber base, designed to hide kibble or small treats within its layers. Pets."
+    },
+    {
+      "id": 21719,
+      "title": "Indoor Agility Course Ideas for Dogs and Cats",
+      "meta": "Indoor agility is a practical solution when outdoor exercise is limited by weather, space, or a pet\u2019s health needs. The PDSA emphasises that dogs need."
+    },
+    {
+      "id": 21714,
+      "title": "Scent Work Games for Dogs: Beginner to Advanced",
+      "meta": "Scent work, also called nose work, is an activity where dogs use their powerful sense of smell to locate specific odours or hidden treats. Dogs have up to."
+    },
+    {
+      "id": 21709,
+      "title": "Best DIY Puzzle Feeders for Dogs: Easy Home Projects",
+      "meta": "Puzzle feeders transform mealtime from a 30-second gulp into an engaging mental workout. According to the PDSA, mental stimulation is just as important as."
+    },
+    {
+      "id": 21592,
+      "title": "How to Create a Wellness Plan for Your Dog",
+      "meta": "Continue exploring our Dog Health series with these related guides:."
+    },
+    {
+      "id": 21589,
+      "title": "Understanding Food Sensitivities vs Food Allergies in Dogs",
+      "meta": "Continue exploring our Dog Health series with these related guides:."
+    },
+    {
+      "id": 21587,
+      "title": "How to Keep Senior Dogs Active and Comfortable",
+      "meta": "Continue exploring our Dog Health series with these related guides:."
+    },
+    {
+      "id": 21584,
+      "title": "Dog Breathing Problems: When to Worry",
+      "meta": "Continue exploring our Dog Health series with these related guides:."
+    },
+    {
+      "id": 21581,
+      "title": "How to Care for a Dog with Arthritis in Winter",
+      "meta": "Continue exploring our Dog Health series with these related guides:."
+    },
+    {
+      "id": 21578,
+      "title": "Understanding Canine Cancer: Early Detection Guide",
+      "meta": "Continue exploring our Dog Health series with these related guides:."
+    },
+    {
+      "id": 21575,
+      "title": "How to Prevent and Treat Urinary Tract Infections in Dogs",
+      "meta": "Continue exploring our Dog Health series with these related guides:."
+    },
+    {
+      "id": 21572,
+      "title": "Common Digestive Issues in Dogs and Natural Remedies",
+      "meta": "Continue exploring our Dog Health series with these related guides:."
+    },
+    {
+      "id": 21569,
+      "title": "How to Help Your Dog Recover from Surgery",
+      "meta": "Continue exploring our Dog Health series with these related guides:."
+    },
+    {
+      "id": 21566,
+      "title": "Understanding Thyroid Problems in Dogs",
+      "meta": "Continue exploring our Dog Health series with these related guides:."
+    },
+    {
+      "id": 21563,
+      "title": "How to Recognise and Treat Hot Spots on Dogs",
+      "meta": "Continue exploring our Dog Health series with these related guides:."
+    },
+    {
+      "id": 21560,
+      "title": "Complete Guide to Dog Dental Care at Home",
+      "meta": "Continue exploring our Dog Health series with these related guides:."
+    },
+    {
+      "id": 21557,
+      "title": "How to Manage Separation Anxiety in Dogs",
+      "meta": "Continue exploring our Dog Health series with these related guides:."
+    },
+    {
+      "id": 21554,
+      "title": "Understanding Canine Cognitive Dysfunction in Senior Dogs",
+      "meta": "Continue exploring our Dog Health series with these related guides:."
+    },
+    {
+      "id": 21551,
+      "title": "How to Support Your Dog\u2019s Immune System Naturally",
+      "meta": "Continue exploring our Dog Health series with these related guides:."
+    },
+    {
+      "id": 21548,
+      "title": "Dog Ear Infections: Causes, Treatment, and Prevention",
+      "meta": "Continue exploring our Dog Health series with these related guides:."
+    }
+  ]
 }

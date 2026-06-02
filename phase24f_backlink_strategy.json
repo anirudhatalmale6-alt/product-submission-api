@@ -1,0 +1,156 @@
+{
+  "phase": "24F",
+  "site": "pethubonline.com",
+  "description": "Tier 1 Backlink & Directory Submission Strategy",
+  "tiers": {
+    "tier_1_directories": {
+      "description": "Free UK pet and business directories for immediate submission",
+      "sites": [
+        {
+          "name": "Yell.com",
+          "url": "https://www.yell.com/free-listing/",
+          "type": "business directory",
+          "da_estimate": 85,
+          "action": "Create free listing as UK pet supplies website"
+        },
+        {
+          "name": "FreeIndex",
+          "url": "https://www.freeindex.co.uk/",
+          "type": "business directory",
+          "da_estimate": 65,
+          "action": "Register as pet supplies/education site"
+        },
+        {
+          "name": "Bing Places",
+          "url": "https://www.bingplaces.com/",
+          "type": "search engine",
+          "da_estimate": 95,
+          "action": "Claim business listing"
+        },
+        {
+          "name": "Apple Maps Connect",
+          "url": "https://mapsconnect.apple.com/",
+          "type": "maps/local",
+          "da_estimate": 95,
+          "action": "Add business listing"
+        },
+        {
+          "name": "Thomson Local",
+          "url": "https://www.thomsonlocal.com/",
+          "type": "UK directory",
+          "da_estimate": 55,
+          "action": "Free business listing"
+        },
+        {
+          "name": "Scoot",
+          "url": "https://www.scoot.co.uk/",
+          "type": "UK directory",
+          "da_estimate": 50,
+          "action": "Submit free listing"
+        },
+        {
+          "name": "Hotfrog UK",
+          "url": "https://www.hotfrog.co.uk/",
+          "type": "business directory",
+          "da_estimate": 55,
+          "action": "Create free profile"
+        },
+        {
+          "name": "Cylex UK",
+          "url": "https://www.cylex-uk.co.uk/",
+          "type": "business directory",
+          "da_estimate": 45,
+          "action": "Add free business listing"
+        }
+      ]
+    },
+    "tier_2_pet_specific": {
+      "description": "Pet-specific directories and communities for niche authority",
+      "sites": [
+        {
+          "name": "PetForums.co.uk",
+          "url": "https://www.petforums.co.uk/",
+          "type": "pet community",
+          "da_estimate": 55,
+          "action": "Create profile, share helpful content in forums"
+        },
+        {
+          "name": "The Kennel Club",
+          "url": "https://www.thekennelclub.org.uk/",
+          "type": "pet authority",
+          "da_estimate": 70,
+          "action": "Explore breeder/listing opportunities"
+        },
+        {
+          "name": "PDSA",
+          "url": "https://www.pdsa.org.uk/",
+          "type": "pet charity",
+          "da_estimate": 70,
+          "action": "Community partnership opportunities"
+        },
+        {
+          "name": "Pets4Homes",
+          "url": "https://www.pets4homes.co.uk/",
+          "type": "pet marketplace",
+          "da_estimate": 60,
+          "action": "Create informational profile if applicable"
+        }
+      ]
+    },
+    "tier_3_content_syndication": {
+      "description": "Content sharing platforms for organic backlinks",
+      "sites": [
+        {
+          "name": "Medium",
+          "url": "https://medium.com/",
+          "type": "content platform",
+          "da_estimate": 95,
+          "action": "Republish best articles with canonical link back"
+        },
+        {
+          "name": "Pinterest",
+          "url": "https://pinterest.co.uk/",
+          "type": "visual platform",
+          "da_estimate": 95,
+          "action": "Create pet care pins linking to articles"
+        },
+        {
+          "name": "Reddit r/pets",
+          "url": "https://www.reddit.com/r/pets/",
+          "type": "community",
+          "da_estimate": 95,
+          "action": "Share helpful advice, link where genuinely helpful"
+        },
+        {
+          "name": "Quora",
+          "url": "https://www.quora.com/",
+          "type": "Q&A platform",
+          "da_estimate": 90,
+          "action": "Answer pet care questions with links to relevant guides"
+        }
+      ]
+    }
+  },
+  "submission_template": {
+    "business_name": "PetHub Online",
+    "website": "https://pethubonline.com",
+    "description_short": "UK pet care guides, product reviews, and expert advice for dog, cat, and fish owners.",
+    "description_long": "PetHub Online is a comprehensive UK pet care resource offering in-depth guides, product comparisons, and practical tips for dog, cat, fish, and small animal owners. Our content covers health, nutrition, training, enrichment, and supplies to help UK pet owners make informed decisions.",
+    "categories": [
+      "Pet Care",
+      "Pet Supplies",
+      "Animal Welfare",
+      "Dog Care",
+      "Cat Care"
+    ],
+    "location": "United Kingdom"
+  },
+  "notes": [
+    "Submissions require manual execution (login/form filling)",
+    "Prioritize Tier 1 directories first for immediate DA benefit",
+    "Content syndication (Tier 3) provides ongoing organic backlinks",
+    "Track all submissions in a spreadsheet for follow-up",
+    "Allow 2-4 weeks for directory listings to be indexed",
+    "NEVER buy backlinks or use PBNs - only genuine submissions"
+  ]
+}
