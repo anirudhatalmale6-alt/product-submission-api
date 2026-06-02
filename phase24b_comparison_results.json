@@ -1,0 +1,27 @@
+{
+  "phase": "24B",
+  "description": "Comparison table insertion",
+  "started": "2026-06-02T15:24:35.516620",
+  "total_posts": 683,
+  "qualifying_posts": 2,
+  "skipped_has_table": 110,
+  "skipped_no_match": 571,
+  "updated": [
+    {
+      "id": 21589,
+      "title": "Understanding Food Sensitivities vs Food Allergies in Dogs",
+      "pet_type": "dog",
+      "topic": "food"
+    },
+    {
+      "id": 15002,
+      "title": "Best Orthopaedic Memory Foam Dog Beds for Arthritis (2026 Guide)",
+      "pet_type": "dog",
+      "topic": "bed"
+    }
+  ],
+  "failed": [],
+  "completed": "2026-06-02T15:24:45.876364",
+  "total_updated": 2,
+  "total_failed": 0
+}

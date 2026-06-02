@@ -1,0 +1,80 @@
+PETHUB SECURITY HARDENING - PHP SNIPPETS FOR WPCODE
+====================================================
+Add these as "PHP Snippet" in WPCode (WP Admin > Code Snippets > Add Snippet)
+
+SNIPPET 1: Block REST API User Enumeration
+-------------------------------------------
+Title: Block REST API User Enumeration
+Location: Run Everywhere
+Priority: 10
+
+// Block unauthenticated access to /wp-json/wp/v2/users
+add_filter('rest_endpoints', function($endpoints) {
+    if (!is_user_logged_in()) {
+        if (isset($endpoints['/wp/v2/users'])) {
+            unset($endpoints['/wp/v2/users']);
+        }
+        if (isset($endpoints['/wp/v2/users/(?P<id>[\d]+)'])) {
+            unset($endpoints['/wp/v2/users/(?P<id>[\d]+)']);
+        }
+    }
+    return $endpoints;
+});
+
+// Also block ?author=1 enumeration
+add_action('template_redirect', function() {
+    if (is_author() && !is_user_logged_in()) {
+        wp_redirect(home_url(), 301);
+        exit;
+    }
+});
+
+
+SNIPPET 2: Block readme.html and license.txt
+---------------------------------------------
+Title: Block WordPress Info Files
+Location: Run Everywhere
+Priority: 10
+
+// Block access to readme.html and license.txt
+add_action('init', function() {
+    $request = $_SERVER['REQUEST_URI'] ?? '';
+    $blocked = ['/readme.html', '/license.txt'];
+    foreach ($blocked as $path) {
+        if (stripos($request, $path) !== false) {
+            status_header(404);
+            nocache_headers();
+            include(get_query_template('404'));
+            exit;
+        }
+    }
+});
+
+
+SNIPPET 3: Security Headers
+-----------------------------
+Title: Add Security Headers
+Location: Run Everywhere
+Priority: 10
+
+// Add security headers
+add_action('send_headers', function() {
+    if (!is_admin()) {
+        header('X-Content-Type-Options: nosniff');
+        header('X-Frame-Options: SAMEORIGIN');
+        header('Referrer-Policy: strict-origin-when-cross-origin');
+        header('Permissions-Policy: camera=(), microphone=(), geolocation=()');
+    }
+});
+
+
+ADDITIONAL DNS CHANGE (Not WPCode - needs DNS provider):
+---------------------------------------------------------
+Update DMARC record from:
+  v=DMARC1;p=none;
+
+To:
+  v=DMARC1;p=quarantine;rua=mailto:dmarc@pethubonline.com;pct=100;
+
+This tells email providers to quarantine (spam folder) emails that fail
+DMARC checks, rather than just monitoring.
