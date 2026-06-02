@@ -1,0 +1,61 @@
+{
+  "total_posts": 300,
+  "missing_year": 297,
+  "missing_uk": 217,
+  "too_long": 65,
+  "no_numbers": 281,
+  "sample_missing_year": [
+    "Breeding Fish at Home: Beginner-Friendly Species for UK Fishkeepers",
+    "Goldfish Care Guide UK: Tank Size, Feeding, and Common Problems",
+    "Fish Tank Moving Guide: Safely Relocating Your Aquarium",
+    "Betta Fish Care Guide UK: Housing, Feeding, and Health",
+    "Aquarium Stand Guide UK: DIY and Shop-Bought Options",
+    "Aquarium Salt Guide: When and How to Use Salt in Freshwater Tanks",
+    "Cold Water Fish Guide UK: Species That Don&#8217;t Need a Heater",
+    "Hard vs Soft Water for Fish: UK Regional Water Guide",
+    "Nano Tank Guide UK: Small Aquarium Setup and Stocking Ideas",
+    "Aquarium pH Guide: Understanding and Adjusting pH Levels"
+  ],
+  "sample_too_long": [
+    {
+      "title": "Breeding Fish at Home: Beginner-Friendly Species for UK Fishkeepers",
+      "len": 67
+    },
+    {
+      "title": "Pet Parasite Prevention Calendar UK: Flea, Tick, and Worm Schedules",
+      "len": 67
+    },
+    {
+      "title": "Pet Exercise Requirements by Age: Activity Needs Across Life Stages",
+      "len": 67
+    },
+    {
+      "title": "Pet Joint Health Guide: Supplements and Exercise for Healthy Joints",
+      "len": 67
+    },
+    {
+      "title": "Pet Allergy Management Guide: Identifying and Managing Pet Allergies",
+      "len": 68
+    },
+    {
+      "title": "Indoor Cat Scent Enrichment: Cat-Safe Herbs, Catnip, and Silver Vine",
+      "len": 68
+    },
+    {
+      "title": "Indoor Cat Sound Enrichment: Music, White Noise, and Nature Sounds",
+      "len": 66
+    },
+    {
+      "title": "Indoor Cat Lighting Guide: Natural and Artificial Lighting for Cats",
+      "len": 67
+    },
+    {
+      "title": "Indoor Cat Air Quality Guide: Air Quality and Ventilation for Cats",
+      "len": 66
+    },
+    {
+      "title": "Indoor Cat Health Signals: Recognising Health Issues in House Cats",
+      "len": 66
+    }
+  ]
+}

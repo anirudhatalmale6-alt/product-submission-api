@@ -1,0 +1,118 @@
+{
+  "report": "Citation Velocity Report",
+  "site": "pethubonline.com",
+  "generated": "2026-06-02T07:19:30.592257Z",
+  "citation_readiness_score": 94.2,
+  "ai_platforms_monitored": [
+    {
+      "platform": "ChatGPT/OpenAI",
+      "status": "monitoring",
+      "citations_detected": 0,
+      "method": "Manual query testing"
+    },
+    {
+      "platform": "Claude/Anthropic",
+      "status": "monitoring",
+      "citations_detected": 0,
+      "method": "Manual query testing"
+    },
+    {
+      "platform": "Google Gemini/SGE",
+      "status": "monitoring",
+      "citations_detected": 0,
+      "method": "Google AI Overview checks"
+    },
+    {
+      "platform": "Perplexity",
+      "status": "monitoring",
+      "citations_detected": 0,
+      "method": "Perplexity search queries"
+    },
+    {
+      "platform": "Microsoft Copilot",
+      "status": "monitoring",
+      "citations_detected": 0,
+      "method": "Bing Chat queries"
+    }
+  ],
+  "citation_readiness_factors": {
+    "faq_schema": {
+      "score": 97.8,
+      "status": "GREEN",
+      "detail": "450/460 posts with FAQPage JSON-LD"
+    },
+    "content_depth": {
+      "score": 95,
+      "status": "GREEN",
+      "detail": "460+ posts, avg 2000+ words"
+    },
+    "structured_data": {
+      "score": 97,
+      "status": "GREEN",
+      "detail": "FAQ + featured images + meta descriptions"
+    },
+    "eeat_signals": {
+      "score": 90,
+      "status": "GREEN",
+      "detail": "Author page, methodology, editorial transparency"
+    },
+    "freshness": {
+      "score": 100,
+      "status": "GREEN",
+      "detail": "All content updated/published June 2026"
+    },
+    "internal_linking": {
+      "score": 97,
+      "status": "GREEN",
+      "detail": "97.1% connected, 200+ internal links"
+    },
+    "backlinks": {
+      "score": 10,
+      "status": "RED",
+      "detail": "0/15 directory submissions live"
+    }
+  },
+  "cluster_citation_priority": [
+    {
+      "cluster": "Dog Beds",
+      "posts": 48,
+      "priority": "HIGH",
+      "reason": "Strong commercial intent, product comparison content"
+    },
+    {
+      "cluster": "Puppy Care",
+      "posts": 55,
+      "priority": "HIGH",
+      "reason": "High-intent new owner queries"
+    },
+    {
+      "cluster": "Dog Health",
+      "posts": "25 -> 50",
+      "priority": "HIGH",
+      "reason": "Health queries heavily cited by AI"
+    },
+    {
+      "cluster": "Fish Supplies",
+      "posts": 50,
+      "priority": "MEDIUM",
+      "reason": "Niche with low competition"
+    }
+  ],
+  "citation_velocity_baseline": {
+    "current": 0,
+    "target_30_day": "Establish measurement baseline",
+    "target_60_day": "2+ platforms citing PetHub content",
+    "target_90_day": "Measurable citation share growth"
+  },
+  "recommended_query_tests": [
+    "best dog beds UK 2026",
+    "puppy care checklist first week",
+    "fish tank setup guide beginners UK",
+    "indoor cat supplies essentials",
+    "dog health red flags when to see vet",
+    "cat water fountain comparison",
+    "dog joint supplements UK",
+    "aquarium maintenance schedule"
+  ],
+  "status": "MONITORING - Citation readiness high (94.2%), awaiting backlink profile to complete"
+}

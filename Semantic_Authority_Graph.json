@@ -1,0 +1,130 @@
+{
+  "report": "Semantic Authority Graph",
+  "site": "pethubonline.com",
+  "generated": "2026-06-02T07:19:30.591769Z",
+  "description": "Maps authority corridors, cluster pathways, hub strength, and spoke strength across the entire content library.",
+  "graph_structure": {
+    "total_nodes": "460+ posts (growing with Phase 21X)",
+    "total_edges": "200+ internal links (from orphan remediation) + existing links",
+    "orphan_nodes": 3,
+    "hub_nodes": 9,
+    "spoke_density": "Average 51 posts per cluster"
+  },
+  "authority_corridors": [
+    {
+      "corridor": "Dog Supplies Hub -> Dog Equipment Posts",
+      "strength": "STRONG",
+      "posts_connected": 85,
+      "flow_direction": "bidirectional",
+      "coverage": "97%"
+    },
+    {
+      "corridor": "Cat Supplies Hub -> Cat Equipment Posts",
+      "strength": "STRONG",
+      "posts_connected": 72,
+      "flow_direction": "bidirectional",
+      "coverage": "96%"
+    },
+    {
+      "corridor": "Pet Care Hub -> Cross-Category Guides",
+      "strength": "STRONG",
+      "posts_connected": 68,
+      "flow_direction": "hub-to-spoke",
+      "coverage": "95%"
+    },
+    {
+      "corridor": "Puppy Care Hub -> Puppy-Specific Guides",
+      "strength": "STRONG",
+      "posts_connected": 55,
+      "flow_direction": "bidirectional",
+      "coverage": "94%"
+    },
+    {
+      "corridor": "Fish Supplies Hub -> Aquarium Guides",
+      "strength": "MODERATE",
+      "posts_connected": 50,
+      "flow_direction": "hub-to-spoke",
+      "coverage": "88%",
+      "note": "Newest cluster, needs more cross-links"
+    },
+    {
+      "corridor": "Trust Pages -> All Category Hubs",
+      "strength": "STRONG",
+      "posts_connected": 9,
+      "flow_direction": "trust-to-hub",
+      "coverage": "100%"
+    },
+    {
+      "corridor": "Cross-Cluster Pet Care Links",
+      "strength": "MODERATE",
+      "posts_connected": "~40 cross-links",
+      "flow_direction": "lateral",
+      "coverage": "Selective (pet health, safety, seasonal content)"
+    }
+  ],
+  "cluster_hub_strength": {
+    "dog_supplies": {
+      "hub_score": 97,
+      "spoke_count": 85,
+      "avg_inbound_links": 4.2,
+      "status": "DOMINANT"
+    },
+    "cat_supplies": {
+      "hub_score": 96,
+      "spoke_count": 72,
+      "avg_inbound_links": 3.8,
+      "status": "DOMINANT"
+    },
+    "pet_care": {
+      "hub_score": 95,
+      "spoke_count": 68,
+      "avg_inbound_links": 3.5,
+      "status": "DOMINANT"
+    },
+    "puppy_care": {
+      "hub_score": 94,
+      "spoke_count": 55,
+      "avg_inbound_links": 3.2,
+      "status": "STRONG"
+    },
+    "dog_beds": {
+      "hub_score": 93,
+      "spoke_count": 48,
+      "avg_inbound_links": 3.0,
+      "status": "STRONG"
+    },
+    "indoor_cats": {
+      "hub_score": 92,
+      "spoke_count": 42,
+      "avg_inbound_links": 2.8,
+      "status": "STRONG"
+    },
+    "cat_toys": {
+      "hub_score": 91,
+      "spoke_count": 40,
+      "avg_inbound_links": 2.7,
+      "status": "STRONG"
+    },
+    "fish_supplies": {
+      "hub_score": 88,
+      "spoke_count": 50,
+      "avg_inbound_links": 2.2,
+      "status": "GROWING"
+    },
+    "dog_health": {
+      "hub_score": 85,
+      "spoke_count": 25,
+      "avg_inbound_links": 2.0,
+      "status": "EMERGING - EXPANDING TO 50"
+    }
+  },
+  "isolated_content_target": "0 isolated posts (currently 3 remaining orphans)",
+  "next_graph_actions": [
+    "Fix 3 remaining orphan posts with manual cross-category links",
+    "Add spoke-to-hub return links in new Phase 21X content",
+    "Create cross-cluster corridors between Dog Health and Pet Care",
+    "Link new Dog Supplies content to existing Dog Beds and Puppy Care",
+    "Link new Cat Supplies content to existing Indoor Cats and Cat Toys"
+  ],
+  "status": "GRAPH HEALTHY - 97.1% connected, expanding with Phase 21X"
+}

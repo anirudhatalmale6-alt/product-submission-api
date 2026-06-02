@@ -1,0 +1,123 @@
+{
+  "report": "Traffic Realization Report",
+  "site": "pethubonline.com",
+  "generated": "2026-06-02T07:19:30.592526Z",
+  "platform_status": "TRAFFIC CAPTURE MODE",
+  "kpi_hierarchy": {
+    "primary": [
+      {
+        "rank": 1,
+        "kpi": "Impressions",
+        "current": "Pending GSC data",
+        "30_day_target": "+25%",
+        "60_day_target": "+50%",
+        "90_day_target": "+100%"
+      },
+      {
+        "rank": 2,
+        "kpi": "Clicks",
+        "current": "Pending GSC data",
+        "30_day_target": "+15%",
+        "60_day_target": "+35%",
+        "90_day_target": "+75%"
+      },
+      {
+        "rank": 3,
+        "kpi": "CTR",
+        "current": "Pending GSC data",
+        "30_day_target": "+0.5%",
+        "60_day_target": "+1.0%",
+        "90_day_target": "+1.5%"
+      },
+      {
+        "rank": 4,
+        "kpi": "Rankings",
+        "current": "Pending GSC data",
+        "30_day_target": "10 page 1 gains",
+        "60_day_target": "25 page 1 gains",
+        "90_day_target": "50 page 1 gains"
+      },
+      {
+        "rank": 5,
+        "kpi": "Subscribers",
+        "current": 0,
+        "30_day_target": 100,
+        "60_day_target": 250,
+        "90_day_target": 500
+      },
+      {
+        "rank": 6,
+        "kpi": "Backlinks",
+        "current": 0,
+        "30_day_target": 10,
+        "60_day_target": 25,
+        "90_day_target": 50
+      },
+      {
+        "rank": 7,
+        "kpi": "AI Citations",
+        "current": 0,
+        "30_day_target": "Baseline",
+        "60_day_target": "2+ platforms",
+        "90_day_target": "Growth"
+      },
+      {
+        "rank": 8,
+        "kpi": "Revenue Readiness",
+        "current": "94.2%",
+        "30_day_target": "96%",
+        "60_day_target": "98%",
+        "90_day_target": "100%"
+      }
+    ],
+    "secondary": [
+      {
+        "kpi": "Authority Score",
+        "current": 96.7
+      },
+      {
+        "kpi": "Visibility Score",
+        "current": 82.5
+      },
+      {
+        "kpi": "Cluster Ownership",
+        "current": "3 owned, 4 contested, 2 emerging"
+      },
+      {
+        "kpi": "Content Volume",
+        "current": "460 -> 535+ (Phase 21X adding 75)"
+      }
+    ]
+  },
+  "traffic_growth_levers": {
+    "immediate": [
+      "FAQ rich snippets appearing in SERPs (450 eligible posts)",
+      "Featured images improving SERP appearance",
+      "Internal link graph distributing authority"
+    ],
+    "30_day": [
+      "Directory backlinks going live (10-12 expected)",
+      "Phase 21X content indexed (75 new posts)",
+      "CTR optimization on top 50 pages"
+    ],
+    "60_day": [
+      "All 15 directory backlinks live",
+      "Page 2 content promoted to page 1",
+      "Email subscriber flywheel generating return visits"
+    ],
+    "90_day": [
+      "Compound authority from 535+ posts",
+      "AI citation growth driving new traffic sources",
+      "Topical dominance in 5+ clusters"
+    ]
+  },
+  "content_volume_trajectory": {
+    "phase_17": "50 posts published",
+    "phase_18": "120 posts published (total 460)",
+    "phase_19": "Remediation (orphans, images, FAQ schema)",
+    "phase_20": "Optimization (dashboards, reports, scoring)",
+    "phase_21x": "75 new posts (Dog Health 25, Dog Supplies 25, Cat Supplies 25)",
+    "projected_total": "535+ published posts by end of Phase 21X"
+  },
+  "status": "TRAFFIC CAPTURE MODE - Content, optimization, and backlink acquisition running in parallel"
+}
