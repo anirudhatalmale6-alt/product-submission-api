@@ -1,0 +1,273 @@
+{
+  "phase": "23",
+  "task": "Pet Health Educational Posts",
+  "started": "2026-06-02T14:11:58.591746",
+  "target_posts": 32,
+  "category_id": 1391,
+  "posts": [
+    {
+      "post_id": 21812,
+      "title": "How to Create a Pet First Aid Kit at Home",
+      "slug": "pet-first-aid-kit-at-home",
+      "url": "https://pethubonline.com/pet-first-aid-kit-at-home/",
+      "featured_media_id": 21811,
+      "status": "published"
+    },
+    {
+      "post_id": 21814,
+      "title": "Complete Guide to Pet Worming Schedules UK",
+      "slug": "pet-worming-schedules-uk",
+      "url": "https://pethubonline.com/pet-worming-schedules-uk/",
+      "featured_media_id": 21813,
+      "status": "published"
+    },
+    {
+      "post_id": 21817,
+      "title": "How to Check Your Pet's Vital Signs at Home",
+      "slug": "check-pets-vital-signs-at-home",
+      "url": "https://pethubonline.com/check-pets-vital-signs-at-home/",
+      "featured_media_id": 21815,
+      "status": "published"
+    },
+    {
+      "post_id": 21822,
+      "title": "Pet Flea Prevention: Year-Round Protection Guide UK",
+      "slug": "pet-flea-prevention-year-round-uk",
+      "url": "https://pethubonline.com/pet-flea-prevention-year-round-uk/",
+      "featured_media_id": 21819,
+      "status": "published"
+    },
+    {
+      "post_id": 21825,
+      "title": "How to Recognise Signs of Dehydration in Pets",
+      "slug": "signs-of-dehydration-in-pets",
+      "url": "https://pethubonline.com/signs-of-dehydration-in-pets/",
+      "featured_media_id": 21824,
+      "status": "published"
+    },
+    {
+      "post_id": 21827,
+      "title": "Pet Vaccination FAQs: What UK Pet Owners Need to Know",
+      "slug": "pet-vaccination-faqs-uk",
+      "url": "https://pethubonline.com/pet-vaccination-faqs-uk/",
+      "featured_media_id": 21826,
+      "status": "published"
+    },
+    {
+      "post_id": 21834,
+      "title": "How to Monitor Your Pet's Weight at Home",
+      "slug": "monitor-pets-weight-at-home",
+      "url": "https://pethubonline.com/monitor-pets-weight-at-home/",
+      "featured_media_id": 21832,
+      "status": "published"
+    },
+    {
+      "post_id": 21839,
+      "title": "Pet Dental Health: Preventing Gum Disease and Tooth Decay",
+      "slug": "pet-dental-health-preventing-gum-disease",
+      "url": "https://pethubonline.com/pet-dental-health-preventing-gum-disease/",
+      "featured_media_id": 21837,
+      "status": "published"
+    },
+    {
+      "post_id": 21844,
+      "title": "How to Spot Signs of Stress in Your Pet",
+      "slug": "signs-of-stress-in-pets",
+      "url": "https://pethubonline.com/signs-of-stress-in-pets/",
+      "featured_media_id": 21841,
+      "status": "published"
+    },
+    {
+      "post_id": 21846,
+      "title": "Pet Microchipping Guide UK: Legal Requirements and Benefits",
+      "slug": "pet-microchipping-guide-uk",
+      "url": "https://pethubonline.com/pet-microchipping-guide-uk/",
+      "featured_media_id": 21845,
+      "status": "published"
+    },
+    {
+      "post_id": 21851,
+      "title": "How to Prepare Your Pet for a Vet Visit",
+      "slug": "prepare-pet-for-vet-visit",
+      "url": "https://pethubonline.com/prepare-pet-for-vet-visit/",
+      "featured_media_id": 21849,
+      "status": "published"
+    },
+    {
+      "post_id": 21856,
+      "title": "Pet Nutrition Basics: Understanding Pet Food Labels UK",
+      "slug": "pet-nutrition-understanding-food-labels-uk",
+      "url": "https://pethubonline.com/pet-nutrition-understanding-food-labels-uk/",
+      "featured_media_id": 21853,
+      "status": "published"
+    },
+    {
+      "post_id": 21861,
+      "title": "How to Help Your Pet Recover from Illness",
+      "slug": "help-pet-recover-from-illness",
+      "url": "https://pethubonline.com/help-pet-recover-from-illness/",
+      "featured_media_id": 21859,
+      "status": "published"
+    },
+    {
+      "post_id": 21864,
+      "title": "Pet Parasite Prevention: Fleas, Ticks, and Worms Guide",
+      "slug": "pet-parasite-prevention-fleas-ticks-worms",
+      "url": "https://pethubonline.com/pet-parasite-prevention-fleas-ticks-worms/",
+      "featured_media_id": 21863,
+      "status": "published"
+    },
+    {
+      "post_id": 21868,
+      "title": "How to Recognise Allergies in Pets",
+      "slug": "recognise-allergies-in-pets",
+      "url": "https://pethubonline.com/recognise-allergies-in-pets/",
+      "featured_media_id": 21866,
+      "status": "published"
+    },
+    {
+      "post_id": 21873,
+      "title": "Pet Health Supplements: What Works and What Doesn't",
+      "slug": "pet-health-supplements-guide",
+      "url": "https://pethubonline.com/pet-health-supplements-guide/",
+      "featured_media_id": 21871,
+      "status": "published"
+    },
+    {
+      "post_id": 21876,
+      "title": "How to Keep Your Pet Safe in Hot Weather UK",
+      "slug": "keep-pet-safe-hot-weather-uk",
+      "url": "https://pethubonline.com/keep-pet-safe-hot-weather-uk/",
+      "featured_media_id": 21875,
+      "status": "published"
+    },
+    {
+      "post_id": 21880,
+      "title": "Pet Mental Health: Recognising and Reducing Anxiety",
+      "slug": "pet-mental-health-reducing-anxiety",
+      "url": "https://pethubonline.com/pet-mental-health-reducing-anxiety/",
+      "featured_media_id": 21878,
+      "status": "published"
+    },
+    {
+      "post_id": 21885,
+      "title": "How to Care for an Ageing Pet",
+      "slug": "care-for-ageing-pet",
+      "url": "https://pethubonline.com/care-for-ageing-pet/",
+      "featured_media_id": 21882,
+      "status": "published"
+    },
+    {
+      "post_id": 21889,
+      "title": "Pet Health Records: What to Track and Why",
+      "slug": "pet-health-records-what-to-track",
+      "url": "https://pethubonline.com/pet-health-records-what-to-track/",
+      "featured_media_id": 21887,
+      "status": "published"
+    },
+    {
+      "post_id": 21892,
+      "title": "How to Recognise Emergency Health Situations in Pets",
+      "slug": "recognise-emergency-health-situations-pets",
+      "url": "https://pethubonline.com/recognise-emergency-health-situations-pets/",
+      "featured_media_id": 21891,
+      "status": "published"
+    },
+    {
+      "post_id": 21897,
+      "title": "Pet Digestive Health: Common Issues and Prevention",
+      "slug": "pet-digestive-health-common-issues",
+      "url": "https://pethubonline.com/pet-digestive-health-common-issues/",
+      "featured_media_id": 21896,
+      "status": "published"
+    },
+    {
+      "post_id": 21902,
+      "title": "How to Keep Your Pet's Coat Healthy and Shiny",
+      "slug": "keep-pets-coat-healthy-shiny",
+      "url": "https://pethubonline.com/keep-pets-coat-healthy-shiny/",
+      "featured_media_id": 21900,
+      "status": "published"
+    },
+    {
+      "post_id": 21907,
+      "title": "Pet Joint Health: Prevention and Support for Mobility",
+      "slug": "pet-joint-health-prevention-mobility",
+      "url": "https://pethubonline.com/pet-joint-health-prevention-mobility/",
+      "featured_media_id": 21904,
+      "status": "published"
+    },
+    {
+      "post_id": 21911,
+      "title": "How to Help Your Pet Maintain a Healthy Weight",
+      "slug": "help-pet-maintain-healthy-weight",
+      "url": "https://pethubonline.com/help-pet-maintain-healthy-weight/",
+      "featured_media_id": 21909,
+      "status": "published"
+    },
+    {
+      "post_id": 21914,
+      "title": "Pet Eye Health: Common Issues and When to Seek Help",
+      "slug": "pet-eye-health-common-issues",
+      "url": "https://pethubonline.com/pet-eye-health-common-issues/",
+      "featured_media_id": 21912,
+      "status": "published"
+    },
+    {
+      "post_id": 21918,
+      "title": "How to Choose the Right Vet for Your Pet UK",
+      "slug": "choose-right-vet-for-pet-uk",
+      "url": "https://pethubonline.com/choose-right-vet-for-pet-uk/",
+      "featured_media_id": 21917,
+      "status": "published"
+    },
+    {
+      "post_id": 21920,
+      "title": "Pet Seasonal Health Risks: Spring, Summer, Autumn, Winter",
+      "slug": "pet-seasonal-health-risks-uk",
+      "url": "https://pethubonline.com/pet-seasonal-health-risks-uk/",
+      "featured_media_id": 21919,
+      "status": "published"
+    },
+    {
+      "post_id": 21922,
+      "title": "How to Support Your Pet Through Recovery After Surgery",
+      "slug": "support-pet-recovery-after-surgery",
+      "url": "https://pethubonline.com/support-pet-recovery-after-surgery/",
+      "featured_media_id": 21921,
+      "status": "published"
+    },
+    {
+      "post_id": 21924,
+      "title": "Pet Health Myths Debunked: Common Misconceptions",
+      "slug": "pet-health-myths-debunked",
+      "url": "https://pethubonline.com/pet-health-myths-debunked/",
+      "featured_media_id": 21923,
+      "status": "published"
+    },
+    {
+      "post_id": 21926,
+      "title": "How to Create a Wellness Routine for Your Pet",
+      "slug": "create-wellness-routine-for-pet",
+      "url": "https://pethubonline.com/create-wellness-routine-for-pet/",
+      "featured_media_id": 21925,
+      "status": "published"
+    },
+    {
+      "post_id": 21928,
+      "title": "Pet Health Warning Signs Every Owner Should Know",
+      "slug": "pet-health-warning-signs-every-owner",
+      "url": "https://pethubonline.com/pet-health-warning-signs-every-owner/",
+      "featured_media_id": 21927,
+      "status": "published"
+    }
+  ],
+  "completed": "2026-06-02T14:23:09.280322",
+  "summary": {
+    "total_attempted": 32,
+    "published": 32,
+    "failed": 0,
+    "cluster_total": 40,
+    "target_met": true
+  }
+}
